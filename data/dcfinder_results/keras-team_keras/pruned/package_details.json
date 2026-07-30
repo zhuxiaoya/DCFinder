@@ -1,0 +1,837 @@
+{
+  "pre-commit": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "cfgv",
+        "specifier": ">=2.0.0"
+      },
+      {
+        "name": "identify",
+        "specifier": ">=1.0.0"
+      },
+      {
+        "name": "nodeenv",
+        "specifier": ">=0.11.1"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1"
+      },
+      {
+        "name": "virtualenv",
+        "specifier": ">=20.10.0"
+      }
+    ]
+  },
+  "namex": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "ruff": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pytest": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "exceptiongroup",
+        "specifier": ">=1"
+      },
+      {
+        "name": "iniconfig",
+        "specifier": ">=1.0.1"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=22"
+      },
+      {
+        "name": "pluggy",
+        "specifier": "<2,>=1.5"
+      },
+      {
+        "name": "pygments",
+        "specifier": ">=2.7.2"
+      },
+      {
+        "name": "tomli",
+        "specifier": ">=1"
+      }
+    ]
+  },
+  "numpy": {
+    "version": "2.4.4",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "scipy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": "<2.8,>=2.0.0"
+      }
+    ]
+  },
+  "scikit-learn": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.24.1"
+      },
+      {
+        "name": "scipy",
+        "specifier": ">=1.10.0"
+      },
+      {
+        "name": "joblib",
+        "specifier": ">=1.4.0"
+      },
+      {
+        "name": "narwhals",
+        "specifier": ">=2.0.1"
+      },
+      {
+        "name": "threadpoolctl",
+        "specifier": ">=3.5.0"
+      }
+    ]
+  },
+  "pillow": {
+    "version": "12.2.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pandas": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.26.0"
+      },
+      {
+        "name": "python-dateutil",
+        "specifier": ">=2.8.2"
+      }
+    ]
+  },
+  "absl-py": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "requests": {
+    "version": "2.28.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "charset-normalizer",
+        "specifier": "<3,>=2"
+      },
+      {
+        "name": "idna",
+        "specifier": "<4,>=2.5"
+      },
+      {
+        "name": "urllib3",
+        "specifier": "<1.27,>=1.21.1"
+      },
+      {
+        "name": "certifi",
+        "specifier": ">=2017.4.17"
+      }
+    ]
+  },
+  "h5py": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.21.2"
+      }
+    ]
+  },
+  "ml-dtypes": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.21"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.21.2"
+      }
+    ]
+  },
+  "protobuf": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "tensorboard-plugin-profile": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "xprof",
+        "specifier": "==2.22.3"
+      }
+    ]
+  },
+  "rich": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "markdown-it-py",
+        "specifier": ">=2.2.0"
+      },
+      {
+        "name": "pygments",
+        "specifier": "<3.0.0,>=2.13.0"
+      }
+    ]
+  },
+  "build": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "packaging",
+        "specifier": ">=24.0"
+      },
+      {
+        "name": "pyproject-hooks",
+        "specifier": ""
+      },
+      {
+        "name": "tomli",
+        "specifier": ">=1.1.0"
+      }
+    ]
+  },
+  "optree": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.6.0"
+      }
+    ]
+  },
+  "pytest-cov": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "coverage",
+        "specifier": ">=7.10.6"
+      },
+      {
+        "name": "pluggy",
+        "specifier": ">=1.2"
+      },
+      {
+        "name": "pytest",
+        "specifier": ">=7"
+      }
+    ]
+  },
+  "packaging": {
+    "version": "24.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": ">=22,>=24.0",
+    "requires_dist": []
+  },
+  "dm-tree": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "absl-py",
+        "specifier": ">=0.6.1"
+      },
+      {
+        "name": "attrs",
+        "specifier": ">=18.2.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.21"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.21.2"
+      },
+      {
+        "name": "wrapt",
+        "specifier": ">=1.11.2"
+      }
+    ]
+  },
+  "coverage": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "tomli",
+        "specifier": ""
+      }
+    ]
+  },
+  "onnxruntime": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "flatbuffers",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.21.6"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": ">=4.25.8"
+      }
+    ]
+  },
+  "openvino": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": "<2.5.0,>=1.16.6"
+      },
+      {
+        "name": "openvino-telemetry",
+        "specifier": ">=2023.2.1"
+      }
+    ]
+  },
+  "tensorflow-cpu": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "absl-py",
+        "specifier": ">=1.0.0"
+      },
+      {
+        "name": "astunparse",
+        "specifier": ">=1.6.0"
+      },
+      {
+        "name": "flatbuffers",
+        "specifier": ">=24.3.25"
+      },
+      {
+        "name": "gast",
+        "specifier": "!=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1"
+      },
+      {
+        "name": "google-pasta",
+        "specifier": ">=0.1.1"
+      },
+      {
+        "name": "libclang",
+        "specifier": ">=13.0.0"
+      },
+      {
+        "name": "opt-einsum",
+        "specifier": ">=2.3.2"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": "!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.3"
+      },
+      {
+        "name": "requests",
+        "specifier": "<3,>=2.21.0"
+      },
+      {
+        "name": "setuptools",
+        "specifier": ""
+      },
+      {
+        "name": "six",
+        "specifier": ">=1.12.0"
+      },
+      {
+        "name": "termcolor",
+        "specifier": ">=1.1.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=3.6.6"
+      },
+      {
+        "name": "wrapt",
+        "specifier": ">=1.11.0"
+      },
+      {
+        "name": "grpcio",
+        "specifier": "<2.0,>=1.24.3"
+      },
+      {
+        "name": "tensorboard",
+        "specifier": "<2.19,>=2.18"
+      },
+      {
+        "name": "keras",
+        "specifier": ">=3.5.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": "<2.1.0,>=1.26.0"
+      },
+      {
+        "name": "h5py",
+        "specifier": ">=3.11.0"
+      },
+      {
+        "name": "ml-dtypes",
+        "specifier": "<1.0.0,>=0.4.0"
+      },
+      {
+        "name": "tensorflow-io-gcs-filesystem",
+        "specifier": ">=0.23.1"
+      }
+    ]
+  },
+  "tf2onnx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.23.5"
+      },
+      {
+        "name": "onnx",
+        "specifier": ">=1.14.0"
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "flatbuffers",
+        "specifier": ">=1.12"
+      },
+      {
+        "name": "protobuf",
+        "specifier": ">=3.20"
+      }
+    ]
+  },
+  "torch": {
+    "version": "2.6.0+cpu",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "==2.6.0",
+    "requires_dist": [
+      {
+        "name": "filelock",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.10.0"
+      },
+      {
+        "name": "networkx",
+        "specifier": ""
+      },
+      {
+        "name": "jinja2",
+        "specifier": ""
+      },
+      {
+        "name": "fsspec",
+        "specifier": ""
+      },
+      {
+        "name": "sympy",
+        "specifier": "==1.13.1"
+      }
+    ]
+  },
+  "jax": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "jaxlib",
+        "specifier": "<=0.6.0,>=0.6.0"
+      },
+      {
+        "name": "ml-dtypes",
+        "specifier": ">=0.5.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.25"
+      },
+      {
+        "name": "opt-einsum",
+        "specifier": ""
+      },
+      {
+        "name": "scipy",
+        "specifier": ">=1.11.1"
+      }
+    ]
+  },
+  "flax": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.23.2"
+      },
+      {
+        "name": "jax",
+        "specifier": ">=0.10.0"
+      },
+      {
+        "name": "msgpack",
+        "specifier": ""
+      },
+      {
+        "name": "optax",
+        "specifier": ""
+      },
+      {
+        "name": "orbax-checkpoint",
+        "specifier": ""
+      },
+      {
+        "name": "tensorstore",
+        "specifier": ""
+      },
+      {
+        "name": "rich",
+        "specifier": ">=11.1"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.2"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.4.1"
+      },
+      {
+        "name": "treescope",
+        "specifier": ">=0.1.7"
+      }
+    ]
+  },
+  "tensorflow": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "absl-py",
+        "specifier": ">=1.0.0"
+      },
+      {
+        "name": "astunparse",
+        "specifier": ">=1.6.0"
+      },
+      {
+        "name": "flatbuffers",
+        "specifier": ">=24.3.25"
+      },
+      {
+        "name": "gast",
+        "specifier": "!=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1"
+      },
+      {
+        "name": "google-pasta",
+        "specifier": ">=0.1.1"
+      },
+      {
+        "name": "libclang",
+        "specifier": ">=13.0.0"
+      },
+      {
+        "name": "opt-einsum",
+        "specifier": ">=2.3.2"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": "!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<6.0.0dev,>=3.20.3"
+      },
+      {
+        "name": "requests",
+        "specifier": "<3,>=2.21.0"
+      },
+      {
+        "name": "setuptools",
+        "specifier": ""
+      },
+      {
+        "name": "six",
+        "specifier": ">=1.12.0"
+      },
+      {
+        "name": "termcolor",
+        "specifier": ">=1.1.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=3.6.6"
+      },
+      {
+        "name": "wrapt",
+        "specifier": ">=1.11.0"
+      },
+      {
+        "name": "grpcio",
+        "specifier": "<2.0,>=1.24.3"
+      },
+      {
+        "name": "tensorboard",
+        "specifier": "<2.19,>=2.18"
+      },
+      {
+        "name": "keras",
+        "specifier": ">=3.5.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": "<2.1.0,>=1.26.0"
+      },
+      {
+        "name": "h5py",
+        "specifier": ">=3.11.0"
+      },
+      {
+        "name": "ml-dtypes",
+        "specifier": "<1.0.0,>=0.4.0"
+      },
+      {
+        "name": "tensorflow-io-gcs-filesystem",
+        "specifier": ">=0.23.1"
+      }
+    ]
+  },
+  "tf-keras": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "tensorflow",
+        "specifier": "<2.22,>=2.21"
+      }
+    ]
+  },
+  "torch-xla": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "absl-py",
+        "specifier": ">=1.0.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ""
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      }
+    ]
+  },
+  "charset-normalizer": {
+    "version": "2.1.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "<3,>=2",
+    "requires_dist": []
+  },
+  "idna": {
+    "version": "3.4",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "<4,>=2.5",
+    "requires_dist": []
+  },
+  "urllib3": {
+    "version": "1.26.13",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "<1.27,>=1.21.1",
+    "requires_dist": []
+  },
+  "certifi": {
+    "version": "2022.12.7",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": ">=2017.4.17",
+    "requires_dist": []
+  },
+  "typing-extensions": {
+    "version": "4.15.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": ">=4.6.0,>=3.6.6,>=4.10.0,>=4.2,>=3.6.6,>=4.13.2,>=4.6.0",
+    "requires_dist": []
+  },
+  "filelock": {
+    "version": "3.29.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "<4,>=3.24.2",
+    "requires_dist": []
+  },
+  "networkx": {
+    "version": "3.6.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "jinja2": {
+    "version": "3.1.6",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "markupsafe",
+        "specifier": ">=2.0"
+      }
+    ]
+  },
+  "fsspec": {
+    "version": "2026.4.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": ">=2024.3.1",
+    "requires_dist": []
+  },
+  "sympy": {
+    "version": "1.13.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "==1.13.1",
+    "requires_dist": [
+      {
+        "name": "mpmath",
+        "specifier": "<1.4,>=1.1.0"
+      }
+    ]
+  },
+  "markupsafe": {
+    "version": "3.0.3",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": ">=2.0,>=2.1.1",
+    "requires_dist": []
+  },
+  "mpmath": {
+    "version": "1.3.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "<1.4,>=1.1.0",
+    "requires_dist": []
+  }
+}

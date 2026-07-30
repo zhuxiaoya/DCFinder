@@ -1,0 +1,498 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/be/e6/317136821a62aa22f078b4447b72fe773027bae48df36aaf649317e048a3/django_apscheduler-0.6.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=d30a05be98e01c12aa50d0a7afd8d0fd529c874d1c75af20891b6417d2f36475",
+          "hashes": {
+            "sha256": "d30a05be98e01c12aa50d0a7afd8d0fd529c874d1c75af20891b6417d2f36475"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "django-apscheduler",
+        "version": "0.6.2",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "APScheduler for Django",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "django",
+          "apscheduler",
+          "django-apscheduler"
+        ],
+        "home_page": "http://github.com/jcass77/django-apscheduler",
+        "author": "Jarek Glowacki, Stas Kaledin, John Cass",
+        "author_email": "jarekwg@gmail.com, staskaledin@gmail.com, john.cass77@gmail.com",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE",
+          "AUTHORS"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Environment :: Web Environment",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Framework :: Django",
+          "Framework :: Django :: 3.2",
+          "Framework :: Django :: 4.0"
+        ],
+        "requires_dist": [
+          "django (>=3.2)",
+          "apscheduler (<4.0,>=3.2)"
+        ],
+        "description": "Django APScheduler\n==================\n\n[![PyPI](https://img.shields.io/pypi/v/django-apscheduler)](https://pypi.org/project/django-apscheduler/)\n[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django-apscheduler)](https://pypi.org/project/django-apscheduler/)\n[![PyPI - Django Version](https://img.shields.io/pypi/djversions/django-apscheduler)](https://pypi.org/project/django-apscheduler/)\n[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jcass77/django-apscheduler/Python%20package)](https://github.com/jcass77/django-apscheduler/actions?query=workflow%3A%22Python+package%22)\n[![Codecov](https://img.shields.io/codecov/c/github/jcass77/django-apscheduler?token=upz6ukIqMN)](https://codecov.io/gh/jcass77/django-apscheduler)\n[![Code style:black](https://img.shields.io/badge/code%20style-black-black)](https://pypi.org/project/black)\n\n[APScheduler](https://github.com/agronholm/apscheduler) for [Django](https://github.com/django/django).\n\nThis is a Django app that adds a lightweight wrapper around APScheduler. It enables storing persistent jobs in the\ndatabase using Django's ORM.\n\ndjango-apscheduler is a great choice for quickly and easily adding basic scheduling features to your Django applications\nwith minimal dependencies and very little additional configuration. The ideal use case probably involves running a\nhandful of tasks on a fixed execution schedule.\n\n**PLEASE NOTE:** the trade-off of this simplicity is that you need to **be careful to ensure that you have only ONE\nscheduler actively running at a particular point in time**.\n\nThis limitation is due to the fact that APScheduler does not currently have\nany [interprocess synchronization and signalling scheme](https://apscheduler.readthedocs.io/en/latest/faq.html#how-do-i-share-a-single-job-store-among-one-or-more-worker-processes)\nthat would enable the scheduler to be notified when a job has been added, modified, or removed from a job store (in\nother words, different schedulers won't be able to tell if a job has already been run by another scheduler, and changing\na job's scheduled run time directly in the database does nothing unless you also restart the scheduler).\n\nDepending on how you are currently doing your\nDjango [deployments](https://docs.djangoproject.com/en/dev/howto/deployment/#deploying-django), working with this\nlimitation might require a bit of thought. It is quite common to start up many webserver worker process in production\nenvironments in order to scale and handle large volumes of user traffic. If each of these worker processes end up\nrunning their own scheduler then this can result in jobs being missed or executed multiple times, as well as duplicate\nentries being created in the `DjangoJobExecution` table.\n\nSupport for sharing a persistent job store between multiple schedulers appears to be planned for\nan [upcoming APScheduler 4.0 release](https://github.com/agronholm/apscheduler/issues/465).\n\nSo for now your options are to either:\n\n1. Use a custom Django management command to start a single scheduler in its own dedicated process (**recommended** -\n   see the `runapscheduler.py` example below); or\n\n2. Implement your\n   own [remote processing](https://apscheduler.readthedocs.io/en/latest/faq.html#how-do-i-share-a-single-job-store-among-one-or-more-worker-processes)\n   logic to ensure that a single `DjangoJobStore` can be used by all of the webserver's worker processes in a\n   coordinated and synchronized way (might not be worth the extra effort and increased complexity for most use cases);\n   or\n\n3. Select an alternative task processing library that *does* support inter-process communication using some sort of\n   shared message broker like Redis, RabbitMQ, Amazon SQS or the like (see:\n   https://djangopackages.org/grids/g/workers-queues-tasks/ for popular options).\n\nFeatures\n--------\n\n- A custom [APScheduler job store](https://apscheduler.readthedocs.io/en/latest/extending.html#custom-job-stores)\n  (`DjangoJobStore`) that persists scheduled jobs to the Django database. You can view the scheduled jobs and monitor\n  the job execution directly via the Django admin interface:\n\n  ![Jobs](https://raw.githubusercontent.com/jcass77/django-apscheduler/main/docs/screenshots/job_overview.png)\n\n- The job store also maintains a history of all job executions of the currently scheduled jobs, along with status codes\n  and exceptions (if any):\n\n  ![Jobs](https://raw.githubusercontent.com/jcass77/django-apscheduler/main/docs/screenshots/execution_overview.png)\n\n  **Note:** APScheduler\n  will [automatically remove jobs](https://apscheduler.readthedocs.io/en/latest/userguide.html#removing-jobs)\n  from the job store as soon as their last scheduled execution has been triggered. This will also delete the\n  corresponding job execution entries from the database (i.e. job execution logs are only maintained for 'active'\n  jobs.):\n\n- Job executions can also be triggered manually via the `DjangoJob` admin page:\n\n  ![Jobs](https://raw.githubusercontent.com/jcass77/django-apscheduler/main/docs/screenshots/run_now.png)\n\n  **Note:** In order to prevent long running jobs from causing the Django HTTP request to time out, the combined maximum\n  run time for all APScheduler jobs that are started via the Django admin site is 25 seconds. This timeout value can be\n  configured via the `APSCHEDULER_RUN_NOW_TIMEOUT` setting.\n\n\nInstallation\n------------\n\n```python\npip install django-apscheduler\n```\n\n\nQuick start\n-----------\n\n- Add ``django_apscheduler`` to your ``INSTALLED_APPS`` setting like this:\n```python\nINSTALLED_APPS = (\n    # ...\n    \"django_apscheduler\",\n)\n```\n\n- django-apscheduler comes with sensible configuration defaults out of the box. The defaults can be overridden by adding\n  the following settings to your Django `settings.py` file:\n```python\n# Format string for displaying run time timestamps in the Django admin site. The default\n# just adds seconds to the standard Django format, which is useful for displaying the timestamps\n# for jobs that are scheduled to run on intervals of less than one minute.\n# \n# See https://docs.djangoproject.com/en/dev/ref/settings/#datetime-format for format string\n# syntax details.\nAPSCHEDULER_DATETIME_FORMAT = \"N j, Y, f:s a\"\n\n# Maximum run time allowed for jobs that are triggered manually via the Django admin site, which\n# prevents admin site HTTP requests from timing out.\n# \n# Longer running jobs should probably be handed over to a background task processing library\n# that supports multiple background worker processes instead (e.g. Dramatiq, Celery, Django-RQ,\n# etc. See: https://djangopackages.org/grids/g/workers-queues-tasks/ for popular options).\nAPSCHEDULER_RUN_NOW_TIMEOUT = 25  # Seconds\n```\n\n- Run `python manage.py migrate` to create the django_apscheduler models.\n\n- Add a [custom Django management command](https://docs.djangoproject.com/en/dev/howto/custom-management-commands/) to your project\n  that schedules the APScheduler jobs and starts the scheduler:\n  \n```python\n# runapscheduler.py\nimport logging\n\nfrom django.conf import settings\n\nfrom apscheduler.schedulers.blocking import BlockingScheduler\nfrom apscheduler.triggers.cron import CronTrigger\nfrom django.core.management.base import BaseCommand\nfrom django_apscheduler.jobstores import DjangoJobStore\nfrom django_apscheduler.models import DjangoJobExecution\nfrom django_apscheduler import util\n\nlogger = logging.getLogger(__name__)\n\n\ndef my_job():\n  # Your job processing logic here...\n  pass\n\n\n# The `close_old_connections` decorator ensures that database connections, that have become\n# unusable or are obsolete, are closed before and after your job has run. You should use it\n# to wrap any jobs that you schedule that access the Django database in any way. \n@util.close_old_connections\ndef delete_old_job_executions(max_age=604_800):\n  \"\"\"\n  This job deletes APScheduler job execution entries older than `max_age` from the database.\n  It helps to prevent the database from filling up with old historical records that are no\n  longer useful.\n  \n  :param max_age: The maximum length of time to retain historical job execution records.\n                  Defaults to 7 days.\n  \"\"\"\n  DjangoJobExecution.objects.delete_old_job_executions(max_age)\n\n\nclass Command(BaseCommand):\n  help = \"Runs APScheduler.\"\n\n  def handle(self, *args, **options):\n    scheduler = BlockingScheduler(timezone=settings.TIME_ZONE)\n    scheduler.add_jobstore(DjangoJobStore(), \"default\")\n\n    scheduler.add_job(\n      my_job,\n      trigger=CronTrigger(second=\"*/10\"),  # Every 10 seconds\n      id=\"my_job\",  # The `id` assigned to each job MUST be unique\n      max_instances=1,\n      replace_existing=True,\n    )\n    logger.info(\"Added job 'my_job'.\")\n\n    scheduler.add_job(\n      delete_old_job_executions,\n      trigger=CronTrigger(\n        day_of_week=\"mon\", hour=\"00\", minute=\"00\"\n      ),  # Midnight on Monday, before start of the next work week.\n      id=\"delete_old_job_executions\",\n      max_instances=1,\n      replace_existing=True,\n    )\n    logger.info(\n      \"Added weekly job: 'delete_old_job_executions'.\"\n    )\n\n    try:\n      logger.info(\"Starting scheduler...\")\n      scheduler.start()\n    except KeyboardInterrupt:\n      logger.info(\"Stopping scheduler...\")\n      scheduler.shutdown()\n      logger.info(\"Scheduler shut down successfully!\")\n\n```\n\n- The management command defined above should be invoked via `./manage.py runapscheduler` whenever the webserver serving\n  your Django application is started. The details of how and where this should be done is implementation specific, and\n  depends on which webserver you are using and how you are deploying your application to production. For most people\n  this should involve configuring a [supervisor](http://supervisord.org) process of sorts.\n\n- Register any APScheduler jobs as you would normally. Note that if you haven't set `DjangoJobStore` as the `'default'`\n  job store, then you will need to include `jobstore='djangojobstore'` in your `scheduler.add_job()` calls.\n\n\nAdvanced usage\n--------------\n\ndjango-apscheduler assumes that you are already familiar with APScheduler and its proper use. If not, then please head\nover to the project page and have a look through\nthe [APScheduler documentation](https://apscheduler.readthedocs.io/en/latest/index.html).\n\nIt is possible to make use\nof [different types of schedulers](https://apscheduler.readthedocs.io/en/latest/userguide.html#choosing-the-right-scheduler-job-store-s-executor-s-and-trigger-s)\ndepending on your environment and use case. If you would prefer running a `BackgroundScheduler` instead of using a\n`BlockingScheduler`, then you should be aware that using APScheduler with uWSGI requires some additional\n[configuration steps](https://apscheduler.readthedocs.io/en/latest/faq.html#how-can-i-use-apscheduler-with-uwsgi) in\norder to re-enable threading support.\n\n\nSupported databases\n-------------------\n\nPlease take note of the list of databases that\nare [officially supported by Django](https://docs.djangoproject.com/en/dev/ref/databases/#databases). django-apscheduler\nprobably won't work with unsupported databases like Microsoft SQL Server, MongoDB, and the like.\n\n\nDatabase connections and timeouts\n---------------------------------\n\ndjango-apscheduler is dependent on the standard Django\ndatabase [configuration settings](https://docs.djangoproject.com/en/dev/ref/databases/#general-notes). These settings,\nin combination with how your database server has been configured, determine how connection management will be performed\nfor your specific deployment.\n\nThe `close_old_connections` decorator should be applied to APScheduler jobs that require database access. Doing so\nensures that Django's [CONN_MAX_AGE](https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-CONN_MAX_AGE)\nconfiguration setting is enforced before and after your job is run. This mirrors the standard Django functionality of\ndoing the same before and after handling each HTTP request.\n\nIf you still encounter any kind of 'lost database connection' errors then it probably means that:\n\n- Your database connections timed out in the middle of executing a job. You should probably consider incorporating a\n  connection pooler as part of your deployment for more robust database connection management\n  (e.g. [pgbouncer](https://www.pgbouncer.org) for PostgreSQL, or the equivalent for other DB platforms).\n- Your database server has crashed / been restarted.\n  Django [will not reconnect automatically](https://code.djangoproject.com/ticket/24810)\n  and you need to re-start django-apscheduler as well.\n\nCommon footguns\n---------------\n\nUnless you have a very specific set of requirements, and have intimate knowledge of the inner workings of APScheduler,\nyou really shouldn't be using `BackgroundScheduler`. Doing so can lead to all sorts of temptations like:\n\n* **Firing up a scheduler inside of a Django view:** this will most likely cause more than one scheduler to run\n  concurrently and lead to jobs running multiple times (see the above introduction to this README for a more thorough\n  treatment of the subject).\n* **Bootstrapping a scheduler somewhere else inside your Django application**: it feels like this should solve the\n  problem mentioned above and guarantee that only one scheduler is running. The downside is that you have just delegated\n  the management of all of your background task processing threads to whatever webserver you are using (Gunicorn, uWSGI,\n  etc.). The webserver will probably kill any long-running threads (your jobs) with extreme prejudice (thinking that\n  they are caused by misbehaving HTTP requests).\n\nRelying on `BlockingScheduler` forces you to run APScheduler in its own dedicated process that is not handled or\nmonitored by the webserver. The example code provided in `runapscheduler.py` above is a good starting point.\n\n\nProject resources\n-----------------\n\n- [Changelog](docs/changelog.md)\n- [Release procedures](docs/releasing.md)\n\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/42/c9/8638db32514dbb9157b3d82680c6faea89283523edf9ed2415ea3884f2ae/apscheduler-3.11.3-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=bbeb2ec02d23d3c06a6c07ed7f0f3939ada6680eb121fae809a69bb42c537a30",
+          "hashes": {
+            "sha256": "bbeb2ec02d23d3c06a6c07ed7f0f3939ada6680eb121fae809a69bb42c537a30"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "APScheduler",
+        "version": "3.11.3",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "In-process task scheduler with Cron-like capabilities",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "scheduling",
+          "cron"
+        ],
+        "author_email": "Alex Grönholm <alex.gronholm@nextday.fi>",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_dist": [
+          "tzlocal>=3.0",
+          "backports.zoneinfo; python_version < \"3.9\"",
+          "etcd3; extra == \"etcd\"",
+          "protobuf<=3.21.0; extra == \"etcd\"",
+          "gevent; extra == \"gevent\"",
+          "pymongo>=3.0; extra == \"mongodb\"",
+          "redis>=3.0; extra == \"redis\"",
+          "rethinkdb>=2.4.0; extra == \"rethinkdb\"",
+          "sqlalchemy>=1.4; extra == \"sqlalchemy\"",
+          "tornado>=4.3; extra == \"tornado\"",
+          "twisted; extra == \"twisted\"",
+          "kazoo; extra == \"zookeeper\"",
+          "APScheduler[etcd,mongodb,redis,rethinkdb,sqlalchemy,tornado,zookeeper]; extra == \"test\"",
+          "pytest; extra == \"test\"",
+          "pytest-timeout; extra == \"test\"",
+          "anyio>=4.5.2; extra == \"test\"",
+          "PySide6; platform_python_implementation == \"CPython\" and extra == \"test\"",
+          "gevent; python_version < \"3.14\" and extra == \"test\"",
+          "pytz; extra == \"test\"",
+          "twisted; python_version < \"3.14\" and extra == \"test\"",
+          "packaging; extra == \"doc\"",
+          "sphinx; extra == \"doc\"",
+          "sphinx-rtd-theme>=1.3.0; extra == \"doc\""
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Documentation, https://apscheduler.readthedocs.io/en/3.x/",
+          "Changelog, https://apscheduler.readthedocs.io/en/3.x/versionhistory.html",
+          "Source code, https://github.com/agronholm/apscheduler",
+          "Issue tracker, https://github.com/agronholm/apscheduler/issues"
+        ],
+        "provides_extra": [
+          "etcd",
+          "gevent",
+          "mongodb",
+          "redis",
+          "rethinkdb",
+          "sqlalchemy",
+          "tornado",
+          "twisted",
+          "zookeeper",
+          "test",
+          "doc"
+        ],
+        "description": ".. image:: https://github.com/agronholm/apscheduler/workflows/Python%20codeqa/test/badge.svg?branch=3.x\n  :target: https://github.com/agronholm/apscheduler/actions?query=workflow%3A%22Python+codeqa%2Ftest%22+branch%3A3.x\n  :alt: Build Status\n.. image:: https://coveralls.io/repos/github/agronholm/apscheduler/badge.svg?branch=3.x\n  :target: https://coveralls.io/github/agronholm/apscheduler?branch=3.x\n  :alt: Code Coverage\n.. image:: https://readthedocs.org/projects/apscheduler/badge/?version=3.x\n  :target: https://apscheduler.readthedocs.io/en/master/?badge=3.x\n  :alt: Documentation\n\nAdvanced Python Scheduler (APScheduler) is a Python library that lets you schedule your Python code\nto be executed later, either just once or periodically. You can add new jobs or remove old ones on\nthe fly as you please. If you store your jobs in a database, they will also survive scheduler\nrestarts and maintain their state. When the scheduler is restarted, it will then run all the jobs\nit should have run while it was offline [#f1]_.\n\nAmong other things, APScheduler can be used as a cross-platform, application specific replacement\nto platform specific schedulers, such as the cron daemon or the Windows task scheduler. Please\nnote, however, that APScheduler is **not** a daemon or service itself, nor does it come with any\ncommand line tools. It is primarily meant to be run inside existing applications. That said,\nAPScheduler does provide some building blocks for you to build a scheduler service or to run a\ndedicated scheduler process.\n\nAPScheduler has three built-in scheduling systems you can use:\n\n* Cron-style scheduling (with optional start/end times)\n* Interval-based execution (runs jobs on even intervals, with optional start/end times)\n* One-off delayed execution (runs jobs once, on a set date/time)\n\nYou can mix and match scheduling systems and the backends where the jobs are stored any way you\nlike. Supported backends for storing jobs include:\n\n* Memory\n* `SQLAlchemy <http://www.sqlalchemy.org/>`_ (any RDBMS supported by SQLAlchemy works)\n* `MongoDB <http://www.mongodb.org/>`_\n* `Redis <http://redis.io/>`_\n* `RethinkDB <https://www.rethinkdb.com/>`_\n* `ZooKeeper <https://zookeeper.apache.org/>`_\n* `Etcd <https://etcd.io/>`_\n\nAPScheduler also integrates with several common Python frameworks, like:\n\n* `asyncio <http://docs.python.org/3.4/library/asyncio.html>`_ (:pep:`3156`)\n* `gevent <http://www.gevent.org/>`_\n* `Tornado <http://www.tornadoweb.org/>`_\n* `Twisted <http://twistedmatrix.com/>`_\n* `Qt <http://qt-project.org/>`_ (using either\n  `PyQt <http://www.riverbankcomputing.com/software/pyqt/intro>`_ ,\n  `PySide6 <https://wiki.qt.io/Qt_for_Python>`_ ,\n  `PySide2 <https://wiki.qt.io/Qt_for_Python>`_ or\n  `PySide <http://qt-project.org/wiki/PySide>`_)\n\nThere are third party solutions for integrating APScheduler with other frameworks:\n\n* `Django <https://github.com/jarekwg/django-apscheduler>`_\n* `Flask <https://github.com/viniciuschiele/flask-apscheduler>`_\n\n\n.. [#f1] The cutoff period for this is also configurable.\n\n\nDocumentation\n-------------\n\nDocumentation can be found `here <https://apscheduler.readthedocs.io/>`_.\n\n\nSource\n------\n\nThe source can be browsed at `Github <https://github.com/agronholm/apscheduler/tree/3.x>`_.\n\n\nReporting bugs\n--------------\n\nA `bug tracker <https://github.com/agronholm/apscheduler/issues>`_ is provided by Github.\n\n\nGetting help\n------------\n\nIf you have problems or other questions, you can either:\n\n* Ask in the `apscheduler <https://gitter.im/apscheduler/Lobby>`_ room on Gitter\n* Ask on the `APScheduler GitHub discussion forum <https://github.com/agronholm/apscheduler/discussions>`_, or\n* Ask on `StackOverflow <http://stackoverflow.com/questions/tagged/apscheduler>`_ and tag your\n  question with the ``apscheduler`` tag\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/4e/13/1e5e3e4c15dcecb04281b3cb2a46a4670e1cef131068e202f6040df19224/django-5.2.16-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=04f354bf9d807a86ad1a8392fe3808d362358a8eafc322848e0e43e59b24371d",
+          "hashes": {
+            "sha256": "04f354bf9d807a86ad1a8392fe3808d362358a8eafc322848e0e43e59b24371d"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "Django",
+        "version": "5.2.16",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "A high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+        "description_content_type": "text/x-rst",
+        "author_email": "Django Software Foundation <foundation@djangoproject.com>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE",
+          "LICENSE.python",
+          "AUTHORS"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Web Environment",
+          "Framework :: Django",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Topic :: Internet :: WWW/HTTP",
+          "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+          "Topic :: Internet :: WWW/HTTP :: WSGI",
+          "Topic :: Software Development :: Libraries :: Application Frameworks",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "asgiref>=3.8.1",
+          "sqlparse>=0.3.1",
+          "tzdata; sys_platform == \"win32\"",
+          "argon2-cffi>=19.1.0; extra == \"argon2\"",
+          "bcrypt; extra == \"bcrypt\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://www.djangoproject.com/",
+          "Documentation, https://docs.djangoproject.com/",
+          "Release notes, https://docs.djangoproject.com/en/stable/releases/",
+          "Funding, https://www.djangoproject.com/fundraising/",
+          "Source, https://github.com/django/django",
+          "Tracker, https://code.djangoproject.com/"
+        ],
+        "provides_extra": [
+          "argon2",
+          "bcrypt"
+        ],
+        "description": "======\nDjango\n======\n\nDjango is a high-level Python web framework that encourages rapid development\nand clean, pragmatic design. Thanks for checking it out.\n\nAll documentation is in the \"``docs``\" directory and online at\nhttps://docs.djangoproject.com/en/stable/. If you're just getting started,\nhere's how we recommend you read the docs:\n\n* First, read ``docs/intro/install.txt`` for instructions on installing Django.\n\n* Next, work through the tutorials in order (``docs/intro/tutorial01.txt``,\n  ``docs/intro/tutorial02.txt``, etc.).\n\n* If you want to set up an actual deployment server, read\n  ``docs/howto/deployment/index.txt`` for instructions.\n\n* You'll probably want to read through the topical guides (in ``docs/topics``)\n  next; from there you can jump to the HOWTOs (in ``docs/howto``) for specific\n  problems, and check out the reference (``docs/ref``) for gory details.\n\n* See ``docs/README`` for instructions on building an HTML version of the docs.\n\nDocs are updated rigorously. If you find any problems in the docs, or think\nthey should be clarified in any way, please take 30 seconds to fill out a\nticket here: https://code.djangoproject.com/newticket\n\nTo get more help:\n\n* Join the ``#django`` channel on ``irc.libera.chat``. Lots of helpful people\n  hang out there. `Webchat is available <https://web.libera.chat/#django>`_.\n\n* Join the `Django Discord community <https://chat.djangoproject.com>`_.\n\n* Join the community on the `Django Forum <https://forum.djangoproject.com/>`_.\n\nTo contribute to Django:\n\n* Check out https://docs.djangoproject.com/en/dev/internals/contributing/ for\n  information about getting involved.\n\nTo run Django's test suite:\n\n* Follow the instructions in the \"Unit tests\" section of\n  ``docs/internals/contributing/writing-code/unit-tests.txt``, published online at\n  https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/#running-the-unit-tests\n\nSupporting the Development of Django\n====================================\n\nDjango's development depends on your contributions.\n\nIf you depend on Django, remember to support the Django Software Foundation: https://www.djangoproject.com/fundraising/\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/5c/0a/a72d10ed65068e115044937873362e6e32fab1b7dce0046aeb224682c989/asgiref-3.11.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=e8667a091e69529631969fd45dc268fa79b99c92c5fcdda727757e52146ec133",
+          "hashes": {
+            "sha256": "e8667a091e69529631969fd45dc268fa79b99c92c5fcdda727757e52146ec133"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "asgiref",
+        "version": "3.11.1",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "ASGI specs, helper code, and adapters",
+        "home_page": "https://github.com/django/asgiref/",
+        "author": "Django Software Foundation",
+        "author_email": "foundation@djangoproject.com",
+        "license": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Web Environment",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Topic :: Internet :: WWW/HTTP"
+        ],
+        "requires_dist": [
+          "typing_extensions>=4; python_version < \"3.11\"",
+          "pytest; extra == \"tests\"",
+          "pytest-asyncio; extra == \"tests\"",
+          "mypy>=1.14.0; extra == \"tests\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Documentation, https://asgi.readthedocs.io/",
+          "Further Documentation, https://docs.djangoproject.com/en/stable/topics/async/#async-adapter-functions",
+          "Changelog, https://github.com/django/asgiref/blob/master/CHANGELOG.txt"
+        ],
+        "provides_extra": [
+          "tests"
+        ],
+        "description": "asgiref\n=======\n\n.. image:: https://github.com/django/asgiref/actions/workflows/tests.yml/badge.svg\n    :target: https://github.com/django/asgiref/actions/workflows/tests.yml\n\n.. image:: https://img.shields.io/pypi/v/asgiref.svg\n    :target: https://pypi.python.org/pypi/asgiref\n\nASGI is a standard for Python asynchronous web apps and servers to communicate\nwith each other, and positioned as an asynchronous successor to WSGI. You can\nread more at https://asgi.readthedocs.io/en/latest/\n\nThis package includes ASGI base libraries, such as:\n\n* Sync-to-async and async-to-sync function wrappers, ``asgiref.sync``\n* Server base classes, ``asgiref.server``\n* A WSGI-to-ASGI adapter, in ``asgiref.wsgi``\n\n\nFunction wrappers\n-----------------\n\nThese allow you to wrap or decorate async or sync functions to call them from\nthe other style (so you can call async functions from a synchronous thread,\nor vice-versa).\n\nIn particular:\n\n* AsyncToSync lets a synchronous subthread stop and wait while the async\n  function is called on the main thread's event loop, and then control is\n  returned to the thread when the async function is finished.\n\n* SyncToAsync lets async code call a synchronous function, which is run in\n  a threadpool and control returned to the async coroutine when the synchronous\n  function completes.\n\nThe idea is to make it easier to call synchronous APIs from async code and\nasynchronous APIs from synchronous code so it's easier to transition code from\none style to the other. In the case of Channels, we wrap the (synchronous)\nDjango view system with SyncToAsync to allow it to run inside the (asynchronous)\nASGI server.\n\nNote that exactly what threads things run in is very specific, and aimed to\nkeep maximum compatibility with old synchronous code. See\n\"Synchronous code & Threads\" below for a full explanation. By default,\n``sync_to_async`` will run all synchronous code in the program in the same\nthread for safety reasons; you can disable this for more performance with\n``@sync_to_async(thread_sensitive=False)``, but make sure that your code does\nnot rely on anything bound to threads (like database connections) when you do.\n\n\nThreadlocal replacement\n-----------------------\n\nThis is a drop-in replacement for ``threading.local`` that works with both\nthreads and asyncio Tasks. Even better, it will proxy values through from a\ntask-local context to a thread-local context when you use ``sync_to_async``\nto run things in a threadpool, and vice-versa for ``async_to_sync``.\n\nIf you instead want true thread- and task-safety, you can set\n``thread_critical`` on the Local object to ensure this instead.\n\n\nServer base classes\n-------------------\n\nIncludes a ``StatelessServer`` class which provides all the hard work of\nwriting a stateless server (as in, does not handle direct incoming sockets\nbut instead consumes external streams or sockets to work out what is happening).\n\nAn example of such a server would be a chatbot server that connects out to\na central chat server and provides a \"connection scope\" per user chatting to\nit. There's only one actual connection, but the server has to separate things\ninto several scopes for easier writing of the code.\n\nYou can see an example of this being used in `frequensgi <https://github.com/andrewgodwin/frequensgi>`_.\n\n\nWSGI-to-ASGI adapter\n--------------------\n\nAllows you to wrap a WSGI application so it appears as a valid ASGI application.\n\nSimply wrap it around your WSGI application like so::\n\n    asgi_application = WsgiToAsgi(wsgi_application)\n\nThe WSGI application will be run in a synchronous threadpool, and the wrapped\nASGI application will be one that accepts ``http`` class messages.\n\nPlease note that not all extended features of WSGI may be supported (such as\nfile handles for incoming POST bodies).\n\n\nDependencies\n------------\n\n``asgiref`` requires Python 3.9 or higher.\n\n\nContributing\n------------\n\nPlease refer to the\n`main Channels contributing docs <https://github.com/django/channels/blob/master/CONTRIBUTING.rst>`_.\n\n\nTesting\n'''''''\n\nTo run tests, make sure you have installed the ``tests`` extra with the package::\n\n    cd asgiref/\n    pip install -e .[tests]\n    pytest\n\n\nBuilding the documentation\n''''''''''''''''''''''''''\n\nThe documentation uses `Sphinx <http://www.sphinx-doc.org>`_::\n\n    cd asgiref/docs/\n    pip install sphinx\n\nTo build the docs, you can use the default tools::\n\n    sphinx-build -b html . _build/html  # or `make html`, if you've got make set up\n    cd _build/html\n    python -m http.server\n\n...or you can use ``sphinx-autobuild`` to run a server and rebuild/reload\nyour documentation changes automatically::\n\n    pip install sphinx-autobuild\n    sphinx-autobuild . _build/html\n\n\nReleasing\n'''''''''\n\nTo release, first add details to CHANGELOG.txt and update the version number in ``asgiref/__init__.py``.\n\nThen, build and push the packages::\n\n    python -m build\n    twine upload dist/*\n    rm -r asgiref.egg-info dist\n\n\nImplementation Details\n----------------------\n\nSynchronous code & threads\n''''''''''''''''''''''''''\n\nThe ``asgiref.sync`` module provides two wrappers that let you go between\nasynchronous and synchronous code at will, while taking care of the rough edges\nfor you.\n\nUnfortunately, the rough edges are numerous, and the code has to work especially\nhard to keep things in the same thread as much as possible. Notably, the\nrestrictions we are working with are:\n\n* All synchronous code called through ``SyncToAsync`` and marked with\n  ``thread_sensitive`` should run in the same thread as each other (and if the\n  outer layer of the program is synchronous, the main thread)\n\n* If a thread already has a running async loop, ``AsyncToSync`` can't run things\n  on that loop if it's blocked on synchronous code that is above you in the\n  call stack.\n\nThe first compromise you get to might be that ``thread_sensitive`` code should\njust run in the same thread and not spawn in a sub-thread, fulfilling the first\nrestriction, but that immediately runs you into the second restriction.\n\nThe only real solution is to essentially have a variant of ThreadPoolExecutor\nthat executes any ``thread_sensitive`` code on the outermost synchronous\nthread - either the main thread, or a single spawned subthread.\n\nThis means you now have two basic states:\n\n* If the outermost layer of your program is synchronous, then all async code\n  run through ``AsyncToSync`` will run in a per-call event loop in arbitrary\n  sub-threads, while all ``thread_sensitive`` code will run in the main thread.\n\n* If the outermost layer of your program is asynchronous, then all async code\n  runs on the main thread's event loop, and all ``thread_sensitive`` synchronous\n  code will run in a single shared sub-thread.\n\nCrucially, this means that in both cases there is a thread which is a shared\nresource that all ``thread_sensitive`` code must run on, and there is a chance\nthat this thread is currently blocked on its own ``AsyncToSync`` call. Thus,\n``AsyncToSync`` needs to act as an executor for thread code while it's blocking.\n\nThe ``CurrentThreadExecutor`` class provides this functionality; rather than\nsimply waiting on a Future, you can call its ``run_until_future`` method and\nit will run submitted code until that Future is done. This means that code\ninside the call can then run code on your thread.\n\n\nMaintenance and Security\n------------------------\n\nTo report security issues, please contact security@djangoproject.com. For GPG\nsignatures and more security process information, see\nhttps://docs.djangoproject.com/en/dev/internals/security/.\n\nTo report bugs or request new features, please open a new GitHub issue.\n\nThis repository is part of the Channels project. For the shepherd and maintenance team, please see the\n`main Channels readme <https://github.com/django/channels/blob/master/README.rst>`_.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/49/4b/359f28a903c13438ef59ebeee215fb25da53066db67b305c125f1c6d2a25/sqlparse-0.5.5-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=12a08b3bf3eec877c519589833aed092e2444e68240a3577e8e26148acc7b1ba",
+          "hashes": {
+            "sha256": "12a08b3bf3eec877c519589833aed092e2444e68240a3577e8e26148acc7b1ba"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "sqlparse",
+        "version": "0.5.5",
+        "summary": "A non-validating SQL parser.",
+        "description_content_type": "text/x-rst",
+        "author_email": "Andi Albrecht <albrecht.andi@gmail.com>",
+        "license_file": [
+          "AUTHORS",
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Database",
+          "Topic :: Software Development"
+        ],
+        "requires_dist": [
+          "build; extra == 'dev'",
+          "sphinx; extra == 'doc'"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Home, https://github.com/andialbrecht/sqlparse",
+          "Documentation, https://sqlparse.readthedocs.io/",
+          "Release Notes, https://sqlparse.readthedocs.io/en/latest/changes.html",
+          "Source, https://github.com/andialbrecht/sqlparse",
+          "Tracker, https://github.com/andialbrecht/sqlparse/issues"
+        ],
+        "provides_extra": [
+          "dev",
+          "doc"
+        ],
+        "description": "python-sqlparse - Parse SQL statements\n======================================\n\n|buildstatus|_\n|coverage|_\n|docs|_\n|packageversion|_\n\n.. docincludebegin\n\nsqlparse is a non-validating SQL parser for Python.\nIt provides support for parsing, splitting and formatting SQL statements.\n\nThe module is compatible with Python 3.8+ and released under the terms of the\n`New BSD license <https://opensource.org/licenses/BSD-3-Clause>`_.\n\nVisit the project page at https://github.com/andialbrecht/sqlparse for\nfurther information about this project.\n\n\nQuick Start\n-----------\n\n.. code-block:: sh\n\n   $ pip install sqlparse\n\n.. code-block:: python\n\n   >>> import sqlparse\n\n   >>> # Split a string containing two SQL statements:\n   >>> raw = 'select * from foo; select * from bar;'\n   >>> statements = sqlparse.split(raw)\n   >>> statements\n   ['select * from foo;', 'select * from bar;']\n\n   >>> # Format the first statement and print it out:\n   >>> first = statements[0]\n   >>> print(sqlparse.format(first, reindent=True, keyword_case='upper'))\n   SELECT *\n   FROM foo;\n\n   >>> # Parsing a SQL statement:\n   >>> parsed = sqlparse.parse('select * from foo')[0]\n   >>> parsed.tokens\n   [<DML 'select' at 0x7f22c5e15368>, <Whitespace ' ' at 0x7f22c5e153b0>, <Wildcard '*' … ]\n   >>>\n\nPre-commit Hook\n---------------\n\nsqlparse can be used as a `pre-commit <https://pre-commit.com/>`_ hook\nto automatically format SQL files before committing:\n\n.. code-block:: yaml\n\n   repos:\n     - repo: https://github.com/andialbrecht/sqlparse\n       rev: 0.5.4  # Use the latest version\n       hooks:\n         - id: sqlformat\n           # Optional: Add more formatting options\n           # IMPORTANT: --in-place is required, already included by default\n           args: [--in-place, --reindent, --keywords, upper]\n\nThen install the hook:\n\n.. code-block:: sh\n\n   $ pre-commit install\n\nYour SQL files will now be automatically formatted on each commit.\n\n**Note**: The hook uses ``--in-place --reindent`` by default. If you override\nthe ``args``, you **must** include ``--in-place`` for the hook to work.\n\nLinks\n-----\n\nProject page\n   https://github.com/andialbrecht/sqlparse\n\nBug tracker\n   https://github.com/andialbrecht/sqlparse/issues\n\nDocumentation\n   https://sqlparse.readthedocs.io/\n\nOnline Demo\n   https://sqlformat.org/\n\n\nsqlparse is licensed under the BSD license.\n\nParts of the code are based on pygments written by Georg Brandl and others.\npygments-Homepage: http://pygments.org/\n\n.. |buildstatus| image:: https://github.com/andialbrecht/sqlparse/actions/workflows/python-app.yml/badge.svg\n.. _buildstatus: https://github.com/andialbrecht/sqlparse/actions/workflows/python-app.yml\n.. |coverage| image:: https://codecov.io/gh/andialbrecht/sqlparse/branch/master/graph/badge.svg\n.. _coverage: https://codecov.io/gh/andialbrecht/sqlparse\n.. |docs| image:: https://readthedocs.org/projects/sqlparse/badge/?version=latest\n.. _docs: https://sqlparse.readthedocs.io/en/latest/?badge=latest\n.. |packageversion| image:: https://img.shields.io/pypi/v/sqlparse?color=%2334D058&label=pypi%20package\n.. _packageversion: https://pypi.org/project/sqlparse\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+          "hashes": {
+            "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "typing_extensions",
+        "version": "4.16.0",
+        "summary": "Backported and Experimental Type Hints for Python 3.9+",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "annotations",
+          "backport",
+          "checker",
+          "checking",
+          "function",
+          "hinting",
+          "hints",
+          "type",
+          "typechecking",
+          "typehinting",
+          "typehints",
+          "typing"
+        ],
+        "author_email": "\"Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee\" <levkivskyi@gmail.com>",
+        "license_expression": "PSF-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Topic :: Software Development"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Bug Tracker, https://github.com/python/typing_extensions/issues",
+          "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+          "Documentation, https://typing-extensions.readthedocs.io/",
+          "Home, https://github.com/python/typing_extensions",
+          "Q & A, https://github.com/python/typing/discussions",
+          "Repository, https://github.com/python/typing_extensions"
+        ],
+        "description": "# Typing Extensions\n\n[![Chat at https://gitter.im/python/typing](https://badges.gitter.im/python/typing.svg)](https://gitter.im/python/typing)\n\n[Documentation](https://typing-extensions.readthedocs.io/en/latest/#) –\n[PyPI](https://pypi.org/project/typing-extensions/)\n\n## Overview\n\nThe `typing_extensions` module serves two related purposes:\n\n- Enable use of new type system features on older Python versions. For example,\n  `typing.TypeGuard` is new in Python 3.10, but `typing_extensions` allows\n  users on previous Python versions to use it too.\n- Enable experimentation with new type system PEPs before they are accepted and\n  added to the `typing` module.\n\n`typing_extensions` is treated specially by static type checkers such as\nmypy and pyright. Objects defined in `typing_extensions` are treated the same\nway as equivalent forms in `typing`.\n\n`typing_extensions` uses\n[Semantic Versioning](https://semver.org/). The\nmajor version will be incremented only for backwards-incompatible changes.\nTherefore, it's safe to depend\non `typing_extensions` like this: `typing_extensions ~=x.y`,\nwhere `x.y` is the first version that includes all features you need.\n[This](https://packaging.python.org/en/latest/specifications/version-specifiers/#compatible-release)\nis equivalent to `typing_extensions >=x.y, <(x+1)`. Do not depend on `~= x.y.z`\nunless you really know what you're doing; that defeats the purpose of\nsemantic versioning.\n\n## Included items\n\nSee [the documentation](https://typing-extensions.readthedocs.io/en/latest/#) for a\ncomplete listing of module contents.\n\n## Contributing\n\nSee [CONTRIBUTING.md](https://github.com/python/typing_extensions/blob/main/CONTRIBUTING.md)\nfor how to contribute to `typing_extensions`.\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/9e/a4/017a7a6cbe387d961a688ec31364ae60a5c4e22c96ae9921b79a947c855d/tzlocal-5.4.4-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=aae09f0126a8a86fa736be266eb4a471380d26a0de3bc14844e7821fee3e2a15",
+          "hashes": {
+            "sha256": "aae09f0126a8a86fa736be266eb4a471380d26a0de3bc14844e7821fee3e2a15"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "tzlocal",
+        "version": "5.4.4",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "tzinfo object for the local timezone",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "timezone"
+        ],
+        "author_email": "Lennart Regebro <regebro@gmail.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 6 - Mature",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: Unix",
+          "Operating System :: MacOS :: MacOS X",
+          "Typing :: Typed",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_dist": [
+          "tzdata; platform_system == \"Windows\"",
+          "pytest>=4.3; extra == \"testing\"",
+          "pytest-mock>=3.3; extra == \"testing\"",
+          "pytest-cov; extra == \"testing\"",
+          "check_manifest; extra == \"testing\"",
+          "pyroma; extra == \"testing\"",
+          "ruff; extra == \"testing\"",
+          "zest.releaser; extra == \"devenv\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Source code, https://github.com/regebro/tzlocal",
+          "Changelog, https://github.com/regebro/tzlocal/blob/master/CHANGES.txt",
+          "Issue tracker, https://github.com/regebro/tzlocal/issues"
+        ],
+        "provides_extra": [
+          "testing",
+          "devenv"
+        ],
+        "description": "tzlocal\n=======\n\nAPI CHANGE!\n-----------\n\nWith version 3.0 of tzlocal, tzlocal no longer returned `pytz` objects, but\n`zoneinfo` objects, which has a different API. Since 4.0, it now restored\npartial compatibility for `pytz` users through Paul Ganssle's\n`pytz_deprecation_shim`.\n\ntzlocal 4.0 also adds an official function `get_localzone_name()` to get only\nthe timezone name, instead of a timezone object. On unix, it can raise an\nerror if you don't have a timezone name configured, where `get_localzone()`\nwill succeed, so only use that if you need the timezone name.\n\n4.0 also adds way more information on what is going wrong in your\nconfiguration when the configuration files are unclear or contradictory.\n\nVersion 5.0 removes the `pytz_deprecation_shim`, and now only returns\n`zoneinfo` objects, like verion 3.0 did. If you need `pytz` objects, you have\nto stay on version 4.0. If there are bugs in version 4.0, I will release\nupdates, but there will be no further functional changes on the 4.x branch.\n\n\nInfo\n----\n\nThis Python module returns the `IANA time zone name\n<https://www.iana.org/time-zones>`_ for your local time zone or a ``tzinfo``\nobject with the local timezone information, under Unix and Windows.\n\nThis module attempts to fix a glaring hole in the ``pytz`` and ``zoneinfo``\nmodules, that there is no way to get the local timezone information, unless\nyou know the zoneinfo name, and under several Linux distros that's hard or\nimpossible to figure out.\n\nWith ``tzlocal`` you only need to call ``get_localzone()`` and you will get a\n``tzinfo`` object with the local time zone info. On some Unices you will\nstill not get to know what the timezone name is, but you don't need that when\nyou have the tzinfo file. However, if the timezone name is readily available\nit will be used.\n\nWhat it's not for\n-----------------\n\nIt's not for converting the current time between UTC and your local time. There are\nother, simpler ways of doing this. This is if you need to know things like the name\nof the time zone, or if you need to be able to convert between your time zone and\nanother time zone for times that are in the future or in the past.\n\nFor current time conversions to and from UTC, look in the Python ``time`` module.\n\n\nSupported systems\n-----------------\n\nThese are the systems that are in theory supported:\n\n * Windows 2000 and later\n\n * Any unix-like system with a ``/etc/localtime`` or ``/usr/local/etc/localtime``\n\nIf you have one of the above systems and it does not work, it's a bug.\nPlease report it.\n\nPlease note that if you are getting a time zone called ``local``, this is not\na bug, it's actually the main feature of ``tzlocal``, that even if your\nsystem does NOT have a configuration file with the zoneinfo name of your time\nzone, it will still work.\n\nYou can also use ``tzlocal`` to get the name of your local timezone, but only\nif your system is configured to make that possible. ``tzlocal`` looks for the\ntimezone name in ``/etc/timezone``, ``/var/db/zoneinfo``,\n``/etc/sysconfig/clock`` and ``/etc/conf.d/clock``. If your\n``/etc/localtime`` is a symlink it can also extract the name from that\nsymlink.\n\nIf you need the name of your local time zone, then please make sure your\nsystem is properly configured to allow that.\n\nIf your unix system doesn't have a timezone configured, tzlocal will default\nto UTC.\n\nNotes on Docker\n---------------\n\nIt turns out that Docker images frequently have broken timezone setups.\nThis usually results in a warning that the configuration is wrong, or that\nthe timezone offset doesn't match the found timezone.\n\nThe easiest way to fix that is to set a TZ variable in your docker setup\nto whatever timezone you want, which is usually the timezone your host\ncomputer has.\n\nUsage\n-----\n\nLoad the local timezone:\n\n    >>> from tzlocal import get_localzone\n    >>> tz = get_localzone()\n    >>> tz\n    zoneinfo.ZoneInfo(key='Europe/Warsaw')\n\nCreate a local datetime:\n\n    >>> from datetime import datetime\n    >>> dt = datetime(2015, 4, 10, 7, 22, tzinfo=tz)\n    >>> dt\n    datetime.datetime(2015, 4, 10, 7, 22, tzinfo=zoneinfo.ZoneInfo(key='Europe/Warsaw'))\n\nLookup another timezone with ``zoneinfo``:\n\n    >>> from zoneinfo import ZoneInfo\n    >>> eastern = ZoneInfo('US/Eastern')\n\nConvert the datetime:\n\n    >>> dt.astimezone(eastern)\n    datetime.datetime(2015, 4, 10, 1, 22, tzinfo=zoneinfo.ZoneInfo(key='US/Eastern'))\n\nIf you just want the name of the local timezone, use `get_localzone_name()`:\n\n    >>> from tzlocal import get_localzone_name\n    >>> get_localzone_name()\n    \"Europe/Warsaw\"\n\nPlease note that under Unix, `get_localzone_name()` may fail if there is no zone\nconfigured, where `get_localzone()` would generally succeed.\n\nTroubleshooting\n---------------\n\nIf you don't get the result you expect, try running it with debugging turned on.\nStart a python interpreter that has tzlocal installed, and run the following code::\n\n    import logging\n    logging.basicConfig(level=\"DEBUG\")\n    import tzlocal\n    tzlocal.get_localzone()\n\nThe output should look something like this, and this will tell you what\nconfigurations were found::\n\n    DEBUG:root:/etc/timezone found, contents:\n     Europe/Warsaw\n\n    DEBUG:root:/etc/localtime found\n    DEBUG:root:2 found:\n     {'/etc/timezone': 'Europe/Warsaw', '/etc/localtime is a symlink to': 'Europe/Warsaw'}\n    zoneinfo.ZoneInfo(key='Europe/Warsaw')\n\n\nDevelopment\n-----------\n\nFor ease of development, there is a Makefile that will help you with basic tasks,\nlike creating a development environment with all the necessary tools (although\nyou need a supported Python version installed first)::\n\n    $ make devenv\n\nTo run tests::\n\n    $ make test\n\nCheck the syntax::\n\n    $ make check\n\n\nMaintainer\n----------\n\n* Lennart Regebro, regebro@gmail.com\n\nContributors\n------------\n\n* Marc Van Olmen\n* Benjamen Meyer\n* Manuel Ebert\n* Xiaokun Zhu\n* Cameris\n* Edward Betts\n* McK KIM\n* Cris Ewing\n* Ayala Shachar\n* Lev Maximov\n* Jakub Wilk\n* John Quarles\n* Preston Landers\n* Victor Torres\n* Jean Jordaan\n* Zackary Welch\n* Mickaël Schoentgen\n* Gabriel Corona\n* Alex Grönholm\n* Julin S\n* Miroslav Šedivý\n* revansSZ\n* Sam Treweek\n* Peter Di Pasquale\n* Rongrong\n\n(Sorry if I forgot someone)\n\nLicense\n-------\n\n* MIT https://opensource.org/licenses/MIT\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

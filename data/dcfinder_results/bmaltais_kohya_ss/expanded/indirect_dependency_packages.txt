@@ -1,0 +1,470 @@
+absl-py >=0.4,>=1.0.0
+  # from parent package: tensorboard (public)
+  # from parent package: tensorflow (public)
+  # from parent package: keras (public)
+aiohappyeyeballs >=2.5.0
+  # from parent package: aiohttp (private)
+aiohttp !=4.0.0a0,!=4.0.0a1
+  # from parent package: fsspec (private)
+aiosignal >=1.4.0
+  # from parent package: aiohttp (private)
+annotated-types >=0.6.0
+  # from parent package: pydantic (private)
+antlr4-python3-runtime ==4.9.*
+  # from parent package: omegaconf (private)
+anyio <5.0,>=3.0
+  # from parent package: gradio (public)
+  # from parent package: httpx (private)
+asttokens >=2.1.0
+  # from parent package: stack-data (public)
+astunparse >=1.6.0
+  # from parent package: tensorflow (public)
+async-timeout <6.0,>=4.0
+  # from parent package: aiohttp (private)
+attrs >=22.2.0,>=17.3.0
+  # from parent package: jsonschema (private)
+  # from parent package: referencing (private)
+  # from parent package: aiohttp (private)
+beautifulsoup4 >=4.10.0
+  # from parent package: library (public)
+brotli >=1.1.0
+  # from parent package: gradio (public)
+  # from parent package: yt-dlp (public)
+certifi >=2017.4.17
+  # from parent package: requests (private)
+  # from parent package: httpx (private)
+  # from parent package: sentry-sdk (private)
+  # from parent package: yt-dlp (public)
+  # from parent package: httpcore (private)
+charset-normalizer <3,>=2
+  # from parent package: library (public)
+  # from parent package: requests (private)
+click !=8.0.0,>=7.1,>=8.0.0,>=7.0,>=8.3.1
+  # from parent package: wandb (public)
+  # from parent package: typer (private)
+  # from parent package: uvicorn (private)
+  # from parent package: sqlite-utils (public)
+  # from parent package: click-default-group (public)
+click-default-group >=1.2.3
+  # from parent package: sqlite-utils (public)
+coloredlogs
+  # from parent package: onnxruntime-gpu (public)
+decorator >=5.1.0
+  # from parent package: ipython (public)
+defusedxml ==0.7.1
+  # from parent package: praw (public)
+docker-pycreds >=0.4.0
+  # from parent package: wandb (public)
+entrypoints
+  # from parent package: altair (public)
+exceptiongroup >=1.0.2
+  # from parent package: anyio (private)
+executing >=1.2.0
+  # from parent package: stack-data (public)
+fastapi <1.0,>=0.115.2
+  # from parent package: gradio (public)
+ffmpeg-python
+  # from parent package: library (public)
+filelock >=3.0.8
+  # from parent package: diffusers (public)
+  # from parent package: torch (private)
+  # from parent package: tldextract (public)
+flatbuffers >=25.9.23
+  # from parent package: onnxruntime-gpu (public)
+  # from parent package: tensorflow (public)
+frozenlist >=1.1.1,>=1.1.0
+  # from parent package: aiohttp (private)
+  # from parent package: aiosignal (private)
+fsspec >2021.06.0
+  # from parent package: pytorch-lightning (public)
+  # from parent package: torch (private)
+  # from parent package: gradio-client (public)
+future
+  # from parent package: ffmpeg-python (public)
+gallery-dl
+  # from parent package: library (public)
+gast !=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1
+  # from parent package: tensorflow (public)
+gitdb <5,>=4.0.1
+  # from parent package: gitpython (public)
+gitpython !=3.1.29,>=1.0.0
+  # from parent package: wandb (public)
+google-pasta >=0.1.1
+  # from parent package: tensorflow (public)
+gradio-client ==2.5.0
+  # from parent package: gradio (public)
+  # from parent package: hf-gradio (public)
+groovy ~=0.1
+  # from parent package: gradio (public)
+grpcio <2.0,>=1.74.0,<2.0,>=1.24.3
+  # from parent package: tensorboard (public)
+  # from parent package: tensorflow (public)
+h11 >=0.8,>=0.16
+  # from parent package: uvicorn (private)
+  # from parent package: httpcore (private)
+h5py <3.15.0,>=3.11.0
+  # from parent package: tensorflow (public)
+  # from parent package: keras (public)
+hf-gradio <1.0,>=0.4.1
+  # from parent package: gradio (public)
+httpcore ==1.*
+  # from parent package: httpx (private)
+httpx <1.0,>=0.24.1,>=0.24.1
+  # from parent package: gradio (public)
+  # from parent package: gradio-client (public)
+  # from parent package: safehttpx (public)
+humanfriendly >=9.1
+  # from parent package: coloredlogs (public)
+humanize
+  # from parent package: library (public)
+idna <4,>=2.5,>=2.8,>=2.0
+  # from parent package: requests (private)
+  # from parent package: anyio (private)
+  # from parent package: httpx (private)
+  # from parent package: tldextract (public)
+  # from parent package: yarl (private)
+importlib-metadata
+  # from parent package: diffusers (public)
+ipython >=9.0.0
+  # from parent package: library (public)
+ipython-pygments-lexers >=1.0.0
+  # from parent package: ipython (public)
+jedi >=0.18.2
+  # from parent package: ipython (public)
+jinja2 <4.0
+  # from parent package: altair (public)
+  # from parent package: gradio (public)
+  # from parent package: torch (private)
+jsonschema >=3.0
+  # from parent package: altair (public)
+jsonschema-specifications >=2023.03.6
+  # from parent package: jsonschema (private)
+keras >=3.12.0
+  # from parent package: tensorflow (public)
+libclang >=13.0.0
+  # from parent package: tensorflow (public)
+lightning-utilities >=0.4.2,>=0.7.0
+  # from parent package: pytorch-lightning (public)
+  # from parent package: torchmetrics (private)
+lxml
+  # from parent package: library (public)
+markdown >=2.6.8
+  # from parent package: tensorboard (public)
+markdown-it-py >=2.2.0
+  # from parent package: rich (private)
+  # from parent package: library (public)
+markupsafe <4.0,>=2.0,>=2.0,>=2.1.1
+  # from parent package: gradio (public)
+  # from parent package: jinja2 (private)
+  # from parent package: werkzeug (public)
+matplotlib-inline >=0.1.6
+  # from parent package: ipython (public)
+mdurl ~=0.1
+  # from parent package: markdown-it-py (private)
+ml-dtypes <1.0.0,>=0.5.1
+  # from parent package: tensorflow (public)
+  # from parent package: keras (public)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+multidict <7.0,>=4.5,>=4.0
+  # from parent package: aiohttp (private)
+  # from parent package: yarl (private)
+mutagen
+  # from parent package: library (public)
+  # from parent package: yt-dlp (public)
+namex
+  # from parent package: keras (public)
+natsort
+  # from parent package: library (public)
+networkx
+  # from parent package: torch (private)
+numpy >=1.17,<3.0,>=1.0,>=1.17.0,>=1.20,>=1.21.2,>=1.17.0,>=1.17.3,>=1.19.3,>=1.17.2,>1.24.4,>=1.17,>=1.21.6,>=1.12.0,>=1.26.0,>=1.22.4,<3,>=1.25,>1.20.0,>=1.19.3,>=1.21,>=1.21.2
+  # from parent package: accelerate (public)
+  # from parent package: altair (public)
+  # from parent package: diffusers (public)
+  # from parent package: gradio (public)
+  # from parent package: invisible-watermark (public)
+  # from parent package: onnx (public)
+  # from parent package: opencv-python (public)
+  # from parent package: pytorch-lightning (public)
+  # from parent package: pytorch-optimizer (public)
+  # from parent package: bitsandbytes (public)
+  # from parent package: onnxruntime-gpu (public)
+  # from parent package: tensorboard (public)
+  # from parent package: tensorflow (public)
+  # from parent package: torchvision (private)
+  # from parent package: pandas (private)
+  # from parent package: pywavelets (public)
+  # from parent package: torchmetrics (private)
+  # from parent package: keras (public)
+  # from parent package: h5py (public)
+  # from parent package: ml-dtypes (public)
+nvidia-cublas-cu12 ==12.4.5.8
+  # from parent package: torch (private)
+  # from parent package: nvidia-cudnn-cu12 (private)
+  # from parent package: nvidia-cusolver-cu12 (private)
+nvidia-cuda-cupti-cu12 ==12.4.127
+  # from parent package: torch (private)
+nvidia-cuda-nvrtc-cu12 ==12.4.127
+  # from parent package: torch (private)
+nvidia-cuda-runtime-cu12 ==12.4.127
+  # from parent package: torch (private)
+nvidia-cudnn-cu12 ==9.1.0.70
+  # from parent package: torch (private)
+nvidia-cufft-cu12 ==11.2.1.3
+  # from parent package: torch (private)
+nvidia-curand-cu12 ==10.3.5.147
+  # from parent package: torch (private)
+nvidia-cusolver-cu12 ==11.6.1.9
+  # from parent package: torch (private)
+nvidia-cusparse-cu12 ==12.3.1.170
+  # from parent package: torch (private)
+  # from parent package: nvidia-cusolver-cu12 (private)
+nvidia-cusparselt-cu12 ==0.6.2
+  # from parent package: torch (private)
+nvidia-nccl-cu12 ==2.21.5
+  # from parent package: torch (private)
+nvidia-nvjitlink-cu12 ==12.4.127
+  # from parent package: torch (private)
+  # from parent package: nvidia-cufft-cu12 (private)
+  # from parent package: nvidia-cusolver-cu12 (private)
+  # from parent package: nvidia-cusparse-cu12 (private)
+nvidia-nvtx-cu12 ==12.4.127
+  # from parent package: torch (private)
+opt-einsum >=2.3.2
+  # from parent package: tensorflow (public)
+optree
+  # from parent package: keras (public)
+orjson ~=3.0
+  # from parent package: gradio (public)
+packaging >=20.0,>=17.1,>=20.9,>=17.1,>=24.0
+  # from parent package: accelerate (public)
+  # from parent package: gradio (public)
+  # from parent package: pytorch-lightning (public)
+  # from parent package: bitsandbytes (public)
+  # from parent package: onnxruntime-gpu (public)
+  # from parent package: tensorboard (public)
+  # from parent package: tensorflow (public)
+  # from parent package: gradio-client (public)
+  # from parent package: torchmetrics (private)
+  # from parent package: lightning-utilities (private)
+  # from parent package: keras (public)
+  # from parent package: wheel (public)
+pandas >=0.18,<4.0,>=1.0
+  # from parent package: altair (public)
+  # from parent package: gradio (public)
+parso <0.9.0,>=0.8.6
+  # from parent package: jedi (public)
+pexpect >4.6
+  # from parent package: ipython (public)
+pillow <13.0,>=8.0,>=6.0.0,!=8.3.*,>=5.3.0
+  # from parent package: diffusers (public)
+  # from parent package: gradio (public)
+  # from parent package: invisible-watermark (public)
+  # from parent package: tensorboard (public)
+  # from parent package: torchvision (private)
+pip
+  # from parent package: sqlite-utils (public)
+platformdirs
+  # from parent package: wandb (public)
+pluggy
+  # from parent package: sqlite-utils (public)
+praw
+  # from parent package: library (public)
+prawcore <5,>=4
+  # from parent package: praw (public)
+prompt-toolkit <3.1.0,>=3.0.41
+  # from parent package: ipython (public)
+propcache >=0.2.0,>=0.2.1
+  # from parent package: aiohttp (private)
+  # from parent package: yarl (private)
+psutil >=5.0.0,>=7
+  # from parent package: accelerate (public)
+  # from parent package: wandb (public)
+  # from parent package: ipython (public)
+ptyprocess >=0.5
+  # from parent package: pexpect (public)
+pure-eval
+  # from parent package: stack-data (public)
+puremagic
+  # from parent package: library (public)
+pycryptodomex
+  # from parent package: yt-dlp (public)
+pydantic <=3.0,>=2.0,!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4
+  # from parent package: gradio (public)
+  # from parent package: fastapi (private)
+pydantic-core ==2.33.2
+  # from parent package: pydantic (private)
+pydub <1.0
+  # from parent package: gradio (public)
+pygments <3.0.0,>=2.13.0,>=2.14.0
+  # from parent package: rich (private)
+  # from parent package: ipython (public)
+  # from parent package: ipython-pygments-lexers (public)
+pysubs2
+  # from parent package: library (public)
+python-dateutil >=2.8.2
+  # from parent package: library (public)
+  # from parent package: pandas (private)
+  # from parent package: sqlite-utils (public)
+python-mpv-jsonipc
+  # from parent package: library (public)
+python-multipart <1.0,>=0.0.18
+  # from parent package: gradio (public)
+pytz >=2017.2,>=2020.1
+  # from parent package: gradio (public)
+  # from parent package: pandas (private)
+pywavelets >=1.1.1
+  # from parent package: invisible-watermark (public)
+pyyaml <7.0,>=5.0,>=5.1.0,>=5.4
+  # from parent package: accelerate (public)
+  # from parent package: gradio (public)
+  # from parent package: omegaconf (private)
+  # from parent package: pytorch-lightning (public)
+  # from parent package: wandb (public)
+referencing >=0.28.4,>=0.31.0
+  # from parent package: jsonschema (private)
+  # from parent package: jsonschema-specifications (private)
+regex !=2019.12.17
+  # from parent package: diffusers (public)
+  # from parent package: open-clip-torch (public)
+  # from parent package: library (public)
+requests <3,>=2.0.0,<3,>=2.21.0,>=2.11.0,<3,>=2.32.2,>=2.1.0,<3.0,>=2.34.2,>=1.0.0
+  # from parent package: diffusers (public)
+  # from parent package: wandb (public)
+  # from parent package: tensorflow (public)
+  # from parent package: gallery-dl (public)
+  # from parent package: yt-dlp (public)
+  # from parent package: tldextract (public)
+  # from parent package: prawcore (public)
+  # from parent package: requests-file (public)
+requests-file >=1.4
+  # from parent package: tldextract (public)
+rpds-py >=0.7.1,>=0.7.0
+  # from parent package: jsonschema (private)
+  # from parent package: referencing (private)
+safehttpx <0.2.0,>=0.1.7
+  # from parent package: gradio (public)
+screeninfo
+  # from parent package: library (public)
+semantic-version ~=2.0
+  # from parent package: gradio (public)
+sentry-sdk >=1.0.0
+  # from parent package: wandb (public)
+setproctitle
+  # from parent package: wandb (public)
+setuptools >=41.0.0
+  # from parent package: wandb (public)
+  # from parent package: tensorboard (public)
+  # from parent package: tensorflow (public)
+  # from parent package: lightning-utilities (private)
+shellingham >=1.3.0
+  # from parent package: typer (private)
+six >=1.12.0,>=1.4.0,>=1.5,<2.0,>=1.6.1
+  # from parent package: tensorflow (public)
+  # from parent package: docker-pycreds (public)
+  # from parent package: python-dateutil (private)
+  # from parent package: astunparse (public)
+  # from parent package: google-pasta (public)
+smmap <6,>=3.0.1
+  # from parent package: gitdb (public)
+sniffio >=1.1
+  # from parent package: anyio (private)
+soupsieve >=1.6.1
+  # from parent package: beautifulsoup4 (public)
+sqlite-fts4
+  # from parent package: sqlite-utils (public)
+sqlite-utils >=3.38
+  # from parent package: library (public)
+stack-data >=0.6.0
+  # from parent package: ipython (public)
+starlette <2.0,>=1.0.1,<0.49.0,>=0.40.0
+  # from parent package: gradio (public)
+  # from parent package: fastapi (private)
+sympy ==1.13.1
+  # from parent package: onnxruntime-gpu (public)
+  # from parent package: torch (private)
+tabulate
+  # from parent package: library (public)
+  # from parent package: sqlite-utils (public)
+tensorboard-data-server <0.8.0,>=0.7.0
+  # from parent package: tensorboard (public)
+termcolor >=1.1.0
+  # from parent package: tensorflow (public)
+tinytag
+  # from parent package: library (public)
+tldextract
+  # from parent package: library (public)
+tomlkit <0.15.0,>=0.12.0
+  # from parent package: gradio (public)
+toolz
+  # from parent package: altair (public)
+torchmetrics >=0.7.0
+  # from parent package: pytorch-lightning (public)
+tqdm >=4.57.0
+  # from parent package: lycoris-lora (public)
+  # from parent package: open-clip-torch (public)
+  # from parent package: pytorch-lightning (public)
+traitlets >=5.13.0
+  # from parent package: ipython (public)
+  # from parent package: matplotlib-inline (public)
+typer <1.0,>=0.12
+  # from parent package: gradio (public)
+  # from parent package: hf-gradio (public)
+typing-extensions ~=4.0,>=4.0.0,>=3.6.6,>=4.10.0,>=4.5,>=4.8.0,~=4.0,>=4.12.2,>=3.7.4.3,>=4.0,>=4.0.0,>=4.6,~=4.12,>=4.4.0,>=4.6.0,!=4.7.0,>=4.6.0,>=4.12.0,>=4.6.0,>=4.2,>=4.1.0
+  # from parent package: gradio (public)
+  # from parent package: pytorch-lightning (public)
+  # from parent package: tensorflow (public)
+  # from parent package: torch (private)
+  # from parent package: anyio (private)
+  # from parent package: fastapi (private)
+  # from parent package: gradio-client (public)
+  # from parent package: pydantic (private)
+  # from parent package: typer (private)
+  # from parent package: uvicorn (private)
+  # from parent package: lightning-utilities (private)
+  # from parent package: beautifulsoup4 (public)
+  # from parent package: ipython (public)
+  # from parent package: praw (public)
+  # from parent package: grpcio (public)
+  # from parent package: referencing (private)
+  # from parent package: exceptiongroup (public)
+  # from parent package: pydantic-core (private)
+  # from parent package: typing-inspection (private)
+  # from parent package: optree (public)
+  # from parent package: aiosignal (private)
+  # from parent package: multidict (private)
+typing-inspection >=0.4.0
+  # from parent package: pydantic (private)
+tzdata >=2022.7
+  # from parent package: pandas (private)
+update-checker <2.0,>=1.0
+  # from parent package: praw (public)
+urllib3 <1.27,>=1.21.1,>=1.26.11,<3,>=2.0.2
+  # from parent package: requests (private)
+  # from parent package: sentry-sdk (private)
+  # from parent package: yt-dlp (public)
+uvicorn >=0.14.0
+  # from parent package: gradio (public)
+wcwidth >=0.2.5
+  # from parent package: ftfy (public)
+  # from parent package: library (public)
+  # from parent package: prompt-toolkit (public)
+websocket-client <2,>=0.54.0
+  # from parent package: praw (public)
+websockets >=13.0
+  # from parent package: yt-dlp (public)
+werkzeug >=1.0.1
+  # from parent package: tensorboard (public)
+wheel <1.0,>=0.23.0
+  # from parent package: astunparse (public)
+wrapt >=1.11.0
+  # from parent package: tensorflow (public)
+yarl <2.0,>=1.17.0
+  # from parent package: aiohttp (private)
+yt-dlp
+  # from parent package: library (public)
+yt-dlp-ejs ==0.8.0
+  # from parent package: yt-dlp (public)
+zipp >=0.5
+  # from parent package: importlib-metadata (private)

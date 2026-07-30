@@ -1,0 +1,115 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/b5/ba/c63c5786dfee4c3417094c4b00966e61e4a63efecee22cb7b4c0387dda83/librosa-0.11.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=0b6415c4fd68bff4c29288abe67c6d80b587e0e1e2cfb0aad23e4559504a7fa1",
+          "hashes": {
+            "sha256": "0b6415c4fd68bff4c29288abe67c6d80b587e0e1e2cfb0aad23e4559504a7fa1"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.2",
+        "name": "librosa",
+        "version": "0.11.0",
+        "summary": "Python module for audio and music processing",
+        "description_content_type": "text/markdown; charset=UTF-8",
+        "home_page": "https://librosa.org",
+        "author": "Brian McFee, librosa development team",
+        "author_email": "brian.mcfee@nyu.edu",
+        "license": "ISC",
+        "license_file": [
+          "LICENSE.md"
+        ],
+        "classifier": [
+          "License :: OSI Approved :: ISC License (ISCL)",
+          "Programming Language :: Python",
+          "Development Status :: 3 - Alpha",
+          "Intended Audience :: Developers",
+          "Topic :: Multimedia :: Sound/Audio :: Analysis",
+          "Framework :: Matplotlib",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13"
+        ],
+        "requires_dist": [
+          "audioread>=2.1.9",
+          "numba>=0.51.0",
+          "numpy>=1.22.3",
+          "scipy>=1.6.0",
+          "scikit-learn>=1.1.0",
+          "joblib>=1.0",
+          "decorator>=4.3.0",
+          "soundfile>=0.12.1",
+          "pooch>=1.1",
+          "soxr>=0.3.2",
+          "typing_extensions>=4.1.1",
+          "lazy_loader>=0.1",
+          "msgpack>=1.0",
+          "standard-aifc; python_version >= \"3.13\"",
+          "standard-sunau; python_version >= \"3.13\"",
+          "numpydoc; extra == \"docs\"",
+          "sphinx!=1.3.1; extra == \"docs\"",
+          "sphinx_rtd_theme>=1.2.0; extra == \"docs\"",
+          "numba>=0.51; extra == \"docs\"",
+          "matplotlib>=3.5.0; extra == \"docs\"",
+          "sphinx-multiversion>=0.2.3; extra == \"docs\"",
+          "sphinx-gallery>=0.7; extra == \"docs\"",
+          "mir_eval>=0.5; extra == \"docs\"",
+          "ipython>=7.0; extra == \"docs\"",
+          "sphinxcontrib-svg2pdfconverter; extra == \"docs\"",
+          "sphinxcontrib-googleanalytics>=0.4; extra == \"docs\"",
+          "presets; extra == \"docs\"",
+          "sphinx-copybutton>=0.5.2; extra == \"docs\"",
+          "matplotlib>=3.5.0; extra == \"tests\"",
+          "packaging>=20.0; extra == \"tests\"",
+          "pytest-mpl; extra == \"tests\"",
+          "pytest-cov; extra == \"tests\"",
+          "pytest; extra == \"tests\"",
+          "samplerate; extra == \"tests\"",
+          "resampy>=0.2.2; extra == \"tests\"",
+          "types-decorator; extra == \"tests\"",
+          "matplotlib>=3.5.0; extra == \"display\""
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Documentation, https://librosa.org/doc",
+          "Download, https://github.com/librosa/librosa/releases",
+          "Source, https://github.com/librosa/librosa",
+          "Tracker, https://github.com/librosa/librosa/issues",
+          "Discussion forum, https://groups.google.com/g/librosa"
+        ],
+        "provides_extra": [
+          "docs",
+          "tests",
+          "display"
+        ],
+        "description": "[![librosa logo](docs/img/librosa_logo_text.svg)](https://librosa.org/)\n\n# librosa\n\n\nA python package for music and audio analysis.  \n\n[![PyPI](https://img.shields.io/pypi/v/librosa.svg)](https://pypi.python.org/pypi/librosa)\n[![Anaconda-Server Badge](https://anaconda.org/conda-forge/librosa/badges/version.svg)](https://anaconda.org/conda-forge/librosa)\n[![License](https://img.shields.io/pypi/l/librosa.svg)](https://github.com/librosa/librosa/blob/main/LICENSE.md)\n[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.591533.svg)](https://doi.org/10.5281/zenodo.591533)\n\n[![CI](https://github.com/librosa/librosa/actions/workflows/ci.yml/badge.svg)](https://github.com/librosa/librosa/actions/workflows/ci.yml)\n[![codecov](https://codecov.io/gh/librosa/librosa/branch/main/graph/badge.svg?token=ULWnUHaIJC)](https://codecov.io/gh/librosa/librosa)\n[![Docs](https://github.com/librosa/librosa/actions/workflows/docs.yml/badge.svg)](https://librosa.org/doc/latest/index.html)\n\n#  Table of Contents\n\n- [Documentation](#Documentation)\n- [Installation](#Installation)\n  - [Using PyPI](#using-pypi)\n  - [Using Anaconda](#using-anaconda)\n  - [Building From Source](#building-from-source)\n  - [Hints for Installation](#hints-for-the-installation)\n    - [`soundfile`](#soundfile)\n    - [`audioread`](#audioread-and-mp3-support)\n      - [Linux (`apt get`)](#linux-apt-get)\n      - [Linux (`yum`)](#linux-yum)\n      - [Mac](#mac)\n      - [Windows](#windows)\n- [Discussion](#discussion)\n- [Citing](#citing)\n\n---\n\n## Documentation\n\n\nSee https://librosa.org/doc/ for a complete reference manual and introductory tutorials.\n\nThe [advanced example gallery](https://librosa.org/doc/latest/advanced.html) should give you a quick sense of the kinds\nof things that librosa can do.\n\n---\n\n[Back To Top ↥](#librosa)\n\n\n## Installation\n\n\n### Using PyPI\n\nThe latest stable release is available on PyPI, and you can install it by saying\n```\npython -m pip install librosa\n```\n\n### Using Anaconda\n\nAnaconda users can install using ```conda-forge```:\n```\nconda install -c conda-forge librosa\n```\n\n### Building from source\n\nTo build librosa from source, say \n```\npython setup.py build\n```\nThen, to install librosa, say \n```\npython setup.py install\n```\nIf all went well, you should be able to execute the following commands from a python console:\n```\nimport librosa\nlibrosa.show_versions()\n```\nThis should print out a description of your software environment, along with the installed versions of other packages used by librosa.\n\n📝 OS X users should follow the installation guide given below.\n\nAlternatively, you can download or clone the repository and use `pip` to handle dependencies:\n\n```\nunzip librosa.zip\npython -m pip install -e librosa\n```\nor\n\n```\ngit clone https://github.com/librosa/librosa.git\npython -m pip install -e librosa\n```\n\nBy calling `pip list` you should see `librosa` now as an installed package:\n```\nlibrosa (0.x.x, /path/to/librosa)\n```\n\n---\n\n[Back To Top ↥](#librosa)\n\n### Hints for the Installation\n\n`librosa` uses `soundfile` and `audioread` to load audio files.\n\n📝 Note that older releases of `soundfile` (prior to 0.11) do not support MP3, which will cause librosa to fall back on the `audioread` library.\n\n### `soundfile`\n\nIf you're using `conda` to install librosa, then audio encoding dependencies will be handled automatically.\n\nIf you're using `pip` on a Linux environment, you may need to install `libsndfile`\nmanually.  Please refer to the [SoundFile installation documentation](https://python-soundfile.readthedocs.io/#installation) for details.\n\n### `audioread` and MP3 support\n\nTo fuel `audioread` with more audio-decoding power (e.g., for reading MP3 files),\nyou may need to install either *ffmpeg* or *GStreamer*.\n\n📝*Note that on some platforms, `audioread` needs at least one of the programs to work properly.*\n\nIf you are using Anaconda, install *ffmpeg* by calling\n\n```\nconda install -c conda-forge ffmpeg\n```\n\nIf you are not using Anaconda, here are some common commands for different operating systems:\n\n- ####  Linux (`apt-get`): \n\n```\napt-get install ffmpeg\n```\nor\n \n```\napt-get install gstreamer1.0-plugins-base gstreamer1.0-plugins-ugly\n```\n- #### Linux (`yum`):\n```\nyum install ffmpeg\n```\nor\n\n\n```\nyum install gstreamer1.0-plugins-base gstreamer1.0-plugins-ugly\n```\n\n- #### Mac: \n```\nbrew install ffmpeg\n```\nor\n\n```\nbrew install gstreamer\n```\n\n- #### Windows: \n\ndownload ffmpeg binaries from this [website](https://www.gyan.dev/ffmpeg/builds/) or gstreamer binaries from this [website](https://gstreamer.freedesktop.org/)\n\nFor GStreamer, you also need to install the Python bindings with \n\n```\npython -m pip install pygobject\n```\n\n---\n\n[Back To Top ↥](#librosa)\n\n## Discussion\n\n\nPlease direct non-development questions and discussion topics to our web forum at\nhttps://groups.google.com/forum/#!forum/librosa\n\n---\n\n[Back To Top ↥](#librosa)\n\n## Citing\n\n\nIf you want to cite librosa in a scholarly work, there are two ways to do it.\n\n- If you are using the library for your work, for the sake of reproducibility, please cite\n  the version you used as indexed at Zenodo:\n\n    [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.591533.svg)](https://doi.org/10.5281/zenodo.591533)\n\n  From librosa version 0.10.2 or later, you can also use `librosa.cite()`\n  to get the DOI link for any version of librosa.\n\n- If you wish to cite librosa for its design, motivation, etc., please cite the paper\n  published at SciPy 2015:\n\n    McFee, Brian, Colin Raffel, Dawen Liang, Daniel PW Ellis, Matt McVicar, Eric Battenberg, and Oriol Nieto. \"librosa: Audio and music signal analysis in python.\" In Proceedings of the 14th python in science conference, pp. 18-25. 2015.\n\n---\n\n[Back To Top ↥](#librosa)\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/9a/6f/5da5e0a8dd3b101809e9f6ba7875facdcd26de42d2ca8fede2ff9769bc39/gsutil-5.37.tar.gz",
+        "archive_info": {
+          "hash": "sha256=c217df9fba2fb16464ee2e4968ff7d669c9699a69af7003c5deb2da4db8e4298",
+          "hashes": {
+            "sha256": "c217df9fba2fb16464ee2e4968ff7d669c9699a69af7003c5deb2da4db8e4298"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "gsutil",
+        "version": "5.37",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "download-url",
+          "home-page",
+          "license",
+          "license-file",
+          "platform",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "platform": [
+          "any"
+        ],
+        "summary": "A command line tool for interacting with cloud storage services.",
+        "description_content_type": "text/plain",
+        "home_page": "https://cloud.google.com/storage/docs/gsutil",
+        "download_url": "https://cloud.google.com/storage/docs/gsutil_install",
+        "author": "Google Inc.",
+        "author_email": "buganizer-system+187143@google.com",
+        "license": "Apache 2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Intended Audience :: System Administrators",
+          "License :: OSI Approved :: Apache Software License",
+          "Natural Language :: English",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Topic :: System :: Filesystems",
+          "Topic :: Utilities"
+        ],
+        "requires_dist": [
+          "argcomplete>=3.6.2",
+          "crcmod>=1.7",
+          "fasteners>=0.14.1",
+          "gcs-oauth2-boto-plugin>=3.3",
+          "google-apitools>=0.5.32",
+          "httplib2==0.20.4",
+          "google-reauth>=0.1.0",
+          "mock<=3.0.5,>=2.0.0; python_version < \"3.3\"",
+          "monotonic>=1.4",
+          "pyOpenSSL<=26.0.0,>=0.13",
+          "retry_decorator>=1.0.0",
+          "six>=1.17.0",
+          "google-auth[aiohttp]==2.39.0",
+          "google-auth-httplib2>=0.3.0"
+        ],
+        "requires_python": ">=3.9, <3.15",
+        "description": "\ngsutil is a Python application that lets you access Google Cloud Storage from\nthe command line. You can use gsutil to do a wide range of bucket and object\nmanagement tasks, including:\n * Creating and deleting buckets.\n * Uploading, downloading, and deleting objects.\n * Listing buckets and objects.\n * Moving, copying, and renaming objects.\n * Editing object and bucket ACLs.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

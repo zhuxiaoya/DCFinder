@@ -1,0 +1,128 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/45/e0/05001c2e56e2f8f793189442176432ddb89a2f1f1ef00ea154d0bc00fe37/lm_eval-0.4.0.tar.gz",
+        "archive_info": {
+          "hash": "sha256=2dac56039b191c2dfb0011329ec9082e474006a15575db45468b88753923b34b",
+          "hashes": {
+            "sha256": "2dac56039b191c2dfb0011329ec9082e474006a15575db45468b88753923b34b"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "lm_eval",
+        "version": "0.4.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "A framework for evaluating language models",
+        "description_content_type": "text/markdown",
+        "author_email": "EleutherAI <contact@eleuther.ai>",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE.md"
+        ],
+        "classifier": [
+          "Development Status :: 3 - Alpha",
+          "Programming Language :: Python :: 3",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent"
+        ],
+        "requires_dist": [
+          "accelerate>=0.21.0",
+          "evaluate",
+          "datasets>=2.0.0",
+          "evaluate>=0.4.0",
+          "jsonlines",
+          "numexpr",
+          "peft>=0.2.0",
+          "pybind11>=2.6.2",
+          "pytablewriter",
+          "rouge-score>=0.0.4",
+          "sacrebleu>=1.5.0",
+          "scikit-learn>=0.24.1",
+          "sqlitedict",
+          "torch>=1.8",
+          "tqdm-multiprocess",
+          "transformers>=4.1",
+          "zstandard",
+          "black; extra == \"dev\"",
+          "flake8; extra == \"dev\"",
+          "pre-commit; extra == \"dev\"",
+          "pytest; extra == \"dev\"",
+          "pytest-cov; extra == \"dev\"",
+          "flake8; extra == \"linting\"",
+          "pylint; extra == \"linting\"",
+          "mypy; extra == \"linting\"",
+          "pre-commit; extra == \"linting\"",
+          "pytest; extra == \"testing\"",
+          "pytest-cov; extra == \"testing\"",
+          "pytest-xdist; extra == \"testing\"",
+          "nagisa>=0.2.7; extra == \"multilingual\"",
+          "jieba>=0.42.1; extra == \"multilingual\"",
+          "pycountry; extra == \"multilingual\"",
+          "sympy>=1.12; extra == \"math\"",
+          "antlr4-python3-runtime==4.11; extra == \"math\"",
+          "sentencepiece>=0.1.98; extra == \"sentencepiece\"",
+          "protobuf>=4.22.1; extra == \"sentencepiece\"",
+          "promptsource>=0.2.3; extra == \"promptsource\"",
+          "auto-gptq[triton]>=0.6.0; extra == \"gptq\"",
+          "anthropic; extra == \"anthropic\"",
+          "openai>=1.3.5; extra == \"openai\"",
+          "tiktoken; extra == \"openai\"",
+          "vllm; extra == \"vllm\"",
+          "lm_eval[dev]; extra == \"all\"",
+          "lm_eval[testing]; extra == \"all\"",
+          "lm_eval[linting]; extra == \"all\"",
+          "lm_eval[multilingual]; extra == \"all\"",
+          "lm_eval[sentencepiece]; extra == \"all\"",
+          "lm_eval[promptsource]; extra == \"all\"",
+          "lm_eval[gptq]; extra == \"all\"",
+          "lm_eval[anthropic]; extra == \"all\"",
+          "lm_eval[openai]; extra == \"all\"",
+          "lm_eval[vllm]; extra == \"all\""
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Homepage, https://github.com/EleutherAI/lm-evaluation-harness",
+          "Repository, https://github.com/EleutherAI/lm-evaluation-harness"
+        ],
+        "provides_extra": [
+          "dev",
+          "linting",
+          "testing",
+          "multilingual",
+          "math",
+          "sentencepiece",
+          "promptsource",
+          "gptq",
+          "anthropic",
+          "openai",
+          "vllm",
+          "all"
+        ],
+        "description": "# Language Model Evaluation Harness\n\n## Overview\n\nThis project provides a unified framework to test generative language models on a large number of different evaluation tasks.\n\n**Features:**\n- Over 60 standard academic benchmarks for LLMs, with hundreds of subtasks and variants implemented.\n- Support for models loaded via [transformers](https://github.com/huggingface/transformers/) (including quantization via [AutoGPTQ](https://github.com/PanQiWei/AutoGPTQ)), [GPT-NeoX](https://github.com/EleutherAI/gpt-neox), and [Megatron-DeepSpeed](https://github.com/microsoft/Megatron-DeepSpeed/), with a flexible tokenization-agnostic interface.\n- Support for commercial APIs including [OpenAI](https://openai.com), [goose.ai](https://goose.ai), and [TextSynth](https://textsynth.com/).\n- Support for evaluation on adapters (e.g. LoRA) supported in [HuggingFace's PEFT library](https://github.com/huggingface/peft).\n- Support for local models and benchmarks.\n- Evaluation with publicly available prompts ensures reproducibility and comparability between papers.\n- Easy support for custom prompts and evaluation metrics.\n\nThe Language Model Evaluation Harness is the backend for 🤗 Hugging Face's popular [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard), has been used in [hundreds of papers](https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=2&cites=15052937328817631261,4097184744846514103,17476825572045927382,18443729326628441434,12854182577605049984) is used internally by dozens of companies including NVIDIA, Cohere, Nous Research, Booz Allen Hamilton, and Mosaic ML.\n\n## Install\n\nTo install the `lm-eval` package from the github repository, run:\n\n```bash\ngit clone https://github.com/EleutherAI/lm-evaluation-harness\ncd lm-evaluation-harness\npip install -e .\n```\n\nWe also provide a number of optional dependencies for . Extras can be installed via `pip install -e \".[NAME]\"`\n\n| Name          | Use                                   |\n| ------------- | ------------------------------------- |\n| anthropic     | For using Anthropic's models          |\n| dev           | You probably don't want to use this   |\n| gptq          | For loading models with GPTQ          |\n| testing       | You probably don't want to use this   |\n| multilingual  | For multilingual tokenizers           |\n| openai        | For using OpenAI's models             |\n| promptsource  | For using PromtSource prompts         |\n| sentencepiece | For using the sentencepiece tokenizer |\n| vllm          | For loading models with vLLM          |\n| all           | Loads all extras                      |\n\n## Basic Usage\n\n### Hugging Face `transformers`\n\nTo evaluate a model hosted on the [HuggingFace Hub](https://huggingface.co/models) (e.g. GPT-J-6B) on `hellaswag` you can use the following command:\n\n```bash\nlm_eval --model hf \\\n    --model_args pretrained=EleutherAI/gpt-j-6B \\\n    --tasks hellaswag \\\n    --device cuda:0 \\\n    --batch_size 8\n```\n\nAdditional arguments can be provided to the model constructor using the `--model_args` flag. Most notably, this supports the common practice of using the `revisions` feature on the Hub to store partially trained checkpoints, or to specify the datatype for running a model:\n\n```bash\nlm_eval --model hf \\\n    --model_args pretrained=EleutherAI/pythia-160m,revision=step100000,dtype=\"float\" \\\n    --tasks lambada_openai,hellaswag \\\n    --device cuda:0 \\\n    --batch_size 8\n```\n\nModels that are loaded via both `transformers.AutoModelForCausalLM` (autoregressive, decoder-only GPT style models) and `transformers.AutoModelForSeq2SeqLM` (such as encoder-decoder models like T5) in Huggingface are supporteded.\n\nBatch size selection can be automated by setting the  ```--batch_size``` flag to ```auto```. This will perform automatic detection of the largest batch size that will fit on your device. On tasks where there is a large difference between the longest and shortest example, it can be helpful to periodically recompute the largest batch size, to gain a further speedup. To do this, append ```:N``` to above flag to automatically recompute the largest batch size ```N``` times. For example, to recompute the batch size 4 times, the command would be:\n\n```bash\nlm_eval --model hf \\\n    --model_args pretrained=EleutherAI/pythia-160m,revision=step100000,dtype=\"float\" \\\n    --tasks lambada_openai,hellaswag \\\n    --device cuda:0 \\\n    --batch_size auto:4\n```\n\nAlternatively, you can use `lm-eval` instead of `lm_eval`.\n\n> [!Note]\n> Just like you can provide a local path to `transformers.AutoModel`, you can also provide a local path to `lm_eval` via `--model_args pretrained=/path/to/model`\n\n#### Multi-GPU Evaluation with Hugging Face `accelerate`\n\nTo parallelize evaluation of HuggingFace models across multiple GPUs, we leverage the [accelerate 🚀](https://github.com/huggingface/accelerate) library as follows:\n\n```\naccelerate launch -m lm_eval --model hf \\\n    --tasks lambada_openai,arc_easy \\\n    --batch_size 16\n```\n\nThis will perform *data-parallel evaluation*: that is, placing a **single full copy** of your model onto each available GPU and *splitting batches across GPUs* to evaluate on K GPUs K times faster than on one.\n\nIf your model is *is too large to be run on a single one of your GPUs* then you can use `accelerate` with Fully Sharded Data Parallel (FSDP) that splits the weights of the model across your data parallel ranks. To enable this, ensure you select `YES` when asked ```Do you want to use FullyShardedDataParallel?``` when running `accelerate config`. To enable memory-efficient loading, select `YES` when asked `Do you want each individually wrapped FSDP unit to broadcast module parameters from rank 0 at the start?`. This will ensure only the rank 0 process loads the model and then broadcasts the parameters to the other ranks instead of having each rank load all parameters which can lead to large RAM usage spikes around the start of the script that may cause errors.\n\nTo pass even more advanced keyword arguments to `accelerate`, we allow for the following arguments as well:\n- `device_map_option`: How to split model weights across available GPUs. defaults to \"auto\".\n- `max_memory_per_gpu`: the max GPU memory to use per GPU in loading the model.\n- `max_cpu_memory`: the max amount of CPU memory to use when offloading the model weights to RAM.\n- `offload_folder`: a folder where model weights will be offloaded to disk if needed.\n\nTo use `accelerate` with the `lm-eval` command, use\n```\naccelerate launch --no_python lm-eval --model ...\n```\n\n### Tensor Parallel + Optimized Inference with vLLM\n\nWe also support vLLM for faster inference on [supported model types](https://docs.vllm.ai/en/latest/models/supported_models.html).\n\n```bash\nlm_eval --model vllm \\\n    --model_args pretrained={model_name},tensor_parallel_size={number of GPUs to use},dtype=auto,gpu_memory_utilization=0.8 \\\n    --tasks lambada_openai \\\n    --batch_size auto\n```\nFor a full list of supported vLLM configurations, please reference our vLLM integration and the vLLM documentation.\n\n### Model APIs and Inference Servers\n\nOur library also supports the evaluation of models served via several commercial APIs, and we hope to implement support for the most commonly used performant local/self-hosted inference servers.\n\nTo call a hosted model, use:\n\n```bash\nexport OPENAI_API_SECRET_KEY=YOUR_KEY_HERE\nlm_eval --model openai-completions \\\n    --model_args engine=davinci \\\n    --tasks lambada_openai,hellaswag\n```\n\nNote that for externally hosted models, configs such as `--device` and `--batch_size` should not be used and do not function. Just like you can use `--model_args` to pass arbitrary arguments to the model constructor for local models, you can use it to pass arbitrary arguments to the model API for hosted models. See the documentation of the hosting service for information on what arguments they support.\n\n\n| API or Inference Server     | Implemented?                    | `--model <xxx>` name                                                             | Models supported:                                                                             | Request Types:                                           |\n|-----------------------------|---------------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------|\n| OpenAI Completions          | :heavy_check_mark:              | `openai`, `openai-completions`, `gooseai`                                        | up to `code-davinci-002`                                                                      | `generate_until`, `loglikelihood`, `loglikelihood_rolling` |\n| OpenAI ChatCompletions      | :x: Not yet - needs testing!       | N/A                                                                              | [All ChatCompletions API models](https://platform.openai.com/docs/guides/gpt)                 | `generate_until` (no logprobs)                             |\n| Anthropic                   | :heavy_check_mark:              | `anthropic`                                                                      | [Supported Anthropic Engines](https://docs.anthropic.com/claude/reference/selecting-a-model)  | `generate_until` (no logprobs)                             |\n| GooseAI                     | :heavy_check_mark: (not separately maintained)  | `openai`, `openai-completions`, `gooseai` (same interface as OpenAI Completions) |                                                                                               | `generate_until`, `loglikelihood`, `loglikelihood_rolling` |\n| Textsynth                   | :heavy_check_mark:                   | `textsynth`                                                                      | [All supported engines](https://textsynth.com/documentation.html#engines)                                                                                           | `generate_until`, `loglikelihood`, `loglikelihood_rolling` |\n| Cohere                      | [:hourglass: - blocked on Cohere API bug](https://github.com/EleutherAI/lm-evaluation-harness/pull/395) | N/A                                                                              | [All `cohere.generate()` engines](https://docs.cohere.com/docs/models)                        | `generate_until`, `loglikelihood`, `loglikelihood_rolling` |\n| [Llama.cpp](https://github.com/ggerganov/llama.cpp) (via [llama-cpp-python](https://github.com/abetlen/llama-cpp-python))                        | :heavy_check_mark:              | `gguf`, `ggml`                                                                   | [All models supported by llama.cpp](https://github.com/ggerganov/llama.cpp)               | `generate_until`, `loglikelihood`, `loglikelihood_rolling` |\n| vLLM                        | :heavy_check_mark:       | `vllm`                                                                           | [Most HF Causal Language Models](https://docs.vllm.ai/en/latest/models/supported_models.html) | `generate_until`, `loglikelihood`, `loglikelihood_rolling`                             |\n| Your inference server here! | ...                             | ...                                                                              | ...                                                                                           | ...                                                      |                                | ...                                                      |\n\nIt is on our roadmap to create task variants designed to enable models which do not serve logprobs/loglikelihoods to be compared with generation performance of open-source models.\n\n### Other Frameworks\n\nA number of other libraries contain scripts for calling the eval harness through their library. These include [GPT-NeoX](https://github.com/EleutherAI/gpt-neox/blob/main/eval_tasks/eval_adapter.py), [Megatron-DeepSpeed](https://github.com/microsoft/Megatron-DeepSpeed/blob/main/examples/MoE/readme_evalharness.md), and [mesh-transformer-jax](https://github.com/kingoflolz/mesh-transformer-jax/blob/master/eval_harness.py).\n\n### Additional Features\n\nIf you have a Metal compatible Mac, you can run the eval harness using the MPS back-end by replacing `--device cuda:0` with `--device mps` (requires PyTorch version 2.1 or higher).\n\n> [!Note]\n> You can inspect what the LM inputs look like by running the following command:\n>\n> ```bash\n> python write_out.py \\\n>     --tasks all_tasks \\\n>     --num_fewshot 5 \\\n>     --num_examples 10 \\\n>     --output_base_path /path/to/output/folder\n> ```\n>\n> This will write out one text file for each task.\n\nTo verify the data integrity of the tasks you're performing in addition to running the tasks themselves, you can use the `--check_integrity` flag:\n\n```bash\nlm_eval --model openai \\\n    --model_args engine=davinci \\\n    --tasks lambada_openai,hellaswag \\\n    --check_integrity\n```\n\n## Advanced Usage Tips\n\nFor models loaded with the HuggingFace  `transformers` library, any arguments provided via `--model_args` get passed to the relevant constructor directly. This means that anything you can do with `AutoModel` can be done with our library. For example, you can pass a local path via `pretrained=` or use models finetuned with [PEFT](https://github.com/huggingface/peft) by taking the call you would run to evaluate the base model and add `,peft=PATH` to the `model_args` argument:\n```bash\nlm_eval --model hf \\\n    --model_args pretrained=EleutherAI/gpt-j-6b,parallelize=True,load_in_4bit=True,peft=nomic-ai/gpt4all-j-lora \\\n    --tasks openbookqa,arc_easy,winogrande,hellaswag,arc_challenge,piqa,boolq \\\n    --device cuda:0\n```\n\n[GPTQ](https://github.com/PanQiWei/AutoGPTQ) quantized models can be loaded by specifying their file names in `,gptq=NAME` (or `,gptq=True` for default names) in the `model_args` argument:\n\n```bash\nlm_eval --model hf \\\n    --model_args pretrained=model-name-or-path,gptq=model.safetensors,gptq_use_triton=True \\\n    --tasks hellaswag\n```\n\nWe support wildcards in task names, for example you can run all of the machine-translated lambada tasks via `--task lambada_openai_mt_*`.\n\nTo save evaluation results provide an `--output_path`. We also support logging model responses with the `--log_samples` flag for post-hoc analysis.\n\nAdditionally, one can provide a directory with `--use_cache` to cache the results of prior runs. This allows you to avoid repeated execution of the same (model, task) pairs for re-scoring.\n\nFor a full list of supported arguments, check out the [interface](https://github.com/EleutherAI/lm-evaluation-harness/blob/big-refactor/docs/interface.md) guide in our documentation!\n\n## How to Contribute or Learn More?\n\nFor more information on the library and how everything fits together, check out all of our [documentation pages](https://github.com/EleutherAI/lm-evaluation-harness/tree/big-refactor/docs)! We plan to post a larger roadmap of desired + planned library improvements soon, with more information on how contributors can help.\n\nYou can also ask for help, or discuss new features with the maintainers in the #lm-thunderdome channel of the EleutherAI discord! If you've used the library and have had a positive (or negative) experience, we'd love to hear from you!\n\n### Implementing new tasks\n\nTo implement a new task in the eval harness, see [this guide](./docs/new_task_guide.md).\n\nIn general, we following the following priority list for addressing concerns about prompting and other eval details:\n1. If there is widespread agreement among people who train LLMs, use the agreed upon procedure.\n2. If there is a clear and unambiguous official implementation, use that procedure.\n3. If there is widespread agreement among people who evaluate LLMs, use the agreed upon procedure.\n4. If there are multiple common implementations but not universal or widespread agreement, use our preferred option among the common implementations. As before, prioritize choosing from among the implementations found in LLM training papers.\n\nThese are guidelines and not rules, and can be overruled in special circumstances.\n\nWe try to prioritize agreement with the procedures used by other groups to decrease the harm when people inevitably compare runs across different papers despite our discouragement of the practice. Historically, we also prioritized the implementation from \"Language Models are Few Shot Learners\" as our original goal was specifically to compare results with that paper.\n\n### Support\n\nThe best way to get support is to open an issue on this repo or join the EleutherAI discord server](https://discord.gg/eleutherai). The `#lm-thunderdome` channel is dedicated to developing this project and the `#release-discussion` channel is for receiving support for our releases.\n\n## Cite as\n\n```\n@misc{eval-harness,\n  author       = {Gao, Leo and Tow, Jonathan and Abbasi, Baber and Biderman, Stella and Black, Sid and DiPofi, Anthony and Foster, Charles and Golding, Laurence and Hsu, Jeffrey and Le Noac'h, Alain and Li, Haonan and McDonell, Kyle and Muennighoff, Niklas and Ociepa, Chris and Phang, Jason and Reynolds, Laria and Schoelkopf, Hailey and Skowron, Aviya and Sutawika, Lintang and Tang, Eric and Thite, Anish and Wang, Ben and Wang, Kevin and Zou, Andy},\n  title        = {A framework for few-shot language model evaluation},\n  month        = sep,\n  year         = 2021,\n  publisher    = {Zenodo},\n  version      = {v0.0.1},\n  doi          = {10.5281/zenodo.5371628},\n  url          = {https://doi.org/10.5281/zenodo.5371628}\n}\n```\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

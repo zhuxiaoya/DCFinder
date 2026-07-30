@@ -1,0 +1,1586 @@
+{
+  "poetry": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "build",
+        "specifier": "<2.0.0,>=1.2.1"
+      },
+      {
+        "name": "cachecontrol",
+        "specifier": "<0.15.0,>=0.14.0"
+      },
+      {
+        "name": "cleo",
+        "specifier": "<3.0.0,>=2.1.0"
+      },
+      {
+        "name": "dulwich",
+        "specifier": "<0.23.0,>=0.22.6"
+      },
+      {
+        "name": "fastjsonschema",
+        "specifier": "<3.0.0,>=2.18.0"
+      },
+      {
+        "name": "findpython",
+        "specifier": "<0.7.0,>=0.6.2"
+      },
+      {
+        "name": "installer",
+        "specifier": "<0.8.0,>=0.7.0"
+      },
+      {
+        "name": "keyring",
+        "specifier": "<26.0.0,>=25.1.0"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=24.0"
+      },
+      {
+        "name": "pbs-installer",
+        "specifier": "<2026.0.0,>=2025.1.6"
+      },
+      {
+        "name": "pkginfo",
+        "specifier": "<2.0,>=1.12"
+      },
+      {
+        "name": "platformdirs",
+        "specifier": "<5,>=3.0.0"
+      },
+      {
+        "name": "poetry-core",
+        "specifier": "==2.1.1"
+      },
+      {
+        "name": "pyproject-hooks",
+        "specifier": "<2.0.0,>=1.0.0"
+      },
+      {
+        "name": "requests",
+        "specifier": "<3.0,>=2.26"
+      },
+      {
+        "name": "requests-toolbelt",
+        "specifier": "<2.0.0,>=1.0.0"
+      },
+      {
+        "name": "shellingham",
+        "specifier": "<2.0,>=1.5"
+      },
+      {
+        "name": "tomli",
+        "specifier": "<3.0.0,>=2.0.1"
+      },
+      {
+        "name": "tomlkit",
+        "specifier": "<1.0.0,>=0.11.4"
+      },
+      {
+        "name": "trove-classifiers",
+        "specifier": ">=2022.5.19"
+      },
+      {
+        "name": "virtualenv",
+        "specifier": "<21.0.0,>=20.26.6"
+      }
+    ]
+  },
+  "poetry-dynamic-versioning": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "dunamai",
+        "specifier": "<2.0.0,>=1.26.0"
+      },
+      {
+        "name": "tomlkit",
+        "specifier": ">=0.4"
+      },
+      {
+        "name": "jinja2",
+        "specifier": "<4,>=2.11.1"
+      }
+    ]
+  },
+  "poetry-plugin-export": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "poetry",
+        "specifier": "<3.0.0,>=2.1.0"
+      },
+      {
+        "name": "poetry-core",
+        "specifier": "<3.0.0,>=2.1.0"
+      },
+      {
+        "name": "tomlkit",
+        "specifier": "<1.0.0,>=0.11.4"
+      }
+    ]
+  },
+  "aiofiles": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "aiohttp": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "attrs",
+        "specifier": ">=17.3.0"
+      },
+      {
+        "name": "chardet",
+        "specifier": "<4.0,>=2.0"
+      },
+      {
+        "name": "multidict",
+        "specifier": "<5.0,>=4.5"
+      },
+      {
+        "name": "async-timeout",
+        "specifier": "<4.0,>=3.0"
+      },
+      {
+        "name": "yarl",
+        "specifier": "<2.0,>=1.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=3.6.5"
+      }
+    ]
+  },
+  "aiosqlite": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "anyio": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "exceptiongroup",
+        "specifier": ">=1.0.2"
+      },
+      {
+        "name": "idna",
+        "specifier": ">=2.8"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.5"
+      }
+    ]
+  },
+  "bitstring": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "bitarray",
+        "specifier": "<4.0,>=3.0.0"
+      },
+      {
+        "name": "tibs",
+        "specifier": "<0.6,>=0.5.6"
+      }
+    ]
+  },
+  "boto3": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "botocore",
+        "specifier": "<1.44.0,>=1.43.48"
+      },
+      {
+        "name": "jmespath",
+        "specifier": "<2.0.0,>=0.7.1"
+      },
+      {
+        "name": "s3transfer",
+        "specifier": "<0.20.0,>=0.19.0"
+      }
+    ]
+  },
+  "chiabip158": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://pypi.chia.net/simple/",
+    "specifier": ">=1.5.2",
+    "requires_dist": []
+  },
+  "chiapos": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://pypi.chia.net/simple/",
+    "specifier": ">=2.0.10",
+    "requires_dist": []
+  },
+  "chia-puzzles-py": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "clvm-rs",
+        "specifier": "<0.3.0,>=0.2.3"
+      },
+      {
+        "name": "clvm-tools-rs",
+        "specifier": "<0.2.0,>=0.1.45"
+      },
+      {
+        "name": "pytest",
+        "specifier": "<9.0.0,>=8.3.3"
+      }
+    ]
+  },
+  "chia-rs": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://pypi.chia.net/simple/",
+    "specifier": "<0.25,>=0.24",
+    "requires_dist": []
+  },
+  "chiavdf": {
+    "version": "1.1.12",
+    "source": "private",
+    "private_url": "https://pypi.chia.net/simple/",
+    "specifier": ">=1.1.10",
+    "requires_dist": []
+  },
+  "click": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "clvm": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "clvm-tools": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "clvm",
+        "specifier": ">=0.9.2"
+      },
+      {
+        "name": "clvm-tools-rs",
+        "specifier": ">=0.1.37"
+      },
+      {
+        "name": "importlib-metadata",
+        "specifier": ""
+      },
+      {
+        "name": "setuptools",
+        "specifier": ""
+      }
+    ]
+  },
+  "clvm-tools-rs": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "colorama": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "colorlog": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "concurrent-log-handler": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "portalocker",
+        "specifier": ">=2.6.0"
+      }
+    ]
+  },
+  "cryptography": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://pypi.chia.net/simple/",
+    "specifier": ">=43.0.1",
+    "requires_dist": []
+  },
+  "dnslib": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "dnspython": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "filelock": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "keyring": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "secretstorage",
+        "specifier": ">=3.2"
+      },
+      {
+        "name": "jeepney",
+        "specifier": ">=0.4.2"
+      },
+      {
+        "name": "importlib-metadata",
+        "specifier": ">=4.11.4"
+      },
+      {
+        "name": "jaraco-classes",
+        "specifier": ""
+      },
+      {
+        "name": "jaraco-functools",
+        "specifier": ""
+      },
+      {
+        "name": "jaraco-context",
+        "specifier": ""
+      }
+    ]
+  },
+  "packaging": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pip": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "psutil": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://pypi.chia.net/simple/",
+    "specifier": ">=6.1.0",
+    "requires_dist": []
+  },
+  "pyyaml": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "setproctitle": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://pypi.chia.net/simple/",
+    "specifier": ">=1.3.3",
+    "requires_dist": []
+  },
+  "setuptools": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "sortedcontainers": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "typing-extensions": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "watchdog": {
+    "version": "6.0.0",
+    "source": "private",
+    "private_url": "https://pypi.chia.net/simple/",
+    "specifier": ">=4.0.1",
+    "requires_dist": []
+  },
+  "zstd": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://pypi.chia.net/simple/",
+    "specifier": "[{'version': '>=1.5.5.1', 'python': '<3.12'}, {'version': '>=1.5.5.1', 'python': '3.12', 'source': 'chia'}]",
+    "requires_dist": []
+  },
+  "importlib-resources": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "hsms": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "segno",
+        "specifier": "==1.4.1"
+      },
+      {
+        "name": "chia-base",
+        "specifier": ">=0.1.5"
+      },
+      {
+        "name": "chialisp-puzzles",
+        "specifier": ">=0.1.1"
+      }
+    ]
+  },
+  "aiohttp-cors": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "aiohttp",
+        "specifier": ">=3.9"
+      }
+    ]
+  },
+  "build": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "packaging",
+        "specifier": ">=24.0"
+      },
+      {
+        "name": "pyproject-hooks",
+        "specifier": ""
+      },
+      {
+        "name": "tomli",
+        "specifier": ">=1.1.0"
+      }
+    ]
+  },
+  "coverage": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "diff-cover": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "jinja2",
+        "specifier": ">=2.7.1"
+      },
+      {
+        "name": "pygments",
+        "specifier": "<3.0.0,>=2.19.1"
+      },
+      {
+        "name": "chardet",
+        "specifier": ">=3.0.0"
+      },
+      {
+        "name": "pluggy",
+        "specifier": "<2,>=0.13.1"
+      }
+    ]
+  },
+  "keyrings-cryptfile": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "mypy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.6.0"
+      },
+      {
+        "name": "mypy-extensions",
+        "specifier": ">=1.0.0"
+      },
+      {
+        "name": "pathspec",
+        "specifier": ">=1.0.0"
+      },
+      {
+        "name": "tomli",
+        "specifier": ">=1.1.0"
+      },
+      {
+        "name": "librt",
+        "specifier": ">=0.13.0"
+      },
+      {
+        "name": "ast-serialize",
+        "specifier": "<1.0.0,>=0.6.0"
+      }
+    ]
+  },
+  "pre-commit": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "cfgv",
+        "specifier": ">=2.0.0"
+      },
+      {
+        "name": "identify",
+        "specifier": ">=1.0.0"
+      },
+      {
+        "name": "nodeenv",
+        "specifier": ">=0.11.1"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1"
+      },
+      {
+        "name": "virtualenv",
+        "specifier": ">=20.10.0"
+      }
+    ]
+  },
+  "py3createtorrent": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "bencode-py",
+        "specifier": ""
+      }
+    ]
+  },
+  "pyinstaller": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "altgraph",
+        "specifier": ""
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=22.0"
+      },
+      {
+        "name": "pyinstaller-hooks-contrib",
+        "specifier": ">=2026.6"
+      },
+      {
+        "name": "setuptools",
+        "specifier": ">=42.0.0"
+      }
+    ]
+  },
+  "pytest": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "exceptiongroup",
+        "specifier": ">=1"
+      },
+      {
+        "name": "iniconfig",
+        "specifier": ">=1"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20"
+      },
+      {
+        "name": "pluggy",
+        "specifier": "<2,>=1.5"
+      },
+      {
+        "name": "pygments",
+        "specifier": ">=2.7.2"
+      },
+      {
+        "name": "tomli",
+        "specifier": ">=1"
+      }
+    ]
+  },
+  "pytest-cov": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "coverage",
+        "specifier": ">=7.10.6"
+      },
+      {
+        "name": "pluggy",
+        "specifier": ">=1.2"
+      },
+      {
+        "name": "pytest",
+        "specifier": ">=7"
+      }
+    ]
+  },
+  "pytest-mock": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pytest",
+        "specifier": ">=6.2.5"
+      }
+    ]
+  },
+  "pytest-monitor": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pytest",
+        "specifier": ""
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "psutil",
+        "specifier": ">=5.1.0"
+      },
+      {
+        "name": "memory-profiler",
+        "specifier": ">=0.58"
+      },
+      {
+        "name": "wheel",
+        "specifier": ""
+      }
+    ]
+  },
+  "pytest-xdist": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "execnet",
+        "specifier": ">=2.1"
+      },
+      {
+        "name": "pytest",
+        "specifier": ">=7.0.0"
+      }
+    ]
+  },
+  "types-aiofiles": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "types-cryptography": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "types-pyyaml": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "types-setuptools": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "lxml": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "miniupnpc": {
+    "version": "2.3.3",
+    "source": "private",
+    "private_url": "https://pypi.chia.net/simple/",
+    "specifier": "<3,>=2.3.2",
+    "requires_dist": []
+  },
+  "ruff": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "cachecontrol": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "requests",
+        "specifier": ">=2.16.0"
+      },
+      {
+        "name": "msgpack",
+        "specifier": "<2.0.0,>=0.5.2"
+      },
+      {
+        "name": "filelock",
+        "specifier": ">=3.8.0"
+      }
+    ]
+  },
+  "cleo": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "dulwich": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "urllib3",
+        "specifier": ">=1.25"
+      }
+    ]
+  },
+  "fastjsonschema": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "findpython": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "packaging",
+        "specifier": ">=20"
+      }
+    ]
+  },
+  "installer": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pbs-installer": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "httpx",
+        "specifier": "<1,>=0.27.0"
+      },
+      {
+        "name": "zstandard",
+        "specifier": ">=0.21.0"
+      },
+      {
+        "name": "pbs-installer",
+        "specifier": ""
+      }
+    ]
+  },
+  "pkginfo": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "platformdirs": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "poetry-core": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pyproject-hooks": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "requests": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "charset-normalizer",
+        "specifier": "<4,>=2"
+      },
+      {
+        "name": "idna",
+        "specifier": "<4,>=2.5"
+      },
+      {
+        "name": "urllib3",
+        "specifier": "<3,>=1.26"
+      },
+      {
+        "name": "certifi",
+        "specifier": ">=2023.5.7"
+      }
+    ]
+  },
+  "requests-toolbelt": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "requests",
+        "specifier": "<3.0.0,>=2.0.1"
+      }
+    ]
+  },
+  "shellingham": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "tomli": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "tomlkit": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "trove-classifiers": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "virtualenv": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "distlib",
+        "specifier": "<1,>=0.3.7"
+      },
+      {
+        "name": "filelock",
+        "specifier": "<4,>=3.24.2"
+      },
+      {
+        "name": "platformdirs",
+        "specifier": "<5,>=3.9.1"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.13.2"
+      }
+    ]
+  },
+  "dunamai": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "packaging",
+        "specifier": ">=20.9"
+      }
+    ]
+  },
+  "jinja2": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "markupsafe",
+        "specifier": ">=2.0"
+      }
+    ]
+  },
+  "attrs": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "chardet": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "multidict": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "async-timeout": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "yarl": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "idna",
+        "specifier": ">=2.0"
+      },
+      {
+        "name": "multidict",
+        "specifier": ">=4.0"
+      },
+      {
+        "name": "propcache",
+        "specifier": ">=0.2.1"
+      }
+    ]
+  },
+  "exceptiongroup": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.6.0"
+      }
+    ]
+  },
+  "idna": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "bitarray": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "tibs": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "botocore": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "jmespath",
+        "specifier": "<2.0.0,>=0.7.1"
+      },
+      {
+        "name": "python-dateutil",
+        "specifier": "<3.0.0,>=2.1"
+      },
+      {
+        "name": "urllib3",
+        "specifier": "!=2.2.0,<3,>=1.25.4"
+      }
+    ]
+  },
+  "jmespath": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "s3transfer": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "botocore",
+        "specifier": "<2.0a.0,>=1.37.4"
+      }
+    ]
+  },
+  "clvm-rs": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://pypi.chia.net/simple/",
+    "specifier": "<0.3.0,>=0.2.3",
+    "requires_dist": []
+  },
+  "importlib-metadata": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "zipp",
+        "specifier": ">=3.20"
+      }
+    ]
+  },
+  "portalocker": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "secretstorage": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "cryptography",
+        "specifier": ">=2.0"
+      },
+      {
+        "name": "jeepney",
+        "specifier": ">=0.6"
+      }
+    ]
+  },
+  "jeepney": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "jaraco-classes": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "more-itertools",
+        "specifier": ""
+      }
+    ]
+  },
+  "jaraco-functools": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "more-itertools",
+        "specifier": ""
+      }
+    ]
+  },
+  "jaraco-context": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "backports-tarfile",
+        "specifier": ""
+      }
+    ]
+  },
+  "segno": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "chia-base": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "clvm-rs",
+        "specifier": "==0.2.5"
+      },
+      {
+        "name": "chia-rs",
+        "specifier": ">=0.5.2"
+      }
+    ]
+  },
+  "chialisp-puzzles": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "chialisp-loader",
+        "specifier": ">=0.1.2"
+      }
+    ]
+  },
+  "pygments": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pluggy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "mypy-extensions": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pathspec": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "librt": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "ast-serialize": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "cfgv": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "identify": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nodeenv": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "bencode-py": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "altgraph": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pyinstaller-hooks-contrib": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "packaging",
+        "specifier": ">=22.0"
+      }
+    ]
+  },
+  "iniconfig": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "memory-profiler": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "psutil",
+        "specifier": ""
+      }
+    ]
+  },
+  "wheel": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "packaging",
+        "specifier": ">=24.0"
+      }
+    ]
+  },
+  "execnet": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "msgpack": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "urllib3": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "httpx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "anyio",
+        "specifier": ""
+      },
+      {
+        "name": "certifi",
+        "specifier": ""
+      },
+      {
+        "name": "httpcore",
+        "specifier": "==1.*"
+      },
+      {
+        "name": "idna",
+        "specifier": ""
+      }
+    ]
+  },
+  "zstandard": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "charset-normalizer": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "certifi": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "distlib": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "markupsafe": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "propcache": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "python-dateutil": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "six",
+        "specifier": ">=1.5"
+      }
+    ]
+  },
+  "zipp": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "more-itertools": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "backports-tarfile": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "chialisp-loader": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "clvm-rs",
+        "specifier": ""
+      },
+      {
+        "name": "importlib-resources",
+        "specifier": ""
+      }
+    ]
+  },
+  "httpcore": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "certifi",
+        "specifier": ""
+      },
+      {
+        "name": "h11",
+        "specifier": ">=0.16"
+      }
+    ]
+  },
+  "six": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "h11": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/15/76/c79c34311625227a288df3e483fc5cdf3d596624cbd4b4758c4cbdc14af3/triton-3.7.1-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=ee89fbf782ec2ad50391dd1cf26cbea4f4467154c37f4773026da8fc31c0f58e",
+          "hashes": {
+            "sha256": "ee89fbf782ec2ad50391dd1cf26cbea4f4467154c37f4773026da8fc31c0f58e"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "triton",
+        "version": "3.7.1",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "home-page",
+          "keywords",
+          "license-file",
+          "provides-extra",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "A language and compiler for custom Deep Learning operations",
+        "keywords": [
+          "Compiler",
+          "Deep Learning"
+        ],
+        "home_page": "https://github.com/triton-lang/triton/",
+        "author": "Philippe Tillet",
+        "author_email": "phil@openai.com",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "Topic :: Software Development :: Build Tools",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_dist": [
+          "importlib-metadata; python_version < \"3.10\"",
+          "cmake<4.0,>=3.20; extra == \"build\"",
+          "lit; extra == \"build\"",
+          "autopep8; extra == \"tests\"",
+          "isort; extra == \"tests\"",
+          "numpy; extra == \"tests\"",
+          "pytest; extra == \"tests\"",
+          "pytest-forked; extra == \"tests\"",
+          "pytest-xdist; extra == \"tests\"",
+          "scipy>=1.7.1; extra == \"tests\"",
+          "llnl-hatchet; extra == \"tests\"",
+          "matplotlib; extra == \"tutorials\"",
+          "pandas; extra == \"tutorials\"",
+          "tabulate; extra == \"tutorials\""
+        ],
+        "requires_python": ">=3.10,<3.15",
+        "provides_extra": [
+          "build",
+          "tests",
+          "tutorials"
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,999 @@
+{
+     "direct dependency": {
+          "number": 54,
+          "packages": [
+               {
+                    "name": "faster-whisper",
+                    "specifier": "",
+                    "raw_requirement": "faster-whisper",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ctranslate2",
+                    "specifier": "",
+                    "raw_requirement": "ctranslate2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "aiohttp",
+                    "specifier": "",
+                    "raw_requirement": "aiohttp",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "certifi",
+                    "specifier": "",
+                    "raw_requirement": "certifi",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "deepl",
+                    "specifier": "",
+                    "raw_requirement": "deepl",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "elevenlabs",
+                    "specifier": "",
+                    "raw_requirement": "elevenlabs ; elevenlabs",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "google-ai-generativelanguage",
+                    "specifier": "",
+                    "raw_requirement": "google-ai-generativelanguage",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "google-generativeai",
+                    "specifier": "",
+                    "raw_requirement": "google-generativeai",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gtts",
+                    "specifier": "",
+                    "raw_requirement": "gtts",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "httpx",
+                    "specifier": "",
+                    "raw_requirement": "httpx",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "huggingface-hub",
+                    "specifier": "",
+                    "raw_requirement": "huggingface-hub",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "librosa",
+                    "specifier": "",
+                    "raw_requirement": "librosa",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "multidict",
+                    "specifier": "",
+                    "raw_requirement": "multidict",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numpy",
+                    "specifier": "==1.26",
+                    "raw_requirement": "numpy==1.26",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnxruntime",
+                    "specifier": "",
+                    "raw_requirement": "onnxruntime",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "openai",
+                    "specifier": "",
+                    "raw_requirement": "openai",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "openai-whisper",
+                    "specifier": "",
+                    "raw_requirement": "openai-whisper",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pillow",
+                    "specifier": "",
+                    "raw_requirement": "Pillow",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pydub",
+                    "specifier": "",
+                    "raw_requirement": "pydub",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pygame",
+                    "specifier": "",
+                    "raw_requirement": "pygame",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pyside6",
+                    "specifier": "",
+                    "raw_requirement": "PySide6",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pytz",
+                    "specifier": "",
+                    "raw_requirement": "pytz",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pyyaml",
+                    "specifier": "",
+                    "raw_requirement": "PyYAML",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "requests",
+                    "specifier": "",
+                    "raw_requirement": "requests",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "shiboken6",
+                    "specifier": "",
+                    "raw_requirement": "shiboken6",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "soundfile",
+                    "specifier": "",
+                    "raw_requirement": "soundfile",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "speechrecognition",
+                    "specifier": "",
+                    "raw_requirement": "SpeechRecognition",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tencentcloud-sdk-python-common",
+                    "specifier": "",
+                    "raw_requirement": "tencentcloud-sdk-python-common",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tencentcloud-sdk-python-tmt",
+                    "specifier": "",
+                    "raw_requirement": "tencentcloud-sdk-python-tmt",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch",
+                    "specifier": "",
+                    "raw_requirement": "torch",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torchaudio",
+                    "specifier": "",
+                    "raw_requirement": "torchaudio",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "zhconv",
+                    "specifier": "",
+                    "raw_requirement": "zhconv",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "azure-cognitiveservices-speech",
+                    "specifier": "",
+                    "raw_requirement": "azure-cognitiveservices-speech",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pydantic",
+                    "specifier": "",
+                    "raw_requirement": "pydantic",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pydantic-core",
+                    "specifier": "",
+                    "raw_requirement": "pydantic_core",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "plyer",
+                    "specifier": "",
+                    "raw_requirement": "plyer",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "flask",
+                    "specifier": "",
+                    "raw_requirement": "flask",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "waitress",
+                    "specifier": "",
+                    "raw_requirement": "waitress",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "edge-tts",
+                    "specifier": "",
+                    "raw_requirement": "edge-tts",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "srt",
+                    "specifier": "",
+                    "raw_requirement": "srt",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "py7zr",
+                    "specifier": "",
+                    "raw_requirement": "py7zr",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "deepgram-sdk",
+                    "specifier": "",
+                    "raw_requirement": "deepgram-sdk",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "deepgram-captions",
+                    "specifier": "",
+                    "raw_requirement": "deepgram-captions",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "funasr",
+                    "specifier": "",
+                    "raw_requirement": "funasr",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "modelscope",
+                    "specifier": "",
+                    "raw_requirement": "modelscope",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "anthropic",
+                    "specifier": "",
+                    "raw_requirement": "anthropic",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "addict",
+                    "specifier": "",
+                    "raw_requirement": "addict",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "datasets",
+                    "specifier": "==3.0",
+                    "raw_requirement": "datasets==3.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "simplejson",
+                    "specifier": "",
+                    "raw_requirement": "simplejson",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gradio-client",
+                    "specifier": "",
+                    "raw_requirement": "gradio_client",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "sortedcontainers",
+                    "specifier": "",
+                    "raw_requirement": "sortedcontainers",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "alibabacloud-alimt20181012",
+                    "specifier": "==1.1.0",
+                    "raw_requirement": "alibabacloud_alimt20181012==1.1.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "samplerate",
+                    "specifier": "",
+                    "raw_requirement": "samplerate;sys_platform == 'win32'",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "google-cloud-texttospeech",
+                    "specifier": ">=2.14.0",
+                    "raw_requirement": "google-cloud-texttospeech>=2.14.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/pyvideotrans-main/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 21,
+          "packages": [
+               {
+                    "name": "filelock",
+                    "specifier": ">=3.10.0,>=3.9",
+                    "raw_requirement": "filelock>=3.10.0 ; filelock ; filelock ; filelock ; filelock ; filelock>=3.9",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "modelscope",
+                              "source": "public"
+                         },
+                         {
+                              "name": "datasets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "triton",
+                              "source": "private"
+                         },
+                         {
+                              "name": "modelscope-hub",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fsspec",
+                    "specifier": ">=2023.5.0,<=2024.6.1,>=2023.1.0",
+                    "raw_requirement": "fsspec>=2023.5.0 ; fsspec ; fsspec[http]<=2024.6.1,>=2023.1.0 ; fsspec",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "datasets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": ">=3.1.2",
+                    "raw_requirement": "jinja2 ; jinja2>=3.1.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "flask",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markupsafe",
+                    "specifier": ">=2.1.1,>=2.0,>=2.1.1",
+                    "raw_requirement": "markupsafe>=2.1.1 ; MarkupSafe>=2.0 ; markupsafe>=2.1.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "flask",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jinja2",
+                              "source": "private"
+                         },
+                         {
+                              "name": "werkzeug",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mpmath",
+                    "specifier": "<1.4,>=1.1.0",
+                    "raw_requirement": "mpmath <1.4,>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sympy",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "networkx",
+                    "specifier": "",
+                    "raw_requirement": "networkx",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cublas-cu12",
+                    "specifier": "==12.1.3.1",
+                    "raw_requirement": "nvidia-cublas-cu12 (==12.1.3.1) ; platform_system == \"Linux\" and platform_machine == \"x86_64\" ; nvidia-cublas-cu12 ; nvidia-cublas-cu12",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cudnn-cu12",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cusolver-cu12",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cuda-cupti-cu12",
+                    "specifier": "==12.1.105",
+                    "raw_requirement": "nvidia-cuda-cupti-cu12 (==12.1.105) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cuda-nvrtc-cu12",
+                    "specifier": "==12.1.105",
+                    "raw_requirement": "nvidia-cuda-nvrtc-cu12 (==12.1.105) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cuda-runtime-cu12",
+                    "specifier": "==12.1.105",
+                    "raw_requirement": "nvidia-cuda-runtime-cu12 (==12.1.105) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cudnn-cu12",
+                    "specifier": "==9.1.0.70",
+                    "raw_requirement": "nvidia-cudnn-cu12 (==9.1.0.70) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cufft-cu12",
+                    "specifier": "==11.0.2.54",
+                    "raw_requirement": "nvidia-cufft-cu12 (==11.0.2.54) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-curand-cu12",
+                    "specifier": "==10.3.2.106",
+                    "raw_requirement": "nvidia-curand-cu12 (==10.3.2.106) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cusolver-cu12",
+                    "specifier": "==11.4.5.107",
+                    "raw_requirement": "nvidia-cusolver-cu12 (==11.4.5.107) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cusparse-cu12",
+                    "specifier": "==12.1.0.106",
+                    "raw_requirement": "nvidia-cusparse-cu12 (==12.1.0.106) ; platform_system == \"Linux\" and platform_machine == \"x86_64\" ; nvidia-cusparse-cu12",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cusolver-cu12",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-nccl-cu12",
+                    "specifier": "==2.21.5",
+                    "raw_requirement": "nvidia-nccl-cu12 (==2.21.5) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-nvjitlink-cu12",
+                    "specifier": "",
+                    "raw_requirement": "nvidia-nvjitlink-cu12 ; nvidia-nvjitlink-cu12",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nvidia-cusolver-cu12",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cusparse-cu12",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-nvtx-cu12",
+                    "specifier": "==12.1.105",
+                    "raw_requirement": "nvidia-nvtx-cu12 (==12.1.105) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "sympy",
+                    "specifier": "==1.13.1",
+                    "raw_requirement": "sympy (==1.13.1) ; python_version >= \"3.9\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "triton",
+                    "specifier": "==3.1.0",
+                    "raw_requirement": "triton>=2; (platform_machine == \"x86_64\" and sys_platform == \"linux\") or sys_platform == \"linux2\" ; triton (==3.1.0) ; platform_system == \"Linux\" and platform_machine == \"x86_64\" and python_version < \"3.13\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "openai-whisper",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=4.4,>=4.0.0,>=4.1.0,>=4.1.1,>=4.1.0,<5,>=4.14,>=4.8.0,>=4.15.0,>=4.14.1,<5.0.0,>=4.1.0,>=4.0.0,<5,>=4.14,~=4.0,>=4.2,~=4.12,>=4.5,>=4.6.0,>=4.12.0,>=4.13.2,>=4.6.0",
+                    "raw_requirement": "typing_extensions>=4.4; python_version < \"3.13\" ; typing_extensions>=4.0.0 ; typing-extensions ; typing-extensions>=4.1.0 ; typing_extensions>=4.1.1 ; typing-extensions>=4.1.0; python_version < \"3.11\" ; typing-extensions<5,>=4.14 ; typing-extensions ; typing-extensions ; typing-extensions (>=4.8.0) ; typing-extensions>=4.15.0 ; typing-extensions>=4.14.1 ; typing-extensions<5.0.0,>=4.1.0 ; typing_extensions>=4.0.0 ; typing-extensions<5,>=4.14 ; typing-extensions~=4.0 ; typing-extensions>=4.2; python_version < \"3.13\" ; typing-extensions~=4.12 ; typing_extensions>=4.5; python_version < \"3.13\" ; typing-extensions>=4.6.0 ; typing-extensions>=4.12.0 ; typing-extensions>=4.13.2; python_full_version < \"3.11\" ; typing-extensions>=4.6.0; python_version < \"3.13\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "elevenlabs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-generativeai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         },
+                         {
+                              "name": "multidict",
+                              "source": "public"
+                         },
+                         {
+                              "name": "openai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "soundfile",
+                              "source": "public"
+                         },
+                         {
+                              "name": "speechrecognition",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "edge-tts",
+                              "source": "public"
+                         },
+                         {
+                              "name": "deepgram-sdk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anthropic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiosignal",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpcio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "azure-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typing-inspection",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cryptography",
+                              "source": "public"
+                         },
+                         {
+                              "name": "exceptiongroup",
+                              "source": "public"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 4,
+          "packages": {
+               "certifi": {
+                    "private version": "2022.12.7",
+                    "public version": "2026.6.17",
+                    "highest public (unconstrained)": "2026.6.17",
+                    "declared specifier": ">=2023.11.17",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 19
+               },
+               "numpy": {
+                    "private version": "1.26.0",
+                    "public version": "1.26.0",
+                    "highest public (unconstrained)": "2.5.1",
+                    "declared specifier": "==1.26",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               },
+               "pillow": {
+                    "private version": "12.2.0",
+                    "public version": "12.3.0",
+                    "highest public (unconstrained)": "12.3.0"
+               },
+               "torchaudio": {
+                    "private version": "2.5.1+cu121",
+                    "public version": "2.11.0",
+                    "highest public (unconstrained)": "2.11.0"
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 21,
+          "packages": {
+               "filelock": {
+                    "private version": "3.29.0",
+                    "public version": "3.29.7",
+                    "highest public (unconstrained)": "3.29.7",
+                    "declared specifier": ">=3.10.0,>=3.9",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 56
+               },
+               "fsspec": {
+                    "private version": "2024.6.1",
+                    "public version": "2024.6.1",
+                    "highest public (unconstrained)": "2026.6.0",
+                    "declared specifier": ">=2023.5.0,<=2024.6.1,>=2023.1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 15
+               },
+               "jinja2": {
+                    "private version": "3.1.6",
+                    "public version": "3.1.6",
+                    "highest public (unconstrained)": "3.1.6",
+                    "declared specifier": ">=3.1.2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 5
+               },
+               "markupsafe": {
+                    "private version": "3.0.3",
+                    "public version": "3.0.3",
+                    "highest public (unconstrained)": "3.0.3",
+                    "declared specifier": ">=2.1.1,>=2.0,>=2.1.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 9
+               },
+               "mpmath": {
+                    "private version": "1.3.0",
+                    "public version": "1.3.0",
+                    "highest public (unconstrained)": "1.5.0a0",
+                    "declared specifier": "<1.4,>=1.1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "networkx": {
+                    "private version": "3.6.1",
+                    "public version": "3.6.1",
+                    "highest public (unconstrained)": "3.6.1"
+               },
+               "nvidia-cublas-cu12": {
+                    "private version": "12.1.3.1",
+                    "public version": "12.1.3.1",
+                    "highest public (unconstrained)": "12.9.2.10",
+                    "declared specifier": "==12.1.3.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cuda-cupti-cu12": {
+                    "private version": "12.1.105",
+                    "public version": "12.1.105",
+                    "highest public (unconstrained)": "12.9.79",
+                    "declared specifier": "==12.1.105",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cuda-nvrtc-cu12": {
+                    "private version": "12.1.105",
+                    "public version": "12.1.105",
+                    "highest public (unconstrained)": "12.9.86",
+                    "declared specifier": "==12.1.105",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cuda-runtime-cu12": {
+                    "private version": "12.1.105",
+                    "public version": "12.1.105",
+                    "highest public (unconstrained)": "12.9.79",
+                    "declared specifier": "==12.1.105",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cudnn-cu12": {
+                    "private version": "9.1.0.70",
+                    "public version": "9.1.0.70",
+                    "highest public (unconstrained)": "9.24.0.43",
+                    "declared specifier": "==9.1.0.70",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cufft-cu12": {
+                    "private version": "11.0.2.54",
+                    "public version": "11.0.2.54",
+                    "highest public (unconstrained)": "11.4.1.4",
+                    "declared specifier": "==11.0.2.54",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-curand-cu12": {
+                    "private version": "10.3.2.106",
+                    "public version": "10.3.2.106",
+                    "highest public (unconstrained)": "10.3.10.19",
+                    "declared specifier": "==10.3.2.106",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cusolver-cu12": {
+                    "private version": "11.4.5.107",
+                    "public version": "11.4.5.107",
+                    "highest public (unconstrained)": "11.7.5.82",
+                    "declared specifier": "==11.4.5.107",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cusparse-cu12": {
+                    "private version": "12.1.0.106",
+                    "public version": "12.1.0.106",
+                    "highest public (unconstrained)": "12.5.10.65",
+                    "declared specifier": "==12.1.0.106",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-nccl-cu12": {
+                    "private version": "2.21.5",
+                    "public version": "2.21.5",
+                    "highest public (unconstrained)": "2.30.7",
+                    "declared specifier": "==2.21.5",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-nvjitlink-cu12": {
+                    "private version": "12.9.86",
+                    "public version": "12.9.86",
+                    "highest public (unconstrained)": "12.9.86"
+               },
+               "nvidia-nvtx-cu12": {
+                    "private version": "12.1.105",
+                    "public version": "12.1.105",
+                    "highest public (unconstrained)": "12.9.79",
+                    "declared specifier": "==12.1.105",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "sympy": {
+                    "private version": "1.13.1",
+                    "public version": "1.13.1",
+                    "highest public (unconstrained)": "1.14.0",
+                    "declared specifier": "==1.13.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "triton": {
+                    "private version": "3.1.0",
+                    "public version": "3.1.0",
+                    "highest public (unconstrained)": "3.7.1",
+                    "declared specifier": "==3.1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "typing-extensions": {
+                    "private version": "4.15.0",
+                    "public version": "4.16.0",
+                    "highest public (unconstrained)": "4.16.0",
+                    "declared specifier": ">=4.4,>=4.0.0,>=4.1.0,>=4.1.1,>=4.1.0,<5,>=4.14,>=4.8.0,>=4.15.0,>=4.14.1,<5.0.0,>=4.1.0,>=4.0.0,<5,>=4.14,~=4.0,>=4.2,~=4.12,>=4.5,>=4.6.0,>=4.12.0,>=4.13.2,>=4.6.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 26,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 123
+     }
+}

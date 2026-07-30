@@ -1,0 +1,88 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/47/8d/d529b5d697919ba8c11ad626e835d4039be708a35b0d22de83a269a6682c/pyasn1_modules-0.4.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=29253a9207ce32b64c3ac6600edc75368f98473906e8fd1043bd6b5b1de2c14a",
+          "hashes": {
+            "sha256": "29253a9207ce32b64c3ac6600edc75368f98473906e8fd1043bd6b5b1de2c14a"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "pyasn1_modules",
+        "version": "0.4.2",
+        "dynamic": [
+          "license-file"
+        ],
+        "platform": [
+          "any"
+        ],
+        "summary": "A collection of ASN.1-based protocols modules",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/pyasn1/pyasn1-modules",
+        "author": "Ilya Etingof",
+        "author_email": "etingof@gmail.com",
+        "maintainer": "pyasn1 maintenance organization",
+        "maintainer_email": "Christian Heimes <christian@python.org>",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Education",
+          "Intended Audience :: Information Technology",
+          "Intended Audience :: System Administrators",
+          "Intended Audience :: Telecommunications Industry",
+          "License :: OSI Approved :: BSD License",
+          "Natural Language :: English",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Communications",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "pyasn1<0.7.0,>=0.6.1"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Source, https://github.com/pyasn1/pyasn1-modules",
+          "Issues, https://github.com/pyasn1/pyasn1-modules/issues",
+          "Changelog, https://github.com/pyasn1/pyasn1-modules/blob/master/CHANGES.txt"
+        ],
+        "description": "\nASN.1 modules for Python\n------------------------\n[![PyPI](https://img.shields.io/pypi/v/pyasn1-modules.svg?maxAge=2592000)](https://pypi.org/project/pyasn1-modules)\n[![Python Versions](https://img.shields.io/pypi/pyversions/pyasn1-modules.svg)](https://pypi.org/project/pyasn1-modules/)\n[![Build status](https://github.com/pyasn1/pyasn1-modules/actions/workflows/main.yml/badge.svg)](https://github.com/pyasn1/pyasn1-modules/actions/workflows/main.yml)\n[![Coverage Status](https://img.shields.io/codecov/c/github/pyasn1/pyasn1-modules.svg)](https://codecov.io/github/pyasn1/pyasn1-modules)\n[![GitHub license](https://img.shields.io/badge/license-BSD-blue.svg)](https://raw.githubusercontent.com/pyasn1/pyasn1-modules/master/LICENSE.txt)\n\nThe `pyasn1-modules` package contains a collection of\n[ASN.1](https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-X.208-198811-W!!PDF-E&type=items)\ndata structures expressed as Python classes based on [pyasn1](https://github.com/pyasn1/pyasn1)\ndata model.\n\nIf ASN.1 module you need is not present in this collection, try using\n[Asn1ate](https://github.com/kimgr/asn1ate) tool that compiles ASN.1 documents\ninto pyasn1 code.\n\n**NOTE:** The package is now maintained by *Christian Heimes* and\n*Simon Pichugin* in project https://github.com/pyasn1/pyasn1-modules.\n\nFeedback\n--------\n\nIf something does not work as expected, \n[open an issue](https://github.com/pyasn1/pyasn1-modules/issues) at GitHub\nor post your question [on Stack Overflow](https://stackoverflow.com/questions/ask)\n \nNew modules contributions are welcome via GitHub pull requests.\n\nCopyright (c) 2005-2020, [Ilya Etingof](mailto:etingof@gmail.com).\nAll rights reserved.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

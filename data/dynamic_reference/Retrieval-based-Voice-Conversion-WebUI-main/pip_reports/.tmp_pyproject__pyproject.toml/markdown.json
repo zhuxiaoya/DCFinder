@@ -1,0 +1,103 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/de/1f/77fa3081e4f66ca3576c896ae5d31c3002ac6607f9747d2e3aa49227e464/markdown-3.10.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=e91464b71ae3ee7afd3017d9f358ef0baf158fd9a298db92f1d4761133824c36",
+          "hashes": {
+            "sha256": "e91464b71ae3ee7afd3017d9f358ef0baf158fd9a298db92f1d4761133824c36"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "Markdown",
+        "version": "3.10.2",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Python implementation of John Gruber's Markdown.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "markdown",
+          "markdown-parser",
+          "python-markdown",
+          "markdown-to-html"
+        ],
+        "author": "Manfred Stienstra, Yuri Takhteyev",
+        "author_email": "Waylan limberg <python.markdown@gmail.com>",
+        "maintainer": "Isaac Muse",
+        "maintainer_email": "Waylan Limberg <python.markdown@gmail.com>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE.md"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Communications :: Email :: Filters",
+          "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries",
+          "Topic :: Internet :: WWW/HTTP :: Site Management",
+          "Topic :: Software Development :: Documentation",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Text Processing :: Filters",
+          "Topic :: Text Processing :: Markup :: HTML",
+          "Topic :: Text Processing :: Markup :: Markdown"
+        ],
+        "requires_dist": [
+          "coverage; extra == \"testing\"",
+          "pyyaml; extra == \"testing\"",
+          "mkdocs>=1.6; extra == \"docs\"",
+          "mkdocs-nature>=0.6; extra == \"docs\"",
+          "mdx_gh_links>=0.2; extra == \"docs\"",
+          "mkdocstrings[python]>=0.28.3; extra == \"docs\"",
+          "mkdocs-gen-files; extra == \"docs\"",
+          "mkdocs-section-index; extra == \"docs\"",
+          "mkdocs-literate-nav; extra == \"docs\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://Python-Markdown.github.io/",
+          "Documentation, https://Python-Markdown.github.io/",
+          "Repository, https://github.com/Python-Markdown/markdown",
+          "Issue Tracker, https://github.com/Python-Markdown/markdown/issues",
+          "Changelog, https://python-markdown.github.io/changelog/"
+        ],
+        "provides_extra": [
+          "testing",
+          "docs"
+        ],
+        "description": "[Python-Markdown][]\n===================\n\n[![Build Status][build-button]][build]\n[![Coverage Status][codecov-button]][codecov]\n[![Latest Version][mdversion-button]][md-pypi]\n[![Python Versions][pyversion-button]][md-pypi]\n[![BSD License][bsdlicense-button]][bsdlicense]\n[![Code of Conduct][codeofconduct-button]][Code of Conduct]\n\n[build-button]: https://github.com/Python-Markdown/markdown/actions/workflows/tox.yml/badge.svg\n[build]: https://github.com/Python-Markdown/markdown/actions/workflows/tox.yml\n[codecov-button]: https://codecov.io/gh/Python-Markdown/markdown/branch/master/graph/badge.svg\n[codecov]: https://codecov.io/gh/Python-Markdown/markdown\n[mdversion-button]: https://img.shields.io/pypi/v/Markdown.svg\n[md-pypi]: https://pypi.org/project/Markdown/\n[pyversion-button]: https://img.shields.io/pypi/pyversions/Markdown.svg\n[bsdlicense-button]: https://img.shields.io/badge/license-BSD-yellow.svg\n[bsdlicense]: https://opensource.org/licenses/BSD-3-Clause\n[codeofconduct-button]: https://img.shields.io/badge/code%20of%20conduct-contributor%20covenant-green.svg?style=flat-square\n[Code of Conduct]: https://github.com/Python-Markdown/markdown/blob/master/CODE_OF_CONDUCT.md\n\nThis is a Python implementation of John Gruber's [Markdown][].\nIt is almost completely compliant with the reference implementation,\nthough there are a few known issues. See [Features][] for information\non what exactly is supported and what is not. Additional features are\nsupported by the [Available Extensions][].\n\n[Python-Markdown]: https://Python-Markdown.github.io/\n[Markdown]: https://daringfireball.net/projects/markdown/\n[Features]: https://Python-Markdown.github.io#Features\n[Available Extensions]: https://Python-Markdown.github.io/extensions\n\nDocumentation\n-------------\n\n```bash\npip install markdown\n```\n```python\nimport markdown\nhtml = markdown.markdown(your_text_string)\n```\n\nFor more advanced [installation] and [usage] documentation, see the `docs/` directory\nof the distribution or the project website at <https://Python-Markdown.github.io/>.\n\n[installation]: https://python-markdown.github.io/install/\n[usage]: https://python-markdown.github.io/reference/\n\nSee the change log at <https://python-markdown.github.io/changelog/>.\n\nSupport\n-------\n\nYou may report bugs, ask for help, and discuss various other issues on the [bug tracker][].\n\n[bug tracker]: https://github.com/Python-Markdown/markdown/issues\n\nCode of Conduct\n---------------\n\nEveryone interacting in the Python-Markdown project's code bases, issue trackers,\nand mailing lists is expected to follow the [Code of Conduct].\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,40 @@
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/setup.py
+fire  # type: runtime
+omegaconf  # type: runtime
+diffusers ==0.24.0  # type: runtime
+transformers  # type: runtime
+accelerate  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/pyproject.toml
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/demo/realtime-txt2img/requirements.txt
+uvicorn >=0.24.0  # type: runtime
+fastapi >=0.104.1  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/demo/vid2vid/requirements.txt
+av  # type: runtime
+gradio  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/demo/realtime-img2img/requirements.txt
+diffusers ==0.24.0  # type: runtime
+transformers ==4.35.2  # type: runtime
+torch  # type: runtime
+fastapi ==0.104.1  # type: runtime
+uvicorn ==0.24.0.post1  # type: runtime
+pillow ==10.1.0  # type: runtime
+accelerate ==0.24.0  # type: runtime
+compel ==2.0.2  # type: runtime
+controlnet-aux ==0.0.7  # type: runtime
+peft ==0.6.0  # type: runtime
+xformers  # type: runtime
+markdown2  # type: runtime
+stable-fast  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/examples/vid2vid/requirements.txt
+av  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/examples/screen/requirements.txt
+matplotlib  # type: runtime
+pillow  # type: runtime
+mss  # type: runtime
+

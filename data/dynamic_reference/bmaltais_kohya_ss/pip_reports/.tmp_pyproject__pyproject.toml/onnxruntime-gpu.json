@@ -1,0 +1,80 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/d0/9c/3fa310e0730643051eb88e884f19813a6c8b67d0fbafcda610d960e589db/onnxruntime_gpu-1.19.2-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=a49740e079e7c5215830d30cde3df792e903df007aa0b0fd7aa797937061b27a",
+          "hashes": {
+            "sha256": "a49740e079e7c5215830d30cde3df792e903df007aa0b0fd7aa797937061b27a"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "onnxruntime-gpu",
+        "version": "1.19.2",
+        "summary": "ONNX Runtime is a runtime accelerator for Machine Learning models",
+        "keywords": [
+          "onnx",
+          "machine",
+          "learning"
+        ],
+        "home_page": "https://onnxruntime.ai",
+        "download_url": "https://github.com/microsoft/onnxruntime/tags",
+        "author": "Microsoft Corporation",
+        "author_email": "onnxruntime@microsoft.com",
+        "license": "MIT License",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: POSIX :: Linux",
+          "Topic :: Scientific/Engineering",
+          "Topic :: Scientific/Engineering :: Mathematics",
+          "Topic :: Scientific/Engineering :: Artificial Intelligence",
+          "Topic :: Software Development",
+          "Topic :: Software Development :: Libraries",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: MacOS"
+        ],
+        "requires_dist": [
+          "coloredlogs",
+          "flatbuffers",
+          "numpy >=1.21.6",
+          "packaging",
+          "protobuf",
+          "sympy"
+        ],
+        "description": "ONNX Runtime\n============\n\nONNX Runtime is a performance-focused scoring engine for Open Neural Network Exchange (ONNX) models.\nFor more information on ONNX Runtime, please see `aka.ms/onnxruntime <https://aka.ms/onnxruntime/>`_ or the `Github project <https://github.com/microsoft/onnxruntime/>`_.\n\n\nChanges\n-------\n\n1.19.2\n^^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.19.2\n\n1.19.1\n^^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.19.1\n\n1.19.0\n^^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.19.0\n\n1.18.0\n^^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.18.0\n\n1.17.0\n^^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.17.0\n\n1.16.0\n^^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.16.0\n\n1.15.0\n^^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.15.0\n\n1.14.0\n^^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.14.0\n\n1.13.0\n^^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.13.0\n\n1.12.0\n^^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.12.0\n\n1.11.0\n^^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.11.0\n\n1.10.0\n^^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.10.0\n\n1.9.0\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.9.0\n\n1.8.2\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.8.2\n\n1.8.1\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.8.1\n\n1.8.0\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.8.0\n\n1.7.0\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.7.0\n\n1.6.0\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.6.0\n\n1.5.3\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.5.3\n\n1.5.2\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.5.2\n\n1.5.1\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.5.1\n\n\n1.4.0\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.4.0\n\n1.3.1\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.3.1\n\n1.3.0\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.3.0\n\n1.2.0\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.2.0\n\n1.1.0\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.1.0\n\n1.0.0\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v1.0.0\n\n0.5.0\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v0.5.0\n\n0.4.0\n^^^^^\n\nRelease Notes : https://github.com/Microsoft/onnxruntime/releases/tag/v0.4.0\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

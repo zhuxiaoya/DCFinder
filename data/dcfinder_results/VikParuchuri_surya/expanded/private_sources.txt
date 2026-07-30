@@ -1,0 +1,7 @@
+# 私有源 (非 PyPI) 配置文件扫描结果 — VikParuchuri_surya
+# 共发现 1 个配置文件含私有源
+
+[pyproject.toml]
+  poetry.source: https://storage.googleapis.com/libtpu-releases/index.html
+  poetry.source: https://storage.googleapis.com/libtpu-wheels/index.html
+

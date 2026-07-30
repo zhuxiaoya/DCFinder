@@ -1,0 +1,1089 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/61/8c/fbdc0a88a622d9fa54e132d7bf3ee03ec602758658a2db5b339a65be2cfe/huggingface_hub-0.27.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=8f2e834517f1f1ddf1ecc716f91b120d7333011b7485f665a9a412eacb1a2a81",
+          "hashes": {
+            "sha256": "8f2e834517f1f1ddf1ecc716f91b120d7333011b7485f665a9a412eacb1a2a81"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "huggingface-hub",
+        "version": "0.27.0",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "Client library to download and publish models, datasets and other repos on the huggingface.co hub",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "model-hub",
+          "machine-learning",
+          "models",
+          "natural-language-processing",
+          "deep-learning",
+          "pytorch",
+          "pretrained-models"
+        ],
+        "home_page": "https://github.com/huggingface/huggingface_hub",
+        "author": "Hugging Face, Inc.",
+        "author_email": "julien@huggingface.co",
+        "license": "Apache",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Intended Audience :: Developers",
+          "Intended Audience :: Education",
+          "Intended Audience :: Science/Research",
+          "License :: OSI Approved :: Apache Software License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Topic :: Scientific/Engineering :: Artificial Intelligence"
+        ],
+        "requires_dist": [
+          "filelock",
+          "fsspec>=2023.5.0",
+          "packaging>=20.9",
+          "pyyaml>=5.1",
+          "requests",
+          "tqdm>=4.42.1",
+          "typing-extensions>=3.7.4.3",
+          "InquirerPy==0.3.4; extra == \"all\"",
+          "aiohttp; extra == \"all\"",
+          "jedi; extra == \"all\"",
+          "Jinja2; extra == \"all\"",
+          "pytest<8.2.2,>=8.1.1; extra == \"all\"",
+          "pytest-cov; extra == \"all\"",
+          "pytest-env; extra == \"all\"",
+          "pytest-xdist; extra == \"all\"",
+          "pytest-vcr; extra == \"all\"",
+          "pytest-asyncio; extra == \"all\"",
+          "pytest-rerunfailures; extra == \"all\"",
+          "pytest-mock; extra == \"all\"",
+          "urllib3<2.0; extra == \"all\"",
+          "soundfile; extra == \"all\"",
+          "Pillow; extra == \"all\"",
+          "gradio>=4.0.0; extra == \"all\"",
+          "numpy; extra == \"all\"",
+          "fastapi; extra == \"all\"",
+          "ruff>=0.5.0; extra == \"all\"",
+          "mypy==1.5.1; extra == \"all\"",
+          "libcst==1.4.0; extra == \"all\"",
+          "typing-extensions>=4.8.0; extra == \"all\"",
+          "types-PyYAML; extra == \"all\"",
+          "types-requests; extra == \"all\"",
+          "types-simplejson; extra == \"all\"",
+          "types-toml; extra == \"all\"",
+          "types-tqdm; extra == \"all\"",
+          "types-urllib3; extra == \"all\"",
+          "InquirerPy==0.3.4; extra == \"cli\"",
+          "InquirerPy==0.3.4; extra == \"dev\"",
+          "aiohttp; extra == \"dev\"",
+          "jedi; extra == \"dev\"",
+          "Jinja2; extra == \"dev\"",
+          "pytest<8.2.2,>=8.1.1; extra == \"dev\"",
+          "pytest-cov; extra == \"dev\"",
+          "pytest-env; extra == \"dev\"",
+          "pytest-xdist; extra == \"dev\"",
+          "pytest-vcr; extra == \"dev\"",
+          "pytest-asyncio; extra == \"dev\"",
+          "pytest-rerunfailures; extra == \"dev\"",
+          "pytest-mock; extra == \"dev\"",
+          "urllib3<2.0; extra == \"dev\"",
+          "soundfile; extra == \"dev\"",
+          "Pillow; extra == \"dev\"",
+          "gradio>=4.0.0; extra == \"dev\"",
+          "numpy; extra == \"dev\"",
+          "fastapi; extra == \"dev\"",
+          "ruff>=0.5.0; extra == \"dev\"",
+          "mypy==1.5.1; extra == \"dev\"",
+          "libcst==1.4.0; extra == \"dev\"",
+          "typing-extensions>=4.8.0; extra == \"dev\"",
+          "types-PyYAML; extra == \"dev\"",
+          "types-requests; extra == \"dev\"",
+          "types-simplejson; extra == \"dev\"",
+          "types-toml; extra == \"dev\"",
+          "types-tqdm; extra == \"dev\"",
+          "types-urllib3; extra == \"dev\"",
+          "toml; extra == \"fastai\"",
+          "fastai>=2.4; extra == \"fastai\"",
+          "fastcore>=1.3.27; extra == \"fastai\"",
+          "hf-transfer>=0.1.4; extra == \"hf-transfer\"",
+          "aiohttp; extra == \"inference\"",
+          "ruff>=0.5.0; extra == \"quality\"",
+          "mypy==1.5.1; extra == \"quality\"",
+          "libcst==1.4.0; extra == \"quality\"",
+          "tensorflow; extra == \"tensorflow\"",
+          "pydot; extra == \"tensorflow\"",
+          "graphviz; extra == \"tensorflow\"",
+          "tensorflow; extra == \"tensorflow-testing\"",
+          "keras<3.0; extra == \"tensorflow-testing\"",
+          "InquirerPy==0.3.4; extra == \"testing\"",
+          "aiohttp; extra == \"testing\"",
+          "jedi; extra == \"testing\"",
+          "Jinja2; extra == \"testing\"",
+          "pytest<8.2.2,>=8.1.1; extra == \"testing\"",
+          "pytest-cov; extra == \"testing\"",
+          "pytest-env; extra == \"testing\"",
+          "pytest-xdist; extra == \"testing\"",
+          "pytest-vcr; extra == \"testing\"",
+          "pytest-asyncio; extra == \"testing\"",
+          "pytest-rerunfailures; extra == \"testing\"",
+          "pytest-mock; extra == \"testing\"",
+          "urllib3<2.0; extra == \"testing\"",
+          "soundfile; extra == \"testing\"",
+          "Pillow; extra == \"testing\"",
+          "gradio>=4.0.0; extra == \"testing\"",
+          "numpy; extra == \"testing\"",
+          "fastapi; extra == \"testing\"",
+          "torch; extra == \"torch\"",
+          "safetensors[torch]; extra == \"torch\"",
+          "typing-extensions>=4.8.0; extra == \"typing\"",
+          "types-PyYAML; extra == \"typing\"",
+          "types-requests; extra == \"typing\"",
+          "types-simplejson; extra == \"typing\"",
+          "types-toml; extra == \"typing\"",
+          "types-tqdm; extra == \"typing\"",
+          "types-urllib3; extra == \"typing\""
+        ],
+        "requires_python": ">=3.8.0",
+        "provides_extra": [
+          "all",
+          "cli",
+          "dev",
+          "fastai",
+          "hf_transfer",
+          "inference",
+          "quality",
+          "tensorflow",
+          "tensorflow-testing",
+          "testing",
+          "torch",
+          "typing"
+        ],
+        "description": "<p align=\"center\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://huggingface.co/datasets/huggingface/documentation-images/raw/main/huggingface_hub-dark.svg\">\n    <source media=\"(prefers-color-scheme: light)\" srcset=\"https://huggingface.co/datasets/huggingface/documentation-images/raw/main/huggingface_hub.svg\">\n    <img alt=\"huggingface_hub library logo\" src=\"https://huggingface.co/datasets/huggingface/documentation-images/raw/main/huggingface_hub.svg\" width=\"352\" height=\"59\" style=\"max-width: 100%;\">\n  </picture>\n  <br/>\n  <br/>\n</p> \n\n<p align=\"center\">\n    <i>The official Python client for the Huggingface Hub.</i>\n</p>\n\n<p align=\"center\">\n    <a href=\"https://huggingface.co/docs/huggingface_hub/en/index\"><img alt=\"Documentation\" src=\"https://img.shields.io/website/http/huggingface.co/docs/huggingface_hub/index.svg?down_color=red&down_message=offline&up_message=online&label=doc\"></a>\n    <a href=\"https://github.com/huggingface/huggingface_hub/releases\"><img alt=\"GitHub release\" src=\"https://img.shields.io/github/release/huggingface/huggingface_hub.svg\"></a>\n    <a href=\"https://github.com/huggingface/huggingface_hub\"><img alt=\"PyPi version\" src=\"https://img.shields.io/pypi/pyversions/huggingface_hub.svg\"></a>\n    <a href=\"https://pypi.org/project/huggingface-hub\"><img alt=\"PyPI - Downloads\" src=\"https://img.shields.io/pypi/dm/huggingface_hub\"></a>\n    <a href=\"https://codecov.io/gh/huggingface/huggingface_hub\"><img alt=\"Code coverage\" src=\"https://codecov.io/gh/huggingface/huggingface_hub/branch/main/graph/badge.svg?token=RXP95LE2XL\"></a>\n</p>\n\n<h4 align=\"center\">\n    <p>\n        <b>English</b> |\n        <a href=\"https://github.com/huggingface/huggingface_hub/blob/main/i18n/README_de.md\">Deutsch</a> |\n        <a href=\"https://github.com/huggingface/huggingface_hub/blob/main/i18n/README_hi.md\">हिंदी</a> |\n        <a href=\"https://github.com/huggingface/huggingface_hub/blob/main/i18n/README_ko.md\">한국어</a> |\n        <a href=\"https://github.com/huggingface/huggingface_hub/blob/main/i18n/README_cn.md\">中文（简体）</a>\n    <p>\n</h4>\n\n---\n\n**Documentation**: <a href=\"https://hf.co/docs/huggingface_hub\" target=\"_blank\">https://hf.co/docs/huggingface_hub</a>\n\n**Source Code**: <a href=\"https://github.com/huggingface/huggingface_hub\" target=\"_blank\">https://github.com/huggingface/huggingface_hub</a>\n\n---\n\n## Welcome to the huggingface_hub library\n\nThe `huggingface_hub` library allows you to interact with the [Hugging Face Hub](https://huggingface.co/), a platform democratizing open-source Machine Learning for creators and collaborators. Discover pre-trained models and datasets for your projects or play with the thousands of machine learning apps hosted on the Hub. You can also create and share your own models, datasets and demos with the community. The `huggingface_hub` library provides a simple way to do all these things with Python.\n\n## Key features\n\n- [Download files](https://huggingface.co/docs/huggingface_hub/en/guides/download) from the Hub.\n- [Upload files](https://huggingface.co/docs/huggingface_hub/en/guides/upload) to the Hub.\n- [Manage your repositories](https://huggingface.co/docs/huggingface_hub/en/guides/repository).\n- [Run Inference](https://huggingface.co/docs/huggingface_hub/en/guides/inference) on deployed models.\n- [Search](https://huggingface.co/docs/huggingface_hub/en/guides/search) for models, datasets and Spaces.\n- [Share Model Cards](https://huggingface.co/docs/huggingface_hub/en/guides/model-cards) to document your models.\n- [Engage with the community](https://huggingface.co/docs/huggingface_hub/en/guides/community) through PRs and comments.\n\n## Installation\n\nInstall the `huggingface_hub` package with [pip](https://pypi.org/project/huggingface-hub/):\n\n```bash\npip install huggingface_hub\n```\n\nIf you prefer, you can also install it with [conda](https://huggingface.co/docs/huggingface_hub/en/installation#install-with-conda).\n\nIn order to keep the package minimal by default, `huggingface_hub` comes with optional dependencies useful for some use cases. For example, if you want have a complete experience for Inference, run:\n\n```bash\npip install huggingface_hub[inference]\n```\n\nTo learn more installation and optional dependencies, check out the [installation guide](https://huggingface.co/docs/huggingface_hub/en/installation).\n\n## Quick start\n\n### Download files\n\nDownload a single file\n\n```py\nfrom huggingface_hub import hf_hub_download\n\nhf_hub_download(repo_id=\"tiiuae/falcon-7b-instruct\", filename=\"config.json\")\n```\n\nOr an entire repository\n\n```py\nfrom huggingface_hub import snapshot_download\n\nsnapshot_download(\"stabilityai/stable-diffusion-2-1\")\n```\n\nFiles will be downloaded in a local cache folder. More details in [this guide](https://huggingface.co/docs/huggingface_hub/en/guides/manage-cache).\n\n### Login\n\nThe Hugging Face Hub uses tokens to authenticate applications (see [docs](https://huggingface.co/docs/hub/security-tokens)). To log in your machine, run the following CLI:\n\n```bash\nhuggingface-cli login\n# or using an environment variable\nhuggingface-cli login --token $HUGGINGFACE_TOKEN\n```\n\n### Create a repository\n\n```py\nfrom huggingface_hub import create_repo\n\ncreate_repo(repo_id=\"super-cool-model\")\n```\n\n### Upload files\n\nUpload a single file\n\n```py\nfrom huggingface_hub import upload_file\n\nupload_file(\n    path_or_fileobj=\"/home/lysandre/dummy-test/README.md\",\n    path_in_repo=\"README.md\",\n    repo_id=\"lysandre/test-model\",\n)\n```\n\nOr an entire folder\n\n```py\nfrom huggingface_hub import upload_folder\n\nupload_folder(\n    folder_path=\"/path/to/local/space\",\n    repo_id=\"username/my-cool-space\",\n    repo_type=\"space\",\n)\n```\n\nFor details in the [upload guide](https://huggingface.co/docs/huggingface_hub/en/guides/upload).\n\n## Integrating to the Hub.\n\nWe're partnering with cool open source ML libraries to provide free model hosting and versioning. You can find the existing integrations [here](https://huggingface.co/docs/hub/libraries).\n\nThe advantages are:\n\n- Free model or dataset hosting for libraries and their users.\n- Built-in file versioning, even with very large files, thanks to a git-based approach.\n- Serverless inference API for all models publicly available.\n- In-browser widgets to play with the uploaded models.\n- Anyone can upload a new model for your library, they just need to add the corresponding tag for the model to be discoverable.\n- Fast downloads! We use Cloudfront (a CDN) to geo-replicate downloads so they're blazing fast from anywhere on the globe.\n- Usage stats and more features to come.\n\nIf you would like to integrate your library, feel free to open an issue to begin the discussion. We wrote a [step-by-step guide](https://huggingface.co/docs/hub/adding-a-library) with ❤️ showing how to do this integration.\n\n## Contributions (feature requests, bugs, etc.) are super welcome 💙💚💛💜🧡❤️\n\nEveryone is welcome to contribute, and we value everybody's contribution. Code is not the only way to help the community.\nAnswering questions, helping others, reaching out and improving the documentations are immensely valuable to the community.\nWe wrote a [contribution guide](https://github.com/huggingface/huggingface_hub/blob/main/CONTRIBUTING.md) to summarize\nhow to get started to contribute to this repository.\n\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/e5/22/4222d7ddf3da30f363edaa98e329c2bce6c65497c9cb2810931c8b2c0fbc/fsspec-2026.6.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=02e0b71817df9b2169dc30a16832045764def1191b43dcff5bb85bdee212d2a1",
+          "hashes": {
+            "sha256": "02e0b71817df9b2169dc30a16832045764def1191b43dcff5bb85bdee212d2a1"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "fsspec",
+        "version": "2026.6.0",
+        "summary": "File-system specification",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "file"
+        ],
+        "maintainer_email": "Martin Durant <mdurant@anaconda.com>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_dist": [
+          "adlfs; extra == 'abfs'",
+          "adlfs; extra == 'adl'",
+          "pyarrow>=1; extra == 'arrow'",
+          "dask; extra == 'dask'",
+          "distributed; extra == 'dask'",
+          "pre-commit; extra == 'dev'",
+          "ruff>=0.5; extra == 'dev'",
+          "numpydoc; extra == 'doc'",
+          "sphinx; extra == 'doc'",
+          "sphinx-design; extra == 'doc'",
+          "sphinx-rtd-theme; extra == 'doc'",
+          "yarl; extra == 'doc'",
+          "dropbox; extra == 'dropbox'",
+          "dropboxdrivefs; extra == 'dropbox'",
+          "requests; extra == 'dropbox'",
+          "adlfs; extra == 'full'",
+          "aiohttp!=4.0.0a0,!=4.0.0a1; extra == 'full'",
+          "dask; extra == 'full'",
+          "distributed; extra == 'full'",
+          "dropbox; extra == 'full'",
+          "dropboxdrivefs; extra == 'full'",
+          "fusepy; extra == 'full'",
+          "gcsfs>2024.2.0; extra == 'full'",
+          "libarchive-c; extra == 'full'",
+          "ocifs; extra == 'full'",
+          "panel; extra == 'full'",
+          "paramiko; extra == 'full'",
+          "pyarrow>=1; extra == 'full'",
+          "pygit2; extra == 'full'",
+          "requests; extra == 'full'",
+          "s3fs>2024.2.0; extra == 'full'",
+          "smbprotocol; extra == 'full'",
+          "tqdm; extra == 'full'",
+          "fusepy; extra == 'fuse'",
+          "gcsfs>2024.2.0; extra == 'gcs'",
+          "pygit2; extra == 'git'",
+          "requests; extra == 'github'",
+          "gcsfs; extra == 'gs'",
+          "panel; extra == 'gui'",
+          "pyarrow>=1; extra == 'hdfs'",
+          "aiohttp!=4.0.0a0,!=4.0.0a1; extra == 'http'",
+          "libarchive-c; extra == 'libarchive'",
+          "ocifs; extra == 'oci'",
+          "s3fs>2024.2.0; extra == 's3'",
+          "paramiko; extra == 'sftp'",
+          "smbprotocol; extra == 'smb'",
+          "paramiko; extra == 'ssh'",
+          "aiohttp!=4.0.0a0,!=4.0.0a1; extra == 'test'",
+          "numpy; extra == 'test'",
+          "pytest; extra == 'test'",
+          "pytest-asyncio!=0.22.0; extra == 'test'",
+          "pytest-benchmark; extra == 'test'",
+          "pytest-cov; extra == 'test'",
+          "pytest-mock; extra == 'test'",
+          "pytest-recording; extra == 'test'",
+          "pytest-rerunfailures; extra == 'test'",
+          "requests; extra == 'test'",
+          "aiobotocore<3.0.0,>=2.5.4; extra == 'test-downstream'",
+          "dask[dataframe,test]; extra == 'test-downstream'",
+          "moto[server]<5,>4; extra == 'test-downstream'",
+          "pytest-timeout; extra == 'test-downstream'",
+          "xarray; extra == 'test-downstream'",
+          "adlfs; extra == 'test-full'",
+          "aiohttp!=4.0.0a0,!=4.0.0a1; extra == 'test-full'",
+          "backports-zstd; (python_version < '3.14') and extra == 'test-full'",
+          "cloudpickle; extra == 'test-full'",
+          "dask; extra == 'test-full'",
+          "distributed; extra == 'test-full'",
+          "dropbox; extra == 'test-full'",
+          "dropboxdrivefs; extra == 'test-full'",
+          "fastparquet; extra == 'test-full'",
+          "fusepy; extra == 'test-full'",
+          "gcsfs; extra == 'test-full'",
+          "jinja2; extra == 'test-full'",
+          "kerchunk; extra == 'test-full'",
+          "libarchive-c; extra == 'test-full'",
+          "lz4; extra == 'test-full'",
+          "notebook; extra == 'test-full'",
+          "numpy; extra == 'test-full'",
+          "ocifs; extra == 'test-full'",
+          "pandas<3.0.0; extra == 'test-full'",
+          "panel; extra == 'test-full'",
+          "paramiko; extra == 'test-full'",
+          "pyarrow; extra == 'test-full'",
+          "pyarrow>=1; extra == 'test-full'",
+          "pyftpdlib; extra == 'test-full'",
+          "pygit2; extra == 'test-full'",
+          "pytest; extra == 'test-full'",
+          "pytest-asyncio!=0.22.0; extra == 'test-full'",
+          "pytest-benchmark; extra == 'test-full'",
+          "pytest-cov; extra == 'test-full'",
+          "pytest-mock; extra == 'test-full'",
+          "pytest-recording; extra == 'test-full'",
+          "pytest-rerunfailures; extra == 'test-full'",
+          "python-snappy; extra == 'test-full'",
+          "requests; extra == 'test-full'",
+          "smbprotocol; extra == 'test-full'",
+          "tqdm; extra == 'test-full'",
+          "urllib3; extra == 'test-full'",
+          "zarr<3.2.0; extra == 'test-full'",
+          "zstandard; (python_version < '3.14') and extra == 'test-full'",
+          "tqdm; extra == 'tqdm'"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Changelog, https://filesystem-spec.readthedocs.io/en/latest/changelog.html",
+          "Documentation, https://filesystem-spec.readthedocs.io/en/latest/",
+          "Homepage, https://github.com/fsspec/filesystem_spec"
+        ],
+        "provides_extra": [
+          "abfs",
+          "adl",
+          "arrow",
+          "dask",
+          "dev",
+          "doc",
+          "dropbox",
+          "entrypoints",
+          "full",
+          "fuse",
+          "gcs",
+          "git",
+          "github",
+          "gs",
+          "gui",
+          "hdfs",
+          "http",
+          "libarchive",
+          "oci",
+          "s3",
+          "sftp",
+          "smb",
+          "ssh",
+          "test",
+          "test-downstream",
+          "test-full",
+          "tqdm"
+        ],
+        "description": "# filesystem_spec\n\n[![PyPI version](https://badge.fury.io/py/fsspec.svg)](https://pypi.python.org/pypi/fsspec/)\n[![Anaconda-Server Badge](https://anaconda.org/conda-forge/fsspec/badges/version.svg)](https://anaconda.org/conda-forge/fsspec)\n![Build](https://github.com/fsspec/filesystem_spec/workflows/CI/badge.svg)\n[![Docs](https://readthedocs.org/projects/filesystem-spec/badge/?version=latest)](https://filesystem-spec.readthedocs.io/en/latest/?badge=latest)\n\nA specification for pythonic filesystems.\n\n## Install\n\n```bash\npip install fsspec\n```\n\nwould install the base fsspec. Various optionally supported features might require specification of custom\nextra require, e.g. `pip install fsspec[ssh]` will install dependencies for `ssh` backends support.\nUse `pip install fsspec[full]` for installation of all known extra dependencies.\n\nUp-to-date package also provided through conda-forge distribution:\n\n```bash\nconda install -c conda-forge fsspec\n```\n\n\n## Purpose\n\nTo produce a template or specification for a file-system interface, that specific implementations should follow,\nso that applications making use of them can rely on a common behaviour and not have to worry about the specific\ninternal implementation decisions with any given backend. Many such implementations are included in this package,\nor in sister projects such as `s3fs` and `gcsfs`.\n\nIn addition, if this is well-designed, then additional functionality, such as a key-value store or FUSE\nmounting of the file-system implementation may be available for all implementations \"for free\".\n\n## Documentation\n\nPlease refer to [RTD](https://filesystem-spec.readthedocs.io/en/latest/?badge=latest)\n\n## Develop\n\nfsspec uses GitHub Actions for CI. Environment files can be found\nin the \"ci/\" directory. Note that the main environment is called \"py38\",\nbut it is expected that the version of python installed be adjustable at\nCI runtime. For local use, pick a version suitable for you.\n\n```bash\n# For a new environment (mamba / conda).\nmamba create -n fsspec -c conda-forge  python=3.10 -y\nconda activate fsspec\n\n# Standard dev install with docs and tests.\npip install -e \".[dev,doc,test]\"\n\n# Full tests except for downstream\npip install s3fs\npip uninstall s3fs\npip install -e .[dev,doc,test_full]\npip install s3fs --no-deps\npytest -v\n\n# Downstream tests.\nsh install_s3fs.sh\n# Windows powershell.\ninstall_s3fs.sh\n```\n\n### Testing\n\nTests can be run in the dev environment, if activated, via ``pytest fsspec``.\n\nThe full fsspec suite requires a system-level docker, docker-compose, and fuse\ninstallation. If only making changes to one backend implementation, it is\nnot generally necessary to run all tests locally.\n\nIt is expected that contributors ensure that any change to fsspec does not\ncause issues or regressions for either other fsspec-related packages such\nas gcsfs and s3fs, nor for downstream users of fsspec. The \"downstream\" CI\nrun and corresponding environment file run a set of tests from the dask\ntest suite, and very minimal tests against pandas and zarr from the\ntest_downstream.py module in this repo.\n\n### Code Formatting\n\nfsspec uses [Black](https://black.readthedocs.io/en/stable) to ensure\na consistent code format throughout the project.\nRun ``black fsspec`` from the root of the filesystem_spec repository to\nauto-format your code. Additionally, many editors have plugins that will apply\n``black`` as you edit files. ``black`` is included in the ``tox`` environments.\n\nOptionally, you may wish to setup [pre-commit hooks](https://pre-commit.com) to\nautomatically run ``black`` when you make a git commit.\nRun ``pre-commit install --install-hooks`` from the root of the\nfilesystem_spec repository to setup pre-commit hooks. ``black`` will now be run\nbefore you commit, reformatting any changed files. You can format without\ncommitting via ``pre-commit run`` or skip these checks with ``git commit\n--no-verify``.\n\n## Support\n\nWork on this repository is supported in part by:\n\n\"Anaconda, Inc. - Advancing AI through open source.\"\n\n<a href=\"https://anaconda.com/\"><img src=\"https://camo.githubusercontent.com/b8555ef2222598ed37ce38ac86955febbd25de7619931bb7dd3c58432181d3b6/68747470733a2f2f626565776172652e6f72672f636f6d6d756e6974792f6d656d626572732f616e61636f6e64612f616e61636f6e64612d6c617267652e706e67\" alt=\"anaconda logo\" width=\"40%\"/></a>\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=5fc45236b9446107ff2415ce77c807cee2862cb6fac22b8a73826d0693b0980e",
+          "hashes": {
+            "sha256": "5fc45236b9446107ff2415ce77c807cee2862cb6fac22b8a73826d0693b0980e"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "packaging",
+        "version": "26.2",
+        "summary": "Core utilities for Python packages",
+        "description_content_type": "text/x-rst",
+        "author_email": "Donald Stufft <donald@stufft.io>",
+        "license_expression": "Apache-2.0 OR BSD-2-Clause",
+        "license_file": [
+          "LICENSE",
+          "LICENSE.APACHE",
+          "LICENSE.BSD"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Python :: Free Threading :: 4 - Resilient",
+          "Typing :: Typed"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Documentation, https://packaging.pypa.io/",
+          "Source, https://github.com/pypa/packaging"
+        ],
+        "description": "packaging\n=========\n\n.. start-intro\n\nReusable core utilities for various Python Packaging\n`interoperability specifications <https://packaging.python.org/specifications/>`_.\n\nThis library provides utilities that implement the interoperability\nspecifications which have clearly one correct behaviour (eg: :pep:`440`)\nor benefit greatly from having a single shared implementation (eg: :pep:`425`).\n\n.. end-intro\n\nThe ``packaging`` project includes the following: version handling, specifiers,\nmarkers, requirements, tags, metadata, lockfiles, utilities.\n\nDocumentation\n-------------\n\nThe `documentation`_ provides information and the API for the following:\n\n- Version Handling\n- Specifiers\n- Markers\n- Licenses\n- Requirements\n- Metadata\n- Tags\n- Lockfiles (pylock)\n- Direct URL helpers\n- Dependency groups\n- Errors\n- Utilities\n\nInstallation\n------------\n\nUse ``pip`` to install these utilities::\n\n    pip install packaging\n\nThe ``packaging`` library uses calendar-based versioning (``YY.N``).\n\nDiscussion\n----------\n\nIf you run into bugs, you can file them in our `issue tracker`_.\n\nYou can also join discussions on `GitHub Discussions`_ to ask questions or get involved.\n\n.. _`documentation`: https://packaging.pypa.io/\n.. _`issue tracker`: https://github.com/pypa/packaging/issues\n.. _`GitHub Discussions`: https://github.com/pypa/packaging/discussions\n\n\nCode of Conduct\n---------------\n\nEveryone interacting in the packaging project's codebases, issue trackers, chat\nrooms, and mailing lists is expected to follow the `PSF Code of Conduct`_.\n\n.. _PSF Code of Conduct: https://github.com/pypa/.github/blob/main/CODE_OF_CONDUCT.md\n\nContributing\n------------\n\nThe ``CONTRIBUTING.rst`` file outlines how to contribute to this project as\nwell as how to report a potential security issue. The documentation for this\nproject also covers information about `project development`_ and `security`_.\n\n.. _`project development`: https://packaging.pypa.io/en/latest/development/\n.. _`security`: https://packaging.pypa.io/en/latest/security/\n\nProject History\n---------------\n\nPlease review the ``CHANGELOG.rst`` file or the `Changelog documentation`_ for\nrecent changes and project history.\n\n.. _`Changelog documentation`: https://packaging.pypa.io/en/latest/changelog/\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/7a/1e/7acc4f0e74c4b3d9531e24739e0ab832a5edf40e64fbae1a9c01941cabd7/pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=9c7708761fccb9397fe64bbc0395abcae8c4bf7b0eac081e12b809bf47700d0b",
+          "hashes": {
+            "sha256": "9c7708761fccb9397fe64bbc0395abcae8c4bf7b0eac081e12b809bf47700d0b"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "PyYAML",
+        "version": "6.0.3",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "download-url",
+          "home-page",
+          "license",
+          "license-file",
+          "platform",
+          "project-url",
+          "requires-python",
+          "summary"
+        ],
+        "platform": [
+          "Any"
+        ],
+        "summary": "YAML parser and emitter for Python",
+        "home_page": "https://pyyaml.org/",
+        "download_url": "https://pypi.org/project/PyYAML/",
+        "author": "Kirill Simonov",
+        "author_email": "xi@resolvent.net",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Cython",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Text Processing :: Markup"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Bug Tracker, https://github.com/yaml/pyyaml/issues",
+          "CI, https://github.com/yaml/pyyaml/actions",
+          "Documentation, https://pyyaml.org/wiki/PyYAMLDocumentation",
+          "Mailing lists, http://lists.sourceforge.net/lists/listinfo/yaml-core",
+          "Source Code, https://github.com/yaml/pyyaml"
+        ],
+        "description": "YAML is a data serialization format designed for human readability\nand interaction with scripting languages.  PyYAML is a YAML parser\nand emitter for Python.\n\nPyYAML features a complete YAML 1.1 parser, Unicode support, pickle\nsupport, capable extension API, and sensible error messages.  PyYAML\nsupports standard YAML tags and provides Python-specific tags that\nallow to represent an arbitrary Python object.\n\nPyYAML is applicable for a broad range of tasks from complex\nconfiguration files to object serialization and persistence.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/22/2a/5e5e750890ada51017d18d0d4c30da696e5b5bd3180947729927628fc3cb/tqdm-4.68.4-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=5168118b2368f48c561afda8020fd79195b1bdb0bdf8086b88442c267a315dc2",
+          "hashes": {
+            "sha256": "5168118b2368f48c561afda8020fd79195b1bdb0bdf8086b88442c267a315dc2"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "tqdm",
+        "version": "4.68.4",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Fast, Extensible Progress Meter",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "progressbar",
+          "progressmeter",
+          "progress",
+          "bar",
+          "meter",
+          "rate",
+          "eta",
+          "console",
+          "terminal",
+          "time"
+        ],
+        "maintainer_email": "tqdm developers <devs@tqdm.ml>",
+        "license": "MPL-2.0 AND MIT",
+        "license_file": [
+          "LICENCE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Environment :: MacOS X",
+          "Environment :: Other Environment",
+          "Environment :: Win32 (MS Windows)",
+          "Environment :: X11 Applications",
+          "Framework :: IPython",
+          "Framework :: Jupyter",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Education",
+          "Intended Audience :: End Users/Desktop",
+          "Intended Audience :: Other Audience",
+          "Intended Audience :: System Administrators",
+          "Operating System :: MacOS",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: Microsoft",
+          "Operating System :: Microsoft :: MS-DOS",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX",
+          "Operating System :: POSIX :: BSD",
+          "Operating System :: POSIX :: BSD :: FreeBSD",
+          "Operating System :: POSIX :: Linux",
+          "Operating System :: POSIX :: SunOS/Solaris",
+          "Operating System :: Unix",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation",
+          "Programming Language :: Python :: Implementation :: IronPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Unix Shell",
+          "Topic :: Desktop Environment",
+          "Topic :: Education :: Computer Aided Instruction (CAI)",
+          "Topic :: Education :: Testing",
+          "Topic :: Office/Business",
+          "Topic :: Other/Nonlisted Topic",
+          "Topic :: Software Development :: Build Tools",
+          "Topic :: Software Development :: Libraries",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Software Development :: Pre-processors",
+          "Topic :: Software Development :: User Interfaces",
+          "Topic :: System :: Installation/Setup",
+          "Topic :: System :: Logging",
+          "Topic :: System :: Monitoring",
+          "Topic :: System :: Shells",
+          "Topic :: Terminals",
+          "Topic :: Utilities"
+        ],
+        "requires_dist": [
+          "colorama; platform_system == \"Windows\"",
+          "requests; extra == \"discord\"",
+          "envwrap; extra == \"discord\"",
+          "slack-sdk; extra == \"slack\"",
+          "envwrap; extra == \"slack\"",
+          "requests; extra == \"telegram\"",
+          "envwrap; extra == \"telegram\"",
+          "ipywidgets>=6; extra == \"notebook\""
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "homepage, https://tqdm.github.io",
+          "repository, https://github.com/tqdm/tqdm",
+          "changelog, https://tqdm.github.io/releases",
+          "wiki, https://github.com/tqdm/tqdm/wiki"
+        ],
+        "provides_extra": [
+          "discord",
+          "slack",
+          "telegram",
+          "notebook"
+        ],
+        "description": "|Logo|\n\ntqdm\n====\n\n|Py-Versions| |Versions| |Conda-Forge-Status| |Docker| |Snapcraft|\n\n|Build-Status| |Coverage-Status| |Branch-Coverage-Status| |Codacy-Grade| |Libraries-Rank| |PyPI-Downloads|\n\n|LICENCE| |OpenHub-Status| |colab-demo| |binder-demo| |awesome-python|\n\n``tqdm`` derives from the Arabic word *taqaddum* (تقدّم) which can mean \"progress,\"\nand is an abbreviation for \"I love you so much\" in Spanish (*te quiero demasiado*).\n\nInstantly make your loops show a smart progress meter - just wrap any\niterable with ``tqdm(iterable)``, and you're done!\n\n.. code:: python\n\n    from tqdm import tqdm\n    for i in tqdm(range(10000)):\n        ...\n\n``76%|████████████████████████        | 7568/10000 [00:33<00:10, 229.00it/s]``\n\n``trange(N)`` can be also used as a convenient shortcut for\n``tqdm(range(N))``.\n\n|Screenshot|\n    |Video| |Slides| |Merch|\n\nIt can also be executed as a module with pipes:\n\n.. code:: sh\n\n    $ seq 9999999 | tqdm --bytes | wc -l\n    75.2MB [00:00, 217MB/s]\n    9999999\n\n    $ tar -zcf - docs/ | tqdm --bytes --total `du -sb docs/ | cut -f1` \\\n        > backup.tgz\n     32%|██████████▍                      | 8.89G/27.9G [00:42<01:31, 223MB/s]\n\nOverhead is low -- about 60ns per iteration (80ns with ``tqdm.gui``), and is\nunit tested against performance regression.\nBy comparison, the well-established\n`ProgressBar <https://github.com/niltonvolpato/python-progressbar>`__ has\nan 800ns/iter overhead.\n\nIn addition to its low overhead, ``tqdm`` uses smart algorithms to predict\nthe remaining time and to skip unnecessary iteration displays, which allows\nfor a negligible overhead in most cases.\n\n``tqdm`` works on any platform\n(Linux, Windows, Mac, FreeBSD, NetBSD, Solaris/SunOS),\nin any console or in a GUI, and is also friendly with IPython/Jupyter notebooks.\n\n``tqdm`` does not require any dependencies (not even ``curses``!), just\nPython and an environment supporting ``carriage return \\r`` and\n``line feed \\n`` control characters.\n\n**Featured Sponsors**\n\n======== ================================================\n|OpenAI|                  Your Logo Here\n======== ================================================\nOpenAI   `Sponsors <https://github.com/sponsors/tqdm>`__\n======== ================================================\n\n.. |OpenAI| image:: https://avatars.githubusercontent.com/u/14957082?s=96\n   :target: https://openai.com\n\n------------------------------------------\n\n.. contents:: Table of contents\n   :backlinks: top\n   :local:\n\n\nInstallation\n------------\n\nLatest PyPI stable release\n~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n|Versions| |PyPI-Downloads| |Libraries-Dependents|\n\n.. code:: sh\n\n    pip install tqdm\n\nLatest development release on GitHub\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n|GitHub-Status| |GitHub-Stars| |GitHub-Commits| |GitHub-Forks| |GitHub-Updated|\n\nPull and install pre-release ``devel`` branch:\n\n.. code:: sh\n\n    pip install \"git+https://github.com/tqdm/tqdm.git@devel#egg=tqdm\"\n\nLatest Conda release\n~~~~~~~~~~~~~~~~~~~~\n\n|Conda-Forge-Status|\n\n.. code:: sh\n\n    conda install -c conda-forge tqdm\n\nLatest Snapcraft release\n~~~~~~~~~~~~~~~~~~~~~~~~\n\n|Snapcraft|\n\nThere are 3 channels to choose from:\n\n.. code:: sh\n\n    snap install tqdm  # implies --stable, i.e. latest tagged release\n    snap install tqdm  --candidate  # master branch\n    snap install tqdm  --edge  # devel branch\n\nNote that ``snap`` binaries are purely for CLI use (not ``import``-able), and\nautomatically set up ``bash`` tab-completion.\n\nLatest Docker release\n~~~~~~~~~~~~~~~~~~~~~\n\n|Docker|\n\n.. code:: sh\n\n    docker pull tqdm/tqdm\n    docker run -i --rm tqdm/tqdm --help\n\nOther\n~~~~~\n\nThere are other (unofficial) places where ``tqdm`` may be downloaded, particularly for CLI use:\n\n|Repology|\n\n.. |Repology| image:: https://repology.org/badge/tiny-repos/python:tqdm.svg\n   :target: https://repology.org/project/python:tqdm/versions\n\nChangelog\n---------\n\nThe list of all changes is available either on GitHub's Releases:\n|GitHub-Status|, on the\n`wiki <https://github.com/tqdm/tqdm/wiki/Releases>`__, or on the\n`website <https://tqdm.github.io/releases>`__.\n\n\nUsage\n-----\n\n``tqdm`` is very versatile and can be used in a number of ways.\nThe three main ones are given below.\n\nIterable-based\n~~~~~~~~~~~~~~\n\nWrap ``tqdm()`` around any iterable:\n\n.. code:: python\n\n    from tqdm import tqdm\n    from time import sleep\n\n    text = \"\"\n    for char in tqdm([\"a\", \"b\", \"c\", \"d\"]):\n        sleep(0.25)\n        text = text + char\n\n``trange(i)`` is a special optimised instance of ``tqdm(range(i))``:\n\n.. code:: python\n\n    from tqdm import trange\n\n    for i in trange(100):\n        sleep(0.01)\n\nInstantiation outside of the loop allows for manual control over ``tqdm()``:\n\n.. code:: python\n\n    pbar = tqdm([\"a\", \"b\", \"c\", \"d\"])\n    for char in pbar:\n        sleep(0.25)\n        pbar.set_description(\"Processing %s\" % char)\n\nManual\n~~~~~~\n\nManual control of ``tqdm()`` updates using a ``with`` statement:\n\n.. code:: python\n\n    with tqdm(total=100) as pbar:\n        for i in range(10):\n            sleep(0.1)\n            pbar.update(10)\n\nIf the optional variable ``total`` (or an iterable with ``len()``) is\nprovided, predictive stats are displayed.\n\n``with`` is also optional (you can just assign ``tqdm()`` to a variable,\nbut in this case don't forget to ``del`` or ``close()`` at the end:\n\n.. code:: python\n\n    pbar = tqdm(total=100)\n    for i in range(10):\n        sleep(0.1)\n        pbar.update(10)\n    pbar.close()\n\nModule\n~~~~~~\n\nPerhaps the most wonderful use of ``tqdm`` is in a script or on the command\nline. Simply inserting ``tqdm`` (or ``python -m tqdm``) between pipes will pass\nthrough all ``stdin`` to ``stdout`` while printing progress to ``stderr``.\n\nThe example below demonstrate counting the number of lines in all Python files\nin the current directory, with timing information included.\n\n.. code:: sh\n\n    $ time find . -name '*.py' -type f -exec cat \\{} \\; | wc -l\n    857365\n\n    real    0m3.458s\n    user    0m0.274s\n    sys     0m3.325s\n\n    $ time find . -name '*.py' -type f -exec cat \\{} \\; | tqdm | wc -l\n    857366it [00:03, 246471.31it/s]\n    857365\n\n    real    0m3.585s\n    user    0m0.862s\n    sys     0m3.358s\n\nNote that the usual arguments for ``tqdm`` can also be specified.\n\n.. code:: sh\n\n    $ find . -name '*.py' -type f -exec cat \\{} \\; |\n        tqdm --unit loc --unit_scale --total 857366 >> /dev/null\n    100%|█████████████████████████████████| 857K/857K [00:04<00:00, 246Kloc/s]\n\nBacking up a large directory?\n\n.. code:: sh\n\n    $ tar -zcf - docs/ | tqdm --bytes --total `du -sb docs/ | cut -f1` \\\n      > backup.tgz\n     44%|██████████████▊                   | 153M/352M [00:14<00:18, 11.0MB/s]\n\nThis can be beautified further:\n\n.. code:: sh\n\n    $ BYTES=$(du -sb docs/ | cut -f1)\n    $ tar -cf - docs/ \\\n      | tqdm --bytes --total \"$BYTES\" --desc Processing | gzip \\\n      | tqdm --bytes --total \"$BYTES\" --desc Compressed --position 1 \\\n      > ~/backup.tgz\n    Processing: 100%|██████████████████████| 352M/352M [00:14<00:00, 30.2MB/s]\n    Compressed:  42%|█████████▎            | 148M/352M [00:14<00:19, 10.9MB/s]\n\nOr done on a file level using 7-zip:\n\n.. code:: sh\n\n    $ 7z a -bd -r backup.7z docs/ | grep Compressing \\\n      | tqdm --total $(find docs/ -type f | wc -l) --unit files \\\n      | grep -v Compressing\n    100%|██████████████████████████▉| 15327/15327 [01:00<00:00, 712.96files/s]\n\nPre-existing CLI programs already outputting basic progress information will\nbenefit from ``tqdm``'s ``--update`` and ``--update_to`` flags:\n\n.. code:: sh\n\n    $ seq 3 0.1 5 | tqdm --total 5 --update_to --null\n    100%|████████████████████████████████████| 5.0/5 [00:00<00:00, 9673.21it/s]\n    $ seq 10 | tqdm --update --null  # 1 + 2 + ... + 10 = 55 iterations\n    55it [00:00, 90006.52it/s]\n\nFAQ and Known Issues\n--------------------\n\n|GitHub-Issues|\n\nThe most common issues relate to excessive output on multiple lines, instead\nof a neat one-line progress bar.\n\n- Consoles in general: require support for carriage return (``CR``, ``\\r``).\n\n  * Some cloud logging consoles which don't support ``\\r`` properly\n    (`cloudwatch <https://github.com/tqdm/tqdm/issues/966>`__,\n    `K8s <https://github.com/tqdm/tqdm/issues/1319>`__) may benefit from\n    ``export TQDM_POSITION=-1``.\n\n- Nested progress bars:\n\n  * Consoles in general: require support for moving cursors up to the\n    previous line. For example,\n    `IDLE <https://github.com/tqdm/tqdm/issues/191#issuecomment-230168030>`__,\n    `ConEmu <https://github.com/tqdm/tqdm/issues/254>`__ and\n    `PyCharm <https://github.com/tqdm/tqdm/issues/203>`__ (also\n    `here <https://github.com/tqdm/tqdm/issues/208>`__,\n    `here <https://github.com/tqdm/tqdm/issues/307>`__, and\n    `here <https://github.com/tqdm/tqdm/issues/454#issuecomment-335416815>`__)\n    lack full support.\n  * Windows: additionally may require the Python module ``colorama``\n    to ensure nested bars stay within their respective lines.\n\n- Unicode:\n\n  * Environments which report that they support unicode will have solid smooth\n    progress bars. The fallback is an ``ascii``-only bar.\n  * Windows consoles often only partially support unicode and thus\n    `often require explicit ascii=True <https://github.com/tqdm/tqdm/issues/454#issuecomment-335416815>`__\n    (also `here <https://github.com/tqdm/tqdm/issues/499>`__). This is due to\n    either normal-width unicode characters being incorrectly displayed as\n    \"wide\", or some unicode characters not rendering.\n\n- Wrapping generators:\n\n  * Generator wrapper functions tend to hide the length of iterables.\n    ``tqdm`` does not.\n  * Replace ``tqdm(enumerate(...))`` with ``enumerate(tqdm(...))`` or\n    ``tqdm(enumerate(x), total=len(x), ...)``.\n    The same applies to ``numpy.ndenumerate``.\n  * Replace ``tqdm(zip(a, b))`` with ``zip(tqdm(a), b)`` or even\n    ``zip(tqdm(a), tqdm(b))``.\n  * The same applies to ``itertools``.\n  * Some useful convenience functions can be found under ``tqdm.contrib``.\n\n- `No intermediate output in docker-compose <https://github.com/tqdm/tqdm/issues/771>`__:\n  use ``docker-compose run`` instead of ``docker-compose up`` and ``tty: true``.\n\n- Overriding defaults via environment variables:\n  e.g. in CI/cloud jobs, ``export TQDM_MININTERVAL=5`` to avoid log spam.\n  This override logic is handled by the ``tqdm.utils.envwrap`` decorator\n  (useful independent of ``tqdm``).\n\nIf you come across any other difficulties, browse and file |GitHub-Issues|.\n\nDocumentation\n-------------\n\n|Py-Versions| |README-Hits| (Since 19 May 2016)\n\n.. code:: python\n\n    class tqdm():\n      \"\"\"\n      Decorate an iterable object, returning an iterator which acts exactly\n      like the original iterable, but prints a dynamically updating\n      progress bar every time a value is requested.\n      \"\"\"\n\n      @envwrap(\"tqdm\")  # override defaults via env vars\n      def __init__(self, iterable=None, desc=None, total=None, leave=True,\n                   file=None, ncols=None, mininterval=0.1,\n                   maxinterval=10.0, miniters=None, ascii=None, disable=False,\n                   unit='it', unit_scale=False, dynamic_ncols=False,\n                   smoothing=0.3, bar_format=None, initial=0, position=None,\n                   postfix=None, unit_divisor=1000, write_bytes=False,\n                   lock_args=None, nrows=None, colour=None, delay=0):\n\nParameters\n~~~~~~~~~~\n\n* iterable  : iterable, optional  \n    Iterable to decorate with a progress bar.\n    Leave blank to manually manage the updates.\n* desc  : str, optional  \n    Prefix for the progress bar.\n* total  : int or float, optional  \n    The number of expected iterations. If unspecified,\n    len(iterable) is used if possible. If float(\"inf\") or as a last\n    resort, only basic progress statistics are displayed\n    (no ETA, no progress bar).\n    If ``gui`` is True and this parameter needs subsequent updating,\n    specify an initial arbitrary large positive number,\n    e.g. 9e9.\n* leave  : bool, optional  \n    If [default: True], keeps all traces of the progress bar\n    upon termination of iteration.\n    If ``None``, will leave only if ``position`` is ``0``.\n* file  : ``io.TextIOWrapper`` or ``io.StringIO``, optional  \n    Specifies where to output the progress messages\n    (default: sys.stderr). Uses ``file.write(str)`` and ``file.flush()``\n    methods.  For encoding, see ``write_bytes``.\n* ncols  : int, optional  \n    The width of the entire output message. If specified,\n    dynamically resizes the progress bar to stay within this bound.\n    If unspecified, attempts to use environment width. The\n    fallback is a meter width of 10 and no limit for the counter and\n    statistics. If 0, will not print any meter (only stats).\n* mininterval  : float, optional  \n    Minimum progress display update interval [default: 0.1] seconds.\n* maxinterval  : float, optional  \n    Maximum progress display update interval [default: 10] seconds.\n    Automatically adjusts ``miniters`` to correspond to ``mininterval``\n    after long display update lag. Only works if ``dynamic_miniters``\n    or monitor thread is enabled.\n* miniters  : int or float, optional  \n    Minimum progress display update interval, in iterations.\n    If 0 and ``dynamic_miniters``, will automatically adjust to equal\n    ``mininterval`` (more CPU efficient, good for tight loops).\n    If > 0, will skip display of specified number of iterations.\n    Tweak this and ``mininterval`` to get very efficient loops.\n    If your progress is erratic with both fast and slow iterations\n    (network, skipping items, etc) you should set miniters=1.\n* ascii  : bool or str, optional  \n    If unspecified or False, use unicode (smooth blocks) to fill\n    the meter. The fallback is to use ASCII characters \" 123456789#\".\n* disable  : bool, optional  \n    Whether to disable the entire progress bar wrapper\n    [default: False]. If set to None, disable on non-TTY.\n* unit  : str, optional  \n    String that will be used to define the unit of each iteration\n    [default: it].\n* unit_scale  : bool or int or float, optional  \n    If 1 or True, the number of iterations will be reduced/scaled\n    automatically and a metric prefix following the\n    International System of Units standard will be added\n    (kilo, mega, etc.) [default: False]. If any other non-zero\n    number, will scale ``total`` and ``n``.\n* dynamic_ncols  : bool, optional  \n    If set, constantly alters ``ncols`` and ``nrows`` to the\n    environment (allowing for window resizes) [default: False].\n* smoothing  : float, optional  \n    Exponential moving average smoothing factor for speed estimates\n    (ignored in GUI mode). Ranges from 0 (average speed) to 1\n    (current/instantaneous speed) [default: 0.3].\n* bar_format  : str, optional  \n    Specify a custom bar string formatting. May impact performance.\n    [default: '{l_bar}{bar}{r_bar}'], where\n    l_bar='{desc}: {percentage:3.0f}%|' and\n    r_bar='| {n_fmt}/{total_fmt} [{elapsed}<{remaining}, '\n    '{rate_fmt}{postfix}]'\n    Possible vars: l_bar, bar, r_bar, n, n_fmt, total, total_fmt,\n    percentage, elapsed, elapsed_s, ncols, nrows, desc, unit,\n    rate, rate_fmt, rate_noinv, rate_noinv_fmt,\n    rate_inv, rate_inv_fmt, postfix, unit_divisor,\n    remaining, remaining_s, eta.\n    Note that a trailing \": \" is automatically removed after {desc}\n    if the latter is empty.\n* initial  : int or float, optional  \n    The initial counter value. Useful when restarting a progress\n    bar [default: 0]. If using float, consider specifying ``{n:.3f}``\n    or similar in ``bar_format``, or specifying ``unit_scale``.\n* position  : int, optional  \n    Specify the line offset to print this bar (starting from 0)\n    Automatic if unspecified.\n    Useful to manage multiple bars at once (eg, from threads).\n* postfix  : dict or ``*``, optional  \n    Specify additional stats to display at the end of the bar.\n    Calls ``set_postfix(**postfix)`` if possible (dict).\n* unit_divisor  : float, optional  \n    [default: 1000], ignored unless ``unit_scale`` is True.\n* write_bytes  : bool, optional  \n    Whether to write bytes. If (default: False) will write unicode.\n* lock_args  : tuple, optional  \n    Passed to ``refresh`` for intermediate output\n    (initialisation, iterating, and updating).\n* nrows  : int, optional  \n    The screen height. If specified, hides nested bars outside this\n    bound. If unspecified, attempts to use environment height.\n    The fallback is 20.\n* colour  : str, optional  \n    Bar colour (e.g. 'green', '#00ff00').\n* delay  : float, optional  \n    Don't display until [default: 0] seconds have elapsed.\n\nExtra CLI Options\n~~~~~~~~~~~~~~~~~\n\n* delim  : chr, optional  \n    Delimiting character [default: '\\n']. Use '\\0' for null.\n    N.B.: on Windows systems, Python converts '\\n' to '\\r\\n'.\n* buf_size  : int, optional  \n    String buffer size in bytes [default: 256]\n    used when ``delim`` is specified.\n* bytes  : bool, optional  \n    If true, will count bytes, ignore ``delim``, and default\n    ``unit_scale`` to True, ``unit_divisor`` to 1024, and ``unit`` to 'B'.\n* tee  : bool, optional  \n    If true, passes ``stdin`` to both ``stderr`` and ``stdout``.\n* update  : bool, optional  \n    If true, will treat input as newly elapsed iterations,\n    i.e. numbers to pass to ``update()``. Note that this is slow\n    (~2e5 it/s) since every input must be decoded as a number.\n* update_to  : bool, optional  \n    If true, will treat input as total elapsed iterations,\n    i.e. numbers to assign to ``self.n``. Note that this is slow\n    (~2e5 it/s) since every input must be decoded as a number.\n* null  : bool, optional  \n    If true, will discard input (no stdout).\n* manpath  : str, optional  \n    Directory in which to install tqdm man pages.\n* comppath  : str, optional  \n    Directory in which to place tqdm completion.\n* log  : str, optional  \n    CRITICAL|FATAL|ERROR|WARN(ING)|[default: 'INFO']|DEBUG|NOTSET.\n\nReturns\n~~~~~~~\n\n* out  : decorated iterator.  \n\n.. code:: python\n\n    class tqdm():\n      def update(self, n=1):\n          \"\"\"\n          Manually update the progress bar, useful for streams\n          such as reading files.\n          E.g.:\n          >>> t = tqdm(total=filesize) # Initialise\n          >>> for current_buffer in stream:\n          ...    ...\n          ...    t.update(len(current_buffer))\n          >>> t.close()\n          The last line is highly recommended, but possibly not necessary if\n          `t.update()` will be called in such a way that `filesize` will be\n          exactly reached and printed.\n\n          Parameters\n          ----------\n          n  : int or float, optional\n              Increment to add to the internal counter of iterations\n              [default: 1]. If using float, consider specifying `{n:.3f}`\n              or similar in `bar_format`, or specifying `unit_scale`.\n\n          Returns\n          -------\n          out  : bool or None\n              True if a `display()` was triggered.\n          \"\"\"\n\n      def close(self):\n          \"\"\"Cleanup and (if leave=False) close the progress bar.\"\"\"\n\n      def clear(self, nomove=False):\n          \"\"\"Clear current bar display.\"\"\"\n\n      def refresh(self):\n          \"\"\"\n          Force refresh the display of this bar.\n\n          Parameters\n          ----------\n          nolock  : bool, optional\n              If `True`, does not lock.\n              If [default: `False`]: calls `acquire()` on internal lock.\n          lock_args  : tuple, optional\n              Passed to internal lock's `acquire()`.\n              If specified, will only `display()` if `acquire()` returns `True`.\n          \"\"\"\n\n      def unpause(self):\n          \"\"\"Restart tqdm timer from last print time.\"\"\"\n\n      def reset(self, total=None):\n          \"\"\"\n          Resets to 0 iterations for repeated use.\n\n          Consider combining with `leave=True`.\n\n          Parameters\n          ----------\n          total  : int or float, optional. Total to use for the new bar.\n          \"\"\"\n\n      def set_description(self, desc=None, refresh=True):\n          \"\"\"\n          Set/modify description of the progress bar.\n\n          Parameters\n          ----------\n          desc  : str, optional\n          refresh  : bool, optional\n              Forces refresh [default: True].\n          \"\"\"\n\n      def set_postfix(self, ordered_dict=None, refresh=True, **tqdm_kwargs):\n          \"\"\"\n          Set/modify postfix (additional stats)\n          with automatic formatting based on datatype.\n\n          Parameters\n          ----------\n          ordered_dict  : dict or OrderedDict, optional\n          refresh  : bool, optional\n              Forces refresh [default: True].\n          kwargs  : dict, optional\n          \"\"\"\n\n      @classmethod\n      def write(cls, s, file=sys.stdout, end=\"\\n\"):\n          \"\"\"Print a message via tqdm (without overlap with bars).\"\"\"\n\n      @property\n      def format_dict(self):\n          \"\"\"Public API for read-only member access.\"\"\"\n\n      def display(self, msg=None, pos=None):\n          \"\"\"\n          Use `self.sp` to display `msg` in the specified `pos`.\n\n          Consider overloading this function when inheriting to use e.g.:\n          `self.some_frontend(**self.format_dict)` instead of `self.sp`.\n\n          Parameters\n          ----------\n          msg  : str, optional. What to display (default: `repr(self)`).\n          pos  : int, optional. Position to `moveto`\n            (default: `abs(self.pos)`).\n          \"\"\"\n\n      @classmethod\n      @contextmanager\n      def wrapattr(cls, stream, method, total=None, bytes=True, **tqdm_kwargs):\n          \"\"\"\n          stream  : file-like object.\n          method  : str, \"read\" or \"write\". The result of `read()` and\n              the first argument of `write()` should have a `len()`.\n\n          >>> with tqdm.wrapattr(file_obj, \"read\", total=file_obj.size) as fobj:\n          ...     while True:\n          ...         chunk = fobj.read(chunk_size)\n          ...         if not chunk:\n          ...             break\n          \"\"\"\n\n      @classmethod\n      def pandas(cls, *targs, **tqdm_kwargs):\n          \"\"\"Registers the current `tqdm` class with `pandas`.\"\"\"\n\n    def trange(*args, **tqdm_kwargs):\n        \"\"\"Shortcut for `tqdm(range(*args), **tqdm_kwargs)`.\"\"\"\n\nConvenience Functions\n~~~~~~~~~~~~~~~~~~~~~\n\n.. code:: python\n\n    def tqdm.contrib.tenumerate(iterable, start=0, total=None,\n                                tqdm_class=tqdm.auto.tqdm, **tqdm_kwargs):\n        \"\"\"Equivalent of `numpy.ndenumerate` or builtin `enumerate`.\"\"\"\n\n    def tqdm.contrib.tzip(iter1, *iter2plus, **tqdm_kwargs):\n        \"\"\"Equivalent of builtin `zip`.\"\"\"\n\n    def tqdm.contrib.tmap(function, *sequences, **tqdm_kwargs):\n        \"\"\"Equivalent of builtin `map`.\"\"\"\n\nSubmodules\n~~~~~~~~~~\n\n.. code:: python\n\n    class tqdm.notebook.tqdm(tqdm.tqdm):\n        \"\"\"IPython/Jupyter Notebook widget.\"\"\"\n\n    class tqdm.auto.tqdm(tqdm.tqdm):\n        \"\"\"Automatically chooses between `tqdm.notebook` and `tqdm.tqdm`.\"\"\"\n\n    class tqdm.asyncio.tqdm(tqdm.tqdm):\n      \"\"\"Asynchronous version.\"\"\"\n      @classmethod\n      def as_completed(cls, fs, *, loop=None, timeout=None, total=None,\n                       **tqdm_kwargs):\n          \"\"\"Wrapper for `asyncio.as_completed`.\"\"\"\n\n    class tqdm.gui.tqdm(tqdm.tqdm):\n        \"\"\"Matplotlib GUI version.\"\"\"\n\n    class tqdm.tk.tqdm(tqdm.tqdm):\n        \"\"\"Tkinter GUI version.\"\"\"\n\n    class tqdm.rich.tqdm(tqdm.tqdm):\n        \"\"\"`rich.progress` version.\"\"\"\n\n    class tqdm.keras.TqdmCallback(keras.callbacks.Callback):\n        \"\"\"Keras callback for epoch and batch progress.\"\"\"\n\n    class tqdm.dask.TqdmCallback(dask.callbacks.Callback):\n        \"\"\"Dask callback for task progress.\"\"\"\n\n\n``contrib``\n+++++++++++\n\nThe ``tqdm.contrib`` package also contains experimental modules:\n\n- `tqdm.contrib.itertools <https://tqdm.github.io/docs/contrib.itertools/>`_: Thin wrappers around ``itertools``\n- `tqdm.contrib.concurrent <https://tqdm.github.io/docs/contrib.concurrent/>`_: Thin wrappers around ``concurrent.futures``\n- `tqdm.contrib.slack <https://tqdm.github.io/docs/contrib.slack/>`_: Posts to `Slack <https://slack.com>`__ bots\n- `tqdm.contrib.discord <https://tqdm.github.io/docs/contrib.discord/>`_: Posts to `Discord <https://discord.com>`__ bots\n- `tqdm.contrib.telegram <https://tqdm.github.io/docs/contrib.telegram/>`_: Posts to `Telegram <https://telegram.org>`__ bots\n- `tqdm.contrib.bells <https://tqdm.github.io/docs/shortcuts/>`_: Automagically enables all optional features\n\n  * ``auto``, ``pandas``, ``slack``, ``discord``, ``telegram``\n\n.. image:: https://tqdm.github.io/img/screenshot-discord.png\n   :alt: Screenshot of `tqdm.contrib.discord` in action\n\nExamples and Advanced Usage\n---------------------------\n\n- See the `examples <https://github.com/tqdm/tqdm/tree/master/examples>`__\n  folder;\n- import the module and run ``help()``;\n- consult the `wiki <https://github.com/tqdm/tqdm/wiki>`__;\n\n  * this has an\n    `excellent article <https://github.com/tqdm/tqdm/wiki/How-to-make-a-great-Progress-Bar>`__\n    on how to make a **great** progress bar;\n\n- check out the `slides from PyData London <https://tqdm.github.io/PyData2019/slides.html>`__, or\n- run the |binder-demo|.\n\nDescription and additional stats\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nCustom information can be displayed and updated dynamically on ``tqdm`` bars\nwith the ``desc`` and ``postfix`` arguments:\n\n.. code:: python\n\n    from tqdm import tqdm, trange\n    from random import random, randint\n    from time import sleep\n\n    with trange(10) as t:\n        for i in t:\n            # Description will be displayed on the left\n            t.set_description('GEN %i' % i)\n            # Postfix will be displayed on the right,\n            # formatted automatically based on argument's datatype\n            t.set_postfix(loss=random(), gen=randint(1,999), str='h',\n                          lst=[1, 2])\n            sleep(0.1)\n\n    with tqdm(total=10, bar_format=\"{postfix[0]} {postfix[1][value]:>8.2g}\",\n              postfix=[\"Batch\", {\"value\": 0}]) as t:\n        for i in range(10):\n            sleep(0.1)\n            t.postfix[1][\"value\"] = i / 2\n            t.update()\n\nPoints to remember when using ``{postfix[...]}`` in the ``bar_format`` string:\n\n- ``postfix`` also needs to be passed as an initial argument in a compatible\n  format, and\n- ``postfix`` will be auto-converted to a string if it is a ``dict``-like\n  object. To prevent this behaviour, insert an extra item into the dictionary\n  where the key is not a string.\n\nAdditional ``bar_format`` parameters may also be defined by overriding\n``format_dict``, and the bar itself may be modified using ``ascii``:\n\n.. code:: python\n\n    from tqdm import tqdm\n    class TqdmExtraFormat(tqdm):\n        \"\"\"Provides a `total_time` format parameter\"\"\"\n        @property\n        def format_dict(self):\n            d = super().format_dict\n            total_time = d[\"elapsed\"] * (d[\"total\"] or 0) / max(d[\"n\"], 1)\n            d.update(total_time=self.format_interval(total_time) + \" in total\")\n            return d\n\n    for i in TqdmExtraFormat(\n          range(9), ascii=\" .oO0\",\n          bar_format=\"{total_time}: {percentage:.0f}%|{bar}{r_bar}\"):\n        if i == 4:\n            break\n\n.. code::\n\n    00:00 in total: 44%|0000.     | 4/9 [00:00<00:00, 962.93it/s]\n\nNote that ``{bar}`` also supports a format specifier ``[width][type]``.\n\n- ``width``\n\n  * unspecified (default): automatic to fill ``ncols``\n  * ``int >= 0``: fixed width overriding ``ncols`` logic\n  * ``int < 0``: subtract from the automatic default\n\n- ``type``\n\n  * ``a``: ascii (``ascii=True`` override)\n  * ``u``: unicode (``ascii=False`` override)\n  * ``b``: blank (``ascii=\"  \"`` override)\n\nThis means a fixed bar with right-justified text may be created by using:\n``bar_format=\"{l_bar}{bar:10}|{bar:-10b}right-justified\"``\n\nNested progress bars\n~~~~~~~~~~~~~~~~~~~~\n\n``tqdm`` supports nested progress bars. Here's an example:\n\n.. code:: python\n\n    from tqdm.auto import trange\n    from time import sleep\n\n    for i in trange(4, desc='1st loop'):\n        for j in trange(5, desc='2nd loop'):\n            for k in trange(50, desc='3rd loop', leave=False):\n                sleep(0.01)\n\nFor manual control over positioning (e.g. for multi-processing use),\nyou may specify ``position=n`` where ``n=0`` for the outermost bar,\n``n=1`` for the next, and so on.\nHowever, it's best to check if ``tqdm`` can work without manual ``position``\nfirst.\n\n.. code:: python\n\n    from time import sleep\n    from tqdm import trange, tqdm\n    from multiprocessing import Pool, RLock, freeze_support\n\n    L = list(range(9))\n\n    def progresser(n):\n        interval = 0.001 / (n + 2)\n        total = 5000\n        text = f\"#{n}, est. {interval * total:<04.2}s\"\n        for _ in trange(total, desc=text, position=n):\n            sleep(interval)\n\n    if __name__ == '__main__':\n        freeze_support()  # for Windows support\n        tqdm.set_lock(RLock())  # for managing output contention\n        p = Pool(initializer=tqdm.set_lock, initargs=(tqdm.get_lock(),))\n        p.map(progresser, L)\n\nNote that in Python 3, ``tqdm.write`` is thread-safe:\n\n.. code:: python\n\n    from time import sleep\n    from tqdm import tqdm, trange\n    from concurrent.futures import ThreadPoolExecutor\n\n    L = list(range(9))\n\n    def progresser(n):\n        interval = 0.001 / (n + 2)\n        total = 5000\n        text = f\"#{n}, est. {interval * total:<04.2}s\"\n        for _ in trange(total, desc=text):\n            sleep(interval)\n        if n == 6:\n            tqdm.write(\"n == 6 completed.\")\n            tqdm.write(\"`tqdm.write()` is thread-safe in py3!\")\n\n    if __name__ == '__main__':\n        with ThreadPoolExecutor() as p:\n            p.map(progresser, L)\n\nHooks and callbacks\n~~~~~~~~~~~~~~~~~~~\n\n``tqdm`` can easily support callbacks/hooks and manual updates.\nHere's an example with ``urllib``:\n\n**``urllib.urlretrieve`` documentation**\n\n    | [...]\n    | If present, the hook function will be called once\n    | on establishment of the network connection and once after each block read\n    | thereafter. The hook will be passed three arguments; a count of blocks\n    | transferred so far, a block size in bytes, and the total size of the file.\n    | [...]\n\n.. code:: python\n\n    import urllib, os\n    from tqdm import tqdm\n    urllib = getattr(urllib, 'request', urllib)\n\n    class TqdmUpTo(tqdm):\n        \"\"\"Provides `update_to(n)` which uses `tqdm.update(delta_n)`.\"\"\"\n        def update_to(self, b=1, bsize=1, tsize=None):\n            \"\"\"\n            b  : int, optional\n                Number of blocks transferred so far [default: 1].\n            bsize  : int, optional\n                Size of each block (in tqdm units) [default: 1].\n            tsize  : int, optional\n                Total size (in tqdm units). If [default: None] remains unchanged.\n            \"\"\"\n            if tsize is not None:\n                self.total = tsize\n            return self.update(b * bsize - self.n)  # also sets self.n = b * bsize\n\n    eg_link = \"https://cgi.cdcl.ml/matryoshka.zip\"\n    with TqdmUpTo(unit='B', unit_scale=True, unit_divisor=1024, miniters=1,\n                  desc=eg_link.split('/')[-1]) as t:  # all optional kwargs\n        urllib.urlretrieve(eg_link, filename=os.devnull,\n                           reporthook=t.update_to, data=None)\n        t.total = t.n\n\nInspired by `twine#242 <https://github.com/pypa/twine/pull/242>`__.\nFunctional alternative in\n`examples/tqdm_wget.py <https://github.com/tqdm/tqdm/blob/master/examples/tqdm_wget.py>`__.\n\nIt is recommend to use ``miniters=1`` whenever there is potentially\nlarge differences in iteration speed (e.g. downloading a file over\na patchy connection).\n\n**Wrapping read/write methods**\n\nTo measure throughput through a file-like object's ``read`` or ``write``\nmethods, use ``CallbackIOWrapper``:\n\n.. code:: python\n\n    from tqdm.auto import tqdm\n    from tqdm.utils import CallbackIOWrapper\n\n    with tqdm(total=file_obj.size,\n              unit='B', unit_scale=True, unit_divisor=1024) as t:\n        fobj = CallbackIOWrapper(t.update, file_obj, \"read\")\n        while True:\n            chunk = fobj.read(chunk_size)\n            if not chunk:\n                break\n        t.reset()\n        # ... continue to use `t` for something else\n\nAlternatively, use the even simpler ``wrapattr`` convenience function,\nwhich would condense both the ``urllib`` and ``CallbackIOWrapper`` examples\ndown to:\n\n.. code:: python\n\n    import urllib, os\n    from tqdm import tqdm\n\n    eg_link = \"https://cgi.cdcl.ml/matryoshka.zip\"\n    response = getattr(urllib, 'request', urllib).urlopen(eg_link)\n    with tqdm.wrapattr(open(os.devnull, \"wb\"), \"write\",\n                       miniters=1, desc=eg_link.split('/')[-1],\n                       total=getattr(response, 'length', None)) as fout:\n        for chunk in response:\n            fout.write(chunk)\n\nThe ``requests`` equivalent is nearly identical:\n\n.. code:: python\n\n    import requests, os\n    from tqdm import tqdm\n\n    eg_link = \"https://cgi.cdcl.ml/matryoshka.zip\"\n    response = requests.get(eg_link, stream=True)\n    with tqdm.wrapattr(open(os.devnull, \"wb\"), \"write\",\n                       miniters=1, desc=eg_link.split('/')[-1],\n                       total=int(response.headers.get('content-length', 0))) as fout:\n        for chunk in response.iter_content(chunk_size=4096):\n            fout.write(chunk)\n\n**Custom callback**\n\n``tqdm`` is known for intelligently skipping unnecessary displays. To make a\ncustom callback take advantage of this, simply use the return value of\n``update()``. This is set to ``True`` if a ``display()`` was triggered.\n\n.. code:: python\n\n    from tqdm.auto import tqdm as std_tqdm\n\n    def external_callback(*args, **kwargs):\n        ...\n\n    class TqdmExt(std_tqdm):\n        def update(self, n=1):\n            displayed = super().update(n)\n            if displayed:\n                external_callback(**self.format_dict)\n            return displayed\n\n``asyncio``\n~~~~~~~~~~~\n\nNote that ``break`` isn't currently caught by asynchronous iterators.\nThis means that ``tqdm`` cannot clean up after itself in this case:\n\n.. code:: python\n\n    from tqdm.asyncio import tqdm\n\n    async for i in tqdm(range(9)):\n        if i == 2:\n            break\n\nInstead, either call ``pbar.close()`` manually or use the context manager syntax:\n\n.. code:: python\n\n    from tqdm.asyncio import tqdm\n\n    with tqdm(range(9)) as pbar:\n        async for i in pbar:\n            if i == 2:\n                break\n\nPandas Integration\n~~~~~~~~~~~~~~~~~~\n\nDue to popular demand we've added support for ``pandas`` -- here's an example\nfor ``DataFrame.progress_apply`` and ``DataFrameGroupBy.progress_apply``:\n\n.. code:: python\n\n    import pandas as pd\n    import numpy as np\n    from tqdm import tqdm\n\n    df = pd.DataFrame(np.random.randint(0, 100, (100000, 6)))\n\n    # Register `pandas.progress_apply` and `pandas.Series.map_apply` with `tqdm`\n    # (can use `tqdm.gui.tqdm`, `tqdm.notebook.tqdm`, optional kwargs, etc.)\n    tqdm.pandas(desc=\"my bar!\")\n\n    # Now you can use `progress_apply` instead of `apply`\n    # and `progress_map` instead of `map`\n    df.progress_apply(lambda x: x**2)\n    # can also groupby:\n    # df.groupby(0).progress_apply(lambda x: x**2)\n\nIn case you're interested in how this works (and how to modify it for your\nown callbacks), see the\n`examples <https://github.com/tqdm/tqdm/tree/master/examples>`__\nfolder or import the module and run ``help()``.\n\nKeras Integration\n~~~~~~~~~~~~~~~~~\n\nA ``keras`` callback is also available:\n\n.. code:: python\n\n    from tqdm.keras import TqdmCallback\n\n    ...\n\n    model.fit(..., verbose=0, callbacks=[TqdmCallback()])\n\nDask Integration\n~~~~~~~~~~~~~~~~\n\nA ``dask`` callback is also available:\n\n.. code:: python\n\n    from tqdm.dask import TqdmCallback\n\n    with TqdmCallback(desc=\"compute\"):\n        ...\n        arr.compute()\n\n    # or use callback globally\n    cb = TqdmCallback(desc=\"global\")\n    cb.register()\n    arr.compute()\n\nIPython/Jupyter Integration\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nIPython/Jupyter is supported via the ``tqdm.notebook`` submodule:\n\n.. code:: python\n\n    from tqdm.notebook import trange, tqdm\n    from time import sleep\n\n    for i in trange(3, desc='1st loop'):\n        for j in tqdm(range(100), desc='2nd loop'):\n            sleep(0.01)\n\nIn addition to ``tqdm`` features, the submodule provides a native Jupyter\nwidget (compatible with IPython v1-v4 and Jupyter), fully working nested bars\nand colour hints (blue: normal, green: completed, red: error/interrupt,\nlight blue: no ETA); as demonstrated below.\n\n|Screenshot-Jupyter1|\n|Screenshot-Jupyter2|\n|Screenshot-Jupyter3|\n\nThe ``notebook`` version supports percentage or pixels for overall width\n(e.g.: ``ncols='100%'`` or ``ncols='480px'``).\n\nIt is also possible to let ``tqdm`` automatically choose between\nconsole or notebook versions by using the ``autonotebook`` submodule:\n\n.. code:: python\n\n    from tqdm.autonotebook import tqdm\n    tqdm.pandas()\n\nNote that this will issue a ``TqdmExperimentalWarning`` if run in a notebook\nsince it is not meant to be possible to distinguish between ``jupyter notebook``\nand ``jupyter console``. Use ``auto`` instead of ``autonotebook`` to suppress\nthis warning.\n\nNote that notebooks will display the bar in the cell where it was created.\nThis may be a different cell from the one where it is used.\nIf this is not desired, either\n\n- delay the creation of the bar to the cell where it must be displayed, or\n- create the bar with ``display=False``, and in a later cell call\n  ``display(bar.container)``:\n\n.. code:: python\n\n    from tqdm.notebook import tqdm\n    pbar = tqdm(..., display=False)\n\n.. code:: python\n\n    # different cell\n    display(pbar.container)\n\nThe ``keras`` callback has a ``display()`` method which can be used likewise:\n\n.. code:: python\n\n    from tqdm.keras import TqdmCallback\n    cbk = TqdmCallback(display=False)\n\n.. code:: python\n\n    # different cell\n    cbk.display()\n    model.fit(..., verbose=0, callbacks=[cbk])\n\nAnother possibility is to have a single bar (near the top of the notebook)\nwhich is constantly re-used (using ``reset()`` rather than ``close()``).\nFor this reason, the notebook version (unlike the CLI version) does not\nautomatically call ``close()`` upon ``Exception``.\n\n.. code:: python\n\n    from tqdm.notebook import tqdm\n    pbar = tqdm()\n\n.. code:: python\n\n    # different cell\n    iterable = range(100)\n    pbar.reset(total=len(iterable))  # initialise with new `total`\n    for i in iterable:\n        pbar.update()\n    pbar.refresh()  # force print final status but don't `close()`\n\nCustom Integration\n~~~~~~~~~~~~~~~~~~\n\nTo change the default arguments (such as making ``dynamic_ncols=True``),\nsimply use built-in Python magic:\n\n.. code:: python\n\n    from functools import partial\n    from tqdm import tqdm as std_tqdm\n    tqdm = partial(std_tqdm, dynamic_ncols=True)\n\nFor further customisation,\n``tqdm`` may be inherited from to create custom callbacks (as with the\n``TqdmUpTo`` example `above <#hooks-and-callbacks>`__) or for custom frontends\n(e.g. GUIs such as notebook or plotting packages). In the latter case:\n\n1. ``def __init__()`` to call ``super().__init__(..., gui=True)`` to disable\n   terminal ``status_printer`` creation.\n2. Redefine: ``close()``, ``clear()``, ``display()``.\n\nConsider overloading ``display()`` to use e.g.\n``self.frontend(**self.format_dict)`` instead of ``self.sp(repr(self))``.\n\nSome submodule examples of inheritance:\n\n- `tqdm/notebook.py <https://github.com/tqdm/tqdm/blob/master/tqdm/notebook.py>`__\n- `tqdm/gui.py <https://github.com/tqdm/tqdm/blob/master/tqdm/gui.py>`__\n- `tqdm/tk.py <https://github.com/tqdm/tqdm/blob/master/tqdm/tk.py>`__\n- `tqdm/contrib/slack.py <https://github.com/tqdm/tqdm/blob/master/tqdm/contrib/slack.py>`__\n- `tqdm/contrib/discord.py <https://github.com/tqdm/tqdm/blob/master/tqdm/contrib/discord.py>`__\n- `tqdm/contrib/telegram.py <https://github.com/tqdm/tqdm/blob/master/tqdm/contrib/telegram.py>`__\n\nDynamic Monitor/Meter\n~~~~~~~~~~~~~~~~~~~~~\n\nYou can use a ``tqdm`` as a meter which is not monotonically increasing.\nThis could be because ``n`` decreases (e.g. a CPU usage monitor) or ``total``\nchanges.\n\nOne example would be recursively searching for files. The ``total`` is the\nnumber of objects found so far, while ``n`` is the number of those objects which\nare files (rather than folders):\n\n.. code:: python\n\n    from tqdm import tqdm\n    import os.path\n\n    def find_files_recursively(path, show_progress=True):\n        files = []\n        # total=1 assumes `path` is a file\n        t = tqdm(total=1, unit=\"file\", disable=not show_progress)\n        if not os.path.exists(path):\n            raise IOError(\"Cannot find:\" + path)\n\n        def append_found_file(f):\n            files.append(f)\n            t.update()\n\n        def list_found_dir(path):\n            \"\"\"returns os.listdir(path) assuming os.path.isdir(path)\"\"\"\n            listing = os.listdir(path)\n            # subtract 1 since a \"file\" we found was actually this directory\n            t.total += len(listing) - 1\n            # fancy way to give info without forcing a refresh\n            t.set_postfix(dir=path[-10:], refresh=False)\n            t.update(0)  # may trigger a refresh\n            return listing\n\n        def recursively_search(path):\n            if os.path.isdir(path):\n                for f in list_found_dir(path):\n                    recursively_search(os.path.join(path, f))\n            else:\n                append_found_file(path)\n\n        recursively_search(path)\n        t.set_postfix(dir=path)\n        t.close()\n        return files\n\nUsing ``update(0)`` is a handy way to let ``tqdm`` decide when to trigger a\ndisplay refresh to avoid console spamming.\n\nWriting messages\n~~~~~~~~~~~~~~~~\n\nThis is a work in progress (see\n`#737 <https://github.com/tqdm/tqdm/issues/737>`__).\n\nSince ``tqdm`` uses a simple printing mechanism to display progress bars,\nyou should not write any message in the terminal using ``print()`` while\na progress bar is open.\n\nTo write messages in the terminal without any collision with ``tqdm`` bar\ndisplay, a ``.write()`` method is provided:\n\n.. code:: python\n\n    from tqdm.auto import tqdm, trange\n    from time import sleep\n\n    bar = trange(10)\n    for i in bar:\n        # Print using tqdm class method .write()\n        sleep(0.1)\n        if not (i % 3):\n            tqdm.write(\"Done task %i\" % i)\n        # Can also use bar.write()\n\nBy default, this will print to standard output ``sys.stdout``. but you can\nspecify any file-like object using the ``file`` argument. For example, this\ncan be used to redirect the messages writing to a log file or class.\n\nRedirecting writing\n~~~~~~~~~~~~~~~~~~~\n\nIf using a library that can print messages to the console, editing the library\nby  replacing ``print()`` with ``tqdm.write()`` may not be desirable.\nIn that case, redirecting ``sys.stdout`` to ``tqdm.write()`` is an option.\n\nTo redirect ``sys.stdout``, create a file-like class that will write\nany input string to ``tqdm.write()``, and supply the arguments\n``file=sys.stdout, dynamic_ncols=True``.\n\nA reusable canonical example is given below:\n\n.. code:: python\n\n    from time import sleep\n    import contextlib\n    import sys\n    from tqdm import tqdm\n    from tqdm.contrib import DummyTqdmFile\n\n\n    @contextlib.contextmanager\n    def std_out_err_redirect_tqdm():\n        orig_out_err = sys.stdout, sys.stderr\n        try:\n            sys.stdout, sys.stderr = map(DummyTqdmFile, orig_out_err)\n            yield orig_out_err[0]\n        # Relay exceptions\n        except Exception as exc:\n            raise exc\n        # Always restore sys.stdout/err if necessary\n        finally:\n            sys.stdout, sys.stderr = orig_out_err\n\n    def some_fun(i):\n        print(\"Fee, fi, fo,\".split()[i])\n\n    # Redirect stdout to tqdm.write() (don't forget the `as save_stdout`)\n    with std_out_err_redirect_tqdm() as orig_stdout:\n        # tqdm needs the original stdout\n        # and dynamic_ncols=True to autodetect console width\n        for i in tqdm(range(3), file=orig_stdout, dynamic_ncols=True):\n            sleep(.5)\n            some_fun(i)\n\n    # After the `with`, printing is restored\n    print(\"Done!\")\n\nRedirecting ``logging``\n~~~~~~~~~~~~~~~~~~~~~~~\n\nSimilar to ``sys.stdout``/``sys.stderr`` as detailed above, console ``logging``\nmay also be redirected to ``tqdm.write()``.\n\nWarning: if also redirecting ``sys.stdout``/``sys.stderr``, make sure to\nredirect ``logging`` first if needed.\n\nHelper methods are available in ``tqdm.contrib.logging``. For example:\n\n.. code:: python\n\n    import logging\n    from tqdm import trange\n    from tqdm.contrib.logging import logging_redirect_tqdm\n\n    LOG = logging.getLogger(__name__)\n\n    if __name__ == '__main__':\n        logging.basicConfig(level=logging.INFO)\n        with logging_redirect_tqdm():\n            for i in trange(9):\n                if i == 4:\n                    LOG.info(\"console logging redirected to `tqdm.write()`\")\n        # logging restored\n\nMonitoring thread, intervals and miniters\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n``tqdm`` implements a few tricks to increase efficiency and reduce overhead.\n\n- Avoid unnecessary frequent bar refreshing: ``mininterval`` defines how long\n  to wait between each refresh. ``tqdm`` always gets updated in the background,\n  but it will display only every ``mininterval``.\n- Reduce number of calls to check system clock/time.\n- ``mininterval`` is more intuitive to configure than ``miniters``.\n  A clever adjustment system ``dynamic_miniters`` will automatically adjust\n  ``miniters`` to the amount of iterations that fit into time ``mininterval``.\n  Essentially, ``tqdm`` will check if it's time to print without actually\n  checking time. This behaviour can be still be bypassed by manually setting\n  ``miniters``.\n\nHowever, consider a case with a combination of fast and slow iterations.\nAfter a few fast iterations, ``dynamic_miniters`` will set ``miniters`` to a\nlarge number. When iteration rate subsequently slows, ``miniters`` will\nremain large and thus reduce display update frequency. To address this:\n\n- ``maxinterval`` defines the maximum time between display refreshes.\n  A concurrent monitoring thread checks for overdue updates and forces one\n  where necessary.\n\nThe monitoring thread should not have a noticeable overhead, and guarantees\nupdates at least every 10 seconds by default.\nThis value can be directly changed by setting the ``monitor_interval`` of\nany ``tqdm`` instance (i.e. ``t = tqdm.tqdm(...); t.monitor_interval = 2``).\nThe monitor thread may be disabled application-wide by setting\n``tqdm.tqdm.monitor_interval = 0`` before instantiation of any ``tqdm`` bar.\n\n\nMerch\n-----\n\nYou can buy `tqdm branded merch <https://tqdm.github.io/merch>`__ now!\n\nContributions\n-------------\n\n|GitHub-Commits| |GitHub-Issues| |GitHub-PRs| |OpenHub-Status| |GitHub-Contributions| |CII Best Practices|\n\nAll source code is hosted on `GitHub <https://github.com/tqdm/tqdm>`__.\nContributions are welcome.\n\nSee the\n`CONTRIBUTING <https://github.com/tqdm/tqdm/blob/master/CONTRIBUTING.md>`__\nfile for more information.\n\nDevelopers who have contributed more that 5 *loc* (surviving lines of code):\n\n|git-fame|\n\nHonourable mentions:\n\n- Casper da Costa-Luis `casperdcl <https://github.com/casperdcl>`__ primary maintainer |Gift-Casper|\n- Stephen Larroque `lrq3000 <https://github.com/lrq3000>`__ maintainer\n- Hadrien Mary `hadim <https://github.com/hadim>`__ maintainer\n- Mikhail Korobov `kmike <https://github.com/kmike>`__ maintainer\n- Noam Yorav-Raphael `noamraph <https://github.com/noamraph>`__ original author\n\nPorts to Other Languages\n~~~~~~~~~~~~~~~~~~~~~~~~\n\nA list is available on\n`this wiki page <https://github.com/tqdm/tqdm/wiki/tqdm-ports>`__.\n\n\nLICENCE\n-------\n\nOpen Source (OSI approved): |LICENCE|\n\nCitation information: |DOI|\n\n|README-Hits| (Since 19 May 2016)\n\n.. |Logo| image:: https://tqdm.github.io/img/logo.gif\n.. |Screenshot| image:: https://tqdm.github.io/img/tqdm.gif\n.. |Video| image:: https://tqdm.github.io/img/video.jpg\n   :target: https://tqdm.github.io/video\n.. |Slides| image:: https://tqdm.github.io/img/slides.jpg\n   :target: https://tqdm.github.io/PyData2019/slides.html\n.. |Merch| image:: https://tqdm.github.io/img/merch.jpg\n   :target: https://tqdm.github.io/merch\n.. |Build-Status| image:: https://img.shields.io/github/actions/workflow/status/tqdm/tqdm/test.yml?branch=master&label=tqdm&logo=GitHub\n   :target: https://github.com/tqdm/tqdm/actions/workflows/test.yml\n.. |Coverage-Status| image:: https://img.shields.io/coveralls/github/tqdm/tqdm/master?logo=coveralls\n   :target: https://coveralls.io/github/tqdm/tqdm\n.. |Branch-Coverage-Status| image:: https://codecov.io/gh/tqdm/tqdm/branch/master/graph/badge.svg\n   :target: https://codecov.io/gh/tqdm/tqdm\n.. |Codacy-Grade| image:: https://app.codacy.com/project/badge/Grade/3f965571598f44549c7818f29cdcf177\n   :target: https://app.codacy.com/gh/tqdm/tqdm/dashboard\n.. |CII Best Practices| image:: https://bestpractices.coreinfrastructure.org/projects/3264/badge\n   :target: https://bestpractices.coreinfrastructure.org/projects/3264\n.. |GitHub-Status| image:: https://img.shields.io/github/tag/tqdm/tqdm.svg?maxAge=86400&logo=github&logoColor=white\n   :target: https://github.com/tqdm/tqdm/releases\n.. |GitHub-Forks| image:: https://img.shields.io/github/forks/tqdm/tqdm.svg?logo=github&logoColor=white\n   :target: https://github.com/tqdm/tqdm/network\n.. |GitHub-Stars| image:: https://img.shields.io/github/stars/tqdm/tqdm.svg?logo=github&logoColor=white\n   :target: https://github.com/tqdm/tqdm/stargazers\n.. |GitHub-Commits| image:: https://img.shields.io/github/commit-activity/y/tqdm/tqdm.svg?logo=git&logoColor=white\n   :target: https://github.com/tqdm/tqdm/graphs/commit-activity\n.. |GitHub-Issues| image:: https://img.shields.io/github/issues-closed/tqdm/tqdm.svg?logo=github&logoColor=white\n   :target: https://github.com/tqdm/tqdm/issues?q=\n.. |GitHub-PRs| image:: https://img.shields.io/github/issues-pr-closed/tqdm/tqdm.svg?logo=github&logoColor=white\n   :target: https://github.com/tqdm/tqdm/pulls\n.. |GitHub-Contributions| image:: https://img.shields.io/github/contributors/tqdm/tqdm.svg?logo=github&logoColor=white\n   :target: https://github.com/tqdm/tqdm/graphs/contributors\n.. |GitHub-Updated| image:: https://img.shields.io/github/last-commit/tqdm/tqdm/master.svg?logo=github&logoColor=white&label=pushed\n   :target: https://github.com/tqdm/tqdm/pulse\n.. |git-fame| image:: https://git-fame.cdcl.ml/gh/tqdm/tqdm?min=5&w=1&M=1&C=1&excl=(png|gif|jpg)$&enum=1\n   :alt: git-fame.cdcl.ml/gh/tqdm/tqdm\n   :target: https://git-fame.cdcl.ml/gh/tqdm/tqdm?w=1&M=1&C=1&excl=(png|gif|jpg)$&enum=1\n.. |Gift-Casper| image:: https://img.shields.io/badge/sponsor-casper-ff69b4.svg\n   :target: https://cdcl.ml/sponsor\n.. |Versions| image:: https://img.shields.io/pypi/v/tqdm.svg\n   :target: https://tqdm.github.io/releases\n.. |PyPI-Downloads| image:: https://img.shields.io/pypi/dm/tqdm.svg?label=pypi%20downloads&logo=PyPI&logoColor=white\n   :target: https://pepy.tech/project/tqdm\n.. |Py-Versions| image:: https://img.shields.io/pypi/pyversions/tqdm.svg?logo=python&logoColor=white\n   :target: https://pypi.org/project/tqdm\n.. |Conda-Forge-Status| image:: https://img.shields.io/conda/v/conda-forge/tqdm.svg?label=conda-forge&logo=conda-forge\n   :target: https://anaconda.org/conda-forge/tqdm\n.. |Snapcraft| image:: https://img.shields.io/badge/snap-install-82BEA0.svg?logo=snapcraft\n   :target: https://snapcraft.io/tqdm\n.. |Docker| image:: https://img.shields.io/badge/docker-pull-blue.svg?logo=docker&logoColor=white\n   :target: https://hub.docker.com/r/tqdm/tqdm\n.. |Libraries-Rank| image:: https://img.shields.io/librariesio/sourcerank/pypi/tqdm.svg?logo=koding&logoColor=white\n   :target: https://libraries.io/pypi/tqdm\n.. |Libraries-Dependents| image:: https://img.shields.io/librariesio/dependent-repos/pypi/tqdm.svg?logo=koding&logoColor=white\n    :target: https://github.com/tqdm/tqdm/network/dependents\n.. |OpenHub-Status| image:: https://www.openhub.net/p/tqdm/widgets/project_thin_badge?format=gif\n   :target: https://www.openhub.net/p/tqdm?ref=Thin+badge\n.. |awesome-python| image:: https://awesome.re/mentioned-badge.svg\n   :target: https://github.com/vinta/awesome-python\n.. |LICENCE| image:: https://img.shields.io/pypi/l/tqdm.svg\n   :target: https://raw.githubusercontent.com/tqdm/tqdm/master/LICENCE\n.. |DOI| image:: https://img.shields.io/badge/DOI-10.5281/zenodo.595120-blue.svg\n   :target: https://doi.org/10.5281/zenodo.595120\n.. |colab-demo| image:: https://colab.research.google.com/assets/colab-badge.svg\n   :target: https://colab.research.google.com/github/tqdm/tqdm/blob/master/DEMO.ipynb\n.. |binder-demo| image:: https://mybinder.org/badge_logo.svg\n   :target: https://mybinder.org/v2/gh/tqdm/tqdm/master?filepath=DEMO.ipynb\n.. |Screenshot-Jupyter1| image:: https://tqdm.github.io/img/jupyter-1.gif\n.. |Screenshot-Jupyter2| image:: https://tqdm.github.io/img/jupyter-2.gif\n.. |Screenshot-Jupyter3| image:: https://tqdm.github.io/img/jupyter-3.gif\n.. |README-Hits| image:: https://cgi.cdcl.ml/hits?q=tqdm&style=social&r=https://github.com/tqdm/tqdm&l=https://tqdm.github.io/img/favicon.png&f=https://tqdm.github.io/img/logo.gif\n   :target: https://cgi.cdcl.ml/hits?q=tqdm&a=plot&r=https://github.com/tqdm/tqdm&l=https://tqdm.github.io/img/favicon.png&f=https://tqdm.github.io/img/logo.gif&style=social\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+          "hashes": {
+            "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "typing_extensions",
+        "version": "4.16.0",
+        "summary": "Backported and Experimental Type Hints for Python 3.9+",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "annotations",
+          "backport",
+          "checker",
+          "checking",
+          "function",
+          "hinting",
+          "hints",
+          "type",
+          "typechecking",
+          "typehinting",
+          "typehints",
+          "typing"
+        ],
+        "author_email": "\"Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee\" <levkivskyi@gmail.com>",
+        "license_expression": "PSF-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Topic :: Software Development"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Bug Tracker, https://github.com/python/typing_extensions/issues",
+          "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+          "Documentation, https://typing-extensions.readthedocs.io/",
+          "Home, https://github.com/python/typing_extensions",
+          "Q & A, https://github.com/python/typing/discussions",
+          "Repository, https://github.com/python/typing_extensions"
+        ],
+        "description": "# Typing Extensions\n\n[![Chat at https://gitter.im/python/typing](https://badges.gitter.im/python/typing.svg)](https://gitter.im/python/typing)\n\n[Documentation](https://typing-extensions.readthedocs.io/en/latest/#) –\n[PyPI](https://pypi.org/project/typing-extensions/)\n\n## Overview\n\nThe `typing_extensions` module serves two related purposes:\n\n- Enable use of new type system features on older Python versions. For example,\n  `typing.TypeGuard` is new in Python 3.10, but `typing_extensions` allows\n  users on previous Python versions to use it too.\n- Enable experimentation with new type system PEPs before they are accepted and\n  added to the `typing` module.\n\n`typing_extensions` is treated specially by static type checkers such as\nmypy and pyright. Objects defined in `typing_extensions` are treated the same\nway as equivalent forms in `typing`.\n\n`typing_extensions` uses\n[Semantic Versioning](https://semver.org/). The\nmajor version will be incremented only for backwards-incompatible changes.\nTherefore, it's safe to depend\non `typing_extensions` like this: `typing_extensions ~=x.y`,\nwhere `x.y` is the first version that includes all features you need.\n[This](https://packaging.python.org/en/latest/specifications/version-specifiers/#compatible-release)\nis equivalent to `typing_extensions >=x.y, <(x+1)`. Do not depend on `~= x.y.z`\nunless you really know what you're doing; that defeats the purpose of\nsemantic versioning.\n\n## Included items\n\nSee [the documentation](https://typing-extensions.readthedocs.io/en/latest/#) for a\ncomplete listing of module contents.\n\n## Contributing\n\nSee [CONTRIBUTING.md](https://github.com/python/typing_extensions/blob/main/CONTRIBUTING.md)\nfor how to contribute to `typing_extensions`.\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/60/02/be4a57b60c7149b55b9e3b3c13f609cd8eb5307c751f22bd8fb8d262e75b/filelock-3.29.7-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=987db6f789a3a2a59f55081801b2b3697cb97e2a736b5f1a9e99b559285fbc51",
+          "hashes": {
+            "sha256": "987db6f789a3a2a59f55081801b2b3697cb97e2a736b5f1a9e99b559285fbc51"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "filelock",
+        "version": "3.29.7",
+        "summary": "A platform independent file lock.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "application",
+          "cache",
+          "directory",
+          "log",
+          "user"
+        ],
+        "maintainer_email": "Bernát Gábor <gaborjbernat@gmail.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Topic :: Internet",
+          "Topic :: Software Development :: Libraries",
+          "Topic :: System"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Documentation, https://py-filelock.readthedocs.io",
+          "Homepage, https://github.com/tox-dev/py-filelock",
+          "Source, https://github.com/tox-dev/py-filelock",
+          "Tracker, https://github.com/tox-dev/py-filelock/issues"
+        ],
+        "description": "# filelock\n\n[![PyPI](https://img.shields.io/pypi/v/filelock)](https://pypi.org/project/filelock/)\n[![Supported Python versions](https://img.shields.io/pypi/pyversions/filelock.svg)](https://pypi.org/project/filelock/)\n[![Documentation status](https://readthedocs.org/projects/py-filelock/badge/?version=latest)](https://py-filelock.readthedocs.io/en/latest/?badge=latest)\n[![Downloads](https://static.pepy.tech/badge/filelock/month)](https://pepy.tech/project/filelock)\n[![check](https://github.com/tox-dev/py-filelock/actions/workflows/check.yaml/badge.svg)](https://github.com/tox-dev/py-filelock/actions/workflows/check.yaml)\n\nFor more information checkout the [official documentation](https://py-filelock.readthedocs.io/en/latest/index.html).\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0",
+          "hashes": {
+            "sha256": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "requests",
+        "version": "2.34.2",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Python HTTP for Humans.",
+        "description_content_type": "text/markdown",
+        "author_email": "Kenneth Reitz <me@kennethreitz.org>",
+        "maintainer_email": "Ian Stapleton Cordasco <graffatcolmingov@gmail.com>, Nate Prewitt <nate.prewitt@gmail.com>",
+        "license": "Apache-2.0",
+        "license_file": [
+          "LICENSE",
+          "NOTICE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Web Environment",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Natural Language :: English",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Python :: Free Threading :: 2 - Beta",
+          "Topic :: Internet :: WWW/HTTP",
+          "Topic :: Software Development :: Libraries"
+        ],
+        "requires_dist": [
+          "charset_normalizer<4,>=2",
+          "idna<4,>=2.5",
+          "urllib3<3,>=1.26",
+          "certifi>=2023.5.7",
+          "PySocks!=1.5.7,>=1.5.6; extra == \"socks\"",
+          "chardet<8,>=3.0.2; extra == \"use-chardet-on-py3\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Documentation, https://requests.readthedocs.io",
+          "Source, https://github.com/psf/requests"
+        ],
+        "provides_extra": [
+          "security",
+          "socks",
+          "use-chardet-on-py3"
+        ],
+        "description": "# Requests\n\n[![Version](https://img.shields.io/pypi/v/requests.svg?maxAge=86400)](https://pypi.org/project/requests/)\n[![Supported Versions](https://img.shields.io/pypi/pyversions/requests.svg)](https://pypi.org/project/requests)\n[![Downloads](https://static.pepy.tech/badge/requests/month)](https://pepy.tech/project/requests)\n[![Contributors](https://img.shields.io/github/contributors/psf/requests.svg)](https://github.com/psf/requests/graphs/contributors)\n[![Documentation](https://readthedocs.org/projects/requests/badge/?version=latest)](https://requests.readthedocs.io)\n\n**Requests** is a simple, yet elegant, HTTP library.\n\n```python\n>>> import requests\n>>> r = requests.get('https://httpbin.org/basic-auth/user/pass', auth=('user', 'pass'))\n>>> r.status_code\n200\n>>> r.headers['content-type']\n'application/json; charset=utf8'\n>>> r.encoding\n'utf-8'\n>>> r.text\n'{\"authenticated\": true, ...'\n>>> r.json()\n{'authenticated': True, ...}\n```\n\nRequests allows you to send HTTP/1.1 requests extremely easily. There’s no need to manually add query strings to your URLs, or to form-encode your `PUT` & `POST` data — but nowadays, just use the `json` method!\n\nRequests is one of the most downloaded Python packages today, pulling in around `300M downloads / week` — according to GitHub, Requests is currently [depended upon](https://github.com/psf/requests/network/dependents?package_id=UGFja2FnZS01NzA4OTExNg%3D%3D) by `4,000,000+` repositories.\n\n## Installing Requests and Supported Versions\n\nRequests is available on PyPI:\n\n```console\n$ python -m pip install requests\n```\n\nRequests officially supports Python 3.10+.\n\n## Supported Features & Best–Practices\n\nRequests is ready for the demands of building robust and reliable HTTP–speaking applications, for the needs of today.\n\n- Keep-Alive & Connection Pooling\n- International Domains and URLs\n- Sessions with Cookie Persistence\n- Browser-style TLS/SSL Verification\n- Basic & Digest Authentication\n- Familiar `dict`–like Cookies\n- Automatic Content Decompression and Decoding\n- Multi-part File Uploads\n- SOCKS Proxy Support\n- Connection Timeouts\n- Streaming Downloads\n- Automatic honoring of `.netrc`\n- Chunked HTTP Requests\n\n## Cloning the repository\n\nWhen cloning the Requests repository, you may need to add the `-c\nfetch.fsck.badTimezone=ignore` flag to avoid an error about a bad commit timestamp (see\n[this issue](https://github.com/psf/requests/issues/2690) for more background):\n\n```shell\ngit clone -c fetch.fsck.badTimezone=ignore https://github.com/psf/requests.git\n```\n\nYou can also apply this setting to your global Git config:\n\n```shell\ngit config --global fetch.fsck.badTimezone ignore\n```\n\n---\n\n[![Kenneth Reitz](https://raw.githubusercontent.com/psf/requests/main/ext/kr.png)](https://kennethreitz.org) [![Python Software Foundation](https://raw.githubusercontent.com/psf/requests/main/ext/psf.png)](https://www.python.org/psf)\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/e8/5f/b98b8da398637b551e427e7be922bdec19177dc54d6811dcdaa503f23aac/charset_normalizer-3.4.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=9bb41182d93ea91f60b4bc8fbf4c820c69ef8a12ab2d917f3f1834f1acad07e8",
+          "hashes": {
+            "sha256": "9bb41182d93ea91f60b4bc8fbf4c820c69ef8a12ab2d917f3f1834f1acad07e8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "charset-normalizer",
+        "version": "3.4.9",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "encoding",
+          "charset",
+          "charset-detector",
+          "detector",
+          "normalization",
+          "unicode",
+          "chardet",
+          "detect"
+        ],
+        "author_email": "\"Ahmed R. TAHRI\" <tahri.ahmed@proton.me>",
+        "maintainer_email": "\"Ahmed R. TAHRI\" <tahri.ahmed@proton.me>",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Python :: Free Threading :: 4 - Resilient",
+          "Topic :: Text Processing :: Linguistic",
+          "Topic :: Utilities",
+          "Typing :: Typed"
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Changelog, https://github.com/jawah/charset_normalizer/blob/master/CHANGELOG.md",
+          "Documentation, https://charset-normalizer.readthedocs.io/",
+          "Code, https://github.com/jawah/charset_normalizer",
+          "Issue tracker, https://github.com/jawah/charset_normalizer/issues"
+        ],
+        "provides_extra": [
+          "unicode-backport"
+        ],
+        "description": "<h1 align=\"center\">Charset Detection, for Everyone 👋</h1>\n\n<p align=\"center\">\n  <sup>The Real First Universal Charset Detector</sup><br>\n  <a href=\"https://pypi.org/project/charset-normalizer\">\n    <img src=\"https://img.shields.io/pypi/pyversions/charset_normalizer.svg?orange=blue\" />\n  </a>\n  <a href=\"https://pepy.tech/project/charset-normalizer/\">\n    <img alt=\"Download Count Total\" src=\"https://static.pepy.tech/badge/charset-normalizer/month\" />\n  </a>\n  <a href=\"https://bestpractices.coreinfrastructure.org/projects/7297\">\n    <img src=\"https://bestpractices.coreinfrastructure.org/projects/7297/badge\">\n  </a>\n</p>\n<p align=\"center\">\n  <sup><i>Featured Packages</i></sup><br>\n  <a href=\"https://github.com/jawah/niquests\">\n   <img alt=\"Static Badge\" src=\"https://img.shields.io/badge/Niquests-Most_Advanced_HTTP_Client-cyan\">\n  </a>\n  <a href=\"https://github.com/jawah/wassima\">\n   <img alt=\"Static Badge\" src=\"https://img.shields.io/badge/Wassima-Certifi_Replacement-cyan\">\n  </a>\n</p>\n<p align=\"center\">\n  <sup><i>In other language (unofficial port - by the community)</i></sup><br>\n  <a href=\"https://github.com/nickspring/charset-normalizer-rs\">\n   <img alt=\"Static Badge\" src=\"https://img.shields.io/badge/Rust-red\">\n  </a>\n</p>\n\n> A library that helps you read text from an unknown charset encoding.<br /> Motivated by `chardet`,\n> I'm trying to resolve the issue by taking a new approach.\n> All IANA character set names for which the Python core library provides codecs are supported.\n> You can also register your own set of codecs, and yes, it would work as-is.\n\nThis project offers you an alternative to **Universal Charset Encoding Detector**, also known as **Chardet**.\n\n| Feature                                          | [Chardet](https://github.com/chardet/chardet) |                                       Charset Normalizer                                        | [cChardet](https://github.com/PyYoshi/cChardet) |\n|--------------------------------------------------|:---------------------------------------------:|:-----------------------------------------------------------------------------------------------:|:-----------------------------------------------:|\n| `Fast`                                           |                       ✅                       |                                                ✅                                                |                        ✅                        |\n| `Universal`[^1]                                  |                       ❌                       |                                                ✅                                                |                        ❌                        |\n| `Reliable` **without** distinguishable standards |                       ✅                       |                                                ✅                                                |                        ✅                        |\n| `Reliable` **with** distinguishable standards    |                       ✅                       |                                                ✅                                                |                        ✅                        |\n| `License`                                        |        _Disputed_[^2]<br>_restrictive_        |                                               MIT                                               |            MPL-1.1<br>_restrictive_             |\n| `Native Python`                                  |                       ✅                       |                                                ✅                                                |                        ❌                        |\n| `Detect spoken language`                         |                       ✅                       |                                                ✅                                                |                       N/A                       |\n| `UnicodeDecodeError Safety`                      |                       ✅                       |                                                ✅                                                |                        ❌                        |\n| `Whl Size (min)`                                 |                    500 kB                     |                                             150 kB                                              |                     ~200 kB                     |\n| `Supported Encoding`                             |                      99                       | [99](https://charset-normalizer.readthedocs.io/en/latest/user/support.html#supported-encodings) |                       40                        |\n| `Can register custom encoding`                   |                       ❌                       |                                                ✅                                                |                        ❌                        |\n\n<p align=\"center\">\n<img src=\"https://i.imgflip.com/373iay.gif\" alt=\"Reading Normalized Text\" width=\"226\"/><img src=\"https://media.tenor.com/images/c0180f70732a18b4965448d33adba3d0/tenor.gif\" alt=\"Cat Reading Text\" width=\"200\"/>\n</p>\n\n[^1]: They are clearly using specific code for a specific encoding even if covering most of used one.\n[^2]: Chardet 7.0+ was relicensed from LGPL-2.1 to MIT following an AI-assisted rewrite. This relicensing is disputed on two independent grounds: **(a)** the original author [contests](https://github.com/chardet/chardet/issues/327) that the maintainer had the right to relicense, arguing the rewrite is a derivative work of the LGPL-licensed codebase since it was not a clean room implementation; **(b)** the copyright claim itself is [questionable](https://github.com/chardet/chardet/issues/334) given the code was primarily generated by an LLM, and AI-generated output may not be copyrightable under most jurisdictions. Either issue alone could undermine the MIT license. Beyond licensing, the rewrite raises questions about responsible use of AI in open source: key architectural ideas pioneered by charset-normalizer - notably decode-first validity filtering (our foundational approach since v1) and encoding pairwise similarity with the same algorithm and threshold — surfaced in chardet 7 without acknowledgment. The project also imported test files from charset-normalizer to train and benchmark against it, then claimed superior accuracy on those very files. Charset-normalizer has always been MIT-licensed, encoding-agnostic by design, and built on a verifiable human-authored history.\n\n## ⚡ Performance\n\nThis package offer better performances against Chardet. Here are some numbers.\n\n| Package                                           | Accuracy | Mean per file (ms) | File per sec (est) |\n|---------------------------------------------------|:--------:|:------------------:|:------------------:|\n| [chardet 7.4](https://github.com/chardet/chardet) |   89 %   |        3 ms        |    333 file/sec    |\n| charset-normalizer                                | **97 %** |        1 ms        |   1000 file/sec    |\n\n| Package                                           | 99th percentile | 95th percentile | 50th percentile |\n|---------------------------------------------------|:---------------:|:---------------:|:---------------:|\n| [chardet 7.4](https://github.com/chardet/chardet) |      28 ms      |      16 ms      |     < 1 ms      |\n| charset-normalizer                                |      8 ms       |      5 ms       |      1 ms       |\n\n_updated as of July 2026 using CPython 3.12, Charset-Normalizer 3.4.8, and Chardet 7.4.3_\n\n~Chardet's performance on larger file (1MB+) are very poor. Expect huge difference on large payload.~ No longer the case since Chardet 7.0+\n\n> Stats are generated using 400+ files using default parameters. More details on used files, see GHA workflows.\n> And yes, these results might change at any time. The dataset can be updated to include more files.\n> The actual delays heavily depends on your CPU capabilities. The factors should remain the same.\n> Chardet claims on his documentation to have a greater accuracy than us based on the dataset they trained Chardet on(...)\n> Well, it's normal, the opposite would have been worrying. Whereas charset-normalizer don't train on anything, our solution\n> is based on a completely different algorithm, still heuristic through, it does not need weights across every encoding tables.\n\n## ✨ Installation\n\nUsing pip:\n\n```sh\npip install charset-normalizer -U\n```\n\n## 🚀 Basic Usage\n\n### CLI\nThis package comes with a CLI.\n\n```\nusage: normalizer [-h] [-v] [-a] [-n] [-m] [-r] [-f] [-t THRESHOLD]\n                  file [file ...]\n\nThe Real First Universal Charset Detector. Discover originating encoding used\non text file. Normalize text to unicode.\n\npositional arguments:\n  files                 File(s) to be analysed\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -v, --verbose         Display complementary information about file if any.\n                        Stdout will contain logs about the detection process.\n  -a, --with-alternative\n                        Output complementary possibilities if any. Top-level\n                        JSON WILL be a list.\n  -n, --normalize       Permit to normalize input file. If not set, program\n                        does not write anything.\n  -m, --minimal         Only output the charset detected to STDOUT. Disabling\n                        JSON output.\n  -r, --replace         Replace file when trying to normalize it instead of\n                        creating a new one.\n  -f, --force           Replace file without asking if you are sure, use this\n                        flag with caution.\n  -t THRESHOLD, --threshold THRESHOLD\n                        Define a custom maximum amount of chaos allowed in\n                        decoded content. 0. <= chaos <= 1.\n  --version             Show version information and exit.\n```\n\n```bash\nnormalizer ./data/sample.1.fr.srt\n```\n\nor\n\n```bash\npython -m charset_normalizer ./data/sample.1.fr.srt\n```\n\n🎉 Since version 1.4.0 the CLI produce easily usable stdout result in JSON format.\n\n```json\n{\n    \"path\": \"/home/default/projects/charset_normalizer/data/sample.1.fr.srt\",\n    \"encoding\": \"cp1252\",\n    \"encoding_aliases\": [\n        \"1252\",\n        \"windows_1252\"\n    ],\n    \"alternative_encodings\": [\n        \"cp1254\",\n        \"cp1256\",\n        \"cp1258\",\n        \"iso8859_14\",\n        \"iso8859_15\",\n        \"iso8859_16\",\n        \"iso8859_3\",\n        \"iso8859_9\",\n        \"latin_1\",\n        \"mbcs\"\n    ],\n    \"language\": \"French\",\n    \"alphabets\": [\n        \"Basic Latin\",\n        \"Latin-1 Supplement\"\n    ],\n    \"has_sig_or_bom\": false,\n    \"chaos\": 0.149,\n    \"coherence\": 97.152,\n    \"unicode_path\": null,\n    \"is_preferred\": true\n}\n```\n\n### Python\n*Just print out normalized text*\n```python\nfrom charset_normalizer import from_path\n\nresults = from_path('./my_subtitle.srt')\n\nprint(str(results.best()))\n```\n\n*Upgrade your code without effort*\n```python\nfrom charset_normalizer import detect\n```\n\nThe above code will behave the same as **chardet**. We ensure that we offer the best (reasonable) BC result possible.\n\nSee the docs for advanced usage : [readthedocs.io](https://charset-normalizer.readthedocs.io/en/latest/)\n\n## 😇 Why\n\nWhen I started using Chardet, I noticed that it was not suited to my expectations, and I wanted to propose a\nreliable alternative using a completely different method. Also! I never back down on a good challenge!\n\nI **don't care** about the **originating charset** encoding, because **two different tables** can\nproduce **two identical rendered string.**\nWhat I want is to get readable text, the best I can.\n\nIn a way, **I'm brute forcing text decoding.** How cool is that ? 😎\n\nDon't confuse package **ftfy** with charset-normalizer or chardet. ftfy goal is to repair Unicode string whereas charset-normalizer to convert raw file in unknown encoding to unicode.\n\n## 🍰 How\n\n  - Discard all charset encoding table that could not fit the binary content.\n  - Measure noise, or the mess once opened (by chunks) with a corresponding charset encoding.\n  - Extract matches with the lowest mess detected.\n  - Additionally, we measure coherence / probe for a language.\n\n**Wait a minute**, what is noise/mess and coherence according to **YOU ?**\n\n*Noise :* I opened hundred of text files, **written by humans**, with the wrong encoding table. **I observed**, then\n**I established** some ground rules about **what is obvious** when **it seems like** a mess (aka. defining noise in rendered text).\n I know that my interpretation of what is noise is probably incomplete, feel free to contribute in order to\n improve or rewrite it.\n\n*Coherence :* For each language there is on earth, we have computed ranked letter appearance occurrences (the best we can). So I thought\nthat intel is worth something here. So I use those records against decoded text to check if I can detect intelligent design.\n\n## ⚡ Known limitations\n\n  - Language detection is unreliable when text contains two or more languages sharing identical letters. (eg. HTML (english tags) + Turkish content (Sharing Latin characters))\n  - Every charset detector heavily depends on sufficient content. In common cases, do not bother run detection on very tiny content.\n\n## ⚠️ About Python EOLs\n\n**If you are running:**\n\n- Python >=2.7,<3.5: Unsupported\n- Python 3.5: charset-normalizer < 2.1\n- Python 3.6: charset-normalizer < 3.1\n\nUpgrade your Python interpreter as soon as possible.\n\n## 👤 Contributing\n\nContributions, issues and feature requests are very much welcome.<br />\nFeel free to check [issues page](https://github.com/ousret/charset_normalizer/issues) if you want to contribute.\n\n## 📝 License\n\nCopyright © [Ahmed TAHRI @Ousret](https://github.com/Ousret).<br />\nThis project is [MIT](https://github.com/Ousret/charset_normalizer/blob/master/LICENSE) licensed.\n\nCharacters frequencies used in this project © 2012 [Denny Vrandečić](http://simia.net/letters/)\n\n## 💼 For Enterprise\n\nProfessional support for charset-normalizer is available as part of the [Tidelift\nSubscription][1]. Tidelift gives software development teams a single source for\npurchasing and maintaining their software, with professional grade assurances\nfrom the experts who know it best, while seamlessly integrating with existing\ntools.\n\n[1]: https://tidelift.com/subscription/pkg/pypi-charset-normalizer?utm_source=pypi-charset-normalizer&utm_medium=readme\n\n[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/7297/badge)](https://www.bestpractices.dev/projects/7297)\n\n# Changelog\nAll notable changes to charset-normalizer will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).\nThe format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).\n\n## [3.4.9](https://github.com/Ousret/charset_normalizer/compare/3.4.8...3.4.9) (2026-07-07)\n\n### Fixed\n- Regression in our fallback path leading to a decode error. (#771)\n  We've yanked 3.4.8 as a result of that bug.\n\n## [3.4.8](https://github.com/Ousret/charset_normalizer/compare/3.4.7...3.4.8) (2026-07-06)\n\n### Fixed\n- Wall import time due to cascade codec imports for our multibyte first sort of iana supported codecs (#742)\n- Unnecessary json import at runtime (#753)\n- Inverse capitalization not seen by noise detector (#731)\n\n### Changed\n- No longer holding a global cache for our noise / coherence measurements. Relax RSS memory usage.\n- Micro-optimizations in our noise / coherence measurements.\n- No longer using regex search by default for our preemptive charset mark algorithm.\n- Raised upperbound of setuptools to v83.\n- Raised upperbound of mypy(c) to v2.1.\n\n### Removed\n- Redundant UTF7 BOM marker (#730)\n\n## [3.4.7](https://github.com/Ousret/charset_normalizer/compare/3.4.6...3.4.7) (2026-04-02)\n\n### Changed\n- Pre-built optimized version using mypy[c] v1.20.\n- Relax `setuptools` constraint to `setuptools>=68,<82.1`.\n\n### Fixed\n- Correctly remove SIG remnant in utf-7 decoded string. (#718) (#716)\n\n## [3.4.6](https://github.com/Ousret/charset_normalizer/compare/3.4.5...3.4.6) (2026-03-15)\n\n### Changed\n- Flattened the logic in `charset_normalizer.md` for higher performance. Removed `eligible(..)` and `feed(...)`\n  in favor of `feed_info(...)`.\n- Raised upper bound for mypy[c] to 1.20, for our optimized version.\n- Updated `UNICODE_RANGES_COMBINED` using Unicode blocks v17.\n\n### Fixed\n- Edge case where noise difference between two candidates can be almost insignificant. (#672)\n- CLI `--normalize` writing to wrong path when passing multiple files in. (#702)\n\n### Misc\n- Freethreaded pre-built wheels now shipped in PyPI starting with 3.14t. (#616)\n\n## [3.4.5](https://github.com/Ousret/charset_normalizer/compare/3.4.4...3.4.5) (2026-03-06)\n\n### Changed\n- Update `setuptools` constraint to `setuptools>=68,<=82`.\n- Raised upper bound of mypyc for the optional pre-built extension to v1.19.1\n\n### Fixed\n- Add explicit link to lib math in our optimized build. (#692)\n- Logger level not restored correctly for empty byte sequences. (#701)\n- TypeError when passing bytearray to from_bytes. (#703)\n\n### Misc\n- Applied safe micro-optimizations in both our noise detector and language detector.\n- Rewrote the `query_yes_no` function (inside CLI) to avoid using ambiguous licensed code.\n- Added `cd.py` submodule into mypyc optional compilation to reduce further the performance impact.\n\n## [3.4.4](https://github.com/Ousret/charset_normalizer/compare/3.4.2...3.4.4) (2025-10-13)\n\n### Changed\n- Bound `setuptools` to a specific constraint `setuptools>=68,<=81`.\n- Raised upper bound of mypyc for the optional pre-built extension to v1.18.2\n\n### Removed\n- `setuptools-scm` as a build dependency.\n\n### Misc\n- Enforced hashes in `dev-requirements.txt` and created `ci-requirements.txt` for security purposes.\n- Additional pre-built wheels for riscv64, s390x, and armv7l architectures.\n- Restore ` multiple.intoto.jsonl` in GitHub releases in addition to individual attestation file per wheel.\n\n## [3.4.3](https://github.com/Ousret/charset_normalizer/compare/3.4.2...3.4.3) (2025-08-09)\n\n### Changed\n- mypy(c) is no longer a required dependency at build time if `CHARSET_NORMALIZER_USE_MYPYC` isn't set to `1`. (#595) (#583)\n- automatically lower confidence on small bytes samples that are not Unicode in `detect` output legacy function. (#391)\n\n### Added\n- Custom build backend to overcome inability to mark mypy as an optional dependency in the build phase.\n- Support for Python 3.14\n\n### Fixed\n- sdist archive contained useless directories.\n- automatically fallback on valid UTF-16 or UTF-32 even if the md says it's noisy. (#633)\n\n### Misc\n- SBOM are automatically published to the relevant GitHub release to comply with regulatory changes.\n  Each published wheel comes with its SBOM. We choose CycloneDX as the format.\n- Prebuilt optimized wheel are no longer distributed by default for CPython 3.7 due to a change in cibuildwheel.\n\n## [3.4.2](https://github.com/Ousret/charset_normalizer/compare/3.4.1...3.4.2) (2025-05-02)\n\n### Fixed\n- Addressed the DeprecationWarning in our CLI regarding `argparse.FileType` by backporting the target class into the package. (#591)\n- Improved the overall reliability of the detector with CJK Ideographs. (#605) (#587)\n\n### Changed\n- Optional mypyc compilation upgraded to version 1.15 for Python >= 3.8\n\n## [3.4.1](https://github.com/Ousret/charset_normalizer/compare/3.4.0...3.4.1) (2024-12-24)\n\n### Changed\n- Project metadata are now stored using `pyproject.toml` instead of `setup.cfg` using setuptools as the build backend.\n- Enforce annotation delayed loading for a simpler and consistent types in the project.\n- Optional mypyc compilation upgraded to version 1.14 for Python >= 3.8\n\n### Added\n- pre-commit configuration.\n- noxfile.\n\n### Removed\n- `build-requirements.txt` as per using `pyproject.toml` native build configuration.\n- `bin/integration.py` and `bin/serve.py` in favor of downstream integration test (see noxfile).\n- `setup.cfg` in favor of `pyproject.toml` metadata configuration.\n- Unused `utils.range_scan` function.\n\n### Fixed\n- Converting content to Unicode bytes may insert `utf_8` instead of preferred `utf-8`. (#572)\n- Deprecation warning \"'count' is passed as positional argument\" when converting to Unicode bytes on Python 3.13+\n\n## [3.4.0](https://github.com/Ousret/charset_normalizer/compare/3.3.2...3.4.0) (2024-10-08)\n\n### Added\n- Argument `--no-preemptive` in the CLI to prevent the detector to search for hints.\n- Support for Python 3.13 (#512)\n\n### Fixed\n- Relax the TypeError exception thrown when trying to compare a CharsetMatch with anything else than a CharsetMatch.\n- Improved the general reliability of the detector based on user feedbacks. (#520) (#509) (#498) (#407) (#537)\n- Declared charset in content (preemptive detection) not changed when converting to utf-8 bytes. (#381)\n\n## [3.3.2](https://github.com/Ousret/charset_normalizer/compare/3.3.1...3.3.2) (2023-10-31)\n\n### Fixed\n- Unintentional memory usage regression when using large payload that match several encoding (#376)\n- Regression on some detection case showcased in the documentation (#371)\n\n### Added\n- Noise (md) probe that identify malformed arabic representation due to the presence of letters in isolated form (credit to my wife)\n\n## [3.3.1](https://github.com/Ousret/charset_normalizer/compare/3.3.0...3.3.1) (2023-10-22)\n\n### Changed\n- Optional mypyc compilation upgraded to version 1.6.1 for Python >= 3.8\n- Improved the general detection reliability based on reports from the community\n\n## [3.3.0](https://github.com/Ousret/charset_normalizer/compare/3.2.0...3.3.0) (2023-09-30)\n\n### Added\n- Allow to execute the CLI (e.g. normalizer) through `python -m charset_normalizer.cli` or `python -m charset_normalizer`\n- Support for 9 forgotten encoding that are supported by Python but unlisted in `encoding.aliases` as they have no alias (#323)\n\n### Removed\n- (internal) Redundant utils.is_ascii function and unused function is_private_use_only\n- (internal) charset_normalizer.assets is moved inside charset_normalizer.constant\n\n### Changed\n- (internal) Unicode code blocks in constants are updated using the latest v15.0.0 definition to improve detection\n- Optional mypyc compilation upgraded to version 1.5.1 for Python >= 3.8\n\n### Fixed\n- Unable to properly sort CharsetMatch when both chaos/noise and coherence were close due to an unreachable condition in \\_\\_lt\\_\\_ (#350)\n\n## [3.2.0](https://github.com/Ousret/charset_normalizer/compare/3.1.0...3.2.0) (2023-06-07)\n\n### Changed\n- Typehint for function `from_path` no longer enforce `PathLike` as its first argument\n- Minor improvement over the global detection reliability\n\n### Added\n- Introduce function `is_binary` that relies on main capabilities, and optimized to detect binaries\n- Propagate `enable_fallback` argument throughout `from_bytes`, `from_path`, and `from_fp` that allow a deeper control over the detection (default True)\n- Explicit support for Python 3.12\n\n### Fixed\n- Edge case detection failure where a file would contain 'very-long' camel cased word (Issue #289)\n\n## [3.1.0](https://github.com/Ousret/charset_normalizer/compare/3.0.1...3.1.0) (2023-03-06)\n\n### Added\n- Argument `should_rename_legacy` for legacy function `detect` and disregard any new arguments without errors (PR #262)\n\n### Removed\n- Support for Python 3.6 (PR #260)\n\n### Changed\n- Optional speedup provided by mypy/c 1.0.1\n\n## [3.0.1](https://github.com/Ousret/charset_normalizer/compare/3.0.0...3.0.1) (2022-11-18)\n\n### Fixed\n- Multi-bytes cutter/chunk generator did not always cut correctly (PR #233)\n\n### Changed\n- Speedup provided by mypy/c 0.990 on Python >= 3.7\n\n## [3.0.0](https://github.com/Ousret/charset_normalizer/compare/2.1.1...3.0.0) (2022-10-20)\n\n### Added\n- Extend the capability of explain=True when cp_isolation contains at most two entries (min one), will log in details of the Mess-detector results\n- Support for alternative language frequency set in charset_normalizer.assets.FREQUENCIES\n- Add parameter `language_threshold` in `from_bytes`, `from_path` and `from_fp` to adjust the minimum expected coherence ratio\n- `normalizer --version` now specify if current version provide extra speedup (meaning mypyc compilation whl)\n\n### Changed\n- Build with static metadata using 'build' frontend\n- Make the language detection stricter\n- Optional: Module `md.py` can be compiled using Mypyc to provide an extra speedup up to 4x faster than v2.1\n\n### Fixed\n- CLI with opt --normalize fail when using full path for files\n- TooManyAccentuatedPlugin induce false positive on the mess detection when too few alpha character have been fed to it\n- Sphinx warnings when generating the documentation\n\n### Removed\n- Coherence detector no longer return 'Simple English' instead return 'English'\n- Coherence detector no longer return 'Classical Chinese' instead return 'Chinese'\n- Breaking: Method `first()` and `best()` from CharsetMatch\n- UTF-7 will no longer appear as \"detected\" without a recognized SIG/mark (is unreliable/conflict with ASCII)\n- Breaking: Class aliases CharsetDetector, CharsetDoctor, CharsetNormalizerMatch and CharsetNormalizerMatches\n- Breaking: Top-level function `normalize`\n- Breaking: Properties `chaos_secondary_pass`, `coherence_non_latin` and `w_counter` from CharsetMatch\n- Support for the backport `unicodedata2`\n\n## [3.0.0rc1](https://github.com/Ousret/charset_normalizer/compare/3.0.0b2...3.0.0rc1) (2022-10-18)\n\n### Added\n- Extend the capability of explain=True when cp_isolation contains at most two entries (min one), will log in details of the Mess-detector results\n- Support for alternative language frequency set in charset_normalizer.assets.FREQUENCIES\n- Add parameter `language_threshold` in `from_bytes`, `from_path` and `from_fp` to adjust the minimum expected coherence ratio\n\n### Changed\n- Build with static metadata using 'build' frontend\n- Make the language detection stricter\n\n### Fixed\n- CLI with opt --normalize fail when using full path for files\n- TooManyAccentuatedPlugin induce false positive on the mess detection when too few alpha character have been fed to it\n\n### Removed\n- Coherence detector no longer return 'Simple English' instead return 'English'\n- Coherence detector no longer return 'Classical Chinese' instead return 'Chinese'\n\n## [3.0.0b2](https://github.com/Ousret/charset_normalizer/compare/3.0.0b1...3.0.0b2) (2022-08-21)\n\n### Added\n- `normalizer --version` now specify if current version provide extra speedup (meaning mypyc compilation whl)\n\n### Removed\n- Breaking: Method `first()` and `best()` from CharsetMatch\n- UTF-7 will no longer appear as \"detected\" without a recognized SIG/mark (is unreliable/conflict with ASCII)\n\n### Fixed\n- Sphinx warnings when generating the documentation\n\n## [3.0.0b1](https://github.com/Ousret/charset_normalizer/compare/2.1.0...3.0.0b1) (2022-08-15)\n\n### Changed\n- Optional: Module `md.py` can be compiled using Mypyc to provide an extra speedup up to 4x faster than v2.1\n\n### Removed\n- Breaking: Class aliases CharsetDetector, CharsetDoctor, CharsetNormalizerMatch and CharsetNormalizerMatches\n- Breaking: Top-level function `normalize`\n- Breaking: Properties `chaos_secondary_pass`, `coherence_non_latin` and `w_counter` from CharsetMatch\n- Support for the backport `unicodedata2`\n\n## [2.1.1](https://github.com/Ousret/charset_normalizer/compare/2.1.0...2.1.1) (2022-08-19)\n\n### Deprecated\n- Function `normalize` scheduled for removal in 3.0\n\n### Changed\n- Removed useless call to decode in fn is_unprintable (#206)\n\n### Fixed\n- Third-party library (i18n xgettext) crashing not recognizing utf_8 (PEP 263) with underscore from [@aleksandernovikov](https://github.com/aleksandernovikov) (#204)\n\n## [2.1.0](https://github.com/Ousret/charset_normalizer/compare/2.0.12...2.1.0) (2022-06-19)\n\n### Added\n- Output the Unicode table version when running the CLI with `--version` (PR #194)\n\n### Changed\n- Reuse decoded buffer for single byte character sets from [@nijel](https://github.com/nijel) (PR #175)\n- Fixing some performance bottlenecks from [@deedy5](https://github.com/deedy5) (PR #183)\n\n### Fixed\n- Workaround potential bug in cpython with Zero Width No-Break Space located in Arabic Presentation Forms-B, Unicode 1.1 not acknowledged as space (PR #175)\n- CLI default threshold aligned with the API threshold from [@oleksandr-kuzmenko](https://github.com/oleksandr-kuzmenko) (PR #181)\n\n### Removed\n- Support for Python 3.5 (PR #192)\n\n### Deprecated\n- Use of backport unicodedata from `unicodedata2` as Python is quickly catching up, scheduled for removal in 3.0 (PR #194)\n\n## [2.0.12](https://github.com/Ousret/charset_normalizer/compare/2.0.11...2.0.12) (2022-02-12)\n\n### Fixed\n- ASCII miss-detection on rare cases (PR #170)\n\n## [2.0.11](https://github.com/Ousret/charset_normalizer/compare/2.0.10...2.0.11) (2022-01-30)\n\n### Added\n- Explicit support for Python 3.11 (PR #164)\n\n### Changed\n- The logging behavior have been completely reviewed, now using only TRACE and DEBUG levels (PR #163 #165)\n\n## [2.0.10](https://github.com/Ousret/charset_normalizer/compare/2.0.9...2.0.10) (2022-01-04)\n\n### Fixed\n- Fallback match entries might lead to UnicodeDecodeError for large bytes sequence (PR #154)\n\n### Changed\n- Skipping the language-detection (CD) on ASCII (PR #155)\n\n## [2.0.9](https://github.com/Ousret/charset_normalizer/compare/2.0.8...2.0.9) (2021-12-03)\n\n### Changed\n- Moderating the logging impact (since 2.0.8) for specific environments (PR #147)\n\n### Fixed\n- Wrong logging level applied when setting kwarg `explain` to True (PR #146)\n\n## [2.0.8](https://github.com/Ousret/charset_normalizer/compare/2.0.7...2.0.8) (2021-11-24)\n### Changed\n- Improvement over Vietnamese detection (PR #126)\n- MD improvement on trailing data and long foreign (non-pure latin) data (PR #124)\n- Efficiency improvements in cd/alphabet_languages from [@adbar](https://github.com/adbar) (PR #122)\n- call sum() without an intermediary list following PEP 289 recommendations from [@adbar](https://github.com/adbar) (PR #129)\n- Code style as refactored by Sourcery-AI (PR #131)\n- Minor adjustment on the MD around european words (PR #133)\n- Remove and replace SRTs from assets / tests (PR #139)\n- Initialize the library logger with a `NullHandler` by default from [@nmaynes](https://github.com/nmaynes) (PR #135)\n- Setting kwarg `explain` to True will add provisionally (bounded to function lifespan) a specific stream handler (PR #135)\n\n### Fixed\n- Fix large (misleading) sequence giving UnicodeDecodeError (PR #137)\n- Avoid using too insignificant chunk (PR #137)\n\n### Added\n- Add and expose function `set_logging_handler` to configure a specific StreamHandler from [@nmaynes](https://github.com/nmaynes) (PR #135)\n- Add `CHANGELOG.md` entries, format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) (PR #141)\n\n## [2.0.7](https://github.com/Ousret/charset_normalizer/compare/2.0.6...2.0.7) (2021-10-11)\n### Added\n- Add support for Kazakh (Cyrillic) language detection (PR #109)\n\n### Changed\n- Further, improve inferring the language from a given single-byte code page (PR #112)\n- Vainly trying to leverage PEP263 when PEP3120 is not supported (PR #116)\n- Refactoring for potential performance improvements in loops from [@adbar](https://github.com/adbar) (PR #113)\n- Various detection improvement (MD+CD) (PR #117)\n\n### Removed\n- Remove redundant logging entry about detected language(s) (PR #115)\n\n### Fixed\n- Fix a minor inconsistency between Python 3.5 and other versions regarding language detection (PR #117 #102)\n\n## [2.0.6](https://github.com/Ousret/charset_normalizer/compare/2.0.5...2.0.6) (2021-09-18)\n### Fixed\n- Unforeseen regression with the loss of the backward-compatibility with some older minor of Python 3.5.x (PR #100)\n- Fix CLI crash when using --minimal output in certain cases (PR #103)\n\n### Changed\n- Minor improvement to the detection efficiency (less than 1%) (PR #106 #101)\n\n## [2.0.5](https://github.com/Ousret/charset_normalizer/compare/2.0.4...2.0.5) (2021-09-14)\n### Changed\n- The project now comply with: flake8, mypy, isort and black to ensure a better overall quality (PR #81)\n- The BC-support with v1.x was improved, the old staticmethods are restored (PR #82)\n- The Unicode detection is slightly improved (PR #93)\n- Add syntax sugar \\_\\_bool\\_\\_ for results CharsetMatches list-container (PR #91)\n\n### Removed\n- The project no longer raise warning on tiny content given for detection, will be simply logged as warning instead (PR #92)\n\n### Fixed\n- In some rare case, the chunks extractor could cut in the middle of a multi-byte character and could mislead the mess detection (PR #95)\n- Some rare 'space' characters could trip up the UnprintablePlugin/Mess detection (PR #96)\n- The MANIFEST.in was not exhaustive (PR #78)\n\n## [2.0.4](https://github.com/Ousret/charset_normalizer/compare/2.0.3...2.0.4) (2021-07-30)\n### Fixed\n- The CLI no longer raise an unexpected exception when no encoding has been found (PR #70)\n- Fix accessing the 'alphabets' property when the payload contains surrogate characters (PR #68)\n- The logger could mislead (explain=True) on detected languages and the impact of one MBCS match (PR #72)\n- Submatch factoring could be wrong in rare edge cases (PR #72)\n- Multiple files given to the CLI were ignored when publishing results to STDOUT. (After the first path) (PR #72)\n- Fix line endings from CRLF to LF for certain project files (PR #67)\n\n### Changed\n- Adjust the MD to lower the sensitivity, thus improving the global detection reliability (PR #69 #76)\n- Allow fallback on specified encoding if any (PR #71)\n\n## [2.0.3](https://github.com/Ousret/charset_normalizer/compare/2.0.2...2.0.3) (2021-07-16)\n### Changed\n- Part of the detection mechanism has been improved to be less sensitive, resulting in more accurate detection results. Especially ASCII. (PR #63)\n- According to the community wishes, the detection will fall back on ASCII or UTF-8 in a last-resort case. (PR #64)\n\n## [2.0.2](https://github.com/Ousret/charset_normalizer/compare/2.0.1...2.0.2) (2021-07-15)\n### Fixed\n- Empty/Too small JSON payload miss-detection fixed. Report from [@tseaver](https://github.com/tseaver) (PR #59)\n\n### Changed\n- Don't inject unicodedata2 into sys.modules from [@akx](https://github.com/akx) (PR #57)\n\n## [2.0.1](https://github.com/Ousret/charset_normalizer/compare/2.0.0...2.0.1) (2021-07-13)\n### Fixed\n- Make it work where there isn't a filesystem available, dropping assets frequencies.json. Report from [@sethmlarson](https://github.com/sethmlarson). (PR #55)\n- Using explain=False permanently disable the verbose output in the current runtime (PR #47)\n- One log entry (language target preemptive) was not show in logs when using explain=True (PR #47)\n- Fix undesired exception (ValueError) on getitem of instance CharsetMatches (PR #52)\n\n### Changed\n- Public function normalize default args values were not aligned with from_bytes (PR #53)\n\n### Added\n- You may now use charset aliases in cp_isolation and cp_exclusion arguments (PR #47)\n\n## [2.0.0](https://github.com/Ousret/charset_normalizer/compare/1.4.1...2.0.0) (2021-07-02)\n### Changed\n- 4x to 5 times faster than the previous 1.4.0 release. At least 2x faster than Chardet.\n- Accent has been made on UTF-8 detection, should perform rather instantaneous.\n- The backward compatibility with Chardet has been greatly improved. The legacy detect function returns an identical charset name whenever possible.\n- The detection mechanism has been slightly improved, now Turkish content is detected correctly (most of the time)\n- The program has been rewritten to ease the readability and maintainability. (+Using static typing)+\n- utf_7 detection has been reinstated.\n\n### Removed\n- This package no longer require anything when used with Python 3.5 (Dropped cached_property)\n- Removed support for these languages: Catalan, Esperanto, Kazakh, Baque, Volapük, Azeri, Galician, Nynorsk, Macedonian, and Serbocroatian.\n- The exception hook on UnicodeDecodeError has been removed.\n\n### Deprecated\n- Methods coherence_non_latin, w_counter, chaos_secondary_pass of the class CharsetMatch are now deprecated and scheduled for removal in v3.0\n\n### Fixed\n- The CLI output used the relative path of the file(s). Should be absolute.\n\n## [1.4.1](https://github.com/Ousret/charset_normalizer/compare/1.4.0...1.4.1) (2021-05-28)\n### Fixed\n- Logger configuration/usage no longer conflict with others (PR #44)\n\n## [1.4.0](https://github.com/Ousret/charset_normalizer/compare/1.3.9...1.4.0) (2021-05-21)\n### Removed\n- Using standard logging instead of using the package loguru.\n- Dropping nose test framework in favor of the maintained pytest.\n- Choose to not use dragonmapper package to help with gibberish Chinese/CJK text.\n- Require cached_property only for Python 3.5 due to constraint. Dropping for every other interpreter version.\n- Stop support for UTF-7 that does not contain a SIG.\n- Dropping PrettyTable, replaced with pure JSON output in CLI.\n\n### Fixed\n- BOM marker in a CharsetNormalizerMatch instance could be False in rare cases even if obviously present. Due to the sub-match factoring process.\n- Not searching properly for the BOM when trying utf32/16 parent codec.\n\n### Changed\n- Improving the package final size by compressing frequencies.json.\n- Huge improvement over the larges payload.\n\n### Added\n- CLI now produces JSON consumable output.\n- Return ASCII if given sequences fit. Given reasonable confidence.\n\n## [1.3.9](https://github.com/Ousret/charset_normalizer/compare/1.3.8...1.3.9) (2021-05-13)\n\n### Fixed\n- In some very rare cases, you may end up getting encode/decode errors due to a bad bytes payload (PR #40)\n\n## [1.3.8](https://github.com/Ousret/charset_normalizer/compare/1.3.7...1.3.8) (2021-05-12)\n\n### Fixed\n- Empty given payload for detection may cause an exception if trying to access the `alphabets` property. (PR #39)\n\n## [1.3.7](https://github.com/Ousret/charset_normalizer/compare/1.3.6...1.3.7) (2021-05-12)\n\n### Fixed\n- The legacy detect function should return UTF-8-SIG if sig is present in the payload. (PR #38)\n\n## [1.3.6](https://github.com/Ousret/charset_normalizer/compare/1.3.5...1.3.6) (2021-02-09)\n\n### Changed\n- Amend the previous release to allow prettytable 2.0 (PR #35)\n\n## [1.3.5](https://github.com/Ousret/charset_normalizer/compare/1.3.4...1.3.5) (2021-02-08)\n\n### Fixed\n- Fix error while using the package with a python pre-release interpreter (PR #33)\n\n### Changed\n- Dependencies refactoring, constraints revised.\n\n### Added\n- Add python 3.9 and 3.10 to the supported interpreters\n\nMIT License\n\nCopyright (c) 2025 TAHRI Ahmed R.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/1e/5e/d4e9f1a599fb8e573b7b87160658329fbf28d19eac2718f51fc3def3aa5a/idna-3.18-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2",
+          "hashes": {
+            "sha256": "7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "idna",
+        "version": "3.18",
+        "summary": "Internationalized Domain Names in Applications (IDNA)",
+        "description_content_type": "text/markdown",
+        "author_email": "Kim Davies <kim+pypi@gumleaf.org>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE.md"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Intended Audience :: System Administrators",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Internet :: Name Service (DNS)",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Utilities"
+        ],
+        "requires_dist": [
+          "ruff >= 0.6.2 ; extra == \"all\"",
+          "mypy >= 1.11.2 ; extra == \"all\"",
+          "pytest >= 8.3.2 ; extra == \"all\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Changelog, https://github.com/kjd/idna/blob/master/HISTORY.md",
+          "Issue tracker, https://github.com/kjd/idna/issues",
+          "Source, https://github.com/kjd/idna"
+        ],
+        "provides_extra": [
+          "all"
+        ],
+        "description": "# Internationalized Domain Names in Applications (IDNA)\n\nSupport for [Internationalized Domain Names in Applications\n(IDNA)](https://tools.ietf.org/html/rfc5891) and [Unicode IDNA\nCompatibility Processing](https://unicode.org/reports/tr46/). It\nsupersedes the standard library's `encodings.idna`, which only\nimplements the 2003 specification, offering broader script coverage and\nlimiting domains with known security vulnerabilities.\n\n## Usage\n\nPackage may be installed from [PyPI](https://pypi.org/project/idna/) via\nthe typical methods (e.g. `python3 -m pip install idna`)\n\nFor typical usage, the `encode` and `decode` functions will take a\ndomain name argument and perform a conversion to ASCII-compatible encoding\n(known as A-labels), or to Unicode strings (known as U-labels)\nrespectively.\n\n```pycon\n>>> import idna\n>>> idna.encode('ドメイン.テスト')\nb'xn--eckwd4c7c.xn--zckzah'\n>>> print(idna.decode('xn--eckwd4c7c.xn--zckzah'))\nドメイン.テスト\n```\n\nConversions can be applied at a per-label basis using the `ulabel` or\n`alabel` functions for specialized use cases.\n\n\n### Compatibility Mapping (UTS #46)\n\nThis library provides support for [Unicode IDNA Compatibility\nProcessing](https://unicode.org/reports/tr46/) which normalizes input from\ndifferent potential ways a user may input a domain prior to performing the IDNA\nconversion operations. This functionality, known as a\n[mapping](https://tools.ietf.org/html/rfc5895), is considered by the\nspecification to be a local user-interface issue distinct from IDNA\nconversion functionality.\n\nFor example, \"Königsgäßchen\" is not a permissible label as capital letters\nare not allowed. UTS 46 will convert this into lower case prior to applying\nthe IDNA conversion.\n\n```pycon\n>>> import idna\n>>> idna.encode('Königsgäßchen')\n...\nidna.core.InvalidCodepoint: Codepoint U+004B at position 1 of 'Königsgäßchen' not allowed\n>>> idna.encode('Königsgäßchen', uts46=True)\nb'xn--knigsgchen-b4a3dun'\n>>> idna.decode('xn--knigsgchen-b4a3dun')\n'königsgäßchen'\n```\n\nWhen performing a decode operation for display purposes, `decode()`\naccepts a `display=True` argument that leaves any `xn--` label that\nfails to decode unchanged. This is useful for user interface display\nwhere a domain is in use, the A-label form can be presented when it\nis not a valid IDN.\n\n\n## Exceptions\n\nAll errors raised during conversion derive from the `idna.IDNAError`\nbase class. The more specific exceptions are:\n\n* `idna.IDNABidiError` — raised when a label contains an illegal\n  combination of left-to-right and right-to-left characters.\n* `idna.InvalidCodepoint` — raised when a label contains a codepoint\n  that is INVALID for IDNA.\n* `idna.InvalidCodepointContext` — raised when a CONTEXTO or CONTEXTJ\n  codepoint appears in a position whose contextual requirements are\n  not satisfied.\n\n\n## Command-line tool\n\nThe package supports command-line usage to convert domain names\nbetween their Unicode and ASCII-compatible forms. It can be run either\nas a module (`python3 -m idna`) or, once installed (such as with `uv\ntool` or `pipx`), via the `idna` script:\n\n```bash\n$ uv tool install idna\n$ idna xn--e1afmkfd.xn--p1ai\nпример.рф\n$ idna пример.рф\nxn--e1afmkfd.xn--p1ai\n```\n\nMode can be specified with `-e`/`--encode` or `-d`/`--decode`, otherwise\nit will be chosen automatically based on the first input. Multiple\ndomains can be supplied either as arguments or through standard input.\nUTS #46 mapping is applied by default, which lets the tool accept\ninputs that aren't strictly valid IDNA 2008 by normalising them first,\npass `--strict` to disable UTS #46.\n\nConversion failures are reported on stderr together with the\noffending input; processing continues with the remaining domains and\nthe tool exits with a non-zero status if any conversion failed.\n\n\n## Additional Notes\n\n* **Version support**. This library supports Python 3.9 and higher.\n  As this library serves as a low-level toolkit for a variety of\n  applications, we strive to support all versions of Python that are\n  not beyond end-of-life.\n\n* **Emoji**. It is an occasional request to support emoji domains in\n  this library. Encoding of symbols like emoji is expressly prohibited by\n  the IDNA technical standard, and emoji domains are broadly phased\n  out across the domain industry due to associated security risks.\n\n* **Regenerating lookup tables**. The IDNA and UTS 46 functionality\n  relies upon pre-calculated lookup tables, generated using the\n  `idna-data` script in [`tools/`](tools/README.md).\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897",
+          "hashes": {
+            "sha256": "9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "urllib3",
+        "version": "2.7.0",
+        "summary": "HTTP library with thread-safe connection pooling, file post, and more.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "filepost",
+          "http",
+          "httplib",
+          "https",
+          "pooling",
+          "ssl",
+          "threadsafe",
+          "urllib"
+        ],
+        "author_email": "Andrey Petrov <andrey.petrov@shazow.net>",
+        "maintainer_email": "Seth Michael Larson <sethmichaellarson@gmail.com>, Quentin Pradet <quentin@pradet.me>, Illia Volochii <illia.volochii@gmail.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Environment :: Web Environment",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Free Threading :: 2 - Beta",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Internet :: WWW/HTTP",
+          "Topic :: Software Development :: Libraries"
+        ],
+        "requires_dist": [
+          "brotli>=1.2.0; (platform_python_implementation == 'CPython') and extra == 'brotli'",
+          "brotlicffi>=1.2.0.0; (platform_python_implementation != 'CPython') and extra == 'brotli'",
+          "h2<5,>=4; extra == 'h2'",
+          "pysocks!=1.5.7,<2.0,>=1.5.6; extra == 'socks'",
+          "backports-zstd>=1.0.0; (python_version < '3.14') and extra == 'zstd'"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Changelog, https://github.com/urllib3/urllib3/blob/main/CHANGES.rst",
+          "Documentation, https://urllib3.readthedocs.io",
+          "Code, https://github.com/urllib3/urllib3",
+          "Issue tracker, https://github.com/urllib3/urllib3/issues"
+        ],
+        "provides_extra": [
+          "brotli",
+          "h2",
+          "socks",
+          "zstd"
+        ],
+        "description": "<h1 align=\"center\">\n\n![urllib3](https://github.com/urllib3/urllib3/raw/main/docs/_static/banner_github.svg)\n\n</h1>\n\n<p align=\"center\">\n  <a href=\"https://pypi.org/project/urllib3\"><img alt=\"PyPI Version\" src=\"https://img.shields.io/pypi/v/urllib3.svg?maxAge=86400\" /></a>\n  <a href=\"https://pypi.org/project/urllib3\"><img alt=\"Python Versions\" src=\"https://img.shields.io/pypi/pyversions/urllib3.svg?maxAge=86400\" /></a>\n  <a href=\"https://discord.gg/urllib3\"><img alt=\"Join our Discord\" src=\"https://img.shields.io/discord/756342717725933608?color=%237289da&label=discord\" /></a>\n  <a href=\"https://github.com/urllib3/urllib3/actions?query=workflow%3ACI\"><img alt=\"Coverage Status\" src=\"https://img.shields.io/badge/coverage-100%25-success\" /></a>\n  <a href=\"https://github.com/urllib3/urllib3/actions/workflows/ci.yml?query=branch%3Amain\"><img alt=\"Build Status on GitHub\" src=\"https://github.com/urllib3/urllib3/actions/workflows/ci.yml/badge.svg?branch:main&workflow:CI\" /></a>\n  <a href=\"https://urllib3.readthedocs.io\"><img alt=\"Documentation Status\" src=\"https://readthedocs.org/projects/urllib3/badge/?version=latest\" /></a><br>\n  <a href=\"https://deps.dev/pypi/urllib3\"><img alt=\"OpenSSF Scorecard\" src=\"https://api.securityscorecards.dev/projects/github.com/urllib3/urllib3/badge\" /></a>\n  <a href=\"https://slsa.dev\"><img alt=\"SLSA 3\" src=\"https://slsa.dev/images/gh-badge-level3.svg\" /></a>\n  <a href=\"https://bestpractices.coreinfrastructure.org/projects/6227\"><img alt=\"CII Best Practices\" src=\"https://bestpractices.coreinfrastructure.org/projects/6227/badge\" /></a>\n</p>\n\nurllib3 is a powerful, *user-friendly* HTTP client for Python.\nurllib3 brings many critical features that are missing from the Python\nstandard libraries:\n\n- Thread safety.\n- Connection pooling.\n- Client-side SSL/TLS verification.\n- File uploads with multipart encoding.\n- Helpers for retrying requests and dealing with HTTP redirects.\n- Support for gzip, deflate, brotli, and zstd encoding.\n- Proxy support for HTTP and SOCKS.\n- 100% test coverage.\n\n... and many more features, but most importantly: Our maintainers have a 15+\nyear track record of maintaining urllib3 with the highest code standards and\nattention to security and safety.\n\n[Much of the Python ecosystem already uses urllib3](https://urllib3.readthedocs.io/en/stable/#who-uses)\nand you should too.\n\n\n## Installing\n\nurllib3 can be installed with [pip](https://pip.pypa.io):\n\n```bash\n$ python -m pip install urllib3\n```\n\nAlternatively, you can grab the latest source code from [GitHub](https://github.com/urllib3/urllib3):\n\n```bash\n$ git clone https://github.com/urllib3/urllib3.git\n$ cd urllib3\n$ pip install .\n```\n\n## Getting Started\n\nurllib3 is easy to use:\n\n```python3\n>>> import urllib3\n>>> resp = urllib3.request(\"GET\", \"http://httpbin.org/robots.txt\")\n>>> resp.status\n200\n>>> resp.data\nb\"User-agent: *\\nDisallow: /deny\\n\"\n```\n\nurllib3 has usage and reference documentation at [urllib3.readthedocs.io](https://urllib3.readthedocs.io).\n\n\n## Community\n\nurllib3 has a [community Discord channel](https://discord.gg/urllib3) for asking questions and\ncollaborating with other contributors. Drop by and say hello 👋\n\n\n## Contributing\n\nurllib3 happily accepts contributions. Please see our\n[contributing documentation](https://urllib3.readthedocs.io/en/latest/contributing.html)\nfor some tips on getting started.\n\n\n## Security Disclosures\n\nTo report a security vulnerability, please use the\n[Tidelift security contact](https://tidelift.com/security).\nTidelift will coordinate the fix and disclosure with maintainers.\n\n\n## Maintainers\n\nMeet our maintainers since 2008:\n\n- Current Lead: [@illia-v](https://github.com/illia-v) (Illia Volochii)\n- [@sethmlarson](https://github.com/sethmlarson) (Seth M. Larson)\n- [@pquentin](https://github.com/pquentin) (Quentin Pradet)\n- [@theacodes](https://github.com/theacodes) (Thea Flowers)\n- [@haikuginger](https://github.com/haikuginger) (Jess Shapiro)\n- [@lukasa](https://github.com/lukasa) (Cory Benfield)\n- [@sigmavirus24](https://github.com/sigmavirus24) (Ian Stapleton Cordasco)\n- [@shazow](https://github.com/shazow) (Andrey Petrov)\n\n👋\n\n\n## Sponsorship\n\nIf your company benefits from this library, please consider [sponsoring its\ndevelopment](https://urllib3.readthedocs.io/en/latest/sponsors.html).\n\n\n## For Enterprise\n\nProfessional support for urllib3 is available as part of the [Tidelift\nSubscription][1]. Tidelift gives software development teams a single source for\npurchasing and maintaining their software, with professional grade assurances\nfrom the experts who know it best, while seamlessly integrating with existing\ntools.\n\n[1]: https://tidelift.com/subscription/pkg/pypi-urllib3?utm_source=pypi-urllib3&utm_medium=referral&utm_campaign=readme\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/ef/2f/c5464532e965badff2f4c4c1a3a83f5697f0d7c407ed0cda44aaa99bb451/certifi-2026.6.17-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=2227dcbaafe0d2f59279d1762ddddc37783ed4354594f194ffc31d20f41fc3db",
+          "hashes": {
+            "sha256": "2227dcbaafe0d2f59279d1762ddddc37783ed4354594f194ffc31d20f41fc3db"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "certifi",
+        "version": "2026.6.17",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "license",
+          "license-file",
+          "project-url",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "Python package for providing Mozilla's CA Bundle.",
+        "home_page": "https://github.com/certifi/python-certifi",
+        "author": "Kenneth Reitz",
+        "author_email": "me@kennethreitz.com",
+        "license": "MPL-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+          "Natural Language :: English",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Source, https://github.com/certifi/python-certifi"
+        ],
+        "description": "Certifi: Python SSL Certificates\n================================\n\nCertifi provides Mozilla's carefully curated collection of Root Certificates for\nvalidating the trustworthiness of SSL certificates while verifying the identity\nof TLS hosts. It has been extracted from the `Requests`_ project.\n\nInstallation\n------------\n\n``certifi`` is available on PyPI. Simply install it with ``pip``::\n\n    $ pip install certifi\n\nUsage\n-----\n\nTo reference the installed certificate authority (CA) bundle, you can use the\nbuilt-in function::\n\n    >>> import certifi\n\n    >>> certifi.where()\n    '/usr/local/lib/python3.7/site-packages/certifi/cacert.pem'\n\nOr from the command line::\n\n    $ python -m certifi\n    /usr/local/lib/python3.7/site-packages/certifi/cacert.pem\n\nEnjoy!\n\n.. _`Requests`: https://requests.readthedocs.io/en/latest/\n\nAddition/Removal of Certificates\n--------------------------------\n\nCertifi does not support any addition/removal or other modification of the\nCA trust store content. This project is intended to provide a reliable and\nhighly portable root of trust to python deployments. Look to upstream projects\nfor methods to use alternate trust.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

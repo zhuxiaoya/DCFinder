@@ -1,0 +1,65 @@
+aiohttp <4.0.0,>=3.8.3,<4.0.0,>=3.9.3,<4.0,>=3.10,>=3.11.13,<4.0.0,>=3.9.1,!=4.0.0a0,!=4.0.0a1,<4.0.0,>=3.9.1,<4,>=3.8.6,<4.0.0,>=3.13.5,>=3.13.3,<4,>=3.10.0
+  # from parent package: langchain (public)
+  # from parent package: langchain-community (public)
+  # from parent package: firecrawl (public)
+  # from parent package: composio-core (public)
+  # from parent package: together (public)
+  # from parent package: litellm (public)
+  # from parent package: mcp-agent (public)
+  # from parent package: instructor (public)
+  # from parent package: fsspec (private)
+  # from parent package: langchain-fireworks (public)
+  # from parent package: llama-index-core (public)
+  # from parent package: kubernetes (public)
+  # from parent package: fireworks-ai (public)
+  # from parent package: vllm (public)
+  # from parent package: httpx-aiohttp (public)
+filelock <4.0.0,>=3.13.1,>=3.10.0,>=3.0.8,>=3.16.1
+  # from parent package: together (public)
+  # from parent package: datasets (public)
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+  # from parent package: tldextract (public)
+  # from parent package: gdown (public)
+  # from parent package: unsloth-zoo (public)
+  # from parent package: diffusers (public)
+  # from parent package: vllm (public)
+fsspec <=2026.4.0,>=2023.1.0,>=2023.5.0,>=2023.5.0
+  # from parent package: datasets (public)
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+  # from parent package: gradio-client (public)
+  # from parent package: llama-index-core (public)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+nvidia-cublas-cu11 ==11.11.3.6
+  # from parent package: torch (private)
+  # from parent package: nvidia-cudnn-cu11 (private)
+  # from parent package: nvidia-cusolver-cu11 (private)
+nvidia-cuda-cupti-cu11 ==11.8.87
+  # from parent package: torch (private)
+nvidia-cuda-nvrtc-cu11 ==11.8.89
+  # from parent package: torch (private)
+nvidia-cuda-runtime-cu11 ==11.8.89
+  # from parent package: torch (private)
+nvidia-cudnn-cu11 ==9.1.0.70
+  # from parent package: torch (private)
+nvidia-cufft-cu11 ==10.9.0.58
+  # from parent package: torch (private)
+nvidia-curand-cu11 ==10.3.0.86
+  # from parent package: torch (private)
+nvidia-cusolver-cu11 ==11.4.1.48
+  # from parent package: torch (private)
+nvidia-cusparse-cu11 ==11.7.5.86
+  # from parent package: torch (private)
+nvidia-nccl-cu11 ==2.21.5
+  # from parent package: torch (private)
+nvidia-nvtx-cu11 ==11.8.86
+  # from parent package: torch (private)
+triton ==3.3.1
+  # from parent package: torch (private)
+  # from parent package: unsloth (public)
+  # from parent package: unsloth-zoo (public)
+  # from parent package: cut-cross-entropy (public)
+  # from parent package: xgrammar (public)
+  # from parent package: humming-kernels (public)

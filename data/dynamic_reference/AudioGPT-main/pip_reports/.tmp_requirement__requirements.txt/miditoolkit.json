@@ -1,0 +1,67 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/c7/17/5518ee8865e4ecda4e2682167c8d4fe8ec449303eeedeb9b41ab6ff936f5/miditoolkit-0.1.7.tar.gz",
+        "archive_info": {
+          "hash": "sha256=f5eb2b6b10fc860221046e4de2efb7dd727067b9acc0fe0c5d95d70a8fc34890",
+          "hashes": {
+            "sha256": "f5eb2b6b10fc860221046e4de2efb7dd727067b9acc0fe0c5d95d70a8fc34890"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "miditoolkit",
+        "version": "0.1.7",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "home-page",
+          "keywords",
+          "license",
+          "requires-dist",
+          "summary"
+        ],
+        "summary": "toolkit for midi/piano-roll manipulation, conversion and visualization.",
+        "keywords": [
+          "midi",
+          "piano-roll",
+          "music"
+        ],
+        "home_page": "https://github.com/wayne391/miditoolkit",
+        "author": "Wen-Yi Hsiao",
+        "author_email": "s101062219@gmail.com",
+        "license": "MIT",
+        "classifier": [
+          "Topic :: Multimedia :: Sound/Audio :: MIDI"
+        ],
+        "requires_dist": [
+          "mido",
+          "matplotlib",
+          "numpy",
+          "scipy"
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

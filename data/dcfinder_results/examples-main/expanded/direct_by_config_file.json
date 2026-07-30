@@ -1,0 +1,134 @@
+{
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/regression/requirements.txt": [
+    {
+      "name": "torch",
+      "specifier": "==1.9.0"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/distributed/minGPT-ddp/requirements.txt": [
+    {
+      "name": "fsspec",
+      "specifier": ""
+    },
+    {
+      "name": "boto3",
+      "specifier": ""
+    },
+    {
+      "name": "hydra-core",
+      "specifier": ""
+    },
+    {
+      "name": "requests",
+      "specifier": ""
+    },
+    {
+      "name": "aiohttp",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/distributed/rpc/rl/requirements.txt": [
+    {
+      "name": "numpy",
+      "specifier": "<2"
+    },
+    {
+      "name": "gymnasium",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/distributed/rpc/batch/requirements.txt": [
+    {
+      "name": "torchvision",
+      "specifier": "==0.7.0"
+    },
+    {
+      "name": "gym",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/distributed/FSDP/requirements.txt": [
+    {
+      "name": "transformers",
+      "specifier": ""
+    },
+    {
+      "name": "datasets",
+      "specifier": ""
+    },
+    {
+      "name": "tqdm",
+      "specifier": ""
+    },
+    {
+      "name": "protobuf",
+      "specifier": ""
+    },
+    {
+      "name": "sentencepiece",
+      "specifier": ""
+    },
+    {
+      "name": "nlp",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/super_resolution/requirements.txt": [
+    {
+      "name": "six",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/legacy/snli/requirements.txt": [
+    {
+      "name": "torchtext",
+      "specifier": ""
+    },
+    {
+      "name": "spacy",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/docs/requirements.txt": [
+    {
+      "name": "sphinx",
+      "specifier": "==5.3.0"
+    },
+    {
+      "name": "pytorch-sphinx-theme",
+      "specifier": ""
+    },
+    {
+      "name": "sphinx-panels",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/reinforcement_learning/requirements.txt": [
+    {
+      "name": "pygame",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/dcgan/requirements.txt": [
+    {
+      "name": "lmdb",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/time_sequence_prediction/requirements.txt": [
+    {
+      "name": "matplotlib",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/language_translation/requirements.txt": [
+    {
+      "name": "torchdata",
+      "specifier": "==0.9.0"
+    },
+    {
+      "name": "portalocker",
+      "specifier": ""
+    }
+  ]
+}

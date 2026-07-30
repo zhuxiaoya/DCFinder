@@ -1,0 +1,56 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/dc/78/f6cfa15ff7c66de5bb0873fb4bd699ff8024a0b00a94babbd216e64202b7/pytorch_ssim-0.1.tar.gz",
+        "archive_info": {
+          "hash": "sha256=e0f3388af091ad9656d6da9d6cb6316acaeefef9783016c7e70bb99c55874b87",
+          "hashes": {
+            "sha256": "e0f3388af091ad9656d6da9d6cb6316acaeefef9783016c7e70bb99c55874b87"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "pytorch_ssim",
+        "version": "0.1",
+        "dynamic": [
+          "author",
+          "author-email",
+          "download-url",
+          "home-page",
+          "keywords",
+          "summary"
+        ],
+        "summary": "Differentiable structural similarity (SSIM) index",
+        "keywords": [
+          "pytorch",
+          "image-processing",
+          "deep-learning"
+        ],
+        "home_page": "https://github.com/Po-Hsun-Su/pytorch-ssim",
+        "download_url": "https://github.com/Po-Hsun-Su/pytorch-ssim/archive/0.1.tar.gz",
+        "author": "Po-Hsun (Evan) Su",
+        "author_email": "evan.pohsun.su@gmail.com"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

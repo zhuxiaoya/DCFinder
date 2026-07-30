@@ -1,0 +1,72 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/da/ff/3f0982ecd37c2d6a7266c22e7ea2e47d0773fe449984184c5316459d2776/captcha-0.7.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=8b73b5aba841ad1e5bdb856205bf5f09560b728ee890eb9dae42901219c8c599",
+          "hashes": {
+            "sha256": "8b73b5aba841ad1e5bdb856205bf5f09560b728ee890eb9dae42901219c8c599"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.2",
+        "name": "captcha",
+        "version": "0.7.1",
+        "summary": "A captcha library that generates audio and image CAPTCHAs.",
+        "description_content_type": "text/x-rst",
+        "author_email": "Hsiaoming Yang <me@lepture.com>",
+        "license": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Environment :: Console",
+          "Environment :: Web Environment",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Topic :: Security"
+        ],
+        "requires_dist": [
+          "Pillow"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Documentation, https://captcha.lepture.com/",
+          "Source, https://github.com/lepture/captcha"
+        ],
+        "description": "Captcha\n=======\n\nA captcha library that generates audio and image CAPTCHAs.\n\nFeatures\n--------\n\n1. Audio CAPTCHAs\n2. Image CAPTCHAs\n\n\nInstallation\n------------\n\nInstall captcha with pip::\n\n    $ pip install captcha\n\nUsage\n-----\n\nAudio and Image CAPTCHAs are in separated modules:\n\n.. code-block:: python\n\n    from captcha.audio import AudioCaptcha\n    from captcha.image import ImageCaptcha\n\n    audio = AudioCaptcha(voicedir='/path/to/voices')\n    image = ImageCaptcha(fonts=['/path/A.ttf', '/path/B.ttf'])\n\n    data = audio.generate('1234')\n    audio.write('1234', 'out.wav')\n\n    data = image.generate('1234')\n    image.write('1234', 'out.png')\n\nThis is the APIs for your daily works. We do have built-in voice data and font\ndata. But it is suggested that you use your own voice and font data.\n\nUseful Links\n------------\n\n1. GitHub: https://github.com/lepture/captcha\n2. Docs: https://captcha.lepture.com/\n\n\nLicense\n-------\n\nLicensed under BSD. Please see LICENSE for licensing details.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

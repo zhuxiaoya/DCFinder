@@ -1,0 +1,96 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/45/11/7907864f8b658d9c7315ceba03c55d7064801840c066a944e5000e4c8a31/praat-parselmouth-0.3.3.tar.gz",
+        "archive_info": {
+          "hash": "sha256=c9615c7faad7af0378933b7afc758c5a4694a26706cb8aa6c90e12a8dd1839bf",
+          "hashes": {
+            "sha256": "c9615c7faad7af0378933b7afc758c5a4694a26706cb8aa6c90e12a8dd1839bf"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "praat-parselmouth",
+        "version": "0.3.3",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "project-url",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "Praat in Python, the Pythonic way",
+        "keywords": [
+          "praat",
+          "speech",
+          "signal processing",
+          "phonetics"
+        ],
+        "home_page": "https://github.com/YannickJadoul/Parselmouth",
+        "author": "Yannick Jadoul",
+        "author_email": "Yannick.Jadoul@ai.vub.ac.be",
+        "license": "GPLv3",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX :: Linux",
+          "Operating System :: Unix",
+          "Programming Language :: C++",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Topic :: Scientific/Engineering",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "numpy>=1.7.0"
+        ],
+        "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*",
+        "project_url": [
+          "Bug Tracker, https://github.com/YannickJadoul/Parselmouth/issues",
+          "Documentation, https://parselmouth.readthedocs.io/",
+          "Source Code, https://github.com/YannickJadoul/Parselmouth"
+        ],
+        "description": "Parselmouth - Praat in Python, the Pythonic way\n===============================================\n\n**Parselmouth** is a Python library for the\n`Praat <http://www.praat.org>`__ software.\n\nThough other attempts have been made at porting functionality from Praat\nto Python, Parselmouth is unique in its aim to provide a complete and\nPythonic interface to the internal Praat code. While other projects\neither wrap Praat's scripting language or reimplementing parts of\nPraat's functionality in Python, Parselmouth directly accesses Praat's\nC/C++ code (which means the algorithms and their output are exactly the\nsame as in Praat) and provides efficient access to the program's data,\nbut *also* provides an interface that looks no different from any other\nPython library.\n\nDrop by our `Gitter chat\nroom <https://gitter.im/PraatParselmouth/Lobby>`__ if you have any\nquestion, remarks, or requests!\n\nMore information on the **installation** and some basic **examples**\ncan be found on Parselmouth's GitHub repository:\nhttps://github.com/YannickJadoul/Parselmouth\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

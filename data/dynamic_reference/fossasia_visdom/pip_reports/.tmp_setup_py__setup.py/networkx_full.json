@@ -1,0 +1,125 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/b9/54/dd730b32ea14ea797530a4479b2ed46a6fb250f682a9cfb997e968bf0261/networkx-3.4.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f",
+          "hashes": {
+            "sha256": "df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "networkx",
+        "version": "3.4.2",
+        "platform": [
+          "Linux",
+          "Mac OSX",
+          "Windows",
+          "Unix"
+        ],
+        "summary": "Python package for creating and manipulating graphs and networks",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "Networks",
+          "Graph Theory",
+          "Mathematics",
+          "network",
+          "graph",
+          "discrete mathematics",
+          "math"
+        ],
+        "author_email": "Aric Hagberg <hagberg@lanl.gov>",
+        "maintainer_email": "NetworkX Developers <networkx-discuss@googlegroups.com>",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3 :: Only",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Scientific/Engineering :: Bio-Informatics",
+          "Topic :: Scientific/Engineering :: Information Analysis",
+          "Topic :: Scientific/Engineering :: Mathematics",
+          "Topic :: Scientific/Engineering :: Physics"
+        ],
+        "requires_dist": [
+          "numpy >=1.24 ; extra == 'default'",
+          "scipy !=1.11.0,!=1.11.1,>=1.10 ; extra == 'default'",
+          "matplotlib >=3.7 ; extra == 'default'",
+          "pandas >=2.0 ; extra == 'default'",
+          "changelist ==0.5 ; extra == 'developer'",
+          "pre-commit >=3.2 ; extra == 'developer'",
+          "mypy >=1.1 ; extra == 'developer'",
+          "rtoml ; extra == 'developer'",
+          "sphinx >=7.3 ; extra == 'doc'",
+          "pydata-sphinx-theme >=0.15 ; extra == 'doc'",
+          "sphinx-gallery >=0.16 ; extra == 'doc'",
+          "numpydoc >=1.8.0 ; extra == 'doc'",
+          "pillow >=9.4 ; extra == 'doc'",
+          "texext >=0.6.7 ; extra == 'doc'",
+          "myst-nb >=1.1 ; extra == 'doc'",
+          "intersphinx-registry ; extra == 'doc'",
+          "osmnx >=1.9 ; extra == 'example'",
+          "momepy >=0.7.2 ; extra == 'example'",
+          "contextily >=1.6 ; extra == 'example'",
+          "seaborn >=0.13 ; extra == 'example'",
+          "cairocffi >=1.7 ; extra == 'example'",
+          "igraph >=0.11 ; extra == 'example'",
+          "scikit-learn >=1.5 ; extra == 'example'",
+          "lxml >=4.6 ; extra == 'extra'",
+          "pygraphviz >=1.14 ; extra == 'extra'",
+          "pydot >=3.0.1 ; extra == 'extra'",
+          "sympy >=1.10 ; extra == 'extra'",
+          "pytest >=7.2 ; extra == 'test'",
+          "pytest-cov >=4.0 ; extra == 'test'"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://networkx.org/",
+          "Bug Tracker, https://github.com/networkx/networkx/issues",
+          "Documentation, https://networkx.org/documentation/stable/",
+          "Source Code, https://github.com/networkx/networkx"
+        ],
+        "provides_extra": [
+          "default",
+          "developer",
+          "doc",
+          "example",
+          "extra",
+          "test"
+        ],
+        "description": "NetworkX\n========\n\n\n.. image::\n    https://github.com/networkx/networkx/workflows/test/badge.svg?branch=main\n    :target: https://github.com/networkx/networkx/actions?query=workflow%3Atest\n\n.. image::\n    https://codecov.io/gh/networkx/networkx/branch/main/graph/badge.svg?\n    :target: https://app.codecov.io/gh/networkx/networkx/branch/main\n\n.. image::\n    https://img.shields.io/pypi/v/networkx.svg?\n    :target: https://pypi.python.org/pypi/networkx\n\n.. image::\n    https://img.shields.io/pypi/l/networkx.svg?\n    :target: https://github.com/networkx/networkx/blob/main/LICENSE.txt\n\n.. image::\n    https://img.shields.io/pypi/pyversions/networkx.svg?\n    :target: https://pypi.python.org/pypi/networkx\n\n.. image::\n    https://img.shields.io/github/labels/networkx/networkx/good%20first%20issue?color=green&label=contribute\n    :target: https://github.com/networkx/networkx/contribute\n\n\nNetworkX is a Python package for the creation, manipulation,\nand study of the structure, dynamics, and functions\nof complex networks.\n\n- **Website (including documentation):** https://networkx.org\n- **Mailing list:** https://groups.google.com/forum/#!forum/networkx-discuss\n- **Source:** https://github.com/networkx/networkx\n- **Bug reports:** https://github.com/networkx/networkx/issues\n- **Report a security vulnerability:** https://tidelift.com/security\n- **Tutorial:** https://networkx.org/documentation/latest/tutorial.html\n- **GitHub Discussions:** https://github.com/networkx/networkx/discussions\n- **Discord (Scientific Python) invite link:** https://discord.com/invite/vur45CbwMz\n- **NetworkX meetings calendar (open to all):** https://scientific-python.org/calendars/networkx.ics\n\nSimple example\n--------------\n\nFind the shortest path between two nodes in an undirected graph:\n\n.. code:: pycon\n\n    >>> import networkx as nx\n    >>> G = nx.Graph()\n    >>> G.add_edge(\"A\", \"B\", weight=4)\n    >>> G.add_edge(\"B\", \"D\", weight=2)\n    >>> G.add_edge(\"A\", \"C\", weight=3)\n    >>> G.add_edge(\"C\", \"D\", weight=4)\n    >>> nx.shortest_path(G, \"A\", \"D\", weight=\"weight\")\n    ['A', 'B', 'D']\n\nInstall\n-------\n\nInstall the latest released version of NetworkX:\n\n.. code:: shell\n\n    $ pip install networkx\n\nInstall with all optional dependencies:\n\n.. code:: shell\n\n    $ pip install networkx[default]\n\nFor additional details,\nplease see the `installation guide <https://networkx.org/documentation/stable/install.html>`_.\n\nBugs\n----\n\nPlease report any bugs that you find `here <https://github.com/networkx/networkx/issues>`_.\nOr, even better, fork the repository on `GitHub <https://github.com/networkx/networkx>`_\nand create a pull request (PR). We welcome all changes, big or small, and we\nwill help you make the PR if you are new to `git` (just ask on the issue and/or\nsee the `contributor guide <https://networkx.org/documentation/latest/developer/contribute.html>`_).\n\nLicense\n-------\n\nReleased under the `3-Clause BSD license <https://github.com/networkx/networkx/blob/main/LICENSE.txt>`_::\n\n    Copyright (C) 2004-2024 NetworkX Developers\n    Aric Hagberg <hagberg@lanl.gov>\n    Dan Schult <dschult@colgate.edu>\n    Pieter Swart <swart@lanl.gov>\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

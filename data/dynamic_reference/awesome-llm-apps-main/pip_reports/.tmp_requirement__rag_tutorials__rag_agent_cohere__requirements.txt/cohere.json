@@ -1,0 +1,76 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/53/5c/909862a2eb2a0eaf3bc2024058207e342286e015d60ff03fe38f3efdde6d/cohere-5.11.4-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=59fb427e5426e0ee1c25b9deec83f0418a1c082240c57007f41384b34cd41552",
+          "hashes": {
+            "sha256": "59fb427e5426e0ee1c25b9deec83f0418a1c082240c57007f41384b34cd41552"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "cohere",
+        "version": "5.11.4",
+        "summary": "",
+        "description_content_type": "text/markdown",
+        "classifier": [
+          "Intended Audience :: Developers",
+          "Operating System :: MacOS",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: OS Independent",
+          "Operating System :: POSIX",
+          "Operating System :: POSIX :: Linux",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Typing :: Typed"
+        ],
+        "requires_dist": [
+          "boto3 (>=1.34.0,<2.0.0) ; extra == \"aws\"",
+          "fastavro (>=1.9.4,<2.0.0)",
+          "httpx (>=0.21.2)",
+          "httpx-sse (==0.4.0)",
+          "parameterized (>=0.9.0,<0.10.0)",
+          "pydantic (>=1.9.2)",
+          "pydantic-core (>=2.18.2,<3.0.0)",
+          "requests (>=2.0.0,<3.0.0)",
+          "sagemaker (>=2.232.1,<3.0.0) ; extra == \"aws\"",
+          "tokenizers (>=0.15,<1)",
+          "types-requests (>=2.0.0,<3.0.0)",
+          "typing_extensions (>=4.0.0)"
+        ],
+        "requires_python": ">=3.8,<4.0",
+        "provides_extra": [
+          "aws"
+        ],
+        "description": "# Cohere Python SDK\n\n![](banner.png)\n\n[![version badge](https://img.shields.io/pypi/v/cohere)](https://pypi.org/project/cohere/)\n![license badge](https://img.shields.io/github/license/cohere-ai/cohere-python)\n[![fern shield](https://img.shields.io/badge/%F0%9F%8C%BF-SDK%20generated%20by%20Fern-brightgreen)](https://github.com/fern-api/fern)\n\nThe Cohere Python SDK allows access to Cohere models across many different platforms: the cohere platform, AWS (Bedrock, Sagemaker), Azure, GCP and Oracle OCI. For a full list of support and snippets, please take a look at the [SDK support docs page](https://docs.cohere.com/docs/cohere-works-everywhere).\n\n## Documentation\n\nCohere documentation and API reference is available [here](https://docs.cohere.com/).\n\n## Installation\n\n```\npip install cohere\n```\n\n## Usage\n\n```Python\nimport cohere\n\nco = cohere.Client(\n    api_key=\"YOUR_API_KEY\",\n)\n\nchat = co.chat(\n    message=\"hello world!\",\n    model=\"command\"\n)\n\nprint(chat)\n```\n\n> [!TIP]\n> You can set a system environment variable `CO_API_KEY` to avoid writing your api key within your code, e.g. add `export CO_API_KEY=theapikeyforyouraccount`\n> in your ~/.zshrc or ~/.bashrc, open a new terminal, then code calling `cohere.Client()` will read this key.\n\n\n## Streaming\n\nThe SDK supports streaming endpoints. To take advantage of this feature for chat,\nuse `chat_stream`.\n\n```Python\nimport cohere\n\nco = cohere.Client(\n    api_key=\"YOUR_API_KEY\",\n)\n\nstream = co.chat_stream(\n    message=\"Tell me a short story\"\n)\n\nfor event in stream:\n    if event.event_type == \"text-generation\":\n        print(event.text, end='')\n```\n\n## Contributing\n\nWhile we value open-source contributions to this SDK, the code is generated programmatically. Additions made directly would have to be moved over to our generation code, otherwise they would be overwritten upon the next generated release. Feel free to open a PR as a proof of concept, but know that we will not be able to merge it as-is. We suggest opening an issue first to discuss with us!\n\nOn the other hand, contributions to the README are always very welcome!\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

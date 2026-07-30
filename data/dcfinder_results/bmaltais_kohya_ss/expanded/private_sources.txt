@@ -1,0 +1,22 @@
+# 私有源 (非 PyPI) 配置文件扫描结果 — bmaltais_kohya_ss
+# 共发现 6 个配置文件含私有源
+
+[requirements_linux.txt]
+  extra_index_url: https://download.pytorch.org/whl/cu128
+
+[requirements_linux_ipex.txt]
+  extra_index_url: https://pytorch-extension.intel.com/release-whl/stable/xpu/us/
+
+[requirements_linux_rocm.txt]
+  extra_index_url: https://download.pytorch.org/whl/rocm6.1
+  extra_index_url: https://pypi.lsh.sh/60/
+
+[requirements_macos_arm64.txt]
+  extra_index_url: https://download.pytorch.org/whl/nightly/cpu
+
+[requirements_pytorch_windows.txt]
+  extra_index_url: https://download.pytorch.org/whl/cu128
+
+[requirements_runpod.txt]
+  extra_index_url: https://download.pytorch.org/whl/cu124
+

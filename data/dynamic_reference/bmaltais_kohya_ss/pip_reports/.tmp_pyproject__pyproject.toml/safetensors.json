@@ -1,0 +1,109 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/18/f3/27bf4d7112b194eea2d8401706953080692d37ace1b74b36fcc7234961cd/safetensors-0.4.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=44d464bdc384874601a177375028012a5f177f1505279f9456fea84bbc575c7f",
+          "hashes": {
+            "sha256": "44d464bdc384874601a177375028012a5f177f1505279f9456fea84bbc575c7f"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.3",
+        "name": "safetensors",
+        "version": "0.4.4",
+        "description_content_type": "text/markdown; charset=UTF-8; variant=GFM",
+        "author_email": "Nicolas Patry <patry.nicolas@protonmail.com>",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Education",
+          "Intended Audience :: Science/Research",
+          "License :: OSI Approved :: Apache Software License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Topic :: Scientific/Engineering :: Artificial Intelligence",
+          "Typing :: Typed"
+        ],
+        "requires_dist": [
+          "numpy >=1.21.6 ; extra == 'numpy'",
+          "safetensors[numpy] ; extra == 'torch'",
+          "torch >=1.10 ; extra == 'torch'",
+          "safetensors[numpy] ; extra == 'tensorflow'",
+          "tensorflow >=2.11.0 ; extra == 'tensorflow'",
+          "safetensors[numpy] ; extra == 'pinned-tf'",
+          "tensorflow ==2.11.0 ; extra == 'pinned-tf'",
+          "safetensors[numpy] ; extra == 'jax'",
+          "flax >=0.6.3 ; extra == 'jax'",
+          "jax >=0.3.25 ; extra == 'jax'",
+          "jaxlib >=0.3.25 ; extra == 'jax'",
+          "mlx >=0.0.9 ; extra == 'mlx'",
+          "safetensors[numpy] ; extra == 'paddlepaddle'",
+          "paddlepaddle >=2.4.1 ; extra == 'paddlepaddle'",
+          "black ==22.3 ; extra == 'quality'",
+          "click ==8.0.4 ; extra == 'quality'",
+          "isort >=5.5.4 ; extra == 'quality'",
+          "flake8 >=3.8.3 ; extra == 'quality'",
+          "safetensors[numpy] ; extra == 'testing'",
+          "h5py >=3.7.0 ; extra == 'testing'",
+          "huggingface-hub >=0.12.1 ; extra == 'testing'",
+          "setuptools-rust >=1.5.2 ; extra == 'testing'",
+          "pytest >=7.2.0 ; extra == 'testing'",
+          "pytest-benchmark >=4.0.0 ; extra == 'testing'",
+          "hypothesis >=6.70.2 ; extra == 'testing'",
+          "safetensors[torch] ; extra == 'all'",
+          "safetensors[numpy] ; extra == 'all'",
+          "safetensors[pinned-tf] ; extra == 'all'",
+          "safetensors[jax] ; extra == 'all'",
+          "safetensors[paddlepaddle] ; extra == 'all'",
+          "safetensors[quality] ; extra == 'all'",
+          "safetensors[testing] ; extra == 'all'",
+          "safetensors[all] ; extra == 'dev'"
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Homepage, https://github.com/huggingface/safetensors",
+          "Source, https://github.com/huggingface/safetensors"
+        ],
+        "provides_extra": [
+          "numpy",
+          "torch",
+          "tensorflow",
+          "pinned-tf",
+          "jax",
+          "mlx",
+          "paddlepaddle",
+          "quality",
+          "testing",
+          "all",
+          "dev"
+        ],
+        "description": "## Installation\n\n```\npip install safetensors\n```\n\n\n## Usage\n\n### Numpy\n\n```python\nfrom safetensors.numpy import save_file, load_file\nimport numpy as np\n\ntensors = {\n   \"a\": np.zeros((2, 2)),\n   \"b\": np.zeros((2, 3), dtype=np.uint8)\n}\n\nsave_file(tensors, \"./model.safetensors\")\n\n\n# Now loading\nloaded = load_file(\"./model.safetensors\")\n```\n\n### Torch\n\n```python\nfrom safetensors.torch import save_file, load_file\nimport torch\n\ntensors = {\n   \"a\": torch.zeros((2, 2)),\n   \"b\": torch.zeros((2, 3), dtype=torch.uint8)\n}\n\nsave_file(tensors, \"./model.safetensors\")\n\n\n# Now loading\nloaded = load_file(\"./model.safetensors\")\n```\n\n### Developing\n\n```\n# inside ./safetensors/bindings/python\npip install .[dev]\n```\nShould be enough to install this library locally.\n\n### Testing\n\n```\n# inside ./safetensors/bindings/python\npip install .[dev]\npytest -sv tests/\n```\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

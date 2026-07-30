@@ -1,0 +1,15 @@
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/VikParuchuri_surya/pyproject.toml
+transformers <5.0.0,>=4.51.2  # type: runtime
+torch <3.0.0,>=2.7.0  # type: runtime
+pydantic <3.0.0,>=2.5.3  # type: runtime
+pydantic-settings <3.0.0,>=2.1.0  # type: runtime
+python-dotenv <2.0.0,>=1.0.0  # type: runtime
+pillow <11.0.0,>=10.2.0  # type: runtime
+pypdfium2 =4.30.0  # type: runtime
+filetype <2.0.0,>=1.2.0  # type: runtime
+click <9.0.0,>=8.1.8  # type: runtime
+platformdirs <5.0.0,>=4.3.6  # type: runtime
+opencv-python-headless <5.0.0,>=4.11.0.86  # type: runtime
+einops <0.9.0,>=0.8.1  # type: runtime
+pre-commit <5.0.0,>=4.2.0  # type: runtime
+

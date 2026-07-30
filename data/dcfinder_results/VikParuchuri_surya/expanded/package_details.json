@@ -1,0 +1,1027 @@
+{
+  "transformers": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "filelock",
+        "specifier": ""
+      },
+      {
+        "name": "huggingface-hub",
+        "specifier": "<1.0,>=0.34.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.17"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.0"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1"
+      },
+      {
+        "name": "regex",
+        "specifier": "!=2019.12.17"
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "tokenizers",
+        "specifier": "<=0.23.0,>=0.22.0"
+      },
+      {
+        "name": "safetensors",
+        "specifier": ">=0.4.3"
+      },
+      {
+        "name": "tqdm",
+        "specifier": ">=4.27"
+      }
+    ]
+  },
+  "torch": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "filelock",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.10.0"
+      },
+      {
+        "name": "setuptools",
+        "specifier": ">=77.0.3"
+      },
+      {
+        "name": "sympy",
+        "specifier": ">=1.13.3"
+      },
+      {
+        "name": "networkx",
+        "specifier": ">=2.5.1"
+      },
+      {
+        "name": "jinja2",
+        "specifier": ""
+      },
+      {
+        "name": "fsspec",
+        "specifier": ">=0.8.5"
+      },
+      {
+        "name": "cuda-toolkit",
+        "specifier": "==13.0.3"
+      },
+      {
+        "name": "cuda-bindings",
+        "specifier": "<14,>=13.0.3"
+      },
+      {
+        "name": "nvidia-cudnn-cu13",
+        "specifier": "==9.20.0.48"
+      },
+      {
+        "name": "nvidia-cusparselt-cu13",
+        "specifier": "==0.8.1"
+      },
+      {
+        "name": "nvidia-nccl-cu13",
+        "specifier": "==2.29.7"
+      },
+      {
+        "name": "nvidia-nvshmem-cu13",
+        "specifier": "==3.4.5"
+      },
+      {
+        "name": "triton",
+        "specifier": "==3.7.1"
+      }
+    ]
+  },
+  "pydantic": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "annotated-types",
+        "specifier": ">=0.6.0"
+      },
+      {
+        "name": "pydantic-core",
+        "specifier": "==2.47.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.15.0"
+      },
+      {
+        "name": "typing-inspection",
+        "specifier": ">=0.4.2"
+      }
+    ]
+  },
+  "pydantic-settings": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pydantic",
+        "specifier": ">=2.7.0"
+      },
+      {
+        "name": "python-dotenv",
+        "specifier": ">=0.21.0"
+      },
+      {
+        "name": "typing-inspection",
+        "specifier": ">=0.4.0"
+      }
+    ]
+  },
+  "python-dotenv": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pillow": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pypdfium2": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "filetype": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "click": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "platformdirs": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "opencv-python-headless": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=2"
+      }
+    ]
+  },
+  "einops": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pre-commit": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "cfgv",
+        "specifier": ">=2.0.0"
+      },
+      {
+        "name": "identify",
+        "specifier": ">=1.0.0"
+      },
+      {
+        "name": "nodeenv",
+        "specifier": ">=0.11.1"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1"
+      },
+      {
+        "name": "virtualenv",
+        "specifier": ">=20.10.0"
+      }
+    ]
+  },
+  "filelock": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "huggingface-hub": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "filelock",
+        "specifier": ""
+      },
+      {
+        "name": "fsspec",
+        "specifier": ">=2023.5.0"
+      },
+      {
+        "name": "hf-xet",
+        "specifier": "<2.0.0,>=1.1.3"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.9"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1"
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "tqdm",
+        "specifier": ">=4.42.1"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=3.7.4.3"
+      }
+    ]
+  },
+  "numpy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "packaging": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pyyaml": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "regex": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "requests": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "charset-normalizer",
+        "specifier": "<4,>=2"
+      },
+      {
+        "name": "idna",
+        "specifier": "<4,>=2.5"
+      },
+      {
+        "name": "urllib3",
+        "specifier": "<3,>=1.26"
+      },
+      {
+        "name": "certifi",
+        "specifier": ">=2023.5.7"
+      }
+    ]
+  },
+  "tokenizers": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "huggingface-hub",
+        "specifier": "<2.0,>=0.16.4"
+      }
+    ]
+  },
+  "safetensors": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "tqdm": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "typing-extensions": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "setuptools": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "sympy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "mpmath",
+        "specifier": "<1.4,>=1.1.0"
+      }
+    ]
+  },
+  "networkx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "jinja2": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "markupsafe",
+        "specifier": ">=2.0"
+      }
+    ]
+  },
+  "fsspec": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "cuda-toolkit": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "nvidia-cublas",
+        "specifier": "==13.1.1.3.*"
+      },
+      {
+        "name": "nvidia-cuda-cccl",
+        "specifier": "==13.0.85.*"
+      },
+      {
+        "name": "nvidia-cuda-crt",
+        "specifier": "==13.0.88.*"
+      },
+      {
+        "name": "nvidia-cuda-culibos",
+        "specifier": "==13.0.85.*"
+      },
+      {
+        "name": "nvidia-cuda-cupti",
+        "specifier": "==13.0.85.*"
+      },
+      {
+        "name": "nvidia-cuda-cuxxfilt",
+        "specifier": "==13.0.85.*"
+      },
+      {
+        "name": "nvidia-cuda-nvcc",
+        "specifier": "==13.0.88.*"
+      },
+      {
+        "name": "nvidia-cuda-nvrtc",
+        "specifier": "==13.0.88.*"
+      },
+      {
+        "name": "nvidia-cuda-opencl",
+        "specifier": "==13.0.85.*"
+      },
+      {
+        "name": "nvidia-cuda-profiler-api",
+        "specifier": "==13.0.85.*"
+      },
+      {
+        "name": "nvidia-cuda-runtime",
+        "specifier": "==13.0.96.*"
+      },
+      {
+        "name": "nvidia-cuda-sanitizer-api",
+        "specifier": "==13.0.85.*"
+      },
+      {
+        "name": "nvidia-cufft",
+        "specifier": "==12.0.0.61.*"
+      },
+      {
+        "name": "nvidia-cufile",
+        "specifier": "==1.15.1.6.*"
+      },
+      {
+        "name": "nvidia-curand",
+        "specifier": "==10.4.0.35.*"
+      },
+      {
+        "name": "nvidia-cusolver",
+        "specifier": "==12.0.4.66.*"
+      },
+      {
+        "name": "nvidia-cusparse",
+        "specifier": "==12.6.3.3.*"
+      },
+      {
+        "name": "nvidia-npp",
+        "specifier": "==13.0.1.2.*"
+      },
+      {
+        "name": "nvidia-nvfatbin",
+        "specifier": "==13.0.85.*"
+      },
+      {
+        "name": "nvidia-nvjitlink",
+        "specifier": "<14,>=13.0.88"
+      },
+      {
+        "name": "nvidia-nvjpeg",
+        "specifier": "==13.0.1.86.*"
+      },
+      {
+        "name": "nvidia-nvml-dev",
+        "specifier": "==13.0.87.*"
+      },
+      {
+        "name": "nvidia-nvptxcompiler",
+        "specifier": "==13.0.88.*"
+      },
+      {
+        "name": "nvidia-nvtx",
+        "specifier": "==13.0.85.*"
+      },
+      {
+        "name": "nvidia-nvvm",
+        "specifier": "==13.0.88.*"
+      },
+      {
+        "name": "nvidia-cublas",
+        "specifier": "==13.1.1.3.*"
+      },
+      {
+        "name": "nvidia-cuda-nvrtc",
+        "specifier": "==13.0.88.*"
+      },
+      {
+        "name": "nvidia-cuda-runtime",
+        "specifier": "==13.0.96.*"
+      },
+      {
+        "name": "nvidia-cufft",
+        "specifier": "==12.0.0.61.*"
+      },
+      {
+        "name": "nvidia-nvjitlink",
+        "specifier": "<14,>=13.0.88"
+      },
+      {
+        "name": "nvidia-cufile",
+        "specifier": "==1.15.1.6.*"
+      },
+      {
+        "name": "nvidia-cuda-cupti",
+        "specifier": "==13.0.85.*"
+      },
+      {
+        "name": "nvidia-curand",
+        "specifier": "==10.4.0.35.*"
+      },
+      {
+        "name": "nvidia-cublas",
+        "specifier": "==13.1.1.3.*"
+      },
+      {
+        "name": "nvidia-cusolver",
+        "specifier": "==12.0.4.66.*"
+      },
+      {
+        "name": "nvidia-cusparse",
+        "specifier": "==12.6.3.3.*"
+      },
+      {
+        "name": "nvidia-nvjitlink",
+        "specifier": "<14,>=13.0.88"
+      },
+      {
+        "name": "nvidia-cusparse",
+        "specifier": "==12.6.3.3.*"
+      },
+      {
+        "name": "nvidia-nvjitlink",
+        "specifier": "<14,>=13.0.88"
+      },
+      {
+        "name": "nvidia-nvjitlink",
+        "specifier": "<14,>=13.0.88"
+      },
+      {
+        "name": "nvidia-cuda-nvrtc",
+        "specifier": "==13.0.88.*"
+      },
+      {
+        "name": "nvidia-nvtx",
+        "specifier": "==13.0.85.*"
+      }
+    ]
+  },
+  "cuda-bindings": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "cuda-pathfinder",
+        "specifier": ">=1.4.2"
+      }
+    ]
+  },
+  "nvidia-cudnn-cu13": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "nvidia-cublas",
+        "specifier": ""
+      }
+    ]
+  },
+  "nvidia-cusparselt-cu13": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-nccl-cu13": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-nvshmem-cu13": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "triton": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "annotated-types": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pydantic-core": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.14.1"
+      }
+    ]
+  },
+  "typing-inspection": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.12.0"
+      }
+    ]
+  },
+  "cfgv": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "identify": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nodeenv": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "virtualenv": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "distlib",
+        "specifier": "<1,>=0.3.7"
+      },
+      {
+        "name": "filelock",
+        "specifier": "<4,>=3.24.2"
+      },
+      {
+        "name": "platformdirs",
+        "specifier": "<5,>=3.9.1"
+      },
+      {
+        "name": "python-discovery",
+        "specifier": ">=1.4.2"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.13.2"
+      }
+    ]
+  },
+  "hf-xet": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "charset-normalizer": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "idna": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "urllib3": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "certifi": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "mpmath": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "markupsafe": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-cublas": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "nvidia-cuda-nvrtc",
+        "specifier": ""
+      }
+    ]
+  },
+  "nvidia-cuda-cccl": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-cuda-crt": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-cuda-culibos": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-cuda-cupti": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-cuda-cuxxfilt": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-cuda-nvcc": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "nvidia-nvvm",
+        "specifier": ""
+      },
+      {
+        "name": "nvidia-cuda-runtime",
+        "specifier": ""
+      },
+      {
+        "name": "nvidia-cuda-crt",
+        "specifier": ""
+      }
+    ]
+  },
+  "nvidia-cuda-nvrtc": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-cuda-opencl": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-cuda-profiler-api": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-cuda-runtime": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-cuda-sanitizer-api": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-cufft": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "nvidia-nvjitlink",
+        "specifier": ""
+      }
+    ]
+  },
+  "nvidia-cufile": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-curand": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-cusolver": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "nvidia-cublas",
+        "specifier": ""
+      },
+      {
+        "name": "nvidia-nvjitlink",
+        "specifier": ""
+      },
+      {
+        "name": "nvidia-cusparse",
+        "specifier": ""
+      }
+    ]
+  },
+  "nvidia-cusparse": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "nvidia-nvjitlink",
+        "specifier": ""
+      }
+    ]
+  },
+  "nvidia-npp": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-nvfatbin": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-nvjitlink": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-nvjpeg": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-nvml-dev": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-nvptxcompiler": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-nvtx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nvidia-nvvm": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "cuda-pathfinder": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "distlib": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "python-discovery": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "filelock",
+        "specifier": ">=3.15.4"
+      },
+      {
+        "name": "platformdirs",
+        "specifier": "<5,>=4.3.6"
+      }
+    ]
+  }
+}

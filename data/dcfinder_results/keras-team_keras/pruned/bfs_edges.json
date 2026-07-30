@@ -1,0 +1,752 @@
+[
+  {
+    "parent": "pre-commit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cfgv"
+  },
+  {
+    "parent": "pre-commit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "identify"
+  },
+  {
+    "parent": "pre-commit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nodeenv"
+  },
+  {
+    "parent": "pre-commit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "pre-commit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "virtualenv"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "exceptiongroup"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "iniconfig"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pluggy"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pygments"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomli"
+  },
+  {
+    "parent": "scipy",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "scikit-learn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "scikit-learn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "scipy"
+  },
+  {
+    "parent": "scikit-learn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "joblib"
+  },
+  {
+    "parent": "scikit-learn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "narwhals"
+  },
+  {
+    "parent": "scikit-learn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "threadpoolctl"
+  },
+  {
+    "parent": "pandas",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "pandas",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "python-dateutil"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "private",
+    "parent_version": "2.28.1",
+    "child": "charset-normalizer"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "private",
+    "parent_version": "2.28.1",
+    "child": "idna"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "private",
+    "parent_version": "2.28.1",
+    "child": "urllib3"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "private",
+    "parent_version": "2.28.1",
+    "child": "certifi"
+  },
+  {
+    "parent": "h5py",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "ml-dtypes",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "ml-dtypes",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "tensorboard-plugin-profile",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "xprof"
+  },
+  {
+    "parent": "rich",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markdown-it-py"
+  },
+  {
+    "parent": "rich",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pygments"
+  },
+  {
+    "parent": "build",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "build",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyproject-hooks"
+  },
+  {
+    "parent": "build",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomli"
+  },
+  {
+    "parent": "optree",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "pytest-cov",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "coverage"
+  },
+  {
+    "parent": "pytest-cov",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pluggy"
+  },
+  {
+    "parent": "pytest-cov",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pytest"
+  },
+  {
+    "parent": "dm-tree",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "absl-py"
+  },
+  {
+    "parent": "dm-tree",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "attrs"
+  },
+  {
+    "parent": "dm-tree",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "dm-tree",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "dm-tree",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "wrapt"
+  },
+  {
+    "parent": "coverage",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomli"
+  },
+  {
+    "parent": "onnxruntime",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "flatbuffers"
+  },
+  {
+    "parent": "onnxruntime",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "onnxruntime",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "onnxruntime",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "openvino",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "openvino",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "openvino-telemetry"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "absl-py"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "astunparse"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "flatbuffers"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "gast"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-pasta"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "libclang"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "opt-einsum"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "setuptools"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "six"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "termcolor"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "wrapt"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "grpcio"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tensorboard"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "keras"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "h5py"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "ml-dtypes"
+  },
+  {
+    "parent": "tensorflow-cpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tensorflow-io-gcs-filesystem"
+  },
+  {
+    "parent": "tf2onnx",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "tf2onnx",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "onnx"
+  },
+  {
+    "parent": "tf2onnx",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "tf2onnx",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "flatbuffers"
+  },
+  {
+    "parent": "tf2onnx",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.6.0+cpu",
+    "child": "filelock"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.6.0+cpu",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.6.0+cpu",
+    "child": "networkx"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.6.0+cpu",
+    "child": "jinja2"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.6.0+cpu",
+    "child": "fsspec"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.6.0+cpu",
+    "child": "sympy"
+  },
+  {
+    "parent": "jax",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jaxlib"
+  },
+  {
+    "parent": "jax",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "ml-dtypes"
+  },
+  {
+    "parent": "jax",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "jax",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "opt-einsum"
+  },
+  {
+    "parent": "jax",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "scipy"
+  },
+  {
+    "parent": "flax",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "flax",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jax"
+  },
+  {
+    "parent": "flax",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "msgpack"
+  },
+  {
+    "parent": "flax",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "optax"
+  },
+  {
+    "parent": "flax",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "orbax-checkpoint"
+  },
+  {
+    "parent": "flax",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tensorstore"
+  },
+  {
+    "parent": "flax",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "rich"
+  },
+  {
+    "parent": "flax",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "flax",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "flax",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "treescope"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "absl-py"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "astunparse"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "flatbuffers"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "gast"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-pasta"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "libclang"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "opt-einsum"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "setuptools"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "six"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "termcolor"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "wrapt"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "grpcio"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tensorboard"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "keras"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "h5py"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "ml-dtypes"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tensorflow-io-gcs-filesystem"
+  },
+  {
+    "parent": "tf-keras",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tensorflow"
+  },
+  {
+    "parent": "torch-xla",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "absl-py"
+  },
+  {
+    "parent": "torch-xla",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "torch-xla",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "torch-xla",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "jinja2",
+    "parent_source": "private",
+    "parent_version": "3.1.6",
+    "child": "markupsafe"
+  },
+  {
+    "parent": "sympy",
+    "parent_source": "private",
+    "parent_version": "1.13.1",
+    "child": "mpmath"
+  }
+]

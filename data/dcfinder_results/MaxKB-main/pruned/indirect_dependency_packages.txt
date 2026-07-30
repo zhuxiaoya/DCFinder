@@ -1,0 +1,45 @@
+filelock >=3.10.0
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+  # from parent package: transformers (public)
+fsspec >=2023.5.0
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+jinja2
+  # from parent package: torch (private)
+markupsafe >=2.0
+  # from parent package: jinja2 (private)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+networkx
+  # from parent package: torch (private)
+sympy ==1.13.1
+  # from parent package: torch (private)
+typing-extensions >=4.10.0,>=4.5.0,<5,>=4.11,>=4.0.0,>=4.0,>=4.9.0,<5,>=4.10,>=4,<5.0.0,>=4.7.0,>=4.15.0,>=4.6.0,>=4.4,>=4.1.0,>=4.5,>=4.10.0,>=4.0,>=4.14.1,>=4,>=4.12.0,>=4.2,>=4.1.0,>=3.7.4,>=4.6.0,~=4.12,>=4.13.2
+  # from parent package: torch (private)
+  # from parent package: sentence-transformers (public)
+  # from parent package: openai (public)
+  # from parent package: beautifulsoup4 (public)
+  # from parent package: pypdf (public)
+  # from parent package: python-docx (public)
+  # from parent package: xinference-client (public)
+  # from parent package: anthropic (public)
+  # from parent package: asgiref (public)
+  # from parent package: langchain-core (public)
+  # from parent package: pydantic (public)
+  # from parent package: sqlalchemy (public)
+  # from parent package: aiohttp (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: anyio (public)
+  # from parent package: starlette (public)
+  # from parent package: uvicorn (public)
+  # from parent package: pydantic-core (public)
+  # from parent package: cron-descriptor (public)
+  # from parent package: astroid (public)
+  # from parent package: typing-inspection (public)
+  # from parent package: aiosignal (public)
+  # from parent package: multidict (public)
+  # from parent package: typing-inspect (private)
+  # from parent package: exceptiongroup (public)
+  # from parent package: grpcio (public)
+  # from parent package: cryptography (public)

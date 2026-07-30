@@ -1,0 +1,113 @@
+aiohappyeyeballs >=2.5.0
+  # from parent package: aiohttp (private)
+aiosignal >=1.4.0
+  # from parent package: aiohttp (private)
+async-timeout <6.0,>=4.0
+  # from parent package: aiohttp (private)
+attrs >=17.3.0
+  # from parent package: aiohttp (private)
+certifi >=2017.4.17
+  # from parent package: requests (private)
+  # from parent package: httpx (private)
+  # from parent package: httpcore (private)
+charset-normalizer <4,>=2
+  # from parent package: requests (private)
+contourpy >=1.0.1
+  # from parent package: matplotlib (private)
+cycler >=0.10
+  # from parent package: matplotlib (private)
+dill <0.3.9,>=0.3.0,>=0.3.8
+  # from parent package: datasets (private)
+  # from parent package: nlp (public)
+  # from parent package: multiprocess (private)
+filelock
+  # from parent package: transformers (private)
+  # from parent package: datasets (private)
+  # from parent package: nlp (public)
+  # from parent package: huggingface-hub (private)
+fonttools >=4.22.0
+  # from parent package: matplotlib (private)
+frozenlist >=1.1.1,>=1.1.0
+  # from parent package: aiohttp (private)
+  # from parent package: aiosignal (private)
+hf-xet <2.0.0,>=1.1.3
+  # from parent package: huggingface-hub (private)
+huggingface-hub <1.0,>=0.34.0,>=0.24.0,<1.0,>=0.16.4
+  # from parent package: transformers (private)
+  # from parent package: datasets (private)
+  # from parent package: tokenizers (private)
+idna <4,>=2.5,>=2.0,>=2.8
+  # from parent package: requests (private)
+  # from parent package: yarl (private)
+  # from parent package: httpx (private)
+  # from parent package: anyio (private)
+kiwisolver >=1.3.1
+  # from parent package: matplotlib (private)
+multidict <7.0,>=4.5,>=4.0
+  # from parent package: aiohttp (private)
+  # from parent package: yarl (private)
+multiprocess <0.70.17
+  # from parent package: datasets (private)
+packaging >=20.0,>=21.0,>=20.0,>=20.9,>=20.0,>=20.0
+  # from parent package: hydra-core (public)
+  # from parent package: transformers (private)
+  # from parent package: datasets (private)
+  # from parent package: spacy (public)
+  # from parent package: sphinx (public)
+  # from parent package: matplotlib (private)
+  # from parent package: huggingface-hub (private)
+  # from parent package: thinc (public)
+  # from parent package: weasel (public)
+pandas
+  # from parent package: datasets (private)
+  # from parent package: nlp (public)
+pillow >=8
+  # from parent package: matplotlib (private)
+propcache >=0.2.0,>=0.2.1
+  # from parent package: aiohttp (private)
+  # from parent package: yarl (private)
+pyarrow >=15.0.0,>=0.16.0
+  # from parent package: datasets (private)
+  # from parent package: nlp (public)
+pyparsing >=2.3.1
+  # from parent package: matplotlib (private)
+python-dateutil >=2.7,<3.0.0,>=2.1,>=2.8.2
+  # from parent package: matplotlib (private)
+  # from parent package: botocore (public)
+  # from parent package: pandas (private)
+pytz >=2020.1
+  # from parent package: pandas (private)
+pyyaml >=5.1,>=5.1.0,>=5.1
+  # from parent package: transformers (private)
+  # from parent package: datasets (private)
+  # from parent package: omegaconf (private)
+  # from parent package: huggingface-hub (private)
+regex !=2019.12.17
+  # from parent package: transformers (private)
+safetensors >=0.4.3
+  # from parent package: transformers (private)
+tokenizers <=0.23.0,>=0.22.0
+  # from parent package: transformers (private)
+typing-extensions >=4.3.0,>=4.2,>=4.1.0,>=3.7.4.3,<5.0,>=4.0,>=3.7.4.3,>=4.12.2,>4,!=4.7.0,>=4.6.0,>=4.12.0,>=4.5,>=4.6.0
+  # from parent package: gymnasium (public)
+  # from parent package: aiosignal (private)
+  # from parent package: multidict (private)
+  # from parent package: huggingface-hub (private)
+  # from parent package: confection (public)
+  # from parent package: typer (private)
+  # from parent package: pydantic (private)
+  # from parent package: cloudpathlib (public)
+  # from parent package: pydantic-core (private)
+  # from parent package: typing-inspection (private)
+  # from parent package: anyio (private)
+  # from parent package: exceptiongroup (public)
+tzdata >=2022.7
+  # from parent package: pandas (private)
+urllib3 <3,>=1.21.1,!=2.2.0,<3,>=1.25.4
+  # from parent package: requests (private)
+  # from parent package: botocore (public)
+xxhash
+  # from parent package: datasets (private)
+  # from parent package: nlp (public)
+yarl <2.0,>=1.17.0
+  # from parent package: aiohttp (private)

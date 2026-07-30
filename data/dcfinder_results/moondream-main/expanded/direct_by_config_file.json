@@ -1,0 +1,112 @@
+{
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/requirements.txt": [
+    {
+      "name": "accelerate",
+      "specifier": "==0.32.1"
+    },
+    {
+      "name": "huggingface-hub",
+      "specifier": "==0.24.0"
+    },
+    {
+      "name": "pillow",
+      "specifier": "==10.4.0"
+    },
+    {
+      "name": "pyvips-binary",
+      "specifier": "==8.16.0"
+    },
+    {
+      "name": "pyvips",
+      "specifier": "==2.2.3"
+    },
+    {
+      "name": "torch",
+      "specifier": "==2.5.1"
+    },
+    {
+      "name": "transformers",
+      "specifier": "==4.44.0"
+    },
+    {
+      "name": "gradio",
+      "specifier": "==4.38.1"
+    },
+    {
+      "name": "datasets",
+      "specifier": "==3.2.0"
+    },
+    {
+      "name": "editdistance",
+      "specifier": "==0.8.1"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-content-moderation/requirements.txt": [
+    {
+      "name": "opencv-python",
+      "specifier": ">=4.8.0"
+    },
+    {
+      "name": "numpy",
+      "specifier": ">=1.24.0,<3.0.0,>=2.1.2"
+    },
+    {
+      "name": "tqdm",
+      "specifier": ">=4.66.0,>=4.65.0"
+    },
+    {
+      "name": "ffmpeg-python",
+      "specifier": ""
+    },
+    {
+      "name": "einops",
+      "specifier": ">=0.7.0"
+    },
+    {
+      "name": "spaces",
+      "specifier": ""
+    },
+    {
+      "name": "torchvision",
+      "specifier": ">=0.20.1"
+    },
+    {
+      "name": "matplotlib",
+      "specifier": ">=3.7.0"
+    },
+    {
+      "name": "pandas",
+      "specifier": ">=2.0.0"
+    },
+    {
+      "name": "plotly",
+      "specifier": ""
+    },
+    {
+      "name": "deep-sort-realtime",
+      "specifier": ">=1.3.2"
+    },
+    {
+      "name": "scikit-learn",
+      "specifier": ""
+    },
+    {
+      "name": "scenedetect",
+      "specifier": ">=0.6.2"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/clients/python/pyproject.toml": [
+    {
+      "name": "onnxruntime",
+      "specifier": ">=1.19.2"
+    },
+    {
+      "name": "tokenizers",
+      "specifier": ">=0.20.1"
+    },
+    {
+      "name": "safetensors",
+      "specifier": ">=0.4.2"
+    }
+  ]
+}

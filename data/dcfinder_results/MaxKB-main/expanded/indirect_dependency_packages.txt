@@ -1,0 +1,459 @@
+aiohappyeyeballs >=2.5.0
+  # from parent package: aiohttp (public)
+aiohttp <4.0.0,>=3.8.3,>=3.7.0
+  # from parent package: langchain-community (public)
+  # from parent package: qianfan (public)
+  # from parent package: dashscope (public)
+aiolimiter >=1.1.0
+  # from parent package: qianfan (public)
+aiosignal >=1.4.0
+  # from parent package: aiohttp (public)
+amqp <6.0.0,>=5.1.1
+  # from parent package: kombu (public)
+annotated-doc >=0.0.2
+  # from parent package: typer (public)
+annotated-types >=0.6.0
+  # from parent package: pydantic (public)
+anyio >=4.5,<5,>=3.5.0,<5,>=3.5.0,>=4.7.0,<5,>=3.6.2
+  # from parent package: mcp (public)
+  # from parent package: openai (public)
+  # from parent package: httpx (public)
+  # from parent package: anthropic (public)
+  # from parent package: sse-starlette (public)
+  # from parent package: starlette (public)
+apscheduler <4.0,>=3.2
+  # from parent package: django-apscheduler (public)
+asgiref <4,>=3.6.0
+  # from parent package: django (public)
+astroid <=3.4.0.dev0,>=3.3.8
+  # from parent package: pylint (public)
+async-timeout <5.0.0,>=4.0.0,<6.0,>=4.0
+  # from parent package: langchain (public)
+  # from parent package: aiohttp (public)
+attrs >=17.3.0
+  # from parent package: aiohttp (public)
+bce-python-sdk >=0.8.79
+  # from parent package: qianfan (public)
+billiard <5.0,>=4.2.1
+  # from parent package: celery (public)
+botocore <1.38.0,>=1.37.31,<2.0a.0,>=1.37.4
+  # from parent package: boto3 (public)
+  # from parent package: s3transfer (public)
+cachetools >=4.2.2
+  # from parent package: zhipuai (public)
+certifi >=2017.4.17
+  # from parent package: httpx (public)
+  # from parent package: requests (private)
+  # from parent package: httpcore (public)
+charset-normalizer <3,>=2
+  # from parent package: requests (private)
+click <9.0,>=8.1.2,<9.0.0,>=8.4.2,>=7.0,>=7,>=7.0,>=4.0
+  # from parent package: celery (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: uvicorn (public)
+  # from parent package: click-didyoumean (public)
+  # from parent package: click-repl (public)
+  # from parent package: click-plugins (public)
+click-didyoumean >=0.3.0
+  # from parent package: celery (public)
+click-plugins >=1.1.1
+  # from parent package: celery (public)
+click-repl >=0.2.0
+  # from parent package: celery (public)
+crc32c >=2.2.post0
+  # from parent package: bce-python-sdk (public)
+cron-descriptor >=1.2.32
+  # from parent package: django-celery-beat (public)
+cryptography >=38.0.3
+  # from parent package: google-auth (public)
+dataclasses-json <0.7,>=0.5.7
+  # from parent package: langchain-community (public)
+dill >=0.2,>=0.4.1
+  # from parent package: pylint (public)
+  # from parent package: multiprocess (public)
+distro <2,>=1.7.0
+  # from parent package: openai (public)
+  # from parent package: anthropic (public)
+django-timezone-field >=5.0
+  # from parent package: django-celery-beat (public)
+docutils
+  # from parent package: python-daemon (public)
+et-xmlfile
+  # from parent package: openpyxl (public)
+exceptiongroup >=1.0.2
+  # from parent package: anyio (public)
+filelock >=3.10.0
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+  # from parent package: transformers (public)
+flatbuffers
+  # from parent package: onnxruntime (public)
+frozenlist >=1.1.1,>=1.1.0
+  # from parent package: aiohttp (public)
+  # from parent package: aiosignal (public)
+fsspec >=2023.5.0
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+future >=0.6.0
+  # from parent package: bce-python-sdk (public)
+google-ai-generativelanguage <0.7.0,>=0.6.16
+  # from parent package: langchain-google-genai (public)
+google-api-core !=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0,>=1.34.1
+  # from parent package: google-ai-generativelanguage (public)
+google-auth !=2.24.0,!=2.25.0,<3.0.0,>=2.14.1,<3.0.0,>=2.14.1
+  # from parent package: google-ai-generativelanguage (public)
+  # from parent package: google-api-core (public)
+googleapis-common-protos <2.0.0,>=1.63.2,>=1.5.5
+  # from parent package: google-api-core (public)
+  # from parent package: grpcio-status (public)
+grpcio <2.0.0,>=1.41.0,>=1.83.0rc1
+  # from parent package: google-api-core (public)
+  # from parent package: grpcio-status (public)
+grpcio-status <2.0.0,>=1.41.0
+  # from parent package: google-api-core (public)
+h11 >=0.8,>=0.16
+  # from parent package: uvicorn (public)
+  # from parent package: httpcore (public)
+hf-xet <2.0.0,>=1.5.1
+  # from parent package: huggingface-hub (public)
+httpcore ==1.*
+  # from parent package: httpx (public)
+huggingface-hub >=0.23.0,>=0.20.0,>=0.21.0,<2.0,>=0.16.4,<1.0,>=0.34.0
+  # from parent package: langchain-huggingface (public)
+  # from parent package: sentence-transformers (public)
+  # from parent package: accelerate (public)
+  # from parent package: tokenizers (public)
+  # from parent package: transformers (public)
+idna <4,>=2.5,>=2.8,>=2.0
+  # from parent package: httpx (public)
+  # from parent package: requests (private)
+  # from parent package: anyio (public)
+  # from parent package: yarl (public)
+inflection >=0.3.1
+  # from parent package: drf-yasg (public)
+isort !=5.13,<7,>=4.2.5
+  # from parent package: pylint (public)
+jinja2
+  # from parent package: torch (private)
+jiter <1,>=0.4.0
+  # from parent package: openai (public)
+  # from parent package: anthropic (public)
+jmespath <2.0.0,>=0.7.1
+  # from parent package: boto3 (public)
+  # from parent package: botocore (public)
+joblib >=1.4.0
+  # from parent package: scikit-learn (public)
+jsonpatch <2.0.0,>=1.33.0
+  # from parent package: langchain-core (public)
+jsonpointer >=1.9
+  # from parent package: jsonpatch (public)
+kombu <5.6,>=5.5.2
+  # from parent package: celery (public)
+langchain-core <1.0.0,>=0.3.51,<1.0.0,>=0.3.49,<1.0.0,>=0.3.53,<1.0.0,>=0.3.51,<1.0.0,>=0.3.47,<0.4.0,>=0.3.49,<0.4,>=0.3.36,<0.4.0,>=0.3.15,<1.0.0,>=0.3.52,<0.4,>=0.1,<2.0.0,>=0.3.75,>=0.2.38,!=0.3.0,!=0.3.1,!=0.3.10,!=0.3.11,!=0.3.12,!=0.3.13,!=0.3.14,!=0.3.15,!=0.3.16,!=0.3.17,!=0.3.18,!=0.3.19,!=0.3.2,!=0.3.20,!=0.3.21,!=0.3.22,!=0.3.3,!=0.3.4,!=0.3.5,!=0.3.6,!=0.3.7,!=0.3.8,!=0.3.9,<0.4.0,>=0.2.43
+  # from parent package: langchain (public)
+  # from parent package: langchain-openai (public)
+  # from parent package: langchain-anthropic (public)
+  # from parent package: langchain-community (public)
+  # from parent package: langchain-deepseek (public)
+  # from parent package: langchain-google-genai (public)
+  # from parent package: langchain-mcp-adapters (public)
+  # from parent package: langchain-huggingface (public)
+  # from parent package: langchain-ollama (public)
+  # from parent package: langgraph (public)
+  # from parent package: langchain-text-splitters (public)
+  # from parent package: langgraph-checkpoint (public)
+  # from parent package: langgraph-prebuilt (public)
+langchain-text-splitters <1.0.0,>=0.3.8
+  # from parent package: langchain (public)
+langgraph-checkpoint <3.0.0,>=2.0.10
+  # from parent package: langgraph (public)
+  # from parent package: langgraph-prebuilt (public)
+langgraph-prebuilt <0.2,>=0.1.1
+  # from parent package: langgraph (public)
+langgraph-sdk <0.2.0,>=0.1.42
+  # from parent package: langgraph (public)
+langsmith <0.4,>=0.1.17,<0.4,>=0.1.125,<1.0.0,>=0.3.45
+  # from parent package: langchain (public)
+  # from parent package: langchain-community (public)
+  # from parent package: langchain-core (public)
+lockfile >=0.10
+  # from parent package: python-daemon (public)
+lxml >=3.1.0
+  # from parent package: python-docx (public)
+markdown-it-py >=2.2.0
+  # from parent package: rich (public)
+markupsafe >=2.0
+  # from parent package: jinja2 (private)
+marshmallow <4.0.0,>=3.18.0
+  # from parent package: dataclasses-json (public)
+mccabe <0.8,>=0.6
+  # from parent package: pylint (public)
+mdurl ~=0.1
+  # from parent package: markdown-it-py (public)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+multidict <7.0,>=4.5,>=4.0
+  # from parent package: aiohttp (public)
+  # from parent package: yarl (public)
+multiprocess
+  # from parent package: qianfan (public)
+mypy-extensions >=0.3.0
+  # from parent package: typing-inspect (private)
+narwhals >=2.0.1
+  # from parent package: scikit-learn (public)
+networkx
+  # from parent package: torch (private)
+numpy <3,>=1.26.2,<2.0.0,>=1.19.5,>=1.21.2,>=1.17.0,>=1.17.3,>=1.19.3,<3.0.0,>=1.17,>=1.17,>=1.24.1,<2.8,>=2.0.0,>=2,>=1.21,>=1.21.6
+  # from parent package: langchain-community (public)
+  # from parent package: rapidocr-onnxruntime (public)
+  # from parent package: opencv-python-headless (public)
+  # from parent package: accelerate (public)
+  # from parent package: transformers (public)
+  # from parent package: scikit-learn (public)
+  # from parent package: scipy (public)
+  # from parent package: opencv-python (public)
+  # from parent package: shapely (public)
+  # from parent package: onnxruntime (public)
+ollama <1,>=0.4.4
+  # from parent package: langchain-ollama (public)
+onnxruntime >=1.7.0
+  # from parent package: rapidocr-onnxruntime (public)
+opencv-python >=4.5.1.48
+  # from parent package: rapidocr-onnxruntime (public)
+orjson <4.0.0,>=3.9.14,>=3.10.1
+  # from parent package: langsmith (public)
+  # from parent package: langgraph-sdk (public)
+ormsgpack >=1.10.0
+  # from parent package: langgraph-checkpoint (public)
+packaging >=21.0,>=20.0,<26.0.0,>=23.2.0,>=23.2,>=20.9,>=20.0,>=17.0
+  # from parent package: drf-yasg (public)
+  # from parent package: gunicorn (public)
+  # from parent package: accelerate (public)
+  # from parent package: langchain-core (public)
+  # from parent package: langsmith (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: transformers (public)
+  # from parent package: onnxruntime (public)
+  # from parent package: kombu (public)
+  # from parent package: marshmallow (public)
+platformdirs >=2.2
+  # from parent package: pylint (public)
+prompt-toolkit >=3.0.38,>=3.0.36
+  # from parent package: qianfan (public)
+  # from parent package: click-repl (public)
+propcache >=0.2.0,>=0.2.1
+  # from parent package: aiohttp (public)
+  # from parent package: yarl (public)
+proto-plus <2.0.0,>=1.22.3,<2.0.0,>=1.24.0
+  # from parent package: google-ai-generativelanguage (public)
+  # from parent package: google-api-core (public)
+protobuf !=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<7.0.0,>=3.20.2,>=4.25.8,<8.0.0,>=5.29.6,<8.0.0,>=4.25.8,<8.0.0,>=4.25.8,<8.0.0,>=7.35.1
+  # from parent package: google-ai-generativelanguage (public)
+  # from parent package: onnxruntime (public)
+  # from parent package: google-api-core (public)
+  # from parent package: proto-plus (public)
+  # from parent package: googleapis-common-protos (public)
+  # from parent package: grpcio-status (public)
+pyasn1 <0.7.0,>=0.6.1
+  # from parent package: pyasn1-modules (public)
+pyasn1-modules >=0.2.1
+  # from parent package: google-auth (public)
+pyclipper >=1.2.0
+  # from parent package: rapidocr-onnxruntime (public)
+pycparser
+  # from parent package: cffi (public)
+pydantic <3.0.0,>=2.7.4,<3,>=2,<3.0.0,>=2.7.2,<3,>=1.9.0,<3.0,>=1.9.0,<3,>=1.9.0,<3.0.0,>=2.7.4,<3,>=1,>=2.7.0,>=2.9
+  # from parent package: langchain (public)
+  # from parent package: langchain-anthropic (public)
+  # from parent package: langchain-google-genai (public)
+  # from parent package: mcp (public)
+  # from parent package: openai (public)
+  # from parent package: qianfan (public)
+  # from parent package: zhipuai (public)
+  # from parent package: xinference-client (public)
+  # from parent package: anthropic (public)
+  # from parent package: langchain-core (public)
+  # from parent package: langsmith (public)
+  # from parent package: pydantic-settings (public)
+  # from parent package: ollama (public)
+pydantic-core ==2.47.0
+  # from parent package: zhipuai (public)
+  # from parent package: pydantic (public)
+pydantic-settings <3.0.0,>=2.4.0,>=2.5.2
+  # from parent package: langchain-community (public)
+  # from parent package: mcp (public)
+pygments <3.0.0,>=2.13.0
+  # from parent package: rich (public)
+pyjwt <2.9.0,>=2.8.0
+  # from parent package: zhipuai (public)
+pymupdfb ==1.24.9
+  # from parent package: pymupdf (public)
+python-crontab >=2.3.4
+  # from parent package: django-celery-beat (public)
+python-dateutil >=2.8.2,<3.0.0,>=2.1
+  # from parent package: celery (public)
+  # from parent package: botocore (public)
+python-dotenv >=1.0,>=0.21.0
+  # from parent package: qianfan (public)
+  # from parent package: pydantic-settings (public)
+python-ipware >=2.0.3
+  # from parent package: django-ipware (public)
+python-multipart >=0.0.9
+  # from parent package: mcp (public)
+pytz >=2021.1
+  # from parent package: drf-yasg (public)
+pyyaml >=5.1,>=5.3,>=5.3,<7.0.0,>=6.0.1,<7.0.0,>=5.3.0,>=5.1,>=5.1
+  # from parent package: drf-yasg (public)
+  # from parent package: langchain (public)
+  # from parent package: langchain-community (public)
+  # from parent package: qianfan (public)
+  # from parent package: rapidocr-onnxruntime (public)
+  # from parent package: accelerate (public)
+  # from parent package: langchain-core (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: transformers (public)
+regex >=2022.1.18,!=2019.12.17
+  # from parent package: tiktoken (public)
+  # from parent package: transformers (public)
+requests <3,>=2,>=2.26.0,>=2.24,>=2.16.0,<3,>=2,<3.0.0,>=2.0.1,<3.0.0,>=2.33.0
+  # from parent package: langchain (public)
+  # from parent package: langchain-community (public)
+  # from parent package: tiktoken (public)
+  # from parent package: qianfan (public)
+  # from parent package: dashscope (public)
+  # from parent package: tencentcloud-sdk-python (public)
+  # from parent package: xinference-client (public)
+  # from parent package: langsmith (public)
+  # from parent package: transformers (public)
+  # from parent package: requests-toolbelt (public)
+  # from parent package: google-api-core (public)
+requests-toolbelt <2.0.0,>=1.0.0
+  # from parent package: langsmith (public)
+rich >=13.0.0,>=13.8.0
+  # from parent package: qianfan (public)
+  # from parent package: typer (public)
+s3transfer <0.12.0,>=0.11.0
+  # from parent package: boto3 (public)
+safetensors >=0.4.3
+  # from parent package: accelerate (public)
+  # from parent package: transformers (public)
+scikit-learn
+  # from parent package: sentence-transformers (public)
+scipy >=1.10.0
+  # from parent package: sentence-transformers (public)
+  # from parent package: scikit-learn (public)
+setuptools >=62.4.0
+  # from parent package: python-daemon (public)
+shapely !=2.0.4,>=1.7.1
+  # from parent package: rapidocr-onnxruntime (public)
+shellingham >=1.3.0
+  # from parent package: typer (public)
+six >=1.15.0,>=1.4.0,>=1.5
+  # from parent package: rapidocr-onnxruntime (public)
+  # from parent package: bce-python-sdk (public)
+  # from parent package: python-dateutil (public)
+sniffio
+  # from parent package: openai (public)
+  # from parent package: httpx (public)
+  # from parent package: anthropic (public)
+soupsieve >1.2
+  # from parent package: beautifulsoup4 (public)
+sqlalchemy <3,>=1.4,>=1.4.24
+  # from parent package: langchain (public)
+  # from parent package: langchain-community (public)
+  # from parent package: django-db-connection-pool (public)
+sqlparams >=4.0.0
+  # from parent package: django-db-connection-pool (public)
+sqlparse >=0.3.1
+  # from parent package: django (public)
+sse-starlette >=1.6.1
+  # from parent package: mcp (public)
+starlette >=0.27,>=0.49.1
+  # from parent package: mcp (public)
+  # from parent package: sse-starlette (public)
+sympy ==1.13.1
+  # from parent package: torch (private)
+tenacity !=8.4.0,<10,>=8.1.0,<9.0.0,>=8.2.3,!=8.4.0,<10.0.0,>=8.1.0
+  # from parent package: langchain-community (public)
+  # from parent package: qianfan (public)
+  # from parent package: langchain-core (public)
+threadpoolctl >=3.5.0
+  # from parent package: scikit-learn (public)
+tokenizers >=0.19.1,<=0.23.0,>=0.22.0
+  # from parent package: langchain-huggingface (public)
+  # from parent package: transformers (public)
+tomli >=1.1
+  # from parent package: pylint (public)
+tomlkit >=0.10.1
+  # from parent package: pylint (public)
+tqdm >4,>=4.42.1,>=4.27
+  # from parent package: sentence-transformers (public)
+  # from parent package: openai (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: transformers (public)
+transformers >=4.39.0,<5.0.0,>=4.41.0
+  # from parent package: langchain-huggingface (public)
+  # from parent package: sentence-transformers (public)
+typer >=0.9.0
+  # from parent package: qianfan (public)
+typing-extensions >=4.10.0,>=4.5.0,<5,>=4.11,>=4.0.0,>=4.0,>=4.9.0,<5,>=4.10,>=4,<5.0.0,>=4.7.0,>=4.15.0,>=4.6.0,>=4.4,>=4.1.0,>=4.5,>=4.10.0,>=4.0,>=4.14.1,>=4,>=4.12.0,>=4.2,>=4.1.0,>=3.7.4,>=4.6.0,~=4.12,>=4.13.2
+  # from parent package: torch (private)
+  # from parent package: sentence-transformers (public)
+  # from parent package: openai (public)
+  # from parent package: beautifulsoup4 (public)
+  # from parent package: pypdf (public)
+  # from parent package: python-docx (public)
+  # from parent package: xinference-client (public)
+  # from parent package: anthropic (public)
+  # from parent package: asgiref (public)
+  # from parent package: langchain-core (public)
+  # from parent package: pydantic (public)
+  # from parent package: sqlalchemy (public)
+  # from parent package: aiohttp (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: anyio (public)
+  # from parent package: starlette (public)
+  # from parent package: uvicorn (public)
+  # from parent package: pydantic-core (public)
+  # from parent package: cron-descriptor (public)
+  # from parent package: astroid (public)
+  # from parent package: typing-inspection (public)
+  # from parent package: aiosignal (public)
+  # from parent package: multidict (public)
+  # from parent package: typing-inspect (private)
+  # from parent package: exceptiongroup (public)
+  # from parent package: grpcio (public)
+  # from parent package: cryptography (public)
+typing-inspect <1,>=0.4.0
+  # from parent package: dataclasses-json (public)
+typing-inspection >=0.4.2,>=0.4.0
+  # from parent package: pydantic (public)
+  # from parent package: pydantic-settings (public)
+tzdata >=2025.2
+  # from parent package: django-celery-beat (public)
+  # from parent package: kombu (public)
+tzlocal >=3.0
+  # from parent package: apscheduler (public)
+uritemplate >=3.0.0
+  # from parent package: drf-yasg (public)
+urllib3 <1.27,>=1.21.1,!=2.2.0,<3,>=1.25.4
+  # from parent package: requests (private)
+  # from parent package: botocore (public)
+uuid-utils <1.0,>=0.12.0
+  # from parent package: langchain-core (public)
+uvicorn >=0.23.1
+  # from parent package: mcp (public)
+vine ==5.1.0
+  # from parent package: celery (public)
+  # from parent package: kombu (public)
+  # from parent package: amqp (public)
+wcwidth
+  # from parent package: prompt-toolkit (public)
+websocket-client
+  # from parent package: dashscope (public)
+xxhash <4.0.0,>=3.5.0
+  # from parent package: langgraph (public)
+yarl <2.0,>=1.17.0
+  # from parent package: aiohttp (public)
+zstandard <0.24.0,>=0.23.0
+  # from parent package: langsmith (public)

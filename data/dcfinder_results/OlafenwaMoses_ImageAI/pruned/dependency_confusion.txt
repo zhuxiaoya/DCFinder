@@ -1,0 +1,311 @@
+{
+     "direct dependency": {
+          "number": 12,
+          "packages": [
+               {
+                    "name": "cython",
+                    "specifier": "",
+                    "raw_requirement": "cython ; cython",
+                    "source_file": "analysis_program/OlafenwaMoses_ImageAI/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pillow",
+                    "specifier": ">=7.0.0",
+                    "raw_requirement": "pillow>=7.0.0 ; pillow>=7.0.0",
+                    "source_file": "analysis_program/OlafenwaMoses_ImageAI/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numpy",
+                    "specifier": ">=1.18.1",
+                    "raw_requirement": "numpy>=1.18.1 ; numpy>=1.18.1",
+                    "source_file": "analysis_program/OlafenwaMoses_ImageAI/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opencv-python",
+                    "specifier": ">=4.1.2",
+                    "raw_requirement": "opencv-python>=4.1.2 ; opencv-python>=4.1.2",
+                    "source_file": "analysis_program/OlafenwaMoses_ImageAI/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pytest",
+                    "specifier": "==7.1.3",
+                    "raw_requirement": "pytest==7.1.3 ; pytest==7.1.3",
+                    "source_file": "analysis_program/OlafenwaMoses_ImageAI/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tqdm",
+                    "specifier": "==4.64.1",
+                    "raw_requirement": "tqdm==4.64.1 ; tqdm==4.64.1",
+                    "source_file": "analysis_program/OlafenwaMoses_ImageAI/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scipy",
+                    "specifier": ">=1.7.3",
+                    "raw_requirement": "scipy>=1.7.3 ; scipy>=1.7.3",
+                    "source_file": "analysis_program/OlafenwaMoses_ImageAI/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "matplotlib",
+                    "specifier": ">=3.4.3",
+                    "raw_requirement": "matplotlib>=3.4.3 ; matplotlib>=3.4.3",
+                    "source_file": "analysis_program/OlafenwaMoses_ImageAI/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "mock",
+                    "specifier": "==4.0.3",
+                    "raw_requirement": "mock==4.0.3 ; mock==4.0.3",
+                    "source_file": "analysis_program/OlafenwaMoses_ImageAI/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch",
+                    "specifier": ">=1.9.0",
+                    "raw_requirement": "torch>=1.9.0 ; torch>=1.9.0",
+                    "source_file": "analysis_program/OlafenwaMoses_ImageAI/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torchvision",
+                    "specifier": ">=0.10.0",
+                    "raw_requirement": "torchvision>=0.10.0 ; torchvision>=0.10.0",
+                    "source_file": "analysis_program/OlafenwaMoses_ImageAI/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pycocotools",
+                    "specifier": "",
+                    "raw_requirement": "pycocotools@git+https://github.com/gautamchitnis/cocoapi.git@cocodataset-master#subdirectory=PythonAPI",
+                    "source_file": "analysis_program/OlafenwaMoses_ImageAI/requirements_extra.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 9,
+          "packages": [
+               {
+                    "name": "filelock",
+                    "specifier": "",
+                    "raw_requirement": "filelock",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "fsspec",
+                    "specifier": ">=0.8.5",
+                    "raw_requirement": "fsspec>=0.8.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": "",
+                    "raw_requirement": "jinja2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "markupsafe",
+                    "specifier": ">=2.0",
+                    "raw_requirement": "MarkupSafe>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jinja2",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "mpmath",
+                    "specifier": "<1.4,>=1.1.0",
+                    "raw_requirement": "mpmath<1.4,>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sympy",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "networkx",
+                    "specifier": ">=2.5.1",
+                    "raw_requirement": "networkx>=2.5.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "setuptools",
+                    "specifier": ">=77.0.3",
+                    "raw_requirement": "setuptools>=77.0.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "sympy",
+                    "specifier": ">=1.13.3",
+                    "raw_requirement": "sympy>=1.13.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=4.10.0",
+                    "raw_requirement": "typing-extensions>=4.10.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 3,
+          "packages": {
+               "pillow": {
+                    "private version": "12.2.0",
+                    "public version": "12.3.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": ">=7.0.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 38
+               },
+               "numpy": {
+                    "private version": "2.4.4",
+                    "public version": "2.5.1",
+                    "highest public (unconstrained)": "2.5.1",
+                    "declared specifier": ">=1.18.1",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 77
+               },
+               "tqdm": {
+                    "private version": "4.64.1",
+                    "public version": "4.64.1",
+                    "highest public (unconstrained)": "4.68.4",
+                    "declared specifier": "==4.64.1",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 9,
+          "packages": {
+               "filelock": {
+                    "private version": "3.29.0",
+                    "public version": "3.30.2",
+                    "highest public (unconstrained)": "3.30.2"
+               },
+               "fsspec": {
+                    "private version": "2026.4.0",
+                    "public version": "2026.6.0",
+                    "highest public (unconstrained)": "2026.6.0",
+                    "declared specifier": ">=0.8.5",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 62
+               },
+               "jinja2": {
+                    "private version": "3.1.6",
+                    "public version": "3.1.6",
+                    "highest public (unconstrained)": "3.1.6"
+               },
+               "markupsafe": {
+                    "private version": "3.0.3",
+                    "public version": "3.0.3",
+                    "highest public (unconstrained)": "3.0.3",
+                    "declared specifier": ">=2.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 12
+               },
+               "mpmath": {
+                    "private version": "1.3.0",
+                    "public version": "1.3.0",
+                    "highest public (unconstrained)": "1.5.0a0",
+                    "declared specifier": "<1.4,>=1.1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "networkx": {
+                    "private version": "3.6.1",
+                    "public version": "3.6.1",
+                    "highest public (unconstrained)": "3.6.1",
+                    "declared specifier": ">=2.5.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 40
+               },
+               "setuptools": {
+                    "private version": "78.1.0",
+                    "public version": "83.0.0",
+                    "highest public (unconstrained)": "83.0.0",
+                    "declared specifier": ">=77.0.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 25
+               },
+               "sympy": {
+                    "private version": "1.14.0",
+                    "public version": "1.14.0",
+                    "highest public (unconstrained)": "1.14.0",
+                    "declared specifier": ">=1.13.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "typing-extensions": {
+                    "private version": "4.15.0",
+                    "public version": "4.16.0",
+                    "highest public (unconstrained)": "4.16.0",
+                    "declared specifier": ">=4.10.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 20
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 14,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 12
+     }
+}

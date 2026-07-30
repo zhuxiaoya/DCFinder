@@ -1,0 +1,734 @@
+{
+     "direct dependency": {
+          "number": 61,
+          "packages": [
+               {
+                    "name": "django",
+                    "specifier": "==4.2.20",
+                    "raw_requirement": "django==4.2.20",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "djangorestframework",
+                    "specifier": "==3.16.0",
+                    "raw_requirement": "djangorestframework==3.16.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "drf-yasg",
+                    "specifier": "==1.21.7",
+                    "raw_requirement": "drf-yasg==1.21.7",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "django-filter",
+                    "specifier": "==23.2",
+                    "raw_requirement": "django-filter==23.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "langchain",
+                    "specifier": "==0.3.23",
+                    "raw_requirement": "langchain==0.3.23",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "langchain-openai",
+                    "specifier": "==0.3.12",
+                    "raw_requirement": "langchain-openai==0.3.12",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "langchain-anthropic",
+                    "specifier": "==0.3.12",
+                    "raw_requirement": "langchain-anthropic==0.3.12",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "langchain-community",
+                    "specifier": "==0.3.21",
+                    "raw_requirement": "langchain-community==0.3.21",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "langchain-deepseek",
+                    "specifier": "==0.1.3",
+                    "raw_requirement": "langchain-deepseek==0.1.3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "langchain-google-genai",
+                    "specifier": "==2.1.2",
+                    "raw_requirement": "langchain-google-genai==2.1.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "langchain-mcp-adapters",
+                    "specifier": "==0.0.11",
+                    "raw_requirement": "langchain-mcp-adapters==0.0.11",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "langchain-huggingface",
+                    "specifier": "==0.1.2",
+                    "raw_requirement": "langchain-huggingface==0.1.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "langchain-ollama",
+                    "specifier": "==0.3.2",
+                    "raw_requirement": "langchain-ollama==0.3.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "langgraph",
+                    "specifier": "==0.3.27",
+                    "raw_requirement": "langgraph==0.3.27",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "mcp",
+                    "specifier": "==1.8.0",
+                    "raw_requirement": "mcp==1.8.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "psycopg2-binary",
+                    "specifier": "==2.9.10",
+                    "raw_requirement": "psycopg2-binary==2.9.10",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "jieba",
+                    "specifier": "==0.42.1",
+                    "raw_requirement": "jieba==0.42.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "diskcache",
+                    "specifier": "==5.6.3",
+                    "raw_requirement": "diskcache==5.6.3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pillow",
+                    "specifier": "==10.4.0",
+                    "raw_requirement": "pillow==10.4.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "filetype",
+                    "specifier": "==1.2.0",
+                    "raw_requirement": "filetype==1.2.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch",
+                    "specifier": "==2.6.0",
+                    "raw_requirement": "torch==2.6.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "sentence-transformers",
+                    "specifier": "==4.0.2",
+                    "raw_requirement": "sentence-transformers==4.0.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "openai",
+                    "specifier": "==1.72.0",
+                    "raw_requirement": "openai==1.72.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tiktoken",
+                    "specifier": "==0.7.0",
+                    "raw_requirement": "tiktoken==0.7.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "qianfan",
+                    "specifier": "==0.3.18",
+                    "raw_requirement": "qianfan==0.3.18",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pycryptodome",
+                    "specifier": "==3.22.0",
+                    "raw_requirement": "pycryptodome==3.22.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "beautifulsoup4",
+                    "specifier": "==4.13.3",
+                    "raw_requirement": "beautifulsoup4==4.13.3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "html2text",
+                    "specifier": "==2024.2.26",
+                    "raw_requirement": "html2text==2024.2.26",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "django-ipware",
+                    "specifier": "==6.0.5",
+                    "raw_requirement": "django-ipware==6.0.5",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "django-apscheduler",
+                    "specifier": "==0.6.2",
+                    "raw_requirement": "django-apscheduler==0.6.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pymupdf",
+                    "specifier": "==1.24.9",
+                    "raw_requirement": "pymupdf==1.24.9",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pypdf",
+                    "specifier": "==4.3.1",
+                    "raw_requirement": "pypdf==4.3.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "rapidocr-onnxruntime",
+                    "specifier": "==1.3.24",
+                    "raw_requirement": "rapidocr-onnxruntime==1.3.24",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "python-docx",
+                    "specifier": "==1.1.2",
+                    "raw_requirement": "python-docx==1.1.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "xlwt",
+                    "specifier": "==1.3.0",
+                    "raw_requirement": "xlwt==1.3.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "dashscope",
+                    "specifier": "==1.23.1",
+                    "raw_requirement": "dashscope==1.23.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "zhipuai",
+                    "specifier": "==2.1.5.20250410",
+                    "raw_requirement": "zhipuai==2.1.5.20250410",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "httpx",
+                    "specifier": "==0.27.2",
+                    "raw_requirement": "httpx==0.27.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "httpx-sse",
+                    "specifier": "==0.4.0",
+                    "raw_requirement": "httpx-sse==0.4.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "websockets",
+                    "specifier": "==13.1",
+                    "raw_requirement": "websockets==13.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "openpyxl",
+                    "specifier": "==3.1.5",
+                    "raw_requirement": "openpyxl==3.1.5",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "xlrd",
+                    "specifier": "==2.0.1",
+                    "raw_requirement": "xlrd==2.0.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gunicorn",
+                    "specifier": "==23.0.0",
+                    "raw_requirement": "gunicorn==23.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "python-daemon",
+                    "specifier": "==3.0.1",
+                    "raw_requirement": "python-daemon==3.0.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "boto3",
+                    "specifier": "==1.37.31",
+                    "raw_requirement": "boto3==1.37.31",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tencentcloud-sdk-python",
+                    "specifier": "==3.0.1357",
+                    "raw_requirement": "tencentcloud-sdk-python==3.0.1357",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "xinference-client",
+                    "specifier": "==1.4.1",
+                    "raw_requirement": "xinference-client==1.4.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "psutil",
+                    "specifier": "==6.1.1",
+                    "raw_requirement": "psutil==6.1.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "celery",
+                    "specifier": "==5.5.1",
+                    "raw_requirement": "celery==5.5.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "django-celery-beat",
+                    "specifier": "==2.7.0",
+                    "raw_requirement": "django-celery-beat==2.7.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "celery-once",
+                    "specifier": "==3.0.1",
+                    "raw_requirement": "celery-once==3.0.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "anthropic",
+                    "specifier": "==0.49.0",
+                    "raw_requirement": "anthropic==0.49.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pylint",
+                    "specifier": "==3.3.6",
+                    "raw_requirement": "pylint==3.3.6",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pydub",
+                    "specifier": "==0.25.1",
+                    "raw_requirement": "pydub==0.25.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "cffi",
+                    "specifier": "==1.17.1",
+                    "raw_requirement": "cffi==1.17.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pysilk",
+                    "specifier": "==0.0.1",
+                    "raw_requirement": "pysilk==0.0.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "django-db-connection-pool",
+                    "specifier": "==1.2.5",
+                    "raw_requirement": "django-db-connection-pool==1.2.5",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opencv-python-headless",
+                    "specifier": "==4.11.0.86",
+                    "raw_requirement": "opencv-python-headless==4.11.0.86",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pymysql",
+                    "specifier": "==1.1.1",
+                    "raw_requirement": "pymysql==1.1.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "accelerate",
+                    "specifier": "==1.6.0",
+                    "raw_requirement": "accelerate==1.6.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "captcha",
+                    "specifier": "==0.7.1",
+                    "raw_requirement": "captcha==0.7.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/MaxKB-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 8,
+          "packages": [
+               {
+                    "name": "filelock",
+                    "specifier": ">=3.10.0",
+                    "raw_requirement": "filelock ; filelock>=3.10.0 ; filelock",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fsspec",
+                    "specifier": ">=2023.5.0",
+                    "raw_requirement": "fsspec ; fsspec>=2023.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": "",
+                    "raw_requirement": "jinja2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "markupsafe",
+                    "specifier": ">=2.0",
+                    "raw_requirement": "MarkupSafe>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jinja2",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "mpmath",
+                    "specifier": "<1.4,>=1.1.0",
+                    "raw_requirement": "mpmath <1.4,>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sympy",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "networkx",
+                    "specifier": "",
+                    "raw_requirement": "networkx",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "sympy",
+                    "specifier": "==1.13.1",
+                    "raw_requirement": "sympy (==1.13.1) ; python_version >= \"3.9\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=4.10.0,>=4.5.0,<5,>=4.11,>=4.0.0,>=4.0,>=4.9.0,<5,>=4.10,>=4,<5.0.0,>=4.7.0,>=4.15.0,>=4.6.0,>=4.4,>=4.1.0,>=4.5,>=4.10.0,>=4.0,>=4.14.1,>=4,>=4.12.0,>=4.2,>=4.1.0,>=3.7.4,>=4.6.0,~=4.12,>=4.13.2",
+                    "raw_requirement": "typing-extensions (>=4.10.0) ; typing_extensions>=4.5.0 ; typing-extensions<5,>=4.11 ; typing-extensions>=4.0.0 ; typing_extensions>=4.0; python_version < \"3.11\" ; typing-extensions>=4.9.0 ; typing-extensions ; typing-extensions<5,>=4.10 ; typing_extensions>=4; python_version < \"3.11\" ; typing-extensions<5.0.0,>=4.7.0 ; typing-extensions>=4.15.0 ; typing-extensions>=4.6.0 ; typing_extensions>=4.4; python_version < \"3.13\" ; typing-extensions>=4.1.0 ; typing_extensions>=4.5; python_version < \"3.13\" ; typing-extensions>=4.10.0; python_version < \"3.13\" ; typing-extensions>=4.0; python_version < \"3.11\" ; typing-extensions>=4.14.1 ; typing_extensions ; typing-extensions>=4; python_version < \"3.11\" ; typing-extensions>=4.12.0 ; typing-extensions>=4.2; python_version < \"3.13\" ; typing-extensions>=4.1.0; python_version < \"3.11\" ; typing-extensions (>=3.7.4) ; typing-extensions>=4.6.0; python_version < \"3.13\" ; typing-extensions~=4.12 ; typing-extensions>=4.13.2; python_full_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "sentence-transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "openai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "beautifulsoup4",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pypdf",
+                              "source": "public"
+                         },
+                         {
+                              "name": "python-docx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "xinference-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anthropic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "asgiref",
+                              "source": "public"
+                         },
+                         {
+                              "name": "langchain-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "sqlalchemy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "starlette",
+                              "source": "public"
+                         },
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cron-descriptor",
+                              "source": "public"
+                         },
+                         {
+                              "name": "astroid",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typing-inspection",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiosignal",
+                              "source": "public"
+                         },
+                         {
+                              "name": "multidict",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typing-inspect",
+                              "source": "private"
+                         },
+                         {
+                              "name": "exceptiongroup",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpcio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cryptography",
+                              "source": "public"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 1,
+          "packages": {
+               "pillow": {
+                    "private version": "10.4.0",
+                    "public version": "10.4.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": "==10.4.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 8,
+          "packages": {
+               "filelock": {
+                    "private version": "3.29.0",
+                    "public version": "3.29.7",
+                    "highest public (unconstrained)": "3.29.7",
+                    "declared specifier": ">=3.10.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 56
+               },
+               "fsspec": {
+                    "private version": "2026.4.0",
+                    "public version": "2026.6.0",
+                    "highest public (unconstrained)": "2026.6.0",
+                    "declared specifier": ">=2023.5.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 33
+               },
+               "jinja2": {
+                    "private version": "3.1.6",
+                    "public version": "3.1.6",
+                    "highest public (unconstrained)": "3.1.6"
+               },
+               "markupsafe": {
+                    "private version": "3.0.3",
+                    "public version": "3.0.3",
+                    "highest public (unconstrained)": "3.0.3",
+                    "declared specifier": ">=2.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 12
+               },
+               "mpmath": {
+                    "private version": "1.3.0",
+                    "public version": "1.3.0",
+                    "highest public (unconstrained)": "1.5.0a0",
+                    "declared specifier": "<1.4,>=1.1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "networkx": {
+                    "private version": "3.6.1",
+                    "public version": "3.6.1",
+                    "highest public (unconstrained)": "3.6.1"
+               },
+               "sympy": {
+                    "private version": "1.13.1",
+                    "public version": "1.13.1",
+                    "highest public (unconstrained)": "1.14.0",
+                    "declared specifier": "==1.13.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "typing-extensions": {
+                    "private version": "4.15.0",
+                    "public version": "4.16.0",
+                    "highest public (unconstrained)": "4.16.0",
+                    "declared specifier": ">=4.10.0,>=4.5.0,<5,>=4.11,>=4.0.0,>=4.0,>=4.9.0,<5,>=4.10,>=4,<5.0.0,>=4.7.0,>=4.15.0,>=4.6.0,>=4.4,>=4.1.0,>=4.5,>=4.10.0,>=4.0,>=4.14.1,>=4,>=4.12.0,>=4.2,>=4.1.0,>=3.7.4,>=4.6.0,~=4.12,>=4.13.2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 10,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 130
+     }
+}

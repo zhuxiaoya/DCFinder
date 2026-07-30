@@ -1,0 +1,341 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/2e/93/62ad1cbba078c3f743709b61a05b91346617f6079bb706a5c1ce5ff26d8f/django_filter-23.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=d12d8e0fc6d3eb26641e553e5d53b191eb8cec611427d4bdce0becb1f7c172b5",
+          "hashes": {
+            "sha256": "d12d8e0fc6d3eb26641e553e5d53b191eb8cec611427d4bdce0becb1f7c172b5"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "django-filter",
+        "version": "23.2",
+        "summary": "Django-filter is a reusable Django application for allowing users to filter querysets dynamically.",
+        "home_page": "https://github.com/carltongibson/django-filter/tree/main",
+        "author": "Alex Gaynor",
+        "author_email": "alex.gaynor@gmail.com",
+        "maintainer": "Carlton Gibson",
+        "maintainer_email": "carlton.gibson@noumenal.es",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Web Environment",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Framework :: Django",
+          "Framework :: Django :: 3.2",
+          "Framework :: Django :: 4.0",
+          "Framework :: Django :: 4.1",
+          "Framework :: Django :: 4.2",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11"
+        ],
+        "requires_dist": [
+          "Django (>=3.2)"
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Documentation, https://django-filter.readthedocs.io/en/main/",
+          "Changelog, https://github.com/carltongibson/django-filter/blob/main/CHANGES.rst",
+          "Bug Tracker, https://github.com/carltongibson/django-filter/issues",
+          "Source Code, https://github.com/carltongibson/django-filter"
+        ],
+        "description": "Django Filter\n=============\n\nDjango-filter is a reusable Django application allowing users to declaratively\nadd dynamic ``QuerySet`` filtering from URL parameters.\n\nFull documentation on `read the docs`_.\n\n.. image:: https://codecov.io/gh/carltongibson/django-filter/branch/develop/graph/badge.svg\n    :target: https://codecov.io/gh/carltongibson/django-filter\n\n.. image:: https://badge.fury.io/py/django-filter.svg\n    :target: http://badge.fury.io/py/django-filter\n\n\nVersioning and stability policy\n-------------------------------\n\nDjango-Filter is a mature and stable package. It uses a two-part CalVer\nversioning scheme, such as ``21.1``. The first number is the year. The second\nis the release number within that year.\n\nOn an on-going basis, Django-Filter aims to support all current Django\nversions, the matching current Python versions, and the latest version of\nDjango REST Framework.\n\nPlease see:\n\n* `Status of supported Python branches <https://devguide.python.org/#status-of-python-branches>`_\n* `List of supported Django versions <https://www.djangoproject.com/download/#support-versions>`_\n\nSupport for Python and Django versions will be dropped when they reach\nend-of-life. Support for Python versions will dropped when they reach\nend-of-life, even when still supported by a current version of Django.\n\nOther breaking changes are rare. Where required, every effort will be made to\napply a \"Year plus two\" deprecation period. For example, a change initially\nintroduced in ``23.x`` would offer a fallback where feasible and finally be\nremoved in ``25.1``. Where fallbacks are not feasible, breaking changes without\ndeprecation will be called out in the release notes.\n\n\nInstallation\n------------\n\nInstall using pip:\n\n.. code-block:: sh\n\n    pip install django-filter\n\nThen add ``'django_filters'`` to your ``INSTALLED_APPS``.\n\n.. code-block:: python\n\n    INSTALLED_APPS = [\n        ...\n        'django_filters',\n    ]\n\n\nUsage\n-----\n\nDjango-filter can be used for generating interfaces similar to the Django\nadmin's ``list_filter`` interface.  It has an API very similar to Django's\n``ModelForms``.  For example, if you had a Product model you could have a\nfilterset for it with the code:\n\n.. code-block:: python\n\n    import django_filters\n\n    class ProductFilter(django_filters.FilterSet):\n        class Meta:\n            model = Product\n            fields = ['name', 'price', 'manufacturer']\n\n\nAnd then in your view you could do:\n\n.. code-block:: python\n\n    def product_list(request):\n        filter = ProductFilter(request.GET, queryset=Product.objects.all())\n        return render(request, 'my_app/template.html', {'filter': filter})\n\n\nUsage with Django REST Framework\n--------------------------------\n\nDjango-filter provides a custom ``FilterSet`` and filter backend for use with\nDjango REST Framework.\n\nTo use this adjust your import to use\n``django_filters.rest_framework.FilterSet``.\n\n.. code-block:: python\n\n    from django_filters import rest_framework as filters\n\n    class ProductFilter(filters.FilterSet):\n        class Meta:\n            model = Product\n            fields = ('category', 'in_stock')\n\n\nFor more details see the `DRF integration docs`_.\n\n\nSupport\n-------\n\nIf you need help you can start a `discussion`_. For commercial support, please\n`contact Carlton Gibson via his website <https://noumenal.es/>`_.\n\n.. _`discussion`: https://github.com/carltongibson/django-filter/discussions\n.. _`read the docs`: https://django-filter.readthedocs.io/en/main/\n.. _`DRF integration docs`: https://django-filter.readthedocs.io/en/stable/guide/rest_framework.html\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/4e/13/1e5e3e4c15dcecb04281b3cb2a46a4670e1cef131068e202f6040df19224/django-5.2.16-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=04f354bf9d807a86ad1a8392fe3808d362358a8eafc322848e0e43e59b24371d",
+          "hashes": {
+            "sha256": "04f354bf9d807a86ad1a8392fe3808d362358a8eafc322848e0e43e59b24371d"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "Django",
+        "version": "5.2.16",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "A high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+        "description_content_type": "text/x-rst",
+        "author_email": "Django Software Foundation <foundation@djangoproject.com>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE",
+          "LICENSE.python",
+          "AUTHORS"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Web Environment",
+          "Framework :: Django",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Topic :: Internet :: WWW/HTTP",
+          "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+          "Topic :: Internet :: WWW/HTTP :: WSGI",
+          "Topic :: Software Development :: Libraries :: Application Frameworks",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "asgiref>=3.8.1",
+          "sqlparse>=0.3.1",
+          "tzdata; sys_platform == \"win32\"",
+          "argon2-cffi>=19.1.0; extra == \"argon2\"",
+          "bcrypt; extra == \"bcrypt\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://www.djangoproject.com/",
+          "Documentation, https://docs.djangoproject.com/",
+          "Release notes, https://docs.djangoproject.com/en/stable/releases/",
+          "Funding, https://www.djangoproject.com/fundraising/",
+          "Source, https://github.com/django/django",
+          "Tracker, https://code.djangoproject.com/"
+        ],
+        "provides_extra": [
+          "argon2",
+          "bcrypt"
+        ],
+        "description": "======\nDjango\n======\n\nDjango is a high-level Python web framework that encourages rapid development\nand clean, pragmatic design. Thanks for checking it out.\n\nAll documentation is in the \"``docs``\" directory and online at\nhttps://docs.djangoproject.com/en/stable/. If you're just getting started,\nhere's how we recommend you read the docs:\n\n* First, read ``docs/intro/install.txt`` for instructions on installing Django.\n\n* Next, work through the tutorials in order (``docs/intro/tutorial01.txt``,\n  ``docs/intro/tutorial02.txt``, etc.).\n\n* If you want to set up an actual deployment server, read\n  ``docs/howto/deployment/index.txt`` for instructions.\n\n* You'll probably want to read through the topical guides (in ``docs/topics``)\n  next; from there you can jump to the HOWTOs (in ``docs/howto``) for specific\n  problems, and check out the reference (``docs/ref``) for gory details.\n\n* See ``docs/README`` for instructions on building an HTML version of the docs.\n\nDocs are updated rigorously. If you find any problems in the docs, or think\nthey should be clarified in any way, please take 30 seconds to fill out a\nticket here: https://code.djangoproject.com/newticket\n\nTo get more help:\n\n* Join the ``#django`` channel on ``irc.libera.chat``. Lots of helpful people\n  hang out there. `Webchat is available <https://web.libera.chat/#django>`_.\n\n* Join the `Django Discord community <https://chat.djangoproject.com>`_.\n\n* Join the community on the `Django Forum <https://forum.djangoproject.com/>`_.\n\nTo contribute to Django:\n\n* Check out https://docs.djangoproject.com/en/dev/internals/contributing/ for\n  information about getting involved.\n\nTo run Django's test suite:\n\n* Follow the instructions in the \"Unit tests\" section of\n  ``docs/internals/contributing/writing-code/unit-tests.txt``, published online at\n  https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/#running-the-unit-tests\n\nSupporting the Development of Django\n====================================\n\nDjango's development depends on your contributions.\n\nIf you depend on Django, remember to support the Django Software Foundation: https://www.djangoproject.com/fundraising/\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/5c/0a/a72d10ed65068e115044937873362e6e32fab1b7dce0046aeb224682c989/asgiref-3.11.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=e8667a091e69529631969fd45dc268fa79b99c92c5fcdda727757e52146ec133",
+          "hashes": {
+            "sha256": "e8667a091e69529631969fd45dc268fa79b99c92c5fcdda727757e52146ec133"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "asgiref",
+        "version": "3.11.1",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "ASGI specs, helper code, and adapters",
+        "home_page": "https://github.com/django/asgiref/",
+        "author": "Django Software Foundation",
+        "author_email": "foundation@djangoproject.com",
+        "license": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Web Environment",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Topic :: Internet :: WWW/HTTP"
+        ],
+        "requires_dist": [
+          "typing_extensions>=4; python_version < \"3.11\"",
+          "pytest; extra == \"tests\"",
+          "pytest-asyncio; extra == \"tests\"",
+          "mypy>=1.14.0; extra == \"tests\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Documentation, https://asgi.readthedocs.io/",
+          "Further Documentation, https://docs.djangoproject.com/en/stable/topics/async/#async-adapter-functions",
+          "Changelog, https://github.com/django/asgiref/blob/master/CHANGELOG.txt"
+        ],
+        "provides_extra": [
+          "tests"
+        ],
+        "description": "asgiref\n=======\n\n.. image:: https://github.com/django/asgiref/actions/workflows/tests.yml/badge.svg\n    :target: https://github.com/django/asgiref/actions/workflows/tests.yml\n\n.. image:: https://img.shields.io/pypi/v/asgiref.svg\n    :target: https://pypi.python.org/pypi/asgiref\n\nASGI is a standard for Python asynchronous web apps and servers to communicate\nwith each other, and positioned as an asynchronous successor to WSGI. You can\nread more at https://asgi.readthedocs.io/en/latest/\n\nThis package includes ASGI base libraries, such as:\n\n* Sync-to-async and async-to-sync function wrappers, ``asgiref.sync``\n* Server base classes, ``asgiref.server``\n* A WSGI-to-ASGI adapter, in ``asgiref.wsgi``\n\n\nFunction wrappers\n-----------------\n\nThese allow you to wrap or decorate async or sync functions to call them from\nthe other style (so you can call async functions from a synchronous thread,\nor vice-versa).\n\nIn particular:\n\n* AsyncToSync lets a synchronous subthread stop and wait while the async\n  function is called on the main thread's event loop, and then control is\n  returned to the thread when the async function is finished.\n\n* SyncToAsync lets async code call a synchronous function, which is run in\n  a threadpool and control returned to the async coroutine when the synchronous\n  function completes.\n\nThe idea is to make it easier to call synchronous APIs from async code and\nasynchronous APIs from synchronous code so it's easier to transition code from\none style to the other. In the case of Channels, we wrap the (synchronous)\nDjango view system with SyncToAsync to allow it to run inside the (asynchronous)\nASGI server.\n\nNote that exactly what threads things run in is very specific, and aimed to\nkeep maximum compatibility with old synchronous code. See\n\"Synchronous code & Threads\" below for a full explanation. By default,\n``sync_to_async`` will run all synchronous code in the program in the same\nthread for safety reasons; you can disable this for more performance with\n``@sync_to_async(thread_sensitive=False)``, but make sure that your code does\nnot rely on anything bound to threads (like database connections) when you do.\n\n\nThreadlocal replacement\n-----------------------\n\nThis is a drop-in replacement for ``threading.local`` that works with both\nthreads and asyncio Tasks. Even better, it will proxy values through from a\ntask-local context to a thread-local context when you use ``sync_to_async``\nto run things in a threadpool, and vice-versa for ``async_to_sync``.\n\nIf you instead want true thread- and task-safety, you can set\n``thread_critical`` on the Local object to ensure this instead.\n\n\nServer base classes\n-------------------\n\nIncludes a ``StatelessServer`` class which provides all the hard work of\nwriting a stateless server (as in, does not handle direct incoming sockets\nbut instead consumes external streams or sockets to work out what is happening).\n\nAn example of such a server would be a chatbot server that connects out to\na central chat server and provides a \"connection scope\" per user chatting to\nit. There's only one actual connection, but the server has to separate things\ninto several scopes for easier writing of the code.\n\nYou can see an example of this being used in `frequensgi <https://github.com/andrewgodwin/frequensgi>`_.\n\n\nWSGI-to-ASGI adapter\n--------------------\n\nAllows you to wrap a WSGI application so it appears as a valid ASGI application.\n\nSimply wrap it around your WSGI application like so::\n\n    asgi_application = WsgiToAsgi(wsgi_application)\n\nThe WSGI application will be run in a synchronous threadpool, and the wrapped\nASGI application will be one that accepts ``http`` class messages.\n\nPlease note that not all extended features of WSGI may be supported (such as\nfile handles for incoming POST bodies).\n\n\nDependencies\n------------\n\n``asgiref`` requires Python 3.9 or higher.\n\n\nContributing\n------------\n\nPlease refer to the\n`main Channels contributing docs <https://github.com/django/channels/blob/master/CONTRIBUTING.rst>`_.\n\n\nTesting\n'''''''\n\nTo run tests, make sure you have installed the ``tests`` extra with the package::\n\n    cd asgiref/\n    pip install -e .[tests]\n    pytest\n\n\nBuilding the documentation\n''''''''''''''''''''''''''\n\nThe documentation uses `Sphinx <http://www.sphinx-doc.org>`_::\n\n    cd asgiref/docs/\n    pip install sphinx\n\nTo build the docs, you can use the default tools::\n\n    sphinx-build -b html . _build/html  # or `make html`, if you've got make set up\n    cd _build/html\n    python -m http.server\n\n...or you can use ``sphinx-autobuild`` to run a server and rebuild/reload\nyour documentation changes automatically::\n\n    pip install sphinx-autobuild\n    sphinx-autobuild . _build/html\n\n\nReleasing\n'''''''''\n\nTo release, first add details to CHANGELOG.txt and update the version number in ``asgiref/__init__.py``.\n\nThen, build and push the packages::\n\n    python -m build\n    twine upload dist/*\n    rm -r asgiref.egg-info dist\n\n\nImplementation Details\n----------------------\n\nSynchronous code & threads\n''''''''''''''''''''''''''\n\nThe ``asgiref.sync`` module provides two wrappers that let you go between\nasynchronous and synchronous code at will, while taking care of the rough edges\nfor you.\n\nUnfortunately, the rough edges are numerous, and the code has to work especially\nhard to keep things in the same thread as much as possible. Notably, the\nrestrictions we are working with are:\n\n* All synchronous code called through ``SyncToAsync`` and marked with\n  ``thread_sensitive`` should run in the same thread as each other (and if the\n  outer layer of the program is synchronous, the main thread)\n\n* If a thread already has a running async loop, ``AsyncToSync`` can't run things\n  on that loop if it's blocked on synchronous code that is above you in the\n  call stack.\n\nThe first compromise you get to might be that ``thread_sensitive`` code should\njust run in the same thread and not spawn in a sub-thread, fulfilling the first\nrestriction, but that immediately runs you into the second restriction.\n\nThe only real solution is to essentially have a variant of ThreadPoolExecutor\nthat executes any ``thread_sensitive`` code on the outermost synchronous\nthread - either the main thread, or a single spawned subthread.\n\nThis means you now have two basic states:\n\n* If the outermost layer of your program is synchronous, then all async code\n  run through ``AsyncToSync`` will run in a per-call event loop in arbitrary\n  sub-threads, while all ``thread_sensitive`` code will run in the main thread.\n\n* If the outermost layer of your program is asynchronous, then all async code\n  runs on the main thread's event loop, and all ``thread_sensitive`` synchronous\n  code will run in a single shared sub-thread.\n\nCrucially, this means that in both cases there is a thread which is a shared\nresource that all ``thread_sensitive`` code must run on, and there is a chance\nthat this thread is currently blocked on its own ``AsyncToSync`` call. Thus,\n``AsyncToSync`` needs to act as an executor for thread code while it's blocking.\n\nThe ``CurrentThreadExecutor`` class provides this functionality; rather than\nsimply waiting on a Future, you can call its ``run_until_future`` method and\nit will run submitted code until that Future is done. This means that code\ninside the call can then run code on your thread.\n\n\nMaintenance and Security\n------------------------\n\nTo report security issues, please contact security@djangoproject.com. For GPG\nsignatures and more security process information, see\nhttps://docs.djangoproject.com/en/dev/internals/security/.\n\nTo report bugs or request new features, please open a new GitHub issue.\n\nThis repository is part of the Channels project. For the shepherd and maintenance team, please see the\n`main Channels readme <https://github.com/django/channels/blob/master/README.rst>`_.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/49/4b/359f28a903c13438ef59ebeee215fb25da53066db67b305c125f1c6d2a25/sqlparse-0.5.5-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=12a08b3bf3eec877c519589833aed092e2444e68240a3577e8e26148acc7b1ba",
+          "hashes": {
+            "sha256": "12a08b3bf3eec877c519589833aed092e2444e68240a3577e8e26148acc7b1ba"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "sqlparse",
+        "version": "0.5.5",
+        "summary": "A non-validating SQL parser.",
+        "description_content_type": "text/x-rst",
+        "author_email": "Andi Albrecht <albrecht.andi@gmail.com>",
+        "license_file": [
+          "AUTHORS",
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Database",
+          "Topic :: Software Development"
+        ],
+        "requires_dist": [
+          "build; extra == 'dev'",
+          "sphinx; extra == 'doc'"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Home, https://github.com/andialbrecht/sqlparse",
+          "Documentation, https://sqlparse.readthedocs.io/",
+          "Release Notes, https://sqlparse.readthedocs.io/en/latest/changes.html",
+          "Source, https://github.com/andialbrecht/sqlparse",
+          "Tracker, https://github.com/andialbrecht/sqlparse/issues"
+        ],
+        "provides_extra": [
+          "dev",
+          "doc"
+        ],
+        "description": "python-sqlparse - Parse SQL statements\n======================================\n\n|buildstatus|_\n|coverage|_\n|docs|_\n|packageversion|_\n\n.. docincludebegin\n\nsqlparse is a non-validating SQL parser for Python.\nIt provides support for parsing, splitting and formatting SQL statements.\n\nThe module is compatible with Python 3.8+ and released under the terms of the\n`New BSD license <https://opensource.org/licenses/BSD-3-Clause>`_.\n\nVisit the project page at https://github.com/andialbrecht/sqlparse for\nfurther information about this project.\n\n\nQuick Start\n-----------\n\n.. code-block:: sh\n\n   $ pip install sqlparse\n\n.. code-block:: python\n\n   >>> import sqlparse\n\n   >>> # Split a string containing two SQL statements:\n   >>> raw = 'select * from foo; select * from bar;'\n   >>> statements = sqlparse.split(raw)\n   >>> statements\n   ['select * from foo;', 'select * from bar;']\n\n   >>> # Format the first statement and print it out:\n   >>> first = statements[0]\n   >>> print(sqlparse.format(first, reindent=True, keyword_case='upper'))\n   SELECT *\n   FROM foo;\n\n   >>> # Parsing a SQL statement:\n   >>> parsed = sqlparse.parse('select * from foo')[0]\n   >>> parsed.tokens\n   [<DML 'select' at 0x7f22c5e15368>, <Whitespace ' ' at 0x7f22c5e153b0>, <Wildcard '*' … ]\n   >>>\n\nPre-commit Hook\n---------------\n\nsqlparse can be used as a `pre-commit <https://pre-commit.com/>`_ hook\nto automatically format SQL files before committing:\n\n.. code-block:: yaml\n\n   repos:\n     - repo: https://github.com/andialbrecht/sqlparse\n       rev: 0.5.4  # Use the latest version\n       hooks:\n         - id: sqlformat\n           # Optional: Add more formatting options\n           # IMPORTANT: --in-place is required, already included by default\n           args: [--in-place, --reindent, --keywords, upper]\n\nThen install the hook:\n\n.. code-block:: sh\n\n   $ pre-commit install\n\nYour SQL files will now be automatically formatted on each commit.\n\n**Note**: The hook uses ``--in-place --reindent`` by default. If you override\nthe ``args``, you **must** include ``--in-place`` for the hook to work.\n\nLinks\n-----\n\nProject page\n   https://github.com/andialbrecht/sqlparse\n\nBug tracker\n   https://github.com/andialbrecht/sqlparse/issues\n\nDocumentation\n   https://sqlparse.readthedocs.io/\n\nOnline Demo\n   https://sqlformat.org/\n\n\nsqlparse is licensed under the BSD license.\n\nParts of the code are based on pygments written by Georg Brandl and others.\npygments-Homepage: http://pygments.org/\n\n.. |buildstatus| image:: https://github.com/andialbrecht/sqlparse/actions/workflows/python-app.yml/badge.svg\n.. _buildstatus: https://github.com/andialbrecht/sqlparse/actions/workflows/python-app.yml\n.. |coverage| image:: https://codecov.io/gh/andialbrecht/sqlparse/branch/master/graph/badge.svg\n.. _coverage: https://codecov.io/gh/andialbrecht/sqlparse\n.. |docs| image:: https://readthedocs.org/projects/sqlparse/badge/?version=latest\n.. _docs: https://sqlparse.readthedocs.io/en/latest/?badge=latest\n.. |packageversion| image:: https://img.shields.io/pypi/v/sqlparse?color=%2334D058&label=pypi%20package\n.. _packageversion: https://pypi.org/project/sqlparse\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+          "hashes": {
+            "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "typing_extensions",
+        "version": "4.16.0",
+        "summary": "Backported and Experimental Type Hints for Python 3.9+",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "annotations",
+          "backport",
+          "checker",
+          "checking",
+          "function",
+          "hinting",
+          "hints",
+          "type",
+          "typechecking",
+          "typehinting",
+          "typehints",
+          "typing"
+        ],
+        "author_email": "\"Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee\" <levkivskyi@gmail.com>",
+        "license_expression": "PSF-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Topic :: Software Development"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Bug Tracker, https://github.com/python/typing_extensions/issues",
+          "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+          "Documentation, https://typing-extensions.readthedocs.io/",
+          "Home, https://github.com/python/typing_extensions",
+          "Q & A, https://github.com/python/typing/discussions",
+          "Repository, https://github.com/python/typing_extensions"
+        ],
+        "description": "# Typing Extensions\n\n[![Chat at https://gitter.im/python/typing](https://badges.gitter.im/python/typing.svg)](https://gitter.im/python/typing)\n\n[Documentation](https://typing-extensions.readthedocs.io/en/latest/#) –\n[PyPI](https://pypi.org/project/typing-extensions/)\n\n## Overview\n\nThe `typing_extensions` module serves two related purposes:\n\n- Enable use of new type system features on older Python versions. For example,\n  `typing.TypeGuard` is new in Python 3.10, but `typing_extensions` allows\n  users on previous Python versions to use it too.\n- Enable experimentation with new type system PEPs before they are accepted and\n  added to the `typing` module.\n\n`typing_extensions` is treated specially by static type checkers such as\nmypy and pyright. Objects defined in `typing_extensions` are treated the same\nway as equivalent forms in `typing`.\n\n`typing_extensions` uses\n[Semantic Versioning](https://semver.org/). The\nmajor version will be incremented only for backwards-incompatible changes.\nTherefore, it's safe to depend\non `typing_extensions` like this: `typing_extensions ~=x.y`,\nwhere `x.y` is the first version that includes all features you need.\n[This](https://packaging.python.org/en/latest/specifications/version-specifiers/#compatible-release)\nis equivalent to `typing_extensions >=x.y, <(x+1)`. Do not depend on `~= x.y.z`\nunless you really know what you're doing; that defeats the purpose of\nsemantic versioning.\n\n## Included items\n\nSee [the documentation](https://typing-extensions.readthedocs.io/en/latest/#) for a\ncomplete listing of module contents.\n\n## Contributing\n\nSee [CONTRIBUTING.md](https://github.com/python/typing_extensions/blob/main/CONTRIBUTING.md)\nfor how to contribute to `typing_extensions`.\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

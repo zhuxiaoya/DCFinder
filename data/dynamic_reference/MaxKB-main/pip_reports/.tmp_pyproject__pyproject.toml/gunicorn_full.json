@@ -1,0 +1,153 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/cb/7d/6dac2a6e1eba33ee43f318edbed4ff29151a49b5d37f080aad1e6469bca4/gunicorn-23.0.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=ec400d38950de4dfd418cff8328b2c8faed0edb0d517d3394e457c317908ca4d",
+          "hashes": {
+            "sha256": "ec400d38950de4dfd418cff8328b2c8faed0edb0d517d3394e457c317908ca4d"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "gunicorn",
+        "version": "23.0.0",
+        "summary": "WSGI HTTP Server for UNIX",
+        "description_content_type": "text/x-rst",
+        "author_email": "Benoit Chesneau <benoitc@gunicorn.org>",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Other Environment",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: POSIX",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Internet",
+          "Topic :: Utilities",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Internet :: WWW/HTTP",
+          "Topic :: Internet :: WWW/HTTP :: WSGI",
+          "Topic :: Internet :: WWW/HTTP :: WSGI :: Server",
+          "Topic :: Internet :: WWW/HTTP :: Dynamic Content"
+        ],
+        "requires_dist": [
+          "packaging",
+          "importlib-metadata ; python_version < \"3.8\"",
+          "eventlet !=0.36.0,>=0.24.1 ; extra == 'eventlet'",
+          "gevent >=1.4.0 ; extra == 'gevent'",
+          "setproctitle ; extra == 'setproctitle'",
+          "gevent ; extra == 'testing'",
+          "eventlet ; extra == 'testing'",
+          "coverage ; extra == 'testing'",
+          "pytest ; extra == 'testing'",
+          "pytest-cov ; extra == 'testing'",
+          "tornado >=0.2 ; extra == 'tornado'"
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Homepage, https://gunicorn.org",
+          "Documentation, https://docs.gunicorn.org",
+          "Issue tracker, https://github.com/benoitc/gunicorn/issues",
+          "Source code, https://github.com/benoitc/gunicorn",
+          "Changelog, https://docs.gunicorn.org/en/stable/news.html"
+        ],
+        "provides_extra": [
+          "eventlet",
+          "gevent",
+          "gthread",
+          "setproctitle",
+          "testing",
+          "tornado"
+        ],
+        "description": "Gunicorn\n--------\n\n.. image:: https://img.shields.io/pypi/v/gunicorn.svg?style=flat\n    :alt: PyPI version\n    :target: https://pypi.python.org/pypi/gunicorn\n\n.. image:: https://img.shields.io/pypi/pyversions/gunicorn.svg\n    :alt: Supported Python versions\n    :target: https://pypi.python.org/pypi/gunicorn\n\n.. image:: https://github.com/benoitc/gunicorn/actions/workflows/tox.yml/badge.svg\n    :alt: Build Status\n    :target: https://github.com/benoitc/gunicorn/actions/workflows/tox.yml\n\n.. image:: https://github.com/benoitc/gunicorn/actions/workflows/lint.yml/badge.svg\n    :alt: Lint Status\n    :target: https://github.com/benoitc/gunicorn/actions/workflows/lint.yml\n\nGunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX. It's a pre-fork\nworker model ported from Ruby's Unicorn_ project. The Gunicorn server is broadly\ncompatible with various web frameworks, simply implemented, light on server\nresource usage, and fairly speedy.\n\nFeel free to join us in `#gunicorn`_ on `Libera.chat`_.\n\nDocumentation\n-------------\n\nThe documentation is hosted at https://docs.gunicorn.org.\n\nInstallation\n------------\n\nGunicorn requires **Python 3.x >= 3.7**.\n\nInstall from PyPI::\n\n    $ pip install gunicorn\n\n\nUsage\n-----\n\nBasic usage::\n\n    $ gunicorn [OPTIONS] APP_MODULE\n\nWhere ``APP_MODULE`` is of the pattern ``$(MODULE_NAME):$(VARIABLE_NAME)``. The\nmodule name can be a full dotted path. The variable name refers to a WSGI\ncallable that should be found in the specified module.\n\nExample with test app::\n\n    $ cd examples\n    $ gunicorn --workers=2 test:app\n\n\nContributing\n------------\n\nSee `our complete contributor's guide <CONTRIBUTING.md>`_ for more details.\n\n\nLicense\n-------\n\nGunicorn is released under the MIT License. See the LICENSE_ file for more\ndetails.\n\n.. _Unicorn: https://bogomips.org/unicorn/\n.. _`#gunicorn`: https://web.libera.chat/?channels=#gunicorn\n.. _`Libera.chat`: https://libera.chat/\n.. _LICENSE: https://github.com/benoitc/gunicorn/blob/master/LICENSE\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=5fc45236b9446107ff2415ce77c807cee2862cb6fac22b8a73826d0693b0980e",
+          "hashes": {
+            "sha256": "5fc45236b9446107ff2415ce77c807cee2862cb6fac22b8a73826d0693b0980e"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "packaging",
+        "version": "26.2",
+        "summary": "Core utilities for Python packages",
+        "description_content_type": "text/x-rst",
+        "author_email": "Donald Stufft <donald@stufft.io>",
+        "license_expression": "Apache-2.0 OR BSD-2-Clause",
+        "license_file": [
+          "LICENSE",
+          "LICENSE.APACHE",
+          "LICENSE.BSD"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Python :: Free Threading :: 4 - Resilient",
+          "Typing :: Typed"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Documentation, https://packaging.pypa.io/",
+          "Source, https://github.com/pypa/packaging"
+        ],
+        "description": "packaging\n=========\n\n.. start-intro\n\nReusable core utilities for various Python Packaging\n`interoperability specifications <https://packaging.python.org/specifications/>`_.\n\nThis library provides utilities that implement the interoperability\nspecifications which have clearly one correct behaviour (eg: :pep:`440`)\nor benefit greatly from having a single shared implementation (eg: :pep:`425`).\n\n.. end-intro\n\nThe ``packaging`` project includes the following: version handling, specifiers,\nmarkers, requirements, tags, metadata, lockfiles, utilities.\n\nDocumentation\n-------------\n\nThe `documentation`_ provides information and the API for the following:\n\n- Version Handling\n- Specifiers\n- Markers\n- Licenses\n- Requirements\n- Metadata\n- Tags\n- Lockfiles (pylock)\n- Direct URL helpers\n- Dependency groups\n- Errors\n- Utilities\n\nInstallation\n------------\n\nUse ``pip`` to install these utilities::\n\n    pip install packaging\n\nThe ``packaging`` library uses calendar-based versioning (``YY.N``).\n\nDiscussion\n----------\n\nIf you run into bugs, you can file them in our `issue tracker`_.\n\nYou can also join discussions on `GitHub Discussions`_ to ask questions or get involved.\n\n.. _`documentation`: https://packaging.pypa.io/\n.. _`issue tracker`: https://github.com/pypa/packaging/issues\n.. _`GitHub Discussions`: https://github.com/pypa/packaging/discussions\n\n\nCode of Conduct\n---------------\n\nEveryone interacting in the packaging project's codebases, issue trackers, chat\nrooms, and mailing lists is expected to follow the `PSF Code of Conduct`_.\n\n.. _PSF Code of Conduct: https://github.com/pypa/.github/blob/main/CODE_OF_CONDUCT.md\n\nContributing\n------------\n\nThe ``CONTRIBUTING.rst`` file outlines how to contribute to this project as\nwell as how to report a potential security issue. The documentation for this\nproject also covers information about `project development`_ and `security`_.\n\n.. _`project development`: https://packaging.pypa.io/en/latest/development/\n.. _`security`: https://packaging.pypa.io/en/latest/security/\n\nProject History\n---------------\n\nPlease review the ``CHANGELOG.rst`` file or the `Changelog documentation`_ for\nrecent changes and project history.\n\n.. _`Changelog documentation`: https://packaging.pypa.io/en/latest/changelog/\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

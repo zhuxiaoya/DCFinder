@@ -1,0 +1,963 @@
+{
+  "torch": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "==1.9.0",
+    "requires_dist": []
+  },
+  "fsspec": {
+    "version": "2026.6.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "boto3": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "botocore",
+        "specifier": "<1.44.0,>=1.43.48"
+      },
+      {
+        "name": "jmespath",
+        "specifier": "<2.0.0,>=0.7.1"
+      },
+      {
+        "name": "s3transfer",
+        "specifier": "<0.20.0,>=0.19.0"
+      }
+    ]
+  },
+  "hydra-core": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "omegaconf",
+        "specifier": "<2.4,>=2.2"
+      },
+      {
+        "name": "antlr4-python3-runtime",
+        "specifier": "==4.9.*"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      }
+    ]
+  },
+  "requests": {
+    "version": "2.32.4",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "charset-normalizer",
+        "specifier": "<4,>=2"
+      },
+      {
+        "name": "idna",
+        "specifier": "<4,>=2.5"
+      },
+      {
+        "name": "urllib3",
+        "specifier": "<3,>=1.21.1"
+      },
+      {
+        "name": "certifi",
+        "specifier": ">=2017.4.17"
+      }
+    ]
+  },
+  "aiohttp": {
+    "version": "3.12.15",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "aiohappyeyeballs",
+        "specifier": ">=2.5.0"
+      },
+      {
+        "name": "aiosignal",
+        "specifier": ">=1.4.0"
+      },
+      {
+        "name": "async-timeout",
+        "specifier": "<6.0,>=4.0"
+      },
+      {
+        "name": "attrs",
+        "specifier": ">=17.3.0"
+      },
+      {
+        "name": "frozenlist",
+        "specifier": ">=1.1.1"
+      },
+      {
+        "name": "multidict",
+        "specifier": "<7.0,>=4.5"
+      },
+      {
+        "name": "propcache",
+        "specifier": ">=0.2.0"
+      },
+      {
+        "name": "yarl",
+        "specifier": "<2.0,>=1.17.0"
+      }
+    ]
+  },
+  "numpy": {
+    "version": "1.26.4",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "<2",
+    "requires_dist": []
+  },
+  "gymnasium": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.21.0"
+      },
+      {
+        "name": "cloudpickle",
+        "specifier": ">=1.2.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.3.0"
+      },
+      {
+        "name": "farama-notifications",
+        "specifier": ">=0.0.1"
+      }
+    ]
+  },
+  "torchvision": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "==0.7.0",
+    "requires_dist": []
+  },
+  "gym": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "transformers": {
+    "version": "4.56.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "filelock",
+        "specifier": ""
+      },
+      {
+        "name": "huggingface-hub",
+        "specifier": "<1.0,>=0.34.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.17"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.0"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1"
+      },
+      {
+        "name": "regex",
+        "specifier": "!=2019.12.17"
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "tokenizers",
+        "specifier": "<=0.23.0,>=0.22.0"
+      },
+      {
+        "name": "safetensors",
+        "specifier": ">=0.4.3"
+      },
+      {
+        "name": "tqdm",
+        "specifier": ">=4.27"
+      }
+    ]
+  },
+  "datasets": {
+    "version": "4.0.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "filelock",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.17"
+      },
+      {
+        "name": "pyarrow",
+        "specifier": ">=15.0.0"
+      },
+      {
+        "name": "dill",
+        "specifier": "<0.3.9,>=0.3.0"
+      },
+      {
+        "name": "pandas",
+        "specifier": ""
+      },
+      {
+        "name": "requests",
+        "specifier": ">=2.32.2"
+      },
+      {
+        "name": "tqdm",
+        "specifier": ">=4.66.3"
+      },
+      {
+        "name": "xxhash",
+        "specifier": ""
+      },
+      {
+        "name": "multiprocess",
+        "specifier": "<0.70.17"
+      },
+      {
+        "name": "fsspec",
+        "specifier": "<=2025.3.0,>=2023.1.0"
+      },
+      {
+        "name": "huggingface-hub",
+        "specifier": ">=0.24.0"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1"
+      }
+    ]
+  },
+  "tqdm": {
+    "version": "4.67.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=4.27,>=4.66.3",
+    "requires_dist": []
+  },
+  "protobuf": {
+    "version": "6.32.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "sentencepiece": {
+    "version": "0.2.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nlp": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "pyarrow",
+        "specifier": ">=0.16.0"
+      },
+      {
+        "name": "dill",
+        "specifier": ""
+      },
+      {
+        "name": "pandas",
+        "specifier": ""
+      },
+      {
+        "name": "requests",
+        "specifier": ">=2.19.0"
+      },
+      {
+        "name": "tqdm",
+        "specifier": ">=4.27"
+      },
+      {
+        "name": "filelock",
+        "specifier": ""
+      },
+      {
+        "name": "xxhash",
+        "specifier": ""
+      }
+    ]
+  },
+  "six": {
+    "version": "1.17.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "torchtext": {
+    "version": "0.16.0.dev20231012+cpu",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "tqdm",
+        "specifier": ""
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": "==2.1.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "torchdata",
+        "specifier": "==0.7.0"
+      }
+    ]
+  },
+  "spacy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "spacy-legacy",
+        "specifier": "<3.1.0,>=3.0.11"
+      },
+      {
+        "name": "spacy-loggers",
+        "specifier": "<2.0.0,>=1.0.0"
+      },
+      {
+        "name": "murmurhash",
+        "specifier": "<1.1.0,>=0.28.0"
+      },
+      {
+        "name": "cymem",
+        "specifier": "<2.1.0,>=2.0.2"
+      },
+      {
+        "name": "preshed",
+        "specifier": "<3.1.0,>=3.0.2"
+      },
+      {
+        "name": "thinc",
+        "specifier": "<8.4.0,>=8.3.12"
+      },
+      {
+        "name": "wasabi",
+        "specifier": "<1.2.0,>=0.9.1"
+      },
+      {
+        "name": "srsly",
+        "specifier": "<3.0.0,>=2.5.3"
+      },
+      {
+        "name": "catalogue",
+        "specifier": "<2.1.0,>=2.0.6"
+      },
+      {
+        "name": "weasel",
+        "specifier": "<2.0.0,>=1.0.0"
+      },
+      {
+        "name": "confection",
+        "specifier": "<2.0.0,>=1.3.2"
+      },
+      {
+        "name": "typer",
+        "specifier": "<1.0.0,>=0.3.0"
+      },
+      {
+        "name": "tqdm",
+        "specifier": "<5.0.0,>=4.38.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.19.0"
+      },
+      {
+        "name": "requests",
+        "specifier": "<3.0.0,>=2.13.0"
+      },
+      {
+        "name": "pydantic",
+        "specifier": "<3.0.0,>=2.0.0"
+      },
+      {
+        "name": "jinja2",
+        "specifier": ""
+      },
+      {
+        "name": "setuptools",
+        "specifier": ""
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.0"
+      }
+    ]
+  },
+  "sphinx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "sphinxcontrib-applehelp",
+        "specifier": ""
+      },
+      {
+        "name": "sphinxcontrib-devhelp",
+        "specifier": ""
+      },
+      {
+        "name": "sphinxcontrib-jsmath",
+        "specifier": ""
+      },
+      {
+        "name": "sphinxcontrib-htmlhelp",
+        "specifier": ">=2.0.0"
+      },
+      {
+        "name": "sphinxcontrib-serializinghtml",
+        "specifier": ">=1.1.5"
+      },
+      {
+        "name": "sphinxcontrib-qthelp",
+        "specifier": ""
+      },
+      {
+        "name": "jinja2",
+        "specifier": ">=3.0"
+      },
+      {
+        "name": "pygments",
+        "specifier": ">=2.12"
+      },
+      {
+        "name": "docutils",
+        "specifier": "<0.20,>=0.14"
+      },
+      {
+        "name": "snowballstemmer",
+        "specifier": ">=2.0"
+      },
+      {
+        "name": "babel",
+        "specifier": ">=2.9"
+      },
+      {
+        "name": "alabaster",
+        "specifier": "<0.8,>=0.7"
+      },
+      {
+        "name": "imagesize",
+        "specifier": ">=1.3"
+      },
+      {
+        "name": "requests",
+        "specifier": ">=2.5.0"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=21.0"
+      }
+    ]
+  },
+  "pytorch-sphinx-theme": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "sphinx",
+        "specifier": ""
+      }
+    ]
+  },
+  "sphinx-panels": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "docutils",
+        "specifier": ""
+      },
+      {
+        "name": "sphinx",
+        "specifier": "<5,>=2"
+      }
+    ]
+  },
+  "pygame": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "lmdb": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "matplotlib": {
+    "version": "3.9.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "contourpy",
+        "specifier": ">=1.0.1"
+      },
+      {
+        "name": "cycler",
+        "specifier": ">=0.10"
+      },
+      {
+        "name": "fonttools",
+        "specifier": ">=4.22.0"
+      },
+      {
+        "name": "kiwisolver",
+        "specifier": ">=1.3.1"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.23"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.0"
+      },
+      {
+        "name": "pillow",
+        "specifier": ">=8"
+      },
+      {
+        "name": "pyparsing",
+        "specifier": ">=2.3.1"
+      },
+      {
+        "name": "python-dateutil",
+        "specifier": ">=2.7"
+      }
+    ]
+  },
+  "torchdata": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "==0.7.0",
+    "requires_dist": []
+  },
+  "portalocker": {
+    "version": "2.10.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "packaging": {
+    "version": "25.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=20.0,>=21.0,>=20.0",
+    "requires_dist": []
+  },
+  "charset-normalizer": {
+    "version": "3.4.3",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "<4,>=2",
+    "requires_dist": []
+  },
+  "idna": {
+    "version": "3.10",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "<4,>=2.5",
+    "requires_dist": []
+  },
+  "urllib3": {
+    "version": "2.5.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "<3,>=1.21.1,!=2.2.0,<3,>=1.25.4",
+    "requires_dist": []
+  },
+  "certifi": {
+    "version": "2025.8.3",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=2017.4.17",
+    "requires_dist": []
+  },
+  "aiohappyeyeballs": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=2.5.0",
+    "requires_dist": []
+  },
+  "aiosignal": {
+    "version": "1.4.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=1.4.0",
+    "requires_dist": [
+      {
+        "name": "frozenlist",
+        "specifier": ">=1.1.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.2"
+      }
+    ]
+  },
+  "async-timeout": {
+    "version": "4.0.3",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "<6.0,>=4.0",
+    "requires_dist": []
+  },
+  "attrs": {
+    "version": "25.3.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=17.3.0",
+    "requires_dist": []
+  },
+  "frozenlist": {
+    "version": "1.7.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=1.1.1,>=1.1.0",
+    "requires_dist": []
+  },
+  "multidict": {
+    "version": "6.6.4",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "<7.0,>=4.5",
+    "requires_dist": [
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.1.0"
+      }
+    ]
+  },
+  "propcache": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "yarl": {
+    "version": "1.20.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "<2.0,>=1.17.0",
+    "requires_dist": [
+      {
+        "name": "idna",
+        "specifier": ">=2.0"
+      },
+      {
+        "name": "multidict",
+        "specifier": ">=4.0"
+      },
+      {
+        "name": "propcache",
+        "specifier": ">=0.2.1"
+      }
+    ]
+  },
+  "typing-extensions": {
+    "version": "4.15.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=4.3.0,>=4.2,>=4.1.0",
+    "requires_dist": []
+  },
+  "filelock": {
+    "version": "3.29.7",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "huggingface-hub": {
+    "version": "0.34.4",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "<1.0,>=0.34.0,>=0.24.0",
+    "requires_dist": [
+      {
+        "name": "filelock",
+        "specifier": ""
+      },
+      {
+        "name": "fsspec",
+        "specifier": ">=2023.5.0"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.9"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1"
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "tqdm",
+        "specifier": ">=4.42.1"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=3.7.4.3"
+      },
+      {
+        "name": "hf-xet",
+        "specifier": "<2.0.0,>=1.1.3"
+      }
+    ]
+  },
+  "pyyaml": {
+    "version": "6.0.2",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=5.1,>=5.1.0,>=5.1",
+    "requires_dist": []
+  },
+  "regex": {
+    "version": "2025.9.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "!=2019.12.17",
+    "requires_dist": []
+  },
+  "tokenizers": {
+    "version": "0.22.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "<=0.23.0,>=0.22.0",
+    "requires_dist": [
+      {
+        "name": "huggingface-hub",
+        "specifier": "<1.0,>=0.16.4"
+      }
+    ]
+  },
+  "safetensors": {
+    "version": "0.6.2",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=0.4.3",
+    "requires_dist": []
+  },
+  "pyarrow": {
+    "version": "21.0.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=15.0.0,>=0.16.0",
+    "requires_dist": []
+  },
+  "dill": {
+    "version": "0.3.8",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "<0.3.9,>=0.3.0",
+    "requires_dist": []
+  },
+  "pandas": {
+    "version": "2.3.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.22.4"
+      },
+      {
+        "name": "python-dateutil",
+        "specifier": ">=2.8.2"
+      },
+      {
+        "name": "pytz",
+        "specifier": ">=2020.1"
+      },
+      {
+        "name": "tzdata",
+        "specifier": ">=2022.7"
+      }
+    ]
+  },
+  "xxhash": {
+    "version": "3.5.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "multiprocess": {
+    "version": "0.70.16",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "<0.70.17",
+    "requires_dist": [
+      {
+        "name": "dill",
+        "specifier": ">=0.3.8"
+      }
+    ]
+  },
+  "contourpy": {
+    "version": "1.2.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=1.0.1",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.20"
+      }
+    ]
+  },
+  "cycler": {
+    "version": "0.12.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=0.10",
+    "requires_dist": []
+  },
+  "fonttools": {
+    "version": "4.53.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=4.22.0",
+    "requires_dist": []
+  },
+  "kiwisolver": {
+    "version": "1.4.5",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=1.3.1",
+    "requires_dist": []
+  },
+  "pillow": {
+    "version": "12.3.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=8",
+    "requires_dist": []
+  },
+  "pyparsing": {
+    "version": "3.1.2",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=2.3.1",
+    "requires_dist": []
+  },
+  "python-dateutil": {
+    "version": "2.9.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=2.7,<3.0.0,>=2.1,>=2.8.2",
+    "requires_dist": [
+      {
+        "name": "six",
+        "specifier": ">=1.5"
+      }
+    ]
+  },
+  "hf-xet": {
+    "version": "1.1.10",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": "<2.0.0,>=1.1.3",
+    "requires_dist": []
+  },
+  "pytz": {
+    "version": "2025.2",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=2020.1",
+    "requires_dist": []
+  },
+  "tzdata": {
+    "version": "2025.2",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cu118",
+    "specifier": ">=2022.7",
+    "requires_dist": []
+  }
+}

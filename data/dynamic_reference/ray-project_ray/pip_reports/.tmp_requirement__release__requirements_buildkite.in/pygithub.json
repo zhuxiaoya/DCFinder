@@ -1,0 +1,83 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/77/aa/81a5506f089a26338bff17535e4339b3b22049ebd1bcdeff756c4d7a7559/pygithub-2.9.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=2ec78fca30092d51a42d76f4ddb02131b6f0c666a35dfdf364cf302cdda115b9",
+          "hashes": {
+            "sha256": "2ec78fca30092d51a42d76f4ddb02131b6f0c666a35dfdf364cf302cdda115b9"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "PyGithub",
+        "version": "2.9.1",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Use the full Github API v3",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "github"
+        ],
+        "author_email": "Vincent Jacques <vincent@vincent-jacques.net>",
+        "license_file": [
+          "COPYING",
+          "COPYING.LESSER"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Web Environment",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Topic :: Software Development"
+        ],
+        "requires_dist": [
+          "pynacl>=1.4.0",
+          "requests>=2.14.0",
+          "pyjwt[crypto]>=2.4.0",
+          "typing-extensions>=4.5.0",
+          "urllib3>=1.26.0"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Documentation, https://pygithub.readthedocs.io/en/stable/",
+          "Source, https://github.com/pygithub/pygithub",
+          "Tracker, https://github.com/pygithub/pygithub/issues"
+        ],
+        "provides_extra": [
+          "integrations"
+        ],
+        "description": "# PyGitHub\n\n[![PyPI](https://img.shields.io/pypi/v/PyGithub.svg)](https://pypi.python.org/pypi/PyGithub)\n![CI](https://github.com/PyGithub/PyGithub/workflows/CI/badge.svg)\n[![readthedocs](https://img.shields.io/badge/docs-stable-brightgreen.svg?style=flat)](https://pygithub.readthedocs.io/en/stable/?badge=stable)\n[![License](https://img.shields.io/badge/license-LGPL-blue.svg)](https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License)\n[![Slack](https://img.shields.io/badge/Slack%20channel-%20%20-blue.svg)](https://join.slack.com/t/pygithub-project/shared_invite/zt-duj89xtx-uKFZtgAg209o6Vweqm8xeQ)\n[![Open Source Helpers](https://www.codetriage.com/pygithub/pygithub/badges/users.svg)](https://www.codetriage.com/pygithub/pygithub)\n[![codecov](https://codecov.io/gh/PyGithub/PyGithub/branch/master/graph/badge.svg)](https://codecov.io/gh/PyGithub/PyGithub)\n[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)\n\nPyGitHub is a Python library to access the [GitHub REST API].\nThis library enables you to manage [GitHub] resources such as repositories, user profiles, and organizations in your Python applications.\n\n[GitHub REST API]: https://docs.github.com/en/rest\n[GitHub]: https://github.com\n\n## Install\n\n```bash\npip install PyGithub\n```\n\n## Simple Demo\n\n```python\nfrom github import Github\n\n# Authentication is defined via github.Auth\nfrom github import Auth\n\n# using an access token\nauth = Auth.Token(\"access_token\")\n\n# First create a Github instance:\n\n# Public Web Github\ng = Github(auth=auth)\n\n# Github Enterprise with custom hostname\ng = Github(base_url=\"https://{hostname}/api/v3\", auth=auth)\n\n# Then play with your Github objects:\nfor repo in g.get_user().get_repos():\n    print(repo.name)\n\n# To close connections after use\ng.close()\n```\n\n## Documentation\n\nMore information can be found on the [PyGitHub documentation site.](https://pygithub.readthedocs.io/en/stable/introduction.html)\n\n## Development\n\n### Contributing\n\nLong-term discussion and bug reports are maintained via GitHub Issues.\nCode review is done via GitHub Pull Requests.\n\nFor more information read [CONTRIBUTING.md].\n\n[CONTRIBUTING.md]: https://github.com/PyGithub/PyGithub/blob/main/CONTRIBUTING.md\n\n### Maintainership\n\nWe're actively seeking maintainers that will triage issues and pull requests and cut releases.\nIf you work on a project that leverages PyGitHub and have a vested interest in keeping the code alive and well, send an email to someone in the MAINTAINERS file.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

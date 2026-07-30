@@ -1,0 +1,88 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/0d/d5/1353e5f677ec27c2494fb6a6725e82d56c985f53e90ec511369e7e4f02c6/tokenizers-0.23.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=5075b405006415ea148a992d093699c66eb01952bf59f4d5727089a98bda45a4",
+          "hashes": {
+            "sha256": "5075b405006415ea148a992d093699c66eb01952bf59f4d5727089a98bda45a4"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "tokenizers",
+        "version": "0.23.1",
+        "description_content_type": "text/markdown; charset=UTF-8; variant=GFM",
+        "keywords": [
+          "NLP",
+          "tokenizer",
+          "BPE",
+          "transformer",
+          "deep learning"
+        ],
+        "author_email": "Nicolas Patry <patry.nicolas@protonmail.com>, Anthony Moi <anthony@huggingface.co>",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Education",
+          "Intended Audience :: Science/Research",
+          "License :: OSI Approved :: Apache Software License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3 :: Only",
+          "Topic :: Scientific/Engineering :: Artificial Intelligence"
+        ],
+        "requires_dist": [
+          "huggingface-hub>=0.16.4,<2.0",
+          "tokenizers[testing] ; extra == 'dev'",
+          "sphinx ; extra == 'docs'",
+          "sphinx-rtd-theme ; extra == 'docs'",
+          "setuptools-rust ; extra == 'docs'",
+          "pytest ; extra == 'testing'",
+          "pytest-asyncio ; extra == 'testing'",
+          "requests ; extra == 'testing'",
+          "numpy ; extra == 'testing'",
+          "datasets ; extra == 'testing'",
+          "ruff ; extra == 'testing'",
+          "ty ; extra == 'testing'"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://github.com/huggingface/tokenizers",
+          "Source, https://github.com/huggingface/tokenizers"
+        ],
+        "provides_extra": [
+          "dev",
+          "docs",
+          "testing"
+        ],
+        "description": "<p align=\"center\">\n    <br>\n    <img src=\"https://huggingface.co/landing/assets/tokenizers/tokenizers-logo.png\" width=\"600\"/>\n    <br>\n<p>\n<p align=\"center\">\n    <a href=\"https://badge.fury.io/py/tokenizers\">\n         <img alt=\"Build\" src=\"https://badge.fury.io/py/tokenizers.svg\">\n    </a>\n    <a href=\"https://github.com/huggingface/tokenizers/blob/master/LICENSE\">\n        <img alt=\"GitHub\" src=\"https://img.shields.io/github/license/huggingface/tokenizers.svg?color=blue\">\n    </a>\n</p>\n<br>\n\n# Tokenizers\n\nProvides an implementation of today's most used tokenizers, with a focus on performance and\nversatility.\n\nBindings over the [Rust](https://github.com/huggingface/tokenizers/tree/master/tokenizers) implementation.\nIf you are interested in the High-level design, you can go check it there.\n\nOtherwise, let's dive in!\n\n## Main features:\n\n - Train new vocabularies and tokenize using 4 pre-made tokenizers (Bert WordPiece and the 3\n   most common BPE versions).\n - Extremely fast (both training and tokenization), thanks to the Rust implementation. Takes\n   less than 20 seconds to tokenize a GB of text on a server's CPU.\n - Easy to use, but also extremely versatile.\n - Designed for research and production.\n - Normalization comes with alignments tracking. It's always possible to get the part of the\n   original sentence that corresponds to a given token.\n - Does all the pre-processing: Truncate, Pad, add the special tokens your model needs.\n\n### Installation\n\n#### With pip:\n\n```bash\npip install tokenizers\n```\n\n#### From sources:\n\nTo use this method, you need to have the Rust installed:\n\n```bash\n# Install with:\ncurl https://sh.rustup.rs -sSf | sh -s -- -y\nexport PATH=\"$HOME/.cargo/bin:$PATH\"\n```\n\nOnce Rust is installed, you can compile doing the following\n\n```bash\ngit clone https://github.com/huggingface/tokenizers\ncd tokenizers/bindings/python\n\n# Create a virtual env (you can use yours as well)\npython -m venv .env\nsource .env/bin/activate\n\n# Install `tokenizers` in the current virtual env\npip install -e .\n```\n\n### Free-threaded Python (3.14t)\n\n`tokenizers` ships dedicated wheels for the [free-threaded build of CPython](https://docs.python.org/3.14/howto/free-threading-python.html)\n(`python3.14t`). These wheels declare `Py_MOD_GIL_NOT_USED`, so importing\n`tokenizers` does **not** force the GIL back on — multi-threaded code stays\nGIL-free.\n\nThe full mutable API works on 3.14t — the same as on regular CPython.\nSetters are thread-safe: the inner tokenizer state is wrapped in a\n`std::sync::RwLock`, so concurrent `tokenizer.X = …` from multiple threads\nserialize correctly and concurrent encode operations take a read guard\nthat blocks writers only briefly.\n\n```python\nfrom tokenizers import Tokenizer\nfrom tokenizers.models import BPE\nfrom tokenizers.pre_tokenizers import Whitespace\nfrom tokenizers.processors import ByteLevel\n\ntok = Tokenizer(BPE())\ntok.pre_tokenizer = Whitespace()                 # ✅ thread-safe on 3.14t\ntok.post_processor = ByteLevel(trim_offsets=True)\n```\n\n**Caveat — compound mutations are not atomic.** Statements like\n`tokenizer.post_processor.special_tokens = X` evaluate in two steps from\nPython's point of view (read attribute → set attribute on the result). If\nanother thread swaps `tokenizer.post_processor` between those steps, the\nmutation lands on an orphaned component. This is the same class of race\nas `dict[k] = v` interleaved with `dict.clear()` — coordinate with a Python\nlock if you need the compound to be atomic.\n\nFor the full thread-safety analysis, see\n[`docs/free-threading-audit.md`](./docs/free-threading-audit.md).\n\n### Load a pretrained tokenizer from the Hub\n\n```python\nfrom tokenizers import Tokenizer\n\ntokenizer = Tokenizer.from_pretrained(\"bert-base-cased\")\n```\n\n### Using the provided Tokenizers\n\nWe provide some pre-build tokenizers to cover the most common cases. You can easily load one of\nthese using some `vocab.json` and `merges.txt` files:\n\n```python\nfrom tokenizers import CharBPETokenizer\n\n# Initialize a tokenizer\nvocab = \"./path/to/vocab.json\"\nmerges = \"./path/to/merges.txt\"\ntokenizer = CharBPETokenizer(vocab, merges)\n\n# And then encode:\nencoded = tokenizer.encode(\"I can feel the magic, can you?\")\nprint(encoded.ids)\nprint(encoded.tokens)\n```\n\nAnd you can train them just as simply:\n\n```python\nfrom tokenizers import CharBPETokenizer\n\n# Initialize a tokenizer\ntokenizer = CharBPETokenizer()\n\n# Then train it!\ntokenizer.train([ \"./path/to/files/1.txt\", \"./path/to/files/2.txt\" ])\n\n# Now, let's use it:\nencoded = tokenizer.encode(\"I can feel the magic, can you?\")\n\n# And finally save it somewhere\ntokenizer.save(\"./path/to/directory/my-bpe.tokenizer.json\")\n```\n\n#### Provided Tokenizers\n\n - `CharBPETokenizer`: The original BPE\n - `ByteLevelBPETokenizer`: The byte level version of the BPE\n - `SentencePieceBPETokenizer`: A BPE implementation compatible with the one used by SentencePiece\n - `BertWordPieceTokenizer`: The famous Bert tokenizer, using WordPiece\n\nAll of these can be used and trained as explained above!\n\n### Build your own\n\nWhenever these provided tokenizers don't give you enough freedom, you can build your own tokenizer,\nby putting all the different parts you need together.\nYou can check how we implemented the [provided tokenizers](https://github.com/huggingface/tokenizers/tree/master/bindings/python/py_src/tokenizers/implementations) and adapt them easily to your own needs.\n\n#### Building a byte-level BPE\n\nHere is an example showing how to build your own byte-level BPE by putting all the different pieces\ntogether, and then saving it to a single file:\n\n```python\nfrom tokenizers import Tokenizer, models, pre_tokenizers, decoders, trainers, processors\n\n# Initialize a tokenizer\ntokenizer = Tokenizer(models.BPE())\n\n# Customize pre-tokenization and decoding\ntokenizer.pre_tokenizer = pre_tokenizers.ByteLevel(add_prefix_space=True)\ntokenizer.decoder = decoders.ByteLevel()\ntokenizer.post_processor = processors.ByteLevel(trim_offsets=True)\n\n# And then train\ntrainer = trainers.BpeTrainer(\n    vocab_size=20000,\n    min_frequency=2,\n    initial_alphabet=pre_tokenizers.ByteLevel.alphabet()\n)\ntokenizer.train([\n    \"./path/to/dataset/1.txt\",\n    \"./path/to/dataset/2.txt\",\n    \"./path/to/dataset/3.txt\"\n], trainer=trainer)\n\n# And Save it\ntokenizer.save(\"byte-level-bpe.tokenizer.json\", pretty=True)\n```\n\nNow, when you want to use this tokenizer, this is as simple as:\n\n```python\nfrom tokenizers import Tokenizer\n\ntokenizer = Tokenizer.from_file(\"byte-level-bpe.tokenizer.json\")\n\nencoded = tokenizer.encode(\"I can feel the magic, can you?\")\n```\n\n### Typing support and stub generation\n\nThe compiled PyO3 extension does not expose type annotations, so editors and type checkers would otherwise see most objects as `Any`. To provide full typing support, we use a two-step stub generation process:\n\n1. **Rust introspection** (`tools/stub-gen/`): Uses `pyo3-introspection` to analyze the compiled extension and generate `.pyi` stub files\n2. **Python enrichment** (`stub.py`): Adds docstrings from the runtime module and generates forwarding `__init__.py` shims\n\n#### Running stub generation\n\nThe easiest way to regenerate stubs is via `make style`:\n\n```bash\ncd bindings/python\nmake style\n```\n\nThis will:\n1. Build the extension with `maturin develop --release`\n2. Run introspection to generate `.pyi` files\n3. Enrich stubs with docstrings via `stub.py`\n4. Format with `ruff`\n\n#### Running manually\n\nTo run the stub generator directly:\n\n```bash\ncd bindings/python\ncargo run --manifest-path tools/stub-gen/Cargo.toml\npython stub.py\n```\n\nThe stub generator automatically:\n- Builds the extension using maturin\n- Copies the built `.so` to the project root for introspection\n- Detects and sets `PYTHONHOME` for embedded Python (handles uv/venv environments)\n- Generates stubs to `py_src/tokenizers/`\n\n#### Troubleshooting\n\nIf you encounter Python initialization errors, you can manually set `PYTHONHOME`:\n\n```bash\nexport PYTHONHOME=$(python3 -c 'import sys; print(sys.base_prefix)')\ncargo run --manifest-path tools/stub-gen/Cargo.toml\n```\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

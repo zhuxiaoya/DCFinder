@@ -1,0 +1,6 @@
+markupsafe >=2.0,>=2.1.1
+  # from parent package: gradio (public)
+  # from parent package: jinja2 (private)
+  # from parent package: werkzeug (public)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)

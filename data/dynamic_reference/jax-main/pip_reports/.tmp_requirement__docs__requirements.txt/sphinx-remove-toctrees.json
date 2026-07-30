@@ -1,0 +1,75 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/bc/19/59dadac9ee5e8fa32b0d735b5488a569de36892a54e0b9927bea2b22f605/sphinx_remove_toctrees-1.0.0.post1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=22a96579d7899cc034de194195916717a54a122cc101f16ec79c996fe0baa2be",
+          "hashes": {
+            "sha256": "22a96579d7899cc034de194195916717a54a122cc101f16ec79c996fe0baa2be"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.3",
+        "name": "sphinx-remove-toctrees",
+        "version": "1.0.0.post1",
+        "summary": "Reduce your documentation build size by selectively removing toctrees from pages.",
+        "description_content_type": "text/markdown",
+        "author": "Executable Book Project",
+        "license": "MIT License\n                \n                Copyright (c) 2018 Chris Holdgraf\n                \n                Permission is hereby granted, free of charge, to any person obtaining a copy\n                of this software and associated documentation files (the \"Software\"), to deal\n                in the Software without restriction, including without limitation the rights\n                to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n                copies of the Software, and to permit persons to whom the Software is\n                furnished to do so, subject to the following conditions:\n                \n                The above copyright notice and this permission notice shall be included in all\n                copies or substantial portions of the Software.\n                \n                THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n                IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n                FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n                AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n                LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n                OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n                SOFTWARE.",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12"
+        ],
+        "requires_dist": [
+          "sphinx>=5",
+          "pre-commit>=2.12; extra == 'code-style'",
+          "ipython; extra == 'docs'",
+          "myst-parser; extra == 'docs'",
+          "sphinx-book-theme; extra == 'docs'",
+          "ipython; extra == 'tests'",
+          "myst-parser; extra == 'tests'",
+          "pytest; extra == 'tests'",
+          "sphinx-book-theme; extra == 'tests'"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://github.com/executablebooks/sphinx-remove-toctrees"
+        ],
+        "provides_extra": [
+          "code-style",
+          "docs",
+          "tests"
+        ],
+        "description": "# Remove toctrees from Sphinx pages\n\n![pypi](https://img.shields.io/pypi/v/sphinx-remove-toctrees)\n\nImprove your Sphinx build time by selectively removing TocTree objects from pages.\nThis is useful if your documentation uses auto-generated API documentation, which\ngenerates **a lot** of stub pages.\n\nThis extension can be used to remove the sidebar links for just the pages you specify, speed up the build considerably.\n\n## Who is this for?\n\nThis package is for maintainers that use Sphinx and have really large API documentation (or for some other reason, have a ton of nested pages).\nIf you use a Sphinx theme that contains the entire Table of Contents on every page (e.g., any theme that has \"collapsable\" sidebar sections), this will slow things down considerably.\nUse this theme to speed up your builds.\n\n## Install\n\nInstall the extension via `pip`:\n\n```console\n$ pip install sphinx-remove-toctrees\n```\n\nactivate it by adding it to your Sphinx extensions in `conf.py`:\n\n```python\nextensions.append(\"sphinx_remove_toctrees\")\n```\n\n## Use\n\nIn `conf.py`, there is a top-level configuration key called `remove_from_toctrees` that allows you to specify the pages to remove from your sidebar.\nProvide a list of `glob`-like paths **relative to your documentation root**.\nEach entry should match to pages that should be removed from the sidebar.\n\nFor example, the following configuration will remove all pages from the folder `api/generated`, and the specific page `subfolder/page_two.rst`:\n\n```python\nremove_from_toctrees = [\"api/generated/*\", \"subfolder/page_two.rst\"]\n```\n\nThis is particularly useful in combination with the `autosummary` directive, which tends to generate a ton of stub-pages that slows things down.\n\nIf you have the following autosummary directive in a page at `myfolder/page1.rst`:\n\n```rst\n.. autosummary: datetime.datetime\n   :toctree: api_gen\n```\n\nThis will generate stub-pages in a `myfolder/api_gen/` folder.\nTo remove each of these pages from your sidebar, you would configure this extension like so:\n\n```python\nremove_from_toctrees = [\"myfolder/api_gen/*\"]\n```\n\n\n## Try it with this documentation\n\nThis extension doesn't have a hosted documentation page, but there is one in the `docs/` folder of this repository.\nYou can use that folder to preview this extension in action.\n\n\n## How this works\n\nSphinx keeps track of `toctree` objects to represent the structure of your documentation.\nThese exist in the Sphinx environment object, at `env.tocs`.\nThere are two places in the build where this is relevant here:\n\n- Early in the build, Sphinx uses these `tocs` to ensure that files in your documentation are linked _somewhere_, and will raise warnings if it finds a file that is not in one of the `tocs`.\n- Later in the build, Sphinx uses these `tocs` to build the HTML `toctree` with links to pages in your documentation. If there are many elements in `tocs`, it will take a long time to resolve all of these links!\n\nThis extension runs *after* the first step, but *before* the second step.\nIt removes all the `toctree` objects that you specify, so that no warnings are raised about missing files, but they are removed from the sidebar and don't slow down your build.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

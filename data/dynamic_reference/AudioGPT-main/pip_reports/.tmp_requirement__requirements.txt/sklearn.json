@@ -1,0 +1,43 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/1e/7a/dbb3be0ce9bd5c8b7e3d87328e79063f8b263b2b1bfa4774cb1147bfcd3f/sklearn-0.0.tar.gz",
+        "archive_info": {
+          "hash": "sha256=e23001573aa194b834122d2b9562459bf5ae494a2d59ca6b8aa22c85a44c0e31",
+          "hashes": {
+            "sha256": "e23001573aa194b834122d2b9562459bf5ae494a2d59ca6b8aa22c85a44c0e31"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "sklearn",
+        "version": "0.0",
+        "summary": "A set of python modules for machine learning and data mining",
+        "home_page": "https://pypi.python.org/pypi/scikit-learn/",
+        "author": "UNKNOWN",
+        "author_email": "UNKNOWN",
+        "description": "  FOUND:\n    libraries = ['mkl_intel_lp64', 'mkl_intel_thread', 'mkl_core', 'iomp5', 'pthread']\n    library_dirs = ['/Users/filo/anaconda/lib']\n    define_macros = [('SCIPY_MKL_H', None)]\n    include_dirs = ['/Users/filo/anaconda/include']\n\nUNKNOWN\nMaintainer: UNKNOWN\nMaintainer-email: UNKNOWN\nblas_opt_info:\nblas_mkl_info:\n  FOUND:\n    libraries = ['mkl_intel_lp64', 'mkl_intel_thread', 'mkl_core', 'iomp5', 'pthread']\n    library_dirs = ['/Users/filo/anaconda/lib']\n    define_macros = [('SCIPY_MKL_H', None)]\n    include_dirs = ['/Users/filo/anaconda/include']\n\n  FOUND:\n    libraries = ['mkl_intel_lp64', 'mkl_intel_thread', 'mkl_core', 'iomp5', 'pthread']\n    library_dirs = ['/Users/filo/anaconda/lib']\n    define_macros = [('SCIPY_MKL_H', None)]\n    include_dirs = ['/Users/filo/anaconda/include']\n\nUNKNOWN\nPlatform: all\nRequires-Dist: scikit-learn\nDynamic: author\nDynamic: author-email\nDynamic: description\nDynamic: home-page\nDynamic: maintainer\nDynamic: maintainer-email\nDynamic: platform\nDynamic: requires-dist\nDynamic: summary\n\nUse `scikit-learn <https://pypi.python.org/pypi/scikit-learn/>`_ instead.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

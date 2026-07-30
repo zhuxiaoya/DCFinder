@@ -1,0 +1,91 @@
+anyio <5,>=3.5.0,<5.0.0,>=4.8.0,<5,>=3.6.2
+  # from parent package: groq (public)
+  # from parent package: openai (public)
+  # from parent package: httpx (private)
+  # from parent package: google-genai (public)
+  # from parent package: starlette (public)
+certifi >=2023.5.7
+  # from parent package: requests (public)
+  # from parent package: httpx (private)
+  # from parent package: httpcore (private)
+exceptiongroup >=1.0.0rc8,>=1.0.2
+  # from parent package: pytest (public)
+  # from parent package: anyio (private)
+h11 >=0.8,>=0.16
+  # from parent package: uvicorn (public)
+  # from parent package: httpcore (private)
+httpcore ==1.*
+  # from parent package: httpx (private)
+idna <4,>=2.5,>=2.8,>=2.0
+  # from parent package: requests (public)
+  # from parent package: httpx (private)
+  # from parent package: anyio (private)
+  # from parent package: yarl (public)
+nvidia-cublas-cu11 ==11.11.3.6
+  # from parent package: paddlepaddle-gpu (private)
+  # from parent package: nvidia-cudnn-cu11 (private)
+  # from parent package: nvidia-cusolver-cu11 (private)
+nvidia-cuda-cupti-cu11 ==11.8.87
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-cuda-nvrtc-cu11 ==11.8.89
+  # from parent package: paddlepaddle-gpu (private)
+  # from parent package: nvidia-cudnn-cu11 (private)
+nvidia-cuda-runtime-cu11 ==11.8.89
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-cudnn-cu11 ==8.9.6.50
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-cufft-cu11 ==10.9.0.58
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-curand-cu11 ==10.3.0.86
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-cusolver-cu11 ==11.4.1.48
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-cusparse-cu11 ==11.7.5.86
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-nccl-cu11 ==2.19.3
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-nvtx-cu11 ==11.8.86
+  # from parent package: paddlepaddle-gpu (private)
+opt-einsum ==3.3.0
+  # from parent package: paddlepaddle (public)
+  # from parent package: paddlepaddle-gpu (private)
+pillow !=8.3.*,>=5.3.0,>=10.1,>=10.0.0,>=8.3.2
+  # from parent package: torchvision (public)
+  # from parent package: scikit-image (public)
+  # from parent package: imagehash (public)
+  # from parent package: manga-ocr (public)
+  # from parent package: paddlepaddle (public)
+  # from parent package: paddlepaddle-gpu (private)
+  # from parent package: imageio (public)
+  # from parent package: paddlex (public)
+sniffio
+  # from parent package: groq (public)
+  # from parent package: openai (public)
+  # from parent package: httpx (private)
+  # from parent package: google-genai (public)
+typing-extensions >=4.10.0,<5,>=4.14,>=4.13.2,>=4.4,>=4.1.0,<5,>=4.11,>=4.0,>=4.8.0,>=4.6.1,<5.0.0,>=4.14.0,>=4.12,>=4.6,>=4.13.0,>=4,>=4.6.0,>=4.5,>=4.2,>=4.1.0,>=4.10.0,>=4.12.0,!=4.7.0,>=4.6.0
+  # from parent package: torch (public)
+  # from parent package: groq (public)
+  # from parent package: cryptography (public)
+  # from parent package: aiohttp (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: openai (public)
+  # from parent package: marshmallow (public)
+  # from parent package: uvicorn (public)
+  # from parent package: fastapi (public)
+  # from parent package: pydantic (public)
+  # from parent package: google-genai (public)
+  # from parent package: paddleocr (public)
+  # from parent package: paddlepaddle (public)
+  # from parent package: paddlepaddle-gpu (private)
+  # from parent package: ipython (public)
+  # from parent package: jupyter-client (public)
+  # from parent package: astroid (public)
+  # from parent package: exceptiongroup (private)
+  # from parent package: anyio (private)
+  # from parent package: aiosignal (public)
+  # from parent package: multidict (public)
+  # from parent package: starlette (public)
+  # from parent package: typing-inspection (public)
+  # from parent package: pydantic-core (public)
+  # from parent package: paddlex (public)

@@ -1,0 +1,77 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/8e/a7/b276ff776533b423710a285c8168b52551cb2ab0855443131fdc7fd8c16f/easygui-0.98.3-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=33498710c68b5376b459cd3fc48d1d1f33822139eb3ed01defbc0528326da3ba",
+          "hashes": {
+            "sha256": "33498710c68b5376b459cd3fc48d1d1f33822139eb3ed01defbc0528326da3ba"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "easygui",
+        "version": "0.98.3",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "EasyGUI is a module for very simple, very easy GUI programming in Python.  EasyGUI is different from other GUI generators in that EasyGUI is NOT event-driven.  Instead, all GUI interactions are invoked by simple function calls.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "gui",
+          "linux",
+          "windows",
+          "graphical",
+          "user",
+          "interface"
+        ],
+        "home_page": "https://github.com/robertlugg/easygui",
+        "author": "easygui developers and Stephen Ferg",
+        "author_email": "robert.lugg@gmail.com",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Intended Audience :: Developers",
+          "Intended Audience :: Education",
+          "License :: OSI Approved :: BSD License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.6",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Topic :: Software Development :: User Interfaces"
+        ],
+        "description": "Project in Maintainance\n=======================\n\nHi everyone.  There hasn't been much activity but thankfully we have a new revision.  Thank you contributors and thank you Stephen Ferg for creating EasyGui.\n\nYou might also consider the following alternatives:\n\n - https://github.com/aroberge/easygui_qt\n - https://github.com/ponty/psidialogs\n\nFor those who wish to contribute you are welcome to fork this respository.  Or, take a look at the alternatives and contribute there.\n\n\nKind Regards, Robert\n\nEasyGUI\n=======\n\nEasyGUI is a module for very simple, very easy GUI programming in Python. EasyGUI is different from other GUI\nlibraries in that EasyGUI is NOT event-driven. Instead, all GUI interactions are invoked by simple function calls.\n\nEasyGUI runs on Python 2 and 3, and does not have any dependencies beyond python and Tk. Linux Python 2 users will have to run `sudo apt-get install python-tk` and Linux Python 3 users will have to run `sudo apt-get install python3-tk` to install Tkinter.\n\nExample Usage\n-------------\n\n    >>> import easygui\n    >>> easygui.ynbox('Shall I continue?', 'Title', ('Yes', 'No'))\n    1\n    >>> easygui.msgbox('This is a basic message box.', 'Title Goes Here')\n    'OK'\n    >>> easygui.buttonbox('Click on your favorite flavor.', 'Favorite Flavor', ('Chocolate', 'Vanilla', 'Strawberry'))\n    'Chocolate'\n\nTo see demo programs using EasyGUI, call the `easygui.egdemo()` function.\n\nFull documentation is always available.\n\nFor the most-recent production version:\n<http://easygui.readthedocs.org/en/master/>.\n\nFor our develop version which will be released next:\n<http://easygui.readthedocs.org/en/develop>.\n\n0.98.3\n========================================================================\nUpdate collections.abc import location (old location was deprecated since version 3.3, removed in version 3.10)\nSee: https://docs.python.org/3.9/library/collections.html#module-collections for details\nAdd some unit test coverage and test automation for TravisCI.\n\n0.98.2\n========================================================================\nSeveral updates and fixes thanks to Al and others.\n\n0.98.0\n========================================================================\nThis is an exciting time for easygui.  We continue to make good progress with refactoring as\nwell as some enhancements and bug fixes here and there.\n\nWe would like to welcome Juanjo Denis-Corrales to the team.  He is responsible for lots of good new work\nthis release.  Of course we appreciate the work of everyone who contributed.\n\nNOTE: I decided in this release to change the API a bit.  Please consult the function documentation for details.\n\nBUG FIXES\n---------\n * Made changes guessing at fixes to any IDLE problems.  Please report any problems found.\n\nENHANCEMENTS\n------------\n * Refactored the easygui.py file into several smaller files to improve our ability to manage the code\n * Added callbacks to allow for more dynamic dialogs.  See the docs for usage.\n * Added class access to dialogs so properties may be changed.\n\nKNOWN ISSUES\n------------\n * There were previous issues when using easygui with the IDLE IDE.  I hope I resolved these problems, however,\n   I've never actually been able to repeat them.  Please report any problems found in github.\n\nOTHER CHANGES\n-------------\n * Centralized the Python 2 versus Python 3 \"compatibility layer\" into boxes/utils.py\n\n\n0.97.4\n========================================================================\nThis is a minor bug-fix release to address python 3 import errors.\n\n0.97.3\n========================================================================\nWe are happy to release version 0.97.3 of easygui.  The intent of this release is to address some basic\nfunctionality issues as well as improve easygui in the ways people have asked.\n\nRobert Lugg (me) was searching for a GUI library for my python work.  I saw easygui and liked very much its\nparadigm.  Stephen Ferg, the creator and developer of easygui, graciously allowed me to start development\nback up.  With the help of Alexander Zawadzki, Horst Jens, and others I set a goal to release before the\nend of 2014.\n\nWe rely on user feedback so please bring up problems, ideas, or just say how you are using easygui.\n\nBUG FIXES\n---------\n * sourceforge #4: easygui docs contain bad references to easygui_pydoc.html\n * sourceforge #6: no index.html in docs download file.  Updated to sphinx which as autolinking.\n * sourceforge #8: unicode issues with file*box.  Fixed all that I knew how.\n * sourceforge #12: Cannot Exit with 'X'.  Now X and escape either return \"cancel_button\", if set, or None\n\nENHANCEMENTS\n------------\n * Added ability to specify default_choice and cancel_choice for button widgets (See API docs)\n * True and False are returned instead of 1 and 0 for several boxes\n * Allow user to map keyboard keys to buttons by enclosing a hotkey in square braces like: \"Pick [M]e\", which would assign\n   keyboard key M to that button.  Double braces hide that character, and keysyms are allowed:\n\n     [[q]]Exit    Would show Exit on the button, and the button would be controlled by the q key\n\n     [<F1>]Help   Would show Help on the button, and the button would be controlled by the F1 function key\n\n   NOTE: We are still working on the exact syntax of these key mappings as Enter, space, and arrows are already being used.\n * Escape and the windows 'X' button always work in buttonboxes.  Those return None in that case.\n * sourceforge #9: let fileopenbox open multiple files.  Added optional argument 'multiple'\n * Location of dialogs on screen is preserved.  This isn't perfect yet, but now, at least, the dialogs don't\n   always reset to their default position!\n * added some, but not all of the bugs/enhancements developed by Robbie Brook:\n   http://all-you-need-is-tech.blogspot.com/2013/01/improving-easygui-for-python.html\n\nKNOWN ISSUES\n------------\n * In the documentation, there were previous references to issues when using the IDLE IDE.  I haven't\n   experienced those, but also didn't do anything to fix them, so they may still be there.  Please report\n   any problems and we'll try to address them\n * I am fairly new to contributing to open source, so I don't understand packaging, pypi, etc.  There\n   are likely problems as well as better ways to do things.  Again, I appreciate any help or guidance.\n\nOther Changes (that you likely don't care about)\n------------------------------------------------\n * Restructured loading of image files to try PIL first throw error if file doesn't exist.\n * Converted docs to sphinx with just a bit of doctest.  Most content was retained from the old site, so\n   there might be some redundancies still.  Please make any suggested improvements.\n * Set up a GitHub repository for development: https://github.com/robertlugg/easygui\n * Improved output/packaging for Debian distribution\n\nEasyGui is licensed under what is generally known as\nthe \"modified BSD license\" (aka \"revised BSD\", \"new BSD\", \"3-clause BSD\").\nThis license is GPL-compatible but less restrictive than GPL.\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

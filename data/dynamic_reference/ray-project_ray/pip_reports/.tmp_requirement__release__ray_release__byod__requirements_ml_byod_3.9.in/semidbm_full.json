@@ -1,0 +1,61 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/d6/9d/44d4d3716844aa51b57123cdb1c7e7fedabcfd38781d58fa95cebbcddaf7/semidbm-0.5.1-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=add3e644dd6afcce83d1752b34ff80fa4e2b37b4ce6bce3289ad19d6f0bcd6ae",
+          "hashes": {
+            "sha256": "add3e644dd6afcce83d1752b34ff80fa4e2b37b4ce6bce3289ad19d6f0bcd6ae"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.0",
+        "name": "semidbm",
+        "version": "0.5.1",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "Cross platform (fast) DBM interface in python",
+        "keywords": [
+          "semidbm"
+        ],
+        "home_page": "https://github.com/jamesls/semidbm",
+        "author": "James Saryerwinnie",
+        "author_email": "js@jamesls.com",
+        "license": "BSD",
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Programming Language :: Python :: 2.6",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Python :: Implementation :: Jython",
+          "License :: OSI Approved :: BSD License"
+        ],
+        "description": "========\nOverview\n========\n\n.. image:: https://secure.travis-ci.org/jamesls/semidbm.png?branch=master\n   :target: http://travis-ci.org/jamesls/semidbm\n\n.. image:: https://coveralls.io/repos/jamesls/semidbm/badge.png?branch=master\n   :target: https://coveralls.io/r/jamesls/semidbm?branch=master\n\n.. image:: https://pypip.in/version/semidbm/badge.svg\n    :target: https://pypi.python.org/pypi/semidbm/\n    :alt: Latest Version\n\n.. image:: https://pypip.in/py_versions/semidbm/badge.svg\n    :target: https://pypi.python.org/pypi/semidbm/\n    :alt: Supported Python versions\n\n.. image:: https://pypip.in/implementation/semidbm/badge.svg\n    :target: https://pypi.python.org/pypi/semidbm/\n    :alt: Supported Python implementations\n\n.. image:: https://pypip.in/license/semidbm/badge.svg\n    :target: https://pypi.python.org/pypi/semidbm/\n    :alt: License\n\n.. image:: https://pypip.in/wheel/semidbm/badge.svg\n    :target: https://pypi.python.org/pypi/semidbm/\n    :alt: Wheel Status\n\n\nSemidbm is a fast, pure python implementation of a dbm, which is a\npersistent key value store. It allows you to get and set keys through\na dict interface::\n\n    import semidbm\n    db = semidbm.open('testdb', 'c')\n    db['foo'] = 'bar'\n    print db['foo']\n    db.close()\n\nThese values are persisted to disk, and you can later retrieve\nthese key/value pairs::\n\n    # Then at a later time:\n    db = semidbm.open('testdb', 'r')\n    # prints \"bar\"\n    print db['foo']\n\n\nIt was written with these things in mind:\n\n* Pure python, supporting python 2.6, 2.7, 3.3, and 3.4.\n* Cross platform, works on Windows, Linux, Mac OS X.\n* Supports CPython, pypy, and jython (versions 2.7-b3 and higher).\n* Simple and Fast (See `Benchmarking Semidbm <http://semidbm.readthedocs.org/en/latest/benchmarks.html>`__).\n\n\nSupported Python Versions\n=========================\n\nSemidbm supports python 2.6, 2.7, 3.3, and 3.4.\n\n=============\nOfficial Docs\n=============\n\nRead the `semidbm docs <http://semidbm.readthedocs.org>`_ for more information\nand how to use semidbm.\n\n\n========\nFeatures\n========\n\nSemidbm originally started off as an improvement over the\n`dumbdbm <https://docs.python.org/2/library/dumbdbm.html>`__\nlibrary in the python standard library.  Below are a list of some of the\nimprovements over dumbdbm.\n\n\nSingle Data File\n================\n\nInstead of an index file and a data file, the index and data have been\nconsolidated into a single file.  This single data file is always appended to,\ndata written to the file is never modified.\n\n\nData File Compaction\n====================\n\nSemidbm uses an append only file format.  This has the potential to grow to\nlarge sizes as space is never reclaimed.  Semidbm addresses this by adding a\n``compact()`` method that will rewrite the data file to a minimal size.\n\n\nPerformance\n===========\n\nSemidbm is significantly faster than dumbdbm (keep in mind both are pure python\nlibraries) in just about every way.  The documentation shows the\n`results <http://semidbm.readthedocs.org/en/latest/benchmarks.html>`_\nof semidbm vs. other dbms, along with how to run the benchmarking\nscript yourself.\n\n\n===========\nLimitations\n===========\n\n* Not thread safe; can't be accessed by multiple processes.\n* The entire index must fit in memory.  This essentially means that all of the\n  keys must fit in memory.\n\n\nPost feedback and issues on `github issues`_, or check out the\nlatest changes at the github `repo`_.\n\n\n.. _github issues: https://github.com/jamesls/semidbm/issues\n.. _repo: https://github.com/jamesls/semidbm\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/b7/f3/a69ce0b1a1e12fbf6b2ad9f4c14c9999fdbdf15f2478d210f0fd501ddc98/nvidia_ml_py-12.560.30-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=fea371c94d63e38a611c17bbb85fe400e9c8ddb9e8684a9cd0e47786a4bc3c73",
+          "hashes": {
+            "sha256": "fea371c94d63e38a611c17bbb85fe400e9c8ddb9e8684a9cd0e47786a4bc3c73"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "nvidia-ml-py",
+        "version": "12.560.30",
+        "summary": "Python Bindings for the NVIDIA Management Library",
+        "description_content_type": "text/markdown",
+        "home_page": "https://forums.developer.nvidia.com",
+        "author": "NVIDIA Corporation",
+        "author_email": "nvml-bindings@nvidia.com",
+        "license": "BSD",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Intended Audience :: System Administrators",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX :: Linux",
+          "Programming Language :: Python",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: System :: Hardware",
+          "Topic :: System :: Systems Administration"
+        ],
+        "description": "pyNVML\n======\n\nPython bindings to the NVIDIA Management Library\n------------------------------------------------\n\nProvides a Python interface to GPU management and monitoring functions.\n\nThis is a wrapper around the NVML library.\nFor information about the NVML library, see the NVML developer page\nhttp://developer.nvidia.com/nvidia-management-library-nvml\n\nDownload the latest package from:\nhttp://pypi.python.org/pypi/nvidia-ml-py/\n\nNote this file can be run with 'python -m doctest -v README.txt'\nalthough the results are system dependent\n\nThe nvml header file contains function documentation that is relevant\nto this wrapper. The header file is distributed with.\nhttps://developer.nvidia.com/gpu-deployment-kit\n\nThe main difference is this library handles allocating structs and\npassing pointers to the functions, before returning the desired value.\nNon-success return codes are raised as exceptions as described in the\nsection below.\n\nREQUIRES\n--------\nPython 2.5, or an earlier version with the ctypes module.\n\nINSTALLATION\n------------\n\nPip Installation with python3:\n- `python3 -m pip install nvidia-ml-py`\n\nManual Installation:\n```\n$ tar -xzf nvidia-ml-py-$major-$minor-$patch.tar.gz`\n$ cd nvidia-ml-py-$major-$minor-$patch\n$ sudo python setup.py install\n```\n\nUSAGE\n-----\n```\n>>> from pynvml import *\n>>> nvmlInit()\n>>> print(f\"Driver Version: {nvmlSystemGetDriverVersion()}\")\nDriver Version: 11.515.48\n>>> deviceCount = nvmlDeviceGetCount()\n>>> for i in range(deviceCount):\n...     handle = nvmlDeviceGetHandleByIndex(i)\n...     print(f\"Device {i} : {nvmlDeviceGetName(handle)}\")\n...\nDevice 0 : Tesla K40c\n\n>>> nvmlShutdown()\n```\n\nFUNCTIONS\n---------\nPython methods wrap NVML functions, implemented in a C shared library.\nEach function's use is the same with the following exceptions:\n\n- Instead of returning error codes, failing error codes are raised as Python exceptions.\n\n```\n>>> try:\n...     nvmlDeviceGetCount()\n... except NVMLError as error:\n...     print(error)\n...\nUninitialized\n```\n\n- C function output parameters are returned from the corresponding Python function left to right.\n```\nnvmlReturn_t nvmlDeviceGetEccMode(nvmlDevice_t device,\n                                  nvmlEnableState_t *current,\n                                  nvmlEnableState_t *pending);\n\n>>> nvmlInit()\n>>> handle = nvmlDeviceGetHandleByIndex(0)\n>>> (current, pending) = nvmlDeviceGetEccMode(handle)\n```\n- C structs are converted into Python classes.\n\n```\n// C Function and typedef struct\nnvmlReturn_t DECLDIR nvmlDeviceGetMemoryInfo(nvmlDevice_t device,\n                                             nvmlMemory_t *memory);\ntypedef struct nvmlMemory_st {\n    unsigned long long total;\n    unsigned long long free;\n    unsigned long long used;\n} nvmlMemory_t;\n\n\n# Python call to function and accessing members of ctype struct\n>>> info = nvmlDeviceGetMemoryInfo(handle)\n>>> print(f\"Total memory: {info.total}\")\nTotal memory: 5636292608\n>>> print(f\"Free memory:, {info.free}\")\nFree memory: 5578420224\n>>> print(f\"Used memory: {info.used}\")\nUsed memory: 57872384\n```\n\n- Python handles string buffer creation.\n\n```\n// C Function that needs character array and length\nnvmlReturn_t nvmlSystemGetDriverVersion(char* version,\n                                        unsigned int length);\n\n# Python function handles memory\n>>> version = nvmlSystemGetDriverVersion()\n>>> print(version)\n... 11.520.75\n>>> nvmlShutdown()\n```\n\nFor usage information see the NVML documentation.\n\nVARIABLES\n---------\nAll meaningful NVML constants and enums are exposed in Python.\n\nThe NVML_VALUE_NOT_AVAILABLE constant is not used.  Instead None is mapped to the field.\n\nEXCEPTIONS\n----------\nSince the C library uses return codes and python prefers exception handling, the\nlibrary converts all return codes to various exceptions. The exceptions are generated\nautomatically via a function at run time instead of being defined manually.\n\nThe list of exceptions can be found in NVMLError base class.\n\nThe example seen above in the FUNCTIONS section:\n\n```\n>>> try:\n...     nvmlDeviceGetCount()\n... except NVMLError as error:\n...     print(error)\n...\nUninitialized\n```\n\nCan be more accurately caught like this:\n\n```\n>>> try:\n...     nvmlDeviceGetCount()\n... except NVMLError_Uninitialized as error:\n...     print(error)\n...\nUninitialized\n```\n\nThe conversion from name to exception is like this for all exceptions:\n* `NVML_ERROR_UNINITIALIZED` => `NVMLError_Uninitialized`\n* `NVML_ERROR_LIBRARY_NOT_FOUND` => `NVMLError_LibraryNotFound`\n* `NVML_ERROR_ALREADY_INITIALIZED` => `NVMLError_AlreadyInitialized`\n\nRELEASE NOTES\n-------------\nVersion 2.285.0\n- Added new functions for NVML 2.285.  See NVML documentation for more information.\n- Ported to support Python 3.0 and Python 2.0 syntax.\n- Added nvidia_smi.py tool as a sample app.\n\nVersion 3.295.0\n- Added new functions for NVML 3.295.  See NVML documentation for more information.\n- Updated nvidia_smi.py tool\n- Includes additional error handling\n\nVersion 4.304.0\n- Added new functions for NVML 4.304.  See NVML documentation for more information.\n- Updated nvidia_smi.py tool\n\nVersion 4.304.3\n- Fixing nvmlUnitGetDeviceCount bug\n\nVersion 5.319.0\n- Added new functions for NVML 5.319.  See NVML documentation for more information.\n\nVersion 6.340.0\n- Added new functions for NVML 6.340.  See NVML documentation for more information.\n\nVersion 7.346.0\n- Added new functions for NVML 7.346.  See NVML documentation for more information.\n\nVersion 7.352.0\n- Added new functions for NVML 7.352.  See NVML documentation for more information.\n\nVersion 10.418\n- Added new functions for NVML 10.418.  See NVML documentation for more information.\n- Fixed issues with using the bindings with Python 3.x\n- Replaced sample app nvidia_smi.py with example.py\n\nVersion 11.515.48\n- Python3 support added\n- Updated API to add function new to NVML, bringing pynvml up to date with NVML\n- Added auto-version to handle byte and string conversion automatically for both structs and functions\n- Minor bug fixes\n- Added README.txt correctly in long_description for pypi.org\n\nVersion 11.520\n- Updated Long Description to be actual markdown\n- Added new functions for NVML 11.520\n\nVersion 11.525\n- Added new functions for NVML 11.525\n\nCOPYRIGHT\n---------\nCopyright (c) 2011-2023, NVIDIA Corporation.  All rights reserved.\n\nLICENSE\n-------\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n- Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n- Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n- Neither the name of the NVIDIA Corporation nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

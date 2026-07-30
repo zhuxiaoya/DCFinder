@@ -1,0 +1,62 @@
+{
+    "direct dependency with same name": {
+        "number": 3,
+        "packages": {
+            "numpy": {
+                "private version": "2.4.4",
+                "public version": "2.5.1",
+                "highest public (unconstrained)": "2.5.1",
+                "declared specifier": ">=1.8",
+                "constraint source": "direct",
+                "satisfying public versions count": 124
+            },
+            "requests": {
+                "private version": "2.28.1",
+                "public version": "2.34.2",
+                "highest public (unconstrained)": "2.34.2"
+            },
+            "networkx": {
+                "private version": "3.6.1",
+                "public version": "3.6.1",
+                "highest public (unconstrained)": "3.6.1"
+            }
+        }
+    },
+    "indirect dependency with same name": {
+        "number": 4,
+        "packages": {
+            "certifi": {
+                "private version": "2022.12.7",
+                "public version": "2026.6.17",
+                "highest public (unconstrained)": "2026.6.17",
+                "declared specifier": ">=2017.4.17",
+                "constraint source": "indirect",
+                "satisfying public versions count": 51
+            },
+            "charset-normalizer": {
+                "private version": "2.1.1",
+                "public version": "2.1.1",
+                "highest public (unconstrained)": "3.4.9",
+                "declared specifier": "<3,>=2",
+                "constraint source": "indirect",
+                "satisfying public versions count": 15
+            },
+            "idna": {
+                "private version": "3.4",
+                "public version": "3.18",
+                "highest public (unconstrained)": "3.18",
+                "declared specifier": "<4,>=2.5",
+                "constraint source": "indirect",
+                "satisfying public versions count": 25
+            },
+            "urllib3": {
+                "private version": "1.26.13",
+                "public version": "1.26.20",
+                "highest public (unconstrained)": "2.7.0",
+                "declared specifier": "<1.27,>=1.21.1",
+                "constraint source": "indirect",
+                "satisfying public versions count": 40
+            }
+        }
+    }
+}

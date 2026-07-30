@@ -1,0 +1,176 @@
+{
+     "direct dependency": {
+          "number": 19,
+          "packages": [
+               {
+                    "name": "numpy",
+                    "specifier": "==1.24.3",
+                    "raw_requirement": "numpy==1.24.3 ; numpy==1.24.3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opencv-python",
+                    "specifier": "==4.8.0.74",
+                    "raw_requirement": "opencv-python==4.8.0.74 ; opencv-python==4.8.0.74",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnx",
+                    "specifier": "==1.14.0",
+                    "raw_requirement": "onnx==1.14.0 ; onnx==1.14.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "insightface",
+                    "specifier": "==0.7.3",
+                    "raw_requirement": "insightface==0.7.3 ; insightface==0.7.3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "psutil",
+                    "specifier": "==5.9.5",
+                    "raw_requirement": "psutil==5.9.5 ; psutil==5.9.5",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tk",
+                    "specifier": "==0.1.0",
+                    "raw_requirement": "tk==0.1.0 ; tk==0.1.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "customtkinter",
+                    "specifier": "==5.2.0",
+                    "raw_requirement": "customtkinter==5.2.0 ; customtkinter==5.2.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tkinterdnd2",
+                    "specifier": "==0.3.0",
+                    "raw_requirement": "tkinterdnd2==0.3.0; sys_platform != 'darwin' and platform_machine != 'arm64' ; tkinterdnd2==0.3.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tkinterdnd2-universal",
+                    "specifier": "==1.7.3",
+                    "raw_requirement": "tkinterdnd2-universal==1.7.3; sys_platform == 'darwin' and platform_machine == 'arm64'",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pillow",
+                    "specifier": "==10.0.0",
+                    "raw_requirement": "pillow==10.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnxruntime",
+                    "specifier": "==1.15.1",
+                    "raw_requirement": "onnxruntime==1.15.1; python_version != '3.9' and sys_platform == 'darwin' and platform_machine != 'arm64' ; onnxruntime==1.15.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnxruntime-coreml",
+                    "specifier": "==1.13.1",
+                    "raw_requirement": "onnxruntime-coreml==1.13.1; python_version == '3.9' and sys_platform == 'darwin' and platform_machine != 'arm64'",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnxruntime-silicon",
+                    "specifier": "==1.13.1",
+                    "raw_requirement": "onnxruntime-silicon==1.13.1; sys_platform == 'darwin' and platform_machine == 'arm64'",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnxruntime-gpu",
+                    "specifier": "==1.15.1",
+                    "raw_requirement": "onnxruntime-gpu==1.15.1; sys_platform != 'darwin'",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorflow",
+                    "specifier": "==2.13.0",
+                    "raw_requirement": "tensorflow==2.13.0 ; tensorflow==2.13.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opennsfw2",
+                    "specifier": "==0.10.2",
+                    "raw_requirement": "opennsfw2==0.10.2 ; opennsfw2==0.10.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "protobuf",
+                    "specifier": "==4.23.4",
+                    "raw_requirement": "protobuf==4.23.4 ; protobuf==4.23.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tqdm",
+                    "specifier": "==4.65.0",
+                    "raw_requirement": "tqdm==4.65.0 ; tqdm==4.65.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gfpgan",
+                    "specifier": "==1.3.8",
+                    "raw_requirement": "gfpgan==1.3.8",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 0,
+          "packages": []
+     },
+     "direct dependency with same name": {
+          "number": 2,
+          "packages": {
+               "numpy": {
+                    "private version": "1.24.3",
+                    "public version": "1.24.3",
+                    "highest public (unconstrained)": "2.5.1",
+                    "declared specifier": "==1.24.3",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               },
+               "pillow": {
+                    "private version": "10.0.0",
+                    "public version": "10.0.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": "==10.0.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 0,
+          "packages": {}
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 2,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 59
+     }
+}

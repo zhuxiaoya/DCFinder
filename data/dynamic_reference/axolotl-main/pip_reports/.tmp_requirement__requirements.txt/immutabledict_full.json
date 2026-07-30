@@ -1,0 +1,71 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/e2/13/3cf4ac5b3403f3456e645c4533883ef67b1bb0c72e56b79c707715f57a74/immutabledict-4.2.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=d728b2c2410d698d95e6200237feb50a695584d20289ad3379a439aa3d90baba",
+          "hashes": {
+            "sha256": "d728b2c2410d698d95e6200237feb50a695584d20289ad3379a439aa3d90baba"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "immutabledict",
+        "version": "4.2.0",
+        "summary": "Immutable wrapper around dictionaries (a fork of frozendict)",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "immutable",
+          "dictionary"
+        ],
+        "home_page": "https://github.com/corenting/immutabledict",
+        "author": "Corentin Garcia",
+        "author_email": "corenting@gmail.com",
+        "license": "MIT",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_python": ">=3.8,<4.0",
+        "project_url": [
+          "Bug Tracker, https://github.com/corenting/immutabledict/issues",
+          "Changelog, https://github.com/corenting/immutabledict/blob/master/CHANGELOG.md",
+          "Documentation, https://immutabledict.corenting.fr",
+          "Donation, https://corenting.fr/donate",
+          "Repository, https://github.com/corenting/immutabledict"
+        ],
+        "description": "# immutabledict\n\n![PyPI](https://img.shields.io/pypi/v/immutabledict) ![Conda](https://img.shields.io/conda/vn/conda-forge/immutabledict) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/immutabledict)\n\n![License](https://img.shields.io/pypi/l/immutabledict) ![Build](https://img.shields.io/github/actions/workflow/status/corenting/immutabledict/ci.yml?branch=master) ![Codecov](https://img.shields.io/codecov/c/github/corenting/immutabledict) ![PyPI - Downloads](https://img.shields.io/pypi/dm/immutabledict)\n\nAn immutable wrapper around dictionaries. immutabledict implements the complete mapping interface and can be used as a drop-in replacement for dictionaries where immutability is desired.\n\nIt's a fork of slezica's [frozendict](https://github.com/slezica/python-frozendict). This library is a pure Python, MIT-licensed alternative to the new LGPL-3.0 licensed [frozendict](https://github.com/Marco-Sulla/python-frozendict).\n\n## Installation\n\nOfficial release in [on pypi](https://pypi.org/project/immutabledict/) as `immutabledict`.\n\n**Community-maintained** releases are available:\n- On [conda-forge](https://anaconda.org/conda-forge/immutabledict) as `immutabledict`\n- On [various package repositories](https://repology.org/project/python:immutabledict/versions)\n\n## Example\n\n```python\nfrom immutabledict import immutabledict\n\nmy_item = immutabledict({\"a\": \"value\", \"b\": \"other_value\"})\nprint(my_item[\"a\"]) # Print \"value\"\n```\n\n## Differences with the old original frozendict package\n\n- Dropped support of EOL Python versions (older versions of the library may support older Python versions)\n- Fixed `collections.Mapping` deprecation warning\n- Typing\n- [PEP 584 union operators](https://www.python.org/dev/peps/pep-0584/)\n- Keep the same signature for `copy()` as `dict` (starting with immutabledict 3.0.0), don't accept extra keyword arguments.\n- Added `set`, `delete` and `discard` methods\n\n## Donations\n\nIf you wish to support this library, donations are possible [here](https://corenting.fr/donate).\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

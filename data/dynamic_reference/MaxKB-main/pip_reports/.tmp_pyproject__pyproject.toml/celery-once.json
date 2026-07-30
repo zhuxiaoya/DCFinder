@@ -1,0 +1,78 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/07/ff/af718344bfa9e0e25fb6855095a928ac6525f23b14a3998dd99699dfdee0/celery_once-3.0.1.tar.gz",
+        "archive_info": {
+          "hash": "sha256=9098730d6a84a91ccd84868c4730a81487fd0ffb7220cb1836d2b928542159d0",
+          "hashes": {
+            "sha256": "9098730d6a84a91ccd84868c4730a81487fd0ffb7220cb1836d2b928542159d0"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "celery_once",
+        "version": "3.0.1",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "keywords",
+          "license",
+          "requires-dist",
+          "summary"
+        ],
+        "summary": "Allows you to prevent multiple execution and queuing of celery tasks.",
+        "keywords": [
+          "celery",
+          "mutex",
+          "once",
+          "lock",
+          "redis"
+        ],
+        "home_page": "https://github.com/cameronmaske/celery-once",
+        "author": "Cameron Maske",
+        "author_email": "cameronmaske@gmail.com",
+        "license": "BSD",
+        "classifier": [
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Natural Language :: English",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.6",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.4",
+          "Topic :: System :: Distributed Computing"
+        ],
+        "requires_dist": [
+          "celery",
+          "redis>=2.10.2"
+        ],
+        "description": "Celery Once\n===========\n\n|Build Status| |Coverage Status|\n\nCelery Once allows you to prevent multiple execution and queuing of `celery <http://www.celeryproject.org/>`_ tasks.\n\nInstallation\n============\n\nInstalling ``celery_once`` is simple with pip, just run:\n\n::\n\n    pip install -U celery_once\n\n\nRequirements\n============\n\n* `Celery <http://www.celeryproject.org/>`__. Built to run with Celery 4.0. Older versions may work, but are not officially supported.\n\nUsage\n=====\n\nTo use ``celery_once``, your tasks need to inherit from an `abstract <http://celery.readthedocs.org/en/latest/userguide/tasks.html#abstract-classes>`_ base task called ``QueueOnce``.\n\nOnce installed, you'll need to configure a few options a ``ONCE`` key in celery's conf.\n\n.. code:: python\n\n    from celery import Celery\n    from celery_once import QueueOnce\n    from time import sleep\n\n    celery = Celery('tasks', broker='amqp://guest@localhost//')\n    celery.conf.ONCE = {\n      'backend': 'celery_once.backends.Redis',\n      'settings': {\n        'url': 'redis://localhost:6379/0',\n        'default_timeout': 60 * 60\n      }\n    }\n\n    @celery.task(base=QueueOnce)\n    def slow_task():\n        sleep(30)\n        return \"Done!\"\n\n\nThe exact configuration, depends on which locking backend you want to use. See `Backends`_.\n\n\nBehind the scenes, this overrides ``apply_async`` and ``delay``. It does not affect calling the tasks directly.\n\nWhen running the task, ``celery_once`` checks that no lock is in place (against a Redis key).\nIf it isn't, the task will run as normal. Once the task completes (or ends due to an exception) the lock will clear.\nIf an attempt is made to run the task again before it completes an ``AlreadyQueued`` exception will be raised.\n\n.. code-block:: python\n\n    example.delay(10)\n    example.delay(10)\n    Traceback (most recent call last):\n        ..\n    AlreadyQueued()\n\n.. code-block:: python\n\n    result = example.apply_async(args=(10))\n    result = example.apply_async(args=(10))\n    Traceback (most recent call last):\n        ..\n    AlreadyQueued()\n\n\n``graceful``\n------------\n\nOptionally, instead of raising an ``AlreadyQueued`` exception, the task can return ``None`` if ``once={'graceful': True}`` is set in the task's `options <http://celery.readthedocs.org/en/latest/userguide/tasks.html#list-of-options>`__ or when run through ``apply_async``.\n\n.. code:: python\n\n    from celery_once import AlreadyQueued\n    # Either catch the exception,\n    try:\n        example.delay(10)\n    except AlreadyQueued:\n        pass\n    # Or, handle it gracefully at run time.\n    result = example.apply(args=(10), once={'graceful': True})\n    # or by default.\n    @celery.task(base=QueueOnce, once={'graceful': True})\n    def slow_task():\n        sleep(30)\n        return \"Done!\"\n\n\n``keys``\n--------\n\nBy default ``celery_once`` creates a lock based on the task's name and its arguments and values.\nTake for example, the following task below...\n\n.. code:: python\n\n    @celery.task(base=QueueOnce)\n    def slow_add(a, b):\n        sleep(30)\n        return a + b\n\nRunning the task with different arguments will default to checking against different locks.\n\n.. code:: python\n\n    slow_add(1, 1)\n    slow_add(1, 2)\n\nIf you want to specify locking based on a subset, or no arguments you can adjust the keys ``celery_once`` looks at in the task's `options <http://celery.readthedocs.org/en/latest/userguide/tasks.html#list-of-options>`_ with ``once={'keys': [..]}``\n\n.. code:: python\n\n    @celery.task(base=QueueOnce, once={'keys': ['a']})\n    def slow_add(a, b):\n        sleep(30)\n        return a + b\n\n    example.delay(1, 1)\n    # Checks if any tasks are running with the `a=1`\n    example.delay(1, 2)\n    Traceback (most recent call last):\n        ..\n    AlreadyQueued()\n    example.delay(2, 2)\n\n.. code:: python\n\n    @celery.task(base=QueueOnce, once={'keys': []})\n    def slow_add(a, b):\n        sleep(30)\n        return a + b\n\n    # Will enforce only one task can run, no matter what arguments.\n    example.delay(1, 1)\n    example.delay(2, 2)\n    Traceback (most recent call last):\n        ..\n    AlreadyQueued()\n\n\n``timeout``\n-----------\nAs a fall back, ``celery_once`` will clear a lock after 60 minutes.\nThis is set globally in Celery's configuration with ``ONCE_DEFAULT_TIMEOUT`` but can be set for individual tasks using...\n\n.. code:: python\n\n    @celery.task(base=QueueOnce, once={'timeout': 60 * 60 * 10})\n    def long_running_task():\n        sleep(60 * 60 * 3)\n\n\n``unlock_before_run``\n---------------------\nBy default, the lock is removed after the task has executed (using celery's `after_return <https://celery.readthedocs.org/en/latest/reference/celery.app.task.html#celery.app.task.Task.after_return>`_). This behaviour can be changed setting the task's option ``unlock_before_run``. When set to ``True``, the lock will be removed just before executing the task.\n\n**Caveats**:\n  * Any retry of the task won't re-enable the lock!\n  * This can only be set when defining the task, it cannot be passed dynamically to ``apply_async``\n\n.. code:: python\n\n    @celery.task(base=QueueOnce, once={'unlock_before_run': True})\n    def slow_task():\n        sleep(30)\n        return \"Done!\"\n\n\n\n\nBackends\n========\n\nRedis Backend\n-------------\n\nRequires:\n\n* `Redis <http://redis.io/>`_ is used as a distributed locking mechanism. Behind the scenes, it use redis-py's `shared, distributed Lock <https://github.com/andymccurdy/redis-py/blob/31519e4ccef49fb59254ee5524007c81faa7e850/redis/lock.py#L8>`_.\n\nConfiguration:\n\n-  ``backend`` - ``celery_once.backends.Redis``\n\n-  ``settings``\n\n  - ``default_timeout`` - how many seconds after a lock has been set before it should automatically timeout (defaults to 3600 seconds, or 1 hour).\n\n  - ``url`` - should point towards a running Redis instance (defaults to ``redis://localhost:6379/0``). See below for the format options supported\n\n  - ``blocking`` (boolean value: default ``False``) - If set to ``True``, scheduling a task (by ``.delay/.apply_async``) will block for X seconds to acquire the lock (see: ``blocking_timeout`` below). If no lock could be acquired after X seconds, will raise an ``AlreadyQueued`` exception. This is a very specific use-case scenario and by default is disabled.\n\n  - ``blocking_timeout`` (int or float value: default ``1``) - How many seconds the task will block trying to aquire the lock, if ``blocking`` is set to ``True``. Setting this to ``None`` set's no timeout (equivalent to infinite seconds).\n\n\n\nThe URL parser supports three patterns of urls:\n\n* ``redis://host:port[/db][?options]``: redis over TCP\n\n* ``rediss://host:port[/db][?options]``: redis over TCP with SSL enabled.\n\n* ``redis+socket:///path/to/redis.sock[?options]``: redis over a UNIX socket\n\n  The ``options`` query args are mapped to the `StrictRedis <https://redis-py.readthedocs.org/en/latest/index.html#redis.StrictRedis>`_ keyword args.\n  Examples:\n  * ``redis://localhost:6379/1``\n  \n  * ``redis://localhost:6379/1?ssl=true``\n\n  * ``rediss://localhost:6379/1``\n\n  * ``redis+socket:///var/run/redis/redis.sock?db=1``\n\n\nExample Configuration:\n\nMinimal:\n\n.. code:: python\n\n    celery.conf.ONCE = {\n      'backend': 'celery_once.backends.Redis',\n      'settings': {\n        'url': 'redis://localhost:6379/0',\n        'default_timeout': 60 * 60\n      }\n    }\n\n\nAdvanced:\nScheduling tasks blocks up to 30 seconds trying to acquire a lock before raising an exception.\n\n    .. code:: python\n\n        celery.conf.ONCE = {\n          'backend': 'celery_once.backends.Redis',\n          'settings': {\n            'url': 'redis://localhost:6379/0',\n            'default_timeout': 60 * 60,\n            'blocking': True,\n            'blocking_timeout': 30\n          }\n        }\n\nFile Backend\n-------------\n\nConfiguration:\n\n-  ``backend`` - ``celery_once.backends.File``\n\n-  ``settings``\n\n  - ``location`` - directory where lock files will be located. Default is temporary directory.\n\n  - ``default_timeout`` - how many seconds after a lock has been set before it should automatically timeout (defaults to 3600 seconds, or 1 hour).\n\n\nExample Configuration:\n\n.. code:: python\n\n    celery.conf.ONCE = {\n        'backend': 'celery_once.backends.File',\n        'settings': {\n            'location': '/tmp/celery_once',\n            'default_timeout': 60 * 60\n        }\n    }\n\n\nFlask Intergration\n------------------\nTo avoid ``RuntimeError: Working outside of application context`` errors when using ``celery_once`` with `Flask <http://flask.pocoo.org/docs/1.0/>`_, you need to make the ``QueueOnce`` task base class application context aware.\nIf you've implemented Celery following the Flask `documentation <http://flask.pocoo.org/docs/1.0/patterns/celery/#configure>`_ you can extend it like so.\n\n    .. code:: python\n\n        def make_celery(app):\n            celery = Celery(\n                app.import_name,\n                backend=app.config['CELERY_RESULT_BACKEND'],\n                broker=app.config['CELERY_BROKER_URL']\n            )\n            celery.conf.update(app.config)\n\n            class ContextTask(celery.Task):\n                def __call__(self, *args, **kwargs):\n                    with app.app_context():\n                        return self.run(*args, **kwargs)\n            celery.Task = ContextTask\n\n            # Make QueueOnce app context aware.\n            class ContextQueueOnce(QueueOnce):\n                def __call__(self, *args, **kwargs):\n                    with app.app_context():\n                        return super(ContextQueueOnce, self).__call__(*args, **kwargs)\n\n            # Attach to celery object for easy access.\n            celery.QueueOnce = ContextQueueOnce\n            return celery\n\n\nNow, when instead of importing the ``QueueOnce`` base, you can use the context aware base on the ``celery`` object.\n\n    .. code:: python\n\n        celery = make_celery(app)\n\n        @celery.task(base=celery.QueueOnce)\n        def example_task(value):\n            return\n\n\nCustom Backend\n--------------\n\nIf you want to implement a custom locking backend, see `BACKEND\\_GUIDE.rst`_.\n\n.. _BACKEND\\_GUIDE.rst: BACKEND_GUIDE.rst\n\nSupport\n=======\n\n* Tests are run against Python 2.7, 3.4 and 3.5. Other versions may work, but are not officially supported.\n\nContributing\n============\n\nContributions are welcome, and they are greatly appreciated! See `contributing\nguide <CONTRIBUTING.rst>`_ for more details.\n\n\n.. |Build Status| image:: https://travis-ci.org/cameronmaske/celery-once.svg\n   :target: https://travis-ci.org/cameronmaske/celery-once\n.. |Coverage Status| image:: https://coveralls.io/repos/cameronmaske/celery-once/badge.svg\n   :target: https://coveralls.io/r/cameronmaske/celery-once\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

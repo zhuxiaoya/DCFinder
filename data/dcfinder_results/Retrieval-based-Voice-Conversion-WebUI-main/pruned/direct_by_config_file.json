@@ -1,0 +1,216 @@
+{
+  "analysis_program/Retrieval-based-Voice-Conversion-WebUI-main/requirements-py311.txt": [
+    {
+      "name": "joblib",
+      "specifier": ">=1.1.0"
+    },
+    {
+      "name": "numba",
+      "specifier": "==0.56.4"
+    },
+    {
+      "name": "numpy",
+      "specifier": "==1.23.5"
+    },
+    {
+      "name": "scipy",
+      "specifier": "==1.13.1"
+    },
+    {
+      "name": "librosa",
+      "specifier": "==0.10.2"
+    },
+    {
+      "name": "llvmlite",
+      "specifier": "==0.39.0"
+    },
+    {
+      "name": "fairseq",
+      "specifier": "==0.12.2"
+    },
+    {
+      "name": "faiss-cpu",
+      "specifier": "==1.7.3"
+    },
+    {
+      "name": "gradio",
+      "specifier": "==3.34.0"
+    },
+    {
+      "name": "cython",
+      "specifier": "<4.0.0,>=3.0.11"
+    },
+    {
+      "name": "pydub",
+      "specifier": ">=0.25.1"
+    },
+    {
+      "name": "soundfile",
+      "specifier": ">=0.12.1"
+    },
+    {
+      "name": "ffmpeg-python",
+      "specifier": ">=0.2.0"
+    },
+    {
+      "name": "tensorboardx",
+      "specifier": "<3.0.0,>=2.6.2.2"
+    },
+    {
+      "name": "jinja2",
+      "specifier": ">=3.1.2"
+    },
+    {
+      "name": "json5",
+      "specifier": "<0.10.0,>=0.9.25"
+    },
+    {
+      "name": "markdown",
+      "specifier": "<4.0.0,>=3.6"
+    },
+    {
+      "name": "matplotlib",
+      "specifier": ">=3.7.0"
+    },
+    {
+      "name": "matplotlib-inline",
+      "specifier": ">=0.1.3"
+    },
+    {
+      "name": "praat-parselmouth",
+      "specifier": ">=0.4.2"
+    },
+    {
+      "name": "pillow",
+      "specifier": ">=9.1.1"
+    },
+    {
+      "name": "resampy",
+      "specifier": ">=0.4.2"
+    },
+    {
+      "name": "scikit-learn",
+      "specifier": "<2.0.0,>=1.5.1"
+    },
+    {
+      "name": "tensorboard",
+      "specifier": "<3.0.0,>=2.17.0"
+    },
+    {
+      "name": "tqdm",
+      "specifier": ">=4.63.1"
+    },
+    {
+      "name": "tornado",
+      "specifier": ">=6.1"
+    },
+    {
+      "name": "werkzeug",
+      "specifier": ">=2.2.3"
+    },
+    {
+      "name": "uc-micro-py",
+      "specifier": ">=1.0.1"
+    },
+    {
+      "name": "sympy",
+      "specifier": ">=1.11.1"
+    },
+    {
+      "name": "tabulate",
+      "specifier": ">=0.8.10"
+    },
+    {
+      "name": "pyyaml",
+      "specifier": ">=6.0"
+    },
+    {
+      "name": "pyasn1",
+      "specifier": ">=0.4.8"
+    },
+    {
+      "name": "pyasn1-modules",
+      "specifier": ">=0.2.8"
+    },
+    {
+      "name": "fsspec",
+      "specifier": ">=2022.11.0"
+    },
+    {
+      "name": "absl-py",
+      "specifier": ">=1.2.0"
+    },
+    {
+      "name": "audioread",
+      "specifier": "<4.0.0,>=3.0.1"
+    },
+    {
+      "name": "uvicorn",
+      "specifier": ">=0.21.1"
+    },
+    {
+      "name": "colorama",
+      "specifier": ">=0.4.5"
+    },
+    {
+      "name": "pyworld",
+      "specifier": "==0.3.2"
+    },
+    {
+      "name": "httpx",
+      "specifier": "<0.28.0,>=0.27.0"
+    },
+    {
+      "name": "onnxruntime",
+      "specifier": ""
+    },
+    {
+      "name": "onnxruntime-gpu",
+      "specifier": "<2.0.0,>=1.18.1"
+    },
+    {
+      "name": "torchcrepe",
+      "specifier": "==0.0.23"
+    },
+    {
+      "name": "fastapi",
+      "specifier": "==0.88"
+    },
+    {
+      "name": "torchfcpe",
+      "specifier": "<0.0.5,>=0.0.4"
+    },
+    {
+      "name": "ffmpy",
+      "specifier": "==0.3.1"
+    },
+    {
+      "name": "python-dotenv",
+      "specifier": ">=1.0.0"
+    },
+    {
+      "name": "av",
+      "specifier": "<13.0.0,>=12.3.0"
+    }
+  ],
+  "analysis_program/Retrieval-based-Voice-Conversion-WebUI-main/requirements.txt": [
+    {
+      "name": "aria2",
+      "specifier": ""
+    }
+  ],
+  "analysis_program/Retrieval-based-Voice-Conversion-WebUI-main/pyproject.toml": [
+    {
+      "name": "torch",
+      "specifier": "==2.4.0"
+    },
+    {
+      "name": "torchaudio",
+      "specifier": "==2.4.0"
+    },
+    {
+      "name": "torchvision",
+      "specifier": "==0.19.0"
+    }
+  ]
+}

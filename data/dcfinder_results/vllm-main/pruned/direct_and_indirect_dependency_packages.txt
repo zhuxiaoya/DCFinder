@@ -1,0 +1,15 @@
+tensorizer >=2.9.0
+fastsafetensors >=0.1.10
+runai-model-streamer
+runai-model-streamer-s3
+boto3
+librosa
+soundfile
+pandas
+cffi >=1.0
+numpy >=1.19.5,>=1.22.3,>=1.22.4,<2.3,>=1.24,<2.6,>=1.25.2,>=1.24.1
+pycparser
+python-dateutil >=2.8.2,<3.0.0,>=2.1
+pytz >=2020.1
+six >=1.5
+tzdata >=2022.7

@@ -1,0 +1,714 @@
+{
+     "direct dependency": {
+          "number": 29,
+          "packages": [
+               {
+                    "name": "ml-dtypes",
+                    "specifier": ">=0.5.0",
+                    "raw_requirement": "ml_dtypes>=0.5.0 ; ml_dtypes>=0.5.0",
+                    "source_file": "analysis_program/jax-main/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numpy",
+                    "specifier": ">=1.26",
+                    "raw_requirement": "numpy>=1.26 ; numpy>=1.26 ; numpy",
+                    "source_file": "analysis_program/jax-main/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opt-einsum",
+                    "specifier": "",
+                    "raw_requirement": "opt_einsum",
+                    "source_file": "analysis_program/jax-main/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scipy",
+                    "specifier": ">=1.12",
+                    "raw_requirement": "scipy>=1.12 ; scipy>=1.12",
+                    "source_file": "analysis_program/jax-main/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "requests",
+                    "specifier": "",
+                    "raw_requirement": "requests",
+                    "source_file": "analysis_program/jax-main/setup.py",
+                    "dependency_type": "extra:tpu"
+               },
+               {
+                    "name": "kubernetes",
+                    "specifier": "",
+                    "raw_requirement": "kubernetes",
+                    "source_file": "analysis_program/jax-main/setup.py",
+                    "dependency_type": "extra:k8s"
+               },
+               {
+                    "name": "absl-py",
+                    "specifier": "",
+                    "raw_requirement": "absl-py ; absl-py",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ipython",
+                    "specifier": ">=8.8.0",
+                    "raw_requirement": "ipython>=8.8.0",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pydata-sphinx-theme",
+                    "specifier": "==0.14.4",
+                    "raw_requirement": "pydata-sphinx-theme==0.14.4",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "snowballstemmer",
+                    "specifier": "<3.0.0",
+                    "raw_requirement": "snowballstemmer<3.0.0",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "sphinx",
+                    "specifier": "<8.0,>=7.3.2",
+                    "raw_requirement": "sphinx>=7.3.2,<8.0",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "sphinx-book-theme",
+                    "specifier": "==1.1.1",
+                    "raw_requirement": "sphinx-book-theme==1.1.1",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "sphinx-copybutton",
+                    "specifier": ">=0.5.0",
+                    "raw_requirement": "sphinx-copybutton>=0.5.0",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "sphinx-remove-toctrees",
+                    "specifier": "",
+                    "raw_requirement": "sphinx-remove-toctrees",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "sphinx-design",
+                    "specifier": "",
+                    "raw_requirement": "sphinx-design",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "sphinxext-rediraffe",
+                    "specifier": "",
+                    "raw_requirement": "sphinxext-rediraffe",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "myst-nb",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "myst-nb>=1.0.0",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "flatbuffers",
+                    "specifier": "",
+                    "raw_requirement": "flatbuffers",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pytest",
+                    "specifier": "",
+                    "raw_requirement": "pytest ; pytest",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pytest-xdist",
+                    "specifier": "",
+                    "raw_requirement": "pytest-xdist",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "matplotlib",
+                    "specifier": "",
+                    "raw_requirement": "matplotlib",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scikit-learn",
+                    "specifier": "",
+                    "raw_requirement": "scikit-learn",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pooch",
+                    "specifier": "",
+                    "raw_requirement": "pooch",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "rich",
+                    "specifier": "",
+                    "raw_requirement": "rich[jupyter]",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "cmake",
+                    "specifier": "",
+                    "raw_requirement": "cmake",
+                    "source_file": "analysis_program/jax-main/docs/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorflow-datasets",
+                    "specifier": "",
+                    "raw_requirement": "tensorflow_datasets",
+                    "source_file": "analysis_program/jax-main/jax/experimental/jax2tf/examples/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorflow-hub",
+                    "specifier": "",
+                    "raw_requirement": "tensorflow_hub",
+                    "source_file": "analysis_program/jax-main/jax/experimental/jax2tf/examples/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "flax",
+                    "specifier": "",
+                    "raw_requirement": "flax",
+                    "source_file": "analysis_program/jax-main/jax/experimental/jax2tf/examples/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "jax",
+                    "specifier": "",
+                    "raw_requirement": "jax",
+                    "source_file": "analysis_program/jax-main/examples/ffi/pyproject.toml",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 19,
+          "packages": [
+               {
+                    "name": "contourpy",
+                    "specifier": ">=1.2.1",
+                    "raw_requirement": "contourpy>=1.2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "cycler",
+                    "specifier": ">=0.10",
+                    "raw_requirement": "cycler>=0.10",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "decorator",
+                    "specifier": ">=5.1.0,>4.1.2",
+                    "raw_requirement": "decorator>=5.1.0 ; decorator>4.1.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "private"
+                         },
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fonttools",
+                    "specifier": ">=4.28.2",
+                    "raw_requirement": "fonttools>=4.28.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "ipython-pygments-lexers",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "ipython-pygments-lexers>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "jedi",
+                    "specifier": ">=0.18.2",
+                    "raw_requirement": "jedi>=0.18.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "kiwisolver",
+                    "specifier": ">=1.3.1",
+                    "raw_requirement": "kiwisolver>=1.3.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "matplotlib-inline",
+                    "specifier": ">=0.1.6,>=0.1",
+                    "raw_requirement": "matplotlib-inline>=0.1.6 ; matplotlib-inline>=0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "private"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "packaging",
+                    "specifier": ">=23.0,>=22,>=20.0,>=20.0,>=22,>=23.2,>=22.0,>=21.3,>=24.0",
+                    "raw_requirement": "packaging>=23.0 ; packaging>=22 ; packaging>=20.0 ; packaging>=20.0 ; packaging>=22 ; packaging; extra == \"ecolab\" ; packaging ; packaging ; packaging>=23.2 ; packaging ; packaging>=22.0 ; packaging>=21.3 ; packaging>=24.0 ; packaging",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sphinx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "private"
+                         },
+                         {
+                              "name": "pooch",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "private"
+                         },
+                         {
+                              "name": "etils",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         },
+                         {
+                              "name": "keras",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "wheel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pexpect",
+                    "specifier": ">4.6",
+                    "raw_requirement": "pexpect>4.6; sys_platform != \"win32\" and sys_platform != \"emscripten\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "pillow",
+                    "specifier": ">=9",
+                    "raw_requirement": "pillow>=9 ; Pillow",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "private"
+                         },
+                         {
+                              "name": "mediapy",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "prompt-toolkit",
+                    "specifier": "<3.1.0,>=3.0.41,>=3.0.30",
+                    "raw_requirement": "prompt_toolkit<3.1.0,>=3.0.41 ; prompt-toolkit>=3.0.30",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "private"
+                         },
+                         {
+                              "name": "jupyter-console",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "psutil",
+                    "specifier": ">=7,>=5.7",
+                    "raw_requirement": "psutil>=7; sys_platform != \"emscripten\" and sys_platform != \"cygwin\" ; psutil ; psutil>=5.7 ; psutil",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "private"
+                         },
+                         {
+                              "name": "tensorflow-datasets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "private"
+                         },
+                         {
+                              "name": "orbax-checkpoint",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pygments",
+                    "specifier": ">=2.14.0,>=2.17,>=2.7.2,<3.0.0,>=2.13.0,>=2.4.1",
+                    "raw_requirement": "pygments>=2.14.0 ; Pygments>=2.17 ; pygments>=2.7.2 ; pygments<3.0.0,>=2.13.0 ; pygments ; pygments ; pygments>=2.4.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "private"
+                         },
+                         {
+                              "name": "sphinx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         },
+                         {
+                              "name": "rich",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython-pygments-lexers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-console",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyparsing",
+                    "specifier": ">=3",
+                    "raw_requirement": "pyparsing>=3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-dateutil",
+                    "specifier": ">=2.5.3,>=2.7,>=2.8.2,<3.0.0,>=2.1,<3.0.0,>=2.1",
+                    "raw_requirement": "python-dateutil>=2.5.3 ; python-dateutil>=2.5.3 ; python-dateutil>=2.7 ; python-dateutil>=2.8.2 ; python-dateutil<3.0.0,>=2.1 ; python-dateutil<3.0.0,>=2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "kubernetes",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "private"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         },
+                         {
+                              "name": "botocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "stack-data",
+                    "specifier": ">=0.6.0",
+                    "raw_requirement": "stack_data>=0.6.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "traitlets",
+                    "specifier": ">=5.13.0,>=5.13,>=5.1,>=5.4.0,>=5.3,>=5.3,>=5.4,>=5.1,>=4.3.1,>=5.6.0,>=5.3",
+                    "raw_requirement": "traitlets>=5.13.0 ; traitlets ; traitlets>=5.13 ; traitlets>=5.1 ; traitlets>=5.4.0 ; traitlets>=5.3 ; traitlets>=5.3 ; traitlets>=5.4 ; traitlets>=5.1 ; traitlets>=4.3.1 ; traitlets ; traitlets ; traitlets>=5.6.0 ; traitlets>=5.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "private"
+                         },
+                         {
+                              "name": "matplotlib-inline",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbclient",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbformat",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "private"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-console",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipywidgets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-builder",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=4.6,>=4.2,>=4.4,>=4.6.0,>=4.5.0,>=4.2,>=4.1.0,>=4.6.0,>=4.13.0,>=3.6.6,>=4.4.0,<5.0.0,>=4.14.0,~=4.12,>=4.0.0,>=4.0.0,>=4.13.2,>=4.6.0,>=4.5",
+                    "raw_requirement": "typing_extensions>=4.6; python_version < \"3.12\" ; typing-extensions ; typing_extensions>=4.2 ; typing_extensions>=4.4; python_version < \"3.13\" ; typing-extensions>=4.6.0; python_version < \"3.13\" ; typing_extensions; extra == \"epath\" ; typing_extensions; extra == \"epy\" ; typing-extensions>=4.5.0 ; typing_extensions ; typing-extensions>=4.2; python_version < \"3.13\" ; typing-extensions>=4.1.0; python_version < \"3.11\" ; typing-extensions>=4.6.0 ; typing-extensions>=4.13.0 ; typing_extensions>=3.6.6 ; typing-extensions>=4.4.0; python_version < \"3.13\" ; typing-extensions<5.0.0,>=4.14.0; python_version < \"3.11\" ; typing-extensions~=4.12 ; typing-extensions>=4.0.0 ; typing-extensions; python_version < \"3.11\" ; typing_extensions>=4.0.0; python_version < \"3.11\" ; typing-extensions>=4.13.2; python_full_version < \"3.11\" ; typing-extensions>=4.6.0 ; typing_extensions>=4.5; python_version < \"3.13\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "private"
+                         },
+                         {
+                              "name": "myst-nb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "flax",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "exceptiongroup",
+                              "source": "public"
+                         },
+                         {
+                              "name": "etils",
+                              "source": "public"
+                         },
+                         {
+                              "name": "simple-parsing",
+                              "source": "public"
+                         },
+                         {
+                              "name": "orbax-checkpoint",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiosignal",
+                              "source": "public"
+                         },
+                         {
+                              "name": "multidict",
+                              "source": "public"
+                         },
+                         {
+                              "name": "sqlalchemy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpcio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "beautifulsoup4",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mistune",
+                              "source": "public"
+                         },
+                         {
+                              "name": "async-lru",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cryptography",
+                              "source": "public"
+                         },
+                         {
+                              "name": "optree",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 0,
+          "packages": {}
+     },
+     "indirect private dependency with same name": {
+          "number": 0,
+          "packages": {}
+     },
+     "risk": "No confusion",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 6,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 170
+     }
+}

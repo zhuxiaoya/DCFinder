@@ -1,0 +1,72 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/b6/cb/b86984bed139586d01532a587464b5805f12e397594f19f931c4c2fbfa61/tenacity-9.0.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539",
+          "hashes": {
+            "sha256": "93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "tenacity",
+        "version": "9.0.0",
+        "summary": "Retry code until it succeeds",
+        "home_page": "https://github.com/jd/tenacity",
+        "author": "Julien Danjou",
+        "author_email": "julien@danjou.info",
+        "license": "Apache 2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Topic :: Utilities"
+        ],
+        "requires_dist": [
+          "reno ; extra == 'doc'",
+          "sphinx ; extra == 'doc'",
+          "pytest ; extra == 'test'",
+          "tornado >=4.5 ; extra == 'test'",
+          "typeguard ; extra == 'test'"
+        ],
+        "requires_python": ">=3.8",
+        "provides_extra": [
+          "doc",
+          "test"
+        ],
+        "description": "Tenacity is a general-purpose retrying library to simplify the task of adding retry behavior to just about anything.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/89/34/e2de2d97f3288512b9ea56f92e7452f8207eb5a0096500badf9dfd48f5e6/webrtcvad-2.0.10.tar.gz",
+        "archive_info": {
+          "hash": "sha256=f1bed2fb25b63fb7b1a55d64090c993c9c9167b28485ae0bcdd81cf6ede96aea",
+          "hashes": {
+            "sha256": "f1bed2fb25b63fb7b1a55d64090c993c9c9167b28485ae0bcdd81cf6ede96aea"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "webrtcvad",
+        "version": "2.0.10",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "provides-extra",
+          "summary"
+        ],
+        "summary": "Python interface to the Google WebRTC Voice Activity Detector (VAD)",
+        "keywords": [
+          "speechrecognition",
+          "asr",
+          "voiceactivitydetection",
+          "vad",
+          "webrtc"
+        ],
+        "home_page": "https://github.com/wiseman/py-webrtcvad",
+        "author": "John Wiseman",
+        "author_email": "jjwiseman@gmail.com",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "Topic :: Scientific/Engineering :: Artificial Intelligence",
+          "Topic :: Scientific/Engineering :: Information Analysis",
+          "Topic :: Scientific/Engineering :: Human Machine Interfaces",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.2",
+          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5"
+        ],
+        "requires_dist": [
+          "nose; extra == \"dev\"",
+          "check-manifest; extra == \"dev\"",
+          "unittest2; extra == \"dev\"",
+          "zest.releaser; extra == \"dev\"",
+          "psutil; extra == \"dev\"",
+          "memory_profiler; extra == \"dev\""
+        ],
+        "provides_extra": [
+          "dev"
+        ],
+        "description": ".. image:: https://travis-ci.org/wiseman/py-webrtcvad.svg?branch=master\n    :target: https://travis-ci.org/wiseman/py-webrtcvad\n\npy-webrtcvad\n============\n\nThis is a python interface to the WebRTC Voice Activity Detector\n(VAD).  It is compatible with Python 2 and Python 3.\n\nA `VAD <https://en.wikipedia.org/wiki/Voice_activity_detection>`_\nclassifies a piece of audio data as being voiced or unvoiced. It can\nbe useful for telephony and speech recognition.\n\nThe VAD that Google developed for the `WebRTC <https://webrtc.org/>`_\nproject is reportedly one of the best available, being fast, modern\nand free.\n\nHow to use it\n-------------\n\n0. Install the webrtcvad module::\n\n    pip install webrtcvad\n\n1. Create a ``Vad`` object::\n\n    import webrtcvad\n    vad = webrtcvad.Vad()\n\n2. Optionally, set its aggressiveness mode, which is an integer\n   between 0 and 3. 0 is the least aggressive about filtering out\n   non-speech, 3 is the most aggressive. (You can also set the mode\n   when you create the VAD, e.g. ``vad = webrtcvad.Vad(3)``)::\n\n    vad.set_mode(1)\n\n3. Give it a short segment (\"frame\") of audio. The WebRTC VAD only\n   accepts 16-bit mono PCM audio, sampled at 8000, 16000, or 32000 Hz.\n   A frame must be either 10, 20, or 30 ms in duration::\n\n    # Run the VAD on 10 ms of silence. The result should be False.\n    sample_rate = 16000\n    frame_duration = 10  # ms\n    frame = b'\\x00\\x00' * (sample_rate * frame_duration / 1000)\n    print 'Contains speech: %s' % (vad.is_speech(frame, sample_rate)\n\n\nSee `example.py\n<https://github.com/wiseman/py-webrtcvad/blob/master/example.py>`_ for\na more detailed example that will process a .wav file, find the voiced\nsegments, and write each one as a separate .wav.\n\n\nHow to run unit tests\n---------------------\n\nTo run unit tests::\n\n    pip install -e \".[dev]\"\n    python setup.py test\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

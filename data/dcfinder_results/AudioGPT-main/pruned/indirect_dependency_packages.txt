@@ -1,0 +1,33 @@
+certifi >=2017.4.17
+  # from parent package: httpx (public)
+  # from parent package: requests (private)
+  # from parent package: httpcore (public)
+charset-normalizer <3,>=2
+  # from parent package: requests (private)
+idna <4,>=2.5,>=2.8,>=2.0
+  # from parent package: httpx (public)
+  # from parent package: requests (private)
+  # from parent package: anyio (public)
+  # from parent package: yarl (public)
+pillow <13.0,>=8.0,>=6.0.0,>=6.2.0,!=8.3.*,>=5.3.0,>=10.1,>=9
+  # from parent package: diffusers (public)
+  # from parent package: gradio (public)
+  # from parent package: invisible-watermark (public)
+  # from parent package: streamlit (public)
+  # from parent package: streamlit-drawable-canvas (public)
+  # from parent package: torch-fidelity (public)
+  # from parent package: torchvision (private)
+  # from parent package: scikit-image (public)
+  # from parent package: matplotlib (public)
+  # from parent package: tensorboard (public)
+requests <3,>=2,>=2.4,>=2.19.0
+  # from parent package: diffusers (public)
+  # from parent package: espnet-model-zoo (public)
+  # from parent package: langchain (public)
+  # from parent package: streamlit (public)
+  # from parent package: torchvision (private)
+  # from parent package: transformers (public)
+  # from parent package: pooch (public)
+  # from parent package: tiktoken (public)
+urllib3 <1.27,>=1.21.1
+  # from parent package: requests (private)

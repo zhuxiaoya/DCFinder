@@ -1,0 +1,265 @@
+{
+  "tensorizer": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "torch",
+        "specifier": ">=1.9.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.19.5"
+      },
+      {
+        "name": "protobuf",
+        "specifier": ">=3.19.5"
+      },
+      {
+        "name": "psutil",
+        "specifier": ">=5.9.4"
+      },
+      {
+        "name": "boto3",
+        "specifier": ">=1.26.0"
+      },
+      {
+        "name": "redis",
+        "specifier": ">=4.5.5"
+      },
+      {
+        "name": "hiredis",
+        "specifier": ">=2.2.0"
+      },
+      {
+        "name": "libnacl",
+        "specifier": ">=2.1.0"
+      }
+    ]
+  },
+  "fastsafetensors": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "typer",
+        "specifier": ">=0.9.0"
+      }
+    ]
+  },
+  "runai-model-streamer": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "humanize",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": "<3.0.0,>=2.0.0"
+      }
+    ]
+  },
+  "runai-model-streamer-s3": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "boto3",
+        "specifier": ""
+      }
+    ]
+  },
+  "boto3": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "botocore",
+        "specifier": "<1.44.0,>=1.43.48"
+      },
+      {
+        "name": "jmespath",
+        "specifier": "<2.0.0,>=0.7.1"
+      },
+      {
+        "name": "s3transfer",
+        "specifier": "<0.20.0,>=0.19.0"
+      }
+    ]
+  },
+  "librosa": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "audioread",
+        "specifier": ">=2.1.9"
+      },
+      {
+        "name": "numba",
+        "specifier": ">=0.51.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.22.3"
+      },
+      {
+        "name": "scipy",
+        "specifier": ">=1.6.0"
+      },
+      {
+        "name": "scikit-learn",
+        "specifier": ">=1.1.0"
+      },
+      {
+        "name": "joblib",
+        "specifier": ">=1.0"
+      },
+      {
+        "name": "decorator",
+        "specifier": ">=4.3.0"
+      },
+      {
+        "name": "soundfile",
+        "specifier": ">=0.12.1"
+      },
+      {
+        "name": "pooch",
+        "specifier": ">=1.1"
+      },
+      {
+        "name": "soxr",
+        "specifier": ">=0.3.2"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.1.1"
+      },
+      {
+        "name": "lazy-loader",
+        "specifier": ">=0.1"
+      },
+      {
+        "name": "msgpack",
+        "specifier": ">=1.0"
+      }
+    ]
+  },
+  "soundfile": {
+    "version": "0.13.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cpu",
+    "specifier": ">=0.12.1",
+    "requires_dist": [
+      {
+        "name": "cffi",
+        "specifier": ">=1.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ""
+      }
+    ]
+  },
+  "pandas": {
+    "version": "2.3.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cpu",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.22.4"
+      },
+      {
+        "name": "python-dateutil",
+        "specifier": ">=2.8.2"
+      },
+      {
+        "name": "pytz",
+        "specifier": ">=2020.1"
+      },
+      {
+        "name": "tzdata",
+        "specifier": ">=2022.7"
+      }
+    ]
+  },
+  "numpy": {
+    "version": "2.4.4",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": ">=1.19.5,>=1.22.3,>=1.22.4",
+    "requires_dist": []
+  },
+  "cffi": {
+    "version": "2.0.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cpu",
+    "specifier": ">=1.0",
+    "requires_dist": [
+      {
+        "name": "pycparser",
+        "specifier": ""
+      }
+    ]
+  },
+  "python-dateutil": {
+    "version": "2.9.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cpu",
+    "specifier": ">=2.8.2,<3.0.0,>=2.1",
+    "requires_dist": [
+      {
+        "name": "six",
+        "specifier": ">=1.5"
+      }
+    ]
+  },
+  "pytz": {
+    "version": "2025.2",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cpu",
+    "specifier": ">=2020.1",
+    "requires_dist": []
+  },
+  "tzdata": {
+    "version": "2025.2",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cpu",
+    "specifier": ">=2022.7",
+    "requires_dist": []
+  },
+  "pycparser": {
+    "version": "2.23",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cpu",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "six": {
+    "version": "1.17.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/nightly/cpu",
+    "specifier": ">=1.5",
+    "requires_dist": []
+  }
+}

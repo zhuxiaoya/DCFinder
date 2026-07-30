@@ -1,0 +1,46 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/c5/14/af3de3591b571cdd77412f0acb29744c14df268755392367fb96b641aad5/bazel_runfiles-2.1.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=d27b4d01eed5927126781cc104aae7b65fd49f2e7f6f92f38eee39165e3ba0e4",
+          "hashes": {
+            "sha256": "d27b4d01eed5927126781cc104aae7b65fd49f2e7f6f92f38eee39165e3ba0e4"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "bazel_runfiles",
+        "version": "2.1.0",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/bazel-contrib/rules_python",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "License :: OSI Approved :: Apache Software License"
+        ],
+        "requires_python": ">=3.7",
+        "description": "# bazel-runfiles library\n\nThis is a Bazel Runfiles lookup library for Bazel-built Python binaries and tests.\n\nLearn about runfiles: read [Runfiles guide](https://bazel.build/extending/rules#runfiles)\nor watch [Fabian's BazelCon talk](https://www.youtube.com/watch?v=5NbgUMH1OGo).\n\n## Importing\n\nThe Runfiles API is available from two sources, a direct Bazel target, and a [pypi](https://pypi.org/) package.\n\n## Pure Bazel imports\n\n1. Depend on this runfiles library from your build rule, like you would other third-party libraries:\n\n    ```python\n    py_binary(\n        name = \"my_binary\",\n        # ...\n        deps = [\"@rules_python//python/runfiles\"],\n    )\n    ```\n\n2. Import the runfiles library:\n\n    ```python\n        from python.runfiles import Runfiles\n    ```\n\n## Pypi imports\n\n1. Add the 'bazel-runfiles' dependency along with other third-party dependencies, for example in your `requirements.txt` file.\n\n2. Depend on this runfiles library from your build rule, like you would other third-party libraries:\n    ```python\n    load(\"@pip_deps//:requirements.bzl\", \"requirement\")\n    \n    py_binary(\n        name = \"my_binary\",\n        ...\n        deps = [requirement(\"bazel-runfiles\")],\n    )\n    ```\n\n3. Import the runfiles library:\n    ```python\n    from runfiles import Runfiles\n    ```\n\n## Typical Usage\n\nCreate a `Runfiles` object and use `Rlocation` to look up runfile paths:\n\n```python\nr = Runfiles.Create()\n# ...\nwith open(r.Rlocation(\"my_workspace/path/to/my/data.txt\"), \"r\") as f:\n    contents = f.readlines()\n    # ...\n```\n\nHere `my_workspace` is the name you specified via `module(name = \"...\")` in your `MODULE.bazel` file (with `--enable_bzlmod`, default as of Bazel 7) or `workspace(name = \"...\")` in `WORKSPACE` (with `--noenable_bzlmod`).\n\nThe code above creates a manifest- or directory-based implementation based on the environment variables in `os.environ`. See `Runfiles.Create()` for more info.\n\nIf you want to explicitly create a manifest- or directory-based\nimplementation, you can do so as follows:\n\n```python\nr1 = Runfiles.CreateManifestBased(\"path/to/foo.runfiles_manifest\")\n\nr2 = Runfiles.CreateDirectoryBased(\"path/to/foo.runfiles/\")\n```\n\nIf you want to start subprocesses that access runfiles, you have to set the right environment variables for them:\n\n```python\nimport subprocess\nfrom python.runfiles import Runfiles\n\nr = Runfiles.Create()\nenv = {}\n# ...\nenv.update(r.EnvVars())\np = subprocess.run(\n    [r.Rlocation(\"path/to/binary\")],\n    env=env,\n    # ...\n)\n```\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

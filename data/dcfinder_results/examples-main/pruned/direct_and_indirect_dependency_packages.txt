@@ -1,0 +1,62 @@
+torch ==1.9.0
+fsspec
+boto3
+hydra-core
+requests
+aiohttp
+numpy <2
+gymnasium
+torchvision ==0.7.0
+gym
+transformers
+datasets
+tqdm
+protobuf
+sentencepiece
+nlp
+six
+torchtext
+spacy
+sphinx ==5.3.0
+pytorch-sphinx-theme
+sphinx-panels
+pygame
+lmdb
+matplotlib
+torchdata ==0.9.0
+portalocker
+aiohappyeyeballs >=2.5.0
+aiosignal >=1.4.0
+async-timeout <6.0,>=4.0
+attrs >=17.3.0
+certifi >=2017.4.17
+charset-normalizer <4,>=2
+contourpy >=1.0.1
+cycler >=0.10
+dill <0.3.9,>=0.3.0,>=0.3.8
+filelock
+fonttools >=4.22.0
+frozenlist >=1.1.1,>=1.1.0
+hf-xet <2.0.0,>=1.1.3
+huggingface-hub <1.0,>=0.34.0,>=0.24.0,<1.0,>=0.16.4
+idna <4,>=2.5,>=2.0,>=2.8
+kiwisolver >=1.3.1
+multidict <7.0,>=4.5,>=4.0
+multiprocess <0.70.17
+packaging >=20.0,>=21.0,>=20.0,>=20.9,>=20.0,>=20.0
+pandas
+pillow >=8
+propcache >=0.2.0,>=0.2.1
+pyarrow >=15.0.0,>=0.16.0
+pyparsing >=2.3.1
+python-dateutil >=2.7,<3.0.0,>=2.1,>=2.8.2
+pytz >=2020.1
+pyyaml >=5.1,>=5.1.0,>=5.1
+regex !=2019.12.17
+safetensors >=0.4.3
+tokenizers <=0.23.0,>=0.22.0
+typing-extensions >=4.3.0,>=4.2,>=4.1.0,>=3.7.4.3,<5.0,>=4.0,>=3.7.4.3,>=4.12.2,>4,!=4.7.0,>=4.6.0,>=4.12.0,>=4.5,>=4.6.0
+tzdata >=2022.7
+urllib3 <3,>=1.21.1,!=2.2.0,<3,>=1.25.4
+xxhash
+yarl <2.0,>=1.17.0

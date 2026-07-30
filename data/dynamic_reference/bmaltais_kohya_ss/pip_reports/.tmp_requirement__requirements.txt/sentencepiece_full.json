@@ -1,0 +1,59 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://download.pytorch.org/whl/nightly/sentencepiece-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=1380ce6540a368de2ef6d7e6ba14ba8f3258df650d39ba7d833b79ee68a52040",
+          "hashes": {
+            "sha256": "1380ce6540a368de2ef6d7e6ba14ba8f3258df650d39ba7d833b79ee68a52040"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "sentencepiece",
+        "version": "0.2.0",
+        "platform": [
+          "Unix"
+        ],
+        "summary": "SentencePiece python wrapper",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/google/sentencepiece",
+        "author": "Taku Kudo",
+        "author_email": "taku@google.com",
+        "license": "Apache",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "License :: OSI Approved :: Apache Software License",
+          "Operating System :: Unix",
+          "Programming Language :: Python",
+          "Topic :: Text Processing :: Linguistic",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "description": "# SentencePiece Python Wrapper\n\nPython wrapper for SentencePiece. This API will offer the encoding, decoding and training of Sentencepiece.\n\n## Build and Install SentencePiece\nFor Linux (x64/i686), macOS, and Windows(win32/x64) environment, you can simply use pip command to install SentencePiece python module.\n\n```\n% pip install sentencepiece\n```\n\nTo build and install the Python wrapper from source, try the following commands to build and install wheel package.\n```\n% git clone https://github.com/google/sentencepiece.git \n% cd sentencepiece\n% mkdir build\n% cd build\n% cmake .. -DSPM_ENABLE_SHARED=OFF -DCMAKE_INSTALL_PREFIX=./root\n% make install\n% cd ../python\n% python setup.py bdist_wheel\n% pip install dist/sentencepiece*.whl\n```\n\nIf you don’t have write permission to the global site-packages directory or don’t want to install into it, please try:\n```\n% python setup.py install --user\n```\n\n## Usage\n\nSee [this google colab page](https://github.com/google/sentencepiece/blob/master/python/sentencepiece_python_module_example.ipynb) to run sentencepiece interactively.\n\n### Segmentation\n```\n% python\n>>> import sentencepiece as spm\n>>> sp = spm.SentencePieceProcessor(model_file='test/test_model.model')\n\n>>> sp.encode('This is a test')\n[284, 47, 11, 4, 15, 400]\n\n>>> sp.encode(['This is a test', 'Hello world'], out_type=int)\n[[284, 47, 11, 4, 15, 400], [151, 88, 21, 887]]\n\n>>> sp.encode_as_ids(['This is a test', 'Hello world'])\n[[284, 47, 11, 4, 15, 400], [151, 88, 21, 887]]\n\n>>> sp.encode('This is a test', out_type=str)\n['▁This', '▁is', '▁a', '▁', 't', 'est']\n\n>>> sp.encode(['This is a test', 'Hello world'], out_type=str)\n[['▁This', '▁is', '▁a', '▁', 't', 'est'], ['▁He', 'll', 'o', '▁world']]\n\n>>> sp.encode_as_pieces(['This is a test', 'Hello world'])\n[['▁This', '▁is', '▁a', '▁', 't', 'est'], ['▁He', 'll', 'o', '▁world']]\n\n>>> proto = sp.encode('This is a test', out_type='immutable_proto')\n>>> for n in proto.pieces:\n...     print('piece=\"{}\" surface=\"{}\" id={} begin={} end={}'.format(n.piece, n.surface, n.id, n.begin, n.end))\n... \npiece=\"▁This\" surface=\"This\" id=284 begin=0 end=4\npiece=\"▁is\" surface=\" is\" id=47 begin=4 end=7\npiece=\"▁a\" surface=\" a\" id=11 begin=7 end=9\npiece=\"▁\" surface=\" \" id=4 begin=9 end=10\npiece=\"t\" surface=\"t\" id=15 begin=10 end=11\npiece=\"est\" surface=\"est\" id=400 begin=11 end=14\n\n>>> [[x.id for x in proto.pieces], [x.piece for x in proto.pieces], [x.begin for x in proto.pieces], [x.end for x in proto.pieces]]\n[[284, 47, 11, 4, 15, 400], ['▁This', '▁is', '▁a', '▁', 't', 'est'], [0, 4, 7, 9, 10, 11], [4, 7, 9, 10, 11, 14]]\n\n>>> proto2 = sp.encode_as_immutable_proto('This is a test')\n>>> proto2 == proto\nTrue\n\n>>> for _ in range(10):\n...     sp.encode('This is a test', out_type=str, enable_sampling=True, alpha=0.1, nbest_size=-1)\n... \n['▁', 'This', '▁', 'is', '▁a', '▁', 't', 'e', 'st']\n['▁T', 'h', 'i', 's', '▁is', '▁a', '▁', 'te', 's', 't']\n['▁T', 'h', 'is', '▁', 'is', '▁', 'a', '▁', 't', 'est']\n['▁', 'This', '▁is', '▁', 'a', '▁', 't', 'e', 'st']\n['▁', 'This', '▁', 'is', '▁', 'a', '▁', 't', 'e', 's', 't']\n['▁This', '▁is', '▁a', '▁', 'te', 's', 't']\n['▁This', '▁is', '▁', 'a', '▁', 't', 'e', 'st']\n['▁', 'T', 'h', 'is', '▁', 'is', '▁', 'a', '▁', 'te', 'st']\n['▁', 'This', '▁', 'i', 's', '▁a', '▁', 't', 'e', 'st']\n['▁This', '▁', 'is', '▁a', '▁', 't', 'est']\n\n>> sp.nbest_encode('This is a test', nbest_size=5, out_type=str)\n[['▁This', '▁is', '▁a', '▁', 't', 'est'], \n['▁This', '▁is', '▁a', '▁', 'te', 'st'], \n['▁This', '▁is', '▁a', '▁', 'te', 's', 't'],\n['▁This', '▁is', '▁a', '▁', 't', 'e', 'st'],\n['▁This', '▁is', '▁a', '▁', 't', 'es', 't']]\n\n>>> sp.sample_encode_and_score('This is a test', num_samples=5, alpha=0.1, out_type=str, wor=True)\n[(['▁This', '▁', 'i', 's', '▁a', '▁', 'te', 's', 't'], -3.043105125427246),\n(['▁This', '▁', 'i', 's', '▁a', '▁', 'te', 'st'], -2.8475849628448486),\n(['▁', 'This', '▁is', '▁', 'a', '▁', 'te', 'st'], -3.043248176574707),\n(['▁', 'This', '▁is', '▁a', '▁', 't', 'e', 'st'], -2.87727689743042),\n(['▁', 'This', '▁', 'i', 's', '▁', 'a', '▁', 't', 'est'], -3.6284031867980957)]\n\n>>> sp.decode([284, 47, 11, 4, 15, 400])\n'This is a test'\n\n>>> sp.decode([[284, 47, 11, 4, 15, 400], [151, 88, 21, 887]])\n['This is a test', 'Hello world']\n\n>>> proto = sp.decode([284, 47, 11, 4, 15, 400], out_type='immutable_proto') \n>>> proto.text\n'This is a test'\n\n>>> sp.decode(['▁', 'This', '▁', 'is', '▁a', '▁', 't', 'e', 'st'])\n'This is a test'\n\n>>> sp.decode([['▁This', '▁is', '▁a', '▁', 't', 'est'], ['▁He', 'll', 'o', '▁world']])\n['This is a test', 'Hello world']\n\n>>> sp.get_piece_size()\n1000\n\n>>> sp.id_to_piece(2)\n'</s>'\n\n>>> sp.id_to_piece([2, 3, 4])\n['</s>', '\\r', '▁']\n\n>>> sp.piece_to_id('<s>')\n1\n\n>>> sp.piece_to_id(['</s>', '\\r', '▁'])\n[2, 3, 4]\n\n>>> len(sp)\n1000\n\n>>> sp['</s>']\n2\n```\n\n### Model Training\nTraining is performed by passing parameters of [spm_train](https://github.com/google/sentencepiece#train-sentencepiece-model) to  SentencePieceTrainer.train() function.\n\n```\n>>> import sentencepiece as spm\n>>> spm.SentencePieceTrainer.train(input='test/botchan.txt', model_prefix='m', vocab_size=1000, user_defined_symbols=['foo', 'bar'])\nsentencepiece_trainer.cc(73) LOG(INFO) Starts training with : \ntrainer_spec {\n  input: test/botchan.txt\n  .. snip\nunigram_model_trainer.cc(500) LOG(INFO) EM sub_iter=1 size=1188 obj=10.2839 num_tokens=32182 num_tokens/piece=27.0892\nunigram_model_trainer.cc(500) LOG(INFO) EM sub_iter=0 size=1100 obj=10.4269 num_tokens=33001 num_tokens/piece=30.0009\nunigram_model_trainer.cc(500) LOG(INFO) EM sub_iter=1 size=1100 obj=10.4069 num_tokens=33002 num_tokens/piece=30.0018\ntrainer_interface.cc(595) LOG(INFO) Saving model: m.model\ntrainer_interface.cc(619) LOG(INFO) Saving vocabs: m.vocab\n>>>\n```\n\n### Training without local filesystem\nSentencepiece trainer can receive any iterable object to feed training sentences. You can also pass a file object (instance with write() method) to emit the output model to any devices. These features are useful to run sentencepiece on environment that have limited access to the local file system (e.g., Google colab.)\n\n```\nimport urllib.request\nimport io\nimport sentencepiece as spm\n\n# Loads model from URL as iterator and stores the model to BytesIO.\nmodel = io.BytesIO()\nwith urllib.request.urlopen(\n    'https://raw.githubusercontent.com/google/sentencepiece/master/data/botchan.txt'\n) as response:\n  spm.SentencePieceTrainer.train(\n      sentence_iterator=response, model_writer=model, vocab_size=1000)\n\n# Serialize the model as file.\n# with open('out.model', 'wb') as f:\n#   f.write(model.getvalue())\n\n# Directly load the model from serialized model.\nsp = spm.SentencePieceProcessor(model_proto=model.getvalue())\nprint(sp.encode('this is test'))\n```\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

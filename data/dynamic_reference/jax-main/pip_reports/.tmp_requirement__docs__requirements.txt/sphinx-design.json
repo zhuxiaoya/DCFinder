@@ -1,0 +1,100 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/c6/43/65c0acbd8cc6f50195a3a1fc195c404988b15c67090e73c7a41a9f57d6bd/sphinx_design-0.6.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=b11f37db1a802a183d61b159d9a202314d4d2fe29c163437001324fe2f19549c",
+          "hashes": {
+            "sha256": "b11f37db1a802a183d61b159d9a202314d4d2fe29c163437001324fe2f19549c"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "sphinx_design",
+        "version": "0.6.1",
+        "summary": "A sphinx extension for designing beautiful, view size responsive web components.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "sphinx",
+          "extension",
+          "material design",
+          "web components"
+        ],
+        "author_email": "Chris Sewell <chrisj_sewell@hotmail.com>",
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Framework :: Sphinx :: Extension",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Text Processing :: Markup",
+          "Topic :: Text Processing :: Markup :: Markdown",
+          "Topic :: Text Processing :: Markup :: reStructuredText"
+        ],
+        "requires_dist": [
+          "sphinx>=6,<9",
+          "pre-commit>=3,<4 ; extra == \"code-style\"",
+          "myst-parser>=2,<4 ; extra == \"rtd\"",
+          "myst-parser>=2,<4 ; extra == \"testing\"",
+          "pytest~=8.3 ; extra == \"testing\"",
+          "pytest-cov ; extra == \"testing\"",
+          "pytest-regressions ; extra == \"testing\"",
+          "defusedxml ; extra == \"testing\"",
+          "pytest~=8.3 ; extra == \"testing-no-myst\"",
+          "pytest-cov ; extra == \"testing-no-myst\"",
+          "pytest-regressions ; extra == \"testing-no-myst\"",
+          "defusedxml ; extra == \"testing-no-myst\"",
+          "furo~=2024.7.18 ; extra == \"theme-furo\"",
+          "sphinx-immaterial~=0.12.2 ; extra == \"theme-im\"",
+          "pydata-sphinx-theme~=0.15.2 ; extra == \"theme-pydata\"",
+          "sphinx-rtd-theme~=2.0 ; extra == \"theme-rtd\"",
+          "sphinx-book-theme~=1.1 ; extra == \"theme-sbt\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Documentation, https://sphinx-design.readthedocs.io",
+          "Homepage, https://github.com/executablebooks/sphinx-design"
+        ],
+        "provides_extra": [
+          "code-style",
+          "rtd",
+          "testing",
+          "testing-no-myst",
+          "theme-furo",
+          "theme-im",
+          "theme-pydata",
+          "theme-rtd",
+          "theme-sbt"
+        ],
+        "description": "# sphinx-design\n\n[![Github-CI][github-ci]][github-link]\n[![Coverage Status][codecov-badge]][codecov-link]\n[![PyPI][pypi-badge]][pypi-link]\n\nA sphinx extension for designing beautiful, view size responsive web components.\n\nCreated with inspiration from [Bootstrap](https://getbootstrap.com/) (v5), [Material Design](https://material.io) and [Material-UI](https://material-ui.com/) design frameworks.\n\n## Usage\n\nSimply pip install `sphinx-design` and add the extension to your `conf.py`:\n\n```python\nextensions = [\"sphinx_design\"]\n```\n\n## Supported browsers\n\n- Chrome >= 60\n- Firefox >= 60\n- Firefox ESR\n- iOS >= 12\n- Safari >= 12\n- Explorer >= 12\n\n(Mirrors: <https://github.com/twbs/bootstrap/blob/v5.0.2/.browserslistrc>)\n\n## Theme support\n\nView the documentation in multiple themes:\n\n- [alabaster](https://sphinx-design.readthedocs.io/en/alabaster-theme)\n- [sphinx-book-theme](https://sphinx-design.readthedocs.io/en/sbt-theme)\n- [pydata-sphinx-theme](https://sphinx-design.readthedocs.io/en/pydata-theme)\n- [sphinx-rtd-theme](https://sphinx-design.readthedocs.io/en/rtd-theme)\n- [furo](https://sphinx-design.readthedocs.io/en/furo-theme)\n\n## Comparison to sphinx-panels\n\nThis package is an iteration on [sphinx-panels](https://github.com/executablebooks/sphinx-panels) and intends to replace it.\nSee [Migrating from sphinx-panels](./docs/get_started.md) for more information.\n\n## Development\n\nIt is recommended to use [tox](https://tox.readthedocs.io/en/latest/) to run the tests and document builds.\nRun `tox -va` to see all the available tox environments.\n\nTo run linting, formatting and SASS compilation, use [pre-commit](https://pre-commit.com/).\n`pre-commit run --all css` will run the SASS compiler, for which you will need [node](https://nodejs.org) and [npm](https://www.npmjs.com/) installed,\nor you can directly run `npm run css`.\n\n## TODO\n\n- note design goal; to be flexible, but limit the amount of directive nesting required.\n  This factors in to\n  - card header/footer syntax? (don't really want to have to use separate directives for these, hence `^^^`/`+++` syntax)\n  - auto-wrap `grid-item` and `tab-item`, if not already inside `grid` or `tab-set`?\n\ngrids items cannot contain headers; is this in anyway possible with docutils structure?\n\nnaming of directives/roles: standard prefix?\n\nwhy are cards setup with \"word-wrap: break-word;\"?\n\nhandle latex\n\nUse autoprefixer when compiling SASS (see <https://getbootstrap.com/docs/5.0/getting-started/browsers-devices/#supported-browsers>)\n\nhorizontal card (grid row inside card, picture on left)\n\nsubtitle for card (see <https://material.io/components/cards#anatomy>)\n\n\n[github-ci]: https://github.com/executablebooks/sphinx-design/workflows/continuous-integration/badge.svg?branch=main\n[github-link]: https://github.com/executablebooks/sphinx-design\n[codecov-badge]: https://codecov.io/gh/executablebooks/sphinx-design/branch/main/graph/badge.svg\n[codecov-link]: https://codecov.io/gh/executablebooks/sphinx-design\n[pypi-badge]: https://img.shields.io/pypi/v/sphinx-design.svg\n[pypi-link]: https://pypi.org/project/sphinx-design\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

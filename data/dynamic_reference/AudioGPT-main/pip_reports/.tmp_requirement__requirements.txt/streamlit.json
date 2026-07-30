@@ -1,0 +1,74 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/0a/0d/def39db019d1b461b984eb894543a95051ce8c3e7b7202afbcd65e18beeb/streamlit-1.12.1-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=8b3e7ecb5910e499034e7d3a26b820be69fc1c149bdf77f6178ddc7c9eb2ed66",
+          "hashes": {
+            "sha256": "8b3e7ecb5910e499034e7d3a26b820be69fc1c149bdf77f6178ddc7c9eb2ed66"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "streamlit",
+        "version": "1.12.1",
+        "summary": "The fastest way to build data apps in Python",
+        "home_page": "https://streamlit.io",
+        "author": "Streamlit Inc",
+        "author_email": "hello@streamlit.io",
+        "license": "Apache 2",
+        "requires_dist": [
+          "altair (>=3.2.0)",
+          "blinker (>=1.0.0)",
+          "cachetools (>=4.0)",
+          "click (>=7.0)",
+          "importlib-metadata (>=1.4)",
+          "numpy",
+          "packaging (>=14.1)",
+          "pandas (>=0.21.0)",
+          "pillow (>=6.2.0)",
+          "protobuf (<4,>=3.12)",
+          "pyarrow (>=4.0)",
+          "pydeck (>=0.1.dev5)",
+          "pympler (>=0.9)",
+          "python-dateutil",
+          "requests (>=2.4)",
+          "rich (>=10.11.0)",
+          "semver",
+          "toml",
+          "tornado (>=5.0)",
+          "typing-extensions (>=3.10.0.0)",
+          "tzlocal (>=1.1)",
+          "validators (>=0.2)",
+          "gitpython (!=3.1.19)",
+          "watchdog ; platform_system != \"Darwin\""
+        ],
+        "requires_python": ">=3.7, !=3.9.7",
+        "project_url": [
+          "Source, https://github.com/streamlit/streamlit"
+        ],
+        "description": "Streamlit's open-source app framework is the easiest way for data scientists and machine learning engineers to create beautiful, performant apps in only a few hours! All in pure Python. All for free.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

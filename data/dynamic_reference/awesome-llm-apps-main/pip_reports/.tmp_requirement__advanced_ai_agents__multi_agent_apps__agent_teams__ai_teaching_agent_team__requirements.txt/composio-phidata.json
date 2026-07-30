@@ -1,0 +1,55 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/53/f5/c609cf34fe13532536db9bc875a948b9d0238f8d0134641e379c453ecb93/composio_phidata-0.6.9-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=050983f04ee59465f51f37d22181d455977e34663d76fc02aacbb56a975a3527",
+          "hashes": {
+            "sha256": "050983f04ee59465f51f37d22181d455977e34663d76fc02aacbb56a975a3527"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "composio_phidata",
+        "version": "0.6.9",
+        "summary": "Use Composio to get an array of tools with your Phidata Plugin.",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/ComposioHQ/composio",
+        "author": "Sawradip",
+        "author_email": "sawradip@composio.dev",
+        "classifier": [
+          "Programming Language :: Python :: 3",
+          "License :: OSI Approved :: Apache Software License",
+          "Operating System :: OS Independent"
+        ],
+        "requires_dist": [
+          "composio_core<0.7.0,>=0.5.0",
+          "composio_openai<0.7.0,>=0.5.0",
+          "phidata"
+        ],
+        "requires_python": ">=3.9,<4",
+        "description": "## 🚀🔗 Leveraging PhiData with Composio\n\nFacilitate the integration of PhiData with Composio to empower LLMs to directly interact with external applications & knowledge base, broadening their capabilities and application scope.\n\n### Objective\n\n- **Automate starring a GitHub repository** using conversational instructions via PhiData Tool Calls.\n\n### Installation and Setup\n\nEnsure you have the necessary packages installed and connect your GitHub account to allow your agents to utilize GitHub functionalities.\n\n```bash\n# Install Composio LangChain package\npip install composio-phidata\n\n# Connect your GitHub account\ncomposio-cli add github\n\n# View available applications you can connect with\ncomposio-cli show-apps\n```\n\n### Usage Steps\n\n#### 1. Import Base Packages\n\nPrepare your environment by initializing necessary imports from PhiData.\n\n```python\nfrom phi.assistant import Assistant\n```\n\n### Step 2: Integrating GitHub Tools with Composio\n\nThis step involves fetching and integrating GitHub tools provided by Composio, enabling enhanced functionality for LangChain operations.\n```python\nfrom composio_phidata import ComposioToolSet, Action\n\ntoolset = ComposioToolSet()\ncomposio_tools = toolset.get_actions(actions=[Action.GITHUB_STAR_A_REPOSITORY_FOR_THE_AUTHENTICATED_USER])\n```\n\n### Step 3: Agent Execution\n\nThis step involves configuring and executing the assistant to carry out actions, such as starring a GitHub repository.\n\n```python\nmy_task = \"Star a repo composiohq/composio on GitHub\"\n\n# Create a chat completion request to decide on the action\nassistant = Assistant(tools=composio_tools, show_tool_calls=True)\n\nassistant.print_response(\"Can you star ComposioHQ/composio repo?\")\n```\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

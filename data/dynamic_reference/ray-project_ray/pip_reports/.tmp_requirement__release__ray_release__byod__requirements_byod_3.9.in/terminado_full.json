@@ -1,0 +1,170 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/6a/9e/2064975477fdc887e47ad42157e214526dcad8f317a948dee17e1659a62f/terminado-0.18.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=a4468e1b37bb318f8a86514f65814e1afc977cf29b3992a4500d9dd305dcceb0",
+          "hashes": {
+            "sha256": "a4468e1b37bb318f8a86514f65814e1afc977cf29b3992a4500d9dd305dcceb0"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "terminado",
+        "version": "0.18.1",
+        "summary": "Tornado websocket backend for the Xterm.js Javascript terminal emulator library.",
+        "description_content_type": "text/markdown",
+        "author_email": "Jupyter Development Team <jupyter@googlegroups.com>",
+        "license": "BSD 2-Clause License\n        \n        - Copyright (c) 2014-, Jupyter development team\n        - Copyright (c) 2014, Ramalingam Saravanan <sarava@sarava.net>\n        \n        All rights reserved.\n        \n        Redistribution and use in source and binary forms, with or without\n        modification, are permitted provided that the following conditions are met:\n        \n        1. Redistributions of source code must retain the above copyright notice, this\n           list of conditions and the following disclaimer.\n        \n        2. Redistributions in binary form must reproduce the above copyright notice,\n           this list of conditions and the following disclaimer in the documentation\n           and/or other materials provided with the distribution.\n        \n        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\n        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\n        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\n        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\n        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\n        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\n        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Environment :: Web Environment",
+          "License :: OSI Approved :: BSD License",
+          "Programming Language :: Python :: 3",
+          "Topic :: Terminals :: Terminal Emulators/X Terminals"
+        ],
+        "requires_dist": [
+          "ptyprocess; os_name != 'nt'",
+          "pywinpty>=1.1.0; os_name == 'nt'",
+          "tornado>=6.1.0",
+          "myst-parser; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "sphinx; extra == 'docs'",
+          "pre-commit; extra == 'test'",
+          "pytest-timeout; extra == 'test'",
+          "pytest>=7.0; extra == 'test'",
+          "mypy~=1.6; extra == 'typing'",
+          "traitlets>=5.11.1; extra == 'typing'"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Homepage, https://github.com/jupyter/terminado"
+        ],
+        "provides_extra": [
+          "docs",
+          "test",
+          "typing"
+        ],
+        "description": "# Terminado\n\n[![Build Status](https://github.com/jupyter/terminado/actions/workflows/test.yml/badge.svg?query=branch%3Amain++)](https://github.com/jupyter/terminado/actions/workflows/test.yml/badge.svg?query=branch%3Amain++)\n[![Documentation Status](https://readthedocs.org/projects/terminado/badge/?version=latest)](http://terminado.readthedocs.io/en/latest/?badge=latest)\n\nThis is a [Tornado](http://tornadoweb.org/) websocket backend for the\n[Xterm.js](https://xtermjs.org/) Javascript terminal emulator library.\n\nIt evolved out of [pyxterm](https://github.com/mitotic/pyxterm), which\nwas part of [GraphTerm](https://github.com/mitotic/graphterm) (as\nlineterm.py), v0.57.0 (2014-07-18), and ultimately derived from the\npublic-domain [Ajaxterm](http://antony.lesuisse.org/software/ajaxterm/)\ncode, v0.11 (2008-11-13) (also on Github as part of\n[QWeb](https://github.com/antonylesuisse/qweb)).\n\nModules:\n\n- `terminado.management`: controls launching virtual terminals,\n  connecting them to Tornado's event loop, and closing them down.\n- `terminado.websocket`: Provides a websocket handler for\n  communicating with a terminal.\n- `terminado.uimodule`: Provides a `Terminal` Tornado [UI\n  Module](http://www.tornadoweb.org/en/stable/guide/templates.html#ui-modules).\n\nJS:\n\n- `terminado/_static/terminado.js`: A lightweight wrapper to set up a\n  term.js terminal with a websocket.\n\nLocal Installation:\n\n> $ pip install -e .\\[test\\]\n\nUsage example:\n\n```python\nimport os.path\nimport tornado.web\nimport tornado.ioloop\n\n# This demo requires tornado_xstatic and XStatic-term.js\nimport tornado_xstatic\n\nimport terminado\n\nSTATIC_DIR = os.path.join(os.path.dirname(terminado.__file__), \"_static\")\n\n\nclass TerminalPageHandler(tornado.web.RequestHandler):\n    def get(self):\n        return self.render(\n            \"termpage.html\",\n            static=self.static_url,\n            xstatic=self.application.settings[\"xstatic_url\"],\n            ws_url_path=\"/websocket\",\n        )\n\n\nif __name__ == \"__main__\":\n    term_manager = terminado.SingleTermManager(shell_command=[\"bash\"])\n    handlers = [\n        (r\"/websocket\", terminado.TermSocket, {\"term_manager\": term_manager}),\n        (r\"/\", TerminalPageHandler),\n        (\n            r\"/xstatic/(.*)\",\n            tornado_xstatic.XStaticFileHandler,\n            {\"allowed_modules\": [\"termjs\"]},\n        ),\n    ]\n    app = tornado.web.Application(\n        handlers,\n        static_path=STATIC_DIR,\n        xstatic_url=tornado_xstatic.url_maker(\"/xstatic/\"),\n    )\n    # Serve at http://localhost:8765/ N.B. Leaving out 'localhost' here will\n    # work, but it will listen on the public network interface as well.\n    # Given what terminado does, that would be rather a security hole.\n    app.listen(8765, \"localhost\")\n    try:\n        tornado.ioloop.IOLoop.instance().start()\n    finally:\n        term_manager.shutdown()\n```\n\nSee the [demos\ndirectory](https://github.com/takluyver/terminado/tree/master/demos) for\nmore examples. This is a simplified version of the `single.py` demo.\n\nRun the unit tests with:\n\n> $ pytest\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/37/d8/ef374952fd5da67d4463122c2b8e5a96536ec10b4b339254c6dcde81d01c/tornado-6.5.7-cp39-abi3-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=8d759e71906ee783f8867b93bf26a265743da4c1e2f4a018464c1ba019862972",
+          "hashes": {
+            "sha256": "8d759e71906ee783f8867b93bf26a265743da4c1e2f4a018464c1ba019862972"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "tornado",
+        "version": "6.5.7",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "license",
+          "license-file",
+          "project-url",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed.",
+        "description_content_type": "text/x-rst",
+        "home_page": "http://www.tornadoweb.org/",
+        "author": "Facebook",
+        "author_email": "python-tornado@googlegroups.com",
+        "license": "Apache-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy"
+        ],
+        "requires_python": ">= 3.9",
+        "project_url": [
+          "Source, https://github.com/tornadoweb/tornado"
+        ],
+        "description": "Tornado Web Server\n==================\n\n.. image:: https://badges.gitter.im/Join%20Chat.svg\n   :alt: Join the chat at https://gitter.im/tornadoweb/tornado\n   :target: https://gitter.im/tornadoweb/tornado?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge\n\n`Tornado <http://www.tornadoweb.org>`_ is a Python web framework and\nasynchronous networking library, originally developed at `FriendFeed\n<http://friendfeed.com>`_.  By using non-blocking network I/O, Tornado\ncan scale to tens of thousands of open connections, making it ideal for\n`long polling <http://en.wikipedia.org/wiki/Push_technology#Long_Polling>`_,\n`WebSockets <http://en.wikipedia.org/wiki/WebSocket>`_, and other\napplications that require a long-lived connection to each user.\n\nHello, world\n------------\n\nHere is a simple \"Hello, world\" example web app for Tornado:\n\n.. code-block:: python\n\n    import asyncio\n    import tornado\n\n    class MainHandler(tornado.web.RequestHandler):\n        def get(self):\n            self.write(\"Hello, world\")\n\n    def make_app():\n        return tornado.web.Application([\n            (r\"/\", MainHandler),\n        ])\n\n    async def main():\n        app = make_app()\n        app.listen(8888)\n        await asyncio.Event().wait()\n\n    if __name__ == \"__main__\":\n        asyncio.run(main())\n\nThis example does not use any of Tornado's asynchronous features; for\nthat see this `simple chat room\n<https://github.com/tornadoweb/tornado/tree/stable/demos/chat>`_.\n\nDocumentation\n-------------\n\nDocumentation and links to additional resources are available at\nhttps://www.tornadoweb.org\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/22/a6/858897256d0deac81a172289110f31629fc4cee19b6f01283303e18c8db3/ptyprocess-0.7.0-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=4b41f3967fce3af57cc7e94b888626c18bf37a083e3651ca8feeb66d492fef35",
+          "hashes": {
+            "sha256": "4b41f3967fce3af57cc7e94b888626c18bf37a083e3651ca8feeb66d492fef35"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "ptyprocess",
+        "version": "0.7.0",
+        "summary": "Run a subprocess in a pseudo terminal",
+        "description_content_type": "text/x-rst",
+        "home_page": "https://github.com/pexpect/ptyprocess",
+        "author": "Thomas Kluyver",
+        "author_email": "thomas@kluyver.me.uk",
+        "license": "UNKNOWN",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Intended Audience :: System Administrators",
+          "License :: OSI Approved :: ISC License (ISCL)",
+          "Operating System :: POSIX",
+          "Operating System :: MacOS :: MacOS X",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Topic :: Terminals"
+        ],
+        "description": "Launch a subprocess in a pseudo terminal (pty), and interact with both the\nprocess and its pty.\n\nSometimes, piping stdin and stdout is not enough. There might be a password\nprompt that doesn't read from stdin, output that changes when it's going to a\npipe rather than a terminal, or curses-style interfaces that rely on a terminal.\nIf you need to automate these things, running the process in a pseudo terminal\n(pty) is the answer.\n\nInterface::\n\n    p = PtyProcessUnicode.spawn(['python'])\n    p.read(20)\n    p.write('6+6\\n')\n    p.read(20)\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

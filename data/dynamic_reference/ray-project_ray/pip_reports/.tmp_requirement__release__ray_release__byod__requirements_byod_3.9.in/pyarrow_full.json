@@ -1,0 +1,62 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/cc/ba/2030d454c2747e26cce23e4a0338067ee0830a155b7894da04caa96783a5/pyarrow-25.0.0-cp310-cp310-manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=b72d943ff4e10fec8d48aedb23322d8f6ea8bc2d698b81db37e73730f69e4862",
+          "hashes": {
+            "sha256": "b72d943ff4e10fec8d48aedb23322d8f6ea8bc2d698b81db37e73730f69e4862"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "pyarrow",
+        "version": "25.0.0",
+        "summary": "Python library for Apache Arrow",
+        "description_content_type": "text/markdown",
+        "maintainer_email": "Apache Arrow Developers <dev@arrow.apache.org>",
+        "license_expression": "Apache-2.0",
+        "license_file": [
+          "LICENSE.txt",
+          "NOTICE.txt"
+        ],
+        "classifier": [
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Free Threading :: 2 - Beta"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://arrow.apache.org/",
+          "Documentation, https://arrow.apache.org/docs/python",
+          "Repository, https://github.com/apache/arrow",
+          "Issues, https://github.com/apache/arrow/issues"
+        ],
+        "description": "<!---\n  Licensed to the Apache Software Foundation (ASF) under one\n  or more contributor license agreements.  See the NOTICE file\n  distributed with this work for additional information\n  regarding copyright ownership.  The ASF licenses this file\n  to you under the Apache License, Version 2.0 (the\n  \"License\"); you may not use this file except in compliance\n  with the License.  You may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\n  Unless required by applicable law or agreed to in writing,\n  software distributed under the License is distributed on an\n  \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY\n  KIND, either express or implied.  See the License for the\n  specific language governing permissions and limitations\n  under the License.\n-->\n\n## Python library for Apache Arrow\n\n[![pypi](https://img.shields.io/pypi/v/pyarrow.svg)](https://pypi.org/project/pyarrow/) [![conda-forge](https://anaconda.org/conda-forge/pyarrow/badges/version.svg)](https://anaconda.org/conda-forge/pyarrow)\n\nThis library provides a Python API for functionality provided by the Arrow C++\nlibraries, along with tools for Arrow integration and interoperability with\npandas, NumPy, and other software in the Python ecosystem.\n\n## Installing\n\nAcross platforms, you can install a recent version of pyarrow with the conda\npackage manager:\n\n```shell\nconda install pyarrow -c conda-forge\n```\n\nOn Linux, macOS, and Windows, you can also install binary wheels from PyPI with\npip:\n\n```shell\npip install pyarrow\n```\n\nIf you encounter any issues importing the pip wheels on Windows, you may need\nto install the latest [Visual C++ Redistributable for Visual Studio][3].\n\n## Development\n\nSee [Python Development][2] in the documentation subproject.\n\n### Building the documentation\n\nSee [documentation build instructions][1] in the documentation subproject.\n\n[1]: https://github.com/apache/arrow/blob/main/docs/source/developers/documentation.rst\n[2]: https://arrow.apache.org/docs/developers/python/index.html\n[3]: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-microsoft-visual-c-redistributable-version\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

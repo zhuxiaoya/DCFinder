@@ -1,0 +1,158 @@
+gradio-imageslider
+gradio ==4.14.0
+torch ==2.0.0
+torchvision ==0.15.0
+opencv-python
+huggingface-hub
+black ==22.6.0
+flake8 ==5.0.4
+pylint ==2.15.0
+omegaconf
+torchmetrics ==0.10.3
+fvcore
+iopath
+xformers ==0.0.18
+submitit
+cuml-cu11
+aiofiles <24.0,>=22.0
+altair <6.0,>=4.2.0
+annotated-doc >=0.0.2
+annotated-types >=0.6.0
+antlr4-python3-runtime ==4.9.*
+anyio <5,>=3.6.2
+astroid <=2.14.0-dev0,>=2.12.4
+attrs >=22.2.0
+cachetools
+certifi >=2017.4.17
+charset-normalizer <3,>=2
+click <9.0.0,>=8.4.2,>=8.0.0,>=7.0,>=8.1,>=8.1,>=8.0
+cloudpickle >=1.2.1,>=3.0.0,>=3.0.0
+cmake
+contourpy >=1.0.1
+cubinlinker-cu11
+cuda-python <12.0a0,>=11.8.5
+cudf-cu11 ==25.6.*
+cupy-cuda11x >=12.0.0
+cuvs-cu11 ==25.6.*
+cycler >=0.10
+dask ==2025.5.0
+dask-cuda ==25.6.*
+dask-cudf-cu11 ==25.6.*
+dill >=0.2
+distributed ==2025.5.0
+distributed-ucxx-cu11 ==0.44.*
+exceptiongroup >=1.0.2
+fastapi
+fastrlock >=0.5
+ffmpy
+filelock >=3.10.0
+fonttools >=4.22.0
+fsspec >=2023.5.0,>=0.6.0,>=0.6.0,>=2021.09.0
+gradio-client ==0.8.0
+h11 >=0.8,>=0.16
+hf-xet <2.0.0,>=1.5.1
+httpcore ==1.*
+httpx <1,>=0.23.0
+idna <4,>=2.5,>=2.8
+importlib-metadata >=4.13.0
+importlib-resources <7.0,>=1.3
+isort <6,>=4.2.5
+jinja2 <4.0,>=2.10.3
+joblib >=0.11,>=1.4.0
+jsonschema >=3.0
+jsonschema-specifications >=2023.03.6
+kiwisolver >=1.3.1
+lazy-object-proxy >=1.4.0
+libcudf-cu11 ==25.6.*
+libcuml-cu11 ==25.6.*
+libcuvs-cu11 ==25.6.*
+libkvikio-cu11 ==25.6.*
+libraft-cu11 ==25.6.*
+librmm-cu11 ==25.6.*
+libucx-cu11 <1.19,>=1.15.0
+libucxx-cu11 ==0.44.*
+lit
+llvmlite <0.45,>=0.44.0dev0
+locket >=1.0.0
+markdown-it-py >=2.2.0
+markupsafe ~=2.0,>=2.0
+matplotlib ~=3.0
+mccabe <0.8.0,>=0.7.0,<0.8,>=0.6
+mdurl ~=0.1
+mpmath <1.4,>=1.1.0
+msgpack >=1.0.2
+mypy-extensions >=0.4.3
+narwhals >=1.27.1,>=2.0.1
+networkx
+numba <0.62.0a0,>=0.59.1,>=0.59.1,<0.62.0a0,>=0.59.1
+numba-cuda <0.12.0a0,>=0.11.0
+numpy ~=1.0,>=2,<3.0a0,>=1.23,>=1.25,>=1.22.4,<3.0a0,>=1.23,<2.6,>=1.22,<3.0a0,>=1.23,<3.0a0,>=1.23,<3.0a0,>=1.23,<2.3,>=1.24,<3.0a0,>=1.23,<3.0a0,>=1.23,>=1.24.1,<2.8,>=2.0.0,>=1.25,<3.0a0,>=1.23,<3.0a0,>=1.23
+nvidia-cublas-cu11
+nvidia-cufft-cu11
+nvidia-curand-cu11
+nvidia-cusolver-cu11
+nvidia-cusparse-cu11
+nvidia-ml-py <13.0.0a0,>=12.0.0
+nvtx >=0.2.1
+orjson ~=3.0
+packaging >=20.9,>=20.0,>=20.0,>=20.0
+pandas <3.0,>=1.0,<2.2.4dev0,>=2.0,>=1.3,<2.2.4dev0,>=2.0
+partd >=1.4.0
+pathspec >=0.9.0
+pillow <11.0,>=8.0,!=8.3.*,>=5.3.0,>=9
+platformdirs >=2,>=2.2.0
+portalocker
+psutil >=5.8.0
+ptxcompiler-cu11
+pyarrow <20.0.0a0,>=14.0.0
+pycodestyle <2.10.0,>=2.9.0
+pydantic >=2.0,>=2.9.0
+pydantic-core ==2.47.0
+pydub
+pyflakes <2.6.0,>=2.5.0
+pygments <3.0.0,>=2.13.0
+pylibcudf-cu11 ==25.6.*
+pylibraft-cu11 ==25.6.*
+pynvml <13.0.0a0,>=12.0.0
+pyparsing >=3
+python-dateutil >=2.7,>=2.8.2
+python-multipart
+pytz >=2020.1
+pyyaml <7.0,>=5.0,>=5.1,>=5.1.0,>=5.3.1,>=5.4.1
+raft-dask-cu11 ==25.6.*
+rapids-dask-dependency ==25.6.*
+rapids-logger ==0.1.*
+referencing >=0.28.4,>=0.31.0
+requests
+rich >=13.8.0
+rmm-cu11 ==25.6.*
+rpds-py >=0.25.0,>=0.7.0
+scikit-learn >=1.5
+scipy >=1.8.0,>=1.10.0
+semantic-version ~=2.0
+shellingham >=1.3.0
+six >=1.5
+sortedcontainers >=2.0.5
+starlette >=0.46.0
+sympy
+tblib >=1.6.0
+threadpoolctl >=3.5.0
+tomli >=1.1.0
+tomlkit ==0.12.0
+toolz >=0.10.0,>=0.11.2
+tornado >=6.2.0
+tqdm >=4.42.1
+treelite ==4.4.1
+triton ==2.0.0
+typer <1.0,>=0.9
+typing-extensions ~=4.0,>=4.1.0,>=3.7.4.2,>=4.12.0,>=4.8.0,~=4.0,>=4.15.0,>=4.0,>=4.0.0,>=4.0.0,>=4.10.0,>=4.12.0,>=4.5,>=4.14.1,>=4.0.0,>=4.4.0,>=4.6.0
+typing-inspection >=0.4.2
+tzdata >=2022.7
+ucx-py-cu11 ==0.44.*
+ucxx-cu11 ==0.44.*
+urllib3 <1.27,>=1.21.1,>=1.26.5
+uvicorn >=0.14.0
+websockets <12.0,>=10.0
+wrapt <2,>=1.11
+zict >=2.0.0,>=3.0.0
+zipp >=0.5

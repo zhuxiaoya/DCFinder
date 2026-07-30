@@ -1,0 +1,70 @@
+{
+    "direct dependency with same name": {
+        "number": 4,
+        "packages": {
+            "numpy": {
+                "private version": "2.6.0.dev0",
+                "public version": "2.5.1",
+                "highest public (unconstrained)": "2.5.1",
+                "declared specifier": ">=1.26",
+                "constraint source": "direct",
+                "satisfying public versions count": 36
+            },
+            "scipy": {
+                "private version": "1.19.0.dev0",
+                "public version": "1.18.0",
+                "highest public (unconstrained)": "1.18.0",
+                "declared specifier": ">=1.12",
+                "constraint source": "direct",
+                "satisfying public versions count": 27
+            },
+            "ipython": {
+                "private version": "9.16.0.dev0",
+                "public version": "9.15.0",
+                "highest public (unconstrained)": "9.15.0",
+                "declared specifier": ">=8.8.0",
+                "constraint source": "direct",
+                "satisfying public versions count": 65
+            },
+            "matplotlib": {
+                "private version": "3.12.0.dev355+g9eedf2f5f",
+                "public version": "3.11.0",
+                "highest public (unconstrained)": "3.11.0"
+            }
+        }
+    },
+    "indirect dependency with same name": {
+        "number": 4,
+        "packages": {
+            "contourpy": {
+                "private version": "1.3.4.dev1",
+                "public version": "1.3.3",
+                "highest public (unconstrained)": "1.3.3",
+                "declared specifier": ">=1.2.1",
+                "constraint source": "indirect",
+                "satisfying public versions count": 5
+            },
+            "ipykernel": {
+                "private version": "7.3.0",
+                "public version": "7.3.0",
+                "highest public (unconstrained)": "7.3.0",
+                "declared specifier": ">=6.14,!=6.30.0,>=6.5.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 59
+            },
+            "pillow": {
+                "private version": "13.0.0.dev0",
+                "public version": "12.3.0",
+                "highest public (unconstrained)": "12.3.0",
+                "declared specifier": ">=9",
+                "constraint source": "indirect",
+                "satisfying public versions count": 23
+            },
+            "pyarrow": {
+                "private version": "26.0.0.dev9",
+                "public version": "25.0.0",
+                "highest public (unconstrained)": "25.0.0"
+            }
+        }
+    }
+}

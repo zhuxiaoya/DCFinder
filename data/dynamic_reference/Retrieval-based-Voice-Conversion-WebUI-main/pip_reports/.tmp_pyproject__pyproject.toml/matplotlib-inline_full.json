@@ -1,0 +1,154 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/41/09/5b161152e2d90f7b87f781c2e1267494aef9c32498df793f73ad0a0a494a/matplotlib_inline-0.2.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=3c821cf1c209f59fb2d2d64abbf5b23b67bcb2210d663f9918dd851c6da1fcf6",
+          "hashes": {
+            "sha256": "3c821cf1c209f59fb2d2d64abbf5b23b67bcb2210d663f9918dd851c6da1fcf6"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "matplotlib-inline",
+        "version": "0.2.2",
+        "summary": "Inline Matplotlib backend for Jupyter",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "ipython",
+          "jupyter",
+          "matplotlib",
+          "python"
+        ],
+        "author_email": "IPython Development Team <ipython-dev@python.org>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Framework :: IPython",
+          "Framework :: Jupyter :: JupyterLab :: 3",
+          "Framework :: Jupyter :: JupyterLab :: 4",
+          "Framework :: Jupyter :: JupyterLab",
+          "Framework :: Jupyter",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python",
+          "Topic :: Multimedia :: Graphics"
+        ],
+        "requires_dist": [
+          "traitlets",
+          "flake8 ; extra == \"test\"",
+          "nbdime ; extra == \"test\"",
+          "nbval ; extra == \"test\"",
+          "notebook ; extra == \"test\"",
+          "pytest ; extra == \"test\"",
+          "matplotlib ; extra == \"test\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://github.com/ipython/matplotlib-inline"
+        ],
+        "provides_extra": [
+          "test"
+        ],
+        "description": "# Matplotlib Inline Back-end for IPython and Jupyter\n\nThis package provides support for matplotlib to display figures directly inline in the Jupyter notebook and related clients, as shown below.\n\n## Installation\n\nWith conda:\n\n```bash\nconda install -c conda-forge matplotlib-inline\n```\n\nWith pip:\n\n```bash\npip install matplotlib-inline\n```\n\n## Usage\n\nNote that in current versions of JupyterLab and Jupyter Notebook, the explicit use of the `%matplotlib inline` directive is not needed anymore, though other third-party clients may still require it.\n\nThis will produce a figure immediately below:\n\n```python\n%matplotlib inline\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nx = np.linspace(0, 3*np.pi, 500)\nplt.plot(x, np.sin(x**2))\nplt.title('A simple chirp');\n```\n\n## License\n\nLicensed under the terms of the BSD 3-Clause License, by the IPython Development Team (see `LICENSE` file).\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/96/8d/1080ee4c231f361b6ce4470d556c8c435b67c7e0753aaa641497ee92f88b/traitlets-5.15.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=770a53705f84b81ac107e83a1b3328ff2dae16094d8fc3cfc004e4b22dfd8e92",
+          "hashes": {
+            "sha256": "770a53705f84b81ac107e83a1b3328ff2dae16094d8fc3cfc004e4b22dfd8e92"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "traitlets",
+        "version": "5.15.1",
+        "summary": "Traitlets Python configuration system",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "Interactive",
+          "Interpreter",
+          "Shell",
+          "Web"
+        ],
+        "author_email": "IPython Development Team <ipython-dev@python.org>",
+        "license": "BSD 3-Clause License\n        \n        - Copyright (c) 2001-, IPython Development Team\n        \n        All rights reserved.\n        \n        Redistribution and use in source and binary forms, with or without\n        modification, are permitted provided that the following conditions are met:\n        \n        1. Redistributions of source code must retain the above copyright notice, this\n           list of conditions and the following disclaimer.\n        \n        2. Redistributions in binary form must reproduce the above copyright notice,\n           this list of conditions and the following disclaimer in the documentation\n           and/or other materials provided with the distribution.\n        \n        3. Neither the name of the copyright holder nor the names of its\n           contributors may be used to endorse or promote products derived from\n           this software without specific prior written permission.\n        \n        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\n        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\n        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\n        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\n        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\n        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\n        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Framework :: IPython",
+          "Framework :: Jupyter",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "Intended Audience :: System Administrators",
+          "License :: OSI Approved :: BSD License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Typing :: Typed"
+        ],
+        "requires_dist": [
+          "myst-parser; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "sphinx; extra == 'docs'",
+          "argcomplete>=3.0.3; extra == 'test'",
+          "mypy<1.19,>=1.17.0; extra == 'test'",
+          "pre-commit; extra == 'test'",
+          "pytest-mock; extra == 'test'",
+          "pytest-mypy-testing; extra == 'test'",
+          "pytest<8.2,>=7.0; extra == 'test'"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://github.com/ipython/traitlets",
+          "Documentation, https://traitlets.readthedocs.io",
+          "Source, https://github.com/ipython/traitlets",
+          "Funding, https://numfocus.org",
+          "Tracker, https://github.com/ipython/traitlets/issues"
+        ],
+        "provides_extra": [
+          "docs",
+          "test"
+        ],
+        "description": "# Traitlets\n\n[![Tests](https://github.com/ipython/traitlets/actions/workflows/tests.yml/badge.svg)](https://github.com/ipython/traitlets/actions/workflows/tests.yml)\n[![Documentation Status](https://readthedocs.org/projects/traitlets/badge/?version=latest)](https://traitlets.readthedocs.io/en/latest/?badge=latest)\n[![Tidelift](https://tidelift.com/subscription/pkg/pypi-traitlets)](https://tidelift.com/badges/package/pypi/traitlets)\n\n|               |                                      |\n| ------------- | ------------------------------------ |\n| **home**      | https://github.com/ipython/traitlets |\n| **pypi-repo** | https://pypi.org/project/traitlets/  |\n| **docs**      | https://traitlets.readthedocs.io/    |\n| **license**   | Modified BSD License                 |\n\nTraitlets is a pure Python library enabling:\n\n- the enforcement of strong typing for attributes of Python objects\n  (typed attributes are called _\"traits\"_);\n- dynamically calculated default values;\n- automatic validation and coercion of trait attributes when attempting a\n  change;\n- registering for receiving notifications when trait values change;\n- reading configuring values from files or from command line\n  arguments - a distinct layer on top of traitlets, so you may use\n  traitlets without the configuration machinery.\n\nIts implementation relies on the [descriptor](https://docs.python.org/howto/descriptor.html)\npattern, and it is a lightweight pure-python alternative of the\n[_traits_ library](https://docs.enthought.com/traits/).\n\nTraitlets powers the configuration system of IPython and Jupyter\nand the declarative API of IPython interactive widgets.\n\n## Installation\n\nFor a local installation, make sure you have\n[pip installed](https://pip.pypa.io/en/stable/installing/) and run:\n\n```bash\npip install traitlets\n```\n\nFor a **development installation**, clone this repository, change into the\n`traitlets` root directory, and run pip:\n\n```bash\ngit clone https://github.com/ipython/traitlets.git\ncd traitlets\npip install -e .\n```\n\n## Running the tests\n\n```bash\npip install \"traitlets[test]\"\npy.test traitlets\n```\n\n## Code Styling\n\n`traitlets` has adopted automatic code formatting so you shouldn't\nneed to worry too much about your code style.\nAs long as your code is valid,\nthe pre-commit hook should take care of how it should look.\n\nTo install `pre-commit` locally, run the following::\n\n```\npip install pre-commit\npre-commit install\n```\n\nYou can invoke the pre-commit hook by hand at any time with::\n\n```\npre-commit run\n```\n\nwhich should run any autoformatting on your code\nand tell you about any errors it couldn't fix automatically.\nYou may also install [black integration](https://github.com/psf/black#editor-integration)\ninto your text editor to format code automatically.\n\nIf you have already committed files before setting up the pre-commit\nhook with `pre-commit install`, you can fix everything up using\n`pre-commit run --all-files`. You need to make the fixing commit\nyourself after that.\n\nSome of the hooks only run on CI by default, but you can invoke them by\nrunning with the `--hook-stage manual` argument.\n\n## Usage\n\nAny class with trait attributes must inherit from `HasTraits`.\nFor the list of available trait types and their properties, see the\n[Trait Types](https://traitlets.readthedocs.io/en/latest/trait_types.html)\nsection of the documentation.\n\n### Dynamic default values\n\nTo calculate a default value dynamically, decorate a method of your class with\n`@default({traitname})`. This method will be called on the instance, and\nshould return the default value. In this example, the `_username_default`\nmethod is decorated with `@default('username')`:\n\n```Python\nimport getpass\nfrom traitlets import HasTraits, Unicode, default\n\nclass Identity(HasTraits):\n    username = Unicode()\n\n    @default('username')\n    def _username_default(self):\n        return getpass.getuser()\n```\n\n### Callbacks when a trait attribute changes\n\nWhen a trait changes, an application can follow this trait change with\nadditional actions.\n\nTo do something when a trait attribute is changed, decorate a method with\n[`traitlets.observe()`](https://traitlets.readthedocs.io/en/latest/api.html?highlight=observe#traitlets.observe).\nThe method will be called with a single argument, a dictionary which contains\nan owner, new value, old value, name of the changed trait, and the event type.\n\nIn this example, the `_num_changed` method is decorated with `` @observe(`num`) ``:\n\n```Python\nfrom traitlets import HasTraits, Integer, observe\n\nclass TraitletsExample(HasTraits):\n    num = Integer(5, help=\"a number\").tag(config=True)\n\n    @observe('num')\n    def _num_changed(self, change):\n        print(\"{name} changed from {old} to {new}\".format(**change))\n```\n\nand is passed the following dictionary when called:\n\n```Python\n{\n  'owner': object,  # The HasTraits instance\n  'new': 6,         # The new value\n  'old': 5,         # The old value\n  'name': \"foo\",    # The name of the changed trait\n  'type': 'change', # The event type of the notification, usually 'change'\n}\n```\n\n### Validation and coercion\n\nEach trait type (`Int`, `Unicode`, `Dict` etc.) may have its own validation or\ncoercion logic. In addition, we can register custom cross-validators\nthat may depend on the state of other attributes. For example:\n\n```Python\nfrom traitlets import HasTraits, TraitError, Int, Bool, validate\n\nclass Parity(HasTraits):\n    value = Int()\n    parity = Int()\n\n    @validate('value')\n    def _valid_value(self, proposal):\n        if proposal['value'] % 2 != self.parity:\n            raise TraitError('value and parity should be consistent')\n        return proposal['value']\n\n    @validate('parity')\n    def _valid_parity(self, proposal):\n        parity = proposal['value']\n        if parity not in [0, 1]:\n            raise TraitError('parity should be 0 or 1')\n        if self.value % 2 != parity:\n            raise TraitError('value and parity should be consistent')\n        return proposal['value']\n\nparity_check = Parity(value=2)\n\n# Changing required parity and value together while holding cross validation\nwith parity_check.hold_trait_notifications():\n    parity_check.value = 1\n    parity_check.parity = 1\n```\n\nHowever, we **recommend** that custom cross-validators don't modify the state\nof the HasTraits instance.\n\n## About the IPython Development Team\n\nThe IPython Development Team is the set of all contributors to the IPython project.\nThis includes all of the IPython subprojects.\n\nThe core team that coordinates development on GitHub can be found here:\nhttps://github.com/jupyter/.\n\n## Our Copyright Policy\n\nIPython uses a shared copyright model. Each contributor maintains copyright\nover their contributions to IPython. But, it is important to note that these\ncontributions are typically only changes to the repositories. Thus, the IPython\nsource code, in its entirety is not the copyright of any single person or\ninstitution. Instead, it is the collective copyright of the entire IPython\nDevelopment Team. If individual contributors want to maintain a record of what\nchanges/contributions they have specific copyright on, they should indicate\ntheir copyright in the commit message of the change, when they commit the\nchange to one of the IPython repositories.\n\nWith this in mind, the following banner should be used in any source code file\nto indicate the copyright and license terms:\n\n```\n# Copyright (c) IPython Development Team.\n# Distributed under the terms of the Modified BSD License.\n```\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

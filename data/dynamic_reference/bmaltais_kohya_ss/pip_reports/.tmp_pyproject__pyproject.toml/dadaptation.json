@@ -1,0 +1,64 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/d6/46/d6fb2546c58a1abdd804ad5c8a1a53314a669fbb64ca97281931942928fd/dadaptation-3.2.tar.gz",
+        "archive_info": {
+          "hash": "sha256=de8e8289d56bfdee0c8e3ca353143295d8a48363bcb02d6868a708354b47ccc0",
+          "hashes": {
+            "sha256": "de8e8289d56bfdee0c8e3ca353143295d8a48363bcb02d6868a708354b47ccc0"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "dadaptation",
+        "version": "3.2",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "license-file",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "Learning Rate Free Learning for Adam, SGD and AdaGrad",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/facebookresearch/dadaptation",
+        "author": "Aaron Defazio",
+        "author_email": "adefazio@meta.com",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Programming Language :: Python :: 3",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent"
+        ],
+        "requires_python": ">=3.6",
+        "description": "# D-Adaptation\n[![Downloads](https://static.pepy.tech/badge/dadaptation)](https://pepy.tech/project/dadaptation) [![Downloads](https://static.pepy.tech/badge/dadaptation/month)](https://pepy.tech/project/dadaptation)\n\nLearning rate free learning for SGD, AdaGrad and Adam! \n\n*by Aaron Defazio and Konstantin Mishchenko [(Arxiv)](https://arxiv.org/abs/2301.07733)*\n\n``` pip install dadaptation ```\n\n**NEW V3.0 release uses an improved algorithm that may give different results from past versions. The old version is still availiable under experimental/d_adapt_adam_preprint.**\n\n## NEW: Prodigy\nWe have recently released the [Prodigy](https://github.com/konstmish/prodigy) method, which grows the adapted learning rate faster than D-Adaptation in theory and practice. Try it out if D-Adaptation is under-estimating the learning rate.\n\n## How To Cite\nIf you use D-Adaptation in a publication, please cite our work as \n```\n@ARTICLE{defazio2023dadapt,\nauthor = {Aaron Defazio and Konstantin Mishchenko},\ntitle = {Learning-Rate-Free Learning by D-Adaptation},\njournal = {The 40th International Conference on Machine Learning (ICML 2023)},\nyear = {2023}\n}\n```\n\n## Details\n\nThe provided Pytorch Optimizer classes are drop-in replacements, either copy into your project or use via pip with dadaptation.DAdaptSGD,  dadaptation.DAdaptAdam or dadaptation.DAdaptAdaGrad.\n\n - **Set the LR parameter to 1.0**. This parameter is not ignored. Setting it larger to smaller will directly scale up or down the D-Adapted learning rate estimate.\n - Different per-layer learning rates can be achieved by setting the layer_scale value in each parameter-group. It defaults to 1.0, and scales each layer's learning rate relative to the other layers.\n - **Use the same learning rate scheduler you would normally use on the problem.**\n - The Adam variant supports AdamW style weight decay, just set decouple=True. It is not turned on by default, so if you are replacing your adam implementation, make sure you use decoupled if necessary.\n - It may be necessary to use larger weight decay than you would normally use, try a factor of 2 or 4 bigger if you see overfitting. D-Adaptation uses larger learning rates than people typically hand-choose, in some cases that requires more decay.\n - Use the log_every setting to see the learning rate being used (d*lr) and the current D bound.\n - Only the AdaGrad version supports sparse gradients. It does not adapt as efficiently as the other variants and should be considered experimental.\n \n## Change Log\n\n### Version 3.2\n - Added support for layer-wise scaling to DAdaptAdam.\n\n### Version 3.0\n - Major improvements to DAdaptAdam, improving the performance particularly on Transformer models. This variant may behave differently in practice. The old version is availiable under experimental/d_adapt_adam_preprint if you wish to continue to use it.\n - The IP variant is now the main variant of the method.\n - Added Lion. This is highly experimental. Feedback on it's performance is welcome.\n\n### Version 2.0\n - Added Adan - should still be considered experimental.\n - Added support for PyTorch's Fully Sharded Data Parallel. \n - Improved support of edge cases such as learning rate zero.\n - Improved logging - uses Python logging rather than print statements\n\n # Experimental results\n\n![vision](figures/dadapt_cifar.png)\n![vision](figures/dadapt_cifar100.png)\n![vision](figures/dadapt_imagenet.png)\n![vision](figures/dadapt_vit.png)\n![vision](figures/dadapt_lstm.png)\n![vision](figures/dadapt_roberta.png)\n![vision](figures/dadapt_gpt.png)\n![vision](figures/dadapt_fastmri.png)\n![vision](figures/dadapt_detectron.png)\n![vision](figures/dadapt_dlrm.png)\n\n# License\nSee the [License file](/LICENSE).\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

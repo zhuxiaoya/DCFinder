@@ -1,0 +1,77 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/c6/cb/18eeb235f833b726522d7ebed54f2278ce28ba9438e3135ab0278d9792a2/jieba-0.42.1.tar.gz",
+        "archive_info": {
+          "hash": "sha256=055ca12f62674fafed09427f176506079bc135638a14e23e25be909131928db2",
+          "hashes": {
+            "sha256": "055ca12f62674fafed09427f176506079bc135638a14e23e25be909131928db2"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "jieba",
+        "version": "0.42.1",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "keywords",
+          "license",
+          "summary"
+        ],
+        "summary": "Chinese Words Segmentation Utilities",
+        "keywords": [
+          "NLP",
+          "tokenizing",
+          "Chinese word segementation"
+        ],
+        "home_page": "https://github.com/fxsjy/jieba",
+        "author": "Sun, Junyi",
+        "author_email": "ccnusjy@gmail.com",
+        "license": "MIT",
+        "classifier": [
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Natural Language :: Chinese (Simplified)",
+          "Natural Language :: Chinese (Traditional)",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.6",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.2",
+          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.4",
+          "Topic :: Text Processing",
+          "Topic :: Text Processing :: Indexing",
+          "Topic :: Text Processing :: Linguistic"
+        ],
+        "description": "\njieba\n=====\n\n“结巴”中文分词：做最好的 Python 中文分词组件\n\n\"Jieba\" (Chinese for \"to stutter\") Chinese text segmentation: built to\nbe the best Python Chinese word segmentation module.\n\n完整文档见 ``README.md``\n\nGitHub: https://github.com/fxsjy/jieba\n\n特点\n====\n\n-  支持三种分词模式：\n\n   -  精确模式，试图将句子最精确地切开，适合文本分析；\n   -  全模式，把句子中所有的可以成词的词语都扫描出来,\n      速度非常快，但是不能解决歧义；\n   -  搜索引擎模式，在精确模式的基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词。\n\n-  支持繁体分词\n-  支持自定义词典\n-  MIT 授权协议\n\n在线演示： http://jiebademo.ap01.aws.af.cm/\n\n安装说明\n========\n\n代码对 Python 2/3 均兼容\n\n-  全自动安装： ``easy_install jieba`` 或者 ``pip install jieba`` / ``pip3 install jieba``\n-  半自动安装：先下载 https://pypi.python.org/pypi/jieba/ ，解压后运行\n   python setup.py install\n-  手动安装：将 jieba 目录放置于当前目录或者 site-packages 目录\n-  通过 ``import jieba`` 来引用\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

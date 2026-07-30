@@ -1,0 +1,66 @@
+amqp <6.0.0,>=5.1.1
+  # from parent package: kombu (private)
+apache-tvm-ffi !=0.1.8,!=0.1.8.post0,<0.2,>=0.1.6
+  # from parent package: flashinfer-python (private)
+billiard <5.0,>=4.2.1
+  # from parent package: celery (private)
+celery
+  # from parent package: ray (private)
+click-didyoumean >=0.3.0
+  # from parent package: celery (private)
+click-plugins >=1.1.1
+  # from parent package: celery (private)
+click-repl >=0.2.0
+  # from parent package: celery (private)
+cuda-bindings ~=12.9.0
+  # from parent package: cuda-python (private)
+cuda-pathfinder ~=1.1
+  # from parent package: cuda-bindings (private)
+cuda-python >=12.8
+  # from parent package: nvidia-cutlass-dsl-libs-base (private)
+  # from parent package: nvidia-cutlass-dsl-libs-cu12 (private)
+  # from parent package: nvidia-cutlass-dsl-libs-core (private)
+cuda-tile >=1.4.0
+  # from parent package: flashinfer-python (private)
+jupyter-console
+  # from parent package: jupyter (private)
+kombu >=5.6.0
+  # from parent package: celery (private)
+mediapy
+  # from parent package: etils (private)
+nvidia-cuda-nvdisasm <14,>=13.3
+  # from parent package: nvidia-cutlass-dsl-libs-base (private)
+  # from parent package: nvidia-cutlass-dsl-libs-cu12 (private)
+  # from parent package: nvidia-cutlass-dsl-libs-core (private)
+nvidia-cudnn-frontend >=1.13.0
+  # from parent package: flashinfer-python (private)
+nvidia-cutlass-dsl >=4.5.0
+  # from parent package: flashinfer-python (private)
+nvidia-cutlass-dsl-libs-base ==4.6.1
+  # from parent package: nvidia-cutlass-dsl (private)
+  # from parent package: nvidia-cutlass-dsl-libs-cu12 (private)
+nvidia-cutlass-dsl-libs-core ==4.6.1
+  # from parent package: nvidia-cutlass-dsl-libs-base (private)
+nvidia-cutlass-dsl-libs-cu12 ==4.6.1
+  # from parent package: nvidia-cutlass-dsl (private)
+optax
+  # from parent package: flax (private)
+orbax-checkpoint
+  # from parent package: flax (private)
+pip >=20.0.2
+  # from parent package: open-spiel (private)
+pycron >=3.0.0
+  # from parent package: taskiq (private)
+simple-parsing
+  # from parent package: etils (private)
+taskiq
+  # from parent package: ray (private)
+taskiq-dependencies <2,>=1.3.1
+  # from parent package: taskiq (private)
+tensorstore >=0.1.84
+  # from parent package: flax (private)
+  # from parent package: orbax-checkpoint (private)
+vine ==5.1.0
+  # from parent package: celery (private)
+  # from parent package: kombu (private)
+  # from parent package: amqp (private)

@@ -1,0 +1,1513 @@
+{
+     "direct dependency": {
+          "number": 59,
+          "packages": [
+               {
+                    "name": "poetry",
+                    "specifier": "==2.1.1",
+                    "raw_requirement": "poetry==2.1.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/requirements-poetry.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "poetry-dynamic-versioning",
+                    "specifier": "",
+                    "raw_requirement": "poetry-dynamic-versioning[plugin]",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/requirements-poetry.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "poetry-plugin-export",
+                    "specifier": "",
+                    "raw_requirement": "poetry-plugin-export",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/requirements-poetry.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "aiofiles",
+                    "specifier": ">=24.1.0",
+                    "raw_requirement": "aiofiles>=24.1.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "aiohttp",
+                    "specifier": ">=3.10.4",
+                    "raw_requirement": "aiohttp>=3.10.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "aiosqlite",
+                    "specifier": ">=0.20.0",
+                    "raw_requirement": "aiosqlite>=0.20.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "anyio",
+                    "specifier": ">=4.6.2.post1",
+                    "raw_requirement": "anyio>=4.6.2.post1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "bitstring",
+                    "specifier": ">=4.1.4",
+                    "raw_requirement": "bitstring>=4.1.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "boto3",
+                    "specifier": ">=1.35.43",
+                    "raw_requirement": "boto3>=1.35.43",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "chiabip158",
+                    "specifier": ">=1.5.2",
+                    "raw_requirement": "chiabip158>=1.5.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "chiapos",
+                    "specifier": ">=2.0.10",
+                    "raw_requirement": "chiapos>=2.0.10",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "chia-puzzles-py",
+                    "specifier": ">=0.20.1",
+                    "raw_requirement": "chia-puzzles-py>=0.20.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "chia-rs",
+                    "specifier": "<0.25,>=0.24",
+                    "raw_requirement": "chia_rs>=0.24, <0.25",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "chiavdf",
+                    "specifier": ">=1.1.10",
+                    "raw_requirement": "chiavdf>=1.1.10",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "click",
+                    "specifier": ">=8.1.7",
+                    "raw_requirement": "click>=8.1.7",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "clvm",
+                    "specifier": ">=0.9.12",
+                    "raw_requirement": "clvm>=0.9.12",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "clvm-tools",
+                    "specifier": ">=0.4.9",
+                    "raw_requirement": "clvm_tools>=0.4.9",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "clvm-tools-rs",
+                    "specifier": ">=0.1.45",
+                    "raw_requirement": "clvm_tools_rs>=0.1.45",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "colorama",
+                    "specifier": ">=0.4.6",
+                    "raw_requirement": "colorama>=0.4.6",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "colorlog",
+                    "specifier": ">=6.9.0",
+                    "raw_requirement": "colorlog>=6.9.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "concurrent-log-handler",
+                    "specifier": ">=0.9.25",
+                    "raw_requirement": "concurrent_log_handler>=0.9.25",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "cryptography",
+                    "specifier": ">=43.0.1",
+                    "raw_requirement": "cryptography>=43.0.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "dnslib",
+                    "specifier": ">=0.9.25",
+                    "raw_requirement": "dnslib>=0.9.25",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "dnspython",
+                    "specifier": ">=2.6.1",
+                    "raw_requirement": "dnspython>=2.6.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "filelock",
+                    "specifier": ">=3.16.1",
+                    "raw_requirement": "filelock>=3.16.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "keyring",
+                    "specifier": ">=25.5.0",
+                    "raw_requirement": "keyring>=25.5.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "packaging",
+                    "specifier": ">=24.0",
+                    "raw_requirement": "packaging>=24.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pip",
+                    "specifier": ">=24.2",
+                    "raw_requirement": "pip>=24.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "psutil",
+                    "specifier": ">=6.1.0",
+                    "raw_requirement": "psutil>=6.1.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pyyaml",
+                    "specifier": ">=6.0.2",
+                    "raw_requirement": "pyyaml>=6.0.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "setproctitle",
+                    "specifier": ">=1.3.3",
+                    "raw_requirement": "setproctitle>=1.3.3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "setuptools",
+                    "specifier": ">=75.5.0",
+                    "raw_requirement": "setuptools>=75.5.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "sortedcontainers",
+                    "specifier": ">=2.4.0",
+                    "raw_requirement": "sortedcontainers>=2.4.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=4.12.2",
+                    "raw_requirement": "typing-extensions>=4.12.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "watchdog",
+                    "specifier": ">=4.0.1",
+                    "raw_requirement": "watchdog>=4.0.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "zstd",
+                    "specifier": "[{'version': '>=1.5.5.1', 'python': '<3.12'}, {'version': '>=1.5.5.1', 'python': '3.12', 'source': 'chia'}]",
+                    "raw_requirement": "zstd[{'version': '>=1.5.5.1', 'python': '<3.12'}, {'version': '>=1.5.5.1', 'python': '3.12', 'source': 'chia'}]",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "importlib-resources",
+                    "specifier": ">=6.4.5",
+                    "raw_requirement": "importlib-resources>=6.4.5",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "hsms",
+                    "specifier": ">=0.3.1",
+                    "raw_requirement": "hsms>=0.3.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "aiohttp-cors",
+                    "specifier": ">=0.7.0",
+                    "raw_requirement": "aiohttp_cors>=0.7.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "build",
+                    "specifier": ">=1.2.1",
+                    "raw_requirement": "build>=1.2.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "coverage",
+                    "specifier": ">=7.6.4",
+                    "raw_requirement": "coverage>=7.6.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "diff-cover",
+                    "specifier": ">=9.2.0",
+                    "raw_requirement": "diff-cover>=9.2.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "keyrings-cryptfile",
+                    "specifier": ">=1.3.9",
+                    "raw_requirement": "keyrings.cryptfile>=1.3.9",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "mypy",
+                    "specifier": ">=1.11.1",
+                    "raw_requirement": "mypy>=1.11.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pre-commit",
+                    "specifier": ">=3.7.1",
+                    "raw_requirement": "pre-commit>=3.7.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "py3createtorrent",
+                    "specifier": ">=1.2.1",
+                    "raw_requirement": "py3createtorrent>=1.2.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pyinstaller",
+                    "specifier": ">=6.9.0",
+                    "raw_requirement": "pyinstaller>=6.9.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pytest",
+                    "specifier": ">=8.3.3",
+                    "raw_requirement": "pytest>=8.3.3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pytest-cov",
+                    "specifier": ">=5.0.0",
+                    "raw_requirement": "pytest-cov>=5.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pytest-mock",
+                    "specifier": ">=3.14.0",
+                    "raw_requirement": "pytest-mock>=3.14.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pytest-monitor",
+                    "specifier": ">=1.6.6",
+                    "raw_requirement": "pytest-monitor>=1.6.6",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pytest-xdist",
+                    "specifier": ">=3.6.1",
+                    "raw_requirement": "pytest-xdist>=3.6.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "types-aiofiles",
+                    "specifier": ">=24.1.0.20240626",
+                    "raw_requirement": "types-aiofiles>=24.1.0.20240626",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "types-cryptography",
+                    "specifier": ">=3.3.23.2",
+                    "raw_requirement": "types-cryptography>=3.3.23.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "types-pyyaml",
+                    "specifier": ">=6.0.12.20240917",
+                    "raw_requirement": "types-pyyaml>=6.0.12.20240917",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "types-setuptools",
+                    "specifier": ">=75.5.0.20241122",
+                    "raw_requirement": "types-setuptools>=75.5.0.20241122",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "lxml",
+                    "specifier": ">=5.2.2",
+                    "raw_requirement": "lxml>=5.2.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "miniupnpc",
+                    "specifier": "<3,>=2.3.2",
+                    "raw_requirement": "miniupnpc>=2.3.2, <3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ruff",
+                    "specifier": ">=0.8.1",
+                    "raw_requirement": "ruff>=0.8.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 76,
+          "packages": [
+               {
+                    "name": "altgraph",
+                    "specifier": "",
+                    "raw_requirement": "altgraph",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pyinstaller",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ast-serialize",
+                    "specifier": "<1.0.0,>=0.6.0",
+                    "raw_requirement": "ast-serialize<1.0.0,>=0.6.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mypy",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "async-timeout",
+                    "specifier": "<4.0,>=3.0",
+                    "raw_requirement": "async-timeout (<4.0,>=3.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "attrs",
+                    "specifier": ">=17.3.0",
+                    "raw_requirement": "attrs (>=17.3.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "backports-tarfile",
+                    "specifier": "",
+                    "raw_requirement": "backports.tarfile; python_version < \"3.12\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jaraco-context",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "bencode-py",
+                    "specifier": "",
+                    "raw_requirement": "bencode.py",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "py3createtorrent",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "bitarray",
+                    "specifier": "<4.0,>=3.0.0",
+                    "raw_requirement": "bitarray<4.0,>=3.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "bitstring",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "botocore",
+                    "specifier": "<1.44.0,>=1.43.48,<2.0a.0,>=1.37.4",
+                    "raw_requirement": "botocore<1.44.0,>=1.43.48 ; botocore<2.0a.0,>=1.37.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "boto3",
+                              "source": "public"
+                         },
+                         {
+                              "name": "s3transfer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cachecontrol",
+                    "specifier": "<0.15.0,>=0.14.0",
+                    "raw_requirement": "cachecontrol[filecache]<0.15.0,>=0.14.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "certifi",
+                    "specifier": ">=2023.5.7",
+                    "raw_requirement": "certifi>=2023.5.7 ; certifi ; certifi",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpcore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cfgv",
+                    "specifier": ">=2.0.0",
+                    "raw_requirement": "cfgv>=2.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pre-commit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "chardet",
+                    "specifier": "<4.0,>=2.0,>=3.0.0",
+                    "raw_requirement": "chardet (<4.0,>=2.0) ; chardet>=3.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "diff-cover",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "charset-normalizer",
+                    "specifier": "<4,>=2",
+                    "raw_requirement": "charset_normalizer<4,>=2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "chia-base",
+                    "specifier": ">=0.1.5",
+                    "raw_requirement": "chia_base>=0.1.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "hsms",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "chialisp-loader",
+                    "specifier": ">=0.1.2",
+                    "raw_requirement": "chialisp_loader>=0.1.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "chialisp-puzzles",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "chialisp-puzzles",
+                    "specifier": ">=0.1.1",
+                    "raw_requirement": "chialisp_puzzles>=0.1.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "hsms",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cleo",
+                    "specifier": "<3.0.0,>=2.1.0",
+                    "raw_requirement": "cleo<3.0.0,>=2.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "clvm-rs",
+                    "specifier": "==0.2.5",
+                    "raw_requirement": "clvm-rs<0.3.0,>=0.2.3 ; clvm_rs==0.2.5 ; clvm_rs",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "chia-puzzles-py",
+                              "source": "public"
+                         },
+                         {
+                              "name": "chia-base",
+                              "source": "public"
+                         },
+                         {
+                              "name": "chialisp-loader",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "distlib",
+                    "specifier": "<1,>=0.3.7",
+                    "raw_requirement": "distlib<1,>=0.3.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "virtualenv",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "dulwich",
+                    "specifier": "<0.23.0,>=0.22.6",
+                    "raw_requirement": "dulwich<0.23.0,>=0.22.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "dunamai",
+                    "specifier": "<2.0.0,>=1.26.0",
+                    "raw_requirement": "dunamai<2.0.0,>=1.26.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry-dynamic-versioning",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "exceptiongroup",
+                    "specifier": ">=1.0.2,>=1",
+                    "raw_requirement": "exceptiongroup>=1.0.2; python_version < \"3.11\" ; exceptiongroup>=1; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "execnet",
+                    "specifier": ">=2.1",
+                    "raw_requirement": "execnet>=2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest-xdist",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fastjsonschema",
+                    "specifier": "<3.0.0,>=2.18.0",
+                    "raw_requirement": "fastjsonschema<3.0.0,>=2.18.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "findpython",
+                    "specifier": "<0.7.0,>=0.6.2",
+                    "raw_requirement": "findpython<0.7.0,>=0.6.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "h11",
+                    "specifier": ">=0.16",
+                    "raw_requirement": "h11>=0.16",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpcore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpcore",
+                    "specifier": "==1.*",
+                    "raw_requirement": "httpcore==1.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpx",
+                    "specifier": "<1,>=0.27.0",
+                    "raw_requirement": "httpx<1,>=0.27.0; extra == \"download\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pbs-installer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "identify",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "identify>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pre-commit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "idna",
+                    "specifier": ">=2.8,<4,>=2.5,>=2.0",
+                    "raw_requirement": "idna>=2.8 ; idna<4,>=2.5 ; idna>=2.0 ; idna",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "requests",
+                              "source": "public"
+                         },
+                         {
+                              "name": "yarl",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "importlib-metadata",
+                    "specifier": ">=4.11.4",
+                    "raw_requirement": "importlib-metadata ; importlib_metadata>=4.11.4; python_version < \"3.12\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "clvm-tools",
+                              "source": "public"
+                         },
+                         {
+                              "name": "keyring",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "iniconfig",
+                    "specifier": ">=1",
+                    "raw_requirement": "iniconfig>=1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "installer",
+                    "specifier": "<0.8.0,>=0.7.0",
+                    "raw_requirement": "installer<0.8.0,>=0.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jaraco-classes",
+                    "specifier": "",
+                    "raw_requirement": "jaraco.classes",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "keyring",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jaraco-context",
+                    "specifier": "",
+                    "raw_requirement": "jaraco.context",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "keyring",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jaraco-functools",
+                    "specifier": "",
+                    "raw_requirement": "jaraco.functools",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "keyring",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jeepney",
+                    "specifier": ">=0.4.2,>=0.6",
+                    "raw_requirement": "jeepney>=0.4.2; sys_platform == \"linux\" ; jeepney>=0.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "keyring",
+                              "source": "public"
+                         },
+                         {
+                              "name": "secretstorage",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": "<4,>=2.11.1,>=2.7.1",
+                    "raw_requirement": "jinja2<4,>=2.11.1 ; Jinja2>=2.7.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry-dynamic-versioning",
+                              "source": "public"
+                         },
+                         {
+                              "name": "diff-cover",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jmespath",
+                    "specifier": "<2.0.0,>=0.7.1",
+                    "raw_requirement": "jmespath<2.0.0,>=0.7.1 ; jmespath<2.0.0,>=0.7.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "boto3",
+                              "source": "public"
+                         },
+                         {
+                              "name": "botocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "librt",
+                    "specifier": ">=0.13.0",
+                    "raw_requirement": "librt>=0.13.0; platform_python_implementation != \"PyPy\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mypy",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markupsafe",
+                    "specifier": ">=2.0",
+                    "raw_requirement": "MarkupSafe>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jinja2",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "memory-profiler",
+                    "specifier": ">=0.58",
+                    "raw_requirement": "memory-profiler (>=0.58)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest-monitor",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "more-itertools",
+                    "specifier": "",
+                    "raw_requirement": "more-itertools ; more_itertools",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jaraco-classes",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jaraco-functools",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "msgpack",
+                    "specifier": "<2.0.0,>=0.5.2",
+                    "raw_requirement": "msgpack<2.0.0,>=0.5.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cachecontrol",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "multidict",
+                    "specifier": "<5.0,>=4.5,>=4.0",
+                    "raw_requirement": "multidict (<5.0,>=4.5) ; multidict>=4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "yarl",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mypy-extensions",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "mypy_extensions>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mypy",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nodeenv",
+                    "specifier": ">=0.11.1",
+                    "raw_requirement": "nodeenv>=0.11.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pre-commit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pathspec",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "pathspec>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mypy",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pbs-installer",
+                    "specifier": "<2026.0.0,>=2025.1.6",
+                    "raw_requirement": "pbs-installer[download,install]<2026.0.0,>=2025.1.6 ; pbs-installer[download,install]; extra == \"all\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pbs-installer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pkginfo",
+                    "specifier": "<2.0,>=1.12",
+                    "raw_requirement": "pkginfo<2.0,>=1.12",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "platformdirs",
+                    "specifier": "<5,>=3.0.0,<5,>=3.9.1",
+                    "raw_requirement": "platformdirs<5,>=3.0.0 ; platformdirs<5,>=3.9.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         },
+                         {
+                              "name": "virtualenv",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pluggy",
+                    "specifier": "<2,>=0.13.1,<2,>=1.5,>=1.2",
+                    "raw_requirement": "pluggy<2,>=0.13.1 ; pluggy<2,>=1.5 ; pluggy>=1.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "diff-cover",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytest-cov",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "poetry-core",
+                    "specifier": "==2.1.1",
+                    "raw_requirement": "poetry-core==2.1.1 ; poetry-core<3.0.0,>=2.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         },
+                         {
+                              "name": "poetry-plugin-export",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "portalocker",
+                    "specifier": ">=2.6.0",
+                    "raw_requirement": "portalocker>=2.6.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "concurrent-log-handler",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "propcache",
+                    "specifier": ">=0.2.1",
+                    "raw_requirement": "propcache>=0.2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "yarl",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pygments",
+                    "specifier": "<3.0.0,>=2.19.1,>=2.7.2",
+                    "raw_requirement": "Pygments<3.0.0,>=2.19.1 ; pygments>=2.7.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "diff-cover",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyinstaller-hooks-contrib",
+                    "specifier": ">=2026.6",
+                    "raw_requirement": "pyinstaller-hooks-contrib>=2026.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pyinstaller",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyproject-hooks",
+                    "specifier": "<2.0.0,>=1.0.0",
+                    "raw_requirement": "pyproject-hooks<2.0.0,>=1.0.0 ; pyproject_hooks",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         },
+                         {
+                              "name": "build",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-dateutil",
+                    "specifier": "<3.0.0,>=2.1",
+                    "raw_requirement": "python-dateutil<3.0.0,>=2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "botocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "requests",
+                    "specifier": "<3.0,>=2.26,>=2.16.0,<3.0.0,>=2.0.1",
+                    "raw_requirement": "requests<3.0,>=2.26 ; requests ; requests>=2.16.0 ; requests (<3.0.0,>=2.0.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytest-monitor",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cachecontrol",
+                              "source": "public"
+                         },
+                         {
+                              "name": "requests-toolbelt",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "requests-toolbelt",
+                    "specifier": "<2.0.0,>=1.0.0",
+                    "raw_requirement": "requests-toolbelt<2.0.0,>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "s3transfer",
+                    "specifier": "<0.20.0,>=0.19.0",
+                    "raw_requirement": "s3transfer<0.20.0,>=0.19.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "boto3",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "secretstorage",
+                    "specifier": ">=3.2",
+                    "raw_requirement": "SecretStorage>=3.2; sys_platform == \"linux\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "keyring",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "segno",
+                    "specifier": "==1.4.1",
+                    "raw_requirement": "segno==1.4.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "hsms",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "shellingham",
+                    "specifier": "<2.0,>=1.5",
+                    "raw_requirement": "shellingham<2.0,>=1.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "six",
+                    "specifier": ">=1.5",
+                    "raw_requirement": "six >=1.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "python-dateutil",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tibs",
+                    "specifier": "<0.6,>=0.5.6",
+                    "raw_requirement": "tibs<0.6,>=0.5.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "bitstring",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tomli",
+                    "specifier": "<3.0.0,>=2.0.1,>=1.1.0,>=1.1.0,>=1",
+                    "raw_requirement": "tomli<3.0.0,>=2.0.1; python_version < \"3.11\" ; tomli>=1.1.0; python_version < \"3.11\" ; tomli>=1.1.0; python_version < \"3.11\" ; tomli>=1; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         },
+                         {
+                              "name": "build",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mypy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tomlkit",
+                    "specifier": "<1.0.0,>=0.11.4,>=0.4,<1.0.0,>=0.11.4",
+                    "raw_requirement": "tomlkit<1.0.0,>=0.11.4 ; tomlkit>=0.4 ; tomlkit<1.0.0,>=0.11.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         },
+                         {
+                              "name": "poetry-dynamic-versioning",
+                              "source": "public"
+                         },
+                         {
+                              "name": "poetry-plugin-export",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "trove-classifiers",
+                    "specifier": ">=2022.5.19",
+                    "raw_requirement": "trove-classifiers>=2022.5.19",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "urllib3",
+                    "specifier": ">=1.25,<3,>=1.26,!=2.2.0,<3,>=1.25.4",
+                    "raw_requirement": "urllib3>=1.25 ; urllib3<3,>=1.26 ; urllib3!=2.2.0,<3,>=1.25.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "dulwich",
+                              "source": "public"
+                         },
+                         {
+                              "name": "requests",
+                              "source": "public"
+                         },
+                         {
+                              "name": "botocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "virtualenv",
+                    "specifier": "<21.0.0,>=20.26.6,>=20.10.0",
+                    "raw_requirement": "virtualenv<21.0.0,>=20.26.6 ; virtualenv>=20.10.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "poetry",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pre-commit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "wheel",
+                    "specifier": "",
+                    "raw_requirement": "wheel",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest-monitor",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "yarl",
+                    "specifier": "<2.0,>=1.0",
+                    "raw_requirement": "yarl (<2.0,>=1.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "zipp",
+                    "specifier": ">=3.20",
+                    "raw_requirement": "zipp>=3.20",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "importlib-metadata",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "zstandard",
+                    "specifier": ">=0.21.0",
+                    "raw_requirement": "zstandard>=0.21.0; extra == \"install\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pbs-installer",
+                              "source": "public"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 3,
+          "packages": {
+               "chiavdf": {
+                    "private version": "1.1.12",
+                    "public version": "1.1.14",
+                    "highest public (unconstrained)": "1.1.14",
+                    "declared specifier": ">=1.1.10",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 5
+               },
+               "watchdog": {
+                    "private version": "6.0.0",
+                    "public version": "6.0.0",
+                    "highest public (unconstrained)": "6.0.0",
+                    "declared specifier": ">=4.0.1",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 7
+               },
+               "miniupnpc": {
+                    "private version": "2.3.3",
+                    "public version": "2.3.3",
+                    "highest public (unconstrained)": "2.3.3",
+                    "declared specifier": "<3,>=2.3.2",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 2
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 0,
+          "packages": {}
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "mixed_source_expanded",
+          "private_index_expansions": 3,
+          "pypi_metadata_expansions": 124,
+          "pruned_public_nodes": 0
+     }
+}

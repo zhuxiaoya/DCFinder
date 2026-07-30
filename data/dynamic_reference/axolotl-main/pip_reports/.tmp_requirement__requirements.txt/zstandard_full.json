@@ -1,0 +1,71 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/c9/79/07f6d2670fa2708ae3b79aabb82da78e9cbdb08d9bafadf8638d356775ff/zstandard-0.22.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=1958100b8a1cc3f27fa21071a55cb2ed32e9e5df4c3c6e661c193437f171cba2",
+          "hashes": {
+            "sha256": "1958100b8a1cc3f27fa21071a55cb2ed32e9e5df4c3c6e661c193437f171cba2"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "zstandard",
+        "version": "0.22.0",
+        "summary": "Zstandard bindings for Python",
+        "keywords": [
+          "zstandard",
+          "zstd",
+          "compression"
+        ],
+        "home_page": "https://github.com/indygreg/python-zstandard",
+        "author": "Gregory Szorc",
+        "author_email": "gregory.szorc@gmail.com",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Programming Language :: C",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12"
+        ],
+        "requires_dist": [
+          "cffi >=1.11 ; platform_python_implementation == \"PyPy\"",
+          "cffi >=1.11 ; extra == 'cffi'"
+        ],
+        "requires_python": ">=3.8",
+        "provides_extra": [
+          "cffi"
+        ],
+        "description": "================\npython-zstandard\n================\n\n| |ci-test| |ci-wheel| |ci-typing| |ci-sdist| |ci-anaconda| |ci-sphinx|\n\nThis project provides Python bindings for interfacing with the\n`Zstandard <http://www.zstd.net>`_ compression library. A C extension\nand CFFI interface are provided.\n\nThe primary goal of the project is to provide a rich interface to the\nunderlying C API through a Pythonic interface while not sacrificing\nperformance. This means exposing most of the features and flexibility\nof the C API while not sacrificing usability or safety that Python provides.\n\nThe canonical home for this project is\nhttps://github.com/indygreg/python-zstandard.\n\nFor usage documentation, see https://python-zstandard.readthedocs.org/.\n\n.. |ci-test| image:: https://github.com/indygreg/python-zstandard/workflows/.github/workflows/test.yml/badge.svg\n     :target: https://github.com/indygreg/python-zstandard/blob/main/.github/workflows/test.yml\n\n.. |ci-wheel| image:: https://github.com/indygreg/python-zstandard/workflows/.github/workflows/wheel.yml/badge.svg\n     :target: https://github.com/indygreg/python-zstandard/blob/main/.github/workflows/wheel.yml\n\n.. |ci-typing| image:: https://github.com/indygreg/python-zstandard/workflows/.github/workflows/typing.yml/badge.svg\n     :target: https://github.com/indygreg/python-zstandard/blob/main/.github/workflows/typing.yml\n\n.. |ci-sdist| image:: https://github.com/indygreg/python-zstandard/workflows/.github/workflows/sdist.yml/badge.svg\n     :target: https://github.com/indygreg/python-zstandard/blob/main/.github/workflows/sdist.yml\n\n.. |ci-anaconda| image:: https://github.com/indygreg/python-zstandard/workflows/.github/workflows/anaconda.yml/badge.svg\n     :target: https://github.com/indygreg/python-zstandard/blob/main/.github/workflows/anaconda.yml\n\n.. |ci-sphinx| image:: https://github.com/indygreg/python-zstandard/workflows/.github/workflows/sphinx.yml/badge.svg\n     :target: https://github.com/indygreg/python-zstandard/blob/main/.github/workflows/sphinx.yml\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

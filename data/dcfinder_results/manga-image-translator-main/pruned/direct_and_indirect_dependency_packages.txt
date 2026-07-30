@@ -1,0 +1,90 @@
+ipykernel ==6.29.5
+pylint ==3.3.0
+pytest-sugar ==0.9.6
+pytest-xdist ==3.3.1
+pytest ==7.2.2
+pytest-asyncio ==0.21.1
+networkx
+torch
+groq
+torchvision
+torch-summary
+einops
+scikit-image
+opencv-python
+pyclipper
+shapely
+requests
+cryptography
+freetype-py
+aiohttp
+tqdm
+deepl
+imagehash
+kornia
+backports-cached-property
+huggingface-hub
+transformers
+py3langid ==0.2.2
+sentencepiece
+editdistance
+numpy ==1.26.4
+tensorboardx
+websockets
+protobuf <6.0.0,>=3.20.2
+ctranslate2 <=3.24.0
+colorama
+openai ==1.63.0
+tiktoken
+httpx ==0.27.2
+open-clip-torch
+safetensors
+pandas
+onnxruntime
+timm
+omegaconf
+python-dotenv
+nest-asyncio
+marshmallow
+cython
+aioshutil
+aiofiles
+arabic-reshaper
+pyhyphen
+langcodes
+manga-ocr
+langdetect
+pydensecrf
+accelerate
+bitsandbytes
+uvicorn
+fastapi
+pydantic ==2.5.0
+python-multipart
+google-genai
+rich
+regex
+paddleocr
+paddlepaddle
+paddlepaddle-gpu
+anyio <5,>=3.5.0,<5.0.0,>=4.8.0,<5,>=3.6.2
+certifi >=2023.5.7
+exceptiongroup >=1.0.0rc8,>=1.0.2
+h11 >=0.8,>=0.16
+httpcore ==1.*
+idna <4,>=2.5,>=2.8,>=2.0
+nvidia-cublas-cu11 ==11.11.3.6
+nvidia-cuda-cupti-cu11 ==11.8.87
+nvidia-cuda-nvrtc-cu11 ==11.8.89
+nvidia-cuda-runtime-cu11 ==11.8.89
+nvidia-cudnn-cu11 ==8.9.6.50
+nvidia-cufft-cu11 ==10.9.0.58
+nvidia-curand-cu11 ==10.3.0.86
+nvidia-cusolver-cu11 ==11.4.1.48
+nvidia-cusparse-cu11 ==11.7.5.86
+nvidia-nccl-cu11 ==2.19.3
+nvidia-nvtx-cu11 ==11.8.86
+opt-einsum ==3.3.0
+pillow !=8.3.*,>=5.3.0,>=10.1,>=10.0.0,>=8.3.2
+sniffio
+typing-extensions >=4.10.0,<5,>=4.14,>=4.13.2,>=4.4,>=4.1.0,<5,>=4.11,>=4.0,>=4.8.0,>=4.6.1,<5.0.0,>=4.14.0,>=4.12,>=4.6,>=4.13.0,>=4,>=4.6.0,>=4.5,>=4.2,>=4.1.0,>=4.10.0,>=4.12.0,!=4.7.0,>=4.6.0

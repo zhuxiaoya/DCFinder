@@ -1,0 +1,24 @@
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements.txt
+onnxruntime-gpu ==1.18.0  # type: runtime
+transformers ==4.38.0  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt
+numpy ==1.26.4  # type: runtime
+pyyaml ==6.0.1  # type: runtime
+opencv-python ==4.10.0.84  # type: runtime
+scipy ==1.13.1  # type: runtime
+imageio ==2.34.2  # type: runtime
+lmdb ==1.4.1  # type: runtime
+tqdm ==4.66.4  # type: runtime
+rich ==13.7.1  # type: runtime
+ffmpeg-python ==0.2.0  # type: runtime
+onnx ==1.16.1  # type: runtime
+scikit-image ==0.24.0  # type: runtime
+albumentations ==1.4.10  # type: runtime
+matplotlib ==3.9.0  # type: runtime
+imageio-ffmpeg ==0.5.1  # type: runtime
+tyro ==0.8.5  # type: runtime
+gradio ==5.1.0  # type: runtime
+pykalman ==0.9.7  # type: runtime
+pillow >=10.2.0  # type: runtime
+

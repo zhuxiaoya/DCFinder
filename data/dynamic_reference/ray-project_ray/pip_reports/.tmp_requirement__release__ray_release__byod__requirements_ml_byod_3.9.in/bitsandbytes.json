@@ -1,0 +1,108 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/19/57/3443d6f183436fbdaf5000aac332c4d5ddb056665d459244a5608e98ae92/bitsandbytes-0.49.2-py3-none-manylinux_2_24_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=54b771f06e1a3c73af5c7f16ccf0fc23a846052813d4b008d10cb6e017dd1c8c",
+          "hashes": {
+            "sha256": "54b771f06e1a3c73af5c7f16ccf0fc23a846052813d4b008d10cb6e017dd1c8c"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "bitsandbytes",
+        "version": "0.49.2",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "k-bit optimizers and matrix multiplication routines.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "gpu",
+          "optimizers",
+          "optimization",
+          "8-bit",
+          "quantization",
+          "compression"
+        ],
+        "author_email": "Tim Dettmers <dettmers@cs.washington.edu>",
+        "maintainer_email": "Titus von Köller <titus@huggingface.co>, Matthew Douglas <matthew.douglas@huggingface.co>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Environment :: GPU :: NVIDIA CUDA :: 11.8",
+          "Environment :: GPU :: NVIDIA CUDA :: 12",
+          "Environment :: GPU :: NVIDIA CUDA :: 13",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "Operating System :: POSIX :: Linux",
+          "Operating System :: MacOS",
+          "Operating System :: Microsoft :: Windows",
+          "Programming Language :: C++",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Topic :: Scientific/Engineering :: Artificial Intelligence"
+        ],
+        "requires_dist": [
+          "torch<3,>=2.3",
+          "numpy>=1.17",
+          "packaging>=20.9",
+          "pandas; extra == \"benchmark\"",
+          "matplotlib; extra == \"benchmark\"",
+          "hf-doc-builder==0.5.0; extra == \"docs\"",
+          "bitsandbytes[test]; extra == \"dev\"",
+          "build<2,>=1.0.0; extra == \"dev\"",
+          "ruff~=0.14.3; extra == \"dev\"",
+          "pre-commit<4,>=3.5.0; extra == \"dev\"",
+          "wheel<1,>=0.42; extra == \"dev\"",
+          "einops~=0.8.0; extra == \"test\"",
+          "lion-pytorch==0.2.3; extra == \"test\"",
+          "pytest~=8.3; extra == \"test\"",
+          "scipy<2,>=1.11.4; extra == \"test\"",
+          "transformers<5,>=4.30.1; extra == \"test\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "homepage, https://github.com/bitsandbytes-foundation/bitsandbytes",
+          "changelog, https://github.com/bitsandbytes-foundation/bitsandbytes/blob/main/CHANGELOG.md",
+          "docs, https://huggingface.co/docs/bitsandbytes/main",
+          "issues, https://github.com/bitsandbytes-foundation/bitsandbytes/issues"
+        ],
+        "provides_extra": [
+          "benchmark",
+          "docs",
+          "dev",
+          "test"
+        ],
+        "description": "<p align=\"center\"><img src=\"https://avatars.githubusercontent.com/u/175231607?s=200&v=4\" alt=\"\"></p>\n<h1 align=\"center\">bitsandbytes</h1>\n<p align=\"center\">\n    <a href=\"https://github.com/bitsandbytes-foundation/bitsandbytes/main/LICENSE\"><img alt=\"License\" src=\"https://img.shields.io/github/license/bitsandbytes-foundation/bitsandbytes.svg?color=blue\"></a>\n    <a href=\"https://pepy.tech/project/bitsandbytes\"><img alt=\"Downloads\" src=\"https://static.pepy.tech/badge/bitsandbytes/month\"></a>\n    <a href=\"https://github.com/bitsandbytes-foundation/bitsandbytes/actions/workflows/tests-nightly.yml\"><img alt=\"Nightly Unit Tests\" src=\"https://img.shields.io/github/actions/workflow/status/bitsandbytes-foundation/bitsandbytes/tests-nightly.yml?logo=github&label=Nightly%20Tests\"></a>\n    <a href=\"https://github.com/bitsandbytes-foundation/bitsandbytes/releases\"><img alt=\"GitHub Release\" src=\"https://img.shields.io/github/v/release/bitsandbytes-foundation/bitsandbytes\"></a>\n    <a href=\"https://pypi.org/project/bitsandbytes/\"><img alt=\"PyPI - Python Version\" src=\"https://img.shields.io/pypi/pyversions/bitsandbytes\"></a>\n</p>\n\n`bitsandbytes` enables accessible large language models via k-bit quantization for PyTorch. We provide three main features for dramatically reducing memory consumption for inference and training:\n\n* 8-bit optimizers uses block-wise quantization to maintain 32-bit performance at a small fraction of the memory cost.\n* LLM.int8() or 8-bit quantization enables large language model inference with only half the required memory and without any performance degradation. This method is based on vector-wise quantization to quantize most features to 8-bits and separately treating outliers with 16-bit matrix multiplication.\n* QLoRA or 4-bit quantization enables large language model training with several memory-saving techniques that don't compromise performance. This method quantizes a model to 4-bits and inserts a small set of trainable low-rank adaptation (LoRA) weights to allow training.\n\nThe library includes quantization primitives for 8-bit & 4-bit operations, through `bitsandbytes.nn.Linear8bitLt` and `bitsandbytes.nn.Linear4bit` and 8-bit optimizers through `bitsandbytes.optim` module.\n\n## System Requirements\nbitsandbytes has the following minimum requirements for all platforms:\n\n* Python 3.10+\n* [PyTorch](https://pytorch.org/get-started/locally/) 2.3+\n  * _Note: While we aim to provide wide backwards compatibility, we recommend using the latest version of PyTorch for the best experience._\n\n#### Accelerator support:\n\n<small>Note: this table reflects the status of the current development branch. For the latest stable release, see the\n[document in the 0.49.2 tag](https://github.com/bitsandbytes-foundation/bitsandbytes/blob/0.49.2/README.md#accelerator-support).\n</small>\n\n##### Legend:\n🚧 = In Development,\n〰️ = Partially Supported,\n✅ = Supported,\n🐢 = Slow Implementation Supported,\n❌ = Not Supported\n\n<table>\n  <thead>\n    <tr>\n      <th>Platform</th>\n      <th>Accelerator</th>\n      <th>Hardware Requirements</th>\n      <th>LLM.int8()</th>\n      <th>QLoRA 4-bit</th>\n      <th>8-bit Optimizers</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"6\">🐧 <strong>Linux, glibc >= 2.24</strong></td>\n    </tr>\n    <tr>\n      <td align=\"right\">x86-64</td>\n      <td>◻️ CPU</td>\n      <td>Minimum: AVX2<br>Optimized: AVX512F, AVX512BF16</td>\n      <td>✅</td>\n      <td>✅</td>\n      <td>❌</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>🟩 NVIDIA GPU <br><code>cuda</code></td>\n      <td>SM60+ minimum<br>SM75+ recommended</td>\n      <td>✅</td>\n      <td>✅</td>\n      <td>✅</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>🟥 AMD GPU <br><code>cuda</code></td>\n      <td>\n        CDNA: gfx90a, gfx942, gfx950<br>\n        RDNA: gfx1100, gfx1101, gfx1150, gfx1151, gfx1200, gfx1201\n      </td>\n      <td>✅</td>\n      <td>✅</td>\n      <td>✅</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>🟦 Intel GPU <br><code>xpu</code></td>\n      <td>\n        Data Center GPU Max Series<br>\n        Arc A-Series (Alchemist)<br>\n        Arc B-Series (Battlemage)\n      </td>\n      <td>✅</td>\n      <td>✅</td>\n      <td>〰️</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>🟪 Intel Gaudi <br><code>hpu</code></td>\n      <td>Gaudi2, Gaudi3</td>\n      <td>✅</td>\n      <td>〰️</td>\n      <td>❌</td>\n    </tr>\n    <tr>\n      <td align=\"right\">aarch64</td>\n      <td>◻️ CPU</td>\n      <td></td>\n      <td>✅</td>\n      <td>✅</td>\n      <td>❌</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>🟩 NVIDIA GPU <br><code>cuda</code></td>\n      <td>SM75+</td>\n      <td>✅</td>\n      <td>✅</td>\n      <td>✅</td>\n    </tr>\n    <tr>\n      <td colspan=\"6\">🪟 <strong>Windows 11 / Windows Server 2022+</strong></td>\n    </tr>\n    <tr>\n      <td align=\"right\">x86-64</td>\n      <td>◻️ CPU</td>\n      <td>AVX2</td>\n      <td>✅</td>\n      <td>✅</td>\n      <td>❌</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>🟩 NVIDIA GPU <br><code>cuda</code></td>\n      <td>SM60+ minimum<br>SM75+ recommended</td>\n      <td>✅</td>\n      <td>✅</td>\n      <td>✅</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>🟦 Intel GPU <br><code>xpu</code></td>\n      <td>\n        Arc A-Series (Alchemist) <br>\n        Arc B-Series (Battlemage)\n      </td>\n      <td>✅</td>\n      <td>✅</td>\n      <td>〰️</td>\n    </tr>\n    <tr>\n      <td colspan=\"6\">🍎 <strong>macOS 14+</strong></td>\n    </tr>\n    <tr>\n      <td align=\"right\">arm64</td>\n      <td>◻️ CPU</td>\n      <td>Apple M1+</td>\n      <td>✅</td>\n      <td>✅</td>\n      <td>❌</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>⬜ Metal <br><code>mps</code></td>\n      <td>Apple M1+</td>\n      <td>🐢</td>\n      <td>🐢</td>\n      <td>❌</td>\n  </tbody>\n</table>\n\n## :book: Documentation\n* [Official Documentation](https://huggingface.co/docs/bitsandbytes/main)\n* 🤗 [Transformers](https://huggingface.co/docs/transformers/quantization/bitsandbytes)\n* 🤗 [Diffusers](https://huggingface.co/docs/diffusers/quantization/bitsandbytes)\n* 🤗 [PEFT](https://huggingface.co/docs/peft/developer_guides/quantization#quantize-a-model)\n\n## :heart: Sponsors\nThe continued maintenance and development of `bitsandbytes` is made possible thanks to the generous support of our sponsors. Their contributions help ensure that we can keep improving the project and delivering valuable updates to the community.\n\n<kbd><a href=\"https://hf.co\" target=\"_blank\"><img width=\"100\" src=\"https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.svg\" alt=\"Hugging Face\"></a></kbd>\n&nbsp;\n<kbd><a href=\"https://intel.com\" target=\"_blank\"><img width=\"100\" src=\"https://avatars.githubusercontent.com/u/17888862?s=100&v=4\" alt=\"Intel\"></a></kbd>\n\n## License\n`bitsandbytes` is MIT licensed.\n\n## How to cite us\nIf you found this library useful, please consider citing our work:\n\n### QLoRA\n\n```bibtex\n@article{dettmers2023qlora,\n  title={Qlora: Efficient finetuning of quantized llms},\n  author={Dettmers, Tim and Pagnoni, Artidoro and Holtzman, Ari and Zettlemoyer, Luke},\n  journal={arXiv preprint arXiv:2305.14314},\n  year={2023}\n}\n```\n\n### LLM.int8()\n\n```bibtex\n@article{dettmers2022llmint8,\n  title={LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale},\n  author={Dettmers, Tim and Lewis, Mike and Belkada, Younes and Zettlemoyer, Luke},\n  journal={arXiv preprint arXiv:2208.07339},\n  year={2022}\n}\n```\n\n### 8-bit Optimizers\n\n```bibtex\n@article{dettmers2022optimizers,\n  title={8-bit Optimizers via Block-wise Quantization},\n  author={Dettmers, Tim and Lewis, Mike and Shleifer, Sam and Zettlemoyer, Luke},\n  journal={9th International Conference on Learning Representations, ICLR},\n  year={2022}\n}\n```\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

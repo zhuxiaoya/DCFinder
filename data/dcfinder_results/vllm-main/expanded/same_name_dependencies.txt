@@ -1,0 +1,312 @@
+{
+    "direct dependency with same name": {
+        "number": 2,
+        "packages": {
+            "soundfile": {
+                "private version": "0.13.1",
+                "public version": "0.14.0",
+                "highest public (unconstrained)": "0.14.0",
+                "declared specifier": ">=0.12.1",
+                "constraint source": "indirect",
+                "satisfying public versions count": 4
+            },
+            "pandas": {
+                "private version": "2.3.1",
+                "public version": "3.0.4",
+                "highest public (unconstrained)": "3.0.4"
+            }
+        }
+    },
+    "indirect dependency with same name": {
+        "number": 37,
+        "packages": {
+            "async-timeout": {
+                "private version": "4.0.3",
+                "public version": "5.0.1",
+                "highest public (unconstrained)": "5.0.1",
+                "declared specifier": ">=4.0.3",
+                "constraint source": "indirect",
+                "satisfying public versions count": 3
+            },
+            "certifi": {
+                "private version": "2022.12.7",
+                "public version": "2026.6.17",
+                "highest public (unconstrained)": "2026.6.17",
+                "declared specifier": ">=2017.4.17",
+                "constraint source": "indirect",
+                "satisfying public versions count": 51
+            },
+            "cffi": {
+                "private version": "2.0.0",
+                "public version": "2.1.0",
+                "highest public (unconstrained)": "2.1.0",
+                "declared specifier": ">=1.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 57
+            },
+            "charset-normalizer": {
+                "private version": "2.1.1",
+                "public version": "2.1.1",
+                "highest public (unconstrained)": "3.4.9",
+                "declared specifier": "<3,>=2",
+                "constraint source": "indirect",
+                "satisfying public versions count": 15
+            },
+            "click": {
+                "private version": "8.2.2",
+                "public version": "8.4.2",
+                "highest public (unconstrained)": "8.4.2",
+                "declared specifier": ">=8.0.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 24
+            },
+            "filelock": {
+                "private version": "3.29.0",
+                "public version": "3.29.7",
+                "highest public (unconstrained)": "3.29.7"
+            },
+            "fsspec": {
+                "private version": "2026.4.0",
+                "public version": "2026.6.0",
+                "highest public (unconstrained)": "2026.6.0",
+                "declared specifier": ">=0.8.5",
+                "constraint source": "indirect",
+                "satisfying public versions count": 62
+            },
+            "idna": {
+                "private version": "3.4",
+                "public version": "3.18",
+                "highest public (unconstrained)": "3.18",
+                "declared specifier": "<4,>=2.5",
+                "constraint source": "indirect",
+                "satisfying public versions count": 25
+            },
+            "jinja2": {
+                "private version": "3.1.6",
+                "public version": "3.1.6",
+                "highest public (unconstrained)": "3.1.6"
+            },
+            "llvmlite": {
+                "private version": "0.44.0",
+                "public version": "0.44.0",
+                "highest public (unconstrained)": "0.48.0",
+                "declared specifier": "<0.45,>=0.44.0dev0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 3
+            },
+            "markdown-it-py": {
+                "private version": "4.0.0",
+                "public version": "4.2.0",
+                "highest public (unconstrained)": "4.2.0",
+                "declared specifier": ">=2.2.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 5
+            },
+            "markupsafe": {
+                "private version": "3.0.3",
+                "public version": "3.0.3",
+                "highest public (unconstrained)": "3.0.3",
+                "declared specifier": ">=2.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 12
+            },
+            "mdurl": {
+                "private version": "0.1.2",
+                "public version": "0.1.2",
+                "highest public (unconstrained)": "0.1.2",
+                "declared specifier": "~=0.1",
+                "constraint source": "indirect",
+                "satisfying public versions count": 3
+            },
+            "mpmath": {
+                "private version": "1.3.0",
+                "public version": "1.3.0",
+                "highest public (unconstrained)": "1.5.0a0",
+                "declared specifier": "<1.4,>=1.1.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 3
+            },
+            "msgpack": {
+                "private version": "1.1.1",
+                "public version": "1.2.1",
+                "highest public (unconstrained)": "1.2.1",
+                "declared specifier": ">=1.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 22
+            },
+            "networkx": {
+                "private version": "3.6.1",
+                "public version": "3.6.1",
+                "highest public (unconstrained)": "3.6.1",
+                "declared specifier": ">=2.5.1",
+                "constraint source": "indirect",
+                "satisfying public versions count": 40
+            },
+            "numba": {
+                "private version": "0.61.2",
+                "public version": "0.66.0",
+                "highest public (unconstrained)": "0.66.0",
+                "declared specifier": ">=0.51.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 59
+            },
+            "numpy": {
+                "private version": "2.4.4",
+                "public version": "2.2.6",
+                "highest public (unconstrained)": "2.5.1",
+                "declared specifier": ">=1.19.5,>=1.22.3,>=1.22.4,<2.3,>=1.24,<2.6,>=1.25.2,>=1.24.1",
+                "constraint source": "indirect",
+                "satisfying public versions count": 20
+            },
+            "packaging": {
+                "private version": "24.1",
+                "public version": "26.2",
+                "highest public (unconstrained)": "26.2",
+                "declared specifier": ">=20.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 28
+            },
+            "protobuf": {
+                "private version": "6.32.1",
+                "public version": "7.36.0rc1",
+                "highest public (unconstrained)": "7.36.0rc1",
+                "declared specifier": ">=3.19.5",
+                "constraint source": "indirect",
+                "satisfying public versions count": 124
+            },
+            "psutil": {
+                "private version": "6.0.0",
+                "public version": "7.2.2",
+                "highest public (unconstrained)": "7.2.2",
+                "declared specifier": ">=5.9.4",
+                "constraint source": "indirect",
+                "satisfying public versions count": 16
+            },
+            "pycparser": {
+                "private version": "2.23",
+                "public version": "3.0",
+                "highest public (unconstrained)": "3.0"
+            },
+            "pygments": {
+                "private version": "2.19.2",
+                "public version": "2.20.0",
+                "highest public (unconstrained)": "2.20.0",
+                "declared specifier": "<3.0.0,>=2.13.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 14
+            },
+            "python-dateutil": {
+                "private version": "2.9.0",
+                "public version": "2.9.0.post0",
+                "highest public (unconstrained)": "2.9.0.post0",
+                "declared specifier": ">=2.8.2,<3.0.0,>=2.1",
+                "constraint source": "indirect",
+                "satisfying public versions count": 3
+            },
+            "pytz": {
+                "private version": "2025.2",
+                "public version": "2026.2",
+                "highest public (unconstrained)": "2026.2",
+                "declared specifier": ">=2020.1",
+                "constraint source": "indirect",
+                "satisfying public versions count": 24
+            },
+            "requests": {
+                "private version": "2.28.1",
+                "public version": "2.34.2",
+                "highest public (unconstrained)": "2.34.2",
+                "declared specifier": ">=2.19.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 31
+            },
+            "rich": {
+                "private version": "14.1.0",
+                "public version": "15.0.0",
+                "highest public (unconstrained)": "15.0.0",
+                "declared specifier": ">=10.11.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 73
+            },
+            "scipy": {
+                "private version": "1.16.2",
+                "public version": "1.18.0",
+                "highest public (unconstrained)": "1.18.0",
+                "declared specifier": ">=1.6.0,>=1.10.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 38
+            },
+            "setuptools": {
+                "private version": "78.1.0",
+                "public version": "83.0.0",
+                "highest public (unconstrained)": "83.0.0",
+                "declared specifier": ">=77.0.3",
+                "constraint source": "indirect",
+                "satisfying public versions count": 25
+            },
+            "shellingham": {
+                "private version": "1.5.4",
+                "public version": "1.5.4",
+                "highest public (unconstrained)": "1.5.4",
+                "declared specifier": ">=1.3.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 10
+            },
+            "six": {
+                "private version": "1.17.0",
+                "public version": "1.17.0",
+                "highest public (unconstrained)": "1.17.0",
+                "declared specifier": ">=1.5",
+                "constraint source": "indirect",
+                "satisfying public versions count": 19
+            },
+            "sympy": {
+                "private version": "1.14.0",
+                "public version": "1.14.0",
+                "highest public (unconstrained)": "1.14.0",
+                "declared specifier": ">=1.13.3",
+                "constraint source": "indirect",
+                "satisfying public versions count": 4
+            },
+            "torch": {
+                "private version": "2.13.0+cpu",
+                "public version": "2.13.0",
+                "highest public (unconstrained)": "2.13.0",
+                "declared specifier": ">=1.9.0,<3.0.0,>=2.0.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 25
+            },
+            "typer": {
+                "private version": "0.17.4",
+                "public version": "0.26.8",
+                "highest public (unconstrained)": "0.26.8",
+                "declared specifier": ">=0.9.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 61
+            },
+            "typing-extensions": {
+                "private version": "4.15.0",
+                "public version": "4.16.0",
+                "highest public (unconstrained)": "4.16.0",
+                "declared specifier": ">=4.1.1,>=4.10.0,>=3.7.4.3",
+                "constraint source": "indirect",
+                "satisfying public versions count": 20
+            },
+            "tzdata": {
+                "private version": "2025.2",
+                "public version": "2026.3",
+                "highest public (unconstrained)": "2026.3",
+                "declared specifier": ">=2022.7",
+                "constraint source": "indirect",
+                "satisfying public versions count": 13
+            },
+            "urllib3": {
+                "private version": "1.26.13",
+                "public version": "1.26.20",
+                "highest public (unconstrained)": "2.7.0",
+                "declared specifier": "!=2.2.0,<3,>=1.25.4,<1.27,>=1.21.1",
+                "constraint source": "indirect",
+                "satisfying public versions count": 29
+            }
+        }
+    }
+}

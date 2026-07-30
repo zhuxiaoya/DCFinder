@@ -1,0 +1,18 @@
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py
+tensorizer >=2.9.0  # type: extra:tensorizer
+fastsafetensors >=0.1.10  # type: extra:fastsafetensors
+runai-model-streamer  # type: extra:runai
+runai-model-streamer-s3  # type: extra:runai
+boto3  # type: extra:runai
+librosa  # type: extra:audio
+soundfile  # type: extra:audio
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/pyproject.toml
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/benchmarks/pyproject.toml
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/benchmarks/kernels/requirements.txt
+pandas  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/examples/pyproject.toml
+

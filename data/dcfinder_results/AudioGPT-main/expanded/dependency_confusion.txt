@@ -1,0 +1,3216 @@
+{
+     "direct dependency": {
+          "number": 69,
+          "packages": [
+               {
+                    "name": "accelerate",
+                    "specifier": "",
+                    "raw_requirement": "accelerate",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "addict",
+                    "specifier": "==2.4.0",
+                    "raw_requirement": "addict==2.4.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "aiofiles",
+                    "specifier": "",
+                    "raw_requirement": "aiofiles",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "albumentations",
+                    "specifier": "==1.3.0",
+                    "raw_requirement": "albumentations==1.3.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "appdirs",
+                    "specifier": "==1.4.4",
+                    "raw_requirement": "appdirs==1.4.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "basicsr",
+                    "specifier": "==1.4.2",
+                    "raw_requirement": "basicsr==1.4.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "beautifulsoup4",
+                    "specifier": "==4.10.0",
+                    "raw_requirement": "beautifulsoup4==4.10.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "cython",
+                    "specifier": "==0.29.24",
+                    "raw_requirement": "Cython==0.29.24",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "diffusers",
+                    "specifier": "",
+                    "raw_requirement": "diffusers",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "einops",
+                    "specifier": "==0.3.0",
+                    "raw_requirement": "einops==0.3.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "espnet",
+                    "specifier": "",
+                    "raw_requirement": "espnet",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "espnet-model-zoo",
+                    "specifier": "",
+                    "raw_requirement": "espnet_model_zoo",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ffmpeg-python",
+                    "specifier": "",
+                    "raw_requirement": "ffmpeg-python",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "g2p-en",
+                    "specifier": "==2.1.0",
+                    "raw_requirement": "g2p-en==2.1.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "google",
+                    "specifier": "==3.0.0",
+                    "raw_requirement": "google==3.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gradio",
+                    "specifier": "",
+                    "raw_requirement": "gradio",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "h5py",
+                    "specifier": "",
+                    "raw_requirement": "h5py",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "imageio",
+                    "specifier": "==2.9.0",
+                    "raw_requirement": "imageio==2.9.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "imageio-ffmpeg",
+                    "specifier": "==0.4.2",
+                    "raw_requirement": "imageio-ffmpeg==0.4.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "invisible-watermark",
+                    "specifier": ">=0.1.5",
+                    "raw_requirement": "invisible-watermark>=0.1.5",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "jieba",
+                    "specifier": "",
+                    "raw_requirement": "jieba",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "kornia",
+                    "specifier": "==0.6",
+                    "raw_requirement": "kornia==0.6",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "langchain",
+                    "specifier": "==0.0.101",
+                    "raw_requirement": "langchain==0.0.101",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "librosa",
+                    "specifier": "",
+                    "raw_requirement": "librosa",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "loguru",
+                    "specifier": "",
+                    "raw_requirement": "loguru",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "miditoolkit",
+                    "specifier": "==0.1.7",
+                    "raw_requirement": "miditoolkit==0.1.7",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "mmcv",
+                    "specifier": "==1.5.0",
+                    "raw_requirement": "mmcv==1.5.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "mmdet",
+                    "specifier": "==2.23.0",
+                    "raw_requirement": "mmdet==2.23.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "mmengine",
+                    "specifier": "==0.7.2",
+                    "raw_requirement": "mmengine==0.7.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "moviepy",
+                    "specifier": "==1.0.3",
+                    "raw_requirement": "moviepy==1.0.3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numpy",
+                    "specifier": "==1.23.1",
+                    "raw_requirement": "numpy==1.23.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "omegaconf",
+                    "specifier": "==2.1.1",
+                    "raw_requirement": "omegaconf==2.1.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "open-clip-torch",
+                    "specifier": "==2.0.2",
+                    "raw_requirement": "open_clip_torch==2.0.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "openai",
+                    "specifier": "",
+                    "raw_requirement": "openai",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "openai-whisper",
+                    "specifier": "",
+                    "raw_requirement": "openai-whisper",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opencv-contrib-python",
+                    "specifier": "==4.3.0.36",
+                    "raw_requirement": "opencv-contrib-python==4.3.0.36",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "praat-parselmouth",
+                    "specifier": "==0.3.3",
+                    "raw_requirement": "praat-parselmouth==0.3.3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "prettytable",
+                    "specifier": "==3.6.0",
+                    "raw_requirement": "prettytable==3.6.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "proglog",
+                    "specifier": "==0.1.9",
+                    "raw_requirement": "proglog==0.1.9",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pycwt",
+                    "specifier": "==0.3.0a22",
+                    "raw_requirement": "pycwt==0.3.0a22",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pyloudnorm",
+                    "specifier": "==0.1.0",
+                    "raw_requirement": "pyloudnorm==0.1.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pypinyin",
+                    "specifier": "==0.43.0",
+                    "raw_requirement": "pypinyin==0.43.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pytorch-lightning",
+                    "specifier": "==1.5.0",
+                    "raw_requirement": "pytorch-lightning==1.5.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pytorch-ssim",
+                    "specifier": "==0.1",
+                    "raw_requirement": "pytorch-ssim==0.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pyworld",
+                    "specifier": "==0.3.0",
+                    "raw_requirement": "pyworld==0.3.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "resampy",
+                    "specifier": "==0.2.2",
+                    "raw_requirement": "resampy==0.2.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "resemblyzer",
+                    "specifier": "==0.1.1.dev0",
+                    "raw_requirement": "Resemblyzer==0.1.1.dev0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "safetensors",
+                    "specifier": "==0.2.7",
+                    "raw_requirement": "safetensors==0.2.7",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "sklearn",
+                    "specifier": "==0.0",
+                    "raw_requirement": "sklearn==0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "soundfile",
+                    "specifier": "",
+                    "raw_requirement": "soundfile",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "soupsieve",
+                    "specifier": "==2.3",
+                    "raw_requirement": "soupsieve==2.3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "streamlit",
+                    "specifier": "==1.12.1",
+                    "raw_requirement": "streamlit==1.12.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "streamlit-drawable-canvas",
+                    "specifier": "==0.8.0",
+                    "raw_requirement": "streamlit-drawable-canvas==0.8.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorboardx",
+                    "specifier": "==2.4",
+                    "raw_requirement": "tensorboardX==2.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "test-tube",
+                    "specifier": ">=0.7.5",
+                    "raw_requirement": "test-tube>=0.7.5",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "textgrid",
+                    "specifier": "==1.5",
+                    "raw_requirement": "TextGrid==1.5",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "timm",
+                    "specifier": "==0.6.12",
+                    "raw_requirement": "timm==0.6.12",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch",
+                    "specifier": "==1.12.1",
+                    "raw_requirement": "torch==1.12.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torchaudio",
+                    "specifier": "==0.12.1",
+                    "raw_requirement": "torchaudio==0.12.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch-fidelity",
+                    "specifier": "==0.3.0",
+                    "raw_requirement": "torch-fidelity==0.3.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torchlibrosa",
+                    "specifier": "",
+                    "raw_requirement": "torchlibrosa",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torchmetrics",
+                    "specifier": "==0.6.0",
+                    "raw_requirement": "torchmetrics==0.6.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torchvision",
+                    "specifier": "==0.13.1",
+                    "raw_requirement": "torchvision==0.13.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "transformers",
+                    "specifier": "==4.26.1",
+                    "raw_requirement": "transformers==4.26.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": "==4.0.0",
+                    "raw_requirement": "typing-extensions==4.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "uuid",
+                    "specifier": "==1.30",
+                    "raw_requirement": "uuid==1.30",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "webdataset",
+                    "specifier": "==0.2.5",
+                    "raw_requirement": "webdataset==0.2.5",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "webrtcvad",
+                    "specifier": "==2.0.10",
+                    "raw_requirement": "webrtcvad==2.0.10",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "yapf",
+                    "specifier": "==0.32.0",
+                    "raw_requirement": "yapf==0.32.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/AudioGPT-main/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 163,
+          "packages": [
+               {
+                    "name": "absl-py",
+                    "specifier": ">=0.4",
+                    "raw_requirement": "absl-py>=0.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "aiohappyeyeballs",
+                    "specifier": ">=2.5.0",
+                    "raw_requirement": "aiohappyeyeballs>=2.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "aiohttp",
+                    "specifier": "<4.0.0,>=3.8.3,!=4.0.0a0,!=4.0.0a1",
+                    "raw_requirement": "aiohttp (>=3.8.3,<4.0.0) ; aiohttp!=4.0.0a0,!=4.0.0a1; extra == 'http'",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "langchain",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fsspec",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "aiosignal",
+                    "specifier": ">=1.4.0",
+                    "raw_requirement": "aiosignal>=1.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "altair",
+                    "specifier": ">=3.2.0",
+                    "raw_requirement": "altair (>=3.2.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "annotated-doc",
+                    "specifier": ">=0.0.2",
+                    "raw_requirement": "annotated-doc>=0.0.2 ; annotated-doc>=0.0.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "annotated-types",
+                    "specifier": ">=0.6.0",
+                    "raw_requirement": "annotated-types>=0.6.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "antlr4-python3-runtime",
+                    "specifier": "==4.8",
+                    "raw_requirement": "antlr4-python3-runtime (==4.8) ; antlr4-python3-runtime==4.9.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "omegaconf",
+                              "source": "public"
+                         },
+                         {
+                              "name": "hydra-core",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "anyio",
+                    "specifier": "<5.0,>=3.0,<5,>=3.5.0,<5,>=3.6.2",
+                    "raw_requirement": "anyio<5.0,>=3.0 ; anyio<5,>=3.5.0 ; anyio ; anyio<5,>=3.6.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "openai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "starlette",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "asteroid-filterbanks",
+                    "specifier": "==0.4.0",
+                    "raw_requirement": "asteroid_filterbanks==0.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "async-timeout",
+                    "specifier": "<6.0,>=4.0",
+                    "raw_requirement": "async-timeout<6.0,>=4.0; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "attrs",
+                    "specifier": ">=17.3.0,>=22.2.0,>=22.2.0",
+                    "raw_requirement": "attrs>=17.3.0 ; attrs>=22.2.0 ; attrs>=22.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "audioread",
+                    "specifier": ">=2.1.9",
+                    "raw_requirement": "audioread>=2.1.9",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "blinker",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "blinker (>=1.0.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "braceexpand",
+                    "specifier": "",
+                    "raw_requirement": "braceexpand",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "webdataset",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "brotli",
+                    "specifier": ">=1.1.0",
+                    "raw_requirement": "brotli>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cachetools",
+                    "specifier": ">=4.0",
+                    "raw_requirement": "cachetools (>=4.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "certifi",
+                    "specifier": ">=2017.4.17",
+                    "raw_requirement": "certifi ; certifi (>=2017.4.17) ; certifi",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "httpcore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cffi",
+                    "specifier": ">=1.0",
+                    "raw_requirement": "cffi>=1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "soundfile",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "charset-normalizer",
+                    "specifier": "<3,>=2",
+                    "raw_requirement": "charset-normalizer (<3,>=2)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "ci-sdr",
+                    "specifier": "",
+                    "raw_requirement": "ci_sdr",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "click",
+                    "specifier": ">=7.0,<9.0.0,>=8.4.2,>=7.0",
+                    "raw_requirement": "click (>=7.0) ; click<9.0.0,>=8.4.2 ; click ; click>=7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nltk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "configargparse",
+                    "specifier": ">=1.2.1",
+                    "raw_requirement": "configargparse>=1.2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "contourpy",
+                    "specifier": ">=1.0.1",
+                    "raw_requirement": "contourpy>=1.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cycler",
+                    "specifier": ">=0.10",
+                    "raw_requirement": "cycler>=0.10",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "dataclasses-json",
+                    "specifier": "<0.6.0,>=0.5.7",
+                    "raw_requirement": "dataclasses-json (>=0.5.7,<0.6.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "langchain",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "decorator",
+                    "specifier": ">=4.3.0",
+                    "raw_requirement": "decorator>=4.3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "defusedxml",
+                    "specifier": "",
+                    "raw_requirement": "defusedxml",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nltk",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "distance",
+                    "specifier": ">=0.1.3",
+                    "raw_requirement": "distance (>=0.1.3)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "g2p-en",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "distro",
+                    "specifier": "<2,>=1.7.0",
+                    "raw_requirement": "distro<2,>=1.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "openai",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "editdistance",
+                    "specifier": "",
+                    "raw_requirement": "editdistance",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "espnet-tts-frontend",
+                    "specifier": "",
+                    "raw_requirement": "espnet_tts_frontend",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "exceptiongroup",
+                    "specifier": ">=1.0.2",
+                    "raw_requirement": "exceptiongroup>=1.0.2; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fast-bss-eval",
+                    "specifier": "==0.1.3",
+                    "raw_requirement": "fast-bss-eval==0.1.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fastapi",
+                    "specifier": "<1.0,>=0.115.2",
+                    "raw_requirement": "fastapi<1.0,>=0.115.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "filelock",
+                    "specifier": ">=3.10.0",
+                    "raw_requirement": "filelock ; filelock ; filelock ; filelock ; filelock>=3.10.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "diffusers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         },
+                         {
+                              "name": "espnet-model-zoo",
+                              "source": "public"
+                         },
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fonttools",
+                    "specifier": ">=4.22.0",
+                    "raw_requirement": "fonttools>=4.22.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "frozenlist",
+                    "specifier": ">=1.1.1,>=1.1.0",
+                    "raw_requirement": "frozenlist>=1.1.1 ; frozenlist>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiosignal",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fsspec",
+                    "specifier": "!=2021.06.0,>=2021.05.0,>=2023.5.0,<2028.0,>=2022.5.0",
+                    "raw_requirement": "fsspec[http] (!=2021.06.0,>=2021.05.0) ; fsspec>=2023.5.0 ; fsspec[http]<2028.0,>=2022.5.0 ; fsspec",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytorch-lightning",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "lightning",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ftfy",
+                    "specifier": "",
+                    "raw_requirement": "ftfy",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "open-clip-torch",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "future",
+                    "specifier": ">=0.16.0,>=0.17.1",
+                    "raw_requirement": "future ; future (>=0.16.0) ; future (>=0.17.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ffmpeg-python",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pyloudnorm",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytorch-lightning",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "gitdb",
+                    "specifier": "<5,>=4.0.1",
+                    "raw_requirement": "gitdb<5,>=4.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gitpython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "gitpython",
+                    "specifier": "!=3.1.19",
+                    "raw_requirement": "gitpython (!=3.1.19)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "gradio-client",
+                    "specifier": "==2.5.0",
+                    "raw_requirement": "gradio-client==2.5.0 ; gradio-client<3.0,>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "hf-gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "greenlet",
+                    "specifier": "!=0.4.17",
+                    "raw_requirement": "greenlet!=0.4.17; python_version >= \"3\" and (platform_machine == \"aarch64\" or (platform_machine == \"ppc64le\" or (platform_machine == \"x86_64\" or (platform_machine == \"amd64\" or (platform_machine == \"AMD64\" or (platform_machine == \"win32\" or platform_machine == \"WIN32\"))))))",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sqlalchemy",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "groovy",
+                    "specifier": "~=0.1",
+                    "raw_requirement": "groovy~=0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "grpcio",
+                    "specifier": "<2.0,>=1.74.0",
+                    "raw_requirement": "grpcio<2.0,>=1.74.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "h11",
+                    "specifier": ">=0.8,>=0.16",
+                    "raw_requirement": "h11>=0.8 ; h11>=0.16",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpcore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "hf-gradio",
+                    "specifier": "<1.0,>=0.4.1",
+                    "raw_requirement": "hf-gradio<1.0,>=0.4.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "hf-xet",
+                    "specifier": "<2.0.0,>=1.5.1",
+                    "raw_requirement": "hf-xet<2.0.0,>=1.5.1; platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"arm64\" or platform_machine == \"aarch64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpcore",
+                    "specifier": "==1.*",
+                    "raw_requirement": "httpcore==1.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpx",
+                    "specifier": "<1.0.0,<1.0,>=0.24.1,<1,>=0.23.0,<1,>=0.23.0,>=0.24.1",
+                    "raw_requirement": "httpx<1.0.0 ; httpx<1.0,>=0.24.1 ; httpx<1,>=0.23.0 ; httpx<1,>=0.23.0 ; httpx>=0.24.1 ; httpx",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "diffusers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "openai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "safehttpx",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "huggingface-hub",
+                    "specifier": ">=0.21.0,<2.0,>=0.34.0,<2.0,>=1.2.0,<1.0,>=0.11.0,<2.0,>=0.19.3",
+                    "raw_requirement": "huggingface_hub>=0.21.0 ; huggingface-hub<2.0,>=0.34.0 ; huggingface-hub ; huggingface-hub<2.0,>=1.2.0 ; huggingface-hub ; huggingface-hub ; huggingface-hub (<1.0,>=0.11.0) ; huggingface-hub<2.0,>=0.19.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "accelerate",
+                              "source": "public"
+                         },
+                         {
+                              "name": "diffusers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "espnet-model-zoo",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "open-clip-torch",
+                              "source": "public"
+                         },
+                         {
+                              "name": "timm",
+                              "source": "public"
+                         },
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "humanfriendly",
+                    "specifier": "",
+                    "raw_requirement": "humanfriendly",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "hydra-core",
+                    "specifier": "",
+                    "raw_requirement": "hydra-core",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "idna",
+                    "specifier": "<4,>=2.5,>=2.8,>=2.0",
+                    "raw_requirement": "idna ; idna (<4,>=2.5) ; idna>=2.8 ; idna>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "yarl",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "importlib-metadata",
+                    "specifier": "<5.0,>=1.4",
+                    "raw_requirement": "importlib_metadata ; importlib-metadata<5.0 ; importlib-metadata (>=1.4)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "diffusers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         },
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "inflect",
+                    "specifier": ">=0.3.1,>=1.0.0",
+                    "raw_requirement": "inflect (>=0.3.1) ; inflect (>=1.0.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "g2p-en",
+                              "source": "public"
+                         },
+                         {
+                              "name": "espnet-tts-frontend",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jaconv",
+                    "specifier": "",
+                    "raw_requirement": "jaconv",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet-tts-frontend",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jamo",
+                    "specifier": "==0.4.1",
+                    "raw_requirement": "jamo==0.4.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": "<4.0,>=2.10.1",
+                    "raw_requirement": "jinja2<4.0 ; jinja2 ; jinja2>=2.10.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "altair",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydeck",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jiter",
+                    "specifier": "<1,>=0.10.0",
+                    "raw_requirement": "jiter<1,>=0.10.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "openai",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "joblib",
+                    "specifier": ">=1.0,>=1.4.0",
+                    "raw_requirement": "joblib>=1.0 ; joblib ; joblib>=1.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nltk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jsonschema",
+                    "specifier": ">=3.0",
+                    "raw_requirement": "jsonschema>=3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "altair",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jsonschema-specifications",
+                    "specifier": ">=2023.03.6",
+                    "raw_requirement": "jsonschema-specifications>=2023.03.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "kaldiio",
+                    "specifier": ">=2.18.0",
+                    "raw_requirement": "kaldiio>=2.18.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "kiwisolver",
+                    "specifier": ">=1.3.1",
+                    "raw_requirement": "kiwisolver>=1.3.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "lazy-loader",
+                    "specifier": ">=0.1,>=0.4",
+                    "raw_requirement": "lazy_loader>=0.1 ; lazy-loader>=0.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         },
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "lightning",
+                    "specifier": "",
+                    "raw_requirement": "lightning",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "lightning-utilities",
+                    "specifier": "<2.0,>=0.10.0",
+                    "raw_requirement": "lightning-utilities<2.0,>=0.10.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "lightning",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "llvmlite",
+                    "specifier": "<0.49,>=0.48.0dev0",
+                    "raw_requirement": "llvmlite<0.49,>=0.48.0dev0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "numba",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markdown",
+                    "specifier": ">=2.6.8",
+                    "raw_requirement": "markdown>=2.6.8",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markdown-it-py",
+                    "specifier": ">=2.2.0",
+                    "raw_requirement": "markdown-it-py>=2.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rich",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markupsafe",
+                    "specifier": "<4.0,>=2.0,>=2.0,>=2.1.1",
+                    "raw_requirement": "markupsafe<4.0,>=2.0 ; MarkupSafe>=2.0 ; markupsafe>=2.1.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jinja2",
+                              "source": "private"
+                         },
+                         {
+                              "name": "werkzeug",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "marshmallow",
+                    "specifier": "<4.0.0,>=3.18.0",
+                    "raw_requirement": "marshmallow (>=3.18.0,<4.0.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "dataclasses-json",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "matplotlib",
+                    "specifier": "",
+                    "raw_requirement": "matplotlib ; matplotlib",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mmdet",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mmengine",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mdurl",
+                    "specifier": "~=0.1",
+                    "raw_requirement": "mdurl~=0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "markdown-it-py",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "more-itertools",
+                    "specifier": ">=8.5.0",
+                    "raw_requirement": "more-itertools ; more_itertools>=8.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "openai-whisper",
+                              "source": "public"
+                         },
+                         {
+                              "name": "inflect",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "msgpack",
+                    "specifier": ">=1.0",
+                    "raw_requirement": "msgpack>=1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "multidict",
+                    "specifier": "<7.0,>=4.5,>=4.0",
+                    "raw_requirement": "multidict<7.0,>=4.5 ; multidict>=4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "yarl",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mypy-extensions",
+                    "specifier": ">=0.3.0",
+                    "raw_requirement": "mypy-extensions (>=0.3.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "typing-inspect",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "narwhals",
+                    "specifier": ">=2.0.1,>=2.4.0",
+                    "raw_requirement": "narwhals>=2.0.1 ; narwhals>=2.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "altair",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "networkx",
+                    "specifier": ">=3.0",
+                    "raw_requirement": "networkx>=3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nltk",
+                    "specifier": ">=3.4.5,>=3.2.4",
+                    "raw_requirement": "nltk>=3.4.5 ; nltk (>=3.2.4)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         },
+                         {
+                              "name": "g2p-en",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "numba",
+                    "specifier": ">=0.51.0",
+                    "raw_requirement": "numba>=0.51.0 ; numba",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         },
+                         {
+                              "name": "openai-whisper",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "opencv-python",
+                    "specifier": ">=4.1.0.25,>=3",
+                    "raw_requirement": "opencv-python (>=4.1.0.25) ; opencv-python (>=3)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "invisible-watermark",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mmengine",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "opencv-python-headless",
+                    "specifier": ">=4.1.1,>=4.0.1",
+                    "raw_requirement": "opencv-python-headless (>=4.1.1) ; opencv-python-headless (>=4.0.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "albumentations",
+                              "source": "public"
+                         },
+                         {
+                              "name": "qudida",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "opt-einsum",
+                    "specifier": "",
+                    "raw_requirement": "opt-einsum",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "orjson",
+                    "specifier": "~=3.0",
+                    "raw_requirement": "orjson~=3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "packaging",
+                    "specifier": ">=20.0,>=17.0,>=14.1,>=20.0,>=20.9,>=21,<27.0,>=23.0,>=20.0,>=20.0,>=17.1,>=17.0",
+                    "raw_requirement": "packaging>=20.0 ; packaging ; packaging ; packaging ; packaging (>=17.0) ; packaging (>=14.1) ; packaging (>=20.0) ; packaging>=20.9 ; packaging>=21 ; packaging ; packaging ; packaging<27.0,>=23.0 ; packaging ; packaging>=20.0 ; packaging ; packaging>=20.0 ; packaging ; packaging ; packaging>=17.1 ; packaging>=17.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "accelerate",
+                              "source": "public"
+                         },
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "kornia",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytorch-lightning",
+                              "source": "public"
+                         },
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         },
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch-complex",
+                              "source": "public"
+                         },
+                         {
+                              "name": "hydra-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "lightning",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pooch",
+                              "source": "public"
+                         },
+                         {
+                              "name": "lazy-loader",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "altair",
+                              "source": "public"
+                         },
+                         {
+                              "name": "lightning-utilities",
+                              "source": "private"
+                         },
+                         {
+                              "name": "marshmallow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pandas",
+                    "specifier": "<4.0,>=1.0,>=0.21.0",
+                    "raw_requirement": "pandas ; pandas<4.0,>=1.0 ; pandas (>=0.21.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet-model-zoo",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pillow",
+                    "specifier": "<13.0,>=8.0,>=6.0.0,>=6.2.0,!=8.3.*,>=5.3.0,>=10.1,>=9",
+                    "raw_requirement": "Pillow ; pillow<13.0,>=8.0 ; Pillow (>=6.0.0) ; pillow (>=6.2.0) ; Pillow ; Pillow ; pillow (!=8.3.*,>=5.3.0) ; pillow>=10.1 ; pillow>=9 ; pillow",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "diffusers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "invisible-watermark",
+                              "source": "public"
+                         },
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         },
+                         {
+                              "name": "streamlit-drawable-canvas",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch-fidelity",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torchvision",
+                              "source": "private"
+                         },
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "platformdirs",
+                    "specifier": ">=2.5.0",
+                    "raw_requirement": "platformdirs>=2.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pooch",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pooch",
+                    "specifier": ">=1.1",
+                    "raw_requirement": "pooch>=1.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "propcache",
+                    "specifier": ">=0.2.0,>=0.2.1",
+                    "raw_requirement": "propcache>=0.2.0 ; propcache>=0.2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "yarl",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "protobuf",
+                    "specifier": "<4,>=3.12,>=3.8.0,<8.0.0,>=6.31.1",
+                    "raw_requirement": "protobuf ; protobuf (<4,>=3.12) ; protobuf (>=3.8.0) ; protobuf<8.0.0,>=6.31.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         },
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboardx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "psutil",
+                    "specifier": "",
+                    "raw_requirement": "psutil",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "accelerate",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyarrow",
+                    "specifier": ">=4.0",
+                    "raw_requirement": "pyarrow (>=4.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pycocotools",
+                    "specifier": "",
+                    "raw_requirement": "pycocotools",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mmdet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pycparser",
+                    "specifier": "",
+                    "raw_requirement": "pycparser; implementation_name != \"PyPy\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cffi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydantic",
+                    "specifier": "<=3.0,>=2.0,<2,>=1,<3,>=1.9.0,>=2.9.0",
+                    "raw_requirement": "pydantic<=3.0,>=2.0 ; pydantic (>=1,<2) ; pydantic<3,>=1.9.0 ; pydantic>=2.9.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "langchain",
+                              "source": "public"
+                         },
+                         {
+                              "name": "openai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydantic-core",
+                    "specifier": "==2.46.4",
+                    "raw_requirement": "pydantic-core==2.46.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydeck",
+                    "specifier": ">=0.1.dev5",
+                    "raw_requirement": "pydeck (>=0.1.dev5)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydeprecate",
+                    "specifier": "==0.3.1",
+                    "raw_requirement": "pyDeprecate (==0.3.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytorch-lightning",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydub",
+                    "specifier": "<1.0",
+                    "raw_requirement": "pydub<1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pygments",
+                    "specifier": "<3.0.0,>=2.13.0",
+                    "raw_requirement": "pygments<3.0.0,>=2.13.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rich",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pympler",
+                    "specifier": ">=0.9",
+                    "raw_requirement": "pympler (>=0.9)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyparsing",
+                    "specifier": ">=3",
+                    "raw_requirement": "pyparsing>=3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-dateutil",
+                    "specifier": ">=2.8.2,>=2.7",
+                    "raw_requirement": "python-dateutil ; python-dateutil>=2.8.2 ; python-dateutil>=2.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-multipart",
+                    "specifier": "<1.0,>=0.0.18",
+                    "raw_requirement": "python-multipart<1.0,>=0.0.18",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pytz",
+                    "specifier": ">=2017.2",
+                    "raw_requirement": "pytz>=2017.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pywavelets",
+                    "specifier": ">=1.1.1",
+                    "raw_requirement": "PyWavelets (>=1.1.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "invisible-watermark",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyyaml",
+                    "specifier": ">=5.1.2,<7.0,>=5.0,<7,>=6,>=5.1.0,>=5.1,>=5.1,>=5.1,<8.0,>5.4",
+                    "raw_requirement": "pyyaml ; PyYAML ; PyYAML>=5.1.2 ; pyyaml<7.0,>=5.0 ; PyYAML (>=6,<7) ; pyyaml ; PyYAML (>=5.1.0) ; PyYAML (>=5.1) ; pyyaml ; pyyaml (>=5.1) ; pyyaml ; pyyaml>=5.1 ; PyYAML<8.0,>5.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "accelerate",
+                              "source": "public"
+                         },
+                         {
+                              "name": "albumentations",
+                              "source": "public"
+                         },
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "langchain",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mmengine",
+                              "source": "public"
+                         },
+                         {
+                              "name": "omegaconf",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytorch-lightning",
+                              "source": "public"
+                         },
+                         {
+                              "name": "timm",
+                              "source": "public"
+                         },
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "webdataset",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "lightning",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "qudida",
+                    "specifier": ">=0.0.4",
+                    "raw_requirement": "qudida (>=0.0.4)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "albumentations",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "referencing",
+                    "specifier": ">=0.28.4,>=0.31.0",
+                    "raw_requirement": "referencing>=0.28.4 ; referencing>=0.31.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema-specifications",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "regex",
+                    "specifier": "!=2019.12.17,>=2021.8.3",
+                    "raw_requirement": "regex!=2019.12.17 ; regex ; regex (!=2019.12.17) ; regex>=2021.8.3 ; regex",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "diffusers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "open-clip-torch",
+                              "source": "public"
+                         },
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nltk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tiktoken",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "requests",
+                    "specifier": "<3,>=2,>=2.4,>=2.19.0",
+                    "raw_requirement": "requests ; requests ; requests (>=2,<3) ; requests (>=2.4) ; requests ; requests ; requests>=2.19.0 ; requests",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "diffusers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "espnet-model-zoo",
+                              "source": "public"
+                         },
+                         {
+                              "name": "langchain",
+                              "source": "public"
+                         },
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torchvision",
+                              "source": "private"
+                         },
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pooch",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tiktoken",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "rich",
+                    "specifier": ">=10.11.0,>=13.8.0",
+                    "raw_requirement": "rich ; rich (>=10.11.0) ; rich>=13.8.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mmengine",
+                              "source": "public"
+                         },
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "rpds-py",
+                    "specifier": ">=0.25.0,>=0.7.0",
+                    "raw_requirement": "rpds-py>=0.25.0 ; rpds-py>=0.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "safehttpx",
+                    "specifier": "<0.2.0,>=0.1.7",
+                    "raw_requirement": "safehttpx<0.2.0,>=0.1.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "scikit-image",
+                    "specifier": ">=0.16.1",
+                    "raw_requirement": "scikit-image (>=0.16.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "albumentations",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "scikit-learn",
+                    "specifier": ">=1.1.0,>=0.19.1",
+                    "raw_requirement": "scikit-learn>=1.1.0 ; scikit-learn (>=0.19.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         },
+                         {
+                              "name": "qudida",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "scipy",
+                    "specifier": ">=1.4.1,>=1.6.0,>=1.0.1,>=1.2.1,>=1.11.4,>=1.10.0",
+                    "raw_requirement": "scipy ; scipy>=1.4.1 ; scipy>=1.6.0 ; scipy (>=1.0.1) ; scipy (>=1.2.1) ; scipy ; scipy>=1.11.4 ; scipy>=1.10.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "albumentations",
+                              "source": "public"
+                         },
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         },
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pyloudnorm",
+                              "source": "public"
+                         },
+                         {
+                              "name": "resemblyzer",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch-fidelity",
+                              "source": "public"
+                         },
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         },
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "semantic-version",
+                    "specifier": "~=2.0",
+                    "raw_requirement": "semantic-version~=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "semver",
+                    "specifier": "",
+                    "raw_requirement": "semver",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sentencepiece",
+                    "specifier": "==0.2.0",
+                    "raw_requirement": "sentencepiece==0.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "setuptools",
+                    "specifier": "<74.0.0,>=38.5.1,>=41.0.0",
+                    "raw_requirement": "setuptools<74.0.0,>=38.5.1 ; setuptools>=41.0.0 ; setuptools",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "lightning-utilities",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "shellingham",
+                    "specifier": ">=1.3.0",
+                    "raw_requirement": "shellingham>=1.3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "typer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "six",
+                    "specifier": ">=1.5",
+                    "raw_requirement": "six ; six >=1.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mmdet",
+                              "source": "public"
+                         },
+                         {
+                              "name": "python-dateutil",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "smmap",
+                    "specifier": "<6,>=3.0.1",
+                    "raw_requirement": "smmap<6,>=3.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gitdb",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sniffio",
+                    "specifier": "",
+                    "raw_requirement": "sniffio",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "openai",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "soxr",
+                    "specifier": ">=0.3.2",
+                    "raw_requirement": "soxr>=0.3.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sqlalchemy",
+                    "specifier": "<2,>=1",
+                    "raw_requirement": "SQLAlchemy (>=1,<2)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "langchain",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "starlette",
+                    "specifier": "<2.0,>=1.0.1,>=0.46.0",
+                    "raw_requirement": "starlette<2.0,>=1.0.1 ; starlette>=0.46.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tenacity",
+                    "specifier": "<9.0.0,>=8.1.0",
+                    "raw_requirement": "tenacity (>=8.1.0,<9.0.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "langchain",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tensorboard",
+                    "specifier": ">=2.2.0",
+                    "raw_requirement": "tensorboard (>=2.2.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytorch-lightning",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tensorboard-data-server",
+                    "specifier": "<0.8.0,>=0.7.0",
+                    "raw_requirement": "tensorboard-data-server<0.8.0,>=0.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "termcolor",
+                    "specifier": "",
+                    "raw_requirement": "termcolor",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mmengine",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "terminaltables",
+                    "specifier": "",
+                    "raw_requirement": "terminaltables",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mmdet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "threadpoolctl",
+                    "specifier": ">=3.5.0",
+                    "raw_requirement": "threadpoolctl>=3.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tifffile",
+                    "specifier": ">=2022.8.12",
+                    "raw_requirement": "tifffile>=2022.8.12",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tiktoken",
+                    "specifier": "",
+                    "raw_requirement": "tiktoken",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "openai-whisper",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tokenizers",
+                    "specifier": "!=0.11.3,<0.14,>=0.11.1",
+                    "raw_requirement": "tokenizers (!=0.11.3,<0.14,>=0.11.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "toml",
+                    "specifier": "",
+                    "raw_requirement": "toml",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tomlkit",
+                    "specifier": "<0.15.0,>=0.12.0",
+                    "raw_requirement": "tomlkit<0.15.0,>=0.12.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "torch-complex",
+                    "specifier": "",
+                    "raw_requirement": "torch_complex",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tornado",
+                    "specifier": ">=5.0",
+                    "raw_requirement": "tornado (>=5.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tqdm",
+                    "specifier": ">4,>=4.41.0,>=4.27,>=4.42.1,<6.0,>=4.57.0",
+                    "raw_requirement": "tqdm ; tqdm ; tqdm>4 ; tqdm ; tqdm (>=4.41.0) ; tqdm ; tqdm (>=4.27) ; tqdm>=4.42.1 ; tqdm ; tqdm<6.0,>=4.57.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet-model-zoo",
+                              "source": "public"
+                         },
+                         {
+                              "name": "open-clip-torch",
+                              "source": "public"
+                         },
+                         {
+                              "name": "openai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "openai-whisper",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytorch-lightning",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch-fidelity",
+                              "source": "public"
+                         },
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nltk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "lightning",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "triton",
+                    "specifier": ">=2",
+                    "raw_requirement": "triton>=2; (platform_machine == \"x86_64\" and sys_platform == \"linux\") or sys_platform == \"linux2\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "openai-whisper",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typeguard",
+                    "specifier": ">=4.0.1",
+                    "raw_requirement": "typeguard ; typeguard>=4.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet",
+                              "source": "public"
+                         },
+                         {
+                              "name": "inflect",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typer",
+                    "specifier": "<1.0,>=0.12",
+                    "raw_requirement": "typer<1.0,>=0.12 ; typer",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "hf-gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing",
+                    "specifier": "",
+                    "raw_requirement": "typing",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "resemblyzer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-inspect",
+                    "specifier": "<1,>=0.4.0",
+                    "raw_requirement": "typing-inspect (>=0.4.0,<1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "dataclasses-json",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-inspection",
+                    "specifier": ">=0.4.2",
+                    "raw_requirement": "typing-inspection>=0.4.2 ; typing-inspection>=0.4.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tzlocal",
+                    "specifier": ">=1.1",
+                    "raw_requirement": "tzlocal (>=1.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "unidecode",
+                    "specifier": ">=1.0.22",
+                    "raw_requirement": "unidecode (>=1.0.22)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "espnet-tts-frontend",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "urllib3",
+                    "specifier": "<1.27,>=1.21.1",
+                    "raw_requirement": "urllib3 (<1.27,>=1.21.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "uvicorn",
+                    "specifier": ">=0.14.0",
+                    "raw_requirement": "uvicorn>=0.14.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "validators",
+                    "specifier": ">=0.2",
+                    "raw_requirement": "validators (>=0.2)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "watchdog",
+                    "specifier": "",
+                    "raw_requirement": "watchdog ; platform_system != \"Darwin\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "streamlit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "wcwidth",
+                    "specifier": "",
+                    "raw_requirement": "wcwidth ; wcwidth",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "prettytable",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ftfy",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "werkzeug",
+                    "specifier": ">=1.0.1",
+                    "raw_requirement": "werkzeug>=1.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "yarl",
+                    "specifier": "<2.0,>=1.17.0",
+                    "raw_requirement": "yarl<2.0,>=1.17.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 1,
+          "packages": {
+               "numpy": {
+                    "private version": "1.23.1",
+                    "public version": "1.23.1",
+                    "highest public (unconstrained)": "2.5.1",
+                    "declared specifier": "==1.23.1",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 18,
+          "packages": {
+               "certifi": {
+                    "private version": "2022.12.7",
+                    "public version": "2026.6.17",
+                    "highest public (unconstrained)": "2026.6.17",
+                    "declared specifier": ">=2017.4.17",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 51
+               },
+               "charset-normalizer": {
+                    "private version": "2.1.1",
+                    "public version": "2.1.1",
+                    "highest public (unconstrained)": "3.4.9",
+                    "declared specifier": "<3,>=2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 15
+               },
+               "filelock": {
+                    "private version": "3.29.0",
+                    "public version": "3.29.7",
+                    "highest public (unconstrained)": "3.29.7",
+                    "declared specifier": ">=3.10.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 56
+               },
+               "fsspec": {
+                    "private version": "2026.4.0",
+                    "public version": "2026.6.0",
+                    "highest public (unconstrained)": "2026.6.0",
+                    "declared specifier": "!=2021.06.0,>=2021.05.0,>=2023.5.0,<2028.0,>=2022.5.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 33
+               },
+               "idna": {
+                    "private version": "3.4",
+                    "public version": "3.18",
+                    "highest public (unconstrained)": "3.18",
+                    "declared specifier": "<4,>=2.5,>=2.8,>=2.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 22
+               },
+               "jinja2": {
+                    "private version": "3.1.6",
+                    "public version": "3.1.6",
+                    "highest public (unconstrained)": "3.1.6",
+                    "declared specifier": "<4.0,>=2.10.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 21
+               },
+               "lightning-utilities": {
+                    "private version": "0.11.8",
+                    "public version": "0.15.3",
+                    "highest public (unconstrained)": "0.15.3",
+                    "declared specifier": "<2.0,>=0.10.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 25
+               },
+               "markupsafe": {
+                    "private version": "3.0.3",
+                    "public version": "3.0.3",
+                    "highest public (unconstrained)": "3.0.3",
+                    "declared specifier": "<4.0,>=2.0,>=2.0,>=2.1.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 9
+               },
+               "mypy-extensions": {
+                    "private version": "1.0.0",
+                    "public version": "1.1.0",
+                    "highest public (unconstrained)": "1.1.0",
+                    "declared specifier": ">=0.3.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 8
+               },
+               "networkx": {
+                    "private version": "3.6.1",
+                    "public version": "3.6.1",
+                    "highest public (unconstrained)": "3.6.1",
+                    "declared specifier": ">=3.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 17
+               },
+               "packaging": {
+                    "private version": "24.1",
+                    "public version": "26.2",
+                    "highest public (unconstrained)": "26.2",
+                    "declared specifier": ">=20.0,>=17.0,>=14.1,>=20.0,>=20.9,>=21,<27.0,>=23.0,>=20.0,>=20.0,>=17.1,>=17.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 13
+               },
+               "pillow": {
+                    "private version": "12.2.0",
+                    "public version": "12.3.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": "<13.0,>=8.0,>=6.0.0,>=6.2.0,!=8.3.*,>=5.3.0,>=10.1,>=9",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 13
+               },
+               "requests": {
+                    "private version": "2.28.1",
+                    "public version": "2.34.2",
+                    "highest public (unconstrained)": "2.34.2",
+                    "declared specifier": "<3,>=2,>=2.4,>=2.19.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 31
+               },
+               "setuptools": {
+                    "private version": "70.2.0",
+                    "public version": "73.0.1",
+                    "highest public (unconstrained)": "83.0.0",
+                    "declared specifier": "<74.0.0,>=38.5.1,>=41.0.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 235
+               },
+               "tqdm": {
+                    "private version": "4.66.5",
+                    "public version": "4.68.4",
+                    "highest public (unconstrained)": "4.68.4",
+                    "declared specifier": ">4,>=4.41.0,>=4.27,>=4.42.1,<6.0,>=4.57.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 35
+               },
+               "triton": {
+                    "private version": "3.7.1",
+                    "public version": "3.7.1",
+                    "highest public (unconstrained)": "3.7.1",
+                    "declared specifier": ">=2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 16
+               },
+               "typing-inspect": {
+                    "private version": "0.9.0",
+                    "public version": "0.9.0",
+                    "highest public (unconstrained)": "0.9.0",
+                    "declared specifier": "<1,>=0.4.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 7
+               },
+               "urllib3": {
+                    "private version": "1.26.13",
+                    "public version": "1.26.20",
+                    "highest public (unconstrained)": "2.7.0",
+                    "declared specifier": "<1.27,>=1.21.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 40
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "mixed_source_expanded",
+          "private_index_expansions": 22,
+          "pypi_metadata_expansions": 207,
+          "pruned_public_nodes": 0
+     }
+}

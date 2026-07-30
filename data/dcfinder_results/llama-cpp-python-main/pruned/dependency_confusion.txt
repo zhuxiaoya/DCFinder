@@ -1,0 +1,179 @@
+{
+     "direct dependency": {
+          "number": 21,
+          "packages": [
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=4.5.0",
+                    "raw_requirement": "typing-extensions>=4.5.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numpy",
+                    "specifier": ">=1.20.0",
+                    "raw_requirement": "numpy>=1.20.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "diskcache",
+                    "specifier": ">=5.6.1",
+                    "raw_requirement": "diskcache>=5.6.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": ">=2.11.3",
+                    "raw_requirement": "jinja2>=2.11.3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "uvicorn",
+                    "specifier": ">=0.22.0",
+                    "raw_requirement": "uvicorn>=0.22.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:server"
+               },
+               {
+                    "name": "fastapi",
+                    "specifier": ">=0.100.0",
+                    "raw_requirement": "fastapi>=0.100.0 ; fastapi>=0.100.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:server"
+               },
+               {
+                    "name": "pydantic-settings",
+                    "specifier": ">=2.0.1",
+                    "raw_requirement": "pydantic-settings>=2.0.1 ; pydantic-settings>=2.0.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:server"
+               },
+               {
+                    "name": "sse-starlette",
+                    "specifier": ">=1.6.1",
+                    "raw_requirement": "sse-starlette>=1.6.1 ; sse-starlette>=1.6.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:server"
+               },
+               {
+                    "name": "starlette-context",
+                    "specifier": "<0.4,>=0.3.6",
+                    "raw_requirement": "starlette-context>=0.3.6,<0.4 ; starlette-context>=0.3.6,<0.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:server"
+               },
+               {
+                    "name": "pyyaml",
+                    "specifier": ">=5.1",
+                    "raw_requirement": "PyYAML>=5.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:server"
+               },
+               {
+                    "name": "pytest",
+                    "specifier": ">=7.4.0",
+                    "raw_requirement": "pytest>=7.4.0 ; pytest>=7.4.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:test"
+               },
+               {
+                    "name": "httpx",
+                    "specifier": ">=0.24.1",
+                    "raw_requirement": "httpx>=0.24.1 ; httpx>=0.24.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:test"
+               },
+               {
+                    "name": "scipy",
+                    "specifier": ">=1.10",
+                    "raw_requirement": "scipy>=1.10",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:test"
+               },
+               {
+                    "name": "huggingface-hub",
+                    "specifier": ">=0.23.0",
+                    "raw_requirement": "huggingface-hub>=0.23.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:test"
+               },
+               {
+                    "name": "black",
+                    "specifier": ">=23.3.0",
+                    "raw_requirement": "black>=23.3.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:dev"
+               },
+               {
+                    "name": "twine",
+                    "specifier": ">=4.0.2",
+                    "raw_requirement": "twine>=4.0.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:dev"
+               },
+               {
+                    "name": "mkdocs",
+                    "specifier": ">=1.4.3",
+                    "raw_requirement": "mkdocs>=1.4.3 ; mkdocs",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:dev"
+               },
+               {
+                    "name": "mkdocstrings",
+                    "specifier": ">=0.22.0",
+                    "raw_requirement": "mkdocstrings[python]>=0.22.0 ; mkdocstrings[python]",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:dev"
+               },
+               {
+                    "name": "mkdocs-material",
+                    "specifier": ">=9.1.18",
+                    "raw_requirement": "mkdocs-material>=9.1.18 ; mkdocs-material",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:dev"
+               },
+               {
+                    "name": "llama-cpp-python",
+                    "specifier": "",
+                    "raw_requirement": "llama_cpp_python[server,test,dev] ; llama-cpp-python",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:all"
+               },
+               {
+                    "name": "ray",
+                    "specifier": "",
+                    "raw_requirement": "ray[serve]",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/examples/ray/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 0,
+          "packages": []
+     },
+     "direct dependency with same name": {
+          "number": 1,
+          "packages": {
+               "llama-cpp-python": {
+                    "private version": "0.3.34",
+                    "public version": "0.3.34",
+                    "highest public (unconstrained)": "0.3.34"
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 0,
+          "packages": {}
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 1,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 74
+     }
+}

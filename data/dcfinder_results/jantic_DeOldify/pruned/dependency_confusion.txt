@@ -1,0 +1,467 @@
+{
+     "direct dependency": {
+          "number": 14,
+          "packages": [
+               {
+                    "name": "black",
+                    "specifier": "",
+                    "raw_requirement": "black",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "pre-commit",
+                    "specifier": "",
+                    "raw_requirement": "pre-commit",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "wandb",
+                    "specifier": "",
+                    "raw_requirement": "wandb",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "fastai",
+                    "specifier": "==1.0.60",
+                    "raw_requirement": "fastai==1.0.60",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorboardx",
+                    "specifier": ">=1.6",
+                    "raw_requirement": "tensorboardX>=1.6",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ffmpeg",
+                    "specifier": "",
+                    "raw_requirement": "ffmpeg",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ffmpeg-python",
+                    "specifier": "",
+                    "raw_requirement": "ffmpeg-python",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "yt-dlp",
+                    "specifier": "",
+                    "raw_requirement": "yt-dlp",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "jupyterlab",
+                    "specifier": "",
+                    "raw_requirement": "jupyterlab",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opencv-python",
+                    "specifier": ">=4.2.0.32",
+                    "raw_requirement": "opencv-python>=4.2.0.32",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pillow",
+                    "specifier": "==9.3.0",
+                    "raw_requirement": "Pillow==9.3.0",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch",
+                    "specifier": "==1.11.0",
+                    "raw_requirement": "torch==1.11.0",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torchvision",
+                    "specifier": "==0.12.0",
+                    "raw_requirement": "torchvision==0.12.0",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ipywidgets",
+                    "specifier": "",
+                    "raw_requirement": "ipywidgets",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 7,
+          "packages": [
+               {
+                    "name": "certifi",
+                    "specifier": ">=2017.4.17",
+                    "raw_requirement": "certifi (>=2017.4.17) ; certifi ; certifi ; certifi",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "sentry-sdk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpcore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "charset-normalizer",
+                    "specifier": "<3,>=2",
+                    "raw_requirement": "charset-normalizer (<3,>=2)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "idna",
+                    "specifier": "<4,>=2.5,>=2.8,>=3.18",
+                    "raw_requirement": "idna (<4,>=2.5) ; idna ; idna>=2.8 ; idna; extra == \"format-nongpl\" ; idna>=3.18",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx2",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "numpy",
+                    "specifier": ">=1.15,>=2,>=1.25,>=1.23.0,>=1.26.0,<2.8,>=2.0.0,>=1.19.0,>=1.25,>=1.19.0,>=1.19.0",
+                    "raw_requirement": "numpy (>=1.15) ; numpy ; numpy>=2; python_version >= \"3.9\" ; numpy ; numpy ; numpy>=1.25 ; numpy>=1.23.0 ; numpy>=1.26.0; python_version < \"3.14\" ; numpy<2.8,>=2.0.0 ; numpy>=1.19.0; python_version >= \"3.9\" ; numpy>=1.25 ; numpy>=1.19.0 ; numpy >=1.19.0 ; python_version >= \"3.9\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboardx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opencv-python",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torchvision",
+                              "source": "private"
+                         },
+                         {
+                              "name": "bottleneck",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "numexpr",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         },
+                         {
+                              "name": "scipy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "contourpy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "thinc",
+                              "source": "public"
+                         },
+                         {
+                              "name": "blis",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "requests",
+                    "specifier": "<3,>=2.0.0,<3.0.0,>=2.13.0,>=2.31,<3.0.0,>=2.13.0",
+                    "raw_requirement": "requests<3,>=2.0.0 ; requests ; requests ; requests<3.0.0,>=2.13.0 ; requests>=2.31 ; requests <3.0.0,>=2.13.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torchvision",
+                              "source": "private"
+                         },
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "weasel",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=4.0.1,<5,>=4.8,>=4.13.2,>=4.15.0,>=4.0.0,>=4.0.0,>=4.6,>=4.14.1,>=4.12.0,>=4.5.0,>=3.7.4.3,>=4.5,>=4.13.0,>=4.5.0,>=4.5.0,>=4.10.0,>=4.0,>=4.5.0,>4,>=4.6.0,>=4.4.0",
+                    "raw_requirement": "typing-extensions>=4.0.1; python_version < \"3.11\" ; typing-extensions<5,>=4.8 ; typing-extensions ; typing-extensions ; typing-extensions>=4.13.2; python_version < \"3.11\" ; typing-extensions>=4.15.0 ; typing-extensions>=4.0.0 ; typing_extensions>=4.0.0; python_version < \"3.11\" ; typing_extensions>=4.6; python_version < \"3.12\" ; typing-extensions>=4.14.1 ; typing-extensions>=4.12.0 ; typing-extensions>=4.5.0 ; typing-extensions>=3.7.4.3 ; typing_extensions>=4.5; python_version < \"3.13\" ; typing-extensions>=4.13.0 ; typing-extensions>=4.5.0 ; typing-extensions>=4.5.0 ; typing-extensions>=4.10.0; python_version < \"3.13\" ; typing-extensions>=4.0; python_version < \"3.11\" ; typing-extensions>=4.5.0; python_version < \"3.13\" ; typing_extensions>4 ; python_version < '3.11' ; typing-extensions>=4.6.0; python_version < \"3.13\" ; typing-extensions>=4.4.0; python_version < \"3.13\" ; typing-extensions; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "torchvision",
+                              "source": "private"
+                         },
+                         {
+                              "name": "virtualenv",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "beautifulsoup4",
+                              "source": "public"
+                         },
+                         {
+                              "name": "async-lru",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typing-inspection",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opentelemetry-sdk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typer",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opentelemetry-api",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opentelemetry-semantic-conventions",
+                              "source": "public"
+                         },
+                         {
+                              "name": "starlette",
+                              "source": "public"
+                         },
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx2",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cloudpathlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "exceptiongroup",
+                              "source": "public"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mistune",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "urllib3",
+                    "specifier": "<1.27,>=1.21.1,>=1.26.11",
+                    "raw_requirement": "urllib3 (<1.27,>=1.21.1) ; urllib3>=1.26.11",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "sentry-sdk",
+                              "source": "public"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 1,
+          "packages": {
+               "pillow": {
+                    "private version": "9.3.0",
+                    "public version": "9.3.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": "==9.3.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 7,
+          "packages": {
+               "certifi": {
+                    "private version": "2022.12.7",
+                    "public version": "2026.6.17",
+                    "highest public (unconstrained)": "2026.6.17",
+                    "declared specifier": ">=2017.4.17",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 51
+               },
+               "charset-normalizer": {
+                    "private version": "2.1.1",
+                    "public version": "2.1.1",
+                    "highest public (unconstrained)": "3.4.9",
+                    "declared specifier": "<3,>=2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 15
+               },
+               "idna": {
+                    "private version": "3.4",
+                    "public version": "3.18",
+                    "highest public (unconstrained)": "3.18",
+                    "declared specifier": "<4,>=2.5,>=2.8,>=3.18",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "numpy": {
+                    "private version": "2.4.4",
+                    "public version": "2.5.1",
+                    "highest public (unconstrained)": "2.5.1",
+                    "declared specifier": ">=1.15,>=2,>=1.25,>=1.23.0,>=1.26.0,<2.8,>=2.0.0,>=1.19.0,>=1.25,>=1.19.0,>=1.19.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 31
+               },
+               "requests": {
+                    "private version": "2.28.1",
+                    "public version": "2.34.2",
+                    "highest public (unconstrained)": "2.34.2",
+                    "declared specifier": "<3,>=2.0.0,<3.0.0,>=2.13.0,>=2.31,<3.0.0,>=2.13.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 13
+               },
+               "typing-extensions": {
+                    "private version": "4.15.0",
+                    "public version": "4.16.0",
+                    "highest public (unconstrained)": "4.16.0",
+                    "declared specifier": ">=4.0.1,<5,>=4.8,>=4.13.2,>=4.15.0,>=4.0.0,>=4.0.0,>=4.6,>=4.14.1,>=4.12.0,>=4.5.0,>=3.7.4.3,>=4.5,>=4.13.0,>=4.5.0,>=4.5.0,>=4.10.0,>=4.0,>=4.5.0,>4,>=4.6.0,>=4.4.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "urllib3": {
+                    "private version": "1.26.13",
+                    "public version": "1.26.20",
+                    "highest public (unconstrained)": "2.7.0",
+                    "declared specifier": "<1.27,>=1.21.1,>=1.26.11",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 10
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 10,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 152
+     }
+}

@@ -1,0 +1,85 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/f9/49/6abb616eb3cbab6a7cca303dc02fdf3836de2e0b834bf966a7f5271a34d8/beautifulsoup4-4.13.3-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=99045d7d3f08f91f0d656bc9b7efbae189426cd913d830294a15eefa0ea4df16",
+          "hashes": {
+            "sha256": "99045d7d3f08f91f0d656bc9b7efbae189426cd913d830294a15eefa0ea4df16"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "beautifulsoup4",
+        "version": "4.13.3",
+        "summary": "Screen-scraping library",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "HTML",
+          "XML",
+          "parse",
+          "soup"
+        ],
+        "author_email": "Leonard Richardson <leonardr@segfault.org>",
+        "license": "MIT License",
+        "license_file": [
+          "AUTHORS",
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Text Processing :: Markup :: HTML",
+          "Topic :: Text Processing :: Markup :: SGML",
+          "Topic :: Text Processing :: Markup :: XML"
+        ],
+        "requires_dist": [
+          "soupsieve>1.2",
+          "typing-extensions>=4.0.0",
+          "cchardet; extra == 'cchardet'",
+          "chardet; extra == 'chardet'",
+          "charset-normalizer; extra == 'charset-normalizer'",
+          "html5lib; extra == 'html5lib'",
+          "lxml; extra == 'lxml'"
+        ],
+        "requires_python": ">=3.7.0",
+        "project_url": [
+          "Download, https://www.crummy.com/software/BeautifulSoup/bs4/download/",
+          "Homepage, https://www.crummy.com/software/BeautifulSoup/bs4/"
+        ],
+        "provides_extra": [
+          "cchardet",
+          "chardet",
+          "charset-normalizer",
+          "html5lib",
+          "lxml"
+        ],
+        "description": "Beautiful Soup is a library that makes it easy to scrape information\nfrom web pages. It sits atop an HTML or XML parser, providing Pythonic\nidioms for iterating, searching, and modifying the parse tree.\n\n# Quick start\n\n```\n>>> from bs4 import BeautifulSoup\n>>> soup = BeautifulSoup(\"<p>Some<b>bad<i>HTML\")\n>>> print(soup.prettify())\n<html>\n <body>\n  <p>\n   Some\n   <b>\n    bad\n    <i>\n     HTML\n    </i>\n   </b>\n  </p>\n </body>\n</html>\n>>> soup.find(string=\"bad\")\n'bad'\n>>> soup.i\n<i>HTML</i>\n#\n>>> soup = BeautifulSoup(\"<tag1>Some<tag2/>bad<tag3>XML\", \"xml\")\n#\n>>> print(soup.prettify())\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<tag1>\n Some\n <tag2/>\n bad\n <tag3>\n  XML\n </tag3>\n</tag1>\n```\n\nTo go beyond the basics, [comprehensive documentation is available](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).\n\n# Links\n\n* [Homepage](https://www.crummy.com/software/BeautifulSoup/bs4/)\n* [Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)\n* [Discussion group](https://groups.google.com/group/beautifulsoup/)\n* [Development](https://code.launchpad.net/beautifulsoup/)\n* [Bug tracker](https://bugs.launchpad.net/beautifulsoup/)\n* [Complete changelog](https://git.launchpad.net/beautifulsoup/tree/CHANGELOG)\n\n# Note on Python 2 sunsetting\n\nBeautiful Soup's support for Python 2 was discontinued on December 31,\n2020: one year after the sunset date for Python 2 itself. From this\npoint onward, new Beautiful Soup development will exclusively target\nPython 3. The final release of Beautiful Soup 4 to support Python 2\nwas 4.9.3.\n\n# Supporting the project\n\nIf you use Beautiful Soup as part of your professional work, please consider a\n[Tidelift subscription](https://tidelift.com/subscription/pkg/pypi-beautifulsoup4?utm_source=pypi-beautifulsoup4&utm_medium=referral&utm_campaign=readme).\nThis will support many of the free software projects your organization\ndepends on, not just Beautiful Soup.\n\nIf you use Beautiful Soup for personal projects, the best way to say\nthank you is to read\n[Tool Safety](https://www.crummy.com/software/BeautifulSoup/zine/), a zine I\nwrote about what Beautiful Soup has taught me about software\ndevelopment.\n\n# Building the documentation\n\nThe bs4/doc/ directory contains full documentation in Sphinx\nformat. Run `make html` in that directory to create HTML\ndocumentation.\n\n# Running the unit tests\n\nBeautiful Soup supports unit test discovery using Pytest:\n\n```\n$ pytest\n```\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

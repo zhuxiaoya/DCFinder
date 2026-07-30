@@ -1,0 +1,72 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/de/48/f1457a56444134cd4531a8fc31a80b529ce157fce9c9cb7bb79cda7362d9/langchain-0.3.12-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=581ad93a9de12e4b957bc2af9ba8482eb86e3930e84c4ee20ed677da5e2311cd",
+          "hashes": {
+            "sha256": "581ad93a9de12e4b957bc2af9ba8482eb86e3930e84c4ee20ed677da5e2311cd"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "langchain",
+        "version": "0.3.12",
+        "summary": "Building applications with LLMs through composability",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/langchain-ai/langchain",
+        "license": "MIT",
+        "classifier": [
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13"
+        ],
+        "requires_dist": [
+          "PyYAML (>=5.3)",
+          "SQLAlchemy (>=1.4,<3)",
+          "aiohttp (>=3.8.3,<4.0.0)",
+          "async-timeout (>=4.0.0,<5.0.0) ; python_version < \"3.11\"",
+          "langchain-core (>=0.3.25,<0.4.0)",
+          "langchain-text-splitters (>=0.3.3,<0.4.0)",
+          "langsmith (>=0.1.17,<0.3)",
+          "numpy (>=1.22.4,<2) ; python_version < \"3.12\"",
+          "numpy (>=1.26.2,<3) ; python_version >= \"3.12\"",
+          "pydantic (>=2.7.4,<3.0.0)",
+          "requests (>=2,<3)",
+          "tenacity (>=8.1.0,!=8.4.0,<10)"
+        ],
+        "requires_python": ">=3.9,<4.0",
+        "project_url": [
+          "Repository, https://github.com/langchain-ai/langchain",
+          "Release Notes, https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain%3D%3D0%22&expanded=true",
+          "Source Code, https://github.com/langchain-ai/langchain/tree/master/libs/langchain"
+        ],
+        "description": "# 🦜️🔗 LangChain\n\n⚡ Building applications with LLMs through composability ⚡\n\n[![Release Notes](https://img.shields.io/github/release/langchain-ai/langchain)](https://github.com/langchain-ai/langchain/releases)\n[![lint](https://github.com/langchain-ai/langchain/actions/workflows/lint.yml/badge.svg)](https://github.com/langchain-ai/langchain/actions/workflows/lint.yml)\n[![test](https://github.com/langchain-ai/langchain/actions/workflows/test.yml/badge.svg)](https://github.com/langchain-ai/langchain/actions/workflows/test.yml)\n[![Downloads](https://static.pepy.tech/badge/langchain/month)](https://pepy.tech/project/langchain)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/langchainai.svg?style=social&label=Follow%20%40LangChainAI)](https://twitter.com/langchainai)\n[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/langchain-ai/langchain)\n[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/langchain-ai/langchain)\n[![GitHub star chart](https://img.shields.io/github/stars/langchain-ai/langchain?style=social)](https://star-history.com/#langchain-ai/langchain)\n[![Dependency Status](https://img.shields.io/librariesio/github/langchain-ai/langchain)](https://libraries.io/github/langchain-ai/langchain)\n[![Open Issues](https://img.shields.io/github/issues-raw/langchain-ai/langchain)](https://github.com/langchain-ai/langchain/issues)\n\n\nLooking for the JS/TS version? Check out [LangChain.js](https://github.com/langchain-ai/langchainjs).\n\nTo help you ship LangChain apps to production faster, check out [LangSmith](https://smith.langchain.com). \n[LangSmith](https://smith.langchain.com) is a unified developer platform for building, testing, and monitoring LLM applications. \nFill out [this form](https://www.langchain.com/contact-sales) to speak with our sales team.\n\n## Quick Install\n\n`pip install langchain`\nor\n`pip install langsmith && conda install langchain -c conda-forge`\n\n## 🤔 What is this?\n\nLarge language models (LLMs) are emerging as a transformative technology, enabling developers to build applications that they previously could not. However, using these LLMs in isolation is often insufficient for creating a truly powerful app - the real power comes when you can combine them with other sources of computation or knowledge.\n\nThis library aims to assist in the development of those types of applications. Common examples of these applications include:\n\n**❓ Question answering with RAG**\n\n- [Documentation](https://python.langchain.com/docs/use_cases/question_answering/)\n- End-to-end Example: [Chat LangChain](https://chat.langchain.com) and [repo](https://github.com/langchain-ai/chat-langchain)\n\n**🧱 Extracting structured output**\n\n- [Documentation](https://python.langchain.com/docs/use_cases/extraction/)\n- End-to-end Example: [SQL Llama2 Template](https://github.com/langchain-ai/langchain-extract/)\n\n**🤖 Chatbots**\n\n- [Documentation](https://python.langchain.com/docs/use_cases/chatbots)\n- End-to-end Example: [Web LangChain (web researcher chatbot)](https://weblangchain.vercel.app) and [repo](https://github.com/langchain-ai/weblangchain)\n\n## 📖 Documentation\n\nPlease see [here](https://python.langchain.com) for full documentation on:\n\n- Getting started (installation, setting up the environment, simple examples)\n- How-To examples (demos, integrations, helper functions)\n- Reference (full API docs)\n- Resources (high-level explanation of core concepts)\n\n## 🚀 What can this help with?\n\nThere are five main areas that LangChain is designed to help with.\nThese are, in increasing order of complexity:\n\n**📃 Models and Prompts:**\n\nThis includes prompt management, prompt optimization, a generic interface for all LLMs, and common utilities for working with chat models and LLMs.\n\n**🔗 Chains:**\n\nChains go beyond a single LLM call and involve sequences of calls (whether to an LLM or a different utility). LangChain provides a standard interface for chains, lots of integrations with other tools, and end-to-end chains for common applications.\n\n**📚 Retrieval Augmented Generation:**\n\nRetrieval Augmented Generation involves specific types of chains that first interact with an external data source to fetch data for use in the generation step. Examples include summarization of long pieces of text and question/answering over specific data sources.\n\n**🤖 Agents:**\n\nAgents involve an LLM making decisions about which Actions to take, taking that Action, seeing an Observation, and repeating that until done. LangChain provides a standard interface for agents, a selection of agents to choose from, and examples of end-to-end agents.\n\n**🧐 Evaluation:**\n\n[BETA] Generative models are notoriously hard to evaluate with traditional metrics. One new way of evaluating them is using language models themselves to do the evaluation. LangChain provides some prompts/chains for assisting in this.\n\nFor more information on these concepts, please see our [full documentation](https://python.langchain.com).\n\n## 💁 Contributing\n\nAs an open-source project in a rapidly developing field, we are extremely open to contributions, whether it be in the form of a new feature, improved infrastructure, or better documentation.\n\nFor detailed information on how to contribute, see the [Contributing Guide](https://python.langchain.com/docs/contributing/).\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,21 @@
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/Deep-Live-Cam-main/requirements.txt
+numpy <2,>=1.23.5  # type: runtime
+typing-extensions >=4.8.0  # type: runtime
+opencv-python ==4.10.0.84  # type: runtime
+cv2-enumerate-cameras ==1.1.15  # type: runtime
+onnx ==1.16.0  # type: runtime
+insightface ==0.7.3  # type: runtime
+psutil ==5.9.8  # type: runtime
+tk ==0.1.0  # type: runtime
+customtkinter ==5.2.2  # type: runtime
+pillow ==11.1.0  # type: runtime
+torch ==2.5.1+cu118  # type: runtime
+torch ==2.5.1  # type: runtime
+torchvision ==0.20.1  # type: runtime
+torchvision ==0.20.1  # type: runtime
+onnxruntime-silicon ==1.16.3  # type: runtime
+onnxruntime-gpu ==1.17  # type: runtime
+tensorflow  # type: runtime
+opennsfw2 ==0.10.2  # type: runtime
+protobuf ==4.23.2  # type: runtime
+

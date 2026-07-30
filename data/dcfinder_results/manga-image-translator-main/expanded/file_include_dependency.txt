@@ -1,0 +1,77 @@
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements-dev.txt
+ipykernel ==6.29.5  # type: dev
+pylint ==3.3.0  # type: dev
+pytest-sugar ==0.9.6  # type: dev
+pytest-xdist ==3.3.1  # type: dev
+pytest ==7.2.2  # type: dev
+pytest-asyncio ==0.21.1  # type: dev
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt
+networkx  # type: runtime
+torch  # type: runtime
+groq  # type: runtime
+torchvision  # type: runtime
+torch-summary  # type: runtime
+einops  # type: runtime
+scikit-image  # type: runtime
+opencv-python  # type: runtime
+pyclipper  # type: runtime
+shapely  # type: runtime
+requests  # type: runtime
+cryptography  # type: runtime
+freetype-py  # type: runtime
+aiohttp  # type: runtime
+tqdm  # type: runtime
+deepl  # type: runtime
+imagehash  # type: runtime
+kornia  # type: runtime
+backports-cached-property  # type: runtime
+huggingface-hub  # type: runtime
+transformers  # type: runtime
+py3langid ==0.2.2  # type: runtime
+sentencepiece  # type: runtime
+editdistance  # type: runtime
+numpy ==1.26.4  # type: runtime
+tensorboardx  # type: runtime
+websockets  # type: runtime
+protobuf <6.0.0,>=3.20.2  # type: runtime
+ctranslate2 <=3.24.0  # type: runtime
+colorama  # type: runtime
+openai ==1.63.0  # type: runtime
+tiktoken  # type: runtime
+httpx ==0.27.2  # type: runtime
+open-clip-torch  # type: runtime
+safetensors  # type: runtime
+pandas  # type: runtime
+onnxruntime  # type: runtime
+timm  # type: runtime
+omegaconf  # type: runtime
+python-dotenv  # type: runtime
+nest-asyncio  # type: runtime
+marshmallow  # type: runtime
+cython  # type: runtime
+aioshutil  # type: runtime
+aiofiles  # type: runtime
+arabic-reshaper  # type: runtime
+pyhyphen  # type: runtime
+langcodes  # type: runtime
+manga-ocr  # type: runtime
+langdetect  # type: runtime
+pydensecrf  # type: runtime
+accelerate  # type: runtime
+bitsandbytes  # type: runtime
+uvicorn  # type: runtime
+fastapi  # type: runtime
+pydantic ==2.5.0  # type: runtime
+python-multipart  # type: runtime
+google-genai  # type: runtime
+rich  # type: runtime
+regex  # type: runtime
+paddleocr  # type: runtime
+paddlepaddle  # type: runtime
+paddlepaddle-gpu  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/setup.cfg
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/pyproject.toml
+

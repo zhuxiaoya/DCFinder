@@ -1,0 +1,63 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/57/26/a798a2e274d77944e784c1c577b85fcbdb7189e59ff821d9a2d6b462f853/prodigyopt-1.1.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=4f8f79f71d37e4a501527fc30ecc847731369dc7cbe12e6a178157924e30ce03",
+          "hashes": {
+            "sha256": "4f8f79f71d37e4a501527fc30ecc847731369dc7cbe12e6a178157924e30ce03"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.2",
+        "name": "prodigyopt",
+        "version": "1.1.2",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "An Adam-like optimizer for neural networks with adaptive estimation of learning rate",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/konstmish/prodigy",
+        "author": "Konstantin Mishchenko",
+        "author_email": "konsta.mish@gmail.com",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Programming Language :: Python :: 3",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent"
+        ],
+        "requires_python": ">=3.6",
+        "description": "# Prodigy: An Expeditiously Adaptive Parameter-Free Learner\n[![Downloads](https://static.pepy.tech/badge/prodigyopt)](https://pepy.tech/project/prodigyopt) [![Downloads](https://static.pepy.tech/badge/prodigyopt/month)](https://pepy.tech/project/prodigyopt)\n\nThis is the official repository used to run the experiments in the paper that proposed the Prodigy optimizer. The optimizer is implemented in PyTorch.\nThere is also a JAX version of [Prodigy in Optax](https://optax.readthedocs.io/en/latest/api/contrib.html#prodigy), which currently does not have the `slice_p` argument.\n\n**Prodigy: An Expeditiously Adaptive Parameter-Free Learner**  \n*K. Mishchenko, A. Defazio*  \nPaper: https://arxiv.org/pdf/2306.06101.pdf\n\n## Installation\nTo install the package, simply run\n```pip install prodigyopt```\n## How to use\nLet `net` be the neural network you want to train. Then, you can use the method as follows:\n```\nfrom prodigyopt import Prodigy\n# choose weight decay value based on your problem, 0 by default\n# set slice_p to 11 if you have limited memory, 1 by default\nopt = Prodigy(net.parameters(), lr=1., weight_decay=weight_decay, slice_p=slice_p)\n```\nNote that by default, Prodigy uses weight decay as in AdamW. \nIf you want it to use standard $\\ell_2$ regularization (as in Adam), use option `decouple=False`. \nWe recommend using `lr=1.` (default) for all networks. If you want to force the method to estimate a smaller or larger learning rate, \nit is better to change the value of `d_coef` (1.0 by default). Values of `d_coef` above 1, such as 2 or 10, \nwill force a larger estimate of the learning rate; set it to 0.5 or even 0.1 if you want a smaller learning rate.  \nStandard values of `weight_decay` to try are 0 (default in Prodigy), 0.001, 0.01 (default in AdamW), and 0.1.  \nUse values of `slice_p` larger than 1 to reduce the memory consumption. `slice_p=11` should give a good trade-off\n between accuracy of estimate learning rate and memory efficiency.\n\n\n## Scheduler \nAs a rule of thumb, we recommend either using no scheduler or using cosine annealing with the method:\n```\n# n_epoch is the total number of epochs to train the network\nscheduler = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=total_steps)\n```\nWe do not recommend using restarts in cosine annealing, so we suggest setting `T_max=total_steps`, where \n`total_steps` should be the number of times `scheduler.step()` is called. If you do use restarts, we highly\nrecommend setting `safeguard_warmup=True`.\n\nExtra care should be taken if you use linear warm-up at the beginning: \nThe method will see slow progress due to the initially small base learning rate, \nso it might overestimate `d`.\nTo avoid issues with warm-up, use option `safeguard_warmup=True`.  \n## Diffusion models\nBased on the interaction with some of the users, we recommend setting `safeguard_warmup=True`,\n `use_bias_correction=True`, and `weight_decay=0.01` when training diffusion models. \nSometimes, [it is helpful](https://github.com/konstmish/prodigy/issues/8) to set `betas=(0.9, 0.99)`.  \nIf the model is not training, try to keep track of `d` and if it remains too small, [it might be worth increasing `d0`](https://github.com/konstmish/prodigy/issues/27) to 1e-5 or even 1e-4. \nThat being said, the optimizer was mostly insensitive to `d0` in our other experiments.\n\n## Examples of using Prodigy \n\nSee [this Colab Notebook](https://colab.research.google.com/drive/1TrhEfI3stJ-yNp7_ZxUAtfWjj-Qe_Hym?usp=sharing) \nfor a toy example of how one can use Prodigy to train ResNet-18 on Cifar10 (test accuracy 80% after 20 epochs).  \nIf you are interested in sharing your experience, please consider creating a Colab Notebook and sharing it in the issues. \n\n## How to cite\nIf you find our work useful, please consider citing our paper.\n```\n@inproceedings{mishchenko2024prodigy,\n    title={Prodigy: An Expeditiously Adaptive Parameter-Free Learner},\n    author={Mishchenko, Konstantin and Defazio, Aaron},\n    booktitle={Forty-first International Conference on Machine Learning},\n    year={2024},\n    url={https://openreview.net/forum?id=JJpOssn0uP}\n}\n```\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

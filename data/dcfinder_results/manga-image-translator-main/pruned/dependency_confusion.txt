@@ -1,0 +1,1157 @@
+{
+     "direct dependency": {
+          "number": 69,
+          "packages": [
+               {
+                    "name": "ipykernel",
+                    "specifier": "==6.29.5",
+                    "raw_requirement": "ipykernel==6.29.5",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "pylint",
+                    "specifier": "==3.3.0",
+                    "raw_requirement": "pylint==3.3.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "pytest-sugar",
+                    "specifier": "==0.9.6",
+                    "raw_requirement": "pytest-sugar==0.9.6",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "pytest-xdist",
+                    "specifier": "==3.3.1",
+                    "raw_requirement": "pytest-xdist==3.3.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "pytest",
+                    "specifier": "==7.2.2",
+                    "raw_requirement": "pytest==7.2.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "pytest-asyncio",
+                    "specifier": "==0.21.1",
+                    "raw_requirement": "pytest-asyncio==0.21.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "networkx",
+                    "specifier": "",
+                    "raw_requirement": "networkx",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch",
+                    "specifier": "",
+                    "raw_requirement": "torch",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "groq",
+                    "specifier": "",
+                    "raw_requirement": "groq",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torchvision",
+                    "specifier": "",
+                    "raw_requirement": "torchvision",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch-summary",
+                    "specifier": "",
+                    "raw_requirement": "torch-summary",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "einops",
+                    "specifier": "",
+                    "raw_requirement": "einops",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scikit-image",
+                    "specifier": "",
+                    "raw_requirement": "scikit-image",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opencv-python",
+                    "specifier": "",
+                    "raw_requirement": "opencv-python",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pyclipper",
+                    "specifier": "",
+                    "raw_requirement": "pyclipper",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "shapely",
+                    "specifier": "",
+                    "raw_requirement": "shapely",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "requests",
+                    "specifier": "",
+                    "raw_requirement": "requests",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "cryptography",
+                    "specifier": "",
+                    "raw_requirement": "cryptography",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "freetype-py",
+                    "specifier": "",
+                    "raw_requirement": "freetype-py",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "aiohttp",
+                    "specifier": "",
+                    "raw_requirement": "aiohttp",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tqdm",
+                    "specifier": "",
+                    "raw_requirement": "tqdm",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "deepl",
+                    "specifier": "",
+                    "raw_requirement": "deepl",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "imagehash",
+                    "specifier": "",
+                    "raw_requirement": "ImageHash",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "kornia",
+                    "specifier": "",
+                    "raw_requirement": "kornia",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "backports-cached-property",
+                    "specifier": "",
+                    "raw_requirement": "backports.cached-property",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "huggingface-hub",
+                    "specifier": "",
+                    "raw_requirement": "huggingface_hub",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "transformers",
+                    "specifier": "",
+                    "raw_requirement": "transformers",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "py3langid",
+                    "specifier": "==0.2.2",
+                    "raw_requirement": "py3langid==0.2.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "sentencepiece",
+                    "specifier": "",
+                    "raw_requirement": "sentencepiece",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "editdistance",
+                    "specifier": "",
+                    "raw_requirement": "editdistance",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numpy",
+                    "specifier": "==1.26.4",
+                    "raw_requirement": "numpy==1.26.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorboardx",
+                    "specifier": "",
+                    "raw_requirement": "tensorboardX",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "websockets",
+                    "specifier": "",
+                    "raw_requirement": "websockets",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "protobuf",
+                    "specifier": "<6.0.0,>=3.20.2",
+                    "raw_requirement": "protobuf<6.0.0,>=3.20.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ctranslate2",
+                    "specifier": "<=3.24.0",
+                    "raw_requirement": "ctranslate2<=3.24.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "colorama",
+                    "specifier": "",
+                    "raw_requirement": "colorama",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "openai",
+                    "specifier": "==1.63.0",
+                    "raw_requirement": "openai==1.63.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tiktoken",
+                    "specifier": "",
+                    "raw_requirement": "tiktoken",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "httpx",
+                    "specifier": "==0.27.2",
+                    "raw_requirement": "httpx==0.27.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "open-clip-torch",
+                    "specifier": "",
+                    "raw_requirement": "open_clip_torch",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "safetensors",
+                    "specifier": "",
+                    "raw_requirement": "safetensors",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pandas",
+                    "specifier": "",
+                    "raw_requirement": "pandas",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnxruntime",
+                    "specifier": "",
+                    "raw_requirement": "onnxruntime",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "timm",
+                    "specifier": "",
+                    "raw_requirement": "timm",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "omegaconf",
+                    "specifier": "",
+                    "raw_requirement": "omegaconf",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "python-dotenv",
+                    "specifier": "",
+                    "raw_requirement": "python-dotenv",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "nest-asyncio",
+                    "specifier": "",
+                    "raw_requirement": "nest-asyncio",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "marshmallow",
+                    "specifier": "",
+                    "raw_requirement": "marshmallow",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "cython",
+                    "specifier": "",
+                    "raw_requirement": "cython",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "aioshutil",
+                    "specifier": "",
+                    "raw_requirement": "aioshutil",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "aiofiles",
+                    "specifier": "",
+                    "raw_requirement": "aiofiles",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "arabic-reshaper",
+                    "specifier": "",
+                    "raw_requirement": "arabic-reshaper",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pyhyphen",
+                    "specifier": "",
+                    "raw_requirement": "pyhyphen",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "langcodes",
+                    "specifier": "",
+                    "raw_requirement": "langcodes",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "manga-ocr",
+                    "specifier": "",
+                    "raw_requirement": "manga-ocr",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "langdetect",
+                    "specifier": "",
+                    "raw_requirement": "langdetect",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pydensecrf",
+                    "specifier": "",
+                    "raw_requirement": "pydensecrf@https://github.com/lucasb-eyer/pydensecrf/archive/refs/heads/master.zip",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "accelerate",
+                    "specifier": "",
+                    "raw_requirement": "accelerate",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "bitsandbytes",
+                    "specifier": "",
+                    "raw_requirement": "bitsandbytes",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "uvicorn",
+                    "specifier": "",
+                    "raw_requirement": "uvicorn",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "fastapi",
+                    "specifier": "",
+                    "raw_requirement": "fastapi",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pydantic",
+                    "specifier": "==2.5.0",
+                    "raw_requirement": "pydantic==2.5.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "python-multipart",
+                    "specifier": "",
+                    "raw_requirement": "python-multipart",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "google-genai",
+                    "specifier": "",
+                    "raw_requirement": "google-genai",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "rich",
+                    "specifier": "",
+                    "raw_requirement": "rich",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "regex",
+                    "specifier": "",
+                    "raw_requirement": "regex",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "paddleocr",
+                    "specifier": "",
+                    "raw_requirement": "paddleocr",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "paddlepaddle",
+                    "specifier": "",
+                    "raw_requirement": "paddlepaddle",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "paddlepaddle-gpu",
+                    "specifier": "",
+                    "raw_requirement": "paddlepaddle-gpu; sys_platform != 'darwin'",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 21,
+          "packages": [
+               {
+                    "name": "anyio",
+                    "specifier": "<5,>=3.5.0,<5.0.0,>=4.8.0,<5,>=3.6.2",
+                    "raw_requirement": "anyio<5,>=3.5.0 ; anyio<5,>=3.5.0 ; anyio ; anyio<5.0.0,>=4.8.0 ; anyio<5,>=3.6.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "groq",
+                              "source": "public"
+                         },
+                         {
+                              "name": "openai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "private"
+                         },
+                         {
+                              "name": "google-genai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "starlette",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "certifi",
+                    "specifier": ">=2023.5.7",
+                    "raw_requirement": "certifi>=2023.5.7 ; certifi ; certifi",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "private"
+                         },
+                         {
+                              "name": "httpcore",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "exceptiongroup",
+                    "specifier": ">=1.0.0rc8,>=1.0.2",
+                    "raw_requirement": "exceptiongroup (>=1.0.0rc8) ; python_version < \"3.11\" ; exceptiongroup>=1.0.2; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "h11",
+                    "specifier": ">=0.8,>=0.16",
+                    "raw_requirement": "h11>=0.8 ; h11>=0.16",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpcore",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpcore",
+                    "specifier": "==1.*",
+                    "raw_requirement": "httpcore==1.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "idna",
+                    "specifier": "<4,>=2.5,>=2.8,>=2.0",
+                    "raw_requirement": "idna<4,>=2.5 ; idna ; idna>=2.8 ; idna>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "private"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "private"
+                         },
+                         {
+                              "name": "yarl",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cublas-cu11",
+                    "specifier": "==11.11.3.6",
+                    "raw_requirement": "nvidia-cublas-cu11==11.11.3.6; platform_system == \"Linux\" and platform_machine == \"x86_64\" ; nvidia-cublas-cu11 ; nvidia-cublas-cu11",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "paddlepaddle-gpu",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cudnn-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cusolver-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cuda-cupti-cu11",
+                    "specifier": "==11.8.87",
+                    "raw_requirement": "nvidia-cuda-cupti-cu11==11.8.87; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "paddlepaddle-gpu",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cuda-nvrtc-cu11",
+                    "specifier": "==11.8.89",
+                    "raw_requirement": "nvidia-cuda-nvrtc-cu11==11.8.89; platform_system == \"Linux\" and platform_machine == \"x86_64\" ; nvidia-cuda-nvrtc-cu11",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "paddlepaddle-gpu",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cudnn-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cuda-runtime-cu11",
+                    "specifier": "==11.8.89",
+                    "raw_requirement": "nvidia-cuda-runtime-cu11==11.8.89; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "paddlepaddle-gpu",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cudnn-cu11",
+                    "specifier": "==8.9.6.50",
+                    "raw_requirement": "nvidia-cudnn-cu11==8.9.6.50; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "paddlepaddle-gpu",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cufft-cu11",
+                    "specifier": "==10.9.0.58",
+                    "raw_requirement": "nvidia-cufft-cu11==10.9.0.58; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "paddlepaddle-gpu",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-curand-cu11",
+                    "specifier": "==10.3.0.86",
+                    "raw_requirement": "nvidia-curand-cu11==10.3.0.86; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "paddlepaddle-gpu",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cusolver-cu11",
+                    "specifier": "==11.4.1.48",
+                    "raw_requirement": "nvidia-cusolver-cu11==11.4.1.48; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "paddlepaddle-gpu",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cusparse-cu11",
+                    "specifier": "==11.7.5.86",
+                    "raw_requirement": "nvidia-cusparse-cu11==11.7.5.86; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "paddlepaddle-gpu",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-nccl-cu11",
+                    "specifier": "==2.19.3",
+                    "raw_requirement": "nvidia-nccl-cu11==2.19.3; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "paddlepaddle-gpu",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-nvtx-cu11",
+                    "specifier": "==11.8.86",
+                    "raw_requirement": "nvidia-nvtx-cu11==11.8.86; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "paddlepaddle-gpu",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "opt-einsum",
+                    "specifier": "==3.3.0",
+                    "raw_requirement": "opt_einsum==3.3.0 ; opt_einsum==3.3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "paddlepaddle",
+                              "source": "public"
+                         },
+                         {
+                              "name": "paddlepaddle-gpu",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "pillow",
+                    "specifier": "!=8.3.*,>=5.3.0,>=10.1,>=10.0.0,>=8.3.2",
+                    "raw_requirement": "pillow!=8.3.*,>=5.3.0 ; pillow>=10.1 ; pillow ; Pillow>=10.0.0 ; Pillow ; Pillow ; pillow>=8.3.2 ; pillow",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torchvision",
+                              "source": "public"
+                         },
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         },
+                         {
+                              "name": "imagehash",
+                              "source": "public"
+                         },
+                         {
+                              "name": "manga-ocr",
+                              "source": "public"
+                         },
+                         {
+                              "name": "paddlepaddle",
+                              "source": "public"
+                         },
+                         {
+                              "name": "paddlepaddle-gpu",
+                              "source": "private"
+                         },
+                         {
+                              "name": "imageio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "paddlex",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sniffio",
+                    "specifier": "",
+                    "raw_requirement": "sniffio ; sniffio ; sniffio ; sniffio",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "groq",
+                              "source": "public"
+                         },
+                         {
+                              "name": "openai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "private"
+                         },
+                         {
+                              "name": "google-genai",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=4.10.0,<5,>=4.14,>=4.13.2,>=4.4,>=4.1.0,<5,>=4.11,>=4.0,>=4.8.0,>=4.6.1,<5.0.0,>=4.14.0,>=4.12,>=4.6,>=4.13.0,>=4,>=4.6.0,>=4.5,>=4.2,>=4.1.0,>=4.10.0,>=4.12.0,!=4.7.0,>=4.6.0",
+                    "raw_requirement": "typing-extensions>=4.10.0 ; typing-extensions<5,>=4.14 ; typing-extensions>=4.13.2; python_full_version < \"3.11\" ; typing_extensions>=4.4; python_version < \"3.13\" ; typing-extensions>=4.1.0 ; typing-extensions<5,>=4.11 ; typing-extensions; python_version < \"3.11\" ; typing-extensions>=4.0; python_version < \"3.11\" ; typing-extensions>=4.8.0 ; typing-extensions>=4.6.1 ; typing-extensions<5.0.0,>=4.14.0 ; typing-extensions>=4.12 ; typing_extensions ; typing_extensions ; typing_extensions>=4.6; python_version < \"3.12\" ; typing-extensions>=4.13.0 ; typing-extensions>=4; python_version < \"3.11\" ; typing-extensions >= 4.6.0; python_version < '3.13' ; typing_extensions>=4.5; python_version < \"3.13\" ; typing-extensions>=4.2; python_version < \"3.13\" ; typing-extensions>=4.1.0; python_version < \"3.11\" ; typing-extensions>=4.10.0; python_version < \"3.13\" ; typing-extensions>=4.12.0 ; typing-extensions >=4.6.0, !=4.7.0 ; typing-extensions",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "public"
+                         },
+                         {
+                              "name": "groq",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cryptography",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "openai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "marshmallow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-genai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "paddleocr",
+                              "source": "public"
+                         },
+                         {
+                              "name": "paddlepaddle",
+                              "source": "public"
+                         },
+                         {
+                              "name": "paddlepaddle-gpu",
+                              "source": "private"
+                         },
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "astroid",
+                              "source": "public"
+                         },
+                         {
+                              "name": "exceptiongroup",
+                              "source": "private"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "private"
+                         },
+                         {
+                              "name": "aiosignal",
+                              "source": "public"
+                         },
+                         {
+                              "name": "multidict",
+                              "source": "public"
+                         },
+                         {
+                              "name": "starlette",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typing-inspection",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "paddlex",
+                              "source": "public"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 4,
+          "packages": {
+               "networkx": {
+                    "private version": "3.6.1",
+                    "public version": "3.6.1",
+                    "highest public (unconstrained)": "3.6.1",
+                    "declared specifier": ">=2.5.1,>=3.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 17
+               },
+               "numpy": {
+                    "private version": "1.26.4",
+                    "public version": "1.26.4",
+                    "highest public (unconstrained)": "2.5.1",
+                    "declared specifier": "==1.26.4",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               },
+               "protobuf": {
+                    "private version": "5.29.4",
+                    "public version": "5.29.6",
+                    "highest public (unconstrained)": "7.36.0rc1",
+                    "declared specifier": "<6.0.0,>=3.20.2",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 85
+               },
+               "httpx": {
+                    "private version": "0.27.2",
+                    "public version": "0.27.2",
+                    "highest public (unconstrained)": "1.0.dev3",
+                    "declared specifier": "==0.27.2",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 21,
+          "packages": {
+               "anyio": {
+                    "private version": "4.12.1",
+                    "public version": "4.14.2",
+                    "highest public (unconstrained)": "4.14.2",
+                    "declared specifier": "<5,>=3.5.0,<5.0.0,>=4.8.0,<5,>=3.6.2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 10
+               },
+               "certifi": {
+                    "private version": "2026.1.4",
+                    "public version": "2026.6.17",
+                    "highest public (unconstrained)": "2026.6.17",
+                    "declared specifier": ">=2023.5.7",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 21
+               },
+               "exceptiongroup": {
+                    "private version": "1.3.1",
+                    "public version": "1.3.1",
+                    "highest public (unconstrained)": "1.3.1",
+                    "declared specifier": ">=1.0.0rc8,>=1.0.2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 12
+               },
+               "h11": {
+                    "private version": "0.16.0",
+                    "public version": "0.16.0",
+                    "highest public (unconstrained)": "0.16.0",
+                    "declared specifier": ">=0.8,>=0.16",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "httpcore": {
+                    "private version": "1.0.9",
+                    "public version": "1.0.9",
+                    "highest public (unconstrained)": "1.0.9",
+                    "declared specifier": "==1.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 10
+               },
+               "idna": {
+                    "private version": "3.11",
+                    "public version": "3.18",
+                    "highest public (unconstrained)": "3.18",
+                    "declared specifier": "<4,>=2.5,>=2.8,>=2.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 22
+               },
+               "nvidia-cublas-cu11": {
+                    "private version": "11.11.3.6",
+                    "public version": "11.11.3.6",
+                    "highest public (unconstrained)": "11.11.3.6",
+                    "declared specifier": "==11.11.3.6",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cuda-cupti-cu11": {
+                    "private version": "11.8.87",
+                    "public version": "11.8.87",
+                    "highest public (unconstrained)": "11.8.87",
+                    "declared specifier": "==11.8.87",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cuda-nvrtc-cu11": {
+                    "private version": "11.8.89",
+                    "public version": "11.8.89",
+                    "highest public (unconstrained)": "11.8.89",
+                    "declared specifier": "==11.8.89",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cuda-runtime-cu11": {
+                    "private version": "11.8.89",
+                    "public version": "11.8.89",
+                    "highest public (unconstrained)": "11.8.89",
+                    "declared specifier": "==11.8.89",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cudnn-cu11": {
+                    "private version": "8.9.6.50",
+                    "public version": "8.9.6.50",
+                    "highest public (unconstrained)": "9.10.2.21",
+                    "declared specifier": "==8.9.6.50",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cufft-cu11": {
+                    "private version": "10.9.0.58",
+                    "public version": "10.9.0.58",
+                    "highest public (unconstrained)": "10.9.0.58",
+                    "declared specifier": "==10.9.0.58",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-curand-cu11": {
+                    "private version": "10.3.0.86",
+                    "public version": "10.3.0.86",
+                    "highest public (unconstrained)": "10.3.0.86",
+                    "declared specifier": "==10.3.0.86",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cusolver-cu11": {
+                    "private version": "11.4.1.48",
+                    "public version": "11.4.1.48",
+                    "highest public (unconstrained)": "11.4.1.48",
+                    "declared specifier": "==11.4.1.48",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cusparse-cu11": {
+                    "private version": "11.7.5.86",
+                    "public version": "11.7.5.86",
+                    "highest public (unconstrained)": "11.7.5.86",
+                    "declared specifier": "==11.7.5.86",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-nccl-cu11": {
+                    "private version": "2.19.3",
+                    "public version": "2.19.3",
+                    "highest public (unconstrained)": "2.21.5",
+                    "declared specifier": "==2.19.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-nvtx-cu11": {
+                    "private version": "11.8.86",
+                    "public version": "11.8.86",
+                    "highest public (unconstrained)": "11.8.86",
+                    "declared specifier": "==11.8.86",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "opt-einsum": {
+                    "private version": "3.3.0",
+                    "public version": "3.3.0",
+                    "highest public (unconstrained)": "3.4.0",
+                    "declared specifier": "==3.3.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "pillow": {
+                    "private version": "12.1.0",
+                    "public version": "12.3.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": "!=8.3.*,>=5.3.0,>=10.1,>=10.0.0,>=8.3.2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 13
+               },
+               "sniffio": {
+                    "private version": "1.3.1",
+                    "public version": "1.3.1",
+                    "highest public (unconstrained)": "1.3.1"
+               },
+               "typing-extensions": {
+                    "private version": "4.15.0",
+                    "public version": "4.16.0",
+                    "highest public (unconstrained)": "4.16.0",
+                    "declared specifier": ">=4.10.0,<5,>=4.14,>=4.13.2,>=4.4,>=4.1.0,<5,>=4.11,>=4.0,>=4.8.0,>=4.6.1,<5.0.0,>=4.14.0,>=4.12,>=4.6,>=4.13.0,>=4,>=4.6.0,>=4.5,>=4.2,>=4.1.0,>=4.10.0,>=4.12.0,!=4.7.0,>=4.6.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 7
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 26,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 142
+     }
+}

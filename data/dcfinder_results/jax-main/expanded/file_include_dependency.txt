@@ -1,0 +1,55 @@
+# 依赖文件: analysis_program/jax-main/setup.py
+ml-dtypes >=0.5.0  # type: runtime
+numpy >=1.26  # type: runtime
+opt-einsum  # type: runtime
+scipy >=1.12  # type: runtime
+requests  # type: extra:tpu
+kubernetes  # type: extra:k8s
+
+# 依赖文件: analysis_program/jax-main/pyproject.toml
+
+# 依赖文件: analysis_program/jax-main/jax_plugins/cuda/setup.py
+
+# 依赖文件: analysis_program/jax-main/jax_plugins/cuda/pyproject.toml
+
+# 依赖文件: analysis_program/jax-main/jax_plugins/rocm/setup.py
+
+# 依赖文件: analysis_program/jax-main/jax_plugins/rocm/pyproject.toml
+
+# 依赖文件: analysis_program/jax-main/jaxlib/setup.py
+scipy >=1.12  # type: runtime
+numpy >=1.26  # type: runtime
+ml-dtypes >=0.5.0  # type: runtime
+
+# 依赖文件: analysis_program/jax-main/docs/requirements.txt
+absl-py  # type: runtime
+ipython >=8.8.0  # type: runtime
+pydata-sphinx-theme ==0.14.4  # type: runtime
+snowballstemmer <3.0.0  # type: runtime
+sphinx <8.0,>=7.3.2  # type: runtime
+sphinx-book-theme ==1.1.1  # type: runtime
+sphinx-copybutton >=0.5.0  # type: runtime
+sphinx-remove-toctrees  # type: runtime
+sphinx-design  # type: runtime
+sphinxext-rediraffe  # type: runtime
+myst-nb >=1.0.0  # type: runtime
+flatbuffers  # type: runtime
+pytest  # type: runtime
+pytest-xdist  # type: runtime
+matplotlib  # type: runtime
+scikit-learn  # type: runtime
+pooch  # type: runtime
+numpy  # type: runtime
+rich  # type: runtime
+cmake  # type: runtime
+
+# 依赖文件: analysis_program/jax-main/jax/experimental/jax2tf/examples/requirements.txt
+tensorflow-datasets  # type: runtime
+tensorflow-hub  # type: runtime
+flax  # type: runtime
+
+# 依赖文件: analysis_program/jax-main/examples/ffi/pyproject.toml
+jax  # type: runtime
+pytest  # type: extra:test
+absl-py  # type: extra:test
+

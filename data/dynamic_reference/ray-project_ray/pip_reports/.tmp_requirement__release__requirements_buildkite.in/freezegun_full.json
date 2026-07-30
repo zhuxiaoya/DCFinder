@@ -1,0 +1,170 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/5e/2e/b41d8a1a917d6581fc27a35d05561037b048e47df50f27f8ac9c7e27a710/freezegun-1.5.5-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=cd557f4a75cf074e84bc374249b9dd491eaeacd61376b9eb3c423282211619d2",
+          "hashes": {
+            "sha256": "cd557f4a75cf074e84bc374249b9dd491eaeacd61376b9eb3c423282211619d2"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "freezegun",
+        "version": "1.5.5",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Let your Python tests travel through time",
+        "home_page": "https://github.com/spulec/freezegun",
+        "author": "Steve Pulec",
+        "author_email": "spulec@gmail.com",
+        "license": "Apache-2.0",
+        "license_file": [
+          "LICENSE",
+          "AUTHORS.rst"
+        ],
+        "classifier": [
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy"
+        ],
+        "requires_dist": [
+          "python-dateutil>=2.7"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Bug Tracker, https://github.com/spulec/freezegun/issues",
+          "Changes, https://github.com/spulec/freezegun/blob/master/CHANGELOG",
+          "Documentation, https://github.com/spulec/freezegun/blob/master/README.rst",
+          "Source Code, https://github.com/spulec/freezegun"
+        ],
+        "description": "FreezeGun: Let your Python tests travel through time\n====================================================\n\n.. image:: https://img.shields.io/pypi/v/freezegun.svg\n   :target: https://pypi.python.org/pypi/freezegun/\n.. image:: https://github.com/spulec/freezegun/workflows/CI/badge.svg\n   :target: https://github.com/spulec/freezegun/actions\n.. image:: https://coveralls.io/repos/spulec/freezegun/badge.svg?branch=master\n   :target: https://coveralls.io/r/spulec/freezegun\n\nFreezeGun is a library that allows your Python tests to travel through time by mocking the datetime module.\n\nUsage\n-----\n\nOnce the decorator or context manager have been invoked, all calls to datetime.datetime.now(), datetime.datetime.utcnow(), datetime.date.today(), time.time(), time.localtime(), time.gmtime(), and time.strftime() will return the time that has been frozen. time.monotonic() and time.perf_counter() will also be frozen, but as usual it makes no guarantees about their absolute value, only their changes over time.\n\nDecorator\n~~~~~~~~~\n\n.. code-block:: python\n\n    from freezegun import freeze_time\n    import datetime\n    import unittest\n\n    # Freeze time for a pytest style test:\n\n    @freeze_time(\"2012-01-14\")\n    def test():\n        assert datetime.datetime.now() == datetime.datetime(2012, 1, 14)\n\n    # Or a unittest TestCase - freezes for every test, and set up and tear down code\n\n    @freeze_time(\"1955-11-12\")\n    class MyTests(unittest.TestCase):\n        def test_the_class(self):\n            assert datetime.datetime.now() == datetime.datetime(1955, 11, 12)\n\n    # Or any other class - freezes around each callable (may not work in every case)\n\n    @freeze_time(\"2012-01-14\")\n    class Tester(object):\n        def test_the_class(self):\n            assert datetime.datetime.now() == datetime.datetime(2012, 1, 14)\n\n    # Or method decorator, might also pass frozen time object as kwarg\n\n    class TestUnitTestMethodDecorator(unittest.TestCase):\n        @freeze_time('2013-04-09')\n        def test_method_decorator_works_on_unittest(self):\n            self.assertEqual(datetime.date(2013, 4, 9), datetime.date.today())\n\n        @freeze_time('2013-04-09', as_kwarg='frozen_time')\n        def test_method_decorator_works_on_unittest(self, frozen_time):\n            self.assertEqual(datetime.date(2013, 4, 9), datetime.date.today())\n            self.assertEqual(datetime.date(2013, 4, 9), frozen_time.time_to_freeze.date())\n\n        @freeze_time('2013-04-09', as_kwarg='hello')\n        def test_method_decorator_works_on_unittest(self, **kwargs):\n            self.assertEqual(datetime.date(2013, 4, 9), datetime.date.today())\n            self.assertEqual(datetime.date(2013, 4, 9), kwargs.get('hello').time_to_freeze.date())\n\nContext manager\n~~~~~~~~~~~~~~~\n\n.. code-block:: python\n\n    from freezegun import freeze_time\n\n    def test():\n        assert datetime.datetime.now() != datetime.datetime(2012, 1, 14)\n        with freeze_time(\"2012-01-14\"):\n            assert datetime.datetime.now() == datetime.datetime(2012, 1, 14)\n        assert datetime.datetime.now() != datetime.datetime(2012, 1, 14)\n\nRaw use\n~~~~~~~\n\n.. code-block:: python\n\n    from freezegun import freeze_time\n\n    freezer = freeze_time(\"2012-01-14 12:00:01\")\n    freezer.start()\n    assert datetime.datetime.now() == datetime.datetime(2012, 1, 14, 12, 0, 1)\n    freezer.stop()\n\nTimezones\n~~~~~~~~~\n\n.. code-block:: python\n\n    from freezegun import freeze_time\n\n    @freeze_time(\"2012-01-14 03:21:34\", tz_offset=-4)\n    def test():\n        assert datetime.datetime.utcnow() == datetime.datetime(2012, 1, 14, 3, 21, 34)\n        assert datetime.datetime.now() == datetime.datetime(2012, 1, 13, 23, 21, 34)\n\n        # datetime.date.today() uses local time\n        assert datetime.date.today() == datetime.date(2012, 1, 13)\n\n    @freeze_time(\"2012-01-14 03:21:34\", tz_offset=-datetime.timedelta(hours=3, minutes=30))\n    def test_timedelta_offset():\n        assert datetime.datetime.now() == datetime.datetime(2012, 1, 13, 23, 51, 34)\n\nNice inputs\n~~~~~~~~~~~\n\nFreezeGun uses dateutil behind the scenes so you can have nice-looking datetimes.\n\n.. code-block:: python\n\n    @freeze_time(\"Jan 14th, 2012\")\n    def test_nice_datetime():\n        assert datetime.datetime.now() == datetime.datetime(2012, 1, 14)\n\nFunction and generator objects\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nFreezeGun is able to handle function and generator objects.\n\n.. code-block:: python\n\n    def test_lambda():\n        with freeze_time(lambda: datetime.datetime(2012, 1, 14)):\n            assert datetime.datetime.now() == datetime.datetime(2012, 1, 14)\n\n    def test_generator():\n        datetimes = (datetime.datetime(year, 1, 1) for year in range(2010, 2012))\n\n        with freeze_time(datetimes):\n            assert datetime.datetime.now() == datetime.datetime(2010, 1, 1)\n\n        with freeze_time(datetimes):\n            assert datetime.datetime.now() == datetime.datetime(2011, 1, 1)\n\n        # The next call to freeze_time(datetimes) would raise a StopIteration exception.\n\n``tick`` argument\n~~~~~~~~~~~~~~~~~\n\nFreezeGun has an additional ``tick`` argument which will restart time at the given\nvalue, but then time will keep ticking. This is an alternative to the default\nparameters which will keep time stopped.\n\n.. code-block:: python\n\n    @freeze_time(\"Jan 14th, 2020\", tick=True)\n    def test_nice_datetime():\n        assert datetime.datetime.now() > datetime.datetime(2020, 1, 14)\n\n``auto_tick_seconds`` argument\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nFreezeGun has an additional ``auto_tick_seconds`` argument which will autoincrement the\nvalue every time by the given amount from the start value. This is an alternative to the default\nparameters which will keep time stopped. Note that given ``auto_tick_seconds`` the ``tick`` parameter will be ignored.\n\n.. code-block:: python\n\n    @freeze_time(\"Jan 14th, 2020\", auto_tick_seconds=15)\n    def test_nice_datetime():\n        first_time = datetime.datetime.now()\n        auto_incremented_time = datetime.datetime.now()\n        assert first_time + datetime.timedelta(seconds=15) == auto_incremented_time\n\n\nManual ticks\n~~~~~~~~~~~~\n\nFreezeGun allows for the time to be manually forwarded as well.\n\n.. code-block:: python\n\n    def test_manual_tick():\n        initial_datetime = datetime.datetime(year=1, month=7, day=12,\n                                            hour=15, minute=6, second=3)\n        with freeze_time(initial_datetime) as frozen_datetime:\n            assert frozen_datetime() == initial_datetime\n\n            frozen_datetime.tick()\n            initial_datetime += datetime.timedelta(seconds=1)\n            assert frozen_datetime() == initial_datetime\n\n            frozen_datetime.tick(delta=datetime.timedelta(seconds=10))\n            initial_datetime += datetime.timedelta(seconds=10)\n            assert frozen_datetime() == initial_datetime\n\n.. code-block:: python\n\n    def test_monotonic_manual_tick():\n        initial_datetime = datetime.datetime(year=1, month=7, day=12,\n                                            hour=15, minute=6, second=3)\n        with freeze_time(initial_datetime) as frozen_datetime:\n            monotonic_t0 = time.monotonic()\n            frozen_datetime.tick(1.0)\n            monotonic_t1 = time.monotonic()\n            assert monotonic_t1 == monotonic_t0 + 1.0\n\n\nMoving time to specify datetime\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nFreezeGun allows moving time to specific dates.\n\n.. code-block:: python\n\n    def test_move_to():\n        initial_datetime = datetime.datetime(year=1, month=7, day=12,\n                                            hour=15, minute=6, second=3)\n\n        other_datetime = datetime.datetime(year=2, month=8, day=13,\n                                            hour=14, minute=5, second=0)\n        with freeze_time(initial_datetime) as frozen_datetime:\n            assert frozen_datetime() == initial_datetime\n\n            frozen_datetime.move_to(other_datetime)\n            assert frozen_datetime() == other_datetime\n\n            frozen_datetime.move_to(initial_datetime)\n            assert frozen_datetime() == initial_datetime\n\n\n    @freeze_time(\"2012-01-14\", as_arg=True)\n    def test(frozen_time):\n        assert datetime.datetime.now() == datetime.datetime(2012, 1, 14)\n        frozen_time.move_to(\"2014-02-12\")\n        assert datetime.datetime.now() == datetime.datetime(2014, 2, 12)\n\nParameter for ``move_to`` can be any valid ``freeze_time`` date (string, date, datetime).\n\n``real_asyncio`` parameter\n~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nFreezeGun has an additional ``real_asyncio`` parameter which allows asyncio event loops to see real monotonic time even though time.monotonic() is frozen. This is useful to avoid breaking asyncio.sleep() and other asyncio functions that rely on monotonic time.\n\n.. code-block:: python\n\n    @freeze_time(\"2012-01-14\", real_asyncio=True)\n    async def test_asyncio():\n        await asyncio.sleep(1)\n        assert datetime.datetime.now() == datetime.datetime(2012, 1, 14)\n\nAPI Documentation\n~~~~~~~~~~~~~~~~~\n\nHere is a succinct API documentation with all options listed:\n\n.. code-block:: python\n\n    freeze_time(time_to_freeze: Optional[_Freezable]=None, tz_offset: Union[int, datetime.timedelta]=0, ignore: Optional[List[str]]=None, tick: bool=False, as_arg: bool=False, as_kwarg: str='', auto_tick_seconds: float=0, real_asyncio: bool=False) -> _freeze_time\n\n    _freeze_time(time_to_freeze_str: Optional[_Freezable], tz_offset: Union[int, datetime.timedelta], ignore: List[str], tick: bool, as_arg: bool, as_kwarg: str, auto_tick_seconds: float, real_asyncio: Optional[bool])\n\n    _freeze_time.start() -> Union[StepTickTimeFactory, TickingDateTimeFactory, FrozenDateTimeFactory]\n\n    _freeze_time.stop() -> None\n\n    _freeze_time.move_to(target_datetime: _Freezable) -> None\n\n    _freeze_time.tick(delta: Union[datetime.timedelta, float]=datetime.timedelta(seconds=1)) -> datetime.datetime\n\n    _freeze_time.decorate_class(klass: Type[T2]) -> Type[T2]\n\n    _freeze_time.decorate_coroutine(coroutine: Callable[P, Awaitable[T]]) -> Callable[P, Awaitable[T]]\n\n    _freeze_time.decorate_callable(func: Callable[P, T]) -> Callable[P, T]\n\n    _freeze_time.__enter__() -> Union[StepTickTimeFactory, TickingDateTimeFactory, FrozenDateTimeFactory]\n\n    _freeze_time.__exit__(*args: Any) -> None\n\nDefault arguments\n~~~~~~~~~~~~~~~~~\n\nNote that FreezeGun will not modify default arguments. The following code will\nprint the current date. See `here <http://docs.python-guide.org/en/latest/writing/gotchas/#mutable-default-arguments>`_ for why.\n\n.. code-block:: python\n\n    from freezegun import freeze_time\n    import datetime as dt\n\n    def test(default=dt.date.today()):\n        print(default)\n\n    with freeze_time('2000-1-1'):\n        test()\n\n\nInstallation\n------------\n\nTo install FreezeGun, simply:\n\n.. code-block:: bash\n\n    $ pip install freezegun\n\nOn Debian systems:\n\n.. code-block:: bash\n\n    $ sudo apt-get install python-freezegun\n\n\nIgnore packages\n---------------\n\nSometimes it's desired to ignore FreezeGun behaviour for particular packages (i.e. libraries).\nIt's possible to ignore them for a single invocation:\n\n\n.. code-block:: python\n\n    from freezegun import freeze_time\n\n    with freeze_time('2020-10-06', ignore=['threading']):\n        # ...\n\n\nBy default FreezeGun ignores following packages:\n\n.. code-block:: python\n\n    [\n        'nose.plugins',\n        'six.moves',\n        'django.utils.six.moves',\n        'google.gax',\n        'threading',\n        'Queue',\n        'selenium',\n        '_pytest.terminal.',\n        '_pytest.runner.',\n        'gi',\n    ]\n\n\nIt's possible to set your own default ignore list:\n\n.. code-block:: python\n\n    import freezegun\n\n    freezegun.configure(default_ignore_list=['threading', 'tensorflow'])\n\n\nPlease note this will override default ignore list. If you want to extend existing defaults\nplease use:\n\n.. code-block:: python\n\n    import freezegun\n\n    freezegun.configure(extend_ignore_list=['tensorflow'])\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+          "hashes": {
+            "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "python-dateutil",
+        "version": "2.9.0.post0",
+        "summary": "Extensions to the standard Python datetime module",
+        "description_content_type": "text/x-rst",
+        "home_page": "https://github.com/dateutil/dateutil",
+        "author": "Gustavo Niemeyer",
+        "author_email": "gustavo@niemeyer.net",
+        "maintainer": "Paul Ganssle",
+        "maintainer_email": "dateutil@python.org",
+        "license": "Dual License",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Topic :: Software Development :: Libraries"
+        ],
+        "requires_dist": [
+          "six >=1.5"
+        ],
+        "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
+        "project_url": [
+          "Documentation, https://dateutil.readthedocs.io/en/stable/",
+          "Source, https://github.com/dateutil/dateutil"
+        ],
+        "description": "dateutil - powerful extensions to datetime\n==========================================\n\n|pypi| |support| |licence|\n\n|gitter| |readthedocs|\n\n|travis| |appveyor| |pipelines| |coverage|\n\n.. |pypi| image:: https://img.shields.io/pypi/v/python-dateutil.svg?style=flat-square\n    :target: https://pypi.org/project/python-dateutil/\n    :alt: pypi version\n\n.. |support| image:: https://img.shields.io/pypi/pyversions/python-dateutil.svg?style=flat-square\n    :target: https://pypi.org/project/python-dateutil/\n    :alt: supported Python version\n\n.. |travis| image:: https://img.shields.io/travis/dateutil/dateutil/master.svg?style=flat-square&label=Travis%20Build\n    :target: https://travis-ci.org/dateutil/dateutil\n    :alt: travis build status\n\n.. |appveyor| image:: https://img.shields.io/appveyor/ci/dateutil/dateutil/master.svg?style=flat-square&logo=appveyor\n    :target: https://ci.appveyor.com/project/dateutil/dateutil\n    :alt: appveyor build status\n\n.. |pipelines| image:: https://dev.azure.com/pythondateutilazure/dateutil/_apis/build/status/dateutil.dateutil?branchName=master\n    :target: https://dev.azure.com/pythondateutilazure/dateutil/_build/latest?definitionId=1&branchName=master\n    :alt: azure pipelines build status\n\n.. |coverage| image:: https://codecov.io/gh/dateutil/dateutil/branch/master/graphs/badge.svg?branch=master\n    :target: https://codecov.io/gh/dateutil/dateutil?branch=master\n    :alt: Code coverage\n\n.. |gitter| image:: https://badges.gitter.im/dateutil/dateutil.svg\n   :alt: Join the chat at https://gitter.im/dateutil/dateutil\n   :target: https://gitter.im/dateutil/dateutil\n\n.. |licence| image:: https://img.shields.io/pypi/l/python-dateutil.svg?style=flat-square\n    :target: https://pypi.org/project/python-dateutil/\n    :alt: licence\n\n.. |readthedocs| image:: https://img.shields.io/readthedocs/dateutil/latest.svg?style=flat-square&label=Read%20the%20Docs\n   :alt: Read the documentation at https://dateutil.readthedocs.io/en/latest/\n   :target: https://dateutil.readthedocs.io/en/latest/\n\nThe `dateutil` module provides powerful extensions to\nthe standard `datetime` module, available in Python.\n\nInstallation\n============\n`dateutil` can be installed from PyPI using `pip` (note that the package name is\ndifferent from the importable name)::\n\n    pip install python-dateutil\n\nDownload\n========\ndateutil is available on PyPI\nhttps://pypi.org/project/python-dateutil/\n\nThe documentation is hosted at:\nhttps://dateutil.readthedocs.io/en/stable/\n\nCode\n====\nThe code and issue tracker are hosted on GitHub:\nhttps://github.com/dateutil/dateutil/\n\nFeatures\n========\n\n* Computing of relative deltas (next month, next year,\n  next Monday, last week of month, etc);\n* Computing of relative deltas between two given\n  date and/or datetime objects;\n* Computing of dates based on very flexible recurrence rules,\n  using a superset of the `iCalendar <https://www.ietf.org/rfc/rfc2445.txt>`_\n  specification. Parsing of RFC strings is supported as well.\n* Generic parsing of dates in almost any string format;\n* Timezone (tzinfo) implementations for tzfile(5) format\n  files (/etc/localtime, /usr/share/zoneinfo, etc), TZ\n  environment string (in all known formats), iCalendar\n  format files, given ranges (with help from relative deltas),\n  local machine timezone, fixed offset timezone, UTC timezone,\n  and Windows registry-based time zones.\n* Internal up-to-date world timezone information based on\n  Olson's database.\n* Computing of Easter Sunday dates for any given year,\n  using Western, Orthodox or Julian algorithms;\n* A comprehensive test suite.\n\nQuick example\n=============\nHere's a snapshot, just to give an idea about the power of the\npackage. For more examples, look at the documentation.\n\nSuppose you want to know how much time is left, in\nyears/months/days/etc, before the next easter happening on a\nyear with a Friday 13th in August, and you want to get today's\ndate out of the \"date\" unix system command. Here is the code:\n\n.. code-block:: python3\n\n    >>> from dateutil.relativedelta import *\n    >>> from dateutil.easter import *\n    >>> from dateutil.rrule import *\n    >>> from dateutil.parser import *\n    >>> from datetime import *\n    >>> now = parse(\"Sat Oct 11 17:13:46 UTC 2003\")\n    >>> today = now.date()\n    >>> year = rrule(YEARLY,dtstart=now,bymonth=8,bymonthday=13,byweekday=FR)[0].year\n    >>> rdelta = relativedelta(easter(year), today)\n    >>> print(\"Today is: %s\" % today)\n    Today is: 2003-10-11\n    >>> print(\"Year with next Aug 13th on a Friday is: %s\" % year)\n    Year with next Aug 13th on a Friday is: 2004\n    >>> print(\"How far is the Easter of that year: %s\" % rdelta)\n    How far is the Easter of that year: relativedelta(months=+6)\n    >>> print(\"And the Easter of that year is: %s\" % (today+rdelta))\n    And the Easter of that year is: 2004-04-11\n\nBeing exactly 6 months ahead was **really** a coincidence :)\n\nContributing\n============\n\nWe welcome many types of contributions - bug reports, pull requests (code, infrastructure or documentation fixes). For more information about how to contribute to the project, see the ``CONTRIBUTING.md`` file in the repository.\n\n\nAuthor\n======\nThe dateutil module was written by Gustavo Niemeyer <gustavo@niemeyer.net>\nin 2003.\n\nIt is maintained by:\n\n* Gustavo Niemeyer <gustavo@niemeyer.net> 2003-2011\n* Tomi Pieviläinen <tomi.pievilainen@iki.fi> 2012-2014\n* Yaron de Leeuw <me@jarondl.net> 2014-2016\n* Paul Ganssle <paul@ganssle.io> 2015-\n\nStarting with version 2.4.1 and running until 2.8.2, all source and binary\ndistributions will be signed by a PGP key that has, at the very least, been\nsigned by the key which made the previous release. A table of release signing\nkeys can be found below:\n\n===========  ============================\nReleases     Signing key fingerprint\n===========  ============================\n2.4.1-2.8.2  `6B49 ACBA DCF6 BD1C A206 67AB CD54 FCE3 D964 BEFB`_\n===========  ============================\n\nNew releases *may* have signed tags, but binary and source distributions\nuploaded to PyPI will no longer have GPG signatures attached.\n\nContact\n=======\nOur mailing list is available at `dateutil@python.org <https://mail.python.org/mailman/listinfo/dateutil>`_. As it is hosted by the PSF, it is subject to the `PSF code of\nconduct <https://www.python.org/psf/conduct/>`_.\n\nLicense\n=======\n\nAll contributions after December 1, 2017 released under dual license - either `Apache 2.0 License <https://www.apache.org/licenses/LICENSE-2.0>`_ or the `BSD 3-Clause License <https://opensource.org/licenses/BSD-3-Clause>`_. Contributions before December 1, 2017 - except those those explicitly relicensed - are released only under the BSD 3-Clause License.\n\n\n.. _6B49 ACBA DCF6 BD1C A206 67AB CD54 FCE3 D964 BEFB:\n   https://pgp.mit.edu/pks/lookup?op=vindex&search=0xCD54FCE3D964BEFB\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+          "hashes": {
+            "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "six",
+        "version": "1.17.0",
+        "summary": "Python 2 and 3 compatibility utilities",
+        "home_page": "https://github.com/benjaminp/six",
+        "author": "Benjamin Peterson",
+        "author_email": "benjamin@python.org",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 3",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Topic :: Software Development :: Libraries",
+          "Topic :: Utilities"
+        ],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*",
+        "description": ".. image:: https://img.shields.io/pypi/v/six.svg\n   :target: https://pypi.org/project/six/\n   :alt: six on PyPI\n\n.. image:: https://readthedocs.org/projects/six/badge/?version=latest\n   :target: https://six.readthedocs.io/\n   :alt: six's documentation on Read the Docs\n\n.. image:: https://img.shields.io/badge/license-MIT-green.svg\n   :target: https://github.com/benjaminp/six/blob/master/LICENSE\n   :alt: MIT License badge\n\nSix is a Python 2 and 3 compatibility library.  It provides utility functions\nfor smoothing over the differences between the Python versions with the goal of\nwriting Python code that is compatible on both Python versions.  See the\ndocumentation for more information on what is provided.\n\nSix supports Python 2.7 and 3.3+.  It is contained in only one Python\nfile, so it can be easily copied into your project. (The copyright and license\nnotice must be retained.)\n\nOnline documentation is at https://six.readthedocs.io/.\n\nBugs can be reported to https://github.com/benjaminp/six.  The code can also\nbe found there.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/d7/4a/cac76c174bb439a0c46c9a4413fcbea5c6cabfb01879f7bbdb9fdfaed76c/pynvml-13.0.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=e2b20e0a501eeec951e2455b7ab444759cf048e0e13a57b08049fa2775266aa8",
+          "hashes": {
+            "sha256": "e2b20e0a501eeec951e2455b7ab444759cf048e0e13a57b08049fa2775266aa8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "pynvml",
+        "version": "13.0.1",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Python utilities for the NVIDIA Management Library",
+        "description_content_type": "text/markdown",
+        "author": "NVIDIA Corporation",
+        "license": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 7 - Inactive",
+          "Intended Audience :: Developers",
+          "Intended Audience :: System Administrators",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX :: Linux",
+          "Programming Language :: Python",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: System :: Hardware",
+          "Topic :: System :: Systems Administration",
+          "Programming Language :: Python :: 3"
+        ],
+        "requires_dist": [
+          "nvidia-ml-py>=12.0.0",
+          "pytest>=3.6; extra == \"test\"",
+          "pytest-runner; extra == \"test\"",
+          "pytest-cov; extra == \"test\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://github.com/gpuopenanalytics/pynvml",
+          "Source, https://github.com/gpuopenanalytics/pynvml"
+        ],
+        "provides_extra": [
+          "test"
+        ],
+        "description": "> [!WARNING]\n> \n> **This project has been deprecated.**\n>\n> **The `pynvml` module is NOT developed or maintained in this project!**\n> \n> This project provides unofficial NVML Python utilities (i.e. the `pynvml_utils` module).\n> The `pynvml_utils` module is intended for demonstration purposes only.\n> There is no guarantee for long-term maintenence or support.\n>\n> The `pynvml_utils` module depends on the official NVML bindings\n> published by NVIDIA under a different `nvidia-ml-py` project\n> (see: https://pypi.org/project/nvidia-ml-py/).\n>\n\n\nPython utilities for the NVIDIA Management Library\n===============================================================\n\nThis project provides unofficial Python utilities for the\nNVIDIA Management Library (NVML).\n\nFor information about the NVML library, see the NVML developer page\nhttp://developer.nvidia.com/nvidia-management-library-nvml\n\n\nRequires\n--------\n`nvidia-ml-py`.\n\n\nInstallation\n------------\n\n    pip install .\n\nUsage\n-----\n\nBindings for the high-level `nvidia-smi` API are available\nin `pynvml_utils.nvidia_smi`:\n\n> [!WARNING]\n> The `nvidia_smi` module is intended for demonstration purposes only.\n> There is no guarantee for long-term maintenence or support.\n\n```python\nfrom pynvml_utils import nvidia_smi\nnvsmi = nvidia_smi.getInstance()\nnvsmi.DeviceQuery('memory.free, memory.total')\n```\n\n```python\nfrom pynvml_utils import nvidia_smi\nnvsmi = nvidia_smi.getInstance()\nprint(nvsmi.DeviceQuery('--help-query-gpu'), end='\\n')\n```\n\nRelease Notes\n-------------\n\n-   Version 13.0.1\n    - Both pynvml and pynvml_utils are now deprecated.\n    - Pin to nvidia-ml-py>=12.0.0\n\n\nOld Releases\n------------\n\n-   Version 2.285.0\n    - Added new functions for NVML 2.285.  See NVML documentation for more information.\n    - Ported to support Python 3.0 and Python 2.0 syntax.\n    - Added nvidia_smi.py tool as a sample app.\n-   Version 3.295.0\n    - Added new functions for NVML 3.295.  See NVML documentation for more information.\n    - Updated nvidia_smi.py tool\n      - Includes additional error handling\n-   Version 4.304.0\n    - Added new functions for NVML 4.304.  See NVML documentation for more information.\n    - Updated nvidia_smi.py tool\n-   Version 4.304.3\n    - Fixing nvmlUnitGetDeviceCount bug\n-   Version 5.319.0\n    - Added new functions for NVML 5.319.  See NVML documentation for more information.\n-   Version 6.340.0\n    - Added new functions for NVML 6.340.  See NVML documentation for more information.\n-   Version 7.346.0\n    - Added new functions for NVML 7.346.  See NVML documentation for more information.\n-   Version 7.352.0\n    - Added new functions for NVML 7.352.  See NVML documentation for more information.\n-   Version 8.0.0\n    - Refactor code to a nvidia_smi singleton class\n    - Added DeviceQuery that returns a dictionary of (name, value).\n    - Added filter parameters on DeviceQuery to match query api in nvidia-smi\n    - Added filter parameters on XmlDeviceQuery to match query api in nvidia-smi\n    - Added integer enumeration for filter strings to reduce overhead for performance monitoring.\n    - Added loop(filter) method with async and callback support\n-   Version 8.0.1\n    - Restructuring directories into two packages (pynvml and nvidia_smi)\n    - Adding initial tests for both packages\n    - Some name-convention cleanup in pynvml\n-   Version 8.0.2\n    - Added NVLink function wrappers for pynvml module\n-   Version 8.0.3\n    - Added versioneer\n    - Fixed nvmlDeviceGetNvLinkUtilizationCounter bug\n-   Version 8.0.4\n    - Added nvmlDeviceGetTotalEnergyConsumption\n    - Added notes about NVML permissions\n    - Fixed version-check testing\n-   Version 11.0.0\n    - Updated nvml.py to CUDA 11\n    - Updated smi.py DeviceQuery to R460\n    - Aligned nvml.py with latest nvidia-ml-py deployment\n-   Version 11.4.0\n    - Updated nvml.py to CUDA 11.4\n    - Updated smi.py NVML_BRAND_NAMES\n    - Aligned nvml.py with latest nvidia-ml-py deployment (11.495.46)\n-   Version 11.4.1\n    - Fix comma bugs in nvml.py\n-   Version 11.5.0\n    - Updated nvml.py to support CUDA 11.5 and CUDA 12\n    - Aligned with latest nvidia-ml-py deployment (11.525.84)\n-   Version 11.5.2\n    - Relocated smi bindings to new pynvml_utils module\n    - Updated README to encourage migration to nvidia-ml-py\n-   Version 11.5.3\n    - Update versioneer\n-   Version 12.0.0\n    - Remove pynvml module and depend on nvidia-ml-py instead\n    - Pin to nvidia-ml-py>=12.0.0,<13.0.0a0\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,158 @@
+annotated-types >=0.6.0
+  # from parent package: pydantic (public)
+certifi >=2023.5.7
+  # from parent package: requests (public)
+cfgv >=2.0.0
+  # from parent package: pre-commit (public)
+charset-normalizer <4,>=2
+  # from parent package: requests (public)
+cuda-bindings <14,>=13.0.3
+  # from parent package: torch (public)
+cuda-pathfinder >=1.4.2
+  # from parent package: cuda-bindings (public)
+cuda-toolkit ==13.0.3
+  # from parent package: torch (public)
+distlib <1,>=0.3.7
+  # from parent package: virtualenv (public)
+filelock <4,>=3.24.2,>=3.15.4
+  # from parent package: transformers (public)
+  # from parent package: torch (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: virtualenv (public)
+  # from parent package: python-discovery (public)
+fsspec >=0.8.5,>=2023.5.0
+  # from parent package: torch (public)
+  # from parent package: huggingface-hub (public)
+hf-xet <2.0.0,>=1.1.3
+  # from parent package: huggingface-hub (public)
+huggingface-hub <1.0,>=0.34.0,<2.0,>=0.16.4
+  # from parent package: transformers (public)
+  # from parent package: tokenizers (public)
+identify >=1.0.0
+  # from parent package: pre-commit (public)
+idna <4,>=2.5
+  # from parent package: requests (public)
+jinja2
+  # from parent package: torch (public)
+markupsafe >=2.0
+  # from parent package: jinja2 (public)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (public)
+networkx >=2.5.1
+  # from parent package: torch (public)
+nodeenv >=0.11.1
+  # from parent package: pre-commit (public)
+numpy >=1.17,>=2
+  # from parent package: transformers (public)
+  # from parent package: opencv-python-headless (public)
+nvidia-cublas ==13.1.1.3.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cudnn-cu13 (public)
+  # from parent package: nvidia-cusolver (public)
+nvidia-cuda-cccl ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-crt ==13.0.88.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cuda-nvcc (public)
+nvidia-cuda-culibos ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-cupti ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-cuxxfilt ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-nvcc ==13.0.88.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-nvrtc ==13.0.88.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cublas (public)
+nvidia-cuda-opencl ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-profiler-api ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-runtime ==13.0.96.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cuda-nvcc (public)
+nvidia-cuda-sanitizer-api ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cudnn-cu13 ==9.20.0.48
+  # from parent package: torch (public)
+nvidia-cufft ==12.0.0.61.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cufile ==1.15.1.6.*
+  # from parent package: cuda-toolkit (public)
+nvidia-curand ==10.4.0.35.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cusolver ==12.0.4.66.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cusparse ==12.6.3.3.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cusolver (public)
+nvidia-cusparselt-cu13 ==0.8.1
+  # from parent package: torch (public)
+nvidia-nccl-cu13 ==2.29.7
+  # from parent package: torch (public)
+nvidia-npp ==13.0.1.2.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvfatbin ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvjitlink <14,>=13.0.88
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cufft (public)
+  # from parent package: nvidia-cusolver (public)
+  # from parent package: nvidia-cusparse (public)
+nvidia-nvjpeg ==13.0.1.86.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvml-dev ==13.0.87.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvptxcompiler ==13.0.88.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvshmem-cu13 ==3.4.5
+  # from parent package: torch (public)
+nvidia-nvtx ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvvm ==13.0.88.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cuda-nvcc (public)
+packaging >=20.0,>=20.9
+  # from parent package: transformers (public)
+  # from parent package: huggingface-hub (public)
+pydantic-core ==2.47.0
+  # from parent package: pydantic (public)
+python-discovery >=1.4.2
+  # from parent package: virtualenv (public)
+pyyaml >=5.1
+  # from parent package: transformers (public)
+  # from parent package: pre-commit (public)
+  # from parent package: huggingface-hub (public)
+regex !=2019.12.17
+  # from parent package: transformers (public)
+requests
+  # from parent package: transformers (public)
+  # from parent package: huggingface-hub (public)
+safetensors >=0.4.3
+  # from parent package: transformers (public)
+setuptools >=77.0.3
+  # from parent package: torch (public)
+sympy >=1.13.3
+  # from parent package: torch (public)
+tokenizers <=0.23.0,>=0.22.0
+  # from parent package: transformers (public)
+tqdm >=4.27,>=4.42.1
+  # from parent package: transformers (public)
+  # from parent package: huggingface-hub (public)
+triton ==3.7.1
+  # from parent package: torch (public)
+typing-extensions >=4.10.0,>=4.15.0,>=3.7.4.3,>=4.14.1,>=4.12.0,>=4.13.2
+  # from parent package: torch (public)
+  # from parent package: pydantic (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: pydantic-core (public)
+  # from parent package: typing-inspection (public)
+  # from parent package: virtualenv (public)
+typing-inspection >=0.4.2,>=0.4.0
+  # from parent package: pydantic (public)
+  # from parent package: pydantic-settings (public)
+urllib3 <3,>=1.26
+  # from parent package: requests (public)
+virtualenv >=20.10.0
+  # from parent package: pre-commit (public)

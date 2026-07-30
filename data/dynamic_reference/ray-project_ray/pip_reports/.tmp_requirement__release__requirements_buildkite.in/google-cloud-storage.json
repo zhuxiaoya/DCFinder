@@ -1,0 +1,126 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/80/6e/ca176e95bafac0fe7befeee7e0420e686de147571cd2908e308c5fe71bda/google_cloud_storage-3.12.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=9297ae0c2ce3f5400b1f2bb3a3e6d2cd256614366e03cd30600871df8e903afb",
+          "hashes": {
+            "sha256": "9297ae0c2ce3f5400b1f2bb3a3e6d2cd256614366e03cd30600871df8e903afb"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "google-cloud-storage",
+        "version": "3.12.1",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "license",
+          "license-file",
+          "platform",
+          "provides-extra",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "platform": [
+          "Posix; MacOS X; Windows"
+        ],
+        "summary": "Google Cloud Storage API client library",
+        "home_page": "https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-storage",
+        "author": "Google LLC",
+        "author_email": "googleapis-packages@google.com",
+        "license": "Apache-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Operating System :: OS Independent",
+          "Topic :: Internet"
+        ],
+        "requires_dist": [
+          "google-auth<3.0.0,>=2.26.1",
+          "google-api-core<3.0.0,>=2.27.0",
+          "google-cloud-core<3.0.0,>=2.4.2",
+          "google-resumable-media<3.0.0,>=2.7.2",
+          "requests<3.0.0,>=2.22.0",
+          "google-crc32c<2.0.0,>=1.6.0",
+          "google-api-core[grpc]<3.0.0,>=2.27.0; extra == \"grpc\"",
+          "grpcio<2.0.0,>=1.59.0; python_version < \"3.14\" and extra == \"grpc\"",
+          "grpcio<2.0.0,>=1.75.1; python_version >= \"3.14\" and extra == \"grpc\"",
+          "grpcio-status<2.0.0,>=1.59.0; python_version < \"3.14\" and extra == \"grpc\"",
+          "grpcio-status<2.0.0,>=1.75.1; python_version >= \"3.14\" and extra == \"grpc\"",
+          "proto-plus<2.0.0,>=1.22.3; python_version < \"3.13\" and extra == \"grpc\"",
+          "proto-plus<2.0.0,>=1.25.0; python_version >= \"3.13\" and extra == \"grpc\"",
+          "protobuf<8.0.0,>=4.25.8; extra == \"grpc\"",
+          "grpc-google-iam-v1<1.0.0,>=0.14.0; extra == \"grpc\"",
+          "protobuf<7.0.0,>=3.20.2; extra == \"protobuf\"",
+          "opentelemetry-api<2.0.0,>=1.1.0; extra == \"tracing\"",
+          "google-cloud-testutils; extra == \"testing\"",
+          "numpy; extra == \"testing\"",
+          "psutil; extra == \"testing\"",
+          "py-cpuinfo; extra == \"testing\"",
+          "pytest-benchmark; extra == \"testing\"",
+          "PyYAML; extra == \"testing\"",
+          "mock; extra == \"testing\"",
+          "pytest; extra == \"testing\"",
+          "pytest-cov; extra == \"testing\"",
+          "pytest-asyncio; extra == \"testing\"",
+          "pytest-rerunfailures; extra == \"testing\"",
+          "pytest-xdist; extra == \"testing\"",
+          "google-cloud-testutils; extra == \"testing\"",
+          "google-cloud-iam; extra == \"testing\"",
+          "google-cloud-pubsub; extra == \"testing\"",
+          "google-cloud-kms; extra == \"testing\"",
+          "brotli; extra == \"testing\"",
+          "coverage; extra == \"testing\"",
+          "pyopenssl; extra == \"testing\"",
+          "opentelemetry-sdk; extra == \"testing\"",
+          "flake8; extra == \"testing\"",
+          "black; extra == \"testing\""
+        ],
+        "requires_python": ">=3.10",
+        "provides_extra": [
+          "grpc",
+          "protobuf",
+          "tracing",
+          "testing"
+        ],
+        "description": "Python Client for Cloud Storage\n===============================\n\n|stable| |pypi| |versions|\n\n`Google Cloud Storage`_ is a managed service for storing unstructured data. Cloud Storage\nallows world-wide storage and retrieval of any amount of data at any time. You can use\nCloud Storage for a range of scenarios including serving website content, storing data\nfor archival and disaster recovery, or distributing large data objects to users via direct download.\n\n**NOTE**: `3.0 Major Version Notes`_ are available. Feedback welcome.\n\nA comprehensive list of changes in each version may be found in the `CHANGELOG`_.\n\n- `Product Documentation`_\n- `Client Library Documentation`_\n- `github.com/googleapis/google-cloud-python`_\n\nCertain control plane and long-running operations for Cloud Storage (including Folder\nand Managed Folder operations) are supported via the `Storage Control Client`_.\nThe `Storage Control API`_ creates one space to perform metadata-specific, control plane,\nand long-running operations apart from the Storage API.\n\nRead more about the client libraries for Cloud APIs, including the older\nGoogle APIs Client Libraries, in `Client Libraries Explained`_.\n\n.. |stable| image:: https://img.shields.io/badge/support-stable-gold.svg\n   :target: https://github.com/googleapis/google-cloud-python/blob/main/README.rst#stability-levels\n.. |pypi| image:: https://img.shields.io/pypi/v/google-cloud-storage.svg\n   :target: https://pypi.org/project/google-cloud-storage/\n.. |versions| image:: https://img.shields.io/pypi/pyversions/google-cloud-storage.svg\n   :target: https://pypi.org/project/google-cloud-storage/\n.. _Google Cloud Storage: https://cloud.google.com/storage\n.. _Client Library Documentation: https://cloud.google.com/python/docs/reference/storage/latest/summary_overview\n.. _Product Documentation:  https://cloud.google.com/storage\n.. _CHANGELOG:  https://github.com/googleapis/google-cloud-python/blob/main/CHANGELOG.md\n.. _github.com/googleapis/google-cloud-python: https://github.com/googleapis/google-cloud-python\n.. _Storage Control Client: https://cloud.google.com/python/docs/reference/google-cloud-storage-control/latest\n.. _Storage Control API: https://cloud.google.com/storage/docs/reference/rpc/google.storage.control.v2\n.. _Client Libraries Explained: https://cloud.google.com/apis/docs/client-libraries-explained\n\n\nQuick Start\n-----------\n\nIn order to use this library, you first need to go through the following steps.\nA step-by-step guide may also be found in `Get Started with Client Libraries`_.\n\n1. `Select or create a Cloud Platform project.`_\n2. `Enable billing for your project.`_\n3. `Enable the Google Cloud Storage API.`_\n4. `Setup Authentication.`_\n\n.. _Get Started with Client Libraries: https://cloud.google.com/storage/docs/reference/libraries#client-libraries-install-python\n.. _Select or create a Cloud Platform project.: https://console.cloud.google.com/project\n.. _Enable billing for your project.: https://cloud.google.com/billing/docs/how-to/modify-project#enable_billing_for_a_project\n.. _Enable the Google Cloud Storage API.:  https://console.cloud.google.com/flows/enableapi?apiid=storage-api.googleapis.com\n.. _Setup Authentication.: https://cloud.google.com/docs/authentication/client-libraries\n\nInstallation\n~~~~~~~~~~~~\n\nInstall this library in a virtual environment using `venv`_. `venv`_ is a tool that\ncreates isolated Python environments. These isolated environments can have separate\nversions of Python packages, which allows you to isolate one project's dependencies\nfrom the dependencies of other projects.\n\nWith `venv`_, it's possible to install this library without needing system\ninstall permissions, and without clashing with the installed system\ndependencies.\n\n.. _`venv`: https://docs.python.org/3/library/venv.html\n\n\nCode samples and snippets\n~~~~~~~~~~~~~~~~~~~~~~~~~\n\nCode samples and snippets live in the `samples/`_ folder.\n\n.. _`samples/`: https://github.com/googleapis/google-cloud-python/tree/main/samples\n\n\nSupported Python Versions\n^^^^^^^^^^^^^^^^^^^^^^^^^\nOur client libraries are compatible with all current `active`_ and `maintenance`_ versions of\nPython.\n\nPython >= 3.7\n\n.. _active: https://devguide.python.org/devcycle/#in-development-main-branch\n.. _maintenance: https://devguide.python.org/devcycle/#maintenance-branches\n\nUnsupported Python Versions\n^^^^^^^^^^^^^^^^^^^^^^^^^^^\nPython <= 3.6\n\nIf you are using an `end-of-life`_\nversion of Python, we recommend that you update as soon as possible to an actively supported version.\n\n.. _end-of-life: https://devguide.python.org/devcycle/#end-of-life-branches\n\nMac/Linux\n^^^^^^^^^\n\n.. code-block:: console\n\n    python3 -m venv <your-env>\n    source <your-env>/bin/activate\n    pip install google-cloud-storage\n\n\nWindows\n^^^^^^^\n\n.. code-block:: console\n\n    py -m venv <your-env>\n    .\\<your-env>\\Scripts\\activate\n    pip install google-cloud-storage\n\n\nExample Usage\n~~~~~~~~~~~~~\n\n.. code-block:: python\n\n    # Imports the Google Cloud client library\n    from google.cloud import storage\n\n    # Instantiates a client\n    storage_client = storage.Client()\n\n    # The name for the new bucket\n    bucket_name = \"my-new-bucket\"\n\n    # Creates the new bucket\n    bucket = storage_client.create_bucket(bucket_name)\n\n    print(f\"Bucket {bucket.name} created.\")\n\n\nTracing With OpenTelemetry\n~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nThis is a PREVIEW FEATURE: Coverage and functionality are still in development and subject to change.\n\nThis library can be configured to use `OpenTelemetry`_ to generate traces on calls to Google Cloud Storage.\nFor information on the benefits and utility of tracing, read the `Cloud Trace Overview <https://cloud.google.com/trace/docs/overview>`_.\n\nTo enable OpenTelemetry tracing in the Cloud Storage client, first install OpenTelemetry:\n\n.. code-block:: console\n\n    pip install google-cloud-storage[tracing]\n\nSet the ``ENABLE_GCS_PYTHON_CLIENT_OTEL_TRACES`` environment variable to selectively opt-in tracing for the Cloud Storage client:\n\n.. code-block:: console\n\n    export ENABLE_GCS_PYTHON_CLIENT_OTEL_TRACES=True\n\nYou will also need to tell OpenTelemetry which exporter to use. An example to export traces to Google Cloud Trace can be found below.\n\n.. code-block:: console\n\n    # Install the Google Cloud Trace exporter and propagator, however you can use any exporter of your choice.\n    pip install opentelemetry-exporter-gcp-trace opentelemetry-propagator-gcp\n\n    # [Optional] Install the OpenTelemetry Requests Instrumentation to trace the underlying HTTP requests.\n    pip install opentelemetry-instrumentation-requests\n\n.. code-block:: python\n\n    from opentelemetry import trace\n    from opentelemetry.sdk.trace import TracerProvider\n    from opentelemetry.sdk.trace.export import BatchSpanProcessor\n    from opentelemetry.exporter.cloud_trace import CloudTraceSpanExporter\n\n    tracer_provider = TracerProvider()\n    tracer_provider.add_span_processor(BatchSpanProcessor(CloudTraceSpanExporter()))\n    trace.set_tracer_provider(tracer_provider)\n\n    # Optional yet recommended to instrument the requests HTTP library\n    from opentelemetry.instrumentation.requests import RequestsInstrumentor\n    RequestsInstrumentor().instrument(tracer_provider=tracer_provider)\n\nIn this example, tracing data will be published to the `Google Cloud Trace`_ console.\nTracing is most effective when many libraries are instrumented to provide insight over the entire lifespan of a request.\nFor a list of libraries that can be instrumented, refer to the `OpenTelemetry Registry`_.\n\n.. _OpenTelemetry: https://opentelemetry.io\n.. _OpenTelemetry Registry: https://opentelemetry.io/ecosystem/registry\n.. _Google Cloud Trace: https://cloud.google.com/trace\n\n\n3.0 Major Version Notes\n-----------------------\n\nFeedback Welcome\n~~~~~~~~~~~~~~~~\n\nIf you experience that backwards compatibility for your application is broken\nwith this major version release, please let us know through the Github issues\nsystem. While some breaks of backwards compatibility may be unavoidable due to\nnew features in the major version release, we will do our best to minimize\nthem. Thank you.\n\nException Handling\n~~~~~~~~~~~~~~~~~~\n\nIn Python Storage 3.0, the dependency ``google-resumable-media`` was integrated.\nThe ``google-resumable-media`` dependency included exceptions\n``google.resumable_media.common.InvalidResponse`` and\n``google.resumable_media.common.DataCorruption``, which were often imported\ndirectly in user application code. The replacements for these exceptions are\n``google.cloud.storage.exceptions.InvalidResponse`` and\n``google.cloud.storage.exceptions.DataCorruption``. Please update application code\nto import and use these exceptions instead.\n\nFor backwards compatibility, if ``google-resumable-media`` is installed, the new\nexceptions will be defined as subclasses of the old exceptions, so applications\nshould continue to work without modification. This backwards compatibility\nfeature may be removed in a future major version update.\n\nSome users may be using the original exception classes from the\n``google-resumable-media`` library without explicitly installing that library. So\nas not to break user applications following this pattern,\n``google-resumable-media`` is still in the list of dependencies in this package's\nsetup.py file. Applications which do not import directly from\n``google-resumable-media`` can safely disregard this dependency.\nThis backwards compatibility feature **will be removed** in a future major\nversion update. Please migrate to using the ``google.cloud.storage.exceptions``\nclasses as above.\n\nChecksum Defaults\n~~~~~~~~~~~~~~~~~\n\nIn Python Storage 3.0, uploads and downloads now have a default of \"auto\" where\napplicable. \"Auto\" will use crc32c checksums, except for unusual cases where the\nfast (C extension) crc32c implementation is not available, in which case it will\nuse md5 instead. Before Python Storage 3.0, the default was md5 for most\ndownloads and None for most uploads. Note that ranged downloads (\"start\" or\n\"end\" set) still do not support any checksumming, and some features in\n``transfer_manager.py`` still support crc32c only.\n\nNote: The method ``Blob.upload_from_file()`` requires a file in bytes mode, but\nwhen checksum is set to None, as was the previous default, would not throw an\nerror if passed a file in string mode under some circumstances. With the new\ndefaults, it will now raise a TypeError. Please use a file opened in bytes\nreading mode as required.\n\nMiscellaneous\n~~~~~~~~~~~~~\n\n- The ``BlobWriter`` class now attempts to terminate an ongoing resumable upload if\n  the writer exits with an exception.\n- Retry behavior is now identical between media operations (uploads and\n  downloads) and other operations, and custom predicates are now supported for\n  media operations as well.\n- ``Blob.download_as_filename()`` will now delete the empty file if it results in a\n  google.cloud.exceptions.NotFound exception (HTTP 404).\n- Previously, object upload, metadata update, and delete methods had retries\n  disabled by default unless the generation or metageneration was specified in\n  the request. This has now changed so that retries are enabled by default.\n\n\nNext Steps\n~~~~~~~~~~\n\n-  Read the `Google Cloud Storage Product documentation`_ to learn\n   more about the product and see How-to Guides.\n-  Read the `Client Library Documentation`_ for Google Cloud Storage API\n   to see other available methods on the client.\n-  View this `README`_ to see the full list of Cloud\n   APIs that we cover.\n\n.. _Google Cloud Storage Product documentation:  https://cloud.google.com/storage\n.. _README: https://github.com/googleapis/google-cloud-python/blob/main/README.rst\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

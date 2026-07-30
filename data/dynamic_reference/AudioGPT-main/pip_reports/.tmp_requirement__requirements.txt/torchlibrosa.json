@@ -1,0 +1,57 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/3e/af/ccf007edf442c3c0cd3a98be2c82bc99edc957c04436a759b6e1e01077e0/torchlibrosa-0.1.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=89b65fd28b833ceb6bc74a3d0d87e2924ddc5a845d0a246b194952a4e12a38cb",
+          "hashes": {
+            "sha256": "89b65fd28b833ceb6bc74a3d0d87e2924ddc5a845d0a246b194952a4e12a38cb"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "torchlibrosa",
+        "version": "0.1.0",
+        "summary": "PyTorch implemention of part of librosa functions.",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/qiuqiangkong/torchlibrosa",
+        "author": "Qiuqiang Kong",
+        "author_email": "qiuqiangkong@gmail.com",
+        "license_file": [
+          "LICENSE.md"
+        ],
+        "classifier": [
+          "Programming Language :: Python :: 3",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent"
+        ],
+        "requires_dist": [
+          "numpy",
+          "librosa (>=0.8.0)"
+        ],
+        "requires_python": ">=3.6",
+        "description": "# TorchLibrosa: PyTorch implementation of Librosa\n\nThis codebase provides PyTorch implementation of some librosa functions. If users previously used for training cpu-extracted features from librosa, but want to add GPU acceleration during training and evaluation, TorchLibrosa will provide almost identical features to standard torchlibrosa functions (numerical difference less than 1e-5).\n\n## Install\n```bash\n$ pip install torchlibrosa\n```\n\n## Examples 1\n\nExtract Log mel spectrogram with TorchLibrosa.\n\n```python\nimport torch\nimport torchlibrosa as tl\n\nbatch_size = 16\nsample_rate = 22050\nwin_length = 2048\nhop_length = 512\nn_mels = 128\n\nbatch_audio = torch.empty(batch_size, sample_rate).uniform_(-1, 1)  # (batch_size, sample_rate)\n\n# TorchLibrosa feature extractor the same as librosa.feature.melspectrogram()\nfeature_extractor = torch.nn.Sequential(\n    tl.Spectrogram(\n        hop_length=hop_length,\n        win_length=win_length,\n    ), tl.LogmelFilterBank(\n        sr=sample_rate,\n        n_mels=n_mels,\n        is_log=False, # Default is true\n    ))\nbatch_feature = feature_extractor(batch_audio) # (batch_size, 1, time_steps, mel_bins)\n```\n\n## Examples 2\n\nExtracting spectrogram, then log mel spectrogram, STFT and ISTFT with TorchLibrosa.\n\n```python\nimport torch\nimport torchlibrosa as tl\n\nbatch_size = 16\nsample_rate = 22050\nwin_length = 2048\nhop_length = 512\nn_mels = 128\n\nbatch_audio = torch.empty(batch_size, sample_rate).uniform_(-1, 1)  # (batch_size, sample_rate)\n\n# Spectrogram\nspectrogram_extractor = tl.Spectrogram(n_fft=win_length, hop_length=hop_length)\nsp = spectrogram_extractor.forward(batch_audio)   # (batch_size, 1, time_steps, freq_bins)\n\n# Log mel spectrogram\nlogmel_extractor = tl.LogmelFilterBank(sr=sample_rate, n_fft=win_length, n_mels=n_mels)\nlogmel = logmel_extractor.forward(sp)   # (batch_size, 1, time_steps, mel_bins)\n\n# STFT\nstft_extractor = tl.STFT(n_fft=win_length, hop_length=hop_length)\n(real, imag) = stft_extractor.forward(batch_audio)\n# real: (batch_size, 1, time_steps, freq_bins), imag: (batch_size, 1, time_steps, freq_bins) #\n\n# ISTFT\nistft_extractor = tl.ISTFT(n_fft=win_length, hop_length=hop_length)\ny = istft_extractor.forward(real, imag, length=batch_audio.shape[-1])    # (batch_size, samples_num)\n```\n\n## Example 3\n\nCheck the compability of TorchLibrosa to Librosa. The numerical difference should be less than 1e-5.\n\n```python\npython3 torchlibrosa/stft.py --device='cuda'    # --device='cpu' | 'cuda'\n```\n\n## Contact\nQiuqiang Kong, qiuqiangkong@gmail.com\n\n## Cite\n[1] Qiuqiang Kong, Yin Cao, Turab Iqbal, Yuxuan Wang, Wenwu Wang, and Mark D. Plumbley. \"PANNs: Large-scale pretrained audio neural networks for audio pattern recognition.\" IEEE/ACM Transactions on Audio, Speech, and Language Processing 28 (2020): 2880-2894.\n\n## External links\nOther related repos include:\n\ntorchaudio: https://github.com/pytorch/audio\n\nAsteroid-filterbanks: https://github.com/asteroid-team/asteroid-filterbanks\n\nKapre: https://github.com/keunwoochoi/kapre\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

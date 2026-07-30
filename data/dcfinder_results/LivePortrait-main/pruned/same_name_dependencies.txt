@@ -1,0 +1,27 @@
+{
+    "direct dependency with same name": {
+        "number": 2,
+        "packages": {
+            "numpy": {
+                "private version": "1.26.4",
+                "public version": "1.26.4",
+                "highest public (unconstrained)": "2.5.1",
+                "declared specifier": "==1.26.4",
+                "constraint source": "direct",
+                "satisfying public versions count": 1
+            },
+            "pillow": {
+                "private version": "10.4.0",
+                "public version": "12.3.0",
+                "highest public (unconstrained)": "12.3.0",
+                "declared specifier": ">=10.2.0",
+                "constraint source": "direct",
+                "satisfying public versions count": 12
+            }
+        }
+    },
+    "indirect dependency with same name": {
+        "number": 0,
+        "packages": {}
+    }
+}

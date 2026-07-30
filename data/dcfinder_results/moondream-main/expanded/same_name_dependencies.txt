@@ -1,0 +1,86 @@
+{
+    "direct dependency with same name": {
+        "number": 2,
+        "packages": {
+            "pillow": {
+                "private version": "10.4.0",
+                "public version": "10.4.0",
+                "highest public (unconstrained)": "12.3.0",
+                "declared specifier": "==10.4.0",
+                "constraint source": "direct",
+                "satisfying public versions count": 1
+            },
+            "tqdm": {
+                "private version": "4.66.5",
+                "public version": "4.68.4",
+                "highest public (unconstrained)": "4.68.4",
+                "declared specifier": ">=4.66.0,>=4.65.0",
+                "constraint source": "direct",
+                "satisfying public versions count": 16
+            }
+        }
+    },
+    "indirect dependency with same name": {
+        "number": 8,
+        "packages": {
+            "certifi": {
+                "private version": "2022.12.7",
+                "public version": "2026.6.17",
+                "highest public (unconstrained)": "2026.6.17"
+            },
+            "filelock": {
+                "private version": "3.29.0",
+                "public version": "3.29.7",
+                "highest public (unconstrained)": "3.29.7"
+            },
+            "fsspec": {
+                "private version": "2024.9.0",
+                "public version": "2024.9.0",
+                "highest public (unconstrained)": "2026.6.0",
+                "declared specifier": ">=2023.5.0,<=2024.9.0,>=2023.1.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 16
+            },
+            "idna": {
+                "private version": "3.4",
+                "public version": "3.18",
+                "highest public (unconstrained)": "3.18",
+                "declared specifier": ">=2.0,>=2.8",
+                "constraint source": "indirect",
+                "satisfying public versions count": 22
+            },
+            "jinja2": {
+                "private version": "3.1.6",
+                "public version": "3.1.6",
+                "highest public (unconstrained)": "3.1.6",
+                "declared specifier": "<4.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 52
+            },
+            "markupsafe": {
+                "private version": "2.1.5",
+                "public version": "2.1.5",
+                "highest public (unconstrained)": "3.0.3",
+                "declared specifier": "~=2.0,>=2.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 8
+            },
+            "packaging": {
+                "private version": "24.1",
+                "public version": "26.2",
+                "highest public (unconstrained)": "26.2",
+                "declared specifier": ">=20.0,>=20.9,>=20.0,>=20.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 19
+            },
+            "typing-extensions": {
+                "private version": "4.15.0",
+                "public version": "4.16.0",
+                "highest public (unconstrained)": "4.16.0",
+                "declared specifier": ">=3.7.4.3,~=4.0,<5,>=4,>=4.12.0,>=4.8.0,~=4.0,>=4.15.0,>=4.0,>=4.4,>=4.10.0,>=4.12.0,>=4.14.1,>=4.2,>=4.1.0,>=4.4.0,>=4.5,>=4.6.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 4
+            }
+        }
+    }
+}

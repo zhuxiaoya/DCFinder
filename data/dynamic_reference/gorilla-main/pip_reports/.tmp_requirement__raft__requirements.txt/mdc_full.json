@@ -1,0 +1,202 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/63/67/e853e9d5617b46ece35f3789561a2b4ddbe5941e6d840b456e600ff72b45/mdc-1.2.1.tar.gz",
+        "archive_info": {
+          "hash": "sha256=deb9df228fc89ed185f3df4c00ca2aeb76a28ad5a6bb7b98bab413de0f44779e",
+          "hashes": {
+            "sha256": "deb9df228fc89ed185f3df4c00ca2aeb76a28ad5a6bb7b98bab413de0f44779e"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "mdc",
+        "version": "1.2.1",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Mapped Diagnostic Context (MDC) library for python",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "logging",
+          "mdc",
+          "context"
+        ],
+        "home_page": "https://github.com/afriemann/mdc",
+        "author": "Aljosha Friemann",
+        "author_email": "a.friemann@automate.wtf",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Topic :: System :: Logging",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 3"
+        ],
+        "requires_dist": [
+          "future",
+          "python-json-logger"
+        ],
+        "description": "MDC\n===\n\n.. image:: https://travis-ci.org/AFriemann/mdc.svg?branch=master\n    :target: https://travis-ci.org/AFriemann/mdc\n\nThis is thought to be an easy to use, import and go, library for Mapped Diagnostic Context style logging.\n\nLogs should include all necessary fields collected by the python logging library.\nHelper methods are provided to add context fields where required.\n\n**NOTE** `1.2.0`: recent changes will result in changed json output if using the `MDCHandler` class:\n\n.. code:: python\n\n  >>> with MDC(foobar=\"baz\"):\n  ...   logging.warning(\"test\") \n  { \"message\": \"test\", \"foobar\": \"baz\" }\n\n\nthis is a temporary solution to avoid breaking existing APIs. Please excuse any issues this might cause. In the future output handling should be done on the client side to avoid any possible breakage. The MDCHandler class will eventually be removed.\n\nInstallation\n------------\n\nPyPi:\n\n.. code:: bash\n\n  $ pip install --user mdc\n\nFrom source:\n\n.. code:: bash\n\n  $ pip install --user .\n\nUsage\n-----\n\nAdd a handler to the root logger or set the base handler with *logging.basicConfig*:\n\n.. code:: python\n\n  >>> import logging\n  >>> from mdc import MDCHandler\n\n  >>> # use the MDCHandler only\n  >>> logging.basicConfig(level=logging.DEBUG, handlers=[MDCHandler()])\n\n  >>> # the MDC contextmanager\n  >>> with MDC(foo='bar'):\n  ...     logging.warning('foobar')\n  { ..., \"mdc\": { \"foo\": \"bar\" }, \"extra\": {}, ... }\n\n  >>> # the with_mdc decorator\n  >>> @with_mdc(test='123')\n  ... def foobar(ctx):\n  ...   logging.warning('some warning')\n\n  >>> foobar()\n  { ..., \"mdc\": { \"test\": \"123\" }, \"extra\": {}, ... }\n\n  >>> # logging with extra fields\n  >>> logging.error('some error', extra=dict(foo='bar'))\n  { ..., \"mdc\": {}, \"extra\": { \"foo\": \"bar\" }, ... }\n\nBy default log messages will include the following fields:\n\n.. code:: json\n\n  {\n    \"message\": \"deleting context b8321b4f-19ff-4c98-b011-5a97178e7ad6\",\n    \"logger\": \"mdc\",\n    \"timestamp\": \"2018-03-07T21:39:12.010851\",\n    \"level\": \"DEBUG\",\n    \"mdc\": {\n      \"foo\": \"bar\",\n      \"index\": 76\n    },\n    \"extra\": {},\n    \"python\": {\n      \"module\": \"__init__\",\n      \"function\": \"MDC\",\n      \"path\": \"/home/user/git/mdc/mdc/__init__.py\",\n      \"file\": \"__init__.py\",\n      \"line\": 56,\n      \"process\": {\n        \"name\": \"MainProcess\",\n        \"id\": 31678\n      },\n      \"thread\": {\n        \"name\": \"MainThread\",\n        \"id\": 140433289192768\n      }\n    }\n  }\n\nRunning tests:\n\n.. code:: bash\n\n  $ tox\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/da/71/ae30dadffc90b9006d77af76b393cb9dfbfc9629f339fc1574a1c52e6806/future-1.0.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=929292d34f5872e70396626ef385ec22355a1fae8ad29e1a734c3e43f9fbc216",
+          "hashes": {
+            "sha256": "929292d34f5872e70396626ef385ec22355a1fae8ad29e1a734c3e43f9fbc216"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "future",
+        "version": "1.0.0",
+        "summary": "Clean single-source support for Python 3 and 2",
+        "keywords": [
+          "future",
+          "past",
+          "python3",
+          "migration",
+          "futurize",
+          "backport",
+          "six",
+          "2to3",
+          "modernize",
+          "pasteurize",
+          "3to2"
+        ],
+        "home_page": "https://python-future.org",
+        "author": "Ed Schofield",
+        "author_email": "ed@pythoncharmers.com",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.6",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "License :: OSI Approved",
+          "License :: OSI Approved :: MIT License",
+          "Development Status :: 6 - Mature",
+          "Intended Audience :: Developers"
+        ],
+        "requires_python": ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*",
+        "project_url": [
+          "Source, https://github.com/PythonCharmers/python-future"
+        ],
+        "description": "\nfuture: Easy, safe support for Python 2/3 compatibility\n=======================================================\n\n``future`` is the missing compatibility layer between Python 2 and Python\n3. It allows you to use a single, clean Python 3.x-compatible codebase to\nsupport both Python 2 and Python 3 with minimal overhead.\n\nIt is designed to be used as follows::\n\n    from __future__ import (absolute_import, division,\n                            print_function, unicode_literals)\n    from builtins import (\n             bytes, dict, int, list, object, range, str,\n             ascii, chr, hex, input, next, oct, open,\n             pow, round, super,\n             filter, map, zip)\n\nfollowed by predominantly standard, idiomatic Python 3 code that then runs\nsimilarly on Python 2.6/2.7 and Python 3.3+.\n\nThe imports have no effect on Python 3. On Python 2, they shadow the\ncorresponding builtins, which normally have different semantics on Python 3\nversus 2, to provide their Python 3 semantics.\n\n\nStandard library reorganization\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n``future`` supports the standard library reorganization (PEP 3108) through the\nfollowing Py3 interfaces:\n\n    >>> # Top-level packages with Py3 names provided on Py2:\n    >>> import html.parser\n    >>> import queue\n    >>> import tkinter.dialog\n    >>> import xmlrpc.client\n    >>> # etc.\n\n    >>> # Aliases provided for extensions to existing Py2 module names:\n    >>> from future.standard_library import install_aliases\n    >>> install_aliases()\n\n    >>> from collections import Counter, OrderedDict   # backported to Py2.6\n    >>> from collections import UserDict, UserList, UserString\n    >>> import urllib.request\n    >>> from itertools import filterfalse, zip_longest\n    >>> from subprocess import getoutput, getstatusoutput\n\n\nAutomatic conversion\n--------------------\n\nAn included script called `futurize\n<https://python-future.org/automatic_conversion.html>`_ aids in converting\ncode (from either Python 2 or Python 3) to code compatible with both\nplatforms. It is similar to ``python-modernize`` but goes further in\nproviding Python 3 compatibility through the use of the backported types\nand builtin functions in ``future``.\n\n\nDocumentation\n-------------\n\nSee: https://python-future.org\n\n\nCredits\n-------\n\n:Author:  Ed Schofield, Jordan M. Adler, et al\n:Sponsor: Python Charmers: https://pythoncharmers.com\n:Others:  See docs/credits.rst or https://python-future.org/credits.html\n\n\nLicensing\n---------\nCopyright 2013-2024 Python Charmers, Australia.\nThe software is distributed under an MIT licence. See LICENSE.txt.\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/27/be/0631a861af4d1c875f096c07d34e9a63639560a717130e7a87cbc82b7e3f/python_json_logger-4.1.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=132994765cf75bf44554be9aa49b06ef2345d23661a96720262716438141b6b2",
+          "hashes": {
+            "sha256": "132994765cf75bf44554be9aa49b06ef2345d23661a96720262716438141b6b2"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "python-json-logger",
+        "version": "4.1.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "JSON Log Formatter for the Python Logging Package",
+        "description_content_type": "text/markdown",
+        "author_email": "Zakaria Zajac <zak@madzak.com>, Nicholas Hairs <info+python-json-logger@nicholashairs.com>",
+        "maintainer_email": "Nicholas Hairs <info+python-json-logger@nicholashairs.com>",
+        "license_expression": "BSD-2-Clause",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 6 - Mature",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Topic :: System :: Logging",
+          "Typing :: Typed"
+        ],
+        "requires_dist": [
+          "orjson; implementation_name != \"pypy\" and extra == \"dev\"",
+          "msgspec; implementation_name != \"pypy\" and extra == \"dev\"",
+          "validate-pyproject[all]; extra == \"dev\"",
+          "black; extra == \"dev\"",
+          "pylint; extra == \"dev\"",
+          "mypy; extra == \"dev\"",
+          "pytest; extra == \"dev\"",
+          "freezegun; extra == \"dev\"",
+          "tzdata; extra == \"dev\"",
+          "build; extra == \"dev\"",
+          "mkdocs; extra == \"dev\"",
+          "mkdocs-material>=8.5; extra == \"dev\"",
+          "mkdocs-awesome-pages-plugin; extra == \"dev\"",
+          "mdx_truly_sane_lists; extra == \"dev\"",
+          "mkdocstrings[python]; extra == \"dev\"",
+          "mkdocs-gen-files; extra == \"dev\"",
+          "mkdocs-literate-nav; extra == \"dev\"",
+          "mike; extra == \"dev\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://nhairs.github.io/python-json-logger",
+          "GitHub, https://github.com/nhairs/python-json-logger"
+        ],
+        "provides_extra": [
+          "dev"
+        ],
+        "description": "[![PyPi](https://img.shields.io/pypi/v/python-json-logger.svg)](https://pypi.python.org/pypi/python-json-logger/)\n[![PyPI - Status](https://img.shields.io/pypi/status/python-json-logger)](https://pypi.python.org/pypi/python-json-logger/)\n[![PyPI - Downloads](https://img.shields.io/pypi/dm/python-json-logger)](https://pypi.python.org/pypi/python-json-logger/)\n[![Python Versions](https://img.shields.io/pypi/pyversions/python-json-logger.svg)](https://github.com/nhairs/python-json-logger)\n[![License](https://img.shields.io/github/license/nhairs/python-json-logger.svg)](https://github.com/nhairs/python-json-logger)\n![Build Status](https://github.com/nhairs/python-json-logger/actions/workflows/test-suite.yml/badge.svg)\n#\n# Python JSON Logger\n\nPython JSON Logger enables you produce JSON logs when using Python's `logging` package.\n\nJSON logs are machine readable allowing for much easier parsing and ingestion into log aggregation tools.\n\n\n## Documentation\n\n- [Documentation](https://nhairs.github.io/python-json-logger/latest/)\n- [Quickstart Guide](https://nhairs.github.io/python-json-logger/latest/quickstart/)\n- [Change Log](https://nhairs.github.io/python-json-logger/latest/changelog/)\n- [Contributing](https://nhairs.github.io/python-json-logger/latest/contributing/)\n\n## License\n\nThis project is licensed under the BSD 2 Clause License - see [`LICENSE`](https://github.com/nhairs/python-json-logger/blob/main/LICENSE)\n\n## Authors and Maintainers\n\nThis project was originally authored by [Zakaria Zajac](https://github.com/madzak) and our wonderful [contributors](https://github.com/nhairs/python-json-logger/graphs/contributors)\n\nIt is currently maintained by:\n\n- [Nicholas Hairs](https://github.com/nhairs) - [nicholashairs.com](https://www.nicholashairs.com)\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

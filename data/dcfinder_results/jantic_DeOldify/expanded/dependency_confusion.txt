@@ -1,0 +1,2912 @@
+{
+     "direct dependency": {
+          "number": 14,
+          "packages": [
+               {
+                    "name": "black",
+                    "specifier": "",
+                    "raw_requirement": "black",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "pre-commit",
+                    "specifier": "",
+                    "raw_requirement": "pre-commit",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "wandb",
+                    "specifier": "",
+                    "raw_requirement": "wandb",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "fastai",
+                    "specifier": "==1.0.60",
+                    "raw_requirement": "fastai==1.0.60",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorboardx",
+                    "specifier": ">=1.6",
+                    "raw_requirement": "tensorboardX>=1.6",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ffmpeg",
+                    "specifier": "",
+                    "raw_requirement": "ffmpeg",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ffmpeg-python",
+                    "specifier": "",
+                    "raw_requirement": "ffmpeg-python",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "yt-dlp",
+                    "specifier": "",
+                    "raw_requirement": "yt-dlp",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "jupyterlab",
+                    "specifier": "",
+                    "raw_requirement": "jupyterlab",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opencv-python",
+                    "specifier": ">=4.2.0.32",
+                    "raw_requirement": "opencv-python>=4.2.0.32",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pillow",
+                    "specifier": "==9.3.0",
+                    "raw_requirement": "Pillow==9.3.0",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch",
+                    "specifier": "==1.11.0",
+                    "raw_requirement": "torch==1.11.0",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torchvision",
+                    "specifier": "==0.12.0",
+                    "raw_requirement": "torchvision==0.12.0",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ipywidgets",
+                    "specifier": "",
+                    "raw_requirement": "ipywidgets",
+                    "source_file": "analysis_program/jantic_DeOldify/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 166,
+          "packages": [
+               {
+                    "name": "annotated-types",
+                    "specifier": ">=0.6.0",
+                    "raw_requirement": "annotated-types>=0.6.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "anyio",
+                    "specifier": ">=3.1.0,<5,>=3.6.2,>=4.10,>=3.0.0",
+                    "raw_requirement": "anyio ; anyio>=3.1.0 ; anyio<5,>=3.6.2 ; anyio>=4.10 ; anyio>=3.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "starlette",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx2",
+                              "source": "public"
+                         },
+                         {
+                              "name": "watchfiles",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "apsw",
+                    "specifier": "",
+                    "raw_requirement": "apsw",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "apswutils",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "apswutils",
+                    "specifier": ">=0.1.2",
+                    "raw_requirement": "apswutils>=0.1.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastlite",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "argon2-cffi",
+                    "specifier": ">=21.1",
+                    "raw_requirement": "argon2-cffi>=21.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "argon2-cffi-bindings",
+                    "specifier": "",
+                    "raw_requirement": "argon2-cffi-bindings",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "argon2-cffi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "arrow",
+                    "specifier": ">=0.15.0",
+                    "raw_requirement": "arrow (>=0.15.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "isoduration",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "asttokens",
+                    "specifier": ">=2.1.0",
+                    "raw_requirement": "asttokens >=2.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "stack-data",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "async-lru",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "async-lru>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "attrs",
+                    "specifier": ">=22.2.0",
+                    "raw_requirement": "attrs>=22.2.0 ; attrs>=22.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "babel",
+                    "specifier": ">=2.10",
+                    "raw_requirement": "babel>=2.10",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "beautifulsoup4",
+                    "specifier": "",
+                    "raw_requirement": "beautifulsoup4 ; beautifulsoup4 ; beautifulsoup4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "python-fasthtml",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "bleach",
+                    "specifier": "!=5.0.0",
+                    "raw_requirement": "bleach[css]!=5.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "blis",
+                    "specifier": "<0.8.0,>=0.7.8",
+                    "raw_requirement": "blis<0.8.0,>=0.7.8",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "thinc",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "bottleneck",
+                    "specifier": "",
+                    "raw_requirement": "bottleneck",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastai",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "catalogue",
+                    "specifier": "<2.1.0,>=2.0.6,<2.1.0,>=2.0.4,<2.1.0,>=2.0.3",
+                    "raw_requirement": "catalogue<2.1.0,>=2.0.6 ; catalogue<2.1.0,>=2.0.4 ; catalogue<2.1.0,>=2.0.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "thinc",
+                              "source": "public"
+                         },
+                         {
+                              "name": "srsly",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "certifi",
+                    "specifier": ">=2017.4.17",
+                    "raw_requirement": "certifi (>=2017.4.17) ; certifi ; certifi ; certifi",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "sentry-sdk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpcore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cffi",
+                    "specifier": ">=1.0.1",
+                    "raw_requirement": "cffi>=1.0.1; python_version < \"3.14\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "argon2-cffi-bindings",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cfgv",
+                    "specifier": ">=2.0.0",
+                    "raw_requirement": "cfgv>=2.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pre-commit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "charset-normalizer",
+                    "specifier": "<3,>=2",
+                    "raw_requirement": "charset-normalizer (<3,>=2)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "click",
+                    "specifier": ">=8.0.0,>=8.2.0,<9.0.0,>=7.1.1,>=7.0",
+                    "raw_requirement": "click>=8.0.0 ; click>=8.2.0 ; click<9.0.0,>=7.1.1 ; click>=7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typer",
+                              "source": "public"
+                         },
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cloudpathlib",
+                    "specifier": "<0.17.0,>=0.7.0",
+                    "raw_requirement": "cloudpathlib <0.17.0,>=0.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "weasel",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "comm",
+                    "specifier": ">=0.1.3,>=0.1.1",
+                    "raw_requirement": "comm>=0.1.3 ; comm>=0.1.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipywidgets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "confection",
+                    "specifier": "<1.0.0,>=0.0.1,<0.2.0,>=0.0.4",
+                    "raw_requirement": "confection<1.0.0,>=0.0.1 ; confection <0.2.0,>=0.0.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "thinc",
+                              "source": "public"
+                         },
+                         {
+                              "name": "weasel",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "contourpy",
+                    "specifier": ">=1.0.1",
+                    "raw_requirement": "contourpy>=1.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cycler",
+                    "specifier": ">=0.10",
+                    "raw_requirement": "cycler>=0.10",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cymem",
+                    "specifier": "<2.1.0,>=2.0.2",
+                    "raw_requirement": "cymem<2.1.0,>=2.0.2 ; cymem<2.1.0,>=2.0.2 ; cymem<2.1.0,>=2.0.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "preshed",
+                              "source": "public"
+                         },
+                         {
+                              "name": "thinc",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "debugpy",
+                    "specifier": ">=1.6.5",
+                    "raw_requirement": "debugpy>=1.6.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "decorator",
+                    "specifier": ">=5.1.0",
+                    "raw_requirement": "decorator>=5.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "defusedxml",
+                    "specifier": "",
+                    "raw_requirement": "defusedxml",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "distlib",
+                    "specifier": "<1,>=0.3.7",
+                    "raw_requirement": "distlib<1,>=0.3.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "virtualenv",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "exceptiongroup",
+                    "specifier": ">=1.0.2",
+                    "raw_requirement": "exceptiongroup>=1.0.2; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "executing",
+                    "specifier": ">=1.2.0",
+                    "raw_requirement": "executing >=1.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "stack-data",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fastcore",
+                    "specifier": ">=1.10.0,>=2.0.4,>=1.7.1",
+                    "raw_requirement": "fastcore>=1.10.0 ; fastcore>=2.0.4 ; fastcore>=1.7.1 ; fastcore",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastprogress",
+                              "source": "public"
+                         },
+                         {
+                              "name": "python-fasthtml",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastlite",
+                              "source": "public"
+                         },
+                         {
+                              "name": "apswutils",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fastjsonschema",
+                    "specifier": ">=2.15",
+                    "raw_requirement": "fastjsonschema>=2.15",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbformat",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fastlite",
+                    "specifier": ">=0.1.1",
+                    "raw_requirement": "fastlite>=0.1.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "python-fasthtml",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fastprogress",
+                    "specifier": ">=0.2.1",
+                    "raw_requirement": "fastprogress (>=0.2.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastai",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "filelock",
+                    "specifier": "<4,>=3.24.2,>=3.15.4",
+                    "raw_requirement": "filelock<4,>=3.24.2; python_version >= \"3.10\" ; filelock>=3.15.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "virtualenv",
+                              "source": "public"
+                         },
+                         {
+                              "name": "python-discovery",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fonttools",
+                    "specifier": ">=4.22.0",
+                    "raw_requirement": "fonttools>=4.22.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fqdn",
+                    "specifier": "",
+                    "raw_requirement": "fqdn; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "future",
+                    "specifier": "",
+                    "raw_requirement": "future",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ffmpeg-python",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "h11",
+                    "specifier": ">=0.16,>=0.8,>=0.16",
+                    "raw_requirement": "h11>=0.16 ; h11>=0.8 ; h11>=0.16",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpcore",
+                              "source": "public"
+                         },
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpcore2",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpcore",
+                    "specifier": "==1.*",
+                    "raw_requirement": "httpcore==1.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpcore2",
+                    "specifier": "==2.7.0",
+                    "raw_requirement": "httpcore2==2.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx2",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httptools",
+                    "specifier": ">=0.8.0",
+                    "raw_requirement": "httptools>=0.8.0; extra == \"standard\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpx",
+                    "specifier": "<1,>=0.25.0",
+                    "raw_requirement": "httpx<1,>=0.25.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpx2",
+                    "specifier": "",
+                    "raw_requirement": "httpx2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "python-fasthtml",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "identify",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "identify>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pre-commit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "idna",
+                    "specifier": "<4,>=2.5,>=2.8,>=3.18",
+                    "raw_requirement": "idna (<4,>=2.5) ; idna ; idna>=2.8 ; idna; extra == \"format-nongpl\" ; idna>=3.18",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx2",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ipykernel",
+                    "specifier": "!=6.30.0,>=6.5.0",
+                    "raw_requirement": "ipykernel!=6.30.0,>=6.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ipython",
+                    "specifier": ">=6.1.0,>=7.23.1",
+                    "raw_requirement": "ipython>=6.1.0 ; ipython>=7.23.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipywidgets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ipython-pygments-lexers",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "ipython-pygments-lexers>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "isoduration",
+                    "specifier": "",
+                    "raw_requirement": "isoduration; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "itsdangerous",
+                    "specifier": "",
+                    "raw_requirement": "itsdangerous",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "python-fasthtml",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jedi",
+                    "specifier": ">=0.18.2",
+                    "raw_requirement": "jedi>=0.18.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": ">=3.0.3,>=3.0",
+                    "raw_requirement": "jinja2>=3.0.3 ; jinja2 ; jinja2>=3.0.3 ; jinja2>=3.0.3 ; jinja2>=3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         },
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "json5",
+                    "specifier": ">=0.9.0",
+                    "raw_requirement": "json5>=0.9.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jsonpointer",
+                    "specifier": ">1.13",
+                    "raw_requirement": "jsonpointer>1.13; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jsonschema",
+                    "specifier": ">=4.18.0,>=2.6",
+                    "raw_requirement": "jsonschema>=4.18.0 ; jsonschema[format-nongpl]>=4.18.0 ; jsonschema>=2.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbformat",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jsonschema-specifications",
+                    "specifier": ">=2023.03.6",
+                    "raw_requirement": "jsonschema-specifications>=2023.03.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter-builder",
+                    "specifier": ">=1.0.2",
+                    "raw_requirement": "jupyter-builder>=1.0.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter-client",
+                    "specifier": ">=8.9.0,>=7.4.4,>=7.0.0",
+                    "raw_requirement": "jupyter-client>=8.9.0 ; jupyter-client>=7.4.4 ; jupyter-client>=7.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbclient",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter-core",
+                    "specifier": "!=6.0.*,>=5.1,!=5.0.*,>=4.12,>=5.1,>=4.7,!=5.0.*,>=4.12,>=5.4.0",
+                    "raw_requirement": "jupyter-core ; jupyter-core!=6.0.*,>=5.1 ; jupyter-core ; jupyter-core!=5.0.*,>=4.12 ; jupyter-core>=5.1 ; jupyter-core>=4.7 ; jupyter-core!=5.0.*,>=4.12 ; jupyter-core>=5.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-builder",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbformat",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbclient",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter-events",
+                    "specifier": ">=0.11.0",
+                    "raw_requirement": "jupyter-events>=0.11.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter-lsp",
+                    "specifier": ">=2.0.0",
+                    "raw_requirement": "jupyter-lsp>=2.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter-server",
+                    "specifier": "<3,>=2.19.0,>=1.1.2,<3,>=1.21,<3,>=1.8",
+                    "raw_requirement": "jupyter-server<3,>=2.19.0 ; jupyter_server>=1.1.2 ; jupyter-server<3,>=1.21 ; jupyter-server<3,>=1.8",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-lsp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "notebook-shim",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter-server-terminals",
+                    "specifier": ">=0.4.4",
+                    "raw_requirement": "jupyter-server-terminals>=0.4.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyterlab-pygments",
+                    "specifier": "",
+                    "raw_requirement": "jupyterlab-pygments",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyterlab-server",
+                    "specifier": "<3,>=2.28.0",
+                    "raw_requirement": "jupyterlab-server<3,>=2.28.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyterlab-widgets",
+                    "specifier": "~=3.0.15",
+                    "raw_requirement": "jupyterlab_widgets~=3.0.15",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipywidgets",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "kiwisolver",
+                    "specifier": ">=1.3.1",
+                    "raw_requirement": "kiwisolver>=1.3.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "langcodes",
+                    "specifier": "<4.0.0,>=3.2.0",
+                    "raw_requirement": "langcodes<4.0.0,>=3.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "lark",
+                    "specifier": ">=1.2.2",
+                    "raw_requirement": "lark>=1.2.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rfc3987-syntax",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markupsafe",
+                    "specifier": ">=2.0",
+                    "raw_requirement": "MarkupSafe>=2.0 ; markupsafe>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jinja2",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "matplotlib",
+                    "specifier": "",
+                    "raw_requirement": "matplotlib",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastai",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "matplotlib-inline",
+                    "specifier": ">=0.1,>=0.1.6",
+                    "raw_requirement": "matplotlib-inline>=0.1 ; matplotlib-inline>=0.1.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mistune",
+                    "specifier": "<4,>=2.0.3",
+                    "raw_requirement": "mistune<4,>=2.0.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "murmurhash",
+                    "specifier": "<1.1.0,>=0.28.0,<1.1.0,>=1.0.2",
+                    "raw_requirement": "murmurhash<1.1.0,>=0.28.0 ; murmurhash<1.1.0,>=0.28.0 ; murmurhash<1.1.0,>=1.0.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "preshed",
+                              "source": "public"
+                         },
+                         {
+                              "name": "thinc",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mypy-extensions",
+                    "specifier": ">=0.4.3",
+                    "raw_requirement": "mypy-extensions>=0.4.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nbclient",
+                    "specifier": ">=0.5.0",
+                    "raw_requirement": "nbclient>=0.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nbconvert",
+                    "specifier": ">=6.4.4",
+                    "raw_requirement": "nbconvert>=6.4.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nbformat",
+                    "specifier": ">=5.3.0,>=5.7,>=5.2.0",
+                    "raw_requirement": "nbformat>=5.3.0 ; nbformat>=5.7 ; nbformat>=5.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbclient",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nest-asyncio2",
+                    "specifier": ">=1.7.0",
+                    "raw_requirement": "nest-asyncio2>=1.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nodeenv",
+                    "specifier": ">=0.11.1",
+                    "raw_requirement": "nodeenv>=0.11.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pre-commit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "notebook-shim",
+                    "specifier": ">=0.2",
+                    "raw_requirement": "notebook-shim>=0.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "numexpr",
+                    "specifier": "",
+                    "raw_requirement": "numexpr",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastai",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "numpy",
+                    "specifier": ">=1.15,>=2,>=1.25,>=1.23.0,>=1.26.0,<2.8,>=2.0.0,>=1.19.0,>=1.25,>=1.19.0,>=1.19.0",
+                    "raw_requirement": "numpy (>=1.15) ; numpy ; numpy>=2; python_version >= \"3.9\" ; numpy ; numpy ; numpy>=1.25 ; numpy>=1.23.0 ; numpy>=1.26.0; python_version < \"3.14\" ; numpy<2.8,>=2.0.0 ; numpy>=1.19.0; python_version >= \"3.9\" ; numpy>=1.25 ; numpy>=1.19.0 ; numpy >=1.19.0 ; python_version >= \"3.9\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboardx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opencv-python",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torchvision",
+                              "source": "private"
+                         },
+                         {
+                              "name": "bottleneck",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "numexpr",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         },
+                         {
+                              "name": "scipy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "contourpy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "thinc",
+                              "source": "public"
+                         },
+                         {
+                              "name": "blis",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-ml-py3",
+                    "specifier": "",
+                    "raw_requirement": "nvidia-ml-py3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastai",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "oauthlib",
+                    "specifier": "",
+                    "raw_requirement": "oauthlib",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "python-fasthtml",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "opentelemetry-api",
+                    "specifier": "==1.44.0",
+                    "raw_requirement": "opentelemetry-api==1.44.0 ; opentelemetry-api==1.44.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "opentelemetry-sdk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opentelemetry-semantic-conventions",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "opentelemetry-sdk",
+                    "specifier": ">=1.4.0",
+                    "raw_requirement": "opentelemetry-sdk>=1.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sentry-sdk",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "opentelemetry-semantic-conventions",
+                    "specifier": "==0.65b0",
+                    "raw_requirement": "opentelemetry-semantic-conventions==0.65b0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "opentelemetry-sdk",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "overrides",
+                    "specifier": ">=5.0",
+                    "raw_requirement": "overrides>=5.0; python_version < \"3.12\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "packaging",
+                    "specifier": ">=22.0,>=23.2,>=20.0,>=20.0,>=22,>=22.0,>=21.3,>=20.0,>=20.0",
+                    "raw_requirement": "packaging>=22.0 ; packaging ; packaging ; packaging ; packaging>=23.2 ; packaging>=20.0 ; packaging>=20.0 ; packaging>=22 ; packaging>=22.0 ; packaging>=21.3 ; packaging>=20.0 ; packaging >=20.0 ; packaging ; packaging",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboardx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "thinc",
+                              "source": "public"
+                         },
+                         {
+                              "name": "weasel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pandas",
+                    "specifier": "",
+                    "raw_requirement": "pandas",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastai",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pandocfilters",
+                    "specifier": ">=1.4.1",
+                    "raw_requirement": "pandocfilters>=1.4.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "parso",
+                    "specifier": "<0.9.0,>=0.8.6",
+                    "raw_requirement": "parso<0.9.0,>=0.8.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jedi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pathspec",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "pathspec>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pexpect",
+                    "specifier": ">4.6",
+                    "raw_requirement": "pexpect>4.6; sys_platform != \"win32\" and sys_platform != \"emscripten\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "platformdirs",
+                    "specifier": ">=2,<5,>=3.9.1,>=2.5,<5,>=4.3.6",
+                    "raw_requirement": "platformdirs>=2 ; platformdirs ; platformdirs<5,>=3.9.1 ; platformdirs>=2.5 ; platformdirs<5,>=4.3.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "virtualenv",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "python-discovery",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "preshed",
+                    "specifier": "<3.1.0,>=3.0.2",
+                    "raw_requirement": "preshed<3.1.0,>=3.0.2 ; preshed<3.1.0,>=3.0.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "thinc",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "prometheus-client",
+                    "specifier": ">=0.9",
+                    "raw_requirement": "prometheus-client>=0.9",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "prompt-toolkit",
+                    "specifier": "<3.1.0,>=3.0.41",
+                    "raw_requirement": "prompt_toolkit<3.1.0,>=3.0.41",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "protobuf",
+                    "specifier": "!=5.28.0,!=5.29.0,<8,>=5,>=3.20",
+                    "raw_requirement": "protobuf!=5.28.0,!=5.29.0,<8,>=5 ; protobuf>=3.20",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboardx",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "psutil",
+                    "specifier": ">=5.7,>=7",
+                    "raw_requirement": "psutil>=5.7 ; psutil>=7; sys_platform != \"emscripten\" and sys_platform != \"cygwin\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ptyprocess",
+                    "specifier": ">=0.5",
+                    "raw_requirement": "ptyprocess; os_name != 'nt' ; ptyprocess (>=0.5)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "terminado",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pexpect",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pure-eval",
+                    "specifier": "",
+                    "raw_requirement": "pure-eval",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "stack-data",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pycparser",
+                    "specifier": "",
+                    "raw_requirement": "pycparser; implementation_name != \"PyPy\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cffi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydantic",
+                    "specifier": "<3,>=2.6,!=1.8,!=1.8.1,<3.0.0,>=1.7.4,!=1.8,!=1.8.1,<3.0.0,>=1.7.4,!=1.8,!=1.8.1,<3.0.0,>=1.7.4,!=1.8,!=1.8.1,<3.0.0,>=1.7.4",
+                    "raw_requirement": "pydantic<3,>=2.6 ; pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4 ; pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4 ; pydantic !=1.8,!=1.8.1,<3.0.0,>=1.7.4 ; pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "thinc",
+                              "source": "public"
+                         },
+                         {
+                              "name": "weasel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "confection",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydantic-core",
+                    "specifier": "==2.47.0",
+                    "raw_requirement": "pydantic-core==2.47.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pygments",
+                    "specifier": ">=2.14.0,>=2.4.1",
+                    "raw_requirement": "pygments>=2.14.0 ; pygments>=2.4.1 ; pygments",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython-pygments-lexers",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyparsing",
+                    "specifier": ">=3",
+                    "raw_requirement": "pyparsing>=3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-dateutil",
+                    "specifier": ">=2.7,>=2.8.2,>=2.8.2,>=2.7.0",
+                    "raw_requirement": "python-dateutil>=2.7 ; python-dateutil>=2.8.2 ; python-dateutil ; python-dateutil>=2.8.2 ; python-dateutil>=2.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         },
+                         {
+                              "name": "python-fasthtml",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "arrow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-discovery",
+                    "specifier": ">=1.4.2",
+                    "raw_requirement": "python-discovery>=1.4.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "virtualenv",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-dotenv",
+                    "specifier": ">=0.13",
+                    "raw_requirement": "python-dotenv>=0.13; extra == \"standard\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-fasthtml",
+                    "specifier": ">=0.12.34",
+                    "raw_requirement": "python-fasthtml>=0.12.34",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastprogress",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-json-logger",
+                    "specifier": ">=2.0.4",
+                    "raw_requirement": "python-json-logger>=2.0.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-multipart",
+                    "specifier": "",
+                    "raw_requirement": "python-multipart",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "python-fasthtml",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pytokens",
+                    "specifier": "~=0.4.0",
+                    "raw_requirement": "pytokens~=0.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyyaml",
+                    "specifier": ">=5.1,>=5.3,>=5.1",
+                    "raw_requirement": "pyyaml>=5.1 ; pyyaml ; pyyaml ; pyyaml>=5.3 ; pyyaml>=5.1; extra == \"standard\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pre-commit",
+                              "source": "public"
+                         },
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         },
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyzmq",
+                    "specifier": ">=25,>=24,>=25.0",
+                    "raw_requirement": "pyzmq>=25 ; pyzmq>=24 ; pyzmq>=25.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "referencing",
+                    "specifier": ">=0.28.4,>=0.31.0",
+                    "raw_requirement": "referencing ; referencing>=0.28.4 ; referencing>=0.31.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema-specifications",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "requests",
+                    "specifier": "<3,>=2.0.0,<3.0.0,>=2.13.0,>=2.31,<3.0.0,>=2.13.0",
+                    "raw_requirement": "requests<3,>=2.0.0 ; requests ; requests ; requests<3.0.0,>=2.13.0 ; requests>=2.31 ; requests <3.0.0,>=2.13.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torchvision",
+                              "source": "private"
+                         },
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "weasel",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "rfc3339-validator",
+                    "specifier": "",
+                    "raw_requirement": "rfc3339-validator ; rfc3339-validator; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "rfc3986-validator",
+                    "specifier": ">=0.1.1,>0.1.0",
+                    "raw_requirement": "rfc3986-validator>=0.1.1 ; rfc3986-validator>0.1.0; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "rfc3987-syntax",
+                    "specifier": ">=1.1.0",
+                    "raw_requirement": "rfc3987-syntax>=1.1.0; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "rpds-py",
+                    "specifier": ">=0.25.0,>=0.7.0",
+                    "raw_requirement": "rpds-py>=0.25.0 ; rpds-py>=0.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "scipy",
+                    "specifier": "",
+                    "raw_requirement": "scipy",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastai",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "send2trash",
+                    "specifier": ">=1.8.2",
+                    "raw_requirement": "send2trash>=1.8.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sentry-sdk",
+                    "specifier": ">=2.0.0",
+                    "raw_requirement": "sentry-sdk>=2.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "setuptools",
+                    "specifier": "",
+                    "raw_requirement": "setuptools ; setuptools",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "thinc",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "six",
+                    "specifier": ">=1.5",
+                    "raw_requirement": "six >=1.5 ; six",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "python-dateutil",
+                              "source": "public"
+                         },
+                         {
+                              "name": "rfc3339-validator",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "smart-open",
+                    "specifier": "<7.0.0,>=5.2.1",
+                    "raw_requirement": "smart-open<7.0.0,>=5.2.1 ; smart-open <7.0.0,>=5.2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "weasel",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "soupsieve",
+                    "specifier": ">=1.6.1",
+                    "raw_requirement": "soupsieve>=1.6.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "beautifulsoup4",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "spacy",
+                    "specifier": ">=2.0.18",
+                    "raw_requirement": "spacy (>=2.0.18)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastai",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "spacy-legacy",
+                    "specifier": "<4.1.0,>=4.0.0.dev1",
+                    "raw_requirement": "spacy-legacy<4.1.0,>=4.0.0.dev1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "spacy-loggers",
+                    "specifier": "<2.0.0,>=1.0.0",
+                    "raw_requirement": "spacy-loggers<2.0.0,>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "srsly",
+                    "specifier": "<3.0.0,>=2.4.3,<3.0.0,>=2.4.0,<3.0.0,>=2.4.3,<3.0.0,>=2.4.0",
+                    "raw_requirement": "srsly<3.0.0,>=2.4.3 ; srsly<3.0.0,>=2.4.0 ; srsly <3.0.0,>=2.4.3 ; srsly<3.0.0,>=2.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "thinc",
+                              "source": "public"
+                         },
+                         {
+                              "name": "weasel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "confection",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "stack-data",
+                    "specifier": ">=0.6.0",
+                    "raw_requirement": "stack_data>=0.6.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "starlette",
+                    "specifier": ">=1.0.1",
+                    "raw_requirement": "starlette>=1.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "python-fasthtml",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "terminado",
+                    "specifier": ">=0.8.3",
+                    "raw_requirement": "terminado>=0.8.3 ; terminado>=0.8.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server-terminals",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "thinc",
+                    "specifier": "<9.1.0,>=9.0.0",
+                    "raw_requirement": "thinc<9.1.0,>=9.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tinycss2",
+                    "specifier": ">=1.1.0",
+                    "raw_requirement": "tinycss2>=1.1.0; extra == \"css\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "bleach",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tomli",
+                    "specifier": ">=1.1.0,>=1.2.2",
+                    "raw_requirement": "tomli>=1.1.0; python_version < \"3.11\" ; tomli>=1.2.2; python_version < \"3.11\" ; tomli; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-builder",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tornado",
+                    "specifier": ">=6.2.0,>=6.4.1,>=6.2.0,>=6.4.1,>=6.1.0",
+                    "raw_requirement": "tornado>=6.2.0 ; tornado>=6.4.1 ; tornado>=6.2.0 ; tornado>=6.4.1 ; tornado>=6.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "terminado",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tqdm",
+                    "specifier": "<5.0.0,>=4.38.0",
+                    "raw_requirement": "tqdm<5.0.0,>=4.38.0 ; tqdm <5.0.0,>=4.38.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "spacy-legacy",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "traitlets",
+                    "specifier": ">=4.3.1,>=5.4.0,>=5.3,>=5.6.0,>=5.13.0,>=5.3,>=5.3,>=5.1,>=5.1,>=5.13",
+                    "raw_requirement": "traitlets ; traitlets>=4.3.1 ; traitlets>=5.4.0 ; traitlets ; traitlets>=5.3 ; traitlets>=5.6.0 ; traitlets>=5.13.0 ; traitlets>=5.3 ; traitlets ; traitlets>=5.3 ; traitlets>=5.1 ; traitlets>=5.1 ; traitlets>=5.13",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipywidgets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-builder",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib-inline",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbformat",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbclient",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "truststore",
+                    "specifier": ">=0.10",
+                    "raw_requirement": "truststore>=0.10 ; truststore>=0.10",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx2",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpcore2",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typer",
+                    "specifier": "<0.10.0,>=0.3.0",
+                    "raw_requirement": "typer<0.10.0,>=0.3.0 ; typer <0.10.0,>=0.3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "weasel",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=4.0.1,<5,>=4.8,>=4.13.2,>=4.15.0,>=4.0.0,>=4.0.0,>=4.6,>=4.14.1,>=4.12.0,>=4.5.0,>=3.7.4.3,>=4.5,>=4.13.0,>=4.5.0,>=4.5.0,>=4.10.0,>=4.0,>=4.5.0,>4,>=4.6.0,>=4.4.0",
+                    "raw_requirement": "typing-extensions>=4.0.1; python_version < \"3.11\" ; typing-extensions<5,>=4.8 ; typing-extensions ; typing-extensions ; typing-extensions>=4.13.2; python_version < \"3.11\" ; typing-extensions>=4.15.0 ; typing-extensions>=4.0.0 ; typing_extensions>=4.0.0; python_version < \"3.11\" ; typing_extensions>=4.6; python_version < \"3.12\" ; typing-extensions>=4.14.1 ; typing-extensions>=4.12.0 ; typing-extensions>=4.5.0 ; typing-extensions>=3.7.4.3 ; typing_extensions>=4.5; python_version < \"3.13\" ; typing-extensions>=4.13.0 ; typing-extensions>=4.5.0 ; typing-extensions>=4.5.0 ; typing-extensions>=4.10.0; python_version < \"3.13\" ; typing-extensions>=4.0; python_version < \"3.11\" ; typing-extensions>=4.5.0; python_version < \"3.13\" ; typing_extensions>4 ; python_version < '3.11' ; typing-extensions>=4.6.0; python_version < \"3.13\" ; typing-extensions>=4.4.0; python_version < \"3.13\" ; typing-extensions; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "torchvision",
+                              "source": "private"
+                         },
+                         {
+                              "name": "virtualenv",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "beautifulsoup4",
+                              "source": "public"
+                         },
+                         {
+                              "name": "async-lru",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typing-inspection",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opentelemetry-sdk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typer",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opentelemetry-api",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opentelemetry-semantic-conventions",
+                              "source": "public"
+                         },
+                         {
+                              "name": "starlette",
+                              "source": "public"
+                         },
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx2",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cloudpathlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "exceptiongroup",
+                              "source": "public"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mistune",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-inspection",
+                    "specifier": ">=0.4.2",
+                    "raw_requirement": "typing-inspection>=0.4.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tzdata",
+                    "specifier": "",
+                    "raw_requirement": "tzdata; python_version >= \"3.9\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "arrow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "uri-template",
+                    "specifier": "",
+                    "raw_requirement": "uri-template; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "urllib3",
+                    "specifier": "<1.27,>=1.21.1,>=1.26.11",
+                    "raw_requirement": "urllib3 (<1.27,>=1.21.1) ; urllib3>=1.26.11",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "sentry-sdk",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "uvicorn",
+                    "specifier": ">=0.30",
+                    "raw_requirement": "uvicorn[standard]>=0.30",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "python-fasthtml",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "uvloop",
+                    "specifier": ">=0.15.1",
+                    "raw_requirement": "uvloop>=0.15.1; (sys_platform != \"win32\" and (sys_platform != \"cygwin\" and platform_python_implementation != \"PyPy\")) and extra == \"standard\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "virtualenv",
+                    "specifier": ">=20.10.0",
+                    "raw_requirement": "virtualenv>=20.10.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pre-commit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "wasabi",
+                    "specifier": "<1.2.0,>=0.9.1,<1.2.0,>=0.8.1,<1.2.0,>=0.9.1",
+                    "raw_requirement": "wasabi<1.2.0,>=0.9.1 ; wasabi<1.2.0,>=0.8.1 ; wasabi <1.2.0,>=0.9.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "thinc",
+                              "source": "public"
+                         },
+                         {
+                              "name": "weasel",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "watchfiles",
+                    "specifier": ">=0.20",
+                    "raw_requirement": "watchfiles>=0.20; extra == \"standard\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "wcwidth",
+                    "specifier": "",
+                    "raw_requirement": "wcwidth",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "prompt-toolkit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "weasel",
+                    "specifier": "<0.4.0,>=0.1.0",
+                    "raw_requirement": "weasel<0.4.0,>=0.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "spacy",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "webcolors",
+                    "specifier": ">=24.6.0",
+                    "raw_requirement": "webcolors>=24.6.0; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "webencodings",
+                    "specifier": ">=0.4",
+                    "raw_requirement": "webencodings ; webencodings>=0.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "bleach",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tinycss2",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "websocket-client",
+                    "specifier": ">=1.7",
+                    "raw_requirement": "websocket-client>=1.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "websockets",
+                    "specifier": ">=13.0",
+                    "raw_requirement": "websockets>=13.0; extra == \"standard\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "widgetsnbextension",
+                    "specifier": "~=4.0.14",
+                    "raw_requirement": "widgetsnbextension~=4.0.14",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipywidgets",
+                              "source": "public"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 1,
+          "packages": {
+               "pillow": {
+                    "private version": "9.3.0",
+                    "public version": "9.3.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": "==9.3.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 14,
+          "packages": {
+               "certifi": {
+                    "private version": "2022.12.7",
+                    "public version": "2026.6.17",
+                    "highest public (unconstrained)": "2026.6.17",
+                    "declared specifier": ">=2017.4.17",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 51
+               },
+               "charset-normalizer": {
+                    "private version": "2.1.1",
+                    "public version": "2.1.1",
+                    "highest public (unconstrained)": "3.4.9",
+                    "declared specifier": "<3,>=2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 15
+               },
+               "filelock": {
+                    "private version": "3.29.0",
+                    "public version": "3.30.2",
+                    "highest public (unconstrained)": "3.30.2",
+                    "declared specifier": "<4,>=3.24.2,>=3.15.4",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 17
+               },
+               "idna": {
+                    "private version": "3.4",
+                    "public version": "3.18",
+                    "highest public (unconstrained)": "3.18",
+                    "declared specifier": "<4,>=2.5,>=2.8,>=3.18",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "jinja2": {
+                    "private version": "3.1.6",
+                    "public version": "3.1.6",
+                    "highest public (unconstrained)": "3.1.6",
+                    "declared specifier": ">=3.0.3,>=3.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 8
+               },
+               "markupsafe": {
+                    "private version": "3.0.3",
+                    "public version": "3.0.3",
+                    "highest public (unconstrained)": "3.0.3",
+                    "declared specifier": ">=2.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 12
+               },
+               "mypy-extensions": {
+                    "private version": "1.0.0",
+                    "public version": "1.1.0",
+                    "highest public (unconstrained)": "1.1.0",
+                    "declared specifier": ">=0.4.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "numpy": {
+                    "private version": "2.4.4",
+                    "public version": "2.5.1",
+                    "highest public (unconstrained)": "2.5.1",
+                    "declared specifier": ">=1.15,>=2,>=1.25,>=1.23.0,>=1.26.0,<2.8,>=2.0.0,>=1.19.0,>=1.25,>=1.19.0,>=1.19.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 31
+               },
+               "packaging": {
+                    "private version": "24.1",
+                    "public version": "26.2",
+                    "highest public (unconstrained)": "26.2",
+                    "declared specifier": ">=22.0,>=23.2,>=20.0,>=20.0,>=22,>=22.0,>=21.3,>=20.0,>=20.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 11
+               },
+               "requests": {
+                    "private version": "2.28.1",
+                    "public version": "2.34.2",
+                    "highest public (unconstrained)": "2.34.2",
+                    "declared specifier": "<3,>=2.0.0,<3.0.0,>=2.13.0,>=2.31,<3.0.0,>=2.13.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 13
+               },
+               "setuptools": {
+                    "private version": "78.1.0",
+                    "public version": "83.0.0",
+                    "highest public (unconstrained)": "83.0.0"
+               },
+               "tqdm": {
+                    "private version": "4.66.5",
+                    "public version": "4.68.4",
+                    "highest public (unconstrained)": "4.68.4",
+                    "declared specifier": "<5.0.0,>=4.38.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 69
+               },
+               "typing-extensions": {
+                    "private version": "4.15.0",
+                    "public version": "4.16.0",
+                    "highest public (unconstrained)": "4.16.0",
+                    "declared specifier": ">=4.0.1,<5,>=4.8,>=4.13.2,>=4.15.0,>=4.0.0,>=4.0.0,>=4.6,>=4.14.1,>=4.12.0,>=4.5.0,>=3.7.4.3,>=4.5,>=4.13.0,>=4.5.0,>=4.5.0,>=4.10.0,>=4.0,>=4.5.0,>4,>=4.6.0,>=4.4.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "urllib3": {
+                    "private version": "1.26.13",
+                    "public version": "1.26.20",
+                    "highest public (unconstrained)": "2.7.0",
+                    "declared specifier": "<1.27,>=1.21.1,>=1.26.11",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 10
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "mixed_source_expanded",
+          "private_index_expansions": 17,
+          "pypi_metadata_expansions": 163,
+          "pruned_public_nodes": 0
+     }
+}

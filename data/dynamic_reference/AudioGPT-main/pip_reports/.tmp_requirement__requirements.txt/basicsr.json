@@ -1,0 +1,91 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/86/41/00a6b000f222f0fa4c6d9e1d6dcc9811a374cabb8abb9d408b77de39648c/basicsr-1.4.2.tar.gz",
+        "archive_info": {
+          "hash": "sha256=b89b595a87ef964cda9913b4d99380ddb6554c965577c0c10cb7b78e31301e87",
+          "hashes": {
+            "sha256": "b89b595a87ef964cda9913b4d99380ddb6554c965577c0c10cb7b78e31301e87"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "basicsr",
+        "version": "1.4.2",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "requires-dist",
+          "summary"
+        ],
+        "summary": "Open Source Image and Video Super-Resolution Toolbox",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "computer vision",
+          "restoration",
+          "super resolution"
+        ],
+        "home_page": "https://github.com/xinntao/BasicSR",
+        "author": "Xintao Wang",
+        "author_email": "xintao.wang@outlook.com",
+        "license": "Apache License 2.0",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "License :: OSI Approved :: Apache Software License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8"
+        ],
+        "requires_dist": [
+          "addict",
+          "future",
+          "lmdb",
+          "numpy>=1.17",
+          "opencv-python",
+          "Pillow",
+          "pyyaml",
+          "requests",
+          "scikit-image",
+          "scipy",
+          "tb-nightly",
+          "torch>=1.7",
+          "torchvision",
+          "tqdm",
+          "yapf"
+        ],
+        "description": "<p align=\"center\">\n  <img src=\"assets/basicsr_xpixel_logo.png\" height=120>\n</p>\n\n## <div align=\"center\"><b><a href=\"README.md\">English</a> | <a href=\"README_CN.md\">简体中文</a></b></div>\n\n<div align=\"center\">\n\n[![LICENSE](https://img.shields.io/github/license/xinntao/basicsr.svg)](https://github.com/xinntao/BasicSR/blob/master/LICENSE.txt)\n[![PyPI](https://img.shields.io/pypi/v/basicsr)](https://pypi.org/project/basicsr/)\n[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/xinntao/BasicSR.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/xinntao/BasicSR/context:python)\n[![python lint](https://github.com/xinntao/BasicSR/actions/workflows/pylint.yml/badge.svg)](https://github.com/xinntao/BasicSR/blob/master/.github/workflows/pylint.yml)\n[![Publish-pip](https://github.com/xinntao/BasicSR/actions/workflows/publish-pip.yml/badge.svg)](https://github.com/xinntao/BasicSR/blob/master/.github/workflows/publish-pip.yml)\n[![gitee mirror](https://github.com/xinntao/BasicSR/actions/workflows/gitee-mirror.yml/badge.svg)](https://github.com/xinntao/BasicSR/blob/master/.github/workflows/gitee-mirror.yml)\n\n</div>\n\n<div align=\"center\">\n\n⚡[**HowTo**](#-HOWTOs) **|** 🔧[**Installation**](docs/INSTALL.md) **|** 💻[**Training Commands**](docs/TrainTest.md) **|** 🐢[**DatasetPrepare**](docs/DatasetPreparation.md) **|** 🏰[**Model Zoo**](docs/ModelZoo.md)\n\n📕[**中文解读文档**](https://github.com/XPixelGroup/BasicSR-docs) **|** 📊 [**Plot scripts**](scripts/plot) **|** 📝[Introduction](docs/introduction.md) **|** <a href=\"https://github.com/XPixelGroup/BasicSR/tree/master/colab\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" height=\"18\" alt=\"google colab logo\"></a> **|** ⏳[TODO List](https://github.com/xinntao/BasicSR/projects) **|** ❓[FAQ](docs/FAQ.md)\n</div>\n\n🚀 We add [BasicSR-Examples](https://github.com/xinntao/BasicSR-examples), which provides guidance and templates of using BasicSR as a python package. 🚀 <br>\n📢 **技术交流QQ群**：**320960100** &emsp; 入群答案：**互帮互助共同进步** <br>\n🧭 [入群二维码](#-contact) (QQ、微信) &emsp;&emsp; [入群指南 (腾讯文档)](https://docs.qq.com/doc/DYXBSUmxOT0xBZ05u) <br>\n\n---\n\nBasicSR (**Basic** **S**uper **R**estoration) is an open-source **image and video restoration** toolbox based on PyTorch, such as super-resolution, denoise, deblurring, JPEG artifacts removal, *etc*.<br>\nBasicSR (**Basic** **S**uper **R**estoration) 是一个基于 PyTorch 的开源 图像视频复原工具箱, 比如 超分辨率, 去噪, 去模糊, 去 JPEG 压缩噪声等.\n\n🚩 **New Features/Updates**\n\n- ✅ July 26, 2022. Add plot scripts 📊[Plot](scripts/plot).\n- ✅ May 9, 2022. BasicSR joins [XPixel](http://xpixel.group/).\n- ✅ Oct 5, 2021. Add **ECBSR training and testing** codes: [ECBSR](https://github.com/xindongzhang/ECBSR).\n  > ACMMM21: Edge-oriented Convolution Block for Real-time Super Resolution on Mobile Devices\n- ✅ Sep 2, 2021. Add **SwinIR training and testing** codes: [SwinIR](https://github.com/JingyunLiang/SwinIR) by [Jingyun Liang](https://github.com/JingyunLiang). More details are in [HOWTOs.md](docs/HOWTOs.md#how-to-train-swinir-sr)\n- ✅ Aug 5, 2021. Add NIQE, which produces the same results as MATLAB (both are 5.7296 for tests/data/baboon.png).\n- ✅ July 31, 2021. Add **bi-directional video super-resolution** codes: [**BasicVSR** and IconVSR](https://arxiv.org/abs/2012.02181).\n  > CVPR21: BasicVSR: The Search for Essential Components in Video Super-Resolution and Beyond\n- **[More](docs/history_updates.md)**\n\n---\n\nIf BasicSR helps your research or work, please help to ⭐ this repo or recommend it to your friends. Thanks😊 <br>\nOther recommended projects:<br>\n▶️ [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN): A practical algorithm for general image restoration<br>\n▶️ [GFPGAN](https://github.com/TencentARC/GFPGAN): A practical algorithm for real-world face restoration <br>\n▶️ [facexlib](https://github.com/xinntao/facexlib): A collection that provides useful face-relation functions.<br>\n▶️ [HandyView](https://github.com/xinntao/HandyView): A PyQt5-based image viewer that is handy for view and comparison. <br>\n▶️ [HandyFigure](https://github.com/xinntao/HandyFigure): Open source of paper figures <br>\n<sub>([ESRGAN](https://github.com/xinntao/ESRGAN), [EDVR](https://github.com/xinntao/EDVR), [DNI](https://github.com/xinntao/DNI), [SFTGAN](https://github.com/xinntao/SFTGAN))</sub>\n<sub>([HandyCrawler](https://github.com/xinntao/HandyCrawler), [HandyWriting](https://github.com/xinntao/HandyWriting))</sub>\n\n---\n\n## ⚡ HOWTOs\n\nWe provide simple pipelines to train/test/inference models for a quick start.\nThese pipelines/commands cannot cover all the cases and more details are in the following sections.\n\n| GAN                  |                                                |                                                        |          |                                                |                                                        |\n| :------------------- | :--------------------------------------------: | :----------------------------------------------------: | :------- | :--------------------------------------------: | :----------------------------------------------------: |\n| StyleGAN2            | [Train](docs/HOWTOs.md#How-to-train-StyleGAN2) | [Inference](docs/HOWTOs.md#How-to-inference-StyleGAN2) |          |                                                |                                                        |\n| **Face Restoration** |                                                |                                                        |          |                                                |                                                        |\n| DFDNet               |                       -                        |  [Inference](docs/HOWTOs.md#How-to-inference-DFDNet)   |          |                                                |                                                        |\n| **Super Resolution** |                                                |                                                        |          |                                                |                                                        |\n| ESRGAN               |                     *TODO*                     |                         *TODO*                         | SRGAN    |                     *TODO*                     |                         *TODO*                         |\n| EDSR                 |                     *TODO*                     |                         *TODO*                         | SRResNet |                     *TODO*                     |                         *TODO*                         |\n| RCAN                 |                     *TODO*                     |                         *TODO*                         | SwinIR   | [Train](docs/HOWTOs.md#how-to-train-swinir-sr) | [Inference](docs/HOWTOs.md#how-to-inference-swinir-sr) |\n| EDVR                 |                     *TODO*                     |                         *TODO*                         | DUF      |                       -                        |                         *TODO*                         |\n| BasicVSR             |                     *TODO*                     |                         *TODO*                         | TOF      |                       -                        |                         *TODO*                         |\n| **Deblurring**       |                                                |                                                        |          |                                                |                                                        |\n| DeblurGANv2          |                       -                        |                         *TODO*                         |          |                                                |                                                        |\n| **Denoise**          |                                                |                                                        |          |                                                |                                                        |\n| RIDNet               |                       -                        |                         *TODO*                         | CBDNet   |                       -                        |                         *TODO*                         |\n\n## ✨ **Projects that use BasicSR**\n\n- [**Real-ESRGAN**](https://github.com/xinntao/Real-ESRGAN): A practical algorithm for general image restoration\n- [**GFPGAN**](https://github.com/TencentARC/GFPGAN): A practical algorithm for real-world face restoration\n\nIf you use `BasicSR` in your open-source projects, welcome to contact me (by [email](#-contact) or opening an issue/pull request). I will add your projects to the above list 😊\n\n## 📜 License and Acknowledgement\n\nThis project is released under the [Apache 2.0 license](LICENSE.txt).<br>\nMore details about **license** and **acknowledgement** are in [LICENSE](LICENSE/README.md).\n\n## 🌏 Citations\n\nIf BasicSR helps your research or work, please consider citing BasicSR.<br>\nThe following is a BibTeX reference. The BibTeX entry requires the `url` LaTeX package.\n\n``` latex\n@misc{wang2020basicsr,\n  author =       {Xintao Wang and Ke Yu and Kelvin C.K. Chan and\n                  Chao Dong and Chen Change Loy},\n  title =        {{BasicSR}: Open Source Image and Video Restoration Toolbox},\n  howpublished = {\\url{https://github.com/xinntao/BasicSR}},\n  year =         {2018}\n}\n```\n\n> Xintao Wang, Ke Yu, Kelvin C.K. Chan, Chao Dong and Chen Change Loy. BasicSR: Open Source Image and Video Restoration Toolbox. <https://github.com/xinntao/BasicSR>, 2018.\n\n## 📧 Contact\n\nIf you have any questions, please email `xintao.wang@outlook.com`.\n\n<br>\n\n- **QQ群**: 扫描左边二维码 或者 搜索QQ群号: 320960100   入群答案：互帮互助共同进步\n- **微信群**: 我们的一群已经满500人啦，二群也超过200人了；进群可以添加 Liangbin 的个人微信 (右边二维码)，他会在空闲的时候拉大家入群~\n\n<p align=\"center\">\n  <img src=\"https://user-images.githubusercontent.com/17445847/134879983-6f2d663b-16e7-49f2-97e1-7c53c8a5f71a.jpg\"  height=\"300\">  &emsp;\n  <img src=\"https://user-images.githubusercontent.com/17445847/139572512-8e192aac-00fa-432b-ac8e-a33026b019df.png\"  height=\"300\">\n</p>\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

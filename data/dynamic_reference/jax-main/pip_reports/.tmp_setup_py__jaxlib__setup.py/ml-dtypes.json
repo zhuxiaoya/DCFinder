@@ -1,0 +1,75 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/10/b1/8938e8830b0ee2e167fc75a094dea766a1152bde46752cd9bfc57ee78a82/ml_dtypes-0.5.4-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=388d399a2152dd79a3f0456a952284a99ee5c93d3e2f8dfe25977511e0515270",
+          "hashes": {
+            "sha256": "388d399a2152dd79a3f0456a952284a99ee5c93d3e2f8dfe25977511e0515270"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "ml_dtypes",
+        "version": "0.5.4",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "ml_dtypes is a stand-alone implementation of several NumPy dtype extensions used in machine learning.",
+        "description_content_type": "text/markdown",
+        "author_email": "ml_dtypes authors <ml_dtypes@google.com>",
+        "license_expression": "Apache-2.0",
+        "license_file": [
+          "LICENSE",
+          "LICENSE.eigen"
+        ],
+        "classifier": [
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Intended Audience :: Science/Research"
+        ],
+        "requires_dist": [
+          "numpy>=1.21",
+          "numpy>=1.21.2; python_version >= \"3.10\"",
+          "numpy>=1.23.3; python_version >= \"3.11\"",
+          "numpy>=1.26.0; python_version >= \"3.12\"",
+          "numpy>=2.1.0; python_version >= \"3.13\"",
+          "absl-py; extra == \"dev\"",
+          "pytest; extra == \"dev\"",
+          "pytest-xdist; extra == \"dev\"",
+          "pylint>=2.6.0; extra == \"dev\"",
+          "pyink; extra == \"dev\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "homepage, https://github.com/jax-ml/ml_dtypes",
+          "repository, https://github.com/jax-ml/ml_dtypes"
+        ],
+        "provides_extra": [
+          "dev"
+        ],
+        "description": "# ml_dtypes\n\n[![Unittests](https://github.com/jax-ml/ml_dtypes/actions/workflows/test.yml/badge.svg)](https://github.com/jax-ml/ml_dtypes/actions/workflows/test.yml)\n[![Wheel Build](https://github.com/jax-ml/ml_dtypes/actions/workflows/wheels.yml/badge.svg)](https://github.com/jax-ml/ml_dtypes/actions/workflows/wheels.yml)\n[![PyPI version](https://badge.fury.io/py/ml_dtypes.svg)](https://badge.fury.io/py/ml_dtypes)\n\n`ml_dtypes` is a stand-alone implementation of several NumPy dtype extensions used in machine learning libraries, including:\n\n- [`bfloat16`](https://en.wikipedia.org/wiki/Bfloat16_floating-point_format):\n  an alternative to the standard [`float16`](https://en.wikipedia.org/wiki/Half-precision_floating-point_format) format\n- 8-bit floating point representations, parameterized by number of exponent and\n  mantissa bits, as well as the bias (if any) and representability of infinity,\n  NaN, and signed zero.\n  * `float8_e3m4`\n  * `float8_e4m3`\n  * `float8_e4m3b11fnuz`\n  * `float8_e4m3fn`\n  * `float8_e4m3fnuz`\n  * `float8_e5m2`\n  * `float8_e5m2fnuz`\n  * `float8_e8m0fnu`\n- Microscaling (MX) sub-byte floating point representations:\n  * `float4_e2m1fn`\n  * `float6_e2m3fn`\n  * `float6_e3m2fn`\n- Narrow integer encodings:\n  * `int2`\n  * `int4`\n  * `uint2`\n  * `uint4`\n\nSee below for specifications of these number formats.\n\n## Installation\n\nThe `ml_dtypes` package is tested with Python versions 3.9-3.12, and can be installed\nwith the following command:\n```\npip install ml_dtypes\n```\nTo test your installation, you can run the following:\n```\npip install absl-py pytest\npytest --pyargs ml_dtypes\n```\nTo build from source, clone the repository and run:\n```\ngit submodule init\ngit submodule update\npip install .\n```\n\n## Example Usage\n\n```python\n>>> from ml_dtypes import bfloat16\n>>> import numpy as np\n>>> np.zeros(4, dtype=bfloat16)\narray([0, 0, 0, 0], dtype=bfloat16)\n```\nImporting `ml_dtypes` also registers the data types with numpy, so that they may\nbe referred to by their string name:\n\n```python\n>>> np.dtype('bfloat16')\ndtype(bfloat16)\n>>> np.dtype('float8_e5m2')\ndtype(float8_e5m2)\n```\n\n## Specifications of implemented floating point formats\n\n### `bfloat16`\n\nA `bfloat16` number is a single-precision float truncated at 16 bits.\n\nExponent: 8, Mantissa: 7, exponent bias: 127. IEEE 754, with NaN and inf.\n\n### `float4_e2m1fn`\n\nExponent: 2, Mantissa: 1, bias: 1.\n\nExtended range: no inf, no NaN.\n\nMicroscaling format, 4 bits (encoding: `0bSEEM`) using byte storage (higher 4\nbits are unused). NaN representation is undefined.\n\nPossible absolute values: [`0`, `0.5`, `1`, `1.5`, `2`, `3`, `4`, `6`]\n\n### `float6_e2m3fn`\n\nExponent: 2, Mantissa: 3, bias: 1.\n\nExtended range: no inf, no NaN.\n\nMicroscaling format, 6 bits (encoding: `0bSEEMMM`) using byte storage (higher 2\nbits are unused). NaN representation is undefined.\n\nPossible values range: [`-7.5`; `7.5`]\n\n### `float6_e3m2fn`\n\nExponent: 3, Mantissa: 2, bias: 3.\n\nExtended range: no inf, no NaN.\n\nMicroscaling format, 4 bits (encoding: `0bSEEEMM`) using byte storage (higher 2\nbits are unused). NaN representation is undefined.\n\nPossible values range: [`-28`; `28`]\n\n### `float8_e3m4`\n\nExponent: 3, Mantissa: 4, bias: 3. IEEE 754, with NaN and inf.\n\n### `float8_e4m3`\n\nExponent: 4, Mantissa: 3, bias: 7. IEEE 754, with NaN and inf.\n\n### `float8_e4m3b11fnuz`\n\nExponent: 4, Mantissa: 3, bias: 11.\n\nExtended range: no inf, NaN represented by 0b1000'0000.\n\n### `float8_e4m3fn`\n\nExponent: 4, Mantissa: 3, bias: 7.\n\nExtended range: no inf, NaN represented by 0bS111'1111.\n\nThe `fn` suffix is for consistency with the corresponding LLVM/MLIR type, signaling this type is not consistent with IEEE-754.  The `f` indicates it is finite values only. The `n` indicates it includes NaNs, but only at the outer range.\n\n### `float8_e4m3fnuz`\n\n8-bit floating point with 3 bit mantissa.\n\nAn 8-bit floating point type with 1 sign bit, 4 bits exponent and 3 bits mantissa. The suffix `fnuz` is consistent with LLVM/MLIR naming and is derived from the differences to IEEE floating point conventions. `F` is for \"finite\" (no infinities), `N` for with special NaN encoding, `UZ` for unsigned zero.\n\nThis type has the following characteristics:\n * bit encoding: S1E4M3 - `0bSEEEEMMM`\n * exponent bias: 8\n * infinities: Not supported\n * NaNs: Supported with sign bit set to 1, exponent bits and mantissa bits set to all 0s - `0b10000000`\n * denormals when exponent is 0\n\n### `float8_e5m2`\n\nExponent: 5, Mantissa: 2, bias: 15. IEEE 754, with NaN and inf.\n\n### `float8_e5m2fnuz`\n\n8-bit floating point with 2 bit mantissa.\n\nAn 8-bit floating point type with 1 sign bit, 5 bits exponent and 2 bits mantissa. The suffix `fnuz` is consistent with LLVM/MLIR naming and is derived from the differences to IEEE floating point conventions. `F` is for \"finite\" (no infinities), `N` for with special NaN encoding, `UZ` for unsigned zero.\n\nThis type has the following characteristics:\n * bit encoding: S1E5M2 - `0bSEEEEEMM`\n * exponent bias: 16\n * infinities: Not supported\n * NaNs: Supported with sign bit set to 1, exponent bits and mantissa bits set to all 0s - `0b10000000`\n * denormals when exponent is 0\n\n### `float8_e8m0fnu`\n\n[OpenCompute MX](https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-final-pdf)\nscale format E8M0, which has the following properties:\n  * Unsigned format\n  * 8 exponent bits\n  * Exponent range from -127 to 127\n  * No zero and infinity\n  * Single NaN value (0xFF).\n\n## `int2`, `int4`, `uint2` and `uint4`\n\n2 and 4-bit integer types, where each element is represented unpacked (i.e.,\npadded up to a byte in memory).\n\nNumPy does not support types smaller than a single byte: for example, the\ndistance between adjacent elements in an array (`.strides`) is expressed as\nan integer number of bytes. Relaxing this restriction would be a considerable\nengineering project. These types therefore use an unpacked representation, where\neach element of the array is padded up to a byte in memory. The lower two or four\nbits of each byte contain the representation of the number, whereas the remaining\nupper bits are ignored.\n\n## Quirks of low-precision Arithmetic\n\nIf you're exploring the use of low-precision dtypes in your code, you should be\ncareful to anticipate when the precision loss might lead to surprising results.\nOne example is the behavior of aggregations like `sum`; consider this `bfloat16`\nsummation in NumPy (run with version 1.24.2):\n\n```python\n>>> from ml_dtypes import bfloat16\n>>> import numpy as np\n>>> rng = np.random.default_rng(seed=0)\n>>> vals = rng.uniform(size=10000).astype(bfloat16)\n>>> vals.sum()\n256\n```\nThe true sum should be close to 5000, but numpy returns exactly 256: this is\nbecause `bfloat16` does not have the precision to increment `256` by values less than\n`1`:\n\n```python\n>>> bfloat16(256) + bfloat16(1)\n256\n```\nAfter 256, the next representable value in bfloat16 is 258:\n\n```python\n>>> np.nextafter(bfloat16(256), bfloat16(np.inf))\n258\n```\nFor better results you can specify that the accumulation should happen in a\nhigher-precision type like `float32`:\n\n```python\n>>> vals.sum(dtype='float32').astype(bfloat16)\n4992\n```\nIn contrast to NumPy, projects like [JAX](http://jax.readthedocs.io/) which support\nlow-precision arithmetic more natively will often do these kinds of higher-precision\naccumulations automatically:\n\n```python\n>>> import jax.numpy as jnp\n>>> jnp.array(vals).sum()\nArray(4992, dtype=bfloat16)\n```\n\n## License\n\n*This is not an officially supported Google product.*\n\nThe `ml_dtypes` source code is licensed under the Apache 2.0 license\n(see [LICENSE](LICENSE)). Pre-compiled wheels are built with the\n[EIGEN](https://eigen.tuxfamily.org/) project, which is released under the\nMPL 2.0 license (see [LICENSE.eigen](LICENSE.eigen)).\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

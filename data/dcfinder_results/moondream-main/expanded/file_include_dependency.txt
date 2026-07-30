@@ -1,0 +1,70 @@
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/requirements.txt
+accelerate ==0.32.1  # type: runtime
+huggingface-hub ==0.24.0  # type: runtime
+pillow ==10.4.0  # type: runtime
+pyvips-binary ==8.16.0  # type: runtime
+pyvips ==2.2.3  # type: runtime
+torch ==2.5.1  # type: runtime
+transformers ==4.44.0  # type: runtime
+gradio ==4.38.1  # type: runtime
+datasets ==3.2.0  # type: runtime
+editdistance ==0.8.1  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-content-moderation/requirements.txt
+gradio >=4.0.0  # type: runtime
+torch >=2.0.0  # type: runtime
+transformers >=4.36.0  # type: runtime
+opencv-python >=4.8.0  # type: runtime
+pillow >=10.0.0  # type: runtime
+numpy >=1.24.0  # type: runtime
+tqdm >=4.66.0  # type: runtime
+ffmpeg-python  # type: runtime
+einops  # type: runtime
+pyvips-binary  # type: runtime
+pyvips  # type: runtime
+accelerate  # type: runtime
+spaces  # type: runtime
+torchvision >=0.20.1  # type: runtime
+matplotlib >=3.7.0  # type: runtime
+pandas >=2.0.0  # type: runtime
+plotly  # type: runtime
+deep-sort-realtime >=1.3.2  # type: runtime
+scikit-learn  # type: runtime
+scenedetect >=0.6.2  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/gaze-detection-video/requirements.txt
+torch >=2.0.0  # type: runtime
+transformers >=4.36.0  # type: runtime
+opencv-python >=4.8.0  # type: runtime
+pillow >=10.0.0  # type: runtime
+matplotlib >=3.7.0  # type: runtime
+numpy >=1.24.0  # type: runtime
+tqdm >=4.65.0  # type: runtime
+pyvips  # type: runtime
+accelerate >=0.26.0  # type: runtime
+einops  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-video-redaction/requirements.txt
+gradio >=4.0.0  # type: runtime
+torch  # type: runtime
+transformers  # type: runtime
+opencv-python  # type: runtime
+pillow  # type: runtime
+numpy  # type: runtime
+tqdm  # type: runtime
+ffmpeg-python  # type: runtime
+einops  # type: runtime
+pyvips  # type: runtime
+accelerate  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/clients/python/pyproject.toml
+pillow <11.0.0,>=10.4.0  # type: runtime
+numpy <3.0.0,>=2.1.2  # type: runtime
+onnxruntime >=1.19.2  # type: runtime
+tokenizers >=0.20.1  # type: runtime
+torch >=2.5.0  # type: runtime
+safetensors >=0.4.2  # type: runtime
+einops >=0.7.0  # type: runtime
+pyvips-binary >=8.16.0  # type: runtime
+pyvips >=2.2.1  # type: runtime
+

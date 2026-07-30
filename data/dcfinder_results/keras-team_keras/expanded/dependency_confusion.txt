@@ -1,0 +1,3524 @@
+{
+     "direct dependency": {
+          "number": 32,
+          "packages": [
+               {
+                    "name": "pre-commit",
+                    "specifier": "",
+                    "raw_requirement": "pre-commit",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "namex",
+                    "specifier": ">=0.0.8",
+                    "raw_requirement": "namex>=0.0.8 ; namex",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ruff",
+                    "specifier": "",
+                    "raw_requirement": "ruff",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pytest",
+                    "specifier": "",
+                    "raw_requirement": "pytest",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numpy",
+                    "specifier": "",
+                    "raw_requirement": "numpy ; numpy",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scipy",
+                    "specifier": "",
+                    "raw_requirement": "scipy",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scikit-learn",
+                    "specifier": "",
+                    "raw_requirement": "scikit-learn",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pillow",
+                    "specifier": "",
+                    "raw_requirement": "pillow",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pandas",
+                    "specifier": "",
+                    "raw_requirement": "pandas",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "absl-py",
+                    "specifier": "",
+                    "raw_requirement": "absl-py ; absl-py",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "requests",
+                    "specifier": "",
+                    "raw_requirement": "requests",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "h5py",
+                    "specifier": "",
+                    "raw_requirement": "h5py ; h5py",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ml-dtypes",
+                    "specifier": "",
+                    "raw_requirement": "ml-dtypes ; ml-dtypes",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "protobuf",
+                    "specifier": "",
+                    "raw_requirement": "protobuf",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorboard-plugin-profile",
+                    "specifier": "",
+                    "raw_requirement": "tensorboard-plugin-profile",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "rich",
+                    "specifier": "",
+                    "raw_requirement": "rich ; rich",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "build",
+                    "specifier": "",
+                    "raw_requirement": "build",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "optree",
+                    "specifier": "",
+                    "raw_requirement": "optree ; optree",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pytest-cov",
+                    "specifier": "",
+                    "raw_requirement": "pytest-cov",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "packaging",
+                    "specifier": "",
+                    "raw_requirement": "packaging ; packaging",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "dm-tree",
+                    "specifier": "",
+                    "raw_requirement": "dm_tree",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "coverage",
+                    "specifier": "!=7.6.5",
+                    "raw_requirement": "coverage!=7.6.5",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnxruntime",
+                    "specifier": "",
+                    "raw_requirement": "onnxruntime",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "openvino",
+                    "specifier": "",
+                    "raw_requirement": "openvino",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorflow-cpu",
+                    "specifier": "~=2.18.1",
+                    "raw_requirement": "tensorflow-cpu~=2.18.1 ; tensorflow-cpu~=2.18.1;sys_platform != 'darwin' ; tensorflow-cpu~=2.18.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-jax-cuda.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tf2onnx",
+                    "specifier": "",
+                    "raw_requirement": "tf2onnx ; tf2onnx ; tf2onnx ; tf2onnx",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-jax-cuda.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch",
+                    "specifier": "==2.6.0",
+                    "raw_requirement": "torch==2.6.0 ; torch==2.6.0;sys_platform != 'darwin' ; torch==2.6.0;sys_platform == 'darwin' ; torch==2.6.0 ; torch==2.6.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-jax-cuda.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "jax",
+                    "specifier": "==0.6.0",
+                    "raw_requirement": "jax[cuda12]==0.6.0 ; jax[cpu]==0.5.0 ; jax[cpu] ; jax[cpu]",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-jax-cuda.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "flax",
+                    "specifier": "",
+                    "raw_requirement": "flax ; flax",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-jax-cuda.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorflow",
+                    "specifier": "~=2.18.1",
+                    "raw_requirement": "tensorflow~=2.18.1;sys_platform == 'darwin' ; tensorflow[and-cuda]~=2.18.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tf-keras",
+                    "specifier": "",
+                    "raw_requirement": "tf_keras",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch-xla",
+                    "specifier": "==2.6.0",
+                    "raw_requirement": "torch-xla==2.6.0;sys_platform != 'darwin' ; torch-xla==2.6.0;sys_platform != 'darwin'",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 196,
+          "packages": [
+               {
+                    "name": "aiobotocore",
+                    "specifier": "<4.0.0,>=2.19.0",
+                    "raw_requirement": "aiobotocore<4.0.0,>=2.19.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "s3fs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "aiofiles",
+                    "specifier": "",
+                    "raw_requirement": "aiofiles",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "orbax-checkpoint",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "aiohappyeyeballs",
+                    "specifier": ">=2.5.0",
+                    "raw_requirement": "aiohappyeyeballs>=2.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "aiohttp",
+                    "specifier": "!=4.0.0a0,!=4.0.0a1,>=3.9.0,<4.0.0,>=3.12.0",
+                    "raw_requirement": "aiohttp!=4.0.0a0,!=4.0.0a1,>=3.9.0 ; aiohttp!=4.0.0a0,!=4.0.0a1,>=3.9.0 ; aiohttp<4.0.0,>=3.12.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "s3fs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "aioitertools",
+                    "specifier": "<1.0.0,>=0.5.1",
+                    "raw_requirement": "aioitertools<1.0.0,>=0.5.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "aiosignal",
+                    "specifier": ">=1.4.0",
+                    "raw_requirement": "aiosignal>=1.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "anyio",
+                    "specifier": ">=3.1.0",
+                    "raw_requirement": "anyio>=3.1.0 ; anyio",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "argon2-cffi",
+                    "specifier": ">=21.1",
+                    "raw_requirement": "argon2-cffi>=21.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "argon2-cffi-bindings",
+                    "specifier": "",
+                    "raw_requirement": "argon2-cffi-bindings",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "argon2-cffi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "arrow",
+                    "specifier": ">=0.15.0",
+                    "raw_requirement": "arrow (>=0.15.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "isoduration",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "asttokens",
+                    "specifier": ">=2.1.0",
+                    "raw_requirement": "asttokens >=2.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "stack-data",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "astunparse",
+                    "specifier": ">=1.6.0",
+                    "raw_requirement": "astunparse>=1.6.0 ; astunparse>=1.6.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow-cpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "async-lru",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "async-lru>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "async-timeout",
+                    "specifier": "<6.0,>=4.0",
+                    "raw_requirement": "async-timeout<6.0,>=4.0; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "attrs",
+                    "specifier": ">=18.2.0,>=17.3.0,>=22.2.0,>=22.2.0",
+                    "raw_requirement": "attrs>=18.2.0 ; attrs>=17.3.0 ; attrs>=22.2.0 ; attrs>=22.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "dm-tree",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "babel",
+                    "specifier": ">=2.10",
+                    "raw_requirement": "babel>=2.10",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "beautifulsoup4",
+                    "specifier": "",
+                    "raw_requirement": "beautifulsoup4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "bleach",
+                    "specifier": "!=5.0.0",
+                    "raw_requirement": "bleach[css]!=5.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "botocore",
+                    "specifier": "<1.43.1,>=1.42.90",
+                    "raw_requirement": "botocore<1.43.1,>=1.42.90",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "certifi",
+                    "specifier": ">=2017.4.17",
+                    "raw_requirement": "certifi (>=2017.4.17) ; certifi ; certifi",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpcore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cffi",
+                    "specifier": ">=2.0.0,>=1.0.1",
+                    "raw_requirement": "cffi>=2.0.0; platform_python_implementation != \"PyPy\" ; cffi>=1.0.1; python_version < \"3.14\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cryptography",
+                              "source": "public"
+                         },
+                         {
+                              "name": "argon2-cffi-bindings",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cfgv",
+                    "specifier": ">=2.0.0",
+                    "raw_requirement": "cfgv>=2.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pre-commit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "charset-normalizer",
+                    "specifier": "<3,>=2",
+                    "raw_requirement": "charset-normalizer (<3,>=2)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "cheroot",
+                    "specifier": ">=10.0.1",
+                    "raw_requirement": "cheroot>=10.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "xprof",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "comm",
+                    "specifier": ">=0.1.1,>=0.1.3",
+                    "raw_requirement": "comm>=0.1.1 ; comm>=0.1.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipywidgets",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "contourpy",
+                    "specifier": ">=1.0.1",
+                    "raw_requirement": "contourpy>=1.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cryptography",
+                    "specifier": "<50,>=49.0.0,>=38.0.3",
+                    "raw_requirement": "cryptography<50,>=49.0.0 ; cryptography>=38.0.3; python_version < \"3.14\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pyopenssl",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-auth",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cycler",
+                    "specifier": ">=0.10",
+                    "raw_requirement": "cycler>=0.10",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "debugpy",
+                    "specifier": ">=1.6.5",
+                    "raw_requirement": "debugpy>=1.6.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "decorator",
+                    "specifier": ">4.1.2,>=5.1.0",
+                    "raw_requirement": "decorator>4.1.2 ; decorator>=5.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "defusedxml",
+                    "specifier": "",
+                    "raw_requirement": "defusedxml",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "distlib",
+                    "specifier": "<1,>=0.3.7",
+                    "raw_requirement": "distlib<1,>=0.3.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "virtualenv",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "docstring-parser",
+                    "specifier": "~=0.15",
+                    "raw_requirement": "docstring-parser~=0.15",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "simple-parsing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "einops",
+                    "specifier": "",
+                    "raw_requirement": "einops; extra == \"enp\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "etils",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "etils",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "etils[epath]>=1.0.0 ; etils[epath,epy] ; etils[array-types]; extra == \"all\" ; etils[eapp]; extra == \"all\" ; etils[ecolab]; extra == \"all\" ; etils[edc]; extra == \"all\" ; etils[enp]; extra == \"all\" ; etils[epath]; extra == \"all\" ; etils[epath-gcs]; extra == \"all\" ; etils[epath-s3]; extra == \"all\" ; etils[epy]; extra == \"all\" ; etils[etqdm]; extra == \"all\" ; etils[etree]; extra == \"all\" ; etils[etree-dm]; extra == \"all\" ; etils[etree-jax]; extra == \"all\" ; etils[etree-tf]; extra == \"all\" ; etils[enp]; extra == \"array-types\" ; etils[epy]; extra == \"eapp\" ; etils[enp]; extra == \"ecolab\" ; etils[epy]; extra == \"ecolab\" ; etils[etree]; extra == \"ecolab\" ; etils[epy]; extra == \"edc\" ; etils[epy]; extra == \"enp\" ; etils[epy]; extra == \"epath\" ; etils[epath]; extra == \"epath-gcs\" ; etils[epath]; extra == \"epath-s3\" ; etils[epy]; extra == \"etqdm\" ; etils[array-types]; extra == \"etree\" ; etils[epy]; extra == \"etree\" ; etils[enp]; extra == \"etree\" ; etils[etqdm]; extra == \"etree\" ; etils[etree]; extra == \"etree-dm\" ; etils[etree]; extra == \"etree-jax\" ; etils[etree]; extra == \"etree-tf\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "xprof",
+                              "source": "public"
+                         },
+                         {
+                              "name": "orbax-checkpoint",
+                              "source": "public"
+                         },
+                         {
+                              "name": "etils",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "exceptiongroup",
+                    "specifier": ">=1,>=1.0.2",
+                    "raw_requirement": "exceptiongroup>=1; python_version < \"3.11\" ; exceptiongroup>=1.0.2; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "executing",
+                    "specifier": ">=1.2.0",
+                    "raw_requirement": "executing >=1.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "stack-data",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fastjsonschema",
+                    "specifier": ">=2.15",
+                    "raw_requirement": "fastjsonschema>=2.15",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbformat",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "filelock",
+                    "specifier": "<4,>=3.24.2,>=3.15.4",
+                    "raw_requirement": "filelock ; filelock<4,>=3.24.2; python_version >= \"3.10\" ; filelock>=3.15.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "virtualenv",
+                              "source": "public"
+                         },
+                         {
+                              "name": "python-discovery",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "flatbuffers",
+                    "specifier": ">=24.3.25,>=1.12,>=24.3.25",
+                    "raw_requirement": "flatbuffers ; flatbuffers>=24.3.25 ; flatbuffers>=1.12 ; flatbuffers>=24.3.25",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "onnxruntime",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow-cpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tf2onnx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fonttools",
+                    "specifier": ">=4.22.0",
+                    "raw_requirement": "fonttools>=4.22.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fqdn",
+                    "specifier": "",
+                    "raw_requirement": "fqdn; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "frozenlist",
+                    "specifier": ">=1.1.1,>=1.1.0",
+                    "raw_requirement": "frozenlist>=1.1.1 ; frozenlist>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiosignal",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fsspec",
+                    "specifier": ">=2024.3.1,>=2026.6.0,<2026.6.1,>=2026.6.0",
+                    "raw_requirement": "fsspec ; fsspec>=2024.3.1 ; fsspec; extra == \"epath\" ; fsspec>=2026.6.0 ; fsspec<2026.6.1,>=2026.6.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "xprof",
+                              "source": "public"
+                         },
+                         {
+                              "name": "etils",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "s3fs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "gast",
+                    "specifier": "!=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1",
+                    "raw_requirement": "gast!=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1 ; gast!=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow-cpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "gcsfs",
+                    "specifier": ">=2024.3.1",
+                    "raw_requirement": "gcsfs>=2024.3.1 ; gcsfs; extra == \"epath-gcs\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "xprof",
+                              "source": "public"
+                         },
+                         {
+                              "name": "etils",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-api-core",
+                    "specifier": "<3.0.0,>=2.17.1,<3.0.0,>=2.27.0,<3.0.0,>=2.11.0",
+                    "raw_requirement": "google-api-core[grpc]<3.0.0,>=2.17.1 ; google-api-core<3.0.0,>=2.27.0 ; google-api-core<3.0.0,>=2.11.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-cloud-storage-control",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-cloud-storage",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-cloud-core",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-auth",
+                    "specifier": ">=1.2,!=2.43.0,!=2.44.0,!=2.45.0,<3.0.0,>=2.15.0,!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1,<3.0.0,>=2.26.1,<3.0.0,>=2.14.1,!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+                    "raw_requirement": "google-auth>=1.2 ; google-auth!=2.43.0,!=2.44.0,!=2.45.0,<3.0.0,>=2.15.0 ; google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1 ; google-auth<3.0.0,>=2.26.1 ; google-auth<3.0.0,>=2.14.1 ; google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-auth-oauthlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-cloud-storage-control",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-cloud-storage",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-api-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-cloud-core",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-auth-oauthlib",
+                    "specifier": "",
+                    "raw_requirement": "google-auth-oauthlib",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-cloud-core",
+                    "specifier": "<3.0.0,>=2.4.2",
+                    "raw_requirement": "google-cloud-core<3.0.0,>=2.4.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-cloud-storage",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-cloud-storage",
+                    "specifier": ">=3.11.0",
+                    "raw_requirement": "google-cloud-storage>=3.11.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-cloud-storage-control",
+                    "specifier": "",
+                    "raw_requirement": "google-cloud-storage-control",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-crc32c",
+                    "specifier": "<2.0.0,>=1.6.0,<2.0.0,>=1.0.0",
+                    "raw_requirement": "google-crc32c<2.0.0,>=1.6.0 ; google-crc32c<2.0.0,>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-cloud-storage",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-resumable-media",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-pasta",
+                    "specifier": ">=0.1.1",
+                    "raw_requirement": "google-pasta>=0.1.1 ; google-pasta>=0.1.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow-cpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-resumable-media",
+                    "specifier": "<3.0.0,>=2.7.2",
+                    "raw_requirement": "google-resumable-media<3.0.0,>=2.7.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-cloud-storage",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "googleapis-common-protos",
+                    "specifier": "<2.0.0,>=1.63.2,>=1.5.5",
+                    "raw_requirement": "googleapis-common-protos<2.0.0,>=1.63.2 ; googleapis-common-protos[grpc]<2.0.0,>=1.63.2 ; googleapis-common-protos>=1.5.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-api-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpc-google-iam-v1",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpcio-status",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "grpc-google-iam-v1",
+                    "specifier": "<1.0.0,>=0.14.0",
+                    "raw_requirement": "grpc-google-iam-v1<1.0.0,>=0.14.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-cloud-storage-control",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "grpcio",
+                    "specifier": "<2.0,>=1.24.3,>=1.48.2,<2.0.0,>=1.59.0,<2.0.0,>=1.41.0,<2.0.0,>=1.44.0,<2.0.0,>=1.44.0,>=1.83.0rc1",
+                    "raw_requirement": "grpcio<2.0,>=1.24.3 ; grpcio<2.0,>=1.24.3 ; grpcio>=1.48.2 ; grpcio<2.0.0,>=1.59.0 ; grpcio<2.0.0,>=1.41.0; extra == \"grpc\" ; grpcio<2.0.0,>=1.44.0 ; grpcio<2.0.0,>=1.44.0; extra == \"grpc\" ; grpcio>=1.83.0rc1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow-cpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-cloud-storage-control",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-api-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpc-google-iam-v1",
+                              "source": "public"
+                         },
+                         {
+                              "name": "googleapis-common-protos",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpcio-status",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "grpcio-status",
+                    "specifier": "<2.0.0,>=1.41.0",
+                    "raw_requirement": "grpcio-status<2.0.0,>=1.41.0; extra == \"grpc\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-api-core",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "gviz-api",
+                    "specifier": ">=1.9.0",
+                    "raw_requirement": "gviz_api>=1.9.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "xprof",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "h11",
+                    "specifier": ">=0.16",
+                    "raw_requirement": "h11>=0.16",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpcore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpcore",
+                    "specifier": "==1.*",
+                    "raw_requirement": "httpcore==1.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpx",
+                    "specifier": "<1,>=0.25.0",
+                    "raw_requirement": "httpx<1,>=0.25.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "humanize",
+                    "specifier": "",
+                    "raw_requirement": "humanize",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "orbax-checkpoint",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "identify",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "identify>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pre-commit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "idna",
+                    "specifier": "<4,>=2.5,>=2.0,>=2.8",
+                    "raw_requirement": "idna (<4,>=2.5) ; idna>=2.0 ; idna ; idna>=2.8 ; idna; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "yarl",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "iniconfig",
+                    "specifier": ">=1.0.1",
+                    "raw_requirement": "iniconfig>=1.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ipykernel",
+                    "specifier": ">=6.14,!=6.30.0,>=6.5.0",
+                    "raw_requirement": "ipykernel ; ipykernel>=6.14 ; ipykernel!=6.30.0,>=6.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-console",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ipython",
+                    "specifier": ">=7.23.1,>=6.1.0",
+                    "raw_requirement": "ipython ; ipython ; ipython>=7.23.1 ; ipython>=6.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mediapy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-console",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipywidgets",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ipython-pygments-lexers",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "ipython-pygments-lexers>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ipywidgets",
+                    "specifier": "",
+                    "raw_requirement": "ipywidgets",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "isoduration",
+                    "specifier": "",
+                    "raw_requirement": "isoduration; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jaraco-functools",
+                    "specifier": "",
+                    "raw_requirement": "jaraco.functools",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cheroot",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jaxlib",
+                    "specifier": "<=0.6.0,>=0.6.0,>=0.5.3",
+                    "raw_requirement": "jaxlib<=0.6.0,>=0.6.0 ; jaxlib>=0.5.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jax",
+                              "source": "public"
+                         },
+                         {
+                              "name": "optax",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jedi",
+                    "specifier": ">=0.18.2",
+                    "raw_requirement": "jedi>=0.18.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": ">=3.0,>=3.0.3,>=3.0.3,>=3.0.3",
+                    "raw_requirement": "jinja2 ; jinja2>=3.0 ; jinja2>=3.0.3 ; jinja2>=3.0.3 ; jinja2>=3.0.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jmespath",
+                    "specifier": "<2.0.0,>=0.7.1",
+                    "raw_requirement": "jmespath<2.0.0,>=0.7.1 ; jmespath<2.0.0,>=0.7.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         },
+                         {
+                              "name": "botocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "joblib",
+                    "specifier": ">=1.4.0",
+                    "raw_requirement": "joblib>=1.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "json5",
+                    "specifier": ">=0.9.0",
+                    "raw_requirement": "json5>=0.9.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jsonpointer",
+                    "specifier": ">1.13",
+                    "raw_requirement": "jsonpointer>1.13; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jsonschema",
+                    "specifier": ">=4.18.0,>=2.6,>=4.18.0",
+                    "raw_requirement": "jsonschema>=4.18.0 ; jsonschema>=2.6 ; jsonschema[format-nongpl]>=4.18.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbformat",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jsonschema-specifications",
+                    "specifier": ">=2023.03.6",
+                    "raw_requirement": "jsonschema-specifications>=2023.03.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter",
+                    "specifier": "",
+                    "raw_requirement": "jupyter; extra == \"ecolab\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "etils",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter-builder",
+                    "specifier": "<2,>=1.0.2,>=1.0.2",
+                    "raw_requirement": "jupyter-builder<2,>=1.0.2 ; jupyter-builder>=1.0.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "notebook",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter-client",
+                    "specifier": ">=7.0.0,>=8.9.0,>=7.4.4,>=7.0.0",
+                    "raw_requirement": "jupyter-client>=7.0.0 ; jupyter-client>=8.9.0 ; jupyter-client>=7.4.4 ; jupyter-client>=7.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-console",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbclient",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter-console",
+                    "specifier": "",
+                    "raw_requirement": "jupyter-console",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter-core",
+                    "specifier": "!=5.0.*,>=4.12,>=4.7,!=6.0.*,>=5.1,!=5.0.*,>=4.12,>=5.1,>=5.4.0,!=5.0.*,>=4.12",
+                    "raw_requirement": "jupyter-core!=5.0.*,>=4.12 ; jupyter-core>=4.7 ; jupyter-core!=6.0.*,>=5.1 ; jupyter-core ; jupyter-core ; jupyter-core!=5.0.*,>=4.12 ; jupyter-core>=5.1 ; jupyter-core>=5.4.0 ; jupyter-core!=5.0.*,>=4.12",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-console",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-builder",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbclient",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbformat",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter-events",
+                    "specifier": ">=0.11.0",
+                    "raw_requirement": "jupyter-events>=0.11.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter-lsp",
+                    "specifier": ">=2.0.0",
+                    "raw_requirement": "jupyter-lsp>=2.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter-server",
+                    "specifier": "<3,>=2.19.0,<3,>=1.21,<3,>=1.8,>=1.1.2",
+                    "raw_requirement": "jupyter-server<3,>=2.19.0 ; jupyter-server<3,>=2.19.0 ; jupyter-server<3,>=1.21 ; jupyter-server<3,>=1.8 ; jupyter_server>=1.1.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "notebook",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "notebook-shim",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-lsp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyter-server-terminals",
+                    "specifier": ">=0.4.4",
+                    "raw_requirement": "jupyter-server-terminals>=0.4.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyterlab",
+                    "specifier": "<4.7,>=4.6.0",
+                    "raw_requirement": "jupyterlab ; jupyterlab<4.7,>=4.6.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter",
+                              "source": "public"
+                         },
+                         {
+                              "name": "notebook",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyterlab-pygments",
+                    "specifier": "",
+                    "raw_requirement": "jupyterlab-pygments",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyterlab-server",
+                    "specifier": "<3,>=2.28.0",
+                    "raw_requirement": "jupyterlab-server<3,>=2.28.0 ; jupyterlab-server<3,>=2.28.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "notebook",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jupyterlab-widgets",
+                    "specifier": "~=3.0.15",
+                    "raw_requirement": "jupyterlab_widgets~=3.0.15",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipywidgets",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "keras",
+                    "specifier": ">=3.5.0",
+                    "raw_requirement": "keras>=3.5.0 ; keras>=3.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow-cpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "kiwisolver",
+                    "specifier": ">=1.3.1",
+                    "raw_requirement": "kiwisolver>=1.3.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "lark",
+                    "specifier": ">=1.2.2",
+                    "raw_requirement": "lark>=1.2.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rfc3987-syntax",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "libclang",
+                    "specifier": ">=13.0.0",
+                    "raw_requirement": "libclang>=13.0.0 ; libclang>=13.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow-cpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markdown",
+                    "specifier": ">=2.6.8",
+                    "raw_requirement": "markdown>=2.6.8",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markdown-it-py",
+                    "specifier": ">=2.2.0",
+                    "raw_requirement": "markdown-it-py>=2.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rich",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markupsafe",
+                    "specifier": ">=2.0,>=2.1.1,>=2.0",
+                    "raw_requirement": "MarkupSafe>=2.0 ; markupsafe>=2.1.1 ; markupsafe>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jinja2",
+                              "source": "private"
+                         },
+                         {
+                              "name": "werkzeug",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "matplotlib",
+                    "specifier": "",
+                    "raw_requirement": "matplotlib",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mediapy",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "matplotlib-inline",
+                    "specifier": ">=0.1,>=0.1.6",
+                    "raw_requirement": "matplotlib-inline>=0.1 ; matplotlib-inline>=0.1.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mdurl",
+                    "specifier": "~=0.1",
+                    "raw_requirement": "mdurl~=0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "markdown-it-py",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mediapy",
+                    "specifier": "",
+                    "raw_requirement": "mediapy; extra == \"ecolab\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "etils",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mistune",
+                    "specifier": "<4,>=2.0.3",
+                    "raw_requirement": "mistune<4,>=2.0.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "more-itertools",
+                    "specifier": ">=2.6",
+                    "raw_requirement": "more-itertools>=2.6 ; more_itertools",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cheroot",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jaraco-functools",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mpmath",
+                    "specifier": "<1.4,>=1.1.0",
+                    "raw_requirement": "mpmath <1.4,>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sympy",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "msgpack",
+                    "specifier": "",
+                    "raw_requirement": "msgpack ; msgpack",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "flax",
+                              "source": "public"
+                         },
+                         {
+                              "name": "orbax-checkpoint",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "multidict",
+                    "specifier": "<7.0,>=4.5,<7.0.0,>=6.0.0,>=4.0",
+                    "raw_requirement": "multidict<7.0,>=4.5 ; multidict<7.0.0,>=6.0.0 ; multidict>=4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         },
+                         {
+                              "name": "yarl",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "narwhals",
+                    "specifier": ">=2.0.1",
+                    "raw_requirement": "narwhals>=2.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nbclient",
+                    "specifier": ">=0.5.0",
+                    "raw_requirement": "nbclient>=0.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nbconvert",
+                    "specifier": ">=6.4.4",
+                    "raw_requirement": "nbconvert ; nbconvert>=6.4.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nbformat",
+                    "specifier": ">=5.7,>=5.3.0,>=5.2.0",
+                    "raw_requirement": "nbformat>=5.7 ; nbformat>=5.3.0 ; nbformat>=5.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbclient",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nest-asyncio2",
+                    "specifier": ">=1.7.0",
+                    "raw_requirement": "nest-asyncio2>=1.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "networkx",
+                    "specifier": "",
+                    "raw_requirement": "networkx",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nodeenv",
+                    "specifier": ">=0.11.1",
+                    "raw_requirement": "nodeenv>=0.11.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pre-commit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "notebook",
+                    "specifier": "",
+                    "raw_requirement": "notebook",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "notebook-shim",
+                    "specifier": "<0.3,>=0.2,>=0.2",
+                    "raw_requirement": "notebook-shim<0.3,>=0.2 ; notebook-shim>=0.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "notebook",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "oauthlib",
+                    "specifier": ">=3.0.0",
+                    "raw_requirement": "oauthlib>=3.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests-oauthlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "onnx",
+                    "specifier": ">=1.14.0",
+                    "raw_requirement": "onnx>=1.14.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tf2onnx",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "openvino-telemetry",
+                    "specifier": ">=2023.2.1",
+                    "raw_requirement": "openvino-telemetry>=2023.2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "openvino",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "opt-einsum",
+                    "specifier": ">=2.3.2",
+                    "raw_requirement": "opt-einsum>=2.3.2 ; opt_einsum ; opt-einsum>=2.3.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow-cpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jax",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "optax",
+                    "specifier": "",
+                    "raw_requirement": "optax",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "flax",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "orbax-checkpoint",
+                    "specifier": "",
+                    "raw_requirement": "orbax-checkpoint",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "flax",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "overrides",
+                    "specifier": ">=5.0",
+                    "raw_requirement": "overrides>=5.0; python_version < \"3.12\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pandocfilters",
+                    "specifier": ">=1.4.1",
+                    "raw_requirement": "pandocfilters>=1.4.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "parso",
+                    "specifier": "<0.9.0,>=0.8.6",
+                    "raw_requirement": "parso<0.9.0,>=0.8.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jedi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pexpect",
+                    "specifier": ">4.6",
+                    "raw_requirement": "pexpect>4.6; sys_platform != \"win32\" and sys_platform != \"emscripten\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "platformdirs",
+                    "specifier": "<5,>=3.9.1,<5,>=4.3.6,>=2.5",
+                    "raw_requirement": "platformdirs<5,>=3.9.1 ; platformdirs<5,>=4.3.6 ; platformdirs>=2.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "virtualenv",
+                              "source": "public"
+                         },
+                         {
+                              "name": "python-discovery",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-core",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pluggy",
+                    "specifier": "<2,>=1.5,>=1.2",
+                    "raw_requirement": "pluggy<2,>=1.5 ; pluggy>=1.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytest-cov",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "prometheus-client",
+                    "specifier": ">=0.20.0,>=0.9",
+                    "raw_requirement": "prometheus-client>=0.20.0 ; prometheus-client>=0.9",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "orbax-checkpoint",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "prompt-toolkit",
+                    "specifier": ">=3.0.30,<3.1.0,>=3.0.41",
+                    "raw_requirement": "prompt-toolkit>=3.0.30 ; prompt_toolkit<3.1.0,>=3.0.41",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-console",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "propcache",
+                    "specifier": ">=0.2.0,>=0.2.1",
+                    "raw_requirement": "propcache>=0.2.0 ; propcache>=0.2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "yarl",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "proto-plus",
+                    "specifier": "<2.0.0,>=1.22.3,<2.0.0,>=1.24.0",
+                    "raw_requirement": "proto-plus<2.0.0,>=1.22.3 ; proto-plus<2.0.0,>=1.24.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-cloud-storage-control",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-api-core",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "psutil",
+                    "specifier": ">=5.7,>=7",
+                    "raw_requirement": "psutil ; psutil>=5.7 ; psutil>=7; sys_platform != \"emscripten\" and sys_platform != \"cygwin\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "orbax-checkpoint",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ptyprocess",
+                    "specifier": ">=0.5",
+                    "raw_requirement": "ptyprocess (>=0.5) ; ptyprocess; os_name != 'nt'",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pexpect",
+                              "source": "public"
+                         },
+                         {
+                              "name": "terminado",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pure-eval",
+                    "specifier": "",
+                    "raw_requirement": "pure-eval",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "stack-data",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyasn1",
+                    "specifier": "<0.7.0,>=0.6.1",
+                    "raw_requirement": "pyasn1<0.7.0,>=0.6.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pyasn1-modules",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyasn1-modules",
+                    "specifier": ">=0.2.1",
+                    "raw_requirement": "pyasn1-modules>=0.2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-auth",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pycparser",
+                    "specifier": "",
+                    "raw_requirement": "pycparser; implementation_name != \"PyPy\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cffi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pygments",
+                    "specifier": ">=2.7.2,<3.0.0,>=2.13.0,>=2.4.1,>=2.14.0",
+                    "raw_requirement": "pygments>=2.7.2 ; pygments<3.0.0,>=2.13.0 ; pygments ; pygments>=2.4.1 ; pygments>=2.14.0 ; pygments",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         },
+                         {
+                              "name": "rich",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-console",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython-pygments-lexers",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyopenssl",
+                    "specifier": ">=26.1.0",
+                    "raw_requirement": "pyOpenSSL>=26.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "xprof",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyparsing",
+                    "specifier": ">=3",
+                    "raw_requirement": "pyparsing>=3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyproject-hooks",
+                    "specifier": "",
+                    "raw_requirement": "pyproject_hooks",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "build",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-dateutil",
+                    "specifier": ">=2.8.2,>=2.7,<3.0.0,>=2.1,>=2.8.2,<3.0.0,>=2.1,>=2.7.0",
+                    "raw_requirement": "python-dateutil>=2.8.2 ; python-dateutil>=2.7 ; python-dateutil<3.0.0,>=2.1 ; python-dateutil>=2.8.2 ; python-dateutil<3.0.0,>=2.1 ; python-dateutil>=2.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "botocore",
+                              "source": "public"
+                         },
+                         {
+                              "name": "arrow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-discovery",
+                    "specifier": ">=1.4.2",
+                    "raw_requirement": "python-discovery>=1.4.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "virtualenv",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-json-logger",
+                    "specifier": ">=2.0.4",
+                    "raw_requirement": "python-json-logger>=2.0.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyyaml",
+                    "specifier": ">=5.1,>=5.4.1,>=5.3",
+                    "raw_requirement": "pyyaml>=5.1 ; PyYAML>=5.4.1 ; pyyaml ; pyyaml ; pyyaml>=5.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pre-commit",
+                              "source": "public"
+                         },
+                         {
+                              "name": "flax",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch-xla",
+                              "source": "public"
+                         },
+                         {
+                              "name": "orbax-checkpoint",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyzmq",
+                    "specifier": ">=17,>=25,>=24,>=25.0",
+                    "raw_requirement": "pyzmq>=17 ; pyzmq>=25 ; pyzmq>=24 ; pyzmq>=25.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-console",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "referencing",
+                    "specifier": ">=0.28.4,>=0.31.0",
+                    "raw_requirement": "referencing ; referencing>=0.28.4 ; referencing>=0.31.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema-specifications",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "requests-oauthlib",
+                    "specifier": ">=0.7.0",
+                    "raw_requirement": "requests-oauthlib>=0.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-auth-oauthlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "rfc3339-validator",
+                    "specifier": "",
+                    "raw_requirement": "rfc3339-validator ; rfc3339-validator; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "rfc3986-validator",
+                    "specifier": ">=0.1.1,>0.1.0",
+                    "raw_requirement": "rfc3986-validator>=0.1.1 ; rfc3986-validator>0.1.0; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "rfc3987-syntax",
+                    "specifier": ">=1.1.0",
+                    "raw_requirement": "rfc3987-syntax>=1.1.0; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "rpds-py",
+                    "specifier": ">=0.25.0,>=0.7.0",
+                    "raw_requirement": "rpds-py>=0.25.0 ; rpds-py>=0.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "s3fs",
+                    "specifier": "",
+                    "raw_requirement": "s3fs; extra == \"epath-s3\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "etils",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "send2trash",
+                    "specifier": ">=1.8.2",
+                    "raw_requirement": "send2trash>=1.8.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "setuptools",
+                    "specifier": ">=41.0.0",
+                    "raw_requirement": "setuptools ; setuptools ; setuptools>=41.0.0 ; setuptools>=41.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow-cpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "xprof",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "simple-parsing",
+                    "specifier": "",
+                    "raw_requirement": "simple_parsing; extra == \"eapp\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "etils",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "simplejson",
+                    "specifier": ">=3.16.0",
+                    "raw_requirement": "simplejson>=3.16.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "orbax-checkpoint",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "six",
+                    "specifier": ">=1.12.0,>=1.5,>=1.10.0,<2.0,>=1.6.1,>1.9",
+                    "raw_requirement": "six>=1.12.0 ; six>=1.12.0 ; six >=1.5 ; six>=1.10.0 ; six (<2.0,>=1.6.1) ; six ; six>1.9 ; six ; six",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow-cpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "python-dateutil",
+                              "source": "public"
+                         },
+                         {
+                              "name": "xprof",
+                              "source": "public"
+                         },
+                         {
+                              "name": "astunparse",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-pasta",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gviz-api",
+                              "source": "public"
+                         },
+                         {
+                              "name": "rfc3339-validator",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "soupsieve",
+                    "specifier": ">=1.6.1",
+                    "raw_requirement": "soupsieve>=1.6.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "beautifulsoup4",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "stack-data",
+                    "specifier": ">=0.6.0",
+                    "raw_requirement": "stack_data>=0.6.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sympy",
+                    "specifier": "==1.13.1",
+                    "raw_requirement": "sympy (==1.13.1) ; python_version >= \"3.9\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "tensorboard",
+                    "specifier": "<2.19,>=2.18",
+                    "raw_requirement": "tensorboard<2.19,>=2.18 ; tensorboard<2.19,>=2.18",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow-cpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tensorboard-data-server",
+                    "specifier": "<0.8.0,>=0.7.0",
+                    "raw_requirement": "tensorboard-data-server<0.8.0,>=0.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tensorflow-io-gcs-filesystem",
+                    "specifier": ">=0.23.1",
+                    "raw_requirement": "tensorflow-io-gcs-filesystem>=0.23.1; python_version < \"3.12\" ; tensorflow-io-gcs-filesystem>=0.23.1; python_version < \"3.12\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow-cpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tensorstore",
+                    "specifier": ">=0.1.84",
+                    "raw_requirement": "tensorstore ; tensorstore>=0.1.84",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "flax",
+                              "source": "public"
+                         },
+                         {
+                              "name": "orbax-checkpoint",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "termcolor",
+                    "specifier": ">=1.1.0",
+                    "raw_requirement": "termcolor>=1.1.0 ; termcolor>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow-cpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "terminado",
+                    "specifier": ">=0.8.3",
+                    "raw_requirement": "terminado>=0.8.3 ; terminado>=0.8.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server-terminals",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "threadpoolctl",
+                    "specifier": ">=3.5.0",
+                    "raw_requirement": "threadpoolctl>=3.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tinycss2",
+                    "specifier": ">=1.1.0",
+                    "raw_requirement": "tinycss2>=1.1.0; extra == \"css\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "bleach",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tomli",
+                    "specifier": ">=1,>=1.1.0,>=1.2.2",
+                    "raw_requirement": "tomli>=1; python_version < \"3.11\" ; tomli>=1.1.0; python_version < \"3.11\" ; tomli; python_full_version <= \"3.11.0a6\" and extra == \"toml\" ; tomli>=1.2.2; python_version < \"3.11\" ; tomli; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         },
+                         {
+                              "name": "build",
+                              "source": "public"
+                         },
+                         {
+                              "name": "coverage",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-builder",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tornado",
+                    "specifier": ">=6.2.0,>=6.4.1,>=6.2.0,>=6.2.0,>=6.4.1,>=6.1.0",
+                    "raw_requirement": "tornado>=6.2.0 ; tornado>=6.4.1 ; tornado>=6.2.0 ; tornado>=6.2.0 ; tornado>=6.4.1 ; tornado>=6.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "notebook",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "terminado",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tqdm",
+                    "specifier": "",
+                    "raw_requirement": "tqdm; extra == \"etqdm\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "etils",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "traitlets",
+                    "specifier": ">=5.4,>=5.1,>=5.4.0,>=4.3.1,>=5.13.0,>=5.6.0,>=5.3,>=5.3,>=5.13,>=5.1,>=5.3",
+                    "raw_requirement": "traitlets>=5.4 ; traitlets>=5.1 ; traitlets>=5.4.0 ; traitlets>=4.3.1 ; traitlets ; traitlets>=5.13.0 ; traitlets ; traitlets>=5.6.0 ; traitlets>=5.3 ; traitlets>=5.3 ; traitlets>=5.13 ; traitlets>=5.1 ; traitlets ; traitlets>=5.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-console",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbconvert",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipykernel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipywidgets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyterlab",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-builder",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbclient",
+                              "source": "public"
+                         },
+                         {
+                              "name": "nbformat",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib-inline",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-events",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "treescope",
+                    "specifier": ">=0.1.7",
+                    "raw_requirement": "treescope>=0.1.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "flax",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=4.6.0,>=3.6.6,>=4.10.0,>=4.2,>=3.6.6,>=4.13.2,>=4.6.0,~=4.12,>=4.15.0,>=4.9,>=4.5.0,>=4.4,>=4.13.2,>=4.6,<5.0.0,>=4.14.0,>=4.2,>=4.1.0,>=4.13.0,>=4.0.0,>=4.0.0,>=4.5,>=4.4.0",
+                    "raw_requirement": "typing-extensions>=4.6.0 ; typing-extensions>=3.6.6 ; typing-extensions (>=4.10.0) ; typing_extensions>=4.2 ; typing-extensions>=3.6.6 ; typing-extensions>=4.13.2; python_version < \"3.11\" ; typing-extensions>=4.6.0; python_version < \"3.13\" ; typing-extensions~=4.12 ; typing_extensions>=4.15.0 ; typing_extensions ; typing_extensions; extra == \"epath\" ; typing_extensions; extra == \"epy\" ; typing-extensions>=4.9; python_version < \"3.13\" ; typing-extensions>=4.5.0 ; typing_extensions>=4.4; python_version < \"3.13\" ; typing-extensions>=4.13.2; python_full_version < \"3.11\" ; typing_extensions>=4.6; python_version < \"3.12\" ; typing-extensions<5.0.0,>=4.14.0; python_version < \"3.11\" ; typing-extensions>=4.2; python_version < \"3.13\" ; typing-extensions>=4.1.0; python_version < \"3.11\" ; typing-extensions>=4.13.0 ; typing-extensions>=4.0.0 ; typing-extensions; python_version < \"3.11\" ; typing_extensions>=4.0.0; python_version < \"3.11\" ; typing_extensions>=4.5; python_version < \"3.13\" ; typing-extensions>=4.4.0; python_version < \"3.13\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "optree",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow-cpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "flax",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "virtualenv",
+                              "source": "public"
+                         },
+                         {
+                              "name": "exceptiongroup",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpcio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "orbax-checkpoint",
+                              "source": "public"
+                         },
+                         {
+                              "name": "etils",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pyopenssl",
+                              "source": "public"
+                         },
+                         {
+                              "name": "simple-parsing",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cryptography",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiosignal",
+                              "source": "public"
+                         },
+                         {
+                              "name": "multidict",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jupyter-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "beautifulsoup4",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mistune",
+                              "source": "public"
+                         },
+                         {
+                              "name": "async-lru",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tzdata",
+                    "specifier": "",
+                    "raw_requirement": "tzdata; python_version >= \"3.9\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "arrow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "uri-template",
+                    "specifier": "",
+                    "raw_requirement": "uri-template; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "urllib3",
+                    "specifier": "<1.27,>=1.21.1,!=2.2.0,<3,>=1.25.4",
+                    "raw_requirement": "urllib3 (<1.27,>=1.21.1) ; urllib3!=2.2.0,<3,>=1.25.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "botocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "uvloop",
+                    "specifier": "",
+                    "raw_requirement": "uvloop; platform_system != \"Windows\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "orbax-checkpoint",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "virtualenv",
+                    "specifier": ">=20.10.0",
+                    "raw_requirement": "virtualenv>=20.10.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pre-commit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "wcwidth",
+                    "specifier": "",
+                    "raw_requirement": "wcwidth",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "prompt-toolkit",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "webcolors",
+                    "specifier": ">=24.6.0",
+                    "raw_requirement": "webcolors>=24.6.0; extra == \"format-nongpl\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "webencodings",
+                    "specifier": ">=0.4",
+                    "raw_requirement": "webencodings ; webencodings>=0.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "bleach",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tinycss2",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "websocket-client",
+                    "specifier": ">=1.7",
+                    "raw_requirement": "websocket-client>=1.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jupyter-server",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "werkzeug",
+                    "specifier": ">=0.11.15,>=1.0.1",
+                    "raw_requirement": "werkzeug>=0.11.15 ; werkzeug>=1.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "xprof",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "wheel",
+                    "specifier": "<1.0,>=0.23.0",
+                    "raw_requirement": "wheel (<1.0,>=0.23.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "astunparse",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "widgetsnbextension",
+                    "specifier": "~=4.0.14",
+                    "raw_requirement": "widgetsnbextension~=4.0.14",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ipywidgets",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "wrapt",
+                    "specifier": ">=1.11.2,>=1.11.0,>=1.11.0,<3.0.0,>=1.10.10",
+                    "raw_requirement": "wrapt>=1.11.2 ; wrapt>=1.11.0 ; wrapt>=1.11.0 ; wrapt<3.0.0,>=1.10.10",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "dm-tree",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow-cpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "xprof",
+                    "specifier": "==2.22.3",
+                    "raw_requirement": "xprof==2.22.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard-plugin-profile",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "yarl",
+                    "specifier": "<2.0,>=1.17.0",
+                    "raw_requirement": "yarl<2.0,>=1.17.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "zipp",
+                    "specifier": "",
+                    "raw_requirement": "zipp; extra == \"epath\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "etils",
+                              "source": "public"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 3,
+          "packages": {
+               "pillow": {
+                    "private version": "12.2.0",
+                    "public version": "12.3.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": ">=9",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 23
+               },
+               "requests": {
+                    "private version": "2.28.1",
+                    "public version": "2.34.2",
+                    "highest public (unconstrained)": "2.34.2",
+                    "declared specifier": "<3,>=2.21.0,<3.0.0,>=2.22.0,>=2.0.0,<3.0.0,>=2.33.0,>=2.31",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 6
+               },
+               "packaging": {
+                    "private version": "24.1",
+                    "public version": "26.2",
+                    "highest public (unconstrained)": "26.2",
+                    "declared specifier": ">=22,>=24.0,>=24.0,>=22,>=23.2,>=20.0,>=22.0,>=21.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 10
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 15,
+          "packages": {
+               "certifi": {
+                    "private version": "2022.12.7",
+                    "public version": "2026.6.17",
+                    "highest public (unconstrained)": "2026.6.17",
+                    "declared specifier": ">=2017.4.17",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 51
+               },
+               "charset-normalizer": {
+                    "private version": "2.1.1",
+                    "public version": "2.1.1",
+                    "highest public (unconstrained)": "3.4.9",
+                    "declared specifier": "<3,>=2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 15
+               },
+               "filelock": {
+                    "private version": "3.29.0",
+                    "public version": "3.29.7",
+                    "highest public (unconstrained)": "3.29.7",
+                    "declared specifier": "<4,>=3.24.2,>=3.15.4",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 14
+               },
+               "fsspec": {
+                    "private version": "2026.4.0",
+                    "public version": "2026.6.0",
+                    "highest public (unconstrained)": "2026.6.0",
+                    "declared specifier": ">=2024.3.1,>=2026.6.0,<2026.6.1,>=2026.6.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "idna": {
+                    "private version": "3.4",
+                    "public version": "3.18",
+                    "highest public (unconstrained)": "3.18",
+                    "declared specifier": "<4,>=2.5,>=2.0,>=2.8",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 22
+               },
+               "jinja2": {
+                    "private version": "3.1.6",
+                    "public version": "3.1.6",
+                    "highest public (unconstrained)": "3.1.6",
+                    "declared specifier": ">=3.0,>=3.0.3,>=3.0.3,>=3.0.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 8
+               },
+               "markupsafe": {
+                    "private version": "3.0.3",
+                    "public version": "3.0.3",
+                    "highest public (unconstrained)": "3.0.3",
+                    "declared specifier": ">=2.0,>=2.1.1,>=2.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 9
+               },
+               "mpmath": {
+                    "private version": "1.3.0",
+                    "public version": "1.3.0",
+                    "highest public (unconstrained)": "1.5.0a0",
+                    "declared specifier": "<1.4,>=1.1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "networkx": {
+                    "private version": "3.6.1",
+                    "public version": "3.6.1",
+                    "highest public (unconstrained)": "3.6.1"
+               },
+               "setuptools": {
+                    "private version": "78.1.0",
+                    "public version": "83.0.0",
+                    "highest public (unconstrained)": "83.0.0",
+                    "declared specifier": ">=41.0.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 285
+               },
+               "sympy": {
+                    "private version": "1.13.1",
+                    "public version": "1.13.1",
+                    "highest public (unconstrained)": "1.14.0",
+                    "declared specifier": "==1.13.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "tqdm": {
+                    "private version": "4.66.5",
+                    "public version": "4.68.4",
+                    "highest public (unconstrained)": "4.68.4"
+               },
+               "typing-extensions": {
+                    "private version": "4.15.0",
+                    "public version": "4.16.0",
+                    "highest public (unconstrained)": "4.16.0",
+                    "declared specifier": ">=4.6.0,>=3.6.6,>=4.10.0,>=4.2,>=3.6.6,>=4.13.2,>=4.6.0,~=4.12,>=4.15.0,>=4.9,>=4.5.0,>=4.4,>=4.13.2,>=4.6,<5.0.0,>=4.14.0,>=4.2,>=4.1.0,>=4.13.0,>=4.0.0,>=4.0.0,>=4.5,>=4.4.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "urllib3": {
+                    "private version": "1.26.13",
+                    "public version": "1.26.20",
+                    "highest public (unconstrained)": "2.7.0",
+                    "declared specifier": "<1.27,>=1.21.1,!=2.2.0,<3,>=1.25.4",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 29
+               },
+               "zipp": {
+                    "private version": "3.19.2",
+                    "public version": "4.1.0",
+                    "highest public (unconstrained)": "4.1.0"
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "mixed_source_expanded",
+          "private_index_expansions": 20,
+          "pypi_metadata_expansions": 208,
+          "pruned_public_nodes": 0
+     }
+}

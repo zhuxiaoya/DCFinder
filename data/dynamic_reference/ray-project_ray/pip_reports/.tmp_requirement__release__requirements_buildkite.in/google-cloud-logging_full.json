@@ -1,0 +1,1543 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/98/ab/099478b9d4983e25f6d966e74c2bd2a68e8e33125f2862bdcda573b6ec46/google_cloud_logging-3.16.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=2314db116753d8a449f28d3f60f710885f5c563a47311850415f9e3e0a116970",
+          "hashes": {
+            "sha256": "2314db116753d8a449f28d3f60f710885f5c563a47311850415f9e3e0a116970"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "google-cloud-logging",
+        "version": "3.16.1",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "license",
+          "license-file",
+          "platform",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "platform": [
+          "Posix; MacOS X; Windows"
+        ],
+        "summary": "Google Cloud Logging API client library",
+        "home_page": "https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-logging",
+        "author": "Google LLC",
+        "author_email": "googleapis-packages@google.com",
+        "license": "Apache-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Operating System :: OS Independent",
+          "Topic :: Internet"
+        ],
+        "requires_dist": [
+          "google-api-core[grpc]<3.0.0,>=2.24.2",
+          "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+          "google-cloud-appengine-logging<2.0.0,>=0.1.3",
+          "google-cloud-audit-log<1.0.0,>=0.3.2",
+          "google-cloud-core<3.0.0,>=2.0.0",
+          "grpc-google-iam-v1<1.0.0,>=0.14.2",
+          "opentelemetry-api>=1.16.0",
+          "grpcio<2.0.0,>=1.59.0",
+          "grpcio<2.0.0,>=1.75.1; python_version >= \"3.14\"",
+          "proto-plus<2.0.0,>=1.26.1",
+          "protobuf<8.0.0,>=6.33.5"
+        ],
+        "requires_python": ">=3.10",
+        "description": "Python Client for Cloud Logging\n===============================\n\n|stable| |pypi| |versions|\n\n`Cloud Logging`_: Writes log entries and manages your Cloud Logging configuration.\n\n- `Client Library Documentation`_\n- `Product Documentation`_\n\n.. |stable| image:: https://img.shields.io/badge/support-stable-gold.svg\n   :target: https://github.com/googleapis/google-cloud-python/blob/main/README.rst#stability-levels\n.. |pypi| image:: https://img.shields.io/pypi/v/google-cloud-logging.svg\n   :target: https://pypi.org/project/google-cloud-logging/\n.. |versions| image:: https://img.shields.io/pypi/pyversions/google-cloud-logging.svg\n   :target: https://pypi.org/project/google-cloud-logging/\n.. _Cloud Logging: https://cloud.google.com/logging/\n.. _Client Library Documentation: https://cloud.google.com/python/docs/reference/logging/latest/summary_overview\n.. _Product Documentation:  https://cloud.google.com/logging/\n\nQuick Start\n-----------\n\nIn order to use this library, you first need to go through the following steps:\n\n1. `Select or create a Cloud Platform project.`_\n2. `Enable billing for your project.`_\n3. `Enable the Cloud Logging.`_\n4. `Set up Authentication.`_\n\n.. _Select or create a Cloud Platform project.: https://console.cloud.google.com/project\n.. _Enable billing for your project.: https://cloud.google.com/billing/docs/how-to/modify-project#enable_billing_for_a_project\n.. _Enable the Cloud Logging.:  https://cloud.google.com/logging/\n.. _Set up Authentication.: https://googleapis.dev/python/google-api-core/latest/auth.html\n\nFor an interactive walkthrough on how to use this library in a python application, click the Guide Me button below:\n\n|guide|\n\n.. |guide| image:: https://raw.githubusercontent.com/googleapis/google-cloud-python/main/packages/google-cloud-logging/_static/guide-me.png\n   :target: https://console.cloud.google.com/?walkthrough_id=logging__logging-python\n\nInstallation\n~~~~~~~~~~~~\n\nInstall this library in a virtual environment using `venv`_. `venv`_ is a tool that\ncreates isolated Python environments. These isolated environments can have separate\nversions of Python packages, which allows you to isolate one project's dependencies\nfrom the dependencies of other projects.\n\nWith `venv`_, it's possible to install this library without needing system\ninstall permissions, and without clashing with the installed system\ndependencies.\n\n.. _`venv`: https://docs.python.org/3/library/venv.html\n\n\nCode samples and snippets\n~~~~~~~~~~~~~~~~~~~~~~~~~\n\nCode samples and snippets live in the `samples/`_ folder.\n\n.. _samples/: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-logging/samples\n\n\nSupported Python Versions\n^^^^^^^^^^^^^^^^^^^^^^^^^\nOur client libraries are compatible with all current `active`_ and `maintenance`_ versions of\nPython.\n\nPython >= 3.10, including 3.14\n\n.. _active: https://devguide.python.org/devcycle/#in-development-main-branch\n.. _maintenance: https://devguide.python.org/devcycle/#maintenance-branches\n\nUnsupported Python Versions\n^^^^^^^^^^^^^^^^^^^^^^^^^^^\nPython <= 3.9\n\n\nIf you are using an `end-of-life`_\nversion of Python, we recommend that you update as soon as possible to an actively supported version.\n\n.. _end-of-life: https://devguide.python.org/devcycle/#end-of-life-branches\n\nMac/Linux\n^^^^^^^^^\n\n.. code-block:: console\n\n    python3 -m venv <your-env>\n    source <your-env>/bin/activate\n    pip install google-cloud-logging\n\n\nWindows\n^^^^^^^\n\n.. code-block:: console\n\n    py -m venv <your-env>\n    .\\<your-env>\\Scripts\\activate\n    pip install google-cloud-logging\n\nNext Steps\n~~~~~~~~~~\n\n-  Read the `Client Library Documentation`_ for Cloud Logging\n   to see other available methods on the client.\n-  Read the `Cloud Logging Product documentation`_ to learn\n   more about the product and see How-to Guides.\n-  View this `README`_ to see the full list of Cloud\n   APIs that we cover.\n\n.. _Cloud Logging Product documentation:  https://cloud.google.com/logging/\n.. _README: https://github.com/googleapis/google-cloud-python/blob/main/README.rst\n\nLogging\n-------\n\nThis library uses the standard Python :code:`logging` functionality to log some RPC events that could be of interest for debugging and monitoring purposes.\nNote the following:\n\n#. Logs may contain sensitive information. Take care to **restrict access to the logs** if they are saved, whether it be on local storage or on Google Cloud Logging.\n#. Google may refine the occurrence, level, and content of various log messages in this library without flagging such changes as breaking. **Do not depend on immutability of the logging events**.\n#. By default, the logging events from this library are not handled. You must **explicitly configure log handling** using one of the mechanisms below.\n\nSimple, environment-based configuration\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nTo enable logging for this library without any changes in your code, set the :code:`GOOGLE_SDK_PYTHON_LOGGING_SCOPE` environment variable to a valid Google\nlogging scope. This configures handling of logging events (at level :code:`logging.DEBUG` or higher) from this library in a default manner, emitting the logged\nmessages in a structured format. It does not currently allow customizing the logging levels captured nor the handlers, formatters, etc. used for any logging\nevent.\n\nA logging scope is a period-separated namespace that begins with :code:`google`, identifying the Python module or package to log.\n\n- Valid logging scopes: :code:`google`, :code:`google.cloud.asset.v1`, :code:`google.api`, :code:`google.auth`, etc.\n- Invalid logging scopes: :code:`foo`, :code:`123`, etc.\n\n**NOTE**: If the logging scope is invalid, the library does not set up any logging handlers.\n\nEnvironment-Based Examples\n^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n- Enabling the default handler for all Google-based loggers\n\n.. code-block:: console\n\n    export GOOGLE_SDK_PYTHON_LOGGING_SCOPE=google\n\n- Enabling the default handler for a specific Google module (for a client library called :code:`library_v1`):\n\n.. code-block:: console\n\n    export GOOGLE_SDK_PYTHON_LOGGING_SCOPE=google.cloud.library_v1\n\n\nAdvanced, code-based configuration\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nYou can also configure a valid logging scope using Python's standard `logging` mechanism.\n\nCode-Based Examples\n^^^^^^^^^^^^^^^^^^^\n\n- Configuring a handler for all Google-based loggers\n\n.. code-block:: python\n\n    import logging\n    \n    from google.cloud import library_v1\n    \n    base_logger = logging.getLogger(\"google\")\n    base_logger.addHandler(logging.StreamHandler())\n    base_logger.setLevel(logging.DEBUG)\n\n- Configuring a handler for a specific Google module (for a client library called :code:`library_v1`):\n\n.. code-block:: python\n\n    import logging\n    \n    from google.cloud import library_v1\n    \n    base_logger = logging.getLogger(\"google.cloud.library_v1\")\n    base_logger.addHandler(logging.StreamHandler())\n    base_logger.setLevel(logging.DEBUG)\n\nLogging details\n~~~~~~~~~~~~~~~\n\n#. Regardless of which of the mechanisms above you use to configure logging for this library, by default logging events are not propagated up to the root\n   logger from the `google`-level logger. If you need the events to be propagated to the root logger, you must explicitly set\n   :code:`logging.getLogger(\"google\").propagate = True` in your code.\n#. You can mix the different logging configurations above for different Google modules. For example, you may want use a code-based logging configuration for\n   one library, but decide you need to also set up environment-based logging configuration for another library.\n\n   #. If you attempt to use both code-based and environment-based configuration for the same module, the environment-based configuration will be ineffectual\n      if the code -based configuration gets applied first.\n\n#. The Google-specific logging configurations (default handlers for environment-based configuration; not propagating logging events to the root logger) get\n   executed the first time *any* client library is instantiated in your application, and only if the affected loggers have not been previously configured.\n   (This is the reason for 2.i. above.)\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/86/40/9bdbb60b03a332bd45acb8703da08bbc27d991d35286b62e42acc86d243a/google_api_core-2.31.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=ef79fb3784c71cbac89cbd03301ba0c8fb8ad2aa95d7f9204dd9628f7adf59ab",
+          "hashes": {
+            "sha256": "ef79fb3784c71cbac89cbd03301ba0c8fb8ad2aa95d7f9204dd9628f7adf59ab"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "google-api-core",
+        "version": "2.31.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Google API client core library",
+        "description_content_type": "text/x-rst",
+        "author_email": "Google LLC <googleapis-packages@google.com>",
+        "license": "Apache 2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Operating System :: OS Independent",
+          "Topic :: Internet"
+        ],
+        "requires_dist": [
+          "googleapis-common-protos<2.0.0,>=1.63.2",
+          "protobuf<8.0.0,>=5.29.6",
+          "proto-plus<2.0.0,>=1.24.0",
+          "proto-plus<2.0.0,>=1.25.0; python_version >= \"3.13\"",
+          "google-auth<3.0.0,>=2.14.1",
+          "requests<3.0.0,>=2.33.0",
+          "google-auth[aiohttp]<3.0.0,>=2.14.1; extra == \"async-rest\"",
+          "aiohttp>=3.13.4; extra == \"async-rest\"",
+          "grpcio<2.0.0,>=1.41.0; extra == \"grpc\"",
+          "grpcio<2.0.0,>=1.49.1; python_version >= \"3.11\" and extra == \"grpc\"",
+          "grpcio<2.0.0,>=1.75.1; python_version >= \"3.14\" and extra == \"grpc\"",
+          "grpcio-status<2.0.0,>=1.41.0; extra == \"grpc\"",
+          "grpcio-status<2.0.0,>=1.49.1; python_version >= \"3.11\" and extra == \"grpc\"",
+          "grpcio-status<2.0.0,>=1.75.1; python_version >= \"3.14\" and extra == \"grpc\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://github.com/googleapis/google-cloud-python/tree/main/packages/google-api-core",
+          "Documentation, https://googleapis.dev/python/google-api-core/latest/",
+          "Repository, https://github.com/googleapis/google-cloud-python"
+        ],
+        "provides_extra": [
+          "async-rest",
+          "grpc"
+        ],
+        "description": "Core Library for Google Client Libraries\n========================================\n\n|pypi| |versions|\n\nThis library is not meant to stand-alone. Instead it defines\ncommon helpers used by all Google API clients. For more information, see the\n`documentation`_.\n\n.. |pypi| image:: https://img.shields.io/pypi/v/google-api_core.svg\n   :target: https://pypi.org/project/google-api_core/\n.. |versions| image:: https://img.shields.io/pypi/pyversions/google-api_core.svg\n   :target: https://pypi.org/project/google-api_core/\n.. _documentation: https://googleapis.dev/python/google-api-core/latest\n\n\nSupported Python Versions\n-------------------------\nPython >= 3.10\n\n\nUnsupported Python Versions\n---------------------------\nPython <= 3.9\n\nThe last version of this library compatible with Python 2.7 and 3.5 is\n`google-api-core==1.31.1`.\n\nThe last version of this library compatible with Python 3.6 is\n`google-api-core==2.8.2`.\n\nThe last version of this library compatible with Python 3.7 and 3.8 is\n`google-api-core==2.29.0`.\n\nThe last version of this library compatible with Python 3.9 is\n`google-api-core==2.30.3`.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/1e/c6/02eb5a337ac316a4c30c012e747bad5cea36e1a876efecdf80865541f7d8/google_auth-2.55.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=d715f265f2cafc6a5f1bf0dc19870d20e3119f6f6682785a250bce3d03d38a3b",
+          "hashes": {
+            "sha256": "d715f265f2cafc6a5f1bf0dc19870d20e3119f6f6682785a250bce3d03d38a3b"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "google-auth",
+        "version": "2.55.2",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "provides-extra",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "Google Authentication Library",
+        "keywords": [
+          "google",
+          "auth",
+          "oauth",
+          "client"
+        ],
+        "home_page": "https://github.com/googleapis/google-cloud-python/tree/main/packages/google-auth",
+        "author": "Google Cloud Platform",
+        "author_email": "googleapis-packages@google.com",
+        "license": "Apache 2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Operating System :: POSIX",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: OS Independent",
+          "Topic :: Internet :: WWW/HTTP"
+        ],
+        "requires_dist": [
+          "pyasn1-modules>=0.2.1",
+          "cryptography>=38.0.3",
+          "cryptography>=38.0.3; extra == \"cryptography\"",
+          "cryptography>=38.0.3; extra == \"pyopenssl\"",
+          "aiohttp<4.0.0,>=3.8.0; extra == \"aiohttp\"",
+          "requests<3.0.0,>=2.20.0; extra == \"aiohttp\"",
+          "cryptography>=38.0.3; extra == \"enterprise-cert\"",
+          "pyjwt>=2.0; extra == \"pyjwt\"",
+          "pyu2f>=0.1.5; extra == \"reauth\"",
+          "requests<3.0.0,>=2.20.0; extra == \"requests\"",
+          "grpcio<2.0.0,>=1.59.0; python_version < \"3.14\" and extra == \"testing\"",
+          "grpcio<2.0.0,>=1.75.1; python_version >= \"3.14\" and extra == \"testing\"",
+          "flask; extra == \"testing\"",
+          "freezegun; extra == \"testing\"",
+          "pyjwt>=2.0; extra == \"testing\"",
+          "pytest; extra == \"testing\"",
+          "pytest-cov; extra == \"testing\"",
+          "pytest-localserver; extra == \"testing\"",
+          "pyu2f>=0.1.5; extra == \"testing\"",
+          "responses; extra == \"testing\"",
+          "urllib3; extra == \"testing\"",
+          "packaging; extra == \"testing\"",
+          "aiohttp<4.0.0,>=3.8.0; extra == \"testing\"",
+          "requests<3.0.0,>=2.20.0; extra == \"testing\"",
+          "aioresponses; extra == \"testing\"",
+          "pytest-asyncio; extra == \"testing\"",
+          "urllib3; extra == \"urllib3\"",
+          "packaging; extra == \"urllib3\"",
+          "rsa<5,>=3.1.4; extra == \"rsa\"",
+          "grpcio<2.0.0,>=1.59.0; python_version < \"3.14\" and extra == \"grpc\"",
+          "grpcio<2.0.0,>=1.75.1; python_version >= \"3.14\" and extra == \"grpc\""
+        ],
+        "requires_python": ">=3.10",
+        "provides_extra": [
+          "cryptography",
+          "pyopenssl",
+          "aiohttp",
+          "enterprise-cert",
+          "pyjwt",
+          "reauth",
+          "requests",
+          "testing",
+          "urllib3",
+          "rsa",
+          "grpc"
+        ],
+        "description": "Google Auth Python Library\n==========================\n\n|pypi|\n\nThis library simplifies using Google's various server-to-server authentication\nmechanisms to access Google APIs.\n\n.. |pypi| image:: https://img.shields.io/pypi/v/google-auth.svg\n   :target: https://pypi.python.org/pypi/google-auth\n\nInstalling\n----------\n\nYou can install using `pip`_::\n\n    $ pip install google-auth\n\n.. _pip: https://pip.pypa.io/en/stable/\n\nFor more information on setting up your Python development environment, please refer to `Python Development Environment Setup Guide`_ for Google Cloud Platform.\n\n.. _`Python Development Environment Setup Guide`: https://cloud.google.com/python/docs/setup\n\nExtras\n------\n\ngoogle-auth has few extras that you can install. For example::\n\n    $ pip install google-auth[pyopenssl]\n\nNote that the extras pyopenssl and enterprise_cert should not be used together because they use conflicting versions of `cryptography`_.\n\n.. _`cryptography`: https://cryptography.io/en/latest/\n\nSupported Python Versions\n^^^^^^^^^^^^^^^^^^^^^^^^^\nPython >= 3.10\n\n\n\nDocumentation\n-------------\n\nGoogle Auth Python Library has usage and reference documentation at https://googleapis.dev/python/google-auth/latest/index.html.\n\nCurrent Maintainers\n-------------------\n- googleapis-auth@google.com\n\nAuthors\n-------\n\n- `@theacodes <https://github.com/theacodes>`_ (Thea Flowers)\n- `@dhermes <https://github.com/dhermes>`_ (Danny Hermes)\n- `@lukesneeringer <https://github.com/lukesneeringer>`_ (Luke Sneeringer)\n- `@busunkim96 <https://github.com/busunkim96>`_ (Bu Sun Kim)\n\nContributing\n------------\n\nContributions to this library are always welcome and highly encouraged.\n\nSee `CONTRIBUTING.rst`_ for more information on how to get started.\n\n.. _CONTRIBUTING.rst: https://github.com/googleapis/google-auth-library-python/blob/main/CONTRIBUTING.rst\n\nLicense\n-------\n\nApache 2.0 - See `the LICENSE`_ for more information.\n\n.. _the LICENSE: https://github.com/googleapis/google-auth-library-python/blob/main/LICENSE\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/a5/b3/4eeb9f59c4e7e07e1f08704b6508249eea5760878810014e636026300416/google_cloud_appengine_logging-1.10.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=193675caaf062c41688a3e2c744b73614db82408bc7fb060353b6878d7134492",
+          "hashes": {
+            "sha256": "193675caaf062c41688a3e2c744b73614db82408bc7fb060353b6878d7134492"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "google-cloud-appengine-logging",
+        "version": "1.10.0",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "license",
+          "license-file",
+          "platform",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "platform": [
+          "Posix; MacOS X; Windows"
+        ],
+        "summary": "Google Cloud Appengine Logging API client library",
+        "home_page": "https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-appengine-logging",
+        "author": "Google LLC",
+        "author_email": "googleapis-packages@google.com",
+        "license": "Apache-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Operating System :: OS Independent",
+          "Topic :: Internet"
+        ],
+        "requires_dist": [
+          "google-api-core[grpc]<3.0.0,>=2.17.1",
+          "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+          "grpcio<2.0.0,>=1.59.0",
+          "grpcio<2.0.0,>=1.75.1; python_version >= \"3.14\"",
+          "proto-plus<2.0.0,>=1.22.3",
+          "proto-plus<2.0.0,>=1.25.0; python_version >= \"3.13\"",
+          "protobuf<8.0.0,>=4.25.8"
+        ],
+        "requires_python": ">=3.10",
+        "description": "Python Client for AppEngine Logging\n===================================\n\n|stable| |pypi| |versions|\n\n`AppEngine Logging`_: \n\n- `Client Library Documentation`_\n- `Product Documentation`_\n\n.. |stable| image:: https://img.shields.io/badge/support-stable-gold.svg\n   :target: https://github.com/googleapis/google-cloud-python/blob/main/README.rst#stability-levels\n.. |pypi| image:: https://img.shields.io/pypi/v/google-cloud-appengine-logging.svg\n   :target: https://pypi.org/project/google-cloud-appengine-logging/\n.. |versions| image:: https://img.shields.io/pypi/pyversions/google-cloud-appengine-logging.svg\n   :target: https://pypi.org/project/google-cloud-appengine-logging/\n.. _AppEngine Logging: https://cloud.google.com/logging/\n.. _Client Library Documentation: https://cloud.google.com/python/docs/reference/appenginelogging/latest/summary_overview\n.. _Product Documentation:  https://cloud.google.com/logging/\n\nQuick Start\n-----------\n\nIn order to use this library, you first need to go through the following steps:\n\n1. `Select or create a Cloud Platform project.`_\n2. `Enable billing for your project.`_\n3. `Enable the AppEngine Logging.`_\n4. `Set up Authentication.`_\n\n.. _Select or create a Cloud Platform project.: https://console.cloud.google.com/project\n.. _Enable billing for your project.: https://cloud.google.com/billing/docs/how-to/modify-project#enable_billing_for_a_project\n.. _Enable the AppEngine Logging.:  https://cloud.google.com/logging/\n.. _Set up Authentication.: https://googleapis.dev/python/google-api-core/latest/auth.html\n\nInstallation\n~~~~~~~~~~~~\n\nInstall this library in a virtual environment using `venv`_. `venv`_ is a tool that\ncreates isolated Python environments. These isolated environments can have separate\nversions of Python packages, which allows you to isolate one project's dependencies\nfrom the dependencies of other projects.\n\nWith `venv`_, it's possible to install this library without needing system\ninstall permissions, and without clashing with the installed system\ndependencies.\n\n.. _`venv`: https://docs.python.org/3/library/venv.html\n\n\nCode samples and snippets\n~~~~~~~~~~~~~~~~~~~~~~~~~\n\nCode samples and snippets live in the `samples/`_ folder.\n\n.. _samples/: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-appengine-logging/samples\n\n\nSupported Python Versions\n^^^^^^^^^^^^^^^^^^^^^^^^^\nOur client libraries are compatible with all current `active`_ and `maintenance`_ versions of\nPython.\n\nPython >= 3.10, including 3.14\n\n.. _active: https://devguide.python.org/devcycle/#in-development-main-branch\n.. _maintenance: https://devguide.python.org/devcycle/#maintenance-branches\n\nUnsupported Python Versions\n^^^^^^^^^^^^^^^^^^^^^^^^^^^\nPython <= 3.9\n\n\nIf you are using an `end-of-life`_\nversion of Python, we recommend that you update as soon as possible to an actively supported version.\n\n.. _end-of-life: https://devguide.python.org/devcycle/#end-of-life-branches\n\nMac/Linux\n^^^^^^^^^\n\n.. code-block:: console\n\n    python3 -m venv <your-env>\n    source <your-env>/bin/activate\n    pip install google-cloud-appengine-logging\n\n\nWindows\n^^^^^^^\n\n.. code-block:: console\n\n    py -m venv <your-env>\n    .\\<your-env>\\Scripts\\activate\n    pip install google-cloud-appengine-logging\n\nNext Steps\n~~~~~~~~~~\n\n-  Read the `Client Library Documentation`_ for AppEngine Logging\n   to see other available methods on the client.\n-  Read the `AppEngine Logging Product documentation`_ to learn\n   more about the product and see How-to Guides.\n-  View this `README`_ to see the full list of Cloud\n   APIs that we cover.\n\n.. _AppEngine Logging Product documentation:  https://cloud.google.com/logging/\n.. _README: https://github.com/googleapis/google-cloud-python/blob/main/README.rst\n\nLogging\n-------\n\nThis library uses the standard Python :code:`logging` functionality to log some RPC events that could be of interest for debugging and monitoring purposes.\nNote the following:\n\n#. Logs may contain sensitive information. Take care to **restrict access to the logs** if they are saved, whether it be on local storage or on Google Cloud Logging.\n#. Google may refine the occurrence, level, and content of various log messages in this library without flagging such changes as breaking. **Do not depend on immutability of the logging events**.\n#. By default, the logging events from this library are not handled. You must **explicitly configure log handling** using one of the mechanisms below.\n\nSimple, environment-based configuration\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nTo enable logging for this library without any changes in your code, set the :code:`GOOGLE_SDK_PYTHON_LOGGING_SCOPE` environment variable to a valid Google\nlogging scope. This configures handling of logging events (at level :code:`logging.DEBUG` or higher) from this library in a default manner, emitting the logged\nmessages in a structured format. It does not currently allow customizing the logging levels captured nor the handlers, formatters, etc. used for any logging\nevent.\n\nA logging scope is a period-separated namespace that begins with :code:`google`, identifying the Python module or package to log.\n\n- Valid logging scopes: :code:`google`, :code:`google.cloud.asset.v1`, :code:`google.api`, :code:`google.auth`, etc.\n- Invalid logging scopes: :code:`foo`, :code:`123`, etc.\n\n**NOTE**: If the logging scope is invalid, the library does not set up any logging handlers.\n\nEnvironment-Based Examples\n^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n- Enabling the default handler for all Google-based loggers\n\n.. code-block:: console\n\n    export GOOGLE_SDK_PYTHON_LOGGING_SCOPE=google\n\n- Enabling the default handler for a specific Google module (for a client library called :code:`library_v1`):\n\n.. code-block:: console\n\n    export GOOGLE_SDK_PYTHON_LOGGING_SCOPE=google.cloud.library_v1\n\n\nAdvanced, code-based configuration\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nYou can also configure a valid logging scope using Python's standard `logging` mechanism.\n\nCode-Based Examples\n^^^^^^^^^^^^^^^^^^^\n\n- Configuring a handler for all Google-based loggers\n\n.. code-block:: python\n\n    import logging\n    \n    from google.cloud import library_v1\n    \n    base_logger = logging.getLogger(\"google\")\n    base_logger.addHandler(logging.StreamHandler())\n    base_logger.setLevel(logging.DEBUG)\n\n- Configuring a handler for a specific Google module (for a client library called :code:`library_v1`):\n\n.. code-block:: python\n\n    import logging\n    \n    from google.cloud import library_v1\n    \n    base_logger = logging.getLogger(\"google.cloud.library_v1\")\n    base_logger.addHandler(logging.StreamHandler())\n    base_logger.setLevel(logging.DEBUG)\n\nLogging details\n~~~~~~~~~~~~~~~\n\n#. Regardless of which of the mechanisms above you use to configure logging for this library, by default logging events are not propagated up to the root\n   logger from the `google`-level logger. If you need the events to be propagated to the root logger, you must explicitly set\n   :code:`logging.getLogger(\"google\").propagate = True` in your code.\n#. You can mix the different logging configurations above for different Google modules. For example, you may want use a code-based logging configuration for\n   one library, but decide you need to also set up environment-based logging configuration for another library.\n\n   #. If you attempt to use both code-based and environment-based configuration for the same module, the environment-based configuration will be ineffectual\n      if the code -based configuration gets applied first.\n\n#. The Google-specific logging configurations (default handlers for environment-based configuration; not propagating logging events to the root logger) get\n   executed the first time *any* client library is instantiated in your application, and only if the affected loggers have not been previously configured.\n   (This is the reason for 2.i. above.)\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/bc/99/27c70286bfa3503e43f845578ed5c2ab30c0cc68e525c168286f05f9a51c/google_cloud_audit_log-0.6.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=8c5ecbc341ad3b3daf776981f6d7fd7ab5ff5a29c5dce3172c669b570e0f6717",
+          "hashes": {
+            "sha256": "8c5ecbc341ad3b3daf776981f6d7fd7ab5ff5a29c5dce3172c669b570e0f6717"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "google-cloud-audit-log",
+        "version": "0.6.0",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "license",
+          "license-file",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "Google Cloud Audit Protos",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-audit-log",
+        "author": "Google LLC",
+        "author_email": "googleapis-packages@google.com",
+        "license": "Apache-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython"
+        ],
+        "requires_dist": [
+          "protobuf<8.0.0,>=4.25.8",
+          "googleapis-common-protos<2.0.0,>=1.56.2"
+        ],
+        "requires_python": ">=3.9",
+        "description": "Python Client for Audit Log\n===========================\n\n|preview| |pypi| |versions|\n\n`Audit Log`_: \n\n- `Client Library Documentation`_\n- `Product Documentation`_\n\n.. |preview| image:: https://img.shields.io/badge/support-preview-orange.svg\n   :target: https://github.com/googleapis/google-cloud-python/blob/main/README.rst#stability-levels\n.. |pypi| image:: https://img.shields.io/pypi/v/google-cloud-audit-log.svg\n   :target: https://pypi.org/project/google-cloud-audit-log/\n.. |versions| image:: https://img.shields.io/pypi/pyversions/google-cloud-audit-log.svg\n   :target: https://pypi.org/project/google-cloud-audit-log/\n.. _Audit Log: https://cloud.google.com/logging/\n.. _Client Library Documentation: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-audit-log/summary_overview\n.. _Product Documentation:  https://cloud.google.com/logging/\n\nQuick Start\n-----------\n\nIn order to use this library, you first need to go through the following steps:\n\n1. `Select or create a Cloud Platform project.`_\n2. `Enable billing for your project.`_\n3. `Enable the Audit Log.`_\n4. `Set up Authentication.`_\n\n.. _Select or create a Cloud Platform project.: https://console.cloud.google.com/project\n.. _Enable billing for your project.: https://cloud.google.com/billing/docs/how-to/modify-project#enable_billing_for_a_project\n.. _Enable the Audit Log.:  https://cloud.google.com/logging/\n.. _Set up Authentication.: https://googleapis.dev/python/google-api-core/latest/auth.html\n\nInstallation\n~~~~~~~~~~~~\n\nInstall this library in a virtual environment using `venv`_. `venv`_ is a tool that\ncreates isolated Python environments. These isolated environments can have separate\nversions of Python packages, which allows you to isolate one project's dependencies\nfrom the dependencies of other projects.\n\nWith `venv`_, it's possible to install this library without needing system\ninstall permissions, and without clashing with the installed system\ndependencies.\n\n.. _`venv`: https://docs.python.org/3/library/venv.html\n\n\nCode samples and snippets\n~~~~~~~~~~~~~~~~~~~~~~~~~\n\nCode samples and snippets live in the `samples/`_ folder.\n\n.. _samples/: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-audit-log/samples\n\n\nSupported Python Versions\n^^^^^^^^^^^^^^^^^^^^^^^^^\nOur client libraries are compatible with all current `active`_ and `maintenance`_ versions of\nPython.\n\nPython >= 3.10, including 3.14\n\n.. _active: https://devguide.python.org/devcycle/#in-development-main-branch\n.. _maintenance: https://devguide.python.org/devcycle/#maintenance-branches\n\nUnsupported Python Versions\n^^^^^^^^^^^^^^^^^^^^^^^^^^^\nPython <= 3.9\n\n\nIf you are using an `end-of-life`_\nversion of Python, we recommend that you update as soon as possible to an actively supported version.\n\n.. _end-of-life: https://devguide.python.org/devcycle/#end-of-life-branches\n\nMac/Linux\n^^^^^^^^^\n\n.. code-block:: console\n\n    python3 -m venv <your-env>\n    source <your-env>/bin/activate\n    pip install google-cloud-audit-log\n\n\nWindows\n^^^^^^^\n\n.. code-block:: console\n\n    py -m venv <your-env>\n    .\\<your-env>\\Scripts\\activate\n    pip install google-cloud-audit-log\n\nNext Steps\n~~~~~~~~~~\n\n-  Read the `Client Library Documentation`_ for Audit Log\n   to see other available methods on the client.\n-  Read the `Audit Log Product documentation`_ to learn\n   more about the product and see How-to Guides.\n-  View this `README`_ to see the full list of Cloud\n   APIs that we cover.\n\n.. _Audit Log Product documentation:  https://cloud.google.com/logging/\n.. _README: https://github.com/googleapis/google-cloud-python/blob/main/README.rst\n\nLogging\n-------\n\nThis library uses the standard Python :code:`logging` functionality to log some RPC events that could be of interest for debugging and monitoring purposes.\nNote the following:\n\n#. Logs may contain sensitive information. Take care to **restrict access to the logs** if they are saved, whether it be on local storage or on Google Cloud Logging.\n#. Google may refine the occurrence, level, and content of various log messages in this library without flagging such changes as breaking. **Do not depend on immutability of the logging events**.\n#. By default, the logging events from this library are not handled. You must **explicitly configure log handling** using one of the mechanisms below.\n\nSimple, environment-based configuration\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nTo enable logging for this library without any changes in your code, set the :code:`GOOGLE_SDK_PYTHON_LOGGING_SCOPE` environment variable to a valid Google\nlogging scope. This configures handling of logging events (at level :code:`logging.DEBUG` or higher) from this library in a default manner, emitting the logged\nmessages in a structured format. It does not currently allow customizing the logging levels captured nor the handlers, formatters, etc. used for any logging\nevent.\n\nA logging scope is a period-separated namespace that begins with :code:`google`, identifying the Python module or package to log.\n\n- Valid logging scopes: :code:`google`, :code:`google.cloud.asset.v1`, :code:`google.api`, :code:`google.auth`, etc.\n- Invalid logging scopes: :code:`foo`, :code:`123`, etc.\n\n**NOTE**: If the logging scope is invalid, the library does not set up any logging handlers.\n\nEnvironment-Based Examples\n^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n- Enabling the default handler for all Google-based loggers\n\n.. code-block:: console\n\n    export GOOGLE_SDK_PYTHON_LOGGING_SCOPE=google\n\n- Enabling the default handler for a specific Google module (for a client library called :code:`library_v1`):\n\n.. code-block:: console\n\n    export GOOGLE_SDK_PYTHON_LOGGING_SCOPE=google.cloud.library_v1\n\n\nAdvanced, code-based configuration\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nYou can also configure a valid logging scope using Python's standard `logging` mechanism.\n\nCode-Based Examples\n^^^^^^^^^^^^^^^^^^^\n\n- Configuring a handler for all Google-based loggers\n\n.. code-block:: python\n\n    import logging\n    \n    from google.cloud import library_v1\n    \n    base_logger = logging.getLogger(\"google\")\n    base_logger.addHandler(logging.StreamHandler())\n    base_logger.setLevel(logging.DEBUG)\n\n- Configuring a handler for a specific Google module (for a client library called :code:`library_v1`):\n\n.. code-block:: python\n\n    import logging\n    \n    from google.cloud import library_v1\n    \n    base_logger = logging.getLogger(\"google.cloud.library_v1\")\n    base_logger.addHandler(logging.StreamHandler())\n    base_logger.setLevel(logging.DEBUG)\n\nLogging details\n~~~~~~~~~~~~~~~\n\n#. Regardless of which of the mechanisms above you use to configure logging for this library, by default logging events are not propagated up to the root\n   logger from the `google`-level logger. If you need the events to be propagated to the root logger, you must explicitly set\n   :code:`logging.getLogger(\"google\").propagate = True` in your code.\n#. You can mix the different logging configurations above for different Google modules. For example, you may want use a code-based logging configuration for\n   one library, but decide you need to also set up environment-based logging configuration for another library.\n\n   #. If you attempt to use both code-based and environment-based configuration for the same module, the environment-based configuration will be ineffectual\n      if the code -based configuration gets applied first.\n\n#. The Google-specific logging configurations (default handlers for environment-based configuration; not propagating logging events to the root logger) get\n   executed the first time *any* client library is instantiated in your application, and only if the affected loggers have not been previously configured.\n   (This is the reason for 2.i. above.)\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/84/4a/98da8930ab109c73d9a5d13782a9ebb81ea8c111f6d534a567b71d23e52b/google_cloud_core-2.6.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=6d63ac8e5eca6d9e4319d0a1e2265fadcd7f1049904378caecfa01cf52dd869e",
+          "hashes": {
+            "sha256": "6d63ac8e5eca6d9e4319d0a1e2265fadcd7f1049904378caecfa01cf52dd869e"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "google-cloud-core",
+        "version": "2.6.0",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "license",
+          "license-file",
+          "platform",
+          "provides-extra",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "platform": [
+          "Posix; MacOS X; Windows"
+        ],
+        "summary": "Google Cloud API client core library",
+        "home_page": "https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-core",
+        "author": "Google LLC",
+        "author_email": "googleapis-packages@google.com",
+        "license": "Apache 2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Operating System :: OS Independent",
+          "Topic :: Internet"
+        ],
+        "requires_dist": [
+          "google-api-core<3.0.0,>=2.11.0",
+          "google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+          "grpcio<2.0.0,>=1.47.0; python_version < \"3.14\" and extra == \"grpc\"",
+          "grpcio<2.0.0,>=1.75.1; python_version >= \"3.14\" and extra == \"grpc\"",
+          "grpcio-status<2.0.0,>=1.47.0; extra == \"grpc\""
+        ],
+        "requires_python": ">=3.10",
+        "provides_extra": [
+          "grpc"
+        ],
+        "description": "Core Helpers for Google Cloud Python Client Library\n===================================================\n\n|pypi| |versions|\n\nThis library is not meant to stand-alone. Instead it defines\ncommon helpers (e.g. base ``Client`` classes) used by all of the\n``google-cloud-*`` packages.\n\n\n-  `Documentation`_\n\n.. |pypi| image:: https://img.shields.io/pypi/v/google-cloud-core.svg\n   :target: https://pypi.org/project/google-cloud-core/\n.. |versions| image:: https://img.shields.io/pypi/pyversions/google-cloud-core.svg\n   :target: https://pypi.org/project/google-cloud-core/\n.. _Documentation: https://cloud.google.com/python/docs/reference/google-cloud-core/latest\n\nQuick Start\n-----------\n\n.. code-block:: console\n\n    $ pip install --upgrade google-cloud-core\n\nFor more information on setting up your Python development environment,\nsuch as installing ``pip`` and ``virtualenv`` on your system, please refer\nto `Python Development Environment Setup Guide`_ for Google Cloud Platform.\n\n.. _Python Development Environment Setup Guide: https://cloud.google.com/python/setup\n\n\nSupported Python Versions\n-------------------------\nPython >= 3.10\n\nUnsupported Python Versions\n---------------------------\nPython <= 3.9\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/e7/c8/e2645aa8ed02fd4c7a2f59d68783b65b1f3cbdfe39a6308e156509d1fee8/googleapis_common_protos-1.75.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=961ed60399c457ceb0ee8f285a84c870aabc9c6a832b9d37bb281b5bebde43ed",
+          "hashes": {
+            "sha256": "961ed60399c457ceb0ee8f285a84c870aabc9c6a832b9d37bb281b5bebde43ed"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "googleapis-common-protos",
+        "version": "1.75.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Common protobufs used in Google APIs",
+        "description_content_type": "text/x-rst",
+        "author_email": "Google LLC <googleapis-packages@google.com>",
+        "license": "Apache 2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Operating System :: OS Independent",
+          "Topic :: Internet"
+        ],
+        "requires_dist": [
+          "protobuf<8.0.0,>=4.25.8",
+          "grpcio<2.0.0,>=1.44.0; extra == \"grpc\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Repository, https://github.com/googleapis/google-cloud-python/tree/main/packages/googleapis-common-protos"
+        ],
+        "provides_extra": [
+          "grpc"
+        ],
+        "description": "Python Client for Service Config\n================================\n\n|stable| |pypi| |versions|\n\n- `Client Library Documentation`_\n\n.. |stable| image:: https://img.shields.io/badge/support-stable-gold.svg\n   :target: https://github.com/googleapis/google-cloud-python/blob/main/README.rst#stability-levels\n.. |pypi| image:: https://img.shields.io/pypi/v/googleapis-common-protos.svg\n   :target: https://pypi.org/project/googleapis-common-protos/\n.. |versions| image:: https://img.shields.io/pypi/pyversions/googleapis-common-protos.svg\n   :target: https://pypi.org/project/googleapis-common-protos/\n.. _Client Library Documentation: https://github.com/googleapis/google-cloud-python/tree/main/packages/googleapis-common-protos/summary_overview\n\nQuick Start\n-----------\n\nIn order to use this library, you first need to go through the following steps:\n\n1. `Select or create a Cloud Platform project.`_\n2. `Enable billing for your project.`_\n3. `Set up Authentication.`_\n\n.. _Select or create a Cloud Platform project.: https://console.cloud.google.com/project\n.. _Enable billing for your project.: https://cloud.google.com/billing/docs/how-to/modify-project#enable_billing_for_a_project\n.. _Set up Authentication.: https://googleapis.dev/python/google-api-core/latest/auth.html\n\nInstallation\n~~~~~~~~~~~~\n\nInstall this library in a virtual environment using `venv`_. `venv`_ is a tool that\ncreates isolated Python environments. These isolated environments can have separate\nversions of Python packages, which allows you to isolate one project's dependencies\nfrom the dependencies of other projects.\n\nWith `venv`_, it's possible to install this library without needing system\ninstall permissions, and without clashing with the installed system\ndependencies.\n\n.. _`venv`: https://docs.python.org/3/library/venv.html\n\n\nCode samples and snippets\n~~~~~~~~~~~~~~~~~~~~~~~~~\n\nCode samples and snippets live in the `samples/`_ folder.\n\n.. _samples/: https://github.com/googleapis/google-cloud-python/tree/main/packages/googleapis-common-protos/samples\n\n\nSupported Python Versions\n^^^^^^^^^^^^^^^^^^^^^^^^^\nOur client libraries are compatible with all current `active`_ and `maintenance`_ versions of\nPython.\n\nPython >= 3.9, including 3.14\n\n.. _active: https://devguide.python.org/devcycle/#in-development-main-branch\n.. _maintenance: https://devguide.python.org/devcycle/#maintenance-branches\n\nUnsupported Python Versions\n^^^^^^^^^^^^^^^^^^^^^^^^^^^\nPython <= 3.8\n\nIf you are using an `end-of-life`_\nversion of Python, we recommend that you update as soon as possible to an actively supported version.\n\n.. _end-of-life: https://devguide.python.org/devcycle/#end-of-life-branches\n\nMac/Linux\n^^^^^^^^^\n\n.. code-block:: console\n\n    python3 -m venv <your-env>\n    source <your-env>/bin/activate\n    pip install googleapis-common-protos\n\n\nWindows\n^^^^^^^\n\n.. code-block:: console\n\n    py -m venv <your-env>\n    .\\<your-env>\\Scripts\\activate\n    pip install googleapis-common-protos\n\nNext Steps\n~~~~~~~~~~\n\n-  Read the `Client Library Documentation`_ for Service Config\n   to see other available methods on the client.\n-  View this `README`_ to see the full list of Cloud\n   APIs that we cover.\n\n.. _README: https://github.com/googleapis/google-cloud-python/blob/main/README.rst\n\nLogging\n-------\n\nThis library uses the standard Python :code:`logging` functionality to log some RPC events that could be of interest for debugging and monitoring purposes.\nNote the following:\n\n#. Logs may contain sensitive information. Take care to **restrict access to the logs** if they are saved, whether it be on local storage or on Google Cloud Logging.\n#. Google may refine the occurrence, level, and content of various log messages in this library without flagging such changes as breaking. **Do not depend on immutability of the logging events**.\n#. By default, the logging events from this library are not handled. You must **explicitly configure log handling** using one of the mechanisms below.\n\nSimple, environment-based configuration\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nTo enable logging for this library without any changes in your code, set the :code:`GOOGLE_SDK_PYTHON_LOGGING_SCOPE` environment variable to a valid Google\nlogging scope. This configures handling of logging events (at level :code:`logging.DEBUG` or higher) from this library in a default manner, emitting the logged\nmessages in a structured format. It does not currently allow customizing the logging levels captured nor the handlers, formatters, etc. used for any logging\nevent.\n\nA logging scope is a period-separated namespace that begins with :code:`google`, identifying the Python module or package to log.\n\n- Valid logging scopes: :code:`google`, :code:`google.cloud.asset.v1`, :code:`google.api`, :code:`google.auth`, etc.\n- Invalid logging scopes: :code:`foo`, :code:`123`, etc.\n\n**NOTE**: If the logging scope is invalid, the library does not set up any logging handlers.\n\nEnvironment-Based Examples\n^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n- Enabling the default handler for all Google-based loggers\n\n.. code-block:: console\n\n    export GOOGLE_SDK_PYTHON_LOGGING_SCOPE=google\n\n- Enabling the default handler for a specific Google module (for a client library called :code:`library_v1`):\n\n.. code-block:: console\n\n    export GOOGLE_SDK_PYTHON_LOGGING_SCOPE=google.cloud.library_v1\n\n\nAdvanced, code-based configuration\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nYou can also configure a valid logging scope using Python's standard `logging` mechanism.\n\nCode-Based Examples\n^^^^^^^^^^^^^^^^^^^\n\n- Configuring a handler for all Google-based loggers\n\n.. code-block:: python\n\n    import logging\n    \n    from google.cloud import library_v1\n    \n    base_logger = logging.getLogger(\"google\")\n    base_logger.addHandler(logging.StreamHandler())\n    base_logger.setLevel(logging.DEBUG)\n\n- Configuring a handler for a specific Google module (for a client library called :code:`library_v1`):\n\n.. code-block:: python\n\n    import logging\n    \n    from google.cloud import library_v1\n    \n    base_logger = logging.getLogger(\"google.cloud.library_v1\")\n    base_logger.addHandler(logging.StreamHandler())\n    base_logger.setLevel(logging.DEBUG)\n\nLogging details\n~~~~~~~~~~~~~~~\n\n#. Regardless of which of the mechanisms above you use to configure logging for this library, by default logging events are not propagated up to the root\n   logger from the `google`-level logger. If you need the events to be propagated to the root logger, you must explicitly set\n   :code:`logging.getLogger(\"google\").propagate = True` in your code.\n#. You can mix the different logging configurations above for different Google modules. For example, you may want use a code-based logging configuration for\n   one library, but decide you need to also set up environment-based logging configuration for another library.\n\n   #. If you attempt to use both code-based and environment-based configuration for the same module, the environment-based configuration will be ineffectual\n      if the code -based configuration gets applied first.\n\n#. The Google-specific logging configurations (default handlers for environment-based configuration; not propagating logging events to the root logger) get\n   executed the first time *any* client library is instantiated in your application, and only if the affected loggers have not been previously configured.\n   (This is the reason for 2.i. above.)\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/89/22/c2dd50c09bf679bd38173656cd4402d2511e563b33bc88f90009cf50613c/grpc_google_iam_v1-0.14.4-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=412facc320fcbd94034b4df3d557662051d4d8adfa86e0ddb4dca70a3f739964",
+          "hashes": {
+            "sha256": "412facc320fcbd94034b4df3d557662051d4d8adfa86e0ddb4dca70a3f739964"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "grpc-google-iam-v1",
+        "version": "0.14.4",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "IAM API client library",
+        "description_content_type": "text/x-rst",
+        "author_email": "Google LLC <googleapis-packages@google.com>",
+        "license": "Apache 2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Operating System :: OS Independent",
+          "Topic :: Internet"
+        ],
+        "requires_dist": [
+          "grpcio<2.0.0,>=1.44.0",
+          "googleapis-common-protos[grpc]<2.0.0,>=1.63.2",
+          "protobuf<8.0.0,>=4.25.8"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Repository, https://github.com/googleapis/google-cloud-python"
+        ],
+        "description": "Python Client for Cloud Identity and Access Management\n======================================================\n\n|stable| |pypi| |versions|\n\n`Cloud Identity and Access Management`_: \n\n- `Client Library Documentation`_\n- `Product Documentation`_\n\n.. |stable| image:: https://img.shields.io/badge/support-stable-gold.svg\n   :target: https://github.com/googleapis/google-cloud-python/blob/main/README.rst#stability-levels\n.. |pypi| image:: https://img.shields.io/pypi/v/grpc-google-iam-v1.svg\n   :target: https://pypi.org/project/grpc-google-iam-v1/\n.. |versions| image:: https://img.shields.io/pypi/pyversions/grpc-google-iam-v1.svg\n   :target: https://pypi.org/project/grpc-google-iam-v1/\n.. _Cloud Identity and Access Management: https://cloud.google.com/iam/docs/\n.. _Client Library Documentation: https://cloud.google.com/python/docs/reference/grpc-iam/latest\n.. _Product Documentation:  https://cloud.google.com/iam/docs/\n\nQuick Start\n-----------\n\nIn order to use this library, you first need to go through the following steps:\n\n1. `Select or create a Cloud Platform project.`_\n2. `Enable billing for your project.`_\n3. `Enable the Cloud Identity and Access Management.`_\n4. `Set up Authentication.`_\n\n.. _Select or create a Cloud Platform project.: https://console.cloud.google.com/project\n.. _Enable billing for your project.: https://cloud.google.com/billing/docs/how-to/modify-project#enable_billing_for_a_project\n.. _Enable the Cloud Identity and Access Management.:  https://cloud.google.com/iam/docs/\n.. _Set up Authentication.: https://googleapis.dev/python/google-api-core/latest/auth.html\n\nInstallation\n~~~~~~~~~~~~\n\nInstall this library in a virtual environment using `venv`_. `venv`_ is a tool that\ncreates isolated Python environments. These isolated environments can have separate\nversions of Python packages, which allows you to isolate one project's dependencies\nfrom the dependencies of other projects.\n\nWith `venv`_, it's possible to install this library without needing system\ninstall permissions, and without clashing with the installed system\ndependencies.\n\n.. _`venv`: https://docs.python.org/3/library/venv.html\n\n\nCode samples and snippets\n~~~~~~~~~~~~~~~~~~~~~~~~~\n\nCode samples and snippets live in the `samples/`_ folder.\n\n.. _samples/: https://github.com/googleapis/google-cloud-python/tree/main/packages/grpc-google-iam-v1/samples\n\n\nSupported Python Versions\n^^^^^^^^^^^^^^^^^^^^^^^^^\nOur client libraries are compatible with all current `active`_ and `maintenance`_ versions of\nPython.\n\nPython >= 3.9, including 3.14\n\n.. _active: https://devguide.python.org/devcycle/#in-development-main-branch\n.. _maintenance: https://devguide.python.org/devcycle/#maintenance-branches\n\nUnsupported Python Versions\n^^^^^^^^^^^^^^^^^^^^^^^^^^^\nPython <= 3.8\n\nIf you are using an `end-of-life`_\nversion of Python, we recommend that you update as soon as possible to an actively supported version.\n\n.. _end-of-life: https://devguide.python.org/devcycle/#end-of-life-branches\n\nMac/Linux\n^^^^^^^^^\n\n.. code-block:: console\n\n    python3 -m venv <your-env>\n    source <your-env>/bin/activate\n    pip install grpc-google-iam-v1\n\n\nWindows\n^^^^^^^\n\n.. code-block:: console\n\n    py -m venv <your-env>\n    .\\<your-env>\\Scripts\\activate\n    pip install grpc-google-iam-v1\n\nNext Steps\n~~~~~~~~~~\n\n-  Read the `Client Library Documentation`_ for Cloud Identity and Access Management\n   to see other available methods on the client.\n-  Read the `Cloud Identity and Access Management Product documentation`_ to learn\n   more about the product and see How-to Guides.\n-  View this `README`_ to see the full list of Cloud\n   APIs that we cover.\n\n.. _Cloud Identity and Access Management Product documentation:  https://cloud.google.com/iam/docs/\n.. _README: https://github.com/googleapis/google-cloud-python/blob/main/README.rst\n\nLogging\n-------\n\nThis library uses the standard Python :code:`logging` functionality to log some RPC events that could be of interest for debugging and monitoring purposes.\nNote the following:\n\n#. Logs may contain sensitive information. Take care to **restrict access to the logs** if they are saved, whether it be on local storage or on Google Cloud Logging.\n#. Google may refine the occurrence, level, and content of various log messages in this library without flagging such changes as breaking. **Do not depend on immutability of the logging events**.\n#. By default, the logging events from this library are not handled. You must **explicitly configure log handling** using one of the mechanisms below.\n\nSimple, environment-based configuration\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nTo enable logging for this library without any changes in your code, set the :code:`GOOGLE_SDK_PYTHON_LOGGING_SCOPE` environment variable to a valid Google\nlogging scope. This configures handling of logging events (at level :code:`logging.DEBUG` or higher) from this library in a default manner, emitting the logged\nmessages in a structured format. It does not currently allow customizing the logging levels captured nor the handlers, formatters, etc. used for any logging\nevent.\n\nA logging scope is a period-separated namespace that begins with :code:`google`, identifying the Python module or package to log.\n\n- Valid logging scopes: :code:`google`, :code:`google.cloud.asset.v1`, :code:`google.api`, :code:`google.auth`, etc.\n- Invalid logging scopes: :code:`foo`, :code:`123`, etc.\n\n**NOTE**: If the logging scope is invalid, the library does not set up any logging handlers.\n\nEnvironment-Based Examples\n^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n- Enabling the default handler for all Google-based loggers\n\n.. code-block:: console\n\n    export GOOGLE_SDK_PYTHON_LOGGING_SCOPE=google\n\n- Enabling the default handler for a specific Google module (for a client library called :code:`library_v1`):\n\n.. code-block:: console\n\n    export GOOGLE_SDK_PYTHON_LOGGING_SCOPE=google.cloud.library_v1\n\n\nAdvanced, code-based configuration\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nYou can also configure a valid logging scope using Python's standard `logging` mechanism.\n\nCode-Based Examples\n^^^^^^^^^^^^^^^^^^^\n\n- Configuring a handler for all Google-based loggers\n\n.. code-block:: python\n\n    import logging\n    \n    from google.cloud import library_v1\n    \n    base_logger = logging.getLogger(\"google\")\n    base_logger.addHandler(logging.StreamHandler())\n    base_logger.setLevel(logging.DEBUG)\n\n- Configuring a handler for a specific Google module (for a client library called :code:`library_v1`):\n\n.. code-block:: python\n\n    import logging\n    \n    from google.cloud import library_v1\n    \n    base_logger = logging.getLogger(\"google.cloud.library_v1\")\n    base_logger.addHandler(logging.StreamHandler())\n    base_logger.setLevel(logging.DEBUG)\n\nLogging details\n~~~~~~~~~~~~~~~\n\n#. Regardless of which of the mechanisms above you use to configure logging for this library, by default logging events are not propagated up to the root\n   logger from the `google`-level logger. If you need the events to be propagated to the root logger, you must explicitly set\n   :code:`logging.getLogger(\"google\").propagate = True` in your code.\n#. You can mix the different logging configurations above for different Google modules. For example, you may want use a code-based logging configuration for\n   one library, but decide you need to also set up environment-based logging configuration for another library.\n\n   #. If you attempt to use both code-based and environment-based configuration for the same module, the environment-based configuration will be ineffectual\n      if the code -based configuration gets applied first.\n\n#. The Google-specific logging configurations (default handlers for environment-based configuration; not propagating logging events to the root logger) get\n   executed the first time *any* client library is instantiated in your application, and only if the affected loggers have not been previously configured.\n   (This is the reason for 2.i. above.)\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/63/99/659711e9689c4dd553bcd4eacff9cb9f458f34b60edf7afb3bbc1b0a58a2/grpcio-1.82.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=50fd2fe83426b1b1c6cdc4d72d555223b7dddf8ce07c5bac218b13fc6d684c6f",
+          "hashes": {
+            "sha256": "50fd2fe83426b1b1c6cdc4d72d555223b7dddf8ce07c5bac218b13fc6d684c6f"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "grpcio",
+        "version": "1.82.1",
+        "dynamic": [
+          "classifier",
+          "license-file",
+          "provides-extra",
+          "requires-dist",
+          "requires-python"
+        ],
+        "summary": "HTTP/2-based RPC framework",
+        "description_content_type": "text/x-rst",
+        "author_email": "The gRPC Authors <grpc-io@googlegroups.com>",
+        "license_expression": "Apache-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_dist": [
+          "typing-extensions~=4.12",
+          "grpcio-tools>=1.82.1; extra == \"protobuf\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://grpc.io",
+          "Source Code, https://github.com/grpc/grpc",
+          "Bug Tracker, https://github.com/grpc/grpc/issues",
+          "Documentation, https://grpc.github.io/grpc/python"
+        ],
+        "provides_extra": [
+          "protobuf"
+        ],
+        "description": "gRPC Python\n===========\n\nPackage for gRPC Python.\n\n\nInstallation\n------------\n\ngRPC Python is available for Linux, macOS, and Windows.\n\nInstalling From PyPI\n~~~~~~~~~~~~~~~~~~~~\n\nIf you are installing locally...\n\n::\n\n  $ pip install grpcio\n\nElse system wide (on Ubuntu)...\n\n::\n\n  $ sudo pip install grpcio\n\nIf you're on Windows make sure that you installed the :code:`pip.exe` component\nwhen you installed Python (if not go back and install it!) then invoke:\n\n::\n\n  $ pip.exe install grpcio\n\nWindows users may need to invoke :code:`pip.exe` from a command line ran as\nadministrator.\n\nn.b. On Windows and on Mac OS X one *must* have a recent release of :code:`pip`\nto retrieve the proper wheel from PyPI. Be sure to upgrade to the latest\nversion!\n\nInstalling From Source\n~~~~~~~~~~~~~~~~~~~~~~\n\nBuilding from source requires that you have the Python headers (usually a\npackage named :code:`python-dev`).\n\n::\n\n  $ export REPO_ROOT=grpc  # REPO_ROOT can be any directory of your choice\n  $ git clone -b RELEASE_TAG_HERE https://github.com/grpc/grpc $REPO_ROOT\n  $ cd $REPO_ROOT\n  $ git submodule update --init\n\n  # To include systemd socket-activation feature in the build,\n  # first install the `libsystemd-dev` package, then :\n  $ export GRPC_PYTHON_BUILD_WITH_SYSTEMD=1\n\n  # For the next two commands do `sudo pip install` if you get permission-denied errors\n  $ pip install -r requirements.txt\n  $ GRPC_PYTHON_BUILD_WITH_CYTHON=1 pip install .\n\nYou cannot currently install Python from source on Windows. Things might work\nout for you in MSYS2 (follow the Linux instructions), but it isn't officially\nsupported at the moment.\n\nTroubleshooting\n~~~~~~~~~~~~~~~\n\nHelp, I ...\n\n* **... see the following error on some platforms**\n\n  ::\n\n    /tmp/pip-build-U8pSsr/cython/Cython/Plex/Scanners.c:4:20: fatal error: Python.h: No such file or directory\n    #include \"Python.h\"\n                    ^\n    compilation terminated.\n\n  You can fix it by installing `python-dev` package. i.e\n\n  ::\n\n    sudo apt-get install python-dev\n\n\nVersioning\n~~~~~~~~~~\n\ngRPC Python is developed in a monorepo shared with implementations of gRPC in\nother programming languages. While the minor versions are released in\nlock-step with other languages in the repo (e.g. 1.63.0 is guaranteed to exist\nfor all languages), patch versions may be specific to only a single\nlanguage. For example, if 1.63.1 is a C++-specific patch, 1.63.1 may not be\nuploaded to PyPi. As a result, it is __not__ a good assumption that the latest\npatch for a given minor version on Github is also the latest patch for that\nsame minor version on PyPi.\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/46/5c/2f6c7e24b99dbaf5f8d7e5b1413fc9fc23360cdeb7f290b49a1c87b49560/grpcio_status-1.82.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=71c7f2bea725c0027fa396b77a55d4e9d90591bab90de4c1c03d4df9a56552f0",
+          "hashes": {
+            "sha256": "71c7f2bea725c0027fa396b77a55d4e9d90591bab90de4c1c03d4df9a56552f0"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "grpcio-status",
+        "version": "1.82.1",
+        "dynamic": [
+          "classifier",
+          "license-file",
+          "requires-dist",
+          "requires-python"
+        ],
+        "summary": "Status proto mapping for gRPC",
+        "description_content_type": "text/x-rst",
+        "author_email": "The gRPC Authors <grpc-io@googlegroups.com>",
+        "license_expression": "Apache-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_dist": [
+          "protobuf<8.0.0,>=7.35.1",
+          "grpcio>=1.82.1",
+          "googleapis-common-protos>=1.5.5"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://grpc.io",
+          "Documentation, https://grpc.github.io/grpc/python/grpc_status.html"
+        ],
+        "description": "gRPC Python Status Proto\n===========================\n\nReference package for GRPC Python status proto mapping.\n\n\nDependencies\n------------\n\nDepends on the `grpcio` package, available from PyPI via `pip install grpcio`.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/6a/34/2f2b57dbfd145b995a29847a16b0903fce5ef6ad3c7aad740a609c5d3678/proto_plus-1.28.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=6660f5f1970874bdcfc3088b435188a36a37bd3596668f7d726417c4ae8cfbed",
+          "hashes": {
+            "sha256": "6660f5f1970874bdcfc3088b435188a36a37bd3596668f7d726417c4ae8cfbed"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "proto-plus",
+        "version": "1.28.1",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Beautiful, Pythonic protocol buffers",
+        "description_content_type": "text/x-rst",
+        "author_email": "Google LLC <googleapis-packages@google.com>",
+        "license": "Apache 2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Operating System :: OS Independent",
+          "Topic :: Software Development :: Code Generators",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "protobuf<8.0.0,>=4.25.8",
+          "google-api-core>=1.31.5; extra == \"testing\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Documentation, https://googleapis.dev/python/proto-plus/latest/",
+          "Repository, https://github.com/googleapis/google-cloud-python",
+          "Homepage, https://github.com/googleapis/google-cloud-python/tree/main/packages/proto-plus"
+        ],
+        "provides_extra": [
+          "testing"
+        ],
+        "description": "Proto Plus for Python\n=====================\n\n|pypi| |release level|\n\n    Beautiful, Pythonic protocol buffers.\n\nThis is a wrapper around `protocol buffers`_. Protocol buffers is a\nspecification format for APIs, such as those inside Google.\nThis library provides protocol buffer message classes and objects that\nlargely behave like native Python types.\n\n.. _protocol buffers: https://developers.google.com/protocol-buffers/\n\n\nDocumentation\n-------------\n\n`API Documentation`_ is available on Read the Docs.\n\n.. _API Documentation: https://googleapis.dev/python/proto-plus/latest/\n\n.. |pypi| image:: https://img.shields.io/pypi/v/proto-plus.svg\n   :target: https://pypi.org/project/proto-plus\n.. |release level| image:: https://img.shields.io/badge/release%20level-ga-gold.svg?style&#x3D;flat\n  :target: https://cloud.google.com/terms/launch-stages\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/e4/be/5b3cfe508bfab6761414ff944e3366eb13be4fd71efcd69450f89ba39f43/protobuf-7.35.1-cp310-abi3-manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=74758715c53d7158fb76caf4f0cfdacc5329a4b1bb994f865d6cf302d413a1c4",
+          "hashes": {
+            "sha256": "74758715c53d7158fb76caf4f0cfdacc5329a4b1bb994f865d6cf302d413a1c4"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "protobuf",
+        "version": "7.35.1",
+        "home_page": "https://developers.google.com/protocol-buffers/",
+        "author": "protobuf@googlegroups.com",
+        "author_email": "protobuf@googlegroups.com",
+        "license": "3-Clause BSD License",
+        "classifier": [
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_python": ">=3.10",
+        "description": "UNKNOWN\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0",
+          "hashes": {
+            "sha256": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "requests",
+        "version": "2.34.2",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Python HTTP for Humans.",
+        "description_content_type": "text/markdown",
+        "author_email": "Kenneth Reitz <me@kennethreitz.org>",
+        "maintainer_email": "Ian Stapleton Cordasco <graffatcolmingov@gmail.com>, Nate Prewitt <nate.prewitt@gmail.com>",
+        "license": "Apache-2.0",
+        "license_file": [
+          "LICENSE",
+          "NOTICE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Web Environment",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Natural Language :: English",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Python :: Free Threading :: 2 - Beta",
+          "Topic :: Internet :: WWW/HTTP",
+          "Topic :: Software Development :: Libraries"
+        ],
+        "requires_dist": [
+          "charset_normalizer<4,>=2",
+          "idna<4,>=2.5",
+          "urllib3<3,>=1.26",
+          "certifi>=2023.5.7",
+          "PySocks!=1.5.7,>=1.5.6; extra == \"socks\"",
+          "chardet<8,>=3.0.2; extra == \"use-chardet-on-py3\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Documentation, https://requests.readthedocs.io",
+          "Source, https://github.com/psf/requests"
+        ],
+        "provides_extra": [
+          "security",
+          "socks",
+          "use-chardet-on-py3"
+        ],
+        "description": "# Requests\n\n[![Version](https://img.shields.io/pypi/v/requests.svg?maxAge=86400)](https://pypi.org/project/requests/)\n[![Supported Versions](https://img.shields.io/pypi/pyversions/requests.svg)](https://pypi.org/project/requests)\n[![Downloads](https://static.pepy.tech/badge/requests/month)](https://pepy.tech/project/requests)\n[![Contributors](https://img.shields.io/github/contributors/psf/requests.svg)](https://github.com/psf/requests/graphs/contributors)\n[![Documentation](https://readthedocs.org/projects/requests/badge/?version=latest)](https://requests.readthedocs.io)\n\n**Requests** is a simple, yet elegant, HTTP library.\n\n```python\n>>> import requests\n>>> r = requests.get('https://httpbin.org/basic-auth/user/pass', auth=('user', 'pass'))\n>>> r.status_code\n200\n>>> r.headers['content-type']\n'application/json; charset=utf8'\n>>> r.encoding\n'utf-8'\n>>> r.text\n'{\"authenticated\": true, ...'\n>>> r.json()\n{'authenticated': True, ...}\n```\n\nRequests allows you to send HTTP/1.1 requests extremely easily. There’s no need to manually add query strings to your URLs, or to form-encode your `PUT` & `POST` data — but nowadays, just use the `json` method!\n\nRequests is one of the most downloaded Python packages today, pulling in around `300M downloads / week` — according to GitHub, Requests is currently [depended upon](https://github.com/psf/requests/network/dependents?package_id=UGFja2FnZS01NzA4OTExNg%3D%3D) by `4,000,000+` repositories.\n\n## Installing Requests and Supported Versions\n\nRequests is available on PyPI:\n\n```console\n$ python -m pip install requests\n```\n\nRequests officially supports Python 3.10+.\n\n## Supported Features & Best–Practices\n\nRequests is ready for the demands of building robust and reliable HTTP–speaking applications, for the needs of today.\n\n- Keep-Alive & Connection Pooling\n- International Domains and URLs\n- Sessions with Cookie Persistence\n- Browser-style TLS/SSL Verification\n- Basic & Digest Authentication\n- Familiar `dict`–like Cookies\n- Automatic Content Decompression and Decoding\n- Multi-part File Uploads\n- SOCKS Proxy Support\n- Connection Timeouts\n- Streaming Downloads\n- Automatic honoring of `.netrc`\n- Chunked HTTP Requests\n\n## Cloning the repository\n\nWhen cloning the Requests repository, you may need to add the `-c\nfetch.fsck.badTimezone=ignore` flag to avoid an error about a bad commit timestamp (see\n[this issue](https://github.com/psf/requests/issues/2690) for more background):\n\n```shell\ngit clone -c fetch.fsck.badTimezone=ignore https://github.com/psf/requests.git\n```\n\nYou can also apply this setting to your global Git config:\n\n```shell\ngit config --global fetch.fsck.badTimezone ignore\n```\n\n---\n\n[![Kenneth Reitz](https://raw.githubusercontent.com/psf/requests/main/ext/kr.png)](https://kennethreitz.org) [![Python Software Foundation](https://raw.githubusercontent.com/psf/requests/main/ext/psf.png)](https://www.python.org/psf)\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/e8/5f/b98b8da398637b551e427e7be922bdec19177dc54d6811dcdaa503f23aac/charset_normalizer-3.4.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=9bb41182d93ea91f60b4bc8fbf4c820c69ef8a12ab2d917f3f1834f1acad07e8",
+          "hashes": {
+            "sha256": "9bb41182d93ea91f60b4bc8fbf4c820c69ef8a12ab2d917f3f1834f1acad07e8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "charset-normalizer",
+        "version": "3.4.9",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "encoding",
+          "charset",
+          "charset-detector",
+          "detector",
+          "normalization",
+          "unicode",
+          "chardet",
+          "detect"
+        ],
+        "author_email": "\"Ahmed R. TAHRI\" <tahri.ahmed@proton.me>",
+        "maintainer_email": "\"Ahmed R. TAHRI\" <tahri.ahmed@proton.me>",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Python :: Free Threading :: 4 - Resilient",
+          "Topic :: Text Processing :: Linguistic",
+          "Topic :: Utilities",
+          "Typing :: Typed"
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Changelog, https://github.com/jawah/charset_normalizer/blob/master/CHANGELOG.md",
+          "Documentation, https://charset-normalizer.readthedocs.io/",
+          "Code, https://github.com/jawah/charset_normalizer",
+          "Issue tracker, https://github.com/jawah/charset_normalizer/issues"
+        ],
+        "provides_extra": [
+          "unicode-backport"
+        ],
+        "description": "<h1 align=\"center\">Charset Detection, for Everyone 👋</h1>\n\n<p align=\"center\">\n  <sup>The Real First Universal Charset Detector</sup><br>\n  <a href=\"https://pypi.org/project/charset-normalizer\">\n    <img src=\"https://img.shields.io/pypi/pyversions/charset_normalizer.svg?orange=blue\" />\n  </a>\n  <a href=\"https://pepy.tech/project/charset-normalizer/\">\n    <img alt=\"Download Count Total\" src=\"https://static.pepy.tech/badge/charset-normalizer/month\" />\n  </a>\n  <a href=\"https://bestpractices.coreinfrastructure.org/projects/7297\">\n    <img src=\"https://bestpractices.coreinfrastructure.org/projects/7297/badge\">\n  </a>\n</p>\n<p align=\"center\">\n  <sup><i>Featured Packages</i></sup><br>\n  <a href=\"https://github.com/jawah/niquests\">\n   <img alt=\"Static Badge\" src=\"https://img.shields.io/badge/Niquests-Most_Advanced_HTTP_Client-cyan\">\n  </a>\n  <a href=\"https://github.com/jawah/wassima\">\n   <img alt=\"Static Badge\" src=\"https://img.shields.io/badge/Wassima-Certifi_Replacement-cyan\">\n  </a>\n</p>\n<p align=\"center\">\n  <sup><i>In other language (unofficial port - by the community)</i></sup><br>\n  <a href=\"https://github.com/nickspring/charset-normalizer-rs\">\n   <img alt=\"Static Badge\" src=\"https://img.shields.io/badge/Rust-red\">\n  </a>\n</p>\n\n> A library that helps you read text from an unknown charset encoding.<br /> Motivated by `chardet`,\n> I'm trying to resolve the issue by taking a new approach.\n> All IANA character set names for which the Python core library provides codecs are supported.\n> You can also register your own set of codecs, and yes, it would work as-is.\n\nThis project offers you an alternative to **Universal Charset Encoding Detector**, also known as **Chardet**.\n\n| Feature                                          | [Chardet](https://github.com/chardet/chardet) |                                       Charset Normalizer                                        | [cChardet](https://github.com/PyYoshi/cChardet) |\n|--------------------------------------------------|:---------------------------------------------:|:-----------------------------------------------------------------------------------------------:|:-----------------------------------------------:|\n| `Fast`                                           |                       ✅                       |                                                ✅                                                |                        ✅                        |\n| `Universal`[^1]                                  |                       ❌                       |                                                ✅                                                |                        ❌                        |\n| `Reliable` **without** distinguishable standards |                       ✅                       |                                                ✅                                                |                        ✅                        |\n| `Reliable` **with** distinguishable standards    |                       ✅                       |                                                ✅                                                |                        ✅                        |\n| `License`                                        |        _Disputed_[^2]<br>_restrictive_        |                                               MIT                                               |            MPL-1.1<br>_restrictive_             |\n| `Native Python`                                  |                       ✅                       |                                                ✅                                                |                        ❌                        |\n| `Detect spoken language`                         |                       ✅                       |                                                ✅                                                |                       N/A                       |\n| `UnicodeDecodeError Safety`                      |                       ✅                       |                                                ✅                                                |                        ❌                        |\n| `Whl Size (min)`                                 |                    500 kB                     |                                             150 kB                                              |                     ~200 kB                     |\n| `Supported Encoding`                             |                      99                       | [99](https://charset-normalizer.readthedocs.io/en/latest/user/support.html#supported-encodings) |                       40                        |\n| `Can register custom encoding`                   |                       ❌                       |                                                ✅                                                |                        ❌                        |\n\n<p align=\"center\">\n<img src=\"https://i.imgflip.com/373iay.gif\" alt=\"Reading Normalized Text\" width=\"226\"/><img src=\"https://media.tenor.com/images/c0180f70732a18b4965448d33adba3d0/tenor.gif\" alt=\"Cat Reading Text\" width=\"200\"/>\n</p>\n\n[^1]: They are clearly using specific code for a specific encoding even if covering most of used one.\n[^2]: Chardet 7.0+ was relicensed from LGPL-2.1 to MIT following an AI-assisted rewrite. This relicensing is disputed on two independent grounds: **(a)** the original author [contests](https://github.com/chardet/chardet/issues/327) that the maintainer had the right to relicense, arguing the rewrite is a derivative work of the LGPL-licensed codebase since it was not a clean room implementation; **(b)** the copyright claim itself is [questionable](https://github.com/chardet/chardet/issues/334) given the code was primarily generated by an LLM, and AI-generated output may not be copyrightable under most jurisdictions. Either issue alone could undermine the MIT license. Beyond licensing, the rewrite raises questions about responsible use of AI in open source: key architectural ideas pioneered by charset-normalizer - notably decode-first validity filtering (our foundational approach since v1) and encoding pairwise similarity with the same algorithm and threshold — surfaced in chardet 7 without acknowledgment. The project also imported test files from charset-normalizer to train and benchmark against it, then claimed superior accuracy on those very files. Charset-normalizer has always been MIT-licensed, encoding-agnostic by design, and built on a verifiable human-authored history.\n\n## ⚡ Performance\n\nThis package offer better performances against Chardet. Here are some numbers.\n\n| Package                                           | Accuracy | Mean per file (ms) | File per sec (est) |\n|---------------------------------------------------|:--------:|:------------------:|:------------------:|\n| [chardet 7.4](https://github.com/chardet/chardet) |   89 %   |        3 ms        |    333 file/sec    |\n| charset-normalizer                                | **97 %** |        1 ms        |   1000 file/sec    |\n\n| Package                                           | 99th percentile | 95th percentile | 50th percentile |\n|---------------------------------------------------|:---------------:|:---------------:|:---------------:|\n| [chardet 7.4](https://github.com/chardet/chardet) |      28 ms      |      16 ms      |     < 1 ms      |\n| charset-normalizer                                |      8 ms       |      5 ms       |      1 ms       |\n\n_updated as of July 2026 using CPython 3.12, Charset-Normalizer 3.4.8, and Chardet 7.4.3_\n\n~Chardet's performance on larger file (1MB+) are very poor. Expect huge difference on large payload.~ No longer the case since Chardet 7.0+\n\n> Stats are generated using 400+ files using default parameters. More details on used files, see GHA workflows.\n> And yes, these results might change at any time. The dataset can be updated to include more files.\n> The actual delays heavily depends on your CPU capabilities. The factors should remain the same.\n> Chardet claims on his documentation to have a greater accuracy than us based on the dataset they trained Chardet on(...)\n> Well, it's normal, the opposite would have been worrying. Whereas charset-normalizer don't train on anything, our solution\n> is based on a completely different algorithm, still heuristic through, it does not need weights across every encoding tables.\n\n## ✨ Installation\n\nUsing pip:\n\n```sh\npip install charset-normalizer -U\n```\n\n## 🚀 Basic Usage\n\n### CLI\nThis package comes with a CLI.\n\n```\nusage: normalizer [-h] [-v] [-a] [-n] [-m] [-r] [-f] [-t THRESHOLD]\n                  file [file ...]\n\nThe Real First Universal Charset Detector. Discover originating encoding used\non text file. Normalize text to unicode.\n\npositional arguments:\n  files                 File(s) to be analysed\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -v, --verbose         Display complementary information about file if any.\n                        Stdout will contain logs about the detection process.\n  -a, --with-alternative\n                        Output complementary possibilities if any. Top-level\n                        JSON WILL be a list.\n  -n, --normalize       Permit to normalize input file. If not set, program\n                        does not write anything.\n  -m, --minimal         Only output the charset detected to STDOUT. Disabling\n                        JSON output.\n  -r, --replace         Replace file when trying to normalize it instead of\n                        creating a new one.\n  -f, --force           Replace file without asking if you are sure, use this\n                        flag with caution.\n  -t THRESHOLD, --threshold THRESHOLD\n                        Define a custom maximum amount of chaos allowed in\n                        decoded content. 0. <= chaos <= 1.\n  --version             Show version information and exit.\n```\n\n```bash\nnormalizer ./data/sample.1.fr.srt\n```\n\nor\n\n```bash\npython -m charset_normalizer ./data/sample.1.fr.srt\n```\n\n🎉 Since version 1.4.0 the CLI produce easily usable stdout result in JSON format.\n\n```json\n{\n    \"path\": \"/home/default/projects/charset_normalizer/data/sample.1.fr.srt\",\n    \"encoding\": \"cp1252\",\n    \"encoding_aliases\": [\n        \"1252\",\n        \"windows_1252\"\n    ],\n    \"alternative_encodings\": [\n        \"cp1254\",\n        \"cp1256\",\n        \"cp1258\",\n        \"iso8859_14\",\n        \"iso8859_15\",\n        \"iso8859_16\",\n        \"iso8859_3\",\n        \"iso8859_9\",\n        \"latin_1\",\n        \"mbcs\"\n    ],\n    \"language\": \"French\",\n    \"alphabets\": [\n        \"Basic Latin\",\n        \"Latin-1 Supplement\"\n    ],\n    \"has_sig_or_bom\": false,\n    \"chaos\": 0.149,\n    \"coherence\": 97.152,\n    \"unicode_path\": null,\n    \"is_preferred\": true\n}\n```\n\n### Python\n*Just print out normalized text*\n```python\nfrom charset_normalizer import from_path\n\nresults = from_path('./my_subtitle.srt')\n\nprint(str(results.best()))\n```\n\n*Upgrade your code without effort*\n```python\nfrom charset_normalizer import detect\n```\n\nThe above code will behave the same as **chardet**. We ensure that we offer the best (reasonable) BC result possible.\n\nSee the docs for advanced usage : [readthedocs.io](https://charset-normalizer.readthedocs.io/en/latest/)\n\n## 😇 Why\n\nWhen I started using Chardet, I noticed that it was not suited to my expectations, and I wanted to propose a\nreliable alternative using a completely different method. Also! I never back down on a good challenge!\n\nI **don't care** about the **originating charset** encoding, because **two different tables** can\nproduce **two identical rendered string.**\nWhat I want is to get readable text, the best I can.\n\nIn a way, **I'm brute forcing text decoding.** How cool is that ? 😎\n\nDon't confuse package **ftfy** with charset-normalizer or chardet. ftfy goal is to repair Unicode string whereas charset-normalizer to convert raw file in unknown encoding to unicode.\n\n## 🍰 How\n\n  - Discard all charset encoding table that could not fit the binary content.\n  - Measure noise, or the mess once opened (by chunks) with a corresponding charset encoding.\n  - Extract matches with the lowest mess detected.\n  - Additionally, we measure coherence / probe for a language.\n\n**Wait a minute**, what is noise/mess and coherence according to **YOU ?**\n\n*Noise :* I opened hundred of text files, **written by humans**, with the wrong encoding table. **I observed**, then\n**I established** some ground rules about **what is obvious** when **it seems like** a mess (aka. defining noise in rendered text).\n I know that my interpretation of what is noise is probably incomplete, feel free to contribute in order to\n improve or rewrite it.\n\n*Coherence :* For each language there is on earth, we have computed ranked letter appearance occurrences (the best we can). So I thought\nthat intel is worth something here. So I use those records against decoded text to check if I can detect intelligent design.\n\n## ⚡ Known limitations\n\n  - Language detection is unreliable when text contains two or more languages sharing identical letters. (eg. HTML (english tags) + Turkish content (Sharing Latin characters))\n  - Every charset detector heavily depends on sufficient content. In common cases, do not bother run detection on very tiny content.\n\n## ⚠️ About Python EOLs\n\n**If you are running:**\n\n- Python >=2.7,<3.5: Unsupported\n- Python 3.5: charset-normalizer < 2.1\n- Python 3.6: charset-normalizer < 3.1\n\nUpgrade your Python interpreter as soon as possible.\n\n## 👤 Contributing\n\nContributions, issues and feature requests are very much welcome.<br />\nFeel free to check [issues page](https://github.com/ousret/charset_normalizer/issues) if you want to contribute.\n\n## 📝 License\n\nCopyright © [Ahmed TAHRI @Ousret](https://github.com/Ousret).<br />\nThis project is [MIT](https://github.com/Ousret/charset_normalizer/blob/master/LICENSE) licensed.\n\nCharacters frequencies used in this project © 2012 [Denny Vrandečić](http://simia.net/letters/)\n\n## 💼 For Enterprise\n\nProfessional support for charset-normalizer is available as part of the [Tidelift\nSubscription][1]. Tidelift gives software development teams a single source for\npurchasing and maintaining their software, with professional grade assurances\nfrom the experts who know it best, while seamlessly integrating with existing\ntools.\n\n[1]: https://tidelift.com/subscription/pkg/pypi-charset-normalizer?utm_source=pypi-charset-normalizer&utm_medium=readme\n\n[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/7297/badge)](https://www.bestpractices.dev/projects/7297)\n\n# Changelog\nAll notable changes to charset-normalizer will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).\nThe format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).\n\n## [3.4.9](https://github.com/Ousret/charset_normalizer/compare/3.4.8...3.4.9) (2026-07-07)\n\n### Fixed\n- Regression in our fallback path leading to a decode error. (#771)\n  We've yanked 3.4.8 as a result of that bug.\n\n## [3.4.8](https://github.com/Ousret/charset_normalizer/compare/3.4.7...3.4.8) (2026-07-06)\n\n### Fixed\n- Wall import time due to cascade codec imports for our multibyte first sort of iana supported codecs (#742)\n- Unnecessary json import at runtime (#753)\n- Inverse capitalization not seen by noise detector (#731)\n\n### Changed\n- No longer holding a global cache for our noise / coherence measurements. Relax RSS memory usage.\n- Micro-optimizations in our noise / coherence measurements.\n- No longer using regex search by default for our preemptive charset mark algorithm.\n- Raised upperbound of setuptools to v83.\n- Raised upperbound of mypy(c) to v2.1.\n\n### Removed\n- Redundant UTF7 BOM marker (#730)\n\n## [3.4.7](https://github.com/Ousret/charset_normalizer/compare/3.4.6...3.4.7) (2026-04-02)\n\n### Changed\n- Pre-built optimized version using mypy[c] v1.20.\n- Relax `setuptools` constraint to `setuptools>=68,<82.1`.\n\n### Fixed\n- Correctly remove SIG remnant in utf-7 decoded string. (#718) (#716)\n\n## [3.4.6](https://github.com/Ousret/charset_normalizer/compare/3.4.5...3.4.6) (2026-03-15)\n\n### Changed\n- Flattened the logic in `charset_normalizer.md` for higher performance. Removed `eligible(..)` and `feed(...)`\n  in favor of `feed_info(...)`.\n- Raised upper bound for mypy[c] to 1.20, for our optimized version.\n- Updated `UNICODE_RANGES_COMBINED` using Unicode blocks v17.\n\n### Fixed\n- Edge case where noise difference between two candidates can be almost insignificant. (#672)\n- CLI `--normalize` writing to wrong path when passing multiple files in. (#702)\n\n### Misc\n- Freethreaded pre-built wheels now shipped in PyPI starting with 3.14t. (#616)\n\n## [3.4.5](https://github.com/Ousret/charset_normalizer/compare/3.4.4...3.4.5) (2026-03-06)\n\n### Changed\n- Update `setuptools` constraint to `setuptools>=68,<=82`.\n- Raised upper bound of mypyc for the optional pre-built extension to v1.19.1\n\n### Fixed\n- Add explicit link to lib math in our optimized build. (#692)\n- Logger level not restored correctly for empty byte sequences. (#701)\n- TypeError when passing bytearray to from_bytes. (#703)\n\n### Misc\n- Applied safe micro-optimizations in both our noise detector and language detector.\n- Rewrote the `query_yes_no` function (inside CLI) to avoid using ambiguous licensed code.\n- Added `cd.py` submodule into mypyc optional compilation to reduce further the performance impact.\n\n## [3.4.4](https://github.com/Ousret/charset_normalizer/compare/3.4.2...3.4.4) (2025-10-13)\n\n### Changed\n- Bound `setuptools` to a specific constraint `setuptools>=68,<=81`.\n- Raised upper bound of mypyc for the optional pre-built extension to v1.18.2\n\n### Removed\n- `setuptools-scm` as a build dependency.\n\n### Misc\n- Enforced hashes in `dev-requirements.txt` and created `ci-requirements.txt` for security purposes.\n- Additional pre-built wheels for riscv64, s390x, and armv7l architectures.\n- Restore ` multiple.intoto.jsonl` in GitHub releases in addition to individual attestation file per wheel.\n\n## [3.4.3](https://github.com/Ousret/charset_normalizer/compare/3.4.2...3.4.3) (2025-08-09)\n\n### Changed\n- mypy(c) is no longer a required dependency at build time if `CHARSET_NORMALIZER_USE_MYPYC` isn't set to `1`. (#595) (#583)\n- automatically lower confidence on small bytes samples that are not Unicode in `detect` output legacy function. (#391)\n\n### Added\n- Custom build backend to overcome inability to mark mypy as an optional dependency in the build phase.\n- Support for Python 3.14\n\n### Fixed\n- sdist archive contained useless directories.\n- automatically fallback on valid UTF-16 or UTF-32 even if the md says it's noisy. (#633)\n\n### Misc\n- SBOM are automatically published to the relevant GitHub release to comply with regulatory changes.\n  Each published wheel comes with its SBOM. We choose CycloneDX as the format.\n- Prebuilt optimized wheel are no longer distributed by default for CPython 3.7 due to a change in cibuildwheel.\n\n## [3.4.2](https://github.com/Ousret/charset_normalizer/compare/3.4.1...3.4.2) (2025-05-02)\n\n### Fixed\n- Addressed the DeprecationWarning in our CLI regarding `argparse.FileType` by backporting the target class into the package. (#591)\n- Improved the overall reliability of the detector with CJK Ideographs. (#605) (#587)\n\n### Changed\n- Optional mypyc compilation upgraded to version 1.15 for Python >= 3.8\n\n## [3.4.1](https://github.com/Ousret/charset_normalizer/compare/3.4.0...3.4.1) (2024-12-24)\n\n### Changed\n- Project metadata are now stored using `pyproject.toml` instead of `setup.cfg` using setuptools as the build backend.\n- Enforce annotation delayed loading for a simpler and consistent types in the project.\n- Optional mypyc compilation upgraded to version 1.14 for Python >= 3.8\n\n### Added\n- pre-commit configuration.\n- noxfile.\n\n### Removed\n- `build-requirements.txt` as per using `pyproject.toml` native build configuration.\n- `bin/integration.py` and `bin/serve.py` in favor of downstream integration test (see noxfile).\n- `setup.cfg` in favor of `pyproject.toml` metadata configuration.\n- Unused `utils.range_scan` function.\n\n### Fixed\n- Converting content to Unicode bytes may insert `utf_8` instead of preferred `utf-8`. (#572)\n- Deprecation warning \"'count' is passed as positional argument\" when converting to Unicode bytes on Python 3.13+\n\n## [3.4.0](https://github.com/Ousret/charset_normalizer/compare/3.3.2...3.4.0) (2024-10-08)\n\n### Added\n- Argument `--no-preemptive` in the CLI to prevent the detector to search for hints.\n- Support for Python 3.13 (#512)\n\n### Fixed\n- Relax the TypeError exception thrown when trying to compare a CharsetMatch with anything else than a CharsetMatch.\n- Improved the general reliability of the detector based on user feedbacks. (#520) (#509) (#498) (#407) (#537)\n- Declared charset in content (preemptive detection) not changed when converting to utf-8 bytes. (#381)\n\n## [3.3.2](https://github.com/Ousret/charset_normalizer/compare/3.3.1...3.3.2) (2023-10-31)\n\n### Fixed\n- Unintentional memory usage regression when using large payload that match several encoding (#376)\n- Regression on some detection case showcased in the documentation (#371)\n\n### Added\n- Noise (md) probe that identify malformed arabic representation due to the presence of letters in isolated form (credit to my wife)\n\n## [3.3.1](https://github.com/Ousret/charset_normalizer/compare/3.3.0...3.3.1) (2023-10-22)\n\n### Changed\n- Optional mypyc compilation upgraded to version 1.6.1 for Python >= 3.8\n- Improved the general detection reliability based on reports from the community\n\n## [3.3.0](https://github.com/Ousret/charset_normalizer/compare/3.2.0...3.3.0) (2023-09-30)\n\n### Added\n- Allow to execute the CLI (e.g. normalizer) through `python -m charset_normalizer.cli` or `python -m charset_normalizer`\n- Support for 9 forgotten encoding that are supported by Python but unlisted in `encoding.aliases` as they have no alias (#323)\n\n### Removed\n- (internal) Redundant utils.is_ascii function and unused function is_private_use_only\n- (internal) charset_normalizer.assets is moved inside charset_normalizer.constant\n\n### Changed\n- (internal) Unicode code blocks in constants are updated using the latest v15.0.0 definition to improve detection\n- Optional mypyc compilation upgraded to version 1.5.1 for Python >= 3.8\n\n### Fixed\n- Unable to properly sort CharsetMatch when both chaos/noise and coherence were close due to an unreachable condition in \\_\\_lt\\_\\_ (#350)\n\n## [3.2.0](https://github.com/Ousret/charset_normalizer/compare/3.1.0...3.2.0) (2023-06-07)\n\n### Changed\n- Typehint for function `from_path` no longer enforce `PathLike` as its first argument\n- Minor improvement over the global detection reliability\n\n### Added\n- Introduce function `is_binary` that relies on main capabilities, and optimized to detect binaries\n- Propagate `enable_fallback` argument throughout `from_bytes`, `from_path`, and `from_fp` that allow a deeper control over the detection (default True)\n- Explicit support for Python 3.12\n\n### Fixed\n- Edge case detection failure where a file would contain 'very-long' camel cased word (Issue #289)\n\n## [3.1.0](https://github.com/Ousret/charset_normalizer/compare/3.0.1...3.1.0) (2023-03-06)\n\n### Added\n- Argument `should_rename_legacy` for legacy function `detect` and disregard any new arguments without errors (PR #262)\n\n### Removed\n- Support for Python 3.6 (PR #260)\n\n### Changed\n- Optional speedup provided by mypy/c 1.0.1\n\n## [3.0.1](https://github.com/Ousret/charset_normalizer/compare/3.0.0...3.0.1) (2022-11-18)\n\n### Fixed\n- Multi-bytes cutter/chunk generator did not always cut correctly (PR #233)\n\n### Changed\n- Speedup provided by mypy/c 0.990 on Python >= 3.7\n\n## [3.0.0](https://github.com/Ousret/charset_normalizer/compare/2.1.1...3.0.0) (2022-10-20)\n\n### Added\n- Extend the capability of explain=True when cp_isolation contains at most two entries (min one), will log in details of the Mess-detector results\n- Support for alternative language frequency set in charset_normalizer.assets.FREQUENCIES\n- Add parameter `language_threshold` in `from_bytes`, `from_path` and `from_fp` to adjust the minimum expected coherence ratio\n- `normalizer --version` now specify if current version provide extra speedup (meaning mypyc compilation whl)\n\n### Changed\n- Build with static metadata using 'build' frontend\n- Make the language detection stricter\n- Optional: Module `md.py` can be compiled using Mypyc to provide an extra speedup up to 4x faster than v2.1\n\n### Fixed\n- CLI with opt --normalize fail when using full path for files\n- TooManyAccentuatedPlugin induce false positive on the mess detection when too few alpha character have been fed to it\n- Sphinx warnings when generating the documentation\n\n### Removed\n- Coherence detector no longer return 'Simple English' instead return 'English'\n- Coherence detector no longer return 'Classical Chinese' instead return 'Chinese'\n- Breaking: Method `first()` and `best()` from CharsetMatch\n- UTF-7 will no longer appear as \"detected\" without a recognized SIG/mark (is unreliable/conflict with ASCII)\n- Breaking: Class aliases CharsetDetector, CharsetDoctor, CharsetNormalizerMatch and CharsetNormalizerMatches\n- Breaking: Top-level function `normalize`\n- Breaking: Properties `chaos_secondary_pass`, `coherence_non_latin` and `w_counter` from CharsetMatch\n- Support for the backport `unicodedata2`\n\n## [3.0.0rc1](https://github.com/Ousret/charset_normalizer/compare/3.0.0b2...3.0.0rc1) (2022-10-18)\n\n### Added\n- Extend the capability of explain=True when cp_isolation contains at most two entries (min one), will log in details of the Mess-detector results\n- Support for alternative language frequency set in charset_normalizer.assets.FREQUENCIES\n- Add parameter `language_threshold` in `from_bytes`, `from_path` and `from_fp` to adjust the minimum expected coherence ratio\n\n### Changed\n- Build with static metadata using 'build' frontend\n- Make the language detection stricter\n\n### Fixed\n- CLI with opt --normalize fail when using full path for files\n- TooManyAccentuatedPlugin induce false positive on the mess detection when too few alpha character have been fed to it\n\n### Removed\n- Coherence detector no longer return 'Simple English' instead return 'English'\n- Coherence detector no longer return 'Classical Chinese' instead return 'Chinese'\n\n## [3.0.0b2](https://github.com/Ousret/charset_normalizer/compare/3.0.0b1...3.0.0b2) (2022-08-21)\n\n### Added\n- `normalizer --version` now specify if current version provide extra speedup (meaning mypyc compilation whl)\n\n### Removed\n- Breaking: Method `first()` and `best()` from CharsetMatch\n- UTF-7 will no longer appear as \"detected\" without a recognized SIG/mark (is unreliable/conflict with ASCII)\n\n### Fixed\n- Sphinx warnings when generating the documentation\n\n## [3.0.0b1](https://github.com/Ousret/charset_normalizer/compare/2.1.0...3.0.0b1) (2022-08-15)\n\n### Changed\n- Optional: Module `md.py` can be compiled using Mypyc to provide an extra speedup up to 4x faster than v2.1\n\n### Removed\n- Breaking: Class aliases CharsetDetector, CharsetDoctor, CharsetNormalizerMatch and CharsetNormalizerMatches\n- Breaking: Top-level function `normalize`\n- Breaking: Properties `chaos_secondary_pass`, `coherence_non_latin` and `w_counter` from CharsetMatch\n- Support for the backport `unicodedata2`\n\n## [2.1.1](https://github.com/Ousret/charset_normalizer/compare/2.1.0...2.1.1) (2022-08-19)\n\n### Deprecated\n- Function `normalize` scheduled for removal in 3.0\n\n### Changed\n- Removed useless call to decode in fn is_unprintable (#206)\n\n### Fixed\n- Third-party library (i18n xgettext) crashing not recognizing utf_8 (PEP 263) with underscore from [@aleksandernovikov](https://github.com/aleksandernovikov) (#204)\n\n## [2.1.0](https://github.com/Ousret/charset_normalizer/compare/2.0.12...2.1.0) (2022-06-19)\n\n### Added\n- Output the Unicode table version when running the CLI with `--version` (PR #194)\n\n### Changed\n- Reuse decoded buffer for single byte character sets from [@nijel](https://github.com/nijel) (PR #175)\n- Fixing some performance bottlenecks from [@deedy5](https://github.com/deedy5) (PR #183)\n\n### Fixed\n- Workaround potential bug in cpython with Zero Width No-Break Space located in Arabic Presentation Forms-B, Unicode 1.1 not acknowledged as space (PR #175)\n- CLI default threshold aligned with the API threshold from [@oleksandr-kuzmenko](https://github.com/oleksandr-kuzmenko) (PR #181)\n\n### Removed\n- Support for Python 3.5 (PR #192)\n\n### Deprecated\n- Use of backport unicodedata from `unicodedata2` as Python is quickly catching up, scheduled for removal in 3.0 (PR #194)\n\n## [2.0.12](https://github.com/Ousret/charset_normalizer/compare/2.0.11...2.0.12) (2022-02-12)\n\n### Fixed\n- ASCII miss-detection on rare cases (PR #170)\n\n## [2.0.11](https://github.com/Ousret/charset_normalizer/compare/2.0.10...2.0.11) (2022-01-30)\n\n### Added\n- Explicit support for Python 3.11 (PR #164)\n\n### Changed\n- The logging behavior have been completely reviewed, now using only TRACE and DEBUG levels (PR #163 #165)\n\n## [2.0.10](https://github.com/Ousret/charset_normalizer/compare/2.0.9...2.0.10) (2022-01-04)\n\n### Fixed\n- Fallback match entries might lead to UnicodeDecodeError for large bytes sequence (PR #154)\n\n### Changed\n- Skipping the language-detection (CD) on ASCII (PR #155)\n\n## [2.0.9](https://github.com/Ousret/charset_normalizer/compare/2.0.8...2.0.9) (2021-12-03)\n\n### Changed\n- Moderating the logging impact (since 2.0.8) for specific environments (PR #147)\n\n### Fixed\n- Wrong logging level applied when setting kwarg `explain` to True (PR #146)\n\n## [2.0.8](https://github.com/Ousret/charset_normalizer/compare/2.0.7...2.0.8) (2021-11-24)\n### Changed\n- Improvement over Vietnamese detection (PR #126)\n- MD improvement on trailing data and long foreign (non-pure latin) data (PR #124)\n- Efficiency improvements in cd/alphabet_languages from [@adbar](https://github.com/adbar) (PR #122)\n- call sum() without an intermediary list following PEP 289 recommendations from [@adbar](https://github.com/adbar) (PR #129)\n- Code style as refactored by Sourcery-AI (PR #131)\n- Minor adjustment on the MD around european words (PR #133)\n- Remove and replace SRTs from assets / tests (PR #139)\n- Initialize the library logger with a `NullHandler` by default from [@nmaynes](https://github.com/nmaynes) (PR #135)\n- Setting kwarg `explain` to True will add provisionally (bounded to function lifespan) a specific stream handler (PR #135)\n\n### Fixed\n- Fix large (misleading) sequence giving UnicodeDecodeError (PR #137)\n- Avoid using too insignificant chunk (PR #137)\n\n### Added\n- Add and expose function `set_logging_handler` to configure a specific StreamHandler from [@nmaynes](https://github.com/nmaynes) (PR #135)\n- Add `CHANGELOG.md` entries, format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) (PR #141)\n\n## [2.0.7](https://github.com/Ousret/charset_normalizer/compare/2.0.6...2.0.7) (2021-10-11)\n### Added\n- Add support for Kazakh (Cyrillic) language detection (PR #109)\n\n### Changed\n- Further, improve inferring the language from a given single-byte code page (PR #112)\n- Vainly trying to leverage PEP263 when PEP3120 is not supported (PR #116)\n- Refactoring for potential performance improvements in loops from [@adbar](https://github.com/adbar) (PR #113)\n- Various detection improvement (MD+CD) (PR #117)\n\n### Removed\n- Remove redundant logging entry about detected language(s) (PR #115)\n\n### Fixed\n- Fix a minor inconsistency between Python 3.5 and other versions regarding language detection (PR #117 #102)\n\n## [2.0.6](https://github.com/Ousret/charset_normalizer/compare/2.0.5...2.0.6) (2021-09-18)\n### Fixed\n- Unforeseen regression with the loss of the backward-compatibility with some older minor of Python 3.5.x (PR #100)\n- Fix CLI crash when using --minimal output in certain cases (PR #103)\n\n### Changed\n- Minor improvement to the detection efficiency (less than 1%) (PR #106 #101)\n\n## [2.0.5](https://github.com/Ousret/charset_normalizer/compare/2.0.4...2.0.5) (2021-09-14)\n### Changed\n- The project now comply with: flake8, mypy, isort and black to ensure a better overall quality (PR #81)\n- The BC-support with v1.x was improved, the old staticmethods are restored (PR #82)\n- The Unicode detection is slightly improved (PR #93)\n- Add syntax sugar \\_\\_bool\\_\\_ for results CharsetMatches list-container (PR #91)\n\n### Removed\n- The project no longer raise warning on tiny content given for detection, will be simply logged as warning instead (PR #92)\n\n### Fixed\n- In some rare case, the chunks extractor could cut in the middle of a multi-byte character and could mislead the mess detection (PR #95)\n- Some rare 'space' characters could trip up the UnprintablePlugin/Mess detection (PR #96)\n- The MANIFEST.in was not exhaustive (PR #78)\n\n## [2.0.4](https://github.com/Ousret/charset_normalizer/compare/2.0.3...2.0.4) (2021-07-30)\n### Fixed\n- The CLI no longer raise an unexpected exception when no encoding has been found (PR #70)\n- Fix accessing the 'alphabets' property when the payload contains surrogate characters (PR #68)\n- The logger could mislead (explain=True) on detected languages and the impact of one MBCS match (PR #72)\n- Submatch factoring could be wrong in rare edge cases (PR #72)\n- Multiple files given to the CLI were ignored when publishing results to STDOUT. (After the first path) (PR #72)\n- Fix line endings from CRLF to LF for certain project files (PR #67)\n\n### Changed\n- Adjust the MD to lower the sensitivity, thus improving the global detection reliability (PR #69 #76)\n- Allow fallback on specified encoding if any (PR #71)\n\n## [2.0.3](https://github.com/Ousret/charset_normalizer/compare/2.0.2...2.0.3) (2021-07-16)\n### Changed\n- Part of the detection mechanism has been improved to be less sensitive, resulting in more accurate detection results. Especially ASCII. (PR #63)\n- According to the community wishes, the detection will fall back on ASCII or UTF-8 in a last-resort case. (PR #64)\n\n## [2.0.2](https://github.com/Ousret/charset_normalizer/compare/2.0.1...2.0.2) (2021-07-15)\n### Fixed\n- Empty/Too small JSON payload miss-detection fixed. Report from [@tseaver](https://github.com/tseaver) (PR #59)\n\n### Changed\n- Don't inject unicodedata2 into sys.modules from [@akx](https://github.com/akx) (PR #57)\n\n## [2.0.1](https://github.com/Ousret/charset_normalizer/compare/2.0.0...2.0.1) (2021-07-13)\n### Fixed\n- Make it work where there isn't a filesystem available, dropping assets frequencies.json. Report from [@sethmlarson](https://github.com/sethmlarson). (PR #55)\n- Using explain=False permanently disable the verbose output in the current runtime (PR #47)\n- One log entry (language target preemptive) was not show in logs when using explain=True (PR #47)\n- Fix undesired exception (ValueError) on getitem of instance CharsetMatches (PR #52)\n\n### Changed\n- Public function normalize default args values were not aligned with from_bytes (PR #53)\n\n### Added\n- You may now use charset aliases in cp_isolation and cp_exclusion arguments (PR #47)\n\n## [2.0.0](https://github.com/Ousret/charset_normalizer/compare/1.4.1...2.0.0) (2021-07-02)\n### Changed\n- 4x to 5 times faster than the previous 1.4.0 release. At least 2x faster than Chardet.\n- Accent has been made on UTF-8 detection, should perform rather instantaneous.\n- The backward compatibility with Chardet has been greatly improved. The legacy detect function returns an identical charset name whenever possible.\n- The detection mechanism has been slightly improved, now Turkish content is detected correctly (most of the time)\n- The program has been rewritten to ease the readability and maintainability. (+Using static typing)+\n- utf_7 detection has been reinstated.\n\n### Removed\n- This package no longer require anything when used with Python 3.5 (Dropped cached_property)\n- Removed support for these languages: Catalan, Esperanto, Kazakh, Baque, Volapük, Azeri, Galician, Nynorsk, Macedonian, and Serbocroatian.\n- The exception hook on UnicodeDecodeError has been removed.\n\n### Deprecated\n- Methods coherence_non_latin, w_counter, chaos_secondary_pass of the class CharsetMatch are now deprecated and scheduled for removal in v3.0\n\n### Fixed\n- The CLI output used the relative path of the file(s). Should be absolute.\n\n## [1.4.1](https://github.com/Ousret/charset_normalizer/compare/1.4.0...1.4.1) (2021-05-28)\n### Fixed\n- Logger configuration/usage no longer conflict with others (PR #44)\n\n## [1.4.0](https://github.com/Ousret/charset_normalizer/compare/1.3.9...1.4.0) (2021-05-21)\n### Removed\n- Using standard logging instead of using the package loguru.\n- Dropping nose test framework in favor of the maintained pytest.\n- Choose to not use dragonmapper package to help with gibberish Chinese/CJK text.\n- Require cached_property only for Python 3.5 due to constraint. Dropping for every other interpreter version.\n- Stop support for UTF-7 that does not contain a SIG.\n- Dropping PrettyTable, replaced with pure JSON output in CLI.\n\n### Fixed\n- BOM marker in a CharsetNormalizerMatch instance could be False in rare cases even if obviously present. Due to the sub-match factoring process.\n- Not searching properly for the BOM when trying utf32/16 parent codec.\n\n### Changed\n- Improving the package final size by compressing frequencies.json.\n- Huge improvement over the larges payload.\n\n### Added\n- CLI now produces JSON consumable output.\n- Return ASCII if given sequences fit. Given reasonable confidence.\n\n## [1.3.9](https://github.com/Ousret/charset_normalizer/compare/1.3.8...1.3.9) (2021-05-13)\n\n### Fixed\n- In some very rare cases, you may end up getting encode/decode errors due to a bad bytes payload (PR #40)\n\n## [1.3.8](https://github.com/Ousret/charset_normalizer/compare/1.3.7...1.3.8) (2021-05-12)\n\n### Fixed\n- Empty given payload for detection may cause an exception if trying to access the `alphabets` property. (PR #39)\n\n## [1.3.7](https://github.com/Ousret/charset_normalizer/compare/1.3.6...1.3.7) (2021-05-12)\n\n### Fixed\n- The legacy detect function should return UTF-8-SIG if sig is present in the payload. (PR #38)\n\n## [1.3.6](https://github.com/Ousret/charset_normalizer/compare/1.3.5...1.3.6) (2021-02-09)\n\n### Changed\n- Amend the previous release to allow prettytable 2.0 (PR #35)\n\n## [1.3.5](https://github.com/Ousret/charset_normalizer/compare/1.3.4...1.3.5) (2021-02-08)\n\n### Fixed\n- Fix error while using the package with a python pre-release interpreter (PR #33)\n\n### Changed\n- Dependencies refactoring, constraints revised.\n\n### Added\n- Add python 3.9 and 3.10 to the supported interpreters\n\nMIT License\n\nCopyright (c) 2025 TAHRI Ahmed R.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/1e/5e/d4e9f1a599fb8e573b7b87160658329fbf28d19eac2718f51fc3def3aa5a/idna-3.18-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2",
+          "hashes": {
+            "sha256": "7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "idna",
+        "version": "3.18",
+        "summary": "Internationalized Domain Names in Applications (IDNA)",
+        "description_content_type": "text/markdown",
+        "author_email": "Kim Davies <kim+pypi@gumleaf.org>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE.md"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Intended Audience :: System Administrators",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Internet :: Name Service (DNS)",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Utilities"
+        ],
+        "requires_dist": [
+          "ruff >= 0.6.2 ; extra == \"all\"",
+          "mypy >= 1.11.2 ; extra == \"all\"",
+          "pytest >= 8.3.2 ; extra == \"all\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Changelog, https://github.com/kjd/idna/blob/master/HISTORY.md",
+          "Issue tracker, https://github.com/kjd/idna/issues",
+          "Source, https://github.com/kjd/idna"
+        ],
+        "provides_extra": [
+          "all"
+        ],
+        "description": "# Internationalized Domain Names in Applications (IDNA)\n\nSupport for [Internationalized Domain Names in Applications\n(IDNA)](https://tools.ietf.org/html/rfc5891) and [Unicode IDNA\nCompatibility Processing](https://unicode.org/reports/tr46/). It\nsupersedes the standard library's `encodings.idna`, which only\nimplements the 2003 specification, offering broader script coverage and\nlimiting domains with known security vulnerabilities.\n\n## Usage\n\nPackage may be installed from [PyPI](https://pypi.org/project/idna/) via\nthe typical methods (e.g. `python3 -m pip install idna`)\n\nFor typical usage, the `encode` and `decode` functions will take a\ndomain name argument and perform a conversion to ASCII-compatible encoding\n(known as A-labels), or to Unicode strings (known as U-labels)\nrespectively.\n\n```pycon\n>>> import idna\n>>> idna.encode('ドメイン.テスト')\nb'xn--eckwd4c7c.xn--zckzah'\n>>> print(idna.decode('xn--eckwd4c7c.xn--zckzah'))\nドメイン.テスト\n```\n\nConversions can be applied at a per-label basis using the `ulabel` or\n`alabel` functions for specialized use cases.\n\n\n### Compatibility Mapping (UTS #46)\n\nThis library provides support for [Unicode IDNA Compatibility\nProcessing](https://unicode.org/reports/tr46/) which normalizes input from\ndifferent potential ways a user may input a domain prior to performing the IDNA\nconversion operations. This functionality, known as a\n[mapping](https://tools.ietf.org/html/rfc5895), is considered by the\nspecification to be a local user-interface issue distinct from IDNA\nconversion functionality.\n\nFor example, \"Königsgäßchen\" is not a permissible label as capital letters\nare not allowed. UTS 46 will convert this into lower case prior to applying\nthe IDNA conversion.\n\n```pycon\n>>> import idna\n>>> idna.encode('Königsgäßchen')\n...\nidna.core.InvalidCodepoint: Codepoint U+004B at position 1 of 'Königsgäßchen' not allowed\n>>> idna.encode('Königsgäßchen', uts46=True)\nb'xn--knigsgchen-b4a3dun'\n>>> idna.decode('xn--knigsgchen-b4a3dun')\n'königsgäßchen'\n```\n\nWhen performing a decode operation for display purposes, `decode()`\naccepts a `display=True` argument that leaves any `xn--` label that\nfails to decode unchanged. This is useful for user interface display\nwhere a domain is in use, the A-label form can be presented when it\nis not a valid IDN.\n\n\n## Exceptions\n\nAll errors raised during conversion derive from the `idna.IDNAError`\nbase class. The more specific exceptions are:\n\n* `idna.IDNABidiError` — raised when a label contains an illegal\n  combination of left-to-right and right-to-left characters.\n* `idna.InvalidCodepoint` — raised when a label contains a codepoint\n  that is INVALID for IDNA.\n* `idna.InvalidCodepointContext` — raised when a CONTEXTO or CONTEXTJ\n  codepoint appears in a position whose contextual requirements are\n  not satisfied.\n\n\n## Command-line tool\n\nThe package supports command-line usage to convert domain names\nbetween their Unicode and ASCII-compatible forms. It can be run either\nas a module (`python3 -m idna`) or, once installed (such as with `uv\ntool` or `pipx`), via the `idna` script:\n\n```bash\n$ uv tool install idna\n$ idna xn--e1afmkfd.xn--p1ai\nпример.рф\n$ idna пример.рф\nxn--e1afmkfd.xn--p1ai\n```\n\nMode can be specified with `-e`/`--encode` or `-d`/`--decode`, otherwise\nit will be chosen automatically based on the first input. Multiple\ndomains can be supplied either as arguments or through standard input.\nUTS #46 mapping is applied by default, which lets the tool accept\ninputs that aren't strictly valid IDNA 2008 by normalising them first,\npass `--strict` to disable UTS #46.\n\nConversion failures are reported on stderr together with the\noffending input; processing continues with the remaining domains and\nthe tool exits with a non-zero status if any conversion failed.\n\n\n## Additional Notes\n\n* **Version support**. This library supports Python 3.9 and higher.\n  As this library serves as a low-level toolkit for a variety of\n  applications, we strive to support all versions of Python that are\n  not beyond end-of-life.\n\n* **Emoji**. It is an occasional request to support emoji domains in\n  this library. Encoding of symbols like emoji is expressly prohibited by\n  the IDNA technical standard, and emoji domains are broadly phased\n  out across the domain industry due to associated security risks.\n\n* **Regenerating lookup tables**. The IDNA and UTS 46 functionality\n  relies upon pre-calculated lookup tables, generated using the\n  `idna-data` script in [`tools/`](tools/README.md).\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+          "hashes": {
+            "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "typing_extensions",
+        "version": "4.16.0",
+        "summary": "Backported and Experimental Type Hints for Python 3.9+",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "annotations",
+          "backport",
+          "checker",
+          "checking",
+          "function",
+          "hinting",
+          "hints",
+          "type",
+          "typechecking",
+          "typehinting",
+          "typehints",
+          "typing"
+        ],
+        "author_email": "\"Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee\" <levkivskyi@gmail.com>",
+        "license_expression": "PSF-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Topic :: Software Development"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Bug Tracker, https://github.com/python/typing_extensions/issues",
+          "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+          "Documentation, https://typing-extensions.readthedocs.io/",
+          "Home, https://github.com/python/typing_extensions",
+          "Q & A, https://github.com/python/typing/discussions",
+          "Repository, https://github.com/python/typing_extensions"
+        ],
+        "description": "# Typing Extensions\n\n[![Chat at https://gitter.im/python/typing](https://badges.gitter.im/python/typing.svg)](https://gitter.im/python/typing)\n\n[Documentation](https://typing-extensions.readthedocs.io/en/latest/#) –\n[PyPI](https://pypi.org/project/typing-extensions/)\n\n## Overview\n\nThe `typing_extensions` module serves two related purposes:\n\n- Enable use of new type system features on older Python versions. For example,\n  `typing.TypeGuard` is new in Python 3.10, but `typing_extensions` allows\n  users on previous Python versions to use it too.\n- Enable experimentation with new type system PEPs before they are accepted and\n  added to the `typing` module.\n\n`typing_extensions` is treated specially by static type checkers such as\nmypy and pyright. Objects defined in `typing_extensions` are treated the same\nway as equivalent forms in `typing`.\n\n`typing_extensions` uses\n[Semantic Versioning](https://semver.org/). The\nmajor version will be incremented only for backwards-incompatible changes.\nTherefore, it's safe to depend\non `typing_extensions` like this: `typing_extensions ~=x.y`,\nwhere `x.y` is the first version that includes all features you need.\n[This](https://packaging.python.org/en/latest/specifications/version-specifiers/#compatible-release)\nis equivalent to `typing_extensions >=x.y, <(x+1)`. Do not depend on `~= x.y.z`\nunless you really know what you're doing; that defeats the purpose of\nsemantic versioning.\n\n## Included items\n\nSee [the documentation](https://typing-extensions.readthedocs.io/en/latest/#) for a\ncomplete listing of module contents.\n\n## Contributing\n\nSee [CONTRIBUTING.md](https://github.com/python/typing_extensions/blob/main/CONTRIBUTING.md)\nfor how to contribute to `typing_extensions`.\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897",
+          "hashes": {
+            "sha256": "9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "urllib3",
+        "version": "2.7.0",
+        "summary": "HTTP library with thread-safe connection pooling, file post, and more.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "filepost",
+          "http",
+          "httplib",
+          "https",
+          "pooling",
+          "ssl",
+          "threadsafe",
+          "urllib"
+        ],
+        "author_email": "Andrey Petrov <andrey.petrov@shazow.net>",
+        "maintainer_email": "Seth Michael Larson <sethmichaellarson@gmail.com>, Quentin Pradet <quentin@pradet.me>, Illia Volochii <illia.volochii@gmail.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Environment :: Web Environment",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Free Threading :: 2 - Beta",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Internet :: WWW/HTTP",
+          "Topic :: Software Development :: Libraries"
+        ],
+        "requires_dist": [
+          "brotli>=1.2.0; (platform_python_implementation == 'CPython') and extra == 'brotli'",
+          "brotlicffi>=1.2.0.0; (platform_python_implementation != 'CPython') and extra == 'brotli'",
+          "h2<5,>=4; extra == 'h2'",
+          "pysocks!=1.5.7,<2.0,>=1.5.6; extra == 'socks'",
+          "backports-zstd>=1.0.0; (python_version < '3.14') and extra == 'zstd'"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Changelog, https://github.com/urllib3/urllib3/blob/main/CHANGES.rst",
+          "Documentation, https://urllib3.readthedocs.io",
+          "Code, https://github.com/urllib3/urllib3",
+          "Issue tracker, https://github.com/urllib3/urllib3/issues"
+        ],
+        "provides_extra": [
+          "brotli",
+          "h2",
+          "socks",
+          "zstd"
+        ],
+        "description": "<h1 align=\"center\">\n\n![urllib3](https://github.com/urllib3/urllib3/raw/main/docs/_static/banner_github.svg)\n\n</h1>\n\n<p align=\"center\">\n  <a href=\"https://pypi.org/project/urllib3\"><img alt=\"PyPI Version\" src=\"https://img.shields.io/pypi/v/urllib3.svg?maxAge=86400\" /></a>\n  <a href=\"https://pypi.org/project/urllib3\"><img alt=\"Python Versions\" src=\"https://img.shields.io/pypi/pyversions/urllib3.svg?maxAge=86400\" /></a>\n  <a href=\"https://discord.gg/urllib3\"><img alt=\"Join our Discord\" src=\"https://img.shields.io/discord/756342717725933608?color=%237289da&label=discord\" /></a>\n  <a href=\"https://github.com/urllib3/urllib3/actions?query=workflow%3ACI\"><img alt=\"Coverage Status\" src=\"https://img.shields.io/badge/coverage-100%25-success\" /></a>\n  <a href=\"https://github.com/urllib3/urllib3/actions/workflows/ci.yml?query=branch%3Amain\"><img alt=\"Build Status on GitHub\" src=\"https://github.com/urllib3/urllib3/actions/workflows/ci.yml/badge.svg?branch:main&workflow:CI\" /></a>\n  <a href=\"https://urllib3.readthedocs.io\"><img alt=\"Documentation Status\" src=\"https://readthedocs.org/projects/urllib3/badge/?version=latest\" /></a><br>\n  <a href=\"https://deps.dev/pypi/urllib3\"><img alt=\"OpenSSF Scorecard\" src=\"https://api.securityscorecards.dev/projects/github.com/urllib3/urllib3/badge\" /></a>\n  <a href=\"https://slsa.dev\"><img alt=\"SLSA 3\" src=\"https://slsa.dev/images/gh-badge-level3.svg\" /></a>\n  <a href=\"https://bestpractices.coreinfrastructure.org/projects/6227\"><img alt=\"CII Best Practices\" src=\"https://bestpractices.coreinfrastructure.org/projects/6227/badge\" /></a>\n</p>\n\nurllib3 is a powerful, *user-friendly* HTTP client for Python.\nurllib3 brings many critical features that are missing from the Python\nstandard libraries:\n\n- Thread safety.\n- Connection pooling.\n- Client-side SSL/TLS verification.\n- File uploads with multipart encoding.\n- Helpers for retrying requests and dealing with HTTP redirects.\n- Support for gzip, deflate, brotli, and zstd encoding.\n- Proxy support for HTTP and SOCKS.\n- 100% test coverage.\n\n... and many more features, but most importantly: Our maintainers have a 15+\nyear track record of maintaining urllib3 with the highest code standards and\nattention to security and safety.\n\n[Much of the Python ecosystem already uses urllib3](https://urllib3.readthedocs.io/en/stable/#who-uses)\nand you should too.\n\n\n## Installing\n\nurllib3 can be installed with [pip](https://pip.pypa.io):\n\n```bash\n$ python -m pip install urllib3\n```\n\nAlternatively, you can grab the latest source code from [GitHub](https://github.com/urllib3/urllib3):\n\n```bash\n$ git clone https://github.com/urllib3/urllib3.git\n$ cd urllib3\n$ pip install .\n```\n\n## Getting Started\n\nurllib3 is easy to use:\n\n```python3\n>>> import urllib3\n>>> resp = urllib3.request(\"GET\", \"http://httpbin.org/robots.txt\")\n>>> resp.status\n200\n>>> resp.data\nb\"User-agent: *\\nDisallow: /deny\\n\"\n```\n\nurllib3 has usage and reference documentation at [urllib3.readthedocs.io](https://urllib3.readthedocs.io).\n\n\n## Community\n\nurllib3 has a [community Discord channel](https://discord.gg/urllib3) for asking questions and\ncollaborating with other contributors. Drop by and say hello 👋\n\n\n## Contributing\n\nurllib3 happily accepts contributions. Please see our\n[contributing documentation](https://urllib3.readthedocs.io/en/latest/contributing.html)\nfor some tips on getting started.\n\n\n## Security Disclosures\n\nTo report a security vulnerability, please use the\n[Tidelift security contact](https://tidelift.com/security).\nTidelift will coordinate the fix and disclosure with maintainers.\n\n\n## Maintainers\n\nMeet our maintainers since 2008:\n\n- Current Lead: [@illia-v](https://github.com/illia-v) (Illia Volochii)\n- [@sethmlarson](https://github.com/sethmlarson) (Seth M. Larson)\n- [@pquentin](https://github.com/pquentin) (Quentin Pradet)\n- [@theacodes](https://github.com/theacodes) (Thea Flowers)\n- [@haikuginger](https://github.com/haikuginger) (Jess Shapiro)\n- [@lukasa](https://github.com/lukasa) (Cory Benfield)\n- [@sigmavirus24](https://github.com/sigmavirus24) (Ian Stapleton Cordasco)\n- [@shazow](https://github.com/shazow) (Andrey Petrov)\n\n👋\n\n\n## Sponsorship\n\nIf your company benefits from this library, please consider [sponsoring its\ndevelopment](https://urllib3.readthedocs.io/en/latest/sponsors.html).\n\n\n## For Enterprise\n\nProfessional support for urllib3 is available as part of the [Tidelift\nSubscription][1]. Tidelift gives software development teams a single source for\npurchasing and maintaining their software, with professional grade assurances\nfrom the experts who know it best, while seamlessly integrating with existing\ntools.\n\n[1]: https://tidelift.com/subscription/pkg/pypi-urllib3?utm_source=pypi-urllib3&utm_medium=referral&utm_campaign=readme\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/ef/2f/c5464532e965badff2f4c4c1a3a83f5697f0d7c407ed0cda44aaa99bb451/certifi-2026.6.17-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=2227dcbaafe0d2f59279d1762ddddc37783ed4354594f194ffc31d20f41fc3db",
+          "hashes": {
+            "sha256": "2227dcbaafe0d2f59279d1762ddddc37783ed4354594f194ffc31d20f41fc3db"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "certifi",
+        "version": "2026.6.17",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "license",
+          "license-file",
+          "project-url",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "Python package for providing Mozilla's CA Bundle.",
+        "home_page": "https://github.com/certifi/python-certifi",
+        "author": "Kenneth Reitz",
+        "author_email": "me@kennethreitz.com",
+        "license": "MPL-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+          "Natural Language :: English",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Source, https://github.com/certifi/python-certifi"
+        ],
+        "description": "Certifi: Python SSL Certificates\n================================\n\nCertifi provides Mozilla's carefully curated collection of Root Certificates for\nvalidating the trustworthiness of SSL certificates while verifying the identity\nof TLS hosts. It has been extracted from the `Requests`_ project.\n\nInstallation\n------------\n\n``certifi`` is available on PyPI. Simply install it with ``pip``::\n\n    $ pip install certifi\n\nUsage\n-----\n\nTo reference the installed certificate authority (CA) bundle, you can use the\nbuilt-in function::\n\n    >>> import certifi\n\n    >>> certifi.where()\n    '/usr/local/lib/python3.7/site-packages/certifi/cacert.pem'\n\nOr from the command line::\n\n    $ python -m certifi\n    /usr/local/lib/python3.7/site-packages/certifi/cacert.pem\n\nEnjoy!\n\n.. _`Requests`: https://requests.readthedocs.io/en/latest/\n\nAddition/Removal of Certificates\n--------------------------------\n\nCertifi does not support any addition/removal or other modification of the\nCA trust store content. This project is intended to provide a reliable and\nhighly portable root of trust to python deployments. Look to upstream projects\nfor methods to use alternate trust.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/a0/84/84fe36f19caf857d61cb7fc9c63035a47ffabd84ea12d1d393148efa3615/cryptography-49.0.0-cp39-abi3-manylinux_2_34_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=2400ef9c9e2299a25614eb1dea3db54a69b1349efd043bfac9c67630d136df36",
+          "hashes": {
+            "sha256": "2400ef9c9e2299a25614eb1dea3db54a69b1349efd043bfac9c67630d136df36"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "cryptography",
+        "version": "49.0.0",
+        "summary": "cryptography is a package which provides cryptographic recipes and primitives to Python developers.",
+        "description_content_type": "text/x-rst; charset=UTF-8",
+        "author_email": "The Python Cryptographic Authority and individual contributors <cryptography-dev@python.org>",
+        "license_expression": "Apache-2.0 OR BSD-3-Clause",
+        "license_file": [
+          "LICENSE",
+          "LICENSE.APACHE",
+          "LICENSE.BSD"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Natural Language :: English",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: POSIX",
+          "Operating System :: POSIX :: BSD",
+          "Operating System :: POSIX :: Linux",
+          "Operating System :: Microsoft :: Windows",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Python :: Free Threading :: 3 - Stable",
+          "Topic :: Security :: Cryptography"
+        ],
+        "requires_dist": [
+          "cffi>=2.0.0 ; platform_python_implementation != 'PyPy'",
+          "typing-extensions>=4.13.2 ; python_full_version < '3.11'",
+          "bcrypt>=3.1.5 ; extra == 'ssh'"
+        ],
+        "requires_python": ">=3.9, !=3.9.0, !=3.9.1",
+        "project_url": [
+          "changelog, https://cryptography.io/en/latest/changelog/",
+          "documentation, https://cryptography.io/",
+          "homepage, https://github.com/pyca/cryptography",
+          "issues, https://github.com/pyca/cryptography/issues",
+          "source, https://github.com/pyca/cryptography/"
+        ],
+        "provides_extra": [
+          "ssh"
+        ],
+        "description": "pyca/cryptography\n=================\n\n.. image:: https://img.shields.io/pypi/v/cryptography.svg\n    :target: https://pypi.org/project/cryptography/\n    :alt: Latest Version\n\n.. image:: https://readthedocs.org/projects/cryptography/badge/?version=latest\n    :target: https://cryptography.io\n    :alt: Latest Docs\n\n.. image:: https://github.com/pyca/cryptography/actions/workflows/ci.yml/badge.svg\n    :target: https://github.com/pyca/cryptography/actions/workflows/ci.yml?query=branch%3Amain\n\n``cryptography`` is a package which provides cryptographic recipes and\nprimitives to Python developers. Our goal is for it to be your \"cryptographic\nstandard library\". It supports Python 3.9+ and PyPy3 7.3.11+.\n\n``cryptography`` includes both high level recipes and low level interfaces to\ncommon cryptographic algorithms such as symmetric ciphers, message digests, and\nkey derivation functions. For example, to encrypt something with\n``cryptography``'s high level symmetric encryption recipe:\n\n.. code-block:: pycon\n\n    >>> from cryptography.fernet import Fernet\n    >>> # Put this somewhere safe!\n    >>> key = Fernet.generate_key()\n    >>> f = Fernet(key)\n    >>> token = f.encrypt(b\"A really secret message. Not for prying eyes.\")\n    >>> token\n    b'...'\n    >>> f.decrypt(token)\n    b'A really secret message. Not for prying eyes.'\n\nYou can find more information in the `documentation`_.\n\nYou can install ``cryptography`` with:\n\n.. code-block:: console\n\n    $ pip install cryptography\n\nFor full details see `the installation documentation`_.\n\nDiscussion\n~~~~~~~~~~\n\nIf you run into bugs, you can file them in our `issue tracker`_.\n\nWe maintain a `cryptography-dev`_ mailing list for development discussion.\n\nYou can also join ``#pyca`` on ``irc.libera.chat`` to ask questions or get\ninvolved.\n\nSecurity\n~~~~~~~~\n\nNeed to report a security issue? Please consult our `security reporting`_\ndocumentation.\n\n\n.. _`documentation`: https://cryptography.io/\n.. _`the installation documentation`: https://cryptography.io/en/latest/installation/\n.. _`issue tracker`: https://github.com/pyca/cryptography/issues\n.. _`cryptography-dev`: https://mail.python.org/mailman/listinfo/cryptography-dev\n.. _`security reporting`: https://cryptography.io/en/latest/security/\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/38/66/04781a77b411f0bb5b234d62c1814754ab75ebe455ccff1b08e8d7aae98f/cffi-2.1.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=4d433a51f1870e43a13b6732f92aaf540ff77c2015097c78556f75a2d6c030e0",
+          "hashes": {
+            "sha256": "4d433a51f1870e43a13b6732f92aaf540ff77c2015097c78556f75a2d6c030e0"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "cffi",
+        "version": "2.1.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Foreign Function Interface for Python calling C code.",
+        "description_content_type": "text/markdown",
+        "author": "Armin Rigo, Maciej Fijalkowski",
+        "maintainer": "Matt Davis, Matt Clay",
+        "license_expression": "MIT-0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Programming Language :: Python :: Free Threading :: 2 - Beta",
+          "Programming Language :: Python :: Implementation :: CPython"
+        ],
+        "requires_dist": [
+          "pycparser; implementation_name != \"PyPy\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Documentation, https://cffi.readthedocs.io/",
+          "Changelog, https://cffi.readthedocs.io/en/latest/whatsnew.html",
+          "Download, https://github.com/python-cffi/cffi/releases",
+          "Contact, https://groups.google.com/forum/#!forum/python-cffi",
+          "Source Code, https://github.com/python-cffi/cffi",
+          "Issue Tracker, https://github.com/python-cffi/cffi/issues"
+        ],
+        "description": "[![GitHub Actions Status](https://github.com/python-cffi/cffi/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/python-cffi/cffi/actions/workflows/ci.yaml?query=branch%3Amain++)\n[![PyPI version](https://img.shields.io/pypi/v/cffi.svg)](https://pypi.org/project/cffi)\n[![Read the Docs](https://img.shields.io/badge/docs-latest-blue.svg)][Documentation]\n\n\nCFFI\n====\n\nForeign Function Interface for Python calling C code.\n\nPlease see the [Documentation] or uncompiled in the `doc/` subdirectory.\n\nDownload\n--------\n\n[Download page](https://github.com/python-cffi/cffi/releases)\n\nSource Code\n-----------\n\nSource code is publicly available on\n[GitHub](https://github.com/python-cffi/cffi).\n\nContact\n-------\n\n[Mailing list](https://groups.google.com/forum/#!forum/python-cffi)\n\nTesting/development tips\n------------------------\n\nAfter `git clone` or `wget && tar`, we will get a directory called `cffi` or `cffi-x.x.x`. We call it `repo-directory`. To run tests under CPython, run the following in the `repo-directory`:\n\n    pip install pytest\n    pip install -e .  # editable install of CFFI for local development\n    pytest src/c/ testing/\n\n[Documentation]: http://cffi.readthedocs.org/\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/17/83/6dba32b85f31868400440dc7ad2ca1eab94cbbf3a7b0459ed39f8311a9e2/opentelemetry_api-1.43.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=20acf45e9b21851926835292e4045d290acade1edd2ff3de86d2f069687ba1fd",
+          "hashes": {
+            "sha256": "20acf45e9b21851926835292e4045d290acade1edd2ff3de86d2f069687ba1fd"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "opentelemetry-api",
+        "version": "1.43.0",
+        "summary": "OpenTelemetry Python API",
+        "description_content_type": "text/x-rst",
+        "author_email": "OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>",
+        "license_expression": "Apache-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Framework :: OpenTelemetry",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Typing :: Typed"
+        ],
+        "requires_dist": [
+          "typing-extensions>=4.5.0"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://github.com/open-telemetry/opentelemetry-python/tree/main/opentelemetry-api",
+          "Repository, https://github.com/open-telemetry/opentelemetry-python"
+        ],
+        "description": "OpenTelemetry Python API\n============================================================================\n\n|pypi|\n\n.. |pypi| image:: https://badge.fury.io/py/opentelemetry-api.svg\n   :target: https://pypi.org/project/opentelemetry-api/\n\nInstallation\n------------\n\n::\n\n    pip install opentelemetry-api\n\nReferences\n----------\n\n* `OpenTelemetry Project <https://opentelemetry.io/>`_\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/47/8d/d529b5d697919ba8c11ad626e835d4039be708a35b0d22de83a269a6682c/pyasn1_modules-0.4.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=29253a9207ce32b64c3ac6600edc75368f98473906e8fd1043bd6b5b1de2c14a",
+          "hashes": {
+            "sha256": "29253a9207ce32b64c3ac6600edc75368f98473906e8fd1043bd6b5b1de2c14a"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "pyasn1_modules",
+        "version": "0.4.2",
+        "dynamic": [
+          "license-file"
+        ],
+        "platform": [
+          "any"
+        ],
+        "summary": "A collection of ASN.1-based protocols modules",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/pyasn1/pyasn1-modules",
+        "author": "Ilya Etingof",
+        "author_email": "etingof@gmail.com",
+        "maintainer": "pyasn1 maintenance organization",
+        "maintainer_email": "Christian Heimes <christian@python.org>",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Education",
+          "Intended Audience :: Information Technology",
+          "Intended Audience :: System Administrators",
+          "Intended Audience :: Telecommunications Industry",
+          "License :: OSI Approved :: BSD License",
+          "Natural Language :: English",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Communications",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "pyasn1<0.7.0,>=0.6.1"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Source, https://github.com/pyasn1/pyasn1-modules",
+          "Issues, https://github.com/pyasn1/pyasn1-modules/issues",
+          "Changelog, https://github.com/pyasn1/pyasn1-modules/blob/master/CHANGES.txt"
+        ],
+        "description": "\nASN.1 modules for Python\n------------------------\n[![PyPI](https://img.shields.io/pypi/v/pyasn1-modules.svg?maxAge=2592000)](https://pypi.org/project/pyasn1-modules)\n[![Python Versions](https://img.shields.io/pypi/pyversions/pyasn1-modules.svg)](https://pypi.org/project/pyasn1-modules/)\n[![Build status](https://github.com/pyasn1/pyasn1-modules/actions/workflows/main.yml/badge.svg)](https://github.com/pyasn1/pyasn1-modules/actions/workflows/main.yml)\n[![Coverage Status](https://img.shields.io/codecov/c/github/pyasn1/pyasn1-modules.svg)](https://codecov.io/github/pyasn1/pyasn1-modules)\n[![GitHub license](https://img.shields.io/badge/license-BSD-blue.svg)](https://raw.githubusercontent.com/pyasn1/pyasn1-modules/master/LICENSE.txt)\n\nThe `pyasn1-modules` package contains a collection of\n[ASN.1](https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-X.208-198811-W!!PDF-E&type=items)\ndata structures expressed as Python classes based on [pyasn1](https://github.com/pyasn1/pyasn1)\ndata model.\n\nIf ASN.1 module you need is not present in this collection, try using\n[Asn1ate](https://github.com/kimgr/asn1ate) tool that compiles ASN.1 documents\ninto pyasn1 code.\n\n**NOTE:** The package is now maintained by *Christian Heimes* and\n*Simon Pichugin* in project https://github.com/pyasn1/pyasn1-modules.\n\nFeedback\n--------\n\nIf something does not work as expected, \n[open an issue](https://github.com/pyasn1/pyasn1-modules/issues) at GitHub\nor post your question [on Stack Overflow](https://stackoverflow.com/questions/ask)\n \nNew modules contributions are welcome via GitHub pull requests.\n\nCopyright (c) 2005-2020, [Ilya Etingof](mailto:etingof@gmail.com).\nAll rights reserved.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/9a/3b/6163796d69c3977d1e4287bea4a6979161cbbdd170ebb430511e8e1999ce/pyasn1-0.6.4-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=deda9277cfd454080ec40b207fb6df82206a3a2688735233cdcd8d3d565f088b",
+          "hashes": {
+            "sha256": "deda9277cfd454080ec40b207fb6df82206a3a2688735233cdcd8d3d565f088b"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "pyasn1",
+        "version": "0.6.4",
+        "dynamic": [
+          "license-file"
+        ],
+        "platform": [
+          "any"
+        ],
+        "summary": "Pure-Python implementation of ASN.1 types and DER/BER/CER codecs (X.208)",
+        "description_content_type": "text/markdown",
+        "author_email": "Ilya Etingof <etingof@gmail.com>",
+        "maintainer": "pyasn1 maintenance organization",
+        "maintainer_email": "Christian Heimes <christian@python.org>",
+        "license": "BSD-2-Clause",
+        "license_file": [
+          "LICENSE.rst"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Education",
+          "Intended Audience :: Information Technology",
+          "Intended Audience :: System Administrators",
+          "Intended Audience :: Telecommunications Industry",
+          "Natural Language :: English",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Communications",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Homepage, https://github.com/pyasn1/pyasn1",
+          "Documentation, https://pyasn1.readthedocs.io",
+          "Source, https://github.com/pyasn1/pyasn1",
+          "Issues, https://github.com/pyasn1/pyasn1/issues",
+          "Changelog, https://pyasn1.readthedocs.io/en/latest/changelog.html"
+        ],
+        "description": "\nASN.1 library for Python\n------------------------\n[![PyPI](https://img.shields.io/pypi/v/pyasn1.svg?maxAge=2592000)](https://pypi.org/project/pyasn1)\n[![Python Versions](https://img.shields.io/pypi/pyversions/pyasn1.svg)](https://pypi.org/project/pyasn1/)\n[![Build status](https://github.com/pyasn1/pyasn1/actions/workflows/main.yml/badge.svg)](https://github.com/pyasn1/pyasn1/actions/workflows/main.yml)\n[![Coverage Status](https://img.shields.io/codecov/c/github/pyasn1/pyasn1.svg)](https://codecov.io/github/pyasn1/pyasn1)\n[![GitHub license](https://img.shields.io/badge/license-BSD-blue.svg)](https://raw.githubusercontent.com/pyasn1/pyasn1/master/LICENSE.txt)\n\nThis is a free and open source implementation of ASN.1 types and codecs\nas a Python package. It has been first written to support particular\nprotocol (SNMP) but then generalized to be suitable for a wide range\nof protocols based on\n[ASN.1 specification](https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-X.208-198811-W!!PDF-E&type=items).\n\n**NOTE:** The package is now maintained by *Christian Heimes* and\n*Simon Pichugin* in project https://github.com/pyasn1/pyasn1.\n\nFeatures\n--------\n\n* Generic implementation of ASN.1 types (X.208)\n* Standards compliant BER/CER/DER codecs\n* Can operate on streams of serialized data\n* Dumps/loads ASN.1 structures from Python types\n* 100% Python, works with Python 3.8+\n* MT-safe\n* Contributed ASN.1 compiler [Asn1ate](https://github.com/kimgr/asn1ate)\n\nWhy using pyasn1\n----------------\n\nASN.1 solves the data serialisation problem. This solution was\ndesigned long ago by the wise Ancients. Back then, they did not\nhave the luxury of wasting bits. That is why ASN.1 is designed\nto serialise data structures of unbounded complexity into\nsomething compact and efficient when it comes to processing\nthe data.\n\nThat probably explains why many network protocols and file formats\nstill rely on the 30+ years old technology. Including a number of\nhigh-profile Internet protocols and file formats.\n\nQuite a number of books cover the topic of ASN.1. \n[Communication between heterogeneous systems](http://www.oss.com/asn1/dubuisson.html)\nby Olivier Dubuisson is one of those high quality books freely \navailable on the Internet.\n\nThe pyasn1 package is designed to help Python programmers tackling\nnetwork protocols and file formats at the comfort of their Python\nprompt. The tool struggles to capture all aspects of a rather\ncomplicated ASN.1 system and to represent it on the Python terms.\n\nHow to use pyasn1\n-----------------\n\nWith pyasn1 you can build Python objects from ASN.1 data structures.\nFor example, the following ASN.1 data structure:\n\n```bash\nRecord ::= SEQUENCE {\n  id        INTEGER,\n  room  [0] INTEGER OPTIONAL,\n  house [1] INTEGER DEFAULT 0\n}\n```\n\nCould be expressed in pyasn1 like this:\n\n```python\nclass Record(Sequence):\n    componentType = NamedTypes(\n        NamedType('id', Integer()),\n        OptionalNamedType(\n            'room', Integer().subtype(\n                implicitTag=Tag(tagClassContext, tagFormatSimple, 0)\n            )\n        ),\n        DefaultedNamedType(\n            'house', Integer(0).subtype(\n                implicitTag=Tag(tagClassContext, tagFormatSimple, 1)\n            )\n        )\n    )\n```\n\nIt is in the spirit of ASN.1 to take abstract data description \nand turn it into a programming language specific form.\nOnce you have your ASN.1 data structure expressed in Python, you\ncan use it along the lines of similar Python type (e.g. ASN.1\n`SET` is similar to Python `dict`, `SET OF` to `list`):\n\n```python\n>>> record = Record()\n>>> record['id'] = 123\n>>> record['room'] = 321\n>>> str(record)\nRecord:\n id=123\n room=321\n>>>\n```\n\nPart of the power of ASN.1 comes from its serialisation features. You\ncan serialise your data structure and send it over the network.\n\n```python\n>>> from pyasn1.codec.der.encoder import encode\n>>> substrate = encode(record)\n>>> hexdump(substrate)\n00000: 30 07 02 01 7B 80 02 01 41\n```\n\nConversely, you can turn serialised ASN.1 content, as received from\nnetwork or read from a file, into a Python object which you can\nintrospect, modify, encode and send back.\n\n```python\n>>> from pyasn1.codec.der.decoder import decode\n>>> received_record, rest_of_substrate = decode(substrate, asn1Spec=Record())\n>>>\n>>> for field in received_record:\n>>>    print('{} is {}'.format(field, received_record[field]))\nid is 123\nroom is 321\nhouse is 0\n>>>\n>>> record == received_record\nTrue\n>>> received_record.update(room=123)\n>>> substrate = encode(received_record)\n>>> hexdump(substrate)\n00000: 30 06 02 01 7B 80 01 7B\n```\n\nThe pyasn1 classes struggle to emulate their Python prototypes (e.g. int,\nlist, dict etc.). But ASN.1 types exhibit more complicated behaviour.\nTo make life easier for a Pythonista, they can turn their pyasn1\nclasses into Python built-ins:\n\n```python\n>>> from pyasn1.codec.native.encoder import encode\n>>> encode(record)\n{'id': 123, 'room': 321, 'house': 0}\n```\n\nOr vice-versa -- you can initialize an ASN.1 structure from a tree of\nPython objects:\n\n```python\n>>> from pyasn1.codec.native.decoder import decode\n>>> record = decode({'id': 123, 'room': 321, 'house': 0}, asn1Spec=Record())\n>>> str(record)\nRecord:\n id=123\n room=321\n>>>\n```\n\nWith ASN.1 design, serialisation codecs are decoupled from data objects,\nso you could turn every single ASN.1 object into many different \nserialised forms. As of this moment, pyasn1 supports BER, DER, CER and\nPython built-ins codecs. The extremely compact PER encoding is expected\nto be introduced in the upcoming pyasn1 release.\n\nMore information on pyasn1 APIs can be found in the\n[documentation](https://pyasn1.readthedocs.io/en/latest/pyasn1/contents.html),\ncompiled ASN.1 modules for different protocols and file formats\ncould be found in the pyasn1-modules \n[repo](https://github.com/pyasn1/pyasn1-modules).\n\nHow to get pyasn1\n-----------------\n\nThe pyasn1 package is distributed under terms and conditions of 2-clause\nBSD [license](https://pyasn1.readthedocs.io/en/latest/license.html). Source code is freely\navailable as a GitHub [repo](https://github.com/pyasn1/pyasn1).\n\nYou could `pip install pyasn1` or download it from [PyPI](https://pypi.org/project/pyasn1).\n\nIf something does not work as expected, \n[open an issue](https://github.com/epyasn1/pyasn1/issues) at GitHub or\npost your question [on Stack Overflow](https://stackoverflow.com/questions/ask)\nor try browsing pyasn1 \n[mailing list archives](https://sourceforge.net/p/pyasn1/mailman/pyasn1-users/).\n\nCopyright (c) 2005-2020, [Ilya Etingof](mailto:etingof@gmail.com).\nAll rights reserved.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992",
+          "hashes": {
+            "sha256": "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "pycparser",
+        "version": "3.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "C parser in Python",
+        "description_content_type": "text/x-rst",
+        "author_email": "Eli Bendersky <eliben@gmail.com>",
+        "maintainer_email": "Eli Bendersky <eliben@gmail.com>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://github.com/eliben/pycparser"
+        ],
+        "description": "===============\npycparser v3.00\n===============\n\n\n.. image:: https://github.com/eliben/pycparser/workflows/pycparser-tests/badge.svg\n  :align: center\n  :target: https://github.com/eliben/pycparser/actions\n\n----\n\n.. contents::\n    :backlinks: none\n\n.. sectnum::\n\nIntroduction\n============\n\nWhat is pycparser?\n------------------\n\n**pycparser** is a parser for the C language, written in pure Python. It is a\nmodule designed to be easily integrated into applications that need to parse\nC source code.\n\nWhat is it good for?\n--------------------\n\nAnything that needs C code to be parsed. The following are some uses for\n**pycparser**, taken from real user reports:\n\n* C code obfuscator\n* Front-end for various specialized C compilers\n* Static code checker\n* Automatic unit-test discovery\n* Adding specialized extensions to the C language\n\nOne of the most popular uses of **pycparser** is in the `cffi\n<https://cffi.readthedocs.io/en/latest/>`_ library, which uses it to parse the\ndeclarations of C functions and types in order to auto-generate FFIs.\n\n**pycparser** is unique in the sense that it's written in pure Python - a very\nhigh level language that's easy to experiment with and tweak. To people familiar\nwith Lex and Yacc, **pycparser**'s code will be simple to understand. It also\nhas no external dependencies (except for a Python interpreter), making it very\nsimple to install and deploy.\n\nWhich version of C does pycparser support?\n------------------------------------------\n\n**pycparser** aims to support the full C99 language (according to the standard\nISO/IEC 9899). Some features from C11 are also supported, and patches to support\nmore are welcome.\n\n**pycparser** supports very few GCC extensions, but it's fairly easy to set\nthings up so that it parses code with a lot of GCC-isms successfully. See the\n`FAQ <https://github.com/eliben/pycparser/wiki/FAQ>`_ for more details.\n\nWhat grammar does pycparser follow?\n-----------------------------------\n\n**pycparser** very closely follows the C grammar provided in Annex A of the C99\nstandard (ISO/IEC 9899).\n\nHow is pycparser licensed?\n--------------------------\n\n`BSD license <https://github.com/eliben/pycparser/blob/master/LICENSE>`_.\n\nContact details\n---------------\n\nFor reporting problems with **pycparser** or submitting feature requests, please\nopen an `issue <https://github.com/eliben/pycparser/issues>`_, or submit a\npull request.\n\n\nInstalling\n==========\n\nPrerequisites\n-------------\n\n**pycparser** is being tested with modern versions of Python on\nLinux, macOS and Windows. See `the CI dashboard <https://github.com/eliben/pycparser/actions/workflows/ci.yml>`__\nfor details.\n\n**pycparser** has no external dependencies.\n\nInstallation process\n--------------------\n\nThe recommended way to install **pycparser** is with ``pip``::\n\n    > pip install pycparser\n\nUsing\n=====\n\nInteraction with the C preprocessor\n-----------------------------------\n\nIn order to be compilable, C code must be preprocessed by the C preprocessor -\n``cpp``. A compatible ``cpp`` handles preprocessing directives like ``#include`` and\n``#define``, removes comments, and performs other minor tasks that prepare the C\ncode for compilation.\n\nFor all but the most trivial snippets of C code **pycparser**, like a C\ncompiler, must receive preprocessed C code in order to function correctly. If\nyou import the top-level ``parse_file`` function from the **pycparser** package,\nit will interact with ``cpp`` for you, as long as it's in your PATH, or you\nprovide a path to it.\n\nNote also that you can use ``gcc -E`` or ``clang -E`` instead of ``cpp``. See\nthe ``using_gcc_E_libc.py`` example for more details. Windows users can download\nand install a binary build of Clang for Windows `from this website\n<http://llvm.org/releases/download.html>`_.\n\nWhat about the standard C library headers?\n------------------------------------------\n\nC code almost always ``#include``\\s various header files from the standard C\nlibrary, like ``stdio.h``. While (with some effort) **pycparser** can be made to\nparse the standard headers from any C compiler, it's much simpler to use the\nprovided \"fake\" standard includes for C11 in ``utils/fake_libc_include``. These\nare standard C header files that contain only the bare necessities to allow\nvalid parsing of the files that use them. As a bonus, since they're minimal, it\ncan significantly improve the performance of parsing large C files.\n\nThe key point to understand here is that **pycparser** doesn't really care about\nthe semantics of types. It only needs to know whether some token encountered in\nthe source is a previously defined type. This is essential in order to be able\nto parse C correctly.\n\nSee `this blog post\n<https://eli.thegreenplace.net/2015/on-parsing-c-type-declarations-and-fake-headers>`_\nfor more details.\n\nNote that the fake headers are not included in the ``pip`` package nor installed\nvia the package build (`#224 <https://github.com/eliben/pycparser/issues/224>`_).\n\nBasic usage\n-----------\n\nTake a look at the |examples|_ directory of the distribution for a few examples\nof using **pycparser**. These should be enough to get you started. Please note\nthat most realistic C code samples would require running the C preprocessor\nbefore passing the code to **pycparser**; see the previous sections for more\ndetails.\n\n.. |examples| replace:: ``examples``\n.. _examples: examples\n\n\nAdvanced usage\n--------------\n\nThe public interface of **pycparser** is well documented with comments in\n``pycparser/c_parser.py``. For a detailed overview of the various AST nodes\ncreated by the parser, see ``pycparser/_c_ast.cfg``.\n\nThere's also a `FAQ available here <https://github.com/eliben/pycparser/wiki/FAQ>`_.\nIn any case, you can always drop me an `email <eliben@gmail.com>`_ for help.\n\n\nModifying\n=========\n\nThere are a few points to keep in mind when modifying **pycparser**:\n\n* The code for **pycparser**'s AST nodes is automatically generated from a\n  configuration file - ``_c_ast.cfg``, by ``_ast_gen.py``. If you modify the AST\n  configuration, make sure to re-generate the code. This can be done by running\n  the ``_ast_gen.py`` script (from the repository root or the\n  ``pycparser`` directory).\n* Read the docstring in the constructor of the ``CParser`` class for details\n  on configuration and compatibility arguments.\n\n\nPackage contents\n================\n\nOnce you unzip the ``pycparser`` package, you'll see the following files and\ndirectories:\n\nREADME.rst:\n  This README file.\n\nLICENSE:\n  The pycparser license\n\nsetup.py:\n  Legacy installation script (build metadata lives in ``pyproject.toml``).\n\npyproject.toml:\n  Package metadata and build configuration.\n\nexamples/:\n  A directory with some examples of using **pycparser**\n\npycparser/:\n  The **pycparser** module source code.\n\ntests/:\n  Unit tests.\n\nutils/fake_libc_include:\n  Minimal standard C library include files that should allow to parse any C code.\n  Note that these headers now include C11 code, so they may not work when the\n  preprocessor is configured to an earlier C standard (like ``-std=c99``).\n\nutils/internal/:\n  Internal utilities for my own use. You probably don't need them.\n\n\nContributors\n============\n\nSome people have contributed to **pycparser** by opening issues on bugs they've\nfound and/or submitting patches. The list of contributors is in the CONTRIBUTORS\nfile in the source distribution. After **pycparser** moved to Github I stopped\nupdating this list because Github does a much better job at tracking\ncontributions.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

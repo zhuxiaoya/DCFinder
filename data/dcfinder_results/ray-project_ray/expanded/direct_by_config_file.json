@@ -1,0 +1,3038 @@
+{
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/release/requirements.txt": [
+    {
+      "name": "click",
+      "specifier": "==8.1.7"
+    },
+    {
+      "name": "anyscale",
+      "specifier": "==0.26.14"
+    },
+    {
+      "name": "slackclient",
+      "specifier": ""
+    },
+    {
+      "name": "boto3",
+      "specifier": "==1.34.69"
+    },
+    {
+      "name": "google-cloud-storage",
+      "specifier": "==3.1.0"
+    },
+    {
+      "name": "jinja2",
+      "specifier": "==3.1.3"
+    },
+    {
+      "name": "pybuildkite",
+      "specifier": "==1.2.3"
+    },
+    {
+      "name": "pygithub",
+      "specifier": "==2.3.0"
+    },
+    {
+      "name": "pydantic",
+      "specifier": "==2.8.2"
+    },
+    {
+      "name": "pyyaml",
+      "specifier": "==6.0.1"
+    },
+    {
+      "name": "typer",
+      "specifier": "==0.12.3"
+    },
+    {
+      "name": "toml",
+      "specifier": "==0.10.2"
+    },
+    {
+      "name": "python-dotenv",
+      "specifier": "==1.0.1"
+    },
+    {
+      "name": "expiringdict",
+      "specifier": ""
+    },
+    {
+      "name": "requests",
+      "specifier": "==2.32.3"
+    },
+    {
+      "name": "protobuf",
+      "specifier": "==5.29.5"
+    },
+    {
+      "name": "pytz",
+      "specifier": "==2022.7.1"
+    },
+    {
+      "name": "retry",
+      "specifier": ""
+    },
+    {
+      "name": "kubernetes",
+      "specifier": "==24.2.0"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/release/requirements_buildkite.in": [
+    {
+      "name": "aioboto3",
+      "specifier": "==12.4.0"
+    },
+    {
+      "name": "bazel-runfiles",
+      "specifier": "==0.31.0"
+    },
+    {
+      "name": "freezegun",
+      "specifier": "==1.5.0"
+    },
+    {
+      "name": "pytest",
+      "specifier": "==8.2.0"
+    },
+    {
+      "name": "twine",
+      "specifier": "==6.1.0"
+    },
+    {
+      "name": "docker",
+      "specifier": "==7.1.0"
+    },
+    {
+      "name": "aws-requests-auth",
+      "specifier": "==0.4.3"
+    },
+    {
+      "name": "tzdata",
+      "specifier": "==2024.1"
+    },
+    {
+      "name": "typing-extensions",
+      "specifier": "==4.11.0"
+    },
+    {
+      "name": "jsonschema",
+      "specifier": "==4.23.0"
+    },
+    {
+      "name": "certifi",
+      "specifier": "==2025.1.31"
+    },
+    {
+      "name": "h11",
+      "specifier": "==0.16.0"
+    },
+    {
+      "name": "google-cloud-logging",
+      "specifier": "==3.12.1"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/release/requirements_buildkite.txt": [
+    {
+      "name": "accessible-pygments",
+      "specifier": "==0.0.5"
+    },
+    {
+      "name": "aiobotocore",
+      "specifier": "==2.12.3"
+    },
+    {
+      "name": "aiohttp",
+      "specifier": "==3.9.5"
+    },
+    {
+      "name": "aioitertools",
+      "specifier": "==0.11.0"
+    },
+    {
+      "name": "aiosignal",
+      "specifier": "==1.3.1"
+    },
+    {
+      "name": "alabaster",
+      "specifier": "==0.7.16"
+    },
+    {
+      "name": "annotated-types",
+      "specifier": "==0.7.0"
+    },
+    {
+      "name": "anyio",
+      "specifier": "==4.4.0"
+    },
+    {
+      "name": "appnope",
+      "specifier": "==0.1.4"
+    },
+    {
+      "name": "asttokens",
+      "specifier": "==2.4.1"
+    },
+    {
+      "name": "async-timeout",
+      "specifier": "==4.0.3"
+    },
+    {
+      "name": "attrs",
+      "specifier": "==23.2.0"
+    },
+    {
+      "name": "autodoc-pydantic",
+      "specifier": "==2.2.0"
+    },
+    {
+      "name": "babel",
+      "specifier": "==2.15.0"
+    },
+    {
+      "name": "backports-tarfile",
+      "specifier": "==1.1.1"
+    },
+    {
+      "name": "beautifulsoup4",
+      "specifier": "==4.12.3"
+    },
+    {
+      "name": "botocore",
+      "specifier": "==1.34.69"
+    },
+    {
+      "name": "cachetools",
+      "specifier": "==5.3.3"
+    },
+    {
+      "name": "cffi",
+      "specifier": "==1.16.0"
+    },
+    {
+      "name": "charset-normalizer",
+      "specifier": "==3.3.2"
+    },
+    {
+      "name": "colorama",
+      "specifier": "==0.4.6"
+    },
+    {
+      "name": "comm",
+      "specifier": "==0.2.2"
+    },
+    {
+      "name": "cryptography",
+      "specifier": "==42.0.5"
+    },
+    {
+      "name": "debugpy",
+      "specifier": "==1.8.2"
+    },
+    {
+      "name": "decorator",
+      "specifier": "==5.1.1"
+    },
+    {
+      "name": "deprecated",
+      "specifier": "==1.2.14"
+    },
+    {
+      "name": "docutils",
+      "specifier": "==0.20.1"
+    },
+    {
+      "name": "exceptiongroup",
+      "specifier": "==1.2.1"
+    },
+    {
+      "name": "executing",
+      "specifier": "==2.0.1"
+    },
+    {
+      "name": "fastjsonschema",
+      "specifier": "==2.20.0"
+    },
+    {
+      "name": "frozenlist",
+      "specifier": "==1.4.1"
+    },
+    {
+      "name": "gitdb",
+      "specifier": "==4.0.11"
+    },
+    {
+      "name": "gitpython",
+      "specifier": "==3.1.43"
+    },
+    {
+      "name": "google-api-core",
+      "specifier": "==2.24.2"
+    },
+    {
+      "name": "google-auth",
+      "specifier": "==2.40.2"
+    },
+    {
+      "name": "google-cloud-appengine-logging",
+      "specifier": "==1.6.1"
+    },
+    {
+      "name": "google-cloud-audit-log",
+      "specifier": "==0.3.2"
+    },
+    {
+      "name": "google-cloud-core",
+      "specifier": "==2.4.3"
+    },
+    {
+      "name": "google-crc32c",
+      "specifier": "==1.7.1"
+    },
+    {
+      "name": "google-resumable-media",
+      "specifier": "==2.7.2"
+    },
+    {
+      "name": "googleapis-common-protos",
+      "specifier": "==1.70.0"
+    },
+    {
+      "name": "greenlet",
+      "specifier": "==3.0.3"
+    },
+    {
+      "name": "grpc-google-iam-v1",
+      "specifier": "==0.14.2"
+    },
+    {
+      "name": "grpcio",
+      "specifier": "==1.71.0"
+    },
+    {
+      "name": "grpcio-status",
+      "specifier": "==1.71.0"
+    },
+    {
+      "name": "httplib2",
+      "specifier": "==0.22.0"
+    },
+    {
+      "name": "humanize",
+      "specifier": "==4.9.0"
+    },
+    {
+      "name": "id",
+      "specifier": "==1.5.0"
+    },
+    {
+      "name": "idna",
+      "specifier": "==3.7"
+    },
+    {
+      "name": "imagesize",
+      "specifier": "==1.4.1"
+    },
+    {
+      "name": "importlib-metadata",
+      "specifier": "==7.1.0"
+    },
+    {
+      "name": "iniconfig",
+      "specifier": "==2.0.0"
+    },
+    {
+      "name": "ipykernel",
+      "specifier": "==6.29.5"
+    },
+    {
+      "name": "ipython",
+      "specifier": "==8.18.1"
+    },
+    {
+      "name": "jaraco-classes",
+      "specifier": "==3.4.0"
+    },
+    {
+      "name": "jaraco-context",
+      "specifier": "==5.3.0"
+    },
+    {
+      "name": "jaraco-functools",
+      "specifier": "==4.0.1"
+    },
+    {
+      "name": "jedi",
+      "specifier": "==0.19.1"
+    },
+    {
+      "name": "jeepney",
+      "specifier": "==0.8.0"
+    },
+    {
+      "name": "jmespath",
+      "specifier": "==1.0.1"
+    },
+    {
+      "name": "jsonpatch",
+      "specifier": "==1.33"
+    },
+    {
+      "name": "jsonpointer",
+      "specifier": "==2.4"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "specifier": "==2023.12.1"
+    },
+    {
+      "name": "jupyter-cache",
+      "specifier": "==0.6.1"
+    },
+    {
+      "name": "jupyter-client",
+      "specifier": "==8.6.2"
+    },
+    {
+      "name": "jupyter-core",
+      "specifier": "==5.7.2"
+    },
+    {
+      "name": "jupytext",
+      "specifier": "==1.15.2"
+    },
+    {
+      "name": "keyring",
+      "specifier": "==25.2.0"
+    },
+    {
+      "name": "log-symbols",
+      "specifier": "==0.0.14"
+    },
+    {
+      "name": "markdown-it-py",
+      "specifier": "==3.0.0"
+    },
+    {
+      "name": "markupsafe",
+      "specifier": "==2.1.5"
+    },
+    {
+      "name": "matplotlib-inline",
+      "specifier": "==0.1.7"
+    },
+    {
+      "name": "mdit-py-plugins",
+      "specifier": "==0.4.1"
+    },
+    {
+      "name": "mdurl",
+      "specifier": "==0.1.2"
+    },
+    {
+      "name": "more-itertools",
+      "specifier": "==10.2.0"
+    },
+    {
+      "name": "multidict",
+      "specifier": "==6.0.5"
+    },
+    {
+      "name": "myst-nb",
+      "specifier": "==1.0.0rc0"
+    },
+    {
+      "name": "myst-parser",
+      "specifier": "==2.0.0"
+    },
+    {
+      "name": "nbclient",
+      "specifier": "==0.7.4"
+    },
+    {
+      "name": "nbformat",
+      "specifier": "==5.10.4"
+    },
+    {
+      "name": "nest-asyncio",
+      "specifier": "==1.6.0"
+    },
+    {
+      "name": "nh3",
+      "specifier": "==0.2.17"
+    },
+    {
+      "name": "oauth2client",
+      "specifier": "==4.1.3"
+    },
+    {
+      "name": "opentelemetry-api",
+      "specifier": "==1.33.1"
+    },
+    {
+      "name": "packaging",
+      "specifier": "==24.0"
+    },
+    {
+      "name": "parso",
+      "specifier": "==0.8.4"
+    },
+    {
+      "name": "pathspec",
+      "specifier": "==0.12.1"
+    },
+    {
+      "name": "pexpect",
+      "specifier": "==4.9.0"
+    },
+    {
+      "name": "platformdirs",
+      "specifier": "==4.2.2"
+    },
+    {
+      "name": "pluggy",
+      "specifier": "==1.5.0"
+    },
+    {
+      "name": "prompt-toolkit",
+      "specifier": "==3.0.47"
+    },
+    {
+      "name": "proto-plus",
+      "specifier": "==1.26.1"
+    },
+    {
+      "name": "psutil",
+      "specifier": "==6.0.0"
+    },
+    {
+      "name": "ptyprocess",
+      "specifier": "==0.7.0"
+    },
+    {
+      "name": "pure-eval",
+      "specifier": "==0.2.3"
+    },
+    {
+      "name": "pyasn1",
+      "specifier": "==0.6.0"
+    },
+    {
+      "name": "pyasn1-modules",
+      "specifier": "==0.4.0"
+    },
+    {
+      "name": "pycparser",
+      "specifier": "==2.22"
+    },
+    {
+      "name": "pydantic-core",
+      "specifier": "==2.20.1"
+    },
+    {
+      "name": "pydantic-settings",
+      "specifier": "==2.3.4"
+    },
+    {
+      "name": "pydata-sphinx-theme",
+      "specifier": "==0.14.1"
+    },
+    {
+      "name": "pygments",
+      "specifier": "==2.16.1"
+    },
+    {
+      "name": "pyjwt",
+      "specifier": "==2.8.0"
+    },
+    {
+      "name": "pynacl",
+      "specifier": "==1.5.0"
+    },
+    {
+      "name": "pyparsing",
+      "specifier": "==3.1.2"
+    },
+    {
+      "name": "python-dateutil",
+      "specifier": "==2.9.0.post0"
+    },
+    {
+      "name": "pyzmq",
+      "specifier": "==26.0.3"
+    },
+    {
+      "name": "readme-renderer",
+      "specifier": "==43.0"
+    },
+    {
+      "name": "referencing",
+      "specifier": "==0.35.1"
+    },
+    {
+      "name": "requests-toolbelt",
+      "specifier": "==1.0.0"
+    },
+    {
+      "name": "rfc3986",
+      "specifier": "==2.0.0"
+    },
+    {
+      "name": "rich",
+      "specifier": "==13.7.1"
+    },
+    {
+      "name": "rpds-py",
+      "specifier": "==0.18.0"
+    },
+    {
+      "name": "rsa",
+      "specifier": "==4.9"
+    },
+    {
+      "name": "s3transfer",
+      "specifier": "==0.10.1"
+    },
+    {
+      "name": "secretstorage",
+      "specifier": "==3.3.3"
+    },
+    {
+      "name": "six",
+      "specifier": "==1.16.0"
+    },
+    {
+      "name": "smart-open",
+      "specifier": "==7.0.4"
+    },
+    {
+      "name": "smmap",
+      "specifier": "==5.0.1"
+    },
+    {
+      "name": "sniffio",
+      "specifier": "==1.3.1"
+    },
+    {
+      "name": "snowballstemmer",
+      "specifier": "==2.2.0"
+    },
+    {
+      "name": "soupsieve",
+      "specifier": "==2.5"
+    },
+    {
+      "name": "sphinx",
+      "specifier": "==7.3.7"
+    },
+    {
+      "name": "sphinx-autobuild",
+      "specifier": "==2024.4.16"
+    },
+    {
+      "name": "sphinx-click",
+      "specifier": "==5.1.0"
+    },
+    {
+      "name": "sphinx-copybutton",
+      "specifier": "==0.5.2"
+    },
+    {
+      "name": "sphinx-design",
+      "specifier": "==0.5.0"
+    },
+    {
+      "name": "sphinx-docsearch",
+      "specifier": "==0.0.7"
+    },
+    {
+      "name": "sphinx-jsonschema",
+      "specifier": "==1.19.1"
+    },
+    {
+      "name": "sphinx-remove-toctrees",
+      "specifier": "==0.0.3"
+    },
+    {
+      "name": "sphinx-sitemap",
+      "specifier": "==2.5.1"
+    },
+    {
+      "name": "sphinxcontrib-applehelp",
+      "specifier": "==1.0.8"
+    },
+    {
+      "name": "sphinxcontrib-devhelp",
+      "specifier": "==1.0.6"
+    },
+    {
+      "name": "sphinxcontrib-htmlhelp",
+      "specifier": "==2.0.6"
+    },
+    {
+      "name": "sphinxcontrib-jsmath",
+      "specifier": "==1.0.1"
+    },
+    {
+      "name": "sphinxcontrib-qthelp",
+      "specifier": "==1.0.8"
+    },
+    {
+      "name": "sphinxcontrib-redoc",
+      "specifier": "==1.6.0"
+    },
+    {
+      "name": "sphinxcontrib-serializinghtml",
+      "specifier": "==1.1.10"
+    },
+    {
+      "name": "sphinxemoji",
+      "specifier": "==0.2.0"
+    },
+    {
+      "name": "spinners",
+      "specifier": "==0.0.24"
+    },
+    {
+      "name": "sqlalchemy",
+      "specifier": "==2.0.31"
+    },
+    {
+      "name": "stack-data",
+      "specifier": "==0.6.3"
+    },
+    {
+      "name": "starlette",
+      "specifier": "==0.38.4"
+    },
+    {
+      "name": "tabulate",
+      "specifier": "==0.9.0"
+    },
+    {
+      "name": "termcolor",
+      "specifier": "==2.4.0"
+    },
+    {
+      "name": "tomli",
+      "specifier": "==2.0.1"
+    },
+    {
+      "name": "tornado",
+      "specifier": "==6.4.1"
+    },
+    {
+      "name": "tqdm",
+      "specifier": "==4.66.2"
+    },
+    {
+      "name": "traitlets",
+      "specifier": "==5.14.3"
+    },
+    {
+      "name": "tzlocal",
+      "specifier": "==5.2"
+    },
+    {
+      "name": "urllib3",
+      "specifier": "==1.26.18"
+    },
+    {
+      "name": "uvicorn",
+      "specifier": "==0.30.6"
+    },
+    {
+      "name": "watchfiles",
+      "specifier": "==0.24.0"
+    },
+    {
+      "name": "wcwidth",
+      "specifier": "==0.2.13"
+    },
+    {
+      "name": "websockets",
+      "specifier": "==13.0.1"
+    },
+    {
+      "name": "wrapt",
+      "specifier": "==1.16.0"
+    },
+    {
+      "name": "yarl",
+      "specifier": "==1.9.4"
+    },
+    {
+      "name": "zipp",
+      "specifier": "==3.18.1"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/release/ray_release/byod/requirements_byod_3.9.in": [
+    {
+      "name": "ale-py",
+      "specifier": "==0.10.1"
+    },
+    {
+      "name": "cmake",
+      "specifier": "==3.30.0"
+    },
+    {
+      "name": "crc32c",
+      "specifier": "==2.3"
+    },
+    {
+      "name": "cython",
+      "specifier": "==0.29.37"
+    },
+    {
+      "name": "dask",
+      "specifier": "==2022.10.2"
+    },
+    {
+      "name": "fastapi",
+      "specifier": "==0.115.12"
+    },
+    {
+      "name": "gcsfs",
+      "specifier": "==2023.5.0"
+    },
+    {
+      "name": "gsutil",
+      "specifier": "==5.27"
+    },
+    {
+      "name": "gymnasium",
+      "specifier": "==1.0.0"
+    },
+    {
+      "name": "lightgbm",
+      "specifier": "==4.6.0"
+    },
+    {
+      "name": "locust",
+      "specifier": "==2.18.0"
+    },
+    {
+      "name": "memray",
+      "specifier": "==1.10.0"
+    },
+    {
+      "name": "openskill",
+      "specifier": "==6.0.0"
+    },
+    {
+      "name": "petastorm",
+      "specifier": "==0.12.1"
+    },
+    {
+      "name": "pyarrow",
+      "specifier": "==14.0.2"
+    },
+    {
+      "name": "semidbm",
+      "specifier": "==0.5.1"
+    },
+    {
+      "name": "s3fs",
+      "specifier": "==2023.5.0"
+    },
+    {
+      "name": "scikit-learn",
+      "specifier": "==1.3.2"
+    },
+    {
+      "name": "scipy",
+      "specifier": "==1.11.4"
+    },
+    {
+      "name": "tblib",
+      "specifier": "==3.0.0"
+    },
+    {
+      "name": "terminado",
+      "specifier": "==0.18.1"
+    },
+    {
+      "name": "tensorboardx",
+      "specifier": "==2.6.2.2"
+    },
+    {
+      "name": "tensorflow",
+      "specifier": "==2.15.1"
+    },
+    {
+      "name": "trueskill",
+      "specifier": "==0.4.5"
+    },
+    {
+      "name": "xarray",
+      "specifier": "==2023.12.0"
+    },
+    {
+      "name": "xgboost",
+      "specifier": "==2.1.0"
+    },
+    {
+      "name": "zarr",
+      "specifier": "==2.16.1"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/release/ray_release/byod/requirements_ml_byod_3.9.txt": [
+    {
+      "name": "absl-py",
+      "specifier": "==1.4.0"
+    },
+    {
+      "name": "accelerate",
+      "specifier": "==0.28.0"
+    },
+    {
+      "name": "adagio",
+      "specifier": "==0.2.4"
+    },
+    {
+      "name": "aiohappyeyeballs",
+      "specifier": "==2.6.1"
+    },
+    {
+      "name": "albucore",
+      "specifier": "==0.0.24"
+    },
+    {
+      "name": "albumentations",
+      "specifier": "==2.0.6"
+    },
+    {
+      "name": "antlr4-python3-runtime",
+      "specifier": "==4.11.1"
+    },
+    {
+      "name": "appdirs",
+      "specifier": "==1.4.4"
+    },
+    {
+      "name": "argcomplete",
+      "specifier": "==3.3.0"
+    },
+    {
+      "name": "backcall",
+      "specifier": "==0.2.0"
+    },
+    {
+      "name": "bitsandbytes",
+      "specifier": "==0.43.1"
+    },
+    {
+      "name": "boto",
+      "specifier": "==2.49.0"
+    },
+    {
+      "name": "brotli",
+      "specifier": "==1.1.0"
+    },
+    {
+      "name": "chardet",
+      "specifier": "==5.2.0"
+    },
+    {
+      "name": "cloudpickle",
+      "specifier": "==2.2.0"
+    },
+    {
+      "name": "configargparse",
+      "specifier": "==1.7"
+    },
+    {
+      "name": "contourpy",
+      "specifier": "==1.1.1"
+    },
+    {
+      "name": "crcmod",
+      "specifier": "==1.7"
+    },
+    {
+      "name": "cycler",
+      "specifier": "==0.12.1"
+    },
+    {
+      "name": "dataproperty",
+      "specifier": "==1.0.1"
+    },
+    {
+      "name": "datasets",
+      "specifier": "==2.19.1"
+    },
+    {
+      "name": "decord",
+      "specifier": "==0.6.0"
+    },
+    {
+      "name": "deepspeed",
+      "specifier": "==0.12.3"
+    },
+    {
+      "name": "diffusers",
+      "specifier": "==0.12.1"
+    },
+    {
+      "name": "dill",
+      "specifier": "==0.3.7"
+    },
+    {
+      "name": "diskcache",
+      "specifier": "==5.6.3"
+    },
+    {
+      "name": "docker-pycreds",
+      "specifier": "==0.4.0"
+    },
+    {
+      "name": "eval-type-backport",
+      "specifier": "==0.2.2"
+    },
+    {
+      "name": "evaluate",
+      "specifier": "==0.4.3"
+    },
+    {
+      "name": "fairscale",
+      "specifier": "==0.4.6"
+    },
+    {
+      "name": "fasteners",
+      "specifier": "==0.19"
+    },
+    {
+      "name": "filelock",
+      "specifier": "==3.17.0"
+    },
+    {
+      "name": "flask",
+      "specifier": "==2.1.3"
+    },
+    {
+      "name": "flask-basicauth",
+      "specifier": "==0.2.0"
+    },
+    {
+      "name": "flask-cors",
+      "specifier": "==4.0.0"
+    },
+    {
+      "name": "fonttools",
+      "specifier": "==4.45.1"
+    },
+    {
+      "name": "fs",
+      "specifier": "==2.4.16"
+    },
+    {
+      "name": "fsspec",
+      "specifier": "==2023.5.0"
+    },
+    {
+      "name": "fugue",
+      "specifier": "==0.8.7"
+    },
+    {
+      "name": "fugue-sql-antlr",
+      "specifier": "==0.2.0"
+    },
+    {
+      "name": "future",
+      "specifier": "==1.0.0"
+    },
+    {
+      "name": "gcs-oauth2-boto-plugin",
+      "specifier": "==3.0"
+    },
+    {
+      "name": "gevent",
+      "specifier": "==24.2.1"
+    },
+    {
+      "name": "geventhttpclient",
+      "specifier": "==2.3.1"
+    },
+    {
+      "name": "google-apitools",
+      "specifier": "==0.5.32"
+    },
+    {
+      "name": "google-auth-oauthlib",
+      "specifier": "==1.0.0"
+    },
+    {
+      "name": "google-reauth",
+      "specifier": "==0.1.1"
+    },
+    {
+      "name": "hjson",
+      "specifier": "==3.1.0"
+    },
+    {
+      "name": "huggingface-hub",
+      "specifier": "==0.27.0"
+    },
+    {
+      "name": "importlib-resources",
+      "specifier": "==5.13.0"
+    },
+    {
+      "name": "ipywidgets",
+      "specifier": "==8.1.3"
+    },
+    {
+      "name": "itsdangerous",
+      "specifier": "==2.1.2"
+    },
+    {
+      "name": "joblib",
+      "specifier": "==1.2.0"
+    },
+    {
+      "name": "jsonlines",
+      "specifier": "==4.0.0"
+    },
+    {
+      "name": "jupyterlab-widgets",
+      "specifier": "==3.0.11"
+    },
+    {
+      "name": "kiwisolver",
+      "specifier": "==1.4.5"
+    },
+    {
+      "name": "lightning-utilities",
+      "specifier": "==0.11.2"
+    },
+    {
+      "name": "llvmlite",
+      "specifier": "==0.42.0"
+    },
+    {
+      "name": "lm-eval",
+      "specifier": "==0.4.0"
+    },
+    {
+      "name": "lxml",
+      "specifier": "==4.9.4"
+    },
+    {
+      "name": "matplotlib",
+      "specifier": "==3.7.4"
+    },
+    {
+      "name": "mbstrdecoder",
+      "specifier": "==1.1.3"
+    },
+    {
+      "name": "modin",
+      "specifier": "==0.22.2"
+    },
+    {
+      "name": "monotonic",
+      "specifier": "==1.6"
+    },
+    {
+      "name": "mpmath",
+      "specifier": "==1.3.0"
+    },
+    {
+      "name": "msgpack",
+      "specifier": "==1.0.7"
+    },
+    {
+      "name": "multiprocess",
+      "specifier": "==0.70.15"
+    },
+    {
+      "name": "networkx",
+      "specifier": "==3.2.1"
+    },
+    {
+      "name": "ninja",
+      "specifier": "==1.11.1.1"
+    },
+    {
+      "name": "nltk",
+      "specifier": "==3.8.1"
+    },
+    {
+      "name": "numba",
+      "specifier": "==0.59.1"
+    },
+    {
+      "name": "numexpr",
+      "specifier": "==2.8.4"
+    },
+    {
+      "name": "numpy",
+      "specifier": "==1.26.4"
+    },
+    {
+      "name": "nvidia-nccl-cu12",
+      "specifier": "==2.20.5"
+    },
+    {
+      "name": "oauthlib",
+      "specifier": "==3.2.2"
+    },
+    {
+      "name": "openai-whisper",
+      "specifier": "==20231117"
+    },
+    {
+      "name": "opencv-python-headless",
+      "specifier": "==4.9.0.80"
+    },
+    {
+      "name": "pandas",
+      "specifier": "==1.5.3"
+    },
+    {
+      "name": "pathvalidate",
+      "specifier": "==3.2.0"
+    },
+    {
+      "name": "patsy",
+      "specifier": "==0.5.3"
+    },
+    {
+      "name": "peft",
+      "specifier": "==0.11.1"
+    },
+    {
+      "name": "pickleshare",
+      "specifier": "==0.7.5"
+    },
+    {
+      "name": "pillow",
+      "specifier": "==10.3.0"
+    },
+    {
+      "name": "portalocker",
+      "specifier": "==2.8.2"
+    },
+    {
+      "name": "propcache",
+      "specifier": "==0.3.0"
+    },
+    {
+      "name": "py-cpuinfo",
+      "specifier": "==9.0.0"
+    },
+    {
+      "name": "py4j",
+      "specifier": "==0.10.9.7"
+    },
+    {
+      "name": "pyarrow-hotfix",
+      "specifier": "==0.7"
+    },
+    {
+      "name": "pybind11",
+      "specifier": "==2.13.1"
+    },
+    {
+      "name": "pynvml",
+      "specifier": "==11.5.0"
+    },
+    {
+      "name": "pyopenssl",
+      "specifier": "==25.0.0"
+    },
+    {
+      "name": "pyspark",
+      "specifier": "==3.4.1"
+    },
+    {
+      "name": "pytablewriter",
+      "specifier": "==1.2.0"
+    },
+    {
+      "name": "pytorch-lightning",
+      "specifier": "==1.8.6"
+    },
+    {
+      "name": "pyu2f",
+      "specifier": "==0.1.5"
+    },
+    {
+      "name": "qpd",
+      "specifier": "==0.4.4"
+    },
+    {
+      "name": "regex",
+      "specifier": "==2024.5.15"
+    },
+    {
+      "name": "requests-oauthlib",
+      "specifier": "==2.0.0"
+    },
+    {
+      "name": "retry-decorator",
+      "specifier": "==1.1.1"
+    },
+    {
+      "name": "rouge-score",
+      "specifier": "==0.1.2"
+    },
+    {
+      "name": "roundrobin",
+      "specifier": "==0.0.4"
+    },
+    {
+      "name": "sacrebleu",
+      "specifier": "==2.4.2"
+    },
+    {
+      "name": "safetensors",
+      "specifier": "==0.4.3"
+    },
+    {
+      "name": "sentencepiece",
+      "specifier": "==0.1.96"
+    },
+    {
+      "name": "sentry-sdk",
+      "specifier": "==2.10.0"
+    },
+    {
+      "name": "setproctitle",
+      "specifier": "==1.3.3"
+    },
+    {
+      "name": "shellingham",
+      "specifier": "==1.5.4"
+    },
+    {
+      "name": "simsimd",
+      "specifier": "==6.2.1"
+    },
+    {
+      "name": "sqlglot",
+      "specifier": "==25.6.1"
+    },
+    {
+      "name": "sqlitedict",
+      "specifier": "==2.1.0"
+    },
+    {
+      "name": "statsforecast",
+      "specifier": "==1.7.0"
+    },
+    {
+      "name": "statsmodels",
+      "specifier": "==0.14.0"
+    },
+    {
+      "name": "stringzilla",
+      "specifier": "==3.12.5"
+    },
+    {
+      "name": "sympy",
+      "specifier": "==1.13.1"
+    },
+    {
+      "name": "tabledata",
+      "specifier": "==1.3.3"
+    },
+    {
+      "name": "tcolorpy",
+      "specifier": "==0.1.6"
+    },
+    {
+      "name": "threadpoolctl",
+      "specifier": "==3.1.0"
+    },
+    {
+      "name": "tiktoken",
+      "specifier": "==0.7.0"
+    },
+    {
+      "name": "tokenizers",
+      "specifier": "==0.15.2"
+    },
+    {
+      "name": "torch",
+      "specifier": "==2.3.0"
+    },
+    {
+      "name": "torchaudio",
+      "specifier": "==2.3.0"
+    },
+    {
+      "name": "torchmetrics",
+      "specifier": "==0.10.3"
+    },
+    {
+      "name": "torchtext",
+      "specifier": "==0.18.0"
+    },
+    {
+      "name": "tqdm-multiprocess",
+      "specifier": "==0.0.11"
+    },
+    {
+      "name": "transformers",
+      "specifier": "==4.36.2"
+    },
+    {
+      "name": "triad",
+      "specifier": "==0.9.8"
+    },
+    {
+      "name": "triton",
+      "specifier": "==2.3.0"
+    },
+    {
+      "name": "typepy",
+      "specifier": "==1.3.2"
+    },
+    {
+      "name": "utilsforecast",
+      "specifier": "==0.2.0"
+    },
+    {
+      "name": "validators",
+      "specifier": "==0.33.0"
+    },
+    {
+      "name": "wandb",
+      "specifier": "==0.17.0"
+    },
+    {
+      "name": "werkzeug",
+      "specifier": "==2.3.8"
+    },
+    {
+      "name": "widgetsnbextension",
+      "specifier": "==4.0.11"
+    },
+    {
+      "name": "xxhash",
+      "specifier": "==3.4.1"
+    },
+    {
+      "name": "zope-event",
+      "specifier": "==5.0"
+    },
+    {
+      "name": "zope-interface",
+      "specifier": "==6.4.post2"
+    },
+    {
+      "name": "zstandard",
+      "specifier": "==0.23.0"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/release/ray_release/byod/requirements_llm_byod_3.11.txt": [
+    {
+      "name": "pytest-asyncio",
+      "specifier": "==0.21.2"
+    },
+    {
+      "name": "pytest-timeout",
+      "specifier": "==2.1.0"
+    },
+    {
+      "name": "orjson",
+      "specifier": "==3.10.15"
+    },
+    {
+      "name": "backoff",
+      "specifier": "==2.2.1"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/release/ray_release/byod/requirements_byod_3.9.txt": [
+    {
+      "name": "asciitree",
+      "specifier": "==0.3.3"
+    },
+    {
+      "name": "astunparse",
+      "specifier": "==1.6.3"
+    },
+    {
+      "name": "bokeh",
+      "specifier": "==2.4.3"
+    },
+    {
+      "name": "distributed",
+      "specifier": "==2022.10.2"
+    },
+    {
+      "name": "farama-notifications",
+      "specifier": "==0.0.4"
+    },
+    {
+      "name": "flatbuffers",
+      "specifier": "==23.5.26"
+    },
+    {
+      "name": "gast",
+      "specifier": "==0.4.0"
+    },
+    {
+      "name": "google-pasta",
+      "specifier": "==0.2.0"
+    },
+    {
+      "name": "h5py",
+      "specifier": "==3.10.0"
+    },
+    {
+      "name": "keras",
+      "specifier": "==2.15.0"
+    },
+    {
+      "name": "libclang",
+      "specifier": "==16.0.6"
+    },
+    {
+      "name": "locket",
+      "specifier": "==1.0.0"
+    },
+    {
+      "name": "markdown",
+      "specifier": "==3.5.1"
+    },
+    {
+      "name": "ml-dtypes",
+      "specifier": "==0.3.2"
+    },
+    {
+      "name": "numcodecs",
+      "specifier": "==0.12.1"
+    },
+    {
+      "name": "opt-einsum",
+      "specifier": "==3.3.0"
+    },
+    {
+      "name": "partd",
+      "specifier": "==1.4.1"
+    },
+    {
+      "name": "sortedcontainers",
+      "specifier": "==2.4.0"
+    },
+    {
+      "name": "tensorboard",
+      "specifier": "==2.15.2"
+    },
+    {
+      "name": "tensorboard-data-server",
+      "specifier": "==0.7.2"
+    },
+    {
+      "name": "tensorflow-estimator",
+      "specifier": "==2.15.0"
+    },
+    {
+      "name": "tensorflow-io-gcs-filesystem",
+      "specifier": "==0.31.0"
+    },
+    {
+      "name": "toolz",
+      "specifier": "==0.12.1"
+    },
+    {
+      "name": "wheel",
+      "specifier": "==0.45.1"
+    },
+    {
+      "name": "zict",
+      "specifier": "==3.0.0"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/doc/requirements-doc.txt": [
+    {
+      "name": "setuptools",
+      "specifier": ">=70.0.0"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/doc/source/templates/testing/docker/04_finetuning_llms_with_deepspeed/requirements.txt": [
+    {
+      "name": "dataset",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/doc/source/templates/05_dreambooth_finetuning/dreambooth/requirements.txt": [
+    {
+      "name": "flax",
+      "specifier": "==0.6.11"
+    },
+    {
+      "name": "jax",
+      "specifier": "==0.4.13"
+    },
+    {
+      "name": "jaxlib",
+      "specifier": "==0.4.13"
+    },
+    {
+      "name": "torchvision",
+      "specifier": "==0.15.2"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/doc/source/ray-overview/examples/e2e-audio/requirements.txt": [
+    {
+      "name": "xgrammar",
+      "specifier": "==0.1.18"
+    },
+    {
+      "name": "flashinfer-python",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/doc/source/ray-overview/examples/e2e-audio/requirements_dev.txt": [
+    {
+      "name": "pre-commit",
+      "specifier": "==4.1.0"
+    },
+    {
+      "name": "ruff",
+      "specifier": ">=0.11.5"
+    },
+    {
+      "name": "nbconvert",
+      "specifier": "==6.5.4"
+    },
+    {
+      "name": "jupyter",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/doc/source/ray-overview/examples/e2e-xgboost/requirements.txt": [
+    {
+      "name": "mlflow",
+      "specifier": "==2.19.0"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/doc/source/ray-overview/examples/e2e-xgboost/requirements_dev.txt": [
+    {
+      "name": "mypy",
+      "specifier": "==1.7.0"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/python/requirements_compiled_ray_py311_cpu.txt": [
+    {
+      "name": "aiohttp-cors",
+      "specifier": "==0.7.0"
+    },
+    {
+      "name": "aiorwlock",
+      "specifier": "==1.3.0"
+    },
+    {
+      "name": "colorful",
+      "specifier": "==0.5.5"
+    },
+    {
+      "name": "cupy-cuda12x",
+      "specifier": "==13.1.0"
+    },
+    {
+      "name": "distlib",
+      "specifier": "==0.3.7"
+    },
+    {
+      "name": "dm-tree",
+      "specifier": "==0.1.8"
+    },
+    {
+      "name": "fastrlock",
+      "specifier": "==0.8.2"
+    },
+    {
+      "name": "imageio",
+      "specifier": "==2.34.2"
+    },
+    {
+      "name": "lazy-loader",
+      "specifier": "==0.4"
+    },
+    {
+      "name": "lz4",
+      "specifier": "==4.3.3"
+    },
+    {
+      "name": "opencensus",
+      "specifier": "==0.11.3"
+    },
+    {
+      "name": "opencensus-context",
+      "specifier": "==0.1.3"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp",
+      "specifier": "==1.26.0"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp-proto-common",
+      "specifier": "==1.26.0"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp-proto-grpc",
+      "specifier": "==1.26.0"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp-proto-http",
+      "specifier": "==1.26.0"
+    },
+    {
+      "name": "opentelemetry-exporter-prometheus",
+      "specifier": "==0.47b0"
+    },
+    {
+      "name": "opentelemetry-proto",
+      "specifier": "==1.26.0"
+    },
+    {
+      "name": "opentelemetry-sdk",
+      "specifier": "==1.26.0"
+    },
+    {
+      "name": "opentelemetry-semantic-conventions",
+      "specifier": "==0.47b0"
+    },
+    {
+      "name": "prometheus-client",
+      "specifier": "==0.19.0"
+    },
+    {
+      "name": "py-spy",
+      "specifier": "==0.4.0"
+    },
+    {
+      "name": "scikit-image",
+      "specifier": "==0.24.0"
+    },
+    {
+      "name": "tifffile",
+      "specifier": "==2024.7.21"
+    },
+    {
+      "name": "virtualenv",
+      "specifier": "==20.29.1"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/python/requirements_compiled_rayllm_test_py311_cu121.txt": [
+    {
+      "name": "aiofiles",
+      "specifier": "==22.1.0"
+    },
+    {
+      "name": "aiosqlite",
+      "specifier": "==0.19.0"
+    },
+    {
+      "name": "airportsdata",
+      "specifier": "==20241001"
+    },
+    {
+      "name": "argon2-cffi",
+      "specifier": "==23.1.0"
+    },
+    {
+      "name": "argon2-cffi-bindings",
+      "specifier": "==21.2.0"
+    },
+    {
+      "name": "arrow",
+      "specifier": "==1.3.0"
+    },
+    {
+      "name": "astor",
+      "specifier": "==0.8.1"
+    },
+    {
+      "name": "blake3",
+      "specifier": "==1.0.4"
+    },
+    {
+      "name": "bleach",
+      "specifier": "==6.1.0"
+    },
+    {
+      "name": "compressed-tensors",
+      "specifier": "==0.9.3"
+    },
+    {
+      "name": "defusedxml",
+      "specifier": "==0.7.1"
+    },
+    {
+      "name": "depyf",
+      "specifier": "==0.18.0"
+    },
+    {
+      "name": "distro",
+      "specifier": "==1.9.0"
+    },
+    {
+      "name": "dnspython",
+      "specifier": "==2.7.0"
+    },
+    {
+      "name": "einops",
+      "specifier": "==0.8.1"
+    },
+    {
+      "name": "email-validator",
+      "specifier": "==2.2.0"
+    },
+    {
+      "name": "entrypoints",
+      "specifier": "==0.4"
+    },
+    {
+      "name": "fastapi-cli",
+      "specifier": "==0.0.5"
+    },
+    {
+      "name": "fqdn",
+      "specifier": "==1.5.1"
+    },
+    {
+      "name": "gguf",
+      "specifier": "==0.16.2"
+    },
+    {
+      "name": "halo",
+      "specifier": "==0.0.31"
+    },
+    {
+      "name": "hf-xet",
+      "specifier": "==1.0.4"
+    },
+    {
+      "name": "httpcore",
+      "specifier": "==1.0.9"
+    },
+    {
+      "name": "httptools",
+      "specifier": "==0.6.4"
+    },
+    {
+      "name": "httpx",
+      "specifier": "==0.28.1"
+    },
+    {
+      "name": "interegular",
+      "specifier": "==0.3.3"
+    },
+    {
+      "name": "ipython-genutils",
+      "specifier": "==0.2.0"
+    },
+    {
+      "name": "isoduration",
+      "specifier": "==20.11.0"
+    },
+    {
+      "name": "jiter",
+      "specifier": "==0.8.2"
+    },
+    {
+      "name": "json5",
+      "specifier": "==0.9.14"
+    },
+    {
+      "name": "jsonref",
+      "specifier": "==1.1.0"
+    },
+    {
+      "name": "jupyter-events",
+      "specifier": "==0.6.3"
+    },
+    {
+      "name": "jupyter-server",
+      "specifier": "==1.24.0"
+    },
+    {
+      "name": "jupyter-server-fileid",
+      "specifier": "==0.9.0"
+    },
+    {
+      "name": "jupyter-server-ydoc",
+      "specifier": "==0.6.1"
+    },
+    {
+      "name": "jupyter-ydoc",
+      "specifier": "==0.2.5"
+    },
+    {
+      "name": "jupyterlab",
+      "specifier": "==3.6.1"
+    },
+    {
+      "name": "jupyterlab-pygments",
+      "specifier": "==0.3.0"
+    },
+    {
+      "name": "jupyterlab-server",
+      "specifier": "==2.24.0"
+    },
+    {
+      "name": "lark",
+      "specifier": "==1.2.2"
+    },
+    {
+      "name": "llguidance",
+      "specifier": "==0.7.10"
+    },
+    {
+      "name": "lm-format-enforcer",
+      "specifier": "==0.10.11"
+    },
+    {
+      "name": "meson",
+      "specifier": "==1.8.0"
+    },
+    {
+      "name": "mistral-common",
+      "specifier": "==1.5.4"
+    },
+    {
+      "name": "mistune",
+      "specifier": "==0.8.4"
+    },
+    {
+      "name": "msgspec",
+      "specifier": "==0.19.0"
+    },
+    {
+      "name": "nbclassic",
+      "specifier": "==1.0.0"
+    },
+    {
+      "name": "notebook",
+      "specifier": "==6.5.7"
+    },
+    {
+      "name": "notebook-shim",
+      "specifier": "==0.2.3"
+    },
+    {
+      "name": "nvidia-cublas-cu12",
+      "specifier": "==12.4.5.8"
+    },
+    {
+      "name": "nvidia-cuda-cupti-cu12",
+      "specifier": "==12.4.127"
+    },
+    {
+      "name": "nvidia-cuda-nvrtc-cu12",
+      "specifier": "==12.4.127"
+    },
+    {
+      "name": "nvidia-cuda-runtime-cu12",
+      "specifier": "==12.4.127"
+    },
+    {
+      "name": "nvidia-cudnn-cu12",
+      "specifier": "==9.1.0.70"
+    },
+    {
+      "name": "nvidia-cufft-cu12",
+      "specifier": "==11.2.1.3"
+    },
+    {
+      "name": "nvidia-curand-cu12",
+      "specifier": "==10.3.5.147"
+    },
+    {
+      "name": "nvidia-cusolver-cu12",
+      "specifier": "==11.6.1.9"
+    },
+    {
+      "name": "nvidia-cusparse-cu12",
+      "specifier": "==12.3.1.170"
+    },
+    {
+      "name": "nvidia-cusparselt-cu12",
+      "specifier": "==0.6.2"
+    },
+    {
+      "name": "nvidia-ml-py",
+      "specifier": "==12.570.86"
+    },
+    {
+      "name": "nvidia-nvjitlink-cu12",
+      "specifier": "==12.4.127"
+    },
+    {
+      "name": "nvidia-nvtx-cu12",
+      "specifier": "==12.4.127"
+    },
+    {
+      "name": "openai",
+      "specifier": "==1.63.2"
+    },
+    {
+      "name": "opentelemetry-semantic-conventions-ai",
+      "specifier": "==0.4.3"
+    },
+    {
+      "name": "outlines",
+      "specifier": "==0.1.11"
+    },
+    {
+      "name": "outlines-core",
+      "specifier": "==0.1.26"
+    },
+    {
+      "name": "pandocfilters",
+      "specifier": "==1.5.0"
+    },
+    {
+      "name": "partial-json-parser",
+      "specifier": "==0.2.1.1.post5"
+    },
+    {
+      "name": "prometheus-fastapi-instrumentator",
+      "specifier": "==7.0.2"
+    },
+    {
+      "name": "pycountry",
+      "specifier": "==24.6.1"
+    },
+    {
+      "name": "pycurl",
+      "specifier": "==7.45.3"
+    },
+    {
+      "name": "pytest-aiohttp",
+      "specifier": "==1.1.0"
+    },
+    {
+      "name": "python-json-logger",
+      "specifier": "==2.0.7"
+    },
+    {
+      "name": "python-multipart",
+      "specifier": "==0.0.20"
+    },
+    {
+      "name": "rfc3339-validator",
+      "specifier": "==0.1.4"
+    },
+    {
+      "name": "rfc3986-validator",
+      "specifier": "==0.1.1"
+    },
+    {
+      "name": "send2trash",
+      "specifier": "==1.8.3"
+    },
+    {
+      "name": "tinycss2",
+      "specifier": "==1.3.0"
+    },
+    {
+      "name": "types-python-dateutil",
+      "specifier": "==2.9.0.20240316"
+    },
+    {
+      "name": "uri-template",
+      "specifier": "==1.3.0"
+    },
+    {
+      "name": "uvloop",
+      "specifier": "==0.21.0"
+    },
+    {
+      "name": "vllm",
+      "specifier": "==0.8.5"
+    },
+    {
+      "name": "webcolors",
+      "specifier": "==24.6.0"
+    },
+    {
+      "name": "webencodings",
+      "specifier": "==0.5.1"
+    },
+    {
+      "name": "websocket-client",
+      "specifier": "==1.8.0"
+    },
+    {
+      "name": "xformers",
+      "specifier": "==0.0.29.post2"
+    },
+    {
+      "name": "y-py",
+      "specifier": "==0.6.2"
+    },
+    {
+      "name": "ypy-websocket",
+      "specifier": "==0.8.4"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/python/requirements_compiled.txt": [
+    {
+      "name": "adal",
+      "specifier": "==1.2.7"
+    },
+    {
+      "name": "aim",
+      "specifier": "==3.23.0"
+    },
+    {
+      "name": "aim-ui",
+      "specifier": "==3.23.0"
+    },
+    {
+      "name": "aimrecords",
+      "specifier": "==0.0.7"
+    },
+    {
+      "name": "aimrocks",
+      "specifier": "==0.5.2"
+    },
+    {
+      "name": "alembic",
+      "specifier": "==1.12.1"
+    },
+    {
+      "name": "altair",
+      "specifier": "==5.1.2"
+    },
+    {
+      "name": "applicationinsights",
+      "specifier": "==0.11.10"
+    },
+    {
+      "name": "argparse",
+      "specifier": "==1.4.0"
+    },
+    {
+      "name": "array-record",
+      "specifier": "==0.5.1"
+    },
+    {
+      "name": "asn1crypto",
+      "specifier": "==1.5.1"
+    },
+    {
+      "name": "async-exit-stack",
+      "specifier": "==1.0.1"
+    },
+    {
+      "name": "async-generator",
+      "specifier": "==1.10"
+    },
+    {
+      "name": "aws-sam-translator",
+      "specifier": "==1.81.0"
+    },
+    {
+      "name": "aws-xray-sdk",
+      "specifier": "==2.12.1"
+    },
+    {
+      "name": "ax-platform",
+      "specifier": "==0.3.2"
+    },
+    {
+      "name": "azure-cli-core",
+      "specifier": "==2.62.0"
+    },
+    {
+      "name": "azure-cli-telemetry",
+      "specifier": "==1.1.0"
+    },
+    {
+      "name": "azure-common",
+      "specifier": "==1.1.28"
+    },
+    {
+      "name": "azure-core",
+      "specifier": "==1.29.5"
+    },
+    {
+      "name": "azure-identity",
+      "specifier": "==1.17.1"
+    },
+    {
+      "name": "azure-mgmt-compute",
+      "specifier": "==31.0.0"
+    },
+    {
+      "name": "azure-mgmt-core",
+      "specifier": "==1.4.0"
+    },
+    {
+      "name": "azure-mgmt-network",
+      "specifier": "==25.4.0"
+    },
+    {
+      "name": "azure-mgmt-resource",
+      "specifier": "==23.1.1"
+    },
+    {
+      "name": "base58",
+      "specifier": "==2.0.1"
+    },
+    {
+      "name": "bash-kernel",
+      "specifier": "==0.10.0"
+    },
+    {
+      "name": "bayesian-optimization",
+      "specifier": "==1.4.3"
+    },
+    {
+      "name": "bcrypt",
+      "specifier": "==4.0.1"
+    },
+    {
+      "name": "black",
+      "specifier": "==22.10.0"
+    },
+    {
+      "name": "boltons",
+      "specifier": "==21.0.0"
+    },
+    {
+      "name": "botorch",
+      "specifier": "==0.8.5"
+    },
+    {
+      "name": "braceexpand",
+      "specifier": "==0.1.7"
+    },
+    {
+      "name": "bracex",
+      "specifier": "==2.4"
+    },
+    {
+      "name": "cfgv",
+      "specifier": "==3.4.0"
+    },
+    {
+      "name": "cfn-lint",
+      "specifier": "==0.83.3"
+    },
+    {
+      "name": "clang-format",
+      "specifier": "==12.0.1"
+    },
+    {
+      "name": "click-option-group",
+      "specifier": "==0.5.6"
+    },
+    {
+      "name": "clickhouse-connect",
+      "specifier": "==0.8.10"
+    },
+    {
+      "name": "cma",
+      "specifier": "==3.2.2"
+    },
+    {
+      "name": "cmdstanpy",
+      "specifier": "==1.2.0"
+    },
+    {
+      "name": "coloredlogs",
+      "specifier": "==15.0.1"
+    },
+    {
+      "name": "colorlog",
+      "specifier": "==6.7.0"
+    },
+    {
+      "name": "comet-ml",
+      "specifier": "==3.44.1"
+    },
+    {
+      "name": "configobj",
+      "specifier": "==5.0.8"
+    },
+    {
+      "name": "configspace",
+      "specifier": "==0.7.1"
+    },
+    {
+      "name": "contextlib2",
+      "specifier": "==21.6.0"
+    },
+    {
+      "name": "coverage",
+      "specifier": "==7.6.12"
+    },
+    {
+      "name": "cramjam",
+      "specifier": "==2.8.3"
+    },
+    {
+      "name": "databricks-sdk",
+      "specifier": "==0.52.0"
+    },
+    {
+      "name": "delta-sharing",
+      "specifier": "==1.0.5"
+    },
+    {
+      "name": "deltalake",
+      "specifier": "==0.18.2"
+    },
+    {
+      "name": "dm-control",
+      "specifier": "==1.0.12"
+    },
+    {
+      "name": "dm-env",
+      "specifier": "==1.6"
+    },
+    {
+      "name": "docstring-parser",
+      "specifier": "==0.15"
+    },
+    {
+      "name": "dulwich",
+      "specifier": "==0.21.6"
+    },
+    {
+      "name": "ecdsa",
+      "specifier": "==0.18.0"
+    },
+    {
+      "name": "et-xmlfile",
+      "specifier": "==1.1.0"
+    },
+    {
+      "name": "etils",
+      "specifier": "==1.5.2"
+    },
+    {
+      "name": "everett",
+      "specifier": "==3.1.0"
+    },
+    {
+      "name": "execnet",
+      "specifier": "==2.1.1"
+    },
+    {
+      "name": "face",
+      "specifier": "==22.0.0"
+    },
+    {
+      "name": "fastavro",
+      "specifier": "==1.9.4"
+    },
+    {
+      "name": "feather-format",
+      "specifier": "==0.4.1"
+    },
+    {
+      "name": "ffmpy",
+      "specifier": "==0.3.1"
+    },
+    {
+      "name": "filetype",
+      "specifier": "==1.2.0"
+    },
+    {
+      "name": "getdaft",
+      "specifier": "==0.4.3"
+    },
+    {
+      "name": "glfw",
+      "specifier": "==2.6.3"
+    },
+    {
+      "name": "glom",
+      "specifier": "==22.1.0"
+    },
+    {
+      "name": "google-api-python-client",
+      "specifier": "==2.111.0"
+    },
+    {
+      "name": "google-auth-httplib2",
+      "specifier": "==0.1.1"
+    },
+    {
+      "name": "google-cloud-bigquery",
+      "specifier": "==3.13.0"
+    },
+    {
+      "name": "google-cloud-bigquery-storage",
+      "specifier": "==2.24.0"
+    },
+    {
+      "name": "gpy",
+      "specifier": "==1.13.1"
+    },
+    {
+      "name": "gpytorch",
+      "specifier": "==1.10"
+    },
+    {
+      "name": "gradio",
+      "specifier": "==3.50.2"
+    },
+    {
+      "name": "gradio-client",
+      "specifier": "==0.6.1"
+    },
+    {
+      "name": "graphene",
+      "specifier": "==3.4.3"
+    },
+    {
+      "name": "graphql-core",
+      "specifier": "==3.2.3"
+    },
+    {
+      "name": "graphql-relay",
+      "specifier": "==3.2.0"
+    },
+    {
+      "name": "graphviz",
+      "specifier": "==0.20.3"
+    },
+    {
+      "name": "grpcio-tools",
+      "specifier": "==1.48.2"
+    },
+    {
+      "name": "gunicorn",
+      "specifier": "==20.1.0"
+    },
+    {
+      "name": "holidays",
+      "specifier": "==0.39"
+    },
+    {
+      "name": "hpbandster",
+      "specifier": "==0.7.4"
+    },
+    {
+      "name": "hudi",
+      "specifier": "==0.2.0"
+    },
+    {
+      "name": "humanfriendly",
+      "specifier": "==10.0"
+    },
+    {
+      "name": "hyperopt",
+      "specifier": ""
+    },
+    {
+      "name": "identify",
+      "specifier": "==2.6.1"
+    },
+    {
+      "name": "imageio-ffmpeg",
+      "specifier": "==0.4.5"
+    },
+    {
+      "name": "isodate",
+      "specifier": "==0.6.1"
+    },
+    {
+      "name": "jschema-to-python",
+      "specifier": "==1.2.3"
+    },
+    {
+      "name": "jsondiff",
+      "specifier": "==2.0.0"
+    },
+    {
+      "name": "jsonpickle",
+      "specifier": "==3.0.2"
+    },
+    {
+      "name": "jsonschema-path",
+      "specifier": "==0.3.4"
+    },
+    {
+      "name": "junit-xml",
+      "specifier": "==1.9"
+    },
+    {
+      "name": "knack",
+      "specifier": "==0.11.0"
+    },
+    {
+      "name": "labmaze",
+      "specifier": "==1.0.6"
+    },
+    {
+      "name": "lazy-object-proxy",
+      "specifier": "==1.9.0"
+    },
+    {
+      "name": "linear-operator",
+      "specifier": "==0.4.0"
+    },
+    {
+      "name": "mako",
+      "specifier": "==1.3.0"
+    },
+    {
+      "name": "medpy",
+      "specifier": "==0.4.0"
+    },
+    {
+      "name": "minigrid",
+      "specifier": "==2.3.1"
+    },
+    {
+      "name": "ml-collections",
+      "specifier": "==0.1.1"
+    },
+    {
+      "name": "mlagents-envs",
+      "specifier": "==0.28.0"
+    },
+    {
+      "name": "mlflow-skinny",
+      "specifier": "==2.22.0"
+    },
+    {
+      "name": "mmh3",
+      "specifier": "==4.1.0"
+    },
+    {
+      "name": "mock",
+      "specifier": "==5.1.0"
+    },
+    {
+      "name": "monai",
+      "specifier": "==1.3.2"
+    },
+    {
+      "name": "mosaicml",
+      "specifier": "==0.2.4"
+    },
+    {
+      "name": "moto",
+      "specifier": "==4.2.12"
+    },
+    {
+      "name": "moviepy",
+      "specifier": "==0.2.3.1"
+    },
+    {
+      "name": "msal",
+      "specifier": "==1.28.1"
+    },
+    {
+      "name": "msal-extensions",
+      "specifier": "==1.2.0b1"
+    },
+    {
+      "name": "msgpack-numpy",
+      "specifier": "==0.4.8"
+    },
+    {
+      "name": "msrest",
+      "specifier": "==0.7.1"
+    },
+    {
+      "name": "msrestazure",
+      "specifier": "==0.6.4"
+    },
+    {
+      "name": "mujoco",
+      "specifier": "==3.2.4"
+    },
+    {
+      "name": "multipledispatch",
+      "specifier": "==1.0.0"
+    },
+    {
+      "name": "mypy-extensions",
+      "specifier": "==1.0.0"
+    },
+    {
+      "name": "nbval",
+      "specifier": "==0.11.0"
+    },
+    {
+      "name": "netifaces",
+      "specifier": "==0.11.0"
+    },
+    {
+      "name": "nevergrad",
+      "specifier": "==0.4.3.post7"
+    },
+    {
+      "name": "nodeenv",
+      "specifier": "==1.9.1"
+    },
+    {
+      "name": "onnx",
+      "specifier": "==1.15.0"
+    },
+    {
+      "name": "onnxruntime",
+      "specifier": "==1.18.0"
+    },
+    {
+      "name": "open-spiel",
+      "specifier": "==1.4"
+    },
+    {
+      "name": "openapi-schema-validator",
+      "specifier": "==0.6.3"
+    },
+    {
+      "name": "openapi-spec-validator",
+      "specifier": "==0.7.1"
+    },
+    {
+      "name": "opencensus-proto",
+      "specifier": "==0.1.0"
+    },
+    {
+      "name": "openpyxl",
+      "specifier": "==3.0.10"
+    },
+    {
+      "name": "optuna",
+      "specifier": "==4.1.0"
+    },
+    {
+      "name": "ormsgpack",
+      "specifier": "==1.7.0"
+    },
+    {
+      "name": "paramiko",
+      "specifier": "==2.12.0"
+    },
+    {
+      "name": "paramz",
+      "specifier": "==0.9.6"
+    },
+    {
+      "name": "path",
+      "specifier": "==16.14.0"
+    },
+    {
+      "name": "path-py",
+      "specifier": "==12.5.0"
+    },
+    {
+      "name": "pathable",
+      "specifier": "==0.4.3"
+    },
+    {
+      "name": "pbr",
+      "specifier": "==6.0.0"
+    },
+    {
+      "name": "peewee",
+      "specifier": "==3.17.0"
+    },
+    {
+      "name": "pettingzoo",
+      "specifier": "==1.24.3"
+    },
+    {
+      "name": "pkginfo",
+      "specifier": "==1.9.6"
+    },
+    {
+      "name": "plotly",
+      "specifier": "==5.23.0"
+    },
+    {
+      "name": "polars",
+      "specifier": "==0.14.21"
+    },
+    {
+      "name": "promise",
+      "specifier": "==2.3"
+    },
+    {
+      "name": "prophet",
+      "specifier": "==1.1.5"
+    },
+    {
+      "name": "proxy-py",
+      "specifier": "==2.4.3"
+    },
+    {
+      "name": "py",
+      "specifier": "==1.11.0"
+    },
+    {
+      "name": "py-partiql-parser",
+      "specifier": "==0.5.0"
+    },
+    {
+      "name": "pydot",
+      "specifier": "==1.4.2"
+    },
+    {
+      "name": "pydub",
+      "specifier": "==0.25.1"
+    },
+    {
+      "name": "pygame",
+      "specifier": "==2.5.2"
+    },
+    {
+      "name": "pyglet",
+      "specifier": "==1.5.15"
+    },
+    {
+      "name": "pyiceberg",
+      "specifier": "==0.9.0"
+    },
+    {
+      "name": "pylance",
+      "specifier": "==0.22.0"
+    },
+    {
+      "name": "pymars",
+      "specifier": "==0.10.0"
+    },
+    {
+      "name": "pymongo",
+      "specifier": "==4.3.2"
+    },
+    {
+      "name": "pymunk",
+      "specifier": "==6.2.1"
+    },
+    {
+      "name": "pyopengl",
+      "specifier": "==3.1.7"
+    },
+    {
+      "name": "pyro-api",
+      "specifier": "==0.1.2"
+    },
+    {
+      "name": "pyro-ppl",
+      "specifier": "==1.9.1"
+    },
+    {
+      "name": "pyro4",
+      "specifier": "==4.82"
+    },
+    {
+      "name": "pysocks",
+      "specifier": "==1.7.1"
+    },
+    {
+      "name": "pytest-docker-tools",
+      "specifier": "==3.1.3"
+    },
+    {
+      "name": "pytest-fixture-config",
+      "specifier": "==1.7.0"
+    },
+    {
+      "name": "pytest-forked",
+      "specifier": "==1.4.0"
+    },
+    {
+      "name": "pytest-httpserver",
+      "specifier": "==1.0.6"
+    },
+    {
+      "name": "pytest-lazy-fixtures",
+      "specifier": "==1.1.2"
+    },
+    {
+      "name": "pytest-mock",
+      "specifier": "==3.14.0"
+    },
+    {
+      "name": "pytest-remotedata",
+      "specifier": "==0.3.2"
+    },
+    {
+      "name": "pytest-repeat",
+      "specifier": "==0.9.3"
+    },
+    {
+      "name": "pytest-rerunfailures",
+      "specifier": "==11.1.2"
+    },
+    {
+      "name": "pytest-shutil",
+      "specifier": "==1.7.0"
+    },
+    {
+      "name": "pytest-sphinx",
+      "specifier": ""
+    },
+    {
+      "name": "pytest-sugar",
+      "specifier": "==0.9.5"
+    },
+    {
+      "name": "pytest-virtualenv",
+      "specifier": "==1.7.0"
+    },
+    {
+      "name": "python-box",
+      "specifier": "==6.1.0"
+    },
+    {
+      "name": "python-jose",
+      "specifier": "==3.3.0"
+    },
+    {
+      "name": "python-lsp-jsonrpc",
+      "specifier": "==1.0.0"
+    },
+    {
+      "name": "python-snappy",
+      "specifier": "==0.7.2"
+    },
+    {
+      "name": "pytorch-ranger",
+      "specifier": "==0.1.1"
+    },
+    {
+      "name": "pyvmomi",
+      "specifier": "==8.0.3.0.1"
+    },
+    {
+      "name": "raydp",
+      "specifier": "==1.7.0b20250423.dev0"
+    },
+    {
+      "name": "redis",
+      "specifier": "==4.4.2"
+    },
+    {
+      "name": "responses",
+      "specifier": "==0.13.4"
+    },
+    {
+      "name": "restrictedpython",
+      "specifier": "==7.1"
+    },
+    {
+      "name": "ruamel-yaml",
+      "specifier": "==0.17.40"
+    },
+    {
+      "name": "ruamel-yaml-clib",
+      "specifier": "==0.2.8"
+    },
+    {
+      "name": "sarif-om",
+      "specifier": "==1.0.4"
+    },
+    {
+      "name": "segment-analytics-python",
+      "specifier": "==2.2.0"
+    },
+    {
+      "name": "semantic-version",
+      "specifier": "==2.10.0"
+    },
+    {
+      "name": "semgrep",
+      "specifier": "==1.32.0"
+    },
+    {
+      "name": "serpent",
+      "specifier": "==1.41"
+    },
+    {
+      "name": "shellcheck-py",
+      "specifier": "==0.7.1.1"
+    },
+    {
+      "name": "shimmy",
+      "specifier": "==2.0.0"
+    },
+    {
+      "name": "shortuuid",
+      "specifier": "==1.0.1"
+    },
+    {
+      "name": "simpleitk",
+      "specifier": "==2.3.1"
+    },
+    {
+      "name": "simplejson",
+      "specifier": "==3.19.2"
+    },
+    {
+      "name": "snowflake-connector-python",
+      "specifier": "==3.15.0"
+    },
+    {
+      "name": "soundfile",
+      "specifier": "==0.12.1"
+    },
+    {
+      "name": "sqlparse",
+      "specifier": "==0.5.1"
+    },
+    {
+      "name": "sshpubkeys",
+      "specifier": "==3.3.1"
+    },
+    {
+      "name": "stanio",
+      "specifier": "==0.3.0"
+    },
+    {
+      "name": "strictyaml",
+      "specifier": "==1.7.3"
+    },
+    {
+      "name": "supersuit",
+      "specifier": "==3.9.3"
+    },
+    {
+      "name": "tenacity",
+      "specifier": "==8.5.0"
+    },
+    {
+      "name": "tensorflow-datasets",
+      "specifier": "==4.9.3"
+    },
+    {
+      "name": "tensorflow-metadata",
+      "specifier": "==1.14.0"
+    },
+    {
+      "name": "tensorflow-probability",
+      "specifier": "==0.23.0"
+    },
+    {
+      "name": "testfixtures",
+      "specifier": "==7.0.0"
+    },
+    {
+      "name": "timm",
+      "specifier": "==0.9.2"
+    },
+    {
+      "name": "tinyscaler",
+      "specifier": "==1.2.8"
+    },
+    {
+      "name": "tomlkit",
+      "specifier": "==0.13.0"
+    },
+    {
+      "name": "torch-cluster",
+      "specifier": "==1.6.3"
+    },
+    {
+      "name": "torch-geometric",
+      "specifier": "==2.5.3"
+    },
+    {
+      "name": "torch-optimizer",
+      "specifier": "==0.3.0"
+    },
+    {
+      "name": "torch-scatter",
+      "specifier": "==2.1.2"
+    },
+    {
+      "name": "torch-sparse",
+      "specifier": "==0.6.18"
+    },
+    {
+      "name": "torch-spline-conv",
+      "specifier": "==1.2.2"
+    },
+    {
+      "name": "trustme",
+      "specifier": "==0.9.0"
+    },
+    {
+      "name": "typeguard",
+      "specifier": "==2.13.3"
+    },
+    {
+      "name": "types-pycurl",
+      "specifier": "==7.45.3.20240421"
+    },
+    {
+      "name": "types-pyyaml",
+      "specifier": "==6.0.12.2"
+    },
+    {
+      "name": "types-requests",
+      "specifier": "==2.31.0.6"
+    },
+    {
+      "name": "types-urllib3",
+      "specifier": "==1.26.25.14"
+    },
+    {
+      "name": "ujson",
+      "specifier": "==5.10.0"
+    },
+    {
+      "name": "uritemplate",
+      "specifier": "==4.1.1"
+    },
+    {
+      "name": "vsphere-automation-sdk",
+      "specifier": ""
+    },
+    {
+      "name": "wcmatch",
+      "specifier": "==8.5.2"
+    },
+    {
+      "name": "webdataset",
+      "specifier": "==0.2.86"
+    },
+    {
+      "name": "wurlitzer",
+      "specifier": "==3.1.1"
+    },
+    {
+      "name": "xlrd",
+      "specifier": "==2.0.1"
+    },
+    {
+      "name": "xmltodict",
+      "specifier": "==0.13.0"
+    },
+    {
+      "name": "yahp",
+      "specifier": "==0.1.1"
+    },
+    {
+      "name": "yq",
+      "specifier": "==3.2.2"
+    },
+    {
+      "name": "zoopt",
+      "specifier": "==0.4.1"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/python/ray/tests/project_files/session-tests/project-pass/ray-project/requirements.txt": [
+    {
+      "name": "ray",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/python/ray/util/collective/requirements.txt": [
+    {
+      "name": "cupy-cuda100",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ray-project_ray/python/ray/tune/requirements-dev.txt": [
+    {
+      "name": "gym",
+      "specifier": "<0.24.0,>=0.21.0"
+    }
+  ]
+}

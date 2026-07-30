@@ -1,0 +1,27 @@
+{
+    "direct dependency with same name": {
+        "number": 2,
+        "packages": {
+            "pillow": {
+                "private version": "10.4.0",
+                "public version": "10.4.0",
+                "highest public (unconstrained)": "12.3.0",
+                "declared specifier": "==10.4.0",
+                "constraint source": "direct",
+                "satisfying public versions count": 1
+            },
+            "tqdm": {
+                "private version": "4.66.5",
+                "public version": "4.68.4",
+                "highest public (unconstrained)": "4.68.4",
+                "declared specifier": ">=4.66.0,>=4.65.0",
+                "constraint source": "direct",
+                "satisfying public versions count": 16
+            }
+        }
+    },
+    "indirect dependency with same name": {
+        "number": 0,
+        "packages": {}
+    }
+}

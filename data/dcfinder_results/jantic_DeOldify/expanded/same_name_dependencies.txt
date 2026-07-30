@@ -1,0 +1,145 @@
+{
+    "direct dependency with same name": {
+        "number": 3,
+        "packages": {
+            "pillow": {
+                "private version": "9.3.0",
+                "public version": "9.3.0",
+                "highest public (unconstrained)": "12.3.0",
+                "declared specifier": "==9.3.0",
+                "constraint source": "direct",
+                "satisfying public versions count": 1
+            },
+            "torch": {
+                "private version": "1.11.0+cu113",
+                "public version": "1.11.0",
+                "highest public (unconstrained)": "2.13.0",
+                "declared specifier": "==1.11.0",
+                "constraint source": "direct",
+                "satisfying public versions count": 1
+            },
+            "torchvision": {
+                "private version": "0.12.0+cu113",
+                "public version": "0.12.0",
+                "highest public (unconstrained)": "0.28.0",
+                "declared specifier": "==0.12.0",
+                "constraint source": "direct",
+                "satisfying public versions count": 1
+            }
+        }
+    },
+    "indirect dependency with same name": {
+        "number": 14,
+        "packages": {
+            "certifi": {
+                "private version": "2022.12.7",
+                "public version": "2026.6.17",
+                "highest public (unconstrained)": "2026.6.17",
+                "declared specifier": ">=2017.4.17",
+                "constraint source": "indirect",
+                "satisfying public versions count": 51
+            },
+            "charset-normalizer": {
+                "private version": "2.1.1",
+                "public version": "2.1.1",
+                "highest public (unconstrained)": "3.4.9",
+                "declared specifier": "<3,>=2",
+                "constraint source": "indirect",
+                "satisfying public versions count": 15
+            },
+            "filelock": {
+                "private version": "3.29.0",
+                "public version": "3.30.2",
+                "highest public (unconstrained)": "3.30.2",
+                "declared specifier": "<4,>=3.24.2,>=3.15.4",
+                "constraint source": "indirect",
+                "satisfying public versions count": 17
+            },
+            "idna": {
+                "private version": "3.4",
+                "public version": "3.18",
+                "highest public (unconstrained)": "3.18",
+                "declared specifier": "<4,>=2.5,>=2.8,>=3.18",
+                "constraint source": "indirect",
+                "satisfying public versions count": 1
+            },
+            "jinja2": {
+                "private version": "3.1.6",
+                "public version": "3.1.6",
+                "highest public (unconstrained)": "3.1.6",
+                "declared specifier": ">=3.0.3,>=3.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 8
+            },
+            "markupsafe": {
+                "private version": "3.0.3",
+                "public version": "3.0.3",
+                "highest public (unconstrained)": "3.0.3",
+                "declared specifier": ">=2.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 12
+            },
+            "mypy-extensions": {
+                "private version": "1.0.0",
+                "public version": "1.1.0",
+                "highest public (unconstrained)": "1.1.0",
+                "declared specifier": ">=0.4.3",
+                "constraint source": "indirect",
+                "satisfying public versions count": 4
+            },
+            "numpy": {
+                "private version": "2.4.4",
+                "public version": "2.5.1",
+                "highest public (unconstrained)": "2.5.1",
+                "declared specifier": ">=1.15,>=2,>=1.25,>=1.23.0,>=1.26.0,<2.8,>=2.0.0,>=1.19.0,>=1.25,>=1.19.0,>=1.19.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 31
+            },
+            "packaging": {
+                "private version": "24.1",
+                "public version": "26.2",
+                "highest public (unconstrained)": "26.2",
+                "declared specifier": ">=22.0,>=23.2,>=20.0,>=20.0,>=22,>=22.0,>=21.3,>=20.0,>=20.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 11
+            },
+            "requests": {
+                "private version": "2.28.1",
+                "public version": "2.34.2",
+                "highest public (unconstrained)": "2.34.2",
+                "declared specifier": "<3,>=2.0.0,<3.0.0,>=2.13.0,>=2.31,<3.0.0,>=2.13.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 13
+            },
+            "setuptools": {
+                "private version": "78.1.0",
+                "public version": "83.0.0",
+                "highest public (unconstrained)": "83.0.0"
+            },
+            "tqdm": {
+                "private version": "4.66.5",
+                "public version": "4.68.4",
+                "highest public (unconstrained)": "4.68.4",
+                "declared specifier": "<5.0.0,>=4.38.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 69
+            },
+            "typing-extensions": {
+                "private version": "4.15.0",
+                "public version": "4.16.0",
+                "highest public (unconstrained)": "4.16.0",
+                "declared specifier": ">=4.0.1,<5,>=4.8,>=4.13.2,>=4.15.0,>=4.0.0,>=4.0.0,>=4.6,>=4.14.1,>=4.12.0,>=4.5.0,>=3.7.4.3,>=4.5,>=4.13.0,>=4.5.0,>=4.5.0,>=4.10.0,>=4.0,>=4.5.0,>4,>=4.6.0,>=4.4.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 4
+            },
+            "urllib3": {
+                "private version": "1.26.13",
+                "public version": "1.26.20",
+                "highest public (unconstrained)": "2.7.0",
+                "declared specifier": "<1.27,>=1.21.1,>=1.26.11",
+                "constraint source": "indirect",
+                "satisfying public versions count": 10
+            }
+        }
+    }
+}

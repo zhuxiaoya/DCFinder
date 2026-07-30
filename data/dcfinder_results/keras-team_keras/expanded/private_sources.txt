@@ -1,0 +1,15 @@
+# 私有源 (非 PyPI) 配置文件扫描结果 — keras-team_keras
+# 共发现 4 个配置文件含私有源
+
+[requirements-jax-cuda.txt]
+  extra_index_url: https://download.pytorch.org/whl/cpu
+
+[requirements-tensorflow-cuda.txt]
+  extra_index_url: https://download.pytorch.org/whl/cpu
+
+[requirements-torch-cuda.txt]
+  extra_index_url: https://download.pytorch.org/whl/cu121
+
+[requirements.txt]
+  extra_index_url: https://download.pytorch.org/whl/cpu
+

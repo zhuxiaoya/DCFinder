@@ -1,0 +1,59 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/5d/a0/9935e030634bf60ecd572c775f64ace82ceddf2f504a5fd3902438f07090/einops-0.3.0-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=a91c6190ceff7d513d74ca9fd701dfa6a1ffcdd98ea0ced14350197c07f75c73",
+          "hashes": {
+            "sha256": "a91c6190ceff7d513d74ca9fd701dfa6a1ffcdd98ea0ced14350197c07f75c73"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "einops",
+        "version": "0.3.0",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "A new flavour of deep learning operations",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "deep learning",
+          "neural networks",
+          "tensor manipulation",
+          "machine learning",
+          "scientific computations",
+          "einops"
+        ],
+        "home_page": "https://github.com/arogozhnikov/einops",
+        "author": "Alex Rogozhnikov",
+        "license": "UNKNOWN",
+        "classifier": [
+          "Intended Audience :: Science/Research",
+          "Programming Language :: Python :: 3 "
+        ],
+        "description": "<a href='http://arogozhnikov.github.io/images/einops/einops_video.mp4' >\n<div align=\"center\">\n  <img src=\"http://arogozhnikov.github.io/images/einops/einops_video.gif\" alt=\"einops package examples\" />\n  <br>\n  <small><a href='http://arogozhnikov.github.io/images/einops/einops_video.mp4'>This video in better quality.</a></small>\n  <br><br>\n</div>\n</a>\n\n# einops \n[![Build Status](https://travis-ci.org/arogozhnikov/einops.svg?branch=master)](https://travis-ci.org/arogozhnikov/einops)  [![PyPI version](https://badge.fury.io/py/einops.svg)](https://badge.fury.io/py/einops)\n\nFlexible and powerful tensor operations for readable and reliable code. \nSupports numpy, pytorch, tensorflow, and [others](#supported-frameworks).\n\n\n<!--<div align=\"center\">\n  <img src=\"http://arogozhnikov.github.io/images/einops/einops_logo_350x350.png\" \n  alt=\"einops package logo\" width=\"250\" height=\"250\" />\n  <br><br>\n</div> -->\n\n## Tweets \n\n> In case you need convincing arguments for setting aside time to learn about einsum and einops...\n[Tim Rocktäschel, FAIR](https://twitter.com/_rockt/status/1230818967205425152)\n\n> Writing better code with PyTorch and einops 👌\n[Andrej Karpathy, AI at Tesla](https://twitter.com/karpathy/status/1290826075916779520)\n\n> Slowly but surely, einops is seeping in to every nook and cranny of my code. If you find yourself shuffling around bazillion dimensional tensors, this might change your life\n[Nasim Rahaman, MILA (Montreal)](https://twitter.com/nasim_rahaman/status/1216022614755463169)\n\n\n\n## Contents\n\n- [Tutorial](#Tutorial--Documentation) \n- [API micro-reference](#API)\n- [Installation](#Installation)\n- [Naming](#Naming)\n- [Why using einops](#Why-using-einops-notation)\n- [Supported frameworks](#Supported-frameworks)\n- [Contributing](#Contributing)\n- [Github repository (for issues/questions)](https://github.com/arogozhnikov/einops)\n\n\n## Tutorial / Documentation \n\nTutorials are the most convenient way to see `einops` in action (and right now work as a documentation)\n\n- part 1: [einops fundamentals](https://github.com/arogozhnikov/einops/blob/master/docs/1-einops-basics.ipynb) \n- part 2: [einops for deep learning](https://github.com/arogozhnikov/einops/blob/master/docs/2-einops-for-deep-learning.ipynb)\n- part 3: [real code fragments improved with einops](https://arogozhnikov.github.io/einops/pytorch-examples.html) (so far only for pytorch)   \n\n## Installation\n\nPlain and simple:\n```bash\npip install einops\n```\n\n<!--\n`einops` has no mandatory dependencies (code examples also require jupyter, pillow + backends). \nTo obtain the latest github version \n\n```bash\npip install https://github.com/arogozhnikov/einops/archive/master.zip\n```\n-->\n\n## API \n\n`einops` has a minimalistic yet powerful API.\n\nThree operations provided ([einops tutorial](https://github.com/arogozhnikov/einops/blob/master/docs/) \nshows those cover stacking, reshape, transposition, squeeze/unsqueeze, repeat, tile, concatenate, view and numerous reductions)\n\n```python\nfrom einops import rearrange, reduce, repeat\n# rearrange elements according to the pattern\noutput_tensor = rearrange(input_tensor, 't b c -> b c t')\n# combine rearrangement and reduction\noutput_tensor = reduce(input_tensor, 'b c (h h2) (w w2) -> b h w c', 'mean', h2=2, w2=2)\n# copy along a new axis \noutput_tensor = repeat(input_tensor, 'h w -> h w c', c=3)\n```\nAnd two corresponding layers (`einops` keeps a separate version for each framework) with the same API.\n\n```python\nfrom einops.layers.chainer import Rearrange, Reduce\nfrom einops.layers.gluon import Rearrange, Reduce\nfrom einops.layers.keras import Rearrange, Reduce\nfrom einops.layers.torch import Rearrange, Reduce\nfrom einops.layers.tensorflow import Rearrange, Reduce\n```\n\nLayers behave similarly to operations and have the same parameters \n(with the exception of the first argument, which is passed during call)\n\n```python\nlayer = Rearrange(pattern, **axes_lengths)\nlayer = Reduce(pattern, reduction, **axes_lengths)\n\n# apply created layer to a tensor / variable\nx = layer(x)\n```\n\nExample of using layers within a model:\n```python\n# example given for pytorch, but code in other frameworks is almost identical  \nfrom torch.nn import Sequential, Conv2d, MaxPool2d, Linear, ReLU\nfrom einops.layers.torch import Rearrange\n\nmodel = Sequential(\n    Conv2d(3, 6, kernel_size=5),\n    MaxPool2d(kernel_size=2),\n    Conv2d(6, 16, kernel_size=5),\n    MaxPool2d(kernel_size=2),\n    # flattening\n    Rearrange('b c h w -> b (c h w)'),  \n    Linear(16*5*5, 120), \n    ReLU(),\n    Linear(120, 10), \n)\n```\n\n<!---\nAdditionally two auxiliary functions provided\n```python\nfrom einops import asnumpy, parse_shape\n# einops.asnumpy converts tensors of imperative frameworks to numpy\nnumpy_tensor = asnumpy(input_tensor)\n# einops.parse_shape gives a shape of axes of interest \nparse_shape(input_tensor, 'batch _ h w') # e.g {'batch': 64, 'h': 128, 'w': 160}\n```\n-->\n\n## Naming\n\n`einops` stands for Einstein-Inspired Notation for operations \n(though \"Einstein operations\" is more attractive and easier to remember).\n\nNotation was loosely inspired by Einstein summation (in particular by `numpy.einsum` operation).\n\n## Why use `einops` notation?!\n\n\n### Semantic information (being verbose in expectations)\n\n```python\ny = x.view(x.shape[0], -1)\ny = rearrange(x, 'b c h w -> b (c h w)')\n```\nWhile these two lines are doing the same job in *some* context,\nthe second one provides information about the input and output.\nIn other words, `einops` focuses on interface: *what is the input and output*, not *how* the output is computed.\n\nThe next operation looks similar:\n\n```python\ny = rearrange(x, 'time c h w -> time (c h w)')\n```\nbut it gives the reader a hint: \nthis is not an independent batch of images we are processing, \nbut rather a sequence (video). \n\nSemantic information makes the code easier to read and maintain. \n\n### More checks\n\nReconsider the same example:\n\n```python\ny = x.view(x.shape[0], -1) # x: (batch, 256, 19, 19)\ny = rearrange(x, 'b c h w -> b (c h w)')\n```\nThe second line checks that the input has four dimensions, \nbut you can also specify particular dimensions. \nThat's opposed to just writing comments about shapes since \n[comments don't work and don't prevent mistakes](https://medium.freecodecamp.org/code-comments-the-good-the-bad-and-the-ugly-be9cc65fbf83)\nas we know   \n```python\ny = x.view(x.shape[0], -1) # x: (batch, 256, 19, 19)\ny = rearrange(x, 'b c h w -> b (c h w)', c=256, h=19, w=19)\n```\n\n### Result is strictly determined\n\nBelow we have at least two ways to define the depth-to-space operation\n```python\n# depth-to-space\nrearrange(x, 'b c (h h2) (w w2) -> b (c h2 w2) h w', h2=2, w2=2)\nrearrange(x, 'b c (h h2) (w w2) -> b (h2 w2 c) h w', h2=2, w2=2)\n```\nThere are at least four more ways to do it. Which one is used by the framework?\n\nThese details are ignored, since *usually* it makes no difference, \nbut it can make a big difference (e.g. if you use grouped convolutions in the next stage), \nand you'd like to specify this in your code.\n\n\n### Uniformity\n\n```python\nreduce(x, 'b c (x dx) -> b c x', 'max', dx=2)\nreduce(x, 'b c (x dx) (y dy) -> b c x y', 'max', dx=2, dy=3)\nreduce(x, 'b c (x dx) (y dy) (z dz)-> b c x y z', 'max', dx=2, dy=3, dz=4)\n```\nThese examples demonstrated that we don't use separate operations for 1d/2d/3d pooling, \nthose are all defined in a uniform way. \n\nSpace-to-depth and depth-to space are defined in many frameworks but how about width-to-height?\n\n```python\nrearrange(x, 'b c h (w w2) -> b c (h w2) w', w2=2)\n```\n\n### Framework independent behavior\n\nEven simple functions are defined differently by different frameworks\n\n```python\ny = x.flatten() # or flatten(x)\n```\n\nSuppose `x`'s shape was `(3, 4, 5)`, then `y` has shape ...\n- numpy, cupy, chainer: `(60,)`\n- keras, tensorflow.layers, mxnet and gluon: `(3, 20)`\n- pytorch: no such function\n\n### Independence of framework terminology\n\nExample: `tile` vs `repeat` causes lots of confusion. To copy image along width:\n```python\nnp.tile(image, (1, 2))    # in numpy\nimage.repeat(1, 2)        # pytorch's repeat ~ numpy's tile\n```\n\nWith einops you don't need to decipher which axis was repeated:\n```python\nrepeat(image, 'h w -> h (tile w)', tile=2)  # in numpy\nrepeat(image, 'h w -> h (tile w)', tile=2)  # in pytorch\nrepeat(image, 'h w -> h (tile w)', tile=2)  # in tf\nrepeat(image, 'h w -> h (tile w)', tile=2)  # in jax\nrepeat(image, 'h w -> h (tile w)', tile=2)  # in mxnet\n... (etc.)\n```\n\n<!-- TODO examples for depth-to-space and pixel shuffle? transpose vs permute? -->\n\n## Supported frameworks\n\nEinops works with ...\n\n- [numpy](http://www.numpy.org/)\n- [pytorch](https://pytorch.org/)\n- [tensorflow](https://www.tensorflow.org/), including [eager mode](https://www.tensorflow.org/guide/eager)\n- [cupy](https://cupy.chainer.org/)\n- [chainer](https://chainer.org/)\n- [gluon](https://mxnet.apache.org/)\n- [keras](https://keras.io/) and [tf.keras](https://www.tensorflow.org/guide/keras)\n- [mxnet](https://gluon.mxnet.io/) (experimental)\n- [jax](https://github.com/google/jax) (experimental)\n\n## Contributing \n\nBest ways to contribute are\n\n- spread the word about `einops`\n- if you like explaining things, alternative tutorials would be very helpful\n  - some people grasp `einops` ideas immediately, while many others need help-by-example\n- translating examples in languages other than English is also a good idea\n- use `einops` notation in your papers to strictly define used operations!\n\n## Supported python versions\n\n`einops` works with python 3.5 or later. \n\n<!--\nThere is nothing specific to python 3 in the code, \nwe simply [need to move further](http://github.com/arogozhnikov/python3_with_pleasure).\n-->\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/e0/a7/124736cf96bd9bb5b5ee8a777fe02aa531d142c3a3280f00dcf4dafcdfda/pyloudnorm-0.1.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=d4ebefec5249ff439d684e3fe4c897239e98d8a554a974847d37f1123b90cb81",
+          "hashes": {
+            "sha256": "d4ebefec5249ff439d684e3fe4c897239e98d8a554a974847d37f1123b90cb81"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "pyloudnorm",
+        "version": "0.1.0",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "Implementation of ITU-R BS.1770-4 loudness algorithm in Python",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/csteinmetz1/pyloudnorm",
+        "author": "Christian Steinmetz",
+        "author_email": "cjstein@g.clemson.edu",
+        "license": "UNKNOWN",
+        "classifier": [
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 2.7",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent"
+        ],
+        "requires_dist": [
+          "scipy (>=1.0.1)",
+          "numpy (>=1.14.2)",
+          "future (>=0.16.0)"
+        ],
+        "description": "# pyloudnorm  [![Build Status](https://travis-ci.org/csteinmetz1/pyloudnorm.svg?branch=master)](https://travis-ci.org/csteinmetz1/pyloudnorm)\nFlexible audio loudness meter in Python. \n\nImplementation of [ITU-R BS.1770-4](https://www.itu.int/dms_pubrec/itu-r/rec/bs/R-REC-BS.1770-4-201510-I!!PDF-E.pdf). <br/>\nAllows control over gating block size and frequency weighting filters for additional control. \n\n## Installation\n```\npip install git+https://github.com/csteinmetz1/pyloudnorm\n```\n## Usage\n\n### Find the loudness of an audio file\nIt's easy to measure the loudness of a wav file. \nHere we use PySoundFile to read a .wav file as an ndarray.\n```python\nimport soundfile as sf\nimport pyloudnorm as pyln\n\ndata, rate = sf.read(\"test.wav\") # load audio (with shape (samples, channels))\nmeter = pyln.Meter(rate) # create BS.1770 meter\nloudness = meter.integrated_loudness(data) # measure loudness\n```\n\n### Loudness normalize and peak normalize audio files\nMethods are included to normalize audio files to desired peak values or desired loudness.\n```python\nimport soundfile as sf\nimport pyloudnorm as pyln\n\ndata, rate = sf.read(\"test.wav\") # load audio\n\n# peak normalize audio to -1 dB\npeak_normalized_audio = pyln.normalize.peak(data, -1.0)\n\n# measure the loudness first \nmeter = pyln.Meter(rate) # create BS.1770 meter\nloudness = meter.integrated_loudness(data)\n\n# loudness normalize audio to -12 dB LUFS\nloudness_normalized_audio = pyln.normalize.loudness(data, loudness, -12.0)\n```\n\n### Advanced operation\nA number of alternate weighting filters are available, as well as the ability to adjust the analysis block size. \nExamples are shown below.\n```python\nimport soundfile as sf\nimport pyloudnorm as pyln\nfrom pyloudnorm import IIRfilter\n\ndata, rate = sf.read(\"test.wav\") # load audio\n\n# block size\nmeter1 = pyln.Meter(rate)                               # 400ms block size\nmeter2 = pyln.Meter(rate, block_size=0.200)             # 200ms block size\n\n# filter classes\nmeter3 = pyln.Meter(rate)                               # BS.1770 meter\nmeter4 = pyln.Meter(rate, filter_class=\"DeMan\")         # fully compliant filters  \nmeter5 = pyln.Meter(rate, filter_class=\"Fenton/Lee 1\")  # low complexity improvement by Fenton and Lee\nmeter6 = pyln.Meter(rate, filter_class=\"Fenton/Lee 2\")  # higher complexity improvement by Fenton and Lee\nmeter7 = pyln.Meter(rate, filter_class=\"Dash et al.\")   # early modification option\n\n# create your own IIR filters\nmy_high_pass  = IIRfilter(0.0, 0.5, 20.0, rate, 'high_pass')\nmy_high_shelf = IIRfilter(2.0, 0.7, 1525.0, rate, 'high_shelf')\n\n# create a meter initialized without filters\nmeter8 = pyln.Meter(rate, filter_class=\"custom\")\n\n# load your filters into the meter\nmeter8._filters = {'my_high_pass' : my_high_pass, 'my_high_shelf' : my_high_shelf}\n\n```\n\n## Dependancies\n- **SciPy** ([https://www.scipy.org/](https://www.scipy.org/))\n- **NumPy** ([http://www.numpy.org/](http://www.numpy.org/))\n\n## References\n\n> Ian Dash, Luis Miranda, and Densil Cabrera, \"[Multichannel Loudness Listening Test](http://www.aes.org/e-lib/browse.cfm?elib=14581),\"\n> 124th International Convention of the Audio Engineering Society, May 2008\n\n> Pedro D. Pestana and Álvaro Barbosa, \"[Accuracy of ITU-R BS.1770 Algorithm in Evaluating Multitrack Material](http://www.aes.org/e-lib/online/browse.cfm?elib=16608),\"\n> 133rd International Convention of the Audio Engineering Society, October 2012\n\n> Pedro D. Pestana, Josh D. Reiss, and Álvaro Barbosa, \"[Loudness Measurement of Multitrack Audio Content Using Modifications of ITU-R BS.1770](http://www.aes.org/e-lib/browse.cfm?elib=16714),\"\n> 134th International Convention of the Audio Engineering Society, May 2013\n\n> Steven Fenton and Hyunkook Lee, \"[Alternative Weighting Filters for Multi-Track Program Loudness Measurement](http://www.aes.org/e-lib/browse.cfm?elib=19215),\"\n> 143rd International Convention of the Audio Engineering Society, October 2017\n\n> Brecht De Man, \"[Evaluation of Implementations of the EBU R128 Loudness Measurement](http://www.aes.org/e-lib/browse.cfm?elib=19790),\" \n> 145th International Convention of the Audio Engineering Society, October 2018. \n\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

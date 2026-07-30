@@ -1,0 +1,30 @@
+# 私有源 (非 PyPI) 配置文件扫描结果 — vllm-main
+# 共发现 7 个配置文件含私有源
+
+[docker/Dockerfile]
+  index_url: https://download.pytorch.org/whl/nightly/cu128
+  index_url: https://download.pytorch.org/whl/nightly/cu128
+  index_url: https://download.pytorch.org/whl/nightly/cu128
+  index_url: https://download.pytorch.org/whl/nightly/cu128
+
+[docker/Dockerfile.neuron]
+  extra_index_url: https://pip.repos.neuron.amazonaws.com
+  extra_index_url: https://pip.repos.neuron.amazonaws.com
+
+[docker/Dockerfile.nightly_torch]
+  index_url: https://download.pytorch.org/whl/nightly/cu128
+  index_url: https://download.pytorch.org/whl/nightly/cu128
+
+[requirements/cpu.txt]
+  extra_index_url: https://download.pytorch.org/whl/cpu
+
+[requirements/rocm-build.txt]
+  extra_index_url: https://download.pytorch.org/whl/rocm6.2.4
+
+[requirements/tpu.txt]
+  extra_index_url: https://download.pytorch.org/whl/nightly/cpu
+
+[requirements/xpu.txt]
+  extra_index_url: https://download.pytorch.org/whl/xpu
+  extra_index_url: https://pytorch-extension.intel.com/release-whl/stable/xpu/us/
+

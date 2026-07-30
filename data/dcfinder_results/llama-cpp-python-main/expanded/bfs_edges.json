@@ -1,0 +1,890 @@
+[
+  {
+    "parent": "jinja2",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markupsafe"
+  },
+  {
+    "parent": "uvicorn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "click"
+  },
+  {
+    "parent": "uvicorn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "h11"
+  },
+  {
+    "parent": "uvicorn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "fastapi",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "starlette"
+  },
+  {
+    "parent": "fastapi",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydantic"
+  },
+  {
+    "parent": "fastapi",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "fastapi",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-inspection"
+  },
+  {
+    "parent": "fastapi",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "annotated-doc"
+  },
+  {
+    "parent": "pydantic-settings",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydantic"
+  },
+  {
+    "parent": "pydantic-settings",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "python-dotenv"
+  },
+  {
+    "parent": "pydantic-settings",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-inspection"
+  },
+  {
+    "parent": "sse-starlette",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "starlette"
+  },
+  {
+    "parent": "sse-starlette",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "anyio"
+  },
+  {
+    "parent": "starlette-context",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "starlette"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "exceptiongroup"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "iniconfig"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pluggy"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pygments"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomli"
+  },
+  {
+    "parent": "httpx",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "certifi"
+  },
+  {
+    "parent": "scipy",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "click"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "filelock"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fsspec"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "hf-xet"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "httpx"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tqdm"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "click"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mypy-extensions"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pathspec"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "platformdirs"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pytokens"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomli"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "twine",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "readme-renderer"
+  },
+  {
+    "parent": "twine",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "twine",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests-toolbelt"
+  },
+  {
+    "parent": "twine",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "urllib3"
+  },
+  {
+    "parent": "twine",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "keyring"
+  },
+  {
+    "parent": "twine",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "rfc3986"
+  },
+  {
+    "parent": "twine",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "rich"
+  },
+  {
+    "parent": "twine",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "twine",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "id"
+  },
+  {
+    "parent": "mkdocs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "click"
+  },
+  {
+    "parent": "mkdocs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "ghp-import"
+  },
+  {
+    "parent": "mkdocs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jinja2"
+  },
+  {
+    "parent": "mkdocs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markdown"
+  },
+  {
+    "parent": "mkdocs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markupsafe"
+  },
+  {
+    "parent": "mkdocs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mergedeep"
+  },
+  {
+    "parent": "mkdocs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mkdocs-get-deps"
+  },
+  {
+    "parent": "mkdocs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "mkdocs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pathspec"
+  },
+  {
+    "parent": "mkdocs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml-env-tag"
+  },
+  {
+    "parent": "mkdocs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "mkdocs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "watchdog"
+  },
+  {
+    "parent": "mkdocstrings",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jinja2"
+  },
+  {
+    "parent": "mkdocstrings",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markdown"
+  },
+  {
+    "parent": "mkdocstrings",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markupsafe"
+  },
+  {
+    "parent": "mkdocstrings",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mkdocs"
+  },
+  {
+    "parent": "mkdocstrings",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mkdocs-autorefs"
+  },
+  {
+    "parent": "mkdocstrings",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pymdown-extensions"
+  },
+  {
+    "parent": "mkdocs-material",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "babel"
+  },
+  {
+    "parent": "mkdocs-material",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "backrefs"
+  },
+  {
+    "parent": "mkdocs-material",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "colorama"
+  },
+  {
+    "parent": "mkdocs-material",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jinja2"
+  },
+  {
+    "parent": "mkdocs-material",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markdown"
+  },
+  {
+    "parent": "mkdocs-material",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mkdocs-material-extensions"
+  },
+  {
+    "parent": "mkdocs-material",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mkdocs"
+  },
+  {
+    "parent": "mkdocs-material",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "paginate"
+  },
+  {
+    "parent": "mkdocs-material",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pygments"
+  },
+  {
+    "parent": "mkdocs-material",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pymdown-extensions"
+  },
+  {
+    "parent": "mkdocs-material",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "llama-cpp-python",
+    "parent_source": "private",
+    "parent_version": "0.3.34",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "llama-cpp-python",
+    "parent_source": "private",
+    "parent_version": "0.3.34",
+    "child": "numpy"
+  },
+  {
+    "parent": "llama-cpp-python",
+    "parent_source": "private",
+    "parent_version": "0.3.34",
+    "child": "diskcache"
+  },
+  {
+    "parent": "llama-cpp-python",
+    "parent_source": "private",
+    "parent_version": "0.3.34",
+    "child": "jinja2"
+  },
+  {
+    "parent": "ray",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "click"
+  },
+  {
+    "parent": "ray",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "filelock"
+  },
+  {
+    "parent": "ray",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jsonschema"
+  },
+  {
+    "parent": "ray",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "msgpack"
+  },
+  {
+    "parent": "ray",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "ray",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "ray",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "ray",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "starlette",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "anyio"
+  },
+  {
+    "parent": "starlette",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "pydantic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "annotated-types"
+  },
+  {
+    "parent": "pydantic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydantic-core"
+  },
+  {
+    "parent": "pydantic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "pydantic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-inspection"
+  },
+  {
+    "parent": "typing-inspection",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "anyio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "exceptiongroup"
+  },
+  {
+    "parent": "anyio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "idna"
+  },
+  {
+    "parent": "anyio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "exceptiongroup",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "readme-renderer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nh3"
+  },
+  {
+    "parent": "readme-renderer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "docutils"
+  },
+  {
+    "parent": "readme-renderer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pygments"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "charset-normalizer"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "idna"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "urllib3"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "certifi"
+  },
+  {
+    "parent": "requests-toolbelt",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "keyring",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "secretstorage"
+  },
+  {
+    "parent": "keyring",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jeepney"
+  },
+  {
+    "parent": "keyring",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "importlib-metadata"
+  },
+  {
+    "parent": "keyring",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jaraco-classes"
+  },
+  {
+    "parent": "keyring",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jaraco-functools"
+  },
+  {
+    "parent": "keyring",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jaraco-context"
+  },
+  {
+    "parent": "rich",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markdown-it-py"
+  },
+  {
+    "parent": "rich",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pygments"
+  },
+  {
+    "parent": "id",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "urllib3"
+  },
+  {
+    "parent": "ghp-import",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "python-dateutil"
+  },
+  {
+    "parent": "mkdocs-get-deps",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mergedeep"
+  },
+  {
+    "parent": "mkdocs-get-deps",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "platformdirs"
+  },
+  {
+    "parent": "mkdocs-get-deps",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "pyyaml-env-tag",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "mkdocs-autorefs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markdown"
+  },
+  {
+    "parent": "mkdocs-autorefs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markupsafe"
+  },
+  {
+    "parent": "mkdocs-autorefs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mkdocs"
+  },
+  {
+    "parent": "pymdown-extensions",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markdown"
+  },
+  {
+    "parent": "pymdown-extensions",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "jsonschema",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "attrs"
+  },
+  {
+    "parent": "jsonschema",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jsonschema-specifications"
+  },
+  {
+    "parent": "jsonschema",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "referencing"
+  },
+  {
+    "parent": "jsonschema",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "rpds-py"
+  },
+  {
+    "parent": "pydantic-core",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "secretstorage",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cryptography"
+  },
+  {
+    "parent": "secretstorage",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jeepney"
+  },
+  {
+    "parent": "importlib-metadata",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "zipp"
+  },
+  {
+    "parent": "jaraco-classes",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "more-itertools"
+  },
+  {
+    "parent": "jaraco-functools",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "more-itertools"
+  },
+  {
+    "parent": "jaraco-context",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "backports-tarfile"
+  },
+  {
+    "parent": "markdown-it-py",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mdurl"
+  },
+  {
+    "parent": "python-dateutil",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "six"
+  },
+  {
+    "parent": "jsonschema-specifications",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "referencing"
+  },
+  {
+    "parent": "referencing",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "attrs"
+  },
+  {
+    "parent": "referencing",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "rpds-py"
+  },
+  {
+    "parent": "referencing",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "cryptography",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cffi"
+  },
+  {
+    "parent": "cryptography",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "cffi",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pycparser"
+  }
+]

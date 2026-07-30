@@ -1,0 +1,83 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/fa/6e/3e955517e22cbdd565f2f8b2e73d52528b14b8bcfdb04f62466b071de847/validators-0.35.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=e8c947097eae7892cb3d26868d637f79f47b4a0554bc6b80065dfe5aac3705dd",
+          "hashes": {
+            "sha256": "e8c947097eae7892cb3d26868d637f79f47b4a0554bc6b80065dfe5aac3705dd"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "validators",
+        "version": "0.35.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Python Data Validation for Humans™",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "validation",
+          "validator",
+          "python-validator"
+        ],
+        "author_email": "Konsta Vesterinen <konsta@fastmonkeys.com>",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Environment :: Web Environment",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "eth-hash[pycryptodome]>=0.7.0; extra == \"crypto-eth-addresses\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://python-validators.github.io/validators",
+          "Documentation, https://yozachar.github.io/pyvalidators",
+          "Repository, https://github.com/python-validators/validators",
+          "Changelog, https://github.com/python-validators/validators/blob/master/CHANGES.md"
+        ],
+        "provides_extra": [
+          "crypto-eth-addresses"
+        ],
+        "description": "# validators - Python Data Validation for Humans™\n\n[![PyCQA][pycqa-badge]][pycqa-link] [![SAST][sast-badge]][sast-link] [![Docs][docs-badge]][docs-link] [![Version][vs-badge]][vs-link] [![Downloads][dw-badge]][dw-link]\n\n<!-- [![Package][package-badge]][package-link] -->\n\nPython has all kinds of data validation tools, but every one of them seems to\nrequire defining a schema or form. I wanted to create a simple validation\nlibrary where validating a simple value does not require defining a form or a\nschema.\n\n```shell\npip install validators\n```\n\nThen,\n\n```python\n>>> import validators\n>>>\n>>> validators.email('someone@example.com')\nTrue\n```\n\n## Resources\n\n<!-- Backup documentation URL :  https://yozachar.github.io/pyvalidators/ -->\n<!-- Original documentation URL :  https://python-validators.github.io/validators/ -->\n\n- [Documentation](https://yozachar.github.io/pyvalidators)\n- [Bugtracker](https://github.com/python-validators/validators/issues)\n- [Security](https://github.com/python-validators/validators/blob/master/SECURITY.md)\n- [Code](https://github.com/python-validators/validators/)\n\n<!-- Original docs URL will be restored, once properly versioned docs are ready. -->\n\n---\n\n> **_Python 3.9 [reaches EOL in](https://endoflife.date/python) October 2025._**\n\n<!-- Links -->\n[sast-badge]: https://github.com/python-validators/validators/actions/workflows/sast.yaml/badge.svg\n[sast-link]: https://github.com/python-validators/validators/actions/workflows/sast.yaml\n[pycqa-badge]: https://github.com/python-validators/validators/actions/workflows/pycqa.yaml/badge.svg\n[pycqa-link]: https://github.com/python-validators/validators/actions/workflows/pycqa.yaml\n[docs-badge]: https://github.com/yozachar/pyvalidators/actions/workflows/pages/pages-build-deployment/badge.svg\n[docs-link]: https://github.com/yozachar/pyvalidators/actions/workflows/pages/pages-build-deployment\n[vs-badge]: https://img.shields.io/pypi/v/validators?logo=pypi&logoColor=white&label=version&color=blue\n[vs-link]: https://pypi.python.org/pypi/validators/\n[dw-badge]: https://img.shields.io/pypi/dm/validators?logo=pypi&logoColor=white&color=blue\n[dw-link]: https://pypi.python.org/pypi/validators/\n\n<!-- [package-badge]: https://github.com/python-validators/validators/actions/workflows/package.yaml/badge.svg\n[package-link]: https://github.com/python-validators/validators/actions/workflows/package.yaml -->\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

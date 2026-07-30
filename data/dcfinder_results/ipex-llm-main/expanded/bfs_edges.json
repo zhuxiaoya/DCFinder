@@ -1,0 +1,2528 @@
+[
+  {
+    "parent": "accelerate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "accelerate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "accelerate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "psutil"
+  },
+  {
+    "parent": "accelerate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "accelerate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "torch"
+  },
+  {
+    "parent": "accelerate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "huggingface-hub"
+  },
+  {
+    "parent": "bitsandbytes",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "torch"
+  },
+  {
+    "parent": "bitsandbytes",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "bitsandbytes",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "click"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mypy-extensions"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pathspec"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "platformdirs"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pytokens"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomli"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "datasets",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "filelock"
+  },
+  {
+    "parent": "datasets",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "datasets",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyarrow"
+  },
+  {
+    "parent": "datasets",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "dill"
+  },
+  {
+    "parent": "datasets",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pandas"
+  },
+  {
+    "parent": "datasets",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "datasets",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "httpx"
+  },
+  {
+    "parent": "datasets",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tqdm"
+  },
+  {
+    "parent": "datasets",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "xxhash"
+  },
+  {
+    "parent": "datasets",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "multiprocess"
+  },
+  {
+    "parent": "datasets",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fsspec"
+  },
+  {
+    "parent": "datasets",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "huggingface-hub"
+  },
+  {
+    "parent": "datasets",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "datasets",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "fire",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "termcolor"
+  },
+  {
+    "parent": "peft",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "peft",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "peft",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "psutil"
+  },
+  {
+    "parent": "peft",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "peft",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "torch"
+  },
+  {
+    "parent": "peft",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "transformers"
+  },
+  {
+    "parent": "peft",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "accelerate"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "anyio"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "brotli"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fastapi"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "gradio-client"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "groovy"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "hf-gradio"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "httpx"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "huggingface-hub"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jinja2"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markupsafe"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "orjson"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pandas"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pillow"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydantic"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydub"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "python-multipart"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pytz"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "safehttpx"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "semantic-version"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "starlette"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomlkit"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typer"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "uvicorn"
+  },
+  {
+    "parent": "scipy",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "tokenizers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "huggingface-hub"
+  },
+  {
+    "parent": "deepspeed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "einops"
+  },
+  {
+    "parent": "deepspeed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "hjson"
+  },
+  {
+    "parent": "deepspeed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "msgpack"
+  },
+  {
+    "parent": "deepspeed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "ninja"
+  },
+  {
+    "parent": "deepspeed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "deepspeed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "deepspeed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "psutil"
+  },
+  {
+    "parent": "deepspeed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "py-cpuinfo"
+  },
+  {
+    "parent": "deepspeed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydantic"
+  },
+  {
+    "parent": "deepspeed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "torch"
+  },
+  {
+    "parent": "deepspeed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tqdm"
+  },
+  {
+    "parent": "wandb",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "click"
+  },
+  {
+    "parent": "wandb",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "gitpython"
+  },
+  {
+    "parent": "wandb",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "wandb",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "platformdirs"
+  },
+  {
+    "parent": "wandb",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "wandb",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydantic"
+  },
+  {
+    "parent": "wandb",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "wandb",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "wandb",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "sentry-sdk"
+  },
+  {
+    "parent": "wandb",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "numba",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "llvmlite"
+  },
+  {
+    "parent": "numba",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mlflow-skinny"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mlflow-tracing"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "flask-cors"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "flask"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "aiohttp"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "alembic"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cryptography"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "docker"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "graphene"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "gunicorn"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "huey"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "matplotlib"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pandas"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyarrow"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "scikit-learn"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "scipy"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "skops"
+  },
+  {
+    "parent": "mlflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "sqlalchemy"
+  },
+  {
+    "parent": "bert-score",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "torch"
+  },
+  {
+    "parent": "bert-score",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pandas"
+  },
+  {
+    "parent": "bert-score",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "transformers"
+  },
+  {
+    "parent": "bert-score",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "bert-score",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "bert-score",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tqdm"
+  },
+  {
+    "parent": "bert-score",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "matplotlib"
+  },
+  {
+    "parent": "bert-score",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "evaluate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "datasets"
+  },
+  {
+    "parent": "evaluate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "evaluate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "dill"
+  },
+  {
+    "parent": "evaluate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pandas"
+  },
+  {
+    "parent": "evaluate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "evaluate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tqdm"
+  },
+  {
+    "parent": "evaluate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "xxhash"
+  },
+  {
+    "parent": "evaluate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "multiprocess"
+  },
+  {
+    "parent": "evaluate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fsspec"
+  },
+  {
+    "parent": "evaluate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "huggingface-hub"
+  },
+  {
+    "parent": "evaluate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "evaluate",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "responses"
+  },
+  {
+    "parent": "scikit-learn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "scikit-learn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "scipy"
+  },
+  {
+    "parent": "scikit-learn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "joblib"
+  },
+  {
+    "parent": "scikit-learn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "narwhals"
+  },
+  {
+    "parent": "scikit-learn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "threadpoolctl"
+  },
+  {
+    "parent": "pynvml",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-ml-py"
+  },
+  {
+    "parent": "fschat",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "aiohttp"
+  },
+  {
+    "parent": "fschat",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fastapi"
+  },
+  {
+    "parent": "fschat",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "httpx"
+  },
+  {
+    "parent": "fschat",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markdown2"
+  },
+  {
+    "parent": "fschat",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nh3"
+  },
+  {
+    "parent": "fschat",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "fschat",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "prompt-toolkit"
+  },
+  {
+    "parent": "fschat",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydantic"
+  },
+  {
+    "parent": "fschat",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "fschat",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "rich"
+  },
+  {
+    "parent": "fschat",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "shortuuid"
+  },
+  {
+    "parent": "fschat",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tiktoken"
+  },
+  {
+    "parent": "fschat",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "uvicorn"
+  },
+  {
+    "parent": "tensorboard",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "absl-py"
+  },
+  {
+    "parent": "tensorboard",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "grpcio"
+  },
+  {
+    "parent": "tensorboard",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markdown"
+  },
+  {
+    "parent": "tensorboard",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "tensorboard",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "tensorboard",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pillow"
+  },
+  {
+    "parent": "tensorboard",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "tensorboard",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "setuptools"
+  },
+  {
+    "parent": "tensorboard",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tensorboard-data-server"
+  },
+  {
+    "parent": "tensorboard",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "werkzeug"
+  },
+  {
+    "parent": "s3fs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "aiobotocore"
+  },
+  {
+    "parent": "s3fs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fsspec"
+  },
+  {
+    "parent": "s3fs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "aiohttp"
+  },
+  {
+    "parent": "gcsfs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "aiohttp"
+  },
+  {
+    "parent": "gcsfs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "decorator"
+  },
+  {
+    "parent": "gcsfs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fsspec"
+  },
+  {
+    "parent": "gcsfs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-auth-oauthlib"
+  },
+  {
+    "parent": "gcsfs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-auth"
+  },
+  {
+    "parent": "gcsfs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-cloud-storage-control"
+  },
+  {
+    "parent": "gcsfs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-cloud-storage"
+  },
+  {
+    "parent": "gcsfs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "trl",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "torch"
+  },
+  {
+    "parent": "trl",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "transformers"
+  },
+  {
+    "parent": "trl",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "trl",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "accelerate"
+  },
+  {
+    "parent": "trl",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "datasets"
+  },
+  {
+    "parent": "trl",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tyro"
+  },
+  {
+    "parent": "openai",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "openai",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tqdm"
+  },
+  {
+    "parent": "openai",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "aiohttp"
+  },
+  {
+    "parent": "anthropic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "anyio"
+  },
+  {
+    "parent": "anthropic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "distro"
+  },
+  {
+    "parent": "anthropic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "httpx"
+  },
+  {
+    "parent": "anthropic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydantic"
+  },
+  {
+    "parent": "anthropic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tokenizers"
+  },
+  {
+    "parent": "anthropic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.13.0+cpu",
+    "child": "filelock"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.13.0+cpu",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.13.0+cpu",
+    "child": "setuptools"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.13.0+cpu",
+    "child": "sympy"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.13.0+cpu",
+    "child": "networkx"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.13.0+cpu",
+    "child": "jinja2"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.13.0+cpu",
+    "child": "fsspec"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "click"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "filelock"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fsspec"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "hf-xet"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "httpx"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tqdm"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "pandas",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "pandas",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "python-dateutil"
+  },
+  {
+    "parent": "pandas",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pytz"
+  },
+  {
+    "parent": "pandas",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tzdata"
+  },
+  {
+    "parent": "httpx",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "anyio"
+  },
+  {
+    "parent": "httpx",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "certifi"
+  },
+  {
+    "parent": "httpx",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "httpcore"
+  },
+  {
+    "parent": "httpx",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "idna"
+  },
+  {
+    "parent": "multiprocess",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "dill"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "huggingface-hub"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "regex"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tokenizers"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typer"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "safetensors"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tqdm"
+  },
+  {
+    "parent": "anyio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "idna"
+  },
+  {
+    "parent": "anyio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "sniffio"
+  },
+  {
+    "parent": "anyio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "exceptiongroup"
+  },
+  {
+    "parent": "fastapi",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "starlette"
+  },
+  {
+    "parent": "fastapi",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydantic"
+  },
+  {
+    "parent": "fastapi",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "fastapi",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-inspection"
+  },
+  {
+    "parent": "fastapi",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "annotated-doc"
+  },
+  {
+    "parent": "gradio-client",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fsspec"
+  },
+  {
+    "parent": "gradio-client",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "httpx"
+  },
+  {
+    "parent": "gradio-client",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "huggingface-hub"
+  },
+  {
+    "parent": "gradio-client",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "gradio-client",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "hf-gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "gradio-client"
+  },
+  {
+    "parent": "hf-gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typer"
+  },
+  {
+    "parent": "jinja2",
+    "parent_source": "private",
+    "parent_version": "3.1.6",
+    "child": "markupsafe"
+  },
+  {
+    "parent": "pydantic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "annotated-types"
+  },
+  {
+    "parent": "pydantic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydantic-core"
+  },
+  {
+    "parent": "pydantic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "pydantic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-inspection"
+  },
+  {
+    "parent": "safehttpx",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "httpx"
+  },
+  {
+    "parent": "starlette",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "anyio"
+  },
+  {
+    "parent": "starlette",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "typer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "shellingham"
+  },
+  {
+    "parent": "typer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "rich"
+  },
+  {
+    "parent": "typer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "annotated-doc"
+  },
+  {
+    "parent": "uvicorn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "click"
+  },
+  {
+    "parent": "uvicorn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "h11"
+  },
+  {
+    "parent": "uvicorn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "gitpython",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "gitdb"
+  },
+  {
+    "parent": "sentry-sdk",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "urllib3"
+  },
+  {
+    "parent": "sentry-sdk",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "certifi"
+  },
+  {
+    "parent": "sentry-sdk",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "opentelemetry-sdk"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cachetools"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "click"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cloudpickle"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "databricks-sdk"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fastapi"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "gitpython"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "importlib-metadata"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "opentelemetry-api"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "opentelemetry-proto"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "opentelemetry-sdk"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydantic"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "python-dotenv"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "sqlparse"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "starlette"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "mlflow-skinny",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "uvicorn"
+  },
+  {
+    "parent": "mlflow-tracing",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cachetools"
+  },
+  {
+    "parent": "mlflow-tracing",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "databricks-sdk"
+  },
+  {
+    "parent": "mlflow-tracing",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "opentelemetry-api"
+  },
+  {
+    "parent": "mlflow-tracing",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "opentelemetry-proto"
+  },
+  {
+    "parent": "mlflow-tracing",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "opentelemetry-sdk"
+  },
+  {
+    "parent": "mlflow-tracing",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "mlflow-tracing",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "mlflow-tracing",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydantic"
+  },
+  {
+    "parent": "flask-cors",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "flask"
+  },
+  {
+    "parent": "flask-cors",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "werkzeug"
+  },
+  {
+    "parent": "flask-cors",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "flask",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "blinker"
+  },
+  {
+    "parent": "flask",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "click"
+  },
+  {
+    "parent": "flask",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "itsdangerous"
+  },
+  {
+    "parent": "flask",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jinja2"
+  },
+  {
+    "parent": "flask",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markupsafe"
+  },
+  {
+    "parent": "flask",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "werkzeug"
+  },
+  {
+    "parent": "aiohttp",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "aiohappyeyeballs"
+  },
+  {
+    "parent": "aiohttp",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "aiosignal"
+  },
+  {
+    "parent": "aiohttp",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "async-timeout"
+  },
+  {
+    "parent": "aiohttp",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "attrs"
+  },
+  {
+    "parent": "aiohttp",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "frozenlist"
+  },
+  {
+    "parent": "aiohttp",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "multidict"
+  },
+  {
+    "parent": "aiohttp",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "propcache"
+  },
+  {
+    "parent": "aiohttp",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "aiohttp",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "yarl"
+  },
+  {
+    "parent": "alembic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "sqlalchemy"
+  },
+  {
+    "parent": "alembic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mako"
+  },
+  {
+    "parent": "alembic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "alembic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomli"
+  },
+  {
+    "parent": "cryptography",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cffi"
+  },
+  {
+    "parent": "cryptography",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "docker",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "docker",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "urllib3"
+  },
+  {
+    "parent": "graphene",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "graphql-core"
+  },
+  {
+    "parent": "graphene",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "graphql-relay"
+  },
+  {
+    "parent": "graphene",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "python-dateutil"
+  },
+  {
+    "parent": "graphene",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "gunicorn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "contourpy"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cycler"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fonttools"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "kiwisolver"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pillow"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyparsing"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "python-dateutil"
+  },
+  {
+    "parent": "skops",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "skops",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "skops",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "prettytable"
+  },
+  {
+    "parent": "skops",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "scikit-learn"
+  },
+  {
+    "parent": "skops",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "scipy"
+  },
+  {
+    "parent": "sqlalchemy",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "markdown2",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pygments"
+  },
+  {
+    "parent": "markdown2",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "wavedrom"
+  },
+  {
+    "parent": "markdown2",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "latex2mathml"
+  },
+  {
+    "parent": "prompt-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "wcwidth"
+  },
+  {
+    "parent": "rich",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markdown-it-py"
+  },
+  {
+    "parent": "rich",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pygments"
+  },
+  {
+    "parent": "tiktoken",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "regex"
+  },
+  {
+    "parent": "tiktoken",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "grpcio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "werkzeug",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markupsafe"
+  },
+  {
+    "parent": "aiobotocore",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "aiohttp"
+  },
+  {
+    "parent": "aiobotocore",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "aioitertools"
+  },
+  {
+    "parent": "aiobotocore",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "botocore"
+  },
+  {
+    "parent": "aiobotocore",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "python-dateutil"
+  },
+  {
+    "parent": "aiobotocore",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jmespath"
+  },
+  {
+    "parent": "aiobotocore",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "multidict"
+  },
+  {
+    "parent": "aiobotocore",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "aiobotocore",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "wrapt"
+  },
+  {
+    "parent": "google-auth-oauthlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-auth"
+  },
+  {
+    "parent": "google-auth-oauthlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests-oauthlib"
+  },
+  {
+    "parent": "google-auth",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyasn1-modules"
+  },
+  {
+    "parent": "google-auth",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cryptography"
+  },
+  {
+    "parent": "google-cloud-storage-control",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-api-core"
+  },
+  {
+    "parent": "google-cloud-storage-control",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-auth"
+  },
+  {
+    "parent": "google-cloud-storage-control",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "grpcio"
+  },
+  {
+    "parent": "google-cloud-storage-control",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "proto-plus"
+  },
+  {
+    "parent": "google-cloud-storage-control",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "google-cloud-storage-control",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "grpc-google-iam-v1"
+  },
+  {
+    "parent": "google-cloud-storage",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-auth"
+  },
+  {
+    "parent": "google-cloud-storage",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-api-core"
+  },
+  {
+    "parent": "google-cloud-storage",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-cloud-core"
+  },
+  {
+    "parent": "google-cloud-storage",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-resumable-media"
+  },
+  {
+    "parent": "google-cloud-storage",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "google-cloud-storage",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-crc32c"
+  },
+  {
+    "parent": "tyro",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "docstring-parser"
+  },
+  {
+    "parent": "tyro",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typeguard"
+  },
+  {
+    "parent": "tyro",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "sympy",
+    "parent_source": "private",
+    "parent_version": "1.14.0",
+    "child": "mpmath"
+  },
+  {
+    "parent": "python-dateutil",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "six"
+  },
+  {
+    "parent": "httpcore",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "certifi"
+  },
+  {
+    "parent": "httpcore",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "h11"
+  },
+  {
+    "parent": "exceptiongroup",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "typing-inspection",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "pydantic-core",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "gitdb",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "smmap"
+  },
+  {
+    "parent": "opentelemetry-sdk",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "opentelemetry-api"
+  },
+  {
+    "parent": "opentelemetry-sdk",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "opentelemetry-semantic-conventions"
+  },
+  {
+    "parent": "opentelemetry-sdk",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "databricks-sdk",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "databricks-sdk",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-auth"
+  },
+  {
+    "parent": "databricks-sdk",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "databricks-sdk",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "urllib3"
+  },
+  {
+    "parent": "importlib-metadata",
+    "parent_source": "private",
+    "parent_version": "7.1.0",
+    "child": "zipp"
+  },
+  {
+    "parent": "opentelemetry-api",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "opentelemetry-proto",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "aiosignal",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "frozenlist"
+  },
+  {
+    "parent": "aiosignal",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "multidict",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "yarl",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "idna"
+  },
+  {
+    "parent": "yarl",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "multidict"
+  },
+  {
+    "parent": "yarl",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "propcache"
+  },
+  {
+    "parent": "mako",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markupsafe"
+  },
+  {
+    "parent": "cffi",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pycparser"
+  },
+  {
+    "parent": "graphql-relay",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "graphql-core"
+  },
+  {
+    "parent": "contourpy",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "prettytable",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "wcwidth"
+  },
+  {
+    "parent": "markdown-it-py",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mdurl"
+  },
+  {
+    "parent": "botocore",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jmespath"
+  },
+  {
+    "parent": "botocore",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "python-dateutil"
+  },
+  {
+    "parent": "botocore",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "urllib3"
+  },
+  {
+    "parent": "requests-oauthlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "oauthlib"
+  },
+  {
+    "parent": "requests-oauthlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "pyasn1-modules",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyasn1"
+  },
+  {
+    "parent": "google-api-core",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "googleapis-common-protos"
+  },
+  {
+    "parent": "google-api-core",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "google-api-core",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "proto-plus"
+  },
+  {
+    "parent": "google-api-core",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-auth"
+  },
+  {
+    "parent": "google-api-core",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "google-api-core",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "grpcio"
+  },
+  {
+    "parent": "google-api-core",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "grpcio-status"
+  },
+  {
+    "parent": "proto-plus",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "grpc-google-iam-v1",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "grpcio"
+  },
+  {
+    "parent": "grpc-google-iam-v1",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "googleapis-common-protos"
+  },
+  {
+    "parent": "grpc-google-iam-v1",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "google-cloud-core",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-api-core"
+  },
+  {
+    "parent": "google-cloud-core",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-auth"
+  },
+  {
+    "parent": "google-resumable-media",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-crc32c"
+  },
+  {
+    "parent": "typeguard",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "opentelemetry-semantic-conventions",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "opentelemetry-api"
+  },
+  {
+    "parent": "opentelemetry-semantic-conventions",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "googleapis-common-protos",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "googleapis-common-protos",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "grpcio"
+  },
+  {
+    "parent": "grpcio-status",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "grpcio-status",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "grpcio"
+  },
+  {
+    "parent": "grpcio-status",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "googleapis-common-protos"
+  }
+]

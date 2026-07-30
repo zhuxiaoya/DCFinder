@@ -1,0 +1,84 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/56/5a/225a82252fdbddd21e25552208c2a2cd69afd19e06de79d28841c252537d/adlfs-2026.5.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=7acf1d62eade0c1c0b1b0762b36cb0921a646dd41311af1d261f52fb24fe4e57",
+          "hashes": {
+            "sha256": "7acf1d62eade0c1c0b1b0762b36cb0921a646dd41311af1d261f52fb24fe4e57"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "adlfs",
+        "version": "2026.5.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Access Azure Blobs and Data Lake Storage (ADLS) Gen2 with fsspec and dask",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "file-system",
+          "dask",
+          "azure"
+        ],
+        "maintainer_email": "Greg Hayes <hayesgb@gmail.com>",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_dist": [
+          "azure-core<2.0.0,>=1.28.0",
+          "azure-identity",
+          "azure-storage-blob[aio]>=12.17.0",
+          "fsspec>=2023.12.0",
+          "sphinx; extra == \"docs\"",
+          "myst-parser; extra == \"docs\"",
+          "furo; extra == \"docs\"",
+          "numpydoc; extra == \"docs\"",
+          "pytest; extra == \"tests\"",
+          "docker; extra == \"tests\"",
+          "pytest-mock; extra == \"tests\"",
+          "arrow; extra == \"tests\"",
+          "dask[dataframe]; extra == \"tests\""
+        ],
+        "requires_python": ">=3.10",
+        "provides_extra": [
+          "docs",
+          "tests"
+        ],
+        "description": "Filesystem interface to Azure Blob and Data Lake Storage (Gen2) \n------------------------------------------------------------\n\n\n[![PyPI version shields.io](https://img.shields.io/pypi/v/adlfs.svg)](https://pypi.python.org/pypi/adlfs/)\n[![Latest conda-forge version](https://img.shields.io/conda/vn/conda-forge/adlfs?logo=conda-forge)](https://anaconda.org/conda-forge/aldfs)\n[![API Reference](https://img.shields.io/badge/API-Reference-blue)](https://fsspec.github.io/adlfs/api/)\n\nQuickstart\n----------\n\nThis package can be installed using:\n\n`pip install adlfs`\n\nor\n\n`conda install -c conda-forge adlfs`\n\nThe `az://` and `abfs://` protocols are included in fsspec's known_implementations registry.\n\nTo connect to Azure Blob Storage or Azure Data Lake Storage (ADLS) Gen2 filesystem you can use the protocol `abfs` or `az`:\n\n```python\nimport dask.dataframe as dd\n\nstorage_options={'account_name': ACCOUNT_NAME, 'account_key': ACCOUNT_KEY}\n\nddf = dd.read_csv('abfs://{CONTAINER}/{FOLDER}/*.csv', storage_options=storage_options)\nddf = dd.read_parquet('az://{CONTAINER}/folder.parquet', storage_options=storage_options)\n\nAccepted protocol / uri formats include:\n'PROTOCOL://container/path-part/file'\n'PROTOCOL://container@account.blob.core.windows.net/path-part/file'\n'PROTOCOL://container@account.dfs.core.windows.net/path-part/file'\n\nor optionally, if AZURE_STORAGE_ACCOUNT_NAME and an AZURE_STORAGE_<CREDENTIAL> is \nset as an environmental variable, then storage_options will be read from the environmental\nvariables\n```\n\nTo read from a public storage blob you are required to specify the `'account_name'`.\nFor example, you can access [NYC Taxi & Limousine Commission](https://azure.microsoft.com/en-us/services/open-datasets/catalog/nyc-taxi-limousine-commission-green-taxi-trip-records/) as:\n\n```python\nstorage_options = {'account_name': 'azureopendatastorage'}\nddf = dd.read_parquet('az://nyctlc/green/puYear=2019/puMonth=*/*.parquet', storage_options=storage_options)\n```\n\nDetails\n-------\nThe package includes pythonic filesystem implementations for both [Azure Blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview) and [Azure Datalake Gen2 (ADLS)](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction), that facilitate interactions between these implementations and Dask.  This is done leveraging the [fsspec/filesystem_spec](https://github.com/fsspec/filesystem_spec) base class and Azure Python SDKs.\n\nOperations against Azure Blobs and ADLS Gen2 are implemented by leveraging [Azure Blob Storage Python SDK](https://github.com/Azure/azure-sdk-for-python).\n\n### Setting credentials\nIf no credentials/configuration is provided, `DefaultAzureCredential` will be used for authentication. If you want to use alternative credentials, `storage_options` can be instantiated with a variety of keyword arguments:\n- `connection_string`\n- `account_name`\n- `account_key`\n- `sas_token`\n- `tenant_id`, `client_id`, and `client_secret` are combined for an Azure ServicePrincipal e.g. `storage_options={'account_name': ACCOUNT_NAME, 'tenant_id': TENANT_ID, 'client_id': CLIENT_ID, 'client_secret': CLIENT_SECRET}`\n- `anon`: bool, optional. Set to `True` to use anonymous authentication. If not set, the `AZURE_STORAGE_ANON` environment variable will be checked before defaulting to `False` where credentials are discovered on the system.\n- `location_mode`: valid values are \"primary\" or \"secondary\" and apply to RA-GRS accounts\n\nFor more argument details see all arguments for [`AzureBlobFileSystem` here](https://fsspec.github.io/adlfs/api/#adlfs.AzureBlobFileSystem)\n\nThe following environmental variables can also be set and picked up for authentication:\n- \"AZURE_STORAGE_CONNECTION_STRING\"\n- \"AZURE_STORAGE_ACCOUNT_NAME\"\n- \"AZURE_STORAGE_ACCOUNT_KEY\"\n- \"AZURE_STORAGE_SAS_TOKEN\"\n- \"AZURE_STORAGE_TENANT_ID\"\n- \"AZURE_STORAGE_CLIENT_ID\"\n- \"AZURE_STORAGE_CLIENT_SECRET\"\n\nThe filesystem can be instantiated for different use cases based on a variety of `storage_options` combinations. The following list describes some common use cases utilizing `AzureBlobFileSystem`, i.e. protocols `abfs`or `az`. Note that all cases require the `account_name` argument to be provided:\n1. Auto credential solving using Azure's DefaultAzureCredential() library: `storage_options={'account_name': ACCOUNT_NAME}` will use [`DefaultAzureCredential`](https://learn.microsoft.com/en-us/python/api/azure-identity/azure.identity.defaultazurecredential?view=azure-python) to get valid credentials to the container `ACCOUNT_NAME`. `DefaultAzureCredential` attempts to authenticate via the [mechanisms and order visualized here](https://learn.microsoft.com/en-us/python/api/overview/azure/identity-readme?view=azure-python#defaultazurecredential).\n2. Anonymous connection to public container: `storage_options={'account_name': ACCOUNT_NAME, 'anon': True}` will assume the `ACCOUNT_NAME` points to a public container, and attempt to use an anonymous login. Note, the default value for `anon` is False.\n3. Azure ServicePrincipal: `tenant_id`, `client_id`, and `client_secret` are all used as credentials for an Azure ServicePrincipal: e.g. `storage_options={'account_name': ACCOUNT_NAME, 'tenant_id': TENANT_ID, 'client_id': CLIENT_ID, 'client_secret': CLIENT_SECRET}`.\n\n### Append Blob\nThe `AzureBlobFileSystem` accepts [all of the Async BlobServiceClient arguments](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python).\n\nBy default, write operations create BlockBlobs in Azure, which, once written can not be appended. It is possible to create an AppendBlob using `mode=\"ab\"` when creating and operating on blobs. Currently, AppendBlobs are not available if hierarchical namespaces are enabled.\n\n### Older versions\nADLS Gen1 filesystem has officially been [retired](https://learn.microsoft.com/en-us/lifecycle/products/azure-data-lake-storage-gen1). Hence the adl:// method, which was designed to connect to ADLS Gen1 is obsolete.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,115 @@
+torch ==1.9.0
+fsspec
+boto3
+hydra-core
+requests
+aiohttp
+numpy <2
+gymnasium
+torchvision ==0.7.0
+gym
+transformers
+datasets
+tqdm
+protobuf
+sentencepiece
+nlp
+six
+torchtext
+spacy
+sphinx ==5.3.0
+pytorch-sphinx-theme
+sphinx-panels
+pygame
+lmdb
+matplotlib
+torchdata ==0.9.0
+portalocker
+aiohappyeyeballs >=2.5.0
+aiosignal >=1.4.0
+alabaster <0.8,>=0.7
+annotated-types >=0.6.0
+antlr4-python3-runtime ==4.9.*
+anyio
+async-timeout <6.0,>=4.0
+attrs >=17.3.0
+babel >=2.9
+blis <1.4.0,>=1.3.0
+botocore <1.44.0,>=1.43.48,<2.0a.0,>=1.37.4
+catalogue <2.1.0,>=2.0.6,<2.1.0,>=2.0.4,<2.1.0,>=2.0.3
+certifi >=2017.4.17
+charset-normalizer <4,>=2
+click >=8.0.0
+cloudpathlib >=0.7.0
+cloudpickle >=1.2.0
+confection <2.0.0,>=1.3.2,<2.0.0,>=1.1.0,>=1.0.0
+contourpy >=1.0.1
+cycler >=0.10
+cymem <2.1.0,>=2.0.2
+dill <0.3.9,>=0.3.0,>=0.3.8
+docutils <0.20,>=0.14
+exceptiongroup >=1.0.2
+farama-notifications >=0.0.1
+filelock
+fonttools >=4.22.0
+frozenlist >=1.1.1,>=1.1.0
+h11 >=0.16
+hf-xet <2.0.0,>=1.1.3
+httpcore ==1.*
+httpx >=0.24.0
+huggingface-hub <1.0,>=0.34.0,>=0.24.0,<1.0,>=0.16.4
+idna <4,>=2.5,>=2.0,>=2.8
+imagesize >=1.3
+jinja2 >=3.0
+jmespath <2.0.0,>=0.7.1
+kiwisolver >=1.3.1
+markdown-it-py >=2.2.0
+markupsafe >=2.0
+mdurl ~=0.1
+multidict <7.0,>=4.5,>=4.0
+multiprocess <0.70.17
+murmurhash <1.1.0,>=0.28.0,<1.1.0,>=1.0.2
+omegaconf <2.4,>=2.2
+packaging >=20.0,>=21.0,>=20.0,>=20.9,>=20.0,>=20.0
+pandas
+pillow >=8
+preshed <3.1.0,>=3.0.2
+propcache >=0.2.0,>=0.2.1
+pyarrow >=15.0.0,>=0.16.0
+pydantic <3.0.0,>=2.0.0,>=2.0.0
+pydantic-core ==2.33.2
+pygments >=2.12,<3.0.0,>=2.13.0
+pyparsing >=2.3.1
+python-dateutil >=2.7,<3.0.0,>=2.1,>=2.8.2
+pytz >=2020.1
+pyyaml >=5.1,>=5.1.0,>=5.1
+regex !=2019.12.17
+rich >=10.11.0
+s3transfer <0.20.0,>=0.19.0
+safetensors >=0.4.3
+setuptools
+shellingham >=1.3.0
+smart-open >=5.2.1
+sniffio >=1.1
+snowballstemmer >=2.0
+spacy-legacy <3.1.0,>=3.0.11
+spacy-loggers <2.0.0,>=1.0.0
+sphinxcontrib-applehelp
+sphinxcontrib-devhelp
+sphinxcontrib-htmlhelp >=2.0.0
+sphinxcontrib-jsmath
+sphinxcontrib-qthelp
+sphinxcontrib-serializinghtml >=1.1.5
+srsly <3.0.0,>=2.5.3,<3.1.0,>=2.4.0,>=2.4.3
+thinc <8.4.0,>=8.3.12
+tokenizers <=0.23.0,>=0.22.0
+typer <1.0.0,>=0.3.0,>=0.3.0
+typing-extensions >=4.3.0,>=4.2,>=4.1.0,>=3.7.4.3,<5.0,>=4.0,>=3.7.4.3,>=4.12.2,>4,!=4.7.0,>=4.6.0,>=4.12.0,>=4.5,>=4.6.0
+typing-inspection >=0.4.0
+tzdata >=2022.7
+urllib3 <3,>=1.21.1,!=2.2.0,<3,>=1.25.4
+wasabi <1.2.0,>=0.9.1,<1.2.0,>=0.8.1,>=0.9.1
+weasel <2.0.0,>=1.0.0
+wrapt
+xxhash
+yarl <2.0,>=1.17.0

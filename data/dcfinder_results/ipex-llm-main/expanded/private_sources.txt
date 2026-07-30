@@ -1,0 +1,33 @@
+# 私有源 (非 PyPI) 配置文件扫描结果 — ipex-llm-main
+# 共发现 8 个配置文件含私有源
+
+[docker/llm/finetune/lora/cpu/docker/Dockerfile]
+  index_url: https://download.pytorch.org/whl/cpu
+
+[docker/llm/finetune/qlora/cpu/docker/Dockerfile]
+  index_url: https://download.pytorch.org/whl/cpu
+
+[docker/llm/finetune/qlora/cpu/docker/Dockerfile.k8s]
+  index_url: https://download.pytorch.org/whl/cpu
+
+[docker/llm/finetune/xpu/Dockerfile]
+  extra_index_url: https://pytorch-extension.intel.com/release-whl/stable/xpu/us/
+
+[docker/llm/serving/cpu/docker/Dockerfile]
+  extra_index_url: https://pytorch-extension.intel.com/release-whl/stable/cpu/cn/
+  extra_index_url: https://download.pytorch.org/whl/cpu
+  index_url: https://download.pytorch.org/whl/cpu
+
+[docker/llm/serving/xpu/docker/Dockerfile]
+  extra_index_url: https://download.pytorch.org/whl/xpu
+  extra_index_url: https://pytorch-extension.intel.com/release-whl/stable/xpu/cn/
+  extra_index_url: https://download.pytorch.org/whl/xpu
+  extra_index_url: https://pytorch-extension.intel.com/release-whl/stable/xpu/cn/
+  extra_index_url: https://pytorch-extension.intel.com/release-whl/stable/xpu/cn/
+
+[python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt]
+  extra_index_url: https://huggingface.github.io/autogptq-index/whl/cu118/
+
+[python/llm/setup.py]
+  extra_index_url: https://pytorch-extension.intel.com/release-whl/stable/xpu/us/
+

@@ -1,0 +1,78 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/18/79/1b8fa1bb3568781e84c9200f951c735f3f157429f44be0495da55894d620/filetype-1.2.0-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=7ce71b6880181241cf7ac8697a2f1eb6a8bd9b429f7ad6d27b8db9ba5f1c2d25",
+          "hashes": {
+            "sha256": "7ce71b6880181241cf7ac8697a2f1eb6a8bd9b429f7ad6d27b8db9ba5f1c2d25"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "filetype",
+        "version": "1.2.0",
+        "platform": [
+          "any"
+        ],
+        "summary": "Infer file type and MIME type of any file/buffer. No external dependencies.",
+        "keywords": [
+          "file",
+          "libmagic",
+          "magic",
+          "infer",
+          "numbers",
+          "magicnumbers",
+          "discovery",
+          "mime",
+          "type",
+          "kind"
+        ],
+        "home_page": "https://github.com/h2non/filetype.py",
+        "download_url": "https://github.com/h2non/filetype.py/tarball/master",
+        "author": "Tomas Aparicio",
+        "author_email": "tomas@aparicio.me",
+        "license": "MIT",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Environment :: Web Environment",
+          "Intended Audience :: Developers",
+          "Intended Audience :: System Administrators",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Topic :: System",
+          "Topic :: System :: Filesystems",
+          "Topic :: Utilities"
+        ],
+        "description": "filetype.py |Build Status| |PyPI| |Pyversions| |API|\n====================================================\n\nSmall and dependency free `Python`_ package to infer file type and MIME\ntype checking the `magic numbers`_ signature of a file or buffer.\n\nThis is a Python port from `filetype`_ Go package.\n\nFeatures\n--------\n\n-  Simple and friendly API\n-  Supports a `wide range`_ of file types\n-  Provides file extension and MIME type inference\n-  File discovery by extension or MIME type\n-  File discovery by kind (image, video, audio…)\n-  `Pluggable`_: add new custom type matchers\n-  `Fast`_, even processing large files\n-  Only first 261 bytes representing the max file header is required, so\n   you can just `pass a list of bytes`_\n-  Dependency free (just Python code, no C extensions, no libmagic\n   bindings)\n-  Cross-platform file recognition\n\nInstallation\n------------\n\n::\n\n    pip install filetype\n\nAPI\n---\n\nSee `annotated API reference`_.\n\nExamples\n--------\n\nSimple file type checking\n^^^^^^^^^^^^^^^^^^^^^^^^^\n\n.. code-block:: python\n\n    import filetype\n\n    def main():\n        kind = filetype.guess('tests/fixtures/sample.jpg')\n        if kind is None:\n            print('Cannot guess file type!')\n            return\n\n        print('File extension: %s' % kind.extension)\n        print('File MIME type: %s' % kind.mime)\n\n    if __name__ == '__main__':\n        main()\n\nSupported types\n---------------\n\nImage\n^^^^^\n\n-  **dwg** - ``image/vnd.dwg``\n-  **xcf** - ``image/x-xcf``\n-  **jpg** - ``image/jpeg``\n-  **jpx** - ``image/jpx``\n-  **png** - ``image/png``\n-  **apng** - ``image/apng``\n-  **gif** - ``image/gif``\n-  **webp** - ``image/webp``\n-  **cr2** - ``image/x-canon-cr2``\n-  **tif** - ``image/tiff``\n-  **bmp** - ``image/bmp``\n-  **jxr** - ``image/vnd.ms-photo``\n-  **psd** - ``image/vnd.adobe.photoshop``\n-  **ico** - ``image/x-icon``\n-  **heic** - ``image/heic``\n-  **avif** - ``image/avif``\n\nVideo\n^^^^^\n\n-  **3gp** - ``video/3gpp``\n-  **mp4** - ``video/mp4``\n-  **m4v** - ``video/x-m4v``\n-  **mkv** - ``video/x-matroska``\n-  **webm** - ``video/webm``\n-  **mov** - ``video/quicktime``\n-  **avi** - ``video/x-msvideo``\n-  **wmv** - ``video/x-ms-wmv``\n-  **mpg** - ``video/mpeg``\n-  **flv** - ``video/x-flv``\n\nAudio\n^^^^^\n\n-  **aac** - ``audio/aac``\n-  **mid** - ``audio/midi``\n-  **mp3** - ``audio/mpeg``\n-  **m4a** - ``audio/mp4``\n-  **ogg** - ``audio/ogg``\n-  **flac** - ``audio/x-flac``\n-  **wav** - ``audio/x-wav``\n-  **amr** - ``audio/amr``\n-  **aiff** - ``audio/x-aiff``\n\nArchive\n^^^^^^^\n\n-  **br** - ``application/x-brotli``\n-  **rpm** - ``application/x-rpm``\n-  **dcm** - ``application/dicom``\n-  **epub** - ``application/epub+zip``\n-  **zip** - ``application/zip``\n-  **tar** - ``application/x-tar``\n-  **rar** - ``application/x-rar-compressed``\n-  **gz** - ``application/gzip``\n-  **bz2** - ``application/x-bzip2``\n-  **7z** - ``application/x-7z-compressed``\n-  **xz** - ``application/x-xz``\n-  **pdf** - ``application/pdf``\n-  **exe** - ``application/x-msdownload``\n-  **swf** - ``application/x-shockwave-flash``\n-  **rtf** - ``application/rtf``\n-  **eot** - ``application/octet-stream``\n-  **ps** - ``application/postscript``\n-  **sqlite** - ``application/x-sqlite3``\n-  **nes** - ``application/x-nintendo-nes-rom``\n-  **crx** - ``application/x-google-chrome-extension``\n-  **cab** - ``application/vnd.ms-cab-compressed``\n-  **deb** - ``application/x-deb``\n-  **ar** - ``application/x-unix-archive``\n-  **Z** - ``application/x-compress``\n-  **lzo** - ``application/x-lzop``\n-  **lz** - ``application/x-lzip``\n-  **lz4** - ``application/x-lz4``\n-  **zstd** - ``application/zstd``\n\nDocument\n^^^^^^^^\n\n-  **doc** - ``application/msword``\n-  **docx** - ``application/vnd.openxmlformats-officedocument.wordprocessingml.document``\n-  **odt** - ``application/vnd.oasis.opendocument.text``\n-  **xls** - ``application/vnd.ms-excel``\n-  **xlsx** - ``application/vnd.openxmlformats-officedocument.spreadsheetml.sheet``\n-  **ods** - ``application/vnd.oasis.opendocument.spreadsheet``\n-  **ppt** - ``application/vnd.ms-powerpoint``\n-  **pptx** - ``application/vnd.openxmlformats-officedocument.presentationml.presentation``\n-  **odp** - ``application/vnd.oasis.opendocument.presentation``\n\nFont\n^^^^\n\n-  **woff** - ``application/font-woff``\n-  **woff2** - ``application/font-woff``\n-  **ttf** - ``application/font-sfnt``\n-  **otf** - ``application/font-sfnt``\n\nApplication\n^^^^^^^^^^^ \n\n-  **wasm** - ``application/wasm``\n\n.. _Python: http://python.org\n.. _magic numbers: https://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_numbers_in_files\n.. _filetype: https://github.com/h2non/filetype\n.. _wide range: #supported-types\n.. _Pluggable: #add-additional-file-type-matchers\n.. _Fast: #benchmarks\n.. _pass a list of bytes: #file-header\n.. _annotated API reference: https://h2non.github.io/filetype.py/\n\n.. |Build Status| image:: https://travis-ci.org/h2non/filetype.py.svg?branch=master\n   :target: https://travis-ci.org/h2non/filetype.py\n.. |PyPI| image:: https://img.shields.io/pypi/v/filetype.svg?maxAge=2592000?style=flat-square\n   :target: https://pypi.python.org/pypi/filetype\n.. |Pyversions| image:: https://img.shields.io/pypi/pyversions/filetype.svg?style=flat-square\n    :target: https://pypi.python.org/pypi/filetype\n.. |API| image:: https://img.shields.io/badge/api-docs-green.svg\n   :target: https://h2non.github.io/filetype.py\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

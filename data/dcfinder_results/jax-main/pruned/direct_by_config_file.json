@@ -1,0 +1,126 @@
+{
+  "analysis_program/jax-main/setup.py": [
+    {
+      "name": "ml-dtypes",
+      "specifier": ">=0.5.0"
+    },
+    {
+      "name": "numpy",
+      "specifier": ">=1.26"
+    },
+    {
+      "name": "opt-einsum",
+      "specifier": ""
+    },
+    {
+      "name": "scipy",
+      "specifier": ">=1.12"
+    },
+    {
+      "name": "requests",
+      "specifier": ""
+    },
+    {
+      "name": "kubernetes",
+      "specifier": ""
+    }
+  ],
+  "analysis_program/jax-main/docs/requirements.txt": [
+    {
+      "name": "absl-py",
+      "specifier": ""
+    },
+    {
+      "name": "ipython",
+      "specifier": ">=8.8.0"
+    },
+    {
+      "name": "pydata-sphinx-theme",
+      "specifier": "==0.14.4"
+    },
+    {
+      "name": "snowballstemmer",
+      "specifier": "<3.0.0"
+    },
+    {
+      "name": "sphinx",
+      "specifier": "<8.0,>=7.3.2"
+    },
+    {
+      "name": "sphinx-book-theme",
+      "specifier": "==1.1.1"
+    },
+    {
+      "name": "sphinx-copybutton",
+      "specifier": ">=0.5.0"
+    },
+    {
+      "name": "sphinx-remove-toctrees",
+      "specifier": ""
+    },
+    {
+      "name": "sphinx-design",
+      "specifier": ""
+    },
+    {
+      "name": "sphinxext-rediraffe",
+      "specifier": ""
+    },
+    {
+      "name": "myst-nb",
+      "specifier": ">=1.0.0"
+    },
+    {
+      "name": "flatbuffers",
+      "specifier": ""
+    },
+    {
+      "name": "pytest",
+      "specifier": ""
+    },
+    {
+      "name": "pytest-xdist",
+      "specifier": ""
+    },
+    {
+      "name": "matplotlib",
+      "specifier": ""
+    },
+    {
+      "name": "scikit-learn",
+      "specifier": ""
+    },
+    {
+      "name": "pooch",
+      "specifier": ""
+    },
+    {
+      "name": "rich",
+      "specifier": ""
+    },
+    {
+      "name": "cmake",
+      "specifier": ""
+    }
+  ],
+  "analysis_program/jax-main/jax/experimental/jax2tf/examples/requirements.txt": [
+    {
+      "name": "tensorflow-datasets",
+      "specifier": ""
+    },
+    {
+      "name": "tensorflow-hub",
+      "specifier": ""
+    },
+    {
+      "name": "flax",
+      "specifier": ""
+    }
+  ],
+  "analysis_program/jax-main/examples/ffi/pyproject.toml": [
+    {
+      "name": "jax",
+      "specifier": ""
+    }
+  ]
+}

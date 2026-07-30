@@ -1,0 +1,67 @@
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt
+pre-commit  # type: runtime
+namex >=0.0.8  # type: runtime
+ruff  # type: runtime
+pytest  # type: runtime
+numpy  # type: runtime
+scipy  # type: runtime
+scikit-learn  # type: runtime
+pillow  # type: runtime
+pandas  # type: runtime
+absl-py  # type: runtime
+requests  # type: runtime
+h5py  # type: runtime
+ml-dtypes  # type: runtime
+protobuf  # type: runtime
+tensorboard-plugin-profile  # type: runtime
+rich  # type: runtime
+build  # type: runtime
+optree  # type: runtime
+pytest-cov  # type: runtime
+packaging  # type: runtime
+dm-tree  # type: runtime
+coverage !=7.6.5  # type: runtime
+onnxruntime  # type: runtime
+openvino  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-jax-cuda.txt
+tensorflow-cpu ~=2.18.1  # type: runtime
+tf2onnx  # type: runtime
+torch ==2.6.0  # type: runtime
+jax ==0.6.0  # type: runtime
+flax  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements.txt
+tensorflow-cpu ~=2.18.1  # type: runtime
+tensorflow ~=2.18.1  # type: runtime
+tf-keras  # type: runtime
+tf2onnx  # type: runtime
+torch ==2.6.0  # type: runtime
+torch ==2.6.0  # type: runtime
+torch-xla ==2.6.0  # type: runtime
+jax ==0.5.0  # type: runtime
+flax  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-torch-cuda.txt
+tensorflow-cpu ~=2.18.1  # type: runtime
+tf2onnx  # type: runtime
+torch ==2.6.0  # type: runtime
+torch-xla ==2.6.0  # type: runtime
+jax  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-tensorflow-cuda.txt
+tensorflow ~=2.18.1  # type: runtime
+tf2onnx  # type: runtime
+torch ==2.6.0  # type: runtime
+jax  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/pyproject.toml
+absl-py  # type: runtime
+numpy  # type: runtime
+rich  # type: runtime
+namex  # type: runtime
+h5py  # type: runtime
+optree  # type: runtime
+ml-dtypes  # type: runtime
+packaging  # type: runtime
+

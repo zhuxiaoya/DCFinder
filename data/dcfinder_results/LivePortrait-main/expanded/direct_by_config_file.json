@@ -1,0 +1,86 @@
+{
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements.txt": [
+    {
+      "name": "onnxruntime-gpu",
+      "specifier": "==1.18.0"
+    },
+    {
+      "name": "transformers",
+      "specifier": "==4.38.0"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt": [
+    {
+      "name": "numpy",
+      "specifier": "==1.26.4"
+    },
+    {
+      "name": "pyyaml",
+      "specifier": "==6.0.1"
+    },
+    {
+      "name": "opencv-python",
+      "specifier": "==4.10.0.84"
+    },
+    {
+      "name": "scipy",
+      "specifier": "==1.13.1"
+    },
+    {
+      "name": "imageio",
+      "specifier": "==2.34.2"
+    },
+    {
+      "name": "lmdb",
+      "specifier": "==1.4.1"
+    },
+    {
+      "name": "tqdm",
+      "specifier": "==4.66.4"
+    },
+    {
+      "name": "rich",
+      "specifier": "==13.7.1"
+    },
+    {
+      "name": "ffmpeg-python",
+      "specifier": "==0.2.0"
+    },
+    {
+      "name": "onnx",
+      "specifier": "==1.16.1"
+    },
+    {
+      "name": "scikit-image",
+      "specifier": "==0.24.0"
+    },
+    {
+      "name": "albumentations",
+      "specifier": "==1.4.10"
+    },
+    {
+      "name": "matplotlib",
+      "specifier": "==3.9.0"
+    },
+    {
+      "name": "imageio-ffmpeg",
+      "specifier": "==0.5.1"
+    },
+    {
+      "name": "tyro",
+      "specifier": "==0.8.5"
+    },
+    {
+      "name": "gradio",
+      "specifier": "==5.1.0"
+    },
+    {
+      "name": "pykalman",
+      "specifier": "==0.9.7"
+    },
+    {
+      "name": "pillow",
+      "specifier": ">=10.2.0"
+    }
+  ]
+}

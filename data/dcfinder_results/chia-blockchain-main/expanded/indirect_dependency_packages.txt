@@ -1,0 +1,186 @@
+altgraph
+  # from parent package: pyinstaller (public)
+ast-serialize <1.0.0,>=0.6.0
+  # from parent package: mypy (public)
+async-timeout <4.0,>=3.0
+  # from parent package: aiohttp (public)
+attrs >=17.3.0
+  # from parent package: aiohttp (public)
+backports-tarfile
+  # from parent package: jaraco-context (public)
+bencode-py
+  # from parent package: py3createtorrent (public)
+bitarray <4.0,>=3.0.0
+  # from parent package: bitstring (public)
+botocore <1.44.0,>=1.43.48,<2.0a.0,>=1.37.4
+  # from parent package: boto3 (public)
+  # from parent package: s3transfer (public)
+cachecontrol <0.15.0,>=0.14.0
+  # from parent package: poetry (public)
+certifi >=2023.5.7
+  # from parent package: requests (public)
+  # from parent package: httpx (public)
+  # from parent package: httpcore (public)
+cfgv >=2.0.0
+  # from parent package: pre-commit (public)
+chardet <4.0,>=2.0,>=3.0.0
+  # from parent package: aiohttp (public)
+  # from parent package: diff-cover (public)
+charset-normalizer <4,>=2
+  # from parent package: requests (public)
+chia-base >=0.1.5
+  # from parent package: hsms (public)
+chialisp-loader >=0.1.2
+  # from parent package: chialisp-puzzles (public)
+chialisp-puzzles >=0.1.1
+  # from parent package: hsms (public)
+cleo <3.0.0,>=2.1.0
+  # from parent package: poetry (public)
+clvm-rs ==0.2.5
+  # from parent package: chia-puzzles-py (public)
+  # from parent package: chia-base (public)
+  # from parent package: chialisp-loader (public)
+distlib <1,>=0.3.7
+  # from parent package: virtualenv (public)
+dulwich <0.23.0,>=0.22.6
+  # from parent package: poetry (public)
+dunamai <2.0.0,>=1.26.0
+  # from parent package: poetry-dynamic-versioning (public)
+exceptiongroup >=1.0.2,>=1
+  # from parent package: anyio (public)
+  # from parent package: pytest (public)
+execnet >=2.1
+  # from parent package: pytest-xdist (public)
+fastjsonschema <3.0.0,>=2.18.0
+  # from parent package: poetry (public)
+findpython <0.7.0,>=0.6.2
+  # from parent package: poetry (public)
+h11 >=0.16
+  # from parent package: httpcore (public)
+httpcore ==1.*
+  # from parent package: httpx (public)
+httpx <1,>=0.27.0
+  # from parent package: pbs-installer (public)
+identify >=1.0.0
+  # from parent package: pre-commit (public)
+idna >=2.8,<4,>=2.5,>=2.0
+  # from parent package: anyio (public)
+  # from parent package: requests (public)
+  # from parent package: yarl (public)
+  # from parent package: httpx (public)
+importlib-metadata >=4.11.4
+  # from parent package: clvm-tools (public)
+  # from parent package: keyring (public)
+iniconfig >=1
+  # from parent package: pytest (public)
+installer <0.8.0,>=0.7.0
+  # from parent package: poetry (public)
+jaraco-classes
+  # from parent package: keyring (public)
+jaraco-context
+  # from parent package: keyring (public)
+jaraco-functools
+  # from parent package: keyring (public)
+jeepney >=0.4.2,>=0.6
+  # from parent package: keyring (public)
+  # from parent package: secretstorage (public)
+jinja2 <4,>=2.11.1,>=2.7.1
+  # from parent package: poetry-dynamic-versioning (public)
+  # from parent package: diff-cover (public)
+jmespath <2.0.0,>=0.7.1
+  # from parent package: boto3 (public)
+  # from parent package: botocore (public)
+librt >=0.13.0
+  # from parent package: mypy (public)
+markupsafe >=2.0
+  # from parent package: jinja2 (public)
+memory-profiler >=0.58
+  # from parent package: pytest-monitor (public)
+more-itertools
+  # from parent package: jaraco-classes (public)
+  # from parent package: jaraco-functools (public)
+msgpack <2.0.0,>=0.5.2
+  # from parent package: cachecontrol (public)
+multidict <5.0,>=4.5,>=4.0
+  # from parent package: aiohttp (public)
+  # from parent package: yarl (public)
+mypy-extensions >=1.0.0
+  # from parent package: mypy (public)
+nodeenv >=0.11.1
+  # from parent package: pre-commit (public)
+pathspec >=1.0.0
+  # from parent package: mypy (public)
+pbs-installer <2026.0.0,>=2025.1.6
+  # from parent package: poetry (public)
+  # from parent package: pbs-installer (public)
+pkginfo <2.0,>=1.12
+  # from parent package: poetry (public)
+platformdirs <5,>=3.0.0,<5,>=3.9.1
+  # from parent package: poetry (public)
+  # from parent package: virtualenv (public)
+pluggy <2,>=0.13.1,<2,>=1.5,>=1.2
+  # from parent package: diff-cover (public)
+  # from parent package: pytest (public)
+  # from parent package: pytest-cov (public)
+poetry-core ==2.1.1
+  # from parent package: poetry (public)
+  # from parent package: poetry-plugin-export (public)
+portalocker >=2.6.0
+  # from parent package: concurrent-log-handler (public)
+propcache >=0.2.1
+  # from parent package: yarl (public)
+pygments <3.0.0,>=2.19.1,>=2.7.2
+  # from parent package: diff-cover (public)
+  # from parent package: pytest (public)
+pyinstaller-hooks-contrib >=2026.6
+  # from parent package: pyinstaller (public)
+pyproject-hooks <2.0.0,>=1.0.0
+  # from parent package: poetry (public)
+  # from parent package: build (public)
+python-dateutil <3.0.0,>=2.1
+  # from parent package: botocore (public)
+requests <3.0,>=2.26,>=2.16.0,<3.0.0,>=2.0.1
+  # from parent package: poetry (public)
+  # from parent package: pytest-monitor (public)
+  # from parent package: cachecontrol (public)
+  # from parent package: requests-toolbelt (public)
+requests-toolbelt <2.0.0,>=1.0.0
+  # from parent package: poetry (public)
+s3transfer <0.20.0,>=0.19.0
+  # from parent package: boto3 (public)
+secretstorage >=3.2
+  # from parent package: keyring (public)
+segno ==1.4.1
+  # from parent package: hsms (public)
+shellingham <2.0,>=1.5
+  # from parent package: poetry (public)
+six >=1.5
+  # from parent package: python-dateutil (public)
+tibs <0.6,>=0.5.6
+  # from parent package: bitstring (public)
+tomli <3.0.0,>=2.0.1,>=1.1.0,>=1.1.0,>=1
+  # from parent package: poetry (public)
+  # from parent package: build (public)
+  # from parent package: mypy (public)
+  # from parent package: pytest (public)
+tomlkit <1.0.0,>=0.11.4,>=0.4,<1.0.0,>=0.11.4
+  # from parent package: poetry (public)
+  # from parent package: poetry-dynamic-versioning (public)
+  # from parent package: poetry-plugin-export (public)
+trove-classifiers >=2022.5.19
+  # from parent package: poetry (public)
+urllib3 >=1.25,<3,>=1.26,!=2.2.0,<3,>=1.25.4
+  # from parent package: dulwich (public)
+  # from parent package: requests (public)
+  # from parent package: botocore (public)
+virtualenv <21.0.0,>=20.26.6,>=20.10.0
+  # from parent package: poetry (public)
+  # from parent package: pre-commit (public)
+wheel
+  # from parent package: pytest-monitor (public)
+yarl <2.0,>=1.0
+  # from parent package: aiohttp (public)
+zipp >=3.20
+  # from parent package: importlib-metadata (public)
+zstandard >=0.21.0
+  # from parent package: pbs-installer (public)

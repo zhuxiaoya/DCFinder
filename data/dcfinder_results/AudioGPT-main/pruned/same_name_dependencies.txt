@@ -1,0 +1,92 @@
+{
+    "direct dependency with same name": {
+        "number": 4,
+        "packages": {
+            "numpy": {
+                "private version": "1.23.1",
+                "public version": "1.23.1",
+                "highest public (unconstrained)": "2.5.1",
+                "declared specifier": "==1.23.1",
+                "constraint source": "direct",
+                "satisfying public versions count": 1
+            },
+            "torch": {
+                "private version": "1.12.1+cu113",
+                "public version": "1.12.1",
+                "highest public (unconstrained)": "2.13.0",
+                "declared specifier": "==1.12.1",
+                "constraint source": "direct",
+                "satisfying public versions count": 1
+            },
+            "torchaudio": {
+                "private version": "0.12.1+cu113",
+                "public version": "0.12.1",
+                "highest public (unconstrained)": "2.11.0",
+                "declared specifier": "==0.12.1",
+                "constraint source": "direct",
+                "satisfying public versions count": 1
+            },
+            "torchvision": {
+                "private version": "0.13.1+cu113",
+                "public version": "0.13.1",
+                "highest public (unconstrained)": "0.28.0",
+                "declared specifier": "==0.13.1",
+                "constraint source": "direct",
+                "satisfying public versions count": 1
+            }
+        }
+    },
+    "indirect dependency with same name": {
+        "number": 6,
+        "packages": {
+            "certifi": {
+                "private version": "2022.12.7",
+                "public version": "2026.6.17",
+                "highest public (unconstrained)": "2026.6.17",
+                "declared specifier": ">=2017.4.17",
+                "constraint source": "indirect",
+                "satisfying public versions count": 51
+            },
+            "charset-normalizer": {
+                "private version": "2.1.1",
+                "public version": "2.1.1",
+                "highest public (unconstrained)": "3.4.9",
+                "declared specifier": "<3,>=2",
+                "constraint source": "indirect",
+                "satisfying public versions count": 15
+            },
+            "idna": {
+                "private version": "3.4",
+                "public version": "3.18",
+                "highest public (unconstrained)": "3.18",
+                "declared specifier": "<4,>=2.5,>=2.8,>=2.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 22
+            },
+            "pillow": {
+                "private version": "12.2.0",
+                "public version": "12.3.0",
+                "highest public (unconstrained)": "12.3.0",
+                "declared specifier": "<13.0,>=8.0,>=6.0.0,>=6.2.0,!=8.3.*,>=5.3.0,>=10.1,>=9",
+                "constraint source": "indirect",
+                "satisfying public versions count": 13
+            },
+            "requests": {
+                "private version": "2.28.1",
+                "public version": "2.34.2",
+                "highest public (unconstrained)": "2.34.2",
+                "declared specifier": "<3,>=2,>=2.4,>=2.19.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 31
+            },
+            "urllib3": {
+                "private version": "1.26.13",
+                "public version": "1.26.20",
+                "highest public (unconstrained)": "2.7.0",
+                "declared specifier": "<1.27,>=1.21.1",
+                "constraint source": "indirect",
+                "satisfying public versions count": 40
+            }
+        }
+    }
+}

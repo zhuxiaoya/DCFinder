@@ -1,0 +1,686 @@
+[
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "filelock"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "huggingface-hub"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "regex"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tokenizers"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "safetensors"
+  },
+  {
+    "parent": "transformers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tqdm"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "filelock"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "setuptools"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "sympy"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "networkx"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jinja2"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fsspec"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cuda-toolkit"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cuda-bindings"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cudnn-cu13"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cusparselt-cu13"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nccl-cu13"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvshmem-cu13"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "triton"
+  },
+  {
+    "parent": "pydantic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "annotated-types"
+  },
+  {
+    "parent": "pydantic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydantic-core"
+  },
+  {
+    "parent": "pydantic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "pydantic",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-inspection"
+  },
+  {
+    "parent": "pydantic-settings",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydantic"
+  },
+  {
+    "parent": "pydantic-settings",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "python-dotenv"
+  },
+  {
+    "parent": "pydantic-settings",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-inspection"
+  },
+  {
+    "parent": "opencv-python-headless",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "pre-commit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cfgv"
+  },
+  {
+    "parent": "pre-commit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "identify"
+  },
+  {
+    "parent": "pre-commit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nodeenv"
+  },
+  {
+    "parent": "pre-commit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "pre-commit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "virtualenv"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "filelock"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fsspec"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "hf-xet"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tqdm"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "charset-normalizer"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "idna"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "urllib3"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "certifi"
+  },
+  {
+    "parent": "tokenizers",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "huggingface-hub"
+  },
+  {
+    "parent": "sympy",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mpmath"
+  },
+  {
+    "parent": "jinja2",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markupsafe"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cublas"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-cccl"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-crt"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-culibos"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-cupti"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-cuxxfilt"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-nvcc"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-nvrtc"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-opencl"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-profiler-api"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-runtime"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-sanitizer-api"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cufft"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cufile"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-curand"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cusolver"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cusparse"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-npp"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvfatbin"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvjitlink"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvjpeg"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvml-dev"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvptxcompiler"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvtx"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvvm"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cublas"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-nvrtc"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-runtime"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cufft"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvjitlink"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cufile"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-cupti"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-curand"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cublas"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cusolver"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cusparse"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvjitlink"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cusparse"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvjitlink"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvjitlink"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-nvrtc"
+  },
+  {
+    "parent": "cuda-toolkit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvtx"
+  },
+  {
+    "parent": "cuda-bindings",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cuda-pathfinder"
+  },
+  {
+    "parent": "nvidia-cudnn-cu13",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cublas"
+  },
+  {
+    "parent": "pydantic-core",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "typing-inspection",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "virtualenv",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "distlib"
+  },
+  {
+    "parent": "virtualenv",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "filelock"
+  },
+  {
+    "parent": "virtualenv",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "platformdirs"
+  },
+  {
+    "parent": "virtualenv",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "python-discovery"
+  },
+  {
+    "parent": "virtualenv",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "nvidia-cublas",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-nvrtc"
+  },
+  {
+    "parent": "nvidia-cuda-nvcc",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvvm"
+  },
+  {
+    "parent": "nvidia-cuda-nvcc",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-runtime"
+  },
+  {
+    "parent": "nvidia-cuda-nvcc",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cuda-crt"
+  },
+  {
+    "parent": "nvidia-cufft",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvjitlink"
+  },
+  {
+    "parent": "nvidia-cusolver",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cublas"
+  },
+  {
+    "parent": "nvidia-cusolver",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvjitlink"
+  },
+  {
+    "parent": "nvidia-cusolver",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-cusparse"
+  },
+  {
+    "parent": "nvidia-cusparse",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-nvjitlink"
+  },
+  {
+    "parent": "python-discovery",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "filelock"
+  },
+  {
+    "parent": "python-discovery",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "platformdirs"
+  }
+]

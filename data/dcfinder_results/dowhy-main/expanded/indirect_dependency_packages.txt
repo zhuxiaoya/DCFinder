@@ -1,0 +1,69 @@
+cffi
+  # from parent package: clarabel (public)
+clarabel >=0.5.0
+  # from parent package: cvxpy (public)
+cloudpickle
+  # from parent package: shap (public)
+contourpy >=1.0.1
+  # from parent package: matplotlib (public)
+cycler >=0.10
+  # from parent package: matplotlib (public)
+ecos >=2
+  # from parent package: cvxpy (public)
+fonttools >=4.22.0
+  # from parent package: matplotlib (public)
+graphviz
+  # from parent package: causal-learn (public)
+jinja2
+  # from parent package: osqp (public)
+kiwisolver >=1.3.1
+  # from parent package: matplotlib (public)
+lightgbm
+  # from parent package: econml (public)
+llvmlite <0.49,>=0.48.0dev0
+  # from parent package: numba (public)
+markupsafe >=2.0
+  # from parent package: jinja2 (public)
+momentchi2
+  # from parent package: causal-learn (public)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (public)
+narwhals >=2.0.1
+  # from parent package: scikit-learn (public)
+osqp >=0.6.2
+  # from parent package: cvxpy (public)
+packaging >=21.3,>=20.0,>20.9
+  # from parent package: statsmodels (public)
+  # from parent package: econml (public)
+  # from parent package: matplotlib (public)
+  # from parent package: shap (public)
+patsy >=0.5.6
+  # from parent package: statsmodels (public)
+pillow >=9
+  # from parent package: matplotlib (public)
+pybind11
+  # from parent package: cvxpy (public)
+pycparser
+  # from parent package: cffi (public)
+pyparsing >=2.1.4,>=3
+  # from parent package: pydot (public)
+  # from parent package: matplotlib (public)
+python-dateutil >=2.8.2,>=2.7
+  # from parent package: pandas (public)
+  # from parent package: matplotlib (public)
+scs >=3.0
+  # from parent package: cvxpy (public)
+setuptools
+  # from parent package: osqp (public)
+shap <0.49.0,>=0.38.1
+  # from parent package: econml (public)
+six >=1.5
+  # from parent package: python-dateutil (public)
+slicer ==0.0.8
+  # from parent package: shap (public)
+sparse
+  # from parent package: econml (public)
+threadpoolctl >=3.5.0
+  # from parent package: scikit-learn (public)
+typing-extensions
+  # from parent package: shap (public)

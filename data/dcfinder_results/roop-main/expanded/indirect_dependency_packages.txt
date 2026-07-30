@@ -1,0 +1,228 @@
+absl-py >=1.0.0,>=0.4,>=0.4
+  # from parent package: tensorflow (public)
+  # from parent package: tensorboard (public)
+  # from parent package: tb-nightly (public)
+astunparse >=1.6.0
+  # from parent package: tensorflow (public)
+basicsr >=1.4.2
+  # from parent package: gfpgan (public)
+beautifulsoup4
+  # from parent package: gdown (public)
+certifi >=2017.4.17
+  # from parent package: requests (private)
+cffi >=2.0.0
+  # from parent package: cryptography (public)
+charset-normalizer <3,>=2
+  # from parent package: requests (private)
+coloredlogs
+  # from parent package: onnxruntime (public)
+  # from parent package: onnxruntime-coreml (public)
+  # from parent package: onnxruntime-silicon (public)
+  # from parent package: onnxruntime-gpu (public)
+contourpy >=1.0.1
+  # from parent package: matplotlib (public)
+cryptography >=38.0.3
+  # from parent package: google-auth (public)
+cycler >=0.10
+  # from parent package: matplotlib (public)
+darkdetect
+  # from parent package: customtkinter (public)
+facexlib >=0.2.5
+  # from parent package: gfpgan (public)
+filelock
+  # from parent package: gdown (public)
+  # from parent package: torch (private)
+filterpy
+  # from parent package: facexlib (public)
+flatbuffers >=23.1.21
+  # from parent package: onnxruntime (public)
+  # from parent package: onnxruntime-coreml (public)
+  # from parent package: onnxruntime-silicon (public)
+  # from parent package: onnxruntime-gpu (public)
+  # from parent package: tensorflow (public)
+fonttools >=4.22.0
+  # from parent package: matplotlib (public)
+fsspec
+  # from parent package: torch (private)
+gast <=0.4.0,>=0.2.1
+  # from parent package: tensorflow (public)
+gdown >=4.2.0
+  # from parent package: opennsfw2 (public)
+google-auth <3,>=1.6.3,>=2.15.0
+  # from parent package: tensorboard (public)
+  # from parent package: google-auth-oauthlib (public)
+google-auth-oauthlib <1.1,>=0.5
+  # from parent package: tensorboard (public)
+google-pasta >=0.1.1
+  # from parent package: tensorflow (public)
+grpcio <2.0,>=1.24.3,>=1.48.2,>=1.48.2
+  # from parent package: tensorflow (public)
+  # from parent package: tensorboard (public)
+  # from parent package: tb-nightly (public)
+h5py >=2.9.0
+  # from parent package: tensorflow (public)
+humanfriendly >=9.1
+  # from parent package: coloredlogs (public)
+idna <4,>=2.5
+  # from parent package: requests (private)
+imageio !=2.35.0,>=2.33
+  # from parent package: scikit-image (public)
+jinja2
+  # from parent package: torch (private)
+keras <2.14,>=2.13.1
+  # from parent package: tensorflow (public)
+kiwisolver >=1.3.1
+  # from parent package: matplotlib (public)
+lazy-loader >=0.4
+  # from parent package: scikit-image (public)
+libclang >=13.0.0
+  # from parent package: tensorflow (public)
+llvmlite <0.49,>=0.48.0dev0
+  # from parent package: numba (public)
+lmdb
+  # from parent package: gfpgan (public)
+markdown >=2.6.8
+  # from parent package: tensorboard (public)
+  # from parent package: tb-nightly (public)
+markupsafe >=2.1.1,>=2.0
+  # from parent package: werkzeug (public)
+  # from parent package: jinja2 (private)
+matplotlib >=3.0.0
+  # from parent package: opennsfw2 (public)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+networkx >=3.0
+  # from parent package: scikit-image (public)
+  # from parent package: torch (private)
+numba
+  # from parent package: facexlib (public)
+nvidia-cublas-cu11 ==11.11.3.6
+  # from parent package: torch (private)
+  # from parent package: nvidia-cusolver-cu11 (private)
+nvidia-cuda-cupti-cu11 ==11.8.87
+  # from parent package: torch (private)
+nvidia-cuda-nvrtc-cu11 ==11.8.89
+  # from parent package: torch (private)
+nvidia-cuda-runtime-cu11 ==11.8.89
+  # from parent package: torch (private)
+nvidia-cudnn-cu11 ==9.1.0.70
+  # from parent package: torch (private)
+nvidia-cufft-cu11 ==10.9.0.58
+  # from parent package: torch (private)
+nvidia-curand-cu11 ==10.3.0.86
+  # from parent package: torch (private)
+nvidia-cusolver-cu11 ==11.4.1.48
+  # from parent package: torch (private)
+nvidia-cusparse-cu11 ==11.7.5.86
+  # from parent package: torch (private)
+nvidia-nccl-cu11 ==2.21.5
+  # from parent package: torch (private)
+nvidia-nvtx-cu11 ==11.8.86
+  # from parent package: torch (private)
+oauthlib >=3.0.0
+  # from parent package: requests-oauthlib (public)
+opt-einsum >=2.3.2
+  # from parent package: tensorflow (public)
+packaging >=20.0,>=21,>=24.0
+  # from parent package: onnxruntime (public)
+  # from parent package: onnxruntime-coreml (public)
+  # from parent package: onnxruntime-silicon (public)
+  # from parent package: onnxruntime-gpu (public)
+  # from parent package: tensorflow (public)
+  # from parent package: matplotlib (public)
+  # from parent package: scikit-image (public)
+  # from parent package: tb-nightly (public)
+  # from parent package: wheel (public)
+  # from parent package: lazy-loader (public)
+platformdirs >=3.5.1
+  # from parent package: yapf (public)
+pyasn1 <0.7.0,>=0.6.1
+  # from parent package: pyasn1-modules (public)
+pyasn1-modules >=0.2.1
+  # from parent package: google-auth (public)
+pycparser
+  # from parent package: cffi (public)
+pyparsing >=3
+  # from parent package: matplotlib (public)
+pysocks !=1.5.7,>=1.5.6
+  # from parent package: requests (private)
+python-dateutil >=2.7
+  # from parent package: matplotlib (public)
+pyyaml
+  # from parent package: gfpgan (public)
+requests <3,>=2.21.0,>=2.0.0
+  # from parent package: tensorboard (public)
+  # from parent package: gdown (public)
+  # from parent package: requests-oauthlib (public)
+requests-oauthlib >=0.7.0
+  # from parent package: google-auth-oauthlib (public)
+scikit-image >=0.18.0
+  # from parent package: opennsfw2 (public)
+scipy >=1.11.4
+  # from parent package: gfpgan (public)
+  # from parent package: scikit-image (public)
+  # from parent package: facexlib (public)
+setuptools >=41.0.0,>=40.8.0
+  # from parent package: tensorflow (public)
+  # from parent package: tensorboard (public)
+  # from parent package: tb-nightly (public)
+  # from parent package: triton (private)
+six >=1.12.0,<2.0,>=1.6.1,>=1.5
+  # from parent package: tensorflow (public)
+  # from parent package: astunparse (public)
+  # from parent package: google-pasta (public)
+  # from parent package: python-dateutil (public)
+soupsieve >=1.6.1
+  # from parent package: beautifulsoup4 (public)
+sympy >=1.13.3
+  # from parent package: onnxruntime (public)
+  # from parent package: onnxruntime-coreml (public)
+  # from parent package: onnxruntime-silicon (public)
+  # from parent package: onnxruntime-gpu (public)
+  # from parent package: torch (private)
+tb-nightly
+  # from parent package: gfpgan (public)
+tensorboard <2.14,>=2.13
+  # from parent package: tensorflow (public)
+tensorboard-data-server <0.8.0,>=0.7.0
+  # from parent package: tensorboard (public)
+  # from parent package: tb-nightly (public)
+tensorflow-estimator <2.14,>=2.13.0
+  # from parent package: tensorflow (public)
+tensorflow-io-gcs-filesystem >=0.23.1
+  # from parent package: tensorflow (public)
+termcolor >=1.1.0
+  # from parent package: tensorflow (public)
+tifffile >=2022.8.12
+  # from parent package: scikit-image (public)
+tomli >=2.0.1
+  # from parent package: yapf (public)
+torch ==2.7.1
+  # from parent package: gfpgan (public)
+  # from parent package: facexlib (public)
+  # from parent package: torchvision (private)
+torchvision
+  # from parent package: gfpgan (public)
+  # from parent package: facexlib (public)
+triton ==3.3.1
+  # from parent package: torch (private)
+typing-extensions >=3.6.2.1,<4.6.0,>=3.6.6,~=4.12,>=4.0,>=4.10.0,>=4.0.0,>=4.13.2
+  # from parent package: onnx (public)
+  # from parent package: tensorflow (public)
+  # from parent package: grpcio (public)
+  # from parent package: gdown (public)
+  # from parent package: torch (private)
+  # from parent package: beautifulsoup4 (public)
+  # from parent package: cryptography (public)
+urllib3 <1.27,>=1.21.1
+  # from parent package: requests (private)
+werkzeug >=1.0.1
+  # from parent package: tensorboard (public)
+  # from parent package: tb-nightly (public)
+wheel <1.0,>=0.23.0,>=0.26
+  # from parent package: astunparse (public)
+  # from parent package: tensorboard (public)
+wrapt >=1.11.0
+  # from parent package: tensorflow (public)
+yapf
+  # from parent package: gfpgan (public)

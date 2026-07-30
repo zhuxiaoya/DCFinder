@@ -1,0 +1,263 @@
+{
+     "direct dependency": {
+          "number": 8,
+          "packages": [
+               {
+                    "name": "tensorizer",
+                    "specifier": ">=2.9.0",
+                    "raw_requirement": "tensorizer>=2.9.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py",
+                    "dependency_type": "extra:tensorizer"
+               },
+               {
+                    "name": "fastsafetensors",
+                    "specifier": ">=0.1.10",
+                    "raw_requirement": "fastsafetensors >= 0.1.10",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py",
+                    "dependency_type": "extra:fastsafetensors"
+               },
+               {
+                    "name": "runai-model-streamer",
+                    "specifier": "",
+                    "raw_requirement": "runai-model-streamer",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py",
+                    "dependency_type": "extra:runai"
+               },
+               {
+                    "name": "runai-model-streamer-s3",
+                    "specifier": "",
+                    "raw_requirement": "runai-model-streamer-s3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py",
+                    "dependency_type": "extra:runai"
+               },
+               {
+                    "name": "boto3",
+                    "specifier": "",
+                    "raw_requirement": "boto3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py",
+                    "dependency_type": "extra:runai"
+               },
+               {
+                    "name": "librosa",
+                    "specifier": "",
+                    "raw_requirement": "librosa",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py",
+                    "dependency_type": "extra:audio"
+               },
+               {
+                    "name": "soundfile",
+                    "specifier": "",
+                    "raw_requirement": "soundfile",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py",
+                    "dependency_type": "extra:audio"
+               },
+               {
+                    "name": "pandas",
+                    "specifier": "",
+                    "raw_requirement": "pandas",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/benchmarks/kernels/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 7,
+          "packages": [
+               {
+                    "name": "cffi",
+                    "specifier": ">=1.0",
+                    "raw_requirement": "cffi >=1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "soundfile",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "numpy",
+                    "specifier": ">=1.19.5,>=1.22.3,>=1.22.4,<2.3,>=1.24,<2.6,>=1.25.2,>=1.24.1",
+                    "raw_requirement": "numpy>=1.19.5 ; numpy ; numpy>=1.22.3 ; numpy ; numpy>=1.22.4; python_version < \"3.11\" ; numpy<2.3,>=1.24 ; numpy<2.6,>=1.25.2 ; numpy>=1.24.1 ; numpy",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorizer",
+                              "source": "public"
+                         },
+                         {
+                              "name": "runai-model-streamer",
+                              "source": "public"
+                         },
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         },
+                         {
+                              "name": "soundfile",
+                              "source": "private"
+                         },
+                         {
+                              "name": "pandas",
+                              "source": "private"
+                         },
+                         {
+                              "name": "numba",
+                              "source": "private"
+                         },
+                         {
+                              "name": "scipy",
+                              "source": "private"
+                         },
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "soxr",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pycparser",
+                    "specifier": "",
+                    "raw_requirement": "pycparser; implementation_name != \"PyPy\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cffi",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-dateutil",
+                    "specifier": ">=2.8.2,<3.0.0,>=2.1",
+                    "raw_requirement": "python-dateutil>=2.8.2 ; python-dateutil<3.0.0,>=2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pandas",
+                              "source": "private"
+                         },
+                         {
+                              "name": "botocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pytz",
+                    "specifier": ">=2020.1",
+                    "raw_requirement": "pytz>=2020.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pandas",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "six",
+                    "specifier": ">=1.5",
+                    "raw_requirement": "six >=1.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "python-dateutil",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "tzdata",
+                    "specifier": ">=2022.7",
+                    "raw_requirement": "tzdata>=2022.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pandas",
+                              "source": "private"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 2,
+          "packages": {
+               "soundfile": {
+                    "private version": "0.13.1",
+                    "public version": "0.14.0",
+                    "highest public (unconstrained)": "0.14.0",
+                    "declared specifier": ">=0.12.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "pandas": {
+                    "private version": "2.3.1",
+                    "public version": "3.0.4",
+                    "highest public (unconstrained)": "3.0.4"
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 6,
+          "packages": {
+               "cffi": {
+                    "private version": "2.0.0",
+                    "public version": "2.1.0",
+                    "highest public (unconstrained)": "2.1.0",
+                    "declared specifier": ">=1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 57
+               },
+               "pycparser": {
+                    "private version": "2.23",
+                    "public version": "3.0",
+                    "highest public (unconstrained)": "3.0"
+               },
+               "python-dateutil": {
+                    "private version": "2.9.0",
+                    "public version": "2.9.0.post0",
+                    "highest public (unconstrained)": "2.9.0.post0",
+                    "declared specifier": ">=2.8.2,<3.0.0,>=2.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "pytz": {
+                    "private version": "2025.2",
+                    "public version": "2026.2",
+                    "highest public (unconstrained)": "2026.2",
+                    "declared specifier": ">=2020.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 24
+               },
+               "six": {
+                    "private version": "1.17.0",
+                    "public version": "1.17.0",
+                    "highest public (unconstrained)": "1.17.0",
+                    "declared specifier": ">=1.5",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 19
+               },
+               "tzdata": {
+                    "private version": "2025.2",
+                    "public version": "2026.3",
+                    "highest public (unconstrained)": "2026.3",
+                    "declared specifier": ">=2022.7",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 13
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 9,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 17
+     }
+}

@@ -1,0 +1,1356 @@
+{
+  "fire": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "termcolor",
+        "specifier": ""
+      }
+    ]
+  },
+  "omegaconf": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "antlr4-python3-runtime",
+        "specifier": "==4.9.*"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1.0"
+      }
+    ]
+  },
+  "diffusers": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pillow",
+        "specifier": ""
+      },
+      {
+        "name": "filelock",
+        "specifier": ""
+      },
+      {
+        "name": "huggingface-hub",
+        "specifier": ">=0.19.4"
+      },
+      {
+        "name": "importlib-metadata",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "regex",
+        "specifier": "!=2019.12.17"
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "safetensors",
+        "specifier": ">=0.3.1"
+      }
+    ]
+  },
+  "transformers": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "filelock",
+        "specifier": ""
+      },
+      {
+        "name": "huggingface-hub",
+        "specifier": "<1.0,>=0.16.4"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.17"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.0"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1"
+      },
+      {
+        "name": "regex",
+        "specifier": "!=2019.12.17"
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "tokenizers",
+        "specifier": "<0.19,>=0.14"
+      },
+      {
+        "name": "safetensors",
+        "specifier": ">=0.3.1"
+      },
+      {
+        "name": "tqdm",
+        "specifier": ">=4.27"
+      }
+    ]
+  },
+  "accelerate": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.17"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.0"
+      },
+      {
+        "name": "psutil",
+        "specifier": ""
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": ">=1.10.0"
+      },
+      {
+        "name": "huggingface-hub",
+        "specifier": ""
+      }
+    ]
+  },
+  "uvicorn": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "click",
+        "specifier": ">=7.0"
+      },
+      {
+        "name": "h11",
+        "specifier": ">=0.8"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.0"
+      }
+    ]
+  },
+  "fastapi": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "anyio",
+        "specifier": "<4.0.0,>=3.7.1"
+      },
+      {
+        "name": "pydantic",
+        "specifier": "!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4"
+      },
+      {
+        "name": "starlette",
+        "specifier": "<0.28.0,>=0.27.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.8.0"
+      }
+    ]
+  },
+  "av": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "gradio": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "anyio",
+        "specifier": "<5.0,>=3.0"
+      },
+      {
+        "name": "brotli",
+        "specifier": ">=1.1.0"
+      },
+      {
+        "name": "fastapi",
+        "specifier": "<1.0,>=0.115.2"
+      },
+      {
+        "name": "gradio-client",
+        "specifier": "==2.5.0"
+      },
+      {
+        "name": "groovy",
+        "specifier": "~=0.1"
+      },
+      {
+        "name": "hf-gradio",
+        "specifier": "<1.0,>=0.4.1"
+      },
+      {
+        "name": "httpx",
+        "specifier": "<1.0,>=0.24.1"
+      },
+      {
+        "name": "huggingface-hub",
+        "specifier": "<2.0,>=1.2.0"
+      },
+      {
+        "name": "jinja2",
+        "specifier": "<4.0"
+      },
+      {
+        "name": "markupsafe",
+        "specifier": "<4.0,>=2.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": "<3.0,>=1.0"
+      },
+      {
+        "name": "orjson",
+        "specifier": "~=3.0"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "pandas",
+        "specifier": "<4.0,>=1.0"
+      },
+      {
+        "name": "pillow",
+        "specifier": "<13.0,>=8.0"
+      },
+      {
+        "name": "pydantic",
+        "specifier": "<=3.0,>=2.0"
+      },
+      {
+        "name": "pydub",
+        "specifier": "<1.0"
+      },
+      {
+        "name": "python-multipart",
+        "specifier": "<1.0,>=0.0.18"
+      },
+      {
+        "name": "pytz",
+        "specifier": ">=2017.2"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": "<7.0,>=5.0"
+      },
+      {
+        "name": "safehttpx",
+        "specifier": "<0.2.0,>=0.1.7"
+      },
+      {
+        "name": "semantic-version",
+        "specifier": "~=2.0"
+      },
+      {
+        "name": "starlette",
+        "specifier": "<2.0,>=1.0.1"
+      },
+      {
+        "name": "tomlkit",
+        "specifier": "<0.15.0,>=0.12.0"
+      },
+      {
+        "name": "typer",
+        "specifier": "<1.0,>=0.12"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": "~=4.0"
+      },
+      {
+        "name": "uvicorn",
+        "specifier": ">=0.14.0"
+      }
+    ]
+  },
+  "torch": {
+    "version": "2.7.1+cu118",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": ">=1.10.0",
+    "requires_dist": [
+      {
+        "name": "filelock",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.10.0"
+      },
+      {
+        "name": "sympy",
+        "specifier": ">=1.13.3"
+      },
+      {
+        "name": "networkx",
+        "specifier": ""
+      },
+      {
+        "name": "jinja2",
+        "specifier": ""
+      },
+      {
+        "name": "fsspec",
+        "specifier": ""
+      },
+      {
+        "name": "nvidia-cuda-nvrtc-cu11",
+        "specifier": "==11.8.89"
+      },
+      {
+        "name": "nvidia-cuda-runtime-cu11",
+        "specifier": "==11.8.89"
+      },
+      {
+        "name": "nvidia-cuda-cupti-cu11",
+        "specifier": "==11.8.87"
+      },
+      {
+        "name": "nvidia-cudnn-cu11",
+        "specifier": "==9.1.0.70"
+      },
+      {
+        "name": "nvidia-cublas-cu11",
+        "specifier": "==11.11.3.6"
+      },
+      {
+        "name": "nvidia-cufft-cu11",
+        "specifier": "==10.9.0.58"
+      },
+      {
+        "name": "nvidia-curand-cu11",
+        "specifier": "==10.3.0.86"
+      },
+      {
+        "name": "nvidia-cusolver-cu11",
+        "specifier": "==11.4.1.48"
+      },
+      {
+        "name": "nvidia-cusparse-cu11",
+        "specifier": "==11.7.5.86"
+      },
+      {
+        "name": "nvidia-nccl-cu11",
+        "specifier": "==2.21.5"
+      },
+      {
+        "name": "nvidia-nvtx-cu11",
+        "specifier": "==11.8.86"
+      },
+      {
+        "name": "triton",
+        "specifier": "==3.3.1"
+      }
+    ]
+  },
+  "pillow": {
+    "version": "10.1.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==10.1.0",
+    "requires_dist": []
+  },
+  "compel": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "diffusers",
+        "specifier": ">=0.11"
+      },
+      {
+        "name": "pyparsing",
+        "specifier": "~=3.0"
+      },
+      {
+        "name": "torch",
+        "specifier": ""
+      },
+      {
+        "name": "transformers",
+        "specifier": "~=4.25"
+      }
+    ]
+  },
+  "controlnet-aux": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "peft": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.17"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.0"
+      },
+      {
+        "name": "psutil",
+        "specifier": ""
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": ">=1.13.0"
+      },
+      {
+        "name": "transformers",
+        "specifier": ""
+      },
+      {
+        "name": "tqdm",
+        "specifier": ""
+      },
+      {
+        "name": "accelerate",
+        "specifier": ">=0.21.0"
+      },
+      {
+        "name": "safetensors",
+        "specifier": ""
+      }
+    ]
+  },
+  "xformers": {
+    "version": "0.0.31",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": "==2.7.1"
+      }
+    ]
+  },
+  "markdown2": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "stable-fast": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "matplotlib": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "contourpy",
+        "specifier": ">=1.0.1"
+      },
+      {
+        "name": "cycler",
+        "specifier": ">=0.10"
+      },
+      {
+        "name": "fonttools",
+        "specifier": ">=4.22.0"
+      },
+      {
+        "name": "kiwisolver",
+        "specifier": ">=1.3.1"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.25"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.0"
+      },
+      {
+        "name": "pillow",
+        "specifier": ">=9"
+      },
+      {
+        "name": "pyparsing",
+        "specifier": ">=3"
+      },
+      {
+        "name": "python-dateutil",
+        "specifier": ">=2.7"
+      }
+    ]
+  },
+  "mss": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "termcolor": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "antlr4-python3-runtime": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pyyaml": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "filelock": {
+    "version": "3.29.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "huggingface-hub": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "click",
+        "specifier": "<9.0.0,>=8.4.2"
+      },
+      {
+        "name": "filelock",
+        "specifier": ">=3.10.0"
+      },
+      {
+        "name": "fsspec",
+        "specifier": ">=2023.5.0"
+      },
+      {
+        "name": "hf-xet",
+        "specifier": "<2.0.0,>=1.5.1"
+      },
+      {
+        "name": "httpx",
+        "specifier": "<1,>=0.23.0"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.9"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1"
+      },
+      {
+        "name": "tqdm",
+        "specifier": ">=4.42.1"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.1.0"
+      }
+    ]
+  },
+  "importlib-metadata": {
+    "version": "7.1.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "zipp",
+        "specifier": ">=0.5"
+      }
+    ]
+  },
+  "numpy": {
+    "version": "2.4.4",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": ">=1.17,<3.0,>=1.0,>=1.17,>=1.25",
+    "requires_dist": []
+  },
+  "regex": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "requests": {
+    "version": "2.28.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "charset-normalizer",
+        "specifier": "<3,>=2"
+      },
+      {
+        "name": "idna",
+        "specifier": "<4,>=2.5"
+      },
+      {
+        "name": "urllib3",
+        "specifier": "<1.27,>=1.21.1"
+      },
+      {
+        "name": "certifi",
+        "specifier": ">=2017.4.17"
+      }
+    ]
+  },
+  "safetensors": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "packaging": {
+    "version": "24.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": ">=20.0,>=20.9",
+    "requires_dist": []
+  },
+  "tokenizers": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "huggingface-hub",
+        "specifier": "<1.0,>=0.16.4"
+      }
+    ]
+  },
+  "tqdm": {
+    "version": "4.66.5",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": ">=4.27,>=4.42.1",
+    "requires_dist": []
+  },
+  "psutil": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "click": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "h11": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "typing-extensions": {
+    "version": "4.15.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": ">=4.0,>=4.8.0,~=4.0,>=4.10.0,>=4.1.0",
+    "requires_dist": []
+  },
+  "anyio": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "idna",
+        "specifier": ">=2.8"
+      },
+      {
+        "name": "sniffio",
+        "specifier": ">=1.1"
+      },
+      {
+        "name": "exceptiongroup",
+        "specifier": ""
+      }
+    ]
+  },
+  "pydantic": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "annotated-types",
+        "specifier": ">=0.6.0"
+      },
+      {
+        "name": "pydantic-core",
+        "specifier": "==2.47.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.15.0"
+      },
+      {
+        "name": "typing-inspection",
+        "specifier": ">=0.4.2"
+      }
+    ]
+  },
+  "starlette": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "anyio",
+        "specifier": "<5,>=3.6.2"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.10.0"
+      }
+    ]
+  },
+  "brotli": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "gradio-client": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "fsspec",
+        "specifier": ""
+      },
+      {
+        "name": "httpx",
+        "specifier": ">=0.24.1"
+      },
+      {
+        "name": "huggingface-hub",
+        "specifier": "<2.0,>=0.19.3"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": "~=4.0"
+      }
+    ]
+  },
+  "groovy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "hf-gradio": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "gradio-client",
+        "specifier": "<3.0,>=2.0"
+      },
+      {
+        "name": "typer",
+        "specifier": ""
+      }
+    ]
+  },
+  "httpx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "anyio",
+        "specifier": ""
+      },
+      {
+        "name": "certifi",
+        "specifier": ""
+      },
+      {
+        "name": "httpcore",
+        "specifier": "==1.*"
+      },
+      {
+        "name": "idna",
+        "specifier": ""
+      }
+    ]
+  },
+  "jinja2": {
+    "version": "3.1.6",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "<4.0",
+    "requires_dist": [
+      {
+        "name": "markupsafe",
+        "specifier": ">=2.0"
+      }
+    ]
+  },
+  "markupsafe": {
+    "version": "3.0.3",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "<4.0,>=2.0,>=2.0",
+    "requires_dist": []
+  },
+  "orjson": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pandas": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.26.0"
+      },
+      {
+        "name": "python-dateutil",
+        "specifier": ">=2.8.2"
+      }
+    ]
+  },
+  "pydub": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "python-multipart": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pytz": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "safehttpx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "httpx",
+        "specifier": ""
+      }
+    ]
+  },
+  "semantic-version": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "tomlkit": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "typer": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "shellingham",
+        "specifier": ">=1.3.0"
+      },
+      {
+        "name": "rich",
+        "specifier": ">=13.8.0"
+      },
+      {
+        "name": "annotated-doc",
+        "specifier": ">=0.0.2"
+      }
+    ]
+  },
+  "sympy": {
+    "version": "1.14.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": ">=1.13.3",
+    "requires_dist": [
+      {
+        "name": "mpmath",
+        "specifier": "<1.4,>=1.1.0"
+      }
+    ]
+  },
+  "networkx": {
+    "version": "3.6.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "fsspec": {
+    "version": "2026.4.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": ">=2023.5.0",
+    "requires_dist": []
+  },
+  "nvidia-cuda-nvrtc-cu11": {
+    "version": "11.8.89",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==11.8.89",
+    "requires_dist": []
+  },
+  "nvidia-cuda-runtime-cu11": {
+    "version": "11.8.89",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==11.8.89",
+    "requires_dist": []
+  },
+  "nvidia-cuda-cupti-cu11": {
+    "version": "11.8.87",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==11.8.87",
+    "requires_dist": []
+  },
+  "nvidia-cudnn-cu11": {
+    "version": "9.1.0.70",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==9.1.0.70",
+    "requires_dist": [
+      {
+        "name": "nvidia-cublas-cu11",
+        "specifier": ""
+      }
+    ]
+  },
+  "nvidia-cublas-cu11": {
+    "version": "11.11.3.6",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==11.11.3.6",
+    "requires_dist": []
+  },
+  "nvidia-cufft-cu11": {
+    "version": "10.9.0.58",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==10.9.0.58",
+    "requires_dist": []
+  },
+  "nvidia-curand-cu11": {
+    "version": "10.3.0.86",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==10.3.0.86",
+    "requires_dist": []
+  },
+  "nvidia-cusolver-cu11": {
+    "version": "11.4.1.48",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==11.4.1.48",
+    "requires_dist": [
+      {
+        "name": "nvidia-cublas-cu11",
+        "specifier": ""
+      }
+    ]
+  },
+  "nvidia-cusparse-cu11": {
+    "version": "11.7.5.86",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==11.7.5.86",
+    "requires_dist": []
+  },
+  "nvidia-nccl-cu11": {
+    "version": "2.21.5",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==2.21.5",
+    "requires_dist": []
+  },
+  "nvidia-nvtx-cu11": {
+    "version": "11.8.86",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==11.8.86",
+    "requires_dist": []
+  },
+  "triton": {
+    "version": "3.3.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==3.3.1",
+    "requires_dist": [
+      {
+        "name": "setuptools",
+        "specifier": ">=40.8.0"
+      }
+    ]
+  },
+  "pyparsing": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "contourpy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.25"
+      }
+    ]
+  },
+  "cycler": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "fonttools": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "kiwisolver": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "python-dateutil": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "six",
+        "specifier": ">=1.5"
+      }
+    ]
+  },
+  "hf-xet": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "zipp": {
+    "version": "3.19.2",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": ">=0.5",
+    "requires_dist": []
+  },
+  "charset-normalizer": {
+    "version": "2.1.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "<3,>=2",
+    "requires_dist": []
+  },
+  "idna": {
+    "version": "3.4",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "<4,>=2.5,>=2.8",
+    "requires_dist": []
+  },
+  "urllib3": {
+    "version": "1.26.13",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "<1.27,>=1.21.1",
+    "requires_dist": []
+  },
+  "certifi": {
+    "version": "2022.12.7",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": ">=2017.4.17",
+    "requires_dist": []
+  },
+  "sniffio": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "exceptiongroup": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.6.0"
+      }
+    ]
+  },
+  "annotated-types": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pydantic-core": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.14.1"
+      }
+    ]
+  },
+  "typing-inspection": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.12.0"
+      }
+    ]
+  },
+  "httpcore": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "certifi",
+        "specifier": ""
+      },
+      {
+        "name": "h11",
+        "specifier": ">=0.16"
+      }
+    ]
+  },
+  "shellingham": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "rich": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "markdown-it-py",
+        "specifier": ">=2.2.0"
+      },
+      {
+        "name": "pygments",
+        "specifier": "<3.0.0,>=2.13.0"
+      }
+    ]
+  },
+  "annotated-doc": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "mpmath": {
+    "version": "1.3.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "<1.4,>=1.1.0",
+    "requires_dist": []
+  },
+  "setuptools": {
+    "version": "78.1.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": ">=40.8.0",
+    "requires_dist": []
+  },
+  "six": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "markdown-it-py": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "mdurl",
+        "specifier": "~=0.1"
+      }
+    ]
+  },
+  "pygments": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "mdurl": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  }
+}

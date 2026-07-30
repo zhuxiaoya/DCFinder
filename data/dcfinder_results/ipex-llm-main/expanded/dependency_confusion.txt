@@ -1,0 +1,3218 @@
+{
+     "direct dependency": {
+          "number": 37,
+          "packages": [
+               {
+                    "name": "accelerate",
+                    "specifier": "==0.23.0",
+                    "raw_requirement": "accelerate ; accelerate==0.23.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "appdirs",
+                    "specifier": "",
+                    "raw_requirement": "appdirs",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "bitsandbytes",
+                    "specifier": ">=0.41.1",
+                    "raw_requirement": "bitsandbytes ; bitsandbytes>=0.41.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "black",
+                    "specifier": "",
+                    "raw_requirement": "black ; black[jupyter]",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "datasets",
+                    "specifier": "",
+                    "raw_requirement": "datasets ; datasets",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "fire",
+                    "specifier": "",
+                    "raw_requirement": "fire ; fire",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "peft",
+                    "specifier": "==0.2.0",
+                    "raw_requirement": "peft==0.2.0 ; peft==0.10.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gradio",
+                    "specifier": ">=4.19.2",
+                    "raw_requirement": "gradio ; gradio>=4.19.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "sentencepiece",
+                    "specifier": "",
+                    "raw_requirement": "sentencepiece ; sentencepiece",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scipy",
+                    "specifier": "",
+                    "raw_requirement": "scipy ; scipy",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "packaging",
+                    "specifier": "==23.2",
+                    "raw_requirement": "packaging==23.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tokenizers",
+                    "specifier": "",
+                    "raw_requirement": "tokenizers",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "deepspeed",
+                    "specifier": ">=0.13.1",
+                    "raw_requirement": "deepspeed>=0.13.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "addict",
+                    "specifier": "",
+                    "raw_requirement": "addict",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pyyaml",
+                    "specifier": ">=6.0",
+                    "raw_requirement": "PyYAML>=6.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "wandb",
+                    "specifier": "",
+                    "raw_requirement": "wandb ; wandb ; wandb",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "einops",
+                    "specifier": "",
+                    "raw_requirement": "einops",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "optimum",
+                    "specifier": "==1.13.2",
+                    "raw_requirement": "optimum==1.13.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "hf-transfer",
+                    "specifier": "",
+                    "raw_requirement": "hf_transfer",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "colorama",
+                    "specifier": "",
+                    "raw_requirement": "colorama",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numba",
+                    "specifier": "",
+                    "raw_requirement": "numba",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numpy",
+                    "specifier": ">=1.24.4",
+                    "raw_requirement": "numpy>=1.24.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "mlflow",
+                    "specifier": "",
+                    "raw_requirement": "mlflow",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "bert-score",
+                    "specifier": "==0.3.13",
+                    "raw_requirement": "bert-score==0.3.13",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "evaluate",
+                    "specifier": "==0.4.0",
+                    "raw_requirement": "evaluate==0.4.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "rouge-score",
+                    "specifier": "==0.1.2",
+                    "raw_requirement": "rouge-score==0.1.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scikit-learn",
+                    "specifier": ">=1.5.0",
+                    "raw_requirement": "scikit-learn>=1.5.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pynvml",
+                    "specifier": "",
+                    "raw_requirement": "pynvml",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "art",
+                    "specifier": "",
+                    "raw_requirement": "art",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "fschat",
+                    "specifier": "",
+                    "raw_requirement": "fschat",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorboard",
+                    "specifier": "",
+                    "raw_requirement": "tensorboard",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "mamba-ssm",
+                    "specifier": "==1.1.1",
+                    "raw_requirement": "mamba-ssm==1.1.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "s3fs",
+                    "specifier": "",
+                    "raw_requirement": "s3fs",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gcsfs",
+                    "specifier": "",
+                    "raw_requirement": "gcsfs",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "trl",
+                    "specifier": "<=0.9.6,>=0.7.9",
+                    "raw_requirement": "trl>=0.7.9, <=0.9.6",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "openai",
+                    "specifier": "==0.28.0",
+                    "raw_requirement": "openai==0.28.0 ; openai==0.28.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/Speculative-Decoding/EAGLE/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "anthropic",
+                    "specifier": "==0.5.0",
+                    "raw_requirement": "anthropic==0.5.0 ; anthropic==0.5.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/Speculative-Decoding/EAGLE/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 168,
+          "packages": [
+               {
+                    "name": "absl-py",
+                    "specifier": ">=0.4",
+                    "raw_requirement": "absl-py>=0.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "aiobotocore",
+                    "specifier": "<4.0.0,>=2.19.0",
+                    "raw_requirement": "aiobotocore<4.0.0,>=2.19.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "s3fs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "aiohappyeyeballs",
+                    "specifier": ">=2.5.0",
+                    "raw_requirement": "aiohappyeyeballs>=2.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "aiohttp",
+                    "specifier": "<4,>=3.7.0,!=4.0.0a0,!=4.0.0a1,>=3.9.0,!=4.0.0a0,!=4.0.0a1,>=3.9.0,<4.0.0,>=3.12.0",
+                    "raw_requirement": "aiohttp<4,>=3.7.0 ; aiohttp ; aiohttp!=4.0.0a0,!=4.0.0a1,>=3.9.0 ; aiohttp!=4.0.0a0,!=4.0.0a1,>=3.9.0 ; aiohttp ; aiohttp<4.0.0,>=3.12.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fschat",
+                              "source": "public"
+                         },
+                         {
+                              "name": "s3fs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "openai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "aioitertools",
+                    "specifier": "<1.0.0,>=0.5.1",
+                    "raw_requirement": "aioitertools<1.0.0,>=0.5.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "aiosignal",
+                    "specifier": ">=1.4.0",
+                    "raw_requirement": "aiosignal>=1.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "alembic",
+                    "specifier": "!=1.10.0,<2",
+                    "raw_requirement": "alembic!=1.10.0,<2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "annotated-doc",
+                    "specifier": ">=0.0.2",
+                    "raw_requirement": "annotated-doc>=0.0.2 ; annotated-doc>=0.0.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "annotated-types",
+                    "specifier": ">=0.6.0",
+                    "raw_requirement": "annotated-types>=0.6.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "anyio",
+                    "specifier": "<5.0,>=3.0,<4,>=3.5.0,<5,>=3.6.2",
+                    "raw_requirement": "anyio<5.0,>=3.0 ; anyio<4,>=3.5.0 ; anyio ; anyio<5,>=3.6.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anthropic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "starlette",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "async-timeout",
+                    "specifier": "<6.0,>=4.0",
+                    "raw_requirement": "async-timeout<6.0,>=4.0; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "attrs",
+                    "specifier": ">=17.3.0",
+                    "raw_requirement": "attrs>=17.3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "blinker",
+                    "specifier": ">=1.9.0",
+                    "raw_requirement": "blinker>=1.9.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "flask",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "botocore",
+                    "specifier": "<1.43.1,>=1.42.90",
+                    "raw_requirement": "botocore<1.43.1,>=1.42.90",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "brotli",
+                    "specifier": ">=1.1.0",
+                    "raw_requirement": "brotli>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cachetools",
+                    "specifier": "<8,>=5.0.0",
+                    "raw_requirement": "cachetools<8,>=5.0.0 ; cachetools<8,>=5.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-tracing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "certifi",
+                    "specifier": "",
+                    "raw_requirement": "certifi ; certifi ; certifi",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "sentry-sdk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpcore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cffi",
+                    "specifier": ">=2.0.0",
+                    "raw_requirement": "cffi>=2.0.0; platform_python_implementation != \"PyPy\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cryptography",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "click",
+                    "specifier": ">=8.0.0,>=8.2.0,<9.0.0,>=8.4.2,>=7.0,<9,>=7.0,>=8.1.3",
+                    "raw_requirement": "click>=8.0.0 ; click>=8.2.0 ; click<9.0.0,>=8.4.2 ; click>=7.0 ; click<9,>=7.0 ; click>=8.1.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         },
+                         {
+                              "name": "flask",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cloudpickle",
+                    "specifier": "<4",
+                    "raw_requirement": "cloudpickle<4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "contourpy",
+                    "specifier": ">=1.0.1",
+                    "raw_requirement": "contourpy>=1.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cryptography",
+                    "specifier": "<49,>=43.0.0,>=38.0.3",
+                    "raw_requirement": "cryptography<49,>=43.0.0 ; cryptography>=38.0.3; python_version < \"3.14\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-auth",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cycler",
+                    "specifier": ">=0.10",
+                    "raw_requirement": "cycler>=0.10",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "databricks-sdk",
+                    "specifier": "<1,>=0.20.0",
+                    "raw_requirement": "databricks-sdk<1,>=0.20.0 ; databricks-sdk<1,>=0.20.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-tracing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "decorator",
+                    "specifier": ">4.1.2",
+                    "raw_requirement": "decorator>4.1.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "dill",
+                    "specifier": "<0.4.2,>=0.3.0,>=0.4.1",
+                    "raw_requirement": "dill<0.4.2,>=0.3.0 ; dill ; dill>=0.4.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "datasets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "evaluate",
+                              "source": "public"
+                         },
+                         {
+                              "name": "multiprocess",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "distro",
+                    "specifier": "<2,>=1.7.0",
+                    "raw_requirement": "distro<2,>=1.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "anthropic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "docker",
+                    "specifier": "<8,>=4.0.0",
+                    "raw_requirement": "docker<8,>=4.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "docstring-parser",
+                    "specifier": ">=0.16",
+                    "raw_requirement": "docstring-parser>=0.16",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tyro",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "exceptiongroup",
+                    "specifier": "",
+                    "raw_requirement": "exceptiongroup ; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fastapi",
+                    "specifier": "<1.0,>=0.115.2,<1",
+                    "raw_requirement": "fastapi<1.0,>=0.115.2 ; fastapi ; fastapi<1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fschat",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "filelock",
+                    "specifier": ">=3.10.0",
+                    "raw_requirement": "filelock ; filelock ; filelock>=3.10.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "datasets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "flask",
+                    "specifier": "<4,>=0.9",
+                    "raw_requirement": "Flask<4 ; flask>=0.9",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "flask-cors",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "flask-cors",
+                    "specifier": "<7",
+                    "raw_requirement": "Flask-CORS<7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fonttools",
+                    "specifier": ">=4.22.0",
+                    "raw_requirement": "fonttools>=4.22.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "frozenlist",
+                    "specifier": ">=1.1.1,>=1.1.0",
+                    "raw_requirement": "frozenlist>=1.1.1 ; frozenlist>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiosignal",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fsspec",
+                    "specifier": "<=2026.4.0,>=2023.1.0,>=2021.05.0,<2026.6.1,>=2026.6.0,>=2026.6.0,>=0.8.5,>=2023.5.0",
+                    "raw_requirement": "fsspec[http]<=2026.4.0,>=2023.1.0 ; fsspec[http] (>=2021.05.0) ; fsspec<2026.6.1,>=2026.6.0 ; fsspec>=2026.6.0 ; fsspec>=0.8.5 ; fsspec>=2023.5.0 ; fsspec",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "datasets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "evaluate",
+                              "source": "public"
+                         },
+                         {
+                              "name": "s3fs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "gitdb",
+                    "specifier": "<5,>=4.0.1",
+                    "raw_requirement": "gitdb<5,>=4.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gitpython",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "gitpython",
+                    "specifier": "!=3.1.29,>=1.0.0,<4,>=3.1.9",
+                    "raw_requirement": "gitpython!=3.1.29,>=1.0.0 ; gitpython<4,>=3.1.9",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-api-core",
+                    "specifier": "<3.0.0,>=2.17.1,<3.0.0,>=2.27.0,<3.0.0,>=2.11.0",
+                    "raw_requirement": "google-api-core[grpc]<3.0.0,>=2.17.1 ; google-api-core<3.0.0,>=2.27.0 ; google-api-core<3.0.0,>=2.11.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-cloud-storage-control",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-cloud-storage",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-cloud-core",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-auth",
+                    "specifier": ">=1.2,!=2.43.0,!=2.44.0,!=2.45.0,<3.0.0,>=2.15.0,!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1,<3.0.0,>=2.26.1,~=2.0,<3.0.0,>=2.14.1,!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+                    "raw_requirement": "google-auth>=1.2 ; google-auth!=2.43.0,!=2.44.0,!=2.45.0,<3.0.0,>=2.15.0 ; google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1 ; google-auth<3.0.0,>=2.26.1 ; google-auth~=2.0 ; google-auth<3.0.0,>=2.14.1 ; google-auth!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-auth-oauthlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-cloud-storage-control",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-cloud-storage",
+                              "source": "public"
+                         },
+                         {
+                              "name": "databricks-sdk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-api-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-cloud-core",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-auth-oauthlib",
+                    "specifier": "",
+                    "raw_requirement": "google-auth-oauthlib",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-cloud-core",
+                    "specifier": "<3.0.0,>=2.4.2",
+                    "raw_requirement": "google-cloud-core<3.0.0,>=2.4.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-cloud-storage",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-cloud-storage",
+                    "specifier": ">=3.11.0",
+                    "raw_requirement": "google-cloud-storage>=3.11.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-cloud-storage-control",
+                    "specifier": "",
+                    "raw_requirement": "google-cloud-storage-control",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-crc32c",
+                    "specifier": "<2.0.0,>=1.6.0,<2.0.0,>=1.0.0",
+                    "raw_requirement": "google-crc32c<2.0.0,>=1.6.0 ; google-crc32c<2.0.0,>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-cloud-storage",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-resumable-media",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-resumable-media",
+                    "specifier": "<3.0.0,>=2.7.2",
+                    "raw_requirement": "google-resumable-media<3.0.0,>=2.7.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-cloud-storage",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "googleapis-common-protos",
+                    "specifier": "<2.0.0,>=1.63.2,>=1.5.5",
+                    "raw_requirement": "googleapis-common-protos<2.0.0,>=1.63.2 ; googleapis-common-protos[grpc]<2.0.0,>=1.63.2 ; googleapis-common-protos>=1.5.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-api-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpc-google-iam-v1",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpcio-status",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "gradio-client",
+                    "specifier": "==2.5.0",
+                    "raw_requirement": "gradio-client==2.5.0 ; gradio-client<3.0,>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "hf-gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "graphene",
+                    "specifier": "<4",
+                    "raw_requirement": "graphene<4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "graphql-core",
+                    "specifier": "<3.3,>=3.1,<3.3,>=3.2",
+                    "raw_requirement": "graphql-core<3.3,>=3.1 ; graphql-core (<3.3,>=3.2)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "graphene",
+                              "source": "public"
+                         },
+                         {
+                              "name": "graphql-relay",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "graphql-relay",
+                    "specifier": "<3.3,>=3.1",
+                    "raw_requirement": "graphql-relay<3.3,>=3.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "graphene",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "groovy",
+                    "specifier": "~=0.1",
+                    "raw_requirement": "groovy~=0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "grpc-google-iam-v1",
+                    "specifier": "<1.0.0,>=0.14.0",
+                    "raw_requirement": "grpc-google-iam-v1<1.0.0,>=0.14.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-cloud-storage-control",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "grpcio",
+                    "specifier": "<2.0,>=1.74.0,<2.0.0,>=1.59.0,<2.0.0,>=1.41.0,<2.0.0,>=1.44.0,<2.0.0,>=1.44.0,>=1.83.0rc1",
+                    "raw_requirement": "grpcio<2.0,>=1.74.0 ; grpcio<2.0.0,>=1.59.0 ; grpcio<2.0.0,>=1.41.0; extra == \"grpc\" ; grpcio<2.0.0,>=1.44.0 ; grpcio<2.0.0,>=1.44.0; extra == \"grpc\" ; grpcio>=1.83.0rc1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-cloud-storage-control",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-api-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpc-google-iam-v1",
+                              "source": "public"
+                         },
+                         {
+                              "name": "googleapis-common-protos",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpcio-status",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "grpcio-status",
+                    "specifier": "<2.0.0,>=1.41.0",
+                    "raw_requirement": "grpcio-status<2.0.0,>=1.41.0; extra == \"grpc\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-api-core",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "gunicorn",
+                    "specifier": "<27",
+                    "raw_requirement": "gunicorn<27; platform_system != \"Windows\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "h11",
+                    "specifier": ">=0.8,>=0.16",
+                    "raw_requirement": "h11>=0.8 ; h11>=0.16",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpcore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "hf-gradio",
+                    "specifier": "<1.0,>=0.4.1",
+                    "raw_requirement": "hf-gradio<1.0,>=0.4.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "hf-xet",
+                    "specifier": "<2.0.0,>=1.5.1",
+                    "raw_requirement": "hf-xet<2.0.0,>=1.5.1; platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"arm64\" or platform_machine == \"aarch64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "hjson",
+                    "specifier": "",
+                    "raw_requirement": "hjson",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "deepspeed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpcore",
+                    "specifier": "==1.*",
+                    "raw_requirement": "httpcore==1.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpx",
+                    "specifier": "<1.0.0,<1.0,>=0.24.1,<1,>=0.23.0,<1,>=0.23.0,>=0.24.1",
+                    "raw_requirement": "httpx<1.0.0 ; httpx<1.0,>=0.24.1 ; httpx ; httpx<1,>=0.23.0 ; httpx<1,>=0.23.0 ; httpx>=0.24.1 ; httpx",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "datasets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fschat",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anthropic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "safehttpx",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "huey",
+                    "specifier": "<4,>=2.5.4",
+                    "raw_requirement": "huey<4,>=2.5.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "huggingface-hub",
+                    "specifier": "<2.0,>=0.25.0,<2.0,>=1.2.0,<2.0,>=0.16.4,>=0.7.0,<2.0,>=1.5.0,<2.0,>=0.19.3",
+                    "raw_requirement": "huggingface-hub ; huggingface-hub<2.0,>=0.25.0 ; huggingface-hub<2.0,>=1.2.0 ; huggingface-hub<2.0,>=0.16.4 ; huggingface-hub (>=0.7.0) ; huggingface-hub<2.0,>=1.5.0 ; huggingface-hub<2.0,>=0.19.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "accelerate",
+                              "source": "public"
+                         },
+                         {
+                              "name": "datasets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tokenizers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "evaluate",
+                              "source": "public"
+                         },
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "idna",
+                    "specifier": ">=2.8,>=2.0",
+                    "raw_requirement": "idna ; idna (>=2.8) ; idna>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "yarl",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "importlib-metadata",
+                    "specifier": "!=4.7.0,<10,>=3.7.0",
+                    "raw_requirement": "importlib_metadata!=4.7.0,<10,>=3.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "itsdangerous",
+                    "specifier": ">=2.2.0",
+                    "raw_requirement": "itsdangerous>=2.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "flask",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": "<4.0,>=3.1.2",
+                    "raw_requirement": "jinja2<4.0 ; jinja2 ; jinja2>=3.1.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "flask",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jmespath",
+                    "specifier": "<2.0.0,>=0.7.1",
+                    "raw_requirement": "jmespath<2.0.0,>=0.7.1 ; jmespath<2.0.0,>=0.7.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         },
+                         {
+                              "name": "botocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "joblib",
+                    "specifier": ">=1.4.0",
+                    "raw_requirement": "joblib>=1.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "kiwisolver",
+                    "specifier": ">=1.3.1",
+                    "raw_requirement": "kiwisolver>=1.3.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "latex2mathml",
+                    "specifier": "",
+                    "raw_requirement": "latex2mathml; python_version >= \"3.8.1\" and extra == \"all\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "markdown2",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "llvmlite",
+                    "specifier": "<0.49,>=0.48.0dev0",
+                    "raw_requirement": "llvmlite<0.49,>=0.48.0dev0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "numba",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mako",
+                    "specifier": "",
+                    "raw_requirement": "Mako",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "alembic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markdown",
+                    "specifier": ">=2.6.8",
+                    "raw_requirement": "markdown>=2.6.8",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markdown-it-py",
+                    "specifier": ">=2.2.0",
+                    "raw_requirement": "markdown-it-py>=2.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rich",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markdown2",
+                    "specifier": "",
+                    "raw_requirement": "markdown2[all]",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fschat",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markupsafe",
+                    "specifier": "<4.0,>=2.0,>=2.0,>=2.1.1,>=2.1.1,>=0.9.2",
+                    "raw_requirement": "markupsafe<4.0,>=2.0 ; MarkupSafe>=2.0 ; markupsafe>=2.1.1 ; markupsafe>=2.1.1 ; MarkupSafe>=0.9.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jinja2",
+                              "source": "private"
+                         },
+                         {
+                              "name": "flask",
+                              "source": "public"
+                         },
+                         {
+                              "name": "werkzeug",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mako",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "matplotlib",
+                    "specifier": "<4",
+                    "raw_requirement": "matplotlib<4 ; matplotlib",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "bert-score",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mdurl",
+                    "specifier": "~=0.1",
+                    "raw_requirement": "mdurl~=0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "markdown-it-py",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mlflow-skinny",
+                    "specifier": "==3.14.0",
+                    "raw_requirement": "mlflow-skinny==3.14.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mlflow-tracing",
+                    "specifier": "==3.14.0",
+                    "raw_requirement": "mlflow-tracing==3.14.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mpmath",
+                    "specifier": "<1.4,>=1.1.0",
+                    "raw_requirement": "mpmath<1.4,>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sympy",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "msgpack",
+                    "specifier": "",
+                    "raw_requirement": "msgpack",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "deepspeed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "multidict",
+                    "specifier": "<7.0,>=4.5,<7.0.0,>=6.0.0,>=4.0",
+                    "raw_requirement": "multidict<7.0,>=4.5 ; multidict<7.0.0,>=6.0.0 ; multidict>=4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         },
+                         {
+                              "name": "yarl",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "multiprocess",
+                    "specifier": "<0.70.20",
+                    "raw_requirement": "multiprocess<0.70.20 ; multiprocess",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "datasets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "evaluate",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mypy-extensions",
+                    "specifier": ">=0.4.3",
+                    "raw_requirement": "mypy-extensions>=0.4.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "narwhals",
+                    "specifier": ">=2.0.1",
+                    "raw_requirement": "narwhals>=2.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "networkx",
+                    "specifier": ">=2.5.1",
+                    "raw_requirement": "networkx>=2.5.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nh3",
+                    "specifier": "",
+                    "raw_requirement": "nh3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fschat",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ninja",
+                    "specifier": "",
+                    "raw_requirement": "ninja",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "deepspeed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-ml-py",
+                    "specifier": ">=12.0.0",
+                    "raw_requirement": "nvidia-ml-py>=12.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pynvml",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "oauthlib",
+                    "specifier": ">=3.0.0",
+                    "raw_requirement": "oauthlib>=3.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests-oauthlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "opentelemetry-api",
+                    "specifier": "==1.43.0",
+                    "raw_requirement": "opentelemetry-api<3,>=1.9.0 ; opentelemetry-api<3,>=1.9.0 ; opentelemetry-api==1.43.0 ; opentelemetry-api==1.43.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-tracing",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opentelemetry-sdk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opentelemetry-semantic-conventions",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "opentelemetry-proto",
+                    "specifier": "<3,>=1.9.0",
+                    "raw_requirement": "opentelemetry-proto<3,>=1.9.0 ; opentelemetry-proto<3,>=1.9.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-tracing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "opentelemetry-sdk",
+                    "specifier": ">=1.4.0,<3,>=1.9.0,<3,>=1.9.0",
+                    "raw_requirement": "opentelemetry-sdk>=1.4.0 ; opentelemetry-sdk<3,>=1.9.0 ; opentelemetry-sdk<3,>=1.9.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sentry-sdk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-tracing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "opentelemetry-semantic-conventions",
+                    "specifier": "==0.64b0",
+                    "raw_requirement": "opentelemetry-semantic-conventions==0.64b0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "opentelemetry-sdk",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "orjson",
+                    "specifier": "~=3.0",
+                    "raw_requirement": "orjson~=3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pandas",
+                    "specifier": "<4.0,>=1.0,<3,>=1.0.1",
+                    "raw_requirement": "pandas ; pandas<4.0,>=1.0 ; pandas<3 ; pandas (>=1.0.1) ; pandas",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "datasets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "bert-score",
+                              "source": "public"
+                         },
+                         {
+                              "name": "evaluate",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pathspec",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "pathspec>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pillow",
+                    "specifier": "<13.0,>=8.0,>=9",
+                    "raw_requirement": "pillow<13.0,>=8.0 ; pillow ; pillow>=9",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "platformdirs",
+                    "specifier": ">=2",
+                    "raw_requirement": "platformdirs>=2 ; platformdirs",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "prettytable",
+                    "specifier": ">=3.9",
+                    "raw_requirement": "prettytable>=3.9",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "skops",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "prompt-toolkit",
+                    "specifier": ">=3.0.0",
+                    "raw_requirement": "prompt-toolkit >=3.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fschat",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "propcache",
+                    "specifier": ">=0.2.0,>=0.2.1",
+                    "raw_requirement": "propcache>=0.2.0 ; propcache>=0.2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "yarl",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "proto-plus",
+                    "specifier": "<2.0.0,>=1.22.3,<2.0.0,>=1.24.0",
+                    "raw_requirement": "proto-plus<2.0.0,>=1.22.3 ; proto-plus<2.0.0,>=1.24.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-cloud-storage-control",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-api-core",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "protobuf",
+                    "specifier": "!=5.28.0,!=5.29.0,<8,>4.21.0,<8.0.0,>=6.31.1,<8,>=3.12.0,<8,>=3.12.0,<8.0.0,>=4.25.8,!=5.26.*,!=5.27.*,!=5.28.*,!=5.29.0,!=5.29.1,!=5.29.2,!=5.29.3,!=5.29.4,!=6.30.0,!=6.30.1,!=6.31.0,<7.0,>=4.25.8,<8.0,>=5.0,<8.0.0,>=5.29.6,<8.0.0,>=4.25.8,<8.0.0,>=4.25.8,<8.0.0,>=4.25.8,<8.0.0,>=7.35.1",
+                    "raw_requirement": "protobuf!=5.28.0,!=5.29.0,<8,>4.21.0 ; protobuf<8.0.0,>=6.31.1 ; protobuf<8,>=3.12.0 ; protobuf<8,>=3.12.0 ; protobuf<8.0.0,>=4.25.8 ; protobuf!=5.26.*,!=5.27.*,!=5.28.*,!=5.29.0,!=5.29.1,!=5.29.2,!=5.29.3,!=5.29.4,!=6.30.0,!=6.30.1,!=6.31.0,<7.0,>=4.25.8 ; protobuf<8.0,>=5.0 ; protobuf<8.0.0,>=5.29.6 ; protobuf<8.0.0,>=4.25.8 ; protobuf<8.0.0,>=4.25.8 ; protobuf<8.0.0,>=4.25.8 ; protobuf<8.0.0,>=7.35.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-tracing",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-cloud-storage-control",
+                              "source": "public"
+                         },
+                         {
+                              "name": "databricks-sdk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opentelemetry-proto",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-api-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "proto-plus",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpc-google-iam-v1",
+                              "source": "public"
+                         },
+                         {
+                              "name": "googleapis-common-protos",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpcio-status",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "psutil",
+                    "specifier": "",
+                    "raw_requirement": "psutil ; psutil ; psutil",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "accelerate",
+                              "source": "public"
+                         },
+                         {
+                              "name": "peft",
+                              "source": "public"
+                         },
+                         {
+                              "name": "deepspeed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "py-cpuinfo",
+                    "specifier": "",
+                    "raw_requirement": "py-cpuinfo",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "deepspeed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyarrow",
+                    "specifier": ">=21.0.0,<25,>=4.0.0",
+                    "raw_requirement": "pyarrow>=21.0.0 ; pyarrow<25,>=4.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "datasets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyasn1",
+                    "specifier": "<0.7.0,>=0.6.1",
+                    "raw_requirement": "pyasn1<0.7.0,>=0.6.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pyasn1-modules",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyasn1-modules",
+                    "specifier": ">=0.2.1",
+                    "raw_requirement": "pyasn1-modules>=0.2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-auth",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pycparser",
+                    "specifier": "",
+                    "raw_requirement": "pycparser; implementation_name != \"PyPy\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cffi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydantic",
+                    "specifier": "<=3.0,>=2.0,>=2.0.0,<3,>=2.6,<3,>=1.9.0,>=2.9.0,<3,>=2.0.0,<3,>=2.0.0",
+                    "raw_requirement": "pydantic<=3.0,>=2.0 ; pydantic>=2.0.0 ; pydantic<3,>=2.6 ; pydantic ; pydantic<3,>=1.9.0 ; pydantic>=2.9.0 ; pydantic<3,>=2.0.0 ; pydantic<3,>=2.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "deepspeed",
+                              "source": "public"
+                         },
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fschat",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anthropic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-tracing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydantic-core",
+                    "specifier": "==2.47.0",
+                    "raw_requirement": "pydantic-core==2.47.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydub",
+                    "specifier": "<1.0",
+                    "raw_requirement": "pydub<1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pygments",
+                    "specifier": ">=2.7.3,<3.0.0,>=2.13.0",
+                    "raw_requirement": "pygments>=2.7.3; extra == \"all\" ; pygments<3.0.0,>=2.13.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "markdown2",
+                              "source": "public"
+                         },
+                         {
+                              "name": "rich",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyparsing",
+                    "specifier": ">=3",
+                    "raw_requirement": "pyparsing>=3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-dateutil",
+                    "specifier": ">=2.8.2,<3,>=2.7.0,>=2.7,<3.0.0,>=2.1,<3.0.0,>=2.1",
+                    "raw_requirement": "python-dateutil>=2.8.2 ; python-dateutil<3,>=2.7.0 ; python-dateutil>=2.7 ; python-dateutil<3.0.0,>=2.1 ; python-dateutil<3.0.0,>=2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         },
+                         {
+                              "name": "graphene",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         },
+                         {
+                              "name": "botocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-dotenv",
+                    "specifier": "<2,>=0.19.0",
+                    "raw_requirement": "python-dotenv<2,>=0.19.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-multipart",
+                    "specifier": "<1.0,>=0.0.18",
+                    "raw_requirement": "python-multipart<1.0,>=0.0.18",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pytokens",
+                    "specifier": "~=0.4.0",
+                    "raw_requirement": "pytokens~=0.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pytz",
+                    "specifier": ">=2017.2,>=2020.1",
+                    "raw_requirement": "pytz>=2017.2 ; pytz>=2020.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "regex",
+                    "specifier": ">=2025.10.22",
+                    "raw_requirement": "regex>=2025.10.22 ; regex",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tiktoken",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "requests",
+                    "specifier": ">=2.32.2,<3,>=2.0.0,>=2.19.0,>=2.20,<3,>=2.17.3,>=2.26.0,<3.0.0,>=2.22.0,<3,>=2.28.1,>=2.0.0,<3.0.0,>=2.33.0",
+                    "raw_requirement": "requests>=2.32.2 ; requests<3,>=2.0.0 ; requests ; requests (>=2.19.0) ; requests ; requests ; requests >=2.20 ; requests<3,>=2.17.3 ; requests>=2.26.0 ; requests ; requests<3.0.0,>=2.22.0 ; requests<3,>=2.28.1 ; requests>=2.0.0 ; requests<3.0.0,>=2.33.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "datasets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "bert-score",
+                              "source": "public"
+                         },
+                         {
+                              "name": "evaluate",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fschat",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gcsfs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "openai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         },
+                         {
+                              "name": "docker",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tiktoken",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-cloud-storage",
+                              "source": "public"
+                         },
+                         {
+                              "name": "databricks-sdk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "requests-oauthlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-api-core",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "requests-oauthlib",
+                    "specifier": ">=0.7.0",
+                    "raw_requirement": "requests-oauthlib>=0.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-auth-oauthlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "responses",
+                    "specifier": "<0.19",
+                    "raw_requirement": "responses (<0.19)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "evaluate",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "rich",
+                    "specifier": ">=10.0.0,>=13.8.0",
+                    "raw_requirement": "rich >=10.0.0 ; rich>=13.8.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fschat",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "safehttpx",
+                    "specifier": "<0.2.0,>=0.1.7",
+                    "raw_requirement": "safehttpx<0.2.0,>=0.1.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "safetensors",
+                    "specifier": ">=0.8.0",
+                    "raw_requirement": "safetensors>=0.8.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "semantic-version",
+                    "specifier": "~=2.0",
+                    "raw_requirement": "semantic-version~=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sentry-sdk",
+                    "specifier": ">=2.0.0",
+                    "raw_requirement": "sentry-sdk>=2.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "setuptools",
+                    "specifier": ">=41.0.0,>=77.0.3",
+                    "raw_requirement": "setuptools>=41.0.0 ; setuptools>=77.0.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "shellingham",
+                    "specifier": ">=1.3.0",
+                    "raw_requirement": "shellingham>=1.3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "typer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "shortuuid",
+                    "specifier": "",
+                    "raw_requirement": "shortuuid",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fschat",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "six",
+                    "specifier": ">=1.5",
+                    "raw_requirement": "six >=1.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "python-dateutil",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "skops",
+                    "specifier": "<1",
+                    "raw_requirement": "skops<1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "smmap",
+                    "specifier": "<6,>=3.0.1",
+                    "raw_requirement": "smmap<6,>=3.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gitdb",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sniffio",
+                    "specifier": ">=1.1",
+                    "raw_requirement": "sniffio (>=1.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sqlalchemy",
+                    "specifier": "<3,>=1.4.0,>=1.4.23",
+                    "raw_requirement": "sqlalchemy<3,>=1.4.0 ; SQLAlchemy>=1.4.23",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "alembic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sqlparse",
+                    "specifier": "<1,>=0.4.0",
+                    "raw_requirement": "sqlparse<1,>=0.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "starlette",
+                    "specifier": "<2.0,>=1.0.1,>=0.46.0,<2",
+                    "raw_requirement": "starlette<2.0,>=1.0.1 ; starlette>=0.46.0 ; starlette<2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sympy",
+                    "specifier": ">=1.13.3",
+                    "raw_requirement": "sympy>=1.13.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "tensorboard-data-server",
+                    "specifier": "<0.8.0,>=0.7.0",
+                    "raw_requirement": "tensorboard-data-server<0.8.0,>=0.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "termcolor",
+                    "specifier": "",
+                    "raw_requirement": "termcolor",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fire",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "threadpoolctl",
+                    "specifier": ">=3.5.0",
+                    "raw_requirement": "threadpoolctl>=3.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tiktoken",
+                    "specifier": "",
+                    "raw_requirement": "tiktoken",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fschat",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tomli",
+                    "specifier": ">=1.1.0",
+                    "raw_requirement": "tomli>=1.1.0; python_version < \"3.11\" ; tomli; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "alembic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tomlkit",
+                    "specifier": "<0.15.0,>=0.12.0",
+                    "raw_requirement": "tomlkit<0.15.0,>=0.12.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "torch",
+                    "specifier": ">=1.10.0,<3,>=2.3,>=1.13.0,>=2.0.0,>=1.0.0,>=1.4.0",
+                    "raw_requirement": "torch >=1.10.0 ; torch<3,>=2.3 ; torch (>=1.13.0) ; torch>=2.0.0 ; torch (>=1.0.0) ; torch>=1.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "accelerate",
+                              "source": "public"
+                         },
+                         {
+                              "name": "bitsandbytes",
+                              "source": "public"
+                         },
+                         {
+                              "name": "peft",
+                              "source": "public"
+                         },
+                         {
+                              "name": "deepspeed",
+                              "source": "public"
+                         },
+                         {
+                              "name": "bert-score",
+                              "source": "public"
+                         },
+                         {
+                              "name": "trl",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tqdm",
+                    "specifier": ">=4.66.3,>=4.31.1,>=4.62.1,>=4.42.1,>=4.60",
+                    "raw_requirement": "tqdm>=4.66.3 ; tqdm ; tqdm (>=4.31.1) ; tqdm (>=4.62.1) ; tqdm ; tqdm>=4.42.1 ; tqdm>=4.60",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "datasets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "deepspeed",
+                              "source": "public"
+                         },
+                         {
+                              "name": "bert-score",
+                              "source": "public"
+                         },
+                         {
+                              "name": "evaluate",
+                              "source": "public"
+                         },
+                         {
+                              "name": "openai",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "transformers",
+                    "specifier": ">=3.0.0,>=4.31.0",
+                    "raw_requirement": "transformers ; transformers (>=3.0.0) ; transformers>=4.31.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "peft",
+                              "source": "public"
+                         },
+                         {
+                              "name": "bert-score",
+                              "source": "public"
+                         },
+                         {
+                              "name": "trl",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typeguard",
+                    "specifier": ">=4.0.0",
+                    "raw_requirement": "typeguard>=4.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tyro",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typer",
+                    "specifier": "<1.0,>=0.12",
+                    "raw_requirement": "typer<1.0,>=0.12 ; typer ; typer",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "hf-gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=4.0.1,~=4.0,<5,>=4.8,<5,>=4.5,>=4.10.0,>=4.1.0,>=4.8.0,~=4.0,>=4.15.0,>=4.10.0,>=4.0,<5,>=4.0.0,>=4.6.0,>=4.4,>=4.12,>=4.13.2,<5,>=4.7.1,>=4.6.0,~=4.12,<5.0.0,>=4.14.0,>=4.13.0,>=4.6.0,>=4.12.0,>=4.14.1,>=4.5.0,>=4.5.0,>=4.2,>=4.1.0,>=4.14.0,>=4.5.0",
+                    "raw_requirement": "typing-extensions>=4.0.1; python_version < \"3.11\" ; typing-extensions~=4.0 ; typing-extensions<5,>=4.8 ; typing-extensions<5,>=4.5 ; typing-extensions>=4.10.0 ; typing-extensions>=4.1.0 ; typing-extensions>=4.8.0 ; typing-extensions~=4.0 ; typing-extensions>=4.15.0 ; typing-extensions>=4.10.0; python_version < \"3.13\" ; typing-extensions>=4.0; python_version < \"3.11\" ; typing-extensions<5,>=4.0.0 ; typing_extensions>=4.6.0; python_version < \"3.11\" ; typing_extensions>=4.4; python_version < \"3.13\" ; typing-extensions>=4.12 ; typing-extensions>=4.13.2; python_full_version < \"3.11\" ; typing-extensions<5,>=4.7.1 ; typing-extensions>=4.6.0 ; typing-extensions~=4.12 ; typing-extensions<5.0.0,>=4.14.0; python_version < \"3.11\" ; typing-extensions>=4.13.0 ; typing-extensions>=4.6.0; python_version < \"3.13\" ; typing-extensions>=4.12.0 ; typing-extensions>=4.14.1 ; typing-extensions>=4.5.0 ; typing-extensions>=4.5.0 ; typing-extensions>=4.2; python_version < \"3.13\" ; typing-extensions>=4.1.0; python_version < \"3.11\" ; typing_extensions>=4.14.0 ; typing-extensions>=4.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anthropic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "starlette",
+                              "source": "public"
+                         },
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         },
+                         {
+                              "name": "flask-cors",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         },
+                         {
+                              "name": "alembic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cryptography",
+                              "source": "public"
+                         },
+                         {
+                              "name": "graphene",
+                              "source": "public"
+                         },
+                         {
+                              "name": "sqlalchemy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpcio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tyro",
+                              "source": "public"
+                         },
+                         {
+                              "name": "exceptiongroup",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typing-inspection",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opentelemetry-sdk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opentelemetry-api",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiosignal",
+                              "source": "public"
+                         },
+                         {
+                              "name": "multidict",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typeguard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opentelemetry-semantic-conventions",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-inspection",
+                    "specifier": ">=0.4.2",
+                    "raw_requirement": "typing-inspection>=0.4.2 ; typing-inspection>=0.4.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tyro",
+                    "specifier": ">=0.5.11",
+                    "raw_requirement": "tyro>=0.5.11",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "trl",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tzdata",
+                    "specifier": ">=2022.7",
+                    "raw_requirement": "tzdata>=2022.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "urllib3",
+                    "specifier": ">=1.26.11,>=1.26.0,<3,>=1.26,!=2.2.0,<3,>=1.25.4",
+                    "raw_requirement": "urllib3>=1.26.11 ; urllib3>=1.26.0 ; urllib3<3,>=1.26 ; urllib3!=2.2.0,<3,>=1.25.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sentry-sdk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "docker",
+                              "source": "public"
+                         },
+                         {
+                              "name": "databricks-sdk",
+                              "source": "public"
+                         },
+                         {
+                              "name": "botocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "uvicorn",
+                    "specifier": ">=0.14.0,<1",
+                    "raw_requirement": "uvicorn>=0.14.0 ; uvicorn ; uvicorn<1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fschat",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mlflow-skinny",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "wavedrom",
+                    "specifier": "",
+                    "raw_requirement": "wavedrom; extra == \"all\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "markdown2",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "wcwidth",
+                    "specifier": ">=0.3.5",
+                    "raw_requirement": "wcwidth ; wcwidth>=0.3.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "prompt-toolkit",
+                              "source": "public"
+                         },
+                         {
+                              "name": "prettytable",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "werkzeug",
+                    "specifier": ">=1.0.1,>=0.7,>=3.1.0",
+                    "raw_requirement": "werkzeug>=1.0.1 ; Werkzeug>=0.7 ; werkzeug>=3.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "flask-cors",
+                              "source": "public"
+                         },
+                         {
+                              "name": "flask",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "wrapt",
+                    "specifier": "<3.0.0,>=1.10.10",
+                    "raw_requirement": "wrapt<3.0.0,>=1.10.10",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiobotocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "xxhash",
+                    "specifier": "",
+                    "raw_requirement": "xxhash ; xxhash",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "datasets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "evaluate",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "yarl",
+                    "specifier": "<2.0,>=1.17.0",
+                    "raw_requirement": "yarl<2.0,>=1.17.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "zipp",
+                    "specifier": ">=0.5",
+                    "raw_requirement": "zipp >=0.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "importlib-metadata",
+                              "source": "private"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 2,
+          "packages": {
+               "colorama": {
+                    "private version": "0.4.6",
+                    "public version": "0.4.6",
+                    "highest public (unconstrained)": "0.4.6"
+               },
+               "numpy": {
+                    "private version": "2.4.4",
+                    "public version": "2.5.1",
+                    "highest public (unconstrained)": "2.5.1",
+                    "declared specifier": ">=1.24.4",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 40
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 16,
+          "packages": {
+               "certifi": {
+                    "private version": "2022.12.7",
+                    "public version": "2026.6.17",
+                    "highest public (unconstrained)": "2026.6.17"
+               },
+               "filelock": {
+                    "private version": "3.29.0",
+                    "public version": "3.29.7",
+                    "highest public (unconstrained)": "3.29.7",
+                    "declared specifier": ">=3.10.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 56
+               },
+               "idna": {
+                    "private version": "3.4",
+                    "public version": "3.18",
+                    "highest public (unconstrained)": "3.18",
+                    "declared specifier": ">=2.8,>=2.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 22
+               },
+               "importlib-metadata": {
+                    "private version": "7.1.0",
+                    "public version": "9.0.0",
+                    "highest public (unconstrained)": "9.0.0",
+                    "declared specifier": "!=4.7.0,<10,>=3.7.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 77
+               },
+               "jinja2": {
+                    "private version": "3.1.6",
+                    "public version": "3.1.6",
+                    "highest public (unconstrained)": "3.1.6",
+                    "declared specifier": "<4.0,>=3.1.2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 5
+               },
+               "markupsafe": {
+                    "private version": "3.0.3",
+                    "public version": "3.0.3",
+                    "highest public (unconstrained)": "3.0.3",
+                    "declared specifier": "<4.0,>=2.0,>=2.0,>=2.1.1,>=2.1.1,>=0.9.2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 9
+               },
+               "mpmath": {
+                    "private version": "1.3.0",
+                    "public version": "1.3.0",
+                    "highest public (unconstrained)": "1.5.0a0",
+                    "declared specifier": "<1.4,>=1.1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "mypy-extensions": {
+                    "private version": "1.0.0",
+                    "public version": "1.1.0",
+                    "highest public (unconstrained)": "1.1.0",
+                    "declared specifier": ">=0.4.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "networkx": {
+                    "private version": "3.6.1",
+                    "public version": "3.6.1",
+                    "highest public (unconstrained)": "3.6.1",
+                    "declared specifier": ">=2.5.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 40
+               },
+               "pillow": {
+                    "private version": "12.2.0",
+                    "public version": "12.3.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": "<13.0,>=8.0,>=9",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 23
+               },
+               "setuptools": {
+                    "private version": "78.1.0",
+                    "public version": "83.0.0",
+                    "highest public (unconstrained)": "83.0.0",
+                    "declared specifier": ">=41.0.0,>=77.0.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 25
+               },
+               "sympy": {
+                    "private version": "1.14.0",
+                    "public version": "1.14.0",
+                    "highest public (unconstrained)": "1.14.0",
+                    "declared specifier": ">=1.13.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "tqdm": {
+                    "private version": "4.66.5",
+                    "public version": "4.68.4",
+                    "highest public (unconstrained)": "4.68.4",
+                    "declared specifier": ">=4.66.3,>=4.31.1,>=4.62.1,>=4.42.1,>=4.60",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 13
+               },
+               "typing-extensions": {
+                    "private version": "4.15.0",
+                    "public version": "4.16.0",
+                    "highest public (unconstrained)": "4.16.0",
+                    "declared specifier": ">=4.0.1,~=4.0,<5,>=4.8,<5,>=4.5,>=4.10.0,>=4.1.0,>=4.8.0,~=4.0,>=4.15.0,>=4.10.0,>=4.0,<5,>=4.0.0,>=4.6.0,>=4.4,>=4.12,>=4.13.2,<5,>=4.7.1,>=4.6.0,~=4.12,<5.0.0,>=4.14.0,>=4.13.0,>=4.6.0,>=4.12.0,>=4.14.1,>=4.5.0,>=4.5.0,>=4.2,>=4.1.0,>=4.14.0,>=4.5.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "urllib3": {
+                    "private version": "1.26.13",
+                    "public version": "2.7.0",
+                    "highest public (unconstrained)": "2.7.0",
+                    "declared specifier": ">=1.26.11,>=1.26.0,<3,>=1.26,!=2.2.0,<3,>=1.25.4",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 34
+               },
+               "zipp": {
+                    "private version": "3.19.2",
+                    "public version": "4.1.0",
+                    "highest public (unconstrained)": "4.1.0",
+                    "declared specifier": ">=0.5",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 56
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "mixed_source_expanded",
+          "private_index_expansions": 19,
+          "pypi_metadata_expansions": 183,
+          "pruned_public_nodes": 0
+     }
+}

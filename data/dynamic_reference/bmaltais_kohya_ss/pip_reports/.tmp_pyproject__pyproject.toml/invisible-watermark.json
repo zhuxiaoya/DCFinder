@@ -1,0 +1,61 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/2b/57/18b5a914f6d7994dd349252873169e946dc824328e9a37fd15ed836deedc/invisible_watermark-0.2.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=644311beed9cfe4a9a5a4a46c740f47800cef184fe2e1297f3f4542e2d992f8b",
+          "hashes": {
+            "sha256": "644311beed9cfe4a9a5a4a46c740f47800cef184fe2e1297f3f4542e2d992f8b"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "invisible-watermark",
+        "version": "0.2.0",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "The library for creating and decoding invisible image watermarks",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/ShieldMnt/invisible-watermark",
+        "author": "Qingquan Wang",
+        "author_email": "wangqq1103@gmail.com",
+        "license": "UNKNOWN",
+        "classifier": [
+          "Programming Language :: Python :: 3",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: POSIX :: Linux"
+        ],
+        "requires_dist": [
+          "Pillow (>=6.0.0)",
+          "PyWavelets (>=1.1.1)",
+          "numpy (>=1.17.0)",
+          "opencv-python (>=4.1.0.25)",
+          "torch"
+        ],
+        "requires_python": ">=3.6",
+        "description": "# invisible-watermark\n[![PyPI](https://img.shields.io/pypi/v/invisible-watermark)](https://pypi.org/project/invisible-watermark/)\n[![License](https://img.shields.io/pypi/l/invisible-watermark.svg)](https://github.com/ShieldMnt/invisible-watermark/blob/main/LICENSE)\n![Python](https://img.shields.io/badge/python->=3.6-green.svg)\n![Platform](https://img.shields.io/badge/platform-%20linux%20-green.svg)\n[![Downloads](https://pepy.tech/badge/invisible-watermark)](https://pepy.tech/project/invisible-watermark)\n\ninvisible-watermark is a **python** library and command line tool for creating invisible watermark over image (a.k.a. **blink image watermark**, **digital image watermark**). The algorithm doesn't rely on the original image.\n\n**Note that** this library is still experimental and it doesn't support GPU acceleration, carefully deploy it on the production environment. The default method **dwtDCT**(one variant of frequency methods) is ready for on-the-fly embedding, the other methods are too slow on a CPU only environment.\n\n\n[supported algorithms](https://github.com/ShieldMnt/invisible-watermark#supported-algorithms)\n* [Discrete wavelet transform](https://en.wikipedia.org/wiki/Discrete_wavelet_transform) + [Discrete cosine transform](https://en.wikipedia.org/wiki/Discrete_cosine_transform) frequency embedding algorithm variants.\n* [RivaGAN](https://github.com/DAI-Lab/RivaGAN), a deep-learning model trained from Hollywood2 movie clips dataset.\n\n[speed](https://github.com/ShieldMnt/invisible-watermark#running-speed-cpu-only)\n* default embedding method ```dwtDct``` is fast and suitable for on-the-fly embedding\n* ```dwtDctSvd``` is 3x slower and ```rivaGan``` is 10x slower, for large image they are not suitable for on-the-fly embedding\n\naccuracy\n* The algorithm **cannot gurantee** to decode the original watermarks 100% accurately even though we don't apply any attack.\n* Known defects: Test shows all algorithms do not perform well for web page screenshots or posters with homogenous background color\n\n## Supported Algorithms\n* [**frequency methods**](https://github.com/ShieldMnt/invisible-watermark/wiki/Frequency-Methods)\n\n> * **dwtDct**: DWT + DCT transform, embed watermark bit into max non-trivial coefficient of block dct coefficents\n> \n> * **dwtDctSvd**: DWT + DCT transform, SVD decomposition of each block, embed watermark bit into singular value decomposition\n\n* [**rivaGan**](https://github.com/ShieldMnt/invisible-watermark#rivagan-experimental): encoder/decoder model with Attention mechanism + embed watermark bits into vector.\n\n> background:\n> * [Discrete wavelet transform](https://en.wikipedia.org/wiki/Discrete_wavelet_transform)\n> * [Discrete cosine transform](https://en.wikipedia.org/wiki/Discrete_cosine_transform).\n> * [RivaGAN](https://github.com/DAI-Lab/RivaGAN), a deep-learning model trained from Hollywood2 movie clips dataset.\n\n## How to install\n`pip install invisible-watermark`\n\n\n## [Library API](https://github.com/ShieldMnt/invisible-watermark/wiki/API)\n### Embed watermark\n\n* **example** embed 4 characters (32 bits) watermark\n\n```python\nimport cv2\nfrom imwatermark import WatermarkEncoder\n\nbgr = cv2.imread('test.png')\nwm = 'test'\n\nencoder = WatermarkEncoder()\nencoder.set_watermark('bytes', wm.encode('utf-8'))\nbgr_encoded = encoder.encode(bgr, 'dwtDct')\n\ncv2.imwrite('test_wm.png', bgr_encoded)\n```\n\n### Decode watermark\n* **example** decode 4 characters (32 bits) watermark\n\n```python\nimport cv2\nfrom imwatermark import WatermarkDecoder\n\nbgr = cv2.imread('test_wm.png')\n\ndecoder = WatermarkDecoder('bytes', 32)\nwatermark = decoder.decode(bgr, 'dwtDct')\nprint(watermark.decode('utf-8'))\n```\n\n\n## CLI Usage\n\n```\nembed watermark:  ./invisible-watermark -v -a encode -t bytes -m dwtDct -w 'hello' -o ./test_vectors/wm.png ./test_vectors/original.jpg\n\ndecode watermark: ./invisible-watermark -v -a decode -t bytes -m dwtDct -l 40 ./test_vectors/wm.png\n\npositional arguments:\n  input                 The path of input\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -a ACTION, --action ACTION\n                        encode|decode (default: None)\n  -t TYPE, --type TYPE  bytes|b16|bits|uuid|ipv4 (default: bits)\n  -m METHOD, --method METHOD\n                        dwtDct|dwtDctSvd|rivaGan (default: maxDct)\n  -w WATERMARK, --watermark WATERMARK\n                        embedded string (default: )\n  -l LENGTH, --length LENGTH\n                        watermark bits length, required for bytes|b16|bits\n                        watermark (default: 0)\n  -o OUTPUT, --output OUTPUT\n                        The path of output (default: None)\n  -v, --verbose         print info (default: False)\n```\n\n## Test Result\n\nFor better doc reading, we compress all images in this page, but the test is taken on 1920x1080 original image.\n\nMethods are not robust to **resize** or aspect ratio changed **crop** but robust to **noise**, **color filter**, **brightness** and **jpg compress.**\n\n**rivaGan outperforms the default method on crop attack.**\n\n**only default method is ready for on-the-fly embedding.**\n\n### Input\n> * Input Image: 1960x1080 Image\n> * Watermark: \n>   - For freq method, we use 64bits, string expression \"qingquan\"\n>   - For RivaGan method, we use 32bits, string expression \"qing\"\n> * Parameters: only take U frame to keep image quality, ```scale=36```\n\n### Attack Performance\n\n\n**Watermarked Image**\n\n![wm](https://user-images.githubusercontent.com/1647036/106387712-03c17400-6416-11eb-9490-e5e860b025ad.png)\n\n| Attacks | Image | Freq Method | RivaGan |\n| --- | --- | --- | --- |\n| JPG Compress | ![wm_jpg](https://user-images.githubusercontent.com/1647036/106387721-0e7c0900-6416-11eb-840c-8eab1cb9d748.jpg) | Pass | Pass |\n| Noise | ![wm_noise](https://user-images.githubusercontent.com/1647036/106387874-c90c0b80-6416-11eb-99f3-1716f01f2211.png) | Pass | Pass |\n| Brightness | ![wm_darken](https://user-images.githubusercontent.com/1647036/106387718-0cb24580-6416-11eb-83af-7f9e94f13cae.png) | Pass | Pass |\n| Overlay | ![wm_overlay](https://user-images.githubusercontent.com/1647036/106387733-13d95380-6416-11eb-8aa4-b3d2acfa8637.png) | Pass | Pass |\n| Mask | ![wm_mask_large](https://user-images.githubusercontent.com/1647036/106387726-10de6300-6416-11eb-99c3-4a0f70f99224.png) | Pass | Pass |\n| crop 7x5 | ![wm_crop_7x5](https://user-images.githubusercontent.com/1647036/106387713-06bc6480-6416-11eb-8ae0-f64289642450.png) | Fail | Pass |\n| Resize 50% | ![wm_resize_half](https://user-images.githubusercontent.com/1647036/106387735-15a31700-6416-11eb-8589-2ffa38df2a9a.png) | Fail | Fail |\n| Rotate 30 degress | ![wm_rotate](https://user-images.githubusercontent.com/1647036/106387737-19369e00-6416-11eb-8417-05e53e11b77f.png) | Fail | Fail|\n\n\n\n### Running Speed (CPU Only)\n| Image | Method | Encoding | Decoding |\n| --- | --- | --- | --- |\n| 1920x1080 | dwtDct | 300-350ms | 150ms-200ms |\n| 1920x1080 | dwtDctSvd | 1500ms-2s | ~1s |\n| 1920x1080 | rivaGan | ~5s | 4-5s |\n| 600x600 | dwtDct | 70ms | 60ms |\n| 600x600 | dwtDctSvd | 185ms | 320ms |\n| 600x600 | rivaGan | 1s | 600ms |\n\n### RivaGAN Experimental\nFurther, We will deliver the 64bit rivaGan model and test the performance on GPU environment.\n\nDetail: [https://github.com/DAI-Lab/RivaGAN](https://github.com/DAI-Lab/RivaGAN)\n\nZhang, Kevin Alex and Xu, Lei and Cuesta-Infante, Alfredo and Veeramachaneni, Kalyan. Robust Invisible Video Watermarking with Attention. MIT EECS, September 2019.[[PDF](https://arxiv.org/abs/1909.01285)]\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,60 @@
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/pyproject.toml
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt
+accelerate  # type: runtime
+appdirs  # type: runtime
+bitsandbytes  # type: runtime
+black  # type: runtime
+black  # type: runtime
+datasets  # type: runtime
+fire  # type: runtime
+peft ==0.2.0  # type: runtime
+gradio  # type: runtime
+sentencepiece  # type: runtime
+scipy  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt
+packaging ==23.2  # type: runtime
+peft ==0.10.0  # type: runtime
+tokenizers  # type: runtime
+bitsandbytes >=0.41.1  # type: runtime
+accelerate ==0.23.0  # type: runtime
+deepspeed >=0.13.1  # type: runtime
+addict  # type: runtime
+fire  # type: runtime
+pyyaml >=6.0  # type: runtime
+datasets  # type: runtime
+sentencepiece  # type: runtime
+wandb  # type: runtime
+einops  # type: runtime
+optimum ==1.13.2  # type: runtime
+hf-transfer  # type: runtime
+colorama  # type: runtime
+numba  # type: runtime
+numpy >=1.24.4  # type: runtime
+mlflow  # type: runtime
+bert-score ==0.3.13  # type: runtime
+evaluate ==0.4.0  # type: runtime
+rouge-score ==0.1.2  # type: runtime
+scipy  # type: runtime
+scikit-learn >=1.5.0  # type: runtime
+pynvml  # type: runtime
+art  # type: runtime
+fschat  # type: runtime
+gradio >=4.19.2  # type: runtime
+tensorboard  # type: runtime
+mamba-ssm ==1.1.1  # type: runtime
+s3fs  # type: runtime
+gcsfs  # type: runtime
+trl <=0.9.6,>=0.7.9  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/Speculative-Decoding/EAGLE/requirements.txt
+openai ==0.28.0  # type: runtime
+anthropic ==0.5.0  # type: runtime
+wandb  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/CPU/Speculative-Decoding/EAGLE/requirements.txt
+openai ==0.28.0  # type: runtime
+anthropic ==0.5.0  # type: runtime
+wandb  # type: runtime
+

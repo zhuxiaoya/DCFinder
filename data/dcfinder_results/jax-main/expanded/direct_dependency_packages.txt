@@ -1,0 +1,29 @@
+ml-dtypes >=0.5.0
+numpy >=1.26
+opt-einsum
+scipy >=1.12
+requests
+kubernetes
+absl-py
+ipython >=8.8.0
+pydata-sphinx-theme ==0.14.4
+snowballstemmer <3.0.0
+sphinx <8.0,>=7.3.2
+sphinx-book-theme ==1.1.1
+sphinx-copybutton >=0.5.0
+sphinx-remove-toctrees
+sphinx-design
+sphinxext-rediraffe
+myst-nb >=1.0.0
+flatbuffers
+pytest
+pytest-xdist
+matplotlib
+scikit-learn
+pooch
+rich
+cmake
+tensorflow-datasets
+tensorflow-hub
+flax
+jax

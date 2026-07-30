@@ -1,0 +1,186 @@
+{
+  "analysis_program/bmaltais_kohya_ss/requirements.txt": [
+    {
+      "name": "accelerate",
+      "specifier": ">=1.7.0"
+    },
+    {
+      "name": "aiofiles",
+      "specifier": "==23.2.1"
+    },
+    {
+      "name": "altair",
+      "specifier": "==4.2.2"
+    },
+    {
+      "name": "dadaptation",
+      "specifier": "==3.2"
+    },
+    {
+      "name": "diffusers",
+      "specifier": "==0.32.2"
+    },
+    {
+      "name": "easygui",
+      "specifier": "==0.98.3"
+    },
+    {
+      "name": "einops",
+      "specifier": "==0.7.0"
+    },
+    {
+      "name": "fairscale",
+      "specifier": "==0.4.13"
+    },
+    {
+      "name": "ftfy",
+      "specifier": "==6.1.1"
+    },
+    {
+      "name": "gradio",
+      "specifier": ">=5.23.1"
+    },
+    {
+      "name": "huggingface-hub",
+      "specifier": "==0.29.3"
+    },
+    {
+      "name": "imagesize",
+      "specifier": "==1.4.1"
+    },
+    {
+      "name": "invisible-watermark",
+      "specifier": "==0.2.0"
+    },
+    {
+      "name": "lion-pytorch",
+      "specifier": "==0.0.6"
+    },
+    {
+      "name": "lycoris-lora",
+      "specifier": "==3.2.0.post2"
+    },
+    {
+      "name": "omegaconf",
+      "specifier": "==2.3.0"
+    },
+    {
+      "name": "onnx",
+      "specifier": "==1.16.1"
+    },
+    {
+      "name": "prodigyopt",
+      "specifier": "==1.1.2"
+    },
+    {
+      "name": "protobuf",
+      "specifier": "==3.20.3"
+    },
+    {
+      "name": "open-clip-torch",
+      "specifier": "==2.20.0"
+    },
+    {
+      "name": "opencv-python",
+      "specifier": "==4.10.0.84"
+    },
+    {
+      "name": "prodigy-plus-schedule-free",
+      "specifier": "==1.8.0"
+    },
+    {
+      "name": "pytorch-lightning",
+      "specifier": "==1.9.0"
+    },
+    {
+      "name": "pytorch-optimizer",
+      "specifier": "==3.5.0"
+    },
+    {
+      "name": "rich",
+      "specifier": ">=13.7.1"
+    },
+    {
+      "name": "safetensors",
+      "specifier": "==0.4.4"
+    },
+    {
+      "name": "schedulefree",
+      "specifier": "==1.4"
+    },
+    {
+      "name": "scipy",
+      "specifier": "==1.11.4"
+    },
+    {
+      "name": "sentencepiece",
+      "specifier": "==0.2.0"
+    },
+    {
+      "name": "timm",
+      "specifier": "==0.6.7"
+    },
+    {
+      "name": "tk",
+      "specifier": "==0.1.0"
+    },
+    {
+      "name": "toml",
+      "specifier": "==0.10.2"
+    },
+    {
+      "name": "transformers",
+      "specifier": "==4.44.2"
+    },
+    {
+      "name": "voluptuous",
+      "specifier": "==0.13.1"
+    },
+    {
+      "name": "wandb",
+      "specifier": "==0.18.0"
+    }
+  ],
+  "analysis_program/bmaltais_kohya_ss/pyproject.toml": [
+    {
+      "name": "bitsandbytes",
+      "specifier": ">=0.45.0"
+    },
+    {
+      "name": "library",
+      "specifier": ""
+    },
+    {
+      "name": "onnxruntime-gpu",
+      "specifier": "==1.19.2"
+    },
+    {
+      "name": "tensorboard",
+      "specifier": ">=2.18.0"
+    },
+    {
+      "name": "tensorflow",
+      "specifier": ">=2.16.1"
+    },
+    {
+      "name": "tensorflow-io-gcs-filesystem",
+      "specifier": "==0.31.0"
+    },
+    {
+      "name": "torch",
+      "specifier": ">=2.5.0"
+    },
+    {
+      "name": "torchvision",
+      "specifier": ">=0.20.0"
+    },
+    {
+      "name": "triton",
+      "specifier": ">=3.1.0"
+    },
+    {
+      "name": "xformers",
+      "specifier": ">=0.0.30"
+    }
+  ]
+}

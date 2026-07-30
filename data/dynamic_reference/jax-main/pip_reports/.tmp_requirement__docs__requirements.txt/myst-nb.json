@@ -1,0 +1,127 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/94/93/0a378b48488879a1d925b42a804edfc6e0cd0ef854220f2dce738a46e7e9/myst_nb-1.4.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=0e2c86e7d3b82c3aa51383f82d6268f7714f3b772c23a796ab09538a8e68b4e4",
+          "hashes": {
+            "sha256": "0e2c86e7d3b82c3aa51383f82d6268f7714f3b772c23a796ab09538a8e68b4e4"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "myst-nb",
+        "version": "1.4.0",
+        "summary": "A Jupyter Notebook Sphinx reader built on top of the MyST markdown parser.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "markdown",
+          "lexer",
+          "parser",
+          "jupyter",
+          "docutils",
+          "sphinx"
+        ],
+        "author_email": "ExecutableBookProject <chrisj_sewell@hotmail.com>",
+        "maintainer_email": "Angus Hollands <goosey15@gmail.com>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Framework :: Sphinx :: Extension",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Text Processing :: Markup"
+        ],
+        "requires_dist": [
+          "importlib_metadata",
+          "ipython",
+          "jupyter-cache>=0.5",
+          "nbclient",
+          "myst-parser>=1.0.0",
+          "nbformat>=5.0",
+          "pyyaml",
+          "sphinx>=5",
+          "typing-extensions",
+          "ipykernel",
+          "pre-commit ; extra == \"code-style\"",
+          "alabaster ; extra == \"rtd\"",
+          "altair ; extra == \"rtd\"",
+          "bokeh ; extra == \"rtd\"",
+          "coconut>=1.4.3 ; extra == \"rtd\"",
+          "ipykernel>=5.5 ; extra == \"rtd\"",
+          "ipywidgets ; extra == \"rtd\"",
+          "jupytext>=1.11.2 ; extra == \"rtd\"",
+          "matplotlib ; extra == \"rtd\"",
+          "numpy ; extra == \"rtd\"",
+          "pandas ; extra == \"rtd\"",
+          "plotly ; extra == \"rtd\"",
+          "sphinx-book-theme>=0.3 ; extra == \"rtd\"",
+          "sphinx-copybutton ; extra == \"rtd\"",
+          "sphinx-design ; extra == \"rtd\"",
+          "sphinxcontrib-bibtex ; extra == \"rtd\"",
+          "sympy ; extra == \"rtd\"",
+          "sphinx-autodoc-typehints ; extra == \"rtd\"",
+          "coverage>=6.4 ; extra == \"testing\"",
+          "beautifulsoup4 ; extra == \"testing\"",
+          "ipykernel>=5.5 ; extra == \"testing\"",
+          "ipython!=8.1.0 ; extra == \"testing\"",
+          "ipywidgets>=8 ; extra == \"testing\"",
+          "jupytext>=1.11.2 ; extra == \"testing\"",
+          "matplotlib==3.10.7 ; extra == \"testing\"",
+          "nbdime ; extra == \"testing\"",
+          "numpy ; extra == \"testing\"",
+          "pandas ; extra == \"testing\"",
+          "pyarrow ; extra == \"testing\"",
+          "pytest ; extra == \"testing\"",
+          "pytest-cov>=3 ; extra == \"testing\"",
+          "pytest-regressions ; extra == \"testing\"",
+          "pytest-param-files ; extra == \"testing\"",
+          "sympy>=1.10.1 ; extra == \"testing\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Documentation, https://myst-nb.readthedocs.io",
+          "Homepage, https://github.com/executablebooks/myst-nb"
+        ],
+        "provides_extra": [
+          "code-style",
+          "rtd",
+          "testing"
+        ],
+        "description": "# MyST-NB\n\n[![Github-CI][github-ci]][github-link]\n[![Coverage Status][codecov-badge]][codecov-link]\n[![Documentation Status][rtd-badge]][rtd-link]\n[![PyPI][pypi-badge]][pypi-link]\n[![Conda Version][conda-badge]][conda-link]\n\nA collection of tools for working with Jupyter Notebooks in Sphinx.\n\nThe primary tool this package provides is a Sphinx parser for `ipynb` files.\nThis allows you to directly convert Jupyter Notebooks into Sphinx documents.\nIt relies heavily on the [`MyST` parser](https://github.com/executablebooks/myst-parser).\n\nFor more information, [see the MyST-NB documentation](https://myst-nb.readthedocs.io/en/latest/)\n\n## Contributing\n\nWe welcome all contributions!\nSee the [Contributing Guide](https://myst-nb.readthedocs.io/en/latest/reference/contributing.html) for more details.\n\n[github-ci]: https://github.com/executablebooks/MyST-NB/workflows/continuous-integration/badge.svg?branch=master\n[github-link]: https://github.com/executablebooks/MyST-NB\n[rtd-badge]: https://readthedocs.org/projects/myst-nb/badge/?version=latest\n[rtd-link]: https://myst-nb.readthedocs.io/en/latest/?badge=latest\n[codecov-badge]: https://codecov.io/gh/executablebooks/MyST-NB/branch/master/graph/badge.svg\n[codecov-link]: https://codecov.io/gh/executablebooks/MyST-NB\n[pypi-badge]: https://img.shields.io/pypi/v/myst-nb.svg\n[pypi-link]: https://pypi.org/project/myst-nb\n[conda-badge]: https://img.shields.io/conda/vn/conda-forge/myst-nb.svg\n[conda-link]: https://anaconda.org/conda-forge/myst-nb\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

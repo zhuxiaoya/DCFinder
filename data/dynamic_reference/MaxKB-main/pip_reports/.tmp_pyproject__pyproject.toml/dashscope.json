@@ -1,0 +1,69 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/e6/59/44d437c31cea0799617eb00862b17f4795ad4a3c19d24c65166e24ba783a/dashscope-1.23.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=2c3bd6ed909de72cc4833ada0f7fdae670031738d01969a76f3676a6bbb56026",
+          "hashes": {
+            "sha256": "2c3bd6ed909de72cc4833ada0f7fdae670031738d01969a76f3676a6bbb56026"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "dashscope",
+        "version": "1.23.1",
+        "platform": [
+          "Posix; MacOS X; Windows"
+        ],
+        "summary": "dashscope client sdk library",
+        "description_content_type": "text/markdown",
+        "home_page": "https://dashscope.aliyun.com/",
+        "author": "Alibaba Cloud",
+        "author_email": "dashscope@alibabacloud.com",
+        "license": "Apache 2.0",
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11"
+        ],
+        "requires_dist": [
+          "aiohttp",
+          "requests",
+          "websocket-client",
+          "tiktoken ; extra == 'tokenizer'"
+        ],
+        "requires_python": ">=3.8.0",
+        "provides_extra": [
+          "tokenizer"
+        ],
+        "description": "<h4 align=\"center\">\n    <p>\n        <b>English</b>\n    <p>\n</h4>\n\n\n</div>\n\n# DashScope Python Library\n\n## Installation\nTo install the DashScope Python SDK, simply run:\n```shell\npip install dashscope\n```\n\nIf you clone the code from github, you can install from  source by running:\n```shell\npip install -e .\n```\n\nTo use tokenizer in local mode without downloading any files, run:\n```shell\npip install dashscope[tokenizer]\n```\n\n\n## QuickStart\n\nYou can use `Generation` api to call model qwen-turbo(通义千问).\n\n```python\nfrom http import HTTPStatus\nimport dashscope\nfrom dashscope import Generation\n\ndashscope.api_key = 'YOUR-DASHSCOPE-API-KEY'\nresponses = Generation.call(model=Generation.Models.qwen_turbo,\n                            prompt='今天天气好吗？')\n\nif responses.status_code == HTTPStatus.OK:\n    print('Result is: %s' % responses.output)\nelse:\n    print('Failed request_id: %s, status_code: %s, code: %s, message:%s' %\n            (responses.request_id, responses.status_code, responses.code,\n            responses.message))\n\n```\n\n## API Key Authentication\n\nThe SDK uses API key for authentication. Please refer to [official documentation for alibabacloud china](https://www.alibabacloud.com/help/en/model-studio/) and [official documentation for alibabacloud international](https://www.alibabacloud.com/help/en/model-studio/) regarding how to obtain your api-key.\n\n### Using the API Key\n\n1. Set the API key via code\n```python\nimport dashscope\n\ndashscope.api_key = 'YOUR-DASHSCOPE-API-KEY'\n# Or specify the API key file path via code\n# dashscope.api_key_file_path='~/.dashscope/api_key'\n\n```\n\n2. Set the API key via environment variables\n\na. Set the API key directly using the environment variable below\n\n```shell\nexport DASHSCOPE_API_KEY='YOUR-DASHSCOPE-API-KEY'\n```\n\nb. Specify the API key file path via an environment variable\n\n```shell\nexport DASHSCOPE_API_KEY_FILE_PATH='~/.dashscope/api_key'\n```\n\n3. Save the API key to a file\n```python\nfrom dashscope import save_api_key\n\nsave_api_key(api_key='YOUR-DASHSCOPE-API-KEY',\n             api_key_file_path='api_key_file_location or (None, will save to default location \"~/.dashscope/api_key\"')\n\n```\n\n\n## Sample Code\n\n`call` function provides  synchronous call, the function call will return when computation is done on the server side.\n\n```python\nfrom http import HTTPStatus\nfrom dashscope import Generation\n# export DASHSCOPE_API_KEY='YOUR-DASHSCOPE-API-KEY' in environment\ndef sync_dashscope_sample():\n    responses = Generation.call(\n        model=Generation.Models.qwen_turbo,\n        prompt='Is the weather good today?')\n\n    if responses.status_code == HTTPStatus.OK:\n        print('Result is: %s'%responses.output)\n    else:\n        print('Code: %s, status_code: %s, code: %s, message: %s'%(responses.status_code,\n                                                   responses.code,\n                                                   responses.message))\n\nif __name__ == '__main__':\n    sync_dashscope_sample()\n```\n\nFor requests with longer processing times, you can obtain partial results before the full output is generated. Set the **stream** parameter to **True**. In this case, the results will be returned in batches, and the current output mode is incremental (output will overwrite the previous content). When the output is in stream mode, the interface returns a generator, and you need to iterate through the generator to get the results. Each output contains partial data for streaming, and the last output contains the final generated result.\n\nExample with simple streaming:\n```python\nfrom http import HTTPStatus\nfrom dashscope import Generation\n\ndef sample_sync_call_stream():\n    prompt_text = 'Give me a recipe using carrots, potatoes, and eggplants'\n    response_generator = Generation.call(\n        model=Generation.Models.qwen_turbo,\n        prompt=prompt_text,\n        stream=True,\n        max_length=512,\n        top_p=0.8)\n    for resp in response_generator:  # Iterate through the streaming output results\n        if resp.status_code == HTTPStatus.OK:\n            print(resp.output)\n        else:\n            print('Request failed, message: %s'%resp.message)\n\nif __name__ == '__main__':\n    sample_sync_call_stream()\n\n```\n#### Stream with Messages\n```python\nfrom http import HTTPStatus\nfrom dashscope import Generation\nfrom dashscope.api_entities.dashscope_response import Role\n\n\ndef stream_with_messages():\n    messages = [{'role': Role.SYSTEM, 'content': 'You are a helpful assistant.'},\n                {'role': Role.USER, 'content': '如何做西红柿炖牛腩？'}]\n    responses = Generation.call(\n        Generation.Models.qwen_turbo,\n        messages=messages,\n        result_format='message',  # set the result to be \"message\" format.\n        stream=True,\n    )\n    for response in responses:\n       if response.status_code == HTTPStatus.OK:\n           print(response)\n       else:\n           print('Request id: %s, Status code: %s, error code: %s, error message: %s' % (\n               response.request_id, response.status_code,\n               response.code, response.message\n           ))\n\nif __name__ == '__main__':\n    stream_with_messages()\n\n```\n## Logging\nTo output Dashscope logs, you need to configure the logger.\n```shell\nexport DASHSCOPE_LOGGING_LEVEL='info'\n\n```\n\n## Output\nThe output contains the following fields:\n```\n     request_id (str): The request id.\n     status_code (int): HTTP status code, 200 indicates that the\n         request was successful, others indicate an error。\n     code (str): Error code if error occurs, otherwise empty str.\n     message (str): Set to error message on error.\n     output (Any): The request output.\n     usage (Any): The request usage information.\n```\n\n## Error Handling\nCurrently, errors are thrown as exceptions.\n\n\n## Contributing\nComing soon.\n\n\n## License\nThis project is licensed under the Apache License (Version 2.0).\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

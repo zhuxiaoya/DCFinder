@@ -1,0 +1,11 @@
+# 私有源 (非 PyPI) 配置文件扫描结果 — OlafenwaMoses_ImageAI
+# 共发现 2 个配置文件含私有源
+
+[requirements.txt]
+  extra_index_url: https://download.pytorch.org/whl/cpu
+  extra_index_url: https://download.pytorch.org/whl/cpu
+
+[requirements_gpu.txt]
+  extra_index_url: https://download.pytorch.org/whl/cu102
+  extra_index_url: https://download.pytorch.org/whl/cu102
+

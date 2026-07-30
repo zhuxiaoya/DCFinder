@@ -1,0 +1,70 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/df/c8/04c6b4a001b8ae7326fb83d6665af1ee58d6cc1acb421f8ea40d2678fe3c/imageio_ffmpeg-0.4.2-py3-none-manylinux2010_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=6ec658144ddfa0b25de5f82671729734a54cdf999ddd69a134999fe6a413f3e7",
+          "hashes": {
+            "sha256": "6ec658144ddfa0b25de5f82671729734a54cdf999ddd69a134999fe6a413f3e7"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "imageio-ffmpeg",
+        "version": "0.4.2",
+        "platform": [
+          "any"
+        ],
+        "summary": "FFMPEG wrapper for Python",
+        "keywords": [
+          "video",
+          "ffmpeg"
+        ],
+        "home_page": "https://github.com/imageio/imageio-ffmpeg",
+        "download_url": "http://pypi.python.org/pypi/imageio-ffmpeg",
+        "author": "imageio contributors",
+        "author_email": "almar.klein@gmail.com",
+        "license": "BSD-2-Clause",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Science/Research",
+          "Intended Audience :: Education",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8"
+        ],
+        "requires_python": ">=3.4",
+        "description": "FFMPEG wrapper for Python.\n\nNote that the platform-specific wheels contain the binary executable\nof ffmpeg, which makes this package around 60 MiB in size.\nI guess that's the cost for being able to read/write video files.\n\nFor Linux users: the above is not the case when installing via your\nLinux package manager (if that is possible), because this package would\nsimply depend on ffmpeg in that case.\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements-dev.txt": [
+    {
+      "name": "ipykernel",
+      "specifier": "==6.29.5"
+    },
+    {
+      "name": "pylint",
+      "specifier": "==3.3.0"
+    },
+    {
+      "name": "pytest-sugar",
+      "specifier": "==0.9.6"
+    },
+    {
+      "name": "pytest-xdist",
+      "specifier": "==3.3.1"
+    },
+    {
+      "name": "pytest",
+      "specifier": "==7.2.2"
+    },
+    {
+      "name": "pytest-asyncio",
+      "specifier": "==0.21.1"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/manga-image-translator-main/requirements.txt": [
+    {
+      "name": "networkx",
+      "specifier": ""
+    },
+    {
+      "name": "torch",
+      "specifier": ""
+    },
+    {
+      "name": "groq",
+      "specifier": ""
+    },
+    {
+      "name": "torchvision",
+      "specifier": ""
+    },
+    {
+      "name": "torch-summary",
+      "specifier": ""
+    },
+    {
+      "name": "einops",
+      "specifier": ""
+    },
+    {
+      "name": "scikit-image",
+      "specifier": ""
+    },
+    {
+      "name": "opencv-python",
+      "specifier": ""
+    },
+    {
+      "name": "pyclipper",
+      "specifier": ""
+    },
+    {
+      "name": "shapely",
+      "specifier": ""
+    },
+    {
+      "name": "requests",
+      "specifier": ""
+    },
+    {
+      "name": "cryptography",
+      "specifier": ""
+    },
+    {
+      "name": "freetype-py",
+      "specifier": ""
+    },
+    {
+      "name": "aiohttp",
+      "specifier": ""
+    },
+    {
+      "name": "tqdm",
+      "specifier": ""
+    },
+    {
+      "name": "deepl",
+      "specifier": ""
+    },
+    {
+      "name": "imagehash",
+      "specifier": ""
+    },
+    {
+      "name": "kornia",
+      "specifier": ""
+    },
+    {
+      "name": "backports-cached-property",
+      "specifier": ""
+    },
+    {
+      "name": "huggingface-hub",
+      "specifier": ""
+    },
+    {
+      "name": "transformers",
+      "specifier": ""
+    },
+    {
+      "name": "py3langid",
+      "specifier": "==0.2.2"
+    },
+    {
+      "name": "sentencepiece",
+      "specifier": ""
+    },
+    {
+      "name": "editdistance",
+      "specifier": ""
+    },
+    {
+      "name": "numpy",
+      "specifier": "==1.26.4"
+    },
+    {
+      "name": "tensorboardx",
+      "specifier": ""
+    },
+    {
+      "name": "websockets",
+      "specifier": ""
+    },
+    {
+      "name": "protobuf",
+      "specifier": "<6.0.0,>=3.20.2"
+    },
+    {
+      "name": "ctranslate2",
+      "specifier": "<=3.24.0"
+    },
+    {
+      "name": "colorama",
+      "specifier": ""
+    },
+    {
+      "name": "openai",
+      "specifier": "==1.63.0"
+    },
+    {
+      "name": "tiktoken",
+      "specifier": ""
+    },
+    {
+      "name": "httpx",
+      "specifier": "==0.27.2"
+    },
+    {
+      "name": "open-clip-torch",
+      "specifier": ""
+    },
+    {
+      "name": "safetensors",
+      "specifier": ""
+    },
+    {
+      "name": "pandas",
+      "specifier": ""
+    },
+    {
+      "name": "onnxruntime",
+      "specifier": ""
+    },
+    {
+      "name": "timm",
+      "specifier": ""
+    },
+    {
+      "name": "omegaconf",
+      "specifier": ""
+    },
+    {
+      "name": "python-dotenv",
+      "specifier": ""
+    },
+    {
+      "name": "nest-asyncio",
+      "specifier": ""
+    },
+    {
+      "name": "marshmallow",
+      "specifier": ""
+    },
+    {
+      "name": "cython",
+      "specifier": ""
+    },
+    {
+      "name": "aioshutil",
+      "specifier": ""
+    },
+    {
+      "name": "aiofiles",
+      "specifier": ""
+    },
+    {
+      "name": "arabic-reshaper",
+      "specifier": ""
+    },
+    {
+      "name": "pyhyphen",
+      "specifier": ""
+    },
+    {
+      "name": "langcodes",
+      "specifier": ""
+    },
+    {
+      "name": "manga-ocr",
+      "specifier": ""
+    },
+    {
+      "name": "langdetect",
+      "specifier": ""
+    },
+    {
+      "name": "pydensecrf",
+      "specifier": ""
+    },
+    {
+      "name": "accelerate",
+      "specifier": ""
+    },
+    {
+      "name": "bitsandbytes",
+      "specifier": ""
+    },
+    {
+      "name": "uvicorn",
+      "specifier": ""
+    },
+    {
+      "name": "fastapi",
+      "specifier": ""
+    },
+    {
+      "name": "pydantic",
+      "specifier": "==2.5.0"
+    },
+    {
+      "name": "python-multipart",
+      "specifier": ""
+    },
+    {
+      "name": "google-genai",
+      "specifier": ""
+    },
+    {
+      "name": "rich",
+      "specifier": ""
+    },
+    {
+      "name": "regex",
+      "specifier": ""
+    },
+    {
+      "name": "paddleocr",
+      "specifier": ""
+    },
+    {
+      "name": "paddlepaddle",
+      "specifier": ""
+    },
+    {
+      "name": "paddlepaddle-gpu",
+      "specifier": ""
+    }
+  ]
+}

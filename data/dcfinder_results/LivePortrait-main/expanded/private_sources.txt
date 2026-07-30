@@ -1,0 +1,6 @@
+# 私有源 (非 PyPI) 配置文件扫描结果 — LivePortrait-main
+# 共发现 1 个配置文件含私有源
+
+[requirements_macOS.txt]
+  extra_index_url: https://download.pytorch.org/whl/cpu
+

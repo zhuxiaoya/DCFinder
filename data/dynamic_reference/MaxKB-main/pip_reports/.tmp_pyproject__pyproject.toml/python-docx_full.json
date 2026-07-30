@@ -1,0 +1,228 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/3e/3d/330d9efbdb816d3f60bf2ad92f05e1708e4a1b9abe80461ac3444c83f749/python_docx-1.1.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=08c20d6058916fb19853fcf080f7f42b6270d89eac9fa5f8c15f691c0017fabe",
+          "hashes": {
+            "sha256": "08c20d6058916fb19853fcf080f7f42b6270d89eac9fa5f8c15f691c0017fabe"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "python-docx",
+        "version": "1.1.2",
+        "summary": "Create, read, and update Microsoft Word .docx files.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "docx",
+          "office",
+          "openxml",
+          "word"
+        ],
+        "author_email": "Steve Canny <stcanny@gmail.com>",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Topic :: Office/Business :: Office Suites",
+          "Topic :: Software Development :: Libraries"
+        ],
+        "requires_dist": [
+          "lxml >=3.1.0",
+          "typing-extensions >=4.9.0"
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Changelog, https://github.com/python-openxml/python-docx/blob/master/HISTORY.rst",
+          "Documentation, https://python-docx.readthedocs.org/en/latest/",
+          "Homepage, https://github.com/python-openxml/python-docx",
+          "Repository, https://github.com/python-openxml/python-docx"
+        ],
+        "description": "# python-docx\n\n*python-docx* is a Python library for reading, creating, and updating Microsoft Word 2007+ (.docx) files.\n\n## Installation\n\n```\npip install python-docx\n```\n\n## Example\n\n```python\n>>> from docx import Document\n\n>>> document = Document()\n>>> document.add_paragraph(\"It was a dark and stormy night.\")\n<docx.text.paragraph.Paragraph object at 0x10f19e760>\n>>> document.save(\"dark-and-stormy.docx\")\n\n>>> document = Document(\"dark-and-stormy.docx\")\n>>> document.paragraphs[0].text\n'It was a dark and stormy night.'\n```\n\nMore information is available in the [python-docx documentation](https://python-docx.readthedocs.org/en/latest/)\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/7a/16/cb391ee4b90186fa16d9ebcbe3ea96c71b8da3b0686386c8dcbcc3c67d44/lxml-6.1.1-cp310-cp310-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=98fc784c2c1440667aeedf8465bdfe10208acf0ead656a2c68627299f546b315",
+          "hashes": {
+            "sha256": "98fc784c2c1440667aeedf8465bdfe10208acf0ead656a2c68627299f546b315"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "lxml",
+        "version": "6.1.1",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "license",
+          "license-file",
+          "maintainer",
+          "maintainer-email",
+          "project-url",
+          "provides-extra",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API.",
+        "home_page": "https://lxml.de/",
+        "author": "lxml dev team",
+        "author_email": "lxml@lxml.de",
+        "maintainer": "lxml dev team",
+        "maintainer_email": "lxml@lxml.de",
+        "license": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE.txt",
+          "LICENSES.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Information Technology",
+          "Programming Language :: Cython",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: C",
+          "Operating System :: OS Independent",
+          "Topic :: Text Processing :: Markup :: HTML",
+          "Topic :: Text Processing :: Markup :: XML",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "cssselect>=0.7; extra == \"cssselect\"",
+          "html5lib; extra == \"html5\"",
+          "BeautifulSoup4; extra == \"htmlsoup\"",
+          "lxml_html_clean; extra == \"html-clean\""
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Source, https://github.com/lxml/lxml",
+          "Bug Tracker, https://bugs.launchpad.net/lxml"
+        ],
+        "provides_extra": [
+          "source",
+          "cssselect",
+          "html5",
+          "htmlsoup",
+          "html-clean"
+        ],
+        "description": "lxml is a Pythonic, mature binding for the libxml2 and libxslt libraries.\nIt provides safe and convenient access to these libraries using the\nElementTree API.\n\nIt extends the ElementTree API significantly to offer support for XPath,\nRelaxNG, XML Schema, XSLT, C14N and much more.\n\nTo contact the project, go to the `project home page <https://lxml.de/>`_\nor see our bug tracker at https://launchpad.net/lxml\n\nIn case you want to use the current in-development version of lxml,\nyou can get it from the github repository at\nhttps://github.com/lxml/lxml .  Note that this requires Cython to\nbuild the sources, see the build instructions on the project home page.\n\n\nAfter an official release of a new stable series, bug fixes may become available at\nhttps://github.com/lxml/lxml/tree/lxml-6.1 .\nRunning ``pip install https://github.com/lxml/lxml/archive/refs/heads/lxml-6.1.tar.gz``\nwill install the unreleased branch state as soon as a maintenance branch has been established.\nNote that this requires Cython to be installed at an appropriate version for the build.\n\n6.1.1 (2026-05-18)\n==================\n\nBugs fixed\n----------\n\n* The known link attributes in ``lxml.html.defs.link_attrs`` were missing ``xlink:href``,\n  which can be used for URL bypass attacks in embedded SVG/MathML/etc. content.\n  https://github.com/fedora-python/lxml_html_clean/security/advisories/GHSA-4jhm-jv67-739f\n\n* The Linux wheels use a patched libxslt 1.1.43, fixing CVE-2025-7424 and CVE-2025-11731.\n\n* The Windows wheels use libxslt 1.1.45, fixing CVE-2025-7424 and CVE-2025-11731.\n\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+          "hashes": {
+            "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "typing_extensions",
+        "version": "4.16.0",
+        "summary": "Backported and Experimental Type Hints for Python 3.9+",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "annotations",
+          "backport",
+          "checker",
+          "checking",
+          "function",
+          "hinting",
+          "hints",
+          "type",
+          "typechecking",
+          "typehinting",
+          "typehints",
+          "typing"
+        ],
+        "author_email": "\"Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee\" <levkivskyi@gmail.com>",
+        "license_expression": "PSF-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Topic :: Software Development"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Bug Tracker, https://github.com/python/typing_extensions/issues",
+          "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+          "Documentation, https://typing-extensions.readthedocs.io/",
+          "Home, https://github.com/python/typing_extensions",
+          "Q & A, https://github.com/python/typing/discussions",
+          "Repository, https://github.com/python/typing_extensions"
+        ],
+        "description": "# Typing Extensions\n\n[![Chat at https://gitter.im/python/typing](https://badges.gitter.im/python/typing.svg)](https://gitter.im/python/typing)\n\n[Documentation](https://typing-extensions.readthedocs.io/en/latest/#) –\n[PyPI](https://pypi.org/project/typing-extensions/)\n\n## Overview\n\nThe `typing_extensions` module serves two related purposes:\n\n- Enable use of new type system features on older Python versions. For example,\n  `typing.TypeGuard` is new in Python 3.10, but `typing_extensions` allows\n  users on previous Python versions to use it too.\n- Enable experimentation with new type system PEPs before they are accepted and\n  added to the `typing` module.\n\n`typing_extensions` is treated specially by static type checkers such as\nmypy and pyright. Objects defined in `typing_extensions` are treated the same\nway as equivalent forms in `typing`.\n\n`typing_extensions` uses\n[Semantic Versioning](https://semver.org/). The\nmajor version will be incremented only for backwards-incompatible changes.\nTherefore, it's safe to depend\non `typing_extensions` like this: `typing_extensions ~=x.y`,\nwhere `x.y` is the first version that includes all features you need.\n[This](https://packaging.python.org/en/latest/specifications/version-specifiers/#compatible-release)\nis equivalent to `typing_extensions >=x.y, <(x+1)`. Do not depend on `~= x.y.z`\nunless you really know what you're doing; that defeats the purpose of\nsemantic versioning.\n\n## Included items\n\nSee [the documentation](https://typing-extensions.readthedocs.io/en/latest/#) for a\ncomplete listing of module contents.\n\n## Contributing\n\nSee [CONTRIBUTING.md](https://github.com/python/typing_extensions/blob/main/CONTRIBUTING.md)\nfor how to contribute to `typing_extensions`.\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

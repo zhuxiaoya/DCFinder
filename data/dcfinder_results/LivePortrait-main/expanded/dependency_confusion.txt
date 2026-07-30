@@ -1,0 +1,1337 @@
+{
+     "direct dependency": {
+          "number": 20,
+          "packages": [
+               {
+                    "name": "onnxruntime-gpu",
+                    "specifier": "==1.18.0",
+                    "raw_requirement": "onnxruntime-gpu==1.18.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "transformers",
+                    "specifier": "==4.38.0",
+                    "raw_requirement": "transformers==4.38.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numpy",
+                    "specifier": "==1.26.4",
+                    "raw_requirement": "numpy==1.26.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pyyaml",
+                    "specifier": "==6.0.1",
+                    "raw_requirement": "pyyaml==6.0.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opencv-python",
+                    "specifier": "==4.10.0.84",
+                    "raw_requirement": "opencv-python==4.10.0.84",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scipy",
+                    "specifier": "==1.13.1",
+                    "raw_requirement": "scipy==1.13.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "imageio",
+                    "specifier": "==2.34.2",
+                    "raw_requirement": "imageio==2.34.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "lmdb",
+                    "specifier": "==1.4.1",
+                    "raw_requirement": "lmdb==1.4.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tqdm",
+                    "specifier": "==4.66.4",
+                    "raw_requirement": "tqdm==4.66.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "rich",
+                    "specifier": "==13.7.1",
+                    "raw_requirement": "rich==13.7.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ffmpeg-python",
+                    "specifier": "==0.2.0",
+                    "raw_requirement": "ffmpeg-python==0.2.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnx",
+                    "specifier": "==1.16.1",
+                    "raw_requirement": "onnx==1.16.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scikit-image",
+                    "specifier": "==0.24.0",
+                    "raw_requirement": "scikit-image==0.24.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "albumentations",
+                    "specifier": "==1.4.10",
+                    "raw_requirement": "albumentations==1.4.10",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "matplotlib",
+                    "specifier": "==3.9.0",
+                    "raw_requirement": "matplotlib==3.9.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "imageio-ffmpeg",
+                    "specifier": "==0.5.1",
+                    "raw_requirement": "imageio-ffmpeg==0.5.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tyro",
+                    "specifier": "==0.8.5",
+                    "raw_requirement": "tyro==0.8.5",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gradio",
+                    "specifier": "==5.1.0",
+                    "raw_requirement": "gradio==5.1.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pykalman",
+                    "specifier": "==0.9.7",
+                    "raw_requirement": "pykalman==0.9.7",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pillow",
+                    "specifier": ">=10.2.0",
+                    "raw_requirement": "pillow>=10.2.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 75,
+          "packages": [
+               {
+                    "name": "aiofiles",
+                    "specifier": "<24.0,>=22.0",
+                    "raw_requirement": "aiofiles<24.0,>=22.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "albucore",
+                    "specifier": ">=0.0.11",
+                    "raw_requirement": "albucore>=0.0.11",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "albumentations",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "annotated-doc",
+                    "specifier": ">=0.0.2",
+                    "raw_requirement": "annotated-doc>=0.0.2 ; annotated-doc>=0.0.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "annotated-types",
+                    "specifier": ">=0.6.0",
+                    "raw_requirement": "annotated-types>=0.6.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "anyio",
+                    "specifier": "<5.0,>=3.0,<5,>=3.6.2",
+                    "raw_requirement": "anyio<5.0,>=3.0 ; anyio<5,>=3.6.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "starlette",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "certifi",
+                    "specifier": ">=2017.4.17",
+                    "raw_requirement": "certifi (>=2017.4.17) ; certifi",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "charset-normalizer",
+                    "specifier": "<3,>=2",
+                    "raw_requirement": "charset-normalizer (<3,>=2)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "click",
+                    "specifier": ">=7.0",
+                    "raw_requirement": "click>=7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "coloredlogs",
+                    "specifier": "",
+                    "raw_requirement": "coloredlogs",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "onnxruntime-gpu",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "contourpy",
+                    "specifier": ">=1.0.1",
+                    "raw_requirement": "contourpy>=1.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cycler",
+                    "specifier": ">=0.10",
+                    "raw_requirement": "cycler>=0.10",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "docstring-parser",
+                    "specifier": ">=0.16",
+                    "raw_requirement": "docstring-parser>=0.16",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tyro",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "exceptiongroup",
+                    "specifier": ">=1.0.2",
+                    "raw_requirement": "exceptiongroup>=1.0.2; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fastapi",
+                    "specifier": "<1.0",
+                    "raw_requirement": "fastapi<1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ffmpy",
+                    "specifier": "",
+                    "raw_requirement": "ffmpy",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "filelock",
+                    "specifier": "",
+                    "raw_requirement": "filelock ; filelock",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "flatbuffers",
+                    "specifier": "",
+                    "raw_requirement": "flatbuffers",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "onnxruntime-gpu",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fonttools",
+                    "specifier": ">=4.22.0",
+                    "raw_requirement": "fonttools>=4.22.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fsspec",
+                    "specifier": ">=2023.5.0",
+                    "raw_requirement": "fsspec>=2023.5.0 ; fsspec",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "future",
+                    "specifier": "",
+                    "raw_requirement": "future",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ffmpeg-python",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "gradio-client",
+                    "specifier": "==1.4.0",
+                    "raw_requirement": "gradio-client==1.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "h11",
+                    "specifier": ">=0.8",
+                    "raw_requirement": "h11>=0.8",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "hf-xet",
+                    "specifier": "<2.0.0,>=1.1.3",
+                    "raw_requirement": "hf-xet<2.0.0,>=1.1.3; platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"arm64\" or platform_machine == \"aarch64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpx",
+                    "specifier": ">=0.24.1",
+                    "raw_requirement": "httpx>=0.24.1 ; httpx>=0.24.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "huggingface-hub",
+                    "specifier": "<1.0,>=0.19.3,>=0.25.1,<1.0,>=0.16.4,>=0.19.3",
+                    "raw_requirement": "huggingface-hub (<1.0,>=0.19.3) ; huggingface-hub>=0.25.1 ; huggingface_hub >=0.16.4, <1.0 ; huggingface-hub>=0.19.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tokenizers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "humanfriendly",
+                    "specifier": ">=9.1",
+                    "raw_requirement": "humanfriendly (>=9.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "coloredlogs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "idna",
+                    "specifier": "<4,>=2.5,>=2.8",
+                    "raw_requirement": "idna (<4,>=2.5) ; idna>=2.8",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": "<4.0",
+                    "raw_requirement": "jinja2<4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "joblib",
+                    "specifier": ">=1.4.0",
+                    "raw_requirement": "joblib>=1.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "kiwisolver",
+                    "specifier": ">=1.3.1",
+                    "raw_requirement": "kiwisolver>=1.3.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "lazy-loader",
+                    "specifier": ">=0.4",
+                    "raw_requirement": "lazy-loader>=0.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markdown-it-py",
+                    "specifier": ">=2.2.0",
+                    "raw_requirement": "markdown-it-py (>=2.2.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rich",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markupsafe",
+                    "specifier": "~=2.0,>=2.0",
+                    "raw_requirement": "markupsafe~=2.0 ; MarkupSafe>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jinja2",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "mdurl",
+                    "specifier": "~=0.1",
+                    "raw_requirement": "mdurl~=0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "markdown-it-py",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mpmath",
+                    "specifier": "<1.4,>=1.1.0",
+                    "raw_requirement": "mpmath<1.4,>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sympy",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "narwhals",
+                    "specifier": ">=2.0.1",
+                    "raw_requirement": "narwhals>=2.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "networkx",
+                    "specifier": ">=2.8",
+                    "raw_requirement": "networkx>=2.8",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "numkong",
+                    "specifier": ">=7.4.5",
+                    "raw_requirement": "numkong>=7.4.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "albucore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "opencv-python-headless",
+                    "specifier": ">=4.9.0.80",
+                    "raw_requirement": "opencv-python-headless>=4.9.0.80",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "albumentations",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "orjson",
+                    "specifier": "~=3.0",
+                    "raw_requirement": "orjson~=3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "packaging",
+                    "specifier": ">=20.0,>=21,>=20.0,>=20.9",
+                    "raw_requirement": "packaging ; packaging (>=20.0) ; packaging>=21 ; packaging>=20.0 ; packaging ; packaging>=20.9 ; packaging ; packaging",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "onnxruntime-gpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "lazy-loader",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pandas",
+                    "specifier": "<3.0,>=1.0",
+                    "raw_requirement": "pandas<3.0,>=1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "protobuf",
+                    "specifier": ">=3.20.2",
+                    "raw_requirement": "protobuf ; protobuf>=3.20.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "onnxruntime-gpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnx",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydantic",
+                    "specifier": ">=2.7.0,>=2.0,>=2.9.0",
+                    "raw_requirement": "pydantic>=2.7.0 ; pydantic>=2.0 ; pydantic>=2.9.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "albumentations",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydantic-core",
+                    "specifier": "==2.47.0",
+                    "raw_requirement": "pydantic-core==2.47.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydub",
+                    "specifier": "",
+                    "raw_requirement": "pydub",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pygments",
+                    "specifier": "<3.0.0,>=2.13.0",
+                    "raw_requirement": "pygments (>=2.13.0,<3.0.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rich",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyparsing",
+                    "specifier": ">=2.3.1",
+                    "raw_requirement": "pyparsing>=2.3.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-dateutil",
+                    "specifier": ">=2.7,>=2.8.2",
+                    "raw_requirement": "python-dateutil>=2.7 ; python-dateutil>=2.8.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-multipart",
+                    "specifier": ">=0.0.9",
+                    "raw_requirement": "python-multipart>=0.0.9",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pytz",
+                    "specifier": ">=2020.1",
+                    "raw_requirement": "pytz>=2020.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "regex",
+                    "specifier": "!=2019.12.17",
+                    "raw_requirement": "regex (!=2019.12.17)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "requests",
+                    "specifier": "",
+                    "raw_requirement": "requests ; requests",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ruff",
+                    "specifier": ">=0.2.2",
+                    "raw_requirement": "ruff>=0.2.2; sys_platform != \"emscripten\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "safetensors",
+                    "specifier": ">=0.4.1",
+                    "raw_requirement": "safetensors (>=0.4.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "scikit-learn",
+                    "specifier": ">=1.3.2",
+                    "raw_requirement": "scikit-learn>=1.3.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "albumentations",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "semantic-version",
+                    "specifier": "~=2.0",
+                    "raw_requirement": "semantic-version~=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "setuptools",
+                    "specifier": "",
+                    "raw_requirement": "setuptools",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "imageio-ffmpeg",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "shellingham",
+                    "specifier": ">=1.3.0",
+                    "raw_requirement": "shellingham>=1.3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "typer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "shtab",
+                    "specifier": ">=1.5.6",
+                    "raw_requirement": "shtab>=1.5.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tyro",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "six",
+                    "specifier": ">=1.5",
+                    "raw_requirement": "six >=1.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "python-dateutil",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "starlette",
+                    "specifier": ">=0.46.0",
+                    "raw_requirement": "starlette>=0.46.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "stringzilla",
+                    "specifier": ">=3.10.4",
+                    "raw_requirement": "stringzilla>=3.10.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "albucore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sympy",
+                    "specifier": "",
+                    "raw_requirement": "sympy",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "onnxruntime-gpu",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "threadpoolctl",
+                    "specifier": ">=3.5.0",
+                    "raw_requirement": "threadpoolctl>=3.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tifffile",
+                    "specifier": ">=2022.8.12",
+                    "raw_requirement": "tifffile>=2022.8.12",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tokenizers",
+                    "specifier": "<0.19,>=0.14",
+                    "raw_requirement": "tokenizers (<0.19,>=0.14)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tomlkit",
+                    "specifier": "==0.12.0",
+                    "raw_requirement": "tomlkit==0.12.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typer",
+                    "specifier": "<1.0,>=0.12",
+                    "raw_requirement": "typer<1.0,>=0.12; sys_platform != \"emscripten\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=4.9.0,>=4.7.0,~=4.0,>=3.7.4.3,>=4.15.0,>=4.5,>=4.8.0,~=4.0,>=4.0,>=4.14.1,>=4.12.0,>=4.6.0,>=4.10.0",
+                    "raw_requirement": "typing-extensions>=4.9.0 ; typing-extensions>=4.7.0 ; typing-extensions~=4.0 ; typing-extensions>=3.7.4.3 ; typing-extensions>=4.15.0 ; typing_extensions>=4.5; python_version < \"3.13\" ; typing-extensions>=4.8.0 ; typing-extensions~=4.0 ; typing-extensions>=4.0; python_version < \"3.11\" ; typing-extensions>=4.14.1 ; typing-extensions>=4.12.0 ; typing-extensions>=4.6.0; python_version < \"3.13\" ; typing-extensions>=4.10.0; python_version < \"3.13\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "albumentations",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tyro",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typing-inspection",
+                              "source": "public"
+                         },
+                         {
+                              "name": "exceptiongroup",
+                              "source": "public"
+                         },
+                         {
+                              "name": "starlette",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-inspection",
+                    "specifier": ">=0.4.2",
+                    "raw_requirement": "typing-inspection>=0.4.2 ; typing-inspection>=0.4.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tzdata",
+                    "specifier": ">=2022.7",
+                    "raw_requirement": "tzdata>=2022.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "urllib3",
+                    "specifier": "<1.27,>=1.21.1",
+                    "raw_requirement": "urllib3 (<1.27,>=1.21.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "uvicorn",
+                    "specifier": ">=0.14.0",
+                    "raw_requirement": "uvicorn>=0.14.0; sys_platform != \"emscripten\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "websockets",
+                    "specifier": "<13.0,>=10.0",
+                    "raw_requirement": "websockets<13.0,>=10.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 2,
+          "packages": {
+               "numpy": {
+                    "private version": "1.26.4",
+                    "public version": "1.26.4",
+                    "highest public (unconstrained)": "2.5.1",
+                    "declared specifier": "==1.26.4",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               },
+               "pillow": {
+                    "private version": "10.4.0",
+                    "public version": "12.3.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": ">=10.2.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 12
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 15,
+          "packages": {
+               "certifi": {
+                    "private version": "2022.12.7",
+                    "public version": "2026.6.17",
+                    "highest public (unconstrained)": "2026.6.17",
+                    "declared specifier": ">=2017.4.17",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 51
+               },
+               "charset-normalizer": {
+                    "private version": "2.1.1",
+                    "public version": "2.1.1",
+                    "highest public (unconstrained)": "3.4.9",
+                    "declared specifier": "<3,>=2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 15
+               },
+               "filelock": {
+                    "private version": "3.29.0",
+                    "public version": "3.29.7",
+                    "highest public (unconstrained)": "3.29.7"
+               },
+               "fsspec": {
+                    "private version": "2026.4.0",
+                    "public version": "2026.6.0",
+                    "highest public (unconstrained)": "2026.6.0",
+                    "declared specifier": ">=2023.5.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 33
+               },
+               "idna": {
+                    "private version": "3.4",
+                    "public version": "3.18",
+                    "highest public (unconstrained)": "3.18",
+                    "declared specifier": "<4,>=2.5,>=2.8",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 22
+               },
+               "jinja2": {
+                    "private version": "3.1.6",
+                    "public version": "3.1.6",
+                    "highest public (unconstrained)": "3.1.6",
+                    "declared specifier": "<4.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 52
+               },
+               "markupsafe": {
+                    "private version": "2.1.5",
+                    "public version": "2.1.5",
+                    "highest public (unconstrained)": "3.0.3",
+                    "declared specifier": "~=2.0,>=2.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 8
+               },
+               "mpmath": {
+                    "private version": "1.3.0",
+                    "public version": "1.3.0",
+                    "highest public (unconstrained)": "1.5.0a0",
+                    "declared specifier": "<1.4,>=1.1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "networkx": {
+                    "private version": "3.6.1",
+                    "public version": "3.6.1",
+                    "highest public (unconstrained)": "3.6.1",
+                    "declared specifier": ">=2.8",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 29
+               },
+               "packaging": {
+                    "private version": "24.1",
+                    "public version": "26.2",
+                    "highest public (unconstrained)": "26.2",
+                    "declared specifier": ">=20.0,>=21,>=20.0,>=20.9",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 18
+               },
+               "requests": {
+                    "private version": "2.28.1",
+                    "public version": "2.34.2",
+                    "highest public (unconstrained)": "2.34.2"
+               },
+               "setuptools": {
+                    "private version": "78.1.0",
+                    "public version": "83.0.0",
+                    "highest public (unconstrained)": "83.0.0"
+               },
+               "sympy": {
+                    "private version": "1.14.0",
+                    "public version": "1.14.0",
+                    "highest public (unconstrained)": "1.14.0"
+               },
+               "typing-extensions": {
+                    "private version": "4.15.0",
+                    "public version": "4.16.0",
+                    "highest public (unconstrained)": "4.16.0",
+                    "declared specifier": ">=4.9.0,>=4.7.0,~=4.0,>=3.7.4.3,>=4.15.0,>=4.5,>=4.8.0,~=4.0,>=4.0,>=4.14.1,>=4.12.0,>=4.6.0,>=4.10.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "urllib3": {
+                    "private version": "1.26.13",
+                    "public version": "1.26.20",
+                    "highest public (unconstrained)": "2.7.0",
+                    "declared specifier": "<1.27,>=1.21.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 40
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "mixed_source_expanded",
+          "private_index_expansions": 17,
+          "pypi_metadata_expansions": 77,
+          "pruned_public_nodes": 0
+     }
+}

@@ -1,0 +1,192 @@
+annotated-doc >=0.0.2
+  # from parent package: fastapi (public)
+annotated-types >=0.6.0
+  # from parent package: pydantic (public)
+anyio >=4.7.0,<5,>=3.6.2
+  # from parent package: sse-starlette (public)
+  # from parent package: starlette (public)
+attrs >=22.2.0
+  # from parent package: jsonschema (public)
+  # from parent package: referencing (public)
+babel >=2.10
+  # from parent package: mkdocs-material (public)
+backports-tarfile
+  # from parent package: jaraco-context (public)
+backrefs >=5.7.post1
+  # from parent package: mkdocs-material (public)
+certifi >=2023.5.7
+  # from parent package: httpx (public)
+  # from parent package: requests (public)
+cffi >=2.0.0
+  # from parent package: cryptography (public)
+charset-normalizer <4,>=2
+  # from parent package: requests (public)
+click >=7.0,<9.0.0,>=8.4.2,>=8.0.0,>=7.0,>=7.0
+  # from parent package: uvicorn (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: black (public)
+  # from parent package: mkdocs (public)
+  # from parent package: ray (public)
+colorama >=0.4
+  # from parent package: mkdocs-material (public)
+cryptography >=2.0
+  # from parent package: secretstorage (public)
+docutils >=0.21.2
+  # from parent package: readme-renderer (public)
+exceptiongroup >=1,>=1.0.2
+  # from parent package: pytest (public)
+  # from parent package: anyio (public)
+filelock >=3.10.0
+  # from parent package: huggingface-hub (public)
+  # from parent package: ray (public)
+fsspec >=2023.5.0
+  # from parent package: huggingface-hub (public)
+ghp-import >=1.0
+  # from parent package: mkdocs (public)
+h11 >=0.8
+  # from parent package: uvicorn (public)
+hf-xet <2.0.0,>=1.5.1
+  # from parent package: huggingface-hub (public)
+id
+  # from parent package: twine (public)
+idna >=2.8,<4,>=2.5
+  # from parent package: anyio (public)
+  # from parent package: requests (public)
+importlib-metadata >=4.11.4
+  # from parent package: keyring (public)
+iniconfig >=1.0.1
+  # from parent package: pytest (public)
+jaraco-classes
+  # from parent package: keyring (public)
+jaraco-context
+  # from parent package: keyring (public)
+jaraco-functools
+  # from parent package: keyring (public)
+jeepney >=0.4.2,>=0.6
+  # from parent package: keyring (public)
+  # from parent package: secretstorage (public)
+jsonschema
+  # from parent package: ray (public)
+jsonschema-specifications >=2023.03.6
+  # from parent package: jsonschema (public)
+keyring >=21.2.0
+  # from parent package: twine (public)
+markdown >=3.3.6,>=3.6,>=3.2,>=3.3,>=3.6
+  # from parent package: mkdocs (public)
+  # from parent package: mkdocstrings (public)
+  # from parent package: mkdocs-material (public)
+  # from parent package: mkdocs-autorefs (public)
+  # from parent package: pymdown-extensions (public)
+markdown-it-py >=2.2.0
+  # from parent package: rich (public)
+markupsafe >=2.0,>=2.0.1,>=1.1,>=2.0.1
+  # from parent package: jinja2 (public)
+  # from parent package: mkdocs (public)
+  # from parent package: mkdocstrings (public)
+  # from parent package: mkdocs-autorefs (public)
+mdurl ~=0.1
+  # from parent package: markdown-it-py (public)
+mergedeep >=1.3.4
+  # from parent package: mkdocs (public)
+  # from parent package: mkdocs-get-deps (public)
+mkdocs-autorefs >=1.4
+  # from parent package: mkdocstrings (public)
+mkdocs-get-deps >=0.2.0
+  # from parent package: mkdocs (public)
+mkdocs-material-extensions >=1.3
+  # from parent package: mkdocs-material (public)
+more-itertools
+  # from parent package: jaraco-classes (public)
+  # from parent package: jaraco-functools (public)
+msgpack <2.0.0,>=1.0.0
+  # from parent package: ray (public)
+mypy-extensions >=0.4.3
+  # from parent package: black (public)
+nh3 >=0.2.14
+  # from parent package: readme-renderer (public)
+packaging >=22,>=20.9,>=22.0,>=24.0,>=20.5,>=24.2
+  # from parent package: pytest (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: black (public)
+  # from parent package: twine (public)
+  # from parent package: mkdocs (public)
+  # from parent package: ray (public)
+paginate >=0.5
+  # from parent package: mkdocs-material (public)
+pathspec >=1.0.0,>=0.11.1
+  # from parent package: black (public)
+  # from parent package: mkdocs (public)
+platformdirs >=2,>=2.2.0
+  # from parent package: black (public)
+  # from parent package: mkdocs-get-deps (public)
+pluggy <2,>=1.5
+  # from parent package: pytest (public)
+protobuf >=3.20.3
+  # from parent package: ray (public)
+pycparser
+  # from parent package: cffi (public)
+pydantic >=2.9.0,>=2.7.0
+  # from parent package: fastapi (public)
+  # from parent package: pydantic-settings (public)
+pydantic-core ==2.47.0
+  # from parent package: pydantic (public)
+pygments >=2.7.2,>=2.16,>=2.5.1,<3.0.0,>=2.13.0
+  # from parent package: pytest (public)
+  # from parent package: mkdocs-material (public)
+  # from parent package: readme-renderer (public)
+  # from parent package: rich (public)
+pymdown-extensions >=6.3,>=10.2
+  # from parent package: mkdocstrings (public)
+  # from parent package: mkdocs-material (public)
+python-dateutil >=2.8.1
+  # from parent package: ghp-import (public)
+python-dotenv >=0.21.0
+  # from parent package: pydantic-settings (public)
+pytokens ~=0.4.0
+  # from parent package: black (public)
+pyyaml-env-tag >=0.1
+  # from parent package: mkdocs (public)
+readme-renderer >=35.0
+  # from parent package: twine (public)
+referencing >=0.28.4,>=0.31.0
+  # from parent package: jsonschema (public)
+  # from parent package: jsonschema-specifications (public)
+requests >=2.20,>=2.30,<3.0.0,>=2.0.1
+  # from parent package: twine (public)
+  # from parent package: mkdocs-material (public)
+  # from parent package: ray (public)
+  # from parent package: requests-toolbelt (public)
+requests-toolbelt !=0.9.0,>=0.8.0
+  # from parent package: twine (public)
+rfc3986 >=1.4.0
+  # from parent package: twine (public)
+rich >=12.0.0
+  # from parent package: twine (public)
+rpds-py >=0.25.0,>=0.7.0
+  # from parent package: jsonschema (public)
+  # from parent package: referencing (public)
+secretstorage >=3.2
+  # from parent package: keyring (public)
+six >=1.5
+  # from parent package: python-dateutil (public)
+starlette >=0.46.0,>=0.49.1
+  # from parent package: fastapi (public)
+  # from parent package: sse-starlette (public)
+  # from parent package: starlette-context (public)
+tomli >=1,>=1.1.0
+  # from parent package: pytest (public)
+  # from parent package: black (public)
+tqdm >=4.42.1
+  # from parent package: huggingface-hub (public)
+typing-inspection >=0.4.2,>=0.4.0,>=0.4.2
+  # from parent package: fastapi (public)
+  # from parent package: pydantic-settings (public)
+  # from parent package: pydantic (public)
+urllib3 >=1.26.0,<3,>=1.26,<3,>=2
+  # from parent package: twine (public)
+  # from parent package: requests (public)
+  # from parent package: id (public)
+watchdog >=2.0
+  # from parent package: mkdocs (public)
+zipp >=3.20
+  # from parent package: importlib-metadata (public)

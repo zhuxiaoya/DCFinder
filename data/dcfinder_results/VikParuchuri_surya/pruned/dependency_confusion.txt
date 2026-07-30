@@ -1,0 +1,117 @@
+{
+     "direct dependency": {
+          "number": 13,
+          "packages": [
+               {
+                    "name": "transformers",
+                    "specifier": "<5.0.0,>=4.51.2",
+                    "raw_requirement": "transformers>=4.51.2,<5.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/VikParuchuri_surya/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch",
+                    "specifier": "<3.0.0,>=2.7.0",
+                    "raw_requirement": "torch>=2.7.0,<3.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/VikParuchuri_surya/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pydantic",
+                    "specifier": "<3.0.0,>=2.5.3",
+                    "raw_requirement": "pydantic>=2.5.3,<3.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/VikParuchuri_surya/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pydantic-settings",
+                    "specifier": "<3.0.0,>=2.1.0",
+                    "raw_requirement": "pydantic-settings>=2.1.0,<3.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/VikParuchuri_surya/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "python-dotenv",
+                    "specifier": "<2.0.0,>=1.0.0",
+                    "raw_requirement": "python-dotenv>=1.0.0,<2.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/VikParuchuri_surya/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pillow",
+                    "specifier": "<11.0.0,>=10.2.0",
+                    "raw_requirement": "pillow>=10.2.0,<11.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/VikParuchuri_surya/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pypdfium2",
+                    "specifier": "=4.30.0",
+                    "raw_requirement": "pypdfium2=4.30.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/VikParuchuri_surya/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "filetype",
+                    "specifier": "<2.0.0,>=1.2.0",
+                    "raw_requirement": "filetype>=1.2.0,<2.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/VikParuchuri_surya/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "click",
+                    "specifier": "<9.0.0,>=8.1.8",
+                    "raw_requirement": "click>=8.1.8,<9.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/VikParuchuri_surya/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "platformdirs",
+                    "specifier": "<5.0.0,>=4.3.6",
+                    "raw_requirement": "platformdirs>=4.3.6,<5.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/VikParuchuri_surya/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opencv-python-headless",
+                    "specifier": "<5.0.0,>=4.11.0.86",
+                    "raw_requirement": "opencv-python-headless>=4.11.0.86,<5.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/VikParuchuri_surya/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "einops",
+                    "specifier": "<0.9.0,>=0.8.1",
+                    "raw_requirement": "einops>=0.8.1,<0.9.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/VikParuchuri_surya/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pre-commit",
+                    "specifier": "<5.0.0,>=4.2.0",
+                    "raw_requirement": "pre-commit>=4.2.0,<5.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/VikParuchuri_surya/pyproject.toml",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 0,
+          "packages": []
+     },
+     "direct dependency with same name": {
+          "number": 0,
+          "packages": {}
+     },
+     "indirect private dependency with same name": {
+          "number": 0,
+          "packages": {}
+     },
+     "risk": "No confusion",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 0,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 65
+     }
+}

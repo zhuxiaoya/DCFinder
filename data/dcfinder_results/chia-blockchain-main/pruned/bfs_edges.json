@@ -1,0 +1,596 @@
+[
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "build"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cachecontrol"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cleo"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "dulwich"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fastjsonschema"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "findpython"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "installer"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "keyring"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pbs-installer"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pkginfo"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "platformdirs"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "poetry-core"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyproject-hooks"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests-toolbelt"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "shellingham"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomli"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomlkit"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "trove-classifiers"
+  },
+  {
+    "parent": "poetry",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "virtualenv"
+  },
+  {
+    "parent": "poetry-dynamic-versioning",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "dunamai"
+  },
+  {
+    "parent": "poetry-dynamic-versioning",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomlkit"
+  },
+  {
+    "parent": "poetry-dynamic-versioning",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jinja2"
+  },
+  {
+    "parent": "poetry-plugin-export",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "poetry"
+  },
+  {
+    "parent": "poetry-plugin-export",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "poetry-core"
+  },
+  {
+    "parent": "poetry-plugin-export",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomlkit"
+  },
+  {
+    "parent": "aiohttp",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "attrs"
+  },
+  {
+    "parent": "aiohttp",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "chardet"
+  },
+  {
+    "parent": "aiohttp",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "multidict"
+  },
+  {
+    "parent": "aiohttp",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "async-timeout"
+  },
+  {
+    "parent": "aiohttp",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "yarl"
+  },
+  {
+    "parent": "aiohttp",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "anyio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "exceptiongroup"
+  },
+  {
+    "parent": "anyio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "idna"
+  },
+  {
+    "parent": "anyio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "bitstring",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "bitarray"
+  },
+  {
+    "parent": "bitstring",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tibs"
+  },
+  {
+    "parent": "boto3",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "botocore"
+  },
+  {
+    "parent": "boto3",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jmespath"
+  },
+  {
+    "parent": "boto3",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "s3transfer"
+  },
+  {
+    "parent": "chia-puzzles-py",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "clvm-rs"
+  },
+  {
+    "parent": "chia-puzzles-py",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "clvm-tools-rs"
+  },
+  {
+    "parent": "chia-puzzles-py",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pytest"
+  },
+  {
+    "parent": "clvm-tools",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "clvm"
+  },
+  {
+    "parent": "clvm-tools",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "clvm-tools-rs"
+  },
+  {
+    "parent": "clvm-tools",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "importlib-metadata"
+  },
+  {
+    "parent": "clvm-tools",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "setuptools"
+  },
+  {
+    "parent": "concurrent-log-handler",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "portalocker"
+  },
+  {
+    "parent": "keyring",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "secretstorage"
+  },
+  {
+    "parent": "keyring",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jeepney"
+  },
+  {
+    "parent": "keyring",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "importlib-metadata"
+  },
+  {
+    "parent": "keyring",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jaraco-classes"
+  },
+  {
+    "parent": "keyring",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jaraco-functools"
+  },
+  {
+    "parent": "keyring",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jaraco-context"
+  },
+  {
+    "parent": "hsms",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "segno"
+  },
+  {
+    "parent": "hsms",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "chia-base"
+  },
+  {
+    "parent": "hsms",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "chialisp-puzzles"
+  },
+  {
+    "parent": "aiohttp-cors",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "aiohttp"
+  },
+  {
+    "parent": "build",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "build",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyproject-hooks"
+  },
+  {
+    "parent": "build",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomli"
+  },
+  {
+    "parent": "diff-cover",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jinja2"
+  },
+  {
+    "parent": "diff-cover",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pygments"
+  },
+  {
+    "parent": "diff-cover",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "chardet"
+  },
+  {
+    "parent": "diff-cover",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pluggy"
+  },
+  {
+    "parent": "mypy",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "mypy",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mypy-extensions"
+  },
+  {
+    "parent": "mypy",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pathspec"
+  },
+  {
+    "parent": "mypy",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomli"
+  },
+  {
+    "parent": "mypy",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "librt"
+  },
+  {
+    "parent": "mypy",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "ast-serialize"
+  },
+  {
+    "parent": "pre-commit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cfgv"
+  },
+  {
+    "parent": "pre-commit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "identify"
+  },
+  {
+    "parent": "pre-commit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nodeenv"
+  },
+  {
+    "parent": "pre-commit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "pre-commit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "virtualenv"
+  },
+  {
+    "parent": "py3createtorrent",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "bencode-py"
+  },
+  {
+    "parent": "pyinstaller",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "altgraph"
+  },
+  {
+    "parent": "pyinstaller",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "pyinstaller",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyinstaller-hooks-contrib"
+  },
+  {
+    "parent": "pyinstaller",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "setuptools"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "exceptiongroup"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "iniconfig"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pluggy"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pygments"
+  },
+  {
+    "parent": "pytest",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomli"
+  },
+  {
+    "parent": "pytest-cov",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "coverage"
+  },
+  {
+    "parent": "pytest-cov",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pluggy"
+  },
+  {
+    "parent": "pytest-cov",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pytest"
+  },
+  {
+    "parent": "pytest-mock",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pytest"
+  },
+  {
+    "parent": "pytest-monitor",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pytest"
+  },
+  {
+    "parent": "pytest-monitor",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "pytest-monitor",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "psutil"
+  },
+  {
+    "parent": "pytest-monitor",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "memory-profiler"
+  },
+  {
+    "parent": "pytest-monitor",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "wheel"
+  },
+  {
+    "parent": "pytest-xdist",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "execnet"
+  },
+  {
+    "parent": "pytest-xdist",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pytest"
+  }
+]

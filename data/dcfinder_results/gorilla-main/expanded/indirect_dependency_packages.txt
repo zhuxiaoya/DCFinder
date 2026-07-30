@@ -1,0 +1,1024 @@
+absl-py >=0.6.1
+  # from parent package: dm-tree (public)
+aiohappyeyeballs >=2.5.0
+  # from parent package: aiohttp (public)
+aiohttp !=4.0.0a0,!=4.0.0a1,>=3.13.3,<4.0.0,>=3.8.3,>=3.9,>=3
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+  # from parent package: datasets (public)
+  # from parent package: fsspec (private)
+  # from parent package: ray (public)
+  # from parent package: langchain-community (public)
+  # from parent package: aiohttp-cors (public)
+  # from parent package: taskiq (public)
+aiohttp-cors
+  # from parent package: ray (public)
+aiosignal >=1.4.0
+  # from parent package: aiohttp (public)
+airportsdata
+  # from parent package: outlines (public)
+amqp <6.0.0,>=5.1.1
+  # from parent package: kombu (public)
+annotated-doc >=0.0.2
+  # from parent package: typer (public)
+  # from parent package: fastapi (public)
+anyio <5,>=3.5.0,<5.0.0,>=4.8.0,>=3.0.0,<5,>=3.6.2,>=4,>=3.5.0
+  # from parent package: openai (public)
+  # from parent package: anthropic (public)
+  # from parent package: writer-sdk (public)
+  # from parent package: httpx (public)
+  # from parent package: google-genai (public)
+  # from parent package: watchfiles (public)
+  # from parent package: starlette (public)
+  # from parent package: taskiq (public)
+  # from parent package: langsmith (public)
+apache-tvm-ffi ==0.1.11
+  # from parent package: sglang (public)
+  # from parent package: flash-attn-4 (public)
+  # from parent package: flashinfer-python (public)
+  # from parent package: quack-kernels (public)
+  # from parent package: sgl-deep-gemm (public)
+  # from parent package: tilelang (public)
+  # from parent package: tokenspeed-mla (public)
+argcomplete <4.0,>=1.10
+  # from parent package: datamodel-code-generator (public)
+astor
+  # from parent package: depyf (public)
+asttokens >=2.1.0
+  # from parent package: stack-data (public)
+async-timeout <6.0,>=4.0,<5.0.0,>=4.0.0
+  # from parent package: aiohttp (public)
+  # from parent package: langchain-classic (public)
+attrs >=17.3.0,>=22.2.0,>=22.2.0,>=18.2.0
+  # from parent package: aiohttp (public)
+  # from parent package: referencing (public)
+  # from parent package: jsonschema (public)
+  # from parent package: dm-tree (public)
+billiard <5.0,>=4.2.1
+  # from parent package: celery (public)
+black >=19.10b0
+  # from parent package: datamodel-code-generator (public)
+blake3
+  # from parent package: vllm (public)
+blobfile ==3.0.0
+  # from parent package: sglang (public)
+botocore <1.44.0,>=1.43.48,<2.0a.0,>=1.37.4
+  # from parent package: boto3 (public)
+  # from parent package: s3transfer (public)
+build
+  # from parent package: sglang (public)
+cachetools
+  # from parent package: vllm (public)
+celery
+  # from parent package: ray (public)
+certifi
+  # from parent package: httpx (public)
+  # from parent package: sentry-sdk (public)
+  # from parent package: httpcore (public)
+cffi >=2.0.0,>=1.0
+  # from parent package: cryptography (public)
+  # from parent package: soundfile (public)
+click !=8.0.0,>=7.1,>=7.0,>=8.0.0,>=7.0,<9.0,>=8.1.2,>=8.1.7,>=7,>=7.0,>=4.0
+  # from parent package: wandb (public)
+  # from parent package: uvicorn (public)
+  # from parent package: black (public)
+  # from parent package: ray (public)
+  # from parent package: flashinfer-python (public)
+  # from parent package: celery (public)
+  # from parent package: rich-toolkit (public)
+  # from parent package: click-didyoumean (public)
+  # from parent package: click-repl (public)
+  # from parent package: click-plugins (public)
+click-didyoumean >=0.3.0
+  # from parent package: celery (public)
+click-plugins >=1.1.1
+  # from parent package: celery (public)
+click-repl >=0.2.0
+  # from parent package: celery (public)
+cloudpickle >=1.2.0
+  # from parent package: vllm (public)
+  # from parent package: outlines (public)
+  # from parent package: tilelang (public)
+  # from parent package: gymnasium (public)
+colorama >=0.3.9
+  # from parent package: halo (public)
+  # from parent package: log-symbols (public)
+colorful
+  # from parent package: ray (public)
+compressed-tensors ==0.9.3
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+cron-converter >=1.2.2
+  # from parent package: pydantic-extra-types (public)
+cuda-pathfinder ==1.*,>=1.3.4
+  # from parent package: cupy-cuda12x (public)
+cuda-python >=13.0,>=12.8,>=12.8
+  # from parent package: sglang (public)
+  # from parent package: nvidia-cutlass-dsl-libs-base (public)
+  # from parent package: nvidia-cutlass-dsl-libs-cu13 (public)
+cuda-tile
+  # from parent package: flashinfer-python (public)
+cuda-toolkit <13.4,>=13.2
+  # from parent package: cuda-tile (public)
+cupy-cuda12x
+  # from parent package: ray (public)
+decorator >=5.1.0
+  # from parent package: ipython (public)
+deprecated >=1.2.6
+  # from parent package: opentelemetry-api (public)
+  # from parent package: opentelemetry-semantic-conventions (public)
+  # from parent package: opentelemetry-exporter-otlp-proto-grpc (public)
+  # from parent package: opentelemetry-exporter-otlp-proto-http (public)
+depyf ==0.18.0
+  # from parent package: vllm (public)
+detect-installer >=0.1.0
+  # from parent package: fastapi-cloud-cli (public)
+dill <0.3.8,>=0.3.0,>=0.4.1
+  # from parent package: datasets (public)
+  # from parent package: depyf (public)
+  # from parent package: multiprocess (public)
+diskcache
+  # from parent package: outlines (public)
+distlib <1,>=0.3.7
+  # from parent package: virtualenv (public)
+distro <2,>=1.7.0,>=1.7.0
+  # from parent package: openai (public)
+  # from parent package: anthropic (public)
+  # from parent package: writer-sdk (public)
+  # from parent package: sglang (public)
+  # from parent package: google-genai (public)
+  # from parent package: langsmith (public)
+dm-tree
+  # from parent package: ray (public)
+dnspython >=2.0.0,<3.0.0,>=2.6.1
+  # from parent package: email-validator (public)
+  # from parent package: pymongo (public)
+docker-pycreds >=0.4.0
+  # from parent package: wandb (public)
+docstring-parser <1
+  # from parent package: google-cloud-aiplatform (public)
+easydict
+  # from parent package: sglang (public)
+email-validator >=2.0.0
+  # from parent package: fastapi (public)
+eval-type-backport >=0.2.0
+  # from parent package: mistralai (public)
+exceptiongroup >=1.0.0rc8,>=1.0.2,>=1.3.0
+  # from parent package: pytest (public)
+  # from parent package: anyio (public)
+  # from parent package: celery (public)
+executing >=1.2.0
+  # from parent package: stack-data (public)
+farama-notifications >=0.0.1
+  # from parent package: gymnasium (public)
+fastapi-cli >=0.0.8
+  # from parent package: fastapi (public)
+fastapi-cloud-cli >=0.1.1
+  # from parent package: fastapi-cli (public)
+fastar >=0.9.0,>=0.10.0
+  # from parent package: fastapi (public)
+  # from parent package: fastapi-cloud-cli (public)
+fastavro <2.0.0,>=1.9.4
+  # from parent package: cohere (public)
+filelock >=3.16.1,>=3.0,<4,>=3.24.2,>=3.9,>=3.15.4
+  # from parent package: huggingface-hub (public)
+  # from parent package: vllm (public)
+  # from parent package: datasets (public)
+  # from parent package: torch (private)
+  # from parent package: ray (public)
+  # from parent package: blobfile (public)
+  # from parent package: modelscope (public)
+  # from parent package: virtualenv (public)
+  # from parent package: modelscope-hub (public)
+  # from parent package: python-discovery (public)
+flash-attn-4 ==4.0.0b15
+  # from parent package: sglang (public)
+flashinfer-cubin ==0.6.12
+  # from parent package: sglang (public)
+flashinfer-python ==0.6.12
+  # from parent package: sglang (public)
+frozenlist >=1.1.1,>=1.1.0
+  # from parent package: aiohttp (public)
+  # from parent package: aiosignal (public)
+fsspec <=2023.10.0,>=2023.1.0
+  # from parent package: huggingface-hub (public)
+  # from parent package: datasets (public)
+  # from parent package: torch (private)
+  # from parent package: ray (public)
+genson <2.0,>=1.2.1
+  # from parent package: datamodel-code-generator (public)
+gguf >=0.13.0
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+gitdb <5,>=4.0.1
+  # from parent package: gitpython (public)
+gitpython !=3.1.29,>=1.0.0
+  # from parent package: wandb (public)
+google-api-core !=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0,>=1.34.1,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0.dev0,>=1.31.5,<3.0.0dev,>=2.15.0,<3.0.0,>=2.25.0,<3.0.0,>=2.17.1,<3.0.0,>=2.11.0,<3.0.0,>=1.0.0
+  # from parent package: google-cloud-aiplatform (public)
+  # from parent package: google-api-python-client (public)
+  # from parent package: google-cloud-storage (public)
+  # from parent package: google-cloud-bigquery (public)
+  # from parent package: google-cloud-resource-manager (public)
+  # from parent package: google-cloud-core (public)
+  # from parent package: opencensus (public)
+google-auth <3.0.0,>=2.14.1,<3.0.0.dev0,>=1.19.0,>=2.15.0,<3.0.0,>=2.14.1,<3.0dev,>=2.26.1,<3.0.0,>=2.14.1,!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1,<3.0.0,>=2.48.1,<3.0.0,>=1.32.0,!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1
+  # from parent package: google-cloud-aiplatform (public)
+  # from parent package: google-api-python-client (public)
+  # from parent package: google-auth-oauthlib (public)
+  # from parent package: google-api-core (public)
+  # from parent package: google-cloud-storage (public)
+  # from parent package: google-cloud-bigquery (public)
+  # from parent package: google-cloud-resource-manager (public)
+  # from parent package: google-genai (public)
+  # from parent package: google-auth-httplib2 (public)
+  # from parent package: google-cloud-core (public)
+google-auth-httplib2 >=0.1.0
+  # from parent package: google-api-python-client (public)
+google-cloud-bigquery !=3.20.0,<4.0.0,>=1.15.0
+  # from parent package: google-cloud-aiplatform (public)
+google-cloud-core <3.0dev,>=2.3.0,<3.0.0,>=2.4.1
+  # from parent package: google-cloud-storage (public)
+  # from parent package: google-cloud-bigquery (public)
+google-cloud-resource-manager <3.0.0,>=1.3.3
+  # from parent package: google-cloud-aiplatform (public)
+google-cloud-storage <3.0.0,>=1.32.0
+  # from parent package: google-cloud-aiplatform (public)
+google-crc32c <2.0dev,>=1.0,<2.0.0,>=1.0.0
+  # from parent package: google-cloud-storage (public)
+  # from parent package: google-resumable-media (public)
+google-genai <2.0.0,>=1.0.0
+  # from parent package: google-cloud-aiplatform (public)
+google-resumable-media >=2.7.2,<3.0.0,>=2.0.0
+  # from parent package: google-cloud-storage (public)
+  # from parent package: google-cloud-bigquery (public)
+googleapis-common-protos <2.0.0,>=1.63.2,>=1.5.5,<2.0.0,>=1.63.2,~=1.52,~=1.52
+  # from parent package: google-api-core (public)
+  # from parent package: grpcio-status (public)
+  # from parent package: grpc-google-iam-v1 (public)
+  # from parent package: opentelemetry-exporter-otlp-proto-grpc (public)
+  # from parent package: opentelemetry-exporter-otlp-proto-http (public)
+grpc-google-iam-v1 <1.0.0,>=0.14.0
+  # from parent package: google-cloud-resource-manager (public)
+grpcio <2.0.0,>=1.41.0,<2.0.0,>=1.59.0,>=1.42.0,>=1.81.1,>=1.83.0rc1,<2.0.0,>=1.44.0,<2.0.0,>=1.0.0,>=1.81.1,>=1.83.0rc1,>=1.83.0rc1
+  # from parent package: google-api-core (public)
+  # from parent package: google-cloud-resource-manager (public)
+  # from parent package: ray (public)
+  # from parent package: smg-grpc-servicer (public)
+  # from parent package: grpcio-status (public)
+  # from parent package: grpc-google-iam-v1 (public)
+  # from parent package: opentelemetry-exporter-otlp-proto-grpc (public)
+  # from parent package: smg-grpc-proto (public)
+  # from parent package: grpcio-reflection (public)
+  # from parent package: grpcio-health-checking (public)
+grpcio-health-checking >=1.81.1
+  # from parent package: smg-grpc-servicer (public)
+grpcio-reflection >=1.81.1
+  # from parent package: smg-grpc-servicer (public)
+grpcio-status <2.0.0,>=1.41.0
+  # from parent package: google-api-core (public)
+gymnasium ==1.2.2
+  # from parent package: ray (public)
+h11 >=0.8,>=0.16
+  # from parent package: uvicorn (public)
+  # from parent package: httpcore (public)
+httpcore ==1.*
+  # from parent package: httpx (public)
+httplib2 <1.dev0,>=0.15.0,<1.0.0,>=0.19.0
+  # from parent package: google-api-python-client (public)
+  # from parent package: google-auth-httplib2 (public)
+httpx <1,>=0.23.0,>=0.28.1,<1,>=0.23.0,>=0.21.2,<1,>=0.23.0,<1.0.0,>=0.23.0,<1.0.0,>=0.23.0,<1.0.0,>=0.28.1,<1,>=0.23.0,>=0.27.0
+  # from parent package: openai (public)
+  # from parent package: mistralai (public)
+  # from parent package: anthropic (public)
+  # from parent package: cohere (public)
+  # from parent package: writer-sdk (public)
+  # from parent package: fastapi (public)
+  # from parent package: google-genai (public)
+  # from parent package: langsmith (public)
+  # from parent package: fastapi-cloud-cli (public)
+httpx-sse ==0.4.0
+  # from parent package: cohere (public)
+  # from parent package: langchain-community (public)
+humanfriendly >=9.1
+  # from parent package: coloredlogs (public)
+idna >=2.8,>=2.0.0,>=2.0
+  # from parent package: anyio (public)
+  # from parent package: httpx (public)
+  # from parent package: email-validator (public)
+  # from parent package: yarl (public)
+importlib-metadata <=8.0.0,>=6.0
+  # from parent package: vllm (public)
+  # from parent package: opentelemetry-api (public)
+inflect <6.0,>=4.1.0
+  # from parent package: datamodel-code-generator (public)
+iniconfig
+  # from parent package: pytest (public)
+interegular >=0.3.2
+  # from parent package: sglang (public)
+  # from parent package: lm-format-enforcer (public)
+  # from parent package: outlines (public)
+  # from parent package: outlines-core (public)
+ipython
+  # from parent package: sglang (public)
+ipython-pygments-lexers >=1.0.0
+  # from parent package: ipython (public)
+isort <6.0,>=4.3.21
+  # from parent package: datamodel-code-generator (public)
+itsdangerous >=1.1.0
+  # from parent package: fastapi (public)
+jedi >=0.18.2
+  # from parent package: ipython (public)
+jinja2 <4.0,>=2.10.1,>=3.1.5,>=3.1.5,>=2.9
+  # from parent package: datamodel-code-generator (public)
+  # from parent package: torch (private)
+  # from parent package: fastapi (public)
+  # from parent package: outlines (public)
+  # from parent package: memray (public)
+jiter <1,>=0.4.0
+  # from parent package: openai (public)
+  # from parent package: anthropic (public)
+  # from parent package: writer-sdk (public)
+jmespath <2.0.0,>=0.7.1
+  # from parent package: boto3 (public)
+  # from parent package: botocore (public)
+jsonpatch <2.0.0,>=1.33.0
+  # from parent package: langchain-core (public)
+jsonpointer >=1.9
+  # from parent package: jsonpatch (public)
+jsonschema >=4.21.1,>=4.0.0
+  # from parent package: outlines (public)
+  # from parent package: mistral-common (public)
+  # from parent package: ray (public)
+  # from parent package: pydantic-extra-types (public)
+  # from parent package: outlines-core (public)
+jsonschema-specifications >=2023.03.6
+  # from parent package: jsonschema (public)
+kernels <0.15,>=0.14.1
+  # from parent package: sglang (public)
+kernels-data >=0.14.0.dev1
+  # from parent package: kernels (public)
+kombu >=5.6.0
+  # from parent package: celery (public)
+langchain-classic <2.0.0,>=1.0.7
+  # from parent package: langchain-community (public)
+langchain-community <1.0.0,>=0.4.2
+  # from parent package: langchain-experimental (public)
+langchain-core <2.0.0,>=1.4.0,<2.0.0,>=1.4.9,<2.0.0,>=1.4.0,<2.0.0,>=1.4.4,<2.0.0,>=1.2.31
+  # from parent package: langchain-experimental (public)
+  # from parent package: langchain-openai (public)
+  # from parent package: langchain-community (public)
+  # from parent package: langchain-classic (public)
+  # from parent package: langchain-text-splitters (public)
+langchain-protocol >=0.0.17
+  # from parent package: langchain-core (public)
+langchain-text-splitters <2.0.0,>=1.1.2
+  # from parent package: langchain-classic (public)
+langsmith <1.0.0,>=0.3.45,<1.0.0,>=0.1.125,<1.0.0,>=0.1.17
+  # from parent package: langchain-core (public)
+  # from parent package: langchain-community (public)
+  # from parent package: langchain-classic (public)
+lark ==1.2.2
+  # from parent package: vllm (public)
+  # from parent package: outlines (public)
+llguidance <0.8.0,>=0.7.9,<0.8.0,>=0.7.11
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+llvmlite <0.45,>=0.44.0dev0
+  # from parent package: numba (public)
+lm-format-enforcer <0.11,>=0.10.11
+  # from parent package: vllm (public)
+log-symbols >=0.0.14
+  # from parent package: halo (public)
+lxml >=4.9
+  # from parent package: blobfile (public)
+lz4
+  # from parent package: ray (public)
+markdown-it-py >=2.2.0,>=2.1.0,<5.0.0,>=2.0.0
+  # from parent package: rich (public)
+  # from parent package: textual (public)
+  # from parent package: mdit-py-plugins (public)
+markupsafe >=2.0
+  # from parent package: jinja2 (private)
+matplotlib-inline >=0.1.6
+  # from parent package: ipython (public)
+mdit-py-plugins
+  # from parent package: textual (public)
+mdurl ~=0.1
+  # from parent package: markdown-it-py (public)
+memray
+  # from parent package: ray (public)
+mistral-common >=1.5.4,>=1.11.5
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+  # from parent package: mistral-common (public)
+ml-dtypes
+  # from parent package: tilelang (public)
+mmh3
+  # from parent package: ray (public)
+modelscope
+  # from parent package: sglang (public)
+modelscope-hub >=0.0.7
+  # from parent package: modelscope (public)
+msgpack <2.0.0,>=1.0.0
+  # from parent package: ray (public)
+msgspec
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+multidict <7.0,>=4.5,>=4.0
+  # from parent package: aiohttp (public)
+  # from parent package: yarl (public)
+multiprocess
+  # from parent package: datasets (public)
+mypy-extensions >=0.4.3
+  # from parent package: black (public)
+nest-asyncio
+  # from parent package: outlines (public)
+networkx
+  # from parent package: torch (private)
+ninja
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+  # from parent package: xgrammar (public)
+  # from parent package: flashinfer-python (public)
+numba ==0.61.2
+  # from parent package: vllm (public)
+nvidia-cublas ==13.6.0.2.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cusolver (public)
+nvidia-cublas-cu11 ==11.11.3.6
+  # from parent package: torch (private)
+  # from parent package: nvidia-cudnn-cu11 (private)
+  # from parent package: nvidia-cusolver-cu11 (private)
+nvidia-cuda-cccl ==13.3.3.4.1.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-crt ==13.3.73.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cuda-nvcc (public)
+nvidia-cuda-culibos ==13.3.33.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-cuobjdump ==13.3.73.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-cupti ==13.3.75.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-cupti-cu11 ==11.8.87
+  # from parent package: torch (private)
+nvidia-cuda-cuxxfilt ==13.3.29.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-nvcc ==13.3.73.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cuda-tileiras (public)
+nvidia-cuda-nvdisasm ==13.3.73.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-nvrtc ==13.3.33.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cublas (public)
+nvidia-cuda-nvrtc-cu11 ==11.8.89
+  # from parent package: torch (private)
+nvidia-cuda-opencl ==13.3.27.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-profiler-api ==13.3.27.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-runtime ==13.3.29.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cuda-nvcc (public)
+nvidia-cuda-runtime-cu11 ==11.8.89
+  # from parent package: torch (private)
+nvidia-cuda-sanitizer-api ==13.3.75.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-tileiras ==13.3.36.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cudnn-cu11 ==9.1.0.70
+  # from parent package: torch (private)
+nvidia-cudnn-frontend >=1.13.0
+  # from parent package: flashinfer-python (public)
+nvidia-cufft ==12.3.0.29.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cufft-cu11 ==10.9.0.58
+  # from parent package: torch (private)
+nvidia-cufile ==1.18.1.6.*
+  # from parent package: cuda-toolkit (public)
+nvidia-curand ==10.4.3.29.*
+  # from parent package: cuda-toolkit (public)
+nvidia-curand-cu11 ==10.3.0.86
+  # from parent package: torch (private)
+nvidia-cusolver ==12.2.6.9.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cusolver-cu11 ==11.4.1.48
+  # from parent package: torch (private)
+nvidia-cusparse ==12.8.2.51.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cusolver (public)
+nvidia-cusparse-cu11 ==11.7.5.86
+  # from parent package: torch (private)
+nvidia-cutlass-dsl ==4.5.2
+  # from parent package: sglang (public)
+  # from parent package: flash-attn-4 (public)
+  # from parent package: flashinfer-python (public)
+  # from parent package: quack-kernels (public)
+  # from parent package: tokenspeed-mla (public)
+nvidia-cutlass-dsl-libs-base ==4.5.2
+  # from parent package: nvidia-cutlass-dsl (public)
+  # from parent package: nvidia-cutlass-dsl-libs-cu13 (public)
+nvidia-cutlass-dsl-libs-cu13 ==4.5.2
+  # from parent package: nvidia-cutlass-dsl (public)
+nvidia-mathdx ==25.6.0
+  # from parent package: sglang (public)
+nvidia-ml-py
+  # from parent package: sglang (public)
+  # from parent package: flashinfer-python (public)
+nvidia-nccl-cu11 ==2.21.5
+  # from parent package: torch (private)
+nvidia-npp ==13.1.2.81.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvfatbin ==13.3.29.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvjitlink <14,>=13.3.33
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cuda-tileiras (public)
+  # from parent package: nvidia-cufft (public)
+  # from parent package: nvidia-cusolver (public)
+  # from parent package: nvidia-cusparse (public)
+nvidia-nvjpeg ==13.2.1.68.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvml-dev ==13.3.29.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvptxcompiler ==13.3.73.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvtx ==13.3.29.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvtx-cu11 ==11.8.86
+  # from parent package: torch (private)
+nvidia-nvvm ==13.3.73.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cuda-nvcc (public)
+  # from parent package: nvidia-cuda-tileiras (public)
+oauthlib >=3.0.0
+  # from parent package: requests-oauthlib (public)
+openai-harmony ==0.0.4
+  # from parent package: sglang (public)
+opencensus
+  # from parent package: ray (public)
+opencensus-context >=0.1.3
+  # from parent package: opencensus (public)
+opencv-python-headless >=4.11.0,>=4.0.0
+  # from parent package: vllm (public)
+  # from parent package: mistral-common (public)
+opentelemetry-api ==1.26.0
+  # from parent package: vllm (public)
+  # from parent package: opentelemetry-sdk (public)
+  # from parent package: opentelemetry-semantic-conventions (public)
+  # from parent package: opentelemetry-exporter-otlp-proto-grpc (public)
+  # from parent package: opentelemetry-exporter-otlp-proto-http (public)
+  # from parent package: opentelemetry-exporter-prometheus (public)
+opentelemetry-exporter-otlp <1.27.0,>=1.26.0
+  # from parent package: vllm (public)
+opentelemetry-exporter-otlp-proto-common ==1.26.0
+  # from parent package: opentelemetry-exporter-otlp-proto-grpc (public)
+  # from parent package: opentelemetry-exporter-otlp-proto-http (public)
+opentelemetry-exporter-otlp-proto-grpc ==1.26.0
+  # from parent package: opentelemetry-exporter-otlp (public)
+opentelemetry-exporter-otlp-proto-http ==1.26.0
+  # from parent package: opentelemetry-exporter-otlp (public)
+opentelemetry-exporter-prometheus
+  # from parent package: ray (public)
+opentelemetry-proto ==1.26.0
+  # from parent package: ray (public)
+  # from parent package: opentelemetry-exporter-otlp-proto-grpc (public)
+  # from parent package: opentelemetry-exporter-otlp-proto-http (public)
+  # from parent package: opentelemetry-exporter-otlp-proto-common (public)
+opentelemetry-sdk <1.27.0,>=1.26.0,<2,>=1.38.0,>=1.30.0,>=1.4.0,~=1.26.0,~=1.26.0,~=1.43.0
+  # from parent package: vllm (public)
+  # from parent package: opentelemetry-semantic-conventions-ai (public)
+  # from parent package: ray (public)
+  # from parent package: sentry-sdk (public)
+  # from parent package: opentelemetry-exporter-otlp-proto-grpc (public)
+  # from parent package: opentelemetry-exporter-otlp-proto-http (public)
+  # from parent package: opentelemetry-exporter-prometheus (public)
+opentelemetry-semantic-conventions ==0.47b0
+  # from parent package: opentelemetry-sdk (public)
+  # from parent package: opentelemetry-semantic-conventions-ai (public)
+opentelemetry-semantic-conventions-ai <0.5.0,>=0.4.1
+  # from parent package: vllm (public)
+orjson >=3.9.14
+  # from parent package: sglang (public)
+  # from parent package: langsmith (public)
+ormsgpack >=1.7.0
+  # from parent package: ray (public)
+outlines ==0.1.11
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+outlines-core ==0.1.26
+  # from parent package: outlines (public)
+packaging >=20.9,>=14.3,>=20.0,>=20.0,>=22.0,>=24.2.0,>=24.2,>=24.0,>=24.2,>=20.0,>=23.2.0,>=19,>=23.2
+  # from parent package: huggingface-hub (public)
+  # from parent package: datamodel-code-generator (public)
+  # from parent package: google-cloud-aiplatform (public)
+  # from parent package: sglang (public)
+  # from parent package: datasets (public)
+  # from parent package: transformers (public)
+  # from parent package: pytest (public)
+  # from parent package: accelerate (public)
+  # from parent package: black (public)
+  # from parent package: google-cloud-bigquery (public)
+  # from parent package: lm-format-enforcer (public)
+  # from parent package: ray (public)
+  # from parent package: build (public)
+  # from parent package: flashinfer-python (public)
+  # from parent package: kernels (public)
+  # from parent package: modelscope (public)
+  # from parent package: langchain-core (public)
+  # from parent package: taskiq (public)
+  # from parent package: tensorboardx (public)
+  # from parent package: langsmith (public)
+  # from parent package: kombu (public)
+parameterized <0.10.0,>=0.9.0
+  # from parent package: cohere (public)
+parso <0.9.0,>=0.8.6
+  # from parent package: jedi (public)
+partial-json-parser
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+pathspec >=1.0.0
+  # from parent package: black (public)
+pendulum <4.0.0,>=3.0.0
+  # from parent package: pydantic-extra-types (public)
+pexpect >4.6
+  # from parent package: ipython (public)
+phonenumbers <10,>=8
+  # from parent package: pydantic-extra-types (public)
+pillow >=10.3.0,!=8.3.*,>=5.3.0
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+  # from parent package: mistral-common (public)
+  # from parent package: torchvision (private)
+platformdirs >=2,<5,>=3.9.1,<5,>=4.3.6,<5,>=3.6.0
+  # from parent package: wandb (public)
+  # from parent package: black (public)
+  # from parent package: virtualenv (public)
+  # from parent package: python-discovery (public)
+  # from parent package: textual (public)
+pluggy <2.0,>=1.4
+  # from parent package: pytest (public)
+prometheus-client >=0.18.0,>=0.20.0,<1.0.0,>=0.8.0,>=0.7.1,<1.0.0,>=0.5.0
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+  # from parent package: prometheus-fastapi-instrumentator (public)
+  # from parent package: ray (public)
+  # from parent package: opentelemetry-exporter-prometheus (public)
+prometheus-fastapi-instrumentator >=7.0.0
+  # from parent package: vllm (public)
+propcache >=0.2.0,>=0.2.1
+  # from parent package: aiohttp (public)
+  # from parent package: yarl (public)
+proto-plus <2.0.0,>=1.22.3,<2.0.0,>=1.24.0,<2.0.0,>=1.22.3
+  # from parent package: google-cloud-aiplatform (public)
+  # from parent package: google-api-core (public)
+  # from parent package: google-cloud-resource-manager (public)
+psutil >=5.0.0,>=7
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+  # from parent package: wandb (public)
+  # from parent package: accelerate (public)
+  # from parent package: ipython (public)
+  # from parent package: tilelang (public)
+ptyprocess >=0.5
+  # from parent package: pexpect (public)
+pure-eval
+  # from parent package: stack-data (public)
+py-cpuinfo
+  # from parent package: vllm (public)
+py-spy >=0.2.0
+  # from parent package: sglang (public)
+  # from parent package: ray (public)
+pyarrow >=8.0.0,>=17.0.0
+  # from parent package: datasets (public)
+  # from parent package: ray (public)
+pyarrow-hotfix
+  # from parent package: datasets (public)
+pyasn1 <0.7.0,>=0.6.1
+  # from parent package: pyasn1-modules (public)
+pyasn1-modules >=0.2.1
+  # from parent package: google-auth (public)
+pybase64
+  # from parent package: sglang (public)
+pycountry >=23
+  # from parent package: outlines (public)
+  # from parent package: pydantic-extra-types (public)
+pycparser
+  # from parent package: cffi (public)
+pycron >=3.0.0
+  # from parent package: taskiq (public)
+pycryptodomex >=3.8
+  # from parent package: blobfile (public)
+pydantic-core <3.0.0,>=2.18.2
+  # from parent package: cohere (public)
+pydantic-extra-types >=2.0.0,>=2.10.5
+  # from parent package: fastapi (public)
+  # from parent package: mistral-common (public)
+pydantic-settings >=2.0.0,<3.0.0,>=2.10.1
+  # from parent package: fastapi (public)
+  # from parent package: langchain-community (public)
+pygments <3.0.0,>=2.13.0,>=2.14.0,<3.0.0,>=2.19.2
+  # from parent package: rich (public)
+  # from parent package: ipython (public)
+  # from parent package: ipython-pygments-lexers (public)
+  # from parent package: textual (public)
+pymongo <5.0.0,>=4.0.0
+  # from parent package: pydantic-extra-types (public)
+pyopenssl
+  # from parent package: ray (public)
+pyparsing <4,>=3.1
+  # from parent package: httplib2 (public)
+pyproject-hooks
+  # from parent package: build (public)
+python-dateutil >=2.8.2,<3.0.0,>=2.8.2,<3.0.0,>=2.1,>=2.8.2,>=2.6
+  # from parent package: pandas (public)
+  # from parent package: mistralai (public)
+  # from parent package: google-cloud-bigquery (public)
+  # from parent package: botocore (public)
+  # from parent package: celery (public)
+  # from parent package: cron-converter (public)
+  # from parent package: pendulum (public)
+python-discovery >=1.4.2
+  # from parent package: virtualenv (public)
+python-json-logger
+  # from parent package: vllm (public)
+python-multipart >=0.0.18
+  # from parent package: sglang (public)
+  # from parent package: fastapi (public)
+python-ulid <4,>=1
+  # from parent package: pydantic-extra-types (public)
+pytokens ~=0.4.0
+  # from parent package: black (public)
+pytz >=2020.1,>=2024.1
+  # from parent package: pandas (public)
+  # from parent package: pydantic-extra-types (public)
+pyzmq >=25.0.0,>=25.1.2
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+quack-kernels >=0.4.1,>=0.4.0
+  # from parent package: sglang (public)
+  # from parent package: flash-attn-4 (public)
+ray !=2.44.*,>=2.43.0
+  # from parent package: vllm (public)
+referencing >=0.28.4,>=0.31.0
+  # from parent package: outlines (public)
+  # from parent package: jsonschema (public)
+  # from parent package: jsonschema-specifications (public)
+regex >=2025.10.22
+  # from parent package: transformers (public)
+  # from parent package: tiktoken (public)
+requests-oauthlib >=0.7.0
+  # from parent package: google-auth-oauthlib (public)
+requests-toolbelt >=1.0.0
+  # from parent package: langsmith (public)
+rich >=13.8.0,>=11.2.0,>=13.7.1,>=14.2.0
+  # from parent package: typer (public)
+  # from parent package: memray (public)
+  # from parent package: rich-toolkit (public)
+  # from parent package: textual (public)
+rich-toolkit >=0.14.8,>=0.20.3
+  # from parent package: fastapi-cli (public)
+  # from parent package: fastapi-cloud-cli (public)
+rignore >=0.5.1
+  # from parent package: fastapi-cloud-cli (public)
+rpds-py >=0.7.0,>=0.25.0
+  # from parent package: referencing (public)
+  # from parent package: jsonschema (public)
+s3transfer <0.20.0,>=0.19.0
+  # from parent package: boto3 (public)
+safetensors >=0.4.3
+  # from parent package: transformers (public)
+  # from parent package: timm (public)
+scipy
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+  # from parent package: ray (public)
+semver >=3.0.2,~=3.0.2
+  # from parent package: pydantic-extra-types (public)
+sentry-sdk >=2.0.0,>=2.20.0
+  # from parent package: wandb (public)
+  # from parent package: fastapi-cloud-cli (public)
+setproctitle
+  # from parent package: sglang (public)
+  # from parent package: wandb (public)
+setuptools
+  # from parent package: wandb (public)
+  # from parent package: modelscope (public)
+sgl-deep-gemm ==0.1.4
+  # from parent package: sglang (public)
+sglang-kernel ==0.4.4
+  # from parent package: sglang (public)
+shapely <3.0.0
+  # from parent package: google-cloud-aiplatform (public)
+shellingham >=1.3.0
+  # from parent package: typer (public)
+six >=1.12.0,>=1.5,>=1.4.0,~=1.16
+  # from parent package: halo (public)
+  # from parent package: python-dateutil (public)
+  # from parent package: docker-pycreds (public)
+  # from parent package: opencensus (public)
+smart-open
+  # from parent package: ray (public)
+smg-grpc-proto >=0.4.11
+  # from parent package: smg-grpc-servicer (public)
+smg-grpc-servicer >=0.5.0
+  # from parent package: sglang (public)
+smmap <6,>=3.0.1
+  # from parent package: gitdb (public)
+sniffio >=1.1
+  # from parent package: openai (public)
+  # from parent package: anthropic (public)
+  # from parent package: writer-sdk (public)
+  # from parent package: google-genai (public)
+  # from parent package: langsmith (public)
+soundfile ==0.13.1
+  # from parent package: sglang (public)
+spinners >=0.0.24
+  # from parent package: halo (public)
+sqlalchemy <3.0.0,>=1.4.0
+  # from parent package: langchain-community (public)
+  # from parent package: langchain-classic (public)
+stack-data >=0.6.0
+  # from parent package: ipython (public)
+starlette >=0.46.0,<2.0.0,>=1.0.0,>=1.0.1
+  # from parent package: fastapi (public)
+  # from parent package: prometheus-fastapi-instrumentator (public)
+  # from parent package: ray (public)
+sympy ==1.13.1
+  # from parent package: torch (private)
+taskiq
+  # from parent package: ray (public)
+taskiq-dependencies <2,>=1.3.1
+  # from parent package: taskiq (public)
+tensorboardx >=1.9
+  # from parent package: ray (public)
+termcolor >=1.1.0
+  # from parent package: halo (public)
+textual >=0.41.0
+  # from parent package: memray (public)
+tiktoken >=0.6.0,<1.0.0,>=0.7.0,>=0.7.0
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+  # from parent package: langchain-openai (public)
+  # from parent package: xgrammar (public)
+  # from parent package: mistral-common (public)
+tilelang ==0.1.11
+  # from parent package: sglang (public)
+timm ==1.0.16
+  # from parent package: sglang (public)
+tokenizers <1,>=0.15,>=0.21.1,<=0.23.0,>=0.22.0
+  # from parent package: cohere (public)
+  # from parent package: vllm (public)
+  # from parent package: transformers (public)
+tokenspeed-mla ==0.1.7
+  # from parent package: sglang (public)
+tokenspeed-triton >=3.7.10.post20260531
+  # from parent package: tokenspeed-mla (public)
+toml <1.0.0,>=0.10.0
+  # from parent package: datamodel-code-generator (public)
+tomli >=1,>=1.1.0,>=1.1.0,>=2.0,>=2.0.0
+  # from parent package: pytest (public)
+  # from parent package: black (public)
+  # from parent package: build (public)
+  # from parent package: kernels (public)
+  # from parent package: fastapi-cli (public)
+tomlkit >=0.13.3
+  # from parent package: kernels (public)
+torch-c-dlpack-ext
+  # from parent package: flash-attn-4 (public)
+  # from parent package: quack-kernels (public)
+  # from parent package: tilelang (public)
+torch-memory-saver >=0.0.9.post1
+  # from parent package: sglang (public)
+torchao ==0.17.0
+  # from parent package: sglang (public)
+torchaudio ==2.6.0
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+torchcodec ==0.11.1
+  # from parent package: sglang (public)
+torchvision ==0.21.0
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+  # from parent package: timm (public)
+traitlets >=5.13.0
+  # from parent package: ipython (public)
+  # from parent package: matplotlib-inline (public)
+triton ==3.2.0
+  # from parent package: torch (private)
+  # from parent package: xgrammar (public)
+types-requests <3.0.0,>=2.0.0
+  # from parent package: cohere (public)
+typing-extensions >=3.7.4.3,>=4.2.0,<5,>=4.11,<5,>=4.10,>=4.0.0,<5,>=4.14,>=4.10,<5,>=4.4,>=4.10.0,>=4.0,>=4.8.0,>=4.13.2,>=4.5,>=4.12.0,>=4.14.1,>=4.0.1,<5.0.0,>=4.14.0,>=4.6.0,>=4.4,>=4.11.0,>=3.7.4,>=4.5,>=4.6,>=4.10.0,<5.0.0,>=4.7.0,>=4.6.0,>=4.10.0,~=4.12,>=4.2,>=4.1.0,>=4.4.0,>=4.9,>=4.13.2,>=4.3.0,>=3.10.0.0,<5.0.0,>=4.13.0,>=4.0.0,>=4.6.0,>=4.12.2,<5.0.0,>=4.4.0
+  # from parent package: huggingface-hub (public)
+  # from parent package: pydantic (public)
+  # from parent package: openai (public)
+  # from parent package: anthropic (public)
+  # from parent package: cohere (public)
+  # from parent package: google-cloud-aiplatform (public)
+  # from parent package: writer-sdk (public)
+  # from parent package: vllm (public)
+  # from parent package: wandb (public)
+  # from parent package: torch (private)
+  # from parent package: uvicorn (public)
+  # from parent package: fastapi (public)
+  # from parent package: cryptography (public)
+  # from parent package: anyio (public)
+  # from parent package: typing-inspection (public)
+  # from parent package: pydantic-core (public)
+  # from parent package: black (public)
+  # from parent package: google-genai (public)
+  # from parent package: blake3 (public)
+  # from parent package: aiohttp (public)
+  # from parent package: outlines (public)
+  # from parent package: mistral-common (public)
+  # from parent package: opentelemetry-sdk (public)
+  # from parent package: apache-tvm-ffi (public)
+  # from parent package: flash-attn-4 (public)
+  # from parent package: ipython (public)
+  # from parent package: tilelang (public)
+  # from parent package: langchain-core (public)
+  # from parent package: exceptiongroup (public)
+  # from parent package: starlette (public)
+  # from parent package: pydantic-extra-types (public)
+  # from parent package: grpcio (public)
+  # from parent package: aiosignal (public)
+  # from parent package: multidict (public)
+  # from parent package: referencing (public)
+  # from parent package: pyopenssl (public)
+  # from parent package: virtualenv (public)
+  # from parent package: gymnasium (public)
+  # from parent package: taskiq (public)
+  # from parent package: cuda-tile (public)
+  # from parent package: nvidia-cutlass-dsl-libs-base (public)
+  # from parent package: nvidia-cutlass-dsl-libs-cu13 (public)
+  # from parent package: langchain-protocol (public)
+  # from parent package: langsmith (public)
+  # from parent package: sqlalchemy (public)
+  # from parent package: rich-toolkit (public)
+  # from parent package: textual (public)
+typing-inspection >=0.4.0,>=0.4.2,>=0.4.0
+  # from parent package: mistralai (public)
+  # from parent package: fastapi (public)
+  # from parent package: pydantic-settings (public)
+tzdata >=2022.7,>=2024.1,>=2020.1,>=2025.2
+  # from parent package: pandas (public)
+  # from parent package: pydantic-extra-types (public)
+  # from parent package: pendulum (public)
+  # from parent package: kombu (public)
+tzlocal
+  # from parent package: celery (public)
+uritemplate <5,>=3.0.1
+  # from parent package: google-api-python-client (public)
+urllib3 >=1.26.0,>=2,!=2.2.0,<3,>=1.25.4,<3,>=1.25.3,>=1.26,>=1.26.11,>=1.26
+  # from parent package: docker (public)
+  # from parent package: types-requests (public)
+  # from parent package: botocore (public)
+  # from parent package: blobfile (public)
+  # from parent package: modelscope (public)
+  # from parent package: sentry-sdk (public)
+  # from parent package: modelscope-hub (public)
+uuid-utils <1.0,>=0.12.0,>=0.6.0,<1.0,>=0.12.0
+  # from parent package: langchain-core (public)
+  # from parent package: pydantic-extra-types (public)
+  # from parent package: langsmith (public)
+uvloop
+  # from parent package: sglang (public)
+vine ==5.1.0
+  # from parent package: celery (public)
+  # from parent package: kombu (public)
+  # from parent package: amqp (public)
+virtualenv !=20.21.1,>=20.0.24
+  # from parent package: ray (public)
+watchfiles
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+  # from parent package: ray (public)
+wcwidth
+  # from parent package: prompt-toolkit (public)
+websockets <17.0,>=13.0.0,>=15.0
+  # from parent package: google-genai (public)
+  # from parent package: langsmith (public)
+wrapt <3,>=1.10,>=1.11.2
+  # from parent package: deprecated (public)
+  # from parent package: dm-tree (public)
+  # from parent package: smart-open (public)
+xformers ==0.0.29.post2
+  # from parent package: vllm (public)
+xgrammar ==0.1.18
+  # from parent package: vllm (public)
+  # from parent package: sglang (public)
+xxhash >=3.0.0
+  # from parent package: datasets (public)
+  # from parent package: langsmith (public)
+yarl <2.0,>=1.17.0
+  # from parent package: aiohttp (public)
+z3-solver <4.15.5,>=4.13.0
+  # from parent package: tilelang (public)
+zipp >=0.5
+  # from parent package: importlib-metadata (private)
+zstandard >=0.23.0
+  # from parent package: sglang (public)
+  # from parent package: langsmith (public)

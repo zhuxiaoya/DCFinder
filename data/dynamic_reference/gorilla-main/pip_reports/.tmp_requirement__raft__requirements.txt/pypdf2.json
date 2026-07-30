@@ -1,0 +1,89 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/8e/5e/c86a5643653825d3c913719e788e41386bee415c2b87b4f955432f2de6b2/pypdf2-3.0.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=d16e4205cfee272fbdc0568b68d82be796540b1537508cef59388f839c191928",
+          "hashes": {
+            "sha256": "d16e4205cfee272fbdc0568b68d82be796540b1537508cef59388f839c191928"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "PyPDF2",
+        "version": "3.0.1",
+        "summary": "A pure-python PDF library capable of splitting, merging, cropping, and transforming PDF files",
+        "description_content_type": "text/markdown",
+        "author_email": "Mathieu Fenniak <biziqe@mathieu.fenniak.net>",
+        "maintainer_email": "Martin Thoma <info@martin-thoma.de>",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Operating System :: OS Independent",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Typing :: Typed"
+        ],
+        "requires_dist": [
+          "typing_extensions >= 3.10.0.0; python_version < '3.10'",
+          "dataclasses; python_version < '3.7'",
+          "PyCryptodome ; extra == \"crypto\"",
+          "black ; extra == \"dev\"",
+          "pip-tools ; extra == \"dev\"",
+          "pre-commit<2.18.0 ; extra == \"dev\"",
+          "pytest-cov ; extra == \"dev\"",
+          "flit ; extra == \"dev\"",
+          "wheel ; extra == \"dev\"",
+          "sphinx ; extra == \"docs\"",
+          "sphinx_rtd_theme ; extra == \"docs\"",
+          "myst_parser ; extra == \"docs\"",
+          "PyCryptodome ; extra == \"full\"",
+          "Pillow ; extra == \"full\"",
+          "Pillow ; extra == \"image\""
+        ],
+        "requires_python": ">=3.6",
+        "project_url": [
+          "Bug Reports, https://github.com/py-pdf/PyPDF2/issues",
+          "Changelog, https://pypdf2.readthedocs.io/en/latest/meta/CHANGELOG.html",
+          "Documentation, https://pypdf2.readthedocs.io/en/latest/",
+          "Source, https://github.com/py-pdf/PyPDF2"
+        ],
+        "provides_extra": [
+          "crypto",
+          "dev",
+          "docs",
+          "full",
+          "image"
+        ],
+        "description": "[![PyPI version](https://badge.fury.io/py/PyPDF2.svg)](https://badge.fury.io/py/PyPDF2)\n[![Python Support](https://img.shields.io/pypi/pyversions/PyPDF2.svg)](https://pypi.org/project/PyPDF2/)\n[![](https://img.shields.io/badge/-documentation-green)](https://pypdf2.readthedocs.io/en/stable/)\n[![GitHub last commit](https://img.shields.io/github/last-commit/py-pdf/PyPDF2)](https://github.com/py-pdf/PyPDF2)\n[![codecov](https://codecov.io/gh/py-pdf/PyPDF2/branch/main/graph/badge.svg?token=id42cGNZ5Z)](https://codecov.io/gh/py-pdf/PyPDF2)\n\n# **NOTE**: The PyPDF2 project is going back to its roots. PyPDF2==3.0.X will be  the last version of PyPDF2. Development will continue with [`pypdf==3.1.0`](https://pypi.org/project/pyPdf/).\n\n# PyPDF2\n\n\nPyPDF2 is a free and open-source pure-python PDF library capable of splitting,\n[merging](https://pypdf2.readthedocs.io/en/stable/user/merging-pdfs.html),\n[cropping, and transforming](https://pypdf2.readthedocs.io/en/stable/user/cropping-and-transforming.html)\nthe pages of PDF files. It can also add\ncustom data, viewing options, and\n[passwords](https://pypdf2.readthedocs.io/en/stable/user/encryption-decryption.html)\nto PDF files. PyPDF2 can\n[retrieve text](https://pypdf2.readthedocs.io/en/stable/user/extract-text.html)\nand\n[metadata](https://pypdf2.readthedocs.io/en/stable/user/metadata.html)\nfrom PDFs as well.\n\n\n## Installation\n\nYou can install PyPDF2 via pip:\n\n```\npip install PyPDF2\n```\n\nIf you plan to use PyPDF2 for encrypting or decrypting PDFs that use AES, you\nwill need to install some extra dependencies. Encryption using RC4 is supported\nusing the regular installation.\n\n```\npip install PyPDF2[crypto]\n```\n\n## Usage\n\n```python\nfrom PyPDF2 import PdfReader\n\nreader = PdfReader(\"example.pdf\")\nnumber_of_pages = len(reader.pages)\npage = reader.pages[0]\ntext = page.extract_text()\n```\n\nPyPDF2 can do a lot more, e.g. splitting, merging, reading and creating\nannotations, decrypting and encrypting, and more.\n\nPlease see [the documentation](https://pypdf2.readthedocs.io/en/stable/)\nfor more usage examples!\n\nA lot of questions are asked and answered\n[on StackOverflow](https://stackoverflow.com/questions/tagged/pypdf2).\n\n## Contributions\n\nMaintaining PyPDF2 is a collaborative effort. You can support PyPDF2 by writing\ndocumentation, helping to narrow down issues, and adding code.\n\n### Q&A\n\nThe experience PyPDF2 users have covers the whole range from beginners who\nwant to make their live easier to experts who developed software before PDF\nexisted. You can contribute to the PyPDF2 community by answering questions\non [StackOverflow](https://stackoverflow.com/questions/tagged/pypdf2),\nhelping in [discussions](https://github.com/py-pdf/PyPDF2/discussions),\nand asking users who report issues for [MCVE](https://stackoverflow.com/help/minimal-reproducible-example)'s (Code + example PDF!).\n\n\n### Issues\n\nA good bug ticket includes a MCVE - a minimal complete verifiable example.\nFor PyPDF2, this means that you must upload a PDF that causes the bug to occur\nas well as the code you're executing with all of the output. Use\n`print(PyPDF2.__version__)` to tell us which version you're using.\n\n### Code\n\nAll code contributions are welcome, but smaller ones have a better chance to\nget included in a timely manner. Adding unit tests for new features or test\ncases for bugs you've fixed help us to ensure that the Pull Request (PR) is fine.\n\nPyPDF2 includes a test suite which can be executed with `pytest`:\n\n```bash\n$ pytest\n===================== test session starts =====================\nplatform linux -- Python 3.6.15, pytest-7.0.1, pluggy-1.0.0\nrootdir: /home/moose/GitHub/Martin/PyPDF2\nplugins: cov-3.0.0\ncollected 233 items\n\ntests/test_basic_features.py ..                         [  0%]\ntests/test_constants.py .                               [  1%]\ntests/test_filters.py .................x.....           [ 11%]\ntests/test_generic.py ................................. [ 25%]\n.............                                           [ 30%]\ntests/test_javascript.py ..                             [ 31%]\ntests/test_merger.py .                                  [ 32%]\ntests/test_page.py .........................            [ 42%]\ntests/test_pagerange.py ................                [ 49%]\ntests/test_papersizes.py ..................             [ 57%]\ntests/test_reader.py .................................. [ 72%]\n...............                                         [ 78%]\ntests/test_utils.py ....................                [ 87%]\ntests/test_workflows.py ..........                      [ 91%]\ntests/test_writer.py .................                  [ 98%]\ntests/test_xmp.py ...                                   [100%]\n\n========== 232 passed, 1 xfailed, 1 warning in 4.52s ==========\n```\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

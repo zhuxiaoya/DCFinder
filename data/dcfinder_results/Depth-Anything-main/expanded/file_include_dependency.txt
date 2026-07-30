@@ -1,0 +1,26 @@
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/requirements.txt
+gradio-imageslider  # type: runtime
+gradio ==4.14.0  # type: runtime
+torch  # type: runtime
+torchvision  # type: runtime
+opencv-python  # type: runtime
+huggingface-hub  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/torchhub/facebookresearch_dinov2_main/requirements-dev.txt
+black ==22.6.0  # type: dev
+flake8 ==5.0.4  # type: dev
+pylint ==2.15.0  # type: dev
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/torchhub/facebookresearch_dinov2_main/requirements.txt
+torch ==2.0.0  # type: runtime
+torchvision ==0.15.0  # type: runtime
+omegaconf  # type: runtime
+torchmetrics ==0.10.3  # type: runtime
+fvcore  # type: runtime
+iopath  # type: runtime
+xformers ==0.0.18  # type: runtime
+submitit  # type: runtime
+cuml-cu11  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/torchhub/facebookresearch_dinov2_main/pyproject.toml
+

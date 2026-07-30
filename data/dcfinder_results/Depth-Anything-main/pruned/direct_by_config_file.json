@@ -1,0 +1,72 @@
+{
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/requirements.txt": [
+    {
+      "name": "gradio-imageslider",
+      "specifier": ""
+    },
+    {
+      "name": "gradio",
+      "specifier": "==4.14.0"
+    },
+    {
+      "name": "torch",
+      "specifier": "==2.0.0"
+    },
+    {
+      "name": "torchvision",
+      "specifier": "==0.15.0"
+    },
+    {
+      "name": "opencv-python",
+      "specifier": ""
+    },
+    {
+      "name": "huggingface-hub",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/torchhub/facebookresearch_dinov2_main/requirements-dev.txt": [
+    {
+      "name": "black",
+      "specifier": "==22.6.0"
+    },
+    {
+      "name": "flake8",
+      "specifier": "==5.0.4"
+    },
+    {
+      "name": "pylint",
+      "specifier": "==2.15.0"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/torchhub/facebookresearch_dinov2_main/requirements.txt": [
+    {
+      "name": "omegaconf",
+      "specifier": ""
+    },
+    {
+      "name": "torchmetrics",
+      "specifier": "==0.10.3"
+    },
+    {
+      "name": "fvcore",
+      "specifier": ""
+    },
+    {
+      "name": "iopath",
+      "specifier": ""
+    },
+    {
+      "name": "xformers",
+      "specifier": "==0.0.18"
+    },
+    {
+      "name": "submitit",
+      "specifier": ""
+    },
+    {
+      "name": "cuml-cu11",
+      "specifier": ""
+    }
+  ]
+}

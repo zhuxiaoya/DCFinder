@@ -1,0 +1,105 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/b4/65/b0c8902ad7b0ff16c5683e06771b52212199194a0b518966e48293df8662/qianfan-0.3.18-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=6332cd9341c3d6bbbd8c613774c3d1ac98010264118f45c1abc7aa4559eb3098",
+          "hashes": {
+            "sha256": "6332cd9341c3d6bbbd8c613774c3d1ac98010264118f45c1abc7aa4559eb3098"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "qianfan",
+        "version": "0.3.18",
+        "summary": "文心千帆大模型平台 Python SDK",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "baidu",
+          "qianfan"
+        ],
+        "home_page": "https://cloud.baidu.com/product/wenxinworkshop",
+        "license": "Apache-2.0",
+        "classifier": [
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12"
+        ],
+        "requires_dist": [
+          "aiohttp (>=3.7.0)",
+          "aiolimiter (>=1.1.0)",
+          "bce-python-sdk (>=0.8.79)",
+          "diskcache (>=5.6.3,<6.0.0)",
+          "emoji ; extra == \"local-data-clean\" or extra == \"all\"",
+          "fastapi ; extra == \"openai\" or extra == \"all\"",
+          "filelock ; extra == \"dataset-base\" or extra == \"local-data-clean\" or extra == \"all\"",
+          "ijson ; extra == \"dataset-base\" or extra == \"local-data-clean\" or extra == \"all\"",
+          "importlib-metadata (>=1.4.0) ; python_full_version <= \"3.7.0\"",
+          "langchain (>=0.1.10) ; (python_full_version >= \"3.8.1\") and (extra == \"langchain\" or extra == \"all\")",
+          "langchain-community ; (python_full_version >= \"3.8.1\") and (extra == \"langchain\" or extra == \"all\")",
+          "locust ; extra == \"dataset-base\" or extra == \"local-data-clean\" or extra == \"all\"",
+          "ltp ; extra == \"local-data-clean\" or extra == \"all\"",
+          "multiprocess",
+          "numpy (<1.22.0) ; (python_version >= \"3.7\" and python_version < \"3.8\") and (extra == \"dataset-base\" or extra == \"local-data-clean\" or extra == \"all\")",
+          "numpy (>=1.22.0) ; (python_version >= \"3.8\") and (extra == \"dataset-base\" or extra == \"local-data-clean\" or extra == \"all\")",
+          "prompt-toolkit (>=3.0.38)",
+          "pyarrow (<=12.0.1) ; (python_version >= \"3.7\" and python_version < \"3.8\") and (extra == \"dataset-base\" or extra == \"local-data-clean\" or extra == \"all\")",
+          "pyarrow (>=14.0.1) ; (python_version >= \"3.8\") and (extra == \"dataset-base\" or extra == \"local-data-clean\" or extra == \"all\")",
+          "pydantic",
+          "python-dateutil (>=2.8.2,<3.0.0) ; extra == \"dataset-base\" or extra == \"local-data-clean\" or extra == \"all\"",
+          "python-dotenv (<=0.21.1) ; python_version < \"3.8\"",
+          "python-dotenv (>=1.0) ; python_version >= \"3.8\"",
+          "pyyaml (>=6.0.1,<7.0.0)",
+          "requests (>=2.24)",
+          "rich (>=13.0.0)",
+          "sentencepiece ; extra == \"local-data-clean\" or extra == \"all\"",
+          "tabulate ; extra == \"dataset-base\" or extra == \"local-data-clean\" or extra == \"all\"",
+          "tenacity (>=8.2.3,<9.0.0)",
+          "torch (<=1.13.1) ; (python_version < \"3.8\") and (extra == \"local-data-clean\" or extra == \"all\")",
+          "torch ; (python_version >= \"3.8\") and (extra == \"local-data-clean\" or extra == \"all\")",
+          "typer (>=0.9.0)",
+          "typing-extensions (>=4.0.0) ; python_full_version <= \"3.10.0\"",
+          "uvicorn ; extra == \"openai\" or extra == \"all\""
+        ],
+        "requires_python": ">=3.7,<4",
+        "project_url": [
+          "Documentation, https://qianfan.readthedocs.io/en/stable/README.html",
+          "Repository, https://github.com/baidubce/bce-qianfan-sdk"
+        ],
+        "provides_extra": [
+          "all",
+          "dataset-base",
+          "langchain",
+          "local-data-clean",
+          "openai"
+        ],
+        "description": "# 百度千帆大模型平台 SDK\n\n[![LICENSE](https://img.shields.io/github/license/baidubce/bce-qianfan-sdk.svg)](https://github.com/baidubce/bce-qianfan-sdk/blob/master/LICENSE)\n[![Release Notes](https://img.shields.io/github/release/baidubce/bce-qianfan-sdk)](https://github.com/baidubce/bce-qianfan-sdk/releases)\n[![PyPI version](https://badge.fury.io/py/qianfan.svg)](https://pypi.org/project/qianfan/)\n[![Documentation Status](https://readthedocs.org/projects/qianfan/badge/?version=stable)](https://qianfan.readthedocs.io/en/stable/README.html)\n[![Feedback Issue](https://img.shields.io/badge/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC-GitHub_Issue-brightgreen)](https://github.com/baidubce/bce-qianfan-sdk/issues)\n[![Feedback Ticket](https://img.shields.io/badge/%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC-%E7%99%BE%E5%BA%A6%E6%99%BA%E8%83%BD%E4%BA%91%E5%B7%A5%E5%8D%95-brightgreen)](https://console.bce.baidu.com/ticket/#/ticket/create?productId=279)\n\n[Documentation](https://qianfan.readthedocs.io/en/stable/README.html) | [GitHub](https://github.com/baidubce/bce-qianfan-sdk) | [Cookbook](https://github.com/baidubce/bce-qianfan-sdk/tree/main/cookbook) \n\n针对百度智能云千帆大模型平台，我们推出了一套 Python SDK（下称千帆 SDK），方便用户通过代码接入并调用千帆大模型平台的能力。\n\n## 如何安装\n\n目前千帆 SDK 已发布到 PyPI ，用户可使用 pip 命令进行安装。安装千帆 SDK 需要 3.7.0 或更高的 Python 版本\n\n```\npip install qianfan\n```\n\n在安装完成后，用户即可在代码内引入千帆 SDK 并使用\n\n```python\nimport qianfan\n```\n\n## 快速使用\n\n在使用千帆 SDK 之前，用户需要 [百度智能云控制台 - 安全认证](https://console.bce.baidu.com/iam/#/iam/accesslist) 页面获取 Access Key 与 Secret Key，并在 [千帆控制台](https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application) 中创建应用，选择需要启用的服务，具体流程参见平台 [说明文档](https://cloud.baidu.com/doc/Reference/s/9jwvz2egb)。在获得了 Access Key 与 Secret Key 后，用户即可开始使用 SDK：\n\n```python\nimport os\nimport qianfan\n\nos.environ[\"QIANFAN_ACCESS_KEY\"]=\"...\"\nos.environ[\"QIANFAN_SECRET_KEY\"]=\"...\"\n\nchat_comp = qianfan.ChatCompletion(model=\"ERNIE-Bot\")\nresp = chat_comp.do(messages=[{\n    \"role\": \"user\",\n    \"content\": \"你好，千帆\"\n}], top_p=0.8, temperature=0.9, penalty_score=1.0)\n\nprint(resp[\"result\"])\n```\n\n除了通过环境变量设置外，千帆 SDK 还提供了 `.env` 文件和通过代码配置的方式，详细参见 [SDK 配置](https://qianfan.readthedocs.io/en/stable/docs/configurable.html) 部分。\n\n除了模型调用外，千帆 SDK 还提供模型训练、数据管理等诸多功能，如何使用请参考 [SDK 使用文档](https://qianfan.readthedocs.io/en/stable/README.html)。\n\n<details>\n<summary> 其他认证方式 </summary>\n\n> 这里是一些其他认证方式，请仅在无法获取 Access Key 与 Secret Key 时使用。这些认证方式已经过时，将在未来从 SDK 中移除。\n\nAPI Key (**AK**) 和 Secret Key (**SK**）是用户在调用千帆模型相关功能时所需要的凭证。具体获取流程参见平台的[应用接入使用说明文档](https://cloud.baidu.com/doc/WENXINWORKSHOP/s/Slkkydake)，但该认证方式无法使用训练、发布模型等功能，若需使用请使用 Access Key 和 Secret Key 的方式进行认证。在获得并配置了 AK 以及 SK 后，用户即可开始使用 SDK：\n\n```python\nimport os\nimport qianfan\n\nos.environ[\"QIANFAN_AK\"]=\"...\"\nos.environ[\"QIANFAN_SK\"]=\"...\"\n\nchat_comp = qianfan.ChatCompletion(model=\"ERNIE-Bot\")\nresp = chat_comp.do(messages=[{\n    \"role\": \"user\",\n    \"content\": \"你好，千帆\"\n}], top_p=0.8, temperature=0.9, penalty_score=1.0)\n\nprint(resp[\"result\"])\n```\n\n适用范围：\n\n| 功能 | API Key | Access Key |\n|:---|:---:|:---:|\n| Chat 对话 | ✅ | ✅ |\n| Completion 续写 | ✅ | ✅ |\n| Embedding 向量化 | ✅ | ✅ |\n| Plugin 插件调用 | ✅ | ✅ |\n| 文生图 | ✅ | ✅ |\n| 大模型调优 | ❌ | ✅ |\n| 大模型管理 | ❌ | ✅ |\n| 大模型服务 | ❌ | ✅ |\n| 数据集管理 | ❌ | ✅ |\n\n</details>\n\n## 功能导览\n\n千帆平台提供了大模型相关的诸多能力，SDK 提供了对各能力的调用，具体介绍可以查看 [SDK 文档](https://qianfan.readthedocs.io/en/stable/README.html) 或者 [GitHub 仓库](https://github.com/baidubce/bce-qianfan-sdk)。\n\n- **大模型能力** [[Doc](https://qianfan.readthedocs.io/en/stable/docs/inference.html)][[GitHub](https://github.com/baidubce/bce-qianfan-sdk/blob/main/docs/inference.md)]\n  - Chat 对话\n  - Completion 续写\n  - Embedding 向量化\n  - Plugin 插件调用\n  - Text2Image 文生图\n- **模型调优** [[Doc](https://qianfan.readthedocs.io/en/stable/docs/train.html)][[GitHub](https://github.com/baidubce/bce-qianfan-sdk/blob/main/docs/train.md)]\n- **模型管理** [[Doc](https://qianfan.readthedocs.io/en/stable/docs/model_management.html)][[GitHub](https://github.com/baidubce/bce-qianfan-sdk/blob/main/docs/model_management.md)]\n- **模型服务** [[Doc](https://qianfan.readthedocs.io/en/stable/docs/service.html)][[GitHub](https://github.com/baidubce/bce-qianfan-sdk/blob/main/docs/service.md)]\n- **数据集管理** [[Doc](https://qianfan.readthedocs.io/en/stable/docs/dataset.html)][[GitHub](https://github.com/baidubce/bce-qianfan-sdk/blob/main/docs/dataset.md)]\n- **Prompt 管理** [[Doc](https://qianfan.readthedocs.io/en/stable/docs/prompt.html)][[GitHub](https://github.com/baidubce/bce-qianfan-sdk/blob/main/docs/prompt.md)]\n- **其他**\n  - Tokenizer [[Doc](https://qianfan.readthedocs.io/en/stable/docs/utils.html)][[GitHub](https://github.com/baidubce/bce-qianfan-sdk/blob/main/docs/utils.md)]\n  - 接口流控 [[Doc](https://qianfan.readthedocs.io/en/stable/docs/configurable.html)][[GitHub](https://github.com/baidubce/bce-qianfan-sdk/blob/main/docs/configurable.md)]\n\n> 还可以通过 [**API References**](https://qianfan.readthedocs.io/en/stable/qianfan.html) 查看每个接口的详细说明。\n\n## 联系我们\n\n如使用过程中遇到什么问题，或对SDK功能有建议，可通过如下方式联系我们\n\n- [GitHub issues](https://github.com/baidubce/bce-qianfan-sdk/issues)\n- [百度智能云工单](https://console.bce.baidu.com/ticket/#/ticket/create?productId=279) （百度专家即时服务）\n\n## License\n\nApache-2.0\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,32 @@
+pre-commit
+namex >=0.0.8
+ruff
+pytest
+numpy
+scipy
+scikit-learn
+pillow
+pandas
+absl-py
+requests
+h5py
+ml-dtypes
+protobuf
+tensorboard-plugin-profile
+rich
+build
+optree
+pytest-cov
+packaging
+dm-tree
+coverage !=7.6.5
+onnxruntime
+openvino
+tensorflow-cpu ~=2.18.1
+tf2onnx
+torch ==2.6.0
+jax ==0.6.0
+flax
+tensorflow ~=2.18.1
+tf-keras
+torch-xla ==2.6.0

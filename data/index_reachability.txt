@@ -1,0 +1,10 @@
+总项目数：35
+可访问项目数：30
+被排除项目数：5
+
+被排除项目（不可访问的URL）：
+CosyVoice-main：https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-12/pypi/simple/
+pdm-main：https://pypi.example.com/simple
+poetry-main：https://bar.baz/simple/, https://baz.bar/simple/, https://explicit.com/simple/, https://foo.bar/simple/, https://supplemental.com/simple/
+promptflow-main：https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/
+rasa-main：https://europe-west3-python.pkg.dev/rasa-releases/psycopg-binary/simple/

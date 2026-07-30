@@ -1,0 +1,68 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/a4/16/edb452d50f69b2eadb2d8b0b1b7d407e9606042a20c30230c99c8b3e4a7e/langchain_cohere-0.3.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=20236b881f8377d36e85ab561b1b87b5bbae76267837f41016bec365841970b2",
+          "hashes": {
+            "sha256": "20236b881f8377d36e85ab561b1b87b5bbae76267837f41016bec365841970b2"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "langchain-cohere",
+        "version": "0.3.2",
+        "summary": "An integration package connecting Cohere and LangChain",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/langchain-ai/langchain-cohere",
+        "license": "MIT",
+        "classifier": [
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12"
+        ],
+        "requires_dist": [
+          "cohere (>=5.5.6,<6.0)",
+          "langchain-community (>=0.3.0) ; extra == \"langchain-community\"",
+          "langchain-core (>=0.3.0,<0.4)",
+          "langchain-experimental (>=0.3.0)",
+          "pandas (>=1.4.3)",
+          "pydantic (>=2,<3)",
+          "tabulate (>=0.9.0,<0.10.0)"
+        ],
+        "requires_python": ">=3.9,<4.0",
+        "project_url": [
+          "Repository, https://github.com/langchain-ai/langchain-cohere",
+          "Source Code, https://github.com/langchain-ai/langchain-cohere/tree/main/libs/cohere"
+        ],
+        "provides_extra": [
+          "langchain-community"
+        ],
+        "description": "# Langchain-Cohere\n\nThis package contains the LangChain integrations for [Cohere](https://cohere.com/).\n\n[Cohere](https://cohere.com/) empowers every developer and enterprise to build amazing products and capture true business value with language AI.\n\n## Installation\n- Install the `langchain-cohere` package:\n```bash\npip install langchain-cohere\n```\n\n- Get a [Cohere API key](https://cohere.com/) and set it as an environment variable (`COHERE_API_KEY`)\n\n## Migration from langchain-community\n\nCohere's integrations used to be part of the `langchain-community` package, but since version 0.0.30 the integration in `langchain-community` has been deprecated in favour `langchain-cohere`.\n\nThe two steps to migrate are:\n\n1) Import from langchain_cohere instead of langchain_community, for example:\n   * `from langchain_community.chat_models import ChatCohere` -> `from langchain_cohere import ChatCohere`\n   * `from langchain_community.retrievers import CohereRagRetriever` -> `from langchain_cohere import CohereRagRetriever`\n   * `from langchain.embeddings import CohereEmbeddings` -> `from langchain_cohere import CohereEmbeddings`\n   * `from langchain.retrievers.document_compressors import CohereRerank` -> `from langchain_cohere import CohereRerank`\n\n2) The Cohere Python SDK version is now managed by this package and only v5+ is supported.\n   * There's no longer a need to specify cohere as a dependency in requirements.txt/pyproject.toml (etc.) \n\n## Supported LangChain Integrations\n\n| API              | description                                         | Endpoint docs                                             | Import                                                                         | Example usage                                                                                                               |\n|------------------|-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|\n| Chat             | Build chat bots                                     | [chat](https://docs.cohere.com/reference/chat)            | `from langchain_cohere import ChatCohere`                                      | [notebook](https://github.com/langchain-ai/langchain/blob/master/docs/docs/integrations/chat/cohere.ipynb)                  |\n| RAG Retriever    | Connect to external data sources                    | [chat + rag](https://docs.cohere.com/reference/chat)      | `from langchain_cohere import CohereRagRetriever`                              | [notebook](https://github.com/langchain-ai/langchain/blob/master/docs/docs/integrations/retrievers/cohere.ipynb)            |\n| Text Embedding   | Embed strings to vectors                            | [embed](https://docs.cohere.com/reference/embed)          | `from langchain_cohere import CohereEmbeddings`                                | [notebook](https://github.com/langchain-ai/langchain/blob/master/docs/docs/integrations/text_embedding/cohere.ipynb)        |\n| Rerank Retriever | Rank strings based on relevance                     | [rerank](https://docs.cohere.com/reference/rerank)        | `from langchain_cohere import CohereRerank`                                    | [notebook](https://github.com/langchain-ai/langchain/blob/master/docs/docs/integrations/retrievers/cohere-reranker.ipynb)   |\n| ReAct Agent      | Let the model choose a sequence of actions to take  | [chat + rag](https://docs.cohere.com/reference/chat)      | `from langchain_cohere.react_multi_hop.agent import create_cohere_react_agent` | [notebook](https://github.com/cohere-ai/notebooks/blob/main/notebooks/Vanilla_Multi_Step_Tool_Use.ipynb)                    |\n\n\n## Usage Examples\n\n### Chat\n\n```python\nfrom langchain_cohere import ChatCohere\nfrom langchain_core.messages import HumanMessage\n\nllm = ChatCohere()\n\nmessages = [HumanMessage(content=\"Hello, can you introduce yourself?\")]\nprint(llm.invoke(messages))\n```\n\n### ReAct Agent\n\n```python\nfrom langchain_community.tools.tavily_search import TavilySearchResults\nfrom langchain_cohere import ChatCohere, create_cohere_react_agent\nfrom langchain.prompts import ChatPromptTemplate\nfrom langchain.agents import AgentExecutor\n\nllm = ChatCohere()\n\ninternet_search = TavilySearchResults(max_results=4)\ninternet_search.name = \"internet_search\"\ninternet_search.description = \"Route a user query to the internet\"\n\nprompt = ChatPromptTemplate.from_template(\"{input}\")\n\nagent = create_cohere_react_agent(\n    llm,\n    [internet_search],\n    prompt\n)\n\nagent_executor = AgentExecutor(agent=agent, tools=[internet_search], verbose=True)\n\nagent_executor.invoke({\n    \"input\": \"In what year was the company that was founded as Sound of Music added to the S&P 500?\",\n})\n```\n\n### RAG Retriever\n\n```python\nfrom langchain_cohere import ChatCohere, CohereRagRetriever\n\nrag = CohereRagRetriever(llm=ChatCohere())\nprint(rag.get_relevant_documents(\"Who are Cohere?\"))\n```\n\n### Text Embedding\n\n```python\nfrom langchain_cohere import CohereEmbeddings\n\nembeddings = CohereEmbeddings(model=\"embed-english-light-v3.0\")\nprint(embeddings.embed_documents([\"This is a test document.\"]))\n```\n\n## Contributing\n\nContributions to this project are welcomed and appreciated.\nThe [LangChain contribution guide](https://python.langchain.com/docs/contributing/code/) has instructions on how to setup a local environment and contribute pull requests.\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/6f/27/24d6f8a089e2c319a06da81f3350fb7f3214f22d1f363663eeb3ec2fc241/composio_core-0.7.21-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=e9d296479b259ff8e41bfae2b211a71c5d97f682f4e2ccd0e8e2cd4c2a624f64",
+          "hashes": {
+            "sha256": "e9d296479b259ff8e41bfae2b211a71c5d97f682f4e2ccd0e8e2cd4c2a624f64"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "composio_core",
+        "version": "0.7.21",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "provides-extra",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "[DEPRECATED] Core package to act as a bridge between composio platform and other services. Please use 'composio' instead.",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/composiohq/composio",
+        "author": "Utkarsh",
+        "author_email": "utkarsh@composio.dev",
+        "classifier": [
+          "Development Status :: 7 - Inactive",
+          "Programming Language :: Python :: 3",
+          "License :: OSI Approved :: Apache Software License",
+          "Operating System :: OS Independent"
+        ],
+        "requires_dist": [
+          "aiohttp",
+          "requests<3,>=2.31.0",
+          "jsonschema<5,>=4.21.1",
+          "sentry-sdk>=2.0.0",
+          "pysher==1.0.8",
+          "pydantic>=2.6.4",
+          "importlib-metadata>=4.8.1",
+          "jsonref>=1.1.0",
+          "inflection>=0.5.1",
+          "semver>=2.13.0",
+          "click",
+          "rich<14,>=13.7.1",
+          "pyperclip<2,>=1.8.2",
+          "Pillow<11,>=10.2.0",
+          "paramiko>=3.4.1",
+          "fastapi",
+          "uvicorn",
+          "pyyaml>=6.0.2",
+          "aiohttp; extra == \"all\"",
+          "requests<3,>=2.31.0; extra == \"all\"",
+          "jsonschema<5,>=4.21.1; extra == \"all\"",
+          "sentry-sdk>=2.0.0; extra == \"all\"",
+          "pysher==1.0.8; extra == \"all\"",
+          "pydantic>=2.6.4; extra == \"all\"",
+          "importlib-metadata>=4.8.1; extra == \"all\"",
+          "jsonref>=1.1.0; extra == \"all\"",
+          "inflection>=0.5.1; extra == \"all\"",
+          "semver>=2.13.0; extra == \"all\"",
+          "click; extra == \"all\"",
+          "rich<14,>=13.7.1; extra == \"all\"",
+          "pyperclip<2,>=1.8.2; extra == \"all\"",
+          "Pillow<11,>=10.2.0; extra == \"all\"",
+          "paramiko>=3.4.1; extra == \"all\"",
+          "fastapi; extra == \"all\"",
+          "uvicorn; extra == \"all\"",
+          "pyyaml>=6.0.2; extra == \"all\"",
+          "e2b<1.1.0,>=0.17.2a37; extra == \"all\"",
+          "e2b-code-interpreter; extra == \"all\"",
+          "docker>=7.1.0; extra == \"all\"",
+          "gql; extra == \"all\"",
+          "requests_toolbelt; extra == \"all\"",
+          "pygments; extra == \"all\"",
+          "pathspec; extra == \"all\"",
+          "diskcache; extra == \"all\"",
+          "networkx; extra == \"all\"",
+          "ruff; extra == \"all\"",
+          "flake8; extra == \"all\"",
+          "transformers; extra == \"all\"",
+          "pygments; extra == \"tools\"",
+          "pathspec; extra == \"tools\"",
+          "diskcache; extra == \"tools\"",
+          "networkx; extra == \"tools\"",
+          "ruff; extra == \"tools\"",
+          "flake8; extra == \"tools\"",
+          "transformers; extra == \"tools\"",
+          "e2b<1.1.0,>=0.17.2a37; extra == \"e2b\"",
+          "e2b-code-interpreter; extra == \"e2b\"",
+          "gql; extra == \"flyio\"",
+          "requests_toolbelt; extra == \"flyio\"",
+          "docker>=7.1.0; extra == \"docker\""
+        ],
+        "requires_python": ">=3.9,<4",
+        "provides_extra": [
+          "all",
+          "tools",
+          "e2b",
+          "flyio",
+          "docker"
+        ],
+        "description": "<p>\n  <a href=\"https://github.com/composiohq/composio/blob/master/README.md\">EN</a> | <a\n    href=\"https://github.com/composiohq/composio/blob/master/README-CN.md\">CN</a> | <a\n    href=\"https://github.com/composiohq/composio/blob/master/README-JP.md\">JP</a>\n</p>\n<p align=\"center\">\n  <a href=\"https://composio.dev//#gh-dark-mode-only\">\n    <img src=\"./python/docs/imgs/composio_white_font.svg\" width=\"318px\" alt=\"Composio logo\" />\n  </a>\n  <a href=\"https://composio.dev//#gh-light-mode-only\">\n    <img src=\"./python/docs/imgs/composio_black_font.svg\" width=\"318px\" alt=\"Composio Logo\" />\n  </a>\n</p>\n<p align=\"center\">\n  <a href=\"https://docs.composio.dev\">\n    <img\n      src=\"https://img.shields.io/badge/Read%20the%20Documentation-Click%20Here-green?style=for-the-badge&logo=read-the-docs\"\n      alt=\"Read the Docs\">\n  </a>\n</p>\n\n<p align=\"center\">\n  <a href=\"https://pypi.org/project/composio-core/\">\n    <img alt=\"PyPI\"\n      src=\"https://img.shields.io/pypi/v/composio_core?label=Latest&style=plastic&logo=pypi&color=blue&cacheSeconds=60&logoColor=white\">\n  </a>\n  <a href=\"https://www.npmjs.com/package/composio-core\">\n    <img alt=\"NPM\"\n      src=\"https://img.shields.io/npm/v/composio-core?style=plastic&logo=npm&logoColor=white&label=latest&color=blue&cacheSeconds=60\">\n  </a>\n  <a href=\"https://pypi.org/project/composio-core/\">\n    <img alt=\"Downloads\"\n      src=\"https://img.shields.io/pypi/dm/composio-core?label=Downloads&style=plastic&logo=github&color=blue&cacheSeconds=60\">\n  </a>\n</p>\n\n<h2 align=\"center\">\n  Production Ready Toolset for AI Agents\n</h2>\n\n<p align=\"center\">\n  <a href=\"https://docs.composio.dev/mcp/overview?utm=readme\">\n    <img src=\"./assets/mcp-banner.png\" alt=\"Composio MCP Servers\" width=\"100%\" style=\"border-radius: 8px; margin: 20px 0;\" />\n  </a>\n</p>\n<a href=\"https://docs.composio.dev/mcp/overview?utm=readme\">\n  <img alt=\"Composio Cursor\" src=\"./assets/cursor-mcp.webp\" style=\"border-radius: 5px\" />\n</a>\n\n\n<h2 align=\"center\">🚀 Now launching Composio MCP🚀</h2>\n\n<p align=\"center\">\n  We're excited to announce the launch of <strong>Composio MCP Servers</strong>!\n  Connect Claude, Cursor and Windsurf to 100+ fully-managed MCP Servers with built-in auth! Check it out <a href=\"https://mcp.composio.dev\">here</a>\n</p>\n\n<p align=\"center\">\n\n</p>\n\n<p align=\"center\">\n  <a href=\"https://docs.composio.dev/mcp/overview\">\n    <img src=\"https://img.shields.io/badge/Learn%20More-MCP%20Servers-blue?style=for-the-badge\" alt=\"Learn More About MCP Servers\">\n  </a>\n</p>\n\n\n\n<h2>What is Composio?</h2>\n<p><strong>Composio provides production-ready toolset for AI agents</strong>, offering:</p>\n<ul>\n  <li>Support for over 250+ tools across multiple categories:\n    <ul>\n      <li>Software tools like GitHub, Notion, Linear, Gmail, Slack, Hubspot, Salesforce &\n        <a href=\"https://app.composio.dev/apps\">\n          more\n        </a>\n      </li>\n      <li>OS operations including file tool, shell tool, code analysis tool &\n        <a href=\"https://app.composio.dev/apps\">\n          more\n        </a>\n      </li>\n      <li>Search capabilities through Google, Perplexity, Tavily, and Exa &\n        <a href=\"https://app.composio.dev/apps\">\n          more\n        </a>\n      </li>\n    </ul>\n  </li>\n  <li>Comprehensive framework support including OpenAI, Groq, Claude, LlamaIndex, Langchain, CrewAI, Autogen, Gemini,\n    and <a href=\"https://docs.composio.dev/framework\">more</a></li>\n  <li>Managed authentication supporting multiple protocols (OAuth, API Keys, Basic JWT)</li>\n  <li>Up to 40% improved tool call accuracy through optimized design</li>\n  <li>Whitelabel solution for backend integration</li>\n  <li>Pluggable architecture supporting custom tools and extensions</li>\n</ul>\n\n## Table of contents\n\n- [Getting Started with Python](#1-installation)\n  - [1. Installation](#1-installation)\n  - [2. Creating an agent & executing a tool](#2-creating-an-agent--executing-a-tool)\n- [Getting Started with Javascript](#getting-started-with-javascript)\n  - [1. Installation](#1-installation-1)\n  - [2. Creating an agent & executing a tool](#2-creating-an-agent--executing-a-tool-1)\n- [Examples](#examples)\n  - [Python Examples](#python-examples)\n  - [Javascript Examples](#javascript-examples)\n- [Star History](#star-history)\n- [Getting help](#getting-help)\n- [Contributions](#contributions)\n- [Request a feature](#request-a-feature)\n- [Thanks To All Contributors](#thanks-to-all-contributors)\n\n\n## Getting Started with Python\n\n### 1. Installation\n\nStart by installing the package\n\n```bash\npip install composio-core\n```\n\nIf you want to install the 'composio' package along with its openai plugin: `pip install composio-openai`.\n\n### 2. Creating an agent & executing a tool\n\nLet's create an AI Agent using OpenAI and use Composio's GitHub tool to star a GitHub repository\n\n> [!NOTE]\n> Set your COMPOSIO_API_KEY & OPENAI_API_KEY in your environment variables.\n\nConnect your GitHub account to Composio\n```bash\ncomposio add github # Run this in terminal\n```\n\n```python\n\nfrom openai import OpenAI\nfrom composio_openai import ComposioToolSet, App, Action\n\n# Initialize OpenAI client\nopenai_client = OpenAI(\n    api_key=\"{{OPENAIKEY}}\"\n)\n\n# Initialize the Composio Tool Set\ncomposio_tool_set = ComposioToolSet()\n\n# Get GitHub tools that are pre-configured\nactions = composio_tool_set.get_actions(\n    actions=[Action.GITHUB_STAR_A_REPOSITORY_FOR_THE_AUTHENTICATED_USER]\n)\n\nmy_task = \"Star a repo composiodev/composio on GitHub\"\n\n# Setup OpenAI assistant\nassistant_instruction = \"You are a super intelligent personal assistant\"\nassistant = openai_client.beta.assistants.create(\n    name=\"Personal Assistant\",\n    instructions=assistant_instruction,\n    model=\"gpt-4-turbo\",\n    tools=actions,\n)\n\n# Create a thread\nthread = openai_client.beta.threads.create()\n\n# Add user message to thread\nmessage = openai_client.beta.threads.messages.create(\n    thread_id=thread.id,\n    role=\"user\",\n    content=my_task\n)\n\n# Execute Agent with integrations\nrun = openai_client.beta.threads.runs.create(\n    thread_id=thread.id,\n    assistant_id=assistant.id\n)\n\n# Execute Function calls\nresponse_after_tool_calls = composio_tool_set.wait_and_handle_assistant_tool_calls(\n    client=openai_client,\n    run=run,\n    thread=thread,\n)\n\nprint(response_after_tool_calls)\n```\n\n## Getting Started with JavaScript\n\nTo get started with the Composio SDK in JavaScript, follow these steps:\n\n### 1. Installation:\n```bash\nnpm install composio-core\n```\n\n### 2. Creating an agent & executing a tool\n\nLet's create an AI Agent using OpenAI and use Composio's GitHub tool to star a GitHub repository\n\n> [!NOTE]\n> Set your COMPOSIO_API_KEY & OPENAI_API_KEY in your environment variables.\n\nConnect your GitHub account to Composio\n```bash\ncomposio add github # Run this in terminal\n```\n\n```javascript\nimport { OpenAIToolSet } from \"composio-core\";\nimport OpenAI from \"openai\";\n\nconst toolset = new OpenAIToolSet({ apiKey: process.env.COMPOSIO_API_KEY });\nconst openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });\n\nconst tools = await toolset.getTools({ \n  actions: [\"GITHUB_STAR_A_REPOSITORY_FOR_THE_AUTHENTICATED_USER\"] \n});\n\nasync function createGithubAssistant(openai, tools) {\n  return await openai.beta.assistants.create({\n    name: \"Github Assistant\",\n    instructions: \"You're a GitHub Assistant, you can do operations on GitHub\",\n    tools: tools,\n    model: \"gpt-4o\"\n  });\n}\n\nasync function executeAssistantTask(openai, toolset, assistant, task) {\n  const thread = await openai.beta.threads.create();\n  \n  const run = await openai.beta.threads.runs.create(thread.id, {\n    assistant_id: assistant.id,\n    instructions: task,\n    tools: tools,\n    model: \"gpt-4o\",\n    stream: false\n  });\n  \n  const call = await toolset.waitAndHandleAssistantToolCalls(openai, run, thread);\n  console.log(call);\n}\n\n(async () => {\n  const githubAssistant = await createGithubAssistant(openai, tools);\n  \n  await executeAssistantTask(\n    openai,\n    toolset,\n    githubAssistant,\n    \"Star the repository 'composiohq/composio'\"\n  );\n})();\n```\n\n## Examples\n\n### [Python Examples](https://docs.composio.dev/guides/python/)\n\n### [Javascript Examples](https://docs.composio.dev/guides/javascript/)\n\n## Star History\n\n[![Star History\nChart](https://api.star-history.com/svg?repos=composiohq/composio&type=Date)](https://star-history.com/#composiohq/composio&Date)\n\n## Getting help\n\n- Read the docs at <a href=\"https://docs.composio.dev\" target=\"_blank\" rel=\"noopener noreferrer\">docs.composio.dev</a>\n- Post your questions on <a href=\"https://discord.com/channels/1170785031560646836/1268871288156323901\" target=\"_blank\"\n  rel=\"noopener noreferrer\">discord</a>\n\n## Contributions\n\nWe're an open-source project and welcome contributions. Please read the <a\n  href=\"https://github.com/composiodev/composio/blob/master/CONTRIBUTING.md\" target=\"_blank\"\n  rel=\"noopener noreferrer\">contributing guide</a> for more information and check our <a\n  href=\"https://github.com/composiodev/composio/blob/master/CODE_OF_CONDUCT.md\" target=\"_blank\"\n  rel=\"noopener noreferrer\">code of conduct</a> before you start.\n\n## Request a feature\n\n- If you have a feature request, please open an <a\n  href=\"https://github.com/composiodev/composio/issues/new?assignees=&labels=feature&template=feature_request.yml&title=%F0%9F%9A%80+Feature%3A+\">issue</a>,\nmake a pull request, or submit it in our <a href=\"https://discord.com/channels/1170785031560646836/1247166813205303379\"\n  target=\"_blank\" rel=\"noopener noreferrer\">feature requests channel</a>.\n- If you have ideas for improvements, you can also start a discussion in our GitHub repository.\n\n## Thanks To All Contributors\n\n<a href=\"https://github.com/composiohq/composio/graphs/contributors\">\n  <img src=\"https://contributors-img.web.app/image?repo=composiodev/composio\" alt=\"List of Contributors\" />\n</a>\n\n<br><br>\n\n<div align=\"center\">\n  <p>\n    <a href=\"https://dub.composio.dev/JoinHQ\" target=\"_blank\" rel=\"noopener noreferrer\">\n      <img src=\"https://github.com/user-attachments/assets/c499721b-d3c2-4bfc-891f-4d74b587911f\" alt=\"discord\" />\n    </a>&nbsp;&nbsp;&nbsp;\n    <a href=\"https://www.youtube.com/@Composio\" target=\"_blank\" rel=\"noopener noreferrer\">\n      <img src=\"https://github.com/user-attachments/assets/57072338-3e7a-42a5-bd2b-c58b143ffa29\" alt=\"youtube\" />\n    </a>&nbsp;&nbsp;&nbsp;\n    <a href=\"https://twitter.com/composiohq\" target=\"_blank\" rel=\"noopener noreferrer\">\n      <img src=\"https://github.com/user-attachments/assets/14b87a1d-8ac7-48b4-ae7c-3a36aacc260b\" alt=\"x\" />\n    </a>&nbsp;&nbsp;&nbsp;\n    <a href=\"https://www.linkedin.com/company/composio-dev\" target=\"_blank\" rel=\"noopener noreferrer\">\n      <img src=\"https://github.com/user-attachments/assets/cb6cc650-672e-41f6-8abf-dfc97fddfcbc\" alt=\"linkedin\" />\n    </a>\n  </p>\n</div>\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

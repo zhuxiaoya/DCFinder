@@ -1,0 +1,62 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/55/45/15ba371165103f802d17ba28c460c1b289eb5f3c54f38f9d36397b18103d/prodigy_plus_schedule_free-1.8.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=09095381b43e69e278db9285101503f1fd47103cf7ce30378078000c34091df7",
+          "hashes": {
+            "sha256": "09095381b43e69e278db9285101503f1fd47103cf7ce30378078000c34091df7"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "prodigy-plus-schedule-free",
+        "version": "1.8.0",
+        "summary": "Automatic learning rate optimiser based on Prodigy and Schedule-Free",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "artificial intelligence",
+          "deep learning",
+          "optimizers"
+        ],
+        "home_page": "https://github.com/LoganBooker/prodigy-plus-schedule-free",
+        "author": "Logan Booker",
+        "author_email": "me@loganbooker.dev",
+        "license": "Apache 2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Programming Language :: Python :: 3",
+          "License :: OSI Approved :: Apache Software License",
+          "Operating System :: OS Independent"
+        ],
+        "requires_dist": [
+          "torch>=2.0"
+        ],
+        "requires_python": ">=3.4",
+        "description": "# Prodigy + ScheduleFree\r\n*Eliminating hyperparameters, one commit at a time.*\r\n\r\n**Current status:** Experimental\r\n\r\n## Installation\r\n```\r\npip install prodigy-plus-schedule-free\r\n```\r\n\r\n## Usage\r\n```python\r\nfrom prodigyplus.prodigy_plus_schedulefree import ProdigyPlusScheduleFree\r\noptimizer = ProdigyPlusScheduleFree(model.parameters(), lr=1.0, betas=(0.9, 0.99), beta3=None, \r\n                                    weight_decay=0.0, weight_decay_by_lr=True, \r\n\t\t\t\t    use_bias_correction=False, d0=1e-6, d_coef=1.0, \r\n\t\t\t\t    prodigy_steps=0, eps=1e-8, \r\n\t\t\t\t    split_groups=True, split_groups_mean=True,\r\n \t\t\t\t    factored=True, fused_back_pass=False, use_stableadamw=True,\r\n \t\t\t\t    use_muon_pp=False, use_cautious=False, use_adopt=False, \r\n\t\t\t\t    stochastic_rounding=True)\r\n```\r\n\r\nAs with the reference implementation of schedule-free, a constant scheduler should be used, along with the appropriate\r\ncalls to `optimizer.train()` and `optimizer.eval()`. See the schedule-free documentation for more details: https://github.com/facebookresearch/schedule_free\r\n\r\n## Details\r\nAn optimiser based on Prodigy that includes schedule-free logic and much, much lower memory usage, the aim being to remove the need to set any hyperparameters. Of course,\r\nthat's never the case with any optimiser, but hopefully, this comes close!\r\n\r\nHyperparameters eliminated: Learning rate (Prodigy), LR scheduler (ScheduleFree), epsilon (Adam-atan2, optional, not enabled by default).\r\n\r\nBased on code from:\r\n* https://github.com/facebookresearch/schedule_free\r\n* https://github.com/konstmish/prodigy\r\n\r\nIncorporates improvements from these pull requests (credit to https://github.com/dxqbYD and https://github.com/sangoi-exe):\r\n* https://github.com/konstmish/prodigy/pull/23\r\n* https://github.com/konstmish/prodigy/pull/22\r\n* https://github.com/konstmish/prodigy/pull/20\r\n\r\nIf you do use another scheduler, linear or cosine is preferred, as a restarting scheduler can confuse Prodigy's adaptation logic.\r\n\r\nLeave `lr` set to 1 unless you encounter instability. Do not use with gradient clipping, as this can hamper the\r\nability for the optimiser to predict stepsizes. Gradient clipping/normalisation is already handled in the following configurations:\r\n\r\n1) `use_stableadamw=True,eps=1e8` (or any reasonable positive epsilon. This is the default.)\r\n2) `eps=None` (Adam-atan2, scale invariant, but can mess with Prodigy's stepsize calculations in some scenarios.)\r\n\r\nBy default, `split_groups` is set to `True`, so each parameter group will have its own adaptation values. So if you're training\r\ndifferent networks together, they won't contaminate each other's learning rates. For Prodigy's reference behaviour, which lumps all \r\nparameter groups together, set `split_groups` to `False`.\r\n\r\nThe optimiser uses low-rank approximations for the second moment, much like Adafactor. There should be little to no difference \r\nin training performance, but your mileage may vary. If you encounter problems, you can try disabling factorisation by \r\nsetting `factored` to `False`.\r\n\r\nThe optimiser also supports [fused backward pass](https://pytorch.org/tutorials/intermediate/optimizer_step_in_backward_tutorial.html) to significantly lower\r\ngradient memory usage. The `fused_back_pass` argument must be set to `True` so the optimiser knows not to perform the regular step. Please note however that \r\nyour training scripts / UI of choice *must* support the feature for generic optimisers -- as of December 2024, popular trainers such as OneTrainer and Kohya \r\nhard-code which optimisers have fused backward pass support, and so this optimiser's fused pass will not work out of the box with them.\r\n\r\nIn some scenarios, it can be advantageous to freeze Prodigy's adaptive stepsize after a certain number of steps. This\r\ncan be controlled via the `prodigy_steps` settings. [It's been suggested that all Prodigy needs to do is achieve \"escape velocity\"](https://arxiv.org/pdf/2409.20325)\r\nin terms of finding a good LR, which it usually achieves after ~25% of training, though this is very dependent on batch size and epochs. \r\n\r\nThis setting can be particularly helpful when training diffusion models, which have very different gradient behaviour than what most optimisers are tuned for. \r\nProdigy in particular will increase the LR forever if it is not stopped or capped in some way (usually via a decaying LR scheduler).\r\n\r\n## Experimental features\r\n\r\n**Adam-atan2:** Enabled by setting `eps` to `None`. Outlined in [Scaling Exponents Across Parameterizations and Optimizers](https://arxiv.org/abs/2407.05872), \r\nyou can use atan2 in place of the regular division plus epsilon found in most Adam-style optimisers. This makes updates scale-invariant, and removes the need to tweak the epsilon.\r\nThis seems to work fine in some models (SDXL), but cripples Prodigy's stepsize calculations in others (SD3.5 Medium and Large). Disabled by default.\r\n\r\n**Orthogonalisation:** Enabled by setting `use_muon_pp` to `True`. This changes the base behaviour of the optimiser for compatible parameters from AdamW to SGD.\r\n[As explained by Keller Jordan](https://x.com/kellerjordan0/status/1844782418676339059), and demonstrated (in various forms) by optimisers such as Shampoo, SOAP \r\nand Jordan's Muon, applying orthogonalisation/preconditioning can improve convergence. However, this approach may not work in some situations \r\n(small batch sizes, fine-tuning) and as such, is disabled by default.\r\n\r\n**C-Optim:** Enabled by setting `use_cautious` to `True`. Outlined in [Cautious Optimizers: Improving Training with One Line of Code](https://arxiv.org/pdf/2411.16085). \r\nApplies a simple modification to parameter updates that promotes values that are aligned with the current gradient. This should result in faster convergence. Note that\r\nthe proposed changes are not 1:1 compatible with schedule-free, so more testing is required.\r\n\r\n**ADOPT:** Enabled by setting `use_adopt` to `True`. A partial implementation of [ADOPT: Modified Adam Can Converge with Any Î²2 with the Optimal Rate](https://arxiv.org/abs/2411.02853), as we only update the second moment after the parameter update, so as to exclude the current gradient. Disabled by default.\r\n\r\n## Recommended usage\r\n \r\nThe schedule-free component of the optimiser works best with a constant learning rate. In most cases, Prodigy will find the optimal learning rate within the first\r\n25% of training, after which it may continue to increase the learning rate beyond what's best (this is mostly observed with diffusion training).\r\n\r\nIt is strongly recommended to set `prodigy_steps` equal to 25% of your\r\ntotal step count, though you can experiment with values as little as 5-10%, depending on the model and type of training. The best way to figure out the best value\r\nis to monitor the `d` value(s) during a training run.\r\n\r\n![image](https://github.com/user-attachments/assets/b68f0869-7232-4a2d-a396-e0f9ea21f63b)\r\n\r\nHere is an example of an SDXL LoRA run. From left to right are the `d` values (essentially the learning rate predicition) for TE1, TE2 and the Unet. \r\nIn this run, `prodigy_steps` was set to `20`, as the optimal LR was found around step 15.\r\n\r\n![image](https://github.com/user-attachments/assets/d3077b0d-5f23-4500-b2b3-fc0cf45d2da7)\r\n\r\nThis image shows a different run with the same dataset, but with `prodigy_steps` set to `0`. While the text encoders were mostly stable, the Unet LR continued to grow throughout training.\r\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

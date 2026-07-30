@@ -1,0 +1,1643 @@
+{
+  "ipykernel": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "comm",
+        "specifier": ">=0.1.1"
+      },
+      {
+        "name": "debugpy",
+        "specifier": ">=1.6.5"
+      },
+      {
+        "name": "ipython",
+        "specifier": ">=7.23.1"
+      },
+      {
+        "name": "jupyter-client",
+        "specifier": ">=6.1.12"
+      },
+      {
+        "name": "jupyter-core",
+        "specifier": "!=5.0.*,>=4.12"
+      },
+      {
+        "name": "matplotlib-inline",
+        "specifier": ">=0.1"
+      },
+      {
+        "name": "nest-asyncio",
+        "specifier": ""
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "psutil",
+        "specifier": ""
+      },
+      {
+        "name": "pyzmq",
+        "specifier": ">=24"
+      },
+      {
+        "name": "tornado",
+        "specifier": ">=6.1"
+      },
+      {
+        "name": "traitlets",
+        "specifier": ">=5.4.0"
+      }
+    ]
+  },
+  "pylint": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "platformdirs",
+        "specifier": ">=2.2.0"
+      },
+      {
+        "name": "astroid",
+        "specifier": "<=3.4.0-dev0,>=3.3.3"
+      },
+      {
+        "name": "isort",
+        "specifier": "!=5.13.0,<6,>=4.2.5"
+      },
+      {
+        "name": "mccabe",
+        "specifier": "<0.8,>=0.6"
+      },
+      {
+        "name": "tomlkit",
+        "specifier": ">=0.10.1"
+      },
+      {
+        "name": "dill",
+        "specifier": ">=0.2"
+      },
+      {
+        "name": "tomli",
+        "specifier": ">=1.1.0"
+      }
+    ]
+  },
+  "pytest-sugar": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pytest",
+        "specifier": ">=2.9"
+      },
+      {
+        "name": "termcolor",
+        "specifier": ">=1.1.0"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=14.1"
+      }
+    ]
+  },
+  "pytest-xdist": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "execnet",
+        "specifier": ">=1.1"
+      },
+      {
+        "name": "pytest",
+        "specifier": ">=6.2.0"
+      }
+    ]
+  },
+  "pytest": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "attrs",
+        "specifier": ">=19.2.0"
+      },
+      {
+        "name": "iniconfig",
+        "specifier": ""
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "pluggy",
+        "specifier": "<2.0,>=0.12"
+      },
+      {
+        "name": "exceptiongroup",
+        "specifier": ">=1.0.0rc8"
+      },
+      {
+        "name": "tomli",
+        "specifier": ">=1.0.0"
+      }
+    ]
+  },
+  "pytest-asyncio": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pytest",
+        "specifier": ">=7.0.0"
+      }
+    ]
+  },
+  "networkx": {
+    "version": "3.6.1",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "torch": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "filelock",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.10.0"
+      },
+      {
+        "name": "setuptools",
+        "specifier": ">=77.0.3"
+      },
+      {
+        "name": "sympy",
+        "specifier": ">=1.13.3"
+      },
+      {
+        "name": "networkx",
+        "specifier": ">=2.5.1"
+      },
+      {
+        "name": "jinja2",
+        "specifier": ""
+      },
+      {
+        "name": "fsspec",
+        "specifier": ">=0.8.5"
+      },
+      {
+        "name": "cuda-toolkit",
+        "specifier": "==13.0.3"
+      },
+      {
+        "name": "cuda-bindings",
+        "specifier": "<14,>=13.0.3"
+      },
+      {
+        "name": "nvidia-cudnn-cu13",
+        "specifier": "==9.20.0.48"
+      },
+      {
+        "name": "nvidia-cusparselt-cu13",
+        "specifier": "==0.8.1"
+      },
+      {
+        "name": "nvidia-nccl-cu13",
+        "specifier": "==2.29.7"
+      },
+      {
+        "name": "nvidia-nvshmem-cu13",
+        "specifier": "==3.4.5"
+      },
+      {
+        "name": "triton",
+        "specifier": "==3.7.1"
+      }
+    ]
+  },
+  "groq": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "anyio",
+        "specifier": "<5,>=3.5.0"
+      },
+      {
+        "name": "distro",
+        "specifier": "<2,>=1.7.0"
+      },
+      {
+        "name": "httpx",
+        "specifier": "<1,>=0.23.0"
+      },
+      {
+        "name": "pydantic",
+        "specifier": "<3,>=1.9.0"
+      },
+      {
+        "name": "sniffio",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": "<5,>=4.14"
+      }
+    ]
+  },
+  "torchvision": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": "==2.13.0"
+      },
+      {
+        "name": "pillow",
+        "specifier": "!=8.3.*,>=5.3.0"
+      }
+    ]
+  },
+  "torch-summary": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "einops": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "scikit-image": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.24"
+      },
+      {
+        "name": "scipy",
+        "specifier": ">=1.11.4"
+      },
+      {
+        "name": "networkx",
+        "specifier": ">=3.0"
+      },
+      {
+        "name": "pillow",
+        "specifier": ">=10.1"
+      },
+      {
+        "name": "imageio",
+        "specifier": "!=2.35.0,>=2.33"
+      },
+      {
+        "name": "tifffile",
+        "specifier": ">=2022.8.12"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=21"
+      },
+      {
+        "name": "lazy-loader",
+        "specifier": ">=0.4"
+      }
+    ]
+  },
+  "opencv-python": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=2"
+      }
+    ]
+  },
+  "pyclipper": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "shapely": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.21"
+      }
+    ]
+  },
+  "requests": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "charset-normalizer",
+        "specifier": "<4,>=2"
+      },
+      {
+        "name": "idna",
+        "specifier": "<4,>=2.5"
+      },
+      {
+        "name": "urllib3",
+        "specifier": "<3,>=1.26"
+      },
+      {
+        "name": "certifi",
+        "specifier": ">=2023.5.7"
+      }
+    ]
+  },
+  "cryptography": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "cffi",
+        "specifier": ">=2.0.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.13.2"
+      }
+    ]
+  },
+  "freetype-py": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "aiohttp": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "aiohappyeyeballs",
+        "specifier": ">=2.5.0"
+      },
+      {
+        "name": "aiosignal",
+        "specifier": ">=1.4.0"
+      },
+      {
+        "name": "async-timeout",
+        "specifier": "<6.0,>=4.0"
+      },
+      {
+        "name": "attrs",
+        "specifier": ">=17.3.0"
+      },
+      {
+        "name": "frozenlist",
+        "specifier": ">=1.1.1"
+      },
+      {
+        "name": "multidict",
+        "specifier": "<7.0,>=4.5"
+      },
+      {
+        "name": "propcache",
+        "specifier": ">=0.2.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.4"
+      },
+      {
+        "name": "yarl",
+        "specifier": "<2.0,>=1.17.0"
+      }
+    ]
+  },
+  "tqdm": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "deepl": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "requests",
+        "specifier": ">=2.32.5"
+      }
+    ]
+  },
+  "imagehash": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pywavelets",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "pillow",
+        "specifier": ""
+      },
+      {
+        "name": "scipy",
+        "specifier": ""
+      }
+    ]
+  },
+  "kornia": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "kornia-rs",
+        "specifier": ">=0.1.9"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": ">=2.0.0"
+      }
+    ]
+  },
+  "backports-cached-property": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "huggingface-hub": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "click",
+        "specifier": "<9.0.0,>=8.4.2"
+      },
+      {
+        "name": "filelock",
+        "specifier": ">=3.10.0"
+      },
+      {
+        "name": "fsspec",
+        "specifier": ">=2023.5.0"
+      },
+      {
+        "name": "hf-xet",
+        "specifier": "<2.0.0,>=1.5.1"
+      },
+      {
+        "name": "httpx",
+        "specifier": "<1,>=0.23.0"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.9"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1"
+      },
+      {
+        "name": "tqdm",
+        "specifier": ">=4.42.1"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.1.0"
+      }
+    ]
+  },
+  "transformers": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "huggingface-hub",
+        "specifier": "<2.0,>=1.5.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.17"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.0"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1"
+      },
+      {
+        "name": "regex",
+        "specifier": ">=2025.10.22"
+      },
+      {
+        "name": "tokenizers",
+        "specifier": "<=0.23.0,>=0.22.0"
+      },
+      {
+        "name": "typer",
+        "specifier": ""
+      },
+      {
+        "name": "safetensors",
+        "specifier": ">=0.8.0"
+      },
+      {
+        "name": "tqdm",
+        "specifier": ">=4.60"
+      }
+    ]
+  },
+  "py3langid": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ""
+      }
+    ]
+  },
+  "sentencepiece": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "editdistance": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "numpy": {
+    "version": "1.26.4",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "==1.26.4",
+    "requires_dist": []
+  },
+  "tensorboardx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": ">=3.20"
+      }
+    ]
+  },
+  "websockets": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "protobuf": {
+    "version": "5.29.4",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": ">=3.20,<6.0.0,>=3.20.2",
+    "requires_dist": []
+  },
+  "ctranslate2": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "setuptools",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "pyyaml",
+        "specifier": "<7,>=5.3"
+      }
+    ]
+  },
+  "colorama": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "openai": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "anyio",
+        "specifier": "<5,>=3.5.0"
+      },
+      {
+        "name": "distro",
+        "specifier": "<2,>=1.7.0"
+      },
+      {
+        "name": "httpx",
+        "specifier": "<1,>=0.23.0"
+      },
+      {
+        "name": "jiter",
+        "specifier": "<1,>=0.4.0"
+      },
+      {
+        "name": "pydantic",
+        "specifier": "<3,>=1.9.0"
+      },
+      {
+        "name": "sniffio",
+        "specifier": ""
+      },
+      {
+        "name": "tqdm",
+        "specifier": ">4"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": "<5,>=4.11"
+      }
+    ]
+  },
+  "tiktoken": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "regex",
+        "specifier": ""
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      }
+    ]
+  },
+  "httpx": {
+    "version": "0.27.2",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "==0.27.2",
+    "requires_dist": [
+      {
+        "name": "anyio",
+        "specifier": ""
+      },
+      {
+        "name": "certifi",
+        "specifier": ""
+      },
+      {
+        "name": "httpcore",
+        "specifier": "==1.*"
+      },
+      {
+        "name": "idna",
+        "specifier": ""
+      },
+      {
+        "name": "sniffio",
+        "specifier": ""
+      }
+    ]
+  },
+  "open-clip-torch": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "torch",
+        "specifier": ">=2.0"
+      },
+      {
+        "name": "torchvision",
+        "specifier": ""
+      },
+      {
+        "name": "regex",
+        "specifier": ""
+      },
+      {
+        "name": "ftfy",
+        "specifier": ""
+      },
+      {
+        "name": "tqdm",
+        "specifier": ""
+      },
+      {
+        "name": "huggingface-hub",
+        "specifier": ""
+      },
+      {
+        "name": "safetensors",
+        "specifier": ""
+      },
+      {
+        "name": "timm",
+        "specifier": ">=1.0.17"
+      }
+    ]
+  },
+  "safetensors": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": ">=0.8.0",
+    "requires_dist": []
+  },
+  "pandas": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.26.0"
+      },
+      {
+        "name": "python-dateutil",
+        "specifier": ">=2.8.2"
+      }
+    ]
+  },
+  "onnxruntime": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "flatbuffers",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.21.6"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": ">=4.25.8"
+      }
+    ]
+  },
+  "timm": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "torch",
+        "specifier": ""
+      },
+      {
+        "name": "torchvision",
+        "specifier": ""
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ""
+      },
+      {
+        "name": "huggingface-hub",
+        "specifier": ""
+      },
+      {
+        "name": "safetensors",
+        "specifier": ""
+      }
+    ]
+  },
+  "omegaconf": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "antlr4-python3-runtime",
+        "specifier": "==4.9.*"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1.0"
+      }
+    ]
+  },
+  "python-dotenv": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "nest-asyncio": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "marshmallow": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "backports-datetime-fromisoformat",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ""
+      }
+    ]
+  },
+  "cython": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "aioshutil": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "aiofiles": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "arabic-reshaper": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pyhyphen": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "wheel",
+        "specifier": ">=0.40.0"
+      },
+      {
+        "name": "setuptools",
+        "specifier": ">=68.0"
+      },
+      {
+        "name": "appdirs",
+        "specifier": ">=1.4.0"
+      },
+      {
+        "name": "requests",
+        "specifier": ">=2.25"
+      }
+    ]
+  },
+  "langcodes": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "manga-ocr": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "fire",
+        "specifier": ""
+      },
+      {
+        "name": "fugashi",
+        "specifier": ""
+      },
+      {
+        "name": "jaconv",
+        "specifier": ""
+      },
+      {
+        "name": "loguru",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "pillow",
+        "specifier": ">=10.0.0"
+      },
+      {
+        "name": "pyperclip",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": ">=1.0"
+      },
+      {
+        "name": "transformers",
+        "specifier": ">=4.25.0"
+      },
+      {
+        "name": "unidic-lite",
+        "specifier": ""
+      }
+    ]
+  },
+  "langdetect": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "six",
+        "specifier": ""
+      }
+    ]
+  },
+  "pydensecrf": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "accelerate": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.17"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.0"
+      },
+      {
+        "name": "psutil",
+        "specifier": ""
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": ">=2.0.0"
+      },
+      {
+        "name": "huggingface-hub",
+        "specifier": ">=0.21.0"
+      },
+      {
+        "name": "safetensors",
+        "specifier": ">=0.4.3"
+      }
+    ]
+  },
+  "bitsandbytes": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "torch",
+        "specifier": "<3,>=2.3"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.17"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.9"
+      }
+    ]
+  },
+  "uvicorn": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "click",
+        "specifier": ">=7.0"
+      },
+      {
+        "name": "h11",
+        "specifier": ">=0.8"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.0"
+      }
+    ]
+  },
+  "fastapi": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "starlette",
+        "specifier": ">=0.46.0"
+      },
+      {
+        "name": "pydantic",
+        "specifier": ">=2.9.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.8.0"
+      },
+      {
+        "name": "typing-inspection",
+        "specifier": ">=0.4.2"
+      },
+      {
+        "name": "annotated-doc",
+        "specifier": ">=0.0.2"
+      }
+    ]
+  },
+  "pydantic": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "annotated-types",
+        "specifier": ">=0.4.0"
+      },
+      {
+        "name": "pydantic-core",
+        "specifier": "==2.14.1"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.6.1"
+      }
+    ]
+  },
+  "python-multipart": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "google-genai": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "anyio",
+        "specifier": "<5.0.0,>=4.8.0"
+      },
+      {
+        "name": "google-auth",
+        "specifier": "<3.0.0,>=2.48.1"
+      },
+      {
+        "name": "httpx",
+        "specifier": "<1.0.0,>=0.28.1"
+      },
+      {
+        "name": "pydantic",
+        "specifier": "<3.0.0,>=2.12.5"
+      },
+      {
+        "name": "requests",
+        "specifier": "<3.0.0,>=2.28.1"
+      },
+      {
+        "name": "tenacity",
+        "specifier": "<9.2.0,>=8.2.3"
+      },
+      {
+        "name": "websockets",
+        "specifier": "<17.0,>=13.0.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": "<5.0.0,>=4.14.0"
+      },
+      {
+        "name": "distro",
+        "specifier": "<2,>=1.7.0"
+      },
+      {
+        "name": "sniffio",
+        "specifier": ""
+      }
+    ]
+  },
+  "rich": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "markdown-it-py",
+        "specifier": ">=2.2.0"
+      },
+      {
+        "name": "pygments",
+        "specifier": "<3.0.0,>=2.13.0"
+      }
+    ]
+  },
+  "regex": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "paddleocr": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "paddlex",
+        "specifier": "<3.8.0,>=3.7.0"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=6"
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "aiohttp",
+        "specifier": ">=3.8.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.12"
+      }
+    ]
+  },
+  "paddlepaddle": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "httpx",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.21"
+      },
+      {
+        "name": "protobuf",
+        "specifier": ">=3.20.2"
+      },
+      {
+        "name": "pillow",
+        "specifier": ""
+      },
+      {
+        "name": "opt-einsum",
+        "specifier": "==3.3.0"
+      },
+      {
+        "name": "networkx",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ""
+      },
+      {
+        "name": "safetensors",
+        "specifier": ">=0.6.0"
+      }
+    ]
+  },
+  "paddlepaddle-gpu": {
+    "version": "3.3.1",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "httpx",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.21"
+      },
+      {
+        "name": "protobuf",
+        "specifier": ">=3.20.2"
+      },
+      {
+        "name": "pillow",
+        "specifier": ""
+      },
+      {
+        "name": "opt-einsum",
+        "specifier": "==3.3.0"
+      },
+      {
+        "name": "networkx",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ""
+      },
+      {
+        "name": "safetensors",
+        "specifier": ">=0.6.0"
+      },
+      {
+        "name": "nvidia-cuda-runtime-cu11",
+        "specifier": "==11.8.89"
+      },
+      {
+        "name": "nvidia-cuda-cupti-cu11",
+        "specifier": "==11.8.87"
+      },
+      {
+        "name": "nvidia-cudnn-cu11",
+        "specifier": "==8.9.6.50"
+      },
+      {
+        "name": "nvidia-cublas-cu11",
+        "specifier": "==11.11.3.6"
+      },
+      {
+        "name": "nvidia-cufft-cu11",
+        "specifier": "==10.9.0.58"
+      },
+      {
+        "name": "nvidia-curand-cu11",
+        "specifier": "==10.3.0.86"
+      },
+      {
+        "name": "nvidia-cusolver-cu11",
+        "specifier": "==11.4.1.48"
+      },
+      {
+        "name": "nvidia-cusparse-cu11",
+        "specifier": "==11.7.5.86"
+      },
+      {
+        "name": "nvidia-nccl-cu11",
+        "specifier": "==2.19.3"
+      },
+      {
+        "name": "nvidia-nvtx-cu11",
+        "specifier": "==11.8.86"
+      },
+      {
+        "name": "nvidia-cuda-nvrtc-cu11",
+        "specifier": "==11.8.89"
+      }
+    ]
+  },
+  "exceptiongroup": {
+    "version": "1.3.1",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": ">=1.0.0rc8",
+    "requires_dist": [
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.6.0"
+      }
+    ]
+  },
+  "typing-extensions": {
+    "version": "4.15.0",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": ">=4.10.0,<5,>=4.14,>=4.13.2,>=4.4,>=4.1.0,<5,>=4.11,>=4.0,>=4.8.0,>=4.6.1,<5.0.0,>=4.14.0,>=4.12,>=4.6,>=4.13.0,>=4,>=4.6.0",
+    "requires_dist": []
+  },
+  "anyio": {
+    "version": "4.12.1",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "<5,>=3.5.0,<5.0.0,>=4.8.0",
+    "requires_dist": [
+      {
+        "name": "exceptiongroup",
+        "specifier": ">=1.0.2"
+      },
+      {
+        "name": "idna",
+        "specifier": ">=2.8"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.5"
+      }
+    ]
+  },
+  "sniffio": {
+    "version": "1.3.1",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pillow": {
+    "version": "12.1.0",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "!=8.3.*,>=5.3.0,>=10.1,>=10.0.0",
+    "requires_dist": []
+  },
+  "idna": {
+    "version": "3.11",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "<4,>=2.5,>=2.8",
+    "requires_dist": []
+  },
+  "certifi": {
+    "version": "2026.1.4",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": ">=2023.5.7",
+    "requires_dist": []
+  },
+  "httpcore": {
+    "version": "1.0.9",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "==1.*",
+    "requires_dist": [
+      {
+        "name": "certifi",
+        "specifier": ""
+      },
+      {
+        "name": "h11",
+        "specifier": ">=0.16"
+      }
+    ]
+  },
+  "h11": {
+    "version": "0.16.0",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": ">=0.8,>=0.16",
+    "requires_dist": []
+  },
+  "opt-einsum": {
+    "version": "3.3.0",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "==3.3.0",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.7"
+      }
+    ]
+  },
+  "nvidia-cuda-runtime-cu11": {
+    "version": "11.8.89",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "==11.8.89",
+    "requires_dist": []
+  },
+  "nvidia-cuda-cupti-cu11": {
+    "version": "11.8.87",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "==11.8.87",
+    "requires_dist": []
+  },
+  "nvidia-cudnn-cu11": {
+    "version": "8.9.6.50",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "==8.9.6.50",
+    "requires_dist": [
+      {
+        "name": "nvidia-cublas-cu11",
+        "specifier": ""
+      },
+      {
+        "name": "nvidia-cuda-nvrtc-cu11",
+        "specifier": ""
+      }
+    ]
+  },
+  "nvidia-cublas-cu11": {
+    "version": "11.11.3.6",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "==11.11.3.6",
+    "requires_dist": []
+  },
+  "nvidia-cufft-cu11": {
+    "version": "10.9.0.58",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "==10.9.0.58",
+    "requires_dist": []
+  },
+  "nvidia-curand-cu11": {
+    "version": "10.3.0.86",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "==10.3.0.86",
+    "requires_dist": []
+  },
+  "nvidia-cusolver-cu11": {
+    "version": "11.4.1.48",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "==11.4.1.48",
+    "requires_dist": [
+      {
+        "name": "nvidia-cublas-cu11",
+        "specifier": ""
+      }
+    ]
+  },
+  "nvidia-cusparse-cu11": {
+    "version": "11.7.5.86",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "==11.7.5.86",
+    "requires_dist": []
+  },
+  "nvidia-nccl-cu11": {
+    "version": "2.19.3",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "==2.19.3",
+    "requires_dist": []
+  },
+  "nvidia-nvtx-cu11": {
+    "version": "11.8.86",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "==11.8.86",
+    "requires_dist": []
+  },
+  "nvidia-cuda-nvrtc-cu11": {
+    "version": "11.8.89",
+    "source": "private",
+    "private_url": "https://www.paddlepaddle.org.cn/packages/stable/cu118/",
+    "specifier": "==11.8.89",
+    "requires_dist": []
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/e9/2f/b5c1d62e94409ed98d5425e83b8e6d3dd475b611be272f561b1a545d273a/google_generativeai-0.8.3-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=1108ff89d5b8e59f51e63d1a8bf84701cd84656e17ca28d73aeed745e736d9b7",
+          "hashes": {
+            "sha256": "1108ff89d5b8e59f51e63d1a8bf84701cd84656e17ca28d73aeed745e736d9b7"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "google-generativeai",
+        "version": "0.8.3",
+        "platform": [
+          "Posix; MacOS X; Windows"
+        ],
+        "summary": "Google Generative AI High level API client library and tools.",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/google/generative-ai-python",
+        "author": "Google LLC",
+        "author_email": "googleapis-packages@google.com",
+        "license": "Apache 2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Operating System :: OS Independent",
+          "Topic :: Scientific/Engineering :: Artificial Intelligence"
+        ],
+        "requires_dist": [
+          "google-ai-generativelanguage ==0.6.10",
+          "google-api-core",
+          "google-api-python-client",
+          "google-auth >=2.15.0",
+          "protobuf",
+          "pydantic",
+          "tqdm",
+          "typing-extensions",
+          "absl-py ; extra == 'dev'",
+          "black ; extra == 'dev'",
+          "nose2 ; extra == 'dev'",
+          "pandas ; extra == 'dev'",
+          "pytype ; extra == 'dev'",
+          "pyyaml ; extra == 'dev'",
+          "Pillow ; extra == 'dev'",
+          "ipython ; extra == 'dev'"
+        ],
+        "requires_python": ">=3.9",
+        "provides_extra": [
+          "dev"
+        ],
+        "description": "# Google AI Python SDK for the Gemini API\n\n[![PyPI version](https://badge.fury.io/py/google-generativeai.svg)](https://badge.fury.io/py/google-generativeai)\n![Python support](https://img.shields.io/pypi/pyversions/google-generativeai)\n![PyPI - Downloads](https://img.shields.io/pypi/dd/google-generativeai)\n\nThe Google AI Python SDK is the easiest way for Python developers to build with the Gemini API. The Gemini API gives you access to Gemini [models](https://ai.google.dev/models/gemini) created by [Google DeepMind](https://deepmind.google/technologies/gemini/#introduction). Gemini models are built from the ground up to be multimodal, so you can reason seamlessly across text, images, and code. \n\n## Get started with the Gemini API\n1. Go to [Google AI Studio](https://aistudio.google.com/).\n2. Login with your Google account.\n3. [Create](https://aistudio.google.com/app/apikey) an API key.\n4. Try a Python SDK [quickstart](https://github.com/google-gemini/gemini-api-cookbook/blob/main/quickstarts/Prompting.ipynb) in the [Gemini API Cookbook](https://github.com/google-gemini/gemini-api-cookbook/).\n5. For detailed instructions, try the \n[Python SDK tutorial](https://ai.google.dev/tutorials/python_quickstart) on [ai.google.dev](https://ai.google.dev).\n\n## Usage example\nSee the [Gemini API Cookbook](https://github.com/google-gemini/gemini-api-cookbook/) or [ai.google.dev](https://ai.google.dev) for complete code.\n\n1. Install from [PyPI](https://pypi.org/project/google-generativeai).\n\n`pip install -U google-generativeai`\n\n2. Import the SDK and configure your API key.\n\n```python\nimport google.generativeai as genai\nimport os\n\ngenai.configure(api_key=os.environ[\"GEMINI_API_KEY\"])\n```\n\n3. Create a model and run a prompt.\n\n```python\nmodel = genai.GenerativeModel('gemini-1.5-flash')\nresponse = model.generate_content(\"The opposite of hot is\")\nprint(response.text)\n```\n\n## Documentation\n\nSee the [Gemini API Cookbook](https://github.com/google-gemini/gemini-api-cookbook/) or [ai.google.dev](https://ai.google.dev) for complete documentation.\n\n## Contributing\n\nSee [Contributing](https://github.com/google/generative-ai-python/blob/main/CONTRIBUTING.md) for more information on contributing to the Google AI Python SDK.\n\n## License\n\nThe contents of this repository are licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

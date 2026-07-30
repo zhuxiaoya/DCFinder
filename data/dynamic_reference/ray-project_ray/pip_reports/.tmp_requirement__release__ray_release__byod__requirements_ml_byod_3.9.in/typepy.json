@@ -1,0 +1,111 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/80/86/02e36d19ad12e27af63b99062f552c6a1eae030753926223c9575c8f5458/typepy-2.0.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=f97d3d26d5643a0aeccefb5f5ebadf64610e53eb2d0fa14133e5929a63314cfc",
+          "hashes": {
+            "sha256": "f97d3d26d5643a0aeccefb5f5ebadf64610e53eb2d0fa14133e5929a63314cfc"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "typepy",
+        "version": "2.0.0",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "project-url",
+          "provides-extra",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "typepy is a Python library for variable type checker/validator/converter at a run time.",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "library",
+          "type-checking",
+          "type-conversion",
+          "validator"
+        ],
+        "home_page": "https://github.com/thombashi/typepy",
+        "author": "Tsuyoshi Hombashi",
+        "author_email": "tsuyoshi.hombashi@gmail.com",
+        "license": "MIT License",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Information Technology",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "mbstrdecoder<2,>=1.0.0",
+          "python-dateutil<3.0.0,>=2.8.0; extra == \"datetime\"",
+          "packaging; extra == \"datetime\"",
+          "tzdata; sys_platform == \"win32\" and extra == \"datetime\"",
+          "pytest>=6.0.1; extra == \"test\"",
+          "tcolorpy; extra == \"test\"",
+          "python-dateutil<3.0.0,>=2.8.0; extra == \"test\"",
+          "packaging; extra == \"test\"",
+          "tzdata; sys_platform == \"win32\" and extra == \"test\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Changelog, https://github.com/thombashi/typepy/releases",
+          "Documentation, https://typepy.rtfd.io/",
+          "Source, https://github.com/thombashi/typepy",
+          "Tracker, https://github.com/thombashi/typepy/issues"
+        ],
+        "provides_extra": [
+          "datetime",
+          "test"
+        ],
+        "description": ".. contents:: **typepy**\n   :backlinks: top\n   :depth: 2\n\nSummary\n=========\n`typepy <https://github.com/thombashi/typepy>`__ is a Python library for variable type checker/validator/converter at a run time.\n\n.. image:: https://badge.fury.io/py/typepy.svg\n    :target: https://badge.fury.io/py/typepy\n    :alt: PyPI package version\n\n.. image:: https://anaconda.org/conda-forge/typepy/badges/version.svg\n    :target: https://anaconda.org/conda-forge/typepy\n    :alt: conda-forge package version\n\n.. image:: https://img.shields.io/pypi/pyversions/typepy.svg\n    :target: https://pypi.org/project/typepy\n    :alt: Supported Python versions\n\n.. image:: https://img.shields.io/pypi/implementation/typepy.svg\n    :target: https://pypi.org/project/typepy\n    :alt: Supported Python implementations\n\n.. image:: https://github.com/thombashi/typepy/workflows/Tests/badge.svg\n    :target: https://github.com/thombashi/typepy/actions?query=workflow%3ATests\n    :alt: Linux/macOS/Windows CI status\n\n.. image:: https://coveralls.io/repos/github/thombashi/typepy/badge.svg?branch=master\n    :target: https://coveralls.io/github/thombashi/typepy?branch=master\n    :alt: Test coverage\n\n.. image:: https://github.com/thombashi/typepy/actions/workflows/github-code-scanning/codeql/badge.svg\n    :target: https://github.com/thombashi/typepy/actions/workflows/github-code-scanning/codeql\n    :alt: CodeQL\n\nFeatures\n==========\n- checking a value type\n- validate a value for a type\n- convert a value from one type to the other type\n\nThe correspondence between Python types and ``typepy`` classes are as follows:\n\n.. table:: Supported Types\n\n    ================================================  =======================================================================================================\n    Python Type                                       typepy: Type Class\n    ================================================  =======================================================================================================\n    ``bool``                                          `Bool <https://typepy.rtfd.io/en/latest/pages/reference/type.html#bool-type>`__\n    ``datetime``                                      `DateTime <https://typepy.rtfd.io/en/latest/pages/reference/type.html#datetime-type>`__\n    ``dict``                                          `Dictionary <https://typepy.rtfd.io/en/latest/pages/reference/type.html#dictionary-type>`__\n    ``float``/``decimal.Decimal`` (not infinity/NaN)  `RealNumber <https://typepy.rtfd.io/en/latest/pages/reference/type.html#real-number-type>`__\n    ``float``/``decimal.Decimal`` (infinity)          `Infinity <https://typepy.rtfd.io/en/latest/pages/reference/type.html#infinity-type>`__\n    ``float``/``decimal.Decimal`` (NaN)               `Nan <https://typepy.rtfd.io/en/latest/pages/reference/type.html#nan-type>`__\n    ``int``                                           `Integer <https://typepy.rtfd.io/en/latest/pages/reference/type.html#integer-type>`__\n    ``list``                                          `List <https://typepy.rtfd.io/en/latest/pages/reference/type.html#list-type>`__\n    ``None``                                          `None <https://typepy.rtfd.io/en/latest/pages/reference/type.html#none-type>`__\n    ``str`` (not null)                                `String <https://typepy.rtfd.io/en/latest/pages/reference/type.html#string-type>`__\n    ``str`` (null)                                    `NullString <https://typepy.rtfd.io/en/latest/pages/reference/type.html#null-string-type>`__\n    ``str`` (IP address)                              `IpAddress <https://typepy.rtfd.io/en/latest/pages/reference/type.html#ip-address-type>`__\n    ================================================  =======================================================================================================\n\nInstallation\n============\n\nInstallation: pip\n------------------------------\n::\n\n    pip install typepy\n\nInstall additional dependency packages with the following command if using ``typepy.DateTime`` class\n\n::\n\n    pip install typepy[datetime]\n\nInstallation: conda\n------------------------------\n::\n\n    conda install -c conda-forge typepy\n\nInstallation: apt\n------------------------------\n::\n\n    sudo add-apt-repository ppa:thombashi/ppa\n    sudo apt update\n    sudo apt install python3-typepy\n\n\nDependencies\n============\n- Python 3.9+\n- `Python package dependencies (automatically installed) <https://github.com/thombashi/typepy/network/dependencies>`__\n\nOptional dependencies\n----------------------------------\nThese packages can be installed via ``pip install typepy[datetime]``:\n\n- `python-dateutil <https://dateutil.readthedocs.io/en/stable/>`__\n\nUsage\n=======\nType Check Method\n----------------------\n:Examples:\n    .. code-block:: pycon\n\n        >>> from typepy import Integer\n        >>> Integer(1).is_type()\n        True\n        >>> Integer(1.1).is_type()\n        False\n\n\nType Validation Method\n--------------------------------------------\n:Examples:\n    .. code-block:: pycon\n\n        >>> from typepy import Integer\n        >>> Integer(1).validate()\n        >>> try:\n        ...     Integer(1.1).validate()\n        ... except TypeError as e:\n        ...     # validate() raised TypeError when the value unmatched the type class\n        ...     print(e)\n        ...\n        invalid value type: expected=INTEGER, actual=<type 'float'>\n\n\nType Conversion Methods\n--------------------------------------------\n\nconvert method\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n:Examples:\n    .. code-block:: pycon\n\n        >>> from typepy import Integer, TypeConversionError\n        >>> Integer(\"1\").convert()\n        1\n        >>> try:\n        ...     Integer(1.1).convert()\n        ... except TypeConversionError as e:\n        ...     # convert() raised TypeConversionError when conversion failed\n        ...     print(e)\n        ...\n        failed to convert from float to INTEGER\n\ntry_convert method\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n:Examples:\n    .. code-block:: pycon\n\n        >>> from typepy import Integer\n        >>> Integer(\"1\").try_convert()\n        1\n        >>> print(Integer(1.1).try_convert())  # try_convert() returned None when conversion failed\n        None\n\nforce_convert\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n:Examples:\n    .. code-block:: pycon\n\n        >>> from typepy import Integer, TypeConversionError\n        >>> Integer(\"1\").force_convert()  # force_convert() forcibly convert the value\n        1\n        >>> Integer(1.1).force_convert()\n        1\n        >>> try:\n        ...     Integer(\"abc\").force_convert()\n        ... except TypeConversionError as e:\n        ...     # force_convert() raised TypeConversionError when the value was not convertible\n        ...     print(e)\n        ...\n        failed to force_convert to int: type=<class 'str'>\n\n\nFor more information\n--------------------------------------------\nType check/validate/convert results differed according to\n``strict_level`` value which can pass to typepy class constructors as an argument.\nMore information can be found in the\n`API reference <https://typepy.rtfd.io/en/latest/pages/reference/index.html>`__.\n\nDocumentation\n===============\nhttps://typepy.rtfd.io/\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

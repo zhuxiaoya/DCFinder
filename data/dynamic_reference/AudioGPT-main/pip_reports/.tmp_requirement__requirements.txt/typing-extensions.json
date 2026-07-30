@@ -1,0 +1,75 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/17/61/32c3ab8951142e061587d957226b5683d1387fb22d95b4f69186d92616d1/typing_extensions-4.0.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=829704698b22e13ec9eaf959122315eabb370b0884400e9818334d8b677023d9",
+          "hashes": {
+            "sha256": "829704698b22e13ec9eaf959122315eabb370b0884400e9818334d8b677023d9"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "typing_extensions",
+        "version": "4.0.0",
+        "summary": "Backported and Experimental Type Hints for Python 3.6+",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "annotations",
+          "backport",
+          "checker",
+          "checking",
+          "function",
+          "hinting",
+          "hints",
+          "type",
+          "typechecking",
+          "typehinting",
+          "typehints",
+          "typing"
+        ],
+        "author_email": "\"Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee\" <levkivskyi@gmail.com>",
+        "classifier": [
+          "Development Status :: 3 - Alpha",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Python Software Foundation License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Topic :: Software Development"
+        ],
+        "requires_python": ">=3.6",
+        "project_url": [
+          "Home, https://github.com/python/typing/blob/master/typing_extensions/README.rst"
+        ],
+        "description": "Typing Extensions -- Backported and Experimental Type Hints for Python\n\nThe ``typing`` module was added to the standard library in Python 3.5, but\nmany new features have been added to the module since then.\nThis means users of older Python versions who are unable to upgrade will not be\nable to take advantage of new types added to the ``typing`` module, such as\n``typing.Protocol`` or ``typing.TypedDict``.\n\nThe ``typing_extensions`` module contains backports of these changes.\nExperimental types that may eventually be added to the ``typing``\nmodule are also included in ``typing_extensions``.\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

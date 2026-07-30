@@ -1,0 +1,34 @@
+cython
+pillow >=7.0.0
+numpy >=1.18.1
+opencv-python >=4.1.2
+pytest ==7.1.3
+tqdm ==4.64.1
+scipy >=1.7.3
+matplotlib >=3.4.3
+mock ==4.0.3
+torch >=1.9.0
+torchvision >=0.10.0
+pycocotools
+attrs >=19.2.0
+contourpy >=1.0.1
+cycler >=0.10
+filelock
+fonttools >=4.22.0
+fsspec >=0.8.5
+iniconfig
+jinja2
+kiwisolver >=1.3.1
+markupsafe >=2.0
+mpmath <1.4,>=1.1.0
+networkx >=2.5.1
+packaging >=20.0
+pluggy <2.0,>=0.12
+py >=1.8.2
+pyparsing >=3
+python-dateutil >=2.7
+setuptools >=77.0.3
+six >=1.5
+sympy >=1.13.3
+tomli >=1.0.0
+typing-extensions >=4.10.0

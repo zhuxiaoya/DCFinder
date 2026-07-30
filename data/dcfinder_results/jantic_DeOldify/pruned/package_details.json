@@ -1,0 +1,449 @@
+{
+  "black": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "click",
+        "specifier": ">=8.0.0"
+      },
+      {
+        "name": "mypy-extensions",
+        "specifier": ">=0.4.3"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=22.0"
+      },
+      {
+        "name": "pathspec",
+        "specifier": ">=1.0.0"
+      },
+      {
+        "name": "platformdirs",
+        "specifier": ">=2"
+      },
+      {
+        "name": "pytokens",
+        "specifier": "~=0.4.0"
+      },
+      {
+        "name": "tomli",
+        "specifier": ">=1.1.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.0.1"
+      }
+    ]
+  },
+  "pre-commit": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "cfgv",
+        "specifier": ">=2.0.0"
+      },
+      {
+        "name": "identify",
+        "specifier": ">=1.0.0"
+      },
+      {
+        "name": "nodeenv",
+        "specifier": ">=0.11.1"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1"
+      },
+      {
+        "name": "virtualenv",
+        "specifier": ">=20.10.0"
+      }
+    ]
+  },
+  "wandb": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "click",
+        "specifier": ">=8.2.0"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "platformdirs",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": "!=5.28.0,!=5.29.0,<8,>=5"
+      },
+      {
+        "name": "pydantic",
+        "specifier": "<3,>=2.6"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ""
+      },
+      {
+        "name": "requests",
+        "specifier": "<3,>=2.0.0"
+      },
+      {
+        "name": "sentry-sdk",
+        "specifier": ">=2.0.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": "<5,>=4.8"
+      }
+    ]
+  },
+  "fastai": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "bottleneck",
+        "specifier": ""
+      },
+      {
+        "name": "fastprogress",
+        "specifier": ">=0.2.1"
+      },
+      {
+        "name": "beautifulsoup4",
+        "specifier": ""
+      },
+      {
+        "name": "matplotlib",
+        "specifier": ""
+      },
+      {
+        "name": "numexpr",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.15"
+      },
+      {
+        "name": "nvidia-ml-py3",
+        "specifier": ""
+      },
+      {
+        "name": "pandas",
+        "specifier": ""
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "pillow",
+        "specifier": ""
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ""
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "scipy",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": ">=1.0.0"
+      },
+      {
+        "name": "spacy",
+        "specifier": ">=2.0.18"
+      },
+      {
+        "name": "torchvision",
+        "specifier": ""
+      }
+    ]
+  },
+  "tensorboardx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": ">=3.20"
+      }
+    ]
+  },
+  "ffmpeg": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "ffmpeg-python": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "future",
+        "specifier": ""
+      }
+    ]
+  },
+  "yt-dlp": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "jupyterlab": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "async-lru",
+        "specifier": ">=1.0.0"
+      },
+      {
+        "name": "httpx",
+        "specifier": "<1,>=0.25.0"
+      },
+      {
+        "name": "ipykernel",
+        "specifier": "!=6.30.0,>=6.5.0"
+      },
+      {
+        "name": "jinja2",
+        "specifier": ">=3.0.3"
+      },
+      {
+        "name": "jupyter-builder",
+        "specifier": ">=1.0.2"
+      },
+      {
+        "name": "jupyter-core",
+        "specifier": ""
+      },
+      {
+        "name": "jupyter-lsp",
+        "specifier": ">=2.0.0"
+      },
+      {
+        "name": "jupyter-server",
+        "specifier": "<3,>=2.19.0"
+      },
+      {
+        "name": "jupyterlab-server",
+        "specifier": "<3,>=2.28.0"
+      },
+      {
+        "name": "notebook-shim",
+        "specifier": ">=0.2"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=23.2"
+      },
+      {
+        "name": "tomli",
+        "specifier": ">=1.2.2"
+      },
+      {
+        "name": "tornado",
+        "specifier": ">=6.2.0"
+      },
+      {
+        "name": "traitlets",
+        "specifier": ""
+      }
+    ]
+  },
+  "opencv-python": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=2"
+      }
+    ]
+  },
+  "pillow": {
+    "version": "9.3.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": "==9.3.0",
+    "requires_dist": []
+  },
+  "torch": {
+    "version": "1.11.0+cu113",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": "==1.11.0",
+    "requires_dist": [
+      {
+        "name": "typing-extensions",
+        "specifier": ""
+      }
+    ]
+  },
+  "torchvision": {
+    "version": "0.12.0+cu113",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": "==0.12.0",
+    "requires_dist": [
+      {
+        "name": "typing-extensions",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": "==1.11.0"
+      },
+      {
+        "name": "pillow",
+        "specifier": "!=8.3.*,>=5.3.0"
+      }
+    ]
+  },
+  "ipywidgets": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "comm",
+        "specifier": ">=0.1.3"
+      },
+      {
+        "name": "ipython",
+        "specifier": ">=6.1.0"
+      },
+      {
+        "name": "traitlets",
+        "specifier": ">=4.3.1"
+      },
+      {
+        "name": "widgetsnbextension",
+        "specifier": "~=4.0.14"
+      },
+      {
+        "name": "jupyterlab-widgets",
+        "specifier": "~=3.0.15"
+      }
+    ]
+  },
+  "typing-extensions": {
+    "version": "4.15.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": ">=4.0.1,<5,>=4.8",
+    "requires_dist": []
+  },
+  "requests": {
+    "version": "2.28.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": "<3,>=2.0.0",
+    "requires_dist": [
+      {
+        "name": "charset-normalizer",
+        "specifier": "<3,>=2"
+      },
+      {
+        "name": "idna",
+        "specifier": "<4,>=2.5"
+      },
+      {
+        "name": "urllib3",
+        "specifier": "<1.27,>=1.21.1"
+      },
+      {
+        "name": "certifi",
+        "specifier": ">=2017.4.17"
+      }
+    ]
+  },
+  "numpy": {
+    "version": "2.4.4",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": ">=1.15,>=2,>=1.25,>=1.23.0",
+    "requires_dist": []
+  },
+  "charset-normalizer": {
+    "version": "2.1.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": "<3,>=2",
+    "requires_dist": []
+  },
+  "idna": {
+    "version": "3.4",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": "<4,>=2.5",
+    "requires_dist": []
+  },
+  "urllib3": {
+    "version": "1.26.13",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": "<1.27,>=1.21.1,>=1.26.11",
+    "requires_dist": []
+  },
+  "certifi": {
+    "version": "2022.12.7",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": ">=2017.4.17",
+    "requires_dist": []
+  }
+}

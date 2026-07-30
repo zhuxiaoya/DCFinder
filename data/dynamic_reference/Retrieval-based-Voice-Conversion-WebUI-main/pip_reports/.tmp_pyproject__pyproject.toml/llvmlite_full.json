@@ -1,0 +1,65 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/cb/ad/cc882a10e28d010784797493c716ff3d17b3130107cdf20cdcd9a89c143f/llvmlite-0.39.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=35db4122182cc5112912a3ec94a3c18eab9a990bd588bfda8445087c1b748563",
+          "hashes": {
+            "sha256": "35db4122182cc5112912a3ec94a3c18eab9a990bd588bfda8445087c1b748563"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "llvmlite",
+        "version": "0.39.0",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "lightweight wrapper around basic LLVM functionality",
+        "home_page": "http://llvmlite.readthedocs.io",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Topic :: Software Development :: Code Generators",
+          "Topic :: Software Development :: Compilers"
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Source, https://github.com/numba/llvmlite"
+        ],
+        "description": "========\nllvmlite\n========\n\n.. image:: https://dev.azure.com/numba/numba/_apis/build/status/numba.llvmlite?branchName=main\n   :target: https://dev.azure.com/numba/numba/_build/latest?definitionId=2&branchName=main\n   :alt: Azure Pipelines\n.. image:: https://codeclimate.com/github/numba/llvmlite/badges/gpa.svg\n   :target: https://codeclimate.com/github/numba/llvmlite\n   :alt: Code Climate\n.. image:: https://coveralls.io/repos/github/numba/llvmlite/badge.svg\n   :target: https://coveralls.io/github/numba/llvmlite\n   :alt: Coveralls.io\n.. image:: https://readthedocs.org/projects/llvmlite/badge/\n   :target: https://llvmlite.readthedocs.io\n   :alt: Readthedocs.io\n\nA Lightweight LLVM Python Binding for Writing JIT Compilers\n-----------------------------------------------------------\n\n.. _llvmpy: https://github.com/llvmpy/llvmpy\n\nllvmlite is a project originally tailored for Numba_'s needs, using the\nfollowing approach:\n\n* A small C wrapper around the parts of the LLVM C++ API we need that are\n  not already exposed by the LLVM C API.\n* A ctypes Python wrapper around the C API.\n* A pure Python implementation of the subset of the LLVM IR builder that we\n  need for Numba.\n\nWhy llvmlite\n============\n\nThe old llvmpy_  binding exposes a lot of LLVM APIs but the mapping of\nC++-style memory management to Python is error prone. Numba_ and many JIT\ncompilers do not need a full LLVM API.  Only the IR builder, optimizer,\nand JIT compiler APIs are necessary.\n\nKey Benefits\n============\n\n* The IR builder is pure Python code and decoupled from LLVM's\n  frequently-changing C++ APIs.\n* Materializing a LLVM module calls LLVM's IR parser which provides\n  better error messages than step-by-step IR building through the C++\n  API (no more segfaults or process aborts).\n* Most of llvmlite uses the LLVM C API which is small but very stable\n  (low maintenance when changing LLVM version).\n* The binding is not a Python C-extension, but a plain DLL accessed using\n  ctypes (no need to wrestle with Python's compiler requirements and C++ 11\n  compatibility).\n* The Python binding layer has sane memory management.\n* llvmlite is quite faster than llvmpy's thanks to a much simpler architeture\n  (the Numba_ test suite is twice faster than it was).\n\nllvmpy Compatibility Layer\n--------------------------\n\nThe ``llvmlite.llvmpy`` namespace provides a minimal llvmpy compatibility\nlayer.\n\n\nCompatibility\n=============\n\nllvmlite works with Python 3.7 and greater.\n\nAs of version 0.37.0, llvmlite requires LLVM 11.x.x on all architectures\n\nHistorical compatibility table:\n\n=================  ========================\nllvmlite versions  compatible LLVM versions\n=================  ========================\n0.37.0 - ...       11.x.x\n0.34.0 - 0.36.0    10.0.x (9.0.x for  ``aarch64`` only)\n0.33.0             9.0.x\n0.29.0 - 0.32.0    7.0.x, 7.1.x, 8.0.x\n0.27.0 - 0.28.0    7.0.x\n0.23.0 - 0.26.0    6.0.x\n0.21.0 - 0.22.0    5.0.x\n0.17.0 - 0.20.0    4.0.x\n0.16.0 - 0.17.0    3.9.x\n0.13.0 - 0.15.0    3.8.x\n0.9.0 - 0.12.1     3.7.x\n0.6.0 - 0.8.0      3.6.x\n0.1.0 - 0.5.1      3.5.x\n=================  ========================\n\nDocumentation\n=============\n\nYou'll find the documentation at http://llvmlite.pydata.org\n\n\nPre-built binaries\n==================\n\nWe recommend you use the binaries provided by the Numba_ team for\nthe Conda_ package manager.  You can find them in Numba's `anaconda.org\nchannel <https://anaconda.org/numba>`_.  For example::\n\n   $ conda install --channel=numba llvmlite\n\n(or, simply, the official llvmlite package provided in the Anaconda_\ndistribution)\n\n.. _Numba: http://numba.pydata.org/\n.. _Conda: http://conda.pydata.org/\n.. _Anaconda: http://docs.continuum.io/anaconda/index.html\n\n\nOther build methods\n===================\n\nIf you don't want to use our pre-built packages, you can compile\nand install llvmlite yourself.  The documentation will teach you how:\nhttp://llvmlite.pydata.org/en/latest/install/index.html\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,43 @@
+{
+    "direct dependency with same name": {
+        "number": 4,
+        "packages": {
+            "numpy": {
+                "private version": "1.26.4",
+                "public version": "1.26.4",
+                "highest public (unconstrained)": "2.5.1",
+                "declared specifier": "<2,>=1.23.5",
+                "constraint source": "direct",
+                "satisfying public versions count": 14
+            },
+            "typing-extensions": {
+                "private version": "4.15.0",
+                "public version": "4.16.0",
+                "highest public (unconstrained)": "4.16.0",
+                "declared specifier": ">=4.8.0",
+                "constraint source": "direct",
+                "satisfying public versions count": 24
+            },
+            "pillow": {
+                "private version": "11.1.0",
+                "public version": "11.1.0",
+                "highest public (unconstrained)": "12.3.0",
+                "declared specifier": "==11.1.0",
+                "constraint source": "direct",
+                "satisfying public versions count": 1
+            },
+            "torchvision": {
+                "private version": "0.20.1+cu118",
+                "public version": "0.20.1",
+                "highest public (unconstrained)": "0.28.0",
+                "declared specifier": "==0.20.1",
+                "constraint source": "direct",
+                "satisfying public versions count": 1
+            }
+        }
+    },
+    "indirect dependency with same name": {
+        "number": 0,
+        "packages": {}
+    }
+}

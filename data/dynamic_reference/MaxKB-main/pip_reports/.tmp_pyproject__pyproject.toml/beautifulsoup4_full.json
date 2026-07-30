@@ -1,0 +1,208 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/f9/49/6abb616eb3cbab6a7cca303dc02fdf3836de2e0b834bf966a7f5271a34d8/beautifulsoup4-4.13.3-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=99045d7d3f08f91f0d656bc9b7efbae189426cd913d830294a15eefa0ea4df16",
+          "hashes": {
+            "sha256": "99045d7d3f08f91f0d656bc9b7efbae189426cd913d830294a15eefa0ea4df16"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "beautifulsoup4",
+        "version": "4.13.3",
+        "summary": "Screen-scraping library",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "HTML",
+          "XML",
+          "parse",
+          "soup"
+        ],
+        "author_email": "Leonard Richardson <leonardr@segfault.org>",
+        "license": "MIT License",
+        "license_file": [
+          "AUTHORS",
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Text Processing :: Markup :: HTML",
+          "Topic :: Text Processing :: Markup :: SGML",
+          "Topic :: Text Processing :: Markup :: XML"
+        ],
+        "requires_dist": [
+          "soupsieve>1.2",
+          "typing-extensions>=4.0.0",
+          "cchardet; extra == 'cchardet'",
+          "chardet; extra == 'chardet'",
+          "charset-normalizer; extra == 'charset-normalizer'",
+          "html5lib; extra == 'html5lib'",
+          "lxml; extra == 'lxml'"
+        ],
+        "requires_python": ">=3.7.0",
+        "project_url": [
+          "Download, https://www.crummy.com/software/BeautifulSoup/bs4/download/",
+          "Homepage, https://www.crummy.com/software/BeautifulSoup/bs4/"
+        ],
+        "provides_extra": [
+          "cchardet",
+          "chardet",
+          "charset-normalizer",
+          "html5lib",
+          "lxml"
+        ],
+        "description": "Beautiful Soup is a library that makes it easy to scrape information\nfrom web pages. It sits atop an HTML or XML parser, providing Pythonic\nidioms for iterating, searching, and modifying the parse tree.\n\n# Quick start\n\n```\n>>> from bs4 import BeautifulSoup\n>>> soup = BeautifulSoup(\"<p>Some<b>bad<i>HTML\")\n>>> print(soup.prettify())\n<html>\n <body>\n  <p>\n   Some\n   <b>\n    bad\n    <i>\n     HTML\n    </i>\n   </b>\n  </p>\n </body>\n</html>\n>>> soup.find(string=\"bad\")\n'bad'\n>>> soup.i\n<i>HTML</i>\n#\n>>> soup = BeautifulSoup(\"<tag1>Some<tag2/>bad<tag3>XML\", \"xml\")\n#\n>>> print(soup.prettify())\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<tag1>\n Some\n <tag2/>\n bad\n <tag3>\n  XML\n </tag3>\n</tag1>\n```\n\nTo go beyond the basics, [comprehensive documentation is available](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).\n\n# Links\n\n* [Homepage](https://www.crummy.com/software/BeautifulSoup/bs4/)\n* [Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)\n* [Discussion group](https://groups.google.com/group/beautifulsoup/)\n* [Development](https://code.launchpad.net/beautifulsoup/)\n* [Bug tracker](https://bugs.launchpad.net/beautifulsoup/)\n* [Complete changelog](https://git.launchpad.net/beautifulsoup/tree/CHANGELOG)\n\n# Note on Python 2 sunsetting\n\nBeautiful Soup's support for Python 2 was discontinued on December 31,\n2020: one year after the sunset date for Python 2 itself. From this\npoint onward, new Beautiful Soup development will exclusively target\nPython 3. The final release of Beautiful Soup 4 to support Python 2\nwas 4.9.3.\n\n# Supporting the project\n\nIf you use Beautiful Soup as part of your professional work, please consider a\n[Tidelift subscription](https://tidelift.com/subscription/pkg/pypi-beautifulsoup4?utm_source=pypi-beautifulsoup4&utm_medium=referral&utm_campaign=readme).\nThis will support many of the free software projects your organization\ndepends on, not just Beautiful Soup.\n\nIf you use Beautiful Soup for personal projects, the best way to say\nthank you is to read\n[Tool Safety](https://www.crummy.com/software/BeautifulSoup/zine/), a zine I\nwrote about what Beautiful Soup has taught me about software\ndevelopment.\n\n# Building the documentation\n\nThe bs4/doc/ directory contains full documentation in Sphinx\nformat. Run `make html` in that directory to create HTML\ndocumentation.\n\n# Running the unit tests\n\nBeautiful Soup supports unit test discovery using Pytest:\n\n```\n$ pytest\n```\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/5e/f5/0c41cb68dcae6b7de4fac4188a3a9589e21fb31df21ea3a2e888db95e6c9/soupsieve-2.8.4-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=e7e6b0769c8f51ed59acab6e994b00621096cfb1c640a7509295987388fbaf65",
+          "hashes": {
+            "sha256": "e7e6b0769c8f51ed59acab6e994b00621096cfb1c640a7509295987388fbaf65"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "soupsieve",
+        "version": "2.8.4",
+        "summary": "A modern CSS selector implementation for Beautiful Soup.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "CSS",
+          "HTML",
+          "XML",
+          "filter",
+          "query",
+          "selector",
+          "soup"
+        ],
+        "author_email": "Isaac Muse <Isaac.Muse@gmail.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE.md"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Typing :: Typed"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://github.com/facelessuser/soupsieve"
+        ],
+        "description": "[![Donate via PayPal][donate-image]][donate-link]\n[![Build][github-ci-image]][github-ci-link]\n[![Coverage Status][codecov-image]][codecov-link]\n[![PyPI Version][pypi-image]][pypi-link]\n[![PyPI Downloads][pypi-down]][pypi-link]\n[![PyPI - Python Version][python-image]][pypi-link]\n[![License][license-image-mit]][license-link]\n\n# Soup Sieve\n\n## Overview\n\nSoup Sieve is a CSS selector library designed to be used with [Beautiful Soup 4][bs4]. It aims to provide selecting,\nmatching, and filtering using modern CSS selectors. Soup Sieve currently provides selectors from the CSS level 1\nspecifications up through the latest CSS level 4 drafts and beyond (though some are not yet implemented).\n\nSoup Sieve was written with the intent to replace Beautiful Soup's builtin select feature, and as of Beautiful Soup\nversion 4.7.0, it now is :confetti_ball:. Soup Sieve can also be imported in order to use its API directly for\nmore controlled, specialized parsing.\n\nSoup Sieve has implemented most of the CSS selectors up through the latest CSS draft specifications, though there are a\nnumber that don't make sense in a non-browser environment. Selectors that cannot provide meaningful functionality simply\ndo not match anything. Some of the supported selectors are:\n\n- `.classes`\n- `#ids`\n- `[attributes=value]`\n- `parent child`\n- `parent > child`\n- `sibling ~ sibling`\n- `sibling + sibling`\n- `:not(element.class, element2.class)`\n- `:is(element.class, element2.class)`\n- `parent:has(> child)`\n- and [many more](https://facelessuser.github.io/soupsieve/selectors/)\n\n\n## Installation\n\nYou must have Beautiful Soup already installed:\n\n```\npip install beautifulsoup4\n```\n\nIn most cases, assuming you've installed version 4.7.0, that should be all you need to do, but if you've installed via\nsome alternative method, and Soup Sieve is not automatically installed, you can install it directly:\n\n```\npip install soupsieve\n```\n\nIf you want to manually install it from source, first ensure that [`build`](https://pypi.org/project/build/) is\ninstalled:\n\n```\npip install build\n```\n\nThen navigate to the root of the project and build the wheel and install (replacing `<ver>` with the current version):\n\n```\npython -m build -w\npip install dist/soupsieve-<ver>-py3-none-any.whl\n```\n\n## Documentation\n\nDocumentation is found here: https://facelessuser.github.io/soupsieve/.\n\n## License\n\nMIT\n\n[bs4]: https://beautiful-soup-4.readthedocs.io/en/latest/#\n\n[github-ci-image]: https://github.com/facelessuser/soupsieve/workflows/build/badge.svg\n[github-ci-link]: https://github.com/facelessuser/soupsieve/actions?query=workflow%3Abuild+branch%3Amain\n[codecov-image]: https://img.shields.io/codecov/c/github/facelessuser/soupsieve/master.svg?logo=codecov&logoColor=aaaaaa&labelColor=333333\n[codecov-link]: https://codecov.io/github/facelessuser/soupsieve\n[pypi-image]: https://img.shields.io/pypi/v/soupsieve.svg?logo=pypi&logoColor=aaaaaa&labelColor=333333\n[pypi-down]: https://img.shields.io/pypi/dm/soupsieve.svg?logo=pypi&logoColor=aaaaaa&labelColor=333333\n[pypi-link]: https://pypi.python.org/pypi/soupsieve\n[python-image]: https://img.shields.io/pypi/pyversions/soupsieve?logo=python&logoColor=aaaaaa&labelColor=333333\n[license-image-mit]: https://img.shields.io/badge/license-MIT-blue.svg?labelColor=333333\n[license-link]: https://github.com/facelessuser/soupsieve/blob/main/LICENSE.md\n[donate-image]: https://img.shields.io/badge/Donate-PayPal-3fabd1?logo=paypal\n[donate-link]: https://www.paypal.me/facelessuser\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+          "hashes": {
+            "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "typing_extensions",
+        "version": "4.16.0",
+        "summary": "Backported and Experimental Type Hints for Python 3.9+",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "annotations",
+          "backport",
+          "checker",
+          "checking",
+          "function",
+          "hinting",
+          "hints",
+          "type",
+          "typechecking",
+          "typehinting",
+          "typehints",
+          "typing"
+        ],
+        "author_email": "\"Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee\" <levkivskyi@gmail.com>",
+        "license_expression": "PSF-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Topic :: Software Development"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Bug Tracker, https://github.com/python/typing_extensions/issues",
+          "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+          "Documentation, https://typing-extensions.readthedocs.io/",
+          "Home, https://github.com/python/typing_extensions",
+          "Q & A, https://github.com/python/typing/discussions",
+          "Repository, https://github.com/python/typing_extensions"
+        ],
+        "description": "# Typing Extensions\n\n[![Chat at https://gitter.im/python/typing](https://badges.gitter.im/python/typing.svg)](https://gitter.im/python/typing)\n\n[Documentation](https://typing-extensions.readthedocs.io/en/latest/#) –\n[PyPI](https://pypi.org/project/typing-extensions/)\n\n## Overview\n\nThe `typing_extensions` module serves two related purposes:\n\n- Enable use of new type system features on older Python versions. For example,\n  `typing.TypeGuard` is new in Python 3.10, but `typing_extensions` allows\n  users on previous Python versions to use it too.\n- Enable experimentation with new type system PEPs before they are accepted and\n  added to the `typing` module.\n\n`typing_extensions` is treated specially by static type checkers such as\nmypy and pyright. Objects defined in `typing_extensions` are treated the same\nway as equivalent forms in `typing`.\n\n`typing_extensions` uses\n[Semantic Versioning](https://semver.org/). The\nmajor version will be incremented only for backwards-incompatible changes.\nTherefore, it's safe to depend\non `typing_extensions` like this: `typing_extensions ~=x.y`,\nwhere `x.y` is the first version that includes all features you need.\n[This](https://packaging.python.org/en/latest/specifications/version-specifiers/#compatible-release)\nis equivalent to `typing_extensions >=x.y, <(x+1)`. Do not depend on `~= x.y.z`\nunless you really know what you're doing; that defeats the purpose of\nsemantic versioning.\n\n## Included items\n\nSee [the documentation](https://typing-extensions.readthedocs.io/en/latest/#) for a\ncomplete listing of module contents.\n\n## Contributing\n\nSee [CONTRIBUTING.md](https://github.com/python/typing_extensions/blob/main/CONTRIBUTING.md)\nfor how to contribute to `typing_extensions`.\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

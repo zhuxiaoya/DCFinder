@@ -1,0 +1,80 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/1c/d6/4be8bf73dd984c0f2ef588ad4e234cad1ba49568406cc42c47a6ad84a25e/modal-0.70.5-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=6b9ce817284988bf1167202f099b33d04f78f3c60fb1d5c3ee7facc421987c41",
+          "hashes": {
+            "sha256": "6b9ce817284988bf1167202f099b33d04f78f3c60fb1d5c3ee7facc421987c41"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "modal",
+        "version": "0.70.5",
+        "summary": "Python client library for Modal",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "modal",
+          "client",
+          "cloud",
+          "serverless",
+          "infrastructure"
+        ],
+        "author": "Modal Labs",
+        "author_email": "support@modal.com",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Topic :: System :: Distributed Computing",
+          "Operating System :: OS Independent",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python :: 3"
+        ],
+        "requires_dist": [
+          "aiohttp",
+          "certifi",
+          "click (>=8.1.0)",
+          "fastapi",
+          "grpclib (==0.4.7)",
+          "protobuf (!=4.24.0,<6.0,>=3.19)",
+          "rich (>=12.0.0)",
+          "synchronicity (~=0.9.8)",
+          "toml",
+          "typer (>=0.9)",
+          "types-certifi",
+          "types-toml",
+          "watchfiles",
+          "typing-extensions (~=4.6)"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://modal.com",
+          "Source, https://github.com/modal-labs/modal-client"
+        ],
+        "description": "# Modal Python Library\n\n[![PyPI Version](https://img.shields.io/pypi/v/modal.svg)](https://pypi.org/project/modal/)\n[![License](https://img.shields.io/badge/license-apache_2.0-darkviolet.svg)](https://github.com/modal-labs/modal-client/blob/master/LICENSE)\n[![Tests](https://github.com/modal-labs/modal-client/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/modal-labs/modal-client/actions/workflows/ci-cd.yml)\n[![Slack](https://img.shields.io/badge/slack-join-blue.svg?logo=slack)](https://modal.com/slack)\n\nThe [Modal](https://modal.com/) Python library provides convenient, on-demand\naccess to serverless cloud compute from Python scripts on your local computer.\n\n## Documentation\n\nSee the [online documentation](https://modal.com/docs/guide) for many\n[example applications](https://modal.com/docs/examples),\na [user guide](https://modal.com/docs/guide), and the detailed\n[API reference](https://modal.com/docs/reference).\n\n## Installation\n\n**This library requires Python 3.9 – 3.13.**\n\nInstall the package with `pip`:\n\n```bash\npip install modal\n```\n\nYou can create a Modal account (or link your existing one) directly on the\ncommand line:\n\n```bash\npython3 -m modal setup\n```\n\n## Support\n\nFor usage questions and other support, please reach out on the\n[Modal Slack](https://modal.com/slack).\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

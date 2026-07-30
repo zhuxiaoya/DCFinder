@@ -1,0 +1,84 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/64/33/c8548560b94b7617f203d7236d6cdf36fe1a5a3645600ada6efd79da946f/psycopg2_binary-2.9.10-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=7f4152f8f76d2023aac16285576a9ecd2b11a9895373a1f10fd9db54b3ff06b4",
+          "hashes": {
+            "sha256": "7f4152f8f76d2023aac16285576a9ecd2b11a9895373a1f10fd9db54b3ff06b4"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "psycopg2-binary",
+        "version": "2.9.10",
+        "platform": [
+          "any"
+        ],
+        "summary": "psycopg2 - Python-PostgreSQL Database Adapter",
+        "home_page": "https://psycopg.org/",
+        "author": "Federico Di Gregorio",
+        "author_email": "fog@initd.org",
+        "maintainer": "Daniele Varrazzo",
+        "maintainer_email": "daniele.varrazzo@gmail.com",
+        "license": "LGPL with exceptions",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: C",
+          "Programming Language :: SQL",
+          "Topic :: Database",
+          "Topic :: Database :: Front-Ends",
+          "Topic :: Software Development",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: Unix"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Homepage, https://psycopg.org/",
+          "Changes, https://www.psycopg.org/docs/news.html",
+          "Documentation, https://www.psycopg.org/docs/",
+          "Code, https://github.com/psycopg/psycopg2",
+          "Issue Tracker, https://github.com/psycopg/psycopg2/issues",
+          "Download, https://pypi.org/project/psycopg2/"
+        ],
+        "description": "Psycopg is the most popular PostgreSQL database adapter for the Python\nprogramming language.  Its main features are the complete implementation of\nthe Python DB API 2.0 specification and the thread safety (several threads can\nshare the same connection).  It was designed for heavily multi-threaded\napplications that create and destroy lots of cursors and make a large number\nof concurrent \"INSERT\"s or \"UPDATE\"s.\n\nPsycopg 2 is mostly implemented in C as a libpq wrapper, resulting in being\nboth efficient and secure.  It features client-side and server-side cursors,\nasynchronous communication and notifications, \"COPY TO/COPY FROM\" support.\nMany Python types are supported out-of-the-box and adapted to matching\nPostgreSQL data types; adaptation can be extended and customized thanks to a\nflexible objects adaptation system.\n\nPsycopg 2 is both Unicode and Python 3 friendly.\n\n.. Note::\n\n    The psycopg2 package is still widely used and actively maintained, but it\n    is not expected to receive new features.\n\n    `Psycopg 3`__ is the evolution of psycopg2 and is where `new features are\n    being developed`__: if you are starting a new project you should probably\n    start from 3!\n\n    .. __: https://pypi.org/project/psycopg/\n    .. __: https://www.psycopg.org/psycopg3/docs/index.html\n\n\nDocumentation\n-------------\n\nDocumentation is included in the ``doc`` directory and is `available online`__.\n\n.. __: https://www.psycopg.org/docs/\n\nFor any other resource (source code repository, bug tracker, mailing list)\nplease check the `project homepage`__.\n\n.. __: https://psycopg.org/\n\n\nInstallation\n------------\n\nBuilding Psycopg requires a few prerequisites (a C compiler, some development\npackages): please check the install_ and the faq_ documents in the ``doc`` dir\nor online for the details.\n\nIf prerequisites are met, you can install psycopg like any other Python\npackage, using ``pip`` to download it from PyPI_::\n\n    $ pip install psycopg2\n\nor using ``setup.py`` if you have downloaded the source package locally::\n\n    $ python setup.py build\n    $ sudo python setup.py install\n\nYou can also obtain a stand-alone package, not requiring a compiler or\nexternal libraries, by installing the `psycopg2-binary`_ package from PyPI::\n\n    $ pip install psycopg2-binary\n\nThe binary package is a practical choice for development and testing but in\nproduction it is advised to use the package built from sources.\n\n.. _PyPI: https://pypi.org/project/psycopg2/\n.. _psycopg2-binary: https://pypi.org/project/psycopg2-binary/\n.. _install: https://www.psycopg.org/docs/install.html#install-from-source\n.. _faq: https://www.psycopg.org/docs/faq.html#faq-compile\n\n:Linux/OSX: |gh-actions|\n:Windows: |appveyor|\n\n.. |gh-actions| image:: https://github.com/psycopg/psycopg2/actions/workflows/tests.yml/badge.svg\n    :target: https://github.com/psycopg/psycopg2/actions/workflows/tests.yml\n    :alt: Linux and OSX build status\n\n.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/psycopg/psycopg2?branch=master&svg=true\n    :target: https://ci.appveyor.com/project/psycopg/psycopg2/branch/master\n    :alt: Windows build status\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

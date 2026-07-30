@@ -1,0 +1,602 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/be/26/1feaa26ddc78e5a756522fd96ace91b38269eafc5a740114b44ac75851fb/django_db_connection_pool-1.2.5-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=33ec059b8b81801ac23c11903827e89ade5c1383774b0848773ac08b72bc65e6",
+          "hashes": {
+            "sha256": "33ec059b8b81801ac23c11903827e89ade5c1383774b0848773ac08b72bc65e6"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "django-db-connection-pool",
+        "version": "1.2.5",
+        "summary": "Database connection pool component library for Django",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "django",
+          "db",
+          "database",
+          "persistent",
+          "connection",
+          "pool",
+          "pooling"
+        ],
+        "author_email": "Altair Bow <altair.bow@foxmail.com>",
+        "license": "MIT License\r\n        \r\n        Copyright (c) 2019 Altair Bow\r\n        \r\n        Permission is hereby granted, free of charge, to any person obtaining a copy\r\n        of this software and associated documentation files (the \"Software\"), to deal\r\n        in the Software without restriction, including without limitation the rights\r\n        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\r\n        copies of the Software, and to permit persons to whom the Software is\r\n        furnished to do so, subject to the following conditions:\r\n        \r\n        The above copyright notice and this permission notice shall be included in all\r\n        copies or substantial portions of the Software.\r\n        \r\n        THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\r\n        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\r\n        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\r\n        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\r\n        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\r\n        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\r\n        SOFTWARE.\r\n        ",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Web Environment",
+          "Framework :: Django",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "Django >=2.0",
+          "SQLAlchemy >=1.4.24",
+          "sqlparams >=4.0.0",
+          "Django >=2.0 ; extra == 'all'",
+          "JPype1 >=1.3.0 ; extra == 'all'",
+          "SQLAlchemy >=1.4.24 ; extra == 'all'",
+          "cx-Oracle >=6.4.1 ; extra == 'all'",
+          "mysqlclient >=1.3.0 ; extra == 'all'",
+          "psycopg2 >=2.8.6 ; extra == 'all'",
+          "pyodbc >=4.0.34 ; extra == 'all'",
+          "sqlparams >=3.0.0 ; extra == 'all'",
+          "JPype1 >=1.3.0 ; extra == 'jdbc'",
+          "mysqlclient >=1.3.0 ; extra == 'mysql'",
+          "pyodbc >=4.0.34 ; extra == 'odbc'",
+          "cx-Oracle >=6.4.1 ; extra == 'oracle'",
+          "psycopg2 >=2.8.6 ; extra == 'postgresql'",
+          "psycopg2 >=2.8.6 ; extra == 'psycopg2'",
+          "psycopg >=3 ; extra == 'psycopg3'"
+        ],
+        "requires_python": ">=3.4",
+        "project_url": [
+          "homepage, https://github.com/altairbow/django-db-connection-pool",
+          "repository, https://github.com/altairbow/django-db-connection-pool"
+        ],
+        "provides_extra": [
+          "all",
+          "jdbc",
+          "mysql",
+          "odbc",
+          "oracle",
+          "postgresql",
+          "psycopg2",
+          "psycopg3"
+        ],
+        "description": "# django-db-connection-pool\r\n\r\n:star: If this project is helpful to you, please light up the star, Thank you:smile:\r\n\r\nMySQL & Oracle & PostgreSQL & JDBC (Oracle, OceanBase) connection pool components for Django,\r\nBe based on [SQLAlchemy](https://github.com/sqlalchemy/sqlalchemy).\r\nWorks fine in multiprocessing and multithreading django project.\r\n\r\n* [中文版](README_CN.md)\r\n\r\n## Quickstart\r\n\r\n### Installation\r\n\r\nInstall with `pip` with all engines:\r\n\r\n```bash\r\n$ pip install django-db-connection-pool[all]\r\n```\r\n\r\nor select specific engines:\r\n\r\n```bash\r\n$ pip install django-db-connection-pool[mysql,oracle,postgresql,jdbc]\r\n```\r\n\r\nor one of mysql,oracle,postgresql,jdbc\r\n\r\n```bash\r\n$ pip install django-db-connection-pool[oracle]\r\n```\r\n\r\n### Update settings.DATABASES\r\n\r\n#### MySQL\r\n\r\nchange `django.db.backends.mysql` to `dj_db_conn_pool.backends.mysql`:\r\n\r\n```python\r\nDATABASES = {\r\n    'default': {\r\n        'ENGINE': 'dj_db_conn_pool.backends.mysql'\r\n    }\r\n}\r\n```\r\n\r\n#### Oracle\r\n\r\nchange `django.db.backends.oracle` to `dj_db_conn_pool.backends.oracle`:\r\n\r\n```python\r\nDATABASES = {\r\n    'default': {\r\n        'ENGINE': 'dj_db_conn_pool.backends.oracle'\r\n    }\r\n}\r\n```\r\n\r\n#### PostgreSQL\r\n\r\nchange `django.db.backends.postgresql` to `dj_db_conn_pool.backends.postgresql`:\r\n\r\n```python\r\nDATABASES = {\r\n    'default': {\r\n        'ENGINE': 'dj_db_conn_pool.backends.postgresql'\r\n    }\r\n}\r\n```\r\n\r\n#### Pool options(optional)\r\n\r\nyou can provide additional options to pass to SQLAlchemy's pool creation, key's name is `POOL_OPTIONS`:\r\n\r\n```python\r\nDATABASES = {\r\n    'default': {\r\n        'POOL_OPTIONS': {\r\n            'POOL_SIZE': 10,\r\n            'MAX_OVERFLOW': 10,\r\n            'RECYCLE': 24 * 60 * 60\r\n        }\r\n    }\r\n}\r\n```\r\n\r\n`django-db-connection-pool` has more configuration options\r\nhere: [PoolContainer.pool_default_params](https://github.com/altairbow/django-db-connection-pool/blob/master/dj_db_conn_pool/core/__init__.py#L13-L20)\r\n\r\nHere's the explanation of these options(from SQLAlchemy's Doc):\r\n\r\n* **pool_size**: The size of the pool to be maintained,\r\n  defaults to 5. This is the largest number of connections that\r\n  will be kept persistently in the pool. Note that the pool\r\n  begins with no connections; once this number of connections\r\n  is requested, that number of connections will remain.\r\n  `pool_size` can be set to 0 to indicate no size limit; to\r\n  disable pooling, use a :class:`~sqlalchemy.pool.NullPool`\r\n  instead.\r\n\r\n* **max_overflow**: The maximum overflow size of the\r\n  pool. When the number of checked-out connections reaches the\r\n  size set in pool_size, additional connections will be\r\n  returned up to this limit. When those additional connections\r\n  are returned to the pool, they are disconnected and\r\n  discarded. It follows then that the total number of\r\n  simultaneous connections the pool will allow is pool_size +\r\n  `max_overflow`, and the total number of \"sleeping\"\r\n  connections the pool will allow is pool_size. `max_overflow`\r\n  can be set to -1 to indicate no overflow limit; no limit\r\n  will be placed on the total number of concurrent\r\n  connections. Defaults to 10.\r\n\r\n* **recycle**: If set to a value other than -1, number of seconds\r\n  between connection recycling, which means upon checkout,\r\n  if this timeout is surpassed the connection will be closed\r\n  and replaced with a newly opened connection.\r\n  Defaults to -1.\r\n\r\nOr, you can use dj_db_conn_pool.setup to change default arguments(for each pool's creation), before using database pool:\r\n\r\n```python\r\nimport dj_db_conn_pool\r\n\r\ndj_db_conn_pool.setup(pool_size=100, max_overflow=50)\r\n```\r\n\r\n#### multiprocessing environment\r\n\r\nIn a multiprocessing environment, such as uWSGI, each process will have its own `dj_db_conn_pool.core:pool_container`\r\nobject,\r\nIt means that each process has an independent connection pool, for example:\r\nThe `POOL_OPTIONS` configuration of database `db1` is`{ 'POOL_SIZE': 10, 'MAX_OVERFLOW': 20 }`,\r\nIf uWSGI starts 8 worker processes, then the total connection pool size of `db1`  is `8 * 10`,\r\nThe maximum number of connections will not exceed `8 * 10 + 8 * 20`\r\n\r\n## JDBC\r\n\r\nThanks to [JPype](https://github.com/jpype-project/jpype),\r\ndjango-db-connection-pool can connect to database by jdbc\r\n\r\n### Usage\r\n\r\n#### Set Java runtime environment\r\n\r\n```bash\r\nexport JAVA_HOME=$PATH_TO_JRE;\r\nexport CLASSPATH=$PATH_RO_JDBC_DRIVER_JAR\r\n```\r\n\r\n#### Update settings.DATABASES\r\n\r\n##### Oracle\r\n\r\nchange `django.db.backends.oracle` to `dj_db_conn_pool.backends.jdbc.oracle`:\r\n\r\n```python\r\nDATABASES = {\r\n    'default': {\r\n        'ENGINE': 'dj_db_conn_pool.backends.jdbc.oracle'\r\n    }\r\n}\r\n```\r\n\r\n##### OceanBase\r\n\r\nuse `dj_db_conn_pool.backends.jdbc.oceanbase`:\r\n\r\n```python\r\nDATABASES = {\r\n    'default': {\r\n        'ENGINE': 'dj_db_conn_pool.backends.jdbc.oceanbase'\r\n    }\r\n}\r\n```\r\n\r\n### Performing raw SQL queries\r\n\r\nJust like django's built-in backends, all JDBC backends support named parameters in raw SQL queries,\r\nyou can execute raw sql queries like this:\r\n\r\n```python\r\nfrom django.db import connections\r\n\r\nwith connections[\"default\"].cursor() as cursor:\r\n    cursor.execute('select name, phone from users where name = %(name)s', params={\"name\": \"Altair\"})\r\n    result = cursor.fetchall()\r\n```\r\n\r\n### Acknowledgments\r\n- Thanks to all friends who provided PR and suggestions !\r\n- Thanks to [JetBrains](https://www.jetbrains.com/?from=django-db-connection-pool) for providing development tools for django-db-connection-pool !\r\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/4e/13/1e5e3e4c15dcecb04281b3cb2a46a4670e1cef131068e202f6040df19224/django-5.2.16-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=04f354bf9d807a86ad1a8392fe3808d362358a8eafc322848e0e43e59b24371d",
+          "hashes": {
+            "sha256": "04f354bf9d807a86ad1a8392fe3808d362358a8eafc322848e0e43e59b24371d"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "Django",
+        "version": "5.2.16",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "A high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+        "description_content_type": "text/x-rst",
+        "author_email": "Django Software Foundation <foundation@djangoproject.com>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE",
+          "LICENSE.python",
+          "AUTHORS"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Web Environment",
+          "Framework :: Django",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Topic :: Internet :: WWW/HTTP",
+          "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+          "Topic :: Internet :: WWW/HTTP :: WSGI",
+          "Topic :: Software Development :: Libraries :: Application Frameworks",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "asgiref>=3.8.1",
+          "sqlparse>=0.3.1",
+          "tzdata; sys_platform == \"win32\"",
+          "argon2-cffi>=19.1.0; extra == \"argon2\"",
+          "bcrypt; extra == \"bcrypt\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://www.djangoproject.com/",
+          "Documentation, https://docs.djangoproject.com/",
+          "Release notes, https://docs.djangoproject.com/en/stable/releases/",
+          "Funding, https://www.djangoproject.com/fundraising/",
+          "Source, https://github.com/django/django",
+          "Tracker, https://code.djangoproject.com/"
+        ],
+        "provides_extra": [
+          "argon2",
+          "bcrypt"
+        ],
+        "description": "======\nDjango\n======\n\nDjango is a high-level Python web framework that encourages rapid development\nand clean, pragmatic design. Thanks for checking it out.\n\nAll documentation is in the \"``docs``\" directory and online at\nhttps://docs.djangoproject.com/en/stable/. If you're just getting started,\nhere's how we recommend you read the docs:\n\n* First, read ``docs/intro/install.txt`` for instructions on installing Django.\n\n* Next, work through the tutorials in order (``docs/intro/tutorial01.txt``,\n  ``docs/intro/tutorial02.txt``, etc.).\n\n* If you want to set up an actual deployment server, read\n  ``docs/howto/deployment/index.txt`` for instructions.\n\n* You'll probably want to read through the topical guides (in ``docs/topics``)\n  next; from there you can jump to the HOWTOs (in ``docs/howto``) for specific\n  problems, and check out the reference (``docs/ref``) for gory details.\n\n* See ``docs/README`` for instructions on building an HTML version of the docs.\n\nDocs are updated rigorously. If you find any problems in the docs, or think\nthey should be clarified in any way, please take 30 seconds to fill out a\nticket here: https://code.djangoproject.com/newticket\n\nTo get more help:\n\n* Join the ``#django`` channel on ``irc.libera.chat``. Lots of helpful people\n  hang out there. `Webchat is available <https://web.libera.chat/#django>`_.\n\n* Join the `Django Discord community <https://chat.djangoproject.com>`_.\n\n* Join the community on the `Django Forum <https://forum.djangoproject.com/>`_.\n\nTo contribute to Django:\n\n* Check out https://docs.djangoproject.com/en/dev/internals/contributing/ for\n  information about getting involved.\n\nTo run Django's test suite:\n\n* Follow the instructions in the \"Unit tests\" section of\n  ``docs/internals/contributing/writing-code/unit-tests.txt``, published online at\n  https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/#running-the-unit-tests\n\nSupporting the Development of Django\n====================================\n\nDjango's development depends on your contributions.\n\nIf you depend on Django, remember to support the Django Software Foundation: https://www.djangoproject.com/fundraising/\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/5c/0a/a72d10ed65068e115044937873362e6e32fab1b7dce0046aeb224682c989/asgiref-3.11.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=e8667a091e69529631969fd45dc268fa79b99c92c5fcdda727757e52146ec133",
+          "hashes": {
+            "sha256": "e8667a091e69529631969fd45dc268fa79b99c92c5fcdda727757e52146ec133"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "asgiref",
+        "version": "3.11.1",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "ASGI specs, helper code, and adapters",
+        "home_page": "https://github.com/django/asgiref/",
+        "author": "Django Software Foundation",
+        "author_email": "foundation@djangoproject.com",
+        "license": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Web Environment",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Topic :: Internet :: WWW/HTTP"
+        ],
+        "requires_dist": [
+          "typing_extensions>=4; python_version < \"3.11\"",
+          "pytest; extra == \"tests\"",
+          "pytest-asyncio; extra == \"tests\"",
+          "mypy>=1.14.0; extra == \"tests\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Documentation, https://asgi.readthedocs.io/",
+          "Further Documentation, https://docs.djangoproject.com/en/stable/topics/async/#async-adapter-functions",
+          "Changelog, https://github.com/django/asgiref/blob/master/CHANGELOG.txt"
+        ],
+        "provides_extra": [
+          "tests"
+        ],
+        "description": "asgiref\n=======\n\n.. image:: https://github.com/django/asgiref/actions/workflows/tests.yml/badge.svg\n    :target: https://github.com/django/asgiref/actions/workflows/tests.yml\n\n.. image:: https://img.shields.io/pypi/v/asgiref.svg\n    :target: https://pypi.python.org/pypi/asgiref\n\nASGI is a standard for Python asynchronous web apps and servers to communicate\nwith each other, and positioned as an asynchronous successor to WSGI. You can\nread more at https://asgi.readthedocs.io/en/latest/\n\nThis package includes ASGI base libraries, such as:\n\n* Sync-to-async and async-to-sync function wrappers, ``asgiref.sync``\n* Server base classes, ``asgiref.server``\n* A WSGI-to-ASGI adapter, in ``asgiref.wsgi``\n\n\nFunction wrappers\n-----------------\n\nThese allow you to wrap or decorate async or sync functions to call them from\nthe other style (so you can call async functions from a synchronous thread,\nor vice-versa).\n\nIn particular:\n\n* AsyncToSync lets a synchronous subthread stop and wait while the async\n  function is called on the main thread's event loop, and then control is\n  returned to the thread when the async function is finished.\n\n* SyncToAsync lets async code call a synchronous function, which is run in\n  a threadpool and control returned to the async coroutine when the synchronous\n  function completes.\n\nThe idea is to make it easier to call synchronous APIs from async code and\nasynchronous APIs from synchronous code so it's easier to transition code from\none style to the other. In the case of Channels, we wrap the (synchronous)\nDjango view system with SyncToAsync to allow it to run inside the (asynchronous)\nASGI server.\n\nNote that exactly what threads things run in is very specific, and aimed to\nkeep maximum compatibility with old synchronous code. See\n\"Synchronous code & Threads\" below for a full explanation. By default,\n``sync_to_async`` will run all synchronous code in the program in the same\nthread for safety reasons; you can disable this for more performance with\n``@sync_to_async(thread_sensitive=False)``, but make sure that your code does\nnot rely on anything bound to threads (like database connections) when you do.\n\n\nThreadlocal replacement\n-----------------------\n\nThis is a drop-in replacement for ``threading.local`` that works with both\nthreads and asyncio Tasks. Even better, it will proxy values through from a\ntask-local context to a thread-local context when you use ``sync_to_async``\nto run things in a threadpool, and vice-versa for ``async_to_sync``.\n\nIf you instead want true thread- and task-safety, you can set\n``thread_critical`` on the Local object to ensure this instead.\n\n\nServer base classes\n-------------------\n\nIncludes a ``StatelessServer`` class which provides all the hard work of\nwriting a stateless server (as in, does not handle direct incoming sockets\nbut instead consumes external streams or sockets to work out what is happening).\n\nAn example of such a server would be a chatbot server that connects out to\na central chat server and provides a \"connection scope\" per user chatting to\nit. There's only one actual connection, but the server has to separate things\ninto several scopes for easier writing of the code.\n\nYou can see an example of this being used in `frequensgi <https://github.com/andrewgodwin/frequensgi>`_.\n\n\nWSGI-to-ASGI adapter\n--------------------\n\nAllows you to wrap a WSGI application so it appears as a valid ASGI application.\n\nSimply wrap it around your WSGI application like so::\n\n    asgi_application = WsgiToAsgi(wsgi_application)\n\nThe WSGI application will be run in a synchronous threadpool, and the wrapped\nASGI application will be one that accepts ``http`` class messages.\n\nPlease note that not all extended features of WSGI may be supported (such as\nfile handles for incoming POST bodies).\n\n\nDependencies\n------------\n\n``asgiref`` requires Python 3.9 or higher.\n\n\nContributing\n------------\n\nPlease refer to the\n`main Channels contributing docs <https://github.com/django/channels/blob/master/CONTRIBUTING.rst>`_.\n\n\nTesting\n'''''''\n\nTo run tests, make sure you have installed the ``tests`` extra with the package::\n\n    cd asgiref/\n    pip install -e .[tests]\n    pytest\n\n\nBuilding the documentation\n''''''''''''''''''''''''''\n\nThe documentation uses `Sphinx <http://www.sphinx-doc.org>`_::\n\n    cd asgiref/docs/\n    pip install sphinx\n\nTo build the docs, you can use the default tools::\n\n    sphinx-build -b html . _build/html  # or `make html`, if you've got make set up\n    cd _build/html\n    python -m http.server\n\n...or you can use ``sphinx-autobuild`` to run a server and rebuild/reload\nyour documentation changes automatically::\n\n    pip install sphinx-autobuild\n    sphinx-autobuild . _build/html\n\n\nReleasing\n'''''''''\n\nTo release, first add details to CHANGELOG.txt and update the version number in ``asgiref/__init__.py``.\n\nThen, build and push the packages::\n\n    python -m build\n    twine upload dist/*\n    rm -r asgiref.egg-info dist\n\n\nImplementation Details\n----------------------\n\nSynchronous code & threads\n''''''''''''''''''''''''''\n\nThe ``asgiref.sync`` module provides two wrappers that let you go between\nasynchronous and synchronous code at will, while taking care of the rough edges\nfor you.\n\nUnfortunately, the rough edges are numerous, and the code has to work especially\nhard to keep things in the same thread as much as possible. Notably, the\nrestrictions we are working with are:\n\n* All synchronous code called through ``SyncToAsync`` and marked with\n  ``thread_sensitive`` should run in the same thread as each other (and if the\n  outer layer of the program is synchronous, the main thread)\n\n* If a thread already has a running async loop, ``AsyncToSync`` can't run things\n  on that loop if it's blocked on synchronous code that is above you in the\n  call stack.\n\nThe first compromise you get to might be that ``thread_sensitive`` code should\njust run in the same thread and not spawn in a sub-thread, fulfilling the first\nrestriction, but that immediately runs you into the second restriction.\n\nThe only real solution is to essentially have a variant of ThreadPoolExecutor\nthat executes any ``thread_sensitive`` code on the outermost synchronous\nthread - either the main thread, or a single spawned subthread.\n\nThis means you now have two basic states:\n\n* If the outermost layer of your program is synchronous, then all async code\n  run through ``AsyncToSync`` will run in a per-call event loop in arbitrary\n  sub-threads, while all ``thread_sensitive`` code will run in the main thread.\n\n* If the outermost layer of your program is asynchronous, then all async code\n  runs on the main thread's event loop, and all ``thread_sensitive`` synchronous\n  code will run in a single shared sub-thread.\n\nCrucially, this means that in both cases there is a thread which is a shared\nresource that all ``thread_sensitive`` code must run on, and there is a chance\nthat this thread is currently blocked on its own ``AsyncToSync`` call. Thus,\n``AsyncToSync`` needs to act as an executor for thread code while it's blocking.\n\nThe ``CurrentThreadExecutor`` class provides this functionality; rather than\nsimply waiting on a Future, you can call its ``run_until_future`` method and\nit will run submitted code until that Future is done. This means that code\ninside the call can then run code on your thread.\n\n\nMaintenance and Security\n------------------------\n\nTo report security issues, please contact security@djangoproject.com. For GPG\nsignatures and more security process information, see\nhttps://docs.djangoproject.com/en/dev/internals/security/.\n\nTo report bugs or request new features, please open a new GitHub issue.\n\nThis repository is part of the Channels project. For the shepherd and maintenance team, please see the\n`main Channels readme <https://github.com/django/channels/blob/master/README.rst>`_.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/fc/97/e4a2eb5a8ec5cd3c2a0615a2f15f0afca89ac039229599b9ed0c0ed28e5e/sqlalchemy-2.0.51-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=2e54ff2dd657f2e3e0fbf2b097db1182f7bfea263eca4353f00065bae2a67c3d",
+          "hashes": {
+            "sha256": "2e54ff2dd657f2e3e0fbf2b097db1182f7bfea263eca4353f00065bae2a67c3d"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "SQLAlchemy",
+        "version": "2.0.51",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Database Abstraction Library",
+        "description_content_type": "text/x-rst",
+        "home_page": "https://www.sqlalchemy.org",
+        "author": "Mike Bayer",
+        "author_email": "mike_mp@zzzcomputing.com",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Database :: Front-Ends"
+        ],
+        "requires_dist": [
+          "importlib-metadata; python_version < \"3.8\"",
+          "greenlet>=1; platform_machine == \"aarch64\" or (platform_machine == \"ppc64le\" or (platform_machine == \"x86_64\" or (platform_machine == \"amd64\" or (platform_machine == \"AMD64\" or (platform_machine == \"win32\" or platform_machine == \"WIN32\")))))",
+          "typing-extensions>=4.6.0",
+          "greenlet>=1; extra == \"asyncio\"",
+          "mypy>=0.910; extra == \"mypy\"",
+          "pyodbc; extra == \"mssql\"",
+          "pymssql; extra == \"mssql-pymssql\"",
+          "pyodbc; extra == \"mssql-pyodbc\"",
+          "mysqlclient>=1.4.0; extra == \"mysql\"",
+          "mysql-connector-python; extra == \"mysql-connector\"",
+          "mariadb!=1.1.10,!=1.1.2,!=1.1.5,>=1.0.1; extra == \"mariadb-connector\"",
+          "cx_oracle>=8; extra == \"oracle\"",
+          "oracledb>=1.0.1; extra == \"oracle-oracledb\"",
+          "psycopg2>=2.7; extra == \"postgresql\"",
+          "pg8000>=1.29.1; extra == \"postgresql-pg8000\"",
+          "greenlet>=1; extra == \"postgresql-asyncpg\"",
+          "asyncpg; extra == \"postgresql-asyncpg\"",
+          "psycopg2-binary; extra == \"postgresql-psycopg2binary\"",
+          "psycopg2cffi; extra == \"postgresql-psycopg2cffi\"",
+          "psycopg>=3.0.7; extra == \"postgresql-psycopg\"",
+          "psycopg[binary]>=3.0.7; extra == \"postgresql-psycopgbinary\"",
+          "pymysql; extra == \"pymysql\"",
+          "greenlet>=1; extra == \"aiomysql\"",
+          "aiomysql>=0.2.0; extra == \"aiomysql\"",
+          "greenlet>=1; extra == \"aioodbc\"",
+          "aioodbc; extra == \"aioodbc\"",
+          "greenlet>=1; extra == \"asyncmy\"",
+          "asyncmy!=0.2.4,!=0.2.6,>=0.2.3; extra == \"asyncmy\"",
+          "greenlet>=1; extra == \"aiosqlite\"",
+          "aiosqlite; extra == \"aiosqlite\"",
+          "typing_extensions!=3.10.0.1; extra == \"aiosqlite\"",
+          "sqlcipher3_binary; extra == \"sqlcipher\""
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Documentation, https://docs.sqlalchemy.org",
+          "Issue Tracker, https://github.com/sqlalchemy/sqlalchemy/"
+        ],
+        "provides_extra": [
+          "asyncio",
+          "mypy",
+          "mssql",
+          "mssql-pymssql",
+          "mssql-pyodbc",
+          "mysql",
+          "mysql-connector",
+          "mariadb-connector",
+          "oracle",
+          "oracle-oracledb",
+          "postgresql",
+          "postgresql-pg8000",
+          "postgresql-asyncpg",
+          "postgresql-psycopg2binary",
+          "postgresql-psycopg2cffi",
+          "postgresql-psycopg",
+          "postgresql-psycopgbinary",
+          "pymysql",
+          "aiomysql",
+          "aioodbc",
+          "asyncmy",
+          "aiosqlite",
+          "sqlcipher"
+        ],
+        "description": "SQLAlchemy\n==========\n\n|PyPI| |Python| |Downloads|\n\n.. |PyPI| image:: https://img.shields.io/pypi/v/sqlalchemy\n    :target: https://pypi.org/project/sqlalchemy\n    :alt: PyPI\n\n.. |Python| image:: https://img.shields.io/pypi/pyversions/sqlalchemy\n    :target: https://pypi.org/project/sqlalchemy\n    :alt: PyPI - Python Version\n\n.. |Downloads| image:: https://static.pepy.tech/badge/sqlalchemy/month\n    :target: https://pepy.tech/project/sqlalchemy\n    :alt: PyPI - Downloads\n\n\nThe Python SQL Toolkit and Object Relational Mapper\n\nIntroduction\n-------------\n\nSQLAlchemy is the Python SQL toolkit and Object Relational Mapper\nthat gives application developers the full power and\nflexibility of SQL. SQLAlchemy provides a full suite\nof well known enterprise-level persistence patterns,\ndesigned for efficient and high-performing database\naccess, adapted into a simple and Pythonic domain\nlanguage.\n\nMajor SQLAlchemy features include:\n\n* An industrial strength ORM, built\n  from the core on the identity map, unit of work,\n  and data mapper patterns.   These patterns\n  allow transparent persistence of objects\n  using a declarative configuration system.\n  Domain models\n  can be constructed and manipulated naturally,\n  and changes are synchronized with the\n  current transaction automatically.\n* A relationally-oriented query system, exposing\n  the full range of SQL's capabilities\n  explicitly, including joins, subqueries,\n  correlation, and most everything else,\n  in terms of the object model.\n  Writing queries with the ORM uses the same\n  techniques of relational composition you use\n  when writing SQL.  While you can drop into\n  literal SQL at any time, it's virtually never\n  needed.\n* A comprehensive and flexible system\n  of eager loading for related collections and objects.\n  Collections are cached within a session,\n  and can be loaded on individual access, all\n  at once using joins, or by query per collection\n  across the full result set.\n* A Core SQL construction system and DBAPI\n  interaction layer.  The SQLAlchemy Core is\n  separate from the ORM and is a full database\n  abstraction layer in its own right, and includes\n  an extensible Python-based SQL expression\n  language, schema metadata, connection pooling,\n  type coercion, and custom types.\n* All primary and foreign key constraints are\n  assumed to be composite and natural.  Surrogate\n  integer primary keys are of course still the\n  norm, but SQLAlchemy never assumes or hardcodes\n  to this model.\n* Database introspection and generation.  Database\n  schemas can be \"reflected\" in one step into\n  Python structures representing database metadata;\n  those same structures can then generate\n  CREATE statements right back out - all within\n  the Core, independent of the ORM.\n\nSQLAlchemy's philosophy:\n\n* SQL databases behave less and less like object\n  collections the more size and performance start to\n  matter; object collections behave less and less like\n  tables and rows the more abstraction starts to matter.\n  SQLAlchemy aims to accommodate both of these\n  principles.\n* An ORM doesn't need to hide the \"R\".   A relational\n  database provides rich, set-based functionality\n  that should be fully exposed.   SQLAlchemy's\n  ORM provides an open-ended set of patterns\n  that allow a developer to construct a custom\n  mediation layer between a domain model and\n  a relational schema, turning the so-called\n  \"object relational impedance\" issue into\n  a distant memory.\n* The developer, in all cases, makes all decisions\n  regarding the design, structure, and naming conventions\n  of both the object model as well as the relational\n  schema.   SQLAlchemy only provides the means\n  to automate the execution of these decisions.\n* With SQLAlchemy, there's no such thing as\n  \"the ORM generated a bad query\" - you\n  retain full control over the structure of\n  queries, including how joins are organized,\n  how subqueries and correlation is used, what\n  columns are requested.  Everything SQLAlchemy\n  does is ultimately the result of a developer-initiated \n  decision.\n* Don't use an ORM if the problem doesn't need one.\n  SQLAlchemy consists of a Core and separate ORM\n  component.   The Core offers a full SQL expression\n  language that allows Pythonic construction\n  of SQL constructs that render directly to SQL\n  strings for a target database, returning\n  result sets that are essentially enhanced DBAPI\n  cursors.\n* Transactions should be the norm.  With SQLAlchemy's\n  ORM, nothing goes to permanent storage until\n  commit() is called.  SQLAlchemy encourages applications\n  to create a consistent means of delineating\n  the start and end of a series of operations.\n* Never render a literal value in a SQL statement.\n  Bound parameters are used to the greatest degree\n  possible, allowing query optimizers to cache\n  query plans effectively and making SQL injection\n  attacks a non-issue.\n\nDocumentation\n-------------\n\nLatest documentation is at:\n\nhttps://www.sqlalchemy.org/docs/\n\nInstallation / Requirements\n---------------------------\n\nFull documentation for installation is at\n`Installation <https://www.sqlalchemy.org/docs/intro.html#installation>`_.\n\nGetting Help / Development / Bug reporting\n------------------------------------------\n\nPlease refer to the `SQLAlchemy Community Guide <https://www.sqlalchemy.org/support.html>`_.\n\nCode of Conduct\n---------------\n\nAbove all, SQLAlchemy places great emphasis on polite, thoughtful, and\nconstructive communication between users and developers.\nPlease see our current Code of Conduct at\n`Code of Conduct <https://www.sqlalchemy.org/codeofconduct.html>`_.\n\nLicense\n-------\n\nSQLAlchemy is distributed under the `MIT license\n<https://www.opensource.org/licenses/mit-license.php>`_.\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/f5/c7/28747042e1df8a9cd120a1ebe15529fc4be3b486e13e8d551ff307a82412/greenlet-3.5.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=9bcd2d72ccd70a1ec68ba6ef93e7fbb4420ef9997dabc7010d893bd4015e0bec",
+          "hashes": {
+            "sha256": "9bcd2d72ccd70a1ec68ba6ef93e7fbb4420ef9997dabc7010d893bd4015e0bec"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "greenlet",
+        "version": "3.5.3",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Lightweight in-process concurrent programming",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "greenlet",
+          "coroutine",
+          "concurrency",
+          "threads",
+          "cooperative"
+        ],
+        "author_email": "Alexey Borzenkov <snaury@gmail.com>",
+        "maintainer_email": "Jason Madden <jason@seecoresoftware.com>",
+        "license_expression": "MIT AND PSF-2.0",
+        "license_file": [
+          "LICENSE",
+          "LICENSE.PSF"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Natural Language :: English",
+          "Programming Language :: C",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Operating System :: OS Independent",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "Sphinx; extra == \"docs\"",
+          "furo; extra == \"docs\"",
+          "objgraph; extra == \"test\"",
+          "psutil; extra == \"test\"",
+          "setuptools; extra == \"test\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://greenlet.readthedocs.io",
+          "Documentation, https://greenlet.readthedocs.io",
+          "Repository, https://github.com/python-greenlet/greenlet",
+          "Issues, https://github.com/python-greenlet/greenlet/issues",
+          "Changelog, https://greenlet.readthedocs.io/en/latest/changes.html"
+        ],
+        "provides_extra": [
+          "docs",
+          "test"
+        ],
+        "description": ".. This file is included into docs/history.rst\n\n\nGreenlets are lightweight coroutines for in-process concurrent\nprogramming.\n\nThe \"greenlet\" package is a spin-off of `Stackless`_, a version of\nCPython that supports micro-threads called \"tasklets\". Tasklets run\npseudo-concurrently (typically in a single or a few OS-level threads)\nand are synchronized with data exchanges on \"channels\".\n\nA \"greenlet\", on the other hand, is a still more primitive notion of\nmicro-thread with no implicit scheduling; coroutines, in other words.\nThis is useful when you want to control exactly when your code runs.\nYou can build custom scheduled micro-threads on top of greenlet;\nhowever, it seems that greenlets are useful on their own as a way to\nmake advanced control flow structures. For example, we can recreate\ngenerators; the difference with Python's own generators is that our\ngenerators can call nested functions and the nested functions can\nyield values too. (Additionally, you don't need a \"yield\" keyword. See\nthe example in `test_generator.py\n<https://github.com/python-greenlet/greenlet/blob/adca19bf1f287b3395896a8f41f3f4fd1797fdc7/src/greenlet/tests/test_generator.py#L1>`_).\n\nGreenlets are provided as a C extension module for the regular unmodified\ninterpreter.\n\n.. _`Stackless`: http://www.stackless.com\n\n\nWho is using Greenlet?\n======================\n\nThere are several libraries that use Greenlet as a more flexible\nalternative to Python's built in coroutine support:\n\n - `Concurrence`_\n - `Eventlet`_\n - `Gevent`_\n\n.. _Concurrence: http://opensource.hyves.org/concurrence/\n.. _Eventlet: http://eventlet.net/\n.. _Gevent: http://www.gevent.org/\n\nGetting Greenlet\n================\n\nThe easiest way to get Greenlet is to install it with pip::\n\n  pip install greenlet\n\n\nSource code archives and binary distributions are available on the\npython package index at https://pypi.org/project/greenlet\n\nThe source code repository is hosted on github:\nhttps://github.com/python-greenlet/greenlet\n\nDocumentation is available on readthedocs.org:\nhttps://greenlet.readthedocs.io\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/97/e2/f1355629bb1eeb274babc947e2ba4e2e49250e934c86adcce3e54943bc8a/sqlparams-6.2.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=63b32ed9051bdc52e7e8b38bc4f78aed51796cdd9135e730f4c6a7db1048dedf",
+          "hashes": {
+            "sha256": "63b32ed9051bdc52e7e8b38bc4f78aed51796cdd9135e730f4c6a7db1048dedf"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.2",
+        "name": "sqlparams",
+        "version": "6.2.0",
+        "summary": "Convert between various DB API 2.0 parameter styles.",
+        "description_content_type": "text/x-rst",
+        "author_email": "\"Caleb P. Burns\" <cpburnz@gmail.com>",
+        "license": "MIT License",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Database",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Utilities"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Source Code, https://github.com/cpburnz/python-sqlparams",
+          "Documentation, https://python-sql-parameters.readthedocs.io/en/latest/index.html",
+          "Issue Tracker, https://github.com/cpburnz/python-sqlparams/issues"
+        ],
+        "description": "SQL Params\n==========\n\n*sqlparams* is a utility package for converting between various SQL\nparameter styles. This can simplify the use of SQL parameters in queries by\nallowing the use of named parameters where only ordinal are supported. Some\n`Python DB API 2.0`_ compliant modules only support the ordinal *qmark* or\n*format* style parameters (e.g., `pyodbc`_ only supports *qmark*). This\npackage provides a helper class, `SQLParams`_, that is used to convert\nfrom any parameter style (*qmark*, *numeric*, *named*, *format*, *pyformat*;\nand the non-standard *numeric_dollar* and *named_dollar*), and have them\nsafely converted to the desired parameter style.\n\n.. _`Python DB API 2.0`: http://www.python.org/dev/peps/pep-0249/\n.. _`pyodbc`: https://github.com/mkleehammer/pyodbc\n\n\nTutorial\n--------\n\nYou first create an `SQLParams`_ instance specifying the named\nparameter style you're converting from, and what ordinal style you're\nconverting to. Let's convert from *named* to *qmark* style::\n\n  >>> import sqlparams\n  >>> query = sqlparams.SQLParams('named', 'qmark')\n\nNow, lets to convert a simple SQL SELECT query using the `SQLParams.format`_\nmethod which accepts an SQL query, and a *dict* of parameters::\n\n  >>> sql, params = query.format('SELECT * FROM users WHERE name = :name;', {'name': \"Thorin\"})\n\nThis returns the new SQL query using ordinal *qmark* parameters with the\ncorresponding list of ordinal parameters, which can be passed to the\n`.execute()`_ method on a database cursor::\n\n  >>> print sql\n  SELECT * FROM users WHERE name = ?;\n  >>> print params\n  ['Thorin']\n\n.. _`.execute()`: http://www.python.org/dev/peps/pep-0249/#id15\n\n*tuple*\\ s are also supported which allows for safe use of the SQL IN\noperator::\n\n  >>> sql, params = query.format(\"SELECT * FROM users WHERE name IN :names;\", {'names': (\"Dori\", \"Nori\", \"Ori\")})\n  >>> print sql\n  SELECT * FROM users WHERE name in (?,?,?);\n  >>> print params\n  ['Dori', 'Nori', 'Ori']\n\nYou can also format multiple parameters for a single, shared query useful with\nthe `.executemany()`_ method of a database cursor::\n\n  >>> sql, manyparams = query.formatmany(\"UPDATE users SET age = :age WHERE name = :name;\", [{'name': \"Dwalin\", 'age': 169}, {'name': \"Balin\", 'age': 178}])\n  >>> print sql\n  UPDATE users SET age = ? WHERE name = ?;\n  >>> print manyparams\n  [[169, 'Dwalin'], [178, 'Balin']]\n\n.. _`.executemany()`: http://www.python.org/dev/peps/pep-0249/#executemany\n\nPlease note that if an expanded *tuple* is used in `SQLParams.formatmany`_,\nthe tuple must be the same size in each of the parameter lists. Otherwise, you\nmight well use `SQLParams.format`_ in a for-loop.\n\n\nSource\n------\n\nThe source code for *sqlparams* is available from the GitHub repo\n`cpburnz/python-sql-parameters`_.\n\n.. _`cpburnz/python-sql-parameters`: https://github.com/cpburnz/python-sql-parameters.git\n\n\nInstallation\n------------\n\n*sqlparams* can be installed from source with::\n\n  python setup.py install\n\n*sqlparams* is also available for install through `PyPI`_::\n\n  pip install sqlparams\n\n.. _`PyPI`: http://pypi.python.org/pypi/sqlparams\n\n\nDocumentation\n-------------\n\nDocumentation for *sqlparams* is available on `Read the Docs`_.\n\n.. _`Read the Docs`: https://python-sql-parameters.readthedocs.org\n\n.. _`SQLParams`: https://python-sql-parameters.readthedocs.io/en/latest/sqlparams.html#sqlparams.SQLParams\n.. _`SQLParams.format`: https://python-sql-parameters.readthedocs.io/en/latest/sqlparams.html#sqlparams.SQLParams.format\n.. _`SQLParams.formatmany`: https://python-sql-parameters.readthedocs.io/en/latest/sqlparams.html#sqlparams.SQLParams.formatmany\n\n\n\nChange History\n==============\n\n6.2.0 (2024-01-25)\n------------------\n\nNew features:\n\n- `Pull #13`_: ADD SQL Server style named parameter.\n\n.. _`Pull #13`: https://github.com/cpburnz/python-sqlparams/pull/13\n\n\n6.1.0 (2024-08-17)\n------------------\n\nNew features:\n\n- `Issue #11`_/`Pull #12`_: Support Oracle named parameters enclosed in double quotes (style `named_oracle`).\n\nImprovements:\n\n- Support Python 3.13.\n\n.. _`Issue #11`: https://github.com/cpburnz/python-sqlparams/issues/11\n.. _`Pull #12`: https://github.com/cpburnz/python-sqlparams/pull/12\n\n\n6.0.1 (2023-12-09)\n------------------\n\n- Fix documentation.\n\n\n6.0.0 (2023-12-09)\n------------------\n\n- Dropped support of EOL Python 3.7.\n- Support Python 3.12.\n\n\n5.1.0 (2023-03-14)\n------------------\n\nImprovements:\n\n- Support `LiteralString`_.\n\n.. _`LiteralString`: https://docs.python.org/3/library/typing.html#typing.LiteralString\n\n\n5.0.0 (2022-08-11)\n------------------\n\n- Dropped support of EOL Python 3.6.\n- Support Python 3.11.\n- Changed build system to `pyproject.toml`_ and build backend to `setuptools.build_meta`_ which may have unforeseen consequences.\n- Safely expand empty tuples. Fixes `Issue #8`_.\n- Add support for stripping comments. This helps prevent expansion of unexpected variables in comments. Fixes `Issue #9`_.\n- Rename GitHub project from `python-sql-parameters`_ to `python-sqlparams`_.\n\n.. _`pyproject.toml`: https://pip.pypa.io/en/stable/reference/build-system/pyproject-toml/\n.. _`setuptools.build_meta`: https://setuptools.pypa.io/en/latest/build_meta.html\n.. _`Issue #8`: https://github.com/cpburnz/python-sqlparams/issues/8\n.. _`Issue #9`: https://github.com/cpburnz/python-sqlparams/issues/9\n.. _`python-sql-parameters`: https://github.com/cpburnz/python-sql-parameters\n.. _`python-sqlparams`: https://github.com/cpburnz/python-sqlparams\n\n\n4.0.0 (2022-06-06)\n------------------\n\n- Drop support for EOL Python 3.5.\n-\t`Issue #10`_: When converting to 'format'/'pyformat' types, escape existing '%' characters.\n-\tWhen converting from 'format'/'pyformat' types, set `escape_char=True` to unescape double '%' characters.\n\n.. _`Issue #10`: https://github.com/cpburnz/python-sqlparams/issues/10\n\n\n\n3.0.0 (2020-04-04)\n------------------\n\n- Major changes to internal implementation.\n- Support converting any parameter style to any parameter style (all named,\n  numeric, and ordinal styles).\n- Renamed attribute `named` to `in_style` on `sqlparams.SQLParams`.\n- Renamed attribute `ordinal` to `out_style` on `sqlparams.SQLParams`.\n- Removed attributes `match` and `replace` from `sqlparams.SQLParams` which\n  should have been private.\n- Named parameters must now be valid identifiers (can no longer start with a\n  digit to help prevent incorrectly matching common strings such as\n  datetimes). Fixes `Issue #4`_.\n- `Issue #7`_: Support dollar sign style for numeric and named parameters.\n\n.. _`Issue #4`: https://github.com/cpburnz/python-sqlparams/issues/4\n.. _`Issue #7`: https://github.com/cpburnz/python-sqlparams/issues/7\n\n\n2.0.0 (2020-02-26)\n------------------\n\n- Drop support for EOL Python 2.7, 3.2, 3.3, 3.4.\n\n\n1.2.0 (2020-02-26)\n------------------\n\n- Require setuptools.\n- Support up to Python 3.8.\n\n\n1.1.2 (2018-05-04)\n------------------\n\n- Improved support for byte strings.\n\n\n1.1.1 (2017-09-07)\n------------------\n\n- Fixed support for byte strings.\n\n\n1.1.0 (2017-08-30)\n------------------\n\n- Support Python 3.2+.\n\n\n1.0.3 (2012-12-28)\n------------------\n\n- Fixed documentation for `issue 1`_.\n\n.. _`issue 1`: https://github.com/cpburnz/python-sqlparams/issues/1\n\n\n1.0.2 (2012-12-22)\n------------------\n\n- Added sphinx documentation.\n\n\n1.0.1 (2012-12-20)\n------------------\n\n- Fixed running test as a script.\n\n\n1.0.0 (2012-12-20)\n------------------\n\n- Initial release.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/49/4b/359f28a903c13438ef59ebeee215fb25da53066db67b305c125f1c6d2a25/sqlparse-0.5.5-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=12a08b3bf3eec877c519589833aed092e2444e68240a3577e8e26148acc7b1ba",
+          "hashes": {
+            "sha256": "12a08b3bf3eec877c519589833aed092e2444e68240a3577e8e26148acc7b1ba"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "sqlparse",
+        "version": "0.5.5",
+        "summary": "A non-validating SQL parser.",
+        "description_content_type": "text/x-rst",
+        "author_email": "Andi Albrecht <albrecht.andi@gmail.com>",
+        "license_file": [
+          "AUTHORS",
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Database",
+          "Topic :: Software Development"
+        ],
+        "requires_dist": [
+          "build; extra == 'dev'",
+          "sphinx; extra == 'doc'"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Home, https://github.com/andialbrecht/sqlparse",
+          "Documentation, https://sqlparse.readthedocs.io/",
+          "Release Notes, https://sqlparse.readthedocs.io/en/latest/changes.html",
+          "Source, https://github.com/andialbrecht/sqlparse",
+          "Tracker, https://github.com/andialbrecht/sqlparse/issues"
+        ],
+        "provides_extra": [
+          "dev",
+          "doc"
+        ],
+        "description": "python-sqlparse - Parse SQL statements\n======================================\n\n|buildstatus|_\n|coverage|_\n|docs|_\n|packageversion|_\n\n.. docincludebegin\n\nsqlparse is a non-validating SQL parser for Python.\nIt provides support for parsing, splitting and formatting SQL statements.\n\nThe module is compatible with Python 3.8+ and released under the terms of the\n`New BSD license <https://opensource.org/licenses/BSD-3-Clause>`_.\n\nVisit the project page at https://github.com/andialbrecht/sqlparse for\nfurther information about this project.\n\n\nQuick Start\n-----------\n\n.. code-block:: sh\n\n   $ pip install sqlparse\n\n.. code-block:: python\n\n   >>> import sqlparse\n\n   >>> # Split a string containing two SQL statements:\n   >>> raw = 'select * from foo; select * from bar;'\n   >>> statements = sqlparse.split(raw)\n   >>> statements\n   ['select * from foo;', 'select * from bar;']\n\n   >>> # Format the first statement and print it out:\n   >>> first = statements[0]\n   >>> print(sqlparse.format(first, reindent=True, keyword_case='upper'))\n   SELECT *\n   FROM foo;\n\n   >>> # Parsing a SQL statement:\n   >>> parsed = sqlparse.parse('select * from foo')[0]\n   >>> parsed.tokens\n   [<DML 'select' at 0x7f22c5e15368>, <Whitespace ' ' at 0x7f22c5e153b0>, <Wildcard '*' … ]\n   >>>\n\nPre-commit Hook\n---------------\n\nsqlparse can be used as a `pre-commit <https://pre-commit.com/>`_ hook\nto automatically format SQL files before committing:\n\n.. code-block:: yaml\n\n   repos:\n     - repo: https://github.com/andialbrecht/sqlparse\n       rev: 0.5.4  # Use the latest version\n       hooks:\n         - id: sqlformat\n           # Optional: Add more formatting options\n           # IMPORTANT: --in-place is required, already included by default\n           args: [--in-place, --reindent, --keywords, upper]\n\nThen install the hook:\n\n.. code-block:: sh\n\n   $ pre-commit install\n\nYour SQL files will now be automatically formatted on each commit.\n\n**Note**: The hook uses ``--in-place --reindent`` by default. If you override\nthe ``args``, you **must** include ``--in-place`` for the hook to work.\n\nLinks\n-----\n\nProject page\n   https://github.com/andialbrecht/sqlparse\n\nBug tracker\n   https://github.com/andialbrecht/sqlparse/issues\n\nDocumentation\n   https://sqlparse.readthedocs.io/\n\nOnline Demo\n   https://sqlformat.org/\n\n\nsqlparse is licensed under the BSD license.\n\nParts of the code are based on pygments written by Georg Brandl and others.\npygments-Homepage: http://pygments.org/\n\n.. |buildstatus| image:: https://github.com/andialbrecht/sqlparse/actions/workflows/python-app.yml/badge.svg\n.. _buildstatus: https://github.com/andialbrecht/sqlparse/actions/workflows/python-app.yml\n.. |coverage| image:: https://codecov.io/gh/andialbrecht/sqlparse/branch/master/graph/badge.svg\n.. _coverage: https://codecov.io/gh/andialbrecht/sqlparse\n.. |docs| image:: https://readthedocs.org/projects/sqlparse/badge/?version=latest\n.. _docs: https://sqlparse.readthedocs.io/en/latest/?badge=latest\n.. |packageversion| image:: https://img.shields.io/pypi/v/sqlparse?color=%2334D058&label=pypi%20package\n.. _packageversion: https://pypi.org/project/sqlparse\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+          "hashes": {
+            "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "typing_extensions",
+        "version": "4.16.0",
+        "summary": "Backported and Experimental Type Hints for Python 3.9+",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "annotations",
+          "backport",
+          "checker",
+          "checking",
+          "function",
+          "hinting",
+          "hints",
+          "type",
+          "typechecking",
+          "typehinting",
+          "typehints",
+          "typing"
+        ],
+        "author_email": "\"Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee\" <levkivskyi@gmail.com>",
+        "license_expression": "PSF-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Topic :: Software Development"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Bug Tracker, https://github.com/python/typing_extensions/issues",
+          "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+          "Documentation, https://typing-extensions.readthedocs.io/",
+          "Home, https://github.com/python/typing_extensions",
+          "Q & A, https://github.com/python/typing/discussions",
+          "Repository, https://github.com/python/typing_extensions"
+        ],
+        "description": "# Typing Extensions\n\n[![Chat at https://gitter.im/python/typing](https://badges.gitter.im/python/typing.svg)](https://gitter.im/python/typing)\n\n[Documentation](https://typing-extensions.readthedocs.io/en/latest/#) –\n[PyPI](https://pypi.org/project/typing-extensions/)\n\n## Overview\n\nThe `typing_extensions` module serves two related purposes:\n\n- Enable use of new type system features on older Python versions. For example,\n  `typing.TypeGuard` is new in Python 3.10, but `typing_extensions` allows\n  users on previous Python versions to use it too.\n- Enable experimentation with new type system PEPs before they are accepted and\n  added to the `typing` module.\n\n`typing_extensions` is treated specially by static type checkers such as\nmypy and pyright. Objects defined in `typing_extensions` are treated the same\nway as equivalent forms in `typing`.\n\n`typing_extensions` uses\n[Semantic Versioning](https://semver.org/). The\nmajor version will be incremented only for backwards-incompatible changes.\nTherefore, it's safe to depend\non `typing_extensions` like this: `typing_extensions ~=x.y`,\nwhere `x.y` is the first version that includes all features you need.\n[This](https://packaging.python.org/en/latest/specifications/version-specifiers/#compatible-release)\nis equivalent to `typing_extensions >=x.y, <(x+1)`. Do not depend on `~= x.y.z`\nunless you really know what you're doing; that defeats the purpose of\nsemantic versioning.\n\n## Included items\n\nSee [the documentation](https://typing-extensions.readthedocs.io/en/latest/#) for a\ncomplete listing of module contents.\n\n## Contributing\n\nSee [CONTRIBUTING.md](https://github.com/python/typing_extensions/blob/main/CONTRIBUTING.md)\nfor how to contribute to `typing_extensions`.\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/3c/c7/36f41619278a67a51e00d7890c3542195295467453ec74ec23dc5940b265/bitsandbytes-0.45.4-py3-none-manylinux_2_24_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=96a48aa669048b99a6b98d57fc755dc4d7a77c90c33b98a15abe2c5c0616734b",
+          "hashes": {
+            "sha256": "96a48aa669048b99a6b98d57fc755dc4d7a77c90c33b98a15abe2c5c0616734b"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "bitsandbytes",
+        "version": "0.45.4",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "k-bit optimizers and matrix multiplication routines.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "gpu",
+          "optimizers",
+          "optimization",
+          "8-bit",
+          "quantization",
+          "compression"
+        ],
+        "author_email": "Tim Dettmers <dettmers@cs.washington.edu>",
+        "maintainer_email": "Titus von Köller <titus@huggingface.co>, Matthew Douglas <matthew.douglas@huggingface.co>",
+        "license": "MIT License\n        \n        Copyright (c) Facebook, Inc. and its affiliates.\n        \n        Permission is hereby granted, free of charge, to any person obtaining a copy\n        of this software and associated documentation files (the \"Software\"), to deal\n        in the Software without restriction, including without limitation the rights\n        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n        copies of the Software, and to permit persons to whom the Software is\n        furnished to do so, subject to the following conditions:\n        \n        The above copyright notice and this permission notice shall be included in all\n        copies or substantial portions of the Software.\n        \n        THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n        SOFTWARE.\n        ",
+        "license_file": [
+          "LICENSE",
+          "NOTICE.md"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "License :: OSI Approved :: MIT License",
+          "Environment :: GPU :: NVIDIA CUDA :: 11",
+          "Environment :: GPU :: NVIDIA CUDA :: 12",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "Operating System :: POSIX :: Linux",
+          "Operating System :: Microsoft :: Windows",
+          "Programming Language :: C++",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Topic :: Scientific/Engineering :: Artificial Intelligence"
+        ],
+        "requires_dist": [
+          "torch<3,>=2.0",
+          "numpy>=1.17",
+          "pandas; extra == \"benchmark\"",
+          "matplotlib; extra == \"benchmark\"",
+          "hf-doc-builder==0.5.0; extra == \"docs\"",
+          "bitsandbytes[test]; extra == \"dev\"",
+          "build<2,>=1.0.0; extra == \"dev\"",
+          "ruff==0.9.6; extra == \"dev\"",
+          "pre-commit<4,>=3.5.0; extra == \"dev\"",
+          "wheel<1,>=0.42; extra == \"dev\"",
+          "einops~=0.8.0; extra == \"test\"",
+          "lion-pytorch==0.2.3; extra == \"test\"",
+          "pytest~=8.3; extra == \"test\"",
+          "scipy<2,>=1.10.1; python_version < \"3.9\" and extra == \"test\"",
+          "scipy<2,>=1.11.4; python_version >= \"3.9\" and extra == \"test\"",
+          "transformers<5,>=4.30.1; extra == \"test\""
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "homepage, https://github.com/bitsandbytes-foundation/bitsandbytes",
+          "changelog, https://github.com/bitsandbytes-foundation/bitsandbytes/blob/main/CHANGELOG.md",
+          "docs, https://huggingface.co/docs/bitsandbytes/main",
+          "issues, https://github.com/bitsandbytes-foundation/bitsandbytes/issues"
+        ],
+        "provides_extra": [
+          "benchmark",
+          "docs",
+          "dev",
+          "test"
+        ],
+        "description": "# `bitsandbytes`\n\n[![Downloads](https://static.pepy.tech/badge/bitsandbytes)](https://pepy.tech/project/bitsandbytes) [![Downloads](https://static.pepy.tech/badge/bitsandbytes/month)](https://pepy.tech/project/bitsandbytes) [![Downloads](https://static.pepy.tech/badge/bitsandbytes/week)](https://pepy.tech/project/bitsandbytes)\n\nThe `bitsandbytes` library is a lightweight Python wrapper around CUDA custom functions, in particular 8-bit optimizers, matrix multiplication (LLM.int8()), and 8 & 4-bit quantization functions.\n\nThe library includes quantization primitives for 8-bit & 4-bit operations, through `bitsandbytes.nn.Linear8bitLt` and `bitsandbytes.nn.Linear4bit` and 8-bit optimizers through `bitsandbytes.optim` module.\n\nThere are ongoing efforts to support further hardware backends, i.e. Intel CPU + GPU, AMD GPU, Apple Silicon, hopefully NPU.\n\n**Please head to the official documentation page:**\n\n**[https://huggingface.co/docs/bitsandbytes/main](https://huggingface.co/docs/bitsandbytes/main)**\n\n## License\n\n`bitsandbytes` is MIT licensed.\n\nWe thank Fabio Cannizzo for his work on [FastBinarySearch](https://github.com/fabiocannizzo/FastBinarySearch) which we use for CPU quantization.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

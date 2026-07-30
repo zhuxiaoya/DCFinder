@@ -1,0 +1,77 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/87/55/ab40a0d1378ee5c859590a633052cf1d0a1f8435af87558a9f7cd576601a/sphinxext_rediraffe-0.3.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=f4220beafa99c99177488276b8e4fcf61fbeeec4253c1e4aae841a18c475330c",
+          "hashes": {
+            "sha256": "f4220beafa99c99177488276b8e4fcf61fbeeec4253c1e4aae841a18c475330c"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "sphinxext-rediraffe",
+        "version": "0.3.0",
+        "summary": "Sphinx Extension that redirects non-existent pages to working pages",
+        "description_content_type": "text/x-rst",
+        "author_email": "Vasista Vovveti <vasistavovveti@gmail.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENCE.rst"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Plugins",
+          "Environment :: Web Environment",
+          "Framework :: Sphinx :: Extension",
+          "Intended Audience :: Developers",
+          "Natural Language :: English",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python",
+          "Topic :: Documentation :: Sphinx",
+          "Topic :: Documentation",
+          "Topic :: Software Development :: Documentation",
+          "Topic :: Text Processing",
+          "Topic :: Utilities"
+        ],
+        "requires_dist": [
+          "Sphinx>=6.0"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Code, https://github.com/sphinx-doc/sphinxext-rediraffe/",
+          "Documentation, https://sphinxext-rediraffe.readthedocs.io/",
+          "Download, https://pypi.org/project/sphinxext-rediraffe/",
+          "Homepage, https://github.com/sphinx-doc/sphinxext-rediraffe/",
+          "Issue tracker, https://github.com/sphinx-doc/sphinxext-rediraffe/issues"
+        ],
+        "description": "===================\nsphinxext-rediraffe\n===================\n\n.. image:: https://img.shields.io/pypi/v/sphinxext-rediraffe.svg\n   :target: https://pypi.org/project/sphinxext-rediraffe/\n   :alt: Package on PyPI\n\n.. image:: https://github.com/sphinx-doc/sphinxext-rediraffe/actions/workflows/test.yml/badge.svg\n   :target: https://github.com/sphinx-doc/sphinxext-rediraffe/actions\n   :alt: Build Status\n\n.. image:: https://img.shields.io/badge/License-MIT-blue.svg\n   :target: https://opensource.org/licenses/MIT\n   :alt: MIT\n\nSphinx extension to redirect files\n\n.. image:: ./assets/rediraffe_logo.svg\n   :align: center\n\nThis Sphinx extension redirects non-existent pages to working pages.\nRediraffe can also check that deleted or renamed files in your git repo\nare redirected.\n\nRediraffe creates a graph of all specified redirects and traverses it\nto point all internal urls to leaf urls.\nThis means that chained redirects will be resolved.\nFor example, if a config has 6 chained redirects, all 6 links will redirect\ndirectly to the final link.\nThe end user will never experience more than 1 redirection.\n\nNote: Rediraffe supports the html and dirhtml builders.\n\nInstallation\n============\n\n.. code-block:: sh\n\n   python -m pip install sphinxext-rediraffe\n\nUsage\n=====\n\nSee the `documentation`_.\n\n.. _documentation: https://sphinxext-rediraffe.readthedocs.io/en/latest/\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/58/a4/859605be01d9979fecde5e94ed6662d9a85853f9849f396d9a84455f4846/numba-0.56.4-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=4e08e203b163ace08bad500b0c16f6092b1eb34fd1fce4feaf31a67a3a5ecf3b",
+          "hashes": {
+            "sha256": "4e08e203b163ace08bad500b0c16f6092b1eb34fd1fce4feaf31a67a3a5ecf3b"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "numba",
+        "version": "0.56.4",
+        "summary": "compiling Python code using LLVM",
+        "home_page": "https://numba.pydata.org",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE",
+          "LICENSES.third-party"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Topic :: Software Development :: Compilers"
+        ],
+        "requires_dist": [
+          "llvmlite (<0.40,>=0.39.0dev0)",
+          "numpy (<1.24,>=1.18)",
+          "setuptools",
+          "importlib-metadata ; python_version < \"3.9\""
+        ],
+        "requires_python": ">=3.7",
+        "description": "*****\nNumba\n*****\n\n.. image:: https://badges.gitter.im/numba/numba.svg\n   :target: https://gitter.im/numba/numba?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge\n   :alt: Gitter\n\n.. image:: https://img.shields.io/badge/discuss-on%20discourse-blue\n   :target: https://numba.discourse.group/\n   :alt: Discourse\n\n.. image:: https://zenodo.org/badge/3659275.svg\n   :target: https://zenodo.org/badge/latestdoi/3659275\n   :alt: Zenodo DOI\n\n.. image:: https://img.shields.io/pypi/v/numba.svg\n   :target: https://pypi.python.org/pypi/numba/\n   :alt: PyPI\n\n.. image:: https://dev.azure.com/numba/numba/_apis/build/status/numba.numba?branchName=main\n    :target: https://dev.azure.com/numba/numba/_build/latest?definitionId=1?branchName=main\n    :alt: Azure Pipelines\n\nA Just-In-Time Compiler for Numerical Functions in Python\n#########################################################\n\nNumba is an open source, NumPy-aware optimizing compiler for Python sponsored\nby Anaconda, Inc.  It uses the LLVM compiler project to generate machine code\nfrom Python syntax.\n\nNumba can compile a large subset of numerically-focused Python, including many\nNumPy functions.  Additionally, Numba has support for automatic\nparallelization of loops, generation of GPU-accelerated code, and creation of\nufuncs and C callbacks.\n\nFor more information about Numba, see the Numba homepage:\nhttps://numba.pydata.org and the online documentation:\nhttps://numba.readthedocs.io/en/stable/index.html\n\nInstallation\n============\n\nPlease follow the instructions:\n\nhttps://numba.readthedocs.io/en/stable/user/installing.html\n\nDemo\n====\n\nPlease have a look and the demo notebooks via the mybinder service:\n\nhttps://mybinder.org/v2/gh/numba/numba-examples/master?filepath=notebooks\n\nContact\n=======\n\nNumba has a discourse forum for discussions:\n\n* https://numba.discourse.group\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

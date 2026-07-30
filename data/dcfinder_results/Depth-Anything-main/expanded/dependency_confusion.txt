@@ -1,0 +1,2815 @@
+{
+     "direct dependency": {
+          "number": 16,
+          "packages": [
+               {
+                    "name": "gradio-imageslider",
+                    "specifier": "",
+                    "raw_requirement": "gradio_imageslider",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gradio",
+                    "specifier": "==4.14.0",
+                    "raw_requirement": "gradio==4.14.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch",
+                    "specifier": "==2.0.0",
+                    "raw_requirement": "torch ; torch==2.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torchvision",
+                    "specifier": "==0.15.0",
+                    "raw_requirement": "torchvision ; torchvision==0.15.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opencv-python",
+                    "specifier": "",
+                    "raw_requirement": "opencv-python",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "huggingface-hub",
+                    "specifier": "",
+                    "raw_requirement": "huggingface_hub",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "black",
+                    "specifier": "==22.6.0",
+                    "raw_requirement": "black==22.6.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/torchhub/facebookresearch_dinov2_main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "flake8",
+                    "specifier": "==5.0.4",
+                    "raw_requirement": "flake8==5.0.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/torchhub/facebookresearch_dinov2_main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "pylint",
+                    "specifier": "==2.15.0",
+                    "raw_requirement": "pylint==2.15.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/torchhub/facebookresearch_dinov2_main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "omegaconf",
+                    "specifier": "",
+                    "raw_requirement": "omegaconf",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/torchhub/facebookresearch_dinov2_main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torchmetrics",
+                    "specifier": "==0.10.3",
+                    "raw_requirement": "torchmetrics==0.10.3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/torchhub/facebookresearch_dinov2_main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "fvcore",
+                    "specifier": "",
+                    "raw_requirement": "fvcore",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/torchhub/facebookresearch_dinov2_main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "iopath",
+                    "specifier": "",
+                    "raw_requirement": "iopath",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/torchhub/facebookresearch_dinov2_main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "xformers",
+                    "specifier": "==0.0.18",
+                    "raw_requirement": "xformers==0.0.18",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/torchhub/facebookresearch_dinov2_main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "submitit",
+                    "specifier": "",
+                    "raw_requirement": "submitit",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/torchhub/facebookresearch_dinov2_main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "cuml-cu11",
+                    "specifier": "",
+                    "raw_requirement": "cuml-cu11",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/Depth-Anything-main/torchhub/facebookresearch_dinov2_main/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 142,
+          "packages": [
+               {
+                    "name": "aiofiles",
+                    "specifier": "<24.0,>=22.0",
+                    "raw_requirement": "aiofiles<24.0,>=22.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "altair",
+                    "specifier": "<6.0,>=4.2.0",
+                    "raw_requirement": "altair<6.0,>=4.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "annotated-doc",
+                    "specifier": ">=0.0.2",
+                    "raw_requirement": "annotated-doc>=0.0.2 ; annotated-doc>=0.0.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "annotated-types",
+                    "specifier": ">=0.6.0",
+                    "raw_requirement": "annotated-types>=0.6.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "antlr4-python3-runtime",
+                    "specifier": "==4.9.*",
+                    "raw_requirement": "antlr4-python3-runtime==4.9.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "omegaconf",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "anyio",
+                    "specifier": "<5,>=3.6.2",
+                    "raw_requirement": "anyio ; anyio<5,>=3.6.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "starlette",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "astroid",
+                    "specifier": "<=2.14.0-dev0,>=2.12.4",
+                    "raw_requirement": "astroid (<=2.14.0-dev0,>=2.12.4)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pylint",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "attrs",
+                    "specifier": ">=22.2.0",
+                    "raw_requirement": "attrs>=22.2.0 ; attrs>=22.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cachetools",
+                    "specifier": "",
+                    "raw_requirement": "cachetools",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "certifi",
+                    "specifier": ">=2017.4.17",
+                    "raw_requirement": "certifi ; certifi (>=2017.4.17) ; certifi",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "httpcore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "charset-normalizer",
+                    "specifier": "<3,>=2",
+                    "raw_requirement": "charset-normalizer (<3,>=2)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "click",
+                    "specifier": "<9.0.0,>=8.4.2,>=8.0.0,>=7.0,>=8.1,>=8.1,>=8.0",
+                    "raw_requirement": "click<9.0.0,>=8.4.2 ; click (>=8.0.0) ; click>=7.0 ; click>=8.1 ; click>=8.1 ; click>=8.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "dask-cuda",
+                              "source": "private"
+                         },
+                         {
+                              "name": "dask",
+                              "source": "public"
+                         },
+                         {
+                              "name": "distributed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cloudpickle",
+                    "specifier": ">=1.2.1,>=3.0.0,>=3.0.0",
+                    "raw_requirement": "cloudpickle>=1.2.1 ; cloudpickle>=3.0.0 ; cloudpickle>=3.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "submitit",
+                              "source": "public"
+                         },
+                         {
+                              "name": "dask",
+                              "source": "public"
+                         },
+                         {
+                              "name": "distributed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cmake",
+                    "specifier": "",
+                    "raw_requirement": "cmake",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "triton",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "contourpy",
+                    "specifier": ">=1.0.1",
+                    "raw_requirement": "contourpy>=1.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cubinlinker-cu11",
+                    "specifier": "",
+                    "raw_requirement": "cubinlinker-cu11",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "cuda-python",
+                    "specifier": "<12.0a0,>=11.8.5",
+                    "raw_requirement": "cuda-python<12.0a0,>=11.8.5 ; cuda-python<12.0a0,>=11.8.5 ; cuda-python<12.0a0,>=11.8.5 ; cuda-python<12.0a0,>=11.8.5 ; cuda-python<12.0a0,>=11.8.5 ; cuda-python<12.0a0,>=11.8.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "cuvs-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "pylibraft-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "rmm-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "pylibcudf-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "cudf-cu11",
+                    "specifier": "==25.6.*",
+                    "raw_requirement": "cudf-cu11==25.6.* ; cudf-cu11==25.6.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "dask-cudf-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "cupy-cuda11x",
+                    "specifier": ">=12.0.0",
+                    "raw_requirement": "cupy-cuda11x>=12.0.0 ; cupy-cuda11x>=12.0.0 ; cupy-cuda11x>=12.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "dask-cudf-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "cuvs-cu11",
+                    "specifier": "==25.6.*",
+                    "raw_requirement": "cuvs-cu11==25.6.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "cycler",
+                    "specifier": ">=0.10",
+                    "raw_requirement": "cycler>=0.10",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "dask",
+                    "specifier": "==2025.5.0",
+                    "raw_requirement": "dask==2025.5.0 ; dask==2025.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rapids-dask-dependency",
+                              "source": "private"
+                         },
+                         {
+                              "name": "distributed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "dask-cuda",
+                    "specifier": "==25.6.*",
+                    "raw_requirement": "dask-cuda==25.6.* ; dask-cuda==25.6.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "raft-dask-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "dask-cudf-cu11",
+                    "specifier": "==25.6.*",
+                    "raw_requirement": "dask-cudf-cu11==25.6.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "dill",
+                    "specifier": ">=0.2",
+                    "raw_requirement": "dill (>=0.2)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pylint",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "distributed",
+                    "specifier": "==2025.5.0",
+                    "raw_requirement": "distributed==2025.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rapids-dask-dependency",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "distributed-ucxx-cu11",
+                    "specifier": "==0.44.*",
+                    "raw_requirement": "distributed-ucxx-cu11==0.44.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "raft-dask-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "exceptiongroup",
+                    "specifier": ">=1.0.2",
+                    "raw_requirement": "exceptiongroup>=1.0.2; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fastapi",
+                    "specifier": "",
+                    "raw_requirement": "fastapi",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fastrlock",
+                    "specifier": ">=0.5",
+                    "raw_requirement": "fastrlock>=0.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cupy-cuda11x",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ffmpy",
+                    "specifier": "",
+                    "raw_requirement": "ffmpy",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "filelock",
+                    "specifier": ">=3.10.0",
+                    "raw_requirement": "filelock ; filelock>=3.10.0 ; filelock",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "triton",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "fonttools",
+                    "specifier": ">=4.22.0",
+                    "raw_requirement": "fonttools>=4.22.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fsspec",
+                    "specifier": ">=2023.5.0,>=0.6.0,>=0.6.0,>=2021.09.0",
+                    "raw_requirement": "fsspec>=2023.5.0 ; fsspec ; fsspec>=0.6.0 ; fsspec>=0.6.0 ; fsspec>=2021.09.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "dask-cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "dask",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "gradio-client",
+                    "specifier": "==0.8.0",
+                    "raw_requirement": "gradio-client==0.8.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "h11",
+                    "specifier": ">=0.8,>=0.16",
+                    "raw_requirement": "h11>=0.8 ; h11>=0.16",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "httpcore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "hf-xet",
+                    "specifier": "<2.0.0,>=1.5.1",
+                    "raw_requirement": "hf-xet<2.0.0,>=1.5.1; platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"arm64\" or platform_machine == \"aarch64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpcore",
+                    "specifier": "==1.*",
+                    "raw_requirement": "httpcore==1.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "httpx",
+                    "specifier": "<1,>=0.23.0",
+                    "raw_requirement": "httpx ; httpx<1,>=0.23.0 ; httpx",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "idna",
+                    "specifier": "<4,>=2.5,>=2.8",
+                    "raw_requirement": "idna ; idna (<4,>=2.5) ; idna>=2.8",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "importlib-metadata",
+                    "specifier": ">=4.13.0",
+                    "raw_requirement": "importlib_metadata>=4.13.0; python_version < \"3.12\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "dask",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "importlib-resources",
+                    "specifier": "<7.0,>=1.3",
+                    "raw_requirement": "importlib-resources<7.0,>=1.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "isort",
+                    "specifier": "<6,>=4.2.5",
+                    "raw_requirement": "isort (<6,>=4.2.5)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pylint",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": "<4.0,>=2.10.3",
+                    "raw_requirement": "jinja2<4.0 ; jinja2 ; jinja2 ; jinja2>=2.10.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "altair",
+                              "source": "public"
+                         },
+                         {
+                              "name": "distributed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "joblib",
+                    "specifier": ">=0.11,>=1.4.0",
+                    "raw_requirement": "joblib>=0.11 ; joblib>=1.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jsonschema",
+                    "specifier": ">=3.0",
+                    "raw_requirement": "jsonschema>=3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "altair",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jsonschema-specifications",
+                    "specifier": ">=2023.03.6",
+                    "raw_requirement": "jsonschema-specifications>=2023.03.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "kiwisolver",
+                    "specifier": ">=1.3.1",
+                    "raw_requirement": "kiwisolver>=1.3.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "lazy-object-proxy",
+                    "specifier": ">=1.4.0",
+                    "raw_requirement": "lazy-object-proxy (>=1.4.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "astroid",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "libcudf-cu11",
+                    "specifier": "==25.6.*",
+                    "raw_requirement": "libcudf-cu11==25.6.* ; libcudf-cu11==25.6.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "pylibcudf-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "libcuml-cu11",
+                    "specifier": "==25.6.*",
+                    "raw_requirement": "libcuml-cu11==25.6.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "libcuvs-cu11",
+                    "specifier": "==25.6.*",
+                    "raw_requirement": "libcuvs-cu11==25.6.* ; libcuvs-cu11==25.6.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuvs-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libcuml-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "libkvikio-cu11",
+                    "specifier": "==25.6.*",
+                    "raw_requirement": "libkvikio-cu11==25.6.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "libcudf-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "libraft-cu11",
+                    "specifier": "==25.6.*",
+                    "raw_requirement": "libraft-cu11==25.6.* ; libraft-cu11==25.6.* ; libraft-cu11==25.6.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "libcuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "pylibraft-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "raft-dask-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "librmm-cu11",
+                    "specifier": "==25.6.*",
+                    "raw_requirement": "librmm-cu11==25.6.* ; librmm-cu11==25.6.* ; librmm-cu11==25.6.* ; librmm-cu11==25.6.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rmm-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libcudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libraft-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libucxx-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "libucx-cu11",
+                    "specifier": "<1.19,>=1.15.0",
+                    "raw_requirement": "libucx-cu11<1.19,>=1.15.0 ; libucx-cu11<1.19,>=1.15.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ucx-py-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libucxx-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "libucxx-cu11",
+                    "specifier": "==0.44.*",
+                    "raw_requirement": "libucxx-cu11==0.44.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ucxx-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "lit",
+                    "specifier": "",
+                    "raw_requirement": "lit",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "triton",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "llvmlite",
+                    "specifier": "<0.45,>=0.44.0dev0",
+                    "raw_requirement": "llvmlite<0.45,>=0.44.0dev0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "numba",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "locket",
+                    "specifier": ">=1.0.0",
+                    "raw_requirement": "locket>=1.0.0 ; locket",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "distributed",
+                              "source": "public"
+                         },
+                         {
+                              "name": "partd",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markdown-it-py",
+                    "specifier": ">=2.2.0",
+                    "raw_requirement": "markdown-it-py>=2.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rich",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markupsafe",
+                    "specifier": "~=2.0,>=2.0",
+                    "raw_requirement": "markupsafe~=2.0 ; MarkupSafe>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jinja2",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "matplotlib",
+                    "specifier": "~=3.0",
+                    "raw_requirement": "matplotlib~=3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mccabe",
+                    "specifier": "<0.8.0,>=0.7.0,<0.8,>=0.6",
+                    "raw_requirement": "mccabe (<0.8.0,>=0.7.0) ; mccabe (<0.8,>=0.6)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "flake8",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pylint",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mdurl",
+                    "specifier": "~=0.1",
+                    "raw_requirement": "mdurl~=0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "markdown-it-py",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mpmath",
+                    "specifier": "<1.4,>=1.1.0",
+                    "raw_requirement": "mpmath<1.4,>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sympy",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "msgpack",
+                    "specifier": ">=1.0.2",
+                    "raw_requirement": "msgpack>=1.0.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "distributed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mypy-extensions",
+                    "specifier": ">=0.4.3",
+                    "raw_requirement": "mypy-extensions (>=0.4.3)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "narwhals",
+                    "specifier": ">=1.27.1,>=2.0.1",
+                    "raw_requirement": "narwhals>=1.27.1 ; narwhals>=2.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "altair",
+                              "source": "public"
+                         },
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "networkx",
+                    "specifier": "",
+                    "raw_requirement": "networkx",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "numba",
+                    "specifier": "<0.62.0a0,>=0.59.1,>=0.59.1,<0.62.0a0,>=0.59.1",
+                    "raw_requirement": "numba<0.62.0a0,>=0.59.1 ; numba<0.62.0a0,>=0.59.1 ; numba<0.62.0a0,>=0.59.1 ; numba>=0.59.1 ; numba<0.62.0a0,>=0.59.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "dask-cuda",
+                              "source": "private"
+                         },
+                         {
+                              "name": "numba-cuda",
+                              "source": "public"
+                         },
+                         {
+                              "name": "distributed-ucxx-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "numba-cuda",
+                    "specifier": "<0.12.0a0,>=0.11.0",
+                    "raw_requirement": "numba-cuda<0.12.0a0,>=0.11.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "numpy",
+                    "specifier": "~=1.0,>=2,<3.0a0,>=1.23,>=1.25,>=1.22.4,<3.0a0,>=1.23,<2.6,>=1.22,<3.0a0,>=1.23,<3.0a0,>=1.23,<3.0a0,>=1.23,<2.3,>=1.24,<3.0a0,>=1.23,<3.0a0,>=1.23,>=1.24.1,<2.8,>=2.0.0,>=1.25,<3.0a0,>=1.23,<3.0a0,>=1.23",
+                    "raw_requirement": "numpy~=1.0 ; numpy ; numpy>=2; python_version >= \"3.9\" ; numpy<3.0a0,>=1.23 ; numpy>=1.25 ; numpy>=1.22.4; python_version < \"3.11\" ; numpy<3.0a0,>=1.23 ; numpy<2.6,>=1.22 ; numpy<3.0a0,>=1.23 ; numpy<3.0a0,>=1.23 ; numpy<3.0a0,>=1.23 ; numpy<2.3,>=1.24 ; numpy<3.0a0,>=1.23 ; numpy<3.0a0,>=1.23 ; numpy>=1.24.1 ; numpy<2.8,>=2.0.0 ; numpy ; numpy>=1.25 ; numpy<3.0a0,>=1.23 ; numpy<3.0a0,>=1.23",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torchvision",
+                              "source": "private"
+                         },
+                         {
+                              "name": "opencv-python",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "cupy-cuda11x",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cuvs-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "dask-cuda",
+                              "source": "private"
+                         },
+                         {
+                              "name": "dask-cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "numba",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pylibraft-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "rmm-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "scipy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "treelite",
+                              "source": "public"
+                         },
+                         {
+                              "name": "contourpy",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ucx-py-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "ucxx-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cublas-cu11",
+                    "specifier": "",
+                    "raw_requirement": "nvidia-cublas-cu11 ; nvidia-cublas-cu11 ; nvidia-cublas-cu11 ; nvidia-cublas-cu11",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libcuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cusolver-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libraft-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cufft-cu11",
+                    "specifier": "",
+                    "raw_requirement": "nvidia-cufft-cu11 ; nvidia-cufft-cu11",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libcuml-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-curand-cu11",
+                    "specifier": "",
+                    "raw_requirement": "nvidia-curand-cu11 ; nvidia-curand-cu11 ; nvidia-curand-cu11",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libcuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libraft-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cusolver-cu11",
+                    "specifier": "",
+                    "raw_requirement": "nvidia-cusolver-cu11 ; nvidia-cusolver-cu11 ; nvidia-cusolver-cu11",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libcuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libraft-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cusparse-cu11",
+                    "specifier": "",
+                    "raw_requirement": "nvidia-cusparse-cu11 ; nvidia-cusparse-cu11 ; nvidia-cusparse-cu11",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libcuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libraft-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-ml-py",
+                    "specifier": "<13.0.0a0,>=12.0.0",
+                    "raw_requirement": "nvidia-ml-py<13.0.0a0,>=12.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pynvml",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvtx",
+                    "specifier": ">=0.2.1",
+                    "raw_requirement": "nvtx>=0.2.1 ; nvtx>=0.2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "pylibcudf-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "orjson",
+                    "specifier": "~=3.0",
+                    "raw_requirement": "orjson~=3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "packaging",
+                    "specifier": ">=20.9,>=20.0,>=20.0,>=20.0",
+                    "raw_requirement": "packaging ; packaging>=20.9 ; packaging ; packaging ; packaging ; packaging>=20.0 ; packaging ; packaging ; packaging ; packaging>=20.0 ; packaging>=20.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "altair",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "treelite",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pylibcudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "dask",
+                              "source": "public"
+                         },
+                         {
+                              "name": "distributed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pandas",
+                    "specifier": "<3.0,>=1.0,<2.2.4dev0,>=2.0,>=1.3,<2.2.4dev0,>=2.0",
+                    "raw_requirement": "pandas<3.0,>=1.0 ; pandas<2.2.4dev0,>=2.0 ; pandas>=1.3 ; pandas<2.2.4dev0,>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "dask-cuda",
+                              "source": "private"
+                         },
+                         {
+                              "name": "dask-cudf-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "partd",
+                    "specifier": ">=1.4.0",
+                    "raw_requirement": "partd>=1.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "dask",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pathspec",
+                    "specifier": ">=0.9.0",
+                    "raw_requirement": "pathspec (>=0.9.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pillow",
+                    "specifier": "<11.0,>=8.0,!=8.3.*,>=5.3.0,>=9",
+                    "raw_requirement": "pillow ; pillow<11.0,>=8.0 ; pillow (!=8.3.*,>=5.3.0) ; pillow>=9",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio-imageslider",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torchvision",
+                              "source": "private"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "platformdirs",
+                    "specifier": ">=2,>=2.2.0",
+                    "raw_requirement": "platformdirs (>=2) ; platformdirs (>=2.2.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pylint",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "portalocker",
+                    "specifier": "",
+                    "raw_requirement": "portalocker",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "iopath",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "psutil",
+                    "specifier": ">=5.8.0",
+                    "raw_requirement": "psutil>=5.8.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "distributed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ptxcompiler-cu11",
+                    "specifier": "",
+                    "raw_requirement": "ptxcompiler-cu11",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyarrow",
+                    "specifier": "<20.0.0a0,>=14.0.0",
+                    "raw_requirement": "pyarrow<20.0.0a0,>=14.0.0; platform_machine == \"x86_64\" ; pyarrow<20.0.0a0,>=14.0.0; platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "pylibcudf-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "pycodestyle",
+                    "specifier": "<2.10.0,>=2.9.0",
+                    "raw_requirement": "pycodestyle (<2.10.0,>=2.9.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "flake8",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydantic",
+                    "specifier": ">=2.0,>=2.9.0",
+                    "raw_requirement": "pydantic>=2.0 ; pydantic>=2.9.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydantic-core",
+                    "specifier": "==2.47.0",
+                    "raw_requirement": "pydantic-core==2.47.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydub",
+                    "specifier": "",
+                    "raw_requirement": "pydub",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyflakes",
+                    "specifier": "<2.6.0,>=2.5.0",
+                    "raw_requirement": "pyflakes (<2.6.0,>=2.5.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "flake8",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pygments",
+                    "specifier": "<3.0.0,>=2.13.0",
+                    "raw_requirement": "pygments<3.0.0,>=2.13.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rich",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pylibcudf-cu11",
+                    "specifier": "==25.6.*",
+                    "raw_requirement": "pylibcudf-cu11==25.6.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "pylibraft-cu11",
+                    "specifier": "==25.6.*",
+                    "raw_requirement": "pylibraft-cu11==25.6.* ; pylibraft-cu11==25.6.* ; pylibraft-cu11==25.6.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "cuvs-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "raft-dask-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "pynvml",
+                    "specifier": "<13.0.0a0,>=12.0.0",
+                    "raw_requirement": "pynvml<13.0.0a0,>=12.0.0 ; pynvml<13.0.0a0,>=12.0.0 ; pynvml<13.0.0a0,>=12.0.0 ; pynvml<13.0.0a0,>=12.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "dask-cuda",
+                              "source": "private"
+                         },
+                         {
+                              "name": "dask-cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "ucx-py-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "ucxx-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyparsing",
+                    "specifier": ">=3",
+                    "raw_requirement": "pyparsing>=3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-dateutil",
+                    "specifier": ">=2.7,>=2.8.2",
+                    "raw_requirement": "python-dateutil>=2.7 ; python-dateutil>=2.8.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-multipart",
+                    "specifier": "",
+                    "raw_requirement": "python-multipart",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pytz",
+                    "specifier": ">=2020.1",
+                    "raw_requirement": "pytz>=2020.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyyaml",
+                    "specifier": "<7.0,>=5.0,>=5.1,>=5.1.0,>=5.3.1,>=5.4.1",
+                    "raw_requirement": "pyyaml<7.0,>=5.0 ; pyyaml>=5.1 ; PyYAML>=5.1.0 ; pyyaml>=5.3.1 ; pyyaml>=5.4.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "omegaconf",
+                              "source": "public"
+                         },
+                         {
+                              "name": "dask",
+                              "source": "public"
+                         },
+                         {
+                              "name": "distributed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "raft-dask-cu11",
+                    "specifier": "==25.6.*",
+                    "raw_requirement": "raft-dask-cu11==25.6.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "rapids-dask-dependency",
+                    "specifier": "==25.6.*",
+                    "raw_requirement": "rapids-dask-dependency==25.6.* ; rapids-dask-dependency==25.6.* ; rapids-dask-dependency==25.6.* ; rapids-dask-dependency==25.6.* ; rapids-dask-dependency==25.6.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "dask-cuda",
+                              "source": "private"
+                         },
+                         {
+                              "name": "dask-cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "raft-dask-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "distributed-ucxx-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "rapids-logger",
+                    "specifier": "==0.1.*",
+                    "raw_requirement": "rapids-logger==0.1.* ; rapids-logger==0.1.* ; rapids-logger==0.1.* ; rapids-logger==0.1.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "libcuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libcudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "libraft-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "librmm-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "referencing",
+                    "specifier": ">=0.28.4,>=0.31.0",
+                    "raw_requirement": "referencing>=0.28.4 ; referencing>=0.31.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema-specifications",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "requests",
+                    "specifier": "",
+                    "raw_requirement": "requests",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torchvision",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "rich",
+                    "specifier": ">=13.8.0",
+                    "raw_requirement": "rich>=13.8.0 ; rich",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "typer",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "rmm-cu11",
+                    "specifier": "==25.6.*",
+                    "raw_requirement": "rmm-cu11==25.6.* ; rmm-cu11==25.6.* ; rmm-cu11==25.6.* ; rmm-cu11==25.6.* ; rmm-cu11==25.6.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "pylibraft-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "pylibcudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "ucxx-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "rpds-py",
+                    "specifier": ">=0.25.0,>=0.7.0",
+                    "raw_requirement": "rpds-py>=0.25.0 ; rpds-py>=0.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "scikit-learn",
+                    "specifier": ">=1.5",
+                    "raw_requirement": "scikit-learn>=1.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "scipy",
+                    "specifier": ">=1.8.0,>=1.10.0",
+                    "raw_requirement": "scipy>=1.8.0 ; scipy>=1.10.0 ; scipy",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "treelite",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "semantic-version",
+                    "specifier": "~=2.0",
+                    "raw_requirement": "semantic-version~=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "shellingham",
+                    "specifier": ">=1.3.0",
+                    "raw_requirement": "shellingham>=1.3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "typer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "six",
+                    "specifier": ">=1.5",
+                    "raw_requirement": "six >=1.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "python-dateutil",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sortedcontainers",
+                    "specifier": ">=2.0.5",
+                    "raw_requirement": "sortedcontainers>=2.0.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "distributed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "starlette",
+                    "specifier": ">=0.46.0",
+                    "raw_requirement": "starlette>=0.46.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sympy",
+                    "specifier": "",
+                    "raw_requirement": "sympy",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "tblib",
+                    "specifier": ">=1.6.0",
+                    "raw_requirement": "tblib>=1.6.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "distributed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "threadpoolctl",
+                    "specifier": ">=3.5.0",
+                    "raw_requirement": "threadpoolctl>=3.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tomli",
+                    "specifier": ">=1.1.0",
+                    "raw_requirement": "tomli (>=1.1.0) ; python_full_version < \"3.11.0a7\" ; tomli (>=1.1.0) ; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pylint",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tomlkit",
+                    "specifier": "==0.12.0",
+                    "raw_requirement": "tomlkit==0.12.0 ; tomlkit (>=0.10.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pylint",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "toolz",
+                    "specifier": ">=0.10.0,>=0.11.2",
+                    "raw_requirement": "toolz>=0.10.0 ; toolz>=0.11.2 ; toolz",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "dask",
+                              "source": "public"
+                         },
+                         {
+                              "name": "distributed",
+                              "source": "public"
+                         },
+                         {
+                              "name": "partd",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tornado",
+                    "specifier": ">=6.2.0",
+                    "raw_requirement": "tornado>=6.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "distributed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tqdm",
+                    "specifier": ">=4.42.1",
+                    "raw_requirement": "tqdm>=4.42.1 ; tqdm",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "iopath",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "treelite",
+                    "specifier": "==4.4.1",
+                    "raw_requirement": "treelite==4.4.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cuml-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "triton",
+                    "specifier": "==2.0.0",
+                    "raw_requirement": "triton (==2.0.0) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "typer",
+                    "specifier": "<1.0,>=0.9",
+                    "raw_requirement": "typer[all]<1.0,>=0.9",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": "~=4.0,>=4.1.0,>=3.7.4.2,>=4.12.0,>=4.8.0,~=4.0,>=4.15.0,>=4.0,>=4.0.0,>=4.0.0,>=4.10.0,>=4.12.0,>=4.5,>=4.14.1,>=4.0.0,>=4.4.0,>=4.6.0",
+                    "raw_requirement": "typing-extensions~=4.0 ; typing-extensions ; typing-extensions>=4.1.0 ; typing_extensions>=3.7.4.2 ; typing-extensions>=4.12.0; python_version < \"3.15\" ; typing-extensions>=4.8.0 ; typing-extensions~=4.0 ; typing-extensions>=4.15.0 ; typing-extensions>=4.0; python_version < \"3.11\" ; typing-extensions (>=4.0.0) ; python_version < \"3.11\" ; typing_extensions>=4.0.0 ; typing-extensions>=4.10.0; python_version < \"3.13\" ; typing-extensions>=4.12.0 ; typing_extensions>=4.5; python_version < \"3.13\" ; typing-extensions>=4.14.1 ; typing_extensions>=4.0.0 ; typing-extensions>=4.4.0; python_version < \"3.13\" ; typing-extensions>=4.6.0; python_version < \"3.13\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "submitit",
+                              "source": "public"
+                         },
+                         {
+                              "name": "altair",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "astroid",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "starlette",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typing-inspection",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pylibcudf-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "public"
+                         },
+                         {
+                              "name": "exceptiongroup",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-inspection",
+                    "specifier": ">=0.4.2",
+                    "raw_requirement": "typing-inspection>=0.4.2 ; typing-inspection>=0.4.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tzdata",
+                    "specifier": ">=2022.7",
+                    "raw_requirement": "tzdata>=2022.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ucx-py-cu11",
+                    "specifier": "==0.44.*",
+                    "raw_requirement": "ucx-py-cu11==0.44.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "raft-dask-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "ucxx-cu11",
+                    "specifier": "==0.44.*",
+                    "raw_requirement": "ucxx-cu11==0.44.*",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "distributed-ucxx-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "urllib3",
+                    "specifier": "<1.27,>=1.21.1,>=1.26.5",
+                    "raw_requirement": "urllib3 (<1.27,>=1.21.1) ; urllib3>=1.26.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "distributed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "uvicorn",
+                    "specifier": ">=0.14.0",
+                    "raw_requirement": "uvicorn>=0.14.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "websockets",
+                    "specifier": "<12.0,>=10.0",
+                    "raw_requirement": "websockets<12.0,>=10.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "wrapt",
+                    "specifier": "<2,>=1.11",
+                    "raw_requirement": "wrapt (<2,>=1.11) ; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "astroid",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "zict",
+                    "specifier": ">=2.0.0,>=3.0.0",
+                    "raw_requirement": "zict>=2.0.0 ; zict>=3.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "dask-cuda",
+                              "source": "private"
+                         },
+                         {
+                              "name": "distributed",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "zipp",
+                    "specifier": ">=0.5",
+                    "raw_requirement": "zipp >=0.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "importlib-metadata",
+                              "source": "private"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 2,
+          "packages": {
+               "iopath": {
+                    "private version": "0.1.9",
+                    "public version": "0.1.10",
+                    "highest public (unconstrained)": "0.1.10"
+               },
+               "cuml-cu11": {
+                    "private version": "25.6.0",
+                    "public version": "25.6.0",
+                    "highest public (unconstrained)": "25.6.0"
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 48,
+          "packages": {
+               "certifi": {
+                    "private version": "2022.12.7",
+                    "public version": "2026.6.17",
+                    "highest public (unconstrained)": "2026.6.17",
+                    "declared specifier": ">=2017.4.17",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 51
+               },
+               "charset-normalizer": {
+                    "private version": "2.1.1",
+                    "public version": "2.1.1",
+                    "highest public (unconstrained)": "3.4.9",
+                    "declared specifier": "<3,>=2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 15
+               },
+               "cmake": {
+                    "private version": "3.25.0",
+                    "public version": "4.4.0",
+                    "highest public (unconstrained)": "4.4.0"
+               },
+               "cubinlinker-cu11": {
+                    "private version": "0.3.0.post1",
+                    "public version": "0.3.0.post3",
+                    "highest public (unconstrained)": "0.3.0.post3"
+               },
+               "cudf-cu11": {
+                    "private version": "25.6.0",
+                    "public version": "25.6.0",
+                    "highest public (unconstrained)": "25.6.0",
+                    "declared specifier": "==25.6.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "cuvs-cu11": {
+                    "private version": "25.6.1",
+                    "public version": "25.6.1",
+                    "highest public (unconstrained)": "25.6.1",
+                    "declared specifier": "==25.6.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 2
+               },
+               "dask-cuda": {
+                    "private version": "25.6.0",
+                    "public version": "25.6.0",
+                    "highest public (unconstrained)": "26.6.0",
+                    "declared specifier": "==25.6.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "dask-cudf-cu11": {
+                    "private version": "25.6.0",
+                    "public version": "25.6.0",
+                    "highest public (unconstrained)": "25.6.0",
+                    "declared specifier": "==25.6.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "distributed-ucxx-cu11": {
+                    "private version": "0.44.0",
+                    "public version": "0.44.0",
+                    "highest public (unconstrained)": "0.44.0",
+                    "declared specifier": "==0.44.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "filelock": {
+                    "private version": "3.29.0",
+                    "public version": "3.29.7",
+                    "highest public (unconstrained)": "3.29.7",
+                    "declared specifier": ">=3.10.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 56
+               },
+               "fsspec": {
+                    "private version": "2026.4.0",
+                    "public version": "2026.6.0",
+                    "highest public (unconstrained)": "2026.6.0",
+                    "declared specifier": ">=2023.5.0,>=0.6.0,>=0.6.0,>=2021.09.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 33
+               },
+               "idna": {
+                    "private version": "3.4",
+                    "public version": "3.18",
+                    "highest public (unconstrained)": "3.18",
+                    "declared specifier": "<4,>=2.5,>=2.8",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 22
+               },
+               "importlib-metadata": {
+                    "private version": "7.1.0",
+                    "public version": "9.0.0",
+                    "highest public (unconstrained)": "9.0.0",
+                    "declared specifier": ">=4.13.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 39
+               },
+               "jinja2": {
+                    "private version": "3.1.6",
+                    "public version": "3.1.6",
+                    "highest public (unconstrained)": "3.1.6",
+                    "declared specifier": "<4.0,>=2.10.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 19
+               },
+               "libcudf-cu11": {
+                    "private version": "25.6.0",
+                    "public version": "25.6.0",
+                    "highest public (unconstrained)": "25.6.0",
+                    "declared specifier": "==25.6.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "libcuml-cu11": {
+                    "private version": "25.6.0",
+                    "public version": "25.6.0",
+                    "highest public (unconstrained)": "25.6.0",
+                    "declared specifier": "==25.6.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "libkvikio-cu11": {
+                    "private version": "25.6.0",
+                    "public version": "25.6.0",
+                    "highest public (unconstrained)": "25.6.0",
+                    "declared specifier": "==25.6.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "libraft-cu11": {
+                    "private version": "25.6.0",
+                    "public version": "25.6.0",
+                    "highest public (unconstrained)": "25.6.0",
+                    "declared specifier": "==25.6.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "librmm-cu11": {
+                    "private version": "25.6.0",
+                    "public version": "25.6.0",
+                    "highest public (unconstrained)": "25.6.0",
+                    "declared specifier": "==25.6.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "libucxx-cu11": {
+                    "private version": "0.44.0",
+                    "public version": "0.44.0",
+                    "highest public (unconstrained)": "0.44.0",
+                    "declared specifier": "==0.44.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "lit": {
+                    "private version": "15.0.7",
+                    "public version": "18.1.8",
+                    "highest public (unconstrained)": "18.1.8"
+               },
+               "markupsafe": {
+                    "private version": "2.1.5",
+                    "public version": "2.1.5",
+                    "highest public (unconstrained)": "3.0.3",
+                    "declared specifier": "~=2.0,>=2.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 8
+               },
+               "mpmath": {
+                    "private version": "1.3.0",
+                    "public version": "1.3.0",
+                    "highest public (unconstrained)": "1.5.0a0",
+                    "declared specifier": "<1.4,>=1.1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "mypy-extensions": {
+                    "private version": "1.0.0",
+                    "public version": "1.1.0",
+                    "highest public (unconstrained)": "1.1.0",
+                    "declared specifier": ">=0.4.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "networkx": {
+                    "private version": "3.6.1",
+                    "public version": "3.6.1",
+                    "highest public (unconstrained)": "3.6.1"
+               },
+               "nvidia-cufft-cu11": {
+                    "private version": "10.9.0.58",
+                    "public version": "10.9.0.58",
+                    "highest public (unconstrained)": "10.9.0.58"
+               },
+               "nvidia-curand-cu11": {
+                    "private version": "10.3.0.86",
+                    "public version": "10.3.0.86",
+                    "highest public (unconstrained)": "10.3.0.86"
+               },
+               "nvidia-cusolver-cu11": {
+                    "private version": "11.4.1.48",
+                    "public version": "11.4.1.48",
+                    "highest public (unconstrained)": "11.4.1.48"
+               },
+               "nvidia-cusparse-cu11": {
+                    "private version": "11.7.5.86",
+                    "public version": "11.7.5.86",
+                    "highest public (unconstrained)": "11.7.5.86"
+               },
+               "nvtx": {
+                    "private version": "0.2.15",
+                    "public version": "0.2.15",
+                    "highest public (unconstrained)": "0.2.15",
+                    "declared specifier": ">=0.2.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 14
+               },
+               "packaging": {
+                    "private version": "24.1",
+                    "public version": "26.2",
+                    "highest public (unconstrained)": "26.2",
+                    "declared specifier": ">=20.9,>=20.0,>=20.0,>=20.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 19
+               },
+               "pillow": {
+                    "private version": "10.4.0",
+                    "public version": "10.4.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": "<11.0,>=8.0,!=8.3.*,>=5.3.0,>=9",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 14
+               },
+               "portalocker": {
+                    "private version": "2.10.1",
+                    "public version": "3.2.0",
+                    "highest public (unconstrained)": "3.2.0"
+               },
+               "ptxcompiler-cu11": {
+                    "private version": "0.8.1",
+                    "public version": "0.8.1.post3",
+                    "highest public (unconstrained)": "0.8.1.post3"
+               },
+               "pylibcudf-cu11": {
+                    "private version": "25.6.0",
+                    "public version": "25.6.0",
+                    "highest public (unconstrained)": "25.6.0",
+                    "declared specifier": "==25.6.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "pylibraft-cu11": {
+                    "private version": "25.6.0",
+                    "public version": "25.6.0",
+                    "highest public (unconstrained)": "25.6.0",
+                    "declared specifier": "==25.6.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "raft-dask-cu11": {
+                    "private version": "25.6.0",
+                    "public version": "25.6.0",
+                    "highest public (unconstrained)": "25.6.0",
+                    "declared specifier": "==25.6.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "rapids-dask-dependency": {
+                    "private version": "25.6.0",
+                    "public version": "25.6.0",
+                    "highest public (unconstrained)": "26.6.0",
+                    "declared specifier": "==25.6.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "requests": {
+                    "private version": "2.28.1",
+                    "public version": "2.34.2",
+                    "highest public (unconstrained)": "2.34.2"
+               },
+               "rmm-cu11": {
+                    "private version": "25.6.0",
+                    "public version": "25.6.0",
+                    "highest public (unconstrained)": "25.6.0",
+                    "declared specifier": "==25.6.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "sympy": {
+                    "private version": "1.14.0",
+                    "public version": "1.14.0",
+                    "highest public (unconstrained)": "1.14.0"
+               },
+               "tqdm": {
+                    "private version": "4.66.5",
+                    "public version": "4.68.4",
+                    "highest public (unconstrained)": "4.68.4",
+                    "declared specifier": ">=4.42.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 61
+               },
+               "triton": {
+                    "private version": "2.0.0",
+                    "public version": "2.0.0",
+                    "highest public (unconstrained)": "3.7.1",
+                    "declared specifier": "==2.0.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "typing-extensions": {
+                    "private version": "4.15.0",
+                    "public version": "4.16.0",
+                    "highest public (unconstrained)": "4.16.0",
+                    "declared specifier": "~=4.0,>=4.1.0,>=3.7.4.2,>=4.12.0,>=4.8.0,~=4.0,>=4.15.0,>=4.0,>=4.0.0,>=4.0.0,>=4.10.0,>=4.12.0,>=4.5,>=4.14.1,>=4.0.0,>=4.4.0,>=4.6.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "ucx-py-cu11": {
+                    "private version": "0.44.0",
+                    "public version": "0.44.0",
+                    "highest public (unconstrained)": "0.44.0",
+                    "declared specifier": "==0.44.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "ucxx-cu11": {
+                    "private version": "0.44.0",
+                    "public version": "0.44.0",
+                    "highest public (unconstrained)": "0.44.0",
+                    "declared specifier": "==0.44.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "urllib3": {
+                    "private version": "1.26.13",
+                    "public version": "1.26.20",
+                    "highest public (unconstrained)": "2.7.0",
+                    "declared specifier": "<1.27,>=1.21.1,>=1.26.5",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 16
+               },
+               "zipp": {
+                    "private version": "3.19.2",
+                    "public version": "4.1.0",
+                    "highest public (unconstrained)": "4.1.0",
+                    "declared specifier": ">=0.5",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 56
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "mixed_source_expanded",
+          "private_index_expansions": 52,
+          "pypi_metadata_expansions": 101,
+          "pruned_public_nodes": 0
+     }
+}

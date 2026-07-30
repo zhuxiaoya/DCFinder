@@ -1,0 +1,98 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+          "hashes": {
+            "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "sympy",
+        "version": "1.14.0",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "project-url",
+          "provides-extra",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "Computer algebra system (CAS) in Python",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "Math",
+          "CAS"
+        ],
+        "home_page": "https://sympy.org",
+        "author": "SymPy development team",
+        "author_email": "sympy@googlegroups.com",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE",
+          "AUTHORS"
+        ],
+        "classifier": [
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Topic :: Scientific/Engineering",
+          "Topic :: Scientific/Engineering :: Mathematics",
+          "Topic :: Scientific/Engineering :: Physics",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy"
+        ],
+        "requires_dist": [
+          "mpmath<1.4,>=1.1.0",
+          "pytest>=7.1.0; extra == \"dev\"",
+          "hypothesis>=6.70.0; extra == \"dev\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Source, https://github.com/sympy/sympy"
+        ],
+        "provides_extra": [
+          "dev"
+        ],
+        "description": "# SymPy\n\n[![pypi version](https://img.shields.io/pypi/v/sympy.svg)](https://pypi.python.org/pypi/sympy)\n[![Join the chat at https://gitter.im/sympy/sympy](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sympy/sympy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n[![Zenodo Badge](https://zenodo.org/badge/18918/sympy/sympy.svg)](https://zenodo.org/badge/latestdoi/18918/sympy/sympy)\n[![Downloads](https://pepy.tech/badge/sympy/month)](https://pepy.tech/project/sympy)\n[![GitHub Issues](https://img.shields.io/badge/issue_tracking-github-blue.svg)](https://github.com/sympy/sympy/issues)\n[![Git Tutorial](https://img.shields.io/badge/PR-Welcome-%23FF8300.svg?)](https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project)\n[![Powered by NumFocus](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)\n[![Commits since last release](https://img.shields.io/github/commits-since/sympy/sympy/latest.svg?longCache=true&style=flat-square&logo=git&logoColor=fff)](https://github.com/sympy/sympy/releases)\n\n[![SymPy Banner](https://github.com/sympy/sympy/raw/master/banner.svg)](https://sympy.org/)\n\n\nSee the [AUTHORS](AUTHORS) file for the list of authors.\n\nAnd many more people helped on the SymPy mailing list, reported bugs,\nhelped organize SymPy's participation in the Google Summer of Code, the\nGoogle Highly Open Participation Contest, Google Code-In, wrote and\nblogged about SymPy...\n\nLicense: New BSD License (see the [LICENSE](LICENSE) file for details) covers all\nfiles in the sympy repository unless stated otherwise.\n\nOur mailing list is at\n<https://groups.google.com/forum/?fromgroups#!forum/sympy>.\n\nWe have a community chat at [Gitter](https://gitter.im/sympy/sympy). Feel\nfree to ask us anything there. We have a very welcoming and helpful\ncommunity.\n\n## Download\n\nThe recommended installation method is through Anaconda,\n<https://www.anaconda.com/products/distribution>\n\nYou can also get the latest version of SymPy from\n<https://pypi.python.org/pypi/sympy/>\n\nTo get the git version do\n\n    $ git clone https://github.com/sympy/sympy.git\n\nFor other options (tarballs, debs, etc.), see\n<https://docs.sympy.org/dev/install.html>.\n\n## Documentation and Usage\n\nFor in-depth instructions on installation and building the\ndocumentation, see the [SymPy Documentation Style Guide](https://docs.sympy.org/dev/documentation-style-guide.html).\n\nEverything is at:\n\n<https://docs.sympy.org/>\n\nYou can generate everything at the above site in your local copy of\nSymPy by:\n\n    $ cd doc\n    $ make html\n\nThen the docs will be in <span class=\"title-ref\">\\_build/html</span>. If\nyou don't want to read that, here is a short usage:\n\nFrom this directory, start Python and:\n\n``` python\n>>> from sympy import Symbol, cos\n>>> x = Symbol('x')\n>>> e = 1/cos(x)\n>>> print(e.series(x, 0, 10))\n1 + x**2/2 + 5*x**4/24 + 61*x**6/720 + 277*x**8/8064 + O(x**10)\n```\n\nSymPy also comes with a console that is a simple wrapper around the\nclassic python console (or IPython when available) that loads the SymPy\nnamespace and executes some common commands for you.\n\nTo start it, issue:\n\n    $ bin/isympy\n\nfrom this directory, if SymPy is not installed or simply:\n\n    $ isympy\n\nif SymPy is installed.\n\n## Installation\n\nTo install SymPy using PyPI, run the following command:\n\n    $ pip install sympy\n\nTo install SymPy using Anaconda, run the following command:\n\n    $ conda install -c anaconda sympy\n\nTo install SymPy from GitHub source, first clone SymPy using `git`:\n\n    $ git clone https://github.com/sympy/sympy.git\n\nThen, in the `sympy` repository that you cloned, simply run:\n\n    $ pip install .\n\nSee <https://docs.sympy.org/dev/install.html> for more information.\n\n## Contributing\n\nWe welcome contributions from anyone, even if you are new to open\nsource. Please read our [Introduction to Contributing](https://docs.sympy.org/dev/contributing/introduction-to-contributing.html)\npage and the [SymPy Documentation Style Guide](https://docs.sympy.org/dev/documentation-style-guide.html). If you\nare new and looking for some way to contribute, a good place to start is\nto look at the issues tagged [Easy to Fix](https://github.com/sympy/sympy/issues?q=is%3Aopen+is%3Aissue+label%3A%22Easy+to+Fix%22).\n\nPlease note that all participants in this project are expected to follow\nour Code of Conduct. By participating in this project you agree to abide\nby its terms. See [CODE\\_OF\\_CONDUCT.md](CODE_OF_CONDUCT.md).\n\n## Tests\n\nTo execute all tests, run:\n\n    $./setup.py test\n\nin the current directory.\n\nFor the more fine-grained running of tests or doctests, use `bin/test`\nor respectively `bin/doctest`. The master branch is automatically tested\nby GitHub Actions.\n\nTo test pull requests, use\n[sympy-bot](https://github.com/sympy/sympy-bot).\n\n## Regenerate Experimental <span class=\"title-ref\">LaTeX</span> Parser/Lexer\n\nThe parser and lexer were generated with the [ANTLR4](http://antlr4.org)\ntoolchain in `sympy/parsing/latex/_antlr` and checked into the repo.\nPresently, most users should not need to regenerate these files, but\nif you plan to work on this feature, you will need the `antlr4`\ncommand-line tool (and you must ensure that it is in your `PATH`).\nOne way to get it is:\n\n    $ conda install -c conda-forge antlr=4.11.1\n\nAlternatively, follow the instructions on the ANTLR website and download\nthe `antlr-4.11.1-complete.jar`. Then export the `CLASSPATH` as instructed\nand instead of creating `antlr4` as an alias, make it an executable file\nwith the following contents:\n``` bash\n#!/bin/bash\njava -jar /usr/local/lib/antlr-4.11.1-complete.jar \"$@\"\n```\n\nAfter making changes to `sympy/parsing/latex/LaTeX.g4`, run:\n\n    $ ./setup.py antlr\n\n## Clean\n\nTo clean everything (thus getting the same tree as in the repository):\n\n    $ git clean -Xdf\n\nwhich will clear everything ignored by `.gitignore`, and:\n\n    $ git clean -df\n\nto clear all untracked files. You can revert the most recent changes in\ngit with:\n\n    $ git reset --hard\n\nWARNING: The above commands will all clear changes you may have made,\nand you will lose them forever. Be sure to check things with `git\nstatus`, `git diff`, `git clean -Xn`, and `git clean -n` before doing any\nof those.\n\n## Bugs\n\nOur issue tracker is at <https://github.com/sympy/sympy/issues>. Please\nreport any bugs that you find. Or, even better, fork the repository on\nGitHub and create a pull request. We welcome all changes, big or small,\nand we will help you make the pull request if you are new to git (just\nask on our mailing list or Gitter Channel). If you further have any queries, you can find answers\non Stack Overflow using the [sympy](https://stackoverflow.com/questions/tagged/sympy) tag.\n\n## Brief History\n\nSymPy was started by Ondřej Čertík in 2005, he wrote some code during\nthe summer, then he wrote some more code during summer 2006. In February\n2007, Fabian Pedregosa joined the project and helped fix many things,\ncontributed documentation, and made it alive again. 5 students (Mateusz\nPaprocki, Brian Jorgensen, Jason Gedge, Robert Schwarz, and Chris Wu)\nimproved SymPy incredibly during summer 2007 as part of the Google\nSummer of Code. Pearu Peterson joined the development during the summer\n2007 and he has made SymPy much more competitive by rewriting the core\nfrom scratch, which has made it from 10x to 100x faster. Jurjen N.E. Bos\nhas contributed pretty-printing and other patches. Fredrik Johansson has\nwritten mpmath and contributed a lot of patches.\n\nSymPy has participated in every Google Summer of Code since 2007. You\ncan see <https://github.com/sympy/sympy/wiki#google-summer-of-code> for\nfull details. Each year has improved SymPy by bounds. Most of SymPy's\ndevelopment has come from Google Summer of Code students.\n\nIn 2011, Ondřej Čertík stepped down as lead developer, with Aaron\nMeurer, who also started as a Google Summer of Code student, taking his\nplace. Ondřej Čertík is still active in the community but is too busy\nwith work and family to play a lead development role.\n\nSince then, a lot more people have joined the development and some\npeople have also left. You can see the full list in doc/src/aboutus.rst,\nor online at:\n\n<https://docs.sympy.org/dev/aboutus.html#sympy-development-team>\n\nThe git history goes back to 2007 when development moved from svn to hg.\nTo see the history before that point, look at\n<https://github.com/sympy/sympy-old>.\n\nYou can use git to see the biggest developers. The command:\n\n    $ git shortlog -ns\n\nwill show each developer, sorted by commits to the project. The command:\n\n    $ git shortlog -ns --since=\"1 year\"\n\nwill show the top developers from the last year.\n\n## Citation\n\nTo cite SymPy in publications use\n\n> Meurer A, Smith CP, Paprocki M, Čertík O, Kirpichev SB, Rocklin M,\n> Kumar A, Ivanov S, Moore JK, Singh S, Rathnayake T, Vig S, Granger BE,\n> Muller RP, Bonazzi F, Gupta H, Vats S, Johansson F, Pedregosa F, Curry\n> MJ, Terrel AR, Roučka Š, Saboo A, Fernando I, Kulal S, Cimrman R,\n> Scopatz A. (2017) SymPy: symbolic computing in Python. *PeerJ Computer\n> Science* 3:e103 <https://doi.org/10.7717/peerj-cs.103>\n\nA BibTeX entry for LaTeX users is\n\n``` bibtex\n@article{10.7717/peerj-cs.103,\n title = {SymPy: symbolic computing in Python},\n author = {Meurer, Aaron and Smith, Christopher P. and Paprocki, Mateusz and \\v{C}ert\\'{i}k, Ond\\v{r}ej and Kirpichev, Sergey B. and Rocklin, Matthew and Kumar, Amit and Ivanov, Sergiu and Moore, Jason K. and Singh, Sartaj and Rathnayake, Thilina and Vig, Sean and Granger, Brian E. and Muller, Richard P. and Bonazzi, Francesco and Gupta, Harsh and Vats, Shivam and Johansson, Fredrik and Pedregosa, Fabian and Curry, Matthew J. and Terrel, Andy R. and Rou\\v{c}ka, \\v{S}t\\v{e}p\\'{a}n and Saboo, Ashutosh and Fernando, Isuru and Kulal, Sumith and Cimrman, Robert and Scopatz, Anthony},\n year = 2017,\n month = Jan,\n keywords = {Python, Computer algebra system, Symbolics},\n abstract = {\n            SymPy is an open-source computer algebra system written in pure Python. It is built with a focus on extensibility and ease of use, through both interactive and programmatic applications. These characteristics have led SymPy to become a popular symbolic library for the scientific Python ecosystem. This paper presents the architecture of SymPy, a description of its features, and a discussion of select submodules. The supplementary material provides additional examples and further outlines details of the architecture and features of SymPy.\n         },\n volume = 3,\n pages = {e103},\n journal = {PeerJ Computer Science},\n issn = {2376-5992},\n url = {https://doi.org/10.7717/peerj-cs.103},\n doi = {10.7717/peerj-cs.103}\n}\n```\n\nSymPy is BSD licensed, so you are free to use it whatever you like, be\nit academic, commercial, creating forks or derivatives, as long as you\ncopy the BSD statement if you redistribute it (see the LICENSE file for\ndetails). That said, although not required by the SymPy license, if it\nis convenient for you, please cite SymPy when using it in your work and\nalso consider contributing all your changes back, so that we can\nincorporate it and all of us will benefit in the end.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

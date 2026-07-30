@@ -1,0 +1,16 @@
+{
+    "direct dependency with same name": {
+        "number": 1,
+        "packages": {
+            "llama-cpp-python": {
+                "private version": "0.3.34",
+                "public version": "0.3.34",
+                "highest public (unconstrained)": "0.3.34"
+            }
+        }
+    },
+    "indirect dependency with same name": {
+        "number": 0,
+        "packages": {}
+    }
+}

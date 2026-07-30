@@ -1,0 +1,98 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/e5/4c/93d0f85318da65923e4b91c1c2ff03d8a458cbefebe3bc612a6693c7906d/fire-0.7.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=e43fd8a5033a9001e7e2973bab96070694b9f12f2e0ecf96d4683971b5ab1882",
+          "hashes": {
+            "sha256": "e43fd8a5033a9001e7e2973bab96070694b9f12f2e0ecf96d4683971b5ab1882"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "fire",
+        "version": "0.7.1",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "A library for automatically generating command line interfaces.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "command",
+          "line",
+          "interface",
+          "cli",
+          "python",
+          "fire",
+          "interactive",
+          "bash",
+          "tool"
+        ],
+        "author_email": "David Bieber <david810+fire@gmail.com>",
+        "license": "Apache-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Operating System :: OS Independent",
+          "Operating System :: POSIX",
+          "Operating System :: MacOS",
+          "Operating System :: Unix"
+        ],
+        "requires_dist": [
+          "termcolor",
+          "setuptools<=80.9.0; extra == \"test\"",
+          "pip; extra == \"test\"",
+          "pylint<3.3.8; extra == \"test\"",
+          "pytest<=8.4.1; extra == \"test\"",
+          "pytest-pylint<=1.1.2; extra == \"test\"",
+          "pytest-runner<7.0.0; extra == \"test\"",
+          "termcolor<3.2.0; extra == \"test\"",
+          "hypothesis<6.136.0; extra == \"test\"",
+          "levenshtein<=0.27.1; extra == \"test\""
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Homepage, https://github.com/google/python-fire",
+          "Repository, https://github.com/google/python-fire"
+        ],
+        "provides_extra": [
+          "test"
+        ],
+        "description": "# Python Fire [![PyPI](https://img.shields.io/pypi/pyversions/fire.svg?style=plastic)](https://github.com/google/python-fire)\n\n_Python Fire is a library for automatically generating command line interfaces\n(CLIs) from absolutely any Python object._\n\n-   Python Fire is a simple way to create a CLI in Python.\n    [[1]](docs/benefits.md#simple-cli)\n-   Python Fire is a helpful tool for developing and debugging Python code.\n    [[2]](docs/benefits.md#debugging)\n-   Python Fire helps with exploring existing code or turning other people's\n    code into a CLI. [[3]](docs/benefits.md#exploring)\n-   Python Fire makes transitioning between Bash and Python easier.\n    [[4]](docs/benefits.md#bash)\n-   Python Fire makes using a Python REPL easier by setting up the REPL with the\n    modules and variables you'll need already imported and created.\n    [[5]](docs/benefits.md#repl)\n\n## Installation\n\nTo install Python Fire with pip, run: `pip install fire`\n\nTo install Python Fire with conda, run: `conda install fire -c conda-forge`\n\nTo install Python Fire from source, first clone the repository and then run:\n`python setup.py install`\n\n## Basic Usage\n\nYou can call `Fire` on any Python object:<br>\nfunctions, classes, modules, objects, dictionaries, lists, tuples, etc.\nThey all work!\n\nHere's an example of calling Fire on a function.\n\n```python\nimport fire\n\ndef hello(name=\"World\"):\n  return \"Hello %s!\" % name\n\nif __name__ == '__main__':\n  fire.Fire(hello)\n```\n\nThen, from the command line, you can run:\n\n```bash\npython hello.py  # Hello World!\npython hello.py --name=David  # Hello David!\npython hello.py --help  # Shows usage information.\n```\n\nHere's an example of calling Fire on a class.\n\n```python\nimport fire\n\nclass Calculator(object):\n  \"\"\"A simple calculator class.\"\"\"\n\n  def double(self, number):\n    return 2 * number\n\nif __name__ == '__main__':\n  fire.Fire(Calculator)\n```\n\nThen, from the command line, you can run:\n\n```bash\npython calculator.py double 10  # 20\npython calculator.py double --number=15  # 30\n```\n\nTo learn how Fire behaves on functions, objects, dicts, lists, etc, and to learn\nabout Fire's other features, see the [Using a Fire CLI page](docs/using-cli.md).\n\nFor additional examples, see [The Python Fire Guide](docs/guide.md).\n\n## Why is it called Fire?\n\nWhen you call `Fire`, it fires off (executes) your command.\n\n## Where can I learn more?\n\nPlease see [The Python Fire Guide](docs/guide.md).\n\n## Reference\n\n| Setup   | Command             | Notes\n| :------ | :------------------ | :---------\n| install | `pip install fire`  |\n\n| Creating a CLI | Command                | Notes\n| :--------------| :--------------------- | :---------\n| import         | `import fire`          |\n| Call           | `fire.Fire()`          | Turns the current module into a Fire CLI.\n| Call           | `fire.Fire(component)` | Turns `component` into a Fire CLI.\n\n| Using a CLI                                     | Command                                 | Notes\n| :---------------------------------------------- | :-------------------------------------- | :----\n| [Help](docs/using-cli.md#help-flag)             | `command --help` or `command -- --help` |\n| [REPL](docs/using-cli.md#interactive-flag)      | `command -- --interactive`              | Enters interactive mode.\n| [Separator](docs/using-cli.md#separator-flag)   | `command -- --separator=X`              | Sets the separator to `X`. The default separator is `-`.\n| [Completion](docs/using-cli.md#completion-flag) | `command -- --completion [shell]`       | Generates a completion script for the CLI.\n| [Trace](docs/using-cli.md#trace-flag)           | `command -- --trace`                    | Gets a Fire trace for the command.\n| [Verbose](docs/using-cli.md#verbose-flag)       | `command -- --verbose`                  |\n\n_Note that these flags are separated from the Fire command by an isolated `--`._\n\n## License\n\nLicensed under the\n[Apache 2.0](https://github.com/google/python-fire/blob/master/LICENSE) License.\n\n## Disclaimer\n\nThis is not an official Google product.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

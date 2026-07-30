@@ -1,0 +1,9 @@
+# 私有源 (非 PyPI) 配置文件扫描结果 — StreamDiffusion-main
+# 共发现 2 个配置文件含私有源
+
+[Dockerfile]
+  index_url: https://download.pytorch.org/whl/cu118
+
+[demo/realtime-img2img/requirements.txt]
+  extra_index_url: https://download.pytorch.org/whl/cu121
+

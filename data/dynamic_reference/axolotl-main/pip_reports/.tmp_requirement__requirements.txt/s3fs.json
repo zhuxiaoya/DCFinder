@@ -1,0 +1,83 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/a5/0b/f68a968b49876eae0f2a515387093cebb2eb9451380a96741cc20efac0d0/s3fs-2026.6.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=60576e31bb31193c1f643f32b4c6439548720ea6918ac702e21cd757c80b5db8",
+          "hashes": {
+            "sha256": "60576e31bb31193c1f643f32b4c6439548720ea6918ac702e21cd757c80b5db8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "s3fs",
+        "version": "2026.6.0",
+        "dynamic": [
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "maintainer",
+          "maintainer-email",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "Convenient Filesystem interface over S3",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "s3",
+          "boto"
+        ],
+        "home_page": "http://github.com/fsspec/s3fs/",
+        "maintainer": "Martin Durant",
+        "maintainer_email": "mdurant@continuum.io",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_dist": [
+          "aiobotocore<4.0.0,>=2.19.0",
+          "fsspec<2026.6.1,>=2026.6.0",
+          "aiohttp!=4.0.0a0,!=4.0.0a1,>=3.9.0"
+        ],
+        "requires_python": ">= 3.10",
+        "description": "README.md\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

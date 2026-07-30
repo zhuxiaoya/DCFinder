@@ -1,0 +1,67 @@
+certifi >=2017.4.17
+  # from parent package: requests (private)
+  # from parent package: httpx (public)
+  # from parent package: httpcore (public)
+charset-normalizer <3,>=2
+  # from parent package: requests (private)
+filelock <4,>=3.24.2,>=3.15.4
+  # from parent package: torch (private)
+  # from parent package: virtualenv (public)
+  # from parent package: python-discovery (public)
+fsspec >=2024.3.1,>=2026.6.0,<2026.6.1,>=2026.6.0
+  # from parent package: torch (private)
+  # from parent package: xprof (public)
+  # from parent package: etils (public)
+  # from parent package: gcsfs (public)
+  # from parent package: s3fs (public)
+idna <4,>=2.5,>=2.0,>=2.8
+  # from parent package: requests (private)
+  # from parent package: yarl (public)
+  # from parent package: httpx (public)
+  # from parent package: anyio (public)
+  # from parent package: jsonschema (public)
+jinja2 >=3.0,>=3.0.3,>=3.0.3,>=3.0.3
+  # from parent package: torch (private)
+  # from parent package: nbconvert (public)
+  # from parent package: jupyterlab (public)
+  # from parent package: jupyter-server (public)
+  # from parent package: jupyterlab-server (public)
+markupsafe >=2.0,>=2.1.1,>=2.0
+  # from parent package: jinja2 (private)
+  # from parent package: werkzeug (public)
+  # from parent package: nbconvert (public)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+networkx
+  # from parent package: torch (private)
+sympy ==1.13.1
+  # from parent package: torch (private)
+typing-extensions >=4.6.0,>=3.6.6,>=4.10.0,>=4.2,>=3.6.6,>=4.13.2,>=4.6.0,~=4.12,>=4.15.0,>=4.9,>=4.5.0,>=4.4,>=4.13.2,>=4.6,<5.0.0,>=4.14.0,>=4.2,>=4.1.0,>=4.13.0,>=4.0.0,>=4.0.0,>=4.5,>=4.4.0
+  # from parent package: optree (public)
+  # from parent package: tensorflow-cpu (public)
+  # from parent package: torch (private)
+  # from parent package: flax (public)
+  # from parent package: tensorflow (public)
+  # from parent package: virtualenv (public)
+  # from parent package: exceptiongroup (public)
+  # from parent package: grpcio (public)
+  # from parent package: onnx (public)
+  # from parent package: orbax-checkpoint (public)
+  # from parent package: etils (public)
+  # from parent package: pyopenssl (public)
+  # from parent package: simple-parsing (public)
+  # from parent package: aiohttp (public)
+  # from parent package: cryptography (public)
+  # from parent package: ipython (public)
+  # from parent package: aiobotocore (public)
+  # from parent package: aiosignal (public)
+  # from parent package: multidict (public)
+  # from parent package: jupyter-client (public)
+  # from parent package: beautifulsoup4 (public)
+  # from parent package: mistune (public)
+  # from parent package: async-lru (public)
+  # from parent package: anyio (public)
+  # from parent package: referencing (public)
+urllib3 <1.27,>=1.21.1,!=2.2.0,<3,>=1.25.4
+  # from parent package: requests (private)
+  # from parent package: botocore (public)

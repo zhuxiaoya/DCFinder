@@ -1,0 +1,139 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/58/0e/8c2a03d518fb6bd0b6b0d4b114c63d5f1db01ff0f9925d8eb10960d01c01/scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=7a58814265dfc52b3295b1900cfb5701589d30a8bb026c7540f1e9d3499d5ec8",
+          "hashes": {
+            "sha256": "7a58814265dfc52b3295b1900cfb5701589d30a8bb026c7540f1e9d3499d5ec8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "scikit-learn",
+        "version": "1.7.2",
+        "summary": "A set of python modules for machine learning and data mining",
+        "description_content_type": "text/x-rst",
+        "maintainer_email": "scikit-learn developers <scikit-learn@python.org>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "COPYING"
+        ],
+        "classifier": [
+          "Intended Audience :: Science/Research",
+          "Intended Audience :: Developers",
+          "Programming Language :: C",
+          "Programming Language :: Python",
+          "Topic :: Software Development",
+          "Topic :: Scientific/Engineering",
+          "Development Status :: 5 - Production/Stable",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX",
+          "Operating System :: Unix",
+          "Operating System :: MacOS",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython"
+        ],
+        "requires_dist": [
+          "numpy>=1.22.0",
+          "scipy>=1.8.0",
+          "joblib>=1.2.0",
+          "threadpoolctl>=3.1.0",
+          "numpy>=1.22.0; extra == \"build\"",
+          "scipy>=1.8.0; extra == \"build\"",
+          "cython>=3.0.10; extra == \"build\"",
+          "meson-python>=0.17.1; extra == \"build\"",
+          "numpy>=1.22.0; extra == \"install\"",
+          "scipy>=1.8.0; extra == \"install\"",
+          "joblib>=1.2.0; extra == \"install\"",
+          "threadpoolctl>=3.1.0; extra == \"install\"",
+          "matplotlib>=3.5.0; extra == \"benchmark\"",
+          "pandas>=1.4.0; extra == \"benchmark\"",
+          "memory_profiler>=0.57.0; extra == \"benchmark\"",
+          "matplotlib>=3.5.0; extra == \"docs\"",
+          "scikit-image>=0.19.0; extra == \"docs\"",
+          "pandas>=1.4.0; extra == \"docs\"",
+          "seaborn>=0.9.0; extra == \"docs\"",
+          "memory_profiler>=0.57.0; extra == \"docs\"",
+          "sphinx>=7.3.7; extra == \"docs\"",
+          "sphinx-copybutton>=0.5.2; extra == \"docs\"",
+          "sphinx-gallery>=0.17.1; extra == \"docs\"",
+          "numpydoc>=1.2.0; extra == \"docs\"",
+          "Pillow>=8.4.0; extra == \"docs\"",
+          "pooch>=1.6.0; extra == \"docs\"",
+          "sphinx-prompt>=1.4.0; extra == \"docs\"",
+          "sphinxext-opengraph>=0.9.1; extra == \"docs\"",
+          "plotly>=5.14.0; extra == \"docs\"",
+          "polars>=0.20.30; extra == \"docs\"",
+          "sphinx-design>=0.5.0; extra == \"docs\"",
+          "sphinx-design>=0.6.0; extra == \"docs\"",
+          "sphinxcontrib-sass>=0.3.4; extra == \"docs\"",
+          "pydata-sphinx-theme>=0.15.3; extra == \"docs\"",
+          "sphinx-remove-toctrees>=1.0.0.post1; extra == \"docs\"",
+          "towncrier>=24.8.0; extra == \"docs\"",
+          "matplotlib>=3.5.0; extra == \"examples\"",
+          "scikit-image>=0.19.0; extra == \"examples\"",
+          "pandas>=1.4.0; extra == \"examples\"",
+          "seaborn>=0.9.0; extra == \"examples\"",
+          "pooch>=1.6.0; extra == \"examples\"",
+          "plotly>=5.14.0; extra == \"examples\"",
+          "matplotlib>=3.5.0; extra == \"tests\"",
+          "scikit-image>=0.19.0; extra == \"tests\"",
+          "pandas>=1.4.0; extra == \"tests\"",
+          "pytest>=7.1.2; extra == \"tests\"",
+          "pytest-cov>=2.9.0; extra == \"tests\"",
+          "ruff>=0.11.7; extra == \"tests\"",
+          "mypy>=1.15; extra == \"tests\"",
+          "pyamg>=4.2.1; extra == \"tests\"",
+          "polars>=0.20.30; extra == \"tests\"",
+          "pyarrow>=12.0.0; extra == \"tests\"",
+          "numpydoc>=1.2.0; extra == \"tests\"",
+          "pooch>=1.6.0; extra == \"tests\"",
+          "conda-lock==3.0.1; extra == \"maintenance\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "homepage, https://scikit-learn.org",
+          "source, https://github.com/scikit-learn/scikit-learn",
+          "download, https://pypi.org/project/scikit-learn/#files",
+          "tracker, https://github.com/scikit-learn/scikit-learn/issues",
+          "release notes, https://scikit-learn.org/stable/whats_new"
+        ],
+        "provides_extra": [
+          "build",
+          "install",
+          "benchmark",
+          "docs",
+          "examples",
+          "tests",
+          "maintenance"
+        ],
+        "description": ".. -*- mode: rst -*-\n\n|Azure| |Codecov| |CircleCI| |Nightly wheels| |Ruff| |PythonVersion| |PyPi| |DOI| |Benchmark|\n\n.. |Azure| image:: https://dev.azure.com/scikit-learn/scikit-learn/_apis/build/status/scikit-learn.scikit-learn?branchName=main\n   :target: https://dev.azure.com/scikit-learn/scikit-learn/_build/latest?definitionId=1&branchName=main\n\n.. |CircleCI| image:: https://circleci.com/gh/scikit-learn/scikit-learn/tree/main.svg?style=shield\n   :target: https://circleci.com/gh/scikit-learn/scikit-learn\n\n.. |Codecov| image:: https://codecov.io/gh/scikit-learn/scikit-learn/branch/main/graph/badge.svg?token=Pk8G9gg3y9\n   :target: https://codecov.io/gh/scikit-learn/scikit-learn\n\n.. |Nightly wheels| image:: https://github.com/scikit-learn/scikit-learn/actions/workflows/wheels.yml/badge.svg?event=schedule\n   :target: https://github.com/scikit-learn/scikit-learn/actions?query=workflow%3A%22Wheel+builder%22+event%3Aschedule\n\n.. |Ruff| image:: https://img.shields.io/badge/code%20style-ruff-000000.svg\n   :target: https://github.com/astral-sh/ruff\n\n.. |PythonVersion| image:: https://img.shields.io/pypi/pyversions/scikit-learn.svg\n   :target: https://pypi.org/project/scikit-learn/\n\n.. |PyPi| image:: https://img.shields.io/pypi/v/scikit-learn\n   :target: https://pypi.org/project/scikit-learn\n\n.. |DOI| image:: https://zenodo.org/badge/21369/scikit-learn/scikit-learn.svg\n   :target: https://zenodo.org/badge/latestdoi/21369/scikit-learn/scikit-learn\n\n.. |Benchmark| image:: https://img.shields.io/badge/Benchmarked%20by-asv-blue\n   :target: https://scikit-learn.org/scikit-learn-benchmarks\n\n.. |PythonMinVersion| replace:: 3.10\n.. |NumPyMinVersion| replace:: 1.22.0\n.. |SciPyMinVersion| replace:: 1.8.0\n.. |JoblibMinVersion| replace:: 1.2.0\n.. |ThreadpoolctlMinVersion| replace:: 3.1.0\n.. |MatplotlibMinVersion| replace:: 3.5.0\n.. |Scikit-ImageMinVersion| replace:: 0.19.0\n.. |PandasMinVersion| replace:: 1.4.0\n.. |SeabornMinVersion| replace:: 0.9.0\n.. |PytestMinVersion| replace:: 7.1.2\n.. |PlotlyMinVersion| replace:: 5.14.0\n\n.. image:: https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/doc/logos/scikit-learn-logo.png\n  :target: https://scikit-learn.org/\n\n**scikit-learn** is a Python module for machine learning built on top of\nSciPy and is distributed under the 3-Clause BSD license.\n\nThe project was started in 2007 by David Cournapeau as a Google Summer\nof Code project, and since then many volunteers have contributed. See\nthe `About us <https://scikit-learn.org/dev/about.html#authors>`__ page\nfor a list of core contributors.\n\nIt is currently maintained by a team of volunteers.\n\nWebsite: https://scikit-learn.org\n\nInstallation\n------------\n\nDependencies\n~~~~~~~~~~~~\n\nscikit-learn requires:\n\n- Python (>= |PythonMinVersion|)\n- NumPy (>= |NumPyMinVersion|)\n- SciPy (>= |SciPyMinVersion|)\n- joblib (>= |JoblibMinVersion|)\n- threadpoolctl (>= |ThreadpoolctlMinVersion|)\n\n=======\n\nScikit-learn plotting capabilities (i.e., functions start with ``plot_`` and\nclasses end with ``Display``) require Matplotlib (>= |MatplotlibMinVersion|).\nFor running the examples Matplotlib >= |MatplotlibMinVersion| is required.\nA few examples require scikit-image >= |Scikit-ImageMinVersion|, a few examples\nrequire pandas >= |PandasMinVersion|, some examples require seaborn >=\n|SeabornMinVersion| and plotly >= |PlotlyMinVersion|.\n\nUser installation\n~~~~~~~~~~~~~~~~~\n\nIf you already have a working installation of NumPy and SciPy,\nthe easiest way to install scikit-learn is using ``pip``::\n\n    pip install -U scikit-learn\n\nor ``conda``::\n\n    conda install -c conda-forge scikit-learn\n\nThe documentation includes more detailed `installation instructions <https://scikit-learn.org/stable/install.html>`_.\n\n\nChangelog\n---------\n\nSee the `changelog <https://scikit-learn.org/dev/whats_new.html>`__\nfor a history of notable changes to scikit-learn.\n\nDevelopment\n-----------\n\nWe welcome new contributors of all experience levels. The scikit-learn\ncommunity goals are to be helpful, welcoming, and effective. The\n`Development Guide <https://scikit-learn.org/stable/developers/index.html>`_\nhas detailed information about contributing code, documentation, tests, and\nmore. We've included some basic information in this README.\n\nImportant links\n~~~~~~~~~~~~~~~\n\n- Official source code repo: https://github.com/scikit-learn/scikit-learn\n- Download releases: https://pypi.org/project/scikit-learn/\n- Issue tracker: https://github.com/scikit-learn/scikit-learn/issues\n\nSource code\n~~~~~~~~~~~\n\nYou can check the latest sources with the command::\n\n    git clone https://github.com/scikit-learn/scikit-learn.git\n\nContributing\n~~~~~~~~~~~~\n\nTo learn more about making a contribution to scikit-learn, please see our\n`Contributing guide\n<https://scikit-learn.org/dev/developers/contributing.html>`_.\n\nTesting\n~~~~~~~\n\nAfter installation, you can launch the test suite from outside the source\ndirectory (you will need to have ``pytest`` >= |PyTestMinVersion| installed)::\n\n    pytest sklearn\n\nSee the web page https://scikit-learn.org/dev/developers/contributing.html#testing-and-improving-test-coverage\nfor more information.\n\n    Random number generation can be controlled during testing by setting\n    the ``SKLEARN_SEED`` environment variable.\n\nSubmitting a Pull Request\n~~~~~~~~~~~~~~~~~~~~~~~~~\n\nBefore opening a Pull Request, have a look at the\nfull Contributing page to make sure your code complies\nwith our guidelines: https://scikit-learn.org/stable/developers/index.html\n\nProject History\n---------------\n\nThe project was started in 2007 by David Cournapeau as a Google Summer\nof Code project, and since then many volunteers have contributed. See\nthe `About us <https://scikit-learn.org/dev/about.html#authors>`__ page\nfor a list of core contributors.\n\nThe project is currently maintained by a team of volunteers.\n\n**Note**: `scikit-learn` was previously referred to as `scikits.learn`.\n\nHelp and Support\n----------------\n\nDocumentation\n~~~~~~~~~~~~~\n\n- HTML documentation (stable release): https://scikit-learn.org\n- HTML documentation (development version): https://scikit-learn.org/dev/\n- FAQ: https://scikit-learn.org/stable/faq.html\n\nCommunication\n~~~~~~~~~~~~~\n\nMain Channels\n^^^^^^^^^^^^^\n\n- **Website**: https://scikit-learn.org\n- **Blog**: https://blog.scikit-learn.org\n- **Mailing list**: https://mail.python.org/mailman/listinfo/scikit-learn\n\nDeveloper & Support\n^^^^^^^^^^^^^^^^^^^^^^\n\n- **GitHub Discussions**: https://github.com/scikit-learn/scikit-learn/discussions\n- **Stack Overflow**: https://stackoverflow.com/questions/tagged/scikit-learn\n- **Discord**: https://discord.gg/h9qyrK8Jc8\n\nSocial Media Platforms\n^^^^^^^^^^^^^^^^^^^^^^\n\n- **LinkedIn**: https://www.linkedin.com/company/scikit-learn\n- **YouTube**: https://www.youtube.com/channel/UCJosFjYm0ZYVUARxuOZqnnw/playlists\n- **Facebook**: https://www.facebook.com/scikitlearnofficial/\n- **Instagram**: https://www.instagram.com/scikitlearnofficial/\n- **TikTok**: https://www.tiktok.com/@scikit.learn\n- **Bluesky**: https://bsky.app/profile/scikit-learn.org\n- **Mastodon**: https://mastodon.social/@sklearn@fosstodon.org\n\nResources\n^^^^^^^^^\n\n- **Calendar**: https://blog.scikit-learn.org/calendar/\n- **Logos & Branding**: https://github.com/scikit-learn/scikit-learn/tree/main/doc/logos\n\nCitation\n~~~~~~~~\n\nIf you use scikit-learn in a scientific publication, we would appreciate citations: https://scikit-learn.org/stable/about.html#citing-scikit-learn\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/b7/14/746235c4da89d9bc6a608c5f489f628e03feb8f697195c146e452c8f23c8/langchain_anthropic-1.4.8-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=778e9301b6fd517824f76ec1776975ce8add97a1f6a36c50ae3c2f4b03a66f7f",
+          "hashes": {
+            "sha256": "778e9301b6fd517824f76ec1776975ce8add97a1f6a36c50ae3c2f4b03a66f7f"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "langchain-anthropic",
+        "version": "1.4.8",
+        "summary": "Integration package connecting Claude (Anthropic) APIs and LangChain",
+        "description_content_type": "text/markdown",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Topic :: Scientific/Engineering :: Artificial Intelligence"
+        ],
+        "requires_dist": [
+          "anthropic<1.0.0,>=0.96.0",
+          "langchain-core<2.0.0,>=1.4.7",
+          "pydantic<3.0.0,>=2.7.4"
+        ],
+        "requires_python": "<4.0.0,>=3.10.0",
+        "project_url": [
+          "Homepage, https://docs.langchain.com/oss/python/integrations/providers/anthropic",
+          "Documentation, https://reference.langchain.com/python/integrations/langchain_anthropic/",
+          "Repository, https://github.com/langchain-ai/langchain",
+          "Issues, https://github.com/langchain-ai/langchain/issues",
+          "Changelog, https://github.com/langchain-ai/langchain/releases?q=%22langchain-anthropic%22",
+          "Twitter, https://x.com/langchain_oss",
+          "Slack, https://www.langchain.com/join-community",
+          "Reddit, https://www.reddit.com/r/LangChain/"
+        ],
+        "description": "# langchain-anthropic\n\n[![PyPI - Version](https://img.shields.io/pypi/v/langchain-anthropic?label=%20)](https://pypi.org/project/langchain-anthropic/#history)\n[![PyPI - License](https://img.shields.io/pypi/l/langchain-anthropic)](https://opensource.org/licenses/MIT)\n[![PyPI - Downloads](https://img.shields.io/pepy/dt/langchain-anthropic)](https://pypistats.org/packages/langchain-anthropic)\n[![Twitter](https://img.shields.io/twitter/url/https/twitter.com/langchain_oss.svg?style=social&label=Follow%20%40LangChain)](https://x.com/langchain_oss)\n\nLooking for the JS/TS version? Check out [LangChain.js](https://github.com/langchain-ai/langchainjs).\n\n## Quick Install\n\n```bash\nuv add langchain-anthropic\n```\n\n## 🤔 What is this?\n\nThis package contains the LangChain integration for Anthropic's generative models.\n\n## 📖 Documentation\n\nFor full documentation, see the [API reference](https://reference.langchain.com/python/integrations/langchain_anthropic/). For conceptual guides, tutorials, and examples on using these classes, see the [LangChain Docs](https://docs.langchain.com/oss/python/integrations/providers/anthropic).\n\n## 📕 Releases & Versioning\n\nSee our [Releases](https://docs.langchain.com/oss/python/release-policy) and [Versioning](https://docs.langchain.com/oss/python/versioning) policies.\n\n## 💁 Contributing\n\nAs an open-source project in a rapidly developing field, we are extremely open to contributions, whether it be in the form of a new feature, improved infrastructure, or better documentation.\n\nFor detailed information on how to contribute, see the [Contributing Guide](https://docs.langchain.com/oss/python/contributing/overview).\n\n## Resources\n\n- [LangChain Academy](https://academy.langchain.com/) — comprehensive, free courses on LangChain libraries and products, made by the LangChain team\n- [Code of Conduct](https://github.com/langchain-ai/langchain/?tab=coc-ov-file) — community guidelines and standards\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

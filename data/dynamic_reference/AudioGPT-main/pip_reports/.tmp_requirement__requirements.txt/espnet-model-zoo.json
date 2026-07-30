@@ -1,0 +1,80 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/19/0e/b3340d59ded1ece54cca41d88f0be529598b43b3ec05b608dc03bd154a1a/espnet_model_zoo-0.1.7-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=8a228c44566f931e3113ec28c41f1e342be8b8897bad2fa99a6d51263e033743",
+          "hashes": {
+            "sha256": "8a228c44566f931e3113ec28c41f1e342be8b8897bad2fa99a6d51263e033743"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "espnet-model-zoo",
+        "version": "0.1.7",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "ESPnet Model Zoo",
+        "description_content_type": "text/markdown",
+        "home_page": "http://github.com/espnet/espnet_model_zoo",
+        "license": "Apache Software License",
+        "classifier": [
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Science/Research",
+          "Operating System :: POSIX :: Linux",
+          "License :: OSI Approved :: Apache Software License",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "pandas",
+          "requests",
+          "tqdm",
+          "numpy",
+          "espnet",
+          "huggingface-hub",
+          "filelock",
+          "pytest (>=3.3.0) ; extra == 'test'",
+          "pytest-pythonpath (>=0.7.3) ; extra == 'test'",
+          "pytest-cov (>=2.7.1) ; extra == 'test'",
+          "hacking (>=1.1.0) ; extra == 'test'",
+          "mock (>=2.0.0) ; extra == 'test'",
+          "pycodestyle ; extra == 'test'",
+          "flake8 (>=3.7.8) ; extra == 'test'",
+          "black ; extra == 'test'"
+        ],
+        "requires_python": ">=3.6.0",
+        "provides_extra": [
+          "test"
+        ],
+        "description": "# ESPnet Model Zoo\n\n[![PyPI version](https://badge.fury.io/py/espnet-model-zoo.svg)](https://badge.fury.io/py/espnet-model-zoo)\n[![Python Versions](https://img.shields.io/pypi/pyversions/espnet_model_zoo.svg)](https://pypi.org/project/espnet_model_zoo/)\n[![Downloads](https://pepy.tech/badge/espnet_model_zoo)](https://pepy.tech/project/espnet_model_zoo)\n[![GitHub license](https://img.shields.io/github/license/espnet/espnet_model_zoo.svg)](https://github.com/espnet/espnet_model_zoo)\n[![Unitest](https://github.com/espnet/espnet_model_zoo/workflows/Unitest/badge.svg)](https://github.com/espnet/espnet_model_zoo/actions?query=workflow%3AUnitest)\n[![Model test](https://github.com/espnet/espnet_model_zoo/workflows/Model%20test/badge.svg)](https://github.com/espnet/espnet_model_zoo/actions?query=workflow%3A%22Model+test%22)\n[![codecov](https://codecov.io/gh/espnet/espnet_model_zoo/branch/master/graph/badge.svg)](https://codecov.io/gh/espnet/espnet_model_zoo)\n[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)\n\nUtilities managing the pretrained models created by [ESPnet](https://github.com/espnet/espnet). This function is inspired by the [Asteroid pretrained model function](https://github.com/mpariente/asteroid/blob/master/docs/source/readmes/pretrained_models.md).\n\n- **From version 0.1.0, the huggingface models can be also used**: https://huggingface.co/models?filter=espnet\n- Zenodo community: https://zenodo.org/communities/espnet/\n- Registered models: [table.csv](espnet_model_zoo/table.csv)\n\n## Install\n\n```\npip install torch\npip install espnet_model_zoo\n```\n\n## Python API for inference\n`model_name` in the following section should be `huggingface_id` or one of the tags in the [table.csv](espnet_model_zoo/table.csv).\nOr you can directly provide zenodo URL (e.g., `https://zenodo.org/record/xxxxxxx/files/hogehoge.zip?download=1`).\n\n### ASR\n\n```python\nimport soundfile\nfrom espnet2.bin.asr_inference import Speech2Text\nspeech2text = Speech2Text.from_pretrained(\n    \"model_name\",\n    # Decoding parameters are not included in the model file\n    maxlenratio=0.0,\n    minlenratio=0.0,\n    beam_size=20,\n    ctc_weight=0.3,\n    lm_weight=0.5,\n    penalty=0.0,\n    nbest=1\n)\n# Confirm the sampling rate is equal to that of the training corpus.\n# If not, you need to resample the audio data before inputting to speech2text\nspeech, rate = soundfile.read(\"speech.wav\")\nnbests = speech2text(speech)\n\ntext, *_ = nbests[0]\nprint(text)\n```\n\n### TTS\n\n```python\nimport soundfile\nfrom espnet2.bin.tts_inference import Text2Speech\ntext2speech = Text2Speech.from_pretrained(\"model_name\")\nspeech = text2speech(\"foobar\")[\"wav\"]\nsoundfile.write(\"out.wav\", speech.numpy(), text2speech.fs, \"PCM_16\")\n```\n\n### Speech separation\n\n```python\nimport soundfile\nfrom espnet2.bin.enh_inference import SeparateSpeech\nseparate_speech = SeparateSpeech.from_pretrained(\n    \"model_name\",\n    # for segment-wise process on long speech\n    segment_size=2.4,\n    hop_size=0.8,\n    normalize_segment_scale=False,\n    show_progressbar=True,\n    ref_channel=None,\n    normalize_output_wav=True,\n)\n# Confirm the sampling rate is equal to that of the training corpus.\n# If not, you need to resample the audio data before inputting to speech2text\nspeech, rate = soundfile.read(\"long_speech.wav\")\nwaves = separate_speech(speech[None, ...], fs=rate)\n```\n\nThis API allows processing both short audio samples and long audio samples. For long audio samples, you can set the value of arguments segment_size, hop_size (optionally normalize_segment_scale and show_progressbar) to perform segment-wise speech enhancement/separation on the input speech. Note that the segment-wise processing is disabled by default.\n\n\n<details><summary>For old ESPnet (<=10.1) </summary><div>\n\n### ASR\n\n```python\nimport soundfile\nfrom espnet_model_zoo.downloader import ModelDownloader\nfrom espnet2.bin.asr_inference import Speech2Text\nd = ModelDownloader()\nspeech2text = Speech2Text(\n    **d.download_and_unpack(\"model_name\"),\n    # Decoding parameters are not included in the model file\n    maxlenratio=0.0,\n    minlenratio=0.0,\n    beam_size=20,\n    ctc_weight=0.3,\n    lm_weight=0.5,\n    penalty=0.0,\n    nbest=1\n)\n```\n\n### TTS\n\n```python\nimport soundfile\nfrom espnet_model_zoo.downloader import ModelDownloader\nfrom espnet2.bin.tts_inference import Text2Speech\nd = ModelDownloader()\ntext2speech = Text2Speech(**d.download_and_unpack(\"model_name\"))\n```\n\n### Speech separation\n\n```python\nimport soundfile\nfrom espnet_model_zoo.downloader import ModelDownloader\nfrom espnet2.bin.enh_inference import SeparateSpeech\nd = ModelDownloader()\nseparate_speech = SeparateSpeech(\n    **d.download_and_unpack(\"model_name\"),\n    # for segment-wise process on long speech\n    segment_size=2.4,\n    hop_size=0.8,\n    normalize_segment_scale=False,\n    show_progressbar=True,\n    ref_channel=None,\n    normalize_output_wav=True,\n)\n```\n</div></details>\n\n\n## Instruction for ModelDownloader\n\n```python\nfrom espnet_model_zoo.downloader import ModelDownloader\nd = ModelDownloader(\"~/.cache/espnet\")  # Specify cachedir\nd = ModelDownloader()  # <module_dir> is used as cachedir by default\n```\n\nTo obtain a model, you need to give a `huggingface_id`model` or a tag , which is listed in [table.csv](espnet_model_zoo/table.csv).\n\n```python\n>>> d.download_and_unpack(\"kamo-naoyuki/mini_an4_asr_train_raw_bpe_valid.acc.best\")\n{\"asr_train_config\": <config path>, \"asr_model_file\": <model path>, ...}\n```\n\nYou can specify the revision if it's huggingface_id giving with `@`:\n\n```python\n>>> d.download_and_unpack(\"kamo-naoyuki/mini_an4_asr_train_raw_bpe_valid.acc.best@<revision>\")\n{\"asr_train_config\": <config path>, \"asr_model_file\": <model path>, ...}\n```\n\nNote that if the model already exists, you can skip downloading and unpacking.\n\nYou can also get a model with certain conditions.\n\n```python\nd.download_and_unpack(task=\"asr\", corpus=\"wsj\")\n```\n\nIf multiple models are found with the condition, the last model is selected.\nYou can also specify the condition using \"version\" option.\n\n```python\nd.download_and_unpack(task=\"asr\", corpus=\"wsj\", version=-1)  # Get the last model\nd.download_and_unpack(task=\"asr\", corpus=\"wsj\", version=-2)  # Get previous model\n```\n\nYou can also obtain it from the URL directly.\n\n```python\nd.download_and_unpack(\"https://zenodo.org/record/...\")\n```\n\nIf you need to use a local model file using this API, you can also give it.\n\n```python\nd.download_and_unpack(\"./some/where/model.zip\")\n```\n\nIn this case, the contents are also expanded in the cache directory,\nbut the model is identified by the file path,\nso if you move the model to somewhere and unpack again,\nit's treated as another model,\nthus the contents are expanded again at another place.\n\n## Query model names\n\nYou can view the model names from our Zenodo community, https://zenodo.org/communities/espnet/,\nor using `query()`.  All information are written in [table.csv](espnet_model_zoo/table.csv).\n\n```python\nd.query(\"name\")\n```\n\nYou can also show them with specifying certain conditions.\n\n```python\nd.query(\"name\", task=\"asr\")\n```\n\n## Command line tools\n\n- `espnet_model_zoo_query`\n\n    ```sh\n    # Query model name\n    espnet_model_zoo_query task=asr corpus=wsj\n    # Show all model name\n    espnet_model_zoo_query\n    # Query the other key\n    espnet_model_zoo_query --key url task=asr corpus=wsj\n    ```\n- `espnet_model_zoo_download`\n\n    ```sh\n    espnet_model_zoo_download <model_name>  # Print the path of the downloaded file\n    espnet_model_zoo_download --unpack true <model_name>   # Print the path of unpacked files\n    ```\n- `espnet_model_zoo_upload`\n\n    ```sh\n    export ACCESS_TOKEN=<access_token>\n    espnet_zenodo_upload \\\n        --file <packed_model> \\\n        --title <title> \\\n        --description <description> \\\n        --creator_name <your-git-account>\n    ```\n\n## Use pretrained model in ESPnet recipe\n\n```sh\n# e.g. ASR WSJ task\ngit clone https://github.com/espnet/espnet\npip install -e .\ncd egs2/wsj/asr1\n./run.sh --skip_data_prep false --skip_train true --download_model kamo-naoyuki/wsj\n```\n\n## Register your model\n\n### Huggingface\n1. Upload your model using huggingface API\n\n    Coming soon...\n\n1. Create a Pull Request to modify [table.csv](espnet_model_zoo/table.csv)\n\n    The models registered in this `table.csv`, the model are tested in the CI.\n    Indeed, the model can be downloaded without modification `table.csv`.\n1. (Administrator does) Increment the third version number of [setup.py](setup.py), e.g. 0.0.3 -> 0.0.4\n1. (Administrator does) Release new version\n\n\n### Zenodo (Obsolete)\n\n1. Upload your model to Zenodo\n\n    You need to [signup to Zenodo](https://zenodo.org/) and [create an access token](https://zenodo.org/account/settings/applications/tokens/new/) to upload models.\n    You can upload your own model by using `espnet_model_zoo_upload` command freely,\n    but we normally upload a model using [recipes](https://github.com/espnet/espnet/blob/master/egs2/TEMPLATE).\n\n1. Create a Pull Request to modify [table.csv](espnet_model_zoo/table.csv)\n\n    You need to append your record at the last line.\n1. (Administrator does) Increment the third version number of [setup.py](setup.py), e.g. 0.0.3 -> 0.0.4\n1. (Administrator does) Release new version\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/f1/ce/5c56f08407648ab897b119a4add46391560a144285cf89e060091bc793e9/langchain_experimental-0.4.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=fd98b9948cb6f991e0f632ea3d5fb839bcfe21e6d5a190a51126a76270a66d40",
+          "hashes": {
+            "sha256": "fd98b9948cb6f991e0f632ea3d5fb839bcfe21e6d5a190a51126a76270a66d40"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "langchain-experimental",
+        "version": "0.4.2",
+        "summary": "Building applications with LLMs through composability",
+        "description_content_type": "text/markdown",
+        "license": "MIT",
+        "requires_dist": [
+          "langchain-core<2.0.0,>=1.4.0",
+          "langchain-community<1.0.0,>=0.4.2"
+        ],
+        "requires_python": "<4.0,>=3.10",
+        "project_url": [
+          "Source Code, https://github.com/langchain-ai/langchain-experimental/tree/main/libs/experimental",
+          "Release Notes, https://github.com/langchain-ai/langchain-experimental/releases",
+          "repository, https://github.com/langchain-ai/langchain-experimental"
+        ],
+        "description": "# 🦜️🧪 LangChain Experimental\n\nThis package holds experimental LangChain code, intended for research and experimental\nuses.\n\n> [!WARNING]\n> **`langchain-experimental` is being sunset.** See [#87](https://github.com/langchain-ai/langchain-experimental/issues/87) for details. Thank you to everyone who has contributed ideas, prototypes, fixes, reviews, and maintenance over the years.\n\n> [!WARNING]\n> Portions of the code in this package may be dangerous if not properly deployed\n> in a sandboxed environment. Please be wary of deploying experimental code\n> to production unless you've taken appropriate precautions and\n> have already discussed it with your security team.\n\nSome of the code here may be marked with security notices. However,\ngiven the exploratory and experimental nature of the code in this package,\nthe lack of a security notice on a piece of code does not mean that\nthe code in question does not require additional security considerations\nin order to be safe to use."
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

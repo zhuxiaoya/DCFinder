@@ -1,0 +1,425 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/f2/ef/b0af56539b94741804d4ca10c528de2053ab255eedf97b02fd89148fa5ac/runai_model_streamer_s3-0.16.0-py3-none-manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=2130f974f12bedacb1bc68f54c3c36889520d39a18d89804da3d33b1456582dd",
+          "hashes": {
+            "sha256": "2130f974f12bedacb1bc68f54c3c36889520d39a18d89804da3d33b1456582dd"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "runai-model-streamer-s3",
+        "version": "0.16.0",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "UNKNOWN",
+        "home_page": "UNKNOWN",
+        "author": "UNKNOWN",
+        "author_email": "UNKNOWN",
+        "license": "UNKNOWN",
+        "requires_dist": [
+          "boto3"
+        ],
+        "description": "UNKNOWN\n\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/ef/1d/c52e66ff32ba7911664e6c4c2ac62e1c6d2d1e7550c7ac185d3f4b70a8a4/boto3-1.43.46-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=69453e2c1bcb9fd9806527ab99950cacfc2826cb0dce9a3a0414d19270c06c3c",
+          "hashes": {
+            "sha256": "69453e2c1bcb9fd9806527ab99950cacfc2826cb0dce9a3a0414d19270c06c3c"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "boto3",
+        "version": "1.43.46",
+        "summary": "The AWS SDK for Python",
+        "home_page": "https://github.com/boto/boto3",
+        "author": "Amazon Web Services",
+        "license": "Apache-2.0",
+        "license_file": [
+          "LICENSE",
+          "NOTICE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Natural Language :: English",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Free Threading :: 2 - Beta"
+        ],
+        "requires_dist": [
+          "botocore (<1.44.0,>=1.43.46)",
+          "jmespath (<2.0.0,>=0.7.1)",
+          "s3transfer (<0.20.0,>=0.19.0)",
+          "botocore[crt] (<2.0a0,>=1.21.0) ; extra == 'crt'"
+        ],
+        "requires_python": ">= 3.10",
+        "project_url": [
+          "Documentation, https://docs.aws.amazon.com/boto3/latest/",
+          "Source, https://github.com/boto/boto3"
+        ],
+        "provides_extra": [
+          "crt"
+        ],
+        "description": "===============================\nBoto3 - The AWS SDK for Python\n===============================\n\n|Version| |Python| |License|\n\nBoto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for\nPython, which allows Python developers to write software that makes use\nof services like Amazon S3 and Amazon EC2. You can find the latest, most\nup to date, documentation at our `doc site`_, including a list of\nservices that are supported.\n\nBoto3 is maintained and published by `Amazon Web Services`_.\n\nBoto (pronounced boh-toh) was named after the fresh water dolphin native to the Amazon river. The name was chosen by the author of the original Boto library, Mitch Garnaat, as a reference to the company.\n\nNotices\n-------\n\nOn 2026-04-29, support for Python 3.9 ended for Boto3. This follows the\nPython Software Foundation `end of support <https://peps.python.org/pep-0596/#lifespan>`__\nfor the runtime which occurred on 2025-10-31.\n\nFor more information on deprecations, see this\n`blog post <https://aws.amazon.com/blogs/developer/python-support-policy-updates-for-aws-sdks-and-tools/>`__.\n\n.. _boto: https://docs.pythonboto.org/\n.. _`doc site`: https://docs.aws.amazon.com/boto3/latest/\n.. _`Amazon Web Services`: https://aws.amazon.com/what-is-aws/\n.. |Python| image:: https://img.shields.io/pypi/pyversions/boto3.svg?style=flat\n    :target: https://pypi.python.org/pypi/boto3/\n    :alt: Python Versions\n.. |Version| image:: http://img.shields.io/pypi/v/boto3.svg?style=flat\n    :target: https://pypi.python.org/pypi/boto3/\n    :alt: Package Version\n.. |License| image:: http://img.shields.io/pypi/l/boto3.svg?style=flat\n    :target: https://github.com/boto/boto3/blob/develop/LICENSE\n    :alt: License\n\nGetting Started\n---------------\nAssuming that you have a supported version of Python installed, you can first\nset up your environment with:\n\n.. code-block:: sh\n\n    $ python -m venv .venv\n    ...\n    $ . .venv/bin/activate\n\nThen, you can install boto3 from PyPI with:\n\n.. code-block:: sh\n\n    $ python -m pip install boto3\n\nor install from source with:\n\n.. code-block:: sh\n\n    $ git clone https://github.com/boto/boto3.git\n    $ cd boto3\n    $ python -m pip install -r requirements.txt\n    $ python -m pip install -e .\n\n\nUsing Boto3\n~~~~~~~~~~~~~~\nAfter installing boto3\n\nNext, set up credentials (in e.g. ``~/.aws/credentials``):\n\n.. code-block:: ini\n\n    [default]\n    aws_access_key_id = YOUR_KEY\n    aws_secret_access_key = YOUR_SECRET\n\nThen, set up a default region (in e.g. ``~/.aws/config``):\n\n.. code-block:: ini\n\n   [default]\n   region = us-east-1\n\nOther credential configuration methods can be found `here <https://docs.aws.amazon.com/boto3/latest/guide/credentials.html>`__\n\nThen, from a Python interpreter:\n\n.. code-block:: python\n\n    >>> import boto3\n    >>> s3 = boto3.resource('s3')\n    >>> for bucket in s3.buckets.all():\n            print(bucket.name)\n\nRunning Tests\n~~~~~~~~~~~~~\nYou can run tests in all supported Python versions using ``tox``. By default,\nit will run all of the unit and functional tests, but you can also specify your own\n``pytest`` options. Note that this requires that you have all supported\nversions of Python installed, otherwise you must pass ``-e`` or run the\n``pytest`` command directly:\n\n.. code-block:: sh\n\n    $ tox\n    $ tox -- unit/test_session.py\n    $ tox -e py26,py33 -- integration/\n\nYou can also run individual tests with your default Python version:\n\n.. code-block:: sh\n\n    $ pytest tests/unit\n\n\nGetting Help\n------------\n\nWe use GitHub issues for tracking bugs and feature requests and have limited\nbandwidth to address them. Please use these community resources for getting\nhelp:\n\n* Ask a question on `Stack Overflow <https://stackoverflow.com/>`__ and tag it with `boto3 <https://stackoverflow.com/questions/tagged/boto3>`__\n* Open a support ticket with `AWS Support <https://console.aws.amazon.com/support/home#/>`__\n* If it turns out that you may have found a bug, please `open an issue <https://github.com/boto/boto3/issues/new>`__\n\n\nContributing\n------------\n\nWe value feedback and contributions from our community. Whether it's a bug report, new feature, correction, or additional documentation, we welcome your issues and pull requests. Please read through this `CONTRIBUTING <https://github.com/boto/boto3/blob/develop/CONTRIBUTING.rst>`__ document before submitting any issues or pull requests to ensure we have all the necessary information to effectively respond to your contribution.\n\n\nMaintenance and Support for SDK Major Versions\n----------------------------------------------\n\nBoto3 was made generally available on 06/22/2015 and is currently in the full support phase of the availability life cycle.\n\nFor information about maintenance and support for SDK major versions and their underlying dependencies, see the following in the AWS SDKs and Tools Shared Configuration and Credentials Reference Guide:\n\n* `AWS SDKs and Tools Maintenance Policy <https://docs.aws.amazon.com/sdkref/latest/guide/maint-policy.html>`__\n* `AWS SDKs and Tools Version Support Matrix <https://docs.aws.amazon.com/sdkref/latest/guide/version-support-matrix.html>`__\n\n\nMore Resources\n--------------\n\n* `NOTICE <https://github.com/boto/boto3/blob/develop/NOTICE>`__\n* `Changelog <https://github.com/boto/boto3/blob/develop/CHANGELOG.rst>`__\n* `License <https://github.com/boto/boto3/blob/develop/LICENSE>`__\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/0e/f2/4bd8f2f419088feb3ce55f0ca91040ff902f402edfd197450b20a2e1d533/botocore-1.43.46-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=cb673891e623ae6e6a1bf24d94ef169504f3eb02584adb5d5bee2f6aae819b60",
+          "hashes": {
+            "sha256": "cb673891e623ae6e6a1bf24d94ef169504f3eb02584adb5d5bee2f6aae819b60"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "botocore",
+        "version": "1.43.46",
+        "summary": "Low-level, data-driven core of boto 3.",
+        "home_page": "https://github.com/boto/botocore",
+        "author": "Amazon Web Services",
+        "license": "Apache-2.0",
+        "license_file": [
+          "LICENSE.txt",
+          "NOTICE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Intended Audience :: System Administrators",
+          "Natural Language :: English",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Free Threading :: 2 - Beta"
+        ],
+        "requires_dist": [
+          "jmespath (<2.0.0,>=0.7.1)",
+          "python-dateutil (<3.0.0,>=2.1)",
+          "urllib3 (!=2.2.0,<3,>=1.25.4)",
+          "awscrt (==0.32.2) ; extra == 'crt'"
+        ],
+        "requires_python": ">= 3.10",
+        "provides_extra": [
+          "crt"
+        ],
+        "description": "botocore\n========\n\n|Version| |Python| |License|\n\nA low-level interface to a growing number of Amazon Web Services. The\nbotocore package is the foundation for the\n`AWS CLI <https://github.com/aws/aws-cli>`__ as well as\n`boto3 <https://github.com/boto/boto3>`__.\n\nBotocore is maintained and published by `Amazon Web Services`_.\n\nNotices\n-------\n\nOn 2026-04-29, support for Python 3.9 ended for Botocore. This follows the\nPython Software Foundation `end of support <https://peps.python.org/pep-0596/#lifespan>`__\nfor the runtime which occurred on 2025-10-31.\n\nFor more information, see this `blog post <https://aws.amazon.com/blogs/developer/python-support-policy-updates-for-aws-sdks-and-tools/>`__.\n\n.. _`Amazon Web Services`: https://aws.amazon.com/what-is-aws/\n.. |Python| image:: https://img.shields.io/pypi/pyversions/botocore.svg?style=flat\n    :target: https://pypi.python.org/pypi/botocore/\n    :alt: Python Versions\n.. |Version| image:: http://img.shields.io/pypi/v/botocore.svg?style=flat\n    :target: https://pypi.python.org/pypi/botocore/\n    :alt: Package Version\n.. |License| image:: http://img.shields.io/pypi/l/botocore.svg?style=flat\n    :target: https://github.com/boto/botocore/blob/develop/LICENSE.txt\n    :alt: License\n\nGetting Started\n---------------\nAssuming that you have Python and ``virtualenv`` installed, set up your environment and install the required dependencies like this or you can install the library using ``pip``:\n\n.. code-block:: sh\n\n    $ git clone https://github.com/boto/botocore.git\n    $ cd botocore\n    $ python -m venv .venv\n    ...\n    $ source .venv/bin/activate\n    $ python -m pip install -r requirements.txt\n    $ python -m pip install -e .\n\n.. code-block:: sh\n\n    $ pip install botocore\n\nUsing Botocore\n~~~~~~~~~~~~~~\nAfter installing botocore\n\nNext, set up credentials (in e.g. ``~/.aws/credentials``):\n\n.. code-block:: ini\n\n    [default]\n    aws_access_key_id = YOUR_KEY\n    aws_secret_access_key = YOUR_SECRET\n\nThen, set up a default region (in e.g. ``~/.aws/config``):\n\n.. code-block:: ini\n\n   [default]\n   region=us-east-1\n\nOther credentials configuration method can be found `here <https://docs.aws.amazon.com/boto3/latest/guide/credentials.html>`__\n\nThen, from a Python interpreter:\n\n.. code-block:: python\n\n    >>> import botocore.session\n    >>> session = botocore.session.get_session()\n    >>> client = session.create_client('ec2')\n    >>> print(client.describe_instances())\n\n\nGetting Help\n------------\n\nWe use GitHub issues for tracking bugs and feature requests and have limited\nbandwidth to address them. Please use these community resources for getting\nhelp. Please note many of the same resources available for ``boto3`` are\napplicable for ``botocore``:\n\n* Ask a question on `Stack Overflow <https://stackoverflow.com/>`__ and tag it with `boto3 <https://stackoverflow.com/questions/tagged/boto3>`__\n* Open a support ticket with `AWS Support <https://console.aws.amazon.com/support/home#/>`__\n* If it turns out that you may have found a bug, please `open an issue <https://github.com/boto/botocore/issues/new/choose>`__\n\n\nContributing\n------------\n\nWe value feedback and contributions from our community. Whether it's a bug report, new feature, correction, or additional documentation, we welcome your issues and pull requests. Please read through this `CONTRIBUTING <https://github.com/boto/botocore/blob/develop/CONTRIBUTING.rst>`__ document before submitting any issues or pull requests to ensure we have all the necessary information to effectively respond to your contribution.\n\n\nMaintenance and Support for SDK Major Versions\n----------------------------------------------\n\nBotocore was made generally available on 06/22/2015 and is currently in the full support phase of the availability life cycle.\n\nFor information about maintenance and support for SDK major versions and their underlying dependencies, see the following in the AWS SDKs and Tools Reference Guide:\n\n* `AWS SDKs and Tools Maintenance Policy <https://docs.aws.amazon.com/sdkref/latest/guide/maint-policy.html>`__\n* `AWS SDKs and Tools Version Support Matrix <https://docs.aws.amazon.com/sdkref/latest/guide/version-support-matrix.html>`__\n\n\nMore Resources\n--------------\n\n* `NOTICE <https://github.com/boto/botocore/blob/develop/NOTICE>`__\n* `Changelog <https://github.com/boto/botocore/blob/develop/CHANGELOG.rst>`__\n* `License <https://github.com/boto/botocore/blob/develop/LICENSE.txt>`__\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/14/2f/967ba146e6d58cf6a652da73885f52fc68001525b4197effc174321d70b4/jmespath-1.1.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=a5663118de4908c91729bea0acadca56526eb2698e83de10cd116ae0f4e97c64",
+          "hashes": {
+            "sha256": "a5663118de4908c91729bea0acadca56526eb2698e83de10cd116ae0f4e97c64"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "jmespath",
+        "version": "1.1.0",
+        "summary": "JSON Matching Expressions",
+        "home_page": "https://github.com/jmespath/jmespath.py",
+        "author": "James Saryerwinnie",
+        "author_email": "js@jamesls.com",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Natural Language :: English",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy"
+        ],
+        "requires_python": ">=3.9",
+        "description": "JMESPath\n========\n\n\n.. image:: https://badges.gitter.im/Join Chat.svg\n   :target: https://gitter.im/jmespath/chat\n\n\nJMESPath (pronounced \"james path\") allows you to declaratively specify how to\nextract elements from a JSON document.\n\nFor example, given this document::\n\n    {\"foo\": {\"bar\": \"baz\"}}\n\nThe jmespath expression ``foo.bar`` will return \"baz\".\n\nJMESPath also supports:\n\nReferencing elements in a list.  Given the data::\n\n    {\"foo\": {\"bar\": [\"one\", \"two\"]}}\n\nThe expression: ``foo.bar[0]`` will return \"one\".\nYou can also reference all the items in a list using the ``*``\nsyntax::\n\n   {\"foo\": {\"bar\": [{\"name\": \"one\"}, {\"name\": \"two\"}]}}\n\nThe expression: ``foo.bar[*].name`` will return [\"one\", \"two\"].\nNegative indexing is also supported (-1 refers to the last element\nin the list).  Given the data above, the expression\n``foo.bar[-1].name`` will return \"two\".\n\nThe ``*`` can also be used for hash types::\n\n   {\"foo\": {\"bar\": {\"name\": \"one\"}, \"baz\": {\"name\": \"two\"}}}\n\nThe expression: ``foo.*.name`` will return [\"one\", \"two\"].\n\n\nInstallation\n============\n\nYou can install JMESPath from pypi with:\n\n.. code:: bash\n\n    pip install jmespath\n\n\nAPI\n===\n\nThe ``jmespath.py`` library has two functions\nthat operate on python data structures.  You can use ``search``\nand give it the jmespath expression and the data:\n\n.. code:: python\n\n    >>> import jmespath\n    >>> path = jmespath.search('foo.bar', {'foo': {'bar': 'baz'}})\n    'baz'\n\nSimilar to the ``re`` module, you can use the ``compile`` function\nto compile the JMESPath expression and use this parsed expression\nto perform repeated searches:\n\n.. code:: python\n\n    >>> import jmespath\n    >>> expression = jmespath.compile('foo.bar')\n    >>> expression.search({'foo': {'bar': 'baz'}})\n    'baz'\n    >>> expression.search({'foo': {'bar': 'other'}})\n    'other'\n\nThis is useful if you're going to use the same jmespath expression to\nsearch multiple documents.  This avoids having to reparse the\nJMESPath expression each time you search a new document.\n\nOptions\n-------\n\nYou can provide an instance of ``jmespath.Options`` to control how\na JMESPath expression is evaluated.  The most common scenario for\nusing an ``Options`` instance is if you want to have ordered output\nof your dict keys.  To do this you can use either of these options:\n\n.. code:: python\n\n    >>> import jmespath\n    >>> jmespath.search('{a: a, b: b}',\n    ...                 mydata,\n    ...                 jmespath.Options(dict_cls=collections.OrderedDict))\n\n\n    >>> import jmespath\n    >>> parsed = jmespath.compile('{a: a, b: b}')\n    >>> parsed.search(mydata,\n    ...               jmespath.Options(dict_cls=collections.OrderedDict))\n\n\nCustom Functions\n~~~~~~~~~~~~~~~~\n\nThe JMESPath language has numerous\n`built-in functions\n<http://jmespath.org/specification.html#built-in-functions>`__, but it is\nalso possible to add your own custom functions.  Keep in mind that\ncustom function support in jmespath.py is experimental and the API may\nchange based on feedback.\n\n**If you have a custom function that you've found useful, consider submitting\nit to jmespath.site and propose that it be added to the JMESPath language.**\nYou can submit proposals\n`here <https://github.com/jmespath/jmespath.site/issues>`__.\n\nTo create custom functions:\n\n* Create a subclass of ``jmespath.functions.Functions``.\n* Create a method with the name ``_func_<your function name>``.\n* Apply the ``jmespath.functions.signature`` decorator that indicates\n  the expected types of the function arguments.\n* Provide an instance of your subclass in a ``jmespath.Options`` object.\n\nBelow are a few examples:\n\n.. code:: python\n\n    import jmespath\n    from jmespath import functions\n\n    # 1. Create a subclass of functions.Functions.\n    #    The function.Functions base class has logic\n    #    that introspects all of its methods and automatically\n    #    registers your custom functions in its function table.\n    class CustomFunctions(functions.Functions):\n\n        # 2 and 3.  Create a function that starts with _func_\n        # and decorate it with @signature which indicates its\n        # expected types.\n        # In this example, we're creating a jmespath function\n        # called \"unique_letters\" that accepts a single argument\n        # with an expected type \"string\".\n        @functions.signature({'types': ['string']})\n        def _func_unique_letters(self, s):\n            # Given a string s, return a sorted\n            # string of unique letters: 'ccbbadd' ->  'abcd'\n            return ''.join(sorted(set(s)))\n\n        # Here's another example.  This is creating\n        # a jmespath function called \"my_add\" that expects\n        # two arguments, both of which should be of type number.\n        @functions.signature({'types': ['number']}, {'types': ['number']})\n        def _func_my_add(self, x, y):\n            return x + y\n\n    # 4. Provide an instance of your subclass in a Options object.\n    options = jmespath.Options(custom_functions=CustomFunctions())\n\n    # Provide this value to jmespath.search:\n    # This will print 3\n    print(\n        jmespath.search(\n            'my_add(`1`, `2`)', {}, options=options)\n    )\n\n    # This will print \"abcd\"\n    print(\n        jmespath.search(\n            'foo.bar | unique_letters(@)',\n            {'foo': {'bar': 'ccbbadd'}},\n            options=options)\n    )\n\nAgain, if you come up with useful functions that you think make\nsense in the JMESPath language (and make sense to implement in all\nJMESPath libraries, not just python), please let us know at\n`jmespath.site <https://github.com/jmespath/jmespath.site/issues>`__.\n\n\nSpecification\n=============\n\nIf you'd like to learn more about the JMESPath language, you can check out\nthe `JMESPath tutorial <http://jmespath.org/tutorial.html>`__.  Also check\nout the `JMESPath examples page <http://jmespath.org/examples.html>`__ for\nexamples of more complex jmespath queries.\n\nThe grammar is specified using ABNF, as described in\n`RFC4234 <http://www.ietf.org/rfc/rfc4234.txt>`_.\nYou can find the most up to date\n`grammar for JMESPath here <http://jmespath.org/specification.html#grammar>`__.\n\nYou can read the full\n`JMESPath specification here <http://jmespath.org/specification.html>`__.\n\n\nTesting\n=======\n\nIn addition to the unit tests for the jmespath modules,\nthere is a ``tests/compliance`` directory that contains\n.json files with test cases.  This allows other implementations\nto verify they are producing the correct output.  Each json\nfile is grouped by feature.\n\n\nDiscuss\n=======\n\nJoin us on our `Gitter channel <https://gitter.im/jmespath/chat>`__\nif you want to chat or if you have any questions.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+          "hashes": {
+            "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "python-dateutil",
+        "version": "2.9.0.post0",
+        "summary": "Extensions to the standard Python datetime module",
+        "description_content_type": "text/x-rst",
+        "home_page": "https://github.com/dateutil/dateutil",
+        "author": "Gustavo Niemeyer",
+        "author_email": "gustavo@niemeyer.net",
+        "maintainer": "Paul Ganssle",
+        "maintainer_email": "dateutil@python.org",
+        "license": "Dual License",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Topic :: Software Development :: Libraries"
+        ],
+        "requires_dist": [
+          "six >=1.5"
+        ],
+        "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
+        "project_url": [
+          "Documentation, https://dateutil.readthedocs.io/en/stable/",
+          "Source, https://github.com/dateutil/dateutil"
+        ],
+        "description": "dateutil - powerful extensions to datetime\n==========================================\n\n|pypi| |support| |licence|\n\n|gitter| |readthedocs|\n\n|travis| |appveyor| |pipelines| |coverage|\n\n.. |pypi| image:: https://img.shields.io/pypi/v/python-dateutil.svg?style=flat-square\n    :target: https://pypi.org/project/python-dateutil/\n    :alt: pypi version\n\n.. |support| image:: https://img.shields.io/pypi/pyversions/python-dateutil.svg?style=flat-square\n    :target: https://pypi.org/project/python-dateutil/\n    :alt: supported Python version\n\n.. |travis| image:: https://img.shields.io/travis/dateutil/dateutil/master.svg?style=flat-square&label=Travis%20Build\n    :target: https://travis-ci.org/dateutil/dateutil\n    :alt: travis build status\n\n.. |appveyor| image:: https://img.shields.io/appveyor/ci/dateutil/dateutil/master.svg?style=flat-square&logo=appveyor\n    :target: https://ci.appveyor.com/project/dateutil/dateutil\n    :alt: appveyor build status\n\n.. |pipelines| image:: https://dev.azure.com/pythondateutilazure/dateutil/_apis/build/status/dateutil.dateutil?branchName=master\n    :target: https://dev.azure.com/pythondateutilazure/dateutil/_build/latest?definitionId=1&branchName=master\n    :alt: azure pipelines build status\n\n.. |coverage| image:: https://codecov.io/gh/dateutil/dateutil/branch/master/graphs/badge.svg?branch=master\n    :target: https://codecov.io/gh/dateutil/dateutil?branch=master\n    :alt: Code coverage\n\n.. |gitter| image:: https://badges.gitter.im/dateutil/dateutil.svg\n   :alt: Join the chat at https://gitter.im/dateutil/dateutil\n   :target: https://gitter.im/dateutil/dateutil\n\n.. |licence| image:: https://img.shields.io/pypi/l/python-dateutil.svg?style=flat-square\n    :target: https://pypi.org/project/python-dateutil/\n    :alt: licence\n\n.. |readthedocs| image:: https://img.shields.io/readthedocs/dateutil/latest.svg?style=flat-square&label=Read%20the%20Docs\n   :alt: Read the documentation at https://dateutil.readthedocs.io/en/latest/\n   :target: https://dateutil.readthedocs.io/en/latest/\n\nThe `dateutil` module provides powerful extensions to\nthe standard `datetime` module, available in Python.\n\nInstallation\n============\n`dateutil` can be installed from PyPI using `pip` (note that the package name is\ndifferent from the importable name)::\n\n    pip install python-dateutil\n\nDownload\n========\ndateutil is available on PyPI\nhttps://pypi.org/project/python-dateutil/\n\nThe documentation is hosted at:\nhttps://dateutil.readthedocs.io/en/stable/\n\nCode\n====\nThe code and issue tracker are hosted on GitHub:\nhttps://github.com/dateutil/dateutil/\n\nFeatures\n========\n\n* Computing of relative deltas (next month, next year,\n  next Monday, last week of month, etc);\n* Computing of relative deltas between two given\n  date and/or datetime objects;\n* Computing of dates based on very flexible recurrence rules,\n  using a superset of the `iCalendar <https://www.ietf.org/rfc/rfc2445.txt>`_\n  specification. Parsing of RFC strings is supported as well.\n* Generic parsing of dates in almost any string format;\n* Timezone (tzinfo) implementations for tzfile(5) format\n  files (/etc/localtime, /usr/share/zoneinfo, etc), TZ\n  environment string (in all known formats), iCalendar\n  format files, given ranges (with help from relative deltas),\n  local machine timezone, fixed offset timezone, UTC timezone,\n  and Windows registry-based time zones.\n* Internal up-to-date world timezone information based on\n  Olson's database.\n* Computing of Easter Sunday dates for any given year,\n  using Western, Orthodox or Julian algorithms;\n* A comprehensive test suite.\n\nQuick example\n=============\nHere's a snapshot, just to give an idea about the power of the\npackage. For more examples, look at the documentation.\n\nSuppose you want to know how much time is left, in\nyears/months/days/etc, before the next easter happening on a\nyear with a Friday 13th in August, and you want to get today's\ndate out of the \"date\" unix system command. Here is the code:\n\n.. code-block:: python3\n\n    >>> from dateutil.relativedelta import *\n    >>> from dateutil.easter import *\n    >>> from dateutil.rrule import *\n    >>> from dateutil.parser import *\n    >>> from datetime import *\n    >>> now = parse(\"Sat Oct 11 17:13:46 UTC 2003\")\n    >>> today = now.date()\n    >>> year = rrule(YEARLY,dtstart=now,bymonth=8,bymonthday=13,byweekday=FR)[0].year\n    >>> rdelta = relativedelta(easter(year), today)\n    >>> print(\"Today is: %s\" % today)\n    Today is: 2003-10-11\n    >>> print(\"Year with next Aug 13th on a Friday is: %s\" % year)\n    Year with next Aug 13th on a Friday is: 2004\n    >>> print(\"How far is the Easter of that year: %s\" % rdelta)\n    How far is the Easter of that year: relativedelta(months=+6)\n    >>> print(\"And the Easter of that year is: %s\" % (today+rdelta))\n    And the Easter of that year is: 2004-04-11\n\nBeing exactly 6 months ahead was **really** a coincidence :)\n\nContributing\n============\n\nWe welcome many types of contributions - bug reports, pull requests (code, infrastructure or documentation fixes). For more information about how to contribute to the project, see the ``CONTRIBUTING.md`` file in the repository.\n\n\nAuthor\n======\nThe dateutil module was written by Gustavo Niemeyer <gustavo@niemeyer.net>\nin 2003.\n\nIt is maintained by:\n\n* Gustavo Niemeyer <gustavo@niemeyer.net> 2003-2011\n* Tomi Pieviläinen <tomi.pievilainen@iki.fi> 2012-2014\n* Yaron de Leeuw <me@jarondl.net> 2014-2016\n* Paul Ganssle <paul@ganssle.io> 2015-\n\nStarting with version 2.4.1 and running until 2.8.2, all source and binary\ndistributions will be signed by a PGP key that has, at the very least, been\nsigned by the key which made the previous release. A table of release signing\nkeys can be found below:\n\n===========  ============================\nReleases     Signing key fingerprint\n===========  ============================\n2.4.1-2.8.2  `6B49 ACBA DCF6 BD1C A206 67AB CD54 FCE3 D964 BEFB`_\n===========  ============================\n\nNew releases *may* have signed tags, but binary and source distributions\nuploaded to PyPI will no longer have GPG signatures attached.\n\nContact\n=======\nOur mailing list is available at `dateutil@python.org <https://mail.python.org/mailman/listinfo/dateutil>`_. As it is hosted by the PSF, it is subject to the `PSF code of\nconduct <https://www.python.org/psf/conduct/>`_.\n\nLicense\n=======\n\nAll contributions after December 1, 2017 released under dual license - either `Apache 2.0 License <https://www.apache.org/licenses/LICENSE-2.0>`_ or the `BSD 3-Clause License <https://opensource.org/licenses/BSD-3-Clause>`_. Contributions before December 1, 2017 - except those those explicitly relicensed - are released only under the BSD 3-Clause License.\n\n\n.. _6B49 ACBA DCF6 BD1C A206 67AB CD54 FCE3 D964 BEFB:\n   https://pgp.mit.edu/pks/lookup?op=vindex&search=0xCD54FCE3D964BEFB\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/24/23/e84c64ad0e8bc59cd1b2ef98def848deff0ef3456c542afe74d51e9e8c85/s3transfer-0.19.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=d5fd7005ee39307455ad5f310b5ea67f4b1960d7fed5b3671ee50c249de675de",
+          "hashes": {
+            "sha256": "d5fd7005ee39307455ad5f310b5ea67f4b1960d7fed5b3671ee50c249de675de"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "s3transfer",
+        "version": "0.19.1",
+        "summary": "An Amazon S3 Transfer Manager",
+        "home_page": "https://github.com/boto/s3transfer",
+        "author": "Amazon Web Services",
+        "author_email": "kyknapp1@gmail.com",
+        "license": "Apache License 2.0",
+        "license_file": [
+          "LICENSE.txt",
+          "NOTICE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 3 - Alpha",
+          "Intended Audience :: Developers",
+          "Natural Language :: English",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Free Threading :: 2 - Beta"
+        ],
+        "requires_dist": [
+          "botocore (<2.0a.0,>=1.37.4)",
+          "botocore[crt] (<2.0a.0,>=1.37.4) ; extra == 'crt'"
+        ],
+        "requires_python": ">= 3.10",
+        "provides_extra": [
+          "crt"
+        ],
+        "description": "=====================================================\ns3transfer - An Amazon S3 Transfer Manager for Python\n=====================================================\n\nS3transfer is a Python library for managing Amazon S3 transfers.\nThis project is maintained and published by Amazon Web Services.\n\n.. note::\n\n  This project is not currently GA. If you are planning to use this code in\n  production, make sure to lock to a minor version as interfaces may break\n  from minor version to minor version. For a basic, stable interface of\n  s3transfer, try the interfaces exposed in `boto3 <https://docs.aws.amazon.com/boto3/latest/guide/s3.html>`__\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897",
+          "hashes": {
+            "sha256": "9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "urllib3",
+        "version": "2.7.0",
+        "summary": "HTTP library with thread-safe connection pooling, file post, and more.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "filepost",
+          "http",
+          "httplib",
+          "https",
+          "pooling",
+          "ssl",
+          "threadsafe",
+          "urllib"
+        ],
+        "author_email": "Andrey Petrov <andrey.petrov@shazow.net>",
+        "maintainer_email": "Seth Michael Larson <sethmichaellarson@gmail.com>, Quentin Pradet <quentin@pradet.me>, Illia Volochii <illia.volochii@gmail.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Environment :: Web Environment",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Free Threading :: 2 - Beta",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Internet :: WWW/HTTP",
+          "Topic :: Software Development :: Libraries"
+        ],
+        "requires_dist": [
+          "brotli>=1.2.0; (platform_python_implementation == 'CPython') and extra == 'brotli'",
+          "brotlicffi>=1.2.0.0; (platform_python_implementation != 'CPython') and extra == 'brotli'",
+          "h2<5,>=4; extra == 'h2'",
+          "pysocks!=1.5.7,<2.0,>=1.5.6; extra == 'socks'",
+          "backports-zstd>=1.0.0; (python_version < '3.14') and extra == 'zstd'"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Changelog, https://github.com/urllib3/urllib3/blob/main/CHANGES.rst",
+          "Documentation, https://urllib3.readthedocs.io",
+          "Code, https://github.com/urllib3/urllib3",
+          "Issue tracker, https://github.com/urllib3/urllib3/issues"
+        ],
+        "provides_extra": [
+          "brotli",
+          "h2",
+          "socks",
+          "zstd"
+        ],
+        "description": "<h1 align=\"center\">\n\n![urllib3](https://github.com/urllib3/urllib3/raw/main/docs/_static/banner_github.svg)\n\n</h1>\n\n<p align=\"center\">\n  <a href=\"https://pypi.org/project/urllib3\"><img alt=\"PyPI Version\" src=\"https://img.shields.io/pypi/v/urllib3.svg?maxAge=86400\" /></a>\n  <a href=\"https://pypi.org/project/urllib3\"><img alt=\"Python Versions\" src=\"https://img.shields.io/pypi/pyversions/urllib3.svg?maxAge=86400\" /></a>\n  <a href=\"https://discord.gg/urllib3\"><img alt=\"Join our Discord\" src=\"https://img.shields.io/discord/756342717725933608?color=%237289da&label=discord\" /></a>\n  <a href=\"https://github.com/urllib3/urllib3/actions?query=workflow%3ACI\"><img alt=\"Coverage Status\" src=\"https://img.shields.io/badge/coverage-100%25-success\" /></a>\n  <a href=\"https://github.com/urllib3/urllib3/actions/workflows/ci.yml?query=branch%3Amain\"><img alt=\"Build Status on GitHub\" src=\"https://github.com/urllib3/urllib3/actions/workflows/ci.yml/badge.svg?branch:main&workflow:CI\" /></a>\n  <a href=\"https://urllib3.readthedocs.io\"><img alt=\"Documentation Status\" src=\"https://readthedocs.org/projects/urllib3/badge/?version=latest\" /></a><br>\n  <a href=\"https://deps.dev/pypi/urllib3\"><img alt=\"OpenSSF Scorecard\" src=\"https://api.securityscorecards.dev/projects/github.com/urllib3/urllib3/badge\" /></a>\n  <a href=\"https://slsa.dev\"><img alt=\"SLSA 3\" src=\"https://slsa.dev/images/gh-badge-level3.svg\" /></a>\n  <a href=\"https://bestpractices.coreinfrastructure.org/projects/6227\"><img alt=\"CII Best Practices\" src=\"https://bestpractices.coreinfrastructure.org/projects/6227/badge\" /></a>\n</p>\n\nurllib3 is a powerful, *user-friendly* HTTP client for Python.\nurllib3 brings many critical features that are missing from the Python\nstandard libraries:\n\n- Thread safety.\n- Connection pooling.\n- Client-side SSL/TLS verification.\n- File uploads with multipart encoding.\n- Helpers for retrying requests and dealing with HTTP redirects.\n- Support for gzip, deflate, brotli, and zstd encoding.\n- Proxy support for HTTP and SOCKS.\n- 100% test coverage.\n\n... and many more features, but most importantly: Our maintainers have a 15+\nyear track record of maintaining urllib3 with the highest code standards and\nattention to security and safety.\n\n[Much of the Python ecosystem already uses urllib3](https://urllib3.readthedocs.io/en/stable/#who-uses)\nand you should too.\n\n\n## Installing\n\nurllib3 can be installed with [pip](https://pip.pypa.io):\n\n```bash\n$ python -m pip install urllib3\n```\n\nAlternatively, you can grab the latest source code from [GitHub](https://github.com/urllib3/urllib3):\n\n```bash\n$ git clone https://github.com/urllib3/urllib3.git\n$ cd urllib3\n$ pip install .\n```\n\n## Getting Started\n\nurllib3 is easy to use:\n\n```python3\n>>> import urllib3\n>>> resp = urllib3.request(\"GET\", \"http://httpbin.org/robots.txt\")\n>>> resp.status\n200\n>>> resp.data\nb\"User-agent: *\\nDisallow: /deny\\n\"\n```\n\nurllib3 has usage and reference documentation at [urllib3.readthedocs.io](https://urllib3.readthedocs.io).\n\n\n## Community\n\nurllib3 has a [community Discord channel](https://discord.gg/urllib3) for asking questions and\ncollaborating with other contributors. Drop by and say hello 👋\n\n\n## Contributing\n\nurllib3 happily accepts contributions. Please see our\n[contributing documentation](https://urllib3.readthedocs.io/en/latest/contributing.html)\nfor some tips on getting started.\n\n\n## Security Disclosures\n\nTo report a security vulnerability, please use the\n[Tidelift security contact](https://tidelift.com/security).\nTidelift will coordinate the fix and disclosure with maintainers.\n\n\n## Maintainers\n\nMeet our maintainers since 2008:\n\n- Current Lead: [@illia-v](https://github.com/illia-v) (Illia Volochii)\n- [@sethmlarson](https://github.com/sethmlarson) (Seth M. Larson)\n- [@pquentin](https://github.com/pquentin) (Quentin Pradet)\n- [@theacodes](https://github.com/theacodes) (Thea Flowers)\n- [@haikuginger](https://github.com/haikuginger) (Jess Shapiro)\n- [@lukasa](https://github.com/lukasa) (Cory Benfield)\n- [@sigmavirus24](https://github.com/sigmavirus24) (Ian Stapleton Cordasco)\n- [@shazow](https://github.com/shazow) (Andrey Petrov)\n\n👋\n\n\n## Sponsorship\n\nIf your company benefits from this library, please consider [sponsoring its\ndevelopment](https://urllib3.readthedocs.io/en/latest/sponsors.html).\n\n\n## For Enterprise\n\nProfessional support for urllib3 is available as part of the [Tidelift\nSubscription][1]. Tidelift gives software development teams a single source for\npurchasing and maintaining their software, with professional grade assurances\nfrom the experts who know it best, while seamlessly integrating with existing\ntools.\n\n[1]: https://tidelift.com/subscription/pkg/pypi-urllib3?utm_source=pypi-urllib3&utm_medium=referral&utm_campaign=readme\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://download.pytorch.org/whl/nightly/six-1.17.0-py2.py3-none-any.whl",
+        "archive_info": {}
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "six",
+        "version": "1.17.0",
+        "summary": "Python 2 and 3 compatibility utilities",
+        "home_page": "https://github.com/benjaminp/six",
+        "author": "Benjamin Peterson",
+        "author_email": "benjamin@python.org",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 3",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Topic :: Software Development :: Libraries",
+          "Topic :: Utilities"
+        ],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*",
+        "description": ".. image:: https://img.shields.io/pypi/v/six.svg\n   :target: https://pypi.org/project/six/\n   :alt: six on PyPI\n\n.. image:: https://readthedocs.org/projects/six/badge/?version=latest\n   :target: https://six.readthedocs.io/\n   :alt: six's documentation on Read the Docs\n\n.. image:: https://img.shields.io/badge/license-MIT-green.svg\n   :target: https://github.com/benjaminp/six/blob/master/LICENSE\n   :alt: MIT License badge\n\nSix is a Python 2 and 3 compatibility library.  It provides utility functions\nfor smoothing over the differences between the Python versions with the goal of\nwriting Python code that is compatible on both Python versions.  See the\ndocumentation for more information on what is provided.\n\nSix supports Python 2.7 and 3.3+.  It is contained in only one Python\nfile, so it can be easily copied into your project. (The copyright and license\nnotice must be retained.)\n\nOnline documentation is at https://six.readthedocs.io/.\n\nBugs can be reported to https://github.com/benjaminp/six.  The code can also\nbe found there.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

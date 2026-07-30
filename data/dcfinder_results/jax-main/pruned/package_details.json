@@ -1,0 +1,916 @@
+{
+  "ml-dtypes": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.21"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.21.2"
+      }
+    ]
+  },
+  "numpy": {
+    "version": "2.6.0.dev0",
+    "source": "private",
+    "private_url": "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple",
+    "specifier": ">=1.21,>=1.21.2,>=1.26",
+    "requires_dist": []
+  },
+  "opt-einsum": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "scipy": {
+    "version": "1.19.0.dev0",
+    "source": "private",
+    "private_url": "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple",
+    "specifier": ">=1.12",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=2.0.0"
+      }
+    ]
+  },
+  "requests": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "charset-normalizer",
+        "specifier": "<4,>=2"
+      },
+      {
+        "name": "idna",
+        "specifier": "<4,>=2.5"
+      },
+      {
+        "name": "urllib3",
+        "specifier": "<3,>=1.26"
+      },
+      {
+        "name": "certifi",
+        "specifier": ">=2023.5.7"
+      }
+    ]
+  },
+  "kubernetes": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "certifi",
+        "specifier": ">=14.05.14"
+      },
+      {
+        "name": "six",
+        "specifier": ">=1.9.0"
+      },
+      {
+        "name": "python-dateutil",
+        "specifier": ">=2.5.3"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=6.0.3"
+      },
+      {
+        "name": "websocket-client",
+        "specifier": "!=0.40.0,!=0.41.*,!=0.42.*,>=0.32.0"
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "requests-oauthlib",
+        "specifier": ""
+      },
+      {
+        "name": "urllib3",
+        "specifier": "!=2.6.0,>=1.24.2"
+      },
+      {
+        "name": "durationpy",
+        "specifier": ">=0.7"
+      },
+      {
+        "name": "certifi",
+        "specifier": ">=14.05.14"
+      },
+      {
+        "name": "six",
+        "specifier": ">=1.9.0"
+      },
+      {
+        "name": "python-dateutil",
+        "specifier": ">=2.5.3"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=6.0.3"
+      },
+      {
+        "name": "urllib3",
+        "specifier": "!=2.6.0,>=1.24.2"
+      },
+      {
+        "name": "aiohttp",
+        "specifier": "<4.0.0,>=3.13.5"
+      }
+    ]
+  },
+  "absl-py": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "ipython": {
+    "version": "9.16.0.dev0",
+    "source": "private",
+    "private_url": "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple",
+    "specifier": ">=8.8.0",
+    "requires_dist": [
+      {
+        "name": "decorator",
+        "specifier": ">=5.1.0"
+      },
+      {
+        "name": "ipython-pygments-lexers",
+        "specifier": ">=1.0.0"
+      },
+      {
+        "name": "jedi",
+        "specifier": ">=0.18.2"
+      },
+      {
+        "name": "matplotlib-inline",
+        "specifier": ">=0.1.6"
+      },
+      {
+        "name": "pexpect",
+        "specifier": ">4.6"
+      },
+      {
+        "name": "prompt-toolkit",
+        "specifier": "<3.1.0,>=3.0.41"
+      },
+      {
+        "name": "psutil",
+        "specifier": ">=7"
+      },
+      {
+        "name": "pygments",
+        "specifier": ">=2.14.0"
+      },
+      {
+        "name": "stack-data",
+        "specifier": ">=0.6.0"
+      },
+      {
+        "name": "traitlets",
+        "specifier": ">=5.13.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.6"
+      }
+    ]
+  },
+  "pydata-sphinx-theme": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple",
+    "specifier": "==0.14.4",
+    "requires_dist": []
+  },
+  "snowballstemmer": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "sphinx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "sphinxcontrib-applehelp",
+        "specifier": ""
+      },
+      {
+        "name": "sphinxcontrib-devhelp",
+        "specifier": ""
+      },
+      {
+        "name": "sphinxcontrib-jsmath",
+        "specifier": ""
+      },
+      {
+        "name": "sphinxcontrib-htmlhelp",
+        "specifier": ">=2.0.0"
+      },
+      {
+        "name": "sphinxcontrib-serializinghtml",
+        "specifier": ">=1.1.9"
+      },
+      {
+        "name": "sphinxcontrib-qthelp",
+        "specifier": ""
+      },
+      {
+        "name": "jinja2",
+        "specifier": ">=3.1"
+      },
+      {
+        "name": "pygments",
+        "specifier": ">=2.17"
+      },
+      {
+        "name": "docutils",
+        "specifier": "<0.22,>=0.20"
+      },
+      {
+        "name": "snowballstemmer",
+        "specifier": ">=2.2"
+      },
+      {
+        "name": "babel",
+        "specifier": ">=2.13"
+      },
+      {
+        "name": "alabaster",
+        "specifier": "~=0.7.14"
+      },
+      {
+        "name": "imagesize",
+        "specifier": ">=1.3"
+      },
+      {
+        "name": "requests",
+        "specifier": ">=2.30.0"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=23.0"
+      },
+      {
+        "name": "tomli",
+        "specifier": ">=2"
+      }
+    ]
+  },
+  "sphinx-book-theme": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "sphinx",
+        "specifier": ">=5"
+      },
+      {
+        "name": "pydata-sphinx-theme",
+        "specifier": ">=0.14"
+      }
+    ]
+  },
+  "sphinx-copybutton": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "sphinx",
+        "specifier": ">=1.8"
+      }
+    ]
+  },
+  "sphinx-remove-toctrees": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "sphinx",
+        "specifier": ">=5"
+      }
+    ]
+  },
+  "sphinx-design": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "sphinx",
+        "specifier": "<10,>=7"
+      }
+    ]
+  },
+  "sphinxext-rediraffe": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "sphinx",
+        "specifier": ">=6.0"
+      }
+    ]
+  },
+  "myst-nb": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "importlib-metadata",
+        "specifier": ""
+      },
+      {
+        "name": "ipython",
+        "specifier": ""
+      },
+      {
+        "name": "jupyter-cache",
+        "specifier": ">=0.5"
+      },
+      {
+        "name": "nbclient",
+        "specifier": ""
+      },
+      {
+        "name": "myst-parser",
+        "specifier": ">=1.0.0"
+      },
+      {
+        "name": "nbformat",
+        "specifier": ">=5.0"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ""
+      },
+      {
+        "name": "sphinx",
+        "specifier": ">=5"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ""
+      },
+      {
+        "name": "ipykernel",
+        "specifier": ""
+      }
+    ]
+  },
+  "flatbuffers": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pytest": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "exceptiongroup",
+        "specifier": ">=1"
+      },
+      {
+        "name": "iniconfig",
+        "specifier": ">=1.0.1"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=22"
+      },
+      {
+        "name": "pluggy",
+        "specifier": "<2,>=1.5"
+      },
+      {
+        "name": "pygments",
+        "specifier": ">=2.7.2"
+      },
+      {
+        "name": "tomli",
+        "specifier": ">=1"
+      }
+    ]
+  },
+  "pytest-xdist": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "execnet",
+        "specifier": ">=2.1"
+      },
+      {
+        "name": "pytest",
+        "specifier": ">=7.0.0"
+      }
+    ]
+  },
+  "matplotlib": {
+    "version": "3.12.0.dev355+g9eedf2f5f",
+    "source": "private",
+    "private_url": "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "contourpy",
+        "specifier": ">=1.2.1"
+      },
+      {
+        "name": "cycler",
+        "specifier": ">=0.10"
+      },
+      {
+        "name": "fonttools",
+        "specifier": ">=4.28.2"
+      },
+      {
+        "name": "kiwisolver",
+        "specifier": ">=1.3.1"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=2.0"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.0"
+      },
+      {
+        "name": "pillow",
+        "specifier": ">=9"
+      },
+      {
+        "name": "pyparsing",
+        "specifier": ">=3"
+      },
+      {
+        "name": "python-dateutil",
+        "specifier": ">=2.7"
+      }
+    ]
+  },
+  "scikit-learn": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.24.1"
+      },
+      {
+        "name": "scipy",
+        "specifier": ">=1.10.0"
+      },
+      {
+        "name": "joblib",
+        "specifier": ">=1.4.0"
+      },
+      {
+        "name": "narwhals",
+        "specifier": ">=2.0.1"
+      },
+      {
+        "name": "threadpoolctl",
+        "specifier": ">=3.5.0"
+      }
+    ]
+  },
+  "pooch": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "platformdirs",
+        "specifier": ">=2.5.0"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.0"
+      },
+      {
+        "name": "requests",
+        "specifier": ">=2.19.0"
+      }
+    ]
+  },
+  "rich": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "markdown-it-py",
+        "specifier": ">=2.2.0"
+      },
+      {
+        "name": "pygments",
+        "specifier": "<3.0.0,>=2.13.0"
+      }
+    ]
+  },
+  "cmake": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "tensorflow-datasets": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "absl-py",
+        "specifier": ""
+      },
+      {
+        "name": "array-record",
+        "specifier": ">=0.5.0"
+      },
+      {
+        "name": "dm-tree",
+        "specifier": ""
+      },
+      {
+        "name": "etils",
+        "specifier": ">=1.6.0"
+      },
+      {
+        "name": "immutabledict",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "promise",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": ">=3.20"
+      },
+      {
+        "name": "psutil",
+        "specifier": ""
+      },
+      {
+        "name": "pyarrow",
+        "specifier": ""
+      },
+      {
+        "name": "requests",
+        "specifier": ">=2.19.0"
+      },
+      {
+        "name": "simple-parsing",
+        "specifier": ""
+      },
+      {
+        "name": "tensorflow-metadata",
+        "specifier": ""
+      },
+      {
+        "name": "termcolor",
+        "specifier": ""
+      },
+      {
+        "name": "toml",
+        "specifier": ""
+      },
+      {
+        "name": "tqdm",
+        "specifier": ""
+      },
+      {
+        "name": "wrapt",
+        "specifier": ""
+      }
+    ]
+  },
+  "tensorflow-hub": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.12.0"
+      },
+      {
+        "name": "protobuf",
+        "specifier": ">=3.19.6"
+      },
+      {
+        "name": "tf-keras",
+        "specifier": ">=2.14.1"
+      }
+    ]
+  },
+  "flax": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.23.2"
+      },
+      {
+        "name": "jax",
+        "specifier": ">=0.10.0"
+      },
+      {
+        "name": "msgpack",
+        "specifier": ""
+      },
+      {
+        "name": "optax",
+        "specifier": ""
+      },
+      {
+        "name": "orbax-checkpoint",
+        "specifier": ""
+      },
+      {
+        "name": "tensorstore",
+        "specifier": ""
+      },
+      {
+        "name": "rich",
+        "specifier": ">=11.1"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.2"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.4.1"
+      },
+      {
+        "name": "treescope",
+        "specifier": ">=0.1.7"
+      }
+    ]
+  },
+  "jax": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "jaxlib",
+        "specifier": "<=0.11.0,>=0.11.0"
+      },
+      {
+        "name": "ml-dtypes",
+        "specifier": ">=0.5.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=2.1"
+      },
+      {
+        "name": "opt-einsum",
+        "specifier": ""
+      },
+      {
+        "name": "scipy",
+        "specifier": ">=1.15"
+      }
+    ]
+  },
+  "python-dateutil": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "six",
+        "specifier": ">=1.5"
+      }
+    ]
+  },
+  "decorator": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "ipython-pygments-lexers": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pygments",
+        "specifier": ""
+      }
+    ]
+  },
+  "jedi": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "parso",
+        "specifier": "<0.9.0,>=0.8.6"
+      }
+    ]
+  },
+  "matplotlib-inline": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "traitlets",
+        "specifier": ""
+      }
+    ]
+  },
+  "pexpect": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "ptyprocess",
+        "specifier": ">=0.5"
+      }
+    ]
+  },
+  "prompt-toolkit": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "wcwidth",
+        "specifier": ""
+      }
+    ]
+  },
+  "psutil": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pygments": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "stack-data": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "executing",
+        "specifier": ">=1.2.0"
+      },
+      {
+        "name": "asttokens",
+        "specifier": ">=2.1.0"
+      },
+      {
+        "name": "pure-eval",
+        "specifier": ""
+      }
+    ]
+  },
+  "traitlets": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "typing-extensions": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "packaging": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "contourpy": {
+    "version": "1.3.4.dev1",
+    "source": "private",
+    "private_url": "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple",
+    "specifier": ">=1.2.1",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.25"
+      }
+    ]
+  },
+  "cycler": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "fonttools": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "kiwisolver": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pillow": {
+    "version": "13.0.0.dev0",
+    "source": "private",
+    "private_url": "https://pypi.anaconda.org/scientific-python-nightly-wheels/simple",
+    "specifier": ">=9",
+    "requires_dist": []
+  },
+  "pyparsing": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  }
+}

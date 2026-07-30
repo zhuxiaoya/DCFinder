@@ -1,0 +1,62 @@
+{
+  "analysis_program/jantic_DeOldify/requirements-dev.txt": [
+    {
+      "name": "black",
+      "specifier": ""
+    },
+    {
+      "name": "pre-commit",
+      "specifier": ""
+    }
+  ],
+  "analysis_program/jantic_DeOldify/requirements.txt": [
+    {
+      "name": "wandb",
+      "specifier": ""
+    },
+    {
+      "name": "fastai",
+      "specifier": "==1.0.60"
+    },
+    {
+      "name": "tensorboardx",
+      "specifier": ">=1.6"
+    },
+    {
+      "name": "ffmpeg",
+      "specifier": ""
+    },
+    {
+      "name": "ffmpeg-python",
+      "specifier": ""
+    },
+    {
+      "name": "yt-dlp",
+      "specifier": ""
+    },
+    {
+      "name": "jupyterlab",
+      "specifier": ""
+    },
+    {
+      "name": "opencv-python",
+      "specifier": ">=4.2.0.32"
+    },
+    {
+      "name": "pillow",
+      "specifier": "==9.3.0"
+    },
+    {
+      "name": "torch",
+      "specifier": "==1.11.0"
+    },
+    {
+      "name": "torchvision",
+      "specifier": "==0.12.0"
+    },
+    {
+      "name": "ipywidgets",
+      "specifier": ""
+    }
+  ]
+}

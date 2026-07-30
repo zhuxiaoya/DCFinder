@@ -1,0 +1,452 @@
+aiohappyeyeballs >=2.5.0
+  # from parent package: aiohttp (public)
+aiosignal >=1.4.0
+  # from parent package: aiohttp (public)
+aistudio-sdk >=0.3.5
+  # from parent package: paddlex (public)
+annotated-doc >=0.0.2
+  # from parent package: fastapi (public)
+  # from parent package: typer (public)
+annotated-types >=0.4.0
+  # from parent package: pydantic (public)
+antlr4-python3-runtime ==4.9.*
+  # from parent package: omegaconf (public)
+anyio <5,>=3.5.0,<5.0.0,>=4.8.0,<5,>=3.6.2
+  # from parent package: groq (public)
+  # from parent package: openai (public)
+  # from parent package: httpx (private)
+  # from parent package: google-genai (public)
+  # from parent package: starlette (public)
+appdirs >=1.4.0
+  # from parent package: pyhyphen (public)
+astroid <=3.4.0-dev0,>=3.3.3
+  # from parent package: pylint (public)
+asttokens >=2.1.0
+  # from parent package: stack-data (public)
+async-timeout <6.0,>=4.0
+  # from parent package: aiohttp (public)
+attrs >=19.2.0,>=17.3.0
+  # from parent package: pytest (public)
+  # from parent package: aiohttp (public)
+backports-datetime-fromisoformat
+  # from parent package: marshmallow (public)
+bce-python-sdk
+  # from parent package: aistudio-sdk (public)
+certifi >=2023.5.7
+  # from parent package: requests (public)
+  # from parent package: httpx (private)
+  # from parent package: httpcore (private)
+cffi >=2.0.0
+  # from parent package: cryptography (public)
+chardet
+  # from parent package: paddlex (public)
+charset-normalizer <4,>=2
+  # from parent package: requests (public)
+click <9.0.0,>=8.4.2,>=7.0
+  # from parent package: huggingface-hub (public)
+  # from parent package: uvicorn (public)
+  # from parent package: aistudio-sdk (public)
+colorlog
+  # from parent package: paddlex (public)
+comm >=0.1.1
+  # from parent package: ipykernel (public)
+crc32c >=2.2.post0
+  # from parent package: bce-python-sdk (public)
+cuda-bindings <14,>=13.0.3
+  # from parent package: torch (public)
+cuda-pathfinder >=1.4.2
+  # from parent package: cuda-bindings (public)
+cuda-toolkit ==13.0.3
+  # from parent package: torch (public)
+debugpy >=1.6.5
+  # from parent package: ipykernel (public)
+decorator >=5.1.0
+  # from parent package: ipython (public)
+dill >=0.2
+  # from parent package: pylint (public)
+distro <2,>=1.7.0
+  # from parent package: groq (public)
+  # from parent package: openai (public)
+  # from parent package: google-genai (public)
+exceptiongroup >=1.0.0rc8,>=1.0.2
+  # from parent package: pytest (public)
+  # from parent package: anyio (private)
+execnet >=1.1
+  # from parent package: pytest-xdist (public)
+executing >=1.2.0
+  # from parent package: stack-data (public)
+filelock >=3.10.0,>=3.9
+  # from parent package: torch (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: paddlex (public)
+  # from parent package: modelscope (public)
+  # from parent package: modelscope-hub (public)
+fire
+  # from parent package: manga-ocr (public)
+flatbuffers
+  # from parent package: onnxruntime (public)
+frozenlist >=1.1.1,>=1.1.0
+  # from parent package: aiohttp (public)
+  # from parent package: aiosignal (public)
+fsspec >=0.8.5,>=2023.5.0
+  # from parent package: torch (public)
+  # from parent package: huggingface-hub (public)
+ftfy
+  # from parent package: open-clip-torch (public)
+fugashi
+  # from parent package: manga-ocr (public)
+future >=0.6.0
+  # from parent package: bce-python-sdk (public)
+google-auth <3.0.0,>=2.48.1
+  # from parent package: google-genai (public)
+h11 >=0.8,>=0.16
+  # from parent package: uvicorn (public)
+  # from parent package: httpcore (private)
+hf-xet <2.0.0,>=1.5.1
+  # from parent package: huggingface-hub (public)
+httpcore ==1.*
+  # from parent package: httpx (private)
+idna <4,>=2.5,>=2.8,>=2.0
+  # from parent package: requests (public)
+  # from parent package: httpx (private)
+  # from parent package: anyio (private)
+  # from parent package: yarl (public)
+imageio !=2.35.0,>=2.33
+  # from parent package: scikit-image (public)
+imagesize
+  # from parent package: paddlex (public)
+iniconfig
+  # from parent package: pytest (public)
+ipython >=7.23.1
+  # from parent package: ipykernel (public)
+ipython-pygments-lexers >=1.0.0
+  # from parent package: ipython (public)
+isort !=5.13.0,<6,>=4.2.5
+  # from parent package: pylint (public)
+jaconv
+  # from parent package: manga-ocr (public)
+jedi >=0.18.2
+  # from parent package: ipython (public)
+jinja2
+  # from parent package: torch (public)
+jiter <1,>=0.4.0
+  # from parent package: openai (public)
+jupyter-client >=6.1.12
+  # from parent package: ipykernel (public)
+jupyter-core !=5.0.*,>=4.12,>=5.1
+  # from parent package: ipykernel (public)
+  # from parent package: jupyter-client (public)
+kornia-rs >=0.1.9
+  # from parent package: kornia (public)
+lazy-loader >=0.4
+  # from parent package: scikit-image (public)
+loguru
+  # from parent package: manga-ocr (public)
+markdown-it-py >=2.2.0
+  # from parent package: rich (public)
+markupsafe >=2.0
+  # from parent package: jinja2 (public)
+matplotlib-inline >=0.1,>=0.1.6
+  # from parent package: ipykernel (public)
+  # from parent package: ipython (public)
+mccabe <0.8,>=0.6
+  # from parent package: pylint (public)
+mdurl ~=0.1
+  # from parent package: markdown-it-py (public)
+modelscope >=1.28.0
+  # from parent package: paddlex (public)
+modelscope-hub >=0.0.7
+  # from parent package: modelscope (public)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (public)
+multidict <7.0,>=4.5,>=4.0
+  # from parent package: aiohttp (public)
+  # from parent package: yarl (public)
+nvidia-cublas ==13.1.1.3.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cudnn-cu13 (public)
+  # from parent package: nvidia-cusolver (public)
+nvidia-cublas-cu11 ==11.11.3.6
+  # from parent package: paddlepaddle-gpu (private)
+  # from parent package: nvidia-cudnn-cu11 (private)
+  # from parent package: nvidia-cusolver-cu11 (private)
+nvidia-cuda-cccl ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-crt ==13.0.88.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cuda-nvcc (public)
+nvidia-cuda-culibos ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-cupti ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-cupti-cu11 ==11.8.87
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-cuda-cuxxfilt ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-nvcc ==13.0.88.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-nvrtc ==13.0.88.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cublas (public)
+nvidia-cuda-nvrtc-cu11 ==11.8.89
+  # from parent package: paddlepaddle-gpu (private)
+  # from parent package: nvidia-cudnn-cu11 (private)
+nvidia-cuda-opencl ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-profiler-api ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cuda-runtime ==13.0.96.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cuda-nvcc (public)
+nvidia-cuda-runtime-cu11 ==11.8.89
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-cuda-sanitizer-api ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cudnn-cu11 ==8.9.6.50
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-cudnn-cu13 ==9.20.0.48
+  # from parent package: torch (public)
+nvidia-cufft ==12.0.0.61.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cufft-cu11 ==10.9.0.58
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-cufile ==1.15.1.6.*
+  # from parent package: cuda-toolkit (public)
+nvidia-curand ==10.4.0.35.*
+  # from parent package: cuda-toolkit (public)
+nvidia-curand-cu11 ==10.3.0.86
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-cusolver ==12.0.4.66.*
+  # from parent package: cuda-toolkit (public)
+nvidia-cusolver-cu11 ==11.4.1.48
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-cusparse ==12.6.3.3.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cusolver (public)
+nvidia-cusparse-cu11 ==11.7.5.86
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-cusparselt-cu13 ==0.8.1
+  # from parent package: torch (public)
+nvidia-nccl-cu11 ==2.19.3
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-nccl-cu13 ==2.29.7
+  # from parent package: torch (public)
+nvidia-npp ==13.0.1.2.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvfatbin ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvjitlink <14,>=13.0.88
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cufft (public)
+  # from parent package: nvidia-cusolver (public)
+  # from parent package: nvidia-cusparse (public)
+nvidia-nvjpeg ==13.0.1.86.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvml-dev ==13.0.87.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvptxcompiler ==13.0.88.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvshmem-cu13 ==3.4.5
+  # from parent package: torch (public)
+nvidia-nvtx ==13.0.85.*
+  # from parent package: cuda-toolkit (public)
+nvidia-nvtx-cu11 ==11.8.86
+  # from parent package: paddlepaddle-gpu (private)
+nvidia-nvvm ==13.0.88.*
+  # from parent package: cuda-toolkit (public)
+  # from parent package: nvidia-cuda-nvcc (public)
+opencv-contrib-python ==4.10.0.84
+  # from parent package: paddlex (public)
+opt-einsum ==3.3.0
+  # from parent package: paddlepaddle (public)
+  # from parent package: paddlepaddle-gpu (private)
+packaging >=14.1,>=21,>=20.9,>=20.0,>=20.0,>=20.9,>=24.0
+  # from parent package: ipykernel (public)
+  # from parent package: pytest-sugar (public)
+  # from parent package: pytest (public)
+  # from parent package: scikit-image (public)
+  # from parent package: kornia (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: transformers (public)
+  # from parent package: tensorboardx (public)
+  # from parent package: onnxruntime (public)
+  # from parent package: accelerate (public)
+  # from parent package: bitsandbytes (public)
+  # from parent package: lazy-loader (public)
+  # from parent package: wheel (public)
+  # from parent package: paddlex (public)
+  # from parent package: modelscope (public)
+paddlex <3.8.0,>=3.7.0
+  # from parent package: paddleocr (public)
+parso <0.9.0,>=0.8.6
+  # from parent package: jedi (public)
+pexpect >4.6
+  # from parent package: ipython (public)
+pillow !=8.3.*,>=5.3.0,>=10.1,>=10.0.0,>=8.3.2
+  # from parent package: torchvision (public)
+  # from parent package: scikit-image (public)
+  # from parent package: imagehash (public)
+  # from parent package: manga-ocr (public)
+  # from parent package: paddlepaddle (public)
+  # from parent package: paddlepaddle-gpu (private)
+  # from parent package: imageio (public)
+  # from parent package: paddlex (public)
+platformdirs >=2.2.0,>=2.5
+  # from parent package: pylint (public)
+  # from parent package: jupyter-core (public)
+pluggy <2.0,>=0.12
+  # from parent package: pytest (public)
+prettytable
+  # from parent package: paddlex (public)
+  # from parent package: aistudio-sdk (public)
+prompt-toolkit <3.1.0,>=3.0.41
+  # from parent package: ipython (public)
+propcache >=0.2.0,>=0.2.1
+  # from parent package: aiohttp (public)
+  # from parent package: yarl (public)
+psutil >=7
+  # from parent package: ipykernel (public)
+  # from parent package: accelerate (public)
+  # from parent package: ipython (public)
+  # from parent package: aistudio-sdk (public)
+ptyprocess >=0.5
+  # from parent package: pexpect (public)
+pure-eval
+  # from parent package: stack-data (public)
+py-cpuinfo
+  # from parent package: paddlex (public)
+pyasn1 <0.7.0,>=0.6.1
+  # from parent package: pyasn1-modules (public)
+pyasn1-modules >=0.2.1
+  # from parent package: google-auth (public)
+pycparser
+  # from parent package: cffi (public)
+pycryptodome >=3.8.0
+  # from parent package: bce-python-sdk (public)
+pydantic-core ==2.14.1
+  # from parent package: pydantic (public)
+pygments <3.0.0,>=2.13.0,>=2.14.0
+  # from parent package: rich (public)
+  # from parent package: ipython (public)
+  # from parent package: ipython-pygments-lexers (public)
+pypdfium2 >=4
+  # from parent package: paddlex (public)
+pyperclip
+  # from parent package: manga-ocr (public)
+python-bidi
+  # from parent package: paddlex (public)
+python-dateutil >=2.8.2
+  # from parent package: pandas (public)
+  # from parent package: jupyter-client (public)
+pywavelets
+  # from parent package: imagehash (public)
+pyyaml ==6.0.2
+  # from parent package: huggingface-hub (public)
+  # from parent package: transformers (public)
+  # from parent package: ctranslate2 (public)
+  # from parent package: timm (public)
+  # from parent package: omegaconf (public)
+  # from parent package: accelerate (public)
+  # from parent package: paddleocr (public)
+  # from parent package: paddlex (public)
+pyzmq >=24,>=25.0
+  # from parent package: ipykernel (public)
+  # from parent package: jupyter-client (public)
+ruamel-yaml
+  # from parent package: paddlex (public)
+scipy >=1.11.4
+  # from parent package: scikit-image (public)
+  # from parent package: imagehash (public)
+setuptools >=77.0.3,>=68.0
+  # from parent package: torch (public)
+  # from parent package: ctranslate2 (public)
+  # from parent package: pyhyphen (public)
+  # from parent package: modelscope (public)
+shellingham >=1.3.0
+  # from parent package: typer (public)
+six >=1.5,>=1.4.0
+  # from parent package: langdetect (public)
+  # from parent package: python-dateutil (public)
+  # from parent package: bce-python-sdk (public)
+sniffio
+  # from parent package: groq (public)
+  # from parent package: openai (public)
+  # from parent package: httpx (private)
+  # from parent package: google-genai (public)
+stack-data >=0.6.0
+  # from parent package: ipython (public)
+starlette >=0.46.0
+  # from parent package: fastapi (public)
+sympy >=1.13.3
+  # from parent package: torch (public)
+tenacity <9.2.0,>=8.2.3
+  # from parent package: google-genai (public)
+termcolor >=1.1.0
+  # from parent package: pytest-sugar (public)
+  # from parent package: fire (public)
+tifffile >=2022.8.12
+  # from parent package: scikit-image (public)
+tokenizers <=0.23.0,>=0.22.0
+  # from parent package: transformers (public)
+tomli >=1.1.0,>=1.0.0
+  # from parent package: pylint (public)
+  # from parent package: pytest (public)
+tomlkit >=0.10.1
+  # from parent package: pylint (public)
+tornado >=6.1,>=6.4.1
+  # from parent package: ipykernel (public)
+  # from parent package: jupyter-client (public)
+traitlets >=5.4.0,>=5.13.0,>=5.3,>=5.3
+  # from parent package: ipykernel (public)
+  # from parent package: ipython (public)
+  # from parent package: jupyter-client (public)
+  # from parent package: jupyter-core (public)
+  # from parent package: matplotlib-inline (public)
+triton ==3.7.1
+  # from parent package: torch (public)
+typer
+  # from parent package: transformers (public)
+typing-extensions >=4.10.0,<5,>=4.14,>=4.13.2,>=4.4,>=4.1.0,<5,>=4.11,>=4.0,>=4.8.0,>=4.6.1,<5.0.0,>=4.14.0,>=4.12,>=4.6,>=4.13.0,>=4,>=4.6.0,>=4.5,>=4.2,>=4.1.0,>=4.10.0,>=4.12.0,!=4.7.0,>=4.6.0
+  # from parent package: torch (public)
+  # from parent package: groq (public)
+  # from parent package: cryptography (public)
+  # from parent package: aiohttp (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: openai (public)
+  # from parent package: marshmallow (public)
+  # from parent package: uvicorn (public)
+  # from parent package: fastapi (public)
+  # from parent package: pydantic (public)
+  # from parent package: google-genai (public)
+  # from parent package: paddleocr (public)
+  # from parent package: paddlepaddle (public)
+  # from parent package: paddlepaddle-gpu (private)
+  # from parent package: ipython (public)
+  # from parent package: jupyter-client (public)
+  # from parent package: astroid (public)
+  # from parent package: exceptiongroup (private)
+  # from parent package: anyio (private)
+  # from parent package: aiosignal (public)
+  # from parent package: multidict (public)
+  # from parent package: starlette (public)
+  # from parent package: typing-inspection (public)
+  # from parent package: pydantic-core (public)
+  # from parent package: paddlex (public)
+typing-inspection >=0.4.2
+  # from parent package: fastapi (public)
+ujson
+  # from parent package: paddlex (public)
+unidic-lite
+  # from parent package: manga-ocr (public)
+urllib3 <3,>=1.26,>=1.26,>=1.26
+  # from parent package: requests (public)
+  # from parent package: modelscope (public)
+  # from parent package: modelscope-hub (public)
+wcwidth >=0.3.5
+  # from parent package: ftfy (public)
+  # from parent package: prompt-toolkit (public)
+  # from parent package: prettytable (public)
+wheel >=0.40.0
+  # from parent package: pyhyphen (public)
+yarl <2.0,>=1.17.0
+  # from parent package: aiohttp (public)

@@ -1,0 +1,74 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/1a/43/e1d53588561e533212117750ee79ad0ba02a41f52a08c1df3396bd466c05/html2text-2024.2.26.tar.gz",
+        "archive_info": {
+          "hash": "sha256=05f8e367d15aaabc96415376776cdd11afd5127a77fce6e36afc60c563ca2c32",
+          "hashes": {
+            "sha256": "05f8e367d15aaabc96415376776cdd11afd5127a77fce6e36afc60c563ca2c32"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "html2text",
+        "version": "2024.2.26",
+        "dynamic": [
+          "license-file"
+        ],
+        "platform": [
+          "OS Independent"
+        ],
+        "summary": "Turn HTML into equivalent Markdown-structured text.",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/Alir3z4/html2text/",
+        "author": "Aaron Swartz",
+        "author_email": "me@aaronsw.com",
+        "maintainer": "Alireza Savand",
+        "maintainer_email": "alireza.savand@gmail.com",
+        "license": "GNU GPL 3",
+        "license_file": [
+          "COPYING",
+          "AUTHORS.rst"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: GNU General Public License (GPL)",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy"
+        ],
+        "requires_python": ">=3.8",
+        "description": "# html2text\n\n[![CI](https://github.com/Alir3z4/html2text/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/Alir3z4/html2text/actions/workflows/main.yml)\n[![codecov](https://codecov.io/gh/Alir3z4/html2text/graph/badge.svg?token=OoxiyymjgU)](https://codecov.io/gh/Alir3z4/html2text)\n\n\n\nhtml2text is a Python script that converts a page of HTML into clean, easy-to-read plain ASCII text. Better yet, that ASCII also happens to be valid Markdown (a text-to-HTML format).\n\n\nUsage: `html2text [filename [encoding]]`\n\n| Option                                                 | Description\n|--------------------------------------------------------|---------------------------------------------------\n| `--version`                                            | Show program's version number and exit\n| `-h`, `--help`                                         | Show this help message and exit\n| `--ignore-links`                                       | Don't include any formatting for links\n|`--escape-all`                                          | Escape all special characters.  Output is less readable, but avoids corner case formatting issues.\n| `--reference-links`                                    | Use reference links instead of links to create markdown\n| `--mark-code`                                          | Mark preformatted and code blocks with [code]...[/code]\n\nFor a complete list of options see the [docs](https://github.com/Alir3z4/html2text/blob/master/docs/usage.md)\n\n\nOr you can use it from within `Python`:\n\n```\n>>> import html2text\n>>>\n>>> print(html2text.html2text(\"<p><strong>Zed's</strong> dead baby, <em>Zed's</em> dead.</p>\"))\n**Zed's** dead baby, _Zed's_ dead.\n\n```\n\n\nOr with some configuration options:\n```\n>>> import html2text\n>>>\n>>> h = html2text.HTML2Text()\n>>> # Ignore converting links from HTML\n>>> h.ignore_links = True\n>>> print h.handle(\"<p>Hello, <a href='https://www.google.com/earth/'>world</a>!\")\nHello, world!\n\n>>> print(h.handle(\"<p>Hello, <a href='https://www.google.com/earth/'>world</a>!\"))\n\nHello, world!\n\n>>> # Don't Ignore links anymore, I like links\n>>> h.ignore_links = False\n>>> print(h.handle(\"<p>Hello, <a href='https://www.google.com/earth/'>world</a>!\"))\nHello, [world](https://www.google.com/earth/)!\n\n```\n\n*Originally written by Aaron Swartz. This code is distributed under the GPLv3.*\n\n\n## How to install\n\n`html2text` is available on pypi\nhttps://pypi.org/project/html2text/\n\n```\n$ pip install html2text\n```\n\n\n## How to run unit tests\n\n    tox\n\nTo see the coverage results:\n\n    coverage html\n\nthen open the `./htmlcov/index.html` file in your browser.\n\n## Documentation\n\nDocumentation lives [here](https://github.com/Alir3z4/html2text/blob/master/docs/usage.md)\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

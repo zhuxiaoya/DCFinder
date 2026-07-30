@@ -1,0 +1,115 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/90/aa/ceeb81d9dc886d445416310f0eff5c3978f20224b4143e96e36b7e85b011/dask-2026.7.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=68def8b467529ab8425ef9fcc6735dcaefaaf715d5e19ae219485f99a394dbef",
+          "hashes": {
+            "sha256": "68def8b467529ab8425ef9fcc6735dcaefaaf715d5e19ae219485f99a394dbef"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "dask",
+        "version": "2026.7.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Parallel PyData with Task Scheduling",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "task-scheduling",
+          "parallel",
+          "numpy",
+          "pandas",
+          "pydata"
+        ],
+        "maintainer_email": "Matthew Rocklin <mrocklin@gmail.com>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE.txt",
+          "dask/array/NUMPY_LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Free Threading :: 1 - Unstable",
+          "Topic :: Scientific/Engineering",
+          "Topic :: System :: Distributed Computing"
+        ],
+        "requires_dist": [
+          "click>=8.1",
+          "cloudpickle>=3.0.0",
+          "fsspec>=2021.09.0",
+          "packaging>=20.0",
+          "partd>=1.4.0",
+          "pyyaml>=5.4.1",
+          "toolz>=0.12.0",
+          "importlib_metadata>=4.13.0; python_version < \"3.12\"",
+          "numpy>=1.24; extra == \"array\"",
+          "dask[array]; extra == \"dataframe\"",
+          "pandas>=2.0; extra == \"dataframe\"",
+          "pyarrow>=16.0; extra == \"dataframe\"",
+          "distributed<2026.7.1,>=2026.7.0; extra == \"distributed\"",
+          "bokeh>=3.1.0; extra == \"diagnostics\"",
+          "jinja2>=2.10.3; extra == \"diagnostics\"",
+          "dask[array,dataframe,diagnostics,distributed]; extra == \"complete\"",
+          "lz4>=4.3.2; extra == \"complete\"",
+          "pandas[test]; extra == \"test\"",
+          "pytest; extra == \"test\"",
+          "pytest-cov; extra == \"test\"",
+          "pytest-mock; extra == \"test\"",
+          "pytest-rerunfailures; extra == \"test\"",
+          "pytest-timeout; extra == \"test\"",
+          "pytest-xdist; extra == \"test\"",
+          "pre-commit; extra == \"test\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://github.com/dask/dask/"
+        ],
+        "provides_extra": [
+          "array",
+          "bag",
+          "dataframe",
+          "distributed",
+          "diagnostics",
+          "delayed",
+          "complete",
+          "test"
+        ],
+        "description": "Dask\n====\n\n|Build Status| |Coverage| |Doc Status| |Discourse| |Version Status| |NumFOCUS|\n\nDask is a flexible parallel computing library for analytics.  See\ndocumentation_ for more information.\n\n\nLICENSE\n-------\n\nNew BSD. See `License File <https://github.com/dask/dask/blob/main/LICENSE.txt>`__.\n\n.. _documentation: https://dask.org\n.. |Build Status| image:: https://github.com/dask/dask/actions/workflows/tests.yml/badge.svg\n   :target: https://github.com/dask/dask/actions/workflows/tests.yml\n.. |Coverage| image:: https://codecov.io/gh/dask/dask/branch/main/graph/badge.svg\n   :target: https://codecov.io/gh/dask/dask/branch/main\n   :alt: Coverage status\n.. |Doc Status| image:: https://readthedocs.org/projects/dask/badge/?version=latest\n   :target: https://dask.org\n   :alt: Documentation Status\n.. |Discourse| image:: https://img.shields.io/discourse/users?logo=discourse&server=https%3A%2F%2Fdask.discourse.group\n   :alt: Discuss Dask-related things and ask for help\n   :target: https://dask.discourse.group\n.. |Version Status| image:: https://img.shields.io/pypi/v/dask.svg\n   :target: https://pypi.python.org/pypi/dask/\n.. |NumFOCUS| image:: https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A\n   :target: https://www.numfocus.org/\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

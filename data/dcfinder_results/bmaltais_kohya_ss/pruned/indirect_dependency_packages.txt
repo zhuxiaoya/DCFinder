@@ -1,0 +1,151 @@
+aiohappyeyeballs >=2.5.0
+  # from parent package: aiohttp (private)
+aiohttp !=4.0.0a0,!=4.0.0a1
+  # from parent package: fsspec (private)
+aiosignal >=1.4.0
+  # from parent package: aiohttp (private)
+antlr4-python3-runtime ==4.9.*
+  # from parent package: omegaconf (private)
+async-timeout <6.0,>=4.0
+  # from parent package: aiohttp (private)
+attrs >=22.2.0,>=17.3.0
+  # from parent package: jsonschema (private)
+  # from parent package: referencing (private)
+  # from parent package: aiohttp (private)
+filelock >=3.0.8
+  # from parent package: diffusers (public)
+  # from parent package: torch (private)
+  # from parent package: tldextract (public)
+frozenlist >=1.1.1,>=1.1.0
+  # from parent package: aiohttp (private)
+  # from parent package: aiosignal (private)
+fsspec >2021.06.0
+  # from parent package: pytorch-lightning (public)
+  # from parent package: torch (private)
+  # from parent package: gradio-client (public)
+idna <4,>=2.5,>=2.8,>=2.0
+  # from parent package: requests (private)
+  # from parent package: anyio (private)
+  # from parent package: httpx (private)
+  # from parent package: tldextract (public)
+  # from parent package: yarl (private)
+jinja2 <4.0
+  # from parent package: altair (public)
+  # from parent package: gradio (public)
+  # from parent package: torch (private)
+markdown-it-py >=2.2.0
+  # from parent package: rich (private)
+  # from parent package: library (public)
+markupsafe <4.0,>=2.0,>=2.0,>=2.1.1
+  # from parent package: gradio (public)
+  # from parent package: jinja2 (private)
+  # from parent package: werkzeug (public)
+mdurl ~=0.1
+  # from parent package: markdown-it-py (private)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+multidict <7.0,>=4.5,>=4.0
+  # from parent package: aiohttp (private)
+  # from parent package: yarl (private)
+networkx
+  # from parent package: torch (private)
+numpy >=1.17,<3.0,>=1.0,>=1.17.0,>=1.20,>=1.21.2,>=1.17.0,>=1.17.3,>=1.19.3,>=1.17.2,>1.24.4,>=1.17,>=1.21.6,>=1.12.0,>=1.26.0,>=1.22.4,<3,>=1.25,>1.20.0,>=1.19.3,>=1.21,>=1.21.2
+  # from parent package: accelerate (public)
+  # from parent package: altair (public)
+  # from parent package: diffusers (public)
+  # from parent package: gradio (public)
+  # from parent package: invisible-watermark (public)
+  # from parent package: onnx (public)
+  # from parent package: opencv-python (public)
+  # from parent package: pytorch-lightning (public)
+  # from parent package: pytorch-optimizer (public)
+  # from parent package: bitsandbytes (public)
+  # from parent package: onnxruntime-gpu (public)
+  # from parent package: tensorboard (public)
+  # from parent package: tensorflow (public)
+  # from parent package: torchvision (private)
+  # from parent package: pandas (private)
+  # from parent package: pywavelets (public)
+  # from parent package: torchmetrics (private)
+  # from parent package: keras (public)
+  # from parent package: h5py (public)
+  # from parent package: ml-dtypes (public)
+nvidia-cublas-cu12 ==12.4.5.8
+  # from parent package: torch (private)
+  # from parent package: nvidia-cudnn-cu12 (private)
+  # from parent package: nvidia-cusolver-cu12 (private)
+nvidia-cuda-cupti-cu12 ==12.4.127
+  # from parent package: torch (private)
+nvidia-cuda-nvrtc-cu12 ==12.4.127
+  # from parent package: torch (private)
+nvidia-cuda-runtime-cu12 ==12.4.127
+  # from parent package: torch (private)
+nvidia-cudnn-cu12 ==9.1.0.70
+  # from parent package: torch (private)
+nvidia-cufft-cu12 ==11.2.1.3
+  # from parent package: torch (private)
+nvidia-curand-cu12 ==10.3.5.147
+  # from parent package: torch (private)
+nvidia-cusolver-cu12 ==11.6.1.9
+  # from parent package: torch (private)
+nvidia-cusparse-cu12 ==12.3.1.170
+  # from parent package: torch (private)
+  # from parent package: nvidia-cusolver-cu12 (private)
+nvidia-cusparselt-cu12 ==0.6.2
+  # from parent package: torch (private)
+nvidia-nccl-cu12 ==2.21.5
+  # from parent package: torch (private)
+nvidia-nvjitlink-cu12 ==12.4.127
+  # from parent package: torch (private)
+  # from parent package: nvidia-cufft-cu12 (private)
+  # from parent package: nvidia-cusolver-cu12 (private)
+  # from parent package: nvidia-cusparse-cu12 (private)
+nvidia-nvtx-cu12 ==12.4.127
+  # from parent package: torch (private)
+pillow <13.0,>=8.0,>=6.0.0,!=8.3.*,>=5.3.0
+  # from parent package: diffusers (public)
+  # from parent package: gradio (public)
+  # from parent package: invisible-watermark (public)
+  # from parent package: tensorboard (public)
+  # from parent package: torchvision (private)
+propcache >=0.2.0,>=0.2.1
+  # from parent package: aiohttp (private)
+  # from parent package: yarl (private)
+pygments <3.0.0,>=2.13.0,>=2.14.0
+  # from parent package: rich (private)
+  # from parent package: ipython (public)
+  # from parent package: ipython-pygments-lexers (public)
+pyyaml <7.0,>=5.0,>=5.1.0,>=5.4
+  # from parent package: accelerate (public)
+  # from parent package: gradio (public)
+  # from parent package: omegaconf (private)
+  # from parent package: pytorch-lightning (public)
+  # from parent package: wandb (public)
+sympy ==1.13.1
+  # from parent package: onnxruntime-gpu (public)
+  # from parent package: torch (private)
+typing-extensions ~=4.0,>=4.0.0,>=3.6.6,>=4.10.0,>=4.5,>=4.8.0,~=4.0,>=4.12.2,>=3.7.4.3,>=4.0,>=4.0.0,>=4.6,~=4.12,>=4.4.0,>=4.6.0,!=4.7.0,>=4.6.0,>=4.12.0,>=4.6.0,>=4.2,>=4.1.0
+  # from parent package: gradio (public)
+  # from parent package: pytorch-lightning (public)
+  # from parent package: tensorflow (public)
+  # from parent package: torch (private)
+  # from parent package: anyio (private)
+  # from parent package: fastapi (private)
+  # from parent package: gradio-client (public)
+  # from parent package: pydantic (private)
+  # from parent package: typer (private)
+  # from parent package: uvicorn (private)
+  # from parent package: lightning-utilities (private)
+  # from parent package: beautifulsoup4 (public)
+  # from parent package: ipython (public)
+  # from parent package: praw (public)
+  # from parent package: grpcio (public)
+  # from parent package: referencing (private)
+  # from parent package: exceptiongroup (public)
+  # from parent package: pydantic-core (private)
+  # from parent package: typing-inspection (private)
+  # from parent package: optree (public)
+  # from parent package: aiosignal (private)
+  # from parent package: multidict (private)
+yarl <2.0,>=1.17.0
+  # from parent package: aiohttp (private)

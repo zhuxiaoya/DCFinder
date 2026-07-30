@@ -1,0 +1,78 @@
+{
+    "direct dependency with same name": {
+        "number": 2,
+        "packages": {
+            "soundfile": {
+                "private version": "0.13.1",
+                "public version": "0.14.0",
+                "highest public (unconstrained)": "0.14.0",
+                "declared specifier": ">=0.12.1",
+                "constraint source": "indirect",
+                "satisfying public versions count": 4
+            },
+            "pandas": {
+                "private version": "2.3.1",
+                "public version": "3.0.4",
+                "highest public (unconstrained)": "3.0.4"
+            }
+        }
+    },
+    "indirect dependency with same name": {
+        "number": 7,
+        "packages": {
+            "cffi": {
+                "private version": "2.0.0",
+                "public version": "2.1.0",
+                "highest public (unconstrained)": "2.1.0",
+                "declared specifier": ">=1.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 57
+            },
+            "numpy": {
+                "private version": "2.4.4",
+                "public version": "2.2.6",
+                "highest public (unconstrained)": "2.5.1",
+                "declared specifier": ">=1.19.5,>=1.22.3,>=1.22.4,<2.3,>=1.24,<2.6,>=1.25.2,>=1.24.1",
+                "constraint source": "indirect",
+                "satisfying public versions count": 20
+            },
+            "pycparser": {
+                "private version": "2.23",
+                "public version": "3.0",
+                "highest public (unconstrained)": "3.0"
+            },
+            "python-dateutil": {
+                "private version": "2.9.0",
+                "public version": "2.9.0.post0",
+                "highest public (unconstrained)": "2.9.0.post0",
+                "declared specifier": ">=2.8.2,<3.0.0,>=2.1",
+                "constraint source": "indirect",
+                "satisfying public versions count": 3
+            },
+            "pytz": {
+                "private version": "2025.2",
+                "public version": "2026.2",
+                "highest public (unconstrained)": "2026.2",
+                "declared specifier": ">=2020.1",
+                "constraint source": "indirect",
+                "satisfying public versions count": 24
+            },
+            "six": {
+                "private version": "1.17.0",
+                "public version": "1.17.0",
+                "highest public (unconstrained)": "1.17.0",
+                "declared specifier": ">=1.5",
+                "constraint source": "indirect",
+                "satisfying public versions count": 19
+            },
+            "tzdata": {
+                "private version": "2025.2",
+                "public version": "2026.3",
+                "highest public (unconstrained)": "2026.3",
+                "declared specifier": ">=2022.7",
+                "constraint source": "indirect",
+                "satisfying public versions count": 13
+            }
+        }
+    }
+}

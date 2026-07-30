@@ -1,0 +1,20 @@
+# 依赖文件: analysis_program/jantic_DeOldify/setup.py
+
+# 依赖文件: analysis_program/jantic_DeOldify/requirements-dev.txt
+black  # type: dev
+pre-commit  # type: dev
+
+# 依赖文件: analysis_program/jantic_DeOldify/requirements.txt
+wandb  # type: runtime
+fastai ==1.0.60  # type: runtime
+tensorboardx >=1.6  # type: runtime
+ffmpeg  # type: runtime
+ffmpeg-python  # type: runtime
+yt-dlp  # type: runtime
+jupyterlab  # type: runtime
+opencv-python >=4.2.0.32  # type: runtime
+pillow ==9.3.0  # type: runtime
+torch ==1.11.0  # type: runtime
+torchvision ==0.12.0  # type: runtime
+ipywidgets  # type: runtime
+

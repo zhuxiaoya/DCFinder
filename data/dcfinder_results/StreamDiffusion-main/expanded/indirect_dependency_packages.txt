@@ -1,0 +1,224 @@
+annotated-doc >=0.0.2
+  # from parent package: typer (public)
+annotated-types >=0.6.0
+  # from parent package: pydantic (public)
+antlr4-python3-runtime ==4.9.*
+  # from parent package: omegaconf (public)
+anyio <4.0.0,>=3.7.1,<5.0,>=3.0,<5,>=3.6.2
+  # from parent package: fastapi (public)
+  # from parent package: gradio (public)
+  # from parent package: starlette (public)
+  # from parent package: httpx (public)
+brotli >=1.1.0
+  # from parent package: gradio (public)
+certifi >=2017.4.17
+  # from parent package: requests (private)
+  # from parent package: httpx (public)
+  # from parent package: httpcore (public)
+charset-normalizer <3,>=2
+  # from parent package: requests (private)
+click >=7.0,<9.0.0,>=8.4.2
+  # from parent package: uvicorn (public)
+  # from parent package: huggingface-hub (public)
+contourpy >=1.0.1
+  # from parent package: matplotlib (public)
+cycler >=0.10
+  # from parent package: matplotlib (public)
+exceptiongroup
+  # from parent package: anyio (public)
+filelock >=3.10.0
+  # from parent package: diffusers (public)
+  # from parent package: transformers (public)
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+fonttools >=4.22.0
+  # from parent package: matplotlib (public)
+fsspec >=2023.5.0
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+  # from parent package: gradio-client (public)
+gradio-client ==2.5.0
+  # from parent package: gradio (public)
+  # from parent package: hf-gradio (public)
+groovy ~=0.1
+  # from parent package: gradio (public)
+h11 >=0.8,>=0.16
+  # from parent package: uvicorn (public)
+  # from parent package: httpcore (public)
+hf-gradio <1.0,>=0.4.1
+  # from parent package: gradio (public)
+hf-xet <2.0.0,>=1.5.1
+  # from parent package: huggingface-hub (public)
+httpcore ==1.*
+  # from parent package: httpx (public)
+httpx <1.0,>=0.24.1,<1,>=0.23.0,>=0.24.1
+  # from parent package: gradio (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: gradio-client (public)
+  # from parent package: safehttpx (public)
+huggingface-hub >=0.19.4,<1.0,>=0.16.4,<2.0,>=1.2.0,<1.0,>=0.16.4,<2.0,>=0.19.3
+  # from parent package: diffusers (public)
+  # from parent package: transformers (public)
+  # from parent package: accelerate (public)
+  # from parent package: gradio (public)
+  # from parent package: tokenizers (public)
+  # from parent package: gradio-client (public)
+idna <4,>=2.5,>=2.8
+  # from parent package: requests (private)
+  # from parent package: anyio (public)
+  # from parent package: httpx (public)
+importlib-metadata
+  # from parent package: diffusers (public)
+jinja2 <4.0
+  # from parent package: gradio (public)
+  # from parent package: torch (private)
+kiwisolver >=1.3.1
+  # from parent package: matplotlib (public)
+markdown-it-py >=2.2.0
+  # from parent package: rich (public)
+markupsafe <4.0,>=2.0,>=2.0
+  # from parent package: gradio (public)
+  # from parent package: jinja2 (private)
+mdurl ~=0.1
+  # from parent package: markdown-it-py (public)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+networkx
+  # from parent package: torch (private)
+numpy >=1.17,<3.0,>=1.0,>=1.17,>=1.25,>=1.26.0,>=1.25
+  # from parent package: diffusers (public)
+  # from parent package: transformers (public)
+  # from parent package: accelerate (public)
+  # from parent package: gradio (public)
+  # from parent package: peft (public)
+  # from parent package: xformers (private)
+  # from parent package: matplotlib (public)
+  # from parent package: pandas (public)
+  # from parent package: contourpy (public)
+nvidia-cublas-cu11 ==11.11.3.6
+  # from parent package: torch (private)
+  # from parent package: nvidia-cudnn-cu11 (private)
+  # from parent package: nvidia-cusolver-cu11 (private)
+nvidia-cuda-cupti-cu11 ==11.8.87
+  # from parent package: torch (private)
+nvidia-cuda-nvrtc-cu11 ==11.8.89
+  # from parent package: torch (private)
+nvidia-cuda-runtime-cu11 ==11.8.89
+  # from parent package: torch (private)
+nvidia-cudnn-cu11 ==9.1.0.70
+  # from parent package: torch (private)
+nvidia-cufft-cu11 ==10.9.0.58
+  # from parent package: torch (private)
+nvidia-curand-cu11 ==10.3.0.86
+  # from parent package: torch (private)
+nvidia-cusolver-cu11 ==11.4.1.48
+  # from parent package: torch (private)
+nvidia-cusparse-cu11 ==11.7.5.86
+  # from parent package: torch (private)
+nvidia-nccl-cu11 ==2.21.5
+  # from parent package: torch (private)
+nvidia-nvtx-cu11 ==11.8.86
+  # from parent package: torch (private)
+orjson ~=3.0
+  # from parent package: gradio (public)
+packaging >=20.0,>=20.9
+  # from parent package: transformers (public)
+  # from parent package: accelerate (public)
+  # from parent package: gradio (public)
+  # from parent package: peft (public)
+  # from parent package: matplotlib (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: gradio-client (public)
+pandas <4.0,>=1.0
+  # from parent package: gradio (public)
+psutil
+  # from parent package: accelerate (public)
+  # from parent package: peft (public)
+pydantic !=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4,<=3.0,>=2.0
+  # from parent package: fastapi (public)
+  # from parent package: gradio (public)
+pydantic-core ==2.47.0
+  # from parent package: pydantic (public)
+pydub <1.0
+  # from parent package: gradio (public)
+pygments <3.0.0,>=2.13.0
+  # from parent package: rich (public)
+pyparsing ~=3.0,>=3
+  # from parent package: compel (public)
+  # from parent package: matplotlib (public)
+python-dateutil >=2.7,>=2.8.2
+  # from parent package: matplotlib (public)
+  # from parent package: pandas (public)
+python-multipart <1.0,>=0.0.18
+  # from parent package: gradio (public)
+pytz >=2017.2
+  # from parent package: gradio (public)
+pyyaml >=5.1.0,>=5.1,<7.0,>=5.0,>=5.1
+  # from parent package: omegaconf (public)
+  # from parent package: transformers (public)
+  # from parent package: accelerate (public)
+  # from parent package: gradio (public)
+  # from parent package: peft (public)
+  # from parent package: huggingface-hub (public)
+regex !=2019.12.17
+  # from parent package: diffusers (public)
+  # from parent package: transformers (public)
+requests
+  # from parent package: diffusers (public)
+  # from parent package: transformers (public)
+rich >=13.8.0
+  # from parent package: typer (public)
+safehttpx <0.2.0,>=0.1.7
+  # from parent package: gradio (public)
+safetensors >=0.3.1
+  # from parent package: diffusers (public)
+  # from parent package: transformers (public)
+  # from parent package: peft (public)
+semantic-version ~=2.0
+  # from parent package: gradio (public)
+setuptools >=40.8.0
+  # from parent package: triton (private)
+shellingham >=1.3.0
+  # from parent package: typer (public)
+six >=1.5
+  # from parent package: python-dateutil (public)
+sniffio >=1.1
+  # from parent package: anyio (public)
+starlette <0.28.0,>=0.27.0,<2.0,>=1.0.1
+  # from parent package: fastapi (public)
+  # from parent package: gradio (public)
+sympy >=1.13.3
+  # from parent package: torch (private)
+termcolor
+  # from parent package: fire (public)
+tokenizers <0.19,>=0.14
+  # from parent package: transformers (public)
+tomlkit <0.15.0,>=0.12.0
+  # from parent package: gradio (public)
+tqdm >=4.27,>=4.42.1
+  # from parent package: transformers (public)
+  # from parent package: peft (public)
+  # from parent package: huggingface-hub (public)
+triton ==3.3.1
+  # from parent package: torch (private)
+typer <1.0,>=0.12
+  # from parent package: gradio (public)
+  # from parent package: hf-gradio (public)
+typing-extensions >=4.0,>=4.8.0,~=4.0,>=4.10.0,>=4.1.0,>=4.15.0,>=4.10.0,~=4.0,>=4.6.0,>=4.14.1,>=4.12.0
+  # from parent package: uvicorn (public)
+  # from parent package: fastapi (public)
+  # from parent package: gradio (public)
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+  # from parent package: pydantic (public)
+  # from parent package: starlette (public)
+  # from parent package: gradio-client (public)
+  # from parent package: exceptiongroup (public)
+  # from parent package: pydantic-core (public)
+  # from parent package: typing-inspection (public)
+typing-inspection >=0.4.2
+  # from parent package: pydantic (public)
+urllib3 <1.27,>=1.21.1
+  # from parent package: requests (private)
+zipp >=0.5
+  # from parent package: importlib-metadata (private)

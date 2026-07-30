@@ -1,0 +1,530 @@
+absl-py >=0.4
+  # from parent package: tensorboard (public)
+aiobotocore <4.0.0,>=2.19.0
+  # from parent package: s3fs (public)
+aiohappyeyeballs >=2.5.0
+  # from parent package: aiohttp (public)
+aiohttp <4,>=3.7.0,!=4.0.0a0,!=4.0.0a1,>=3.9.0,!=4.0.0a0,!=4.0.0a1,>=3.9.0,<4.0.0,>=3.12.0
+  # from parent package: mlflow (public)
+  # from parent package: fschat (public)
+  # from parent package: s3fs (public)
+  # from parent package: gcsfs (public)
+  # from parent package: openai (public)
+  # from parent package: aiobotocore (public)
+aioitertools <1.0.0,>=0.5.1
+  # from parent package: aiobotocore (public)
+aiosignal >=1.4.0
+  # from parent package: aiohttp (public)
+alembic !=1.10.0,<2
+  # from parent package: mlflow (public)
+annotated-doc >=0.0.2
+  # from parent package: fastapi (public)
+  # from parent package: typer (public)
+annotated-types >=0.6.0
+  # from parent package: pydantic (public)
+anyio <5.0,>=3.0,<4,>=3.5.0,<5,>=3.6.2
+  # from parent package: gradio (public)
+  # from parent package: anthropic (public)
+  # from parent package: httpx (public)
+  # from parent package: starlette (public)
+async-timeout <6.0,>=4.0
+  # from parent package: aiohttp (public)
+attrs >=17.3.0
+  # from parent package: aiohttp (public)
+blinker >=1.9.0
+  # from parent package: flask (public)
+botocore <1.43.1,>=1.42.90
+  # from parent package: aiobotocore (public)
+brotli >=1.1.0
+  # from parent package: gradio (public)
+cachetools <8,>=5.0.0
+  # from parent package: mlflow-skinny (public)
+  # from parent package: mlflow-tracing (public)
+certifi
+  # from parent package: httpx (public)
+  # from parent package: sentry-sdk (public)
+  # from parent package: httpcore (public)
+cffi >=2.0.0
+  # from parent package: cryptography (public)
+click >=8.0.0,>=8.2.0,<9.0.0,>=8.4.2,>=7.0,<9,>=7.0,>=8.1.3
+  # from parent package: black (public)
+  # from parent package: wandb (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: uvicorn (public)
+  # from parent package: mlflow-skinny (public)
+  # from parent package: flask (public)
+cloudpickle <4
+  # from parent package: mlflow-skinny (public)
+contourpy >=1.0.1
+  # from parent package: matplotlib (public)
+cryptography <49,>=43.0.0,>=38.0.3
+  # from parent package: mlflow (public)
+  # from parent package: google-auth (public)
+cycler >=0.10
+  # from parent package: matplotlib (public)
+databricks-sdk <1,>=0.20.0
+  # from parent package: mlflow-skinny (public)
+  # from parent package: mlflow-tracing (public)
+decorator >4.1.2
+  # from parent package: gcsfs (public)
+dill <0.4.2,>=0.3.0,>=0.4.1
+  # from parent package: datasets (public)
+  # from parent package: evaluate (public)
+  # from parent package: multiprocess (public)
+distro <2,>=1.7.0
+  # from parent package: anthropic (public)
+docker <8,>=4.0.0
+  # from parent package: mlflow (public)
+docstring-parser >=0.16
+  # from parent package: tyro (public)
+exceptiongroup
+  # from parent package: anyio (public)
+fastapi <1.0,>=0.115.2,<1
+  # from parent package: gradio (public)
+  # from parent package: fschat (public)
+  # from parent package: mlflow-skinny (public)
+filelock >=3.10.0
+  # from parent package: datasets (public)
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+flask <4,>=0.9
+  # from parent package: mlflow (public)
+  # from parent package: flask-cors (public)
+flask-cors <7
+  # from parent package: mlflow (public)
+fonttools >=4.22.0
+  # from parent package: matplotlib (public)
+frozenlist >=1.1.1,>=1.1.0
+  # from parent package: aiohttp (public)
+  # from parent package: aiosignal (public)
+fsspec <=2026.4.0,>=2023.1.0,>=2021.05.0,<2026.6.1,>=2026.6.0,>=2026.6.0,>=0.8.5,>=2023.5.0
+  # from parent package: datasets (public)
+  # from parent package: evaluate (public)
+  # from parent package: s3fs (public)
+  # from parent package: gcsfs (public)
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+  # from parent package: gradio-client (public)
+gitdb <5,>=4.0.1
+  # from parent package: gitpython (public)
+gitpython !=3.1.29,>=1.0.0,<4,>=3.1.9
+  # from parent package: wandb (public)
+  # from parent package: mlflow-skinny (public)
+google-api-core <3.0.0,>=2.17.1,<3.0.0,>=2.27.0,<3.0.0,>=2.11.0
+  # from parent package: google-cloud-storage-control (public)
+  # from parent package: google-cloud-storage (public)
+  # from parent package: google-cloud-core (public)
+google-auth >=1.2,!=2.43.0,!=2.44.0,!=2.45.0,<3.0.0,>=2.15.0,!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1,<3.0.0,>=2.26.1,~=2.0,<3.0.0,>=2.14.1,!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1
+  # from parent package: gcsfs (public)
+  # from parent package: google-auth-oauthlib (public)
+  # from parent package: google-cloud-storage-control (public)
+  # from parent package: google-cloud-storage (public)
+  # from parent package: databricks-sdk (public)
+  # from parent package: google-api-core (public)
+  # from parent package: google-cloud-core (public)
+google-auth-oauthlib
+  # from parent package: gcsfs (public)
+google-cloud-core <3.0.0,>=2.4.2
+  # from parent package: google-cloud-storage (public)
+google-cloud-storage >=3.11.0
+  # from parent package: gcsfs (public)
+google-cloud-storage-control
+  # from parent package: gcsfs (public)
+google-crc32c <2.0.0,>=1.6.0,<2.0.0,>=1.0.0
+  # from parent package: google-cloud-storage (public)
+  # from parent package: google-resumable-media (public)
+google-resumable-media <3.0.0,>=2.7.2
+  # from parent package: google-cloud-storage (public)
+googleapis-common-protos <2.0.0,>=1.63.2,>=1.5.5
+  # from parent package: google-api-core (public)
+  # from parent package: grpc-google-iam-v1 (public)
+  # from parent package: grpcio-status (public)
+gradio-client ==2.5.0
+  # from parent package: gradio (public)
+  # from parent package: hf-gradio (public)
+graphene <4
+  # from parent package: mlflow (public)
+graphql-core <3.3,>=3.1,<3.3,>=3.2
+  # from parent package: graphene (public)
+  # from parent package: graphql-relay (public)
+graphql-relay <3.3,>=3.1
+  # from parent package: graphene (public)
+groovy ~=0.1
+  # from parent package: gradio (public)
+grpc-google-iam-v1 <1.0.0,>=0.14.0
+  # from parent package: google-cloud-storage-control (public)
+grpcio <2.0,>=1.74.0,<2.0.0,>=1.59.0,<2.0.0,>=1.41.0,<2.0.0,>=1.44.0,<2.0.0,>=1.44.0,>=1.83.0rc1
+  # from parent package: tensorboard (public)
+  # from parent package: google-cloud-storage-control (public)
+  # from parent package: google-api-core (public)
+  # from parent package: grpc-google-iam-v1 (public)
+  # from parent package: googleapis-common-protos (public)
+  # from parent package: grpcio-status (public)
+grpcio-status <2.0.0,>=1.41.0
+  # from parent package: google-api-core (public)
+gunicorn <27
+  # from parent package: mlflow (public)
+h11 >=0.8,>=0.16
+  # from parent package: uvicorn (public)
+  # from parent package: httpcore (public)
+hf-gradio <1.0,>=0.4.1
+  # from parent package: gradio (public)
+hf-xet <2.0.0,>=1.5.1
+  # from parent package: huggingface-hub (public)
+hjson
+  # from parent package: deepspeed (public)
+httpcore ==1.*
+  # from parent package: httpx (public)
+httpx <1.0.0,<1.0,>=0.24.1,<1,>=0.23.0,<1,>=0.23.0,>=0.24.1
+  # from parent package: datasets (public)
+  # from parent package: gradio (public)
+  # from parent package: fschat (public)
+  # from parent package: anthropic (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: gradio-client (public)
+  # from parent package: safehttpx (public)
+huey <4,>=2.5.4
+  # from parent package: mlflow (public)
+huggingface-hub <2.0,>=0.25.0,<2.0,>=1.2.0,<2.0,>=0.16.4,>=0.7.0,<2.0,>=1.5.0,<2.0,>=0.19.3
+  # from parent package: accelerate (public)
+  # from parent package: datasets (public)
+  # from parent package: gradio (public)
+  # from parent package: tokenizers (public)
+  # from parent package: evaluate (public)
+  # from parent package: transformers (public)
+  # from parent package: gradio-client (public)
+idna >=2.8,>=2.0
+  # from parent package: httpx (public)
+  # from parent package: anyio (public)
+  # from parent package: yarl (public)
+importlib-metadata !=4.7.0,<10,>=3.7.0
+  # from parent package: mlflow-skinny (public)
+itsdangerous >=2.2.0
+  # from parent package: flask (public)
+jinja2 <4.0,>=3.1.2
+  # from parent package: gradio (public)
+  # from parent package: torch (private)
+  # from parent package: flask (public)
+jmespath <2.0.0,>=0.7.1
+  # from parent package: aiobotocore (public)
+  # from parent package: botocore (public)
+joblib >=1.4.0
+  # from parent package: scikit-learn (public)
+kiwisolver >=1.3.1
+  # from parent package: matplotlib (public)
+latex2mathml
+  # from parent package: markdown2 (public)
+llvmlite <0.49,>=0.48.0dev0
+  # from parent package: numba (public)
+mako
+  # from parent package: alembic (public)
+markdown >=2.6.8
+  # from parent package: tensorboard (public)
+markdown-it-py >=2.2.0
+  # from parent package: rich (public)
+markdown2
+  # from parent package: fschat (public)
+markupsafe <4.0,>=2.0,>=2.0,>=2.1.1,>=2.1.1,>=0.9.2
+  # from parent package: gradio (public)
+  # from parent package: jinja2 (private)
+  # from parent package: flask (public)
+  # from parent package: werkzeug (public)
+  # from parent package: mako (public)
+matplotlib <4
+  # from parent package: mlflow (public)
+  # from parent package: bert-score (public)
+mdurl ~=0.1
+  # from parent package: markdown-it-py (public)
+mlflow-skinny ==3.14.0
+  # from parent package: mlflow (public)
+mlflow-tracing ==3.14.0
+  # from parent package: mlflow (public)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+msgpack
+  # from parent package: deepspeed (public)
+multidict <7.0,>=4.5,<7.0.0,>=6.0.0,>=4.0
+  # from parent package: aiohttp (public)
+  # from parent package: aiobotocore (public)
+  # from parent package: yarl (public)
+multiprocess <0.70.20
+  # from parent package: datasets (public)
+  # from parent package: evaluate (public)
+mypy-extensions >=0.4.3
+  # from parent package: black (public)
+narwhals >=2.0.1
+  # from parent package: scikit-learn (public)
+networkx >=2.5.1
+  # from parent package: torch (private)
+nh3
+  # from parent package: fschat (public)
+ninja
+  # from parent package: deepspeed (public)
+nvidia-ml-py >=12.0.0
+  # from parent package: pynvml (public)
+oauthlib >=3.0.0
+  # from parent package: requests-oauthlib (public)
+opentelemetry-api ==1.43.0
+  # from parent package: mlflow-skinny (public)
+  # from parent package: mlflow-tracing (public)
+  # from parent package: opentelemetry-sdk (public)
+  # from parent package: opentelemetry-semantic-conventions (public)
+opentelemetry-proto <3,>=1.9.0
+  # from parent package: mlflow-skinny (public)
+  # from parent package: mlflow-tracing (public)
+opentelemetry-sdk >=1.4.0,<3,>=1.9.0,<3,>=1.9.0
+  # from parent package: sentry-sdk (public)
+  # from parent package: mlflow-skinny (public)
+  # from parent package: mlflow-tracing (public)
+opentelemetry-semantic-conventions ==0.64b0
+  # from parent package: opentelemetry-sdk (public)
+orjson ~=3.0
+  # from parent package: gradio (public)
+pandas <4.0,>=1.0,<3,>=1.0.1
+  # from parent package: datasets (public)
+  # from parent package: gradio (public)
+  # from parent package: mlflow (public)
+  # from parent package: bert-score (public)
+  # from parent package: evaluate (public)
+pathspec >=1.0.0
+  # from parent package: black (public)
+pillow <13.0,>=8.0,>=9
+  # from parent package: gradio (public)
+  # from parent package: tensorboard (public)
+  # from parent package: matplotlib (public)
+platformdirs >=2
+  # from parent package: black (public)
+  # from parent package: wandb (public)
+prettytable >=3.9
+  # from parent package: skops (public)
+prompt-toolkit >=3.0.0
+  # from parent package: fschat (public)
+propcache >=0.2.0,>=0.2.1
+  # from parent package: aiohttp (public)
+  # from parent package: yarl (public)
+proto-plus <2.0.0,>=1.22.3,<2.0.0,>=1.24.0
+  # from parent package: google-cloud-storage-control (public)
+  # from parent package: google-api-core (public)
+protobuf !=5.28.0,!=5.29.0,<8,>4.21.0,<8.0.0,>=6.31.1,<8,>=3.12.0,<8,>=3.12.0,<8.0.0,>=4.25.8,!=5.26.*,!=5.27.*,!=5.28.*,!=5.29.0,!=5.29.1,!=5.29.2,!=5.29.3,!=5.29.4,!=6.30.0,!=6.30.1,!=6.31.0,<7.0,>=4.25.8,<8.0,>=5.0,<8.0.0,>=5.29.6,<8.0.0,>=4.25.8,<8.0.0,>=4.25.8,<8.0.0,>=4.25.8,<8.0.0,>=7.35.1
+  # from parent package: wandb (public)
+  # from parent package: tensorboard (public)
+  # from parent package: mlflow-skinny (public)
+  # from parent package: mlflow-tracing (public)
+  # from parent package: google-cloud-storage-control (public)
+  # from parent package: databricks-sdk (public)
+  # from parent package: opentelemetry-proto (public)
+  # from parent package: google-api-core (public)
+  # from parent package: proto-plus (public)
+  # from parent package: grpc-google-iam-v1 (public)
+  # from parent package: googleapis-common-protos (public)
+  # from parent package: grpcio-status (public)
+psutil
+  # from parent package: accelerate (public)
+  # from parent package: peft (public)
+  # from parent package: deepspeed (public)
+py-cpuinfo
+  # from parent package: deepspeed (public)
+pyarrow >=21.0.0,<25,>=4.0.0
+  # from parent package: datasets (public)
+  # from parent package: mlflow (public)
+pyasn1 <0.7.0,>=0.6.1
+  # from parent package: pyasn1-modules (public)
+pyasn1-modules >=0.2.1
+  # from parent package: google-auth (public)
+pycparser
+  # from parent package: cffi (public)
+pydantic <=3.0,>=2.0,>=2.0.0,<3,>=2.6,<3,>=1.9.0,>=2.9.0,<3,>=2.0.0,<3,>=2.0.0
+  # from parent package: gradio (public)
+  # from parent package: deepspeed (public)
+  # from parent package: wandb (public)
+  # from parent package: fschat (public)
+  # from parent package: anthropic (public)
+  # from parent package: fastapi (public)
+  # from parent package: mlflow-skinny (public)
+  # from parent package: mlflow-tracing (public)
+pydantic-core ==2.47.0
+  # from parent package: pydantic (public)
+pydub <1.0
+  # from parent package: gradio (public)
+pygments >=2.7.3,<3.0.0,>=2.13.0
+  # from parent package: markdown2 (public)
+  # from parent package: rich (public)
+pyparsing >=3
+  # from parent package: matplotlib (public)
+python-dateutil >=2.8.2,<3,>=2.7.0,>=2.7,<3.0.0,>=2.1,<3.0.0,>=2.1
+  # from parent package: pandas (public)
+  # from parent package: graphene (public)
+  # from parent package: matplotlib (public)
+  # from parent package: aiobotocore (public)
+  # from parent package: botocore (public)
+python-dotenv <2,>=0.19.0
+  # from parent package: mlflow-skinny (public)
+python-multipart <1.0,>=0.0.18
+  # from parent package: gradio (public)
+pytokens ~=0.4.0
+  # from parent package: black (public)
+pytz >=2017.2,>=2020.1
+  # from parent package: gradio (public)
+  # from parent package: pandas (public)
+regex >=2025.10.22
+  # from parent package: transformers (public)
+  # from parent package: tiktoken (public)
+requests >=2.32.2,<3,>=2.0.0,>=2.19.0,>=2.20,<3,>=2.17.3,>=2.26.0,<3.0.0,>=2.22.0,<3,>=2.28.1,>=2.0.0,<3.0.0,>=2.33.0
+  # from parent package: datasets (public)
+  # from parent package: wandb (public)
+  # from parent package: bert-score (public)
+  # from parent package: evaluate (public)
+  # from parent package: fschat (public)
+  # from parent package: gcsfs (public)
+  # from parent package: openai (public)
+  # from parent package: mlflow-skinny (public)
+  # from parent package: docker (public)
+  # from parent package: tiktoken (public)
+  # from parent package: google-cloud-storage (public)
+  # from parent package: databricks-sdk (public)
+  # from parent package: requests-oauthlib (public)
+  # from parent package: google-api-core (public)
+requests-oauthlib >=0.7.0
+  # from parent package: google-auth-oauthlib (public)
+responses <0.19
+  # from parent package: evaluate (public)
+rich >=10.0.0,>=13.8.0
+  # from parent package: fschat (public)
+  # from parent package: typer (public)
+safehttpx <0.2.0,>=0.1.7
+  # from parent package: gradio (public)
+safetensors >=0.8.0
+  # from parent package: transformers (public)
+semantic-version ~=2.0
+  # from parent package: gradio (public)
+sentry-sdk >=2.0.0
+  # from parent package: wandb (public)
+setuptools >=41.0.0,>=77.0.3
+  # from parent package: tensorboard (public)
+  # from parent package: torch (private)
+shellingham >=1.3.0
+  # from parent package: typer (public)
+shortuuid
+  # from parent package: fschat (public)
+six >=1.5
+  # from parent package: python-dateutil (public)
+skops <1
+  # from parent package: mlflow (public)
+smmap <6,>=3.0.1
+  # from parent package: gitdb (public)
+sniffio >=1.1
+  # from parent package: anyio (public)
+sqlalchemy <3,>=1.4.0,>=1.4.23
+  # from parent package: mlflow (public)
+  # from parent package: alembic (public)
+sqlparse <1,>=0.4.0
+  # from parent package: mlflow-skinny (public)
+starlette <2.0,>=1.0.1,>=0.46.0,<2
+  # from parent package: gradio (public)
+  # from parent package: fastapi (public)
+  # from parent package: mlflow-skinny (public)
+sympy >=1.13.3
+  # from parent package: torch (private)
+tensorboard-data-server <0.8.0,>=0.7.0
+  # from parent package: tensorboard (public)
+termcolor
+  # from parent package: fire (public)
+threadpoolctl >=3.5.0
+  # from parent package: scikit-learn (public)
+tiktoken
+  # from parent package: fschat (public)
+tomli >=1.1.0
+  # from parent package: black (public)
+  # from parent package: alembic (public)
+tomlkit <0.15.0,>=0.12.0
+  # from parent package: gradio (public)
+torch >=1.10.0,<3,>=2.3,>=1.13.0,>=2.0.0,>=1.0.0,>=1.4.0
+  # from parent package: accelerate (public)
+  # from parent package: bitsandbytes (public)
+  # from parent package: peft (public)
+  # from parent package: deepspeed (public)
+  # from parent package: bert-score (public)
+  # from parent package: trl (public)
+tqdm >=4.66.3,>=4.31.1,>=4.62.1,>=4.42.1,>=4.60
+  # from parent package: datasets (public)
+  # from parent package: deepspeed (public)
+  # from parent package: bert-score (public)
+  # from parent package: evaluate (public)
+  # from parent package: openai (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: transformers (public)
+transformers >=3.0.0,>=4.31.0
+  # from parent package: peft (public)
+  # from parent package: bert-score (public)
+  # from parent package: trl (public)
+typeguard >=4.0.0
+  # from parent package: tyro (public)
+typer <1.0,>=0.12
+  # from parent package: gradio (public)
+  # from parent package: transformers (public)
+  # from parent package: hf-gradio (public)
+typing-extensions >=4.0.1,~=4.0,<5,>=4.8,<5,>=4.5,>=4.10.0,>=4.1.0,>=4.8.0,~=4.0,>=4.15.0,>=4.10.0,>=4.0,<5,>=4.0.0,>=4.6.0,>=4.4,>=4.12,>=4.13.2,<5,>=4.7.1,>=4.6.0,~=4.12,<5.0.0,>=4.14.0,>=4.13.0,>=4.6.0,>=4.12.0,>=4.14.1,>=4.5.0,>=4.5.0,>=4.2,>=4.1.0,>=4.14.0,>=4.5.0
+  # from parent package: black (public)
+  # from parent package: gradio (public)
+  # from parent package: wandb (public)
+  # from parent package: anthropic (public)
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+  # from parent package: fastapi (public)
+  # from parent package: gradio-client (public)
+  # from parent package: pydantic (public)
+  # from parent package: starlette (public)
+  # from parent package: uvicorn (public)
+  # from parent package: mlflow-skinny (public)
+  # from parent package: flask-cors (public)
+  # from parent package: aiohttp (public)
+  # from parent package: alembic (public)
+  # from parent package: cryptography (public)
+  # from parent package: graphene (public)
+  # from parent package: sqlalchemy (public)
+  # from parent package: grpcio (public)
+  # from parent package: aiobotocore (public)
+  # from parent package: tyro (public)
+  # from parent package: exceptiongroup (public)
+  # from parent package: typing-inspection (public)
+  # from parent package: pydantic-core (public)
+  # from parent package: opentelemetry-sdk (public)
+  # from parent package: opentelemetry-api (public)
+  # from parent package: aiosignal (public)
+  # from parent package: multidict (public)
+  # from parent package: typeguard (public)
+  # from parent package: opentelemetry-semantic-conventions (public)
+typing-inspection >=0.4.2
+  # from parent package: fastapi (public)
+  # from parent package: pydantic (public)
+tyro >=0.5.11
+  # from parent package: trl (public)
+tzdata >=2022.7
+  # from parent package: pandas (public)
+urllib3 >=1.26.11,>=1.26.0,<3,>=1.26,!=2.2.0,<3,>=1.25.4
+  # from parent package: sentry-sdk (public)
+  # from parent package: docker (public)
+  # from parent package: databricks-sdk (public)
+  # from parent package: botocore (public)
+uvicorn >=0.14.0,<1
+  # from parent package: gradio (public)
+  # from parent package: fschat (public)
+  # from parent package: mlflow-skinny (public)
+wavedrom
+  # from parent package: markdown2 (public)
+wcwidth >=0.3.5
+  # from parent package: prompt-toolkit (public)
+  # from parent package: prettytable (public)
+werkzeug >=1.0.1,>=0.7,>=3.1.0
+  # from parent package: tensorboard (public)
+  # from parent package: flask-cors (public)
+  # from parent package: flask (public)
+wrapt <3.0.0,>=1.10.10
+  # from parent package: aiobotocore (public)
+xxhash
+  # from parent package: datasets (public)
+  # from parent package: evaluate (public)
+yarl <2.0,>=1.17.0
+  # from parent package: aiohttp (public)
+zipp >=0.5
+  # from parent package: importlib-metadata (private)

@@ -1,0 +1,242 @@
+{
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/requirements-poetry.txt": [
+    {
+      "name": "poetry",
+      "specifier": "==2.1.1"
+    },
+    {
+      "name": "poetry-dynamic-versioning",
+      "specifier": ""
+    },
+    {
+      "name": "poetry-plugin-export",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml": [
+    {
+      "name": "aiofiles",
+      "specifier": ">=24.1.0"
+    },
+    {
+      "name": "aiohttp",
+      "specifier": ">=3.10.4"
+    },
+    {
+      "name": "aiosqlite",
+      "specifier": ">=0.20.0"
+    },
+    {
+      "name": "anyio",
+      "specifier": ">=4.6.2.post1"
+    },
+    {
+      "name": "bitstring",
+      "specifier": ">=4.1.4"
+    },
+    {
+      "name": "boto3",
+      "specifier": ">=1.35.43"
+    },
+    {
+      "name": "chiabip158",
+      "specifier": ">=1.5.2"
+    },
+    {
+      "name": "chiapos",
+      "specifier": ">=2.0.10"
+    },
+    {
+      "name": "chia-puzzles-py",
+      "specifier": ">=0.20.1"
+    },
+    {
+      "name": "chia-rs",
+      "specifier": "<0.25,>=0.24"
+    },
+    {
+      "name": "chiavdf",
+      "specifier": ">=1.1.10"
+    },
+    {
+      "name": "click",
+      "specifier": ">=8.1.7"
+    },
+    {
+      "name": "clvm",
+      "specifier": ">=0.9.12"
+    },
+    {
+      "name": "clvm-tools",
+      "specifier": ">=0.4.9"
+    },
+    {
+      "name": "clvm-tools-rs",
+      "specifier": ">=0.1.45"
+    },
+    {
+      "name": "colorama",
+      "specifier": ">=0.4.6"
+    },
+    {
+      "name": "colorlog",
+      "specifier": ">=6.9.0"
+    },
+    {
+      "name": "concurrent-log-handler",
+      "specifier": ">=0.9.25"
+    },
+    {
+      "name": "cryptography",
+      "specifier": ">=43.0.1"
+    },
+    {
+      "name": "dnslib",
+      "specifier": ">=0.9.25"
+    },
+    {
+      "name": "dnspython",
+      "specifier": ">=2.6.1"
+    },
+    {
+      "name": "filelock",
+      "specifier": ">=3.16.1"
+    },
+    {
+      "name": "keyring",
+      "specifier": ">=25.5.0"
+    },
+    {
+      "name": "packaging",
+      "specifier": ">=24.0"
+    },
+    {
+      "name": "pip",
+      "specifier": ">=24.2"
+    },
+    {
+      "name": "psutil",
+      "specifier": ">=6.1.0"
+    },
+    {
+      "name": "pyyaml",
+      "specifier": ">=6.0.2"
+    },
+    {
+      "name": "setproctitle",
+      "specifier": ">=1.3.3"
+    },
+    {
+      "name": "setuptools",
+      "specifier": ">=75.5.0"
+    },
+    {
+      "name": "sortedcontainers",
+      "specifier": ">=2.4.0"
+    },
+    {
+      "name": "typing-extensions",
+      "specifier": ">=4.12.2"
+    },
+    {
+      "name": "watchdog",
+      "specifier": ">=4.0.1"
+    },
+    {
+      "name": "zstd",
+      "specifier": "[{'version': '>=1.5.5.1', 'python': '<3.12'}, {'version': '>=1.5.5.1', 'python': '3.12', 'source': 'chia'}]"
+    },
+    {
+      "name": "importlib-resources",
+      "specifier": ">=6.4.5"
+    },
+    {
+      "name": "hsms",
+      "specifier": ">=0.3.1"
+    },
+    {
+      "name": "aiohttp-cors",
+      "specifier": ">=0.7.0"
+    },
+    {
+      "name": "build",
+      "specifier": ">=1.2.1"
+    },
+    {
+      "name": "coverage",
+      "specifier": ">=7.6.4"
+    },
+    {
+      "name": "diff-cover",
+      "specifier": ">=9.2.0"
+    },
+    {
+      "name": "keyrings-cryptfile",
+      "specifier": ">=1.3.9"
+    },
+    {
+      "name": "mypy",
+      "specifier": ">=1.11.1"
+    },
+    {
+      "name": "pre-commit",
+      "specifier": ">=3.7.1"
+    },
+    {
+      "name": "py3createtorrent",
+      "specifier": ">=1.2.1"
+    },
+    {
+      "name": "pyinstaller",
+      "specifier": ">=6.9.0"
+    },
+    {
+      "name": "pytest",
+      "specifier": ">=8.3.3"
+    },
+    {
+      "name": "pytest-cov",
+      "specifier": ">=5.0.0"
+    },
+    {
+      "name": "pytest-mock",
+      "specifier": ">=3.14.0"
+    },
+    {
+      "name": "pytest-monitor",
+      "specifier": ">=1.6.6"
+    },
+    {
+      "name": "pytest-xdist",
+      "specifier": ">=3.6.1"
+    },
+    {
+      "name": "types-aiofiles",
+      "specifier": ">=24.1.0.20240626"
+    },
+    {
+      "name": "types-cryptography",
+      "specifier": ">=3.3.23.2"
+    },
+    {
+      "name": "types-pyyaml",
+      "specifier": ">=6.0.12.20240917"
+    },
+    {
+      "name": "types-setuptools",
+      "specifier": ">=75.5.0.20241122"
+    },
+    {
+      "name": "lxml",
+      "specifier": ">=5.2.2"
+    },
+    {
+      "name": "miniupnpc",
+      "specifier": "<3,>=2.3.2"
+    },
+    {
+      "name": "ruff",
+      "specifier": ">=0.8.1"
+    }
+  ]
+}

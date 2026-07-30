@@ -1,0 +1,89 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/ab/4b/ce156ca3790a10cdf05380ad1b2a55eb1961745b403dafd959f4ba3488cd/cython-3.2.8-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=eb25b2afedc6a3585c5ae50db79ba0c3d6277ee8e1d6ce0223528db2c4981d9b",
+          "hashes": {
+            "sha256": "eb25b2afedc6a3585c5ae50db79ba0c3d6277ee8e1d6ce0223528db2c4981d9b"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "Cython",
+        "version": "3.2.8",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "license",
+          "project-url",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "The Cython compiler for writing C extensions in the Python language.",
+        "description_content_type": "text/x-rst",
+        "home_page": "https://cython.org/",
+        "author": "Robert Bradshaw, Stefan Behnel, David Woods, Greg Ewing, et al.",
+        "author_email": "cython-devel@python.org",
+        "license": "Apache-2.0",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Python :: Implementation :: Stackless",
+          "Programming Language :: C",
+          "Programming Language :: C++",
+          "Programming Language :: Cython",
+          "Topic :: Software Development :: Code Generators",
+          "Topic :: Software Development :: Compilers",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Typing :: Typed"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Documentation, https://cython.readthedocs.io/",
+          "Donate, https://cython.readthedocs.io/en/latest/src/donating.html",
+          "Source Code, https://github.com/cython/cython",
+          "Bug Tracker, https://github.com/cython/cython/issues/",
+          "User Group, https://groups.google.com/g/cython-users"
+        ],
+        "description": "The Cython language makes writing C extensions for the Python language as\neasy as Python itself.  Cython is a source code translator based on Pyrex_,\nbut supports more cutting edge functionality and optimizations.\n\nThe Cython language is a superset of the Python language (almost all Python\ncode is also valid Cython code), but Cython additionally supports optional\nstatic typing to natively call C functions, operate with C++ classes and\ndeclare fast C types on variables and class attributes.  This allows the\ncompiler to generate very efficient C code from Cython code.\n\nThis makes Cython the ideal language for writing glue code for external\nC/C++ libraries, and for fast C modules that speed up the execution of\nPython code.\n\nThe newest Cython release can always be downloaded from https://cython.org/.\nUnpack the tarball or zip file, enter the directory, and then run::\n\n    pip install .\n\nNote that for one-time builds, e.g. for CI/testing, on platforms that are not\ncovered by one of the wheel packages provided on PyPI *and* the pure Python wheel\nthat we provide is not used, it is substantially faster than a full source build\nto install an uncompiled (slower) version of Cython with::\n\n    NO_CYTHON_COMPILE=true pip install .\n\n.. _Pyrex: https://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/\n\n3.2.8 (2026-06-30)\n==================\n\nBugs fixed\n----------\n\n* Assigning a Python 3.14+ ``.__annotate__`` function to a Cython compiled function no longer\n  evaluates annotations eagerly.  Fixes a regression with ``@functools.wraps()`` in Cython 3.2.6.\n  Patch by Jelle Zijlstra.  (Github issue https://github.com/cython/cython/issues/7767)\n\n* In freethreading Python, the necessary object keep-alive while executing user code in\n  ``.__dealloc__()`` uses a safer scheme.\n  Patch by Yaxing Cai.  (Github issue https://github.com/cython/cython/issues/7769)\n\n* The local function state used by ``sys.monitoring`` read from uninitialised memory.\n  (Github issue https://github.com/cython/cython/issues/7774)\n\n* The ``.ag_running`` flag attribute of async generators was always false on big-endian systems.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

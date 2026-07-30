@@ -1,0 +1,66 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/68/01/22dad84373ba282237a3351547443c9c94c39fe75f71a1759f97cfa89725/langchain_qdrant-0.2.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=8eab5b8a553204ddb809d8183a6f1bc12fc265688592d9d897388f6939c79bf8",
+          "hashes": {
+            "sha256": "8eab5b8a553204ddb809d8183a6f1bc12fc265688592d9d897388f6939c79bf8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "langchain-qdrant",
+        "version": "0.2.0",
+        "summary": "An integration package connecting Qdrant and LangChain",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/langchain-ai/langchain",
+        "license": "MIT",
+        "classifier": [
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12"
+        ],
+        "requires_dist": [
+          "fastembed (>=0.3.3,<0.4.0) ; (python_version >= \"3.9\" and python_version < \"3.13\") and (extra == \"fastembed\")",
+          "langchain-core (>=0.2.43,<0.4.0,!=0.3.0,!=0.3.1,!=0.3.2,!=0.3.3,!=0.3.4,!=0.3.5,!=0.3.6,!=0.3.7,!=0.3.8,!=0.3.9,!=0.3.10,!=0.3.11,!=0.3.12,!=0.3.13,!=0.3.14)",
+          "pydantic (>=2.7.4,<3.0.0)",
+          "qdrant-client (>=1.10.1,<2.0.0)"
+        ],
+        "requires_python": ">=3.9,<4",
+        "project_url": [
+          "Repository, https://github.com/langchain-ai/langchain",
+          "Release Notes, https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain-qdrant%3D%3D0%22&expanded=true",
+          "Source Code, https://github.com/langchain-ai/langchain/tree/master/libs/partners/qdrant"
+        ],
+        "provides_extra": [
+          "fastembed"
+        ],
+        "description": "# langchain-qdrant\n\nThis package contains the LangChain integration with [Qdrant](https://qdrant.tech/).\n\n## Installation\n\n```bash\npip install -U langchain-qdrant\n```\n\n## Usage\n\nThe `Qdrant` class exposes the connection to the Qdrant vector store.\n\n```python\nfrom langchain_qdrant import Qdrant\n\nembeddings = ... # use a LangChain Embeddings class\n\nvectorstore = Qdrant.from_existing_collection(\n    embeddings=embeddings,\n    collection_name=\"<COLLECTION_NAME>\",\n    url=\"http://localhost:6333\",\n)\n```\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

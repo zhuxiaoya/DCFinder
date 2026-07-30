@@ -1,0 +1,10 @@
+certifi >=2017.4.17
+  # from parent package: requests (private)
+charset-normalizer <3,>=2
+  # from parent package: requests (private)
+idna <4,>=2.5
+  # from parent package: requests (private)
+jsonpointer >=1.9
+  # from parent package: jsonpatch (public)
+urllib3 <1.27,>=1.21.1
+  # from parent package: requests (private)

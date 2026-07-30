@@ -1,0 +1,721 @@
+{
+  "cython": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "scipy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": "<2.8,>=2.0.0"
+      }
+    ]
+  },
+  "statsmodels": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": "<3,>=1.22.3"
+      },
+      {
+        "name": "scipy",
+        "specifier": "!=1.9.2,>=1.8"
+      },
+      {
+        "name": "pandas",
+        "specifier": "!=2.1.0,>=1.4"
+      },
+      {
+        "name": "patsy",
+        "specifier": ">=0.5.6"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=21.3"
+      }
+    ]
+  },
+  "numpy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pandas": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.26.0"
+      },
+      {
+        "name": "python-dateutil",
+        "specifier": ">=2.8.2"
+      }
+    ]
+  },
+  "networkx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "sympy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "mpmath",
+        "specifier": "<1.4,>=1.1.0"
+      }
+    ]
+  },
+  "scikit-learn": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.24.1"
+      },
+      {
+        "name": "scipy",
+        "specifier": ">=1.10.0"
+      },
+      {
+        "name": "joblib",
+        "specifier": ">=1.4.0"
+      },
+      {
+        "name": "narwhals",
+        "specifier": ">=2.0.1"
+      },
+      {
+        "name": "threadpoolctl",
+        "specifier": ">=3.5.0"
+      }
+    ]
+  },
+  "pydot": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pyparsing",
+        "specifier": ">=2.1.4"
+      }
+    ]
+  },
+  "joblib": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pygraphviz": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "econml": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "scipy",
+        "specifier": ">1.4.0"
+      },
+      {
+        "name": "scikit-learn",
+        "specifier": "<1.7,>=1.0"
+      },
+      {
+        "name": "sparse",
+        "specifier": ""
+      },
+      {
+        "name": "joblib",
+        "specifier": ">=0.13.0"
+      },
+      {
+        "name": "statsmodels",
+        "specifier": ">=0.10"
+      },
+      {
+        "name": "pandas",
+        "specifier": ">1.0"
+      },
+      {
+        "name": "shap",
+        "specifier": "<0.49.0,>=0.38.1"
+      },
+      {
+        "name": "lightgbm",
+        "specifier": ""
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      }
+    ]
+  },
+  "tqdm": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "causal-learn": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "scipy",
+        "specifier": ""
+      },
+      {
+        "name": "scikit-learn",
+        "specifier": ""
+      },
+      {
+        "name": "graphviz",
+        "specifier": ""
+      },
+      {
+        "name": "statsmodels",
+        "specifier": ""
+      },
+      {
+        "name": "pandas",
+        "specifier": ""
+      },
+      {
+        "name": "matplotlib",
+        "specifier": ""
+      },
+      {
+        "name": "networkx",
+        "specifier": ""
+      },
+      {
+        "name": "pydot",
+        "specifier": ""
+      },
+      {
+        "name": "tqdm",
+        "specifier": ""
+      },
+      {
+        "name": "momentchi2",
+        "specifier": ""
+      },
+      {
+        "name": "joblib",
+        "specifier": ""
+      }
+    ]
+  },
+  "numba": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "llvmlite",
+        "specifier": "<0.49,>=0.48.0dev0"
+      },
+      {
+        "name": "numpy",
+        "specifier": "<2.5,>=1.22"
+      }
+    ]
+  },
+  "matplotlib": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "contourpy",
+        "specifier": ">=1.0.1"
+      },
+      {
+        "name": "cycler",
+        "specifier": ">=0.10"
+      },
+      {
+        "name": "fonttools",
+        "specifier": ">=4.22.0"
+      },
+      {
+        "name": "kiwisolver",
+        "specifier": ">=1.3.1"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.25"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.0"
+      },
+      {
+        "name": "pillow",
+        "specifier": ">=9"
+      },
+      {
+        "name": "pyparsing",
+        "specifier": ">=3"
+      },
+      {
+        "name": "python-dateutil",
+        "specifier": ">=2.7"
+      }
+    ]
+  },
+  "cvxpy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "osqp",
+        "specifier": ">=0.6.2"
+      },
+      {
+        "name": "ecos",
+        "specifier": ">=2"
+      },
+      {
+        "name": "clarabel",
+        "specifier": ">=0.5.0"
+      },
+      {
+        "name": "scs",
+        "specifier": ">=3.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.15"
+      },
+      {
+        "name": "scipy",
+        "specifier": ">=1.1.0"
+      },
+      {
+        "name": "pybind11",
+        "specifier": ""
+      }
+    ]
+  },
+  "patsy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.4"
+      }
+    ]
+  },
+  "packaging": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "python-dateutil": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "six",
+        "specifier": ">=1.5"
+      }
+    ]
+  },
+  "mpmath": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "narwhals": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "threadpoolctl": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pyparsing": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "sparse": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.17"
+      },
+      {
+        "name": "numba",
+        "specifier": ">=0.49"
+      }
+    ]
+  },
+  "shap": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "scipy",
+        "specifier": ""
+      },
+      {
+        "name": "scikit-learn",
+        "specifier": ""
+      },
+      {
+        "name": "pandas",
+        "specifier": ""
+      },
+      {
+        "name": "tqdm",
+        "specifier": ">=4.27.0"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">20.9"
+      },
+      {
+        "name": "slicer",
+        "specifier": "==0.0.8"
+      },
+      {
+        "name": "numba",
+        "specifier": ">=0.54"
+      },
+      {
+        "name": "cloudpickle",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ""
+      }
+    ]
+  },
+  "lightgbm": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.17.0"
+      },
+      {
+        "name": "scipy",
+        "specifier": ""
+      }
+    ]
+  },
+  "graphviz": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "momentchi2": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "scipy",
+        "specifier": ">=1"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1"
+      }
+    ]
+  },
+  "llvmlite": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "contourpy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.25"
+      }
+    ]
+  },
+  "cycler": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "fonttools": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "kiwisolver": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pillow": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "osqp": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "jinja2",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.7"
+      },
+      {
+        "name": "scipy",
+        "specifier": ">=0.13.2"
+      },
+      {
+        "name": "setuptools",
+        "specifier": ""
+      },
+      {
+        "name": "joblib",
+        "specifier": ""
+      }
+    ]
+  },
+  "ecos": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.6"
+      },
+      {
+        "name": "scipy",
+        "specifier": ">=0.9"
+      }
+    ]
+  },
+  "clarabel": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "scipy",
+        "specifier": ""
+      },
+      {
+        "name": "cffi",
+        "specifier": ""
+      }
+    ]
+  },
+  "scs": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "scipy",
+        "specifier": ""
+      }
+    ]
+  },
+  "pybind11": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "six": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "slicer": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "cloudpickle": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "typing-extensions": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "jinja2": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "markupsafe",
+        "specifier": ">=2.0"
+      }
+    ]
+  },
+  "setuptools": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "cffi": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pycparser",
+        "specifier": ""
+      }
+    ]
+  },
+  "markupsafe": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pycparser": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  }
+}

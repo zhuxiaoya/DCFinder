@@ -1,0 +1,232 @@
+accelerate
+addict ==2.4.0
+aiofiles
+albumentations ==1.3.0
+appdirs ==1.4.4
+basicsr ==1.4.2
+beautifulsoup4 ==4.10.0
+cython ==0.29.24
+diffusers
+einops ==0.3.0
+espnet
+espnet-model-zoo
+ffmpeg-python
+g2p-en ==2.1.0
+google ==3.0.0
+gradio
+h5py
+imageio ==2.9.0
+imageio-ffmpeg ==0.4.2
+invisible-watermark >=0.1.5
+jieba
+kornia ==0.6
+langchain ==0.0.101
+librosa
+loguru
+miditoolkit ==0.1.7
+mmcv ==1.5.0
+mmdet ==2.23.0
+mmengine ==0.7.2
+moviepy ==1.0.3
+numpy ==1.23.1
+omegaconf ==2.1.1
+open-clip-torch ==2.0.2
+openai
+openai-whisper
+opencv-contrib-python ==4.3.0.36
+praat-parselmouth ==0.3.3
+prettytable ==3.6.0
+proglog ==0.1.9
+pycwt ==0.3.0a22
+pyloudnorm ==0.1.0
+pypinyin ==0.43.0
+pytorch-lightning ==1.5.0
+pytorch-ssim ==0.1
+pyworld ==0.3.0
+resampy ==0.2.2
+resemblyzer ==0.1.1.dev0
+safetensors ==0.2.7
+sklearn ==0.0
+soundfile
+soupsieve ==2.3
+streamlit ==1.12.1
+streamlit-drawable-canvas ==0.8.0
+tensorboardx ==2.4
+test-tube >=0.7.5
+textgrid ==1.5
+timm ==0.6.12
+torch ==1.12.1
+torchaudio ==0.12.1
+torch-fidelity ==0.3.0
+torchlibrosa
+torchmetrics ==0.6.0
+torchvision ==0.13.1
+transformers ==4.26.1
+typing-extensions ==4.0.0
+uuid ==1.30
+webdataset ==0.2.5
+webrtcvad ==2.0.10
+yapf ==0.32.0
+absl-py >=0.4
+aiohappyeyeballs >=2.5.0
+aiohttp <4.0.0,>=3.8.3,!=4.0.0a0,!=4.0.0a1
+aiosignal >=1.4.0
+altair >=3.2.0
+annotated-doc >=0.0.2
+annotated-types >=0.6.0
+antlr4-python3-runtime ==4.8
+anyio <5.0,>=3.0,<5,>=3.5.0,<5,>=3.6.2
+asteroid-filterbanks ==0.4.0
+async-timeout <6.0,>=4.0
+attrs >=17.3.0,>=22.2.0,>=22.2.0
+audioread >=2.1.9
+blinker >=1.0.0
+braceexpand
+brotli >=1.1.0
+cachetools >=4.0
+certifi >=2017.4.17
+cffi >=1.0
+charset-normalizer <3,>=2
+ci-sdr
+click >=7.0,<9.0.0,>=8.4.2,>=7.0
+configargparse >=1.2.1
+contourpy >=1.0.1
+cycler >=0.10
+dataclasses-json <0.6.0,>=0.5.7
+decorator >=4.3.0
+defusedxml
+distance >=0.1.3
+distro <2,>=1.7.0
+editdistance
+espnet-tts-frontend
+exceptiongroup >=1.0.2
+fast-bss-eval ==0.1.3
+fastapi <1.0,>=0.115.2
+filelock >=3.10.0
+fonttools >=4.22.0
+frozenlist >=1.1.1,>=1.1.0
+fsspec !=2021.06.0,>=2021.05.0,>=2023.5.0,<2028.0,>=2022.5.0
+ftfy
+future >=0.16.0,>=0.17.1
+gitdb <5,>=4.0.1
+gitpython !=3.1.19
+gradio-client ==2.5.0
+greenlet !=0.4.17
+groovy ~=0.1
+grpcio <2.0,>=1.74.0
+h11 >=0.8,>=0.16
+hf-gradio <1.0,>=0.4.1
+hf-xet <2.0.0,>=1.5.1
+httpcore ==1.*
+httpx <1.0.0,<1.0,>=0.24.1,<1,>=0.23.0,<1,>=0.23.0,>=0.24.1
+huggingface-hub >=0.21.0,<2.0,>=0.34.0,<2.0,>=1.2.0,<1.0,>=0.11.0,<2.0,>=0.19.3
+humanfriendly
+hydra-core
+idna <4,>=2.5,>=2.8,>=2.0
+importlib-metadata <5.0,>=1.4
+inflect >=0.3.1,>=1.0.0
+jaconv
+jamo ==0.4.1
+jinja2 <4.0,>=2.10.1
+jiter <1,>=0.10.0
+joblib >=1.0,>=1.4.0
+jsonschema >=3.0
+jsonschema-specifications >=2023.03.6
+kaldiio >=2.18.0
+kiwisolver >=1.3.1
+lazy-loader >=0.1,>=0.4
+lightning
+lightning-utilities <2.0,>=0.10.0
+llvmlite <0.49,>=0.48.0dev0
+markdown >=2.6.8
+markdown-it-py >=2.2.0
+markupsafe <4.0,>=2.0,>=2.0,>=2.1.1
+marshmallow <4.0.0,>=3.18.0
+matplotlib
+mdurl ~=0.1
+more-itertools >=8.5.0
+msgpack >=1.0
+multidict <7.0,>=4.5,>=4.0
+mypy-extensions >=0.3.0
+narwhals >=2.0.1,>=2.4.0
+networkx >=3.0
+nltk >=3.4.5,>=3.2.4
+numba >=0.51.0
+opencv-python >=4.1.0.25,>=3
+opencv-python-headless >=4.1.1,>=4.0.1
+opt-einsum
+orjson ~=3.0
+packaging >=20.0,>=17.0,>=14.1,>=20.0,>=20.9,>=21,<27.0,>=23.0,>=20.0,>=20.0,>=17.1,>=17.0
+pandas <4.0,>=1.0,>=0.21.0
+pillow <13.0,>=8.0,>=6.0.0,>=6.2.0,!=8.3.*,>=5.3.0,>=10.1,>=9
+platformdirs >=2.5.0
+pooch >=1.1
+propcache >=0.2.0,>=0.2.1
+protobuf <4,>=3.12,>=3.8.0,<8.0.0,>=6.31.1
+psutil
+pyarrow >=4.0
+pycocotools
+pycparser
+pydantic <=3.0,>=2.0,<2,>=1,<3,>=1.9.0,>=2.9.0
+pydantic-core ==2.46.4
+pydeck >=0.1.dev5
+pydeprecate ==0.3.1
+pydub <1.0
+pygments <3.0.0,>=2.13.0
+pympler >=0.9
+pyparsing >=3
+python-dateutil >=2.8.2,>=2.7
+python-multipart <1.0,>=0.0.18
+pytz >=2017.2
+pywavelets >=1.1.1
+pyyaml >=5.1.2,<7.0,>=5.0,<7,>=6,>=5.1.0,>=5.1,>=5.1,>=5.1,<8.0,>5.4
+qudida >=0.0.4
+referencing >=0.28.4,>=0.31.0
+regex !=2019.12.17,>=2021.8.3
+requests <3,>=2,>=2.4,>=2.19.0
+rich >=10.11.0,>=13.8.0
+rpds-py >=0.25.0,>=0.7.0
+safehttpx <0.2.0,>=0.1.7
+scikit-image >=0.16.1
+scikit-learn >=1.1.0,>=0.19.1
+scipy >=1.4.1,>=1.6.0,>=1.0.1,>=1.2.1,>=1.11.4,>=1.10.0
+semantic-version ~=2.0
+semver
+sentencepiece ==0.2.0
+setuptools <74.0.0,>=38.5.1,>=41.0.0
+shellingham >=1.3.0
+six >=1.5
+smmap <6,>=3.0.1
+sniffio
+soxr >=0.3.2
+sqlalchemy <2,>=1
+starlette <2.0,>=1.0.1,>=0.46.0
+tenacity <9.0.0,>=8.1.0
+tensorboard >=2.2.0
+tensorboard-data-server <0.8.0,>=0.7.0
+termcolor
+terminaltables
+threadpoolctl >=3.5.0
+tifffile >=2022.8.12
+tiktoken
+tokenizers !=0.11.3,<0.14,>=0.11.1
+toml
+tomlkit <0.15.0,>=0.12.0
+torch-complex
+tornado >=5.0
+tqdm >4,>=4.41.0,>=4.27,>=4.42.1,<6.0,>=4.57.0
+triton >=2
+typeguard >=4.0.1
+typer <1.0,>=0.12
+typing
+typing-inspect <1,>=0.4.0
+typing-inspection >=0.4.2
+tzlocal >=1.1
+unidecode >=1.0.22
+urllib3 <1.27,>=1.21.1
+uvicorn >=0.14.0
+validators >=0.2
+watchdog
+wcwidth
+werkzeug >=1.0.1
+yarl <2.0,>=1.17.0

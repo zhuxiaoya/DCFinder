@@ -1,0 +1,108 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/34/db/b10e48aa8fff7407e67470363eac595018441cf32d5e1001567a7aeba5d2/websocket_client-1.9.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=af248a825037ef591efbf6ed20cc5faa03d3b47b9e5a2230a529eeee1c1fc3ef",
+          "hashes": {
+            "sha256": "af248a825037ef591efbf6ed20cc5faa03d3b47b9e5a2230a529eeee1c1fc3ef"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "websocket-client",
+        "version": "1.9.0",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "description-content-type",
+          "download-url",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "maintainer",
+          "maintainer-email",
+          "project-url",
+          "provides-extra",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "WebSocket client for Python with low level API options",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "websockets",
+          "client"
+        ],
+        "home_page": "https://github.com/websocket-client/websocket-client.git",
+        "download_url": "https://github.com/websocket-client/websocket-client/releases",
+        "author": "liris",
+        "author_email": "liris.pp@gmail.com",
+        "maintainer": "engn33r",
+        "maintainer_email": "websocket.client@proton.me",
+        "license": "Apache-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: POSIX",
+          "Operating System :: Microsoft :: Windows",
+          "Topic :: Internet",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Intended Audience :: Developers"
+        ],
+        "requires_dist": [
+          "pytest; extra == \"test\"",
+          "websockets; extra == \"test\"",
+          "python-socks; extra == \"optional\"",
+          "wsaccel; extra == \"optional\"",
+          "Sphinx>=6.0; extra == \"docs\"",
+          "sphinx_rtd_theme>=1.1.0; extra == \"docs\"",
+          "myst-parser>=2.0.0; extra == \"docs\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Documentation, https://websocket-client.readthedocs.io/",
+          "Source, https://github.com/websocket-client/websocket-client/"
+        ],
+        "provides_extra": [
+          "test",
+          "optional",
+          "docs"
+        ],
+        "description": "[![docs](https://readthedocs.org/projects/websocket-client/badge/?style=flat)](https://websocket-client.readthedocs.io/)\n[![Build Status](https://github.com/websocket-client/websocket-client/actions/workflows/build.yml/badge.svg)](https://github.com/websocket-client/websocket-client/actions/workflows/build.yml)\n[![codecov](https://codecov.io/gh/websocket-client/websocket-client/branch/master/graph/badge.svg?token=pcXhUQwiL3)](https://codecov.io/gh/websocket-client/websocket-client)\n[![PyPI Downloads](https://pepy.tech/badge/websocket-client)](https://pepy.tech/project/websocket-client)\n[![PyPI version](https://img.shields.io/pypi/v/websocket_client)](https://pypi.org/project/websocket_client/)\n[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)\n[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)\n\n# websocket-client\n\nwebsocket-client is a WebSocket client for Python. It provides access\nto low level APIs for WebSockets. websocket-client implements version\n[hybi-13](https://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-13)\nof the WebSocket protocol. This client does not currently support the\npermessage-deflate extension from\n[RFC 7692](https://tools.ietf.org/html/rfc7692).\n\n## Documentation\n\nThis project's documentation can be found at\n[https://websocket-client.readthedocs.io/](https://websocket-client.readthedocs.io/)\n\n## Contributing\n\nPlease see the [contribution guidelines](https://github.com/websocket-client/websocket-client/blob/master/CONTRIBUTING.md)\n\n## Installation\n\nYou can use `pip install websocket-client` to install, or `pip install -e .`\nto install from a local copy of the code. This module is tested on Python 3.9+.\n\nThere are several optional dependencies that can be installed to enable\nspecific websocket-client features.\n- To install `python-socks` for proxy usage and `wsaccel` for a minor performance boost, use:\n `pip install websocket-client[optional]`\n- To install `websockets` to run unit tests using the local echo server, use:\n `pip install websocket-client[test]`\n- To install `Sphinx` and `sphinx_rtd_theme` to build project documentation, use:\n `pip install websocket-client[docs]`\n\nWhile not a strict dependency, [rel](https://github.com/bubbleboy14/registeredeventlistener)\nis useful when using `run_forever` with automatic reconnect. Install rel with `pip install rel`.\n\nFootnote: Some shells, such as zsh, require you to escape the `[` and `]` characters with a `\\`.\n\n## Usage Tips\n\nCheck out the documentation's FAQ for additional guidelines:\n[https://websocket-client.readthedocs.io/en/latest/faq.html](https://websocket-client.readthedocs.io/en/latest/faq.html)\n\nKnown issues with this library include lack of WebSocket Compression\nsupport (RFC 7692) and [minimal threading documentation/support](https://websocket-client.readthedocs.io/en/latest/threading.html).\n\n## Performance\n\nThe `send` and `validate_utf8` methods can sometimes be bottleneck.\nYou can disable UTF8 validation in this library (and receive a\nperformance enhancement) with the `skip_utf8_validation` parameter.\nIf you want to get better performance, install wsaccel. While\nwebsocket-client does not depend on wsaccel, it will be used if\navailable. wsaccel doubles the speed of UTF8 validation and\noffers a very minor 10% performance boost when masking the\npayload data as part of the `send` process. Numpy used to\nbe a suggested performance enhancement alternative, but\n[issue #687](https://github.com/websocket-client/websocket-client/issues/687)\nfound it didn't help.\n\n## Examples\n\nMany more examples are found in the\n[examples documentation](https://websocket-client.readthedocs.io/en/latest/examples.html).\n\n### Long-lived Connection\n\nMost real-world WebSockets situations involve longer-lived connections.\nThe WebSocketApp `run_forever` loop will automatically try to reconnect\nto an open WebSocket connection when a network\nconnection is lost if it is provided with:\n\n- a `dispatcher` argument (async dispatcher like rel or pyevent)\n- a non-zero `reconnect` argument (delay between disconnection and attempted reconnection)\n\n`run_forever` provides a variety of event-based connection controls\nusing callbacks like `on_message` and `on_error`.\n`run_forever` **does not automatically reconnect** if the server\ncloses the WebSocket gracefully (returning\n[a standard websocket close code](https://www.rfc-editor.org/rfc/rfc6455.html#section-7.4.1)).\n[This is the logic](https://github.com/websocket-client/websocket-client/pull/838#issuecomment-1228454826) behind the decision.\nCustomizing behavior when the server closes\nthe WebSocket should be handled in the `on_close` callback.\nThis example uses [rel](https://github.com/bubbleboy14/registeredeventlistener)\nfor the dispatcher to provide automatic reconnection.\n\n```python\nimport websocket\nimport _thread\nimport time\nimport rel\n\ndef on_message(ws, message):\n    print(message)\n\ndef on_error(ws, error):\n    print(error)\n\ndef on_close(ws, close_status_code, close_msg):\n    print(\"### closed ###\")\n\ndef on_open(ws):\n    print(\"Opened connection\")\n\nif __name__ == \"__main__\":\n    websocket.enableTrace(True)\n    ws = websocket.WebSocketApp(\"wss://api.gemini.com/v1/marketdata/BTCUSD\",\n                              on_open=on_open,\n                              on_message=on_message,\n                              on_error=on_error,\n                              on_close=on_close)\n\n    ws.run_forever(dispatcher=rel, reconnect=5)  # Set dispatcher to automatic reconnection, 5 second reconnect delay if connection closed unexpectedly\n    rel.signal(2, rel.abort)  # Keyboard Interrupt\n    rel.dispatch()\n```\n\n### Short-lived Connection\n\nThis is if you want to communicate a short message and disconnect\nimmediately when done. For example, if you want to confirm that a WebSocket\nserver is running and responds properly to a specific request.\n\n```python\nfrom websocket import create_connection\n\nws = create_connection(\"ws://echo.websocket.events/\")\nprint(ws.recv())\nprint(\"Sending 'Hello, World'...\")\nws.send(\"Hello, World\")\nprint(\"Sent\")\nprint(\"Receiving...\")\nresult =  ws.recv()\nprint(\"Received '%s'\" % result)\nws.close()\n```\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

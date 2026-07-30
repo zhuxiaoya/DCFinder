@@ -1,0 +1,37 @@
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml
+typing-extensions >=4.5.0  # type: runtime
+numpy >=1.20.0  # type: runtime
+diskcache >=5.6.1  # type: runtime
+jinja2 >=2.11.3  # type: runtime
+uvicorn >=0.22.0  # type: extra:server
+fastapi >=0.100.0  # type: extra:server
+pydantic-settings >=2.0.1  # type: extra:server
+sse-starlette >=1.6.1  # type: extra:server
+starlette-context <0.4,>=0.3.6  # type: extra:server
+pyyaml >=5.1  # type: extra:server
+pytest >=7.4.0  # type: extra:test
+httpx >=0.24.1  # type: extra:test
+scipy >=1.10  # type: extra:test
+fastapi >=0.100.0  # type: extra:test
+sse-starlette >=1.6.1  # type: extra:test
+starlette-context <0.4,>=0.3.6  # type: extra:test
+pydantic-settings >=2.0.1  # type: extra:test
+huggingface-hub >=0.23.0  # type: extra:test
+black >=23.3.0  # type: extra:dev
+twine >=4.0.2  # type: extra:dev
+mkdocs >=1.4.3  # type: extra:dev
+mkdocstrings >=0.22.0  # type: extra:dev
+mkdocs-material >=9.1.18  # type: extra:dev
+pytest >=7.4.0  # type: extra:dev
+httpx >=0.24.1  # type: extra:dev
+llama-cpp-python  # type: extra:all
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/docs/requirements.txt
+mkdocs  # type: runtime
+mkdocs-material  # type: runtime
+mkdocstrings  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/examples/ray/requirements.txt
+ray  # type: runtime
+llama-cpp-python  # type: runtime
+

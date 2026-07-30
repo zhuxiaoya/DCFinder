@@ -1,0 +1,38 @@
+{
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py": [
+    {
+      "name": "tensorizer",
+      "specifier": ">=2.9.0"
+    },
+    {
+      "name": "fastsafetensors",
+      "specifier": ">=0.1.10"
+    },
+    {
+      "name": "runai-model-streamer",
+      "specifier": ""
+    },
+    {
+      "name": "runai-model-streamer-s3",
+      "specifier": ""
+    },
+    {
+      "name": "boto3",
+      "specifier": ""
+    },
+    {
+      "name": "librosa",
+      "specifier": ""
+    },
+    {
+      "name": "soundfile",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/benchmarks/kernels/requirements.txt": [
+    {
+      "name": "pandas",
+      "specifier": ""
+    }
+  ]
+}

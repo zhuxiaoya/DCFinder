@@ -1,0 +1,63 @@
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/requirements-poetry.txt
+poetry ==2.1.1  # type: runtime
+poetry-dynamic-versioning  # type: runtime
+poetry-plugin-export  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/chia-blockchain-main/pyproject.toml
+aiofiles >=24.1.0  # type: runtime
+aiohttp >=3.10.4  # type: runtime
+aiosqlite >=0.20.0  # type: runtime
+anyio >=4.6.2.post1  # type: runtime
+bitstring >=4.1.4  # type: runtime
+boto3 >=1.35.43  # type: runtime
+chiabip158 >=1.5.2  # type: runtime
+chiapos >=2.0.10  # type: runtime
+chia-puzzles-py >=0.20.1  # type: runtime
+chia-rs <0.25,>=0.24  # type: runtime
+chiavdf >=1.1.10  # type: runtime
+click >=8.1.7  # type: runtime
+clvm >=0.9.12  # type: runtime
+clvm-tools >=0.4.9  # type: runtime
+clvm-tools-rs >=0.1.45  # type: runtime
+colorama >=0.4.6  # type: runtime
+colorlog >=6.9.0  # type: runtime
+concurrent-log-handler >=0.9.25  # type: runtime
+cryptography >=43.0.1  # type: runtime
+dnslib >=0.9.25  # type: runtime
+dnspython >=2.6.1  # type: runtime
+filelock >=3.16.1  # type: runtime
+keyring >=25.5.0  # type: runtime
+packaging >=24.0  # type: runtime
+pip >=24.2  # type: runtime
+psutil >=6.1.0  # type: runtime
+pyyaml >=6.0.2  # type: runtime
+setproctitle >=1.3.3  # type: runtime
+setuptools >=75.5.0  # type: runtime
+sortedcontainers >=2.4.0  # type: runtime
+typing-extensions >=4.12.2  # type: runtime
+watchdog >=4.0.1  # type: runtime
+zstd [{'version': '>=1.5.5.1', 'python': '<3.12'}, {'version': '>=1.5.5.1', 'python': '3.12', 'source': 'chia'}]  # type: runtime
+importlib-resources >=6.4.5  # type: runtime
+hsms >=0.3.1  # type: runtime
+aiohttp-cors >=0.7.0  # type: runtime
+build >=1.2.1  # type: runtime
+coverage >=7.6.4  # type: runtime
+diff-cover >=9.2.0  # type: runtime
+keyrings-cryptfile >=1.3.9  # type: runtime
+mypy >=1.11.1  # type: runtime
+pre-commit >=3.7.1  # type: runtime
+py3createtorrent >=1.2.1  # type: runtime
+pyinstaller >=6.9.0  # type: runtime
+pytest >=8.3.3  # type: runtime
+pytest-cov >=5.0.0  # type: runtime
+pytest-mock >=3.14.0  # type: runtime
+pytest-monitor >=1.6.6  # type: runtime
+pytest-xdist >=3.6.1  # type: runtime
+types-aiofiles >=24.1.0.20240626  # type: runtime
+types-cryptography >=3.3.23.2  # type: runtime
+types-pyyaml >=6.0.12.20240917  # type: runtime
+types-setuptools >=75.5.0.20241122  # type: runtime
+lxml >=5.2.2  # type: runtime
+miniupnpc <3,>=2.3.2  # type: runtime
+ruff >=0.8.1  # type: runtime
+

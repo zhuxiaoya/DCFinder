@@ -1,0 +1,18 @@
+filelock
+  # from parent package: torch (private)
+fsspec >=0.8.5
+  # from parent package: torch (private)
+jinja2
+  # from parent package: torch (private)
+markupsafe >=2.0
+  # from parent package: jinja2 (private)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+networkx >=2.5.1
+  # from parent package: torch (private)
+setuptools >=77.0.3
+  # from parent package: torch (private)
+sympy >=1.13.3
+  # from parent package: torch (private)
+typing-extensions >=4.10.0
+  # from parent package: torch (private)

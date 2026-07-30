@@ -1,0 +1,650 @@
+[
+  {
+    "parent": "opencv-python",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "opencv-python",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "opencv-python",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "opencv-python",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "onnx",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "onnx",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "customtkinter",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "darkdetect"
+  },
+  {
+    "parent": "customtkinter",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "torchvision",
+    "parent_source": "private",
+    "parent_version": "0.20.1+cu118",
+    "child": "numpy"
+  },
+  {
+    "parent": "torchvision",
+    "parent_source": "private",
+    "parent_version": "0.20.1+cu118",
+    "child": "torch"
+  },
+  {
+    "parent": "torchvision",
+    "parent_source": "private",
+    "parent_version": "0.20.1+cu118",
+    "child": "pillow"
+  },
+  {
+    "parent": "onnxruntime-silicon",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "coloredlogs"
+  },
+  {
+    "parent": "onnxruntime-silicon",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "flatbuffers"
+  },
+  {
+    "parent": "onnxruntime-silicon",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "onnxruntime-silicon",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "onnxruntime-silicon",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "onnxruntime-silicon",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "sympy"
+  },
+  {
+    "parent": "onnxruntime-gpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "coloredlogs"
+  },
+  {
+    "parent": "onnxruntime-gpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "flatbuffers"
+  },
+  {
+    "parent": "onnxruntime-gpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "onnxruntime-gpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "onnxruntime-gpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "onnxruntime-gpu",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "sympy"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "absl-py"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "astunparse"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "flatbuffers"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "gast"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "google-pasta"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "libclang"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "opt-einsum"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "setuptools"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "six"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "termcolor"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "wrapt"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "grpcio"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "keras"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "h5py"
+  },
+  {
+    "parent": "tensorflow",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "ml-dtypes"
+  },
+  {
+    "parent": "opennsfw2",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "gdown"
+  },
+  {
+    "parent": "opennsfw2",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "matplotlib"
+  },
+  {
+    "parent": "opennsfw2",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "opennsfw2",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "opencv-python"
+  },
+  {
+    "parent": "opennsfw2",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pillow"
+  },
+  {
+    "parent": "opennsfw2",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "scikit-image"
+  },
+  {
+    "parent": "opennsfw2",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tensorflow"
+  },
+  {
+    "parent": "opennsfw2",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tqdm"
+  },
+  {
+    "parent": "coloredlogs",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "humanfriendly"
+  },
+  {
+    "parent": "sympy",
+    "parent_source": "private",
+    "parent_version": "1.14.0",
+    "child": "mpmath"
+  },
+  {
+    "parent": "astunparse",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "wheel"
+  },
+  {
+    "parent": "astunparse",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "six"
+  },
+  {
+    "parent": "google-pasta",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "six"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "private",
+    "parent_version": "2.28.1",
+    "child": "charset-normalizer"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "private",
+    "parent_version": "2.28.1",
+    "child": "idna"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "private",
+    "parent_version": "2.28.1",
+    "child": "urllib3"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "private",
+    "parent_version": "2.28.1",
+    "child": "certifi"
+  },
+  {
+    "parent": "grpcio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "keras",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "absl-py"
+  },
+  {
+    "parent": "keras",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "keras",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "rich"
+  },
+  {
+    "parent": "keras",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "namex"
+  },
+  {
+    "parent": "keras",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "h5py"
+  },
+  {
+    "parent": "keras",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "optree"
+  },
+  {
+    "parent": "keras",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "ml-dtypes"
+  },
+  {
+    "parent": "keras",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "h5py",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "ml-dtypes",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "ml-dtypes",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "gdown",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "beautifulsoup4"
+  },
+  {
+    "parent": "gdown",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "filelock"
+  },
+  {
+    "parent": "gdown",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "requests"
+  },
+  {
+    "parent": "gdown",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tqdm"
+  },
+  {
+    "parent": "gdown",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "contourpy"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cycler"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fonttools"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "kiwisolver"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pillow"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyparsing"
+  },
+  {
+    "parent": "matplotlib",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "python-dateutil"
+  },
+  {
+    "parent": "scikit-image",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "scikit-image",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "scipy"
+  },
+  {
+    "parent": "scikit-image",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "networkx"
+  },
+  {
+    "parent": "scikit-image",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pillow"
+  },
+  {
+    "parent": "scikit-image",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "imageio"
+  },
+  {
+    "parent": "scikit-image",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tifffile"
+  },
+  {
+    "parent": "scikit-image",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "scikit-image",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "lazy-loader"
+  },
+  {
+    "parent": "wheel",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "rich",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markdown-it-py"
+  },
+  {
+    "parent": "rich",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pygments"
+  },
+  {
+    "parent": "optree",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "beautifulsoup4",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "soupsieve"
+  },
+  {
+    "parent": "beautifulsoup4",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "contourpy",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "python-dateutil",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "six"
+  },
+  {
+    "parent": "scipy",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "imageio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "imageio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pillow"
+  },
+  {
+    "parent": "tifffile",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "lazy-loader",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "markdown-it-py",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mdurl"
+  }
+]

@@ -1,0 +1,437 @@
+aiofiles <24.0,>=22.0
+  # from parent package: gradio (public)
+altair <6.0,>=4.2.0
+  # from parent package: gradio (public)
+annotated-doc >=0.0.2
+  # from parent package: fastapi (public)
+  # from parent package: typer (public)
+annotated-types >=0.6.0
+  # from parent package: pydantic (public)
+antlr4-python3-runtime ==4.9.*
+  # from parent package: omegaconf (public)
+anyio <5,>=3.6.2
+  # from parent package: httpx (public)
+  # from parent package: starlette (public)
+astroid <=2.14.0-dev0,>=2.12.4
+  # from parent package: pylint (public)
+attrs >=22.2.0
+  # from parent package: jsonschema (public)
+  # from parent package: referencing (public)
+cachetools
+  # from parent package: cudf-cu11 (private)
+certifi >=2017.4.17
+  # from parent package: httpx (public)
+  # from parent package: requests (private)
+  # from parent package: httpcore (public)
+charset-normalizer <3,>=2
+  # from parent package: requests (private)
+click <9.0.0,>=8.4.2,>=8.0.0,>=7.0,>=8.1,>=8.1,>=8.0
+  # from parent package: huggingface-hub (public)
+  # from parent package: black (public)
+  # from parent package: uvicorn (public)
+  # from parent package: dask-cuda (private)
+  # from parent package: dask (public)
+  # from parent package: distributed (public)
+cloudpickle >=1.2.1,>=3.0.0,>=3.0.0
+  # from parent package: submitit (public)
+  # from parent package: dask (public)
+  # from parent package: distributed (public)
+cmake
+  # from parent package: triton (private)
+contourpy >=1.0.1
+  # from parent package: matplotlib (public)
+cubinlinker-cu11
+  # from parent package: cudf-cu11 (private)
+cuda-python <12.0a0,>=11.8.5
+  # from parent package: cuml-cu11 (private)
+  # from parent package: cudf-cu11 (private)
+  # from parent package: cuvs-cu11 (private)
+  # from parent package: pylibraft-cu11 (private)
+  # from parent package: rmm-cu11 (private)
+  # from parent package: pylibcudf-cu11 (private)
+cudf-cu11 ==25.6.*
+  # from parent package: cuml-cu11 (private)
+  # from parent package: dask-cudf-cu11 (private)
+cupy-cuda11x >=12.0.0
+  # from parent package: cuml-cu11 (private)
+  # from parent package: cudf-cu11 (private)
+  # from parent package: dask-cudf-cu11 (private)
+cuvs-cu11 ==25.6.*
+  # from parent package: cuml-cu11 (private)
+cycler >=0.10
+  # from parent package: matplotlib (public)
+dask ==2025.5.0
+  # from parent package: rapids-dask-dependency (private)
+  # from parent package: distributed (public)
+dask-cuda ==25.6.*
+  # from parent package: cuml-cu11 (private)
+  # from parent package: raft-dask-cu11 (private)
+dask-cudf-cu11 ==25.6.*
+  # from parent package: cuml-cu11 (private)
+dill >=0.2
+  # from parent package: pylint (public)
+distributed ==2025.5.0
+  # from parent package: rapids-dask-dependency (private)
+distributed-ucxx-cu11 ==0.44.*
+  # from parent package: raft-dask-cu11 (private)
+exceptiongroup >=1.0.2
+  # from parent package: anyio (public)
+fastapi
+  # from parent package: gradio (public)
+fastrlock >=0.5
+  # from parent package: cupy-cuda11x (public)
+ffmpy
+  # from parent package: gradio (public)
+filelock >=3.10.0
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+  # from parent package: triton (private)
+fonttools >=4.22.0
+  # from parent package: matplotlib (public)
+fsspec >=2023.5.0,>=0.6.0,>=0.6.0,>=2021.09.0
+  # from parent package: huggingface-hub (public)
+  # from parent package: gradio-client (public)
+  # from parent package: cudf-cu11 (private)
+  # from parent package: dask-cudf-cu11 (private)
+  # from parent package: dask (public)
+gradio-client ==0.8.0
+  # from parent package: gradio (public)
+h11 >=0.8,>=0.16
+  # from parent package: uvicorn (public)
+  # from parent package: httpcore (public)
+hf-xet <2.0.0,>=1.5.1
+  # from parent package: huggingface-hub (public)
+httpcore ==1.*
+  # from parent package: httpx (public)
+httpx <1,>=0.23.0
+  # from parent package: gradio (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: gradio-client (public)
+idna <4,>=2.5,>=2.8
+  # from parent package: httpx (public)
+  # from parent package: requests (private)
+  # from parent package: anyio (public)
+importlib-metadata >=4.13.0
+  # from parent package: dask (public)
+importlib-resources <7.0,>=1.3
+  # from parent package: gradio (public)
+isort <6,>=4.2.5
+  # from parent package: pylint (public)
+jinja2 <4.0,>=2.10.3
+  # from parent package: gradio (public)
+  # from parent package: torch (private)
+  # from parent package: altair (public)
+  # from parent package: distributed (public)
+joblib >=0.11,>=1.4.0
+  # from parent package: cuml-cu11 (private)
+  # from parent package: scikit-learn (public)
+jsonschema >=3.0
+  # from parent package: altair (public)
+jsonschema-specifications >=2023.03.6
+  # from parent package: jsonschema (public)
+kiwisolver >=1.3.1
+  # from parent package: matplotlib (public)
+lazy-object-proxy >=1.4.0
+  # from parent package: astroid (public)
+libcudf-cu11 ==25.6.*
+  # from parent package: cudf-cu11 (private)
+  # from parent package: pylibcudf-cu11 (private)
+libcuml-cu11 ==25.6.*
+  # from parent package: cuml-cu11 (private)
+libcuvs-cu11 ==25.6.*
+  # from parent package: cuvs-cu11 (private)
+  # from parent package: libcuml-cu11 (private)
+libkvikio-cu11 ==25.6.*
+  # from parent package: libcudf-cu11 (private)
+libraft-cu11 ==25.6.*
+  # from parent package: libcuml-cu11 (private)
+  # from parent package: pylibraft-cu11 (private)
+  # from parent package: raft-dask-cu11 (private)
+librmm-cu11 ==25.6.*
+  # from parent package: rmm-cu11 (private)
+  # from parent package: libcudf-cu11 (private)
+  # from parent package: libraft-cu11 (private)
+  # from parent package: libucxx-cu11 (private)
+libucx-cu11 <1.19,>=1.15.0
+  # from parent package: ucx-py-cu11 (private)
+  # from parent package: libucxx-cu11 (private)
+libucxx-cu11 ==0.44.*
+  # from parent package: ucxx-cu11 (private)
+lit
+  # from parent package: triton (private)
+llvmlite <0.45,>=0.44.0dev0
+  # from parent package: numba (public)
+locket >=1.0.0
+  # from parent package: distributed (public)
+  # from parent package: partd (public)
+markdown-it-py >=2.2.0
+  # from parent package: rich (public)
+markupsafe ~=2.0,>=2.0
+  # from parent package: gradio (public)
+  # from parent package: jinja2 (private)
+matplotlib ~=3.0
+  # from parent package: gradio (public)
+mccabe <0.8.0,>=0.7.0,<0.8,>=0.6
+  # from parent package: flake8 (public)
+  # from parent package: pylint (public)
+mdurl ~=0.1
+  # from parent package: markdown-it-py (public)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+msgpack >=1.0.2
+  # from parent package: distributed (public)
+mypy-extensions >=0.4.3
+  # from parent package: black (public)
+narwhals >=1.27.1,>=2.0.1
+  # from parent package: altair (public)
+  # from parent package: scikit-learn (public)
+networkx
+  # from parent package: torch (private)
+numba <0.62.0a0,>=0.59.1,>=0.59.1,<0.62.0a0,>=0.59.1
+  # from parent package: cuml-cu11 (private)
+  # from parent package: cudf-cu11 (private)
+  # from parent package: dask-cuda (private)
+  # from parent package: numba-cuda (public)
+  # from parent package: distributed-ucxx-cu11 (private)
+numba-cuda <0.12.0a0,>=0.11.0
+  # from parent package: cudf-cu11 (private)
+numpy ~=1.0,>=2,<3.0a0,>=1.23,>=1.25,>=1.22.4,<3.0a0,>=1.23,<2.6,>=1.22,<3.0a0,>=1.23,<3.0a0,>=1.23,<3.0a0,>=1.23,<2.3,>=1.24,<3.0a0,>=1.23,<3.0a0,>=1.23,>=1.24.1,<2.8,>=2.0.0,>=1.25,<3.0a0,>=1.23,<3.0a0,>=1.23
+  # from parent package: gradio (public)
+  # from parent package: torchvision (private)
+  # from parent package: opencv-python (public)
+  # from parent package: cuml-cu11 (private)
+  # from parent package: matplotlib (public)
+  # from parent package: pandas (public)
+  # from parent package: cudf-cu11 (private)
+  # from parent package: cupy-cuda11x (public)
+  # from parent package: cuvs-cu11 (private)
+  # from parent package: dask-cuda (private)
+  # from parent package: dask-cudf-cu11 (private)
+  # from parent package: numba (public)
+  # from parent package: pylibraft-cu11 (private)
+  # from parent package: rmm-cu11 (private)
+  # from parent package: scikit-learn (public)
+  # from parent package: scipy (public)
+  # from parent package: treelite (public)
+  # from parent package: contourpy (public)
+  # from parent package: ucx-py-cu11 (private)
+  # from parent package: ucxx-cu11 (private)
+nvidia-cublas-cu11
+  # from parent package: cuml-cu11 (private)
+  # from parent package: libcuml-cu11 (private)
+  # from parent package: nvidia-cusolver-cu11 (private)
+  # from parent package: libraft-cu11 (private)
+nvidia-cufft-cu11
+  # from parent package: cuml-cu11 (private)
+  # from parent package: libcuml-cu11 (private)
+nvidia-curand-cu11
+  # from parent package: cuml-cu11 (private)
+  # from parent package: libcuml-cu11 (private)
+  # from parent package: libraft-cu11 (private)
+nvidia-cusolver-cu11
+  # from parent package: cuml-cu11 (private)
+  # from parent package: libcuml-cu11 (private)
+  # from parent package: libraft-cu11 (private)
+nvidia-cusparse-cu11
+  # from parent package: cuml-cu11 (private)
+  # from parent package: libcuml-cu11 (private)
+  # from parent package: libraft-cu11 (private)
+nvidia-ml-py <13.0.0a0,>=12.0.0
+  # from parent package: pynvml (public)
+nvtx >=0.2.1
+  # from parent package: cudf-cu11 (private)
+  # from parent package: pylibcudf-cu11 (private)
+orjson ~=3.0
+  # from parent package: gradio (public)
+packaging >=20.9,>=20.0,>=20.0,>=20.0
+  # from parent package: gradio (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: cuml-cu11 (private)
+  # from parent package: altair (public)
+  # from parent package: gradio-client (public)
+  # from parent package: matplotlib (public)
+  # from parent package: cudf-cu11 (private)
+  # from parent package: treelite (public)
+  # from parent package: pylibcudf-cu11 (private)
+  # from parent package: dask (public)
+  # from parent package: distributed (public)
+pandas <3.0,>=1.0,<2.2.4dev0,>=2.0,>=1.3,<2.2.4dev0,>=2.0
+  # from parent package: gradio (public)
+  # from parent package: cudf-cu11 (private)
+  # from parent package: dask-cuda (private)
+  # from parent package: dask-cudf-cu11 (private)
+partd >=1.4.0
+  # from parent package: dask (public)
+pathspec >=0.9.0
+  # from parent package: black (public)
+pillow <11.0,>=8.0,!=8.3.*,>=5.3.0,>=9
+  # from parent package: gradio-imageslider (public)
+  # from parent package: gradio (public)
+  # from parent package: torchvision (private)
+  # from parent package: matplotlib (public)
+platformdirs >=2,>=2.2.0
+  # from parent package: black (public)
+  # from parent package: pylint (public)
+portalocker
+  # from parent package: iopath (private)
+psutil >=5.8.0
+  # from parent package: distributed (public)
+ptxcompiler-cu11
+  # from parent package: cudf-cu11 (private)
+pyarrow <20.0.0a0,>=14.0.0
+  # from parent package: cudf-cu11 (private)
+  # from parent package: pylibcudf-cu11 (private)
+pycodestyle <2.10.0,>=2.9.0
+  # from parent package: flake8 (public)
+pydantic >=2.0,>=2.9.0
+  # from parent package: gradio (public)
+  # from parent package: fastapi (public)
+pydantic-core ==2.47.0
+  # from parent package: pydantic (public)
+pydub
+  # from parent package: gradio (public)
+pyflakes <2.6.0,>=2.5.0
+  # from parent package: flake8 (public)
+pygments <3.0.0,>=2.13.0
+  # from parent package: rich (public)
+pylibcudf-cu11 ==25.6.*
+  # from parent package: cudf-cu11 (private)
+pylibraft-cu11 ==25.6.*
+  # from parent package: cuml-cu11 (private)
+  # from parent package: cuvs-cu11 (private)
+  # from parent package: raft-dask-cu11 (private)
+pynvml <13.0.0a0,>=12.0.0
+  # from parent package: dask-cuda (private)
+  # from parent package: dask-cudf-cu11 (private)
+  # from parent package: ucx-py-cu11 (private)
+  # from parent package: ucxx-cu11 (private)
+pyparsing >=3
+  # from parent package: matplotlib (public)
+python-dateutil >=2.7,>=2.8.2
+  # from parent package: matplotlib (public)
+  # from parent package: pandas (public)
+python-multipart
+  # from parent package: gradio (public)
+pytz >=2020.1
+  # from parent package: pandas (public)
+pyyaml <7.0,>=5.0,>=5.1,>=5.1.0,>=5.3.1,>=5.4.1
+  # from parent package: gradio (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: omegaconf (public)
+  # from parent package: dask (public)
+  # from parent package: distributed (public)
+raft-dask-cu11 ==25.6.*
+  # from parent package: cuml-cu11 (private)
+rapids-dask-dependency ==25.6.*
+  # from parent package: cuml-cu11 (private)
+  # from parent package: dask-cuda (private)
+  # from parent package: dask-cudf-cu11 (private)
+  # from parent package: raft-dask-cu11 (private)
+  # from parent package: distributed-ucxx-cu11 (private)
+rapids-logger ==0.1.*
+  # from parent package: libcuml-cu11 (private)
+  # from parent package: libcudf-cu11 (private)
+  # from parent package: libraft-cu11 (private)
+  # from parent package: librmm-cu11 (private)
+referencing >=0.28.4,>=0.31.0
+  # from parent package: jsonschema (public)
+  # from parent package: jsonschema-specifications (public)
+requests
+  # from parent package: torchvision (private)
+rich >=13.8.0
+  # from parent package: typer (public)
+  # from parent package: cudf-cu11 (private)
+rmm-cu11 ==25.6.*
+  # from parent package: cuml-cu11 (private)
+  # from parent package: cudf-cu11 (private)
+  # from parent package: pylibraft-cu11 (private)
+  # from parent package: pylibcudf-cu11 (private)
+  # from parent package: ucxx-cu11 (private)
+rpds-py >=0.25.0,>=0.7.0
+  # from parent package: jsonschema (public)
+  # from parent package: referencing (public)
+scikit-learn >=1.5
+  # from parent package: cuml-cu11 (private)
+scipy >=1.8.0,>=1.10.0
+  # from parent package: cuml-cu11 (private)
+  # from parent package: scikit-learn (public)
+  # from parent package: treelite (public)
+semantic-version ~=2.0
+  # from parent package: gradio (public)
+shellingham >=1.3.0
+  # from parent package: typer (public)
+six >=1.5
+  # from parent package: python-dateutil (public)
+sortedcontainers >=2.0.5
+  # from parent package: distributed (public)
+starlette >=0.46.0
+  # from parent package: fastapi (public)
+sympy
+  # from parent package: torch (private)
+tblib >=1.6.0
+  # from parent package: distributed (public)
+threadpoolctl >=3.5.0
+  # from parent package: scikit-learn (public)
+tomli >=1.1.0
+  # from parent package: black (public)
+  # from parent package: pylint (public)
+tomlkit ==0.12.0
+  # from parent package: gradio (public)
+  # from parent package: pylint (public)
+toolz >=0.10.0,>=0.11.2
+  # from parent package: dask (public)
+  # from parent package: distributed (public)
+  # from parent package: partd (public)
+tornado >=6.2.0
+  # from parent package: distributed (public)
+tqdm >=4.42.1
+  # from parent package: huggingface-hub (public)
+  # from parent package: iopath (private)
+treelite ==4.4.1
+  # from parent package: cuml-cu11 (private)
+triton ==2.0.0
+  # from parent package: torch (private)
+typer <1.0,>=0.9
+  # from parent package: gradio (public)
+typing-extensions ~=4.0,>=4.1.0,>=3.7.4.2,>=4.12.0,>=4.8.0,~=4.0,>=4.15.0,>=4.0,>=4.0.0,>=4.0.0,>=4.10.0,>=4.12.0,>=4.5,>=4.14.1,>=4.0.0,>=4.4.0,>=4.6.0
+  # from parent package: gradio (public)
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+  # from parent package: submitit (public)
+  # from parent package: altair (public)
+  # from parent package: fastapi (public)
+  # from parent package: gradio-client (public)
+  # from parent package: pydantic (public)
+  # from parent package: uvicorn (public)
+  # from parent package: astroid (public)
+  # from parent package: cudf-cu11 (private)
+  # from parent package: starlette (public)
+  # from parent package: typing-inspection (public)
+  # from parent package: anyio (public)
+  # from parent package: pydantic-core (public)
+  # from parent package: pylibcudf-cu11 (private)
+  # from parent package: referencing (public)
+  # from parent package: exceptiongroup (public)
+typing-inspection >=0.4.2
+  # from parent package: fastapi (public)
+  # from parent package: pydantic (public)
+tzdata >=2022.7
+  # from parent package: pandas (public)
+ucx-py-cu11 ==0.44.*
+  # from parent package: raft-dask-cu11 (private)
+ucxx-cu11 ==0.44.*
+  # from parent package: distributed-ucxx-cu11 (private)
+urllib3 <1.27,>=1.21.1,>=1.26.5
+  # from parent package: requests (private)
+  # from parent package: distributed (public)
+uvicorn >=0.14.0
+  # from parent package: gradio (public)
+websockets <12.0,>=10.0
+  # from parent package: gradio-client (public)
+wrapt <2,>=1.11
+  # from parent package: astroid (public)
+zict >=2.0.0,>=3.0.0
+  # from parent package: dask-cuda (private)
+  # from parent package: distributed (public)
+zipp >=0.5
+  # from parent package: importlib-metadata (private)

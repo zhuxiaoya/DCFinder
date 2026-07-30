@@ -1,0 +1,250 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/45/ec/dbb7e5a6b91f86bfb9eb7d2988a2730907b6a729875b949c7f022e8b88fa/uvicorn-0.51.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=5d38af6cd620f2ae3849fb44fd4879e0890aa1febe8d47eb355fb45d93fe6a5b",
+          "hashes": {
+            "sha256": "5d38af6cd620f2ae3849fb44fd4879e0890aa1febe8d47eb355fb45d93fe6a5b"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "uvicorn",
+        "version": "0.51.0",
+        "summary": "The lightning-fast ASGI server.",
+        "description_content_type": "text/markdown",
+        "author_email": "Tom Christie <tom@tomchristie.com>",
+        "maintainer_email": "Marcelo Trylesinski <marcelotryle@gmail.com>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE.md"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Environment :: Web Environment",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Internet :: WWW/HTTP"
+        ],
+        "requires_dist": [
+          "click>=7.0",
+          "h11>=0.8",
+          "typing-extensions>=4.0; python_version < '3.11'",
+          "httptools>=0.8.0; extra == 'standard'",
+          "python-dotenv>=0.13; extra == 'standard'",
+          "pyyaml>=5.1; extra == 'standard'",
+          "uvloop>=0.15.1; (sys_platform != 'win32' and (sys_platform != 'cygwin' and platform_python_implementation != 'PyPy')) and extra == 'standard'",
+          "watchfiles>=0.20; extra == 'standard'",
+          "websockets>=13.0; extra == 'standard'"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Changelog, https://uvicorn.dev/release-notes",
+          "Funding, https://github.com/sponsors/encode",
+          "Homepage, https://uvicorn.dev/",
+          "Source, https://github.com/Kludex/uvicorn"
+        ],
+        "provides_extra": [
+          "standard"
+        ],
+        "description": "<p align=\"center\">\n  <img width=\"320\" height=\"320\" src=\"https://raw.githubusercontent.com/tomchristie/uvicorn/main/docs/uvicorn.png\" alt='uvicorn'>\n</p>\n\n<p align=\"center\">\n<em>An ASGI web server, for Python.</em>\n</p>\n\n---\n\n[![Build Status](https://github.com/Kludex/uvicorn/workflows/Test%20Suite/badge.svg)](https://github.com/Kludex/uvicorn/actions)\n[![Package version](https://badge.fury.io/py/uvicorn.svg)](https://pypi.python.org/pypi/uvicorn)\n[![Supported Python Version](https://img.shields.io/pypi/pyversions/uvicorn.svg?color=%2334D058)](https://pypi.org/project/uvicorn)\n[![Discord](https://img.shields.io/discord/1051468649518616576?logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/RxKUF5JuHs)\n\n---\n\n**Documentation**: [https://uvicorn.dev](https://uvicorn.dev)\n\n**Source Code**: [https://www.github.com/Kludex/uvicorn](https://www.github.com/Kludex/uvicorn)\n\n---\n\nUvicorn is an ASGI web server implementation for Python.\n\nUntil recently Python has lacked a minimal low-level server/application interface for\nasync frameworks. The [ASGI specification][asgi] fills this gap, and means we're now able to\nstart building a common set of tooling usable across all async frameworks.\n\nUvicorn supports HTTP/1.1 and WebSockets.\n\n## Quickstart\n\nInstall using `pip`:\n\n```shell\n$ pip install uvicorn\n```\n\nThis will install uvicorn with minimal (pure Python) dependencies.\n\n```shell\n$ pip install 'uvicorn[standard]'\n```\n\nThis will install uvicorn with \"Cython-based\" dependencies (where possible) and other \"optional extras\".\n\nIn this context, \"Cython-based\" means the following:\n\n- the event loop `uvloop` will be installed and used if possible.\n- the http protocol will be handled by `httptools` if possible.\n\nMoreover, \"optional extras\" means that:\n\n- the websocket protocol will be handled by `websockets` (should you want to use `wsproto` you'd need to install it manually) if possible.\n- the `--reload` flag in development mode will use `watchfiles`.\n- `python-dotenv` will be installed should you want to use the `--env-file` option.\n- `PyYAML` will be installed to allow you to provide a `.yaml` file to `--log-config`, if desired.\n\nCreate an application, in `example.py`:\n\n```python\nasync def app(scope, receive, send):\n    assert scope['type'] == 'http'\n\n    await send({\n        'type': 'http.response.start',\n        'status': 200,\n        'headers': [\n            (b'content-type', b'text/plain'),\n        ],\n    })\n    await send({\n        'type': 'http.response.body',\n        'body': b'Hello, world!',\n    })\n```\n\nRun the server:\n\n```shell\n$ uvicorn example:app\n```\n\n---\n\n## Why ASGI?\n\nMost well established Python Web frameworks started out as WSGI-based frameworks.\n\nWSGI applications are a single, synchronous callable that takes a request and returns a response.\nThis doesn’t allow for long-lived connections, like you get with long-poll HTTP or WebSocket connections,\nwhich WSGI doesn't support well.\n\nHaving an async concurrency model also allows for options such as lightweight background tasks,\nand can be less of a limiting factor for endpoints that have long periods being blocked on network\nI/O such as dealing with slow HTTP requests.\n\n---\n\n## Alternative ASGI servers\n\nA strength of the ASGI protocol is that it decouples the server implementation\nfrom the application framework. This allows for an ecosystem of interoperating\nwebservers and application frameworks.\n\n### Daphne\n\nThe first ASGI server implementation, originally developed to power Django Channels, is [the Daphne webserver][daphne].\n\nIt is run widely in production, and supports HTTP/1.1, HTTP/2, and WebSockets.\n\nAny of the example applications given here can equally well be run using `daphne` instead.\n\n```\n$ pip install daphne\n$ daphne app:App\n```\n\n### Hypercorn\n\n[Hypercorn][hypercorn] was initially part of the Quart web framework, before\nbeing separated out into a standalone ASGI server.\n\nHypercorn supports HTTP/1.1, HTTP/2, and WebSockets.\n\nIt also supports [the excellent `trio` async framework][trio], as an alternative to `asyncio`.\n\n```\n$ pip install hypercorn\n$ hypercorn app:App\n```\n\n### Mangum\n\n[Mangum][mangum] is an adapter for using ASGI applications with AWS Lambda & API Gateway.\n\n### Granian\n\n[Granian][granian] is an ASGI compatible Rust HTTP server which supports HTTP/2, TLS and WebSockets.\n\n---\n\n<p align=\"center\"><i>Uvicorn is <a href=\"https://github.com/Kludex/uvicorn/blob/main/LICENSE.md\">BSD licensed</a> code.<br/>Designed & crafted with care.</i><br/>&mdash; 🦄  &mdash;</p>\n\n[asgi]: https://asgi.readthedocs.io/en/latest/\n[daphne]: https://github.com/django/daphne\n[hypercorn]: https://github.com/pgjones/hypercorn\n[trio]: https://trio.readthedocs.io\n[mangum]: https://github.com/jordaneremieff/mangum\n[granian]: https://github.com/emmett-framework/granian\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/fb/e2/79c688af8b210d232694e31e59da9f6ec747bae31c3f5946e4e9b98860d5/click-8.4.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=e6f9f66136c816745b9d65817da91d61d957fb16e02e4dcd0552553c5a197b76",
+          "hashes": {
+            "sha256": "e6f9f66136c816745b9d65817da91d61d957fb16e02e4dcd0552553c5a197b76"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "click",
+        "version": "8.4.2",
+        "summary": "Composable command line interface toolkit",
+        "description_content_type": "text/markdown",
+        "maintainer_email": "Pallets <contact@palletsprojects.com>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Typing :: Typed"
+        ],
+        "requires_dist": [
+          "colorama; platform_system == 'Windows'"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Changes, https://click.palletsprojects.com/page/changes/",
+          "Chat, https://discord.gg/pallets",
+          "Documentation, https://click.palletsprojects.com/",
+          "Donate, https://palletsprojects.com/donate",
+          "Source, https://github.com/pallets/click/"
+        ],
+        "description": "<div align=\"center\"><img src=\"https://raw.githubusercontent.com/pallets/click/refs/heads/stable/docs/_static/click-name.svg\" alt=\"\" height=\"150\"></div>\n\n# Click\n\nClick is a Python package for creating beautiful command line interfaces\nin a composable way with as little code as necessary. It's the \"Command\nLine Interface Creation Kit\". It's highly configurable but comes with\nsensible defaults out of the box.\n\nIt aims to make the process of writing command line tools quick and fun\nwhile also preventing any frustration caused by the inability to\nimplement an intended CLI API.\n\nClick in three points:\n\n-   Arbitrary nesting of commands\n-   Automatic help page generation\n-   Supports lazy loading of subcommands at runtime\n\n\n## A Simple Example\n\n```python\nimport click\n\n@click.command()\n@click.option(\"--count\", default=1, help=\"Number of greetings.\")\n@click.option(\"--name\", prompt=\"Your name\", help=\"The person to greet.\")\ndef hello(count, name):\n    \"\"\"Simple program that greets NAME for a total of COUNT times.\"\"\"\n    for _ in range(count):\n        click.echo(f\"Hello, {name}!\")\n\nif __name__ == '__main__':\n    hello()\n```\n\n```\n$ python hello.py --count=3\nYour name: Click\nHello, Click!\nHello, Click!\nHello, Click!\n```\n\n\n## Donate\n\nThe Pallets organization develops and supports Click and other popular\npackages. In order to grow the community of contributors and users, and\nallow the maintainers to devote more time to the projects, [please\ndonate today][].\n\n[please donate today]: https://palletsprojects.com/donate\n\n## Contributing\n\nSee our [detailed contributing documentation][contrib] for many ways to\ncontribute, including reporting issues, requesting features, asking or answering\nquestions, and making PRs.\n\n[contrib]: https://palletsprojects.com/contributing/\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+          "hashes": {
+            "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "h11",
+        "version": "0.16.0",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "license",
+          "license-file",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1",
+        "home_page": "https://github.com/python-hyper/h11",
+        "author": "Nathaniel J. Smith",
+        "author_email": "njs@pobox.com",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 3 - Alpha",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Topic :: Internet :: WWW/HTTP",
+          "Topic :: System :: Networking"
+        ],
+        "requires_python": ">=3.8",
+        "description": "h11\n===\n\n.. image:: https://travis-ci.org/python-hyper/h11.svg?branch=master\n   :target: https://travis-ci.org/python-hyper/h11\n   :alt: Automated test status\n\n.. image:: https://codecov.io/gh/python-hyper/h11/branch/master/graph/badge.svg\n   :target: https://codecov.io/gh/python-hyper/h11\n   :alt: Test coverage\n\n.. image:: https://readthedocs.org/projects/h11/badge/?version=latest\n   :target: http://h11.readthedocs.io/en/latest/?badge=latest\n   :alt: Documentation Status\n\nThis is a little HTTP/1.1 library written from scratch in Python,\nheavily inspired by `hyper-h2 <https://hyper-h2.readthedocs.io/>`_.\n\nIt's a \"bring-your-own-I/O\" library; h11 contains no IO code\nwhatsoever. This means you can hook h11 up to your favorite network\nAPI, and that could be anything you want: synchronous, threaded,\nasynchronous, or your own implementation of `RFC 6214\n<https://tools.ietf.org/html/rfc6214>`_ -- h11 won't judge you.\n(Compare this to the current state of the art, where every time a `new\nnetwork API <https://trio.readthedocs.io/>`_ comes along then someone\ngets to start over reimplementing the entire HTTP protocol from\nscratch.) Cory Benfield made an `excellent blog post describing the\nbenefits of this approach\n<https://lukasa.co.uk/2015/10/The_New_Hyper/>`_, or if you like video\nthen here's his `PyCon 2016 talk on the same theme\n<https://www.youtube.com/watch?v=7cC3_jGwl_U>`_.\n\nThis also means that h11 is not immediately useful out of the box:\nit's a toolkit for building programs that speak HTTP, not something\nthat could directly replace ``requests`` or ``twisted.web`` or\nwhatever. But h11 makes it much easier to implement something like\n``requests`` or ``twisted.web``.\n\nAt a high level, working with h11 goes like this:\n\n1) First, create an ``h11.Connection`` object to track the state of a\n   single HTTP/1.1 connection.\n\n2) When you read data off the network, pass it to\n   ``conn.receive_data(...)``; you'll get back a list of objects\n   representing high-level HTTP \"events\".\n\n3) When you want to send a high-level HTTP event, create the\n   corresponding \"event\" object and pass it to ``conn.send(...)``;\n   this will give you back some bytes that you can then push out\n   through the network.\n\nFor example, a client might instantiate and then send a\n``h11.Request`` object, then zero or more ``h11.Data`` objects for the\nrequest body (e.g., if this is a POST), and then a\n``h11.EndOfMessage`` to indicate the end of the message. Then the\nserver would then send back a ``h11.Response``, some ``h11.Data``, and\nits own ``h11.EndOfMessage``. If either side violates the protocol,\nyou'll get a ``h11.ProtocolError`` exception.\n\nh11 is suitable for implementing both servers and clients, and has a\npleasantly symmetric API: the events you send as a client are exactly\nthe ones that you receive as a server and vice-versa.\n\n`Here's an example of a tiny HTTP client\n<https://github.com/python-hyper/h11/blob/master/examples/basic-client.py>`_\n\nIt also has `a fine manual <https://h11.readthedocs.io/>`_.\n\nFAQ\n---\n\n*Whyyyyy?*\n\nI wanted to play with HTTP in `Curio\n<https://curio.readthedocs.io/en/latest/tutorial.html>`__ and `Trio\n<https://trio.readthedocs.io>`__, which at the time didn't have any\nHTTP libraries. So I thought, no big deal, Python has, like, a dozen\ndifferent implementations of HTTP, surely I can find one that's\nreusable. I didn't find one, but I did find Cory's call-to-arms\nblog-post. So I figured, well, fine, if I have to implement HTTP from\nscratch, at least I can make sure no-one *else* has to ever again.\n\n*Should I use it?*\n\nMaybe. You should be aware that it's a very young project. But, it's\nfeature complete and has an exhaustive test-suite and complete docs,\nso the next step is for people to try using it and see how it goes\n:-). If you do then please let us know -- if nothing else we'll want\nto talk to you before making any incompatible changes!\n\n*What are the features/limitations?*\n\nRoughly speaking, it's trying to be a robust, complete, and non-hacky\nimplementation of the first \"chapter\" of the HTTP/1.1 spec: `RFC 7230:\nHTTP/1.1 Message Syntax and Routing\n<https://tools.ietf.org/html/rfc7230>`_. That is, it mostly focuses on\nimplementing HTTP at the level of taking bytes on and off the wire,\nand the headers related to that, and tries to be anal about spec\nconformance. It doesn't know about higher-level concerns like URL\nrouting, conditional GETs, cross-origin cookie policies, or content\nnegotiation. But it does know how to take care of framing,\ncross-version differences in keep-alive handling, and the \"obsolete\nline folding\" rule, so you can focus your energies on the hard /\ninteresting parts for your application, and it tries to support the\nfull specification in the sense that any useful HTTP/1.1 conformant\napplication should be able to use h11.\n\nIt's pure Python, and has no dependencies outside of the standard\nlibrary.\n\nIt has a test suite with 100.0% coverage for both statements and\nbranches.\n\nCurrently it supports Python 3 (testing on 3.8-3.12) and PyPy 3.\nThe last Python 2-compatible version was h11 0.11.x.\n(Originally it had a Cython wrapper for `http-parser\n<https://github.com/nodejs/http-parser>`_ and a beautiful nested state\nmachine implemented with ``yield from`` to postprocess the output. But\nI had to take these out -- the new *parser* needs fewer lines-of-code\nthan the old *parser wrapper*, is written in pure Python, uses no\nexotic language syntax, and has more features. It's sad, really; that\nold state machine was really slick. I just need a few sentences here\nto mourn that.)\n\nI don't know how fast it is. I haven't benchmarked or profiled it yet,\nso it's probably got a few pointless hot spots, and I've been trying\nto err on the side of simplicity and robustness instead of\nmicro-optimization. But at the architectural level I tried hard to\navoid fundamentally bad decisions, e.g., I believe that all the\nparsing algorithms remain linear-time even in the face of pathological\ninput like slowloris, and there are no byte-by-byte loops. (I also\nbelieve that it maintains bounded memory usage in the face of\narbitrary/pathological input.)\n\nThe whole library is ~800 lines-of-code. You can read and understand\nthe whole thing in less than an hour. Most of the energy invested in\nthis so far has been spent on trying to keep things simple by\nminimizing special-cases and ad hoc state manipulation; even though it\nis now quite small and simple, I'm still annoyed that I haven't\nfigured out how to make it even smaller and simpler. (Unfortunately,\nHTTP does not lend itself to simplicity.)\n\nThe API is ~feature complete and I don't expect the general outlines\nto change much, but you can't judge an API's ergonomics until you\nactually document and use it, so I'd expect some changes in the\ndetails.\n\n*How do I try it?*\n\n.. code-block:: sh\n\n  $ pip install h11\n  $ git clone git@github.com:python-hyper/h11\n  $ cd h11/examples\n  $ python basic-client.py\n\nand go from there.\n\n*License?*\n\nMIT\n\n*Code of conduct?*\n\nContributors are requested to follow our `code of conduct\n<https://github.com/python-hyper/h11/blob/master/CODE_OF_CONDUCT.md>`_ in\nall project spaces.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+          "hashes": {
+            "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "typing_extensions",
+        "version": "4.16.0",
+        "summary": "Backported and Experimental Type Hints for Python 3.9+",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "annotations",
+          "backport",
+          "checker",
+          "checking",
+          "function",
+          "hinting",
+          "hints",
+          "type",
+          "typechecking",
+          "typehinting",
+          "typehints",
+          "typing"
+        ],
+        "author_email": "\"Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee\" <levkivskyi@gmail.com>",
+        "license_expression": "PSF-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Topic :: Software Development"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Bug Tracker, https://github.com/python/typing_extensions/issues",
+          "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+          "Documentation, https://typing-extensions.readthedocs.io/",
+          "Home, https://github.com/python/typing_extensions",
+          "Q & A, https://github.com/python/typing/discussions",
+          "Repository, https://github.com/python/typing_extensions"
+        ],
+        "description": "# Typing Extensions\n\n[![Chat at https://gitter.im/python/typing](https://badges.gitter.im/python/typing.svg)](https://gitter.im/python/typing)\n\n[Documentation](https://typing-extensions.readthedocs.io/en/latest/#) –\n[PyPI](https://pypi.org/project/typing-extensions/)\n\n## Overview\n\nThe `typing_extensions` module serves two related purposes:\n\n- Enable use of new type system features on older Python versions. For example,\n  `typing.TypeGuard` is new in Python 3.10, but `typing_extensions` allows\n  users on previous Python versions to use it too.\n- Enable experimentation with new type system PEPs before they are accepted and\n  added to the `typing` module.\n\n`typing_extensions` is treated specially by static type checkers such as\nmypy and pyright. Objects defined in `typing_extensions` are treated the same\nway as equivalent forms in `typing`.\n\n`typing_extensions` uses\n[Semantic Versioning](https://semver.org/). The\nmajor version will be incremented only for backwards-incompatible changes.\nTherefore, it's safe to depend\non `typing_extensions` like this: `typing_extensions ~=x.y`,\nwhere `x.y` is the first version that includes all features you need.\n[This](https://packaging.python.org/en/latest/specifications/version-specifiers/#compatible-release)\nis equivalent to `typing_extensions >=x.y, <(x+1)`. Do not depend on `~= x.y.z`\nunless you really know what you're doing; that defeats the purpose of\nsemantic versioning.\n\n## Included items\n\nSee [the documentation](https://typing-extensions.readthedocs.io/en/latest/#) for a\ncomplete listing of module contents.\n\n## Contributing\n\nSee [CONTRIBUTING.md](https://github.com/python/typing_extensions/blob/main/CONTRIBUTING.md)\nfor how to contribute to `typing_extensions`.\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

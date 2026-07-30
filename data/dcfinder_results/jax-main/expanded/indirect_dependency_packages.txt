@@ -1,0 +1,591 @@
+aiobotocore <4.0.0,>=2.19.0
+  # from parent package: s3fs (public)
+aiofiles
+  # from parent package: orbax-checkpoint (public)
+aiohappyeyeballs >=2.5.0
+  # from parent package: aiohttp (public)
+aiohttp <4.0.0,>=3.13.5,!=4.0.0a0,!=4.0.0a1,>=3.9.0,!=4.0.0a0,!=4.0.0a1,>=3.9.0,<4.0.0,>=3.12.0
+  # from parent package: kubernetes (public)
+  # from parent package: gcsfs (public)
+  # from parent package: s3fs (public)
+  # from parent package: aiobotocore (public)
+aioitertools <1.0.0,>=0.5.1
+  # from parent package: aiobotocore (public)
+aiosignal >=1.4.0
+  # from parent package: aiohttp (public)
+alabaster ~=0.7.14
+  # from parent package: sphinx (public)
+anyio >=3.1.0
+  # from parent package: jupyter-server (public)
+  # from parent package: httpx (public)
+argon2-cffi >=21.1
+  # from parent package: jupyter-server (public)
+argon2-cffi-bindings
+  # from parent package: argon2-cffi (public)
+array-record >=0.5.0
+  # from parent package: tensorflow-datasets (public)
+asttokens >=2.1.0
+  # from parent package: stack-data (public)
+astunparse >=1.6.0
+  # from parent package: tensorflow (public)
+async-lru >=1.0.0
+  # from parent package: jupyterlab (public)
+async-timeout <6.0,>=4.0
+  # from parent package: aiohttp (public)
+attrs >=17.3.0,>=18.2.0,>=22.2.0,>=22.2.0
+  # from parent package: aiohttp (public)
+  # from parent package: jupyter-cache (public)
+  # from parent package: dm-tree (public)
+  # from parent package: jsonschema (public)
+  # from parent package: referencing (public)
+babel >=2.13,>=2.10
+  # from parent package: sphinx (public)
+  # from parent package: jupyterlab-server (public)
+beautifulsoup4
+  # from parent package: nbconvert (public)
+bleach !=5.0.0
+  # from parent package: nbconvert (public)
+botocore <1.43.1,>=1.42.90
+  # from parent package: aiobotocore (public)
+certifi >=2023.5.7,>=14.05.14,>=14.05.14
+  # from parent package: requests (public)
+  # from parent package: kubernetes (public)
+  # from parent package: httpx (public)
+  # from parent package: httpcore (public)
+cffi >=2.0.0,>=1.0.1
+  # from parent package: cryptography (public)
+  # from parent package: argon2-cffi-bindings (public)
+charset-normalizer <4,>=2
+  # from parent package: requests (public)
+click
+  # from parent package: jupyter-cache (public)
+comm >=0.1.1,>=0.1.3
+  # from parent package: ipykernel (private)
+  # from parent package: ipywidgets (public)
+contourpy >=1.2.1
+  # from parent package: matplotlib (private)
+cryptography >=38.0.3
+  # from parent package: google-auth (public)
+cycler >=0.10
+  # from parent package: matplotlib (private)
+debugpy >=1.6.5
+  # from parent package: ipykernel (private)
+decorator >=5.1.0,>4.1.2
+  # from parent package: ipython (private)
+  # from parent package: gcsfs (public)
+defusedxml
+  # from parent package: nbconvert (public)
+dm-tree
+  # from parent package: tensorflow-datasets (public)
+  # from parent package: etils (public)
+docstring-parser ~=0.15
+  # from parent package: simple-parsing (public)
+docutils <0.22,>=0.20,<0.23,>=0.20
+  # from parent package: sphinx (public)
+  # from parent package: myst-parser (public)
+durationpy >=0.7
+  # from parent package: kubernetes (public)
+einops
+  # from parent package: etils (public)
+etils >=1.6.0
+  # from parent package: tensorflow-datasets (public)
+  # from parent package: array-record (public)
+  # from parent package: etils (public)
+  # from parent package: orbax-checkpoint (public)
+exceptiongroup >=1,>=1.0.2
+  # from parent package: pytest (public)
+  # from parent package: anyio (public)
+execnet >=2.1
+  # from parent package: pytest-xdist (public)
+executing >=1.2.0
+  # from parent package: stack-data (public)
+fastjsonschema >=2.15
+  # from parent package: nbformat (public)
+fonttools >=4.28.2
+  # from parent package: matplotlib (private)
+frozenlist >=1.1.1,>=1.1.0
+  # from parent package: aiohttp (public)
+  # from parent package: aiosignal (public)
+fsspec >=2026.6.0,<2026.6.1,>=2026.6.0
+  # from parent package: etils (public)
+  # from parent package: gcsfs (public)
+  # from parent package: s3fs (public)
+gast !=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1
+  # from parent package: tensorflow (public)
+gcsfs
+  # from parent package: etils (public)
+google-api-core <3.0.0,>=2.17.1,<3.0.0,>=2.27.0,<3.0.0,>=2.11.0
+  # from parent package: google-cloud-storage-control (public)
+  # from parent package: google-cloud-storage (public)
+  # from parent package: google-cloud-core (public)
+google-auth >=1.2,!=2.43.0,!=2.44.0,!=2.45.0,<3.0.0,>=2.15.0,!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1,<3.0.0,>=2.26.1,<3.0.0,>=2.14.1,!=2.24.0,!=2.25.0,<3.0.0,>=2.14.1
+  # from parent package: gcsfs (public)
+  # from parent package: google-auth-oauthlib (public)
+  # from parent package: google-cloud-storage-control (public)
+  # from parent package: google-cloud-storage (public)
+  # from parent package: google-api-core (public)
+  # from parent package: google-cloud-core (public)
+google-auth-oauthlib
+  # from parent package: gcsfs (public)
+google-cloud-core <3.0.0,>=2.4.2
+  # from parent package: google-cloud-storage (public)
+google-cloud-storage >=3.11.0
+  # from parent package: gcsfs (public)
+google-cloud-storage-control
+  # from parent package: gcsfs (public)
+google-crc32c <2.0.0,>=1.6.0,<2.0.0,>=1.0.0
+  # from parent package: google-cloud-storage (public)
+  # from parent package: google-resumable-media (public)
+google-pasta >=0.1.1
+  # from parent package: tensorflow (public)
+google-resumable-media <3.0.0,>=2.7.2
+  # from parent package: google-cloud-storage (public)
+googleapis-common-protos <2.0.0,>=1.63.2,>=1.5.5
+  # from parent package: google-api-core (public)
+  # from parent package: grpc-google-iam-v1 (public)
+  # from parent package: grpcio-status (public)
+grpc-google-iam-v1 <1.0.0,>=0.14.0
+  # from parent package: google-cloud-storage-control (public)
+grpcio <2.0,>=1.24.3,<2.0.0,>=1.59.0,<2.0.0,>=1.41.0,<2.0.0,>=1.44.0,<2.0.0,>=1.44.0,>=1.83.0rc1
+  # from parent package: tensorflow (public)
+  # from parent package: google-cloud-storage-control (public)
+  # from parent package: google-api-core (public)
+  # from parent package: grpc-google-iam-v1 (public)
+  # from parent package: googleapis-common-protos (public)
+  # from parent package: grpcio-status (public)
+grpcio-status <2.0.0,>=1.41.0
+  # from parent package: google-api-core (public)
+h11 >=0.16
+  # from parent package: httpcore (public)
+h5py <3.15.0,>=3.11.0
+  # from parent package: tensorflow (public)
+  # from parent package: keras (public)
+httpcore ==1.*
+  # from parent package: httpx (public)
+httpx <1,>=0.25.0
+  # from parent package: jupyterlab (public)
+humanize
+  # from parent package: orbax-checkpoint (public)
+idna <4,>=2.5,>=2.0,>=2.8
+  # from parent package: requests (public)
+  # from parent package: yarl (public)
+  # from parent package: httpx (public)
+  # from parent package: anyio (public)
+imagesize >=1.3
+  # from parent package: sphinx (public)
+immutabledict
+  # from parent package: tensorflow-datasets (public)
+importlib-metadata
+  # from parent package: myst-nb (public)
+  # from parent package: jupyter-cache (public)
+iniconfig >=1.0.1
+  # from parent package: pytest (public)
+ipykernel >=6.14,!=6.30.0,>=6.5.0
+  # from parent package: myst-nb (public)
+  # from parent package: jupyter (public)
+  # from parent package: jupyter-console (public)
+  # from parent package: jupyterlab (public)
+ipython-pygments-lexers >=1.0.0
+  # from parent package: ipython (private)
+ipywidgets
+  # from parent package: jupyter (public)
+jaxlib <=0.11.0,>=0.11.0,>=0.5.3
+  # from parent package: jax (public)
+  # from parent package: optax (public)
+jedi >=0.18.2
+  # from parent package: ipython (private)
+jinja2 >=3.1,>=3.0,>=3.0.3,>=3.0.3,>=3.0.3
+  # from parent package: sphinx (public)
+  # from parent package: myst-parser (public)
+  # from parent package: nbconvert (public)
+  # from parent package: jupyterlab (public)
+  # from parent package: jupyter-server (public)
+  # from parent package: jupyterlab-server (public)
+jmespath <2.0.0,>=0.7.1
+  # from parent package: aiobotocore (public)
+  # from parent package: botocore (public)
+joblib >=1.4.0
+  # from parent package: scikit-learn (public)
+json5 >=0.9.0
+  # from parent package: jupyterlab-server (public)
+jsonschema >=2.6,>=4.18.0,>=4.18.0
+  # from parent package: nbformat (public)
+  # from parent package: jupyterlab-server (public)
+  # from parent package: jupyter-events (public)
+jsonschema-specifications >=2023.03.6
+  # from parent package: jsonschema (public)
+jupyter
+  # from parent package: etils (public)
+jupyter-builder <2,>=1.0.2,>=1.0.2
+  # from parent package: notebook (public)
+  # from parent package: jupyterlab (public)
+jupyter-cache >=0.5
+  # from parent package: myst-nb (public)
+jupyter-client >=7.0.0,>=8.9.0,>=7.0.0,>=7.4.4
+  # from parent package: nbclient (public)
+  # from parent package: ipykernel (private)
+  # from parent package: jupyter-console (public)
+  # from parent package: jupyter-server (public)
+jupyter-console
+  # from parent package: jupyter (public)
+jupyter-core >=5.4.0,!=5.0.*,>=4.12,!=6.0.*,>=5.1,>=5.1,!=5.0.*,>=4.12,>=4.7,!=5.0.*,>=4.12
+  # from parent package: nbclient (public)
+  # from parent package: nbformat (public)
+  # from parent package: ipykernel (private)
+  # from parent package: jupyter-client (public)
+  # from parent package: jupyter-console (public)
+  # from parent package: nbconvert (public)
+  # from parent package: jupyterlab (public)
+  # from parent package: jupyter-builder (public)
+  # from parent package: jupyter-server (public)
+jupyter-events >=0.11.0
+  # from parent package: jupyter-server (public)
+jupyter-lsp >=2.0.0
+  # from parent package: jupyterlab (public)
+jupyter-server <3,>=2.19.0,<3,>=1.21,<3,>=1.8,>=1.1.2
+  # from parent package: notebook (public)
+  # from parent package: jupyterlab (public)
+  # from parent package: jupyterlab-server (public)
+  # from parent package: notebook-shim (public)
+  # from parent package: jupyter-lsp (public)
+jupyter-server-terminals >=0.4.4
+  # from parent package: jupyter-server (public)
+jupyterlab <4.7,>=4.6.0
+  # from parent package: jupyter (public)
+  # from parent package: notebook (public)
+jupyterlab-pygments
+  # from parent package: nbconvert (public)
+jupyterlab-server <3,>=2.28.0
+  # from parent package: notebook (public)
+  # from parent package: jupyterlab (public)
+jupyterlab-widgets ~=3.0.15
+  # from parent package: ipywidgets (public)
+keras >=3.12.0
+  # from parent package: tensorflow (public)
+kiwisolver >=1.3.1
+  # from parent package: matplotlib (private)
+libclang >=13.0.0
+  # from parent package: tensorflow (public)
+markdown-it-py >=2.2.0,~=4.2,<5.0.0,>=2.0.0
+  # from parent package: rich (public)
+  # from parent package: myst-parser (public)
+  # from parent package: mdit-py-plugins (public)
+markupsafe >=2.0
+  # from parent package: jinja2 (public)
+  # from parent package: nbconvert (public)
+matplotlib-inline >=0.1.6,>=0.1
+  # from parent package: ipython (private)
+  # from parent package: ipykernel (private)
+mdit-py-plugins >=0.6.1,~=0.6
+  # from parent package: myst-parser (public)
+mdurl ~=0.1
+  # from parent package: markdown-it-py (public)
+mediapy
+  # from parent package: etils (public)
+mistune <4,>=2.0.3
+  # from parent package: nbconvert (public)
+msgpack
+  # from parent package: flax (public)
+  # from parent package: orbax-checkpoint (public)
+multidict <7.0,>=4.5,>=4.0,<7.0.0,>=6.0.0
+  # from parent package: aiohttp (public)
+  # from parent package: yarl (public)
+  # from parent package: aiobotocore (public)
+myst-parser >=1.0.0
+  # from parent package: myst-nb (public)
+namex
+  # from parent package: keras (public)
+narwhals >=2.0.1
+  # from parent package: scikit-learn (public)
+nbclient >=0.2,>=0.5.0
+  # from parent package: myst-nb (public)
+  # from parent package: jupyter-cache (public)
+  # from parent package: nbconvert (public)
+nbconvert >=6.4.4
+  # from parent package: jupyter (public)
+  # from parent package: jupyter-server (public)
+nbformat >=5.0,>=5.2.0,>=5.7,>=5.3.0
+  # from parent package: myst-nb (public)
+  # from parent package: jupyter-cache (public)
+  # from parent package: nbclient (public)
+  # from parent package: nbconvert (public)
+  # from parent package: jupyter-server (public)
+nest-asyncio2 >=1.7.0
+  # from parent package: ipykernel (private)
+notebook
+  # from parent package: jupyter (public)
+notebook-shim <0.3,>=0.2,>=0.2
+  # from parent package: notebook (public)
+  # from parent package: jupyterlab (public)
+oauthlib >=3.0.0
+  # from parent package: requests-oauthlib (public)
+optax
+  # from parent package: flax (public)
+optree
+  # from parent package: keras (public)
+orbax-checkpoint
+  # from parent package: flax (public)
+overrides >=5.0
+  # from parent package: jupyter-server (public)
+packaging >=23.0,>=22,>=20.0,>=20.0,>=22,>=23.2,>=22.0,>=21.3,>=24.0
+  # from parent package: sphinx (public)
+  # from parent package: pytest (public)
+  # from parent package: matplotlib (private)
+  # from parent package: pooch (public)
+  # from parent package: ipykernel (private)
+  # from parent package: etils (public)
+  # from parent package: tensorflow (public)
+  # from parent package: nbconvert (public)
+  # from parent package: jupyterlab (public)
+  # from parent package: keras (public)
+  # from parent package: jupyter-server (public)
+  # from parent package: jupyterlab-server (public)
+  # from parent package: wheel (public)
+  # from parent package: jupyter-events (public)
+pandocfilters >=1.4.1
+  # from parent package: nbconvert (public)
+parso <0.9.0,>=0.8.6
+  # from parent package: jedi (public)
+pexpect >4.6
+  # from parent package: ipython (private)
+pillow >=9
+  # from parent package: matplotlib (private)
+  # from parent package: mediapy (public)
+platformdirs >=2.5.0,>=2.5
+  # from parent package: pooch (public)
+  # from parent package: jupyter-core (public)
+pluggy <2,>=1.5
+  # from parent package: pytest (public)
+prometheus-client >=0.20.0,>=0.9
+  # from parent package: orbax-checkpoint (public)
+  # from parent package: jupyter-server (public)
+promise
+  # from parent package: tensorflow-datasets (public)
+prompt-toolkit <3.1.0,>=3.0.41,>=3.0.30
+  # from parent package: ipython (private)
+  # from parent package: jupyter-console (public)
+propcache >=0.2.0,>=0.2.1
+  # from parent package: aiohttp (public)
+  # from parent package: yarl (public)
+proto-plus <2.0.0,>=1.22.3,<2.0.0,>=1.24.0
+  # from parent package: google-cloud-storage-control (public)
+  # from parent package: google-api-core (public)
+protobuf >=3.20,>=3.19.6,<=6.32,>=4.21.6,<8.0.0,>=6.31.1,<8.0.0,>=4.25.8,<8.0.0,>=5.29.6,<8.0.0,>=4.25.8,<8.0.0,>=4.25.8,<8.0.0,>=4.25.8,<8.0.0,>=7.35.1
+  # from parent package: tensorflow-datasets (public)
+  # from parent package: tensorflow-hub (public)
+  # from parent package: etils (public)
+  # from parent package: tensorflow-metadata (public)
+  # from parent package: orbax-checkpoint (public)
+  # from parent package: tensorflow (public)
+  # from parent package: google-cloud-storage-control (public)
+  # from parent package: google-api-core (public)
+  # from parent package: proto-plus (public)
+  # from parent package: grpc-google-iam-v1 (public)
+  # from parent package: googleapis-common-protos (public)
+  # from parent package: grpcio-status (public)
+psutil >=7,>=5.7
+  # from parent package: ipython (private)
+  # from parent package: tensorflow-datasets (public)
+  # from parent package: ipykernel (private)
+  # from parent package: orbax-checkpoint (public)
+ptyprocess >=0.5
+  # from parent package: pexpect (public)
+  # from parent package: terminado (public)
+pure-eval
+  # from parent package: stack-data (public)
+pyarrow
+  # from parent package: tensorflow-datasets (public)
+pyasn1 <0.7.0,>=0.6.1
+  # from parent package: pyasn1-modules (public)
+pyasn1-modules >=0.2.1
+  # from parent package: google-auth (public)
+pycparser
+  # from parent package: cffi (public)
+pygments >=2.14.0,>=2.17,>=2.7.2,<3.0.0,>=2.13.0,>=2.4.1
+  # from parent package: ipython (private)
+  # from parent package: sphinx (public)
+  # from parent package: pytest (public)
+  # from parent package: rich (public)
+  # from parent package: ipython-pygments-lexers (public)
+  # from parent package: jupyter-console (public)
+  # from parent package: nbconvert (public)
+pyparsing >=3
+  # from parent package: matplotlib (private)
+python-dateutil >=2.5.3,>=2.7,>=2.8.2,<3.0.0,>=2.1,<3.0.0,>=2.1
+  # from parent package: kubernetes (public)
+  # from parent package: matplotlib (private)
+  # from parent package: jupyter-client (public)
+  # from parent package: aiobotocore (public)
+  # from parent package: botocore (public)
+python-json-logger >=2.0.4
+  # from parent package: jupyter-events (public)
+pyyaml >=6.0.3,>=5.4.1,>=5.3
+  # from parent package: kubernetes (public)
+  # from parent package: myst-nb (public)
+  # from parent package: flax (public)
+  # from parent package: jupyter-cache (public)
+  # from parent package: myst-parser (public)
+  # from parent package: orbax-checkpoint (public)
+  # from parent package: jupyter-events (public)
+pyzmq >=25,>=25.0,>=17,>=24
+  # from parent package: ipykernel (private)
+  # from parent package: jupyter-client (public)
+  # from parent package: jupyter-console (public)
+  # from parent package: jupyter-server (public)
+referencing >=0.28.4,>=0.31.0
+  # from parent package: jsonschema (public)
+  # from parent package: jsonschema-specifications (public)
+  # from parent package: jupyter-events (public)
+requests-oauthlib >=0.7.0
+  # from parent package: kubernetes (public)
+  # from parent package: google-auth-oauthlib (public)
+rfc3339-validator
+  # from parent package: jupyter-events (public)
+rfc3986-validator >=0.1.1
+  # from parent package: jupyter-events (public)
+rpds-py >=0.25.0,>=0.7.0
+  # from parent package: jsonschema (public)
+  # from parent package: referencing (public)
+s3fs
+  # from parent package: etils (public)
+send2trash >=1.8.2
+  # from parent package: jupyter-server (public)
+setuptools
+  # from parent package: tensorflow (public)
+simple-parsing
+  # from parent package: tensorflow-datasets (public)
+  # from parent package: etils (public)
+simplejson >=3.16.0
+  # from parent package: orbax-checkpoint (public)
+six >=1.9.0,>=1.5,>=1.12.0,<2.0,>=1.6.1
+  # from parent package: kubernetes (public)
+  # from parent package: python-dateutil (public)
+  # from parent package: tensorflow (public)
+  # from parent package: astunparse (public)
+  # from parent package: google-pasta (public)
+  # from parent package: rfc3339-validator (public)
+soupsieve >=1.6.1
+  # from parent package: beautifulsoup4 (public)
+sphinxcontrib-applehelp
+  # from parent package: sphinx (public)
+sphinxcontrib-devhelp
+  # from parent package: sphinx (public)
+sphinxcontrib-htmlhelp >=2.0.0
+  # from parent package: sphinx (public)
+sphinxcontrib-jsmath
+  # from parent package: sphinx (public)
+sphinxcontrib-qthelp
+  # from parent package: sphinx (public)
+sphinxcontrib-serializinghtml >=1.1.9
+  # from parent package: sphinx (public)
+sqlalchemy <3,>=1.3.12
+  # from parent package: jupyter-cache (public)
+stack-data >=0.6.0
+  # from parent package: ipython (private)
+tabulate
+  # from parent package: jupyter-cache (public)
+tensorflow <2.22,>=2.21
+  # from parent package: etils (public)
+  # from parent package: tf-keras (public)
+tensorflow-metadata
+  # from parent package: tensorflow-datasets (public)
+tensorstore >=0.1.84
+  # from parent package: flax (public)
+  # from parent package: orbax-checkpoint (public)
+termcolor >=1.1.0
+  # from parent package: tensorflow-datasets (public)
+  # from parent package: tensorflow (public)
+terminado >=0.8.3
+  # from parent package: jupyter-server (public)
+  # from parent package: jupyter-server-terminals (public)
+tf-keras >=2.14.1
+  # from parent package: tensorflow-hub (public)
+threadpoolctl >=3.5.0
+  # from parent package: scikit-learn (public)
+tinycss2 >=1.1.0
+  # from parent package: bleach (public)
+toml
+  # from parent package: tensorflow-datasets (public)
+tomli >=2,>=1,>=1.2.2
+  # from parent package: sphinx (public)
+  # from parent package: pytest (public)
+  # from parent package: jupyterlab (public)
+  # from parent package: jupyter-builder (public)
+tornado >=6.5.7,>=6.4.1,>=6.2.0,>=6.2.0,>=6.2.0,>=6.1.0
+  # from parent package: ipykernel (private)
+  # from parent package: jupyter-client (public)
+  # from parent package: notebook (public)
+  # from parent package: jupyterlab (public)
+  # from parent package: jupyter-server (public)
+  # from parent package: terminado (public)
+tqdm
+  # from parent package: tensorflow-datasets (public)
+  # from parent package: etils (public)
+traitlets >=5.13.0,>=5.13,>=5.1,>=5.4.0,>=5.3,>=5.3,>=5.4,>=5.1,>=4.3.1,>=5.6.0,>=5.3
+  # from parent package: ipython (private)
+  # from parent package: matplotlib-inline (public)
+  # from parent package: nbclient (public)
+  # from parent package: nbformat (public)
+  # from parent package: ipykernel (private)
+  # from parent package: jupyter-client (public)
+  # from parent package: jupyter-core (public)
+  # from parent package: jupyter-console (public)
+  # from parent package: nbconvert (public)
+  # from parent package: ipywidgets (public)
+  # from parent package: jupyterlab (public)
+  # from parent package: jupyter-builder (public)
+  # from parent package: jupyter-server (public)
+  # from parent package: jupyter-events (public)
+treescope >=0.1.7
+  # from parent package: flax (public)
+typing-extensions >=4.6,>=4.2,>=4.4,>=4.6.0,>=4.5.0,>=4.2,>=4.1.0,>=4.6.0,>=4.13.0,>=3.6.6,>=4.4.0,<5.0.0,>=4.14.0,~=4.12,>=4.0.0,>=4.0.0,>=4.13.2,>=4.6.0,>=4.5
+  # from parent package: ipython (private)
+  # from parent package: myst-nb (public)
+  # from parent package: flax (public)
+  # from parent package: aiohttp (public)
+  # from parent package: exceptiongroup (public)
+  # from parent package: etils (public)
+  # from parent package: simple-parsing (public)
+  # from parent package: orbax-checkpoint (public)
+  # from parent package: aiosignal (public)
+  # from parent package: multidict (public)
+  # from parent package: sqlalchemy (public)
+  # from parent package: jupyter-client (public)
+  # from parent package: tensorflow (public)
+  # from parent package: referencing (public)
+  # from parent package: aiobotocore (public)
+  # from parent package: grpcio (public)
+  # from parent package: beautifulsoup4 (public)
+  # from parent package: mistune (public)
+  # from parent package: async-lru (public)
+  # from parent package: cryptography (public)
+  # from parent package: optree (public)
+  # from parent package: anyio (public)
+urllib3 <3,>=1.26,!=2.6.0,>=1.24.2,!=2.6.0,>=1.24.2,!=2.2.0,<3,>=1.25.4
+  # from parent package: requests (public)
+  # from parent package: kubernetes (public)
+  # from parent package: botocore (public)
+uvloop
+  # from parent package: orbax-checkpoint (public)
+wcwidth
+  # from parent package: prompt-toolkit (public)
+webencodings >=0.4
+  # from parent package: bleach (public)
+  # from parent package: tinycss2 (public)
+websocket-client !=0.40.0,!=0.41.*,!=0.42.*,>=0.32.0,>=1.7
+  # from parent package: kubernetes (public)
+  # from parent package: jupyter-server (public)
+wheel <1.0,>=0.23.0
+  # from parent package: astunparse (public)
+widgetsnbextension ~=4.0.14
+  # from parent package: ipywidgets (public)
+wrapt >=1.11.2,>=1.11.0,<3.0.0,>=1.10.10
+  # from parent package: tensorflow-datasets (public)
+  # from parent package: dm-tree (public)
+  # from parent package: tensorflow (public)
+  # from parent package: aiobotocore (public)
+yarl <2.0,>=1.17.0
+  # from parent package: aiohttp (public)
+zipp >=3.20
+  # from parent package: importlib-metadata (public)
+  # from parent package: etils (public)

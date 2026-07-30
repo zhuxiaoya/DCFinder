@@ -1,0 +1,79 @@
+# 依赖文件: analysis_program/axolotl-main/setup.py
+
+# 依赖文件: analysis_program/axolotl-main/requirements-dev.txt
+black  # type: dev
+mypy  # type: dev
+pre-commit  # type: dev
+types-requests  # type: dev
+quartodoc  # type: dev
+jupyter  # type: dev
+blobfile  # type: dev
+tiktoken  # type: dev
+
+# 依赖文件: analysis_program/axolotl-main/requirements.txt
+bitsandbytes ==0.45.4  # type: runtime
+triton >=3.0.0  # type: runtime
+mamba-ssm ==1.2.0.post1  # type: runtime
+xformers >=0.0.23.post1  # type: runtime
+autoawq ==0.2.7.post3  # type: runtime
+liger-kernel ==0.5.9  # type: runtime
+packaging ==23.2  # type: runtime
+huggingface-hub ==0.31.0  # type: runtime
+peft ==0.15.2  # type: runtime
+transformers ==4.51.3  # type: runtime
+tokenizers >=0.21.1  # type: runtime
+accelerate ==1.6.0  # type: runtime
+datasets ==3.5.1  # type: runtime
+deepspeed >=0.15.4  # type: runtime
+trl ==0.17.0  # type: runtime
+hf-xet ==1.1.0  # type: runtime
+hqq ==0.2.5  # type: runtime
+optimum ==1.16.2  # type: runtime
+hf-transfer  # type: runtime
+sentencepiece  # type: runtime
+gradio ==5.23.3  # type: runtime
+modal ==0.70.5  # type: runtime
+pydantic ==2.10.6  # type: runtime
+addict  # type: runtime
+fire  # type: runtime
+pyyaml >=6.0  # type: runtime
+requests  # type: runtime
+wandb  # type: runtime
+einops  # type: runtime
+colorama  # type: runtime
+numba  # type: runtime
+numpy <=2.0.1,>=1.24.4  # type: runtime
+evaluate ==0.4.1  # type: runtime
+scipy  # type: runtime
+scikit-learn ==1.4.2  # type: runtime
+nvidia-ml-py ==12.560.30  # type: runtime
+art  # type: runtime
+tensorboard  # type: runtime
+python-dotenv ==1.0.1  # type: runtime
+s3fs >=2024.5.0  # type: runtime
+gcsfs >=2024.5.0  # type: runtime
+adlfs >=2024.5.0  # type: runtime
+ocifs ==1.3.2  # type: runtime
+zstandard ==0.22.0  # type: runtime
+fastcore  # type: runtime
+lm-eval ==0.4.7  # type: runtime
+langdetect ==1.0.9  # type: runtime
+immutabledict ==4.2.0  # type: runtime
+antlr4-python3-runtime ==4.13.2  # type: runtime
+torchao ==0.10.0  # type: runtime
+schedulefree ==1.4.1  # type: runtime
+axolotl-contribs-lgpl ==0.0.6  # type: runtime
+axolotl-contribs-mit ==0.0.3  # type: runtime
+
+# 依赖文件: analysis_program/axolotl-main/requirements-tests.txt
+codecov  # type: test
+codecov-cli  # type: test
+pytest  # type: test
+pytest-cov  # type: test
+pytest-retry  # type: test
+pytest-sugar  # type: test
+pytest-xdist  # type: test
+tbparse  # type: test
+
+# 依赖文件: analysis_program/axolotl-main/pyproject.toml
+

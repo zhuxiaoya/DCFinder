@@ -1,0 +1,225 @@
+{
+     "direct dependency": {
+          "number": 26,
+          "packages": [
+               {
+                    "name": "accelerate",
+                    "specifier": "==0.32.1",
+                    "raw_requirement": "accelerate==0.32.1 ; accelerate ; accelerate>=0.26.0 ; accelerate",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "huggingface-hub",
+                    "specifier": "==0.24.0",
+                    "raw_requirement": "huggingface-hub==0.24.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pillow",
+                    "specifier": "==10.4.0",
+                    "raw_requirement": "Pillow==10.4.0 ; pillow>=10.0.0 ; pillow>=10.0.0 ; pillow ; pillow>=10.4.0,<11.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pyvips-binary",
+                    "specifier": "==8.16.0",
+                    "raw_requirement": "pyvips-binary==8.16.0 ; pyvips-binary ; pyvips-binary>=8.16.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pyvips",
+                    "specifier": "==2.2.3",
+                    "raw_requirement": "pyvips==2.2.3 ; pyvips ; pyvips ; pyvips ; pyvips>=2.2.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch",
+                    "specifier": "==2.5.1",
+                    "raw_requirement": "torch==2.5.1 ; torch>=2.0.0 ; torch>=2.0.0 ; torch ; torch>=2.5.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "transformers",
+                    "specifier": "==4.44.0",
+                    "raw_requirement": "transformers==4.44.0 ; transformers>=4.36.0 ; transformers>=4.36.0 ; transformers",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gradio",
+                    "specifier": "==4.38.1",
+                    "raw_requirement": "gradio==4.38.1 ; gradio>=4.0.0 ; gradio>=4.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "datasets",
+                    "specifier": "==3.2.0",
+                    "raw_requirement": "datasets==3.2.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "editdistance",
+                    "specifier": "==0.8.1",
+                    "raw_requirement": "editdistance==0.8.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opencv-python",
+                    "specifier": ">=4.8.0",
+                    "raw_requirement": "opencv-python>=4.8.0 ; opencv-python>=4.8.0 ; opencv-python",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-content-moderation/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numpy",
+                    "specifier": ">=1.24.0,<3.0.0,>=2.1.2",
+                    "raw_requirement": "numpy>=1.24.0 ; numpy>=1.24.0 ; numpy ; numpy>=2.1.2,<3.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-content-moderation/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tqdm",
+                    "specifier": ">=4.66.0,>=4.65.0",
+                    "raw_requirement": "tqdm>=4.66.0 ; tqdm>=4.65.0 ; tqdm",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-content-moderation/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ffmpeg-python",
+                    "specifier": "",
+                    "raw_requirement": "ffmpeg-python ; ffmpeg-python",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-content-moderation/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "einops",
+                    "specifier": ">=0.7.0",
+                    "raw_requirement": "einops ; einops ; einops ; einops>=0.7.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-content-moderation/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "spaces",
+                    "specifier": "",
+                    "raw_requirement": "spaces",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-content-moderation/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torchvision",
+                    "specifier": ">=0.20.1",
+                    "raw_requirement": "torchvision>=0.20.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-content-moderation/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "matplotlib",
+                    "specifier": ">=3.7.0",
+                    "raw_requirement": "matplotlib>=3.7.0 ; matplotlib>=3.7.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-content-moderation/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pandas",
+                    "specifier": ">=2.0.0",
+                    "raw_requirement": "pandas>=2.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-content-moderation/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "plotly",
+                    "specifier": "",
+                    "raw_requirement": "plotly",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-content-moderation/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "deep-sort-realtime",
+                    "specifier": ">=1.3.2",
+                    "raw_requirement": "deep-sort-realtime>=1.3.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-content-moderation/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scikit-learn",
+                    "specifier": "",
+                    "raw_requirement": "scikit-learn",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-content-moderation/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scenedetect",
+                    "specifier": ">=0.6.2",
+                    "raw_requirement": "scenedetect[opencv]>=0.6.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/recipes/promptable-content-moderation/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnxruntime",
+                    "specifier": ">=1.19.2",
+                    "raw_requirement": "onnxruntime>=1.19.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/clients/python/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tokenizers",
+                    "specifier": ">=0.20.1",
+                    "raw_requirement": "tokenizers>=0.20.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/clients/python/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "safetensors",
+                    "specifier": ">=0.4.2",
+                    "raw_requirement": "safetensors>=0.4.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/moondream-main/clients/python/pyproject.toml",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 0,
+          "packages": []
+     },
+     "direct dependency with same name": {
+          "number": 2,
+          "packages": {
+               "pillow": {
+                    "private version": "10.4.0",
+                    "public version": "10.4.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": "==10.4.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               },
+               "tqdm": {
+                    "private version": "4.66.5",
+                    "public version": "4.68.4",
+                    "highest public (unconstrained)": "4.68.4",
+                    "declared specifier": ">=4.66.0,>=4.65.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 16
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 0,
+          "packages": {}
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 2,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 70
+     }
+}

@@ -1,0 +1,122 @@
+absl-py >=1.0.0
+  # from parent package: tensorflow (public)
+  # from parent package: keras (public)
+astunparse >=1.6.0
+  # from parent package: tensorflow (public)
+beautifulsoup4
+  # from parent package: gdown (public)
+certifi >=2017.4.17
+  # from parent package: requests (private)
+charset-normalizer <3,>=2
+  # from parent package: requests (private)
+coloredlogs
+  # from parent package: onnxruntime-silicon (public)
+  # from parent package: onnxruntime-gpu (public)
+contourpy >=1.0.1
+  # from parent package: matplotlib (public)
+cycler >=0.10
+  # from parent package: matplotlib (public)
+darkdetect
+  # from parent package: customtkinter (public)
+filelock
+  # from parent package: gdown (public)
+flatbuffers >=25.9.23
+  # from parent package: onnxruntime-silicon (public)
+  # from parent package: onnxruntime-gpu (public)
+  # from parent package: tensorflow (public)
+fonttools >=4.22.0
+  # from parent package: matplotlib (public)
+gast !=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1
+  # from parent package: tensorflow (public)
+gdown >=4.2.0
+  # from parent package: opennsfw2 (public)
+google-pasta >=0.1.1
+  # from parent package: tensorflow (public)
+grpcio <2.0,>=1.24.3
+  # from parent package: tensorflow (public)
+h5py <3.15.0,>=3.11.0
+  # from parent package: tensorflow (public)
+  # from parent package: keras (public)
+humanfriendly >=9.1
+  # from parent package: coloredlogs (public)
+idna <4,>=2.5
+  # from parent package: requests (private)
+imageio !=2.35.0,>=2.33
+  # from parent package: scikit-image (public)
+keras >=3.12.0
+  # from parent package: tensorflow (public)
+kiwisolver >=1.3.1
+  # from parent package: matplotlib (public)
+lazy-loader >=0.4
+  # from parent package: scikit-image (public)
+libclang >=13.0.0
+  # from parent package: tensorflow (public)
+markdown-it-py >=2.2.0
+  # from parent package: rich (public)
+matplotlib >=3.0.0
+  # from parent package: opennsfw2 (public)
+mdurl ~=0.1
+  # from parent package: markdown-it-py (public)
+ml-dtypes <1.0.0,>=0.5.1
+  # from parent package: tensorflow (public)
+  # from parent package: keras (public)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+namex
+  # from parent package: keras (public)
+networkx >=3.0
+  # from parent package: scikit-image (public)
+opt-einsum >=2.3.2
+  # from parent package: tensorflow (public)
+optree
+  # from parent package: keras (public)
+packaging >=20.0,>=21,>=24.0
+  # from parent package: customtkinter (public)
+  # from parent package: onnxruntime-silicon (public)
+  # from parent package: onnxruntime-gpu (public)
+  # from parent package: tensorflow (public)
+  # from parent package: keras (public)
+  # from parent package: matplotlib (public)
+  # from parent package: scikit-image (public)
+  # from parent package: wheel (public)
+  # from parent package: lazy-loader (public)
+pygments <3.0.0,>=2.13.0
+  # from parent package: rich (public)
+pyparsing >=3
+  # from parent package: matplotlib (public)
+python-dateutil >=2.7
+  # from parent package: matplotlib (public)
+requests <3,>=2.21.0
+  # from parent package: tensorflow (public)
+  # from parent package: gdown (public)
+rich
+  # from parent package: keras (public)
+scikit-image >=0.18.0
+  # from parent package: opennsfw2 (public)
+scipy >=1.11.4
+  # from parent package: scikit-image (public)
+setuptools
+  # from parent package: tensorflow (public)
+six >=1.12.0,<2.0,>=1.6.1,>=1.5
+  # from parent package: tensorflow (public)
+  # from parent package: astunparse (public)
+  # from parent package: google-pasta (public)
+  # from parent package: python-dateutil (public)
+soupsieve >=1.6.1
+  # from parent package: beautifulsoup4 (public)
+sympy
+  # from parent package: onnxruntime-silicon (public)
+  # from parent package: onnxruntime-gpu (public)
+termcolor >=1.1.0
+  # from parent package: tensorflow (public)
+tifffile >=2022.8.12
+  # from parent package: scikit-image (public)
+tqdm >=4.62
+  # from parent package: opennsfw2 (public)
+  # from parent package: gdown (public)
+urllib3 <1.27,>=1.21.1
+  # from parent package: requests (private)
+wheel <1.0,>=0.23.0
+  # from parent package: astunparse (public)
+wrapt >=1.11.0
+  # from parent package: tensorflow (public)

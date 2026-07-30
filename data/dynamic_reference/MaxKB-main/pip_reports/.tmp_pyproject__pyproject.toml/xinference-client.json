@@ -1,0 +1,79 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/61/f6/1f388983cb2c8042d9b8d54ae6bb3f5d937bbdc3530922735d237376d72a/xinference_client-1.4.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=0472f7d59eba1cfa9ef9307715f776d72be04e1f7e1a4a96dbc9806d77e7f2d1",
+          "hashes": {
+            "sha256": "0472f7d59eba1cfa9ef9307715f776d72be04e1f7e1a4a96dbc9806d77e7f2d1"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "xinference-client",
+        "version": "1.4.1",
+        "summary": "Client for Xinference",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/xorbitsai/inference-client",
+        "author": "Qin Xuye",
+        "author_email": "qinxuye@xprobe.io",
+        "maintainer": "Qin Xuye",
+        "maintainer_email": "qinxuye@xprobe.io",
+        "license": "Apache License 2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Topic :: Software Development :: Libraries"
+        ],
+        "requires_dist": [
+          "requests",
+          "typing-extensions",
+          "pydantic",
+          "cython>=0.29; extra == \"dev\"",
+          "pytest>=3.5.0; extra == \"dev\"",
+          "pytest-cov>=2.5.0; extra == \"dev\"",
+          "pytest-timeout>=1.2.0; extra == \"dev\"",
+          "pytest-forked>=1.0; extra == \"dev\"",
+          "pytest-asyncio>=0.14.0; extra == \"dev\"",
+          "pytest-mock>=3.11.1; extra == \"dev\"",
+          "ipython>=6.5.0; extra == \"dev\"",
+          "flake8>=3.8.0; extra == \"dev\"",
+          "black; extra == \"dev\""
+        ],
+        "provides_extra": [
+          "dev"
+        ],
+        "description": "# Xinference Restful Client\nXinference provides a restful client for managing and accessing models programmatically.\n\n## Install\n```shell\npip install xinference-client\n```\n\n## Usage\n```python\nfrom xinference_client import RESTfulClient as Client\n\nclient = Client(\"http://localhost:9997\")\nmodel_uid = client.launch_model(model_name=\"chatglm2\")\nmodel = client.get_model(model_uid)\n\nchat_history = []\nprompt = \"What is the largest animal?\"\nmodel.chat(\n    prompt,\n    chat_history=chat_history,\n    generate_config={\"max_tokens\": 1024}\n)\n```\nResult:\n```json\n{\n  \"id\": \"chatcmpl-8d76b65a-bad0-42ef-912d-4a0533d90d61\",\n  \"model\": \"56f69622-1e73-11ee-a3bd-9af9f16816c6\",\n  \"object\": \"chat.completion\",\n  \"created\": 1688919187,\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"The largest animal that has been scientifically measured is the blue whale, which has a maximum length of around 23 meters (75 feet) for adult animals and can weigh up to 150,000 pounds (68,000 kg). However, it is important to note that this is just an estimate and that the largest animal known to science may be larger still. Some scientists believe that the largest animals may not have a clear \\\"size\\\" in the same way that humans do, as their size can vary depending on the environment and the stage of their life.\"\n      },\n      \"finish_reason\": \"None\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": -1,\n    \"completion_tokens\": -1,\n    \"total_tokens\": -1\n  }\n}\n```\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,299 @@
+{
+     "direct dependency": {
+          "number": 37,
+          "packages": [
+               {
+                    "name": "accelerate",
+                    "specifier": "==0.23.0",
+                    "raw_requirement": "accelerate ; accelerate==0.23.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "appdirs",
+                    "specifier": "",
+                    "raw_requirement": "appdirs",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "bitsandbytes",
+                    "specifier": ">=0.41.1",
+                    "raw_requirement": "bitsandbytes ; bitsandbytes>=0.41.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "black",
+                    "specifier": "",
+                    "raw_requirement": "black ; black[jupyter]",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "datasets",
+                    "specifier": "",
+                    "raw_requirement": "datasets ; datasets",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "fire",
+                    "specifier": "",
+                    "raw_requirement": "fire ; fire",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "peft",
+                    "specifier": "==0.2.0",
+                    "raw_requirement": "peft==0.2.0 ; peft==0.10.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gradio",
+                    "specifier": ">=4.19.2",
+                    "raw_requirement": "gradio ; gradio>=4.19.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "sentencepiece",
+                    "specifier": "",
+                    "raw_requirement": "sentencepiece ; sentencepiece",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scipy",
+                    "specifier": "",
+                    "raw_requirement": "scipy ; scipy",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "packaging",
+                    "specifier": "==23.2",
+                    "raw_requirement": "packaging==23.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tokenizers",
+                    "specifier": "",
+                    "raw_requirement": "tokenizers",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "deepspeed",
+                    "specifier": ">=0.13.1",
+                    "raw_requirement": "deepspeed>=0.13.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "addict",
+                    "specifier": "",
+                    "raw_requirement": "addict",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pyyaml",
+                    "specifier": ">=6.0",
+                    "raw_requirement": "PyYAML>=6.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "wandb",
+                    "specifier": "",
+                    "raw_requirement": "wandb ; wandb ; wandb",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "einops",
+                    "specifier": "",
+                    "raw_requirement": "einops",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "optimum",
+                    "specifier": "==1.13.2",
+                    "raw_requirement": "optimum==1.13.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "hf-transfer",
+                    "specifier": "",
+                    "raw_requirement": "hf_transfer",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "colorama",
+                    "specifier": "",
+                    "raw_requirement": "colorama",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numba",
+                    "specifier": "",
+                    "raw_requirement": "numba",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numpy",
+                    "specifier": ">=1.24.4",
+                    "raw_requirement": "numpy>=1.24.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "mlflow",
+                    "specifier": "",
+                    "raw_requirement": "mlflow",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "bert-score",
+                    "specifier": "==0.3.13",
+                    "raw_requirement": "bert-score==0.3.13",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "evaluate",
+                    "specifier": "==0.4.0",
+                    "raw_requirement": "evaluate==0.4.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "rouge-score",
+                    "specifier": "==0.1.2",
+                    "raw_requirement": "rouge-score==0.1.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scikit-learn",
+                    "specifier": ">=1.5.0",
+                    "raw_requirement": "scikit-learn>=1.5.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pynvml",
+                    "specifier": "",
+                    "raw_requirement": "pynvml",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "art",
+                    "specifier": "",
+                    "raw_requirement": "art",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "fschat",
+                    "specifier": "",
+                    "raw_requirement": "fschat",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorboard",
+                    "specifier": "",
+                    "raw_requirement": "tensorboard",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "mamba-ssm",
+                    "specifier": "==1.1.1",
+                    "raw_requirement": "mamba-ssm==1.1.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "s3fs",
+                    "specifier": "",
+                    "raw_requirement": "s3fs",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gcsfs",
+                    "specifier": "",
+                    "raw_requirement": "gcsfs",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "trl",
+                    "specifier": "<=0.9.6,>=0.7.9",
+                    "raw_requirement": "trl>=0.7.9, <=0.9.6",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "openai",
+                    "specifier": "==0.28.0",
+                    "raw_requirement": "openai==0.28.0 ; openai==0.28.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/Speculative-Decoding/EAGLE/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "anthropic",
+                    "specifier": "==0.5.0",
+                    "raw_requirement": "anthropic==0.5.0 ; anthropic==0.5.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/Speculative-Decoding/EAGLE/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 0,
+          "packages": []
+     },
+     "direct dependency with same name": {
+          "number": 2,
+          "packages": {
+               "colorama": {
+                    "private version": "0.4.6",
+                    "public version": "0.4.6",
+                    "highest public (unconstrained)": "0.4.6"
+               },
+               "numpy": {
+                    "private version": "2.4.4",
+                    "public version": "2.5.1",
+                    "highest public (unconstrained)": "2.5.1",
+                    "declared specifier": ">=1.24.4",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 40
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 0,
+          "packages": {}
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 2,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 149
+     }
+}

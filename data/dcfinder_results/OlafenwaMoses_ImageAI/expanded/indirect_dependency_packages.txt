@@ -1,0 +1,45 @@
+attrs >=19.2.0
+  # from parent package: pytest (public)
+contourpy >=1.0.1
+  # from parent package: matplotlib (public)
+cycler >=0.10
+  # from parent package: matplotlib (public)
+filelock
+  # from parent package: torch (private)
+fonttools >=4.22.0
+  # from parent package: matplotlib (public)
+fsspec >=0.8.5
+  # from parent package: torch (private)
+iniconfig
+  # from parent package: pytest (public)
+jinja2
+  # from parent package: torch (private)
+kiwisolver >=1.3.1
+  # from parent package: matplotlib (public)
+markupsafe >=2.0
+  # from parent package: jinja2 (private)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+networkx >=2.5.1
+  # from parent package: torch (private)
+packaging >=20.0
+  # from parent package: pytest (public)
+  # from parent package: matplotlib (public)
+pluggy <2.0,>=0.12
+  # from parent package: pytest (public)
+py >=1.8.2
+  # from parent package: pytest (public)
+pyparsing >=3
+  # from parent package: matplotlib (public)
+python-dateutil >=2.7
+  # from parent package: matplotlib (public)
+setuptools >=77.0.3
+  # from parent package: torch (private)
+six >=1.5
+  # from parent package: python-dateutil (public)
+sympy >=1.13.3
+  # from parent package: torch (private)
+tomli >=1.0.0
+  # from parent package: pytest (public)
+typing-extensions >=4.10.0
+  # from parent package: torch (private)

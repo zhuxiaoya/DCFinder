@@ -1,0 +1,156 @@
+{
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/docker/llm/finetune/lora/cpu/docker/requirements.txt": [
+    {
+      "name": "accelerate",
+      "specifier": "==0.23.0"
+    },
+    {
+      "name": "appdirs",
+      "specifier": ""
+    },
+    {
+      "name": "bitsandbytes",
+      "specifier": ">=0.41.1"
+    },
+    {
+      "name": "black",
+      "specifier": ""
+    },
+    {
+      "name": "datasets",
+      "specifier": ""
+    },
+    {
+      "name": "fire",
+      "specifier": ""
+    },
+    {
+      "name": "peft",
+      "specifier": "==0.2.0"
+    },
+    {
+      "name": "gradio",
+      "specifier": ">=4.19.2"
+    },
+    {
+      "name": "sentencepiece",
+      "specifier": ""
+    },
+    {
+      "name": "scipy",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/LLM-Finetuning/axolotl/requirements-xpu.txt": [
+    {
+      "name": "packaging",
+      "specifier": "==23.2"
+    },
+    {
+      "name": "tokenizers",
+      "specifier": ""
+    },
+    {
+      "name": "deepspeed",
+      "specifier": ">=0.13.1"
+    },
+    {
+      "name": "addict",
+      "specifier": ""
+    },
+    {
+      "name": "pyyaml",
+      "specifier": ">=6.0"
+    },
+    {
+      "name": "wandb",
+      "specifier": ""
+    },
+    {
+      "name": "einops",
+      "specifier": ""
+    },
+    {
+      "name": "optimum",
+      "specifier": "==1.13.2"
+    },
+    {
+      "name": "hf-transfer",
+      "specifier": ""
+    },
+    {
+      "name": "colorama",
+      "specifier": ""
+    },
+    {
+      "name": "numba",
+      "specifier": ""
+    },
+    {
+      "name": "numpy",
+      "specifier": ">=1.24.4"
+    },
+    {
+      "name": "mlflow",
+      "specifier": ""
+    },
+    {
+      "name": "bert-score",
+      "specifier": "==0.3.13"
+    },
+    {
+      "name": "evaluate",
+      "specifier": "==0.4.0"
+    },
+    {
+      "name": "rouge-score",
+      "specifier": "==0.1.2"
+    },
+    {
+      "name": "scikit-learn",
+      "specifier": ">=1.5.0"
+    },
+    {
+      "name": "pynvml",
+      "specifier": ""
+    },
+    {
+      "name": "art",
+      "specifier": ""
+    },
+    {
+      "name": "fschat",
+      "specifier": ""
+    },
+    {
+      "name": "tensorboard",
+      "specifier": ""
+    },
+    {
+      "name": "mamba-ssm",
+      "specifier": "==1.1.1"
+    },
+    {
+      "name": "s3fs",
+      "specifier": ""
+    },
+    {
+      "name": "gcsfs",
+      "specifier": ""
+    },
+    {
+      "name": "trl",
+      "specifier": "<=0.9.6,>=0.7.9"
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/ipex-llm-main/python/llm/example/GPU/Speculative-Decoding/EAGLE/requirements.txt": [
+    {
+      "name": "openai",
+      "specifier": "==0.28.0"
+    },
+    {
+      "name": "anthropic",
+      "specifier": "==0.5.0"
+    }
+  ]
+}

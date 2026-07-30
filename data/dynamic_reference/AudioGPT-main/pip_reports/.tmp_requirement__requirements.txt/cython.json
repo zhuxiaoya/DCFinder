@@ -1,0 +1,72 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/ec/30/8707699ea6e1c1cbe79c37e91f5b06a6266de24f699a5e19b8c0a63c4b65/Cython-0.29.24-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=f96411f0120b5cae483923aaacd2872af8709be4b46522daedc32f051d778385",
+          "hashes": {
+            "sha256": "f96411f0120b5cae483923aaacd2872af8709be4b46522daedc32f051d778385"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.0",
+        "name": "Cython",
+        "version": "0.29.24",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "The Cython compiler for writing C extensions for the Python language.",
+        "home_page": "http://cython.org/",
+        "author": "Robert Bradshaw, Stefan Behnel, Dag Seljebotn, Greg Ewing, et al.",
+        "author_email": "cython-devel@python.org",
+        "license": "Apache",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.6",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: C",
+          "Programming Language :: Cython",
+          "Topic :: Software Development :: Code Generators",
+          "Topic :: Software Development :: Compilers",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_python": ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*",
+        "description": "The Cython language makes writing C extensions for the Python language as\neasy as Python itself.  Cython is a source code translator based on Pyrex_,\nbut supports more cutting edge functionality and optimizations.\n\nThe Cython language is a superset of the Python language (almost all Python\ncode is also valid Cython code), but Cython additionally supports optional\nstatic typing to natively call C functions, operate with C++ classes and\ndeclare fast C types on variables and class attributes.  This allows the\ncompiler to generate very efficient C code from Cython code.\n\nThis makes Cython the ideal language for writing glue code for external\nC/C++ libraries, and for fast C modules that speed up the execution of\nPython code.\n\nNote that for one-time builds, e.g. for CI/testing, on platforms that are not\ncovered by one of the wheel packages provided on PyPI *and* the pure Python wheel\nthat we provide is not used, it is substantially faster than a full source build\nto install an uncompiled (slower) version of Cython with::\n\n    pip install Cython --install-option=\"--no-cython-compile\"\n\n.. _Pyrex: http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

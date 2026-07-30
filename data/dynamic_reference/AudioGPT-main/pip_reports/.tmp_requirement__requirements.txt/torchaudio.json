@@ -1,0 +1,69 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://download-r2.pytorch.org/whl/cu113/torchaudio-0.12.1%2Bcu113-cp310-cp310-linux_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=07a82f4d259f82b16cd4eb23e4d9543954d9676611613344694bb6c16b4ecfe0",
+          "hashes": {
+            "sha256": "07a82f4d259f82b16cd4eb23e4d9543954d9676611613344694bb6c16b4ecfe0"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "torchaudio",
+        "version": "0.12.1+cu113",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "An audio package for PyTorch",
+        "home_page": "https://github.com/pytorch/audio",
+        "author": "Soumith Chintala, David Pollack, Sean Naren, Peter Goldsborough",
+        "author_email": "soumith@pytorch.org",
+        "license": "UNKNOWN",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Environment :: Plugins",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX",
+          "Programming Language :: C++",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Topic :: Multimedia :: Sound/Audio",
+          "Topic :: Scientific/Engineering :: Artificial Intelligence"
+        ],
+        "requires_dist": [
+          "torch (==1.12.1)"
+        ],
+        "description": "UNKNOWN\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

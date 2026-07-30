@@ -1,0 +1,126 @@
+async-timeout >=4.0.3
+  # from parent package: redis (public)
+audioread >=2.1.9
+  # from parent package: librosa (public)
+botocore <1.44.0,>=1.43.48,<2.0a.0,>=1.37.4
+  # from parent package: boto3 (public)
+  # from parent package: s3transfer (public)
+certifi >=2017.4.17
+  # from parent package: requests (private)
+cffi >=1.0
+  # from parent package: soundfile (private)
+charset-normalizer <3,>=2
+  # from parent package: requests (private)
+click >=8.0.0
+  # from parent package: typer (private)
+decorator >=4.3.0
+  # from parent package: librosa (public)
+filelock
+  # from parent package: torch (private)
+fsspec >=0.8.5
+  # from parent package: torch (private)
+hiredis >=2.2.0
+  # from parent package: tensorizer (public)
+humanize
+  # from parent package: runai-model-streamer (public)
+idna <4,>=2.5
+  # from parent package: requests (private)
+jinja2
+  # from parent package: torch (private)
+jmespath <2.0.0,>=0.7.1
+  # from parent package: boto3 (public)
+  # from parent package: botocore (public)
+joblib >=1.0,>=1.4.0
+  # from parent package: librosa (public)
+  # from parent package: scikit-learn (public)
+lazy-loader >=0.1
+  # from parent package: librosa (public)
+libnacl >=2.1.0
+  # from parent package: tensorizer (public)
+llvmlite <0.45,>=0.44.0dev0
+  # from parent package: numba (private)
+markdown-it-py >=2.2.0
+  # from parent package: rich (private)
+markupsafe >=2.0
+  # from parent package: jinja2 (private)
+mdurl ~=0.1
+  # from parent package: markdown-it-py (private)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+msgpack >=1.0
+  # from parent package: librosa (public)
+narwhals >=2.0.1
+  # from parent package: scikit-learn (public)
+networkx >=2.5.1
+  # from parent package: torch (private)
+numba >=0.51.0
+  # from parent package: librosa (public)
+numpy >=1.19.5,>=1.22.3,>=1.22.4,<2.3,>=1.24,<2.6,>=1.25.2,>=1.24.1
+  # from parent package: tensorizer (public)
+  # from parent package: runai-model-streamer (public)
+  # from parent package: librosa (public)
+  # from parent package: soundfile (private)
+  # from parent package: pandas (private)
+  # from parent package: numba (private)
+  # from parent package: scipy (private)
+  # from parent package: scikit-learn (public)
+  # from parent package: soxr (public)
+packaging >=20.0
+  # from parent package: pooch (public)
+  # from parent package: lazy-loader (public)
+platformdirs >=2.5.0
+  # from parent package: pooch (public)
+pooch >=1.1
+  # from parent package: librosa (public)
+protobuf >=3.19.5
+  # from parent package: tensorizer (public)
+psutil >=5.9.4
+  # from parent package: tensorizer (public)
+pycparser
+  # from parent package: cffi (private)
+pygments <3.0.0,>=2.13.0
+  # from parent package: rich (private)
+python-dateutil >=2.8.2,<3.0.0,>=2.1
+  # from parent package: pandas (private)
+  # from parent package: botocore (public)
+pytz >=2020.1
+  # from parent package: pandas (private)
+redis >=4.5.5
+  # from parent package: tensorizer (public)
+requests >=2.19.0
+  # from parent package: pooch (public)
+rich >=10.11.0
+  # from parent package: typer (private)
+s3transfer <0.20.0,>=0.19.0
+  # from parent package: boto3 (public)
+scikit-learn >=1.1.0
+  # from parent package: librosa (public)
+scipy >=1.6.0,>=1.10.0
+  # from parent package: librosa (public)
+  # from parent package: scikit-learn (public)
+setuptools >=77.0.3
+  # from parent package: torch (private)
+shellingham >=1.3.0
+  # from parent package: typer (private)
+six >=1.5
+  # from parent package: python-dateutil (private)
+soxr >=0.3.2
+  # from parent package: librosa (public)
+sympy >=1.13.3
+  # from parent package: torch (private)
+threadpoolctl >=3.5.0
+  # from parent package: scikit-learn (public)
+torch >=1.9.0,<3.0.0,>=2.0.0
+  # from parent package: tensorizer (public)
+  # from parent package: runai-model-streamer (public)
+typer >=0.9.0
+  # from parent package: fastsafetensors (public)
+typing-extensions >=4.1.1,>=4.10.0,>=3.7.4.3
+  # from parent package: librosa (public)
+  # from parent package: torch (private)
+  # from parent package: typer (private)
+tzdata >=2022.7
+  # from parent package: pandas (private)
+urllib3 !=2.2.0,<3,>=1.25.4,<1.27,>=1.21.1
+  # from parent package: botocore (public)
+  # from parent package: requests (private)

@@ -1,0 +1,75 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/7e/16/fbe8e1e185a45042f7cd3a282def5bb8d95bb69ab9e9ef6a5368aa17e426/audioread-3.1.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=b30d1df6c5d3de5dcef0fb0e256f6ea17bdcf5f979408df0297d8a408e2971b4",
+          "hashes": {
+            "sha256": "b30d1df6c5d3de5dcef0fb0e256f6ea17bdcf5f979408df0297d8a408e2971b4"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "audioread",
+        "version": "3.1.0",
+        "summary": "Multi-library, cross-platform audio decoding.",
+        "description_content_type": "text/x-rst",
+        "author": "Adrian Sampson",
+        "author_email": "adrian@radbox.org",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Topic :: Multimedia :: Sound/Audio :: Conversion",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "License :: OSI Approved :: MIT License"
+        ],
+        "requires_dist": [
+          "pygobject (>=3.54.2,<4.0.0) ; extra == \"gi\"",
+          "pymad[mad] (>=0.11.3,<0.12.0) ; extra == \"mad\"",
+          "pytest (>=8.4.2) ; extra == \"test\"",
+          "pytest-cov (>=7.0.0) ; extra == \"test\"",
+          "standard-aifc ; python_version >= \"3.13\"",
+          "standard-sunau ; python_version >= \"3.13\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Bug Tracker, https://github.com/beetbox/audioread/issues",
+          "Homepage, https://github.com/beetbox/audioread",
+          "Repository, https://github.com/beetbox/audioread"
+        ],
+        "provides_extra": [
+          "gi",
+          "mad",
+          "test"
+        ],
+        "description": "audioread\n=========\n\nDecode audio files using whichever backend is available. The library\ncurrently supports:\n\n- `Gstreamer`_ via `PyGObject`_.\n- `Core Audio`_ on Mac OS X via `ctypes`_. (PyObjC not required.)\n- `MAD`_ via the `pymad`_ bindings.\n- `FFmpeg`_ or `Libav`_ via its command-line interface.\n- The standard library `wave`_, `aifc`_, and `sunau`_ modules (for\n  uncompressed audio formats).\n\n.. _Gstreamer: http://gstreamer.freedesktop.org/\n.. _gst-python: http://gstreamer.freedesktop.org/modules/gst-python.html\n.. _Core Audio: http://developer.apple.com/technologies/mac/audio-and-video.html\n.. _ctypes: http://docs.python.org/library/ctypes.html\n.. _MAD: http://www.underbit.com/products/mad/\n.. _pymad: http://spacepants.org/src/pymad/\n.. _FFmpeg: http://ffmpeg.org/\n.. _Libav: https://www.libav.org/\n.. _wave: http://docs.python.org/library/wave.html\n.. _aifc: http://docs.python.org/library/aifc.html\n.. _sunau: http://docs.python.org/library/sunau.html\n.. _PyGObject: https://pygobject.readthedocs.io/\n\nUse the library like so::\n\n    with audioread.audio_open(filename) as f:\n        print(f.channels, f.samplerate, f.duration)\n        for buf in f:\n            do_something(buf)\n\nBuffers in the file can be accessed by iterating over the object returned from\n``audio_open``. Each buffer is a bytes-like object (``buffer``, ``bytes``, or\n``bytearray``) containing raw **16-bit little-endian signed integer PCM\ndata**. (Currently, these PCM format parameters are not configurable, but this\ncould be added to most of the backends.)\n\nAdditional values are available as fields on the audio file object:\n\n- ``channels`` is the number of audio channels (an integer).\n- ``samplerate`` is given in Hz (an integer).\n- ``duration`` is the length of the audio in seconds (a float).\n\nThe ``audio_open`` function transparently selects a backend that can read the\nfile. (Each backend is implemented in a module inside the ``audioread``\npackage.) If no backends succeed in opening the file, a ``DecodeError``\nexception is raised. This exception is only used when the file type is\nunsupported by the backends; if the file doesn't exist, a standard ``IOError``\nwill be raised.\n\nA second optional parameter to ``audio_open`` specifies which backends to try\n(instead of trying them all, which is the default). You can use the\n``available_backends`` function to get a list backends that are usable on the\ncurrent system.\n\nAudioread supports Python 3 (3.9+).\n\nExample\n-------\n\nThe included ``decode.py`` script demonstrates using this package to\nconvert compressed audio files to WAV files.\n\nTroubleshooting\n---------------\n\nA ``NoBackendError`` exception means that the library could not find one of\nthe libraries or tools it needs to decode audio. This could mean, for example,\nthat you have a broken installation of `FFmpeg`_. To check, try typing\n``ffmpeg -version`` in your shell. If that gives you an error, try installing\nFFmpeg with your OS's package manager (e.g., apt or yum) or `using Conda\n<https://anaconda.org/conda-forge/ffmpeg>`_.\n\nVersion History\n---------------\n\n3.0.2\n  Support path-like objects (not just strings) in the Core Audio backend.\n\n3.0.1\n  Fix a possible deadlock when FFmpeg's version output produces too much data.\n\n3.0.0\n  Drop support for Python 2 and older versions of Python 3. The library now\n  requires Python 3.6+.\n  Increase default block size in FFmpegAudioFile to get slightly faster file reading.\n  Cache backends for faster lookup (thanks to @bmcfee).\n  Audio file classes now inherit from a common base ``AudioFile`` class.\n\n2.1.9\n  Work correctly with GStreamer 1.18 and later (thanks to @ssssam).\n\n2.1.8\n  Fix an unhandled ``OSError`` when FFmpeg is not installed.\n\n2.1.7\n  Properly close some filehandles in the FFmpeg backend (thanks to\n  @RyanMarcus and @ssssam).\n  The maddec backend now always produces bytes objects, like the other\n  backends (thanks to @ssssam).\n  Resolve an audio data memory leak in the GStreamer backend (thanks again to\n  @ssssam).\n  You can now optionally specify which specific backends ``audio_open`` should\n  try (thanks once again to @ssssam).\n  On Windows, avoid opening a console window to run FFmpeg (thanks to @flokX).\n\n2.1.6\n  Fix a \"no such process\" crash in the FFmpeg backend on Windows Subsystem for\n  Linux (thanks to @llamasoft).\n  Avoid suppressing SIGINT in the GStreamer backend on older versions of\n  PyGObject (thanks to @lazka).\n\n2.1.5\n  Properly clean up the file handle when a backend fails to decode a file.\n  Fix parsing of \"N.M\" channel counts in the FFmpeg backend (thanks to @piem).\n  Avoid a crash in the raw backend when a file uses an unsupported number of\n  bits per sample (namely, 24-bit samples in Python < 3.4).\n  Add a ``__version__`` value to the package.\n\n2.1.4\n  Fix a bug in the FFmpeg backend where, after closing a file, the program's\n  standard input stream would be \"broken\" and wouldn't receive any input.\n\n2.1.3\n  Avoid some warnings in the GStreamer backend when using modern versions of\n  GLib. We now require at least GLib 2.32.\n\n2.1.2\n  Fix a file descriptor leak when opening and closing many files using\n  GStreamer.\n\n2.1.1\n  Just fix ReST formatting in the README.\n\n2.1.0\n  The FFmpeg backend can now also use Libav's ``avconv`` command.\n  Fix a warning by requiring GStreamer >= 1.0.\n  Fix some Python 3 crashes with the new GStreamer backend (thanks to\n  @xix-xeaon).\n\n2.0.0\n  The GStreamer backend now uses GStreamer 1.x via the new\n  gobject-introspection API (and is compatible with Python 3).\n\n1.2.2\n  When running FFmpeg on Windows, disable its crash dialog. Thanks to\n  jcsaaddupuy.\n\n1.2.1\n  Fix an unhandled exception when opening non-raw audio files (thanks to\n  aostanin).\n  Fix Python 3 compatibility for the raw-file backend.\n\n1.2.0\n  Add support for FFmpeg on Windows (thanks to Jean-Christophe Saad-Dupuy).\n\n1.1.0\n  Add support for Sun/NeXT `Au files`_ via the standard-library ``sunau``\n  module (thanks to Dan Ellis).\n\n1.0.3\n  Use the rawread (standard-library) backend for .wav files.\n\n1.0.2\n  Send SIGKILL, not SIGTERM, to ffmpeg processes to avoid occasional hangs.\n\n1.0.1\n  When GStreamer fails to report a duration, raise an exception instead of\n  silently setting the duration field to None.\n\n1.0.0\n  Catch GStreamer's exception when necessary components, such as\n  ``uridecodebin``, are missing.\n  The GStreamer backend now accepts relative paths.\n  Fix a hang in GStreamer when the stream finishes before it begins (when\n  reading broken files).\n  Initial support for Python 3.\n\n0.8\n  All decoding errors are now subclasses of ``DecodeError``.\n\n0.7\n  Fix opening WAV and AIFF files via Unicode filenames.\n\n0.6\n  Make FFmpeg timeout more robust.\n  Dump FFmpeg output on timeout.\n  Fix a nondeterministic hang in the Gstreamer backend.\n  Fix a file descriptor leak in the MAD backend.\n\n0.5\n  Fix crash when FFmpeg fails to report a duration.\n  Fix a hang when FFmpeg fills up its stderr output buffer.\n  Add a timeout to ``ffmpeg`` tool execution (currently 10 seconds for each\n  4096-byte read); a ``ReadTimeoutError`` exception is raised if the tool times\n  out.\n\n0.4\n  Fix channel count detection for FFmpeg backend.\n\n0.3\n  Fix a problem with the Gstreamer backend where audio files could be left open\n  even after the ``GstAudioFile`` was \"closed\".\n\n0.2\n  Fix a hang in the GStreamer backend that occurs occasionally on some\n  platforms.\n\n0.1\n  Initial release.\n\n.. _Au files: http://en.wikipedia.org/wiki/Au_file_format\n\nEt Cetera\n---------\n\n``audioread`` is by Adrian Sampson. It is made available under `the MIT\nlicense`_. An alternative to this module is `decoder.py`_.\n\n.. _the MIT license: http://www.opensource.org/licenses/mit-license.php\n.. _decoder.py: http://www.brailleweb.com/cgi-bin/python.py\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

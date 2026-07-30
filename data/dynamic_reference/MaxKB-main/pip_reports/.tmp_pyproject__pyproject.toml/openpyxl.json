@@ -1,0 +1,70 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/c0/da/977ded879c29cbd04de313843e76868e6e13408a94ed6b987245dc7c8506/openpyxl-3.1.5-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=5282c12b107bffeef825f4617dc029afaf41d0ea60823bbb665ef3079dc79de2",
+          "hashes": {
+            "sha256": "5282c12b107bffeef825f4617dc029afaf41d0ea60823bbb665ef3079dc79de2"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "openpyxl",
+        "version": "3.1.5",
+        "summary": "A Python library to read/write Excel 2010 xlsx/xlsm files",
+        "home_page": "https://openpyxl.readthedocs.io",
+        "author": "See AUTHORS",
+        "author_email": "charlie.clark@clark-consulting.eu",
+        "license": "MIT",
+        "license_file": [
+          "LICENCE.rst"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11"
+        ],
+        "requires_dist": [
+          "et-xmlfile"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Documentation, https://openpyxl.readthedocs.io/en/stable/",
+          "Source, https://foss.heptapod.net/openpyxl/openpyxl",
+          "Tracker, https://foss.heptapod.net/openpyxl/openpyxl/-/issues"
+        ],
+        "description": ".. image:: https://coveralls.io/repos/bitbucket/openpyxl/openpyxl/badge.svg?branch=default\n    :target: https://coveralls.io/bitbucket/openpyxl/openpyxl?branch=default\n    :alt: coverage status\n\nIntroduction\n------------\n\nopenpyxl is a Python library to read/write Excel 2010 xlsx/xlsm/xltx/xltm files.\n\nIt was born from lack of existing library to read/write natively from Python\nthe Office Open XML format.\n\nAll kudos to the PHPExcel team as openpyxl was initially based on PHPExcel.\n\n\nSecurity\n--------\n\nBy default openpyxl does not guard against quadratic blowup or billion laughs\nxml attacks. To guard against these attacks install defusedxml.\n\nMailing List\n------------\n\nThe user list can be found on http://groups.google.com/group/openpyxl-users\n\n\nSample code::\n\n    from openpyxl import Workbook\n    wb = Workbook()\n\n    # grab the active worksheet\n    ws = wb.active\n\n    # Data can be assigned directly to cells\n    ws['A1'] = 42\n\n    # Rows can also be appended\n    ws.append([1, 2, 3])\n\n    # Python types will automatically be converted\n    import datetime\n    ws['A2'] = datetime.datetime.now()\n\n    # Save the file\n    wb.save(\"sample.xlsx\")\n\n\nDocumentation\n-------------\n\nThe documentation is at: https://openpyxl.readthedocs.io\n\n* installation methods\n* code examples\n* instructions for contributing\n\nRelease notes: https://openpyxl.readthedocs.io/en/stable/changes.html\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

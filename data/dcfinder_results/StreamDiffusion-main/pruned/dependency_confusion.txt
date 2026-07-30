@@ -1,0 +1,720 @@
+{
+     "direct dependency": {
+          "number": 19,
+          "packages": [
+               {
+                    "name": "fire",
+                    "specifier": "",
+                    "raw_requirement": "fire",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "omegaconf",
+                    "specifier": "",
+                    "raw_requirement": "omegaconf",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "diffusers",
+                    "specifier": "==0.24.0",
+                    "raw_requirement": "diffusers==0.24.0 ; diffusers==0.24.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "transformers",
+                    "specifier": "==4.35.2",
+                    "raw_requirement": "transformers ; transformers==4.35.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "accelerate",
+                    "specifier": "==0.24.0",
+                    "raw_requirement": "accelerate ; accelerate==0.24.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "uvicorn",
+                    "specifier": "==0.24.0.post1",
+                    "raw_requirement": "uvicorn>=0.24.0 ; uvicorn[standard]==0.24.0.post1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/demo/realtime-txt2img/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "fastapi",
+                    "specifier": "==0.104.1",
+                    "raw_requirement": "fastapi>=0.104.1 ; fastapi==0.104.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/demo/realtime-txt2img/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "av",
+                    "specifier": "",
+                    "raw_requirement": "av ; av",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/demo/vid2vid/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gradio",
+                    "specifier": "",
+                    "raw_requirement": "gradio",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/demo/vid2vid/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch",
+                    "specifier": "",
+                    "raw_requirement": "torch",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/demo/realtime-img2img/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pillow",
+                    "specifier": "==10.1.0",
+                    "raw_requirement": "Pillow==10.1.0 ; pillow",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/demo/realtime-img2img/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "compel",
+                    "specifier": "==2.0.2",
+                    "raw_requirement": "compel==2.0.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/demo/realtime-img2img/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "controlnet-aux",
+                    "specifier": "==0.0.7",
+                    "raw_requirement": "controlnet-aux==0.0.7",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/demo/realtime-img2img/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "peft",
+                    "specifier": "==0.6.0",
+                    "raw_requirement": "peft==0.6.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/demo/realtime-img2img/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "xformers",
+                    "specifier": "",
+                    "raw_requirement": "xformers; sys_platform != 'darwin' or platform_machine != 'arm64'",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/demo/realtime-img2img/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "markdown2",
+                    "specifier": "",
+                    "raw_requirement": "markdown2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/demo/realtime-img2img/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "stable-fast",
+                    "specifier": "",
+                    "raw_requirement": "stable_fast @ https://github.com/chengzeyi/stable-fast/releases/download/v0.0.15.post1/stable_fast-0.0.15.post1+torch211cu121-cp310-cp310-manylinux2014_x86_64.whl; sys_platform=='linux'",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/demo/realtime-img2img/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "matplotlib",
+                    "specifier": "",
+                    "raw_requirement": "matplotlib",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/examples/screen/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "mss",
+                    "specifier": "",
+                    "raw_requirement": "mss",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/StreamDiffusion-main/examples/screen/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 22,
+          "packages": [
+               {
+                    "name": "filelock",
+                    "specifier": ">=3.10.0",
+                    "raw_requirement": "filelock ; filelock ; filelock ; filelock>=3.10.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "diffusers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fsspec",
+                    "specifier": ">=2023.5.0",
+                    "raw_requirement": "fsspec ; fsspec>=2023.5.0 ; fsspec",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": "<4.0",
+                    "raw_requirement": "jinja2<4.0 ; jinja2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "markupsafe",
+                    "specifier": "<4.0,>=2.0,>=2.0",
+                    "raw_requirement": "markupsafe<4.0,>=2.0 ; MarkupSafe>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jinja2",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "mpmath",
+                    "specifier": "<1.4,>=1.1.0",
+                    "raw_requirement": "mpmath<1.4,>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sympy",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "networkx",
+                    "specifier": "",
+                    "raw_requirement": "networkx",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "numpy",
+                    "specifier": ">=1.17,<3.0,>=1.0,>=1.17,>=1.25,>=1.26.0,>=1.25",
+                    "raw_requirement": "numpy ; numpy (>=1.17) ; numpy (>=1.17) ; numpy<3.0,>=1.0 ; numpy (>=1.17) ; numpy ; numpy>=1.25 ; numpy>=1.26.0; python_version < \"3.14\" ; numpy>=1.25",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "diffusers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "transformers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "accelerate",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "peft",
+                              "source": "public"
+                         },
+                         {
+                              "name": "xformers",
+                              "source": "private"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pandas",
+                              "source": "public"
+                         },
+                         {
+                              "name": "contourpy",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cublas-cu11",
+                    "specifier": "==11.11.3.6",
+                    "raw_requirement": "nvidia-cublas-cu11==11.11.3.6; platform_system == \"Linux\" and platform_machine == \"x86_64\" ; nvidia-cublas-cu11 ; nvidia-cublas-cu11",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cudnn-cu11",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cusolver-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cuda-cupti-cu11",
+                    "specifier": "==11.8.87",
+                    "raw_requirement": "nvidia-cuda-cupti-cu11==11.8.87; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cuda-nvrtc-cu11",
+                    "specifier": "==11.8.89",
+                    "raw_requirement": "nvidia-cuda-nvrtc-cu11==11.8.89; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cuda-runtime-cu11",
+                    "specifier": "==11.8.89",
+                    "raw_requirement": "nvidia-cuda-runtime-cu11==11.8.89; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cudnn-cu11",
+                    "specifier": "==9.1.0.70",
+                    "raw_requirement": "nvidia-cudnn-cu11==9.1.0.70; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cufft-cu11",
+                    "specifier": "==10.9.0.58",
+                    "raw_requirement": "nvidia-cufft-cu11==10.9.0.58; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-curand-cu11",
+                    "specifier": "==10.3.0.86",
+                    "raw_requirement": "nvidia-curand-cu11==10.3.0.86; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cusolver-cu11",
+                    "specifier": "==11.4.1.48",
+                    "raw_requirement": "nvidia-cusolver-cu11==11.4.1.48; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cusparse-cu11",
+                    "specifier": "==11.7.5.86",
+                    "raw_requirement": "nvidia-cusparse-cu11==11.7.5.86; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-nccl-cu11",
+                    "specifier": "==2.21.5",
+                    "raw_requirement": "nvidia-nccl-cu11==2.21.5; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-nvtx-cu11",
+                    "specifier": "==11.8.86",
+                    "raw_requirement": "nvidia-nvtx-cu11==11.8.86; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "setuptools",
+                    "specifier": ">=40.8.0",
+                    "raw_requirement": "setuptools>=40.8.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "triton",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "sympy",
+                    "specifier": ">=1.13.3",
+                    "raw_requirement": "sympy>=1.13.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "triton",
+                    "specifier": "==3.3.1",
+                    "raw_requirement": "triton==3.3.1; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=4.0,>=4.8.0,~=4.0,>=4.10.0,>=4.1.0,>=4.15.0,>=4.10.0,~=4.0,>=4.6.0,>=4.14.1,>=4.12.0",
+                    "raw_requirement": "typing-extensions>=4.0; python_version < '3.11' ; typing-extensions>=4.8.0 ; typing-extensions~=4.0 ; typing-extensions>=4.10.0 ; typing-extensions>=4.1.0 ; typing-extensions>=4.15.0 ; typing-extensions>=4.10.0; python_version < \"3.13\" ; typing-extensions~=4.0 ; typing-extensions>=4.6.0; python_version < \"3.13\" ; typing-extensions>=4.14.1 ; typing-extensions>=4.12.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         },
+                         {
+                              "name": "starlette",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "exceptiongroup",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic-core",
+                              "source": "public"
+                         },
+                         {
+                              "name": "typing-inspection",
+                              "source": "public"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 2,
+          "packages": {
+               "pillow": {
+                    "private version": "10.1.0",
+                    "public version": "10.1.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": "==10.1.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               },
+               "xformers": {
+                    "private version": "0.0.31",
+                    "public version": "0.0.35",
+                    "highest public (unconstrained)": "0.0.35"
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 22,
+          "packages": {
+               "filelock": {
+                    "private version": "3.29.0",
+                    "public version": "3.29.7",
+                    "highest public (unconstrained)": "3.29.7",
+                    "declared specifier": ">=3.10.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 56
+               },
+               "fsspec": {
+                    "private version": "2026.4.0",
+                    "public version": "2026.6.0",
+                    "highest public (unconstrained)": "2026.6.0",
+                    "declared specifier": ">=2023.5.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 33
+               },
+               "jinja2": {
+                    "private version": "3.1.6",
+                    "public version": "3.1.6",
+                    "highest public (unconstrained)": "3.1.6",
+                    "declared specifier": "<4.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 52
+               },
+               "markupsafe": {
+                    "private version": "3.0.3",
+                    "public version": "3.0.3",
+                    "highest public (unconstrained)": "3.0.3",
+                    "declared specifier": "<4.0,>=2.0,>=2.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 12
+               },
+               "mpmath": {
+                    "private version": "1.3.0",
+                    "public version": "1.3.0",
+                    "highest public (unconstrained)": "1.5.0a0",
+                    "declared specifier": "<1.4,>=1.1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "networkx": {
+                    "private version": "3.6.1",
+                    "public version": "3.6.1",
+                    "highest public (unconstrained)": "3.6.1"
+               },
+               "numpy": {
+                    "private version": "2.4.4",
+                    "public version": "2.5.1",
+                    "highest public (unconstrained)": "2.5.1",
+                    "declared specifier": ">=1.17,<3.0,>=1.0,>=1.17,>=1.25,>=1.26.0,>=1.25",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 36
+               },
+               "nvidia-cublas-cu11": {
+                    "private version": "11.11.3.6",
+                    "public version": "11.11.3.6",
+                    "highest public (unconstrained)": "11.11.3.6",
+                    "declared specifier": "==11.11.3.6",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cuda-cupti-cu11": {
+                    "private version": "11.8.87",
+                    "public version": "11.8.87",
+                    "highest public (unconstrained)": "11.8.87",
+                    "declared specifier": "==11.8.87",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cuda-nvrtc-cu11": {
+                    "private version": "11.8.89",
+                    "public version": "11.8.89",
+                    "highest public (unconstrained)": "11.8.89",
+                    "declared specifier": "==11.8.89",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cuda-runtime-cu11": {
+                    "private version": "11.8.89",
+                    "public version": "11.8.89",
+                    "highest public (unconstrained)": "11.8.89",
+                    "declared specifier": "==11.8.89",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cudnn-cu11": {
+                    "private version": "9.1.0.70",
+                    "public version": "9.1.0.70",
+                    "highest public (unconstrained)": "9.10.2.21",
+                    "declared specifier": "==9.1.0.70",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cufft-cu11": {
+                    "private version": "10.9.0.58",
+                    "public version": "10.9.0.58",
+                    "highest public (unconstrained)": "10.9.0.58",
+                    "declared specifier": "==10.9.0.58",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-curand-cu11": {
+                    "private version": "10.3.0.86",
+                    "public version": "10.3.0.86",
+                    "highest public (unconstrained)": "10.3.0.86",
+                    "declared specifier": "==10.3.0.86",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cusolver-cu11": {
+                    "private version": "11.4.1.48",
+                    "public version": "11.4.1.48",
+                    "highest public (unconstrained)": "11.4.1.48",
+                    "declared specifier": "==11.4.1.48",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cusparse-cu11": {
+                    "private version": "11.7.5.86",
+                    "public version": "11.7.5.86",
+                    "highest public (unconstrained)": "11.7.5.86",
+                    "declared specifier": "==11.7.5.86",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-nccl-cu11": {
+                    "private version": "2.21.5",
+                    "public version": "2.21.5",
+                    "highest public (unconstrained)": "2.21.5",
+                    "declared specifier": "==2.21.5",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-nvtx-cu11": {
+                    "private version": "11.8.86",
+                    "public version": "11.8.86",
+                    "highest public (unconstrained)": "11.8.86",
+                    "declared specifier": "==11.8.86",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "setuptools": {
+                    "private version": "78.1.0",
+                    "public version": "83.0.0",
+                    "highest public (unconstrained)": "83.0.0",
+                    "declared specifier": ">=40.8.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 287
+               },
+               "sympy": {
+                    "private version": "1.14.0",
+                    "public version": "1.14.0",
+                    "highest public (unconstrained)": "1.14.0",
+                    "declared specifier": ">=1.13.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "triton": {
+                    "private version": "3.3.1",
+                    "public version": "3.3.1",
+                    "highest public (unconstrained)": "3.7.1",
+                    "declared specifier": "==3.3.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "typing-extensions": {
+                    "private version": "4.15.0",
+                    "public version": "4.16.0",
+                    "highest public (unconstrained)": "4.16.0",
+                    "declared specifier": ">=4.0,>=4.8.0,~=4.0,>=4.10.0,>=4.1.0,>=4.15.0,>=4.10.0,~=4.0,>=4.6.0,>=4.14.1,>=4.12.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 25,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 47
+     }
+}

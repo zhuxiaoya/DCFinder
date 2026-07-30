@@ -1,0 +1,74 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/7b/91/984aca2ec129e2757d1e4e3c81c3fcda9d0f85b74670a094cc443d9ee949/joblib-1.5.3-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=5fc3c5039fc5ca8c0276333a188bbd59d6b7ab37fe6632daa76bc7f9ec18e713",
+          "hashes": {
+            "sha256": "5fc3c5039fc5ca8c0276333a188bbd59d6b7ab37fe6632daa76bc7f9ec18e713"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "joblib",
+        "version": "1.5.3",
+        "dynamic": [
+          "license-file"
+        ],
+        "platform": [
+          "any"
+        ],
+        "summary": "Lightweight pipelining with Python functions",
+        "description_content_type": "text/x-rst",
+        "author_email": "Gael Varoquaux <gael.varoquaux@normalesup.org>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "Intended Audience :: Education",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Topic :: Scientific/Engineering",
+          "Topic :: Utilities",
+          "Topic :: Software Development :: Libraries"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://joblib.readthedocs.io",
+          "Source, https://github.com/joblib/joblib"
+        ],
+        "description": "|PyPi| |CIStatus| |ReadTheDocs| |Codecov|\n\n.. |PyPi| image:: https://badge.fury.io/py/joblib.svg\n   :target: https://badge.fury.io/py/joblib\n   :alt: Joblib version\n\n.. |CIStatus| image:: https://github.com/joblib/joblib/actions/workflows/test.yml/badge.svg\n   :target: https://github.com/joblib/joblib/actions/workflows/test.yml?query=branch%3Amain\n   :alt: CI status\n\n.. |ReadTheDocs| image:: https://readthedocs.org/projects/joblib/badge/?version=latest\n    :target: https://joblib.readthedocs.io/en/latest/?badge=latest\n    :alt: Documentation Status\n\n.. |Codecov| image:: https://codecov.io/gh/joblib/joblib/branch/main/graph/badge.svg\n   :target: https://codecov.io/gh/joblib/joblib\n   :alt: Codecov coverage\n\n\nThe homepage of joblib with user documentation is located on:\n\nhttps://joblib.readthedocs.io\n\nGetting the latest code\n=======================\n\nTo get the latest code using git, simply type::\n\n    git clone https://github.com/joblib/joblib.git\n\nIf you don't have git installed, you can download a zip\nof the latest code: https://github.com/joblib/joblib/archive/refs/heads/main.zip\n\nInstalling\n==========\n\nYou can use `pip` to install joblib from any directory::\n\n    pip install joblib\n\nor install it in editable mode from the source directory::\n\n    pip install -e .\n\nDependencies\n============\n\n- Joblib has no mandatory dependencies besides Python (supported versions are\n  3.9+).\n- Joblib has an optional dependency on Numpy (at least version 1.6.1) for array\n  manipulation.\n- Joblib includes its own vendored copy of\n  `loky <https://github.com/tomMoral/loky>`_ for process management.\n- Joblib can efficiently dump and load numpy arrays but does not require numpy\n  to be installed.\n- Joblib has an optional dependency on\n  `python-lz4 <https://pypi.python.org/pypi/lz4>`_ as a faster alternative to\n  zlib and gzip for compressed serialization.\n- Joblib has an optional dependency on psutil to mitigate memory leaks in\n  parallel worker processes.\n- Some examples require external dependencies such as pandas. See the\n  instructions in the `Building the docs`_ section for details.\n\nWorkflow to contribute\n======================\n\nTo contribute to joblib, first create an account on `github\n<https://github.com/>`_. Once this is done, fork the `joblib repository\n<https://github.com/joblib/joblib>`_ to have your own repository,\nclone it using ``git clone``. Make your changes in a branch of your clone, push\nthem to your github account, test them locally, and when you are happy with\nthem, send a pull request to the main repository.\n\nYou can use `pre-commit <https://pre-commit.com/#install>`_ to run code style checks\nbefore each commit::\n\n    pip install pre-commit\n    pre-commit install\n\npre-commit checks can be disabled for a single commit with::\n\n    git commit -n\n\nRunning the test suite\n======================\n\nTo run the test suite, you need the pytest (version >= 3) and coverage modules.\nRun the test suite using::\n\n    pytest joblib\n\nfrom the root of the project.\n\nBuilding the docs\n=================\n\nTo build the docs you need to have sphinx (>=1.4) and some dependencies\ninstalled::\n\n    pip install -U -r .readthedocs-requirements.txt\n\nThe docs can then be built with the following command::\n\n    make doc\n\nThe html docs are located in the ``doc/_build/html`` directory.\n\n\nMaking a source tarball\n=======================\n\nTo create a source tarball, eg for packaging or distributing, run the\nfollowing command::\n\n    pip install build\n    python -m build --sdist\n\nThe tarball will be created in the `dist` directory. This command will create\nthe resulting tarball that can be installed with no extra dependencies than the\nPython standard library.\n\nMaking a release and uploading it to PyPI\n=========================================\n\nThis command is only run by project manager, to make a release, and\nupload in to PyPI::\n\n    pip install build\n    python -m build --sdist --wheel\n    twine upload dist/*\n\n\nNote that the documentation should automatically get updated at each git\npush. If that is not the case, try building th doc locally and resolve\nany doc build error (in particular when running the examples).\n\nUpdating the changelog\n======================\n\nChanges are listed in the CHANGES.rst file. They must be manually updated\nbut, the following git command may be used to generate the lines::\n\n    git log --abbrev-commit --date=short --no-merges --sparse\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

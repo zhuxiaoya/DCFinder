@@ -1,0 +1,54 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/d6/d8/f87ea6f42456254b48915970ed98e993110521e9263472840174d32c880d/hf_transfer-0.1.9-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=cdca9bfb89e6f8f281890cc61a8aff2d3cecaff7e1a4d275574d96ca70098557",
+          "hashes": {
+            "sha256": "cdca9bfb89e6f8f281890cc61a8aff2d3cecaff7e1a4d275574d96ca70098557"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "hf_transfer",
+        "version": "0.1.9",
+        "summary": "Speed up file transfers with the Hugging Face Hub.",
+        "description_content_type": "text/markdown; charset=UTF-8; variant=GFM",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Programming Language :: Rust",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy"
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Issues, https://github.com/huggingface/hf_transfer/issues",
+          "Repository, https://github.com/huggingface/hf_transfer.git"
+        ],
+        "description": "# HF Transfer\n\nSpeed up file transfers with the Hub.\n\n# DISCLAIMER\n\nThis library is a power user tool, to go beyond `~500MB/s` on very high bandwidth\nnetwork, where Python cannot cap out the available bandwidth.\n\nThis is *not* meant to be a general usability tool.\nIt purposefully lacks progressbars and comes generally as-is.\n\nPlease file issues *only* if there's an issue on the underlying downloaded file.\n\n## Contributing\n\n```sh\npython3 -m venv ~/.venv/hf_transfer\nsource ~/.venv/hf_transfer/bin/activate\npip install maturin\nmaturin develop\n```\n\n### `huggingface_hub`\n\nIf you are working on changes with `huggingface_hub`\n\n```sh\ngit clone git@github.com:huggingface/huggingface_hub.git\n# git clone https://github.com/huggingface/huggingface_hub.git\n\ncd huggingface_hub\npython3 -m pip install -e \".[quality]\"\n```\n\nYou can use the following test script:\n\n```py\nimport os\n\n# os.environ[\"HF_ENDPOINT\"] = \"http://localhost:5564\"\nos.environ[\"HF_HUB_ENABLE_HF_TRANSFER\"] = \"1\"\n\nfrom huggingface_hub import HfApi, logging\n\nlogging.set_verbosity_debug()\nhf = HfApi()\nhf.upload_file(path_or_fileobj=\"/path/to/my/repo/some_file\", path_in_repo=\"some_file\", repo_id=\"my/repo\", repo_type=\"model\")\n```\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

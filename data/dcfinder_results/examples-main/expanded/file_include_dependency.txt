@@ -1,0 +1,139 @@
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/regression/requirements.txt
+torch  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/distributed/minGPT-ddp/requirements.txt
+torch >=1.11.0  # type: runtime
+fsspec  # type: runtime
+boto3  # type: runtime
+hydra-core  # type: runtime
+requests  # type: runtime
+aiohttp  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/distributed/rpc/rl/requirements.txt
+torch  # type: runtime
+numpy  # type: runtime
+gymnasium  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/distributed/rpc/batch/requirements.txt
+torch ==1.9.0  # type: runtime
+torchvision ==0.7.0  # type: runtime
+numpy  # type: runtime
+gym  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/distributed/rpc/rnn/requirements.txt
+torch  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/distributed/rpc/ddp_rpc/requirements.txt
+torch >=1.6.0  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/distributed/rpc/pipeline/requirements.txt
+torch ==1.9.0  # type: runtime
+torchvision ==0.7.0  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/distributed/ddp/requirements.txt
+torch  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/distributed/ddp-tutorial-series/requirements.txt
+torch >=1.11.0  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/distributed/FSDP/requirements.txt
+transformers  # type: runtime
+datasets  # type: runtime
+tqdm  # type: runtime
+protobuf  # type: runtime
+sentencepiece  # type: runtime
+nlp  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/distributed/tensor_parallelism/requirements.txt
+torch >=2.3.0.dev0  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/super_resolution/requirements.txt
+six  # type: runtime
+torch  # type: runtime
+torchvision  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/mnist_rnn/requirements.txt
+torch  # type: runtime
+torchvision  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/legacy/snli/requirements.txt
+torch  # type: runtime
+torchtext  # type: runtime
+spacy  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/docs/requirements.txt
+sphinx ==5.3.0  # type: runtime
+pytorch-sphinx-theme  # type: runtime
+sphinx-panels  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/reinforcement_learning/requirements.txt
+torch  # type: runtime
+numpy <2  # type: runtime
+gym  # type: runtime
+pygame  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/dcgan/requirements.txt
+torch  # type: runtime
+torchvision  # type: runtime
+lmdb  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/gat/requirements.txt
+torch  # type: runtime
+requests  # type: runtime
+numpy  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/time_sequence_prediction/requirements.txt
+torch <2.6  # type: runtime
+matplotlib  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/gcn/requirements.txt
+torch  # type: runtime
+torchvision ==0.20.0  # type: runtime
+requests  # type: runtime
+numpy <2  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/fx/requirements.txt
+torch  # type: runtime
+torchvision  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/mnist_hogwild/requirements.txt
+torch  # type: runtime
+torchvision ==0.20.0  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/siamese_network/requirements.txt
+torch  # type: runtime
+torchvision  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/word_language_model/requirements.txt
+torch >=2.6  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/fast_neural_style/requirements.txt
+numpy  # type: runtime
+torch >=2.6  # type: runtime
+torchvision  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/mnist_forward_forward/requirements.txt
+torch  # type: runtime
+torchvision  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/imagenet/requirements.txt
+torch  # type: runtime
+torchvision ==0.20.0  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/mnist/requirements.txt
+torch  # type: runtime
+torchvision  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/language_translation/requirements.txt
+torch  # type: runtime
+torchtext  # type: runtime
+torchdata ==0.9.0  # type: runtime
+spacy  # type: runtime
+portalocker  # type: runtime
+
+# 依赖文件: /home/lab314/zxy/dependncy_confusion/analysis_program/examples-main/vae/requirements.txt
+torch  # type: runtime
+torchvision  # type: runtime
+tqdm  # type: runtime
+six  # type: runtime
+

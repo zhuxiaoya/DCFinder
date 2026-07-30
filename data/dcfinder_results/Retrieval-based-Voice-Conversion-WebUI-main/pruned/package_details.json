@@ -1,0 +1,897 @@
+{
+  "joblib": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "numba": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "llvmlite",
+        "specifier": "<0.40,>=0.39.0dev0"
+      },
+      {
+        "name": "numpy",
+        "specifier": "<1.24,>=1.18"
+      },
+      {
+        "name": "setuptools",
+        "specifier": ""
+      }
+    ]
+  },
+  "numpy": {
+    "version": "1.23.5",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": "==1.23.5",
+    "requires_dist": []
+  },
+  "scipy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": "<2.3,>=1.22.4"
+      }
+    ]
+  },
+  "librosa": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "audioread",
+        "specifier": ">=2.1.9"
+      },
+      {
+        "name": "numpy",
+        "specifier": "!=1.22.0,!=1.22.1,!=1.22.2,>=1.20.3"
+      },
+      {
+        "name": "scipy",
+        "specifier": ">=1.2.0"
+      },
+      {
+        "name": "scikit-learn",
+        "specifier": ">=0.20.0"
+      },
+      {
+        "name": "joblib",
+        "specifier": ">=0.14"
+      },
+      {
+        "name": "decorator",
+        "specifier": ">=4.3.0"
+      },
+      {
+        "name": "numba",
+        "specifier": ">=0.51.0"
+      },
+      {
+        "name": "soundfile",
+        "specifier": ">=0.12.1"
+      },
+      {
+        "name": "pooch",
+        "specifier": ">=1.1"
+      },
+      {
+        "name": "soxr",
+        "specifier": ">=0.3.2"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.1.1"
+      },
+      {
+        "name": "lazy-loader",
+        "specifier": ">=0.1"
+      },
+      {
+        "name": "msgpack",
+        "specifier": ">=1.0"
+      }
+    ]
+  },
+  "llvmlite": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "fairseq": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "cffi",
+        "specifier": ""
+      },
+      {
+        "name": "cython",
+        "specifier": ""
+      },
+      {
+        "name": "hydra-core",
+        "specifier": "<1.1,>=1.0.7"
+      },
+      {
+        "name": "omegaconf",
+        "specifier": "<2.1"
+      },
+      {
+        "name": "regex",
+        "specifier": ""
+      },
+      {
+        "name": "sacrebleu",
+        "specifier": ">=1.4.12"
+      },
+      {
+        "name": "torch",
+        "specifier": ""
+      },
+      {
+        "name": "tqdm",
+        "specifier": ""
+      },
+      {
+        "name": "bitarray",
+        "specifier": ""
+      },
+      {
+        "name": "torchaudio",
+        "specifier": ">=0.8.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ""
+      }
+    ]
+  },
+  "faiss-cpu": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "gradio": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "aiofiles",
+        "specifier": ""
+      },
+      {
+        "name": "aiohttp",
+        "specifier": ""
+      },
+      {
+        "name": "altair",
+        "specifier": ">=4.2.0"
+      },
+      {
+        "name": "fastapi",
+        "specifier": ""
+      },
+      {
+        "name": "ffmpy",
+        "specifier": ""
+      },
+      {
+        "name": "gradio-client",
+        "specifier": ">=0.2.6"
+      },
+      {
+        "name": "httpx",
+        "specifier": ""
+      },
+      {
+        "name": "huggingface-hub",
+        "specifier": ">=0.14.0"
+      },
+      {
+        "name": "jinja2",
+        "specifier": ""
+      },
+      {
+        "name": "markdown-it-py",
+        "specifier": ">=2.0.0"
+      },
+      {
+        "name": "markupsafe",
+        "specifier": ""
+      },
+      {
+        "name": "matplotlib",
+        "specifier": ""
+      },
+      {
+        "name": "mdit-py-plugins",
+        "specifier": "<=0.3.3"
+      },
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "orjson",
+        "specifier": ""
+      },
+      {
+        "name": "pandas",
+        "specifier": ""
+      },
+      {
+        "name": "pillow",
+        "specifier": ""
+      },
+      {
+        "name": "pydantic",
+        "specifier": ""
+      },
+      {
+        "name": "pydub",
+        "specifier": ""
+      },
+      {
+        "name": "pygments",
+        "specifier": ">=2.12.0"
+      },
+      {
+        "name": "python-multipart",
+        "specifier": ""
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ""
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "semantic-version",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ""
+      },
+      {
+        "name": "uvicorn",
+        "specifier": ">=0.14.0"
+      },
+      {
+        "name": "websockets",
+        "specifier": ">=10.0"
+      }
+    ]
+  },
+  "cython": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pydub": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "soundfile": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "cffi",
+        "specifier": ">=1.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ""
+      }
+    ]
+  },
+  "ffmpeg-python": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "future",
+        "specifier": ""
+      }
+    ]
+  },
+  "tensorboardx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": ">=3.20"
+      }
+    ]
+  },
+  "jinja2": {
+    "version": "3.1.6",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": ">=3.1.2",
+    "requires_dist": [
+      {
+        "name": "markupsafe",
+        "specifier": ">=2.0"
+      }
+    ]
+  },
+  "json5": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "markdown": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "matplotlib": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "contourpy",
+        "specifier": ">=1.0.1"
+      },
+      {
+        "name": "cycler",
+        "specifier": ">=0.10"
+      },
+      {
+        "name": "fonttools",
+        "specifier": ">=4.22.0"
+      },
+      {
+        "name": "kiwisolver",
+        "specifier": ">=1.3.1"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.25"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.0"
+      },
+      {
+        "name": "pillow",
+        "specifier": ">=9"
+      },
+      {
+        "name": "pyparsing",
+        "specifier": ">=3"
+      },
+      {
+        "name": "python-dateutil",
+        "specifier": ">=2.7"
+      }
+    ]
+  },
+  "matplotlib-inline": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "traitlets",
+        "specifier": ""
+      }
+    ]
+  },
+  "praat-parselmouth": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.7.0"
+      }
+    ]
+  },
+  "pillow": {
+    "version": "12.2.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": ">=9,>=9.1.1",
+    "requires_dist": []
+  },
+  "resampy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.17"
+      },
+      {
+        "name": "numba",
+        "specifier": ">=0.53"
+      }
+    ]
+  },
+  "scikit-learn": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.24.1"
+      },
+      {
+        "name": "scipy",
+        "specifier": ">=1.10.0"
+      },
+      {
+        "name": "joblib",
+        "specifier": ">=1.4.0"
+      },
+      {
+        "name": "narwhals",
+        "specifier": ">=2.0.1"
+      },
+      {
+        "name": "threadpoolctl",
+        "specifier": ">=3.5.0"
+      }
+    ]
+  },
+  "tensorboard": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "absl-py",
+        "specifier": ">=0.4"
+      },
+      {
+        "name": "grpcio",
+        "specifier": "<2.0,>=1.74.0"
+      },
+      {
+        "name": "markdown",
+        "specifier": ">=2.6.8"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.12.0"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "pillow",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": "<8.0.0,>=6.31.1"
+      },
+      {
+        "name": "setuptools",
+        "specifier": ">=41.0.0"
+      },
+      {
+        "name": "tensorboard-data-server",
+        "specifier": "<0.8.0,>=0.7.0"
+      },
+      {
+        "name": "werkzeug",
+        "specifier": ">=1.0.1"
+      }
+    ]
+  },
+  "tqdm": {
+    "version": "4.66.5",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": ">=4.63.1",
+    "requires_dist": []
+  },
+  "tornado": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "werkzeug": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "markupsafe",
+        "specifier": ">=2.1.1"
+      }
+    ]
+  },
+  "uc-micro-py": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "sympy": {
+    "version": "1.14.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": ">=1.11.1",
+    "requires_dist": [
+      {
+        "name": "mpmath",
+        "specifier": "<1.4,>=1.1.0"
+      }
+    ]
+  },
+  "tabulate": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pyyaml": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pyasn1": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pyasn1-modules": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pyasn1",
+        "specifier": "<0.7.0,>=0.6.1"
+      }
+    ]
+  },
+  "fsspec": {
+    "version": "2026.4.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": ">=2022.11.0",
+    "requires_dist": []
+  },
+  "absl-py": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "audioread": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "uvicorn": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "click",
+        "specifier": ">=7.0"
+      },
+      {
+        "name": "h11",
+        "specifier": ">=0.8"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.0"
+      }
+    ]
+  },
+  "colorama": {
+    "version": "0.4.6",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": ">=0.4.5",
+    "requires_dist": []
+  },
+  "pyworld": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "httpx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "anyio",
+        "specifier": ""
+      },
+      {
+        "name": "certifi",
+        "specifier": ""
+      },
+      {
+        "name": "httpcore",
+        "specifier": "==1.*"
+      },
+      {
+        "name": "idna",
+        "specifier": ""
+      },
+      {
+        "name": "sniffio",
+        "specifier": ""
+      }
+    ]
+  },
+  "onnxruntime": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "flatbuffers",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.21.6"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": ">=4.25.8"
+      }
+    ]
+  },
+  "onnxruntime-gpu": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "flatbuffers",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.21.6"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": ">=4.25.8"
+      }
+    ]
+  },
+  "torchcrepe": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "librosa",
+        "specifier": ">=0.9.1"
+      },
+      {
+        "name": "resampy",
+        "specifier": ""
+      },
+      {
+        "name": "scipy",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": ""
+      },
+      {
+        "name": "torchaudio",
+        "specifier": ""
+      },
+      {
+        "name": "tqdm",
+        "specifier": ""
+      }
+    ]
+  },
+  "fastapi": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pydantic",
+        "specifier": "!=1.7,!=1.7.1,!=1.7.2,!=1.7.3,!=1.8,!=1.8.1,<2.0.0,>=1.6.2"
+      },
+      {
+        "name": "starlette",
+        "specifier": "==0.22.0"
+      }
+    ]
+  },
+  "torchfcpe": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "einops",
+        "specifier": ""
+      },
+      {
+        "name": "local-attention",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": ""
+      },
+      {
+        "name": "torchaudio",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ""
+      }
+    ]
+  },
+  "ffmpy": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "python-dotenv": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "av": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "aria2": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "torch": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": "==2.4.0",
+    "requires_dist": []
+  },
+  "torchaudio": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": "==2.4.0",
+    "requires_dist": []
+  },
+  "torchvision": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": "==0.19.0",
+    "requires_dist": []
+  },
+  "markupsafe": {
+    "version": "3.0.3",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": ">=2.0,>=2.1.1",
+    "requires_dist": []
+  },
+  "mpmath": {
+    "version": "1.3.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu113",
+    "specifier": "<1.4,>=1.1.0",
+    "requires_dist": []
+  }
+}

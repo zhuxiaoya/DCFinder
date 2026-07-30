@@ -1,0 +1,83 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/a6/0c/c2a72d51fe56e08a08acc85d13013558a2d793028ae7385448a6ccdfae64/xlrd-2.0.1-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=6a33ee89877bd9abc1158129f6e94be74e2679636b8a205b43b85206c3f0bbdd",
+          "hashes": {
+            "sha256": "6a33ee89877bd9abc1158129f6e94be74e2679636b8a205b43b85206c3f0bbdd"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "xlrd",
+        "version": "2.0.1",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "Library for developers to extract data from Microsoft Excel (tm) .xls spreadsheet files",
+        "keywords": [
+          "xls",
+          "excel",
+          "spreadsheet",
+          "workbook"
+        ],
+        "home_page": "http://www.python-excel.org/",
+        "author": "Chris Withers",
+        "author_email": "chris@withers.org",
+        "license": "BSD",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Operating System :: OS Independent",
+          "Topic :: Database",
+          "Topic :: Office/Business",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "wheel ; extra == 'build'",
+          "twine ; extra == 'build'",
+          "sphinx ; extra == 'docs'",
+          "pytest ; extra == 'test'",
+          "pytest-cov ; extra == 'test'"
+        ],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*",
+        "provides_extra": [
+          "build",
+          "docs",
+          "test"
+        ],
+        "description": "xlrd\n====\n\n|Build Status|_ |Coverage Status|_ |Documentation|_ |PyPI version|_\n\n.. |Build Status| image:: https://circleci.com/gh/python-excel/xlrd/tree/master.svg?style=shield\n.. _Build Status: https://circleci.com/gh/python-excel/xlrd/tree/master\n\n.. |Coverage Status| image:: https://codecov.io/gh/python-excel/xlrd/branch/master/graph/badge.svg?token=lNSqwBBbvk\n.. _Coverage Status: https://codecov.io/gh/python-excel/xlrd\n\n.. |Documentation| image:: https://readthedocs.org/projects/xlrd/badge/?version=latest\n.. _Documentation: http://xlrd.readthedocs.io/en/latest/?badge=latest\n\n.. |PyPI version| image:: https://badge.fury.io/py/xlrd.svg\n.. _PyPI version: https://badge.fury.io/py/xlrd\n\n\nxlrd is a library for reading data and formatting information from Excel\nfiles in the historical ``.xls`` format.\n\n.. warning::\n\n  This library will no longer read anything other than ``.xls`` files. For\n  alternatives that read newer file formats, please see http://www.python-excel.org/.\n\nThe following are also not supported but will safely and reliably be ignored:\n\n*   Charts, Macros, Pictures, any other embedded object, **including** embedded worksheets.\n*   VBA modules\n*   Formulas, but results of formula calculations are extracted.\n*   Comments\n*   Hyperlinks\n*   Autofilters, advanced filters, pivot tables, conditional formatting, data validation\n\nPassword-protected files are not supported and cannot be read by this library.\n\nQuick start:\n\n.. code-block:: python\n\n    import xlrd\n    book = xlrd.open_workbook(\"myfile.xls\")\n    print(\"The number of worksheets is {0}\".format(book.nsheets))\n    print(\"Worksheet name(s): {0}\".format(book.sheet_names()))\n    sh = book.sheet_by_index(0)\n    print(\"{0} {1} {2}\".format(sh.name, sh.nrows, sh.ncols))\n    print(\"Cell D30 is {0}\".format(sh.cell_value(rowx=29, colx=3)))\n    for rx in range(sh.nrows):\n        print(sh.row(rx))\n\nFrom the command line, this will show the first, second and last rows of each sheet in each file:\n\n.. code-block:: bash\n\n    python PYDIR/scripts/runxlrd.py 3rows *blah*.xls\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

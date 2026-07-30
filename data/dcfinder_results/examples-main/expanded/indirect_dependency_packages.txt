@@ -1,0 +1,242 @@
+aiohappyeyeballs >=2.5.0
+  # from parent package: aiohttp (private)
+aiosignal >=1.4.0
+  # from parent package: aiohttp (private)
+alabaster <0.8,>=0.7
+  # from parent package: sphinx (public)
+annotated-types >=0.6.0
+  # from parent package: pydantic (private)
+antlr4-python3-runtime ==4.9.*
+  # from parent package: hydra-core (public)
+  # from parent package: omegaconf (private)
+anyio
+  # from parent package: httpx (private)
+async-timeout <6.0,>=4.0
+  # from parent package: aiohttp (private)
+attrs >=17.3.0
+  # from parent package: aiohttp (private)
+babel >=2.9
+  # from parent package: sphinx (public)
+blis <1.4.0,>=1.3.0
+  # from parent package: thinc (public)
+botocore <1.44.0,>=1.43.48,<2.0a.0,>=1.37.4
+  # from parent package: boto3 (public)
+  # from parent package: s3transfer (public)
+catalogue <2.1.0,>=2.0.6,<2.1.0,>=2.0.4,<2.1.0,>=2.0.3
+  # from parent package: spacy (public)
+  # from parent package: thinc (public)
+  # from parent package: srsly (public)
+certifi >=2017.4.17
+  # from parent package: requests (private)
+  # from parent package: httpx (private)
+  # from parent package: httpcore (private)
+charset-normalizer <4,>=2
+  # from parent package: requests (private)
+click >=8.0.0
+  # from parent package: typer (private)
+cloudpathlib >=0.7.0
+  # from parent package: weasel (public)
+cloudpickle >=1.2.0
+  # from parent package: gymnasium (public)
+confection <2.0.0,>=1.3.2,<2.0.0,>=1.1.0,>=1.0.0
+  # from parent package: spacy (public)
+  # from parent package: thinc (public)
+  # from parent package: weasel (public)
+contourpy >=1.0.1
+  # from parent package: matplotlib (private)
+cycler >=0.10
+  # from parent package: matplotlib (private)
+cymem <2.1.0,>=2.0.2
+  # from parent package: spacy (public)
+  # from parent package: preshed (public)
+  # from parent package: thinc (public)
+dill <0.3.9,>=0.3.0,>=0.3.8
+  # from parent package: datasets (private)
+  # from parent package: nlp (public)
+  # from parent package: multiprocess (private)
+docutils <0.20,>=0.14
+  # from parent package: sphinx (public)
+  # from parent package: sphinx-panels (public)
+exceptiongroup >=1.0.2
+  # from parent package: anyio (private)
+farama-notifications >=0.0.1
+  # from parent package: gymnasium (public)
+filelock
+  # from parent package: transformers (private)
+  # from parent package: datasets (private)
+  # from parent package: nlp (public)
+  # from parent package: huggingface-hub (private)
+fonttools >=4.22.0
+  # from parent package: matplotlib (private)
+frozenlist >=1.1.1,>=1.1.0
+  # from parent package: aiohttp (private)
+  # from parent package: aiosignal (private)
+h11 >=0.16
+  # from parent package: httpcore (private)
+hf-xet <2.0.0,>=1.1.3
+  # from parent package: huggingface-hub (private)
+httpcore ==1.*
+  # from parent package: httpx (private)
+httpx >=0.24.0
+  # from parent package: weasel (public)
+huggingface-hub <1.0,>=0.34.0,>=0.24.0,<1.0,>=0.16.4
+  # from parent package: transformers (private)
+  # from parent package: datasets (private)
+  # from parent package: tokenizers (private)
+idna <4,>=2.5,>=2.0,>=2.8
+  # from parent package: requests (private)
+  # from parent package: yarl (private)
+  # from parent package: httpx (private)
+  # from parent package: anyio (private)
+imagesize >=1.3
+  # from parent package: sphinx (public)
+jinja2 >=3.0
+  # from parent package: spacy (public)
+  # from parent package: sphinx (public)
+jmespath <2.0.0,>=0.7.1
+  # from parent package: boto3 (public)
+  # from parent package: botocore (public)
+kiwisolver >=1.3.1
+  # from parent package: matplotlib (private)
+markdown-it-py >=2.2.0
+  # from parent package: rich (private)
+markupsafe >=2.0
+  # from parent package: jinja2 (private)
+mdurl ~=0.1
+  # from parent package: markdown-it-py (private)
+multidict <7.0,>=4.5,>=4.0
+  # from parent package: aiohttp (private)
+  # from parent package: yarl (private)
+multiprocess <0.70.17
+  # from parent package: datasets (private)
+murmurhash <1.1.0,>=0.28.0,<1.1.0,>=1.0.2
+  # from parent package: spacy (public)
+  # from parent package: preshed (public)
+  # from parent package: thinc (public)
+omegaconf <2.4,>=2.2
+  # from parent package: hydra-core (public)
+packaging >=20.0,>=21.0,>=20.0,>=20.9,>=20.0,>=20.0
+  # from parent package: hydra-core (public)
+  # from parent package: transformers (private)
+  # from parent package: datasets (private)
+  # from parent package: spacy (public)
+  # from parent package: sphinx (public)
+  # from parent package: matplotlib (private)
+  # from parent package: huggingface-hub (private)
+  # from parent package: thinc (public)
+  # from parent package: weasel (public)
+pandas
+  # from parent package: datasets (private)
+  # from parent package: nlp (public)
+pillow >=8
+  # from parent package: matplotlib (private)
+preshed <3.1.0,>=3.0.2
+  # from parent package: spacy (public)
+  # from parent package: thinc (public)
+propcache >=0.2.0,>=0.2.1
+  # from parent package: aiohttp (private)
+  # from parent package: yarl (private)
+pyarrow >=15.0.0,>=0.16.0
+  # from parent package: datasets (private)
+  # from parent package: nlp (public)
+pydantic <3.0.0,>=2.0.0,>=2.0.0
+  # from parent package: spacy (public)
+  # from parent package: thinc (public)
+  # from parent package: weasel (public)
+pydantic-core ==2.33.2
+  # from parent package: pydantic (private)
+pygments >=2.12,<3.0.0,>=2.13.0
+  # from parent package: sphinx (public)
+  # from parent package: rich (private)
+pyparsing >=2.3.1
+  # from parent package: matplotlib (private)
+python-dateutil >=2.7,<3.0.0,>=2.1,>=2.8.2
+  # from parent package: matplotlib (private)
+  # from parent package: botocore (public)
+  # from parent package: pandas (private)
+pytz >=2020.1
+  # from parent package: pandas (private)
+pyyaml >=5.1,>=5.1.0,>=5.1
+  # from parent package: transformers (private)
+  # from parent package: datasets (private)
+  # from parent package: omegaconf (private)
+  # from parent package: huggingface-hub (private)
+regex !=2019.12.17
+  # from parent package: transformers (private)
+rich >=10.11.0
+  # from parent package: typer (private)
+s3transfer <0.20.0,>=0.19.0
+  # from parent package: boto3 (public)
+safetensors >=0.4.3
+  # from parent package: transformers (private)
+setuptools
+  # from parent package: spacy (public)
+  # from parent package: thinc (public)
+shellingham >=1.3.0
+  # from parent package: typer (private)
+smart-open >=5.2.1
+  # from parent package: weasel (public)
+sniffio >=1.1
+  # from parent package: anyio (private)
+snowballstemmer >=2.0
+  # from parent package: sphinx (public)
+spacy-legacy <3.1.0,>=3.0.11
+  # from parent package: spacy (public)
+spacy-loggers <2.0.0,>=1.0.0
+  # from parent package: spacy (public)
+sphinxcontrib-applehelp
+  # from parent package: sphinx (public)
+sphinxcontrib-devhelp
+  # from parent package: sphinx (public)
+sphinxcontrib-htmlhelp >=2.0.0
+  # from parent package: sphinx (public)
+sphinxcontrib-jsmath
+  # from parent package: sphinx (public)
+sphinxcontrib-qthelp
+  # from parent package: sphinx (public)
+sphinxcontrib-serializinghtml >=1.1.5
+  # from parent package: sphinx (public)
+srsly <3.0.0,>=2.5.3,<3.1.0,>=2.4.0,>=2.4.3
+  # from parent package: spacy (public)
+  # from parent package: thinc (public)
+  # from parent package: weasel (public)
+thinc <8.4.0,>=8.3.12
+  # from parent package: spacy (public)
+tokenizers <=0.23.0,>=0.22.0
+  # from parent package: transformers (private)
+typer <1.0.0,>=0.3.0,>=0.3.0
+  # from parent package: spacy (public)
+  # from parent package: weasel (public)
+typing-extensions >=4.3.0,>=4.2,>=4.1.0,>=3.7.4.3,<5.0,>=4.0,>=3.7.4.3,>=4.12.2,>4,!=4.7.0,>=4.6.0,>=4.12.0,>=4.5,>=4.6.0
+  # from parent package: gymnasium (public)
+  # from parent package: aiosignal (private)
+  # from parent package: multidict (private)
+  # from parent package: huggingface-hub (private)
+  # from parent package: confection (public)
+  # from parent package: typer (private)
+  # from parent package: pydantic (private)
+  # from parent package: cloudpathlib (public)
+  # from parent package: pydantic-core (private)
+  # from parent package: typing-inspection (private)
+  # from parent package: anyio (private)
+  # from parent package: exceptiongroup (public)
+typing-inspection >=0.4.0
+  # from parent package: pydantic (private)
+tzdata >=2022.7
+  # from parent package: pandas (private)
+urllib3 <3,>=1.21.1,!=2.2.0,<3,>=1.25.4
+  # from parent package: requests (private)
+  # from parent package: botocore (public)
+wasabi <1.2.0,>=0.9.1,<1.2.0,>=0.8.1,>=0.9.1
+  # from parent package: spacy (public)
+  # from parent package: thinc (public)
+  # from parent package: weasel (public)
+weasel <2.0.0,>=1.0.0
+  # from parent package: spacy (public)
+wrapt
+  # from parent package: smart-open (public)
+xxhash
+  # from parent package: datasets (private)
+  # from parent package: nlp (public)
+yarl <2.0,>=1.17.0
+  # from parent package: aiohttp (private)

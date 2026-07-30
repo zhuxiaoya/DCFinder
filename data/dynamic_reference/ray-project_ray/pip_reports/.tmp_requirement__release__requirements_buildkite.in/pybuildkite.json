@@ -1,0 +1,77 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/17/67/5783801c84f2030b26fbaac3f367038e85664a7edd4f3bb5644fb3e35676/pybuildkite-1.3.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=fbfc7700377b8478c92b89711ff974a5bcf44fc93bd8d3d4d17b88da3f6e70d8",
+          "hashes": {
+            "sha256": "fbfc7700377b8478c92b89711ff974a5bcf44fc93bd8d3d4d17b88da3f6e70d8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "pybuildkite",
+        "version": "1.3.0",
+        "dynamic": [
+          "download-url",
+          "home-page",
+          "license-file"
+        ],
+        "summary": "Python wrapper for the Buildkite API",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "Buildkite",
+          "Continuous Integration",
+          "API",
+          "CI",
+          "wrapper",
+          "python"
+        ],
+        "home_page": "https://github.com/pyasi/pybuildkite",
+        "download_url": "https://github.com/pyasi/pybuildkite/archive/master.zip",
+        "author": "Peter Yasi",
+        "license": "BSD 2-Clause License\n        \n        Copyright (c) 2019, Peter Yasi\n        All rights reserved.\n        \n        Redistribution and use in source and binary forms, with or without\n        modification, are permitted provided that the following conditions are met:\n        \n        * Redistributions of source code must retain the above copyright notice, this\n          list of conditions and the following disclaimer.\n        \n        * Redistributions in binary form must reproduce the above copyright notice,\n          this list of conditions and the following disclaimer in the documentation\n          and/or other materials provided with the distribution.\n        \n        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\n        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\n        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\n        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\n        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\n        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\n        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n        ",
+        "license_file": [
+          "LICENSE"
+        ],
+        "requires_dist": [
+          "requests>=2.32.2",
+          "black==22.6.0; extra == \"dev\"",
+          "coveralls==3.3.1; extra == \"dev\"",
+          "mypy==1.3.0; extra == \"dev\"",
+          "pytest==7.3.2; extra == \"dev\"",
+          "pytest-cov; extra == \"dev\""
+        ],
+        "project_url": [
+          "Homepage, https://github.com/pyasi/pybuildkite",
+          "Repository, https://github.com/pyasi/pybuildkite.git",
+          "Download, https://github.com/pyasi/pybuildkite/archive/master.zip"
+        ],
+        "provides_extra": [
+          "dev"
+        ],
+        "description": "# PyBuildkite\n\n[![Build status](https://badge.buildkite.com/89bf10df4492f2f2d61ca707078828824fec3b08cb85192e6d.svg)](https://buildkite.com/pybuildkite/pybuildkite)\n[![Coverage Status](https://coveralls.io/repos/github/pyasi/pybuildkite/badge.svg?branch=master)](https://coveralls.io/github/pyasi/pybuildkite?branch=master)\n[![PyPI most recent version](https://badge.fury.io/py/pybuildkite.svg)](https://pypi.org/project/pybuildkite/)\n[![PyPI downloads](https://img.shields.io/pypi/dm/pybuildkite.svg)](https://pypi.org/project/pybuildkite/)\n\nA [Python](https://www.python.org/) library and client for the [Buildkite API](https://buildkite.com/docs/api).\n\n## Usage\n\nTo get the package, execute:\n\n```\npip install pybuildkite\n```\n\nThen set up an instance of the Buildkite object, set you access token, and make any available requests.\n\n```python\nfrom pybuildkite.buildkite import Buildkite, BuildState\n\nbuildkite = Buildkite()\nbuildkite.set_access_token('YOUR_API_ACCESS_TOKEN_HERE')\n\n# Get all info about particular org\norg = buildkite.organizations().get_org('my-org')\n\n# Get all running and scheduled builds for a particular pipeline\nbuilds = buildkite.builds().list_all_for_pipeline('my-org', 'my-pipeline', states=[BuildState.RUNNING, BuildState.SCHEDULED])\n\n# Create a build\nbuildkite.builds().create_build('my-org', 'my-pipeline', 'COMMITSHA', 'master', \nclean_checkout=True, message=\"My First Build!\")\n```\n\n## Per-Page Configuration\n\nThe `per_page` parameter controls the number of items returned per API request. This can be useful for organizations with large datasets that experience timeouts.\n\n```python\n# Default behavior (100 items per page)\nbuildkite = Buildkite()\n\n# Custom per_page for smaller responses (useful for large organizations)\nbuildkite = Buildkite(per_page=25)\n```\n\n## Pagination\n\nBuildkite offers pagination for endpoints that return a lot of data. By default this wrapper returns `100` objects per page. However, any request that may contain more than that offers a pagination option.\n\nWhen `with_pagination=True`, we return a response object with properties that may have `next_page`, `last_page`, `previous_page`, or `first_page` depending on what page you're on.\n\n```python\nbuilds_response = buildkite.builds().list_all(page=1, with_pagination=True)\n\n# Keep looping until next_page is not populated\nwhile builds_response.next_page:\n    builds_response = buildkite.builds().list_all(page=builds_response.next_page, with_pagination=True)\n```\n\n## Artifacts\n\nArtifacts can be downloaded as binary data. The following example loads the artifact into memory as\n[Python bytes](https://docs.python.org/3/library/stdtypes.html#binary-sequence-types-bytes-bytearray-memoryview)\nand then writes them to disc:\n\n```python\nartifacts = buildkite.artifacts()\nartifact = artifacts.download_artifact(\"org_slug\", \"pipe_slug\", \"build_no\", 123, \"artifact\")\nwith open('artifact.bin', 'b') as f:\n  f.write(artifact)\n```\n\nLarge artifacts should be streamed as chunks of bytes to limit the memory consumption:\n```python\nstream = artifacts.download_artifact(\"org_slug\", \"pipe_slug\", \"build_no\", 123, \"artifact\", as_stream=True)\nwith open('artifact.bin', 'b') as f:\n  for chunk in stream:\n    f.write(chunk)\n```\n\nA unicode text artifact can be turned into a string easily:\n```python\ntext = str(artifact)\n```\n\n## License\n\nThis library is distributed under the BSD-style license found in the LICENSE file.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

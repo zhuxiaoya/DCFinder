@@ -1,0 +1,769 @@
+# 依赖文件: analysis_program/awesome-llm-apps-main/voice_ai_agents/voice_rag_openaisdk/requirements.txt
+openai-agents  # type: runtime
+streamlit  # type: runtime
+qdrant-client  # type: runtime
+fastembed  # type: runtime
+langchain  # type: runtime
+langchain-community  # type: runtime
+langchain-openai  # type: runtime
+openai  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/voice_ai_agents/customer_support_voice_agent/requirements.txt
+firecrawl-py  # type: runtime
+qdrant-client  # type: runtime
+streamlit  # type: runtime
+fastembed  # type: runtime
+openai >=1.0.0  # type: runtime
+python-dotenv  # type: runtime
+openai-agents  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/voice_ai_agents/ai_audio_tour_agent/requirements.txt
+openai ==1.68.2  # type: runtime
+openai-agents ==0.0.6  # type: runtime
+pydantic ==2.10.6  # type: runtime
+pydantic-core ==2.27.2  # type: runtime
+python-dotenv ==1.0.1  # type: runtime
+rich ==13.9.4  # type: runtime
+streamlit ==1.43.2  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/single_agent_apps/ai_lead_generation_agent/requirements.txt
+firecrawl-py ==1.9.0  # type: runtime
+agno  # type: runtime
+composio-phidata  # type: runtime
+composio ==0.1.1  # type: runtime
+pydantic ==2.10.5  # type: runtime
+streamlit  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/single_agent_apps/ai_system_architect_r1/requirements.txt
+streamlit  # type: runtime
+openai  # type: runtime
+anthropic  # type: runtime
+agno  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/single_agent_apps/ai_movie_production_agent/requirements.txt
+streamlit  # type: runtime
+agno  # type: runtime
+anthropic  # type: runtime
+google-search-results  # type: runtime
+lxml-html-clean  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/single_agent_apps/ai_personal_finance_agent/requirements.txt
+streamlit  # type: runtime
+agno  # type: runtime
+openai  # type: runtime
+google-search-results  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/single_agent_apps/ai_meeting_agent/requirements.txt
+streamlit  # type: runtime
+crewai  # type: runtime
+crewai-tools  # type: runtime
+openai  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/single_agent_apps/ai_deep_research_agent/requirements.txt
+openai-agents  # type: runtime
+firecrawl  # type: runtime
+streamlit  # type: runtime
+firecrawl-py  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/single_agent_apps/ai_startup_insight_fire1_agent/requirements.txt
+firecrawl-py  # type: runtime
+streamlit  # type: runtime
+agno  # type: runtime
+openai  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/single_agent_apps/ai_customer_support_agent/requirements.txt
+streamlit  # type: runtime
+openai  # type: runtime
+mem0ai ==0.1.29  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/single_agent_apps/ai_investment_agent/requirements.txt
+streamlit  # type: runtime
+agno  # type: runtime
+openai  # type: runtime
+yfinance  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/single_agent_apps/ai_journalist_agent/requirements.txt
+streamlit  # type: runtime
+agno  # type: runtime
+openai  # type: runtime
+google-search-results  # type: runtime
+newspaper4k  # type: runtime
+lxml-html-clean  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/single_agent_apps/ai_health_fitness_agent/requirements.txt
+google-generativeai ==0.8.3  # type: runtime
+streamlit ==1.40.2  # type: runtime
+agno  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/agent_teams/ai_finance_agent_team/requirements.txt
+openai  # type: runtime
+agno  # type: runtime
+duckduckgo-search  # type: runtime
+yfinance  # type: runtime
+fastapi  # type: runtime
+sqlalchemy  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/agent_teams/ai_recruitment_agent_team/requirements.txt
+phidata  # type: runtime
+agno  # type: runtime
+streamlit ==1.40.2  # type: runtime
+pypdf2 ==3.0.1  # type: runtime
+streamlit-pdf-viewer ==0.0.19  # type: runtime
+requests ==2.32.3  # type: runtime
+pytz ==2023.4  # type: runtime
+typing-extensions >=4.9.0  # type: runtime
+black >=24.1.1  # type: runtime
+python-dateutil >=2.8.2  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/agent_teams/ai_competitor_intelligence_agent_team/requirements.txt
+exa-py ==1.7.1  # type: runtime
+firecrawl-py ==1.9.0  # type: runtime
+duckduckgo-search ==7.2.1  # type: runtime
+agno  # type: runtime
+streamlit ==1.41.1  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/agent_teams/ai_teaching_agent_team/requirements.txt
+streamlit ==1.41.1  # type: runtime
+openai ==1.58.1  # type: runtime
+duckduckgo-search ==6.4.1  # type: runtime
+typing-extensions >=4.5.0  # type: runtime
+agno  # type: runtime
+composio-phidata ==0.6.9  # type: runtime
+composio-core  # type: runtime
+composio ==0.1.1  # type: runtime
+google-search-results ==2.4.2  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/agent_teams/ai_services_agency/requirements.txt
+python-dotenv ==1.0.1  # type: runtime
+agency-swarm ==0.4.1  # type: runtime
+streamlit  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/agent_teams/ai_game_design_agent_team/requirements.txt
+streamlit ==1.41.1  # type: runtime
+autogen  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/agent_teams/multimodal_design_agent_team/requirements.txt
+google-generativeai ==0.8.3  # type: runtime
+streamlit ==1.41.1  # type: runtime
+agno  # type: runtime
+pillow ==11.0.0  # type: runtime
+duckduckgo-search ==6.3.7  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/agent_teams/multimodal_coding_agent_team/requirements.txt
+streamlit  # type: runtime
+e2b-code-interpreter  # type: runtime
+agno  # type: runtime
+pillow  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/agent_teams/ai_legal_agent_team/requirements.txt
+agno  # type: runtime
+streamlit ==1.40.2  # type: runtime
+qdrant-client ==1.12.1  # type: runtime
+openai  # type: runtime
+pypdf  # type: runtime
+duckduckgo-search  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/agent_teams/ai_legal_agent_team/local_ai_legal_agent_team/requirements.txt
+agno  # type: runtime
+streamlit ==1.40.2  # type: runtime
+qdrant-client ==1.12.1  # type: runtime
+ollama ==0.4.4  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_domain_deep_research_agent/requirements.txt
+composio  # type: runtime
+agno  # type: runtime
+streamlit  # type: runtime
+composio-agno  # type: runtime
+together  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_Self-Evolving_agent/requirements.txt
+pytest  # type: runtime
+pytest-cov  # type: runtime
+pytest-mock  # type: runtime
+pytest-asyncio  # type: runtime
+pytest-subtests  # type: runtime
+pytest-json-report  # type: runtime
+ruff  # type: runtime
+sympy  # type: runtime
+stopit  # type: runtime
+scipy  # type: runtime
+setuptools  # type: runtime
+tree-sitter  # type: runtime
+tree-sitter-python  # type: runtime
+antlr4-python3-runtime ==4.11  # type: runtime
+tenacity  # type: runtime
+networkx >=3.3  # type: runtime
+nltk >=3.9.1  # type: runtime
+numpy >=1.26.4  # type: runtime
+openai >=1.55.3  # type: runtime
+litellm >=1.55.6  # type: runtime
+pydantic <=2.10.6,>=2.9.0  # type: runtime
+pydantic-settings ==2.8.1  # type: runtime
+pydantic-core <=2.27.2,>=2.23.2  # type: runtime
+loguru >=0.7.3  # type: runtime
+pandas >=2.2.3  # type: runtime
+matplotlib >=3.10.0  # type: runtime
+transformers >=4.47.1  # type: runtime
+datasets >=3.4.0  # type: runtime
+faiss-cpu ==1.8.0.post1  # type: runtime
+textgrad >=0.1.8  # type: runtime
+fastapi >=0.115.11  # type: runtime
+motor >=3.7.0  # type: runtime
+uvicorn >=0.34.0  # type: runtime
+sqlalchemy >=2.0.38  # type: runtime
+python-jose >=3.3.0  # type: runtime
+passlib >=1.7.4  # type: runtime
+python-multipart >=0.0.6  # type: runtime
+bcrypt >=4.0.1  # type: runtime
+celery >=5.3.4  # type: runtime
+redis >=5.0.0  # type: runtime
+httpx >=0.24.1  # type: runtime
+asgi-lifespan >=1.0.1  # type: runtime
+python-dotenv >=1.0.0  # type: runtime
+jwt >=1.3.1  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/product_launch_intelligence_agent/requirements.txt
+streamlit  # type: runtime
+agno  # type: runtime
+firecrawl  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_aqi_analysis_agent/requirements.txt
+agno  # type: runtime
+openai  # type: runtime
+firecrawl-py ==1.9.0  # type: runtime
+gradio ==5.9.1  # type: runtime
+pydantic  # type: runtime
+dataclasses  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_financial_coach_agent/requirements.txt
+google-adk ==0.1.0  # type: runtime
+streamlit  # type: runtime
+pandas ==2.1.1  # type: runtime
+matplotlib ==3.8.0  # type: runtime
+numpy ==1.26.0  # type: runtime
+python-dotenv ==1.0.0  # type: runtime
+plotly ==5.18.0  # type: runtime
+asyncio ==3.4.3  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/ai_mental_wellbeing_agent/requirements.txt
+autogen-agentchat  # type: runtime
+autogen-ext  # type: runtime
+pyautogen  # type: runtime
+streamlit  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/multi_agent_apps/multi_agent_researcher/requirements.txt
+streamlit  # type: runtime
+agno  # type: runtime
+openai  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/autonomous_game_playing_agent_apps/ai_3dpygame_r1/requirements.txt
+agno  # type: runtime
+langchain-openai  # type: runtime
+browser-use  # type: runtime
+streamlit  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/autonomous_game_playing_agent_apps/ai_tic_tac_toe_agent/requirements.txt
+agno ==1.1.6  # type: runtime
+altair ==5.5.0  # type: runtime
+annotated-types ==0.7.0  # type: runtime
+anthropic ==0.47.1  # type: runtime
+anyio ==4.8.0  # type: runtime
+attrs ==25.1.0  # type: runtime
+blinker ==1.9.0  # type: runtime
+build ==1.2.2.post1  # type: runtime
+cachetools ==5.5.2  # type: runtime
+certifi ==2025.1.31  # type: runtime
+charset-normalizer ==3.4.1  # type: runtime
+click ==8.1.8  # type: runtime
+distro ==1.9.0  # type: runtime
+docstring-parser ==0.16  # type: runtime
+gitdb ==4.0.12  # type: runtime
+gitpython ==3.1.44  # type: runtime
+google-auth ==2.38.0  # type: runtime
+google-genai ==1.3.0  # type: runtime
+groq ==0.18.0  # type: runtime
+h11 ==0.14.0  # type: runtime
+httpcore ==1.0.7  # type: runtime
+httpx ==0.28.1  # type: runtime
+idna ==3.10  # type: runtime
+jinja2 ==3.1.5  # type: runtime
+jiter ==0.8.2  # type: runtime
+jsonschema ==4.23.0  # type: runtime
+jsonschema-specifications ==2024.10.1  # type: runtime
+markdown-it-py ==3.0.0  # type: runtime
+markupsafe ==3.0.2  # type: runtime
+mdurl ==0.1.2  # type: runtime
+narwhals ==1.28.0  # type: runtime
+nest-asyncio ==1.6.0  # type: runtime
+numpy ==2.2.3  # type: runtime
+ollama ==0.4.7  # type: runtime
+openai ==1.64.0  # type: runtime
+packaging ==24.2  # type: runtime
+pandas ==2.2.3  # type: runtime
+pathlib ==1.0.1  # type: runtime
+pillow ==11.1.0  # type: runtime
+pip ==25.0.1  # type: runtime
+pip-tools ==7.4.1  # type: runtime
+protobuf ==5.29.3  # type: runtime
+pyarrow ==19.0.1  # type: runtime
+pyasn1 ==0.6.1  # type: runtime
+pyasn1-modules ==0.4.1  # type: runtime
+pydantic ==2.10.6  # type: runtime
+pydantic-core ==2.27.2  # type: runtime
+pydantic-settings ==2.8.0  # type: runtime
+pydeck ==0.9.1  # type: runtime
+pygments ==2.19.1  # type: runtime
+pyproject-hooks ==1.2.0  # type: runtime
+python-dateutil ==2.9.0.post0  # type: runtime
+python-dotenv ==1.0.1  # type: runtime
+python-multipart ==0.0.20  # type: runtime
+pytz ==2025.1  # type: runtime
+pyyaml ==6.0.2  # type: runtime
+referencing ==0.36.2  # type: runtime
+requests ==2.32.3  # type: runtime
+rich ==13.9.4  # type: runtime
+rpds-py ==0.23.1  # type: runtime
+rsa ==4.9  # type: runtime
+setuptools ==75.8.0  # type: runtime
+shellingham ==1.5.4  # type: runtime
+six ==1.17.0  # type: runtime
+smmap ==5.0.2  # type: runtime
+sniffio ==1.3.1  # type: runtime
+streamlit ==1.42.2  # type: runtime
+tenacity ==9.0.0  # type: runtime
+toml ==0.10.2  # type: runtime
+tomli ==2.2.1  # type: runtime
+tornado ==6.4.2  # type: runtime
+tqdm ==4.67.1  # type: runtime
+typer ==0.15.1  # type: runtime
+typing-extensions ==4.12.2  # type: runtime
+tzdata ==2025.1  # type: runtime
+urllib3 ==2.3.0  # type: runtime
+websockets ==14.2  # type: runtime
+wheel ==0.45.1  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_ai_agents/autonomous_game_playing_agent_apps/ai_chess_agent/requirements.txt
+streamlit  # type: runtime
+chess ==1.11.1  # type: runtime
+autogen ==0.6.1  # type: runtime
+cairosvg  # type: runtime
+pillow  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/llm_apps_with_memory_tutorials/llm_app_personalized_memory/requirements.txt
+streamlit  # type: runtime
+openai  # type: runtime
+mem0ai ==0.1.29  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/llm_apps_with_memory_tutorials/ai_travel_agent_memory/requirements.txt
+streamlit  # type: runtime
+openai  # type: runtime
+mem0ai ==0.1.29  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/llm_apps_with_memory_tutorials/multi_llm_memory/requirements.txt
+streamlit  # type: runtime
+openai  # type: runtime
+mem0ai ==0.1.29  # type: runtime
+litellm  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/llm_apps_with_memory_tutorials/llama3_stateful_chat/requirements.txt
+streamlit  # type: runtime
+openai  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/llm_apps_with_memory_tutorials/local_chatgpt_with_memory/requirements.txt
+streamlit  # type: runtime
+openai  # type: runtime
+mem0ai ==0.1.29  # type: runtime
+litellm  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/llm_apps_with_memory_tutorials/ai_arxiv_agent_memory/requirements.txt
+streamlit  # type: runtime
+openai  # type: runtime
+mem0ai  # type: runtime
+multion  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/cursor_ai_experiments/requirements.txt
+scrapegraphai  # type: runtime
+playwright  # type: runtime
+langchain-community  # type: runtime
+streamlit-chat  # type: runtime
+streamlit  # type: runtime
+crewai  # type: runtime
+ollama  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/cursor_ai_experiments/local_chatgpt_clone/requirements.txt
+streamlit  # type: runtime
+openai  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/cursor_ai_experiments/llm_router_app/requirements.txt
+streamlit  # type: runtime
+routellm  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/llm_finetuning_tutorials/llama3.2_finetuning/requirements.txt
+torch  # type: runtime
+unsloth  # type: runtime
+transformers  # type: runtime
+datasets  # type: runtime
+trl  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/chat_with_X_tutorials/chat_with_research_papers/requirements.txt
+streamlit  # type: runtime
+agno  # type: runtime
+arxiv  # type: runtime
+openai  # type: runtime
+pypdf  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/chat_with_X_tutorials/chat_with_substack/requirements.txt
+streamlit  # type: runtime
+embedchain  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/chat_with_X_tutorials/chat_with_youtube_videos/requirements.txt
+streamlit  # type: runtime
+embedchain  # type: runtime
+youtube-transcript-api ==0.6.3  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/chat_with_X_tutorials/chat_with_gmail/requirements.txt
+streamlit  # type: runtime
+embedchain  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/chat_with_X_tutorials/chat_with_pdf/requirements.txt
+streamlit  # type: runtime
+embedchain  # type: runtime
+streamlit-chat  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/advanced_llm_apps/chat_with_X_tutorials/chat_with_github/requirements.txt
+streamlit  # type: runtime
+embedchain  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/agentic_rag_math_agent/requirements.txt
+nest-asyncio  # type: runtime
+openai ==1.61.0  # type: runtime
+llama-index ==0.12.33  # type: runtime
+llama-index-vector-stores-qdrant ==0.6.0  # type: runtime
+qdrant-client ==1.14.1  # type: runtime
+dspy ==2.6.18  # type: runtime
+faiss-cpu ==1.10.0  # type: runtime
+tavily-python ==0.5.4  # type: runtime
+python-dotenv ==1.1.0  # type: runtime
+streamlit ==1.44.1  # type: runtime
+pandas ==2.2.3  # type: runtime
+requests ==2.32.3  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/rag_database_routing/requirements.txt
+langchain ==0.3.12  # type: runtime
+langchain-community ==0.3.12  # type: runtime
+langchain-core ==0.3.28  # type: runtime
+qdrant-client ==1.12.1  # type: runtime
+streamlit >=1.29.0  # type: runtime
+pypdf >=4.0.0  # type: runtime
+sentence-transformers >=2.2.2  # type: runtime
+phidata ==2.7.3  # type: runtime
+langchain-openai ==0.2.14  # type: runtime
+langgraph ==0.2.53  # type: runtime
+duckduckgo-search ==6.4.1  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/rag_chain/requirements.txt
+streamlit  # type: runtime
+langchain-google-genai  # type: runtime
+langchain-chroma  # type: runtime
+langchain-community  # type: runtime
+langchain-core  # type: runtime
+chromadb  # type: runtime
+sentence-transformers  # type: runtime
+pypdf2  # type: runtime
+python-dotenv  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/gemini_agentic_rag/requirements.txt
+agno  # type: runtime
+exa ==0.5.26  # type: runtime
+qdrant-client ==1.12.1  # type: runtime
+langchain-qdrant ==0.2.0  # type: runtime
+langchain-community ==0.3.13  # type: runtime
+streamlit ==1.41.1  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/agentic_rag/requirements.txt
+agno  # type: runtime
+openai  # type: runtime
+lancedb  # type: runtime
+tantivy  # type: runtime
+pypdf  # type: runtime
+sqlalchemy  # type: runtime
+pgvector  # type: runtime
+psycopg  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/corrective_rag/requirements.txt
+langchain ==0.3.12  # type: runtime
+langgraph ==0.2.53  # type: runtime
+qdrant-client ==1.12.1  # type: runtime
+langchain-openai ==0.2.14  # type: runtime
+langchain-anthropic ==0.3.0  # type: runtime
+tavily-python ==0.5.0  # type: runtime
+langchain-community ==0.3.12  # type: runtime
+langchain-core ==0.3.28  # type: runtime
+streamlit ==1.41.1  # type: runtime
+tenacity ==8.5.0  # type: runtime
+anthropic >=0.7.0  # type: runtime
+openai >=1.12.0  # type: runtime
+tiktoken >=0.6.0  # type: runtime
+pydantic >=2.0.0  # type: runtime
+numpy >=1.24.0  # type: runtime
+pyyaml >=6.0.0  # type: runtime
+nest-asyncio >=1.5.0  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/rag-as-a-service/requirements.txt
+streamlit  # type: runtime
+anthropic  # type: runtime
+requests  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/rag_agent_cohere/requirements.txt
+langchain ==0.3.12  # type: runtime
+langchain-community ==0.3.12  # type: runtime
+langchain-core ==0.3.25  # type: runtime
+langchain-cohere ==0.3.2  # type: runtime
+langchain-qdrant ==0.2.0  # type: runtime
+cohere ==5.11.4  # type: runtime
+qdrant-client ==1.12.1  # type: runtime
+duckduckgo-search ==6.4.1  # type: runtime
+streamlit ==1.40.2  # type: runtime
+tenacity ==9.0.0  # type: runtime
+typing-extensions ==4.12.2  # type: runtime
+pydantic ==2.9.2  # type: runtime
+pydantic-core ==2.23.4  # type: runtime
+langgraph ==0.2.53  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/local_rag_agent/requirements.txt
+agno  # type: runtime
+qdrant-client  # type: runtime
+ollama  # type: runtime
+pypdf  # type: runtime
+openai  # type: runtime
+fastapi  # type: runtime
+uvicorn  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/autonomous_rag/requirements.txt
+streamlit  # type: runtime
+agno  # type: runtime
+openai  # type: runtime
+psycopg-binary  # type: runtime
+pgvector  # type: runtime
+requests  # type: runtime
+sqlalchemy  # type: runtime
+pypdf  # type: runtime
+duckduckgo-search  # type: runtime
+nest-asyncio  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/local_hybrid_search_rag/requirements.txt
+raglite ==0.2.1  # type: runtime
+llama-cpp-python >=0.2.56  # type: runtime
+sentence-transformers >=2.5.1  # type: runtime
+pydantic ==2.10.1  # type: runtime
+sqlalchemy >=2.0.0  # type: runtime
+psycopg2-binary >=2.9.9  # type: runtime
+pypdf >=3.0.0  # type: runtime
+python-dotenv >=1.0.0  # type: runtime
+rerankers ==0.6.0  # type: runtime
+spacy >=3.7.0  # type: runtime
+streamlit >=1.31.0  # type: runtime
+flashrank ==0.2.9  # type: runtime
+numpy >=1.24.0  # type: runtime
+pandas >=2.0.0  # type: runtime
+tqdm >=4.66.0  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/vision_rag/requirements.txt
+streamlit >=1.32.0  # type: runtime
+cohere >=5.0.0  # type: runtime
+google-generativeai >=0.3.0  # type: runtime
+pillow >=10.0.0  # type: runtime
+requests >=2.31.0  # type: runtime
+numpy >=1.24.0  # type: runtime
+tqdm >=4.66.0  # type: runtime
+pymupdf >=1.23.0  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/deepseek_local_rag_agent/requirements.txt
+agno  # type: runtime
+exa ==0.5.26  # type: runtime
+qdrant-client ==1.12.1  # type: runtime
+langchain-qdrant ==0.2.0  # type: runtime
+langchain-community ==0.3.13  # type: runtime
+streamlit ==1.41.1  # type: runtime
+ollama  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/ai_blog_search/requirements.txt
+langchain  # type: runtime
+langgraph  # type: runtime
+langchainhub  # type: runtime
+langchain-community  # type: runtime
+langchain-google-genai  # type: runtime
+langchain-qdrant  # type: runtime
+langchain-text-splitters  # type: runtime
+tiktoken  # type: runtime
+beautifulsoup4  # type: runtime
+python-dotenv  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/llama3.1_local_rag/requirements.txt
+streamlit  # type: runtime
+ollama  # type: runtime
+langchain  # type: runtime
+langchain-community  # type: runtime
+langchain-ollama  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/hybrid_search_rag/requirements.txt
+raglite ==0.2.1  # type: runtime
+pydantic ==2.10.1  # type: runtime
+sqlalchemy >=2.0.0  # type: runtime
+psycopg2-binary >=2.9.9  # type: runtime
+openai >=1.0.0  # type: runtime
+cohere >=4.37  # type: runtime
+pypdf >=3.0.0  # type: runtime
+python-dotenv >=1.0.0  # type: runtime
+rerankers ==0.6.0  # type: runtime
+spacy >=3.7.0  # type: runtime
+streamlit  # type: runtime
+anthropic  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/rag_tutorials/qwen_local_rag/requirements.txt
+agno  # type: runtime
+pypdf  # type: runtime
+exa  # type: runtime
+qdrant-client  # type: runtime
+langchain-qdrant  # type: runtime
+langchain-community  # type: runtime
+streamlit  # type: runtime
+ollama  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/ai_music_generator_agent/requirements.txt
+agno ==1.2.8  # type: runtime
+requests ==2.32.3  # type: runtime
+streamlit ==1.44.1  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/xai_finance_agent/requirements.txt
+agno  # type: runtime
+duckduckgo-search  # type: runtime
+yfinance  # type: runtime
+fastapi  # type: runtime
+openai  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/ai_breakup_recovery_agent/requirements.txt
+streamlit ==1.44.1  # type: runtime
+pillow ==11.1.0  # type: runtime
+agno ==1.2.13  # type: runtime
+google-genai ==1.9.0  # type: runtime
+duckduckgo-search  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/ai_data_visualisation_agent/requirements.txt
+together ==1.3.10  # type: runtime
+e2b-code-interpreter ==1.0.3  # type: runtime
+e2b ==1.0.5  # type: runtime
+pillow ==10.4.0  # type: runtime
+streamlit  # type: runtime
+pandas  # type: runtime
+matplotlib  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/ai_reasoning_agent/requirements.txt
+agno  # type: runtime
+ollama  # type: runtime
+fastapi  # type: runtime
+uvicorn  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/ai_blog_to_podcast_agent/requirements.txt
+agno ==1.2.8  # type: runtime
+streamlit ==1.44.1  # type: runtime
+openai  # type: runtime
+requests  # type: runtime
+firecrawl-py  # type: runtime
+elevenlabs  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/multimodal_ai_agent/requirements.txt
+agno  # type: runtime
+google-generativeai ==0.8.3  # type: runtime
+streamlit ==1.40.2  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/opeani_research_agent/requirements.txt
+openai-agents  # type: runtime
+openai  # type: runtime
+streamlit  # type: runtime
+uuid  # type: runtime
+pydantic  # type: runtime
+python-dotenv  # type: runtime
+asyncio  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/ai_data_analysis_agent/requirements.txt
+phidata  # type: runtime
+streamlit ==1.41.1  # type: runtime
+openai ==1.58.1  # type: runtime
+duckdb ==1.1.3  # type: runtime
+pandas  # type: runtime
+numpy ==1.26.4  # type: runtime
+agno  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/ai_medical_imaging_agent/requirements.txt
+streamlit ==1.40.2  # type: runtime
+agno  # type: runtime
+pillow ==10.0.0  # type: runtime
+duckduckgo-search ==6.4.1  # type: runtime
+google-generativeai ==0.8.3  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/web_scrapping_ai_agent/requirements.txt
+streamlit  # type: runtime
+scrapegraphai  # type: runtime
+playwright  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/ai_startup_trend_analysis_agent/requirements.txt
+agno  # type: runtime
+streamlit ==1.40.2  # type: runtime
+duckduckgo-search ==6.3.7  # type: runtime
+newspaper4k ==0.9.3.1  # type: runtime
+lxml-html-clean ==0.4.1  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/local_news_agent_openai_swarm/requirements.txt
+streamlit  # type: runtime
+duckduckgo-search  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/mixture_of_agents/requirements.txt
+streamlit  # type: runtime
+asyncio  # type: runtime
+together  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/ai_meme_generator_agent_browseruse/requirements.txt
+streamlit  # type: runtime
+browser-use ==0.1.26  # type: runtime
+playwright ==1.49.1  # type: runtime
+langchain-openai  # type: runtime
+langchain-anthropic  # type: runtime
+asyncio  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/starter_ai_agents/ai_travel_agent/requirements.txt
+streamlit  # type: runtime
+agno  # type: runtime
+openai  # type: runtime
+google-search-results  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/mcp_ai_agents/notion_mcp_agent/requirements.txt
+agno  # type: runtime
+python-dotenv  # type: runtime
+mcp  # type: runtime
+openai  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/mcp_ai_agents/browser_mcp_agent/requirements.txt
+streamlit >=1.28.0  # type: runtime
+mcp-agent >=0.0.14  # type: runtime
+openai >=1.0.0  # type: runtime
+asyncio >=3.4.3  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/mcp_ai_agents/github_mcp_agent/requirements.txt
+streamlit >=1.28.0  # type: runtime
+agno >=1.1.0  # type: runtime
+mcp >=0.1.0  # type: runtime
+openai >=1.0.0  # type: runtime
+asyncio >=3.4.3  # type: runtime
+
+# 依赖文件: analysis_program/awesome-llm-apps-main/mcp_ai_agents/ai_travel_planner_mcp_agent_team/requirements.txt
+agno ==1.2.13  # type: runtime
+mcp ==1.6.0  # type: runtime
+streamlit ==1.44.1  # type: runtime
+google-api-python-client ==2.118.0  # type: runtime
+google-auth ==2.28.1  # type: runtime
+google-auth-oauthlib ==1.2.0  # type: runtime
+python-dotenv ==1.0.1  # type: runtime
+requests ==2.31.0  # type: runtime
+openai ==1.12.0  # type: runtime
+

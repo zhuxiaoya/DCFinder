@@ -1,0 +1,63 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/ed/54/63c8264d7dbc3bf31ba61bf97740fdd76386b2d4f9a58f58afd3961ce7d7/langchain_openai-0.2.14-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=d232496662f79ece9a11caf7d798ba863e559c771bc366814f7688e0fe664fe8",
+          "hashes": {
+            "sha256": "d232496662f79ece9a11caf7d798ba863e559c771bc366814f7688e0fe664fe8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "langchain-openai",
+        "version": "0.2.14",
+        "summary": "An integration package connecting OpenAI and LangChain",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/langchain-ai/langchain",
+        "license": "MIT",
+        "classifier": [
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13"
+        ],
+        "requires_dist": [
+          "langchain-core (>=0.3.27,<0.4.0)",
+          "openai (>=1.58.1,<2.0.0)",
+          "tiktoken (>=0.7,<1)"
+        ],
+        "requires_python": ">=3.9,<4.0",
+        "project_url": [
+          "Repository, https://github.com/langchain-ai/langchain",
+          "Release Notes, https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain-openai%3D%3D0%22&expanded=true",
+          "Source Code, https://github.com/langchain-ai/langchain/tree/master/libs/partners/openai"
+        ],
+        "description": "# langchain-openai\n\nThis package contains the LangChain integrations for OpenAI through their `openai` SDK.\n\n## Installation and Setup\n\n- Install the LangChain partner package\n```bash\npip install langchain-openai\n```\n- Get an OpenAI api key and set it as an environment variable (`OPENAI_API_KEY`)\n\n\n## LLM\n\nSee a [usage example](http://python.langchain.com/docs/integrations/llms/openai).\n\n```python\nfrom langchain_openai import OpenAI\n```\n\nIf you are using a model hosted on `Azure`, you should use different wrapper for that:\n```python\nfrom langchain_openai import AzureOpenAI\n```\nFor a more detailed walkthrough of the `Azure` wrapper, see [here](http://python.langchain.com/docs/integrations/llms/azure_openai)\n\n\n## Chat model\n\nSee a [usage example](http://python.langchain.com/docs/integrations/chat/openai).\n\n```python\nfrom langchain_openai import ChatOpenAI\n```\n\nIf you are using a model hosted on `Azure`, you should use different wrapper for that:\n```python\nfrom langchain_openai import AzureChatOpenAI\n```\nFor a more detailed walkthrough of the `Azure` wrapper, see [here](http://python.langchain.com/docs/integrations/chat/azure_chat_openai)\n\n\n## Text Embedding Model\n\nSee a [usage example](http://python.langchain.com/docs/integrations/text_embedding/openai)\n\n```python\nfrom langchain_openai import OpenAIEmbeddings\n```\n\nIf you are using a model hosted on `Azure`, you should use different wrapper for that:\n```python\nfrom langchain_openai import AzureOpenAIEmbeddings\n```\nFor a more detailed walkthrough of the `Azure` wrapper, see [here](https://python.langchain.com/docs/integrations/text_embedding/azureopenai)\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

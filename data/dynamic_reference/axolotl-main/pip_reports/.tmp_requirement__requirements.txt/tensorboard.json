@@ -1,0 +1,96 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/37/4b/cd2eec9642781a8f5b2fb9994e3933a7b259ab18e9d49aeede9b5acf6311/tensorboard-2.21.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=7279316dcb6bd5bc391d623dea841531299cde1887310e8133bc34a996d32255",
+          "hashes": {
+            "sha256": "7279316dcb6bd5bc391d623dea841531299cde1887310e8133bc34a996d32255"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "tensorboard",
+        "version": "2.21.0",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "TensorBoard lets you watch Tensors Flow",
+        "keywords": [
+          "tensorflow",
+          "tensorboard",
+          "tensor",
+          "machine",
+          "learning",
+          "visualizer"
+        ],
+        "home_page": "https://github.com/tensorflow/tensorboard",
+        "author": "Google Inc.",
+        "author_email": "packages@tensorflow.org",
+        "license": "Apache 2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Education",
+          "Intended Audience :: Science/Research",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3 :: Only",
+          "Topic :: Scientific/Engineering :: Mathematics",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Software Development :: Libraries"
+        ],
+        "requires_dist": [
+          "absl-py>=0.4",
+          "grpcio<2.0,>=1.74.0",
+          "markdown>=2.6.8",
+          "numpy>=1.12.0",
+          "packaging",
+          "pillow",
+          "protobuf<8.0.0,>=6.31.1",
+          "setuptools>=41.0.0",
+          "tensorboard-data-server<0.8.0,>=0.7.0",
+          "werkzeug>=1.0.1"
+        ],
+        "requires_python": ">=3.9",
+        "description": "TensorBoard is a suite of web applications for inspecting and understanding\nyour TensorFlow runs and graphs.\n\nReleases prior to 1.6.0 were published under the ``tensorflow-tensorboard`` name\nand may be found at https://pypi.python.org/pypi/tensorflow-tensorboard.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

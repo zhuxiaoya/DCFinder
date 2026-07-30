@@ -1,0 +1,57 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/57/64/eff2564783bd650ca25e15938d1c5b459cda997574a510f7de69688cb0b4/asyncio-4.0.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=c1eddb0659231837046809e68103969b2bef8b0400d59cfa6363f6b5ed8cc88b",
+          "hashes": {
+            "sha256": "c1eddb0659231837046809e68103969b2bef8b0400d59cfa6363f6b5ed8cc88b"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "asyncio",
+        "version": "4.0.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Deprecated backport of asyncio; use the stdlib package instead",
+        "description_content_type": "text/markdown",
+        "license_expression": "Apache-2.0",
+        "license_file": [
+          "COPYING"
+        ],
+        "classifier": [
+          "Programming Language :: Python :: 3",
+          "Topic :: Software Development :: Libraries"
+        ],
+        "requires_python": ">=3.4",
+        "project_url": [
+          "homepage, https://docs.python.org/3/library/asyncio.html",
+          "source, https://github.com/python/asyncio"
+        ],
+        "description": "# asyncio (obsolete backport)\n\nThis package once provided a backport of the `asyncio` module for Python\nversions prior to 3.4. The `asyncio` module has shipped with the Python\nstandard library since Python 3.4 and this separate distribution is no longer\nneeded.\n\n**Do not install this package.** Use the implementation that comes with\nPython instead:\n\nhttps://docs.python.org/3/library/asyncio.html\n\nThis release contains no code and exists only to prevent accidental\ninstallation of outdated backports.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

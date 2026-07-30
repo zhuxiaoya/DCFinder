@@ -1,0 +1,93 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/ef/eb/a5c4b39903928e6be7735cc7aa31b6c3bbf3d887419e1e7ac751dba02233/gcsfs-2026.7.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=8ce6c08ea64302d8fd4bc23a615ccd9e7752541cde1a88ec8362109bd79cde78",
+          "hashes": {
+            "sha256": "8ce6c08ea64302d8fd4bc23a615ccd9e7752541cde1a88ec8362109bd79cde78"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "gcsfs",
+        "version": "2026.7.0",
+        "summary": "Convenient Filesystem interface over GCS",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "file-system",
+          "gcloud",
+          "google-cloud-storage"
+        ],
+        "maintainer_email": "Martin Durant <mdurant@anaconda.com>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_dist": [
+          "aiohttp!=4.0.0a0,!=4.0.0a1,>=3.9.0",
+          "decorator>4.1.2",
+          "fsspec>=2026.6.0",
+          "google-auth-oauthlib",
+          "google-auth>=1.2",
+          "google-cloud-storage-control",
+          "google-cloud-storage>=3.11.0",
+          "requests",
+          "crcmod; extra == 'crc'",
+          "flake8; extra == 'dev'",
+          "isort; extra == 'dev'",
+          "pytest; extra == 'dev'",
+          "pytest-asyncio; extra == 'dev'",
+          "pytest-cov; extra == 'dev'",
+          "pytest-subtests; extra == 'dev'",
+          "pytest-timeout; extra == 'dev'",
+          "pytest-xdist; extra == 'dev'",
+          "fusepy; extra == 'gcsfuse'"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://github.com/fsspec/gcsfs",
+          "Documentation, https://gcsfs.readthedocs.io",
+          "Repository, https://github.com/fsspec/gcsfs"
+        ],
+        "provides_extra": [
+          "crc",
+          "dev",
+          "gcsfuse"
+        ],
+        "description": "\n# gcsfs\n\n[|Build Status|](https://github.com/fsspec/gcsfs/actions)\n[|Docs|](https://gcsfs.readthedocs.io/en/latest/?badge=latest)\n\n**GCSFS** is a Python library that provides a familiar, file-system-like interface to [Google Cloud Storage (GCS)](https://docs.cloud.google.com/storage/docs/introduction). Built on top of [fsspec](https://github.com/fsspec), it allows you to interact with cloud buckets as if they were local directories, making it a favorite for data scientists and engineers.\n\n-----\n\n## Getting Started\n\n### Installation\n\nInstall via pip or conda:\n\n```bash\n# Using pip\npip install gcsfs\n\n# OR using conda\nconda install -c conda-forge gcsfs\n```\n\n### Basic Usage\n\n```python\nimport gcsfs\n\n# Initialize the filesystem\nfs = gcsfs.GCSFileSystem(project='my-google-project')\n\n# List files in a bucket\nfiles = fs.ls('my-bucket')\n\n# Read a file directly into a string/bytes\nwith fs.open('my-bucket/data.txt', 'rb') as f:\n    content = f.read()\n```\n\n-----\n\n## Specialized Bucket Support\n\nGCSFS now automatically supports advanced Google Cloud Storage features through its `ExtendedFileSystem` implementation.\n\n### 1\\. Hierarchical Namespace (HNS)\n\nHierarchical Namespace (HNS) replaces the traditional \"flat\" GCS structure with true logical directories.\n\n  * **Atomic Renames:** Moving or renaming a directory is an `O(1)` metadata operation. No more slow \"copy-then-delete\" for large folders.\n  * **High Performance:** Offers up to 8x higher initial Queries Per Second (QPS) for read/write operations.\n  * **AI/ML Ready:** Ideal for heavy checkpointing and managing millions of small files.\n\n### 2\\. Rapid Buckets (Zonal Storage)\n\nRapid Buckets are zonal storage resources designed for ultra-low latency and maximum throughput.\n\n  * **Zonal Co-location:** Place your data in the same zone as your GPU/TPU clusters to minimize network lag.\n  * **True Appends:** Unlike standard GCS objects, you can append data to existing objects in Rapid buckets without a full rewrite.\n  * **Streaming I/O:** Optimized for high-speed model loading and real-time logging.\n\n-----\n\n## Integration & Auth\n\nGCSFS plays nicely with the rest of the Python data ecosystem.\n\n### Authentication Modes\n\n  * **Default:** Uses your local gcloud credentials or environment service accounts.\n  * **Cloud:** Explicitly use Google Metadata service (`token='cloud'`).\n  * **Anonymous:** Access public data without a login (`token='anon'`).\n  * **Service Account:** Pass the path to your JSON key file (`token='path/to/key.json'`).\n\n> [\\!TIP]\n> **Note on Async:** GCSFS is built on `aiohttp`. If you are building high-concurrency applications, you can use the asynchronous API by passing `asynchronous=True` to the `GCSFileSystem` constructor.\n\n-----\n\n## Support\n\nWork on this repository is supported in part by:\n\n**\"Anaconda, Inc. - Advancing AI through open source.\"**\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

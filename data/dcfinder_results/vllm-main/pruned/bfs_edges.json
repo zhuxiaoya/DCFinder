@@ -1,0 +1,224 @@
+[
+  {
+    "parent": "tensorizer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "torch"
+  },
+  {
+    "parent": "tensorizer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "tensorizer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "protobuf"
+  },
+  {
+    "parent": "tensorizer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "psutil"
+  },
+  {
+    "parent": "tensorizer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "boto3"
+  },
+  {
+    "parent": "tensorizer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "redis"
+  },
+  {
+    "parent": "tensorizer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "hiredis"
+  },
+  {
+    "parent": "tensorizer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "libnacl"
+  },
+  {
+    "parent": "fastsafetensors",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typer"
+  },
+  {
+    "parent": "runai-model-streamer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "humanize"
+  },
+  {
+    "parent": "runai-model-streamer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "runai-model-streamer",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "torch"
+  },
+  {
+    "parent": "runai-model-streamer-s3",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "boto3"
+  },
+  {
+    "parent": "boto3",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "botocore"
+  },
+  {
+    "parent": "boto3",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jmespath"
+  },
+  {
+    "parent": "boto3",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "s3transfer"
+  },
+  {
+    "parent": "librosa",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "audioread"
+  },
+  {
+    "parent": "librosa",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numba"
+  },
+  {
+    "parent": "librosa",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "librosa",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "scipy"
+  },
+  {
+    "parent": "librosa",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "scikit-learn"
+  },
+  {
+    "parent": "librosa",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "joblib"
+  },
+  {
+    "parent": "librosa",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "decorator"
+  },
+  {
+    "parent": "librosa",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "soundfile"
+  },
+  {
+    "parent": "librosa",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pooch"
+  },
+  {
+    "parent": "librosa",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "soxr"
+  },
+  {
+    "parent": "librosa",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "librosa",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "lazy-loader"
+  },
+  {
+    "parent": "librosa",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "msgpack"
+  },
+  {
+    "parent": "soundfile",
+    "parent_source": "private",
+    "parent_version": "0.13.1",
+    "child": "cffi"
+  },
+  {
+    "parent": "soundfile",
+    "parent_source": "private",
+    "parent_version": "0.13.1",
+    "child": "numpy"
+  },
+  {
+    "parent": "pandas",
+    "parent_source": "private",
+    "parent_version": "2.3.1",
+    "child": "numpy"
+  },
+  {
+    "parent": "pandas",
+    "parent_source": "private",
+    "parent_version": "2.3.1",
+    "child": "python-dateutil"
+  },
+  {
+    "parent": "pandas",
+    "parent_source": "private",
+    "parent_version": "2.3.1",
+    "child": "pytz"
+  },
+  {
+    "parent": "pandas",
+    "parent_source": "private",
+    "parent_version": "2.3.1",
+    "child": "tzdata"
+  },
+  {
+    "parent": "cffi",
+    "parent_source": "private",
+    "parent_version": "2.0.0",
+    "child": "pycparser"
+  },
+  {
+    "parent": "python-dateutil",
+    "parent_source": "private",
+    "parent_version": "2.9.0",
+    "child": "six"
+  }
+]

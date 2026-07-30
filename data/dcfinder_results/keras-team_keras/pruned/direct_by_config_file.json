@@ -1,0 +1,136 @@
+{
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-common.txt": [
+    {
+      "name": "pre-commit",
+      "specifier": ""
+    },
+    {
+      "name": "namex",
+      "specifier": ">=0.0.8"
+    },
+    {
+      "name": "ruff",
+      "specifier": ""
+    },
+    {
+      "name": "pytest",
+      "specifier": ""
+    },
+    {
+      "name": "numpy",
+      "specifier": ""
+    },
+    {
+      "name": "scipy",
+      "specifier": ""
+    },
+    {
+      "name": "scikit-learn",
+      "specifier": ""
+    },
+    {
+      "name": "pillow",
+      "specifier": ""
+    },
+    {
+      "name": "pandas",
+      "specifier": ""
+    },
+    {
+      "name": "absl-py",
+      "specifier": ""
+    },
+    {
+      "name": "requests",
+      "specifier": ""
+    },
+    {
+      "name": "h5py",
+      "specifier": ""
+    },
+    {
+      "name": "ml-dtypes",
+      "specifier": ""
+    },
+    {
+      "name": "protobuf",
+      "specifier": ""
+    },
+    {
+      "name": "tensorboard-plugin-profile",
+      "specifier": ""
+    },
+    {
+      "name": "rich",
+      "specifier": ""
+    },
+    {
+      "name": "build",
+      "specifier": ""
+    },
+    {
+      "name": "optree",
+      "specifier": ""
+    },
+    {
+      "name": "pytest-cov",
+      "specifier": ""
+    },
+    {
+      "name": "packaging",
+      "specifier": ""
+    },
+    {
+      "name": "dm-tree",
+      "specifier": ""
+    },
+    {
+      "name": "coverage",
+      "specifier": "!=7.6.5"
+    },
+    {
+      "name": "onnxruntime",
+      "specifier": ""
+    },
+    {
+      "name": "openvino",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements-jax-cuda.txt": [
+    {
+      "name": "tensorflow-cpu",
+      "specifier": "~=2.18.1"
+    },
+    {
+      "name": "tf2onnx",
+      "specifier": ""
+    },
+    {
+      "name": "torch",
+      "specifier": "==2.6.0"
+    },
+    {
+      "name": "jax",
+      "specifier": "==0.6.0"
+    },
+    {
+      "name": "flax",
+      "specifier": ""
+    }
+  ],
+  "/home/lab314/zxy/dependncy_confusion/analysis_program/keras-team_keras/requirements.txt": [
+    {
+      "name": "tensorflow",
+      "specifier": "~=2.18.1"
+    },
+    {
+      "name": "tf-keras",
+      "specifier": ""
+    },
+    {
+      "name": "torch-xla",
+      "specifier": "==2.6.0"
+    }
+  ]
+}

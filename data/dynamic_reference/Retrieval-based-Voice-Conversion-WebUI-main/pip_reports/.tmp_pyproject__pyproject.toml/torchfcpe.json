@@ -1,0 +1,66 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/15/98/66da447498a2835b01cb3ae851e1333035a9fbf228e5c6f3e3c4351c06b6/torchfcpe-0.0.4-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=f042c463d850d76c6f4899a0b84f0b694bb560adf05f4de951097a756d17472d",
+          "hashes": {
+            "sha256": "f042c463d850d76c6f4899a0b84f0b694bb560adf05f4de951097a756d17472d"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "torchfcpe",
+        "version": "0.0.4",
+        "summary": "The official Pytorch implementation of Fast Context-based Pitch Estimation (FCPE)",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "pitch",
+          "audio",
+          "speech",
+          "music",
+          "pytorch",
+          "fcpe"
+        ],
+        "home_page": "https://github.com/CNChTu/FCPE",
+        "author": "CNChTu",
+        "author_email": "2921046558@qq.com",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "License :: OSI Approved :: MIT License"
+        ],
+        "requires_dist": [
+          "einops",
+          "local-attention",
+          "torch",
+          "torchaudio",
+          "numpy"
+        ],
+        "description": "<h1 align=\"center\">TorchFCPE</h1>\r\n<div align=\"center\">\r\n\r\n</div>\r\n\r\n\r\n## Useage\r\n\r\n```python\r\nfrom torchfcpe import spawn_bundled_infer_model\r\nimport torch\r\nimport librosa\r\n\r\n# configure device and target hop_size\r\ndevice = 'cpu'\r\nsr = 16000\r\nhop_size = 160\r\n\r\n# load audio\r\naudio, sr = librosa.load('test.wav', sr=sr)\r\naudio = librosa.to_mono(audio)\r\naudio_length = len(audio)\r\nf0_target_length=(audio_length // hop_size) + 1\r\naudio = torch.from_numpy(audio).float().unsqueeze(0).unsqueeze(-1).to(device)\r\n\r\n# load model\r\nmodel = spawn_bundled_infer_model(device=device)\r\n\r\n# infer\r\n'''\r\naudio: wav, torch.Tensor\r\nsr: sample rate\r\ndecoder_mode: [Optional] 'local_argmax' is recommended\r\nthreshold: [Optional] threshold for V/UV decision, 0.006 is recommended\r\nf0_min: [Optional] minimum f0\r\nf0_max: [Optional] maximum f0\r\ninterp_uv: [Optional] whether to interpolate unvoiced frames\r\noutput_interp_target_length: [Optional] If not None, the output f0 will be\r\n    interpolated to the target length\r\n'''\r\nf0 = model.infer(\r\n    audio,\r\n    sr=sr,\r\n    decoder_mode='local_argmax',\r\n    threshold=0.006,\r\n    f0_min=80,\r\n    f0_max=880,\r\n    interp_uv=False,\r\n    output_interp_target_length=f0_target_length,\r\n)\r\n\r\nprint(f0)\r\n\r\n# the model is son class of torch.nn.Module, so you can use it as a normal pytorch model\r\n# example: change device\r\nmodel = model.to(device)\r\n# example: compile model\r\nmodel = torch.compile(model)\r\n\r\n```\r\n\r\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

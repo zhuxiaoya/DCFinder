@@ -1,0 +1,88 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/ca/31/d4e37e9e550c2b92a9cbc2e4d0b7420a27224968580b5a447f420847c975/pytest_xdist-3.8.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=202ca578cfeb7370784a8c33d6d05bc6e13b4f25b5053c30a152269fd10f0b88",
+          "hashes": {
+            "sha256": "202ca578cfeb7370784a8c33d6d05bc6e13b4f25b5053c30a152269fd10f0b88"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "pytest-xdist",
+        "version": "3.8.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "pytest xdist plugin for distributed testing, most importantly across multiple CPUs",
+        "description_content_type": "text/x-rst",
+        "author_email": "holger krekel and contributors <pytest-dev@python.org>, holger@merlinux.eu",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Framework :: Pytest",
+          "Intended Audience :: Developers",
+          "Operating System :: POSIX",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: MacOS :: MacOS X",
+          "Topic :: Software Development :: Testing",
+          "Topic :: Software Development :: Quality Assurance",
+          "Topic :: Utilities",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13"
+        ],
+        "requires_dist": [
+          "execnet>=2.1",
+          "pytest>=7.0.0",
+          "filelock; extra == \"testing\"",
+          "psutil>=3.0; extra == \"psutil\"",
+          "setproctitle; extra == \"setproctitle\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://github.com/pytest-dev/pytest-xdist",
+          "Documentation, https://pytest-xdist.readthedocs.io/en/latest",
+          "Changelog, https://pytest-xdist.readthedocs.io/en/latest/changelog.html",
+          "Source, https://github.com/pytest-dev/pytest-xdist",
+          "Tracker, https://github.com/pytest-dev/pytest-xdist/issues"
+        ],
+        "provides_extra": [
+          "testing",
+          "psutil",
+          "setproctitle"
+        ],
+        "description": "============\npytest-xdist\n============\n\n.. image:: http://img.shields.io/pypi/v/pytest-xdist.svg\n    :alt: PyPI version\n    :target: https://pypi.python.org/pypi/pytest-xdist\n\n.. image:: https://img.shields.io/conda/vn/conda-forge/pytest-xdist.svg\n    :target: https://anaconda.org/conda-forge/pytest-xdist\n\n.. image:: https://img.shields.io/pypi/pyversions/pytest-xdist.svg\n    :alt: Python versions\n    :target: https://pypi.python.org/pypi/pytest-xdist\n\n.. image:: https://github.com/pytest-dev/pytest-xdist/workflows/test/badge.svg\n    :target: https://github.com/pytest-dev/pytest-xdist/actions\n\n.. image:: https://img.shields.io/badge/code%20style-black-000000.svg\n    :target: https://github.com/ambv/black\n\nThe `pytest-xdist`_ plugin extends pytest with new test execution modes, the most used being distributing\ntests across multiple CPUs to speed up test execution::\n\n    pytest -n auto\n\nWith this call, pytest will spawn a number of workers processes equal to the number of available CPUs, and distribute\nthe tests randomly across them.\n\nDocumentation\n=============\n\nDocumentation is available at `Read The Docs <https://pytest-xdist.readthedocs.io>`__.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/2f/b9/9d52879a1c1ee090d47530aa0d9d9a0cc5ca7f5ee9f1d8de784fec8fbff0/langchain_community-0.3.12-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=5a993c931d46dc07fcdfcdfa4d87095c5a15d37ff32b0c16e9ecf6f5caa58c9c",
+          "hashes": {
+            "sha256": "5a993c931d46dc07fcdfcdfa4d87095c5a15d37ff32b0c16e9ecf6f5caa58c9c"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "langchain-community",
+        "version": "0.3.12",
+        "summary": "Community contributed LangChain integrations.",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/langchain-ai/langchain",
+        "license": "MIT",
+        "classifier": [
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13"
+        ],
+        "requires_dist": [
+          "PyYAML (>=5.3)",
+          "SQLAlchemy (>=1.4,<3)",
+          "aiohttp (>=3.8.3,<4.0.0)",
+          "dataclasses-json (>=0.5.7,<0.7)",
+          "httpx-sse (>=0.4.0,<0.5.0)",
+          "langchain (>=0.3.12,<0.4.0)",
+          "langchain-core (>=0.3.25,<0.4.0)",
+          "langsmith (>=0.1.125,<0.3)",
+          "numpy (>=1.22.4,<2) ; python_version < \"3.12\"",
+          "numpy (>=1.26.2,<3) ; python_version >= \"3.12\"",
+          "pydantic-settings (>=2.4.0,<3.0.0)",
+          "requests (>=2,<3)",
+          "tenacity (>=8.1.0,!=8.4.0,<10)"
+        ],
+        "requires_python": ">=3.9,<4.0",
+        "project_url": [
+          "Repository, https://github.com/langchain-ai/langchain",
+          "Release Notes, https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain-community%3D%3D0%22&expanded=true",
+          "Source Code, https://github.com/langchain-ai/langchain/tree/master/libs/community"
+        ],
+        "description": "# 🦜️🧑‍🤝‍🧑 LangChain Community\n\n[![Downloads](https://static.pepy.tech/badge/langchain_community/month)](https://pepy.tech/project/langchain_community)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n\n## Quick Install\n\n```bash\npip install langchain-community\n```\n\n## What is it?\n\nLangChain Community contains third-party integrations that implement the base interfaces defined in LangChain Core, making them ready-to-use in any LangChain application.\n\nFor full documentation see the [API reference](https://python.langchain.com/api_reference/community/index.html).\n\n![Diagram outlining the hierarchical organization of the LangChain framework, displaying the interconnected parts across multiple layers.](https://raw.githubusercontent.com/langchain-ai/langchain/master/docs/static/svg/langchain_stack_112024.svg \"LangChain Framework Overview\")\n\n## 📕 Releases & Versioning\n\n`langchain-community` is currently on version `0.0.x`\n\nAll changes will be accompanied by a patch version increase.\n\n## 💁 Contributing\n\nAs an open-source project in a rapidly developing field, we are extremely open to contributions, whether it be in the form of a new feature, improved infrastructure, or better documentation.\n\nFor detailed information on how to contribute, see the [Contributing Guide](https://python.langchain.com/docs/contributing/).\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,1296 @@
+{
+  "django": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "asgiref",
+        "specifier": "<4,>=3.6.0"
+      },
+      {
+        "name": "sqlparse",
+        "specifier": ">=0.3.1"
+      }
+    ]
+  },
+  "djangorestframework": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "django",
+        "specifier": ">=4.2"
+      }
+    ]
+  },
+  "drf-yasg": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "djangorestframework",
+        "specifier": ">=3.10.3"
+      },
+      {
+        "name": "django",
+        "specifier": ">=2.2.16"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.1"
+      },
+      {
+        "name": "inflection",
+        "specifier": ">=0.3.1"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=21.0"
+      },
+      {
+        "name": "pytz",
+        "specifier": ">=2021.1"
+      },
+      {
+        "name": "uritemplate",
+        "specifier": ">=3.0.0"
+      }
+    ]
+  },
+  "django-filter": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "django",
+        "specifier": ">=3.2"
+      }
+    ]
+  },
+  "langchain": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "langchain-core",
+        "specifier": "<1.0.0,>=0.3.51"
+      },
+      {
+        "name": "langchain-text-splitters",
+        "specifier": "<1.0.0,>=0.3.8"
+      },
+      {
+        "name": "langsmith",
+        "specifier": "<0.4,>=0.1.17"
+      },
+      {
+        "name": "pydantic",
+        "specifier": "<3.0.0,>=2.7.4"
+      },
+      {
+        "name": "sqlalchemy",
+        "specifier": "<3,>=1.4"
+      },
+      {
+        "name": "requests",
+        "specifier": "<3,>=2"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.3"
+      },
+      {
+        "name": "async-timeout",
+        "specifier": "<5.0.0,>=4.0.0"
+      }
+    ]
+  },
+  "langchain-openai": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "langchain-core",
+        "specifier": "<1.0.0,>=0.3.49"
+      },
+      {
+        "name": "openai",
+        "specifier": "<2.0.0,>=1.68.2"
+      },
+      {
+        "name": "tiktoken",
+        "specifier": "<1,>=0.7"
+      }
+    ]
+  },
+  "langchain-anthropic": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "anthropic",
+        "specifier": "<1,>=0.49.0"
+      },
+      {
+        "name": "langchain-core",
+        "specifier": "<1.0.0,>=0.3.53"
+      },
+      {
+        "name": "pydantic",
+        "specifier": "<3.0.0,>=2.7.4"
+      }
+    ]
+  },
+  "langchain-community": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "langchain-core",
+        "specifier": "<1.0.0,>=0.3.51"
+      },
+      {
+        "name": "langchain",
+        "specifier": "<1.0.0,>=0.3.23"
+      },
+      {
+        "name": "sqlalchemy",
+        "specifier": "<3,>=1.4"
+      },
+      {
+        "name": "requests",
+        "specifier": "<3,>=2"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ">=5.3"
+      },
+      {
+        "name": "aiohttp",
+        "specifier": "<4.0.0,>=3.8.3"
+      },
+      {
+        "name": "tenacity",
+        "specifier": "!=8.4.0,<10,>=8.1.0"
+      },
+      {
+        "name": "dataclasses-json",
+        "specifier": "<0.7,>=0.5.7"
+      },
+      {
+        "name": "pydantic-settings",
+        "specifier": "<3.0.0,>=2.4.0"
+      },
+      {
+        "name": "langsmith",
+        "specifier": "<0.4,>=0.1.125"
+      },
+      {
+        "name": "httpx-sse",
+        "specifier": "<1.0.0,>=0.4.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": "<3,>=1.26.2"
+      }
+    ]
+  },
+  "langchain-deepseek": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "langchain-core",
+        "specifier": "<1.0.0,>=0.3.47"
+      },
+      {
+        "name": "langchain-openai",
+        "specifier": "<1.0.0,>=0.3.9"
+      }
+    ]
+  },
+  "langchain-google-genai": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "filetype",
+        "specifier": "<2.0.0,>=1.2.0"
+      },
+      {
+        "name": "google-ai-generativelanguage",
+        "specifier": "<0.7.0,>=0.6.16"
+      },
+      {
+        "name": "langchain-core",
+        "specifier": "<0.4.0,>=0.3.49"
+      },
+      {
+        "name": "pydantic",
+        "specifier": "<3,>=2"
+      }
+    ]
+  },
+  "langchain-mcp-adapters": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "langchain-core",
+        "specifier": "<0.4,>=0.3.36"
+      },
+      {
+        "name": "mcp",
+        "specifier": ">=1.7"
+      }
+    ]
+  },
+  "langchain-huggingface": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "huggingface-hub",
+        "specifier": ">=0.23.0"
+      },
+      {
+        "name": "langchain-core",
+        "specifier": "<0.4.0,>=0.3.15"
+      },
+      {
+        "name": "sentence-transformers",
+        "specifier": ">=2.6.0"
+      },
+      {
+        "name": "tokenizers",
+        "specifier": ">=0.19.1"
+      },
+      {
+        "name": "transformers",
+        "specifier": ">=4.39.0"
+      }
+    ]
+  },
+  "langchain-ollama": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "ollama",
+        "specifier": "<1,>=0.4.4"
+      },
+      {
+        "name": "langchain-core",
+        "specifier": "<1.0.0,>=0.3.52"
+      }
+    ]
+  },
+  "langgraph": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "langchain-core",
+        "specifier": "<0.4,>=0.1"
+      },
+      {
+        "name": "langgraph-checkpoint",
+        "specifier": "<3.0.0,>=2.0.10"
+      },
+      {
+        "name": "langgraph-prebuilt",
+        "specifier": "<0.2,>=0.1.1"
+      },
+      {
+        "name": "langgraph-sdk",
+        "specifier": "<0.2.0,>=0.1.42"
+      },
+      {
+        "name": "xxhash",
+        "specifier": "<4.0.0,>=3.5.0"
+      }
+    ]
+  },
+  "mcp": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "anyio",
+        "specifier": ">=4.5"
+      },
+      {
+        "name": "httpx-sse",
+        "specifier": ">=0.4"
+      },
+      {
+        "name": "httpx",
+        "specifier": ">=0.27"
+      },
+      {
+        "name": "pydantic-settings",
+        "specifier": ">=2.5.2"
+      },
+      {
+        "name": "pydantic",
+        "specifier": "<3.0.0,>=2.7.2"
+      },
+      {
+        "name": "python-multipart",
+        "specifier": ">=0.0.9"
+      },
+      {
+        "name": "sse-starlette",
+        "specifier": ">=1.6.1"
+      },
+      {
+        "name": "starlette",
+        "specifier": ">=0.27"
+      },
+      {
+        "name": "uvicorn",
+        "specifier": ">=0.23.1"
+      }
+    ]
+  },
+  "psycopg2-binary": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "jieba": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "diskcache": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pillow": {
+    "version": "10.4.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "==10.4.0",
+    "requires_dist": []
+  },
+  "filetype": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "torch": {
+    "version": "2.6.0+cpu",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "==2.6.0",
+    "requires_dist": [
+      {
+        "name": "filelock",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.10.0"
+      },
+      {
+        "name": "networkx",
+        "specifier": ""
+      },
+      {
+        "name": "jinja2",
+        "specifier": ""
+      },
+      {
+        "name": "fsspec",
+        "specifier": ""
+      },
+      {
+        "name": "sympy",
+        "specifier": "==1.13.1"
+      }
+    ]
+  },
+  "sentence-transformers": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "transformers",
+        "specifier": "<5.0.0,>=4.41.0"
+      },
+      {
+        "name": "tqdm",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": ">=1.11.0"
+      },
+      {
+        "name": "scikit-learn",
+        "specifier": ""
+      },
+      {
+        "name": "scipy",
+        "specifier": ""
+      },
+      {
+        "name": "huggingface-hub",
+        "specifier": ">=0.20.0"
+      },
+      {
+        "name": "pillow",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.5.0"
+      }
+    ]
+  },
+  "openai": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "anyio",
+        "specifier": "<5,>=3.5.0"
+      },
+      {
+        "name": "distro",
+        "specifier": "<2,>=1.7.0"
+      },
+      {
+        "name": "httpx",
+        "specifier": "<1,>=0.23.0"
+      },
+      {
+        "name": "jiter",
+        "specifier": "<1,>=0.4.0"
+      },
+      {
+        "name": "pydantic",
+        "specifier": "<3,>=1.9.0"
+      },
+      {
+        "name": "sniffio",
+        "specifier": ""
+      },
+      {
+        "name": "tqdm",
+        "specifier": ">4"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": "<5,>=4.11"
+      }
+    ]
+  },
+  "tiktoken": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "regex",
+        "specifier": ">=2022.1.18"
+      },
+      {
+        "name": "requests",
+        "specifier": ">=2.26.0"
+      }
+    ]
+  },
+  "qianfan": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "requests",
+        "specifier": ">=2.24"
+      },
+      {
+        "name": "aiohttp",
+        "specifier": ">=3.7.0"
+      },
+      {
+        "name": "aiolimiter",
+        "specifier": ">=1.1.0"
+      },
+      {
+        "name": "bce-python-sdk",
+        "specifier": ">=0.8.79"
+      },
+      {
+        "name": "pydantic",
+        "specifier": ""
+      },
+      {
+        "name": "python-dotenv",
+        "specifier": ">=1.0"
+      },
+      {
+        "name": "tenacity",
+        "specifier": "<9.0.0,>=8.2.3"
+      },
+      {
+        "name": "multiprocess",
+        "specifier": ""
+      },
+      {
+        "name": "rich",
+        "specifier": ">=13.0.0"
+      },
+      {
+        "name": "typer",
+        "specifier": ">=0.9.0"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": "<7.0.0,>=6.0.1"
+      },
+      {
+        "name": "prompt-toolkit",
+        "specifier": ">=3.0.38"
+      },
+      {
+        "name": "diskcache",
+        "specifier": "<6.0.0,>=5.6.3"
+      }
+    ]
+  },
+  "pycryptodome": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "beautifulsoup4": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "soupsieve",
+        "specifier": ">1.2"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.0.0"
+      }
+    ]
+  },
+  "html2text": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "django-ipware": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "python-ipware",
+        "specifier": ">=2.0.3"
+      }
+    ]
+  },
+  "django-apscheduler": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "django",
+        "specifier": ">=3.2"
+      },
+      {
+        "name": "apscheduler",
+        "specifier": "<4.0,>=3.2"
+      }
+    ]
+  },
+  "pymupdf": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pymupdfb",
+        "specifier": "==1.24.9"
+      }
+    ]
+  },
+  "pypdf": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.0"
+      }
+    ]
+  },
+  "rapidocr-onnxruntime": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pyclipper",
+        "specifier": ">=1.2.0"
+      },
+      {
+        "name": "opencv-python",
+        "specifier": ">=4.5.1.48"
+      },
+      {
+        "name": "numpy",
+        "specifier": "<2.0.0,>=1.19.5"
+      },
+      {
+        "name": "six",
+        "specifier": ">=1.15.0"
+      },
+      {
+        "name": "shapely",
+        "specifier": "!=2.0.4,>=1.7.1"
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ""
+      },
+      {
+        "name": "pillow",
+        "specifier": ""
+      },
+      {
+        "name": "onnxruntime",
+        "specifier": ">=1.7.0"
+      }
+    ]
+  },
+  "python-docx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "lxml",
+        "specifier": ">=3.1.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=4.9.0"
+      }
+    ]
+  },
+  "xlwt": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "dashscope": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "aiohttp",
+        "specifier": ""
+      },
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "websocket-client",
+        "specifier": ""
+      }
+    ]
+  },
+  "zhipuai": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "cachetools",
+        "specifier": ">=4.2.2"
+      },
+      {
+        "name": "httpx",
+        "specifier": ">=0.23.0"
+      },
+      {
+        "name": "pydantic",
+        "specifier": "<3.0,>=1.9.0"
+      },
+      {
+        "name": "pydantic-core",
+        "specifier": ">=2.14.6"
+      },
+      {
+        "name": "pyjwt",
+        "specifier": "<2.9.0,>=2.8.0"
+      }
+    ]
+  },
+  "httpx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "anyio",
+        "specifier": ""
+      },
+      {
+        "name": "certifi",
+        "specifier": ""
+      },
+      {
+        "name": "httpcore",
+        "specifier": "==1.*"
+      },
+      {
+        "name": "idna",
+        "specifier": ""
+      },
+      {
+        "name": "sniffio",
+        "specifier": ""
+      }
+    ]
+  },
+  "httpx-sse": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "websockets": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "openpyxl": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "et-xmlfile",
+        "specifier": ""
+      }
+    ]
+  },
+  "xlrd": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "gunicorn": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "packaging",
+        "specifier": ""
+      }
+    ]
+  },
+  "python-daemon": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "docutils",
+        "specifier": ""
+      },
+      {
+        "name": "lockfile",
+        "specifier": ">=0.10"
+      },
+      {
+        "name": "setuptools",
+        "specifier": ">=62.4.0"
+      }
+    ]
+  },
+  "boto3": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "botocore",
+        "specifier": "<1.38.0,>=1.37.31"
+      },
+      {
+        "name": "jmespath",
+        "specifier": "<2.0.0,>=0.7.1"
+      },
+      {
+        "name": "s3transfer",
+        "specifier": "<0.12.0,>=0.11.0"
+      }
+    ]
+  },
+  "tencentcloud-sdk-python": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "requests",
+        "specifier": ">=2.16.0"
+      }
+    ]
+  },
+  "xinference-client": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "requests",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ""
+      },
+      {
+        "name": "pydantic",
+        "specifier": ""
+      }
+    ]
+  },
+  "psutil": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "celery": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "billiard",
+        "specifier": "<5.0,>=4.2.1"
+      },
+      {
+        "name": "kombu",
+        "specifier": "<5.6,>=5.5.2"
+      },
+      {
+        "name": "vine",
+        "specifier": "<6.0,>=5.1.0"
+      },
+      {
+        "name": "click",
+        "specifier": "<9.0,>=8.1.2"
+      },
+      {
+        "name": "click-didyoumean",
+        "specifier": ">=0.3.0"
+      },
+      {
+        "name": "click-repl",
+        "specifier": ">=0.2.0"
+      },
+      {
+        "name": "click-plugins",
+        "specifier": ">=1.1.1"
+      },
+      {
+        "name": "python-dateutil",
+        "specifier": ">=2.8.2"
+      }
+    ]
+  },
+  "django-celery-beat": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "celery",
+        "specifier": "<6.0,>=5.2.3"
+      },
+      {
+        "name": "django-timezone-field",
+        "specifier": ">=5.0"
+      },
+      {
+        "name": "tzdata",
+        "specifier": ""
+      },
+      {
+        "name": "python-crontab",
+        "specifier": ">=2.3.4"
+      },
+      {
+        "name": "cron-descriptor",
+        "specifier": ">=1.2.32"
+      },
+      {
+        "name": "django",
+        "specifier": "<5.2,>=2.2"
+      }
+    ]
+  },
+  "celery-once": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "anthropic": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "anyio",
+        "specifier": "<5,>=3.5.0"
+      },
+      {
+        "name": "distro",
+        "specifier": "<2,>=1.7.0"
+      },
+      {
+        "name": "httpx",
+        "specifier": "<1,>=0.23.0"
+      },
+      {
+        "name": "jiter",
+        "specifier": "<1,>=0.4.0"
+      },
+      {
+        "name": "pydantic",
+        "specifier": "<3,>=1.9.0"
+      },
+      {
+        "name": "sniffio",
+        "specifier": ""
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": "<5,>=4.10"
+      }
+    ]
+  },
+  "pylint": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "astroid",
+        "specifier": "<=3.4.0.dev0,>=3.3.8"
+      },
+      {
+        "name": "dill",
+        "specifier": ">=0.2"
+      },
+      {
+        "name": "isort",
+        "specifier": "!=5.13,<7,>=4.2.5"
+      },
+      {
+        "name": "mccabe",
+        "specifier": "<0.8,>=0.6"
+      },
+      {
+        "name": "platformdirs",
+        "specifier": ">=2.2"
+      },
+      {
+        "name": "tomli",
+        "specifier": ">=1.1"
+      },
+      {
+        "name": "tomlkit",
+        "specifier": ">=0.10.1"
+      }
+    ]
+  },
+  "pydub": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "cffi": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pycparser",
+        "specifier": ""
+      }
+    ]
+  },
+  "pysilk": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "django-db-connection-pool": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "django",
+        "specifier": ">=2.0"
+      },
+      {
+        "name": "sqlalchemy",
+        "specifier": ">=1.4.24"
+      },
+      {
+        "name": "sqlparams",
+        "specifier": ">=4.0.0"
+      }
+    ]
+  },
+  "opencv-python-headless": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.21.2"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.17.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.17.3"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.19.3"
+      }
+    ]
+  },
+  "pymysql": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "accelerate": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": "<3.0.0,>=1.17"
+      },
+      {
+        "name": "packaging",
+        "specifier": ">=20.0"
+      },
+      {
+        "name": "psutil",
+        "specifier": ""
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": ">=2.0.0"
+      },
+      {
+        "name": "huggingface-hub",
+        "specifier": ">=0.21.0"
+      },
+      {
+        "name": "safetensors",
+        "specifier": ">=0.4.3"
+      }
+    ]
+  },
+  "captcha": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "pillow",
+        "specifier": ""
+      }
+    ]
+  },
+  "filelock": {
+    "version": "3.29.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": ">=3.10.0",
+    "requires_dist": []
+  },
+  "typing-extensions": {
+    "version": "4.15.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": ">=4.10.0,>=4.5.0,<5,>=4.11,>=4.0.0,>=4.0,>=4.9.0,<5,>=4.10,>=4,<5.0.0,>=4.7.0,>=4.15.0,>=4.6.0,>=4.4,>=4.1.0,>=4.5,>=4.10.0,>=4.0",
+    "requires_dist": []
+  },
+  "networkx": {
+    "version": "3.6.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "jinja2": {
+    "version": "3.1.6",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "markupsafe",
+        "specifier": ">=2.0"
+      }
+    ]
+  },
+  "fsspec": {
+    "version": "2026.4.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": ">=2023.5.0",
+    "requires_dist": []
+  },
+  "sympy": {
+    "version": "1.13.1",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "==1.13.1",
+    "requires_dist": [
+      {
+        "name": "mpmath",
+        "specifier": "<1.4,>=1.1.0"
+      }
+    ]
+  },
+  "markupsafe": {
+    "version": "3.0.3",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": ">=2.0",
+    "requires_dist": []
+  },
+  "mpmath": {
+    "version": "1.3.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cpu",
+    "specifier": "<1.4,>=1.1.0",
+    "requires_dist": []
+  }
+}

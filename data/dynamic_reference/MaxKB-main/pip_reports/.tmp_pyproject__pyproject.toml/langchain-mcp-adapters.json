@@ -1,0 +1,48 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/59/0d/c896c194222965494a7be56513d1da452ece4111e19bb97de1b3677e289b/langchain_mcp_adapters-0.0.11-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=e10a5ee6b5823fe51d93439011bfc92d9d929ff16b8e982ba5bf51d0bcf650af",
+          "hashes": {
+            "sha256": "e10a5ee6b5823fe51d93439011bfc92d9d929ff16b8e982ba5bf51d0bcf650af"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "langchain-mcp-adapters",
+        "version": "0.0.11",
+        "summary": "Make Anthropic Model Context Protocol (MCP) tools compatible with LangChain and LangGraph agents.",
+        "description_content_type": "text/markdown",
+        "author_email": "Vadym Barda <19161700+vbarda@users.noreply.github.com>",
+        "license_expression": "MIT",
+        "requires_dist": [
+          "langchain-core<0.4,>=0.3.36",
+          "mcp>=1.7"
+        ],
+        "requires_python": ">=3.10",
+        "description": "# LangChain MCP Adapters\n\nThis library provides a lightweight wrapper that makes [Anthropic Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) tools compatible with [LangChain](https://github.com/langchain-ai/langchain) and [LangGraph](https://github.com/langchain-ai/langgraph).\n\n![MCP](static/img/mcp.png)\n\n## Features\n\n- 🛠️ Convert MCP tools into [LangChain tools](https://python.langchain.com/docs/concepts/tools/) that can be used with [LangGraph](https://github.com/langchain-ai/langgraph) agents\n- 📦 A client implementation that allows you to connect to multiple MCP servers and load tools from them\n\n## Installation\n\n```bash\npip install langchain-mcp-adapters\n```\n\n## Quickstart\n\nHere is a simple example of using the MCP tools with a LangGraph agent.\n\n```bash\npip install langchain-mcp-adapters langgraph langchain-openai\n\nexport OPENAI_API_KEY=<your_api_key>\n```\n\n### Server\n\nFirst, let's create an MCP server that can add and multiply numbers.\n\n```python\n# math_server.py\nfrom mcp.server.fastmcp import FastMCP\n\nmcp = FastMCP(\"Math\")\n\n@mcp.tool()\ndef add(a: int, b: int) -> int:\n    \"\"\"Add two numbers\"\"\"\n    return a + b\n\n@mcp.tool()\ndef multiply(a: int, b: int) -> int:\n    \"\"\"Multiply two numbers\"\"\"\n    return a * b\n\nif __name__ == \"__main__\":\n    mcp.run(transport=\"stdio\")\n```\n\n### Client\n\n```python\n# Create server parameters for stdio connection\nfrom mcp import ClientSession, StdioServerParameters\nfrom mcp.client.stdio import stdio_client\n\nfrom langchain_mcp_adapters.tools import load_mcp_tools\nfrom langgraph.prebuilt import create_react_agent\n\nfrom langchain_openai import ChatOpenAI\nmodel = ChatOpenAI(model=\"gpt-4o\")\n\nserver_params = StdioServerParameters(\n    command=\"python\",\n    # Make sure to update to the full absolute path to your math_server.py file\n    args=[\"/path/to/math_server.py\"],\n)\n\nasync with stdio_client(server_params) as (read, write):\n    async with ClientSession(read, write) as session:\n        # Initialize the connection\n        await session.initialize()\n\n        # Get tools\n        tools = await load_mcp_tools(session)\n\n        # Create and run the agent\n        agent = create_react_agent(model, tools)\n        agent_response = await agent.ainvoke({\"messages\": \"what's (3 + 5) x 12?\"})\n```\n\n## Multiple MCP Servers\n\nThe library also allows you to connect to multiple MCP servers and load tools from them:\n\n### Server\n\n```python\n# math_server.py\n...\n\n# weather_server.py\nfrom typing import List\nfrom mcp.server.fastmcp import FastMCP\n\nmcp = FastMCP(\"Weather\")\n\n@mcp.tool()\nasync def get_weather(location: str) -> str:\n    \"\"\"Get weather for location.\"\"\"\n    return \"It's always sunny in New York\"\n\nif __name__ == \"__main__\":\n    mcp.run(transport=\"sse\")\n```\n\n```bash\npython weather_server.py\n```\n\n### Client\n\n```python\nfrom langchain_mcp_adapters.client import MultiServerMCPClient\nfrom langgraph.prebuilt import create_react_agent\n\nfrom langchain_openai import ChatOpenAI\nmodel = ChatOpenAI(model=\"gpt-4o\")\n\nasync with MultiServerMCPClient(\n    {\n        \"math\": {\n            \"command\": \"python\",\n            # Make sure to update to the full absolute path to your math_server.py file\n            \"args\": [\"/path/to/math_server.py\"],\n            \"transport\": \"stdio\",\n        },\n        \"weather\": {\n            # make sure you start your weather server on port 8000\n            \"url\": \"http://localhost:8000/sse\",\n            \"transport\": \"sse\",\n        }\n    }\n) as client:\n    agent = create_react_agent(model, client.get_tools())\n    math_response = await agent.ainvoke({\"messages\": \"what's (3 + 5) x 12?\"})\n    weather_response = await agent.ainvoke({\"messages\": \"what is the weather in nyc?\"})\n```\n\n## Using with LangGraph StateGraph\n\n```python\nfrom langchain_mcp_adapters.client import MultiServerMCPClient\nfrom langgraph.graph import StateGraph, MessagesState, START\nfrom langgraph.prebuilt import ToolNode, tools_condition\n\nfrom langchain_openai import ChatOpenAI\nmodel = ChatOpenAI(model=\"gpt-4o\")\n\nasync with MultiServerMCPClient(\n    {\n        \"math\": {\n            \"command\": \"python\",\n            # Make sure to update to the full absolute path to your math_server.py file\n            \"args\": [\"./examples/math_server.py\"],\n            \"transport\": \"stdio\",\n        },\n        \"weather\": {\n            # make sure you start your weather server on port 8000\n            \"url\": \"http://localhost:8000/sse\",\n            \"transport\": \"sse\",\n        }\n    }\n) as client:\n    tools = client.get_tools()\n    def call_model(state: MessagesState):\n        response = model.bind_tools(tools).invoke(state[\"messages\"])\n        return {\"messages\": response}\n\n    builder = StateGraph(MessagesState)\n    builder.add_node(call_model)\n    builder.add_node(ToolNode(tools))\n    builder.add_edge(START, \"call_model\")\n    builder.add_conditional_edges(\n        \"call_model\",\n        tools_condition,\n    )\n    builder.add_edge(\"tools\", \"call_model\")\n    graph = builder.compile()\n    math_response = await graph.ainvoke({\"messages\": \"what's (3 + 5) x 12?\"})\n    weather_response = await graph.ainvoke({\"messages\": \"what is the weather in nyc?\"})\n```\n\n## Using with LangGraph API Server\n\n> [!TIP]\n> Check out [this guide](https://langchain-ai.github.io/langgraph/tutorials/langgraph-platform/local-server/) on getting started with LangGraph API server.\n\nIf you want to run a LangGraph agent that uses MCP tools in a LangGraph API server, you can use the following setup:\n\n```python\n# graph.py\nfrom contextlib import asynccontextmanager\nfrom langchain_mcp_adapters.client import MultiServerMCPClient\nfrom langgraph.prebuilt import create_react_agent\nfrom langchain_anthropic import ChatAnthropic\n\nmodel = ChatAnthropic(model=\"claude-3-5-sonnet-latest\")\n\n@asynccontextmanager\nasync def make_graph():\n    async with MultiServerMCPClient(\n        {\n            \"math\": {\n                \"command\": \"python\",\n                # Make sure to update to the full absolute path to your math_server.py file\n                \"args\": [\"/path/to/math_server.py\"],\n                \"transport\": \"stdio\",\n            },\n            \"weather\": {\n                # make sure you start your weather server on port 8000\n                \"url\": \"http://localhost:8000/sse\",\n                \"transport\": \"sse\",\n            }\n        }\n    ) as client:\n        agent = create_react_agent(model, client.get_tools())\n        yield agent\n```\n\nIn your [`langgraph.json`](https://langchain-ai.github.io/langgraph/cloud/reference/cli/#configuration-file) make sure to specify `make_graph` as your graph entrypoint:\n\n```json\n{\n  \"dependencies\": [\".\"],\n  \"graphs\": {\n    \"agent\": \"./graph.py:make_graph\"\n  }\n}\n```\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

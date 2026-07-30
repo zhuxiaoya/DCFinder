@@ -1,0 +1,71 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/9e/48/1ea60e74949eecb12cdd6ac43987f9fd331156388dcc2319b45e2ebb81bf/sphinx_copybutton-0.5.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=fb543fd386d917746c9a2c50360c7905b605726b9355cd26e9974857afeae06e",
+          "hashes": {
+            "sha256": "fb543fd386d917746c9a2c50360c7905b605726b9355cd26e9974857afeae06e"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "sphinx-copybutton",
+        "version": "0.5.2",
+        "summary": "Add a copy button to each of your code cells.",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/executablebooks/sphinx-copybutton",
+        "author": "Executable Book Project",
+        "license": "MIT License",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Framework :: Sphinx :: Extension",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3 :: Only"
+        ],
+        "requires_dist": [
+          "sphinx (>=1.8)",
+          "pre-commit (==2.12.1) ; extra == 'code_style'",
+          "sphinx ; extra == 'rtd'",
+          "ipython ; extra == 'rtd'",
+          "myst-nb ; extra == 'rtd'",
+          "sphinx-book-theme ; extra == 'rtd'",
+          "sphinx-examples ; extra == 'rtd'"
+        ],
+        "requires_python": ">=3.7",
+        "provides_extra": [
+          "code_style",
+          "rtd"
+        ],
+        "description": "# sphinx-copybutton\n\n[![PyPI](https://img.shields.io/pypi/v/sphinx-copybutton.svg)](https://pypi.org/project/sphinx_copybutton/) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sphinx-copybutton.svg)](https://anaconda.org/conda-forge/sphinx-copybutton) | [![Documentation](https://readthedocs.org/projects/sphinx-copybutton/badge/?version=latest)](https://sphinx-copybutton.readthedocs.io/en/latest/?badge=latest)\n\nA small sphinx extension to add a \"copy\" button to code blocks.\n\nSee [the sphinx-copybutton documentation](https://sphinx-copybutton.readthedocs.io/en/latest/) for more details!\n\n![Copy Button Demo](https://user-images.githubusercontent.com/1839645/150200219-73663c59-08fd-4185-b157-62f3769c02ac.gif)\n\n## Installation\n\nYou can install `sphinx-copybutton` with `pip`:\n\n```bash\npip install sphinx-copybutton\n```\n\nOr with `conda` via `conda-forge`:\n\n```bash\nconda install -c conda-forge sphinx-copybutton\n```\n\n\n## Usage\n\nIn your `conf.py` configuration file, add `sphinx_copybutton` to your extensions list.\nE.g.:\n\n```python\nextensions = [\n    ...\n    'sphinx_copybutton'\n    ...\n]\n```\n\nWhen you build your site, your code blocks should now have little copy buttons to their\nright. Clicking the button will copy the code inside!\n\n## Customization\n\nIf you'd like to customize the look of the copy buttons, you can over-write any of the\nCSS rules specified in the Sphinx-CopyButton CSS file ([link](sphinx_copybutton/_static/copybutton.css))\n\n## Development\n\nDevelopment should principally adhere to the [EBP Developer Conventions](https://github.com/executablebooks/.github/blob/master/CONTRIBUTING.md)\n\nSphinx-Copybutton is [hosted on the pypi repository](https://pypi.org/project/sphinx-copybutton/).\nAfter a release - following the [EBP release instructions](https://github.com/executablebooks/.github/blob/master/CONTRIBUTING.md#releases-and-change-logs) - confirm that the new version of Sphinx-Copybutton [is posted to pypi](https://pypi.org/project/sphinx-copybutton/).\n\n## Acknowledgements\n\nMany thanks to the excellent [clipboard.js library](https://clipboardjs.com/) for the lightweight javascript code that powers the copy button!\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/ca/33/7b8e6edf49ae7f8f2bb3bf994d021005e1d8142bdee23b7d9fff9fd86e91/anyscale-0.26.105-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=5e6258599be70051deb8156e5d3f748f090e2b830bc2e6cf49dfbec5b4ee04e9",
+          "hashes": {
+            "sha256": "5e6258599be70051deb8156e5d3f748f090e2b830bc2e6cf49dfbec5b4ee04e9"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "anyscale",
+        "version": "0.26.105",
+        "dynamic": [
+          "author",
+          "description",
+          "description-content-type",
+          "license",
+          "license-file",
+          "provides-extra",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "Command Line Interface for Anyscale",
+        "description_content_type": "text/markdown",
+        "author": "Anyscale Inc.",
+        "license": "AS License",
+        "license_file": [
+          "LICENSE",
+          "NOTICE"
+        ],
+        "requires_dist": [
+          "boto3>=1.26.76",
+          "botocore>=1.19.52",
+          "aiohttp>=3.7.4.post0",
+          "certifi>=2024.8.30",
+          "Click>=7.0",
+          "colorama",
+          "google-auth",
+          "jsonpatch",
+          "jsonschema",
+          "kubernetes",
+          "oauth2client",
+          "packaging",
+          "pathspec>=0.8.1",
+          "python-dateutil",
+          "requests",
+          "rich",
+          "six>=1.10",
+          "tabulate",
+          "urllib3>=1.26.17",
+          "wrapt",
+          "pyyaml",
+          "smart_open",
+          "tqdm",
+          "tzlocal",
+          "humanize",
+          "typing_extensions",
+          "termcolor>=1.1.0",
+          "colorama>=0.3.9",
+          "websockets; python_version > \"3.8\"",
+          "websockets==13.1.0; python_version <= \"3.8\"",
+          "google-api-python-client; extra == \"gcp\"",
+          "google-cloud-secret-manager; extra == \"gcp\"",
+          "google-cloud-compute; extra == \"gcp\"",
+          "google-cloud-resource-manager; extra == \"gcp\"",
+          "google-cloud-filestore; extra == \"gcp\"",
+          "google-cloud-storage; extra == \"gcp\"",
+          "google-cloud-redis; extra == \"gcp\"",
+          "google-cloud-certificate-manager; extra == \"gcp\"",
+          "azure-identity; extra == \"azure\"",
+          "azure-mgmt-resource>=25.0.0; extra == \"azure\"",
+          "azure-mgmt-resource-deployments; extra == \"azure\"",
+          "azure-storage-blob; extra == \"azure\"",
+          "google-api-python-client; extra == \"all\"",
+          "google-cloud-secret-manager; extra == \"all\"",
+          "google-cloud-compute; extra == \"all\"",
+          "google-cloud-resource-manager; extra == \"all\"",
+          "google-cloud-filestore; extra == \"all\"",
+          "google-cloud-storage; extra == \"all\"",
+          "google-cloud-redis; extra == \"all\"",
+          "google-cloud-certificate-manager; extra == \"all\"",
+          "azure-identity; extra == \"all\"",
+          "azure-mgmt-resource>=25.0.0; extra == \"all\"",
+          "azure-mgmt-resource-deployments; extra == \"all\"",
+          "azure-storage-blob; extra == \"all\"",
+          "ray>=2.0.0; extra == \"all\"",
+          "google-api-python-client; extra == \"backend\"",
+          "google-cloud-secret-manager; extra == \"backend\"",
+          "google-cloud-compute; extra == \"backend\"",
+          "google-cloud-resource-manager; extra == \"backend\"",
+          "google-cloud-filestore; extra == \"backend\"",
+          "google-cloud-storage; extra == \"backend\"",
+          "google-cloud-redis; extra == \"backend\"",
+          "google-cloud-certificate-manager; extra == \"backend\"",
+          "terminado; extra == \"backend\"",
+          "tornado; extra == \"backend\""
+        ],
+        "requires_python": ">=3.9,<3.15",
+        "provides_extra": [
+          "gcp",
+          "azure",
+          "all",
+          "backend"
+        ],
+        "description": "# Anyscale\n\nThis package contains the command line interface and the sdk for the Anyscale platform.\n\nView Anyscale docs [here](https://docs.anyscale.com)\nView CLI docs [here](https://docs.anyscale.com/reference#cli)\nView SDK docs [here](https://docs.anyscale.com/reference#sdk)\n\nAfter making any changes to the CLI, be sure to run `pip install -U -e .` from within the `frontend/cli` directory to update your environment with the latest modifications.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/80/87/b9fd69c92c6102a066e1b86a35243f53e70bd4c709f2a26d9f4fee4f4dc0/typer-0.26.8-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=3512ca79ac5c11113414b36e80281b872884477722440691c89d1112e321a49c",
+          "hashes": {
+            "sha256": "3512ca79ac5c11113414b36e80281b872884477722440691c89d1112e321a49c"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "typer",
+        "version": "0.26.8",
+        "summary": "Typer, build great CLIs. Easy to code. Based on Python type hints.",
+        "description_content_type": "text/markdown",
+        "author_email": "=?utf-8?q?Sebasti=C3=A1n_Ram=C3=ADrez?= <tiangolo@gmail.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Intended Audience :: Information Technology",
+          "Intended Audience :: System Administrators",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python",
+          "Topic :: Software Development :: Libraries :: Application Frameworks",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Software Development :: Libraries",
+          "Topic :: Software Development",
+          "Typing :: Typed",
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_dist": [
+          "shellingham>=1.3.0",
+          "rich>=13.8.0",
+          "annotated-doc>=0.0.2",
+          "colorama; platform_system == \"Windows\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://github.com/fastapi/typer",
+          "Documentation, https://typer.tiangolo.com",
+          "Repository, https://github.com/fastapi/typer",
+          "Issues, https://github.com/fastapi/typer/issues",
+          "Changelog, https://typer.tiangolo.com/release-notes/"
+        ],
+        "description": "<p align=\"center\">\n  <a href=\"https://typer.tiangolo.com\"><img src=\"https://typer.tiangolo.com/img/logo-margin/logo-margin-vector.svg#only-light\" alt=\"Typer\"></a>\n\n</p>\n<p align=\"center\">\n    <em>Typer, build great CLIs. Easy to code. Based on Python type hints.</em>\n</p>\n<p align=\"center\">\n<a href=\"https://github.com/fastapi/typer/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster\">\n    <img src=\"https://github.com/fastapi/typer/actions/workflows/test.yml/badge.svg?event=push&branch=master\" alt=\"Test\">\n</a>\n<a href=\"https://coverage-badge.samuelcolvin.workers.dev/redirect/fastapi/typer\">\n    <img src=\"https://coverage-badge.samuelcolvin.workers.dev/fastapi/typer.svg\" alt=\"Coverage\">\n<a href=\"https://pypi.org/project/typer\">\n    <img src=\"https://img.shields.io/pypi/v/typer?color=%2334D058&label=pypi%20package\" alt=\"Package version\">\n</a>\n</p>\n\n---\n\n**Documentation**: [https://typer.tiangolo.com](https://typer.tiangolo.com)\n\n**Source Code**: [https://github.com/fastapi/typer](https://github.com/fastapi/typer)\n\n---\n\nTyper is a library for building <abbr title=\"command line interface, programs executed from a terminal\">CLI</abbr> applications that users will **love using** and developers will **love creating**. Based on Python type hints.\n\nIt's also a command line tool to run scripts, automatically converting them to CLI applications.\n\nThe key features are:\n\n* **Intuitive to write**: Great editor support. <abbr title=\"also known as auto-complete, autocompletion, IntelliSense\">Completion</abbr> everywhere. Less time debugging. Designed to be easy to use and learn. Less time reading docs.\n* **Easy to use**: It's easy to use for the final users. Automatic help, and automatic completion for all shells.\n* **Short**: Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.\n* **Start simple**: The simplest example adds only 2 lines of code to your app: **1 import, 1 function call**.\n* **Grow large**: Grow in complexity as much as you want, create arbitrarily complex trees of commands and groups of subcommands, with options and arguments.\n* **Run scripts**: Typer includes a `typer` command/program that you can use to run scripts, automatically converting them to CLIs, even if they don't use Typer internally.\n\n## FastAPI of CLIs\n\n**Typer** is [FastAPI](https://fastapi.tiangolo.com)'s little sibling, it's the FastAPI of CLIs.\n\n## Installation\n\nCreate and activate a [virtual environment](https://typer.tiangolo.com/virtual-environments/) and then install **Typer**:\n\n<div class=\"termy\">\n\n```console\n$ pip install typer\n---> 100%\nSuccessfully installed typer rich shellingham\n```\n\n</div>\n\n## Example\n\n### The absolute minimum\n\n* Create a file `main.py` with:\n\n```Python\ndef main(name: str):\n    print(f\"Hello {name}\")\n```\n\nThis script doesn't even use Typer internally. But you can use the `typer` command to run it as a CLI application.\n\n### Run it\n\nRun your application with the `typer` command:\n\n<div class=\"termy\">\n\n```console\n// Run your application\n$ typer main.py run\n\n// You get a nice error, you are missing NAME\nUsage: typer [PATH_OR_MODULE] run [OPTIONS] NAME\nTry 'typer [PATH_OR_MODULE] run --help' for help.\n╭─ Error ───────────────────────────────────────────╮\n│ Missing argument 'NAME'.                          │\n╰───────────────────────────────────────────────────╯\n\n\n// You get a --help for free\n$ typer main.py run --help\n\nUsage: typer [PATH_OR_MODULE] run [OPTIONS] NAME\n\nRun the provided Typer app.\n\n╭─ Arguments ───────────────────────────────────────╮\n│ *    name      TEXT  [default: None] [required]   |\n╰───────────────────────────────────────────────────╯\n╭─ Options ─────────────────────────────────────────╮\n│ --help          Show this message and exit.       │\n╰───────────────────────────────────────────────────╯\n\n// Now pass the NAME argument\n$ typer main.py run Camila\n\nHello Camila\n\n// It works! 🎉\n```\n\n</div>\n\nThis is the simplest use case, not even using Typer internally, but it can already be quite useful for simple scripts.\n\n**Note**: auto-completion works when you create a Python package and run it with `--install-completion` or when you use the `typer` command.\n\n## Use Typer in your code\n\nNow let's start using Typer in your own code, update `main.py` with:\n\n```Python\nimport typer\n\n\ndef main(name: str):\n    print(f\"Hello {name}\")\n\n\nif __name__ == \"__main__\":\n    typer.run(main)\n```\n\nNow you could run it with Python directly:\n\n<div class=\"termy\">\n\n```console\n// Run your application\n$ python main.py\n\n// You get a nice error, you are missing NAME\nUsage: main.py [OPTIONS] NAME\nTry 'main.py --help' for help.\n╭─ Error ───────────────────────────────────────────╮\n│ Missing argument 'NAME'.                          │\n╰───────────────────────────────────────────────────╯\n\n\n// You get a --help for free\n$ python main.py --help\n\nUsage: main.py [OPTIONS] NAME\n\n╭─ Arguments ───────────────────────────────────────╮\n│ *    name      TEXT  [default: None] [required]   |\n╰───────────────────────────────────────────────────╯\n╭─ Options ─────────────────────────────────────────╮\n│ --help          Show this message and exit.       │\n╰───────────────────────────────────────────────────╯\n\n// Now pass the NAME argument\n$ python main.py Camila\n\nHello Camila\n\n// It works! 🎉\n```\n\n</div>\n\n**Note**: you can also call this same script with the `typer` command, but you don't need to.\n\n## Example upgrade\n\nThis was the simplest example possible.\n\nNow let's see one a bit more complex.\n\n### An example with two subcommands\n\nModify the file `main.py`.\n\nCreate a `typer.Typer()` app, and create two subcommands with their parameters.\n\n```Python hl_lines=\"3  6  11  20\"\nimport typer\n\napp = typer.Typer()\n\n\n@app.command()\ndef hello(name: str):\n    print(f\"Hello {name}\")\n\n\n@app.command()\ndef goodbye(name: str, formal: bool = False):\n    if formal:\n        print(f\"Goodbye Ms. {name}. Have a good day.\")\n    else:\n        print(f\"Bye {name}!\")\n\n\nif __name__ == \"__main__\":\n    app()\n```\n\nAnd that will:\n\n* Explicitly create a `typer.Typer` app.\n    * The previous `typer.run` actually creates one implicitly for you.\n* Add two subcommands with `@app.command()`.\n* Execute the `app()` itself, as if it was a function (instead of `typer.run`).\n\n### Run the upgraded example\n\nCheck the new help:\n\n<div class=\"termy\">\n\n```console\n$ python main.py --help\n\n Usage: main.py [OPTIONS] COMMAND [ARGS]...\n\n╭─ Options ─────────────────────────────────────────╮\n│ --install-completion          Install completion  │\n│                               for the current     │\n│                               shell.              │\n│ --show-completion             Show completion for │\n│                               the current shell,  │\n│                               to copy it or       │\n│                               customize the       │\n│                               installation.       │\n│ --help                        Show this message   │\n│                               and exit.           │\n╰───────────────────────────────────────────────────╯\n╭─ Commands ────────────────────────────────────────╮\n│ goodbye                                           │\n│ hello                                             │\n╰───────────────────────────────────────────────────╯\n\n// When you create a package you get ✨ auto-completion ✨ for free, installed with --install-completion\n\n// You have 2 subcommands (the 2 functions): goodbye and hello\n```\n\n</div>\n\nNow check the help for the `hello` command:\n\n<div class=\"termy\">\n\n```console\n$ python main.py hello --help\n\n Usage: main.py hello [OPTIONS] NAME\n\n╭─ Arguments ───────────────────────────────────────╮\n│ *    name      TEXT  [default: None] [required]   │\n╰───────────────────────────────────────────────────╯\n╭─ Options ─────────────────────────────────────────╮\n│ --help          Show this message and exit.       │\n╰───────────────────────────────────────────────────╯\n```\n\n</div>\n\nAnd now check the help for the `goodbye` command:\n\n<div class=\"termy\">\n\n```console\n$ python main.py goodbye --help\n\n Usage: main.py goodbye [OPTIONS] NAME\n\n╭─ Arguments ───────────────────────────────────────╮\n│ *    name      TEXT  [default: None] [required]   │\n╰───────────────────────────────────────────────────╯\n╭─ Options ─────────────────────────────────────────╮\n│ --formal    --no-formal      [default: no-formal] │\n│ --help                       Show this message    │\n│                              and exit.            │\n╰───────────────────────────────────────────────────╯\n\n// Automatic --formal and --no-formal for the bool option 🎉\n```\n\n</div>\n\nNow you can try out the new command line application:\n\n<div class=\"termy\">\n\n```console\n// Use it with the hello command\n\n$ python main.py hello Camila\n\nHello Camila\n\n// And with the goodbye command\n\n$ python main.py goodbye Camila\n\nBye Camila!\n\n// And with --formal\n\n$ python main.py goodbye --formal Camila\n\nGoodbye Ms. Camila. Have a good day.\n```\n\n</div>\n\n**Note**: If your app only has one command, by default the command name is **omitted** in usage: `python main.py Camila`. However, when there are multiple commands, you must **explicitly include the command name**: `python main.py hello Camila`. See [One or Multiple Commands](https://typer.tiangolo.com/tutorial/commands/one-or-multiple/) for more details.\n\n### Recap\n\nIn summary, you declare **once** the types of parameters (*CLI arguments* and *CLI options*) as function parameters.\n\nYou do that with standard modern Python types.\n\nYou don't have to learn a new syntax, the methods or classes of a specific library, etc.\n\nJust standard **Python**.\n\nFor example, for an `int`:\n\n```Python\ntotal: int\n```\n\nor for a `bool` flag:\n\n```Python\nforce: bool\n```\n\nAnd similarly for **files**, **paths**, **enums** (choices), etc. And there are tools to create **groups of subcommands**, add metadata, extra **validation**, etc.\n\n**You get**: great editor support, including **completion** and **type checks** everywhere.\n\n**Your users get**: automatic **`--help`**, **auto-completion** in their terminal (Bash, Zsh, Fish, PowerShell) when they install your package or when using the `typer` command.\n\nFor a more complete example including more features, see the <a href=\"https://typer.tiangolo.com/tutorial/\">Tutorial - User Guide</a>.\n\n## Dependencies\n\n**Typer** requires only a few dependencies (most are tiny):\n\n* [`rich`](https://rich.readthedocs.io/en/stable/index.html): to show nicely formatted errors automatically.\n* [`shellingham`](https://github.com/sarugaku/shellingham): to automatically detect the current shell when installing completion.\n* [`annotated-doc`](https://github.com/fastapi/annotated-doc): to generate documentation from Python type annotations.\n* [`colorama`](https://github.com/tartley/colorama) (only on Windows): for producing colored terminal text on Windows.\n\n### Click code\n\nTyper used to depend on [Click](https://click.palletsprojects.com/) as well, a popular tool for building CLIs in Python.\n\nSince version 0.26.0, Typer has vendored Click (included Click's source code internally, instead of installing it as a third party package) and has unified the code interactions between Typer and the embedded Click source code for easier maintainability in the future.\n\nNote that some Click functionality will not be available anymore in the future, as we continue to improve and extend Typer's codebase.\n\n### `typer-slim`\n\nThere used to be a slimmed-down version of Typer called `typer-slim`, which didn't include the dependencies `rich` and `shellingham`, nor the `typer` command.\n\nHowever, since version 0.22.0, we have stopped supporting this, and `typer-slim` now simply installs (all of) Typer.\n\nIf you want to disable Rich globally, you can set an environmental variable `TYPER_USE_RICH` to `False` or `0`.\n\n## License\n\nThis project is licensed under the terms of the MIT license.\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

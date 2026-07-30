@@ -1,0 +1,1406 @@
+[
+  {
+    "parent": "gradio-imageslider",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "gradio"
+  },
+  {
+    "parent": "gradio-imageslider",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pillow"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "aiofiles"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "altair"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fastapi"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "ffmpy"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "gradio-client"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "httpx"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "huggingface-hub"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "importlib-resources"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jinja2"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markupsafe"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "matplotlib"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "orjson"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pandas"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pillow"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydantic"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pydub"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "python-multipart"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "semantic-version"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomlkit"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typer"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "gradio",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "uvicorn"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.0.0+cu117",
+    "child": "filelock"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.0.0+cu117",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.0.0+cu117",
+    "child": "sympy"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.0.0+cu117",
+    "child": "networkx"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.0.0+cu117",
+    "child": "jinja2"
+  },
+  {
+    "parent": "torch",
+    "parent_source": "private",
+    "parent_version": "2.0.0+cu117",
+    "child": "triton"
+  },
+  {
+    "parent": "torchvision",
+    "parent_source": "private",
+    "parent_version": "0.15.0+cu117",
+    "child": "numpy"
+  },
+  {
+    "parent": "torchvision",
+    "parent_source": "private",
+    "parent_version": "0.15.0+cu117",
+    "child": "requests"
+  },
+  {
+    "parent": "torchvision",
+    "parent_source": "private",
+    "parent_version": "0.15.0+cu117",
+    "child": "torch"
+  },
+  {
+    "parent": "torchvision",
+    "parent_source": "private",
+    "parent_version": "0.15.0+cu117",
+    "child": "pillow"
+  },
+  {
+    "parent": "opencv-python",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "click"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "filelock"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fsspec"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "hf-xet"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "httpx"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tqdm"
+  },
+  {
+    "parent": "huggingface-hub",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "click"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "platformdirs"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pathspec"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mypy-extensions"
+  },
+  {
+    "parent": "black",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomli"
+  },
+  {
+    "parent": "flake8",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mccabe"
+  },
+  {
+    "parent": "flake8",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pycodestyle"
+  },
+  {
+    "parent": "flake8",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyflakes"
+  },
+  {
+    "parent": "pylint",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "dill"
+  },
+  {
+    "parent": "pylint",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "platformdirs"
+  },
+  {
+    "parent": "pylint",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "astroid"
+  },
+  {
+    "parent": "pylint",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "isort"
+  },
+  {
+    "parent": "pylint",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "mccabe"
+  },
+  {
+    "parent": "pylint",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomlkit"
+  },
+  {
+    "parent": "pylint",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tomli"
+  },
+  {
+    "parent": "omegaconf",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "antlr4-python3-runtime"
+  },
+  {
+    "parent": "omegaconf",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "iopath",
+    "parent_source": "private",
+    "parent_version": "0.1.9",
+    "child": "tqdm"
+  },
+  {
+    "parent": "iopath",
+    "parent_source": "private",
+    "parent_version": "0.1.9",
+    "child": "portalocker"
+  },
+  {
+    "parent": "submitit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cloudpickle"
+  },
+  {
+    "parent": "submitit",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "cuda-python"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "cudf-cu11"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "cupy-cuda11x"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "cuvs-cu11"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "dask-cuda"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "dask-cudf-cu11"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "joblib"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "libcuml-cu11"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "numba"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "numpy"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvidia-cublas-cu11"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvidia-cufft-cu11"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvidia-curand-cu11"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvidia-cusolver-cu11"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvidia-cusparse-cu11"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "packaging"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "pylibraft-cu11"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "raft-dask-cu11"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "rapids-dask-dependency"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "rmm-cu11"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "scikit-learn"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "scipy"
+  },
+  {
+    "parent": "cuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "treelite"
+  },
+  {
+    "parent": "jinja2",
+    "parent_source": "private",
+    "parent_version": "3.1.6",
+    "child": "markupsafe"
+  },
+  {
+    "parent": "pandas",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "pandas",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "python-dateutil"
+  },
+  {
+    "parent": "pandas",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pytz"
+  },
+  {
+    "parent": "pandas",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tzdata"
+  },
+  {
+    "parent": "sympy",
+    "parent_source": "private",
+    "parent_version": "1.14.0",
+    "child": "mpmath"
+  },
+  {
+    "parent": "triton",
+    "parent_source": "private",
+    "parent_version": "2.0.0",
+    "child": "cmake"
+  },
+  {
+    "parent": "triton",
+    "parent_source": "private",
+    "parent_version": "2.0.0",
+    "child": "filelock"
+  },
+  {
+    "parent": "triton",
+    "parent_source": "private",
+    "parent_version": "2.0.0",
+    "child": "torch"
+  },
+  {
+    "parent": "triton",
+    "parent_source": "private",
+    "parent_version": "2.0.0",
+    "child": "lit"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "private",
+    "parent_version": "2.28.1",
+    "child": "charset-normalizer"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "private",
+    "parent_version": "2.28.1",
+    "child": "idna"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "private",
+    "parent_version": "2.28.1",
+    "child": "urllib3"
+  },
+  {
+    "parent": "requests",
+    "parent_source": "private",
+    "parent_version": "2.28.1",
+    "child": "certifi"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "cachetools"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "cubinlinker-cu11"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "cuda-python"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "cupy-cuda11x"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "fsspec"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "libcudf-cu11"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "numba-cuda"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "numba"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "numpy"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvtx"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "packaging"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "pandas"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "ptxcompiler-cu11"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "pyarrow"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "pylibcudf-cu11"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "rich"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "rmm-cu11"
+  },
+  {
+    "parent": "cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "cupy-cuda11x",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "cupy-cuda11x",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fastrlock"
+  },
+  {
+    "parent": "cuvs-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.1",
+    "child": "cuda-python"
+  },
+  {
+    "parent": "cuvs-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.1",
+    "child": "libcuvs-cu11"
+  },
+  {
+    "parent": "cuvs-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.1",
+    "child": "numpy"
+  },
+  {
+    "parent": "cuvs-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.1",
+    "child": "pylibraft-cu11"
+  },
+  {
+    "parent": "dask-cuda",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "click"
+  },
+  {
+    "parent": "dask-cuda",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "numba"
+  },
+  {
+    "parent": "dask-cuda",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "numpy"
+  },
+  {
+    "parent": "dask-cuda",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "pandas"
+  },
+  {
+    "parent": "dask-cuda",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "pynvml"
+  },
+  {
+    "parent": "dask-cuda",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "rapids-dask-dependency"
+  },
+  {
+    "parent": "dask-cuda",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "zict"
+  },
+  {
+    "parent": "dask-cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "cudf-cu11"
+  },
+  {
+    "parent": "dask-cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "cupy-cuda11x"
+  },
+  {
+    "parent": "dask-cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "fsspec"
+  },
+  {
+    "parent": "dask-cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "numpy"
+  },
+  {
+    "parent": "dask-cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "pandas"
+  },
+  {
+    "parent": "dask-cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "pynvml"
+  },
+  {
+    "parent": "dask-cudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "rapids-dask-dependency"
+  },
+  {
+    "parent": "libcuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "libcuvs-cu11"
+  },
+  {
+    "parent": "libcuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "libraft-cu11"
+  },
+  {
+    "parent": "libcuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvidia-cublas-cu11"
+  },
+  {
+    "parent": "libcuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvidia-cufft-cu11"
+  },
+  {
+    "parent": "libcuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvidia-curand-cu11"
+  },
+  {
+    "parent": "libcuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvidia-cusolver-cu11"
+  },
+  {
+    "parent": "libcuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvidia-cusparse-cu11"
+  },
+  {
+    "parent": "libcuml-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "rapids-logger"
+  },
+  {
+    "parent": "numba",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "llvmlite"
+  },
+  {
+    "parent": "numba",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "nvidia-cusolver-cu11",
+    "parent_source": "private",
+    "parent_version": "11.4.1.48",
+    "child": "nvidia-cublas-cu11"
+  },
+  {
+    "parent": "pylibraft-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "cuda-python"
+  },
+  {
+    "parent": "pylibraft-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "libraft-cu11"
+  },
+  {
+    "parent": "pylibraft-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "numpy"
+  },
+  {
+    "parent": "pylibraft-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "rmm-cu11"
+  },
+  {
+    "parent": "raft-dask-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "dask-cuda"
+  },
+  {
+    "parent": "raft-dask-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "distributed-ucxx-cu11"
+  },
+  {
+    "parent": "raft-dask-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "libraft-cu11"
+  },
+  {
+    "parent": "raft-dask-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "pylibraft-cu11"
+  },
+  {
+    "parent": "raft-dask-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "rapids-dask-dependency"
+  },
+  {
+    "parent": "raft-dask-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "ucx-py-cu11"
+  },
+  {
+    "parent": "rapids-dask-dependency",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "dask"
+  },
+  {
+    "parent": "rapids-dask-dependency",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "distributed"
+  },
+  {
+    "parent": "rmm-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "cuda-python"
+  },
+  {
+    "parent": "rmm-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "librmm-cu11"
+  },
+  {
+    "parent": "rmm-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "numpy"
+  },
+  {
+    "parent": "scikit-learn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "scikit-learn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "scipy"
+  },
+  {
+    "parent": "scikit-learn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "joblib"
+  },
+  {
+    "parent": "scikit-learn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "narwhals"
+  },
+  {
+    "parent": "scikit-learn",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "threadpoolctl"
+  },
+  {
+    "parent": "scipy",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "treelite",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numpy"
+  },
+  {
+    "parent": "treelite",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "treelite",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "scipy"
+  },
+  {
+    "parent": "rich",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "markdown-it-py"
+  },
+  {
+    "parent": "rich",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pygments"
+  },
+  {
+    "parent": "libcudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "libkvikio-cu11"
+  },
+  {
+    "parent": "libcudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "librmm-cu11"
+  },
+  {
+    "parent": "libcudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "rapids-logger"
+  },
+  {
+    "parent": "numba-cuda",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "numba"
+  },
+  {
+    "parent": "pylibcudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "cuda-python"
+  },
+  {
+    "parent": "pylibcudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "libcudf-cu11"
+  },
+  {
+    "parent": "pylibcudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvtx"
+  },
+  {
+    "parent": "pylibcudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "packaging"
+  },
+  {
+    "parent": "pylibcudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "pyarrow"
+  },
+  {
+    "parent": "pylibcudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "rmm-cu11"
+  },
+  {
+    "parent": "pylibcudf-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "typing-extensions"
+  },
+  {
+    "parent": "pynvml",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "nvidia-ml-py"
+  },
+  {
+    "parent": "libraft-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "librmm-cu11"
+  },
+  {
+    "parent": "libraft-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvidia-cublas-cu11"
+  },
+  {
+    "parent": "libraft-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvidia-curand-cu11"
+  },
+  {
+    "parent": "libraft-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvidia-cusolver-cu11"
+  },
+  {
+    "parent": "libraft-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "nvidia-cusparse-cu11"
+  },
+  {
+    "parent": "libraft-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "rapids-logger"
+  },
+  {
+    "parent": "distributed-ucxx-cu11",
+    "parent_source": "private",
+    "parent_version": "0.44.0",
+    "child": "numba"
+  },
+  {
+    "parent": "distributed-ucxx-cu11",
+    "parent_source": "private",
+    "parent_version": "0.44.0",
+    "child": "rapids-dask-dependency"
+  },
+  {
+    "parent": "distributed-ucxx-cu11",
+    "parent_source": "private",
+    "parent_version": "0.44.0",
+    "child": "ucxx-cu11"
+  },
+  {
+    "parent": "ucx-py-cu11",
+    "parent_source": "private",
+    "parent_version": "0.44.0",
+    "child": "libucx-cu11"
+  },
+  {
+    "parent": "ucx-py-cu11",
+    "parent_source": "private",
+    "parent_version": "0.44.0",
+    "child": "numpy"
+  },
+  {
+    "parent": "ucx-py-cu11",
+    "parent_source": "private",
+    "parent_version": "0.44.0",
+    "child": "pynvml"
+  },
+  {
+    "parent": "dask",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "click"
+  },
+  {
+    "parent": "dask",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cloudpickle"
+  },
+  {
+    "parent": "dask",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "fsspec"
+  },
+  {
+    "parent": "dask",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "dask",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "partd"
+  },
+  {
+    "parent": "dask",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "dask",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "toolz"
+  },
+  {
+    "parent": "dask",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "importlib-metadata"
+  },
+  {
+    "parent": "distributed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "click"
+  },
+  {
+    "parent": "distributed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "cloudpickle"
+  },
+  {
+    "parent": "distributed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "dask"
+  },
+  {
+    "parent": "distributed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "jinja2"
+  },
+  {
+    "parent": "distributed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "locket"
+  },
+  {
+    "parent": "distributed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "msgpack"
+  },
+  {
+    "parent": "distributed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "packaging"
+  },
+  {
+    "parent": "distributed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "psutil"
+  },
+  {
+    "parent": "distributed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "pyyaml"
+  },
+  {
+    "parent": "distributed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "sortedcontainers"
+  },
+  {
+    "parent": "distributed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tblib"
+  },
+  {
+    "parent": "distributed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "toolz"
+  },
+  {
+    "parent": "distributed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "tornado"
+  },
+  {
+    "parent": "distributed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "urllib3"
+  },
+  {
+    "parent": "distributed",
+    "parent_source": "public",
+    "parent_version": "",
+    "child": "zict"
+  },
+  {
+    "parent": "librmm-cu11",
+    "parent_source": "private",
+    "parent_version": "25.6.0",
+    "child": "rapids-logger"
+  },
+  {
+    "parent": "ucxx-cu11",
+    "parent_source": "private",
+    "parent_version": "0.44.0",
+    "child": "libucxx-cu11"
+  },
+  {
+    "parent": "ucxx-cu11",
+    "parent_source": "private",
+    "parent_version": "0.44.0",
+    "child": "numpy"
+  },
+  {
+    "parent": "ucxx-cu11",
+    "parent_source": "private",
+    "parent_version": "0.44.0",
+    "child": "pynvml"
+  },
+  {
+    "parent": "ucxx-cu11",
+    "parent_source": "private",
+    "parent_version": "0.44.0",
+    "child": "rmm-cu11"
+  },
+  {
+    "parent": "libucxx-cu11",
+    "parent_source": "private",
+    "parent_version": "0.44.0",
+    "child": "librmm-cu11"
+  },
+  {
+    "parent": "libucxx-cu11",
+    "parent_source": "private",
+    "parent_version": "0.44.0",
+    "child": "libucx-cu11"
+  }
+]

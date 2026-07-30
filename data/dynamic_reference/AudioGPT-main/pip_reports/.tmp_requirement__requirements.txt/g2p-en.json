@@ -1,0 +1,59 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/d7/d9/b77dc634a7a0c0c97716ba97dd0a28cbfa6267c96f359c4f27ed71cbd284/g2p_en-2.1.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=2a7aabf1fc7f270fcc3349881407988c9245173c2413debbe5432f4a4f31319f",
+          "hashes": {
+            "sha256": "2a7aabf1fc7f270fcc3349881407988c9245173c2413debbe5432f4a4f31319f"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "g2p-en",
+        "version": "2.1.0",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "A Simple Python Module for English Grapheme To Phoneme Conversion",
+        "keywords": [
+          "g2p",
+          "g2p_en",
+          "g2pE"
+        ],
+        "home_page": "https://github.com/Kyubyong/g2p",
+        "download_url": "https://github.com/Kyubyong/g2p/archive/1.0.0.tar.gz",
+        "author": "Kyubyong Park & Jongseok Kim",
+        "author_email": "kbpark.linguist@gmail.com",
+        "license": "Apache Software License",
+        "requires_dist": [
+          "numpy (>=1.13.1)",
+          "nltk (>=3.2.4)",
+          "inflect (>=0.3.1)",
+          "distance (>=0.1.3)"
+        ],
+        "description": "g2p\\_en: A Simple Python Module for English Grapheme To Phoneme Conversion\n==========================================================================\n\n[Update] * We removed TensorFlow from the dependencies. After all, it changes its APIs quite often, and we don't expect you to have a GPU. Instead, NumPy is used for inference.\n\nThis module is designed to convert English graphemes (spelling) to\nphonemes (pronunciation). It is considered essential in several tasks\nsuch as speech synthesis. Unlike many languages like Spanish or German\nwhere pronunciation of a word can be inferred from its spelling, English\nwords are often far from people's expectations. Therefore, it will be\nthe best idea to consult a dictionary if we want to know the\npronunciation of some word. However, there are at least two tentative\nissues in this approach. First, you can't disambiguate the pronunciation\nof homographs, words which have multiple pronunciations. (See ``a``\nbelow.) Second, you can't check if the word is not in the dictionary.\n(See ``b`` below.)\n\n-\n\n   \\a.  I refuse to collect the refuse around here. (rɪ\\|fju:z as verb vs. \\|refju:s as noun)\n\n-\n   \\b.  I am an activationist. (activationist: newly coined word which means ``n. A person who designs and implements programs of treatment or therapy that use recreation and activities to help people whose functional abilities are affected by illness or disability.`` from `WORD SPY <https://wordspy.com/index.php?word=activationist>`__\n\nFor the first homograph issue, fortunately many homographs can be\ndisambiguated using their part-of-speech, if not all. When it comes to\nthe words not in the dictionary, however, we should make our best guess\nusing our knowledge. In this project, we employ a deep learning seq2seq\nframework based on TensorFlow.\n\nAlgorithm\n---------\n\n1. Spells out arabic numbers and some currency symbols. (e.g. $200 ->\n   two hundred dollars) (This is borrowed from `Keith Ito's\n   code <https://github.com/keithito/tacotron/blob/master/text/numbers.py>`__)\n2. Attempts to retrieve the correct pronunciation for homographs based\n   on their POS)\n3. Looks up `The CMU Pronouncing\n   Dictionary <http://www.speech.cs.cmu.edu/cgi-bin/cmudict>`__ for\n   non-homographs.\n4. For OOVs, we predict their pronunciations using our neural net model.\n\nEnvironment\n-----------\n\n-  python 3.x\n\nDependencies\n------------\n\n-  numpy >= 1.13.1\n-  nltk >= 3.2.4\n-  python -m nltk.downloader \"averaged\\_perceptron\\_tagger\" \"cmudict\"\n-  inflect >= 0.3.1\n-  Distance >= 0.1.3\n\nInstallation\n------------\n\n::\n\n    pip install g2p_en\n\nOR\n\n::\n\n    python setup.py install\n\nnltk package will be automatically downloaded at your first run.\n\n\nUsage\n-----\n\n::\n\n    from g2p_en import G2p\n\n    texts = [\"I have $250 in my pocket.\", # number -> spell-out\n             \"popular pets, e.g. cats and dogs\", # e.g. -> for example\n             \"I refuse to collect the refuse around here.\", # homograph\n             \"I'm an activationist.\"] # newly coined word\n    g2p = G2p()\n    for text in texts:\n        out = g2p(text)\n        print(out)\n    >>> ['AY1', ' ', 'HH', 'AE1', 'V', ' ', 'T', 'UW1', ' ', 'HH', 'AH1', 'N', 'D', 'R', 'AH0', 'D', ' ', 'F', 'IH1', 'F', 'T', 'IY0', ' ', 'D', 'AA1', 'L', 'ER0', 'Z', ' ', 'IH0', 'N', ' ', 'M', 'AY1', ' ', 'P', 'AA1', 'K', 'AH0', 'T', ' ', '.']\n    >>> ['P', 'AA1', 'P', 'Y', 'AH0', 'L', 'ER0', ' ', 'P', 'EH1', 'T', 'S', ' ', ',', ' ', 'F', 'AO1', 'R', ' ', 'IH0', 'G', 'Z', 'AE1', 'M', 'P', 'AH0', 'L', ' ', 'K', 'AE1', 'T', 'S', ' ', 'AH0', 'N', 'D', ' ', 'D', 'AA1', 'G', 'Z']\n    >>> ['AY1', ' ', 'R', 'IH0', 'F', 'Y', 'UW1', 'Z', ' ', 'T', 'UW1', ' ', 'K', 'AH0', 'L', 'EH1', 'K', 'T', ' ', 'DH', 'AH0', ' ', 'R', 'EH1', 'F', 'Y', 'UW2', 'Z', ' ', 'ER0', 'AW1', 'N', 'D', ' ', 'HH', 'IY1', 'R', ' ', '.']\n    >>> ['AY1', ' ', 'AH0', 'M', ' ', 'AE1', 'N', ' ', 'AE2', 'K', 'T', 'IH0', 'V', 'EY1', 'SH', 'AH0', 'N', 'IH0', 'S', 'T', ' ', '.']\n\n\nMay, 2018.\n\nKyubyong Park & `Jongseok Kim <https://github.com/ozmig77>`__\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

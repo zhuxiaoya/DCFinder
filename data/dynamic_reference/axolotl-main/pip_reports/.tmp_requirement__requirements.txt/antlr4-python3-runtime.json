@@ -1,0 +1,48 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/89/03/a851e84fcbb85214dc637b6378121ef9a0dd61b4c65264675d8a5c9b1ae7/antlr4_python3_runtime-4.13.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=fe3835eb8d33daece0e799090eda89719dbccee7aa39ef94eed3818cafa5a7e8",
+          "hashes": {
+            "sha256": "fe3835eb8d33daece0e799090eda89719dbccee7aa39ef94eed3818cafa5a7e8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "antlr4-python3-runtime",
+        "version": "4.13.2",
+        "summary": "ANTLR 4.13.2 runtime for Python 3",
+        "author": "Terence Parr, Sam Harwell",
+        "author_email": "Eric Vergnaud <eric.vergnaud@wanadoo.fr>",
+        "license": "BSD",
+        "requires_dist": [
+          "typing ; python_version < \"3.5\""
+        ],
+        "project_url": [
+          "Homepage, http://www.antlr.org"
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

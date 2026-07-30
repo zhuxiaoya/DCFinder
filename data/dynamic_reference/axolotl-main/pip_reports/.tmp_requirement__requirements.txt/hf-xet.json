@@ -1,0 +1,53 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/83/9a/d40d2a57b132d609d8a4ccc29e59ed69749021610616749cabcda2532158/hf_xet-1.1.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=995eeffb119636ea617b96c7d7bf3c3f5ea8727fa57974574e25d700b8532d48",
+          "hashes": {
+            "sha256": "995eeffb119636ea617b96c7d7bf3c3f5ea8727fa57974574e25d700b8532d48"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "hf-xet",
+        "version": "1.1.0",
+        "description_content_type": "text/markdown; charset=UTF-8; variant=GFM",
+        "license": "Apache-2.0",
+        "classifier": [
+          "Programming Language :: Rust",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy"
+        ],
+        "requires_dist": [
+          "pytest ; extra == 'tests'"
+        ],
+        "requires_python": ">=3.8",
+        "provides_extra": [
+          "tests"
+        ],
+        "description": "# Development Notes\n\n* `pip install maturin`\n* from this directory: `maturin develop`\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

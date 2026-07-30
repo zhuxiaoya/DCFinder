@@ -1,0 +1,83 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/9d/bc/cc80c33abea42fc7650fa09b2b28299e01084a154df093764da09aa97828/pypinyin-0.43.0-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=7344daab070467e13ec4d60436a282e13fec2593d15ffccce8de743fd5779354",
+          "hashes": {
+            "sha256": "7344daab070467e13ec4d60436a282e13fec2593d15ffccce8de743fd5779354"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "pypinyin",
+        "version": "0.43.0",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "汉字拼音转换模块/工具.",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "pinyin",
+          "拼音"
+        ],
+        "home_page": "https://github.com/mozillazg/python-pinyin",
+        "author": "mozillazg, 闲耘",
+        "author_email": "mozillazg101@gmail.com",
+        "license": "MIT",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Utilities",
+          "Topic :: Text Processing"
+        ],
+        "requires_dist": [
+          "argparse ; python_version<\"2.7\"",
+          "enum34 ; python_version<\"3.4\"",
+          "typing ; python_version<\"3.5\""
+        ],
+        "requires_python": ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*, <4",
+        "project_url": [
+          "Documentation, https://pypinyin.readthedocs.io/",
+          "Source, https://github.com/mozillazg/python-pinyin",
+          "Tracker, https://github.com/mozillazg/python-pinyin/issues"
+        ],
+        "description": "汉字拼音转换工具（Python 版）\n=============================\n\n|Build| |GitHubAction| |Coverage| |Pypi version| |DOI|\n\n\n将汉字转为拼音。可以用于汉字注音、排序、检索(`Russian translation`_) 。\n\n基于 `hotoo/pinyin <https://github.com/hotoo/pinyin>`__ 开发。\n\n* Documentation: http://pypinyin.rtfd.io/\n* GitHub: https://github.com/mozillazg/python-pinyin\n* License: MIT license\n* PyPI: https://pypi.org/project/pypinyin\n* Python version: 2.7, pypy, pypy3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9\n\n.. contents::\n\n\n特性\n----\n\n* 根据词组智能匹配最正确的拼音。\n* 支持多音字。\n* 简单的繁体支持，注音支持，威妥玛拼音支持。\n* 支持多种不同拼音/注音风格。\n\n\n安装\n----\n\n.. code-block:: bash\n\n    $ pip install pypinyin\n\n\n使用示例\n--------\n\nPython 3(Python 2 下把 ``'中心'`` 替换为 ``u'中心'`` 即可):\n\n.. code-block:: python\n\n    >>> from pypinyin import pinyin, lazy_pinyin, Style\n    >>> pinyin('中心')  # or pinyin(['中心'])，参数值为列表时表示输入的是已分词后的数据\n    [['zhōng'], ['xīn']]\n    >>> pinyin('中心', heteronym=True)  # 启用多音字模式\n    [['zhōng', 'zhòng'], ['xīn']]\n    >>> pinyin('中心', style=Style.FIRST_LETTER)  # 设置拼音风格\n    [['z'], ['x']]\n    >>> pinyin('中心', style=Style.TONE2, heteronym=True)\n    [['zho1ng', 'zho4ng'], ['xi1n']]\n    >>> pinyin('中心', style=Style.TONE3, heteronym=True)\n    [['zhong1', 'zhong4'], ['xin1']]\n    >>> pinyin('中心', style=Style.BOPOMOFO)  # 注音风格\n    [['ㄓㄨㄥ'], ['ㄒㄧㄣ']]\n    >>> lazy_pinyin('威妥玛拼音', style=Style.WADEGILES)\n    ['wei', \"t'o\", 'ma', \"p'in\", 'yin']\n    >>> lazy_pinyin('中心')  # 不考虑多音字的情况\n    ['zhong', 'xin']\n    >>> lazy_pinyin('战略', v_to_u=True)  # 不使用 v 表示 ü\n    ['zhan', 'lüe']\n    # 使用 5 标识轻声\n    >>> lazy_pinyin('衣裳', style=Style.TONE3, neutral_tone_with_five=True)\n    ['yi1', 'shang5']\n    # 变调  nǐ hǎo -> ní hǎo\n    >>> lazy_pinyin('你好', style=Style.TONE2, tone_sandhi=True)\n    ['ni2', 'ha3o']\n\n**注意事项** ：\n\n* 默认情况下拼音结果不会标明哪个韵母是轻声，轻声的韵母没有声调或数字标识（可以通过参数 ``neutral_tone_with_five=True`` 开启使用 ``5`` 标识轻声 ）。\n* 默认情况下无声调相关拼音风格下的结果会使用 ``v`` 表示 ``ü`` （可以通过参数 ``v_to_u=True`` 开启使用 ``ü`` 代替 ``v`` ）。\n* 默认情况下会原样输出没有拼音的字符（自定义处理没有拼音的字符的方法见 `文档 <https://pypinyin.readthedocs.io/zh_CN/master/usage.html#handle-no-pinyin>`__ ）。\n\n命令行工具：\n\n.. code-block:: console\n\n    $ pypinyin 音乐\n    yīn yuè\n    $ pypinyin -h\n\n\n文档\n--------\n\n详细文档请访问：http://pypinyin.rtfd.io/ 。\n\n项目代码开发方面的问题可以看看 `开发文档`_ 。\n\n\nFAQ\n---------\n\n词语中的多音字拼音有误？\n+++++++++++++++++++++++++++++\n\n目前是通过词组拼音库的方式来解决多音字问题的。如果出现拼音有误的情况，\n可以自定义词组拼音来调整词语中的拼音：\n\n.. code-block:: python\n\n    >>> from pypinyin import Style, pinyin, load_phrases_dict\n    >>> pinyin('步履蹒跚')\n    [['bù'], ['lǚ'], ['mán'], ['shān']]\n    >>> load_phrases_dict({'步履蹒跚': [['bù'], ['lǚ'], ['pán'], ['shān']]})\n    >>> pinyin('步履蹒跚')\n    [['bù'], ['lǚ'], ['pán'], ['shān']]\n\n或者使用 `pypinyin-dict <https://github.com/mozillazg/pypinyin-dict>`__ 项目提供的自定义拼音库来纠正结果。\n\n.. code-block:: python\n\n    >>> pinyin('枯萎')\n    [['kū'], ['wēi']]\n    # 使用 phrase-pinyin-data 项目中 cc_cedict.txt 文件中的拼音数据优化结果\n    >>> from pypinyin_dict.phrase_pinyin_data import cc_cedict\n    >>> cc_cedict.load()\n    >>> pinyin('枯萎')\n    [['kū'], ['wěi']]\n\n详见 `文档 <https://pypinyin.readthedocs.io/zh_CN/master/usage.html#custom-dict>`__ 。\n\n如果是分词导致的拼音有误的话，可以先使用其他的分词模块对数据进行分词处理，\n然后将分词后的词组结果列表作为函数的参数即可:\n\n.. code-block:: python\n\n    >>> # 使用其他分词模块分词，比如 jieba 之类，\n    >>> #或者基于 phrases_dict.py 里的词语数据使用其他分词算法分词\n    >>> words = list(jieba.cut('每股24.67美元的确定性协议'))\n    >>> pinyin(words)\n\n\n为什么没有 y, w, yu 几个声母？\n++++++++++++++++++++++++++++++++++++++++++++\n\n.. code-block:: python\n\n    >>> from pypinyin import Style, pinyin\n    >>> pinyin('下雨天', style=Style.INITIALS)\n    [['x'], [''], ['t']]\n\n因为根据 `《汉语拼音方案》 <http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/195802/t19580201_186000.html>`__ ，\ny，w，ü (yu) 都不是声母。\n\n    声母风格（INITIALS）下，“雨”、“我”、“圆”等汉字返回空字符串，因为根据\n    `《汉语拼音方案》 <http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/195802/t19580201_186000.html>`__ ，\n    y，w，ü (yu) 都不是声母，在某些特定韵母无声母时，才加上 y 或 w，而 ü 也有其特定规则。    —— @hotoo\n\n    **如果你觉得这个给你带来了麻烦，那么也请小心一些无声母的汉字（如“啊”、“饿”、“按”、“昂”等）。\n    这时候你也许需要的是首字母风格（FIRST_LETTER）**。    —— @hotoo\n\n    参考: `hotoo/pinyin#57 <https://github.com/hotoo/pinyin/issues/57>`__,\n    `#22 <https://github.com/mozillazg/python-pinyin/pull/22>`__,\n    `#27 <https://github.com/mozillazg/python-pinyin/issues/27>`__,\n    `#44 <https://github.com/mozillazg/python-pinyin/issues/44>`__\n\n如果觉得这个行为不是你想要的，就是想把 y 当成声母的话，可以指定 ``strict=False`` ，\n这个可能会符合你的预期：\n\n.. code-block:: python\n\n    >>> from pypinyin import Style, pinyin\n    >>> pinyin('下雨天', style=Style.INITIALS)\n    [['x'], [''], ['t']]\n    >>> pinyin('下雨天', style=Style.INITIALS, strict=False)\n    [['x'], ['y'], ['t']]\n\n详见 `strict 参数的影响`_ 。\n\n如何减少内存占用\n++++++++++++++++++++\n\n如果对拼音的准确性不是特别在意的话，可以通过设置环境变量 ``PYPINYIN_NO_PHRASES``\n和 ``PYPINYIN_NO_DICT_COPY`` 来节省内存。\n详见 `文档 <https://pypinyin.readthedocs.io/zh_CN/master/faq.html#no-phrases>`__\n\n\n更多 FAQ 详见文档中的\n`FAQ <https://pypinyin.readthedocs.io/zh_CN/master/faq.html>`__ 部分。\n\n\n.. _#13 : https://github.com/mozillazg/python-pinyin/issues/113\n.. _strict 参数的影响: https://pypinyin.readthedocs.io/zh_CN/master/usage.html#strict\n\n\n拼音数据\n---------\n\n* 单个汉字的拼音使用 `pinyin-data`_ 的数据\n* 词组的拼音使用 `phrase-pinyin-data`_ 的数据\n* 声母和韵母使用 `《汉语拼音方案》 <http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/195802/t19580201_186000.html>`__ 的数据\n\n\nRelated Projects\n-----------------\n\n* `hotoo/pinyin`__: 汉字拼音转换工具 Node.js/JavaScript 版。\n* `mozillazg/go-pinyin`__: 汉字拼音转换工具 Go 版。\n* `mozillazg/rust-pinyin`__: 汉字拼音转换工具 Rust 版。\n\n\n__ https://github.com/hotoo/pinyin\n__ https://github.com/mozillazg/go-pinyin\n__ https://github.com/mozillazg/rust-pinyin\n\n\n.. |Build| image:: https://img.shields.io/circleci/project/github/mozillazg/python-pinyin/master.svg\n   :target: https://circleci.com/gh/mozillazg/python-pinyin\n.. |GitHubAction| image:: https://github.com/mozillazg/python-pinyin/workflows/CI/badge.svg\n   :target: https://github.com/mozillazg/python-pinyin/actions\n.. |Coverage| image:: https://img.shields.io/coveralls/github/mozillazg/python-pinyin/master.svg\n   :target: https://coveralls.io/github/mozillazg/python-pinyin\n.. |PyPI version| image:: https://img.shields.io/pypi/v/pypinyin.svg\n   :target: https://pypi.org/project/pypinyin/\n.. |DOI| image:: https://zenodo.org/badge/12830126.svg\n   :target: https://zenodo.org/badge/latestdoi/12830126\n\n\n\n.. _Russian translation: https://github.com/mozillazg/python-pinyin/blob/master/README_ru.rst\n.. _pinyin-data: https://github.com/mozillazg/pinyin-data\n.. _phrase-pinyin-data: https://github.com/mozillazg/phrase-pinyin-data\n.. _开发文档: https://pypinyin.readthedocs.io/zh_CN/develop/develop.html\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

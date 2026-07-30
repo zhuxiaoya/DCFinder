@@ -1,0 +1,82 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/5e/6f/f5577bef576db4451ae32eb396ec701d926c2db38dbd70b80425520409d1/pycwt-0.3.0a22.tar.gz",
+        "archive_info": {
+          "hash": "sha256=f99668ef2caf8d5020ef6bcbbcc86ee542d038ae7c5e1e80da12e5264445eb17",
+          "hashes": {
+            "sha256": "f99668ef2caf8d5020ef6bcbbcc86ee542d038ae7c5e1e80da12e5264445eb17"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "pycwt",
+        "version": "0.3.0a22",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "requires-dist",
+          "summary"
+        ],
+        "summary": "Continuous wavelet transform module for Python.",
+        "keywords": [
+          "wavelet",
+          "spectral analysis",
+          "signal processing",
+          "data science",
+          "timeseries"
+        ],
+        "home_page": "https://github.com/regeirk/pycwt",
+        "author": "Sebastian Krieger, Nabil Freij, Alexey Brazhe, Christopher Torrence, Gilbert P. Compo and contributors",
+        "author_email": "sebastian@nublia.com",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 3 - Alpha",
+          "License :: OSI Approved :: BSD License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Operating System :: OS Independent",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Utilities",
+          "Intended Audience :: Science/Research"
+        ],
+        "requires_dist": [
+          "numpy",
+          "scipy",
+          "matplotlib",
+          "tqdm"
+        ],
+        "description": "|ReadTheDocs| |PyPi| |Travis|\n\nPyCWT\n=====\n\nA Python module for continuous wavelet spectral analysis. It includes a\ncollection of routines for wavelet transform and statistical analysis via FFT\nalgorithm. In addition, the module also includes cross-wavelet transforms,\nwavelet coherence tests and sample scripts.\n\nPlease read the documentation `here <http://pycwt.readthedocs.io/en/latest/>`__\\.\n\nThis module requires ``NumPy``, ``SciPy``, ``tqdm``. In addition, you will \nalso need ``matplotlib`` to run the examples.\n\nThe sample scripts (``sample.py``, ``sample_xwt.py``) illustrate the use of\nthe wavelet and inverse wavelet transforms, cross-wavelet transform and\nwavelet transform coherence. Results are plotted in figures similar to the\nsample images.\n\n\nDisclaimer\n----------\n\nThis module is based on routines provided by C. Torrence and G. P. Compo\navailable at http://paos.colorado.edu/research/wavelets/, on routines\nprovided by A. Grinsted, J. Moore and S. Jevrejeva available at\nhttp://noc.ac.uk/using-science/crosswavelet-wavelet-coherence, and\non routines provided by A. Brazhe available at\nhttp://cell.biophys.msu.ru/static/swan/.\n\nThis software is released under a BSD-style open source license. Please read\nthe license file for further information. This routine is provided as is\nwithout any express or implied warranties whatsoever.\n\n\nInstallation\n------------\n\nWe recommend using PyPI to install this package.\n\n.. code-block:: sh\n\n    $ pip install pycwt\n\nOr, you can download the code and run the below line within the top level\nfolder.\n\n.. code-block:: sh\n\n    $ python setup.py install\n\n\nAcknowledgements\n----------------\n\nWe would like to thank Christopher Torrence, Gilbert P. Compo, Aslak Grinsted,\nJohn Moore, Svetlana Jevrejevaand and Alexey Brazhe for their code and also\nJack Ireland and Renaud Dussurget for their attentive eyes, feedback and\ndebugging.\n\n\nAuthors\n-------\n\nSebastian Krieger, Nabil Freij, Alexey Brazhe, Christopher Torrence,\nGilbert P. Compo and contributors.\n\n\nReferences\n----------\n\n1. Torrence, C. and Compo, G. P.. A Practical Guide to Wavelet\n   Analysis. Bulletin of the American Meteorological Society, *American\n   Meteorological Society*, **1998**, 79, 61-78.\n2. Torrence, C. and Webster, P. J.. Interdecadal changes in the\n   ENSO-Monsoon system, *Journal of Climate*, **1999**, 12(8),\n   2679-2690.\n3. Grinsted, A.; Moore, J. C. & Jevrejeva, S. Application of the cross\n   wavelet transform and wavelet coherence to geophysical time series.\n   *Nonlinear Processes in Geophysics*, **2004**, 11, 561-566.\n4. Mallat, S.. A wavelet tour of signal processing: The sparse way.\n   *Academic Press*, **2008**, 805.\n5. Addison, P. S. The illustrated wavelet transform handbook:\n   introductory theory and applications in science, engineering,\n   medicine and finance. *IOP Publishing*, **2002**.\n6. Liu, Y., Liang, X. S. and Weisberg, R. H. Rectification of the bias\n   in the wavelet power spectrum. *Journal of Atmospheric and Oceanic\n   Technology*, **2007**, 24, 2093-2102.\n\n\n.. |ReadTheDocs| image:: https://readthedocs.org/projects/pycwt/badge/?version=latest\n   :target: http://pycwt.readthedocs.io/en/latest/?badge=latest\n\n.. |PyPi| image:: https://badge.fury.io/py/pycwt.svg\n   :target: https://badge.fury.io/py/pycwt\n\n.. |Travis| image:: https://travis-ci.org/regeirk/pycwt.svg?branch=master\n   :target: https://travis-ci.org/regeirk/pycwt\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,1244 @@
+{
+     "direct dependency": {
+          "number": 21,
+          "packages": [
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=4.5.0",
+                    "raw_requirement": "typing-extensions>=4.5.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numpy",
+                    "specifier": ">=1.20.0",
+                    "raw_requirement": "numpy>=1.20.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "diskcache",
+                    "specifier": ">=5.6.1",
+                    "raw_requirement": "diskcache>=5.6.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": ">=2.11.3",
+                    "raw_requirement": "jinja2>=2.11.3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "uvicorn",
+                    "specifier": ">=0.22.0",
+                    "raw_requirement": "uvicorn>=0.22.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:server"
+               },
+               {
+                    "name": "fastapi",
+                    "specifier": ">=0.100.0",
+                    "raw_requirement": "fastapi>=0.100.0 ; fastapi>=0.100.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:server"
+               },
+               {
+                    "name": "pydantic-settings",
+                    "specifier": ">=2.0.1",
+                    "raw_requirement": "pydantic-settings>=2.0.1 ; pydantic-settings>=2.0.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:server"
+               },
+               {
+                    "name": "sse-starlette",
+                    "specifier": ">=1.6.1",
+                    "raw_requirement": "sse-starlette>=1.6.1 ; sse-starlette>=1.6.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:server"
+               },
+               {
+                    "name": "starlette-context",
+                    "specifier": "<0.4,>=0.3.6",
+                    "raw_requirement": "starlette-context>=0.3.6,<0.4 ; starlette-context>=0.3.6,<0.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:server"
+               },
+               {
+                    "name": "pyyaml",
+                    "specifier": ">=5.1",
+                    "raw_requirement": "PyYAML>=5.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:server"
+               },
+               {
+                    "name": "pytest",
+                    "specifier": ">=7.4.0",
+                    "raw_requirement": "pytest>=7.4.0 ; pytest>=7.4.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:test"
+               },
+               {
+                    "name": "httpx",
+                    "specifier": ">=0.24.1",
+                    "raw_requirement": "httpx>=0.24.1 ; httpx>=0.24.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:test"
+               },
+               {
+                    "name": "scipy",
+                    "specifier": ">=1.10",
+                    "raw_requirement": "scipy>=1.10",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:test"
+               },
+               {
+                    "name": "huggingface-hub",
+                    "specifier": ">=0.23.0",
+                    "raw_requirement": "huggingface-hub>=0.23.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:test"
+               },
+               {
+                    "name": "black",
+                    "specifier": ">=23.3.0",
+                    "raw_requirement": "black>=23.3.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:dev"
+               },
+               {
+                    "name": "twine",
+                    "specifier": ">=4.0.2",
+                    "raw_requirement": "twine>=4.0.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:dev"
+               },
+               {
+                    "name": "mkdocs",
+                    "specifier": ">=1.4.3",
+                    "raw_requirement": "mkdocs>=1.4.3 ; mkdocs",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:dev"
+               },
+               {
+                    "name": "mkdocstrings",
+                    "specifier": ">=0.22.0",
+                    "raw_requirement": "mkdocstrings[python]>=0.22.0 ; mkdocstrings[python]",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:dev"
+               },
+               {
+                    "name": "mkdocs-material",
+                    "specifier": ">=9.1.18",
+                    "raw_requirement": "mkdocs-material>=9.1.18 ; mkdocs-material",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:dev"
+               },
+               {
+                    "name": "llama-cpp-python",
+                    "specifier": "",
+                    "raw_requirement": "llama_cpp_python[server,test,dev] ; llama-cpp-python",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/pyproject.toml",
+                    "dependency_type": "extra:all"
+               },
+               {
+                    "name": "ray",
+                    "specifier": "",
+                    "raw_requirement": "ray[serve]",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/llama-cpp-python-main/examples/ray/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 74,
+          "packages": [
+               {
+                    "name": "annotated-doc",
+                    "specifier": ">=0.0.2",
+                    "raw_requirement": "annotated-doc>=0.0.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "annotated-types",
+                    "specifier": ">=0.6.0",
+                    "raw_requirement": "annotated-types>=0.6.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "anyio",
+                    "specifier": ">=4.7.0,<5,>=3.6.2",
+                    "raw_requirement": "anyio>=4.7.0 ; anyio<5,>=3.6.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sse-starlette",
+                              "source": "public"
+                         },
+                         {
+                              "name": "starlette",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "attrs",
+                    "specifier": ">=22.2.0",
+                    "raw_requirement": "attrs>=22.2.0 ; attrs>=22.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "babel",
+                    "specifier": ">=2.10",
+                    "raw_requirement": "babel>=2.10",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mkdocs-material",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "backports-tarfile",
+                    "specifier": "",
+                    "raw_requirement": "backports.tarfile; python_version < \"3.12\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jaraco-context",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "backrefs",
+                    "specifier": ">=5.7.post1",
+                    "raw_requirement": "backrefs>=5.7.post1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mkdocs-material",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "certifi",
+                    "specifier": ">=2023.5.7",
+                    "raw_requirement": "certifi ; certifi>=2023.5.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "httpx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "requests",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cffi",
+                    "specifier": ">=2.0.0",
+                    "raw_requirement": "cffi>=2.0.0; platform_python_implementation != \"PyPy\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cryptography",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "charset-normalizer",
+                    "specifier": "<4,>=2",
+                    "raw_requirement": "charset_normalizer<4,>=2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "click",
+                    "specifier": ">=7.0,<9.0.0,>=8.4.2,>=8.0.0,>=7.0,>=7.0",
+                    "raw_requirement": "click>=7.0 ; click<9.0.0,>=8.4.2 ; click>=8.0.0 ; click>=7.0 ; click>=7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mkdocs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ray",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "colorama",
+                    "specifier": ">=0.4",
+                    "raw_requirement": "colorama>=0.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mkdocs-material",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cryptography",
+                    "specifier": ">=2.0",
+                    "raw_requirement": "cryptography>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "secretstorage",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "docutils",
+                    "specifier": ">=0.21.2",
+                    "raw_requirement": "docutils>=0.21.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "readme-renderer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "exceptiongroup",
+                    "specifier": ">=1,>=1.0.2",
+                    "raw_requirement": "exceptiongroup>=1; python_version < \"3.11\" ; exceptiongroup>=1.0.2; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "filelock",
+                    "specifier": ">=3.10.0",
+                    "raw_requirement": "filelock>=3.10.0 ; filelock",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ray",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fsspec",
+                    "specifier": ">=2023.5.0",
+                    "raw_requirement": "fsspec>=2023.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "ghp-import",
+                    "specifier": ">=1.0",
+                    "raw_requirement": "ghp-import>=1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mkdocs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "h11",
+                    "specifier": ">=0.8",
+                    "raw_requirement": "h11>=0.8",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "uvicorn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "hf-xet",
+                    "specifier": "<2.0.0,>=1.5.1",
+                    "raw_requirement": "hf-xet<2.0.0,>=1.5.1; platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"arm64\" or platform_machine == \"aarch64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "id",
+                    "specifier": "",
+                    "raw_requirement": "id",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "twine",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "idna",
+                    "specifier": ">=2.8,<4,>=2.5",
+                    "raw_requirement": "idna>=2.8 ; idna<4,>=2.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "anyio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "requests",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "importlib-metadata",
+                    "specifier": ">=4.11.4",
+                    "raw_requirement": "importlib_metadata>=4.11.4; python_version < \"3.12\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "keyring",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "iniconfig",
+                    "specifier": ">=1.0.1",
+                    "raw_requirement": "iniconfig>=1.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jaraco-classes",
+                    "specifier": "",
+                    "raw_requirement": "jaraco.classes",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "keyring",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jaraco-context",
+                    "specifier": "",
+                    "raw_requirement": "jaraco.context",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "keyring",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jaraco-functools",
+                    "specifier": "",
+                    "raw_requirement": "jaraco.functools",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "keyring",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jeepney",
+                    "specifier": ">=0.4.2,>=0.6",
+                    "raw_requirement": "jeepney>=0.4.2; sys_platform == \"linux\" ; jeepney>=0.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "keyring",
+                              "source": "public"
+                         },
+                         {
+                              "name": "secretstorage",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jsonschema",
+                    "specifier": "",
+                    "raw_requirement": "jsonschema",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ray",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jsonschema-specifications",
+                    "specifier": ">=2023.03.6",
+                    "raw_requirement": "jsonschema-specifications>=2023.03.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "keyring",
+                    "specifier": ">=21.2.0",
+                    "raw_requirement": "keyring>=21.2.0; platform_machine != \"ppc64le\" and platform_machine != \"s390x\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "twine",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markdown",
+                    "specifier": ">=3.3.6,>=3.6,>=3.2,>=3.3,>=3.6",
+                    "raw_requirement": "markdown>=3.3.6 ; Markdown>=3.6 ; markdown>=3.2 ; Markdown>=3.3 ; markdown>=3.6",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mkdocs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mkdocstrings",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mkdocs-material",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mkdocs-autorefs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pymdown-extensions",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markdown-it-py",
+                    "specifier": ">=2.2.0",
+                    "raw_requirement": "markdown-it-py>=2.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rich",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markupsafe",
+                    "specifier": ">=2.0,>=2.0.1,>=1.1,>=2.0.1",
+                    "raw_requirement": "MarkupSafe>=2.0 ; markupsafe>=2.0.1 ; MarkupSafe>=1.1 ; markupsafe>=2.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jinja2",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mkdocs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mkdocstrings",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mkdocs-autorefs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mdurl",
+                    "specifier": "~=0.1",
+                    "raw_requirement": "mdurl~=0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "markdown-it-py",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mergedeep",
+                    "specifier": ">=1.3.4",
+                    "raw_requirement": "mergedeep>=1.3.4 ; mergedeep>=1.3.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mkdocs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mkdocs-get-deps",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mkdocs-autorefs",
+                    "specifier": ">=1.4",
+                    "raw_requirement": "mkdocs-autorefs>=1.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mkdocstrings",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mkdocs-get-deps",
+                    "specifier": ">=0.2.0",
+                    "raw_requirement": "mkdocs-get-deps>=0.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mkdocs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mkdocs-material-extensions",
+                    "specifier": ">=1.3",
+                    "raw_requirement": "mkdocs-material-extensions>=1.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mkdocs-material",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "more-itertools",
+                    "specifier": "",
+                    "raw_requirement": "more-itertools ; more_itertools",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jaraco-classes",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jaraco-functools",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "msgpack",
+                    "specifier": "<2.0.0,>=1.0.0",
+                    "raw_requirement": "msgpack<2.0.0,>=1.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ray",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mypy-extensions",
+                    "specifier": ">=0.4.3",
+                    "raw_requirement": "mypy-extensions>=0.4.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nh3",
+                    "specifier": ">=0.2.14",
+                    "raw_requirement": "nh3>=0.2.14",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "readme-renderer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "packaging",
+                    "specifier": ">=22,>=20.9,>=22.0,>=24.0,>=20.5,>=24.2",
+                    "raw_requirement": "packaging>=22 ; packaging>=20.9 ; packaging>=22.0 ; packaging>=24.0 ; packaging>=20.5 ; packaging>=24.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         },
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         },
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "twine",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mkdocs",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ray",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "paginate",
+                    "specifier": ">=0.5",
+                    "raw_requirement": "paginate>=0.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mkdocs-material",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pathspec",
+                    "specifier": ">=1.0.0,>=0.11.1",
+                    "raw_requirement": "pathspec>=1.0.0 ; pathspec>=0.11.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mkdocs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "platformdirs",
+                    "specifier": ">=2,>=2.2.0",
+                    "raw_requirement": "platformdirs>=2 ; platformdirs>=2.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mkdocs-get-deps",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pluggy",
+                    "specifier": "<2,>=1.5",
+                    "raw_requirement": "pluggy<2,>=1.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "protobuf",
+                    "specifier": ">=3.20.3",
+                    "raw_requirement": "protobuf>=3.20.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ray",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pycparser",
+                    "specifier": "",
+                    "raw_requirement": "pycparser; implementation_name != \"PyPy\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cffi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydantic",
+                    "specifier": ">=2.9.0,>=2.7.0",
+                    "raw_requirement": "pydantic>=2.9.0 ; pydantic>=2.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic-settings",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pydantic-core",
+                    "specifier": "==2.47.0",
+                    "raw_requirement": "pydantic-core==2.47.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pygments",
+                    "specifier": ">=2.7.2,>=2.16,>=2.5.1,<3.0.0,>=2.13.0",
+                    "raw_requirement": "pygments>=2.7.2 ; pygments>=2.16 ; Pygments>=2.5.1 ; pygments<3.0.0,>=2.13.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mkdocs-material",
+                              "source": "public"
+                         },
+                         {
+                              "name": "readme-renderer",
+                              "source": "public"
+                         },
+                         {
+                              "name": "rich",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pymdown-extensions",
+                    "specifier": ">=6.3,>=10.2",
+                    "raw_requirement": "pymdown-extensions>=6.3 ; pymdown-extensions>=10.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mkdocstrings",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mkdocs-material",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-dateutil",
+                    "specifier": ">=2.8.1",
+                    "raw_requirement": "python-dateutil (>=2.8.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "ghp-import",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-dotenv",
+                    "specifier": ">=0.21.0",
+                    "raw_requirement": "python-dotenv>=0.21.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pydantic-settings",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pytokens",
+                    "specifier": "~=0.4.0",
+                    "raw_requirement": "pytokens~=0.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "black",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyyaml-env-tag",
+                    "specifier": ">=0.1",
+                    "raw_requirement": "pyyaml-env-tag>=0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mkdocs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "readme-renderer",
+                    "specifier": ">=35.0",
+                    "raw_requirement": "readme-renderer>=35.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "twine",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "referencing",
+                    "specifier": ">=0.28.4,>=0.31.0",
+                    "raw_requirement": "referencing>=0.28.4 ; referencing>=0.31.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jsonschema-specifications",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "requests",
+                    "specifier": ">=2.20,>=2.30,<3.0.0,>=2.0.1",
+                    "raw_requirement": "requests>=2.20 ; requests>=2.30 ; requests ; requests (<3.0.0,>=2.0.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "twine",
+                              "source": "public"
+                         },
+                         {
+                              "name": "mkdocs-material",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ray",
+                              "source": "public"
+                         },
+                         {
+                              "name": "requests-toolbelt",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "requests-toolbelt",
+                    "specifier": "!=0.9.0,>=0.8.0",
+                    "raw_requirement": "requests-toolbelt!=0.9.0,>=0.8.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "twine",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "rfc3986",
+                    "specifier": ">=1.4.0",
+                    "raw_requirement": "rfc3986>=1.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "twine",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "rich",
+                    "specifier": ">=12.0.0",
+                    "raw_requirement": "rich>=12.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "twine",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "rpds-py",
+                    "specifier": ">=0.25.0,>=0.7.0",
+                    "raw_requirement": "rpds-py>=0.25.0 ; rpds-py>=0.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "public"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "secretstorage",
+                    "specifier": ">=3.2",
+                    "raw_requirement": "SecretStorage>=3.2; sys_platform == \"linux\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "keyring",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "six",
+                    "specifier": ">=1.5",
+                    "raw_requirement": "six >=1.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "python-dateutil",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "starlette",
+                    "specifier": ">=0.46.0,>=0.49.1",
+                    "raw_requirement": "starlette>=0.46.0 ; starlette>=0.49.1 ; starlette",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "sse-starlette",
+                              "source": "public"
+                         },
+                         {
+                              "name": "starlette-context",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tomli",
+                    "specifier": ">=1,>=1.1.0",
+                    "raw_requirement": "tomli>=1; python_version < \"3.11\" ; tomli>=1.1.0; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytest",
+                              "source": "public"
+                         },
+                         {
+                              "name": "black",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tqdm",
+                    "specifier": ">=4.42.1",
+                    "raw_requirement": "tqdm>=4.42.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "huggingface-hub",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-inspection",
+                    "specifier": ">=0.4.2,>=0.4.0,>=0.4.2",
+                    "raw_requirement": "typing-inspection>=0.4.2 ; typing-inspection>=0.4.0 ; typing-inspection>=0.4.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastapi",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic-settings",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "urllib3",
+                    "specifier": ">=1.26.0,<3,>=1.26,<3,>=2",
+                    "raw_requirement": "urllib3>=1.26.0 ; urllib3<3,>=1.26 ; urllib3<3,>=2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "twine",
+                              "source": "public"
+                         },
+                         {
+                              "name": "requests",
+                              "source": "public"
+                         },
+                         {
+                              "name": "id",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "watchdog",
+                    "specifier": ">=2.0",
+                    "raw_requirement": "watchdog>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "mkdocs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "zipp",
+                    "specifier": ">=3.20",
+                    "raw_requirement": "zipp>=3.20",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "importlib-metadata",
+                              "source": "public"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 1,
+          "packages": {
+               "llama-cpp-python": {
+                    "private version": "0.3.34",
+                    "public version": "0.3.34",
+                    "highest public (unconstrained)": "0.3.34"
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 0,
+          "packages": {}
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "mixed_source_expanded",
+          "private_index_expansions": 1,
+          "pypi_metadata_expansions": 94,
+          "pruned_public_nodes": 0
+     }
+}

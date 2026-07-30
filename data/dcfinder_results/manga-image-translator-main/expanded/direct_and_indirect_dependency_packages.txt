@@ -1,0 +1,234 @@
+ipykernel ==6.29.5
+pylint ==3.3.0
+pytest-sugar ==0.9.6
+pytest-xdist ==3.3.1
+pytest ==7.2.2
+pytest-asyncio ==0.21.1
+networkx
+torch
+groq
+torchvision
+torch-summary
+einops
+scikit-image
+opencv-python
+pyclipper
+shapely
+requests
+cryptography
+freetype-py
+aiohttp
+tqdm
+deepl
+imagehash
+kornia
+backports-cached-property
+huggingface-hub
+transformers
+py3langid ==0.2.2
+sentencepiece
+editdistance
+numpy ==1.26.4
+tensorboardx
+websockets
+protobuf <6.0.0,>=3.20.2
+ctranslate2 <=3.24.0
+colorama
+openai ==1.63.0
+tiktoken
+httpx ==0.27.2
+open-clip-torch
+safetensors
+pandas
+onnxruntime
+timm
+omegaconf
+python-dotenv
+nest-asyncio
+marshmallow
+cython
+aioshutil
+aiofiles
+arabic-reshaper
+pyhyphen
+langcodes
+manga-ocr
+langdetect
+pydensecrf
+accelerate
+bitsandbytes
+uvicorn
+fastapi
+pydantic ==2.5.0
+python-multipart
+google-genai
+rich
+regex
+paddleocr
+paddlepaddle
+paddlepaddle-gpu
+aiohappyeyeballs >=2.5.0
+aiosignal >=1.4.0
+aistudio-sdk >=0.3.5
+annotated-doc >=0.0.2
+annotated-types >=0.4.0
+antlr4-python3-runtime ==4.9.*
+anyio <5,>=3.5.0,<5.0.0,>=4.8.0,<5,>=3.6.2
+appdirs >=1.4.0
+astroid <=3.4.0-dev0,>=3.3.3
+asttokens >=2.1.0
+async-timeout <6.0,>=4.0
+attrs >=19.2.0,>=17.3.0
+backports-datetime-fromisoformat
+bce-python-sdk
+certifi >=2023.5.7
+cffi >=2.0.0
+chardet
+charset-normalizer <4,>=2
+click <9.0.0,>=8.4.2,>=7.0
+colorlog
+comm >=0.1.1
+crc32c >=2.2.post0
+cuda-bindings <14,>=13.0.3
+cuda-pathfinder >=1.4.2
+cuda-toolkit ==13.0.3
+debugpy >=1.6.5
+decorator >=5.1.0
+dill >=0.2
+distro <2,>=1.7.0
+exceptiongroup >=1.0.0rc8,>=1.0.2
+execnet >=1.1
+executing >=1.2.0
+filelock >=3.10.0,>=3.9
+fire
+flatbuffers
+frozenlist >=1.1.1,>=1.1.0
+fsspec >=0.8.5,>=2023.5.0
+ftfy
+fugashi
+future >=0.6.0
+google-auth <3.0.0,>=2.48.1
+h11 >=0.8,>=0.16
+hf-xet <2.0.0,>=1.5.1
+httpcore ==1.*
+idna <4,>=2.5,>=2.8,>=2.0
+imageio !=2.35.0,>=2.33
+imagesize
+iniconfig
+ipython >=7.23.1
+ipython-pygments-lexers >=1.0.0
+isort !=5.13.0,<6,>=4.2.5
+jaconv
+jedi >=0.18.2
+jinja2
+jiter <1,>=0.4.0
+jupyter-client >=6.1.12
+jupyter-core !=5.0.*,>=4.12,>=5.1
+kornia-rs >=0.1.9
+lazy-loader >=0.4
+loguru
+markdown-it-py >=2.2.0
+markupsafe >=2.0
+matplotlib-inline >=0.1,>=0.1.6
+mccabe <0.8,>=0.6
+mdurl ~=0.1
+modelscope >=1.28.0
+modelscope-hub >=0.0.7
+mpmath <1.4,>=1.1.0
+multidict <7.0,>=4.5,>=4.0
+nvidia-cublas ==13.1.1.3.*
+nvidia-cublas-cu11 ==11.11.3.6
+nvidia-cuda-cccl ==13.0.85.*
+nvidia-cuda-crt ==13.0.88.*
+nvidia-cuda-culibos ==13.0.85.*
+nvidia-cuda-cupti ==13.0.85.*
+nvidia-cuda-cupti-cu11 ==11.8.87
+nvidia-cuda-cuxxfilt ==13.0.85.*
+nvidia-cuda-nvcc ==13.0.88.*
+nvidia-cuda-nvrtc ==13.0.88.*
+nvidia-cuda-nvrtc-cu11 ==11.8.89
+nvidia-cuda-opencl ==13.0.85.*
+nvidia-cuda-profiler-api ==13.0.85.*
+nvidia-cuda-runtime ==13.0.96.*
+nvidia-cuda-runtime-cu11 ==11.8.89
+nvidia-cuda-sanitizer-api ==13.0.85.*
+nvidia-cudnn-cu11 ==8.9.6.50
+nvidia-cudnn-cu13 ==9.20.0.48
+nvidia-cufft ==12.0.0.61.*
+nvidia-cufft-cu11 ==10.9.0.58
+nvidia-cufile ==1.15.1.6.*
+nvidia-curand ==10.4.0.35.*
+nvidia-curand-cu11 ==10.3.0.86
+nvidia-cusolver ==12.0.4.66.*
+nvidia-cusolver-cu11 ==11.4.1.48
+nvidia-cusparse ==12.6.3.3.*
+nvidia-cusparse-cu11 ==11.7.5.86
+nvidia-cusparselt-cu13 ==0.8.1
+nvidia-nccl-cu11 ==2.19.3
+nvidia-nccl-cu13 ==2.29.7
+nvidia-npp ==13.0.1.2.*
+nvidia-nvfatbin ==13.0.85.*
+nvidia-nvjitlink <14,>=13.0.88
+nvidia-nvjpeg ==13.0.1.86.*
+nvidia-nvml-dev ==13.0.87.*
+nvidia-nvptxcompiler ==13.0.88.*
+nvidia-nvshmem-cu13 ==3.4.5
+nvidia-nvtx ==13.0.85.*
+nvidia-nvtx-cu11 ==11.8.86
+nvidia-nvvm ==13.0.88.*
+opencv-contrib-python ==4.10.0.84
+opt-einsum ==3.3.0
+packaging >=14.1,>=21,>=20.9,>=20.0,>=20.0,>=20.9,>=24.0
+paddlex <3.8.0,>=3.7.0
+parso <0.9.0,>=0.8.6
+pexpect >4.6
+pillow !=8.3.*,>=5.3.0,>=10.1,>=10.0.0,>=8.3.2
+platformdirs >=2.2.0,>=2.5
+pluggy <2.0,>=0.12
+prettytable
+prompt-toolkit <3.1.0,>=3.0.41
+propcache >=0.2.0,>=0.2.1
+psutil >=7
+ptyprocess >=0.5
+pure-eval
+py-cpuinfo
+pyasn1 <0.7.0,>=0.6.1
+pyasn1-modules >=0.2.1
+pycparser
+pycryptodome >=3.8.0
+pydantic-core ==2.14.1
+pygments <3.0.0,>=2.13.0,>=2.14.0
+pypdfium2 >=4
+pyperclip
+python-bidi
+python-dateutil >=2.8.2
+pywavelets
+pyyaml ==6.0.2
+pyzmq >=24,>=25.0
+ruamel-yaml
+scipy >=1.11.4
+setuptools >=77.0.3,>=68.0
+shellingham >=1.3.0
+six >=1.5,>=1.4.0
+sniffio
+stack-data >=0.6.0
+starlette >=0.46.0
+sympy >=1.13.3
+tenacity <9.2.0,>=8.2.3
+termcolor >=1.1.0
+tifffile >=2022.8.12
+tokenizers <=0.23.0,>=0.22.0
+tomli >=1.1.0,>=1.0.0
+tomlkit >=0.10.1
+tornado >=6.1,>=6.4.1
+traitlets >=5.4.0,>=5.13.0,>=5.3,>=5.3
+triton ==3.7.1
+typer
+typing-extensions >=4.10.0,<5,>=4.14,>=4.13.2,>=4.4,>=4.1.0,<5,>=4.11,>=4.0,>=4.8.0,>=4.6.1,<5.0.0,>=4.14.0,>=4.12,>=4.6,>=4.13.0,>=4,>=4.6.0,>=4.5,>=4.2,>=4.1.0,>=4.10.0,>=4.12.0,!=4.7.0,>=4.6.0
+typing-inspection >=0.4.2
+ujson
+unidic-lite
+urllib3 <3,>=1.26,>=1.26,>=1.26
+wcwidth >=0.3.5
+wheel >=0.40.0
+yarl <2.0,>=1.17.0

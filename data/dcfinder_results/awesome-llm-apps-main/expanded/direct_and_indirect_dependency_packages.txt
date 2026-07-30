@@ -1,0 +1,660 @@
+openai-agents ==0.0.6
+streamlit ==1.43.2
+qdrant-client ==1.12.1
+fastembed
+langchain ==0.3.12
+langchain-community ==0.3.12
+langchain-openai ==0.2.14
+openai ==1.68.2
+firecrawl-py ==1.9.0
+python-dotenv ==1.0.1
+pydantic ==2.10.6
+pydantic-core ==2.27.2
+rich ==13.9.4
+agno ==1.1.6
+composio-phidata ==0.6.9
+composio ==0.1.1
+anthropic ==0.47.1
+google-search-results ==2.4.2
+lxml-html-clean ==0.4.1
+crewai
+crewai-tools
+firecrawl
+mem0ai ==0.1.29
+yfinance
+newspaper4k ==0.9.3.1
+google-generativeai ==0.8.3
+duckduckgo-search ==7.2.1
+fastapi >=0.115.11
+sqlalchemy >=2.0.38,>=2.0.0,>=2.0.0
+phidata ==2.7.3
+pypdf2 ==3.0.1
+streamlit-pdf-viewer ==0.0.19
+requests ==2.32.3
+pytz ==2023.4
+typing-extensions ==4.12.2
+black >=24.1.1
+python-dateutil ==2.9.0.post0
+exa-py ==1.7.1
+composio-core
+agency-swarm ==0.4.1
+autogen ==0.6.1
+pillow ==11.0.0
+e2b-code-interpreter ==1.0.3
+pypdf >=4.0.0,>=3.0.0,>=3.0.0
+ollama ==0.4.4
+composio-agno
+together ==1.3.10
+pytest
+pytest-cov
+pytest-mock
+pytest-asyncio
+pytest-subtests
+pytest-json-report
+ruff
+sympy
+stopit
+scipy
+setuptools ==75.8.0
+tree-sitter
+tree-sitter-python
+antlr4-python3-runtime ==4.11
+tenacity ==9.0.0
+networkx >=3.3
+nltk >=3.9.1
+numpy ==1.26.0
+litellm >=1.55.6
+pydantic-settings ==2.8.1
+loguru >=0.7.3
+pandas ==2.1.1
+matplotlib ==3.8.0
+transformers >=4.47.1
+datasets >=3.4.0
+faiss-cpu ==1.8.0.post1
+textgrad >=0.1.8
+motor >=3.7.0
+uvicorn >=0.34.0
+python-jose >=3.3.0
+passlib >=1.7.4
+python-multipart ==0.0.20
+bcrypt >=4.0.1
+celery >=5.3.4
+redis >=5.0.0
+httpx ==0.28.1
+asgi-lifespan >=1.0.1
+jwt >=1.3.1
+gradio ==5.9.1
+dataclasses
+google-adk ==0.1.0
+plotly ==5.18.0
+asyncio ==3.4.3
+autogen-agentchat
+autogen-ext
+pyautogen
+browser-use ==0.1.26
+altair ==5.5.0
+annotated-types ==0.7.0
+anyio ==4.8.0
+attrs ==25.1.0
+blinker ==1.9.0
+build ==1.2.2.post1
+cachetools ==5.5.2
+certifi ==2025.1.31
+charset-normalizer ==3.4.1
+click ==8.1.8
+distro ==1.9.0
+docstring-parser ==0.16
+gitdb ==4.0.12
+gitpython ==3.1.44
+google-auth ==2.38.0
+google-genai ==1.3.0
+groq ==0.18.0
+h11 ==0.14.0
+httpcore ==1.0.7
+idna ==3.10
+jinja2 ==3.1.5
+jiter ==0.8.2
+jsonschema ==4.23.0
+jsonschema-specifications ==2024.10.1
+markdown-it-py ==3.0.0
+markupsafe ==3.0.2
+mdurl ==0.1.2
+narwhals ==1.28.0
+nest-asyncio ==1.6.0
+packaging ==24.2
+pathlib ==1.0.1
+pip ==25.0.1
+pip-tools ==7.4.1
+protobuf ==5.29.3
+pyarrow ==19.0.1
+pyasn1 ==0.6.1
+pyasn1-modules ==0.4.1
+pydeck ==0.9.1
+pygments ==2.19.1
+pyproject-hooks ==1.2.0
+pyyaml ==6.0.2
+referencing ==0.36.2
+rpds-py ==0.23.1
+rsa ==4.9
+shellingham ==1.5.4
+six ==1.17.0
+smmap ==5.0.2
+sniffio ==1.3.1
+toml ==0.10.2
+tomli ==2.2.1
+tornado ==6.4.2
+tqdm ==4.67.1
+typer ==0.15.1
+tzdata ==2025.1
+urllib3 ==2.3.0
+websockets ==14.2
+wheel ==0.45.1
+chess ==1.11.1
+cairosvg
+multion
+scrapegraphai
+playwright ==1.49.1
+streamlit-chat
+routellm
+torch
+unsloth
+trl
+arxiv
+embedchain
+youtube-transcript-api ==0.6.3
+llama-index ==0.12.33
+llama-index-vector-stores-qdrant ==0.6.0
+dspy ==2.6.18
+tavily-python ==0.5.4
+langchain-core ==0.3.28
+sentence-transformers >=2.2.2,>=2.5.1
+langgraph ==0.2.53
+langchain-google-genai
+langchain-chroma
+chromadb
+exa ==0.5.26
+langchain-qdrant ==0.2.0
+lancedb
+tantivy
+pgvector
+psycopg
+langchain-anthropic ==0.3.0
+tiktoken >=0.6.0
+langchain-cohere ==0.3.2
+cohere ==5.11.4
+psycopg-binary
+raglite ==0.2.1
+llama-cpp-python >=0.2.56
+psycopg2-binary >=2.9.9
+rerankers ==0.6.0
+spacy >=3.7.0
+flashrank ==0.2.9
+pymupdf >=1.23.0
+langchainhub
+langchain-text-splitters
+beautifulsoup4
+langchain-ollama
+e2b ==1.0.5
+elevenlabs
+uuid
+duckdb ==1.1.3
+mcp ==1.6.0
+mcp-agent >=0.0.14
+google-api-python-client ==2.118.0
+google-auth-oauthlib ==1.2.0
+accelerate >=0.34.1,>=1.4.0,>=0.26.0,>=0.34.1,>=0.21.0
+agentops <0.3.0,>=0.2.3
+aiofiles ~=24.1.0,<24.0,>=22.0
+aiohappyeyeballs >=2.5.0
+aiohttp <4.0.0,>=3.8.3,<4.0.0,>=3.9.3,<4.0,>=3.10,>=3.11.13,<4.0.0,>=3.9.1,!=4.0.0a0,!=4.0.0a1,<4.0.0,>=3.9.1,<4,>=3.8.6,<4.0.0,>=3.13.5,>=3.13.3,<4,>=3.10.0
+aiosignal >=1.4.0
+aiosqlite ~=0.21.0
+alembic <2.0.0,>=1.13.1,>=1.5.0
+amqp <6.0.0,>=5.1.1
+annotated-doc >=0.0.2
+apache-tvm-ffi ==0.1.9
+appdirs ~=1.4.4
+argcomplete <4.0,>=1.10
+asn1crypto >=1.5.1
+astor
+async-timeout <5.0.0,>=4.0.0,>=4.0.3,>=4.0.0,<6.0,>=4.0,<5.0.0,>=4.0.0
+asyncer ==0.0.8
+authlib >=1.5.1
+autogen-core ==0.7.5
+babel >=2.16.0
+backoff >=2.2,>=1.10.0
+backports-asyncio-runner <2,>=1.1
+banks <3,>=2.3.0
+billiard <5.0,>=4.2.1
+bitsandbytes !=0.46.0,!=0.48.0,>=0.45.5
+blake3 <2.0.0,>=1.0.0
+blis <0.8.0,>=0.7.8
+boto3 >=1.42.42
+botocore <1.44.0,>=1.43.50,<2.0a.0,>=1.37.4
+cairocffi
+catalogue <2.1.0,>=2.0.6,<2.1.0,>=2.0.4,<2.1.0,>=2.0.3
+cbor2
+cel-python <0.6,>=0.5.0
+cffi >=2.0.0,>=1.1.0,>=2.0.0
+click-didyoumean >=0.3.0
+click-plugins >=1.1.1
+click-repl >=0.2.0
+cloudpathlib <1.0.0,>=0.7.0
+cloudpickle >=3.0.0
+colorama >=0.4
+coloredlogs
+colorlog
+composio-openai <0.7.0,>=0.5.0
+compressed-tensors ==0.17.0
+confection <1.0.0,>=0.0.1,<0.2.0,>=0.0.4
+contourpy >=1.0.1
+courlan >=1.4.0
+coverage >=7.10.6
+crewai-cli ==1.15.3
+crewai-core ==1.15.3
+cron-converter >=1.2.2
+cryptography !=3.4.0,>=3.1,>=42.0,>=42.0,>=3.3,>=36.0.0,>=45.0.1
+cssselect2
+cuda-bindings ~=12.9.0
+cuda-pathfinder ~=1.1
+cuda-python >=12.8
+cuda-tile
+cuda-toolkit <13.4,>=13.2
+curl-cffi >=0.15
+cut-cross-entropy
+cycler >=0.10
+cymem <2.1.0,>=2.0.2
+dacite >=1.8.1
+dataclasses-json <0.7,>=0.5.7
+datamodel-code-generator ==0.26.1
+dateparser >=1.1.2
+ddgs >=9.0.0
+deepdiff ==6.7.1
+defusedxml <0.8.0,>=0.7.1,>=0.7.1
+deprecated >=1.2.9.3,>=1.2.18
+deprecation >=2.1.0
+depyf ==0.20.0
+diffusers
+dill <0.4.2,>=0.3.0,>=0.4.1
+dirtyjson <2,>=1.0.8
+diskcache ==5.6.3
+dnspython <3.0.0,>=2.6.1
+docker
+durationpy >=0.7
+ecdsa !=0.15
+einops
+et-xmlfile
+eval-type-backport <0.3.0,>=0.1.3
+exceptiongroup >=1,>=1.3.0,>=1.0.2
+fake-useragent >=2.2.0
+fastavro <2.0.0,>=1.9.4
+fastsafetensors >=0.3.2
+fastuuid <1.0,>=0.14.0
+feedparser >=6.0.0
+ffmpy
+filelock <4.0.0,>=3.13.1,>=3.10.0,>=3.0.8,>=3.16.1
+filetype <2.0.0,>=1.2.0,<2,>=1.2.0,>=1.2.0
+fireworks-ai <2.0.0,>=1.2.0a71
+flaml
+flash-attn
+flashinfer-cubin ==0.6.13
+flashinfer-python ==0.6.13
+flatbuffers
+fonttools >=4.22.0
+free-proxy >=1.1.3
+frozenlist >=1.1.1,>=1.1.0
+fsspec <=2026.4.0,>=2023.1.0,>=2023.5.0,>=2023.5.0
+ftfy >=6.2.0
+gdown >=5.2.0
+genson <2.0,>=1.2.1
+google-ai-generativelanguage ==0.6.10
+google-api-core !=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0.dev0,>=1.31.5,!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,<3.0.0,>=1.34.1,<3.0.0,>=2.24.2,<3.0.0,>=2.17.1,<3.0.0dev,>=2.15.0,<3.0.0,>=2.25.0,<3.0.0,>=2.17.1,<3.0.0,>=2.11.0,<3.0.0,>=2.17.1
+google-auth-httplib2 >=0.1.0
+google-cloud-aiplatform >=1.87.0
+google-cloud-bigquery !=3.20.0,<4.0.0,>=1.15.0
+google-cloud-core <3.0dev,>=2.3.0,<3.0.0,>=2.4.1
+google-cloud-resource-manager <3.0.0,>=1.3.3
+google-cloud-secret-manager >=2.22.0
+google-cloud-speech >=2.30.0
+google-cloud-storage <3.0.0,>=2.18.0,<4.0.0,>=1.32.0
+google-cloud-trace ~=1.1
+google-crc32c <2.0dev,>=1.0,<2.0.0,>=1.0.0
+google-re2 >=1.1.20240702
+google-resumable-media >=2.7.2,<3.0.0,>=2.0.0
+googleapis-common-protos ~=1.52,<2.0.0,>=1.63.2,~=1.57,>=1.5.5,<2.0.0,>=1.63.2
+gptcache <0.2.0,>=0.1.43
+gradio-client ==1.5.2
+graphviz >=0.20.3,>=0.20.2
+greenlet ==3.1.1
+griffe <2,>=1.5.6
+grpc-google-iam-v1 <1.0.0,>=0.14.2,<1.0.0,>=0.14.0
+grpcio >=1.41.0,<2.0.0,>=1.60.0,>=1.58.0,>=1.83.0rc1,<2.0.0,>=1.41.0,<2.0.0,>=1.59.0,<2.0.0,>=1.59.0,>=1,<2.0.0,>=1.63.2,>=1.83.0rc1,<2.0.0,>=1.59.0,<2.0.0,>=1.44.0,<2.0.0,>=1.59.0
+grpcio-status <2.0.0,>=1.41.0
+grpcio-tools >=1.41.0
+h2 <5,>=3
+hf-transfer
+hf-xet <2.0.0,>=1.5.1
+hpack <5,>=4.1
+html2text >=2025.4.15,>=2020.1.16
+htmldate >=1.10.0
+httplib2 <1.dev0,>=0.15.0,<1.0.0,>=0.19.0
+httpx-aiohttp >=0.1.9
+httpx-sse ==0.4.0
+huggingface-hub <2.0,>=0.20,<2.0,>=1.5.0,<2.0,>=0.25.0,>=0.25.1,>=0.34.0,>=0.23.0,>=0.22.0,<2.0,>=0.16.4,>=0.19.3,>=0.34.0,>=0.21.0,>=0.25.0,<2.0,>=0.34.0
+humanfriendly >=9.1
+humming-kernels ==0.1.10
+hyperframe <7,>=6.1
+ijson
+importlib-metadata >=4.8.1,<9.0,>=8.0.0
+importlib-resources
+inflect <6.0,>=4.1.0
+inflection >=0.5.1,<0.6.0,>=0.5.1
+iniconfig >=1.0.1
+instructor >=1.3.3
+interegular >=0.3.2
+invoke >=2.0
+isort <6.0,>=4.3.21
+jmespath >=1.0.1,<2.0.0,>=0.7.1,<2.0.0,>=0.7.1
+joblib ~=1.3,>=1.4.0,>=0.11
+joserfc >=1.6.0
+json-repair ~=0.25.2,>=0.30.0
+json5 ~=0.10.0
+jsonpatch <2.0,>=1.33
+jsonpointer >=1.9
+jsonref ==1.1.0
+justext >=3.0.2
+kiwisolver >=1.0.1
+kombu >=5.6.0
+kubernetes >=28.1.0
+lance-namespace >=0.3.2
+lance-namespace-urllib3-client ==0.9.0
+langchain-aws >=0.2.11,>=1.1.0
+langchain-classic >=1.0.0
+langchain-experimental >=0.3.0
+langchain-fireworks >=0.2.6
+langchain-mistralai >=1.1.1
+langcodes <4.0.0,>=3.2.0
+langdetect >=1.0.9
+langgraph-checkpoint <3.0.0,>=2.0.4
+langgraph-sdk <0.2.0,>=0.1.32
+langsmith <0.3,>=0.1.17,<0.3,>=0.1.125,<0.4.0,>=0.3.18,<0.3,>=0.1.125,<1.0.0,>=0.1.17
+lark ==1.2.2
+llama-cloud ==0.1.46
+llama-cloud-services >=0.6.94
+llama-index-agent-openai <0.5.0,>=0.4.0,<0.5,>=0.4.0
+llama-index-cli <0.5.0,>=0.4.1
+llama-index-core <0.13.0,>=0.12.33,<0.13.0,>=0.12.7,<0.13,>=0.12.37,<0.13.0,>=0.12.0,<0.13,>=0.12.0,<0.13,>=0.12.0,<0.13,>=0.12.41,<0.13,>=0.12.0,<0.15,>=0.13.0,<0.15,>=0.13.0,<0.13.0,>=0.12.3,<0.13,>=0.12.0,>=0.12.0
+llama-index-embeddings-openai <0.4.0,>=0.3.0,<0.4,>=0.3.1
+llama-index-indices-managed-llama-cloud >=0.4.0
+llama-index-instrumentation >=0.4.3
+llama-index-llms-openai <0.4.0,>=0.3.0,<0.5,>=0.4.0,<0.5,>=0.4.0,<0.5,>=0.4.0,<0.4.0,>=0.3.0,<0.5,>=0.4.0
+llama-index-multi-modal-llms-openai <0.5.0,>=0.4.0
+llama-index-program-openai <0.4.0,>=0.3.0,<0.4,>=0.3.0
+llama-index-question-gen-openai <0.4.0,>=0.3.0
+llama-index-readers-file <0.5.0,>=0.4.0
+llama-index-readers-llama-parse >=0.4.0
+llama-index-workflows <3,>=2.14.0
+llama-parse >=0.5.0
+llguidance <1.8.0,>=1.7.0
+llvmlite >=0.38,<0.49,>=0.48.0dev0
+lm-format-enforcer ==0.11.3
+lmnr >=0.4.53
+lmnr-claude-code-proxy >=0.1.22
+lxml >=4.2.0,>=5.3.0,<7.0,>=6.1.0,>=3.1.0,>=4.9.4,<7,>=5.0,>=6.1.1,>=5.3.0,>=4.4.2
+magicattr >=0.1.6
+maincontentextractor >=0.0.4
+mako
+marshmallow <4.0.0,>=3.18.0
+mdformat >=0.7.5
+mdformat-gfm >=0.3.6
+mdit-py-plugins >=0.2.0
+minify-html >=0.18.1
+mistral-common >=1.11.5
+ml-dtypes
+mmh3 <6.0.0,>=4.1.0,>=4.0.1
+model-hosting-container-standards <1.0.0,>=0.1.14
+monotonic >=1.5
+mpmath <1.4,>=1.1.0
+msgspec
+multidict <7.0,>=4.5,>=4.0
+multiprocess <0.70.20
+multitasking >=0.0.7
+murmurhash <1.1.0,>=0.28.0,<1.1.0,>=1.0.2
+mypy-extensions >=0.4.3,>=0.3.0
+ninja
+nmslib-metabrainz
+numba ==0.65.0
+nvidia-cublas ==13.6.0.2.*
+nvidia-cublas-cu11 ==11.11.3.6
+nvidia-cuda-cccl ==13.3.3.4.1.*
+nvidia-cuda-crt ==13.3.73.*
+nvidia-cuda-culibos ==13.3.33.*
+nvidia-cuda-cuobjdump ==13.3.73.*
+nvidia-cuda-cupti ==13.3.75.*
+nvidia-cuda-cupti-cu11 ==11.8.87
+nvidia-cuda-cuxxfilt ==13.3.29.*
+nvidia-cuda-nvcc ==13.3.73.*
+nvidia-cuda-nvdisasm ==13.3.73.*
+nvidia-cuda-nvrtc ==13.3.33.*
+nvidia-cuda-nvrtc-cu11 ==11.8.89
+nvidia-cuda-opencl ==13.3.27.*
+nvidia-cuda-profiler-api ==13.3.27.*
+nvidia-cuda-runtime ==13.3.29.*
+nvidia-cuda-runtime-cu11 ==11.8.89
+nvidia-cuda-sanitizer-api ==13.3.75.*
+nvidia-cuda-tileiras ==13.3.36.*
+nvidia-cudnn-cu11 ==9.1.0.70
+nvidia-cudnn-frontend >=1.19.1,>=1.13.0
+nvidia-cufft ==12.3.0.29.*
+nvidia-cufft-cu11 ==10.9.0.58
+nvidia-cufile ==1.18.1.6.*
+nvidia-curand ==10.4.3.29.*
+nvidia-curand-cu11 ==10.3.0.86
+nvidia-cusolver ==12.2.6.9.*
+nvidia-cusolver-cu11 ==11.4.1.48
+nvidia-cusparse ==12.8.2.51.*
+nvidia-cusparse-cu11 ==11.7.5.86
+nvidia-cutlass-dsl ==4.5.2
+nvidia-cutlass-dsl-libs-base ==4.5.2
+nvidia-cutlass-dsl-libs-cu13 ==4.5.2
+nvidia-ml-py
+nvidia-nccl-cu11 ==2.21.5
+nvidia-npp ==13.1.2.81.*
+nvidia-nvfatbin ==13.3.29.*
+nvidia-nvjitlink <14,>=13.3.33
+nvidia-nvjpeg ==13.2.1.68.*
+nvidia-nvml-dev ==13.3.29.*
+nvidia-nvptxcompiler ==13.3.73.*
+nvidia-nvtx ==13.3.29.*
+nvidia-nvtx-cu11 ==11.8.86
+nvidia-nvvm ==13.3.73.*
+nvtx ==0.2.15
+oauthlib >=3.0.0
+onnxruntime !=1.20.0,<1.24,>=1.17.0,>=1.14.1
+openai-harmony >=0.0.3
+opencv-python-headless >=4.13.0
+openpyxl ~=3.1.5
+opentelemetry-api ==1.42.1
+opentelemetry-distro >=0.50b0
+opentelemetry-exporter-gcp-trace >=1.9.0
+opentelemetry-exporter-otlp >=1.27.0
+opentelemetry-exporter-otlp-proto-common ==1.42.1
+opentelemetry-exporter-otlp-proto-grpc ==1.44.0
+opentelemetry-exporter-otlp-proto-http ==1.44.0
+opentelemetry-instrumentation ==0.65b0
+opentelemetry-instrumentation-alephalpha ==0.52.4
+opentelemetry-instrumentation-anthropic >=0.39.3
+opentelemetry-instrumentation-bedrock ==0.52.4
+opentelemetry-instrumentation-chromadb ==0.52.4
+opentelemetry-instrumentation-cohere ==0.52.4
+opentelemetry-instrumentation-crewai ==0.52.4
+opentelemetry-instrumentation-haystack ==0.52.4
+opentelemetry-instrumentation-lancedb ==0.52.4
+opentelemetry-instrumentation-langchain ==0.52.4
+opentelemetry-instrumentation-llamaindex ==0.52.4
+opentelemetry-instrumentation-marqo ==0.52.4
+opentelemetry-instrumentation-mcp ==0.52.4
+opentelemetry-instrumentation-milvus ==0.52.4
+opentelemetry-instrumentation-mistralai ==0.52.4
+opentelemetry-instrumentation-ollama ==0.52.4
+opentelemetry-instrumentation-openai >=0.39.3
+opentelemetry-instrumentation-pinecone ==0.52.4
+opentelemetry-instrumentation-qdrant ==0.52.4
+opentelemetry-instrumentation-replicate ==0.52.4
+opentelemetry-instrumentation-sagemaker ==0.52.4
+opentelemetry-instrumentation-threading <1.0.0,>=0.54b0
+opentelemetry-instrumentation-together ==0.52.4
+opentelemetry-instrumentation-transformers ==0.52.4
+opentelemetry-instrumentation-vertexai ==0.52.4
+opentelemetry-instrumentation-watsonx ==0.52.4
+opentelemetry-instrumentation-weaviate ==0.52.4
+opentelemetry-proto ==1.42.1
+opentelemetry-resourcedetector-gcp ==1.*,>=1.5.0dev0
+opentelemetry-sdk ~=1.42.0,>=1.31.0,>=1.2.0,~=1.42.0,~=1.42.1,>=1.4.0,~=1.30,<2.0.0,>=1.39.0,~=1.44.0,~=1.13,~=1.30,>=1.27.0
+opentelemetry-semantic-conventions ==0.63b1
+opentelemetry-semantic-conventions-ai ==0.4.13
+optuna >=3.4.0
+ordered-set <4.2.0,>=4.0.2
+orjson ~=3.0,>=3.9.12,>=3.9.14,<4.0.0,>=3.0.0,>=3.10.1
+ormsgpack >=1.10.0
+outlines-core ==0.2.14
+overrides >=7.3.1,>=0.7
+parameterized <0.10.0,>=0.9.0
+paramiko >=3.4.1
+partial-json-parser
+pathspec >=1.0.0,>=0.12.1
+pdfminer-six ==20260107
+pdfplumber ~=0.11.4
+pdftext >=0.3.13
+peewee >=3.16.2
+peft !=0.11.0,>=0.18.0,>=0.13.0,!=0.11.0,>=0.18.0
+pendulum >=3.1.0,<4.0.0,>=3.0.0
+pg8000 >=1.31.2
+phonenumbers <10,>=8
+platformdirs >=2.0.0,>=2,>=3.11.0,<5,>=3.6.0,<5,>=4.3.7
+pluggy <2,>=1.5,>=1.2
+portalocker <3.0.0,>=2.7.0,~=2.7.0,~=2.7.0
+posthog <4.0.0,>=3.5.0,>=3.7.0,<4.0.0,>=3.0.2
+preshed <3.1.0,>=3.0.2
+primp >=0.10.0,>=1.2.3
+prometheus-client >=0.18.0,<1.0.0,>=0.8.0
+prometheus-fastapi-instrumentator >=8.0.0
+prompt-toolkit >=3.0.50,>=3.0.36
+propcache >=0.2.0,>=0.2.1
+proto-plus <2.0.0dev,>=1.22.3,<2.0.0,>=1.24.0,<2.0.0,>=1.22.3,<2.0.0,>=1.26.1,<2.0.0,>=1.22.3,<2.0.0,>=1.22.3,<2.0.0,>=1.22.3
+psutil ==5.9.8
+py-cpuinfo
+py-rust-stemmers <0.2.0,>=0.1.0
+pybase64 >=1.4.1
+pybind11 >=2.2.3
+pycountry >=23
+pycparser
+pydantic-extra-types >=2.10.5
+pydantic-yaml >=1.5.1
+pydub
+pyee ==12.0.0
+pyelftools
+pyjwt <3,>=2.13.0
+pymongo <5.0,>=4.9,<5.0.0,>=4.0.0
+pynacl >=1.5
+pynndescent >=0.5.12
+pynvvideocodec ==2.0.4
+pyparsing >=2.3.1,<4,>=3.1
+pypdfium2 ==5.10.1
+pyperclip <2,>=1.8.2
+pypika >=0.48.9
+pysbd <0.4.0,>=0.3.4
+pysher ==1.0.8
+pytest-metadata
+python-docx ~=1.2.0
+python-json-logger
+python-ulid <4,>=1
+pytokens ~=0.4.0
+pytube ~=15.0.0
+pyzmq >=25.0.0
+quack-kernels >=0.3.3
+rank-llm
+regex ~=2026.1.15,>=2021.8.3,>=2025.10.22,>=2023.10.3,>=2022.1.18,!=2019.12.17,>=2024.9.11
+requests-file >=1.4
+requests-oauthlib >=0.7.0
+requests-toolbelt >=1.0.0
+ruamel-yaml <0.20.0,>=0.17.0
+s3transfer <0.20.0,>=0.19.0
+safehttpx <0.2.0,>=0.1.6
+safetensors >=0.8.0,>=0.4.3,>=0.8.0,>=0.6.2
+schema <0.8.0,>=0.7.5
+scikit-learn >=0.22.0,>=1.4.2,>=1.6.0,>=0.18
+scramp >=1.4.5
+scrapegraph-py >=2.0.0
+semantic-version ~=2.0
+semchunk >=3.2.5
+semver >=2.13.0,>=3.0.2,~=3.0.2
+sentencepiece >=0.2.0
+sentry-sdk >=2.0.0
+setproctitle
+setuptools-scm >=7
+sgmllib3k
+simpleeval >=1.0.3
+smart-open <8.0.0,>=5.2.1
+soupsieve >=1.6.1
+spacy-legacy <3.1.0,>=3.0.11
+spacy-loggers <2.0.0,>=1.0.0
+sqlmodel >=0.0.35
+sqlmodel-slim >=0.0.18
+srsly <3.0.0,>=2.4.3,<3.0.0,>=2.4.0,<3.0.0,>=2.4.3,<3.0.0,>=2.4.0
+sse-starlette >=1.6.1
+starlette >=0.46.0,<1.0,>=0.40.0,>=0.27,>=0.49.1,>=1.0.1,<2.0.0,>=1.0.0,>=0.49.1
+striprtf <0.0.27,>=0.0.26
+supervisor >=4.2.0
+tabulate <0.10.0,>=0.9.0
+termcolor ==2.4.0
+textual >=7.5.0
+thinc <8.3.0,>=8.2.2
+threadpoolctl >=3.5.0
+tilelang ==0.1.9
+tinycss2
+tinytag >=2.2.0
+tld >=0.13
+tldextract >=2.0.1
+tokenizers <1.0,>=0.15,<1,>=0.21,<1.0,>=0.21.0,<=0.23.0,>=0.22.0,>=0.13.2,<1,>=0.15,<1.0.0,>=0.15.1,>=0.13.0,>=0.21.1
+tokenspeed-mla ==0.1.2
+tokenspeed-triton >=3.7.10.post20260505
+tomli-w ~=1.1.0
+tomlkit <0.14.0,>=0.12.0
+torch-c-dlpack-ext
+torchao >=0.13.0
+torchaudio ==2.11.0
+torchcodec >=0.14
+torchvision ==0.26.0
+trafilatura >=1.6.2
+triton ==3.3.1
+typeguard >=4.0.0
+typer-slim <1.0.0,>=0.3.0
+types-requests <3,>=2.0,<3.0.0,>=2.0.0,<3.0.0.0,>=2.31.0.2
+typing-inspect <1,>=0.4.0,>=0.8.0
+typing-inspection >=0.4.2
+tyro
+tzlocal >=5.3,>=0.2
+ujson >=5.8.0
+undetected-playwright >=0.3.0
+unsloth-zoo >=2026.7.3
+uritemplate <5,>=3.0.1
+uuid-utils <1.0,>=0.12.0,>=0.6.0
+uv ~=0.11.6
+vcs-versioning <3,>=2.0.0.dev0
+vine ==5.1.0
+vllm >=0.4.0
+wasabi <1.2.0,>=0.9.1,<1.2.0,>=0.8.1,<1.2.0,>=0.9.1
+watchdog <7,>=2.1.5,>=6.0.0
+watchfiles
+wcwidth >=0.2.13
+weasel <0.5.0,>=0.1.0
+webencodings >=0.4
+websocket-client !=0.40.0,!=0.41.*,!=0.42.*,>=0.32.0
+wrapt <3.0.0,>=1.0.0,<3,>=1.10
+xformers >=0.0.27.post2
+xgrammar <1.0.0,>=0.2.1
+xxhash >=3.0.0
+yarl <2.0,>=1.17.0
+z3-solver <4.15.5,>=4.13.0
+zstandard >=0.23.0

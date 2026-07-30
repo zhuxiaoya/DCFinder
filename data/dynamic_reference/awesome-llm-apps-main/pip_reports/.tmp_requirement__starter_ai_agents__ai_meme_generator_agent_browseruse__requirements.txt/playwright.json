@@ -1,0 +1,68 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/9a/c1/ea765e72a746dc7ec2ce155ffea29d454e7171db78f3c09185e888387246/playwright-1.49.1-py3-none-manylinux1_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=753ca90ee31b4b03d165cfd36e477309ebf2b4381953f2a982ff612d85b147d2",
+          "hashes": {
+            "sha256": "753ca90ee31b4b03d165cfd36e477309ebf2b4381953f2a982ff612d85b147d2"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "playwright",
+        "version": "1.49.1",
+        "summary": "A high-level API to automate web browsers",
+        "description_content_type": "text/markdown",
+        "author": "Microsoft Corporation",
+        "license": "Apache-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Topic :: Software Development :: Testing",
+          "Topic :: Internet :: WWW/HTTP :: Browsers",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "License :: OSI Approved :: Apache Software License",
+          "Operating System :: OS Independent"
+        ],
+        "requires_dist": [
+          "greenlet==3.1.1",
+          "pyee==12.0.0"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "homepage, https://github.com/Microsoft/playwright-python",
+          "Release notes, https://github.com/microsoft/playwright-python/releases"
+        ],
+        "description": "# 🎭 [Playwright](https://playwright.dev) for Python [![PyPI version](https://badge.fury.io/py/playwright.svg)](https://pypi.python.org/pypi/playwright/) [![Anaconda version](https://img.shields.io/conda/v/microsoft/playwright)](https://anaconda.org/Microsoft/playwright) [![Join Discord](https://img.shields.io/badge/join-discord-infomational)](https://aka.ms/playwright/discord)\n\nPlaywright is a Python library to automate [Chromium](https://www.chromium.org/Home), [Firefox](https://www.mozilla.org/en-US/firefox/new/) and [WebKit](https://webkit.org/) browsers with a single API. Playwright delivers automation that is **ever-green**, **capable**, **reliable** and **fast**. [See how Playwright is better](https://playwright.dev/python).\n\n|          | Linux | macOS | Windows |\n|   :---   | :---: | :---: | :---:   |\n| Chromium <!-- GEN:chromium-version -->131.0.6778.33<!-- GEN:stop --> | ✅ | ✅ | ✅ |\n| WebKit <!-- GEN:webkit-version -->18.2<!-- GEN:stop --> | ✅ | ✅ | ✅ |\n| Firefox <!-- GEN:firefox-version -->132.0<!-- GEN:stop --> | ✅ | ✅ | ✅ |\n\n## Documentation\n\n[https://playwright.dev/python/docs/intro](https://playwright.dev/python/docs/intro)\n\n## API Reference\n\n[https://playwright.dev/python/docs/api/class-playwright](https://playwright.dev/python/docs/api/class-playwright)\n\n## Example\n\n```py\nfrom playwright.sync_api import sync_playwright\n\nwith sync_playwright() as p:\n    for browser_type in [p.chromium, p.firefox, p.webkit]:\n        browser = browser_type.launch()\n        page = browser.new_page()\n        page.goto('http://playwright.dev')\n        page.screenshot(path=f'example-{browser_type.name}.png')\n        browser.close()\n```\n\n```py\nimport asyncio\nfrom playwright.async_api import async_playwright\n\nasync def main():\n    async with async_playwright() as p:\n        for browser_type in [p.chromium, p.firefox, p.webkit]:\n            browser = await browser_type.launch()\n            page = await browser.new_page()\n            await page.goto('http://playwright.dev')\n            await page.screenshot(path=f'example-{browser_type.name}.png')\n            await browser.close()\n\nasyncio.run(main())\n```\n\n## Other languages\n\nMore comfortable in another programming language? [Playwright](https://playwright.dev) is also available in\n- [Node.js (JavaScript / TypeScript)](https://playwright.dev/docs/intro),\n- [.NET](https://playwright.dev/dotnet/docs/intro),\n- [Java](https://playwright.dev/java/docs/intro).\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

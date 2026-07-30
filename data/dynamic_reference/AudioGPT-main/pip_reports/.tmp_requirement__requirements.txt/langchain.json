@@ -1,0 +1,99 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/18/74/13ce0e4ed8b27624ffbc6fbfe31b199bd1e63603ae6078fa601e26260a30/langchain-0.0.101-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=dabaa5085f485a303b7fb19c9b7b646ab4e7279b29092871763db86a43662a10",
+          "hashes": {
+            "sha256": "dabaa5085f485a303b7fb19c9b7b646ab4e7279b29092871763db86a43662a10"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "langchain",
+        "version": "0.0.101",
+        "summary": "Building applications with LLMs through composability",
+        "description_content_type": "text/markdown",
+        "home_page": "https://www.github.com/hwchase17/langchain",
+        "license": "MIT",
+        "classifier": [
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11"
+        ],
+        "requires_dist": [
+          "PyYAML (>=6,<7)",
+          "SQLAlchemy (>=1,<2)",
+          "aiohttp (>=3.8.3,<4.0.0)",
+          "aleph-alpha-client (>=2.15.0,<3.0.0) ; extra == \"all\"",
+          "anthropic (>=0.2.2,<0.3.0) ; extra == \"llms\" or extra == \"all\"",
+          "beautifulsoup4 (>=4,<5) ; extra == \"all\"",
+          "cohere (>=3,<4) ; extra == \"llms\" or extra == \"all\"",
+          "dataclasses-json (>=0.5.7,<0.6.0)",
+          "deeplake (>=3.2.9,<4.0.0) ; extra == \"all\"",
+          "elasticsearch (>=8,<9) ; extra == \"all\"",
+          "faiss-cpu (>=1,<2) ; extra == \"all\"",
+          "google-api-python-client (==2.70.0) ; extra == \"all\"",
+          "google-search-results (>=2,<3) ; extra == \"all\"",
+          "huggingface_hub (>=0,<1) ; extra == \"llms\" or extra == \"all\"",
+          "jinja2 (>=3,<4) ; extra == \"all\"",
+          "manifest-ml (>=0.0.1,<0.0.2) ; extra == \"llms\" or extra == \"all\"",
+          "networkx (>=2.6.3,<3.0.0) ; extra == \"all\"",
+          "nlpcloud (>=1,<2) ; extra == \"llms\" or extra == \"all\"",
+          "nltk (>=3,<4) ; extra == \"all\"",
+          "nomic (>=1.0.43,<2.0.0) ; extra == \"all\"",
+          "numpy (>=1,<2)",
+          "openai (>=0,<1) ; extra == \"llms\" or extra == \"all\"",
+          "opensearch-py (>=2.0.0,<3.0.0) ; extra == \"all\"",
+          "pinecone-client (>=2,<3) ; extra == \"all\"",
+          "pydantic (>=1,<2)",
+          "pypdf (>=3.4.0,<4.0.0) ; extra == \"all\"",
+          "qdrant-client (>=1.0.4,<2.0.0) ; (python_full_version >= \"3.8.1\" and python_version < \"3.12\") and (extra == \"all\")",
+          "redis (>=4,<5) ; extra == \"all\"",
+          "requests (>=2,<3)",
+          "sentence-transformers (>=2,<3) ; extra == \"all\"",
+          "spacy (>=3,<4) ; extra == \"all\"",
+          "tenacity (>=8.1.0,<9.0.0)",
+          "tensorflow-text (>=2.11.0,<3.0.0) ; (python_version >= \"3.10\" and python_version < \"3.12\") and (extra == \"all\")",
+          "tiktoken (>=0,<1) ; (python_version >= \"3.9\" and python_version < \"4.0\") and (extra == \"all\")",
+          "torch (>=1,<2) ; extra == \"llms\" or extra == \"all\"",
+          "transformers (>=4,<5) ; extra == \"llms\" or extra == \"all\"",
+          "weaviate-client (>=3,<4) ; extra == \"all\"",
+          "wikipedia (>=1,<2) ; extra == \"all\"",
+          "wolframalpha (==5.0.0) ; extra == \"all\""
+        ],
+        "requires_python": ">=3.8.1,<4.0",
+        "project_url": [
+          "Repository, https://www.github.com/hwchase17/langchain"
+        ],
+        "provides_extra": [
+          "all",
+          "llms"
+        ],
+        "description": "# 🦜️🔗 LangChain\n\n⚡ Building applications with LLMs through composability ⚡\n\n[![lint](https://github.com/hwchase17/langchain/actions/workflows/lint.yml/badge.svg)](https://github.com/hwchase17/langchain/actions/workflows/lint.yml) [![test](https://github.com/hwchase17/langchain/actions/workflows/test.yml/badge.svg)](https://github.com/hwchase17/langchain/actions/workflows/test.yml) [![linkcheck](https://github.com/hwchase17/langchain/actions/workflows/linkcheck.yml/badge.svg)](https://github.com/hwchase17/langchain/actions/workflows/linkcheck.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/langchainai.svg?style=social&label=Follow%20%40LangChainAI)](https://twitter.com/langchainai) [![](https://dcbadge.vercel.app/api/server/6adMQxSpJS?compact=true&style=flat)](https://discord.gg/6adMQxSpJS)\n\n**Production Support:** As you move your LangChains into production, we'd love to offer more comprehensive support.\nPlease fill out [this form](https://forms.gle/57d8AmXBYp8PP8tZA) and we'll set up a dedicated support Slack channel.\n\n## Quick Install\n\n`pip install langchain`\n\n## 🤔 What is this?\n\nLarge language models (LLMs) are emerging as a transformative technology, enabling\ndevelopers to build applications that they previously could not.\nBut using these LLMs in isolation is often not enough to\ncreate a truly powerful app - the real power comes when you can combine them with other sources of computation or knowledge.\n\nThis library is aimed at assisting in the development of those types of applications. Common examples of these types of applications include:\n\n**❓ Question Answering over specific documents**\n\n- [Documentation](https://langchain.readthedocs.io/en/latest/use_cases/question_answering.html)\n- End-to-end Example: [Question Answering over Notion Database](https://github.com/hwchase17/notion-qa)\n\n**💬 Chatbots**\n\n- [Documentation](https://langchain.readthedocs.io/en/latest/use_cases/chatbots.html)\n- End-to-end Example: [Chat-LangChain](https://github.com/hwchase17/chat-langchain)\n\n**🤖 Agents**\n\n- [Documentation](https://langchain.readthedocs.io/en/latest/use_cases/agents.html)\n- End-to-end Example: [GPT+WolframAlpha](https://huggingface.co/spaces/JavaFXpert/Chat-GPT-LangChain)\n\n## 📖 Documentation\n\nPlease see [here](https://langchain.readthedocs.io/en/latest/?) for full documentation on:\n\n- Getting started (installation, setting up the environment, simple examples)\n- How-To examples (demos, integrations, helper functions)\n- Reference (full API docs)\n- Resources (high-level explanation of core concepts)\n\n## 🚀 What can this help with?\n\nThere are six main areas that LangChain is designed to help with.\nThese are, in increasing order of complexity:\n\n**📃 LLMs and Prompts:**\n\nThis includes prompt management, prompt optimization, generic interface for all LLMs, and common utilities for working with LLMs.\n\n**🔗 Chains:**\n\nChains go beyond just a single LLM call, and are sequences of calls (whether to an LLM or a different utility). LangChain provides a standard interface for chains, lots of integrations with other tools, and end-to-end chains for common applications.\n\n**📚 Data Augmented Generation:**\n\nData Augmented Generation involves specific types of chains that first interact with an external datasource to fetch data to use in the generation step. Examples of this include summarization of long pieces of text and question/answering over specific data sources.\n\n**🤖 Agents:**\n\nAgents involve an LLM making decisions about which Actions to take, taking that Action, seeing an Observation, and repeating that until done. LangChain provides a standard interface for agents, a selection of agents to choose from, and examples of end to end agents.\n\n**🧠 Memory:**\n\nMemory is the concept of persisting state between calls of a chain/agent. LangChain provides a standard interface for memory, a collection of memory implementations, and examples of chains/agents that use memory.\n\n**🧐 Evaluation:**\n\n[BETA] Generative models are notoriously hard to evaluate with traditional metrics. One new way of evaluating them is using language models themselves to do the evaluation. LangChain provides some prompts/chains for assisting in this.\n\nFor more information on these concepts, please see our [full documentation](https://langchain.readthedocs.io/en/latest/?).\n\n## 💁 Contributing\n\nAs an open source project in a rapidly developing field, we are extremely open to contributions, whether it be in the form of a new feature, improved infra, or better documentation.\n\nFor detailed information on how to contribute, see [here](CONTRIBUTING.md).\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

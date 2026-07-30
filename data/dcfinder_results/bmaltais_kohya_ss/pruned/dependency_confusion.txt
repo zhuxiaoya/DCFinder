@@ -1,0 +1,1433 @@
+{
+     "direct dependency": {
+          "number": 45,
+          "packages": [
+               {
+                    "name": "accelerate",
+                    "specifier": ">=1.7.0",
+                    "raw_requirement": "accelerate>=1.7.0 ; accelerate>=1.7.0",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "aiofiles",
+                    "specifier": "==23.2.1",
+                    "raw_requirement": "aiofiles==23.2.1 ; aiofiles==23.2.1",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "altair",
+                    "specifier": "==4.2.2",
+                    "raw_requirement": "altair==4.2.2 ; altair==4.2.2",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "dadaptation",
+                    "specifier": "==3.2",
+                    "raw_requirement": "dadaptation==3.2 ; dadaptation==3.2",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "diffusers",
+                    "specifier": "==0.32.2",
+                    "raw_requirement": "diffusers[torch]==0.32.2 ; diffusers[torch]==0.32.2",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "easygui",
+                    "specifier": "==0.98.3",
+                    "raw_requirement": "easygui==0.98.3 ; easygui==0.98.3",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "einops",
+                    "specifier": "==0.7.0",
+                    "raw_requirement": "einops==0.7.0 ; einops==0.7.0",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "fairscale",
+                    "specifier": "==0.4.13",
+                    "raw_requirement": "fairscale==0.4.13 ; fairscale==0.4.13",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ftfy",
+                    "specifier": "==6.1.1",
+                    "raw_requirement": "ftfy==6.1.1 ; ftfy==6.1.1",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gradio",
+                    "specifier": ">=5.23.1",
+                    "raw_requirement": "gradio>=5.23.1 ; gradio>=5.23.1",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "huggingface-hub",
+                    "specifier": "==0.29.3",
+                    "raw_requirement": "huggingface-hub==0.29.3 ; huggingface-hub==0.29.3",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "imagesize",
+                    "specifier": "==1.4.1",
+                    "raw_requirement": "imagesize==1.4.1 ; imagesize==1.4.1",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "invisible-watermark",
+                    "specifier": "==0.2.0",
+                    "raw_requirement": "invisible-watermark==0.2.0 ; invisible-watermark==0.2.0",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "lion-pytorch",
+                    "specifier": "==0.0.6",
+                    "raw_requirement": "lion-pytorch==0.0.6 ; lion-pytorch==0.0.6",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "lycoris-lora",
+                    "specifier": "==3.2.0.post2",
+                    "raw_requirement": "lycoris_lora==3.2.0.post2 ; lycoris-lora==3.2.0.post2",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "omegaconf",
+                    "specifier": "==2.3.0",
+                    "raw_requirement": "omegaconf==2.3.0 ; omegaconf==2.3.0",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnx",
+                    "specifier": "==1.16.1",
+                    "raw_requirement": "onnx==1.16.1 ; onnx==1.16.1",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "prodigyopt",
+                    "specifier": "==1.1.2",
+                    "raw_requirement": "prodigyopt==1.1.2 ; prodigyopt==1.1.2",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "protobuf",
+                    "specifier": "==3.20.3",
+                    "raw_requirement": "protobuf==3.20.3 ; protobuf==3.20.3",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "open-clip-torch",
+                    "specifier": "==2.20.0",
+                    "raw_requirement": "open-clip-torch==2.20.0 ; open-clip-torch==2.20.0",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opencv-python",
+                    "specifier": "==4.10.0.84",
+                    "raw_requirement": "opencv-python==4.10.0.84 ; opencv-python==4.10.0.84",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "prodigy-plus-schedule-free",
+                    "specifier": "==1.8.0",
+                    "raw_requirement": "prodigy-plus-schedule-free==1.8.0 ; prodigy-plus-schedule-free==1.8.0",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pytorch-lightning",
+                    "specifier": "==1.9.0",
+                    "raw_requirement": "pytorch-lightning==1.9.0 ; pytorch-lightning==1.9.0",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pytorch-optimizer",
+                    "specifier": "==3.5.0",
+                    "raw_requirement": "pytorch-optimizer==3.5.0 ; pytorch-optimizer==3.5.0",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "rich",
+                    "specifier": ">=13.7.1",
+                    "raw_requirement": "rich>=13.7.1 ; rich>=13.7.1",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "safetensors",
+                    "specifier": "==0.4.4",
+                    "raw_requirement": "safetensors==0.4.4 ; safetensors==0.4.4",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "schedulefree",
+                    "specifier": "==1.4",
+                    "raw_requirement": "schedulefree==1.4 ; schedulefree==1.4",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scipy",
+                    "specifier": "==1.11.4",
+                    "raw_requirement": "scipy==1.11.4 ; scipy==1.11.4",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "sentencepiece",
+                    "specifier": "==0.2.0",
+                    "raw_requirement": "sentencepiece==0.2.0 ; sentencepiece==0.2.0",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "timm",
+                    "specifier": "==0.6.7",
+                    "raw_requirement": "timm==0.6.7 ; timm>=0.9.2",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tk",
+                    "specifier": "==0.1.0",
+                    "raw_requirement": "tk==0.1.0 ; tk==0.1.0",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "toml",
+                    "specifier": "==0.10.2",
+                    "raw_requirement": "toml==0.10.2 ; toml==0.10.2",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "transformers",
+                    "specifier": "==4.44.2",
+                    "raw_requirement": "transformers==4.44.2 ; transformers==4.44.2",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "voluptuous",
+                    "specifier": "==0.13.1",
+                    "raw_requirement": "voluptuous==0.13.1 ; voluptuous==0.13.1",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "wandb",
+                    "specifier": "==0.18.0",
+                    "raw_requirement": "wandb==0.18.0 ; wandb==0.18.0",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "bitsandbytes",
+                    "specifier": ">=0.45.0",
+                    "raw_requirement": "bitsandbytes>=0.45.0",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "library",
+                    "specifier": "",
+                    "raw_requirement": "library",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnxruntime-gpu",
+                    "specifier": "==1.19.2",
+                    "raw_requirement": "onnxruntime-gpu==1.19.2",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorboard",
+                    "specifier": ">=2.18.0",
+                    "raw_requirement": "tensorboard>=2.18.0",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorflow",
+                    "specifier": ">=2.16.1",
+                    "raw_requirement": "tensorflow>=2.16.1",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorflow-io-gcs-filesystem",
+                    "specifier": "==0.31.0",
+                    "raw_requirement": "tensorflow-io-gcs-filesystem==0.31.0; sys_platform == 'win32' ; tensorflow-io-gcs-filesystem>=0.37.1; sys_platform == 'linux'",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torch",
+                    "specifier": ">=2.5.0",
+                    "raw_requirement": "torch>=2.5.0",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torchvision",
+                    "specifier": ">=0.20.0",
+                    "raw_requirement": "torchvision>=0.20.0",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "triton",
+                    "specifier": ">=3.1.0",
+                    "raw_requirement": "triton>=3.1.0; sys_platform == 'linux'",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/pyproject.toml",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "xformers",
+                    "specifier": ">=0.0.30",
+                    "raw_requirement": "xformers>=0.0.30",
+                    "source_file": "analysis_program/bmaltais_kohya_ss/pyproject.toml",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 38,
+          "packages": [
+               {
+                    "name": "aiohappyeyeballs",
+                    "specifier": ">=2.5.0",
+                    "raw_requirement": "aiohappyeyeballs>=2.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "aiohttp",
+                    "specifier": "!=4.0.0a0,!=4.0.0a1",
+                    "raw_requirement": "aiohttp!=4.0.0a0,!=4.0.0a1; extra == 'http'",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fsspec",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "aiosignal",
+                    "specifier": ">=1.4.0",
+                    "raw_requirement": "aiosignal>=1.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "antlr4-python3-runtime",
+                    "specifier": "==4.9.*",
+                    "raw_requirement": "antlr4-python3-runtime (==4.9.*)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "omegaconf",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "async-timeout",
+                    "specifier": "<6.0,>=4.0",
+                    "raw_requirement": "async-timeout<6.0,>=4.0; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "attrs",
+                    "specifier": ">=22.2.0,>=17.3.0",
+                    "raw_requirement": "attrs>=22.2.0 ; attrs>=22.2.0 ; attrs>=17.3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jsonschema",
+                              "source": "private"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "private"
+                         },
+                         {
+                              "name": "aiohttp",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "filelock",
+                    "specifier": ">=3.0.8",
+                    "raw_requirement": "filelock ; filelock ; filelock>=3.0.8",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "diffusers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "tldextract",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "frozenlist",
+                    "specifier": ">=1.1.1,>=1.1.0",
+                    "raw_requirement": "frozenlist>=1.1.1 ; frozenlist>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "private"
+                         },
+                         {
+                              "name": "aiosignal",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "fsspec",
+                    "specifier": ">2021.06.0",
+                    "raw_requirement": "fsspec[http] (>2021.06.0) ; fsspec ; fsspec",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pytorch-lightning",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "idna",
+                    "specifier": "<4,>=2.5,>=2.8,>=2.0",
+                    "raw_requirement": "idna (<4,>=2.5) ; idna>=2.8 ; idna ; idna ; idna>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "private"
+                         },
+                         {
+                              "name": "httpx",
+                              "source": "private"
+                         },
+                         {
+                              "name": "tldextract",
+                              "source": "public"
+                         },
+                         {
+                              "name": "yarl",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": "<4.0",
+                    "raw_requirement": "jinja2 ; jinja2<4.0 ; jinja2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "altair",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "markdown-it-py",
+                    "specifier": ">=2.2.0",
+                    "raw_requirement": "markdown-it-py (>=2.2.0) ; markdown-it-py",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rich",
+                              "source": "private"
+                         },
+                         {
+                              "name": "library",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markupsafe",
+                    "specifier": "<4.0,>=2.0,>=2.0,>=2.1.1",
+                    "raw_requirement": "markupsafe<4.0,>=2.0 ; MarkupSafe>=2.0 ; markupsafe>=2.1.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jinja2",
+                              "source": "private"
+                         },
+                         {
+                              "name": "werkzeug",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mdurl",
+                    "specifier": "~=0.1",
+                    "raw_requirement": "mdurl~=0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "markdown-it-py",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "mpmath",
+                    "specifier": "<1.4,>=1.1.0",
+                    "raw_requirement": "mpmath <1.4,>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sympy",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "multidict",
+                    "specifier": "<7.0,>=4.5,>=4.0",
+                    "raw_requirement": "multidict<7.0,>=4.5 ; multidict>=4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "private"
+                         },
+                         {
+                              "name": "yarl",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "networkx",
+                    "specifier": "",
+                    "raw_requirement": "networkx",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "numpy",
+                    "specifier": ">=1.17,<3.0,>=1.0,>=1.17.0,>=1.20,>=1.21.2,>=1.17.0,>=1.17.3,>=1.19.3,>=1.17.2,>1.24.4,>=1.17,>=1.21.6,>=1.12.0,>=1.26.0,>=1.22.4,<3,>=1.25,>1.20.0,>=1.19.3,>=1.21,>=1.21.2",
+                    "raw_requirement": "numpy>=1.17 ; numpy ; numpy ; numpy<3.0,>=1.0 ; numpy (>=1.17.0) ; numpy>=1.20 ; numpy>=1.21.2; python_version >= \"3.10\" ; numpy>=1.17.0; python_version >= \"3.7\" ; numpy>=1.17.3; python_version >= \"3.8\" ; numpy>=1.19.3; python_version >= \"3.9\" ; numpy (>=1.17.2) ; numpy>1.24.4; python_version >= \"3.9\" ; numpy>=1.17 ; numpy>=1.21.6 ; numpy>=1.12.0 ; numpy>=1.26.0 ; numpy ; numpy>=1.22.4; python_version < \"3.11\" ; numpy<3,>=1.25 ; numpy >1.20.0 ; numpy ; numpy>=1.19.3 ; numpy>=1.21 ; numpy>=1.21.2; python_version >= \"3.10\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "accelerate",
+                              "source": "public"
+                         },
+                         {
+                              "name": "altair",
+                              "source": "public"
+                         },
+                         {
+                              "name": "diffusers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "invisible-watermark",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "opencv-python",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytorch-lightning",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytorch-optimizer",
+                              "source": "public"
+                         },
+                         {
+                              "name": "bitsandbytes",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnxruntime-gpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torchvision",
+                              "source": "private"
+                         },
+                         {
+                              "name": "pandas",
+                              "source": "private"
+                         },
+                         {
+                              "name": "pywavelets",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torchmetrics",
+                              "source": "private"
+                         },
+                         {
+                              "name": "keras",
+                              "source": "public"
+                         },
+                         {
+                              "name": "h5py",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ml-dtypes",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cublas-cu12",
+                    "specifier": "==12.4.5.8",
+                    "raw_requirement": "nvidia-cublas-cu12 (==12.4.5.8) ; platform_system == \"Linux\" and platform_machine == \"x86_64\" ; nvidia-cublas-cu12 ; nvidia-cublas-cu12",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cudnn-cu12",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cusolver-cu12",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cuda-cupti-cu12",
+                    "specifier": "==12.4.127",
+                    "raw_requirement": "nvidia-cuda-cupti-cu12 (==12.4.127) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cuda-nvrtc-cu12",
+                    "specifier": "==12.4.127",
+                    "raw_requirement": "nvidia-cuda-nvrtc-cu12 (==12.4.127) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cuda-runtime-cu12",
+                    "specifier": "==12.4.127",
+                    "raw_requirement": "nvidia-cuda-runtime-cu12 (==12.4.127) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cudnn-cu12",
+                    "specifier": "==9.1.0.70",
+                    "raw_requirement": "nvidia-cudnn-cu12 (==9.1.0.70) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cufft-cu12",
+                    "specifier": "==11.2.1.3",
+                    "raw_requirement": "nvidia-cufft-cu12 (==11.2.1.3) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-curand-cu12",
+                    "specifier": "==10.3.5.147",
+                    "raw_requirement": "nvidia-curand-cu12 (==10.3.5.147) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cusolver-cu12",
+                    "specifier": "==11.6.1.9",
+                    "raw_requirement": "nvidia-cusolver-cu12 (==11.6.1.9) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cusparse-cu12",
+                    "specifier": "==12.3.1.170",
+                    "raw_requirement": "nvidia-cusparse-cu12 (==12.3.1.170) ; platform_system == \"Linux\" and platform_machine == \"x86_64\" ; nvidia-cusparse-cu12",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cusolver-cu12",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cusparselt-cu12",
+                    "specifier": "==0.6.2",
+                    "raw_requirement": "nvidia-cusparselt-cu12 (==0.6.2) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-nccl-cu12",
+                    "specifier": "==2.21.5",
+                    "raw_requirement": "nvidia-nccl-cu12 (==2.21.5) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-nvjitlink-cu12",
+                    "specifier": "==12.4.127",
+                    "raw_requirement": "nvidia-nvjitlink-cu12 (==12.4.127) ; platform_system == \"Linux\" and platform_machine == \"x86_64\" ; nvidia-nvjitlink-cu12 ; nvidia-nvjitlink-cu12 ; nvidia-nvjitlink-cu12",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cufft-cu12",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cusolver-cu12",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cusparse-cu12",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-nvtx-cu12",
+                    "specifier": "==12.4.127",
+                    "raw_requirement": "nvidia-nvtx-cu12 (==12.4.127) ; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "pillow",
+                    "specifier": "<13.0,>=8.0,>=6.0.0,!=8.3.*,>=5.3.0",
+                    "raw_requirement": "Pillow ; pillow<13.0,>=8.0 ; Pillow (>=6.0.0) ; pillow ; pillow (!=8.3.*,>=5.3.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "diffusers",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "invisible-watermark",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torchvision",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "propcache",
+                    "specifier": ">=0.2.0,>=0.2.1",
+                    "raw_requirement": "propcache>=0.2.0 ; propcache>=0.2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "private"
+                         },
+                         {
+                              "name": "yarl",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "pygments",
+                    "specifier": "<3.0.0,>=2.13.0,>=2.14.0",
+                    "raw_requirement": "pygments (>=2.13.0,<3.0.0) ; pygments>=2.14.0 ; pygments",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rich",
+                              "source": "private"
+                         },
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython-pygments-lexers",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyyaml",
+                    "specifier": "<7.0,>=5.0,>=5.1.0,>=5.4",
+                    "raw_requirement": "pyyaml ; pyyaml<7.0,>=5.0 ; PyYAML (>=5.1.0) ; PyYAML (>=5.4) ; pyyaml",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "accelerate",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "omegaconf",
+                              "source": "private"
+                         },
+                         {
+                              "name": "pytorch-lightning",
+                              "source": "public"
+                         },
+                         {
+                              "name": "wandb",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sympy",
+                    "specifier": "==1.13.1",
+                    "raw_requirement": "sympy ; sympy (==1.13.1) ; python_version >= \"3.9\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "onnxruntime-gpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": "~=4.0,>=4.0.0,>=3.6.6,>=4.10.0,>=4.5,>=4.8.0,~=4.0,>=4.12.2,>=3.7.4.3,>=4.0,>=4.0.0,>=4.6,~=4.12,>=4.4.0,>=4.6.0,!=4.7.0,>=4.6.0,>=4.12.0,>=4.6.0,>=4.2,>=4.1.0",
+                    "raw_requirement": "typing-extensions~=4.0 ; typing-extensions (>=4.0.0) ; typing_extensions>=3.6.6 ; typing-extensions (>=4.10.0) ; typing_extensions>=4.5; python_version < \"3.13\" ; typing-extensions>=4.8.0 ; typing-extensions~=4.0 ; typing-extensions>=4.12.2 ; typing-extensions>=3.7.4.3 ; typing-extensions>=4.0; python_version < '3.11' ; typing-extensions ; typing-extensions>=4.0.0 ; typing_extensions>=4.6; python_version < \"3.12\" ; typing-extensions; python_version <= \"3.10\" ; typing-extensions~=4.12 ; typing-extensions>=4.4.0; python_version < '3.13' ; typing-extensions>=4.6.0; python_version < \"3.13\" ; typing-extensions>=4.6.0,!=4.7.0 ; typing-extensions>=4.12.0 ; typing-extensions>=4.6.0 ; typing-extensions>=4.2; python_version < \"3.13\" ; typing-extensions>=4.1.0; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gradio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pytorch-lightning",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "anyio",
+                              "source": "private"
+                         },
+                         {
+                              "name": "fastapi",
+                              "source": "private"
+                         },
+                         {
+                              "name": "gradio-client",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic",
+                              "source": "private"
+                         },
+                         {
+                              "name": "typer",
+                              "source": "private"
+                         },
+                         {
+                              "name": "uvicorn",
+                              "source": "private"
+                         },
+                         {
+                              "name": "lightning-utilities",
+                              "source": "private"
+                         },
+                         {
+                              "name": "beautifulsoup4",
+                              "source": "public"
+                         },
+                         {
+                              "name": "ipython",
+                              "source": "public"
+                         },
+                         {
+                              "name": "praw",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpcio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "referencing",
+                              "source": "private"
+                         },
+                         {
+                              "name": "exceptiongroup",
+                              "source": "public"
+                         },
+                         {
+                              "name": "pydantic-core",
+                              "source": "private"
+                         },
+                         {
+                              "name": "typing-inspection",
+                              "source": "private"
+                         },
+                         {
+                              "name": "optree",
+                              "source": "public"
+                         },
+                         {
+                              "name": "aiosignal",
+                              "source": "private"
+                         },
+                         {
+                              "name": "multidict",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "yarl",
+                    "specifier": "<2.0,>=1.17.0",
+                    "raw_requirement": "yarl<2.0,>=1.17.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "aiohttp",
+                              "source": "private"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 6,
+          "packages": {
+               "omegaconf": {
+                    "private version": "2.3.0",
+                    "public version": "2.3.0",
+                    "highest public (unconstrained)": "2.4.0.dev12",
+                    "declared specifier": "==2.3.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               },
+               "rich": {
+                    "private version": "14.1.0",
+                    "public version": "15.0.0",
+                    "highest public (unconstrained)": "15.0.0",
+                    "declared specifier": ">=13.7.1",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 17
+               },
+               "sentencepiece": {
+                    "private version": "0.2.0",
+                    "public version": "0.2.0",
+                    "highest public (unconstrained)": "0.2.2",
+                    "declared specifier": "==0.2.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               },
+               "torch": {
+                    "private version": "2.6.0+cu124",
+                    "public version": "2.13.0",
+                    "highest public (unconstrained)": "2.13.0",
+                    "declared specifier": ">=2.5.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 13
+               },
+               "torchvision": {
+                    "private version": "0.21.0+cu124",
+                    "public version": "0.28.0",
+                    "highest public (unconstrained)": "0.28.0",
+                    "declared specifier": ">=0.20.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 13
+               },
+               "triton": {
+                    "private version": "3.2.0",
+                    "public version": "3.7.1",
+                    "highest public (unconstrained)": "3.7.1",
+                    "declared specifier": ">=3.1.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 10
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 36,
+          "packages": {
+               "aiohttp": {
+                    "private version": "3.12.15",
+                    "public version": "3.14.1",
+                    "highest public (unconstrained)": "4.0.0a1",
+                    "declared specifier": "!=4.0.0a0,!=4.0.0a1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 308
+               },
+               "aiosignal": {
+                    "private version": "1.4.0",
+                    "public version": "1.4.0",
+                    "highest public (unconstrained)": "1.4.0",
+                    "declared specifier": ">=1.4.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "antlr4-python3-runtime": {
+                    "private version": "4.9.3",
+                    "public version": "4.9.3",
+                    "highest public (unconstrained)": "4.13.2",
+                    "declared specifier": "==4.9.*",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "async-timeout": {
+                    "private version": "4.0.3",
+                    "public version": "5.0.1",
+                    "highest public (unconstrained)": "5.0.1",
+                    "declared specifier": "<6.0,>=4.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 6
+               },
+               "attrs": {
+                    "private version": "25.3.0",
+                    "public version": "26.1.0",
+                    "highest public (unconstrained)": "26.1.0",
+                    "declared specifier": ">=22.2.0,>=17.3.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 11
+               },
+               "filelock": {
+                    "private version": "3.29.0",
+                    "public version": "3.30.2",
+                    "highest public (unconstrained)": "3.30.2",
+                    "declared specifier": ">=3.0.8",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 82
+               },
+               "frozenlist": {
+                    "private version": "1.7.0",
+                    "public version": "1.8.0",
+                    "highest public (unconstrained)": "1.8.0",
+                    "declared specifier": ">=1.1.1,>=1.1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 15
+               },
+               "fsspec": {
+                    "private version": "2026.4.0",
+                    "public version": "2026.6.0",
+                    "highest public (unconstrained)": "2026.6.0",
+                    "declared specifier": ">2021.06.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 55
+               },
+               "idna": {
+                    "private version": "3.4",
+                    "public version": "3.18",
+                    "highest public (unconstrained)": "3.18",
+                    "declared specifier": "<4,>=2.5,>=2.8,>=2.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 22
+               },
+               "jinja2": {
+                    "private version": "3.1.6",
+                    "public version": "3.1.6",
+                    "highest public (unconstrained)": "3.1.6",
+                    "declared specifier": "<4.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 52
+               },
+               "markdown-it-py": {
+                    "private version": "4.0.0",
+                    "public version": "4.2.0",
+                    "highest public (unconstrained)": "4.2.0",
+                    "declared specifier": ">=2.2.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 5
+               },
+               "markupsafe": {
+                    "private version": "3.0.3",
+                    "public version": "3.0.3",
+                    "highest public (unconstrained)": "3.0.3",
+                    "declared specifier": "<4.0,>=2.0,>=2.0,>=2.1.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 9
+               },
+               "mdurl": {
+                    "private version": "0.1.2",
+                    "public version": "0.1.2",
+                    "highest public (unconstrained)": "0.1.2",
+                    "declared specifier": "~=0.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "mpmath": {
+                    "private version": "1.3.0",
+                    "public version": "1.3.0",
+                    "highest public (unconstrained)": "1.5.0a0",
+                    "declared specifier": "<1.4,>=1.1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "multidict": {
+                    "private version": "6.6.4",
+                    "public version": "6.7.1",
+                    "highest public (unconstrained)": "6.7.1",
+                    "declared specifier": "<7.0,>=4.5,>=4.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 50
+               },
+               "networkx": {
+                    "private version": "3.6.1",
+                    "public version": "3.6.1",
+                    "highest public (unconstrained)": "3.6.1"
+               },
+               "numpy": {
+                    "private version": "2.4.4",
+                    "public version": "2.5.1",
+                    "highest public (unconstrained)": "2.5.1",
+                    "declared specifier": ">=1.17,<3.0,>=1.0,>=1.17.0,>=1.20,>=1.21.2,>=1.17.0,>=1.17.3,>=1.19.3,>=1.17.2,>1.24.4,>=1.17,>=1.21.6,>=1.12.0,>=1.26.0,>=1.22.4,<3,>=1.25,>1.20.0,>=1.19.3,>=1.21,>=1.21.2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 36
+               },
+               "nvidia-cublas-cu12": {
+                    "private version": "12.4.5.8",
+                    "public version": "12.4.5.8",
+                    "highest public (unconstrained)": "12.9.2.10",
+                    "declared specifier": "==12.4.5.8",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cuda-cupti-cu12": {
+                    "private version": "12.4.127",
+                    "public version": "12.4.127",
+                    "highest public (unconstrained)": "12.9.79",
+                    "declared specifier": "==12.4.127",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cuda-nvrtc-cu12": {
+                    "private version": "12.4.127",
+                    "public version": "12.4.127",
+                    "highest public (unconstrained)": "12.9.86",
+                    "declared specifier": "==12.4.127",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cuda-runtime-cu12": {
+                    "private version": "12.4.127",
+                    "public version": "12.4.127",
+                    "highest public (unconstrained)": "12.9.79",
+                    "declared specifier": "==12.4.127",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cudnn-cu12": {
+                    "private version": "9.1.0.70",
+                    "public version": "9.1.0.70",
+                    "highest public (unconstrained)": "9.24.0.43",
+                    "declared specifier": "==9.1.0.70",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cufft-cu12": {
+                    "private version": "11.2.1.3",
+                    "public version": "11.2.1.3",
+                    "highest public (unconstrained)": "11.4.1.4",
+                    "declared specifier": "==11.2.1.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-curand-cu12": {
+                    "private version": "10.3.5.147",
+                    "public version": "10.3.5.147",
+                    "highest public (unconstrained)": "10.3.10.19",
+                    "declared specifier": "==10.3.5.147",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cusolver-cu12": {
+                    "private version": "11.6.1.9",
+                    "public version": "11.6.1.9",
+                    "highest public (unconstrained)": "11.7.5.82",
+                    "declared specifier": "==11.6.1.9",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cusparse-cu12": {
+                    "private version": "12.3.1.170",
+                    "public version": "12.3.1.170",
+                    "highest public (unconstrained)": "12.5.10.65",
+                    "declared specifier": "==12.3.1.170",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cusparselt-cu12": {
+                    "private version": "0.6.2",
+                    "public version": "0.6.2",
+                    "highest public (unconstrained)": "0.8.1",
+                    "declared specifier": "==0.6.2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-nccl-cu12": {
+                    "private version": "2.21.5",
+                    "public version": "2.21.5",
+                    "highest public (unconstrained)": "2.30.7",
+                    "declared specifier": "==2.21.5",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-nvjitlink-cu12": {
+                    "private version": "12.4.127",
+                    "public version": "12.4.127",
+                    "highest public (unconstrained)": "12.9.86",
+                    "declared specifier": "==12.4.127",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-nvtx-cu12": {
+                    "private version": "12.4.127",
+                    "public version": "12.4.127",
+                    "highest public (unconstrained)": "12.9.79",
+                    "declared specifier": "==12.4.127",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "pillow": {
+                    "private version": "12.2.0",
+                    "public version": "12.3.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": "<13.0,>=8.0,>=6.0.0,!=8.3.*,>=5.3.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 30
+               },
+               "pygments": {
+                    "private version": "2.19.2",
+                    "public version": "2.20.0",
+                    "highest public (unconstrained)": "2.20.0",
+                    "declared specifier": "<3.0.0,>=2.13.0,>=2.14.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 13
+               },
+               "pyyaml": {
+                    "private version": "6.0.2",
+                    "public version": "6.0.3",
+                    "highest public (unconstrained)": "6.0.3",
+                    "declared specifier": "<7.0,>=5.0,>=5.1.0,>=5.4",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 8
+               },
+               "sympy": {
+                    "private version": "1.13.1",
+                    "public version": "1.13.1",
+                    "highest public (unconstrained)": "1.14.0",
+                    "declared specifier": "==1.13.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "typing-extensions": {
+                    "private version": "4.15.0",
+                    "public version": "4.16.0",
+                    "highest public (unconstrained)": "4.16.0",
+                    "declared specifier": "~=4.0,>=4.0.0,>=3.6.6,>=4.10.0,>=4.5,>=4.8.0,~=4.0,>=4.12.2,>=3.7.4.3,>=4.0,>=4.0.0,>=4.6,~=4.12,>=4.4.0,>=4.6.0,!=4.7.0,>=4.6.0,>=4.12.0,>=4.6.0,>=4.2,>=4.1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 13
+               },
+               "yarl": {
+                    "private version": "1.20.1",
+                    "public version": "1.24.2",
+                    "highest public (unconstrained)": "1.24.2",
+                    "declared specifier": "<2.0,>=1.17.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 16
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 42,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 82
+     }
+}

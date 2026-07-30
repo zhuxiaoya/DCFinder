@@ -1,0 +1,1646 @@
+{
+     "direct dependency": {
+          "number": 19,
+          "packages": [
+               {
+                    "name": "numpy",
+                    "specifier": "==1.24.3",
+                    "raw_requirement": "numpy==1.24.3 ; numpy==1.24.3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opencv-python",
+                    "specifier": "==4.8.0.74",
+                    "raw_requirement": "opencv-python==4.8.0.74 ; opencv-python==4.8.0.74",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnx",
+                    "specifier": "==1.14.0",
+                    "raw_requirement": "onnx==1.14.0 ; onnx==1.14.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "insightface",
+                    "specifier": "==0.7.3",
+                    "raw_requirement": "insightface==0.7.3 ; insightface==0.7.3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "psutil",
+                    "specifier": "==5.9.5",
+                    "raw_requirement": "psutil==5.9.5 ; psutil==5.9.5",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tk",
+                    "specifier": "==0.1.0",
+                    "raw_requirement": "tk==0.1.0 ; tk==0.1.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "customtkinter",
+                    "specifier": "==5.2.0",
+                    "raw_requirement": "customtkinter==5.2.0 ; customtkinter==5.2.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tkinterdnd2",
+                    "specifier": "==0.3.0",
+                    "raw_requirement": "tkinterdnd2==0.3.0; sys_platform != 'darwin' and platform_machine != 'arm64' ; tkinterdnd2==0.3.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tkinterdnd2-universal",
+                    "specifier": "==1.7.3",
+                    "raw_requirement": "tkinterdnd2-universal==1.7.3; sys_platform == 'darwin' and platform_machine == 'arm64'",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pillow",
+                    "specifier": "==10.0.0",
+                    "raw_requirement": "pillow==10.0.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnxruntime",
+                    "specifier": "==1.15.1",
+                    "raw_requirement": "onnxruntime==1.15.1; python_version != '3.9' and sys_platform == 'darwin' and platform_machine != 'arm64' ; onnxruntime==1.15.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnxruntime-coreml",
+                    "specifier": "==1.13.1",
+                    "raw_requirement": "onnxruntime-coreml==1.13.1; python_version == '3.9' and sys_platform == 'darwin' and platform_machine != 'arm64'",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnxruntime-silicon",
+                    "specifier": "==1.13.1",
+                    "raw_requirement": "onnxruntime-silicon==1.13.1; sys_platform == 'darwin' and platform_machine == 'arm64'",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnxruntime-gpu",
+                    "specifier": "==1.15.1",
+                    "raw_requirement": "onnxruntime-gpu==1.15.1; sys_platform != 'darwin'",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorflow",
+                    "specifier": "==2.13.0",
+                    "raw_requirement": "tensorflow==2.13.0 ; tensorflow==2.13.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opennsfw2",
+                    "specifier": "==0.10.2",
+                    "raw_requirement": "opennsfw2==0.10.2 ; opennsfw2==0.10.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "protobuf",
+                    "specifier": "==4.23.4",
+                    "raw_requirement": "protobuf==4.23.4 ; protobuf==4.23.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tqdm",
+                    "specifier": "==4.65.0",
+                    "raw_requirement": "tqdm==4.65.0 ; tqdm==4.65.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gfpgan",
+                    "specifier": "==1.3.8",
+                    "raw_requirement": "gfpgan==1.3.8",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/roop-main/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 88,
+          "packages": [
+               {
+                    "name": "absl-py",
+                    "specifier": ">=1.0.0,>=0.4,>=0.4",
+                    "raw_requirement": "absl-py (>=1.0.0) ; absl-py (>=0.4) ; absl-py>=0.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tb-nightly",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "astunparse",
+                    "specifier": ">=1.6.0",
+                    "raw_requirement": "astunparse (>=1.6.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "basicsr",
+                    "specifier": ">=1.4.2",
+                    "raw_requirement": "basicsr (>=1.4.2)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gfpgan",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "beautifulsoup4",
+                    "specifier": "",
+                    "raw_requirement": "beautifulsoup4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gdown",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "certifi",
+                    "specifier": ">=2017.4.17",
+                    "raw_requirement": "certifi (>=2017.4.17)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "cffi",
+                    "specifier": ">=2.0.0",
+                    "raw_requirement": "cffi>=2.0.0; platform_python_implementation != \"PyPy\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cryptography",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "charset-normalizer",
+                    "specifier": "<3,>=2",
+                    "raw_requirement": "charset-normalizer (<3,>=2)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "coloredlogs",
+                    "specifier": "",
+                    "raw_requirement": "coloredlogs ; coloredlogs ; coloredlogs ; coloredlogs",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "onnxruntime",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnxruntime-coreml",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnxruntime-silicon",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnxruntime-gpu",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "contourpy",
+                    "specifier": ">=1.0.1",
+                    "raw_requirement": "contourpy>=1.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cryptography",
+                    "specifier": ">=38.0.3",
+                    "raw_requirement": "cryptography>=38.0.3; python_version < \"3.14\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-auth",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "cycler",
+                    "specifier": ">=0.10",
+                    "raw_requirement": "cycler>=0.10",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "darkdetect",
+                    "specifier": "",
+                    "raw_requirement": "darkdetect",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "customtkinter",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "facexlib",
+                    "specifier": ">=0.2.5",
+                    "raw_requirement": "facexlib (>=0.2.5)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gfpgan",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "filelock",
+                    "specifier": "",
+                    "raw_requirement": "filelock ; filelock",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gdown",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "filterpy",
+                    "specifier": "",
+                    "raw_requirement": "filterpy",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "facexlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "flatbuffers",
+                    "specifier": ">=23.1.21",
+                    "raw_requirement": "flatbuffers ; flatbuffers ; flatbuffers ; flatbuffers ; flatbuffers (>=23.1.21)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "onnxruntime",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnxruntime-coreml",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnxruntime-silicon",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnxruntime-gpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fonttools",
+                    "specifier": ">=4.22.0",
+                    "raw_requirement": "fonttools>=4.22.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "fsspec",
+                    "specifier": "",
+                    "raw_requirement": "fsspec",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "gast",
+                    "specifier": "<=0.4.0,>=0.2.1",
+                    "raw_requirement": "gast (<=0.4.0,>=0.2.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "gdown",
+                    "specifier": ">=4.2.0",
+                    "raw_requirement": "gdown (>=4.2.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "opennsfw2",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-auth",
+                    "specifier": "<3,>=1.6.3,>=2.15.0",
+                    "raw_requirement": "google-auth (<3,>=1.6.3) ; google-auth (>=2.15.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-auth-oauthlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-auth-oauthlib",
+                    "specifier": "<1.1,>=0.5",
+                    "raw_requirement": "google-auth-oauthlib (<1.1,>=0.5)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "google-pasta",
+                    "specifier": ">=0.1.1",
+                    "raw_requirement": "google-pasta (>=0.1.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "grpcio",
+                    "specifier": "<2.0,>=1.24.3,>=1.48.2,>=1.48.2",
+                    "raw_requirement": "grpcio (<2.0,>=1.24.3) ; grpcio (>=1.48.2) ; grpcio>=1.48.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tb-nightly",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "h5py",
+                    "specifier": ">=2.9.0",
+                    "raw_requirement": "h5py (>=2.9.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "humanfriendly",
+                    "specifier": ">=9.1",
+                    "raw_requirement": "humanfriendly (>=9.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "coloredlogs",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "idna",
+                    "specifier": "<4,>=2.5",
+                    "raw_requirement": "idna (<4,>=2.5)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "imageio",
+                    "specifier": "!=2.35.0,>=2.33",
+                    "raw_requirement": "imageio!=2.35.0,>=2.33",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": "",
+                    "raw_requirement": "jinja2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "keras",
+                    "specifier": "<2.14,>=2.13.1",
+                    "raw_requirement": "keras (<2.14,>=2.13.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "kiwisolver",
+                    "specifier": ">=1.3.1",
+                    "raw_requirement": "kiwisolver>=1.3.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "lazy-loader",
+                    "specifier": ">=0.4",
+                    "raw_requirement": "lazy-loader>=0.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "libclang",
+                    "specifier": ">=13.0.0",
+                    "raw_requirement": "libclang (>=13.0.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "llvmlite",
+                    "specifier": "<0.49,>=0.48.0dev0",
+                    "raw_requirement": "llvmlite<0.49,>=0.48.0dev0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "numba",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "lmdb",
+                    "specifier": "",
+                    "raw_requirement": "lmdb",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gfpgan",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markdown",
+                    "specifier": ">=2.6.8",
+                    "raw_requirement": "markdown (>=2.6.8) ; markdown>=2.6.8",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tb-nightly",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "markupsafe",
+                    "specifier": ">=2.1.1,>=2.0",
+                    "raw_requirement": "markupsafe>=2.1.1 ; MarkupSafe>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "werkzeug",
+                              "source": "public"
+                         },
+                         {
+                              "name": "jinja2",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "matplotlib",
+                    "specifier": ">=3.0.0",
+                    "raw_requirement": "matplotlib (>=3.0.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "opennsfw2",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "mpmath",
+                    "specifier": "<1.4,>=1.1.0",
+                    "raw_requirement": "mpmath<1.4,>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sympy",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "networkx",
+                    "specifier": ">=3.0",
+                    "raw_requirement": "networkx>=3.0 ; networkx",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "numba",
+                    "specifier": "",
+                    "raw_requirement": "numba",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "facexlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cublas-cu11",
+                    "specifier": "==11.11.3.6",
+                    "raw_requirement": "nvidia-cublas-cu11==11.11.3.6; platform_system == \"Linux\" and platform_machine == \"x86_64\" ; nvidia-cublas-cu11",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "nvidia-cusolver-cu11",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cuda-cupti-cu11",
+                    "specifier": "==11.8.87",
+                    "raw_requirement": "nvidia-cuda-cupti-cu11==11.8.87; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cuda-nvrtc-cu11",
+                    "specifier": "==11.8.89",
+                    "raw_requirement": "nvidia-cuda-nvrtc-cu11==11.8.89; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cuda-runtime-cu11",
+                    "specifier": "==11.8.89",
+                    "raw_requirement": "nvidia-cuda-runtime-cu11==11.8.89; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cudnn-cu11",
+                    "specifier": "==9.1.0.70",
+                    "raw_requirement": "nvidia-cudnn-cu11==9.1.0.70; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cufft-cu11",
+                    "specifier": "==10.9.0.58",
+                    "raw_requirement": "nvidia-cufft-cu11==10.9.0.58; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-curand-cu11",
+                    "specifier": "==10.3.0.86",
+                    "raw_requirement": "nvidia-curand-cu11==10.3.0.86; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cusolver-cu11",
+                    "specifier": "==11.4.1.48",
+                    "raw_requirement": "nvidia-cusolver-cu11==11.4.1.48; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-cusparse-cu11",
+                    "specifier": "==11.7.5.86",
+                    "raw_requirement": "nvidia-cusparse-cu11==11.7.5.86; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-nccl-cu11",
+                    "specifier": "==2.21.5",
+                    "raw_requirement": "nvidia-nccl-cu11==2.21.5; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "nvidia-nvtx-cu11",
+                    "specifier": "==11.8.86",
+                    "raw_requirement": "nvidia-nvtx-cu11==11.8.86; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "oauthlib",
+                    "specifier": ">=3.0.0",
+                    "raw_requirement": "oauthlib>=3.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests-oauthlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "opt-einsum",
+                    "specifier": ">=2.3.2",
+                    "raw_requirement": "opt-einsum (>=2.3.2)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "packaging",
+                    "specifier": ">=20.0,>=21,>=24.0",
+                    "raw_requirement": "packaging ; packaging ; packaging ; packaging ; packaging ; packaging>=20.0 ; packaging>=21 ; packaging ; packaging>=24.0 ; packaging",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "onnxruntime",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnxruntime-coreml",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnxruntime-silicon",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnxruntime-gpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tb-nightly",
+                              "source": "public"
+                         },
+                         {
+                              "name": "wheel",
+                              "source": "public"
+                         },
+                         {
+                              "name": "lazy-loader",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "platformdirs",
+                    "specifier": ">=3.5.1",
+                    "raw_requirement": "platformdirs>=3.5.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "yapf",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyasn1",
+                    "specifier": "<0.7.0,>=0.6.1",
+                    "raw_requirement": "pyasn1<0.7.0,>=0.6.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pyasn1-modules",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyasn1-modules",
+                    "specifier": ">=0.2.1",
+                    "raw_requirement": "pyasn1-modules>=0.2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-auth",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pycparser",
+                    "specifier": "",
+                    "raw_requirement": "pycparser; implementation_name != \"PyPy\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cffi",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyparsing",
+                    "specifier": ">=3",
+                    "raw_requirement": "pyparsing>=3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pysocks",
+                    "specifier": "!=1.5.7,>=1.5.6",
+                    "raw_requirement": "PySocks (!=1.5.7,>=1.5.6) ; extra == 'socks'",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-dateutil",
+                    "specifier": ">=2.7",
+                    "raw_requirement": "python-dateutil>=2.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "matplotlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pyyaml",
+                    "specifier": "",
+                    "raw_requirement": "pyyaml",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gfpgan",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "requests",
+                    "specifier": "<3,>=2.21.0,>=2.0.0",
+                    "raw_requirement": "requests (<3,>=2.21.0) ; requests[socks] ; requests>=2.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gdown",
+                              "source": "public"
+                         },
+                         {
+                              "name": "requests-oauthlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "requests-oauthlib",
+                    "specifier": ">=0.7.0",
+                    "raw_requirement": "requests-oauthlib (>=0.7.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "google-auth-oauthlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "scikit-image",
+                    "specifier": ">=0.18.0",
+                    "raw_requirement": "scikit-image (>=0.18.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "opennsfw2",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "scipy",
+                    "specifier": ">=1.11.4",
+                    "raw_requirement": "scipy ; scipy>=1.11.4 ; scipy",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gfpgan",
+                              "source": "public"
+                         },
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         },
+                         {
+                              "name": "facexlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "setuptools",
+                    "specifier": ">=41.0.0,>=40.8.0",
+                    "raw_requirement": "setuptools ; setuptools (>=41.0.0) ; setuptools>=41.0.0 ; setuptools>=40.8.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tb-nightly",
+                              "source": "public"
+                         },
+                         {
+                              "name": "triton",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "six",
+                    "specifier": ">=1.12.0,<2.0,>=1.6.1,>=1.5",
+                    "raw_requirement": "six (>=1.12.0) ; six (<2.0,>=1.6.1) ; six ; six >=1.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "astunparse",
+                              "source": "public"
+                         },
+                         {
+                              "name": "google-pasta",
+                              "source": "public"
+                         },
+                         {
+                              "name": "python-dateutil",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "soupsieve",
+                    "specifier": ">=1.6.1",
+                    "raw_requirement": "soupsieve>=1.6.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "beautifulsoup4",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sympy",
+                    "specifier": ">=1.13.3",
+                    "raw_requirement": "sympy ; sympy ; sympy ; sympy ; sympy>=1.13.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "onnxruntime",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnxruntime-coreml",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnxruntime-silicon",
+                              "source": "public"
+                         },
+                         {
+                              "name": "onnxruntime-gpu",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "tb-nightly",
+                    "specifier": "",
+                    "raw_requirement": "tb-nightly",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gfpgan",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tensorboard",
+                    "specifier": "<2.14,>=2.13",
+                    "raw_requirement": "tensorboard (<2.14,>=2.13)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tensorboard-data-server",
+                    "specifier": "<0.8.0,>=0.7.0",
+                    "raw_requirement": "tensorboard-data-server (<0.8.0,>=0.7.0) ; tensorboard-data-server<0.8.0,>=0.7.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tb-nightly",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tensorflow-estimator",
+                    "specifier": "<2.14,>=2.13.0",
+                    "raw_requirement": "tensorflow-estimator (<2.14,>=2.13.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tensorflow-io-gcs-filesystem",
+                    "specifier": ">=0.23.1",
+                    "raw_requirement": "tensorflow-io-gcs-filesystem (>=0.23.1) ; platform_machine != \"arm64\" or platform_system != \"Darwin\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "termcolor",
+                    "specifier": ">=1.1.0",
+                    "raw_requirement": "termcolor (>=1.1.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tifffile",
+                    "specifier": ">=2022.8.12",
+                    "raw_requirement": "tifffile>=2022.8.12",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-image",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "tomli",
+                    "specifier": ">=2.0.1",
+                    "raw_requirement": "tomli>=2.0.1; python_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "yapf",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "torch",
+                    "specifier": "==2.7.1",
+                    "raw_requirement": "torch (>=1.7) ; torch ; torch (==2.7.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gfpgan",
+                              "source": "public"
+                         },
+                         {
+                              "name": "facexlib",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torchvision",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "torchvision",
+                    "specifier": "",
+                    "raw_requirement": "torchvision ; torchvision",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gfpgan",
+                              "source": "public"
+                         },
+                         {
+                              "name": "facexlib",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "triton",
+                    "specifier": "==3.3.1",
+                    "raw_requirement": "triton==3.3.1; platform_system == \"Linux\" and platform_machine == \"x86_64\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=3.6.2.1,<4.6.0,>=3.6.6,~=4.12,>=4.0,>=4.10.0,>=4.0.0,>=4.13.2",
+                    "raw_requirement": "typing-extensions (>=3.6.2.1) ; typing-extensions (<4.6.0,>=3.6.6) ; typing-extensions~=4.12 ; typing-extensions>=4.0; python_version < \"3.12\" ; typing-extensions>=4.10.0 ; typing-extensions>=4.0.0 ; typing-extensions>=4.13.2; python_full_version < \"3.11\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "onnx",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         },
+                         {
+                              "name": "grpcio",
+                              "source": "public"
+                         },
+                         {
+                              "name": "gdown",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "beautifulsoup4",
+                              "source": "public"
+                         },
+                         {
+                              "name": "cryptography",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "urllib3",
+                    "specifier": "<1.27,>=1.21.1",
+                    "raw_requirement": "urllib3 (<1.27,>=1.21.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "werkzeug",
+                    "specifier": ">=1.0.1",
+                    "raw_requirement": "werkzeug (>=1.0.1) ; werkzeug>=1.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tb-nightly",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "wheel",
+                    "specifier": "<1.0,>=0.23.0,>=0.26",
+                    "raw_requirement": "wheel (<1.0,>=0.23.0) ; wheel (>=0.26)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "astunparse",
+                              "source": "public"
+                         },
+                         {
+                              "name": "tensorboard",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "wrapt",
+                    "specifier": ">=1.11.0",
+                    "raw_requirement": "wrapt (>=1.11.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorflow",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "yapf",
+                    "specifier": "",
+                    "raw_requirement": "yapf",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "gfpgan",
+                              "source": "public"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 2,
+          "packages": {
+               "numpy": {
+                    "private version": "1.24.3",
+                    "public version": "1.24.3",
+                    "highest public (unconstrained)": "2.5.1",
+                    "declared specifier": "==1.24.3",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               },
+               "pillow": {
+                    "private version": "10.0.0",
+                    "public version": "10.0.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": "==10.0.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 27,
+          "packages": {
+               "certifi": {
+                    "private version": "2022.12.7",
+                    "public version": "2026.6.17",
+                    "highest public (unconstrained)": "2026.6.17",
+                    "declared specifier": ">=2017.4.17",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 51
+               },
+               "charset-normalizer": {
+                    "private version": "2.1.1",
+                    "public version": "2.1.1",
+                    "highest public (unconstrained)": "3.4.9",
+                    "declared specifier": "<3,>=2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 15
+               },
+               "filelock": {
+                    "private version": "3.29.0",
+                    "public version": "3.29.7",
+                    "highest public (unconstrained)": "3.29.7"
+               },
+               "fsspec": {
+                    "private version": "2026.4.0",
+                    "public version": "2026.6.0",
+                    "highest public (unconstrained)": "2026.6.0"
+               },
+               "idna": {
+                    "private version": "3.4",
+                    "public version": "3.18",
+                    "highest public (unconstrained)": "3.18",
+                    "declared specifier": "<4,>=2.5",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 25
+               },
+               "jinja2": {
+                    "private version": "3.1.6",
+                    "public version": "3.1.6",
+                    "highest public (unconstrained)": "3.1.6"
+               },
+               "markupsafe": {
+                    "private version": "3.0.3",
+                    "public version": "3.0.3",
+                    "highest public (unconstrained)": "3.0.3",
+                    "declared specifier": ">=2.1.1,>=2.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 9
+               },
+               "mpmath": {
+                    "private version": "1.3.0",
+                    "public version": "1.3.0",
+                    "highest public (unconstrained)": "1.5.0a0",
+                    "declared specifier": "<1.4,>=1.1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "networkx": {
+                    "private version": "3.6.1",
+                    "public version": "3.6.1",
+                    "highest public (unconstrained)": "3.6.1",
+                    "declared specifier": ">=3.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 17
+               },
+               "nvidia-cublas-cu11": {
+                    "private version": "11.11.3.6",
+                    "public version": "11.11.3.6",
+                    "highest public (unconstrained)": "11.11.3.6",
+                    "declared specifier": "==11.11.3.6",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cuda-cupti-cu11": {
+                    "private version": "11.8.87",
+                    "public version": "11.8.87",
+                    "highest public (unconstrained)": "11.8.87",
+                    "declared specifier": "==11.8.87",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cuda-nvrtc-cu11": {
+                    "private version": "11.8.89",
+                    "public version": "11.8.89",
+                    "highest public (unconstrained)": "11.8.89",
+                    "declared specifier": "==11.8.89",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cuda-runtime-cu11": {
+                    "private version": "11.8.89",
+                    "public version": "11.8.89",
+                    "highest public (unconstrained)": "11.8.89",
+                    "declared specifier": "==11.8.89",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cudnn-cu11": {
+                    "private version": "9.1.0.70",
+                    "public version": "9.1.0.70",
+                    "highest public (unconstrained)": "9.10.2.21",
+                    "declared specifier": "==9.1.0.70",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cufft-cu11": {
+                    "private version": "10.9.0.58",
+                    "public version": "10.9.0.58",
+                    "highest public (unconstrained)": "10.9.0.58",
+                    "declared specifier": "==10.9.0.58",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-curand-cu11": {
+                    "private version": "10.3.0.86",
+                    "public version": "10.3.0.86",
+                    "highest public (unconstrained)": "10.3.0.86",
+                    "declared specifier": "==10.3.0.86",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cusolver-cu11": {
+                    "private version": "11.4.1.48",
+                    "public version": "11.4.1.48",
+                    "highest public (unconstrained)": "11.4.1.48",
+                    "declared specifier": "==11.4.1.48",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-cusparse-cu11": {
+                    "private version": "11.7.5.86",
+                    "public version": "11.7.5.86",
+                    "highest public (unconstrained)": "11.7.5.86",
+                    "declared specifier": "==11.7.5.86",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-nccl-cu11": {
+                    "private version": "2.21.5",
+                    "public version": "2.21.5",
+                    "highest public (unconstrained)": "2.21.5",
+                    "declared specifier": "==2.21.5",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "nvidia-nvtx-cu11": {
+                    "private version": "11.8.86",
+                    "public version": "11.8.86",
+                    "highest public (unconstrained)": "11.8.86",
+                    "declared specifier": "==11.8.86",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "packaging": {
+                    "private version": "24.1",
+                    "public version": "26.2",
+                    "highest public (unconstrained)": "26.2",
+                    "declared specifier": ">=20.0,>=21,>=24.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 10
+               },
+               "requests": {
+                    "private version": "2.28.1",
+                    "public version": "2.34.2",
+                    "highest public (unconstrained)": "2.34.2",
+                    "declared specifier": "<3,>=2.21.0,>=2.0.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 27
+               },
+               "setuptools": {
+                    "private version": "78.1.0",
+                    "public version": "83.0.0",
+                    "highest public (unconstrained)": "83.0.0",
+                    "declared specifier": ">=41.0.0,>=40.8.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 285
+               },
+               "sympy": {
+                    "private version": "1.14.0",
+                    "public version": "1.14.0",
+                    "highest public (unconstrained)": "1.14.0",
+                    "declared specifier": ">=1.13.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "torchvision": {
+                    "private version": "0.22.1+cu118",
+                    "public version": "0.28.0",
+                    "highest public (unconstrained)": "0.28.0"
+               },
+               "triton": {
+                    "private version": "3.3.1",
+                    "public version": "3.3.1",
+                    "highest public (unconstrained)": "3.7.1",
+                    "declared specifier": "==3.3.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 1
+               },
+               "urllib3": {
+                    "private version": "1.26.13",
+                    "public version": "1.26.20",
+                    "highest public (unconstrained)": "2.7.0",
+                    "declared specifier": "<1.27,>=1.21.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 40
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "mixed_source_expanded",
+          "private_index_expansions": 31,
+          "pypi_metadata_expansions": 75,
+          "pruned_public_nodes": 0
+     }
+}

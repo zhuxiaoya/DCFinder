@@ -1,0 +1,77 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/04/a4/542d4bfd9f4aec5f3265985b9dbc6b259d45c2e668f9714e5f4e05b71e64/av-17.1.0-cp310-cp310-manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=90c49bc9608377d01e82e747377505419a229464873341db18202d5dddecce5a",
+          "hashes": {
+            "sha256": "90c49bc9608377d01e82e747377505419a229464873341db18202d5dddecce5a"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "av",
+        "version": "17.1.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Pythonic bindings for FFmpeg's libraries.",
+        "description_content_type": "text/markdown",
+        "author_email": "WyattBlue <wyattblue@auto-editor.com>, Jeremy Lainé <jeremy.laine@m4x.org>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE.txt",
+          "AUTHORS.py",
+          "AUTHORS.rst"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Natural Language :: English",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: POSIX",
+          "Operating System :: Unix",
+          "Operating System :: Microsoft :: Windows",
+          "Programming Language :: Cython",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Multimedia :: Sound/Audio",
+          "Topic :: Multimedia :: Sound/Audio :: Conversion",
+          "Topic :: Multimedia :: Video",
+          "Topic :: Multimedia :: Video :: Conversion"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Bug Tracker, https://github.com/PyAV-Org/PyAV/issues",
+          "Source Code, https://github.com/PyAV-Org/PyAV",
+          "homepage, https://pyav.basswood-io.com"
+        ],
+        "description": "PyAV\n====\n\nPyAV is a Pythonic binding for the [FFmpeg][ffmpeg] libraries. We aim to provide all of the power and control of the underlying library, but manage the gritty details as much as possible.\n\n---\n\n[![GitHub Test Status][github-tests-badge]][github-tests] [![Documentation][docs-badge]][docs] [![Python Package Index][pypi-badge]][pypi] [![Conda Forge][conda-badge]][conda]\n\nPyAV is for direct and precise access to your media via containers, streams, packets, codecs, and frames. It exposes a few transformations of that data, and helps you get your data to/from other packages (e.g. Numpy and Pillow).\n\nThis power does come with some responsibility as working with media is horrendously complicated and PyAV can't abstract it away or make all the best decisions for you. If the `ffmpeg` command does the job without you bending over backwards, PyAV is likely going to be more of a hindrance than a help.\n\nBut where you can't work without it, PyAV is a critical tool.\n\n\nInstallation\n------------\n\nBinary wheels are provided on [PyPI][pypi] for Linux, MacOS and Windows linked against the latest stable version of ffmpeg. You can install these wheels by running:\n\n```bash\npip install av\n```\n\nAnother way of installing PyAV is via [conda-forge][conda-forge]:\n\n```bash\nconda install av -c conda-forge\n```\n\nSee the [Conda install][conda-install] docs to get started with (mini)Conda.\n\n\nAlternative installation methods\n--------------------------------\n\nDue to the complexity of the dependencies, PyAV is not always the easiest Python package to install from source. If you want to use your existing ffmpeg (must be the correct major version), the source version of PyAV is on [PyPI][pypi]:\n\n> [!WARNING]\n> You must be in a posix env, and have the correct version of ffmpeg installed on your system.\n\n```bash\npip install av --no-binary av\n```\n\n\nInstalling From Source\n----------------------\n\nHere's how to build PyAV from source. You must use [MSYS2](https://www.msys2.org/) when using Windows.\n\n```bash\ngit clone https://github.com/PyAV-Org/PyAV.git\ncd PyAV\nsource scripts/activate.sh\n\n# Build ffmpeg from source. You can skip this step\n# if ffmpeg is already installed.\n./scripts/build-deps\n\n# Build PyAV\nmake\n\n# Testing\nmake test\n\n# Install globally\ndeactivate\npip install .\n```\n\n---\n\nHave fun, [read the docs][docs], [come chat with us][discuss], and good luck!\n\n\n\n[conda-badge]: https://img.shields.io/conda/vn/conda-forge/av.svg?colorB=CCB39A\n[conda]: https://anaconda.org/conda-forge/av\n[docs-badge]: https://img.shields.io/badge/docs-on%20pyav.basswood--io.com-blue.svg\n[docs]: https://pyav.basswood-io.com\n[pypi-badge]: https://img.shields.io/pypi/v/av.svg?colorB=CCB39A\n[pypi]: https://pypi.org/project/av\n[discuss]: https://github.com/PyAV-Org/PyAV/discussions\n\n[github-tests-badge]: https://github.com/PyAV-Org/PyAV/workflows/tests/badge.svg\n[github-tests]: https://github.com/PyAV-Org/PyAV/actions?workflow=tests\n[github]: https://github.com/PyAV-Org/PyAV\n\n[ffmpeg]: https://ffmpeg.org/\n[conda-forge]: https://conda-forge.github.io/\n[conda-install]: https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

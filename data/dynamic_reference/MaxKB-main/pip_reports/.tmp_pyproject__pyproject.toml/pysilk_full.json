@@ -1,0 +1,46 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/cf/c8/2a11cc67a03496670113557eb1c2a4fd25058614a732d91e400b4a71696b/pysilk-0.0.1.tar.gz",
+        "archive_info": {
+          "hash": "sha256=54a6c303e337e16163731a92bbdca10cce9825d165e298919e6c8bef2489cf34",
+          "hashes": {
+            "sha256": "54a6c303e337e16163731a92bbdca10cce9825d165e298919e6c8bef2489cf34"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "pysilk",
+        "version": "0.0.1",
+        "dynamic": [
+          "author",
+          "classifier"
+        ],
+        "author": "CindyMoon",
+        "classifier": [
+          "Development Status :: 1 - Planning"
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,185 @@
+{
+    "direct dependency with same name": {
+        "number": 3,
+        "packages": {
+            "numpy": {
+                "private version": "1.26.4",
+                "public version": "1.26.4",
+                "highest public (unconstrained)": "2.5.1",
+                "declared specifier": "==1.26.4",
+                "constraint source": "direct",
+                "satisfying public versions count": 1
+            },
+            "mpmath": {
+                "private version": "1.3.0",
+                "public version": "1.3.0",
+                "highest public (unconstrained)": "1.5.0a0",
+                "declared specifier": "==1.3.0",
+                "constraint source": "direct",
+                "satisfying public versions count": 1
+            },
+            "torch": {
+                "private version": "2.6.0+cu118",
+                "public version": "2.0.1",
+                "highest public (unconstrained)": "2.13.0",
+                "declared specifier": "==2.0.1",
+                "constraint source": "direct",
+                "satisfying public versions count": 1
+            }
+        }
+    },
+    "indirect dependency with same name": {
+        "number": 19,
+        "packages": {
+            "filelock": {
+                "private version": "3.29.0",
+                "public version": "3.29.7",
+                "highest public (unconstrained)": "3.29.7",
+                "declared specifier": ">=3.16.1,>=3.0,<4,>=3.24.2,>=3.9,>=3.15.4",
+                "constraint source": "indirect",
+                "satisfying public versions count": 14
+            },
+            "fsspec": {
+                "private version": "2023.10.0",
+                "public version": "2023.10.0",
+                "highest public (unconstrained)": "2026.6.0",
+                "declared specifier": "<=2023.10.0,>=2023.1.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 9
+            },
+            "jinja2": {
+                "private version": "3.1.6",
+                "public version": "3.1.6",
+                "highest public (unconstrained)": "3.1.6",
+                "declared specifier": "<4.0,>=2.10.1,>=3.1.5,>=3.1.5,>=2.9",
+                "constraint source": "indirect",
+                "satisfying public versions count": 2
+            },
+            "markupsafe": {
+                "private version": "3.0.3",
+                "public version": "3.0.3",
+                "highest public (unconstrained)": "3.0.3",
+                "declared specifier": ">=2.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 12
+            },
+            "networkx": {
+                "private version": "3.6.1",
+                "public version": "3.6.1",
+                "highest public (unconstrained)": "3.6.1"
+            },
+            "nvidia-cublas-cu11": {
+                "private version": "11.11.3.6",
+                "public version": "11.11.3.6",
+                "highest public (unconstrained)": "11.11.3.6",
+                "declared specifier": "==11.11.3.6",
+                "constraint source": "indirect",
+                "satisfying public versions count": 1
+            },
+            "nvidia-cuda-cupti-cu11": {
+                "private version": "11.8.87",
+                "public version": "11.8.87",
+                "highest public (unconstrained)": "11.8.87",
+                "declared specifier": "==11.8.87",
+                "constraint source": "indirect",
+                "satisfying public versions count": 1
+            },
+            "nvidia-cuda-nvrtc-cu11": {
+                "private version": "11.8.89",
+                "public version": "11.8.89",
+                "highest public (unconstrained)": "11.8.89",
+                "declared specifier": "==11.8.89",
+                "constraint source": "indirect",
+                "satisfying public versions count": 1
+            },
+            "nvidia-cuda-runtime-cu11": {
+                "private version": "11.8.89",
+                "public version": "11.8.89",
+                "highest public (unconstrained)": "11.8.89",
+                "declared specifier": "==11.8.89",
+                "constraint source": "indirect",
+                "satisfying public versions count": 1
+            },
+            "nvidia-cudnn-cu11": {
+                "private version": "9.1.0.70",
+                "public version": "9.1.0.70",
+                "highest public (unconstrained)": "9.10.2.21",
+                "declared specifier": "==9.1.0.70",
+                "constraint source": "indirect",
+                "satisfying public versions count": 1
+            },
+            "nvidia-cufft-cu11": {
+                "private version": "10.9.0.58",
+                "public version": "10.9.0.58",
+                "highest public (unconstrained)": "10.9.0.58",
+                "declared specifier": "==10.9.0.58",
+                "constraint source": "indirect",
+                "satisfying public versions count": 1
+            },
+            "nvidia-curand-cu11": {
+                "private version": "10.3.0.86",
+                "public version": "10.3.0.86",
+                "highest public (unconstrained)": "10.3.0.86",
+                "declared specifier": "==10.3.0.86",
+                "constraint source": "indirect",
+                "satisfying public versions count": 1
+            },
+            "nvidia-cusolver-cu11": {
+                "private version": "11.4.1.48",
+                "public version": "11.4.1.48",
+                "highest public (unconstrained)": "11.4.1.48",
+                "declared specifier": "==11.4.1.48",
+                "constraint source": "indirect",
+                "satisfying public versions count": 1
+            },
+            "nvidia-cusparse-cu11": {
+                "private version": "11.7.5.86",
+                "public version": "11.7.5.86",
+                "highest public (unconstrained)": "11.7.5.86",
+                "declared specifier": "==11.7.5.86",
+                "constraint source": "indirect",
+                "satisfying public versions count": 1
+            },
+            "nvidia-nccl-cu11": {
+                "private version": "2.21.5",
+                "public version": "2.21.5",
+                "highest public (unconstrained)": "2.21.5",
+                "declared specifier": "==2.21.5",
+                "constraint source": "indirect",
+                "satisfying public versions count": 1
+            },
+            "nvidia-nvtx-cu11": {
+                "private version": "11.8.86",
+                "public version": "11.8.86",
+                "highest public (unconstrained)": "11.8.86",
+                "declared specifier": "==11.8.86",
+                "constraint source": "indirect",
+                "satisfying public versions count": 1
+            },
+            "sympy": {
+                "private version": "1.13.1",
+                "public version": "1.13.1",
+                "highest public (unconstrained)": "1.14.0",
+                "declared specifier": "==1.13.1",
+                "constraint source": "indirect",
+                "satisfying public versions count": 1
+            },
+            "triton": {
+                "private version": "3.2.0",
+                "public version": "3.2.0",
+                "highest public (unconstrained)": "3.7.1",
+                "declared specifier": "==3.2.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 1
+            },
+            "typing-extensions": {
+                "private version": "4.15.0",
+                "public version": "4.16.0",
+                "highest public (unconstrained)": "4.16.0",
+                "declared specifier": ">=3.7.4.3,>=4.2.0,<5,>=4.11,<5,>=4.10,>=4.0.0,<5,>=4.14,>=4.10,<5,>=4.4,>=4.10.0,>=4.0,>=4.8.0,>=4.13.2,>=4.5,>=4.12.0,>=4.14.1,>=4.0.1,<5.0.0,>=4.14.0,>=4.6.0,>=4.4,>=4.11.0,>=3.7.4,>=4.5,>=4.6,>=4.10.0,<5.0.0,>=4.7.0,>=4.6.0,>=4.10.0,~=4.12,>=4.2,>=4.1.0,>=4.4.0,>=4.9,>=4.13.2,>=4.3.0,>=3.10.0.0,<5.0.0,>=4.13.0,>=4.0.0,>=4.6.0,>=4.12.2,<5.0.0,>=4.4.0",
+                "constraint source": "indirect",
+                "satisfying public versions count": 6
+            }
+        }
+    }
+}

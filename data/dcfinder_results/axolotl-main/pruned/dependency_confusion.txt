@@ -1,0 +1,509 @@
+{
+     "direct dependency": {
+          "number": 69,
+          "packages": [
+               {
+                    "name": "black",
+                    "specifier": "",
+                    "raw_requirement": "black",
+                    "source_file": "analysis_program/axolotl-main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "mypy",
+                    "specifier": "",
+                    "raw_requirement": "mypy",
+                    "source_file": "analysis_program/axolotl-main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "pre-commit",
+                    "specifier": "",
+                    "raw_requirement": "pre-commit",
+                    "source_file": "analysis_program/axolotl-main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "types-requests",
+                    "specifier": "",
+                    "raw_requirement": "types-requests",
+                    "source_file": "analysis_program/axolotl-main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "quartodoc",
+                    "specifier": "",
+                    "raw_requirement": "quartodoc",
+                    "source_file": "analysis_program/axolotl-main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "jupyter",
+                    "specifier": "",
+                    "raw_requirement": "jupyter",
+                    "source_file": "analysis_program/axolotl-main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "blobfile",
+                    "specifier": "",
+                    "raw_requirement": "blobfile",
+                    "source_file": "analysis_program/axolotl-main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "tiktoken",
+                    "specifier": "",
+                    "raw_requirement": "tiktoken",
+                    "source_file": "analysis_program/axolotl-main/requirements-dev.txt",
+                    "dependency_type": "dev"
+               },
+               {
+                    "name": "bitsandbytes",
+                    "specifier": "==0.45.4",
+                    "raw_requirement": "bitsandbytes==0.45.4",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "triton",
+                    "specifier": ">=3.0.0",
+                    "raw_requirement": "triton>=3.0.0",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "mamba-ssm",
+                    "specifier": "==1.2.0.post1",
+                    "raw_requirement": "mamba-ssm==1.2.0.post1",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "xformers",
+                    "specifier": ">=0.0.23.post1",
+                    "raw_requirement": "xformers>=0.0.23.post1",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "autoawq",
+                    "specifier": "==0.2.7.post3",
+                    "raw_requirement": "autoawq==0.2.7.post3",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "liger-kernel",
+                    "specifier": "==0.5.9",
+                    "raw_requirement": "liger-kernel==0.5.9",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "packaging",
+                    "specifier": "==23.2",
+                    "raw_requirement": "packaging==23.2",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "huggingface-hub",
+                    "specifier": "==0.31.0",
+                    "raw_requirement": "huggingface_hub==0.31.0",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "peft",
+                    "specifier": "==0.15.2",
+                    "raw_requirement": "peft==0.15.2",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "transformers",
+                    "specifier": "==4.51.3",
+                    "raw_requirement": "transformers==4.51.3",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tokenizers",
+                    "specifier": ">=0.21.1",
+                    "raw_requirement": "tokenizers>=0.21.1",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "accelerate",
+                    "specifier": "==1.6.0",
+                    "raw_requirement": "accelerate==1.6.0",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "datasets",
+                    "specifier": "==3.5.1",
+                    "raw_requirement": "datasets==3.5.1",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "deepspeed",
+                    "specifier": ">=0.15.4",
+                    "raw_requirement": "deepspeed>=0.15.4",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "trl",
+                    "specifier": "==0.17.0",
+                    "raw_requirement": "trl==0.17.0",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "hf-xet",
+                    "specifier": "==1.1.0",
+                    "raw_requirement": "hf_xet==1.1.0",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "hqq",
+                    "specifier": "==0.2.5",
+                    "raw_requirement": "hqq==0.2.5",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "optimum",
+                    "specifier": "==1.16.2",
+                    "raw_requirement": "optimum==1.16.2",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "hf-transfer",
+                    "specifier": "",
+                    "raw_requirement": "hf_transfer",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "sentencepiece",
+                    "specifier": "",
+                    "raw_requirement": "sentencepiece",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gradio",
+                    "specifier": "==5.23.3",
+                    "raw_requirement": "gradio==5.23.3",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "modal",
+                    "specifier": "==0.70.5",
+                    "raw_requirement": "modal==0.70.5",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pydantic",
+                    "specifier": "==2.10.6",
+                    "raw_requirement": "pydantic==2.10.6",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "addict",
+                    "specifier": "",
+                    "raw_requirement": "addict",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "fire",
+                    "specifier": "",
+                    "raw_requirement": "fire",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pyyaml",
+                    "specifier": ">=6.0",
+                    "raw_requirement": "PyYAML>=6.0",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "requests",
+                    "specifier": "",
+                    "raw_requirement": "requests",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "wandb",
+                    "specifier": "",
+                    "raw_requirement": "wandb",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "einops",
+                    "specifier": "",
+                    "raw_requirement": "einops",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "colorama",
+                    "specifier": "",
+                    "raw_requirement": "colorama",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numba",
+                    "specifier": "",
+                    "raw_requirement": "numba",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numpy",
+                    "specifier": "<=2.0.1,>=1.24.4",
+                    "raw_requirement": "numpy>=1.24.4,<=2.0.1",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "evaluate",
+                    "specifier": "==0.4.1",
+                    "raw_requirement": "evaluate==0.4.1",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scipy",
+                    "specifier": "",
+                    "raw_requirement": "scipy",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scikit-learn",
+                    "specifier": "==1.4.2",
+                    "raw_requirement": "scikit-learn==1.4.2",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "nvidia-ml-py",
+                    "specifier": "==12.560.30",
+                    "raw_requirement": "nvidia-ml-py==12.560.30",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "art",
+                    "specifier": "",
+                    "raw_requirement": "art",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tensorboard",
+                    "specifier": "",
+                    "raw_requirement": "tensorboard",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "python-dotenv",
+                    "specifier": "==1.0.1",
+                    "raw_requirement": "python-dotenv==1.0.1",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "s3fs",
+                    "specifier": ">=2024.5.0",
+                    "raw_requirement": "s3fs>=2024.5.0",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gcsfs",
+                    "specifier": ">=2024.5.0",
+                    "raw_requirement": "gcsfs>=2024.5.0",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "adlfs",
+                    "specifier": ">=2024.5.0",
+                    "raw_requirement": "adlfs>=2024.5.0",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ocifs",
+                    "specifier": "==1.3.2",
+                    "raw_requirement": "ocifs==1.3.2",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "zstandard",
+                    "specifier": "==0.22.0",
+                    "raw_requirement": "zstandard==0.22.0",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "fastcore",
+                    "specifier": "",
+                    "raw_requirement": "fastcore",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "lm-eval",
+                    "specifier": "==0.4.7",
+                    "raw_requirement": "lm_eval==0.4.7",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "langdetect",
+                    "specifier": "==1.0.9",
+                    "raw_requirement": "langdetect==1.0.9",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "immutabledict",
+                    "specifier": "==4.2.0",
+                    "raw_requirement": "immutabledict==4.2.0",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "antlr4-python3-runtime",
+                    "specifier": "==4.13.2",
+                    "raw_requirement": "antlr4-python3-runtime==4.13.2",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "torchao",
+                    "specifier": "==0.10.0",
+                    "raw_requirement": "torchao==0.10.0",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "schedulefree",
+                    "specifier": "==1.4.1",
+                    "raw_requirement": "schedulefree==1.4.1",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "axolotl-contribs-lgpl",
+                    "specifier": "==0.0.6",
+                    "raw_requirement": "axolotl-contribs-lgpl==0.0.6",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "axolotl-contribs-mit",
+                    "specifier": "==0.0.3",
+                    "raw_requirement": "axolotl-contribs-mit==0.0.3",
+                    "source_file": "analysis_program/axolotl-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "codecov",
+                    "specifier": "",
+                    "raw_requirement": "codecov",
+                    "source_file": "analysis_program/axolotl-main/requirements-tests.txt",
+                    "dependency_type": "test"
+               },
+               {
+                    "name": "codecov-cli",
+                    "specifier": "",
+                    "raw_requirement": "codecov-cli",
+                    "source_file": "analysis_program/axolotl-main/requirements-tests.txt",
+                    "dependency_type": "test"
+               },
+               {
+                    "name": "pytest",
+                    "specifier": "",
+                    "raw_requirement": "pytest",
+                    "source_file": "analysis_program/axolotl-main/requirements-tests.txt",
+                    "dependency_type": "test"
+               },
+               {
+                    "name": "pytest-cov",
+                    "specifier": "",
+                    "raw_requirement": "pytest-cov",
+                    "source_file": "analysis_program/axolotl-main/requirements-tests.txt",
+                    "dependency_type": "test"
+               },
+               {
+                    "name": "pytest-retry",
+                    "specifier": "",
+                    "raw_requirement": "pytest-retry",
+                    "source_file": "analysis_program/axolotl-main/requirements-tests.txt",
+                    "dependency_type": "test"
+               },
+               {
+                    "name": "pytest-sugar",
+                    "specifier": "",
+                    "raw_requirement": "pytest-sugar",
+                    "source_file": "analysis_program/axolotl-main/requirements-tests.txt",
+                    "dependency_type": "test"
+               },
+               {
+                    "name": "pytest-xdist",
+                    "specifier": "",
+                    "raw_requirement": "pytest-xdist",
+                    "source_file": "analysis_program/axolotl-main/requirements-tests.txt",
+                    "dependency_type": "test"
+               },
+               {
+                    "name": "tbparse",
+                    "specifier": "",
+                    "raw_requirement": "tbparse",
+                    "source_file": "analysis_program/axolotl-main/requirements-tests.txt",
+                    "dependency_type": "test"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 0,
+          "packages": []
+     },
+     "direct dependency with same name": {
+          "number": 0,
+          "packages": {}
+     },
+     "indirect private dependency with same name": {
+          "number": 0,
+          "packages": {}
+     },
+     "risk": "No confusion",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 0,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 276
+     }
+}

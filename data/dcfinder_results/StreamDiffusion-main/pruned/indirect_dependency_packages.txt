@@ -1,0 +1,71 @@
+filelock >=3.10.0
+  # from parent package: diffusers (public)
+  # from parent package: transformers (public)
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+fsspec >=2023.5.0
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+  # from parent package: gradio-client (public)
+jinja2 <4.0
+  # from parent package: gradio (public)
+  # from parent package: torch (private)
+markupsafe <4.0,>=2.0,>=2.0
+  # from parent package: gradio (public)
+  # from parent package: jinja2 (private)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+networkx
+  # from parent package: torch (private)
+numpy >=1.17,<3.0,>=1.0,>=1.17,>=1.25,>=1.26.0,>=1.25
+  # from parent package: diffusers (public)
+  # from parent package: transformers (public)
+  # from parent package: accelerate (public)
+  # from parent package: gradio (public)
+  # from parent package: peft (public)
+  # from parent package: xformers (private)
+  # from parent package: matplotlib (public)
+  # from parent package: pandas (public)
+  # from parent package: contourpy (public)
+nvidia-cublas-cu11 ==11.11.3.6
+  # from parent package: torch (private)
+  # from parent package: nvidia-cudnn-cu11 (private)
+  # from parent package: nvidia-cusolver-cu11 (private)
+nvidia-cuda-cupti-cu11 ==11.8.87
+  # from parent package: torch (private)
+nvidia-cuda-nvrtc-cu11 ==11.8.89
+  # from parent package: torch (private)
+nvidia-cuda-runtime-cu11 ==11.8.89
+  # from parent package: torch (private)
+nvidia-cudnn-cu11 ==9.1.0.70
+  # from parent package: torch (private)
+nvidia-cufft-cu11 ==10.9.0.58
+  # from parent package: torch (private)
+nvidia-curand-cu11 ==10.3.0.86
+  # from parent package: torch (private)
+nvidia-cusolver-cu11 ==11.4.1.48
+  # from parent package: torch (private)
+nvidia-cusparse-cu11 ==11.7.5.86
+  # from parent package: torch (private)
+nvidia-nccl-cu11 ==2.21.5
+  # from parent package: torch (private)
+nvidia-nvtx-cu11 ==11.8.86
+  # from parent package: torch (private)
+setuptools >=40.8.0
+  # from parent package: triton (private)
+sympy >=1.13.3
+  # from parent package: torch (private)
+triton ==3.3.1
+  # from parent package: torch (private)
+typing-extensions >=4.0,>=4.8.0,~=4.0,>=4.10.0,>=4.1.0,>=4.15.0,>=4.10.0,~=4.0,>=4.6.0,>=4.14.1,>=4.12.0
+  # from parent package: uvicorn (public)
+  # from parent package: fastapi (public)
+  # from parent package: gradio (public)
+  # from parent package: torch (private)
+  # from parent package: huggingface-hub (public)
+  # from parent package: pydantic (public)
+  # from parent package: starlette (public)
+  # from parent package: gradio-client (public)
+  # from parent package: exceptiongroup (public)
+  # from parent package: pydantic-core (public)
+  # from parent package: typing-inspection (public)

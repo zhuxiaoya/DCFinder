@@ -1,0 +1,437 @@
+{
+  "numpy": {
+    "version": "1.24.3",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==1.24.3",
+    "requires_dist": []
+  },
+  "opencv-python": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ">=1.21.2"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.17.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.17.3"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.19.3"
+      }
+    ]
+  },
+  "onnx": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": ">=3.20.2"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": ">=3.6.2.1"
+      }
+    ]
+  },
+  "insightface": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "psutil": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "tk": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "customtkinter": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "darkdetect",
+        "specifier": ""
+      }
+    ]
+  },
+  "tkinterdnd2": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "tkinterdnd2-universal": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "pillow": {
+    "version": "10.0.0",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==10.0.0",
+    "requires_dist": []
+  },
+  "onnxruntime": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "coloredlogs",
+        "specifier": ""
+      },
+      {
+        "name": "flatbuffers",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.21.6"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": ""
+      },
+      {
+        "name": "sympy",
+        "specifier": ""
+      }
+    ]
+  },
+  "onnxruntime-coreml": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "coloredlogs",
+        "specifier": ""
+      },
+      {
+        "name": "flatbuffers",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.24.2"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": ""
+      },
+      {
+        "name": "sympy",
+        "specifier": ""
+      }
+    ]
+  },
+  "onnxruntime-silicon": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "coloredlogs",
+        "specifier": ""
+      },
+      {
+        "name": "flatbuffers",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.22.3"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": ""
+      },
+      {
+        "name": "sympy",
+        "specifier": ""
+      }
+    ]
+  },
+  "onnxruntime-gpu": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "coloredlogs",
+        "specifier": ""
+      },
+      {
+        "name": "flatbuffers",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.21.6"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": ""
+      },
+      {
+        "name": "sympy",
+        "specifier": ""
+      }
+    ]
+  },
+  "tensorflow": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "absl-py",
+        "specifier": ">=1.0.0"
+      },
+      {
+        "name": "astunparse",
+        "specifier": ">=1.6.0"
+      },
+      {
+        "name": "flatbuffers",
+        "specifier": ">=23.1.21"
+      },
+      {
+        "name": "gast",
+        "specifier": "<=0.4.0,>=0.2.1"
+      },
+      {
+        "name": "google-pasta",
+        "specifier": ">=0.1.1"
+      },
+      {
+        "name": "h5py",
+        "specifier": ">=2.9.0"
+      },
+      {
+        "name": "libclang",
+        "specifier": ">=13.0.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": "<=1.24.3,>=1.22"
+      },
+      {
+        "name": "opt-einsum",
+        "specifier": ">=2.3.2"
+      },
+      {
+        "name": "packaging",
+        "specifier": ""
+      },
+      {
+        "name": "protobuf",
+        "specifier": "!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.20.3"
+      },
+      {
+        "name": "setuptools",
+        "specifier": ""
+      },
+      {
+        "name": "six",
+        "specifier": ">=1.12.0"
+      },
+      {
+        "name": "termcolor",
+        "specifier": ">=1.1.0"
+      },
+      {
+        "name": "typing-extensions",
+        "specifier": "<4.6.0,>=3.6.6"
+      },
+      {
+        "name": "wrapt",
+        "specifier": ">=1.11.0"
+      },
+      {
+        "name": "grpcio",
+        "specifier": "<2.0,>=1.24.3"
+      },
+      {
+        "name": "tensorboard",
+        "specifier": "<2.14,>=2.13"
+      },
+      {
+        "name": "tensorflow-estimator",
+        "specifier": "<2.14,>=2.13.0"
+      },
+      {
+        "name": "keras",
+        "specifier": "<2.14,>=2.13.1"
+      },
+      {
+        "name": "tensorflow-io-gcs-filesystem",
+        "specifier": ">=0.23.1"
+      }
+    ]
+  },
+  "opennsfw2": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "gdown",
+        "specifier": ">=4.2.0"
+      },
+      {
+        "name": "matplotlib",
+        "specifier": ">=3.0.0"
+      },
+      {
+        "name": "numpy",
+        "specifier": ">=1.22.0"
+      },
+      {
+        "name": "opencv-python",
+        "specifier": ">=4.0.0.0"
+      },
+      {
+        "name": "pillow",
+        "specifier": ">=8.0.0"
+      },
+      {
+        "name": "scikit-image",
+        "specifier": ">=0.18.0"
+      },
+      {
+        "name": "tensorflow",
+        "specifier": ">=2.0.0"
+      },
+      {
+        "name": "tqdm",
+        "specifier": ">=4.62"
+      }
+    ]
+  },
+  "protobuf": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": []
+  },
+  "tqdm": {
+    "version": "",
+    "source": "private",
+    "private_url": "https://download.pytorch.org/whl/cu118",
+    "specifier": "==4.65.0",
+    "requires_dist": []
+  },
+  "gfpgan": {
+    "version": "",
+    "source": "public",
+    "private_url": "",
+    "specifier": "",
+    "requires_dist": [
+      {
+        "name": "basicsr",
+        "specifier": ">=1.4.2"
+      },
+      {
+        "name": "facexlib",
+        "specifier": ">=0.2.5"
+      },
+      {
+        "name": "lmdb",
+        "specifier": ""
+      },
+      {
+        "name": "numpy",
+        "specifier": ""
+      },
+      {
+        "name": "opencv-python",
+        "specifier": ""
+      },
+      {
+        "name": "pyyaml",
+        "specifier": ""
+      },
+      {
+        "name": "scipy",
+        "specifier": ""
+      },
+      {
+        "name": "tb-nightly",
+        "specifier": ""
+      },
+      {
+        "name": "torch",
+        "specifier": ">=1.7"
+      },
+      {
+        "name": "torchvision",
+        "specifier": ""
+      },
+      {
+        "name": "tqdm",
+        "specifier": ""
+      },
+      {
+        "name": "yapf",
+        "specifier": ""
+      }
+    ]
+  }
+}

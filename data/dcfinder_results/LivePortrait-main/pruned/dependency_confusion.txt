@@ -1,0 +1,183 @@
+{
+     "direct dependency": {
+          "number": 20,
+          "packages": [
+               {
+                    "name": "onnxruntime-gpu",
+                    "specifier": "==1.18.0",
+                    "raw_requirement": "onnxruntime-gpu==1.18.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "transformers",
+                    "specifier": "==4.38.0",
+                    "raw_requirement": "transformers==4.38.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "numpy",
+                    "specifier": "==1.26.4",
+                    "raw_requirement": "numpy==1.26.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pyyaml",
+                    "specifier": "==6.0.1",
+                    "raw_requirement": "pyyaml==6.0.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "opencv-python",
+                    "specifier": "==4.10.0.84",
+                    "raw_requirement": "opencv-python==4.10.0.84",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scipy",
+                    "specifier": "==1.13.1",
+                    "raw_requirement": "scipy==1.13.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "imageio",
+                    "specifier": "==2.34.2",
+                    "raw_requirement": "imageio==2.34.2",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "lmdb",
+                    "specifier": "==1.4.1",
+                    "raw_requirement": "lmdb==1.4.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tqdm",
+                    "specifier": "==4.66.4",
+                    "raw_requirement": "tqdm==4.66.4",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "rich",
+                    "specifier": "==13.7.1",
+                    "raw_requirement": "rich==13.7.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "ffmpeg-python",
+                    "specifier": "==0.2.0",
+                    "raw_requirement": "ffmpeg-python==0.2.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "onnx",
+                    "specifier": "==1.16.1",
+                    "raw_requirement": "onnx==1.16.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scikit-image",
+                    "specifier": "==0.24.0",
+                    "raw_requirement": "scikit-image==0.24.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "albumentations",
+                    "specifier": "==1.4.10",
+                    "raw_requirement": "albumentations==1.4.10",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "matplotlib",
+                    "specifier": "==3.9.0",
+                    "raw_requirement": "matplotlib==3.9.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "imageio-ffmpeg",
+                    "specifier": "==0.5.1",
+                    "raw_requirement": "imageio-ffmpeg==0.5.1",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tyro",
+                    "specifier": "==0.8.5",
+                    "raw_requirement": "tyro==0.8.5",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "gradio",
+                    "specifier": "==5.1.0",
+                    "raw_requirement": "gradio==5.1.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pykalman",
+                    "specifier": "==0.9.7",
+                    "raw_requirement": "pykalman==0.9.7",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "pillow",
+                    "specifier": ">=10.2.0",
+                    "raw_requirement": "pillow>=10.2.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/LivePortrait-main/requirements_base.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 0,
+          "packages": []
+     },
+     "direct dependency with same name": {
+          "number": 2,
+          "packages": {
+               "numpy": {
+                    "private version": "1.26.4",
+                    "public version": "1.26.4",
+                    "highest public (unconstrained)": "2.5.1",
+                    "declared specifier": "==1.26.4",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 1
+               },
+               "pillow": {
+                    "private version": "10.4.0",
+                    "public version": "12.3.0",
+                    "highest public (unconstrained)": "12.3.0",
+                    "declared specifier": ">=10.2.0",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 12
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 0,
+          "packages": {}
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 2,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 60
+     }
+}

@@ -1,0 +1,1089 @@
+{
+     "direct dependency": {
+          "number": 8,
+          "packages": [
+               {
+                    "name": "tensorizer",
+                    "specifier": ">=2.9.0",
+                    "raw_requirement": "tensorizer>=2.9.0",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py",
+                    "dependency_type": "extra:tensorizer"
+               },
+               {
+                    "name": "fastsafetensors",
+                    "specifier": ">=0.1.10",
+                    "raw_requirement": "fastsafetensors >= 0.1.10",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py",
+                    "dependency_type": "extra:fastsafetensors"
+               },
+               {
+                    "name": "runai-model-streamer",
+                    "specifier": "",
+                    "raw_requirement": "runai-model-streamer",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py",
+                    "dependency_type": "extra:runai"
+               },
+               {
+                    "name": "runai-model-streamer-s3",
+                    "specifier": "",
+                    "raw_requirement": "runai-model-streamer-s3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py",
+                    "dependency_type": "extra:runai"
+               },
+               {
+                    "name": "boto3",
+                    "specifier": "",
+                    "raw_requirement": "boto3",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py",
+                    "dependency_type": "extra:runai"
+               },
+               {
+                    "name": "librosa",
+                    "specifier": "",
+                    "raw_requirement": "librosa",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py",
+                    "dependency_type": "extra:audio"
+               },
+               {
+                    "name": "soundfile",
+                    "specifier": "",
+                    "raw_requirement": "soundfile",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/setup.py",
+                    "dependency_type": "extra:audio"
+               },
+               {
+                    "name": "pandas",
+                    "specifier": "",
+                    "raw_requirement": "pandas",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/vllm-main/benchmarks/kernels/requirements.txt",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 54,
+          "packages": [
+               {
+                    "name": "async-timeout",
+                    "specifier": ">=4.0.3",
+                    "raw_requirement": "async-timeout>=4.0.3; python_full_version < \"3.11.3\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "redis",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "audioread",
+                    "specifier": ">=2.1.9",
+                    "raw_requirement": "audioread>=2.1.9",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "botocore",
+                    "specifier": "<1.44.0,>=1.43.48,<2.0a.0,>=1.37.4",
+                    "raw_requirement": "botocore<1.44.0,>=1.43.48 ; botocore<2.0a.0,>=1.37.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "boto3",
+                              "source": "public"
+                         },
+                         {
+                              "name": "s3transfer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "certifi",
+                    "specifier": ">=2017.4.17",
+                    "raw_requirement": "certifi (>=2017.4.17)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "cffi",
+                    "specifier": ">=1.0",
+                    "raw_requirement": "cffi >=1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "soundfile",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "charset-normalizer",
+                    "specifier": "<3,>=2",
+                    "raw_requirement": "charset-normalizer (<3,>=2)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "click",
+                    "specifier": ">=8.0.0",
+                    "raw_requirement": "click>=8.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "typer",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "decorator",
+                    "specifier": ">=4.3.0",
+                    "raw_requirement": "decorator>=4.3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "filelock",
+                    "specifier": "",
+                    "raw_requirement": "filelock",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "fsspec",
+                    "specifier": ">=0.8.5",
+                    "raw_requirement": "fsspec>=0.8.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "hiredis",
+                    "specifier": ">=2.2.0",
+                    "raw_requirement": "hiredis>=2.2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorizer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "humanize",
+                    "specifier": "",
+                    "raw_requirement": "humanize",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "runai-model-streamer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "idna",
+                    "specifier": "<4,>=2.5",
+                    "raw_requirement": "idna (<4,>=2.5)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "jinja2",
+                    "specifier": "",
+                    "raw_requirement": "jinja2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "jmespath",
+                    "specifier": "<2.0.0,>=0.7.1",
+                    "raw_requirement": "jmespath<2.0.0,>=0.7.1 ; jmespath<2.0.0,>=0.7.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "boto3",
+                              "source": "public"
+                         },
+                         {
+                              "name": "botocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "joblib",
+                    "specifier": ">=1.0,>=1.4.0",
+                    "raw_requirement": "joblib>=1.0 ; joblib>=1.4.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         },
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "lazy-loader",
+                    "specifier": ">=0.1",
+                    "raw_requirement": "lazy_loader>=0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "libnacl",
+                    "specifier": ">=2.1.0",
+                    "raw_requirement": "libnacl>=2.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorizer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "llvmlite",
+                    "specifier": "<0.45,>=0.44.0dev0",
+                    "raw_requirement": "llvmlite<0.45,>=0.44.0dev0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "numba",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "markdown-it-py",
+                    "specifier": ">=2.2.0",
+                    "raw_requirement": "markdown-it-py (>=2.2.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rich",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "markupsafe",
+                    "specifier": ">=2.0",
+                    "raw_requirement": "MarkupSafe>=2.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "jinja2",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "mdurl",
+                    "specifier": "~=0.1",
+                    "raw_requirement": "mdurl~=0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "markdown-it-py",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "mpmath",
+                    "specifier": "<1.4,>=1.1.0",
+                    "raw_requirement": "mpmath<1.4,>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "sympy",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "msgpack",
+                    "specifier": ">=1.0",
+                    "raw_requirement": "msgpack>=1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "narwhals",
+                    "specifier": ">=2.0.1",
+                    "raw_requirement": "narwhals>=2.0.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "networkx",
+                    "specifier": ">=2.5.1",
+                    "raw_requirement": "networkx>=2.5.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "numba",
+                    "specifier": ">=0.51.0",
+                    "raw_requirement": "numba>=0.51.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "numpy",
+                    "specifier": ">=1.19.5,>=1.22.3,>=1.22.4,<2.3,>=1.24,<2.6,>=1.25.2,>=1.24.1",
+                    "raw_requirement": "numpy>=1.19.5 ; numpy ; numpy>=1.22.3 ; numpy ; numpy>=1.22.4; python_version < \"3.11\" ; numpy<2.3,>=1.24 ; numpy<2.6,>=1.25.2 ; numpy>=1.24.1 ; numpy",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorizer",
+                              "source": "public"
+                         },
+                         {
+                              "name": "runai-model-streamer",
+                              "source": "public"
+                         },
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         },
+                         {
+                              "name": "soundfile",
+                              "source": "private"
+                         },
+                         {
+                              "name": "pandas",
+                              "source": "private"
+                         },
+                         {
+                              "name": "numba",
+                              "source": "private"
+                         },
+                         {
+                              "name": "scipy",
+                              "source": "private"
+                         },
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         },
+                         {
+                              "name": "soxr",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "packaging",
+                    "specifier": ">=20.0",
+                    "raw_requirement": "packaging>=20.0 ; packaging",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pooch",
+                              "source": "public"
+                         },
+                         {
+                              "name": "lazy-loader",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "platformdirs",
+                    "specifier": ">=2.5.0",
+                    "raw_requirement": "platformdirs>=2.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pooch",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pooch",
+                    "specifier": ">=1.1",
+                    "raw_requirement": "pooch>=1.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "protobuf",
+                    "specifier": ">=3.19.5",
+                    "raw_requirement": "protobuf>=3.19.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorizer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "psutil",
+                    "specifier": ">=5.9.4",
+                    "raw_requirement": "psutil>=5.9.4",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorizer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pycparser",
+                    "specifier": "",
+                    "raw_requirement": "pycparser; implementation_name != \"PyPy\"",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "cffi",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "pygments",
+                    "specifier": "<3.0.0,>=2.13.0",
+                    "raw_requirement": "pygments (>=2.13.0,<3.0.0)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "rich",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "python-dateutil",
+                    "specifier": ">=2.8.2,<3.0.0,>=2.1",
+                    "raw_requirement": "python-dateutil>=2.8.2 ; python-dateutil<3.0.0,>=2.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pandas",
+                              "source": "private"
+                         },
+                         {
+                              "name": "botocore",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "pytz",
+                    "specifier": ">=2020.1",
+                    "raw_requirement": "pytz>=2020.1",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pandas",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "redis",
+                    "specifier": ">=4.5.5",
+                    "raw_requirement": "redis>=4.5.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorizer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "requests",
+                    "specifier": ">=2.19.0",
+                    "raw_requirement": "requests>=2.19.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pooch",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "rich",
+                    "specifier": ">=10.11.0",
+                    "raw_requirement": "rich>=10.11.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "typer",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "s3transfer",
+                    "specifier": "<0.20.0,>=0.19.0",
+                    "raw_requirement": "s3transfer<0.20.0,>=0.19.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "boto3",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "scikit-learn",
+                    "specifier": ">=1.1.0",
+                    "raw_requirement": "scikit-learn>=1.1.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "scipy",
+                    "specifier": ">=1.6.0,>=1.10.0",
+                    "raw_requirement": "scipy>=1.6.0 ; scipy>=1.10.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         },
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "setuptools",
+                    "specifier": ">=77.0.3",
+                    "raw_requirement": "setuptools>=77.0.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "shellingham",
+                    "specifier": ">=1.3.0",
+                    "raw_requirement": "shellingham>=1.3.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "typer",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "six",
+                    "specifier": ">=1.5",
+                    "raw_requirement": "six >=1.5",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "python-dateutil",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "soxr",
+                    "specifier": ">=0.3.2",
+                    "raw_requirement": "soxr>=0.3.2",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "sympy",
+                    "specifier": ">=1.13.3",
+                    "raw_requirement": "sympy>=1.13.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "threadpoolctl",
+                    "specifier": ">=3.5.0",
+                    "raw_requirement": "threadpoolctl>=3.5.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "scikit-learn",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "torch",
+                    "specifier": ">=1.9.0,<3.0.0,>=2.0.0",
+                    "raw_requirement": "torch>=1.9.0 ; torch<3.0.0,>=2.0.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "tensorizer",
+                              "source": "public"
+                         },
+                         {
+                              "name": "runai-model-streamer",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typer",
+                    "specifier": ">=0.9.0",
+                    "raw_requirement": "typer>=0.9.0",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "fastsafetensors",
+                              "source": "public"
+                         }
+                    ]
+               },
+               {
+                    "name": "typing-extensions",
+                    "specifier": ">=4.1.1,>=4.10.0,>=3.7.4.3",
+                    "raw_requirement": "typing_extensions>=4.1.1 ; typing-extensions>=4.10.0 ; typing-extensions>=3.7.4.3",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "librosa",
+                              "source": "public"
+                         },
+                         {
+                              "name": "torch",
+                              "source": "private"
+                         },
+                         {
+                              "name": "typer",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "tzdata",
+                    "specifier": ">=2022.7",
+                    "raw_requirement": "tzdata>=2022.7",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "pandas",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "urllib3",
+                    "specifier": "!=2.2.0,<3,>=1.25.4,<1.27,>=1.21.1",
+                    "raw_requirement": "urllib3!=2.2.0,<3,>=1.25.4 ; urllib3 (<1.27,>=1.21.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "botocore",
+                              "source": "public"
+                         },
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 2,
+          "packages": {
+               "soundfile": {
+                    "private version": "0.13.1",
+                    "public version": "0.14.0",
+                    "highest public (unconstrained)": "0.14.0",
+                    "declared specifier": ">=0.12.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "pandas": {
+                    "private version": "2.3.1",
+                    "public version": "3.0.4",
+                    "highest public (unconstrained)": "3.0.4"
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 35,
+          "packages": {
+               "async-timeout": {
+                    "private version": "4.0.3",
+                    "public version": "5.0.1",
+                    "highest public (unconstrained)": "5.0.1",
+                    "declared specifier": ">=4.0.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "certifi": {
+                    "private version": "2022.12.7",
+                    "public version": "2026.6.17",
+                    "highest public (unconstrained)": "2026.6.17",
+                    "declared specifier": ">=2017.4.17",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 51
+               },
+               "cffi": {
+                    "private version": "2.0.0",
+                    "public version": "2.1.0",
+                    "highest public (unconstrained)": "2.1.0",
+                    "declared specifier": ">=1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 57
+               },
+               "charset-normalizer": {
+                    "private version": "2.1.1",
+                    "public version": "2.1.1",
+                    "highest public (unconstrained)": "3.4.9",
+                    "declared specifier": "<3,>=2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 15
+               },
+               "click": {
+                    "private version": "8.2.2",
+                    "public version": "8.4.2",
+                    "highest public (unconstrained)": "8.4.2",
+                    "declared specifier": ">=8.0.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 24
+               },
+               "filelock": {
+                    "private version": "3.29.0",
+                    "public version": "3.29.7",
+                    "highest public (unconstrained)": "3.29.7"
+               },
+               "fsspec": {
+                    "private version": "2026.4.0",
+                    "public version": "2026.6.0",
+                    "highest public (unconstrained)": "2026.6.0",
+                    "declared specifier": ">=0.8.5",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 62
+               },
+               "idna": {
+                    "private version": "3.4",
+                    "public version": "3.18",
+                    "highest public (unconstrained)": "3.18",
+                    "declared specifier": "<4,>=2.5",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 25
+               },
+               "jinja2": {
+                    "private version": "3.1.6",
+                    "public version": "3.1.6",
+                    "highest public (unconstrained)": "3.1.6"
+               },
+               "llvmlite": {
+                    "private version": "0.44.0",
+                    "public version": "0.44.0",
+                    "highest public (unconstrained)": "0.48.0",
+                    "declared specifier": "<0.45,>=0.44.0dev0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "markdown-it-py": {
+                    "private version": "4.0.0",
+                    "public version": "4.2.0",
+                    "highest public (unconstrained)": "4.2.0",
+                    "declared specifier": ">=2.2.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 5
+               },
+               "markupsafe": {
+                    "private version": "3.0.3",
+                    "public version": "3.0.3",
+                    "highest public (unconstrained)": "3.0.3",
+                    "declared specifier": ">=2.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 12
+               },
+               "mdurl": {
+                    "private version": "0.1.2",
+                    "public version": "0.1.2",
+                    "highest public (unconstrained)": "0.1.2",
+                    "declared specifier": "~=0.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "mpmath": {
+                    "private version": "1.3.0",
+                    "public version": "1.3.0",
+                    "highest public (unconstrained)": "1.5.0a0",
+                    "declared specifier": "<1.4,>=1.1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "msgpack": {
+                    "private version": "1.1.1",
+                    "public version": "1.2.1",
+                    "highest public (unconstrained)": "1.2.1",
+                    "declared specifier": ">=1.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 22
+               },
+               "networkx": {
+                    "private version": "3.6.1",
+                    "public version": "3.6.1",
+                    "highest public (unconstrained)": "3.6.1",
+                    "declared specifier": ">=2.5.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 40
+               },
+               "numba": {
+                    "private version": "0.61.2",
+                    "public version": "0.66.0",
+                    "highest public (unconstrained)": "0.66.0",
+                    "declared specifier": ">=0.51.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 59
+               },
+               "packaging": {
+                    "private version": "24.1",
+                    "public version": "26.2",
+                    "highest public (unconstrained)": "26.2",
+                    "declared specifier": ">=20.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 28
+               },
+               "protobuf": {
+                    "private version": "6.32.1",
+                    "public version": "7.36.0rc1",
+                    "highest public (unconstrained)": "7.36.0rc1",
+                    "declared specifier": ">=3.19.5",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 124
+               },
+               "psutil": {
+                    "private version": "6.0.0",
+                    "public version": "7.2.2",
+                    "highest public (unconstrained)": "7.2.2",
+                    "declared specifier": ">=5.9.4",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 16
+               },
+               "pycparser": {
+                    "private version": "2.23",
+                    "public version": "3.0",
+                    "highest public (unconstrained)": "3.0"
+               },
+               "pygments": {
+                    "private version": "2.19.2",
+                    "public version": "2.20.0",
+                    "highest public (unconstrained)": "2.20.0",
+                    "declared specifier": "<3.0.0,>=2.13.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 14
+               },
+               "python-dateutil": {
+                    "private version": "2.9.0",
+                    "public version": "2.9.0.post0",
+                    "highest public (unconstrained)": "2.9.0.post0",
+                    "declared specifier": ">=2.8.2,<3.0.0,>=2.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 3
+               },
+               "pytz": {
+                    "private version": "2025.2",
+                    "public version": "2026.2",
+                    "highest public (unconstrained)": "2026.2",
+                    "declared specifier": ">=2020.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 24
+               },
+               "requests": {
+                    "private version": "2.28.1",
+                    "public version": "2.34.2",
+                    "highest public (unconstrained)": "2.34.2",
+                    "declared specifier": ">=2.19.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 31
+               },
+               "rich": {
+                    "private version": "14.1.0",
+                    "public version": "15.0.0",
+                    "highest public (unconstrained)": "15.0.0",
+                    "declared specifier": ">=10.11.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 73
+               },
+               "scipy": {
+                    "private version": "1.16.2",
+                    "public version": "1.18.0",
+                    "highest public (unconstrained)": "1.18.0",
+                    "declared specifier": ">=1.6.0,>=1.10.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 38
+               },
+               "setuptools": {
+                    "private version": "78.1.0",
+                    "public version": "83.0.0",
+                    "highest public (unconstrained)": "83.0.0",
+                    "declared specifier": ">=77.0.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 25
+               },
+               "shellingham": {
+                    "private version": "1.5.4",
+                    "public version": "1.5.4",
+                    "highest public (unconstrained)": "1.5.4",
+                    "declared specifier": ">=1.3.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 10
+               },
+               "six": {
+                    "private version": "1.17.0",
+                    "public version": "1.17.0",
+                    "highest public (unconstrained)": "1.17.0",
+                    "declared specifier": ">=1.5",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 19
+               },
+               "sympy": {
+                    "private version": "1.14.0",
+                    "public version": "1.14.0",
+                    "highest public (unconstrained)": "1.14.0",
+                    "declared specifier": ">=1.13.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 4
+               },
+               "typer": {
+                    "private version": "0.17.4",
+                    "public version": "0.26.8",
+                    "highest public (unconstrained)": "0.26.8",
+                    "declared specifier": ">=0.9.0",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 61
+               },
+               "typing-extensions": {
+                    "private version": "4.15.0",
+                    "public version": "4.16.0",
+                    "highest public (unconstrained)": "4.16.0",
+                    "declared specifier": ">=4.1.1,>=4.10.0,>=3.7.4.3",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 20
+               },
+               "tzdata": {
+                    "private version": "2025.2",
+                    "public version": "2026.3",
+                    "highest public (unconstrained)": "2026.3",
+                    "declared specifier": ">=2022.7",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 13
+               },
+               "urllib3": {
+                    "private version": "1.26.13",
+                    "public version": "1.26.20",
+                    "highest public (unconstrained)": "2.7.0",
+                    "declared specifier": "!=2.2.0,<3,>=1.25.4,<1.27,>=1.21.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 29
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "mixed_source_expanded",
+          "private_index_expansions": 39,
+          "pypi_metadata_expansions": 23,
+          "pruned_public_nodes": 0
+     }
+}

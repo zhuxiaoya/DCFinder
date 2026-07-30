@@ -1,0 +1,183 @@
+{
+     "direct dependency": {
+          "number": 8,
+          "packages": [
+               {
+                    "name": "numpy",
+                    "specifier": ">=1.8",
+                    "raw_requirement": "numpy>=1.8",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/fossasia_visdom/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "scipy",
+                    "specifier": "",
+                    "raw_requirement": "scipy",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/fossasia_visdom/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "requests",
+                    "specifier": "",
+                    "raw_requirement": "requests",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/fossasia_visdom/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "tornado",
+                    "specifier": "",
+                    "raw_requirement": "tornado",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/fossasia_visdom/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "six",
+                    "specifier": "",
+                    "raw_requirement": "six",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/fossasia_visdom/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "jsonpatch",
+                    "specifier": "",
+                    "raw_requirement": "jsonpatch",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/fossasia_visdom/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "websocket-client",
+                    "specifier": "",
+                    "raw_requirement": "websocket-client",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/fossasia_visdom/setup.py",
+                    "dependency_type": "runtime"
+               },
+               {
+                    "name": "networkx",
+                    "specifier": "",
+                    "raw_requirement": "networkx",
+                    "source_file": "/home/lab314/zxy/dependncy_confusion/analysis_program/fossasia_visdom/setup.py",
+                    "dependency_type": "runtime"
+               }
+          ]
+     },
+     "indirect private dependency": {
+          "number": 4,
+          "packages": [
+               {
+                    "name": "certifi",
+                    "specifier": ">=2017.4.17",
+                    "raw_requirement": "certifi (>=2017.4.17)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "charset-normalizer",
+                    "specifier": "<3,>=2",
+                    "raw_requirement": "charset-normalizer (<3,>=2)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "idna",
+                    "specifier": "<4,>=2.5",
+                    "raw_requirement": "idna (<4,>=2.5)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               },
+               {
+                    "name": "urllib3",
+                    "specifier": "<1.27,>=1.21.1",
+                    "raw_requirement": "urllib3 (<1.27,>=1.21.1)",
+                    "constraint_source": "indirect",
+                    "from_parents": [
+                         {
+                              "name": "requests",
+                              "source": "private"
+                         }
+                    ]
+               }
+          ]
+     },
+     "direct dependency with same name": {
+          "number": 3,
+          "packages": {
+               "numpy": {
+                    "private version": "2.4.4",
+                    "public version": "2.5.1",
+                    "highest public (unconstrained)": "2.5.1",
+                    "declared specifier": ">=1.8",
+                    "constraint source": "direct",
+                    "satisfying public versions count": 124
+               },
+               "requests": {
+                    "private version": "2.28.1",
+                    "public version": "2.34.2",
+                    "highest public (unconstrained)": "2.34.2"
+               },
+               "networkx": {
+                    "private version": "3.6.1",
+                    "public version": "3.6.1",
+                    "highest public (unconstrained)": "3.6.1"
+               }
+          }
+     },
+     "indirect private dependency with same name": {
+          "number": 4,
+          "packages": {
+               "certifi": {
+                    "private version": "2022.12.7",
+                    "public version": "2026.6.17",
+                    "highest public (unconstrained)": "2026.6.17",
+                    "declared specifier": ">=2017.4.17",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 51
+               },
+               "charset-normalizer": {
+                    "private version": "2.1.1",
+                    "public version": "2.1.1",
+                    "highest public (unconstrained)": "3.4.9",
+                    "declared specifier": "<3,>=2",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 15
+               },
+               "idna": {
+                    "private version": "3.4",
+                    "public version": "3.18",
+                    "highest public (unconstrained)": "3.18",
+                    "declared specifier": "<4,>=2.5",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 25
+               },
+               "urllib3": {
+                    "private version": "1.26.13",
+                    "public version": "1.26.20",
+                    "highest public (unconstrained)": "2.7.0",
+                    "declared specifier": "<1.27,>=1.21.1",
+                    "constraint source": "indirect",
+                    "satisfying public versions count": 40
+               }
+          }
+     },
+     "risk": "Critical: Public library has same-name and higher version packages",
+     "traversal": {
+          "traversal_mode": "pruned_public_branches",
+          "private_index_expansions": 7,
+          "pypi_metadata_expansions": 0,
+          "pruned_public_nodes": 1
+     }
+}

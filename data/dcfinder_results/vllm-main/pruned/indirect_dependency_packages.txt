@@ -1,0 +1,23 @@
+cffi >=1.0
+  # from parent package: soundfile (private)
+numpy >=1.19.5,>=1.22.3,>=1.22.4,<2.3,>=1.24,<2.6,>=1.25.2,>=1.24.1
+  # from parent package: tensorizer (public)
+  # from parent package: runai-model-streamer (public)
+  # from parent package: librosa (public)
+  # from parent package: soundfile (private)
+  # from parent package: pandas (private)
+  # from parent package: numba (private)
+  # from parent package: scipy (private)
+  # from parent package: scikit-learn (public)
+  # from parent package: soxr (public)
+pycparser
+  # from parent package: cffi (private)
+python-dateutil >=2.8.2,<3.0.0,>=2.1
+  # from parent package: pandas (private)
+  # from parent package: botocore (public)
+pytz >=2020.1
+  # from parent package: pandas (private)
+six >=1.5
+  # from parent package: python-dateutil (private)
+tzdata >=2022.7
+  # from parent package: pandas (private)

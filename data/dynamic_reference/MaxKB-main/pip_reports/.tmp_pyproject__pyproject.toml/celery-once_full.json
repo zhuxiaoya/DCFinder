@@ -1,0 +1,1366 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/07/ff/af718344bfa9e0e25fb6855095a928ac6525f23b14a3998dd99699dfdee0/celery_once-3.0.1.tar.gz",
+        "archive_info": {
+          "hash": "sha256=9098730d6a84a91ccd84868c4730a81487fd0ffb7220cb1836d2b928542159d0",
+          "hashes": {
+            "sha256": "9098730d6a84a91ccd84868c4730a81487fd0ffb7220cb1836d2b928542159d0"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "celery_once",
+        "version": "3.0.1",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "keywords",
+          "license",
+          "requires-dist",
+          "summary"
+        ],
+        "summary": "Allows you to prevent multiple execution and queuing of celery tasks.",
+        "keywords": [
+          "celery",
+          "mutex",
+          "once",
+          "lock",
+          "redis"
+        ],
+        "home_page": "https://github.com/cameronmaske/celery-once",
+        "author": "Cameron Maske",
+        "author_email": "cameronmaske@gmail.com",
+        "license": "BSD",
+        "classifier": [
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Natural Language :: English",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.6",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.4",
+          "Topic :: System :: Distributed Computing"
+        ],
+        "requires_dist": [
+          "celery",
+          "redis>=2.10.2"
+        ],
+        "description": "Celery Once\n===========\n\n|Build Status| |Coverage Status|\n\nCelery Once allows you to prevent multiple execution and queuing of `celery <http://www.celeryproject.org/>`_ tasks.\n\nInstallation\n============\n\nInstalling ``celery_once`` is simple with pip, just run:\n\n::\n\n    pip install -U celery_once\n\n\nRequirements\n============\n\n* `Celery <http://www.celeryproject.org/>`__. Built to run with Celery 4.0. Older versions may work, but are not officially supported.\n\nUsage\n=====\n\nTo use ``celery_once``, your tasks need to inherit from an `abstract <http://celery.readthedocs.org/en/latest/userguide/tasks.html#abstract-classes>`_ base task called ``QueueOnce``.\n\nOnce installed, you'll need to configure a few options a ``ONCE`` key in celery's conf.\n\n.. code:: python\n\n    from celery import Celery\n    from celery_once import QueueOnce\n    from time import sleep\n\n    celery = Celery('tasks', broker='amqp://guest@localhost//')\n    celery.conf.ONCE = {\n      'backend': 'celery_once.backends.Redis',\n      'settings': {\n        'url': 'redis://localhost:6379/0',\n        'default_timeout': 60 * 60\n      }\n    }\n\n    @celery.task(base=QueueOnce)\n    def slow_task():\n        sleep(30)\n        return \"Done!\"\n\n\nThe exact configuration, depends on which locking backend you want to use. See `Backends`_.\n\n\nBehind the scenes, this overrides ``apply_async`` and ``delay``. It does not affect calling the tasks directly.\n\nWhen running the task, ``celery_once`` checks that no lock is in place (against a Redis key).\nIf it isn't, the task will run as normal. Once the task completes (or ends due to an exception) the lock will clear.\nIf an attempt is made to run the task again before it completes an ``AlreadyQueued`` exception will be raised.\n\n.. code-block:: python\n\n    example.delay(10)\n    example.delay(10)\n    Traceback (most recent call last):\n        ..\n    AlreadyQueued()\n\n.. code-block:: python\n\n    result = example.apply_async(args=(10))\n    result = example.apply_async(args=(10))\n    Traceback (most recent call last):\n        ..\n    AlreadyQueued()\n\n\n``graceful``\n------------\n\nOptionally, instead of raising an ``AlreadyQueued`` exception, the task can return ``None`` if ``once={'graceful': True}`` is set in the task's `options <http://celery.readthedocs.org/en/latest/userguide/tasks.html#list-of-options>`__ or when run through ``apply_async``.\n\n.. code:: python\n\n    from celery_once import AlreadyQueued\n    # Either catch the exception,\n    try:\n        example.delay(10)\n    except AlreadyQueued:\n        pass\n    # Or, handle it gracefully at run time.\n    result = example.apply(args=(10), once={'graceful': True})\n    # or by default.\n    @celery.task(base=QueueOnce, once={'graceful': True})\n    def slow_task():\n        sleep(30)\n        return \"Done!\"\n\n\n``keys``\n--------\n\nBy default ``celery_once`` creates a lock based on the task's name and its arguments and values.\nTake for example, the following task below...\n\n.. code:: python\n\n    @celery.task(base=QueueOnce)\n    def slow_add(a, b):\n        sleep(30)\n        return a + b\n\nRunning the task with different arguments will default to checking against different locks.\n\n.. code:: python\n\n    slow_add(1, 1)\n    slow_add(1, 2)\n\nIf you want to specify locking based on a subset, or no arguments you can adjust the keys ``celery_once`` looks at in the task's `options <http://celery.readthedocs.org/en/latest/userguide/tasks.html#list-of-options>`_ with ``once={'keys': [..]}``\n\n.. code:: python\n\n    @celery.task(base=QueueOnce, once={'keys': ['a']})\n    def slow_add(a, b):\n        sleep(30)\n        return a + b\n\n    example.delay(1, 1)\n    # Checks if any tasks are running with the `a=1`\n    example.delay(1, 2)\n    Traceback (most recent call last):\n        ..\n    AlreadyQueued()\n    example.delay(2, 2)\n\n.. code:: python\n\n    @celery.task(base=QueueOnce, once={'keys': []})\n    def slow_add(a, b):\n        sleep(30)\n        return a + b\n\n    # Will enforce only one task can run, no matter what arguments.\n    example.delay(1, 1)\n    example.delay(2, 2)\n    Traceback (most recent call last):\n        ..\n    AlreadyQueued()\n\n\n``timeout``\n-----------\nAs a fall back, ``celery_once`` will clear a lock after 60 minutes.\nThis is set globally in Celery's configuration with ``ONCE_DEFAULT_TIMEOUT`` but can be set for individual tasks using...\n\n.. code:: python\n\n    @celery.task(base=QueueOnce, once={'timeout': 60 * 60 * 10})\n    def long_running_task():\n        sleep(60 * 60 * 3)\n\n\n``unlock_before_run``\n---------------------\nBy default, the lock is removed after the task has executed (using celery's `after_return <https://celery.readthedocs.org/en/latest/reference/celery.app.task.html#celery.app.task.Task.after_return>`_). This behaviour can be changed setting the task's option ``unlock_before_run``. When set to ``True``, the lock will be removed just before executing the task.\n\n**Caveats**:\n  * Any retry of the task won't re-enable the lock!\n  * This can only be set when defining the task, it cannot be passed dynamically to ``apply_async``\n\n.. code:: python\n\n    @celery.task(base=QueueOnce, once={'unlock_before_run': True})\n    def slow_task():\n        sleep(30)\n        return \"Done!\"\n\n\n\n\nBackends\n========\n\nRedis Backend\n-------------\n\nRequires:\n\n* `Redis <http://redis.io/>`_ is used as a distributed locking mechanism. Behind the scenes, it use redis-py's `shared, distributed Lock <https://github.com/andymccurdy/redis-py/blob/31519e4ccef49fb59254ee5524007c81faa7e850/redis/lock.py#L8>`_.\n\nConfiguration:\n\n-  ``backend`` - ``celery_once.backends.Redis``\n\n-  ``settings``\n\n  - ``default_timeout`` - how many seconds after a lock has been set before it should automatically timeout (defaults to 3600 seconds, or 1 hour).\n\n  - ``url`` - should point towards a running Redis instance (defaults to ``redis://localhost:6379/0``). See below for the format options supported\n\n  - ``blocking`` (boolean value: default ``False``) - If set to ``True``, scheduling a task (by ``.delay/.apply_async``) will block for X seconds to acquire the lock (see: ``blocking_timeout`` below). If no lock could be acquired after X seconds, will raise an ``AlreadyQueued`` exception. This is a very specific use-case scenario and by default is disabled.\n\n  - ``blocking_timeout`` (int or float value: default ``1``) - How many seconds the task will block trying to aquire the lock, if ``blocking`` is set to ``True``. Setting this to ``None`` set's no timeout (equivalent to infinite seconds).\n\n\n\nThe URL parser supports three patterns of urls:\n\n* ``redis://host:port[/db][?options]``: redis over TCP\n\n* ``rediss://host:port[/db][?options]``: redis over TCP with SSL enabled.\n\n* ``redis+socket:///path/to/redis.sock[?options]``: redis over a UNIX socket\n\n  The ``options`` query args are mapped to the `StrictRedis <https://redis-py.readthedocs.org/en/latest/index.html#redis.StrictRedis>`_ keyword args.\n  Examples:\n  * ``redis://localhost:6379/1``\n  \n  * ``redis://localhost:6379/1?ssl=true``\n\n  * ``rediss://localhost:6379/1``\n\n  * ``redis+socket:///var/run/redis/redis.sock?db=1``\n\n\nExample Configuration:\n\nMinimal:\n\n.. code:: python\n\n    celery.conf.ONCE = {\n      'backend': 'celery_once.backends.Redis',\n      'settings': {\n        'url': 'redis://localhost:6379/0',\n        'default_timeout': 60 * 60\n      }\n    }\n\n\nAdvanced:\nScheduling tasks blocks up to 30 seconds trying to acquire a lock before raising an exception.\n\n    .. code:: python\n\n        celery.conf.ONCE = {\n          'backend': 'celery_once.backends.Redis',\n          'settings': {\n            'url': 'redis://localhost:6379/0',\n            'default_timeout': 60 * 60,\n            'blocking': True,\n            'blocking_timeout': 30\n          }\n        }\n\nFile Backend\n-------------\n\nConfiguration:\n\n-  ``backend`` - ``celery_once.backends.File``\n\n-  ``settings``\n\n  - ``location`` - directory where lock files will be located. Default is temporary directory.\n\n  - ``default_timeout`` - how many seconds after a lock has been set before it should automatically timeout (defaults to 3600 seconds, or 1 hour).\n\n\nExample Configuration:\n\n.. code:: python\n\n    celery.conf.ONCE = {\n        'backend': 'celery_once.backends.File',\n        'settings': {\n            'location': '/tmp/celery_once',\n            'default_timeout': 60 * 60\n        }\n    }\n\n\nFlask Intergration\n------------------\nTo avoid ``RuntimeError: Working outside of application context`` errors when using ``celery_once`` with `Flask <http://flask.pocoo.org/docs/1.0/>`_, you need to make the ``QueueOnce`` task base class application context aware.\nIf you've implemented Celery following the Flask `documentation <http://flask.pocoo.org/docs/1.0/patterns/celery/#configure>`_ you can extend it like so.\n\n    .. code:: python\n\n        def make_celery(app):\n            celery = Celery(\n                app.import_name,\n                backend=app.config['CELERY_RESULT_BACKEND'],\n                broker=app.config['CELERY_BROKER_URL']\n            )\n            celery.conf.update(app.config)\n\n            class ContextTask(celery.Task):\n                def __call__(self, *args, **kwargs):\n                    with app.app_context():\n                        return self.run(*args, **kwargs)\n            celery.Task = ContextTask\n\n            # Make QueueOnce app context aware.\n            class ContextQueueOnce(QueueOnce):\n                def __call__(self, *args, **kwargs):\n                    with app.app_context():\n                        return super(ContextQueueOnce, self).__call__(*args, **kwargs)\n\n            # Attach to celery object for easy access.\n            celery.QueueOnce = ContextQueueOnce\n            return celery\n\n\nNow, when instead of importing the ``QueueOnce`` base, you can use the context aware base on the ``celery`` object.\n\n    .. code:: python\n\n        celery = make_celery(app)\n\n        @celery.task(base=celery.QueueOnce)\n        def example_task(value):\n            return\n\n\nCustom Backend\n--------------\n\nIf you want to implement a custom locking backend, see `BACKEND\\_GUIDE.rst`_.\n\n.. _BACKEND\\_GUIDE.rst: BACKEND_GUIDE.rst\n\nSupport\n=======\n\n* Tests are run against Python 2.7, 3.4 and 3.5. Other versions may work, but are not officially supported.\n\nContributing\n============\n\nContributions are welcome, and they are greatly appreciated! See `contributing\nguide <CONTRIBUTING.rst>`_ for more details.\n\n\n.. |Build Status| image:: https://travis-ci.org/cameronmaske/celery-once.svg\n   :target: https://travis-ci.org/cameronmaske/celery-once\n.. |Coverage Status| image:: https://coveralls.io/repos/cameronmaske/celery-once/badge.svg\n   :target: https://coveralls.io/r/cameronmaske/celery-once\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/fd/0a/c2345ebf1ebe70840ce3f6c6ee612f8fa749cfbd1b03069c53bf0c62aaad/redis-8.0.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=47daa35a058c23468d6437f17a8c76882cb316b838ef763036af99b96cedd743",
+          "hashes": {
+            "sha256": "47daa35a058c23468d6437f17a8c76882cb316b838ef763036af99b96cedd743"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "redis",
+        "version": "8.0.1",
+        "summary": "Python client for Redis database and key-value store",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "Redis",
+          "database",
+          "key-value-store"
+        ],
+        "author_email": "\"Redis Inc.\" <oss@redis.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy"
+        ],
+        "requires_dist": [
+          "async-timeout>=4.0.3; python_full_version < '3.11.3'",
+          "pybreaker>=1.4.0; extra == 'circuit-breaker'",
+          "hiredis>=3.2.0; extra == 'hiredis'",
+          "pyjwt>=2.13.0; extra == 'jwt'",
+          "cryptography>=36.0.1; extra == 'ocsp'",
+          "pyopenssl>=20.0.1; extra == 'ocsp'",
+          "requests>=2.31.0; extra == 'ocsp'",
+          "opentelemetry-api>=1.39.1; extra == 'otel'",
+          "opentelemetry-exporter-otlp-proto-http>=1.39.1; extra == 'otel'",
+          "opentelemetry-sdk>=1.39.1; extra == 'otel'",
+          "xxhash~=3.6.0; extra == 'xxhash'"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Changes, https://github.com/redis/redis-py/releases",
+          "Code, https://github.com/redis/redis-py",
+          "Documentation, https://redis.readthedocs.io/en/latest/",
+          "Homepage, https://github.com/redis/redis-py",
+          "Issue tracker, https://github.com/redis/redis-py/issues"
+        ],
+        "provides_extra": [
+          "circuit-breaker",
+          "hiredis",
+          "jwt",
+          "ocsp",
+          "otel",
+          "xxhash"
+        ],
+        "description": "# redis-py\n\nThe Python interface to the Redis key-value store.\n\n[![CI](https://github.com/redis/redis-py/actions/workflows/integration.yaml/badge.svg?branch=master)](https://github.com/redis/redis-py/actions/workflows/integration.yaml)\n[![docs](https://readthedocs.org/projects/redis/badge/?version=stable&style=flat)](https://redis.readthedocs.io/en/stable/)\n[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/redis/redis-py/blob/master/LICENSE)\n[![pypi](https://badge.fury.io/py/redis.svg)](https://pypi.org/project/redis/)\n[![pre-release](https://img.shields.io/github/v/release/redis/redis-py?include_prereleases&label=latest-prerelease)](https://github.com/redis/redis-py/releases)\n[![codecov](https://codecov.io/gh/redis/redis-py/branch/master/graph/badge.svg?token=yenl5fzxxr)](https://codecov.io/gh/redis/redis-py)\n\n[Installation](#installation) |  [Usage](#usage) | [Advanced Topics](#advanced-topics) | [Contributing](https://github.com/redis/redis-py/blob/master/CONTRIBUTING.md)\n\n---------------------------------------------\n\n**Note:** redis-py 5.0 is the last version of redis-py that supports Python 3.7, as it has reached [end of life](https://devguide.python.org/versions/). redis-py 5.1 supports Python 3.8+.<br>\n**Note:** redis-py 6.1.0 is the last version of redis-py that supports Python 3.8, as it has reached [end of life](https://devguide.python.org/versions/). redis-py 6.2.0 supports Python 3.9+.\n\n---------------------------------------------\n\n## How do I Redis?\n\n[Learn for free at Redis University](https://redis.io/learn/university)\n\n[Try the Redis Cloud](https://redis.io/try-free/)\n\n[Dive in developer tutorials](https://redis.io/learn)\n\n[Join the Redis community](https://redis.io/community/)\n\n[Work at Redis](https://redis.io/careers/)\n\n## Installation\n\nStart a redis via docker (for Redis versions >= 8.0):\n\n``` bash\ndocker run -p 6379:6379 -it redis:latest\n```\n\nStart a redis via docker (for Redis versions < 8.0):\n\n``` bash\ndocker run -p 6379:6379 -it redis/redis-stack:latest\n```\nTo install redis-py, simply:\n\n``` bash\n$ pip install redis\n```\n\nFor faster performance, install redis with hiredis support, this provides a compiled response parser, and *for most cases* requires zero code changes.\nBy default, if hiredis >= 1.0 is available, redis-py will attempt to use it for response parsing.\n\n``` bash\n$ pip install \"redis[hiredis]\"\n```\n\nLooking for a high-level library to handle object mapping? See [redis-om-python](https://github.com/redis/redis-om-python)!\n\n## Supported Redis Versions\n\nThe most recent version of this library supports Redis version [7.2](https://github.com/redis/redis/blob/7.2/00-RELEASENOTES), [7.4](https://github.com/redis/redis/blob/7.4/00-RELEASENOTES), [8.0](https://github.com/redis/redis/blob/8.0/00-RELEASENOTES), [8.2](https://github.com/redis/redis/blob/8.2/00-RELEASENOTES), [8.4](https://github.com/redis/redis/blob/8.4/00-RELEASENOTES), [8.6](https://github.com/redis/redis/blob/8.6/00-RELEASENOTES) and [8.8](https://github.com/redis/redis/blob/8.8/00-RELEASENOTES).\n\nThe table below highlights version compatibility of the most-recent library versions and redis versions.\n\n| Library version | Supported redis versions |\n|-----------------|-------------------|\n| 3.5.3 | <= 6.2 Family of releases |\n| >= 4.5.0 | Version 5.0 to 7.0 |\n| >= 5.0.0 | Version 5.0 to 7.4 |\n| >= 6.0.0 | Version 7.2 to current |\n\n\n## Usage\n\n### Basic Example\n\n``` python\n>>> import redis\n>>> r = redis.Redis(host='localhost', port=6379, db=0)\n>>> r.set('foo', 'bar')\nTrue\n>>> r.get('foo')\nb'bar'\n```\n\nThe above code connects to localhost on port 6379, sets a value in Redis, and retrieves it. All responses are returned as bytes in Python, to receive decoded strings, set *decode_responses=True*.  For this, and more connection options, see [these examples](https://redis.readthedocs.io/en/stable/examples.html).\n\n\n#### RESP3 Support\nredis-py supports RESP3 starting with version 5.0. Starting with redis-py 8.0,\nclients use RESP3 on the wire by default while preserving legacy\nRESP2-compatible Python response shapes for existing applications.\n\nSet *protocol=3* explicitly when your application should receive\nRESP3-specific response shapes or when you want the wire protocol choice to be\nvisible in code. To force RESP2 on the wire, set *protocol=2*. To opt in to\nprotocol-independent response shapes, set *legacy_responses=False*.\n\nFor new projects, we recommend opting out of legacy response compatibility by\nsetting *legacy_responses=False*. This makes redis-py return unified Python\nresponse shapes for affected commands whether the connection uses RESP2 or\nRESP3. Existing applications can keep the default legacy-compatible behavior\nwhile they migrate response handling at their own pace.\n\n``` python\n>>> import redis\n>>> r = redis.Redis(host='localhost', port=6379, db=0, legacy_responses=False)\n```\n\nSee the [unified responses migration guide](https://redis.readthedocs.io/en/stable/unified_responses.html)\nfor activation instructions and command-by-command response differences. For\nRESP3-specific behavior, see the [RESP3 features guide](https://redis.readthedocs.io/en/stable/resp3_features.html).\n\n### Connection Pools\n\nBy default, redis-py uses a connection pool to manage connections. Each instance of a Redis class receives its own connection pool. You can however define your own [redis.ConnectionPool](https://redis.readthedocs.io/en/stable/connections.html#connection-pools).\n\n``` python\n>>> pool = redis.ConnectionPool(host='localhost', port=6379, db=0)\n>>> r = redis.Redis(connection_pool=pool)\n```\n\nAlternatively, you might want to look at [Async connections](https://redis.readthedocs.io/en/stable/examples/asyncio_examples.html), or [Cluster connections](https://redis.readthedocs.io/en/stable/connections.html#cluster-client), or even [Async Cluster connections](https://redis.readthedocs.io/en/stable/connections.html#async-cluster-client).\n\n### Redis Commands\n\nThere is built-in support for all of the [out-of-the-box Redis commands](https://redis.io/commands). They are exposed using the raw Redis command names (`HSET`, `HGETALL`, etc.) except where a word (i.e. del) is reserved by the language. The complete set of commands can be found [here](https://github.com/redis/redis-py/tree/master/redis/commands), or [the documentation](https://redis.readthedocs.io/en/stable/commands.html).\n\n## Advanced Topics\n\nThe [official Redis command documentation](https://redis.io/commands)\ndoes a great job of explaining each command in detail. redis-py attempts\nto adhere to the official command syntax. There are a few exceptions:\n\n-   **MULTI/EXEC**: These are implemented as part of the Pipeline class.\n    The pipeline is wrapped with the MULTI and EXEC statements by\n    default when it is executed, which can be disabled by specifying\n    transaction=False. See more about Pipelines below.\n\n-   **SUBSCRIBE/LISTEN**: Similar to pipelines, PubSub is implemented as\n    a separate class as it places the underlying connection in a state\n    where it can\\'t execute non-pubsub commands. Calling the pubsub\n    method from the Redis client will return a PubSub instance where you\n    can subscribe to channels and listen for messages. You can only call\n    PUBLISH from the Redis client (see [this comment on issue\n    #151](https://github.com/redis/redis-py/issues/151#issuecomment-1545015)\n    for details).\n\nFor more details, please see the documentation on [advanced topics page](https://redis.readthedocs.io/en/stable/advanced_features.html).\n\n### Pipelines\n\nThe following is a basic example of a [Redis pipeline](https://redis.io/docs/manual/pipelining/), a method to optimize round-trip calls, by batching Redis commands, and receiving their results as a list.\n\n\n``` python\n>>> pipe = r.pipeline()\n>>> pipe.set('foo', 5)\n>>> pipe.set('bar', 18.5)\n>>> pipe.set('blee', \"hello world!\")\n>>> pipe.execute()\n[True, True, True]\n```\n\n### PubSub\n\nThe following example shows how to utilize [Redis Pub/Sub](https://redis.io/docs/manual/pubsub/) to subscribe to specific channels.\n\n``` python\n>>> r = redis.Redis(...)\n>>> p = r.pubsub()\n>>> p.subscribe('my-first-channel', 'my-second-channel', ...)\n>>> p.get_message()\n{'pattern': None, 'type': 'subscribe', 'channel': b'my-second-channel', 'data': 1}\n```\n\n### Redis’ search and query capabilities default dialect\n\nRelease 6.0.0 introduces a client-side default dialect for Redis’ search and query capabilities.\nBy default, the client now overrides the server-side dialect with version 2, automatically appending *DIALECT 2* to commands like *FT.AGGREGATE* and *FT.SEARCH*.\n\n**Important**: Be aware that the query dialect may impact the results returned. If needed, you can revert to a different dialect version by configuring the client accordingly.\n\n``` python\n>>> from redis.commands.search.field import TextField\n>>> from redis.commands.search.query import Query\n>>> from redis.commands.search.index_definition import IndexDefinition\n>>> import redis\n\n>>> r = redis.Redis(host='localhost', port=6379, db=0)\n>>> r.ft().create_index(\n>>>     (TextField(\"name\"), TextField(\"lastname\")),\n>>>     definition=IndexDefinition(prefix=[\"test:\"]),\n>>> )\n\n>>> r.hset(\"test:1\", \"name\", \"James\")\n>>> r.hset(\"test:1\", \"lastname\", \"Brown\")\n\n>>> # Query with default DIALECT 2\n>>> query = \"@name: James Brown\"\n>>> q = Query(query)\n>>> res = r.ft().search(q)\n\n>>> # Query with explicit DIALECT 1\n>>> query = \"@name: James Brown\"\n>>> q = Query(query).dialect(1)\n>>> res = r.ft().search(q)\n```\n\nYou can find further details in the [query dialect documentation](https://redis.io/docs/latest/develop/interact/search-and-query/advanced-concepts/dialects/).\n\n### Multi-database client (Active-Active)\n\nThe multi-database client allows your application to connect to multiple Redis databases, which are typically replicas of each other. It is designed to work with Redis Software and Redis Cloud Active-Active setups. The client continuously monitors database health, detects failures, and automatically fails over to the next healthy database using a configurable strategy. When the original database becomes healthy again, the client can automatically switch back to it.<br>\nThis is useful when:\n\n1. You have more than one Redis deployment. This might include two independent Redis servers or two or more Redis databases replicated across multiple [active-active Redis Enterprise](https://redis.io/docs/latest/operate/rs/databases/active-active/) clusters.\n2. You want your application to connect to one deployment at a time and to fail over to the next available deployment if the first deployment becomes unavailable.\n\nFor the complete failover configuration options and examples, see the [Multi-database client docs](https://redis.readthedocs.io/en/latest/multi_database.html).\n\n---------------------------------------------\n\n### Author\n\nredis-py is developed and maintained by [Redis Inc](https://redis.io). It can be found [here](\nhttps://github.com/redis/redis-py), or downloaded from [pypi](https://pypi.org/project/redis/).\n\nSpecial thanks to:\n\n-   Andy McCurdy (<sedrik@gmail.com>) the original author of redis-py.\n-   Ludovico Magnocavallo, author of the original Python Redis client,\n    from which some of the socket code is still used.\n-   Alexander Solovyov for ideas on the generic response callback\n    system.\n-   Paul Hubbard for initial packaging support.\n\n[![Redis](https://github.com/redis/redis-py/blob/master/docs/_static/logo-redis.svg)](https://redis.io)\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/fe/ba/e2081de779ca30d473f21f5b30e0e737c438205440784c7dfc81efc2b029/async_timeout-5.0.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=39e3809566ff85354557ec2398b55e096c8364bacac9405a7a1fa429e77fe76c",
+          "hashes": {
+            "sha256": "39e3809566ff85354557ec2398b55e096c8364bacac9405a7a1fa429e77fe76c"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "async-timeout",
+        "version": "5.0.1",
+        "summary": "Timeout context manager for asyncio programs",
+        "description_content_type": "text/x-rst",
+        "home_page": "https://github.com/aio-libs/async-timeout",
+        "author": "Andrew Svetlov <andrew.svetlov@gmail.com>",
+        "author_email": "andrew.svetlov@gmail.com",
+        "license": "Apache 2",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Topic :: Software Development :: Libraries",
+          "Framework :: AsyncIO",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Chat: Gitter, https://gitter.im/aio-libs/Lobby",
+          "CI: GitHub Actions, https://github.com/aio-libs/async-timeout/actions",
+          "Coverage: codecov, https://codecov.io/github/aio-libs/async-timeout",
+          "GitHub: issues, https://github.com/aio-libs/async-timeout/issues",
+          "GitHub: repo, https://github.com/aio-libs/async-timeout"
+        ],
+        "description": "async-timeout\n=============\n.. image:: https://travis-ci.com/aio-libs/async-timeout.svg?branch=master\n    :target: https://travis-ci.com/aio-libs/async-timeout\n.. image:: https://codecov.io/gh/aio-libs/async-timeout/branch/master/graph/badge.svg\n    :target: https://codecov.io/gh/aio-libs/async-timeout\n.. image:: https://img.shields.io/pypi/v/async-timeout.svg\n    :target: https://pypi.python.org/pypi/async-timeout\n.. image:: https://badges.gitter.im/Join%20Chat.svg\n    :target: https://gitter.im/aio-libs/Lobby\n    :alt: Chat on Gitter\n\nasyncio-compatible timeout context manager.\n\n\n\nDEPRECATED\n----------\n\nThis library has effectively been upstreamed into Python 3.11+.\n\nTherefore this library is considered deprecated and no longer actively supported.\n\nVersion 5.0+ provides dual-mode when executed on Python 3.11+:\n``asyncio_timeout.Timeout`` is fully compatible with ``asyncio.Timeout`` *and* old\nversions of the library.\n\nAnyway, using upstream is highly recommended. ``asyncio_timeout`` exists only for the\nsake of backward compatibility, easy supporting both old and new Python by the same\ncode, and easy misgration.\n\nIf rescheduling API is not important and only ``async with timeout(...): ...`` functionality is required,\na user could apply conditional import::\n\n    if sys.version_info >= (3, 11):\n        from asyncio import timeout, timeout_at\n    else:\n        from async_timeout import timeout, timeout_at\n\n\nUsage example\n-------------\n\n\nThe context manager is useful in cases when you want to apply timeout\nlogic around block of code or in cases when ``asyncio.wait_for()`` is\nnot suitable. Also it's much faster than ``asyncio.wait_for()``\nbecause ``timeout`` doesn't create a new task.\n\nThe ``timeout(delay, *, loop=None)`` call returns a context manager\nthat cancels a block on *timeout* expiring::\n\n   from async_timeout import timeout\n   async with timeout(1.5):\n       await inner()\n\n1. If ``inner()`` is executed faster than in ``1.5`` seconds nothing\n   happens.\n2. Otherwise ``inner()`` is cancelled internally by sending\n   ``asyncio.CancelledError`` into but ``asyncio.TimeoutError`` is\n   raised outside of context manager scope.\n\n*timeout* parameter could be ``None`` for skipping timeout functionality.\n\n\nAlternatively, ``timeout_at(when)`` can be used for scheduling\nat the absolute time::\n\n   loop = asyncio.get_event_loop()\n   now = loop.time()\n\n   async with timeout_at(now + 1.5):\n       await inner()\n\n\nPlease note: it is not POSIX time but a time with\nundefined starting base, e.g. the time of the system power on.\n\n\nContext manager has ``.expired()`` / ``.expired`` for check if timeout happens\nexactly in context manager::\n\n   async with timeout(1.5) as cm:\n       await inner()\n   print(cm.expired())  # recommended api\n   print(cm.expired)    # compatible api\n\nThe property is ``True`` if ``inner()`` execution is cancelled by\ntimeout context manager.\n\nIf ``inner()`` call explicitly raises ``TimeoutError`` ``cm.expired``\nis ``False``.\n\nThe scheduled deadline time is available as ``.when()`` / ``.deadline``::\n\n   async with timeout(1.5) as cm:\n       cm.when()    # recommended api\n       cm.deadline  # compatible api\n\nNot finished yet timeout can be rescheduled by ``shift()``\nor ``update()`` methods::\n\n   async with timeout(1.5) as cm:\n       # recommended api\n       cm.reschedule(cm.when() + 1)  # add another second on waiting\n       # compatible api\n       cm.shift(1)  # add another second on waiting\n       cm.update(loop.time() + 5)  # reschedule to now+5 seconds\n\nRescheduling is forbidden if the timeout is expired or after exit from ``async with``\ncode block.\n\n\nDisable scheduled timeout::\n\n   async with timeout(1.5) as cm:\n       cm.reschedule(None)  # recommended api\n       cm.reject()          # compatible api\n\n\n\nInstallation\n------------\n\n::\n\n   $ pip install async-timeout\n\nThe library is Python 3 only!\n\n\n\nAuthors and License\n-------------------\n\nThe module is written by Andrew Svetlov.\n\nIt's *Apache 2* licensed and freely available.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/cf/c9/6eccdda96e098f7ae843162db2d3c149c6931a24fda69fe4ab84d0027eb5/celery-5.6.3-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=0808f42f80909c4d5833202360ffafb2a4f83f4d8e23e1285d926610e9a7afa6",
+          "hashes": {
+            "sha256": "0808f42f80909c4d5833202360ffafb2a4f83f4d8e23e1285d926610e9a7afa6"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "celery",
+        "version": "5.6.3",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "platform",
+          "project-url",
+          "provides-extra",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "platform": [
+          "any"
+        ],
+        "summary": "Distributed Task Queue.",
+        "keywords": [
+          "task",
+          "job",
+          "queue",
+          "distributed",
+          "messaging",
+          "actor"
+        ],
+        "home_page": "https://docs.celeryq.dev/",
+        "author": "Ask Solem",
+        "author_email": "auvipy@gmail.com",
+        "license": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Topic :: System :: Distributed Computing",
+          "Topic :: Software Development :: Object Brokering",
+          "Framework :: Celery",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Operating System :: OS Independent"
+        ],
+        "requires_dist": [
+          "billiard<5.0,>=4.2.1",
+          "kombu>=5.6.0",
+          "vine<6.0,>=5.1.0",
+          "click<9.0,>=8.1.2",
+          "click-didyoumean>=0.3.0",
+          "click-repl>=0.2.0",
+          "click-plugins>=1.1.1",
+          "python-dateutil>=2.8.2",
+          "exceptiongroup>=1.3.0; python_version < \"3.11\"",
+          "tzlocal",
+          "pyArango>=2.0.2; extra == \"arangodb\"",
+          "cryptography==46.0.5; extra == \"auth\"",
+          "azure-storage-blob>=12.15.0; extra == \"azureblockblob\"",
+          "azure-identity>=1.19.0; extra == \"azureblockblob\"",
+          "brotlipy>=0.7.0; platform_python_implementation == \"PyPy\" and extra == \"brotli\"",
+          "brotli>=1.0.0; platform_python_implementation == \"CPython\" and extra == \"brotli\"",
+          "cassandra-driver<4,>=3.25.0; extra == \"cassandra\"",
+          "python-consul2==0.1.5; extra == \"consul\"",
+          "pydocumentdb==2.3.5; extra == \"cosmosdbsql\"",
+          "couchbase>=3.0.0; (platform_python_implementation != \"PyPy\" and (platform_system != \"Windows\" or python_version < \"3.10\")) and extra == \"couchbase\"",
+          "pycouchdb==1.16.0; extra == \"couchdb\"",
+          "Django>=2.2.28; extra == \"django\"",
+          "boto3>=1.26.143; extra == \"dynamodb\"",
+          "elasticsearch<=9.3.0; extra == \"elasticsearch\"",
+          "elastic-transport<=9.2.1; extra == \"elasticsearch\"",
+          "eventlet>=0.32.0; python_version < \"3.10\" and extra == \"eventlet\"",
+          "gevent>=1.5.0; extra == \"gevent\"",
+          "google-cloud-storage>=2.10.0; extra == \"gcs\"",
+          "grpcio==1.76.0; extra == \"gcs\"",
+          "google-cloud-firestore==2.23.0; extra == \"gcs\"",
+          "librabbitmq>=2.0.0; python_version < \"3.11\" and extra == \"librabbitmq\"",
+          "pylibmc==1.6.3; platform_system != \"Windows\" and extra == \"memcache\"",
+          "kombu[mongodb]; extra == \"mongodb\"",
+          "kombu[msgpack]; extra == \"msgpack\"",
+          "python-memcached>=1.61; extra == \"pymemcache\"",
+          "pydantic>=2.4; python_version < \"3.14\" and extra == \"pydantic\"",
+          "pydantic>=2.12.0a1; python_version >= \"3.14\" and extra == \"pydantic\"",
+          "pyro4==4.82; python_version < \"3.11\" and extra == \"pyro\"",
+          "pytest-celery[all]>=1.3.0; extra == \"pytest\"",
+          "kombu[redis]; extra == \"redis\"",
+          "boto3>=1.26.143; extra == \"s3\"",
+          "softlayer_messaging>=1.0.3; extra == \"slmq\"",
+          "ephem==4.2; platform_python_implementation != \"PyPy\" and extra == \"solar\"",
+          "kombu[sqlalchemy]; extra == \"sqlalchemy\"",
+          "boto3>=1.26.143; extra == \"sqs\"",
+          "pycurl<7.45.4,>=7.43.0.5; (sys_platform != \"win32\" and platform_python_implementation == \"CPython\" and python_version < \"3.9\") and extra == \"sqs\"",
+          "pycurl>=7.45.4; (sys_platform != \"win32\" and platform_python_implementation == \"CPython\" and python_version >= \"3.9\") and extra == \"sqs\"",
+          "urllib3>=1.26.16; extra == \"sqs\"",
+          "kombu[sqs]>=5.5.0; extra == \"sqs\"",
+          "tblib==3.2.2; extra == \"tblib\"",
+          "kombu[yaml]; extra == \"yaml\"",
+          "kazoo>=1.3.1; extra == \"zookeeper\"",
+          "zstandard==0.23.0; extra == \"zstd\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Documentation, https://docs.celeryq.dev/en/stable/",
+          "Changelog, https://docs.celeryq.dev/en/stable/changelog.html",
+          "Code, https://github.com/celery/celery",
+          "Tracker, https://github.com/celery/celery/issues",
+          "Funding, https://opencollective.com/celery"
+        ],
+        "provides_extra": [
+          "arangodb",
+          "auth",
+          "azureblockblob",
+          "brotli",
+          "cassandra",
+          "consul",
+          "cosmosdbsql",
+          "couchbase",
+          "couchdb",
+          "django",
+          "dynamodb",
+          "elasticsearch",
+          "eventlet",
+          "gevent",
+          "gcs",
+          "librabbitmq",
+          "memcache",
+          "mongodb",
+          "msgpack",
+          "pymemcache",
+          "pydantic",
+          "pyro",
+          "pytest",
+          "redis",
+          "s3",
+          "slmq",
+          "solar",
+          "sqlalchemy",
+          "sqs",
+          "tblib",
+          "yaml",
+          "zookeeper",
+          "zstd"
+        ],
+        "description": ".. image:: https://docs.celeryq.dev/en/latest/_images/celery-banner-small.png\n\n|build-status| |coverage| |license| |wheel| |semgrep| |pyversion| |pyimp| |ocbackerbadge| |ocsponsorbadge|\n\n:Version: 5.6.3 (recovery)\n:Web: https://docs.celeryq.dev/en/stable/index.html\n:Download: https://pypi.org/project/celery/\n:Source: https://github.com/celery/celery/\n:DeepWiki: |deepwiki|\n:Keywords: task, queue, job, async, rabbitmq, amqp, redis,\n  python, distributed, actors\n\nDonations\n=========\n\nOpen Collective\n---------------\n\n.. image:: https://opencollective.com/static/images/opencollectivelogo-footer-n.svg\n   :alt: Open Collective logo\n   :width: 200px\n\n`Open Collective <https://opencollective.com/celery>`_ is our community-powered funding platform that fuels Celery's\nongoing development. Your sponsorship directly supports improvements, maintenance, and innovative features that keep\nCelery robust and reliable.\n\nFor enterprise\n==============\n\nAvailable as part of the Tidelift Subscription.\n\nThe maintainers of ``celery`` and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source dependencies you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact dependencies you use. `Learn more. <https://tidelift.com/subscription/pkg/pypi-celery?utm_source=pypi-celery&utm_medium=referral&utm_campaign=enterprise&utm_term=repo>`_\n\nSponsors\n========\n\nBlacksmith\n----------\n\n.. image:: https://github.com/celery/celery/blob/main/docs/images/blacksmith-logo-white-on-black.svg\n   :alt: Blacksmith logo\n   :width: 240px\n   :target: https://blacksmith.sh/\n\n`Official Announcement <https://www.linkedin.com/pulse/celery-now-powered-blacksmith-tomer-nosrati-ew68e/?trackingId=DWHH49WqS2iOW8Jf5N1kEg%3D%3D>`_\n\nCloudAMQP\n---------\n\n.. image:: https://github.com/celery/celery/blob/main/docs/images/cloudamqp-logo-lightbg.svg\n   :alt: CloudAMQP logo\n   :width: 240px\n   :target: https://www.cloudamqp.com/\n\n`CloudAMQP <https://www.cloudamqp.com/>`_ is an industry leading RabbitMQ as a service provider.\nIf you need highly available message queues, a perfect choice would be to use CloudAMQP.\nWith 24,000+ running instances, CloudAMQP is the leading hosting provider of RabbitMQ,\nwith customers all over the world.\n\nUpstash\n-------\n\n.. image:: https://upstash.com/logo/upstash-dark-bg.svg\n   :alt: Upstash logo\n   :width: 200px\n   :target: https://upstash.com/?code=celery\n\n`Upstash <http://upstash.com/?code=celery>`_ offers a serverless Redis database service,\nproviding a seamless solution for Celery users looking to leverage\nserverless architectures. Upstash's serverless Redis service is designed\nwith an eventual consistency model and durable storage, facilitated\nthrough a multi-tier storage architecture.\n\nDragonfly\n---------\n\n.. image:: https://github.com/celery/celery/raw/main/docs/images/dragonfly.svg\n   :alt: Dragonfly logo\n   :width: 150px\n   :target: https://www.dragonflydb.io/\n\n`Dragonfly <https://www.dragonflydb.io/>`_ is a drop-in Redis replacement that cuts costs and boosts performance.\nDesigned to fully utilize the power of modern cloud hardware and deliver on the data demands of modern applications,\nDragonfly frees developers from the limits of traditional in-memory data stores.\n\n\n\n.. |oc-sponsor-1| image:: https://opencollective.com/celery/sponsor/0/avatar.svg\n    :target: https://opencollective.com/celery/sponsor/0/website\n\nWhat's a Task Queue?\n====================\n\nTask queues are used as a mechanism to distribute work across threads or\nmachines.\n\nA task queue's input is a unit of work, called a task, dedicated worker\nprocesses then constantly monitor the queue for new work to perform.\n\nCelery communicates via messages, usually using a broker\nto mediate between clients and workers. To initiate a task a client puts a\nmessage on the queue, the broker then delivers the message to a worker.\n\nA Celery system can consist of multiple workers and brokers, giving way\nto high availability and horizontal scaling.\n\nCelery is written in Python, but the protocol can be implemented in any\nlanguage. In addition to Python there's node-celery_ for Node.js,\na `PHP client`_, `gocelery`_, gopher-celery_ for Go, and rusty-celery_ for Rust.\n\nLanguage interoperability can also be achieved by using webhooks\nin such a way that the client enqueues an URL to be requested by a worker.\n\n.. _node-celery: https://github.com/mher/node-celery\n.. _`PHP client`: https://github.com/gjedeer/celery-php\n.. _`gocelery`: https://github.com/gocelery/gocelery\n.. _gopher-celery: https://github.com/marselester/gopher-celery\n.. _rusty-celery: https://github.com/rusty-celery/rusty-celery\n\nWhat do I need?\n===============\n\nCelery version 5.5.x runs on:\n\n- Python (3.8, 3.9, 3.10, 3.11, 3.12, 3.13)\n- PyPy3.9+ (v7.3.12+)\n\n\nThis is the version of celery which will support Python 3.8 or newer.\n\nIf you're running an older version of Python, you need to be running\nan older version of Celery:\n\n- Python 3.7: Celery 5.2 or earlier.\n- Python 3.6: Celery 5.1 or earlier.\n- Python 2.7: Celery 4.x series.\n- Python 2.6: Celery series 3.1 or earlier.\n- Python 2.5: Celery series 3.0 or earlier.\n- Python 2.4: Celery series 2.2 or earlier.\n\nCelery is a project with minimal funding,\nso we don't support Microsoft Windows but it should be working.\nPlease don't open any issues related to that platform.\n\n*Celery* is usually used with a message broker to send and receive messages.\nThe RabbitMQ, Redis transports are feature complete,\nbut there's also experimental support for a myriad of other solutions, including\nusing SQLite for local development.\n\n*Celery* can run on a single machine, on multiple machines, or even\nacross datacenters.\n\nGet Started\n===========\n\nIf this is the first time you're trying to use Celery, or you're\nnew to Celery v5.6.x coming from previous versions then you should read our\ngetting started tutorials:\n\n- `First steps with Celery`_\n\n    Tutorial teaching you the bare minimum needed to get started with Celery.\n\n- `Next steps`_\n\n    A more complete overview, showing more features.\n\n.. _`First steps with Celery`:\n    https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html\n\n.. _`Next steps`:\n    https://docs.celeryq.dev/en/stable/getting-started/next-steps.html\n\n You can also get started with Celery by using a hosted broker transport CloudAMQP. The largest hosting provider of RabbitMQ is a proud sponsor of Celery.\n\nCelery is...\n=============\n\n- **Simple**\n\n    Celery is easy to use and maintain, and does *not need configuration files*.\n\n    It has an active, friendly community you can talk to for support,\n    like at our `mailing-list`_, or the IRC channel.\n\n    Here's one of the simplest applications you can make:\n\n    .. code-block:: python\n\n        from celery import Celery\n\n        app = Celery('hello', broker='amqp://guest@localhost//')\n\n        @app.task\n        def hello():\n            return 'hello world'\n\n- **Highly Available**\n\n    Workers and clients will automatically retry in the event\n    of connection loss or failure, and some brokers support\n    HA in way of *Primary/Primary* or *Primary/Replica* replication.\n\n- **Fast**\n\n    A single Celery process can process millions of tasks a minute,\n    with sub-millisecond round-trip latency (using RabbitMQ,\n    py-librabbitmq, and optimized settings).\n\n- **Flexible**\n\n    Almost every part of *Celery* can be extended or used on its own,\n    Custom pool implementations, serializers, compression schemes, logging,\n    schedulers, consumers, producers, broker transports, and much more.\n\nIt supports...\n================\n\n    - **Message Transports**\n\n        - RabbitMQ_, Redis_, Amazon SQS, Google Pub/Sub\n\n    - **Concurrency**\n\n        - Prefork, Eventlet_, gevent_, single threaded (``solo``)\n\n    - **Result Stores**\n\n        - AMQP, Redis\n        - memcached\n        - SQLAlchemy, Django ORM\n        - Apache Cassandra, IronCache, Elasticsearch\n        - Google Cloud Storage\n\n    - **Serialization**\n\n        - *pickle*, *json*, *yaml*, *msgpack*.\n        - *zlib*, *bzip2* compression.\n        - Cryptographic message signing.\n\n.. _`Eventlet`: http://eventlet.net/\n.. _`gevent`: http://gevent.org/\n\n.. _RabbitMQ: https://rabbitmq.com\n.. _Redis: https://redis.io\n.. _SQLAlchemy: http://sqlalchemy.org\n\nFramework Integration\n=====================\n\nCelery is easy to integrate with web frameworks, some of which even have\nintegration packages:\n\n    +--------------------+------------------------+\n    | `Django`_          | not needed             |\n    +--------------------+------------------------+\n    | `Pyramid`_         | `pyramid_celery`_      |\n    +--------------------+------------------------+\n    | `Pylons`_          | `celery-pylons`_       |\n    +--------------------+------------------------+\n    | `Flask`_           | not needed             |\n    +--------------------+------------------------+\n    | `web2py`_          | `web2py-celery`_       |\n    +--------------------+------------------------+\n    | `Tornado`_         | `tornado-celery`_      |\n    +--------------------+------------------------+\n    | `FastAPI`_         | not needed             |\n    +--------------------+------------------------+\n\nThe integration packages aren't strictly necessary, but they can make\ndevelopment easier, and sometimes they add important hooks like closing\ndatabase connections at ``fork``.\n\n.. _`Django`: https://djangoproject.com/\n.. _`Pylons`: http://pylonsproject.org/\n.. _`Flask`: https://flask.palletsprojects.com/\n.. _`web2py`: http://web2py.com/\n.. _`Bottle`: https://bottlepy.org/\n.. _`Pyramid`: https://docs.pylonsproject.org/projects/pyramid/en/latest/\n.. _`pyramid_celery`: https://pypi.org/project/pyramid_celery/\n.. _`celery-pylons`: https://pypi.org/project/celery-pylons/\n.. _`web2py-celery`: https://code.google.com/p/web2py-celery/\n.. _`Tornado`: https://www.tornadoweb.org/\n.. _`tornado-celery`: https://github.com/mher/tornado-celery/\n.. _`FastAPI`: https://fastapi.tiangolo.com/\n\n.. _celery-documentation:\n\nDocumentation\n=============\n\nThe `latest documentation`_ is hosted at Read The Docs, containing user guides,\ntutorials, and an API reference.\n\n.. _`latest documentation`: https://docs.celeryq.dev/en/latest/\n\n.. _celery-installation:\n\nInstallation\n============\n\nYou can install Celery either via the Python Package Index (PyPI)\nor from source.\n\nTo install using ``pip``:\n\n::\n\n\n    $ pip install -U Celery\n\n.. _bundles:\n\nBundles\n-------\n\nCelery also defines a group of bundles that can be used\nto install Celery and the dependencies for a given feature.\n\nYou can specify these in your requirements or on the ``pip``\ncommand-line by using brackets. Multiple bundles can be specified by\nseparating them by commas.\n\n::\n\n\n    $ pip install \"celery[redis]\"\n\n    $ pip install \"celery[redis,auth,msgpack]\"\n\nThe following bundles are available:\n\nSerializers\n~~~~~~~~~~~\n\n:``celery[auth]``:\n    for using the ``auth`` security serializer.\n\n:``celery[msgpack]``:\n    for using the msgpack serializer.\n\n:``celery[yaml]``:\n    for using the yaml serializer.\n\nConcurrency\n~~~~~~~~~~~\n\n:``celery[eventlet]``:\n    for using the ``eventlet`` pool.\n\n:``celery[gevent]``:\n    for using the ``gevent`` pool.\n\nTransports and Backends\n~~~~~~~~~~~~~~~~~~~~~~~\n\n:``celery[amqp]``:\n    for using the RabbitMQ amqp python library.\n\n:``celery[redis]``:\n    for using Redis as a message transport or as a result backend.\n\n:``celery[sqs]``:\n    for using Amazon SQS as a message transport.\n\n:``celery[tblib``]:\n    for using the ``task_remote_tracebacks`` feature.\n\n:``celery[memcache]``:\n    for using Memcached as a result backend (using ``pylibmc``)\n\n:``celery[pymemcache]``:\n    for using Memcached as a result backend (pure-Python implementation).\n\n:``celery[cassandra]``:\n    for using Apache Cassandra/Astra DB as a result backend with the DataStax driver.\n\n:``celery[azureblockblob]``:\n    for using Azure Storage as a result backend (using ``azure-storage``)\n\n:``celery[s3]``:\n    for using S3 Storage as a result backend.\n\n:``celery[gcs]``:\n    for using Google Cloud Storage as a result backend.\n\n:``celery[couchbase]``:\n    for using Couchbase as a result backend.\n\n:``celery[arangodb]``:\n    for using ArangoDB as a result backend.\n\n:``celery[elasticsearch]``:\n    for using Elasticsearch as a result backend.\n\n:``celery[riak]``:\n    for using Riak as a result backend.\n\n:``celery[cosmosdbsql]``:\n    for using Azure Cosmos DB as a result backend (using ``pydocumentdb``)\n\n:``celery[zookeeper]``:\n    for using Zookeeper as a message transport.\n\n:``celery[sqlalchemy]``:\n    for using SQLAlchemy as a result backend (*supported*).\n\n:``celery[pyro]``:\n    for using the Pyro4 message transport (*experimental*).\n\n:``celery[slmq]``:\n    for using the SoftLayer Message Queue transport (*experimental*).\n\n:``celery[consul]``:\n    for using the Consul.io Key/Value store as a message transport or result backend (*experimental*).\n\n:``celery[django]``:\n    specifies the lowest version possible for Django support.\n\n    You should probably not use this in your requirements, it's here\n    for informational purposes only.\n\n:``celery[gcpubsub]``:\n    for using Google Pub/Sub as a message transport.\n\n\n\n.. _celery-installing-from-source:\n\nDownloading and installing from source\n--------------------------------------\n\nDownload the latest version of Celery from PyPI:\n\nhttps://pypi.org/project/celery/\n\nYou can install it by doing the following:\n\n::\n\n\n    $ tar xvfz celery-0.0.0.tar.gz\n    $ cd celery-0.0.0\n    $ python setup.py build\n    # python setup.py install\n\nThe last command must be executed as a privileged user if\nyou aren't currently using a virtualenv.\n\n.. _celery-installing-from-git:\n\nUsing the development version\n-----------------------------\n\nWith pip\n~~~~~~~~\n\nThe Celery development version also requires the development\nversions of ``kombu``, ``amqp``, ``billiard``, and ``vine``.\n\nYou can install the latest snapshot of these using the following\npip commands:\n\n::\n\n\n    $ pip install https://github.com/celery/celery/zipball/main#egg=celery\n    $ pip install https://github.com/celery/billiard/zipball/main#egg=billiard\n    $ pip install https://github.com/celery/py-amqp/zipball/main#egg=amqp\n    $ pip install https://github.com/celery/kombu/zipball/main#egg=kombu\n    $ pip install https://github.com/celery/vine/zipball/main#egg=vine\n\nWith git\n~~~~~~~~\n\nPlease see the Contributing section.\n\n.. _getting-help:\n\nGetting Help\n============\n\n.. _mailing-list:\n\nMailing list\n------------\n\nFor discussions about the usage, development, and future of Celery,\nplease join the `celery-users`_ mailing list.\n\n.. _`celery-users`: https://groups.google.com/group/celery-users/\n\n.. _irc-channel:\n\nIRC\n---\n\nCome chat with us on IRC. The **#celery** channel is located at the\n`Libera Chat`_ network.\n\n.. _`Libera Chat`: https://libera.chat/\n\n.. _bug-tracker:\n\nBug tracker\n===========\n\nIf you have any suggestions, bug reports, or annoyances please report them\nto our issue tracker at https://github.com/celery/celery/issues/\n\n.. _wiki:\n\nWiki\n====\n\nhttps://github.com/celery/celery/wiki\n\nCredits\n=======\n\n.. _contributing-short:\n\nContributors\n------------\n\nThis project exists thanks to all the people who contribute. Development of\n`celery` happens at GitHub: https://github.com/celery/celery\n\nYou're highly encouraged to participate in the development\nof `celery`. If you don't like GitHub (for some reason) you're welcome\nto send regular patches.\n\nBe sure to also read the `Contributing to Celery`_ section in the\ndocumentation.\n\n.. _`Contributing to Celery`:\n    https://docs.celeryq.dev/en/stable/contributing.html\n\nBackers\n-------\n\nThank you to all our backers! 🙏 [`Become a backer`_]\n\n.. _`Become a backer`: https://opencollective.com/celery#backer\n\n|oc-backers|\n\n.. |oc-backers| image:: https://opencollective.com/celery/backers.svg?width=890\n    :target: https://opencollective.com/celery#backers\n\n.. _license:\n\nLicense\n=======\n\nThis software is licensed under the `New BSD License`. See the ``LICENSE``\nfile in the top distribution directory for the full license text.\n\n.. # vim: syntax=rst expandtab tabstop=4 shiftwidth=4 shiftround\n\n.. |build-status| image:: https://github.com/celery/celery/actions/workflows/python-package.yml/badge.svg\n    :alt: Build status\n    :target: https://github.com/celery/celery/actions/workflows/python-package.yml\n\n.. |coverage| image:: https://codecov.io/github/celery/celery/coverage.svg?branch=main\n    :target: https://codecov.io/github/celery/celery?branch=main\n\n.. |license| image:: https://img.shields.io/pypi/l/celery.svg\n    :alt: BSD License\n    :target: https://opensource.org/licenses/BSD-3-Clause\n\n.. |wheel| image:: https://img.shields.io/pypi/wheel/celery.svg\n    :alt: Celery can be installed via wheel\n    :target: https://pypi.org/project/celery/\n\n.. |semgrep| image:: https://img.shields.io/badge/semgrep-security-green.svg\n    :alt: Semgrep security\n    :target: https://go.semgrep.dev/home\n\n.. |pyversion| image:: https://img.shields.io/pypi/pyversions/celery.svg\n    :alt: Supported Python versions.\n    :target: https://pypi.org/project/celery/\n\n.. |pyimp| image:: https://img.shields.io/pypi/implementation/celery.svg\n    :alt: Supported Python implementations.\n    :target: https://pypi.org/project/celery/\n\n.. |ocbackerbadge| image:: https://opencollective.com/celery/backers/badge.svg\n    :alt: Backers on Open Collective\n    :target: #backers\n\n.. |ocsponsorbadge| image:: https://opencollective.com/celery/sponsors/badge.svg\n    :alt: Sponsors on Open Collective\n    :target: #sponsors\n\n.. |downloads| image:: https://pepy.tech/badge/celery\n    :alt: Downloads\n    :target: https://pepy.tech/project/celery\n\n.. |deepwiki| image:: https://devin.ai/assets/deepwiki-badge.png\n    :alt: Ask http://DeepWiki.com\n    :target: https://deepwiki.com/celery/celery\n    :width: 125px\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/cb/87/8bab77b323f16d67be364031220069f79159117dd5e43eeb4be2fef1ac9b/billiard-4.2.4-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=525b42bdec68d2b983347ac312f892db930858495db601b5836ac24e6477cde5",
+          "hashes": {
+            "sha256": "525b42bdec68d2b983347ac312f892db930858495db601b5836ac24e6477cde5"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "billiard",
+        "version": "4.2.4",
+        "summary": "Python multiprocessing fork with improvements and bugfixes",
+        "keywords": [
+          "multiprocessing",
+          "pool",
+          "process"
+        ],
+        "home_page": "https://github.com/celery/billiard",
+        "author": "R Oudkerk / Python Software Foundation",
+        "author_email": "python-dev@python.org",
+        "maintainer": "Asif Saif Uddin",
+        "maintainer_email": "auvipy@gmail.com",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python",
+          "Programming Language :: C",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX",
+          "License :: OSI Approved :: BSD License",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: System :: Distributed Computing"
+        ],
+        "requires_python": ">=3.7",
+        "description": "========\nbilliard\n========\n\n|build-status-lin| |build-status-win| |license| |wheel| |pyversion| |pyimp|\n\n:Version: 4.2.4\n:Web: https://billiard.readthedocs.io\n:Download: https://pypi.org/project/billiard/\n:Source: https://github.com/celery/billiard/\n:DeepWiki: |deepwiki|\n\n.. |build-status-lin| image:: https://github.com/celery/billiard/actions/workflows/ci.yaml/badge.svg\n    :alt: Build status on Linux\n    :target: https://github.com/celery/billiard/actions/workflows/ci.yaml\n\n.. |build-status-win| image:: https://ci.appveyor.com/api/projects/status/github/celery/billiard?png=true&branch=main\n    :alt: Build status on Windows\n    :target: https://ci.appveyor.com/project/ask/billiard\n\n.. |license| image:: https://img.shields.io/pypi/l/billiard.svg\n    :alt: BSD License\n    :target: https://opensource.org/licenses/BSD-3-Clause\n\n.. |wheel| image:: https://img.shields.io/pypi/wheel/billiard.svg\n    :alt: Billiard can be installed via wheel\n    :target: https://pypi.org/project/billiard/\n\n.. |pyversion| image:: https://img.shields.io/pypi/pyversions/billiard.svg\n    :alt: Supported Python versions.\n    :target: https://pypi.org/project/billiard/\n\n.. |pyimp| image:: https://img.shields.io/pypi/implementation/billiard.svg\n    :alt: Support Python implementations.\n    :target: https://pypi.org/project/billiard/\n\n.. |deepwiki| image:: https://devin.ai/assets/deepwiki-badge.png\n    :alt: Ask http://DeepWiki.com\n    :target: https://deepwiki.com/celery/billiard\n    :width: 125px\n\nAbout\n-----\n\n``billiard`` is a fork of the Python 2.7 `multiprocessing <https://docs.python.org/library/multiprocessing.html>`_\npackage. The multiprocessing package itself is a renamed and updated version of\nR Oudkerk's `pyprocessing <https://pypi.org/project/processing/>`_ package.\nThis standalone variant draws its fixes/improvements from python-trunk and provides\nadditional bug fixes and improvements.\n\n- This package would not be possible if not for the contributions of not only\n  the current maintainers but all of the contributors to the original pyprocessing\n  package listed `here <http://pyprocessing.berlios.de/doc/THANKS.html>`_.\n\n- Also, it is a fork of the multiprocessing backport package by Christian Heims.\n\n- It includes the no-execv patch contributed by R. Oudkerk.\n\n- And the Pool improvements previously located in `Celery`_.\n\n- Billiard is used in and is a dependency for `Celery`_ and is maintained by the\n  Celery team.\n\n.. _`Celery`: http://celeryproject.org\n\nDocumentation\n-------------\n\nThe documentation for ``billiard`` is available on `Read the Docs <https://billiard.readthedocs.io>`_.\n\nBug reporting\n-------------\n\nPlease report bugs related to multiprocessing at the\n`Python bug tracker <https://bugs.python.org/>`_. Issues related to billiard\nshould be reported at https://github.com/celery/billiard/issues.\n\nbilliard is part of the Tidelift Subscription\n---------------------------------------------\n\nThe maintainers of ``billiard`` and thousands of other packages are working\nwith Tidelift to deliver commercial support and maintenance for the open source\ndependencies you use to build your applications. Save time, reduce risk, and\nimprove code health, while paying the maintainers of the exact dependencies you\nuse. `Learn more`_.\n\n.. _`Learn more`: https://tidelift.com/subscription/pkg/pypi-billiard?utm_source=pypi-billiard&utm_medium=referral&utm_campaign=readme&utm_term=repo\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/fb/e2/79c688af8b210d232694e31e59da9f6ec747bae31c3f5946e4e9b98860d5/click-8.4.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=e6f9f66136c816745b9d65817da91d61d957fb16e02e4dcd0552553c5a197b76",
+          "hashes": {
+            "sha256": "e6f9f66136c816745b9d65817da91d61d957fb16e02e4dcd0552553c5a197b76"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "click",
+        "version": "8.4.2",
+        "summary": "Composable command line interface toolkit",
+        "description_content_type": "text/markdown",
+        "maintainer_email": "Pallets <contact@palletsprojects.com>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Typing :: Typed"
+        ],
+        "requires_dist": [
+          "colorama; platform_system == 'Windows'"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Changes, https://click.palletsprojects.com/page/changes/",
+          "Chat, https://discord.gg/pallets",
+          "Documentation, https://click.palletsprojects.com/",
+          "Donate, https://palletsprojects.com/donate",
+          "Source, https://github.com/pallets/click/"
+        ],
+        "description": "<div align=\"center\"><img src=\"https://raw.githubusercontent.com/pallets/click/refs/heads/stable/docs/_static/click-name.svg\" alt=\"\" height=\"150\"></div>\n\n# Click\n\nClick is a Python package for creating beautiful command line interfaces\nin a composable way with as little code as necessary. It's the \"Command\nLine Interface Creation Kit\". It's highly configurable but comes with\nsensible defaults out of the box.\n\nIt aims to make the process of writing command line tools quick and fun\nwhile also preventing any frustration caused by the inability to\nimplement an intended CLI API.\n\nClick in three points:\n\n-   Arbitrary nesting of commands\n-   Automatic help page generation\n-   Supports lazy loading of subcommands at runtime\n\n\n## A Simple Example\n\n```python\nimport click\n\n@click.command()\n@click.option(\"--count\", default=1, help=\"Number of greetings.\")\n@click.option(\"--name\", prompt=\"Your name\", help=\"The person to greet.\")\ndef hello(count, name):\n    \"\"\"Simple program that greets NAME for a total of COUNT times.\"\"\"\n    for _ in range(count):\n        click.echo(f\"Hello, {name}!\")\n\nif __name__ == '__main__':\n    hello()\n```\n\n```\n$ python hello.py --count=3\nYour name: Click\nHello, Click!\nHello, Click!\nHello, Click!\n```\n\n\n## Donate\n\nThe Pallets organization develops and supports Click and other popular\npackages. In order to grow the community of contributors and users, and\nallow the maintainers to devote more time to the projects, [please\ndonate today][].\n\n[please donate today]: https://palletsprojects.com/donate\n\n## Contributing\n\nSee our [detailed contributing documentation][contrib] for many ways to\ncontribute, including reporting issues, requesting features, asking or answering\nquestions, and making PRs.\n\n[contrib]: https://palletsprojects.com/contributing/\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/03/ff/7c0c86c43b3cbb927e0ccc0255cb4057ceba4799cd44ae95174ce8e8b5b2/vine-5.1.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=40fdf3c48b2cfe1c38a49e9ae2da6fda88e4794c810050a728bd7413811fb1dc",
+          "hashes": {
+            "sha256": "40fdf3c48b2cfe1c38a49e9ae2da6fda88e4794c810050a728bd7413811fb1dc"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "vine",
+        "version": "5.1.0",
+        "platform": [
+          "any"
+        ],
+        "summary": "Python promises.",
+        "keywords": [
+          "promise",
+          "promises",
+          "lazy",
+          "future",
+          "futures"
+        ],
+        "home_page": "https://github.com/celery/vine",
+        "author": "Ask Solem",
+        "author_email": "auvipy@gmail.com",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "License :: OSI Approved :: BSD License",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent"
+        ],
+        "requires_python": ">=3.6",
+        "description": "=====================================================================\n vine - Python Promises\n=====================================================================\n\n|build-status| |coverage| |license| |wheel| |pyversion| |pyimp|\n\n:Version: 5.1.0\n:Web: https://vine.readthedocs.io/\n:Download: https://pypi.org/project/vine/\n:Source: https://github.com/celery/vine/\n:Keywords: promise, async, future\n\nAbout\n=====\n\nThis is a special implementation of promises in that it can be used both\nfor promise of a value and lazy evaluation. The biggest upside for this\nis that everything in a promise can also be a promise, e.g. filters,\ncallbacks and errbacks can all be promises.\n\n.. |build-status| image:: https://secure.travis-ci.org/celery/vine.png?branch=master\n    :alt: Build status\n    :target: https://travis-ci.org/celery/vine\n\n.. |coverage| image:: https://codecov.io/github/celery/vine/coverage.svg?branch=master\n    :target: https://codecov.io/github/celery/vine?branch=master\n\n.. |license| image:: https://img.shields.io/pypi/l/vine.svg\n    :alt: BSD License\n    :target: https://opensource.org/licenses/BSD-3-Clause\n\n.. |wheel| image:: https://img.shields.io/pypi/wheel/vine.svg\n    :alt: Vine can be installed via wheel\n    :target: https://pypi.org/project/vine/\n\n.. |pyversion| image:: https://img.shields.io/pypi/pyversions/vine.svg\n    :alt: Supported Python versions.\n    :target: https://pypi.org/project/vine/\n\n.. |pyimp| image:: https://img.shields.io/pypi/implementation/vine.svg\n    :alt: Support Python implementations.\n    :target: https://pypi.org/project/vine/\n\n\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/1b/5b/974430b5ffdb7a4f1941d13d83c64a0395114503cc357c6b9ae4ce5047ed/click_didyoumean-0.3.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=5c4bb6007cfea5f2fd6583a2fb6701a22a41eb98957e63d0fac41c10e7c3117c",
+          "hashes": {
+            "sha256": "5c4bb6007cfea5f2fd6583a2fb6701a22a41eb98957e63d0fac41c10e7c3117c"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "click-didyoumean",
+        "version": "0.3.1",
+        "summary": "Enables git-like *did-you-mean* feature in click",
+        "description_content_type": "text/x-rst",
+        "home_page": "https://github.com/click-contrib/click-didyoumean",
+        "author": "Timo Furrer",
+        "author_email": "timo.furrer@roche.com",
+        "license": "MIT",
+        "classifier": [
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12"
+        ],
+        "requires_dist": [
+          "click (>=7)"
+        ],
+        "requires_python": ">=3.6.2",
+        "project_url": [
+          "Repository, https://github.com/click-contrib/click-didyoumean"
+        ],
+        "description": "click-didyoumean\n================\n|pypi| |build| |license|\n\nEnable git-like *did-you-mean* feature in click.\n\nIt's as simple as this:\n\n.. code:: python\n\n    import click\n    from click_didyoumean import DYMGroup\n\n    @click.group(cls=DYMGroup)\n    def cli():\n        ...\n\n|demo|\n\nUsage\n-----\n\nInstall this extension with pip:\n\n.. code::\n\n    pip install click-didyoumean\n\n\nUse specific *did-you-mean* `group` class for your cli:\n\n\n.. code:: python\n\n    import click\n    from click_didyoumean import DYMGroup\n\n    @click.group(cls=DYMGroup)\n    def cli():\n        pass\n\n    @cli.command()\n    def foo():\n        pass\n\n    @cli.command()\n    def bar():\n        pass\n\n    @cli.command()\n    def barrr():\n        pass\n\n    if __name__ == \"__main__\":\n        cli()\n\n\nOr you it in a `CommandCollection`:\n\n.. code:: python\n\n    import click\n    from click_didyoumean import DYMCommandCollection\n\n    @click.group()\n    def cli1():\n        pass\n\n    @cli1.command()\n    def foo():\n        pass\n\n    @cli1.command()\n    def bar():\n        pass\n\n    @click.group()\n    def cli2():\n        pass\n\n    @cli2.command()\n    def barrr():\n        pass\n\n    cli = DYMCommandCollection(sources=[cli1, cli2])\n\n    if __name__ == \"__main__\":\n        cli()\n\n\nChange configuration\n--------------------\n\nThere are two configuration for the ``DYMGroup`` and ``DYMCommandCollection``:\n\n+-----------------+-------+---------+---------------------------------------------------------------------------+\n| Parameter       | Type  | Default | Description                                                               |\n+=================+=======+=========+===========================================================================+\n| max_suggestions | int   | 3       | Maximal number of *did-you-mean* suggestions                              |\n+-----------------+-------+---------+---------------------------------------------------------------------------+\n| cutoff          | float | 0.5     | Possibilities that don’t score at least that similar to word are ignored. |\n+-----------------+-------+---------+---------------------------------------------------------------------------+\n\nExamples\n~~~~~~~~\n\n.. code:: python\n\n    @cli.group(cls=DYMGroup, max_suggestions=2, cutoff=0.7)\n    def cli():\n        pass\n\n    ... or ...\n\n    cli = DYMCommandCollection(sources=[cli1, cli2], max_suggestions=2, cutoff=0.7)\n\n\n.. |pypi| image:: https://img.shields.io/pypi/v/click-didyoumean.svg?style=flat&label=version\n    :target: https://pypi.python.org/pypi/click-didyoumean\n    :alt: Latest version released on PyPi\n\n.. |build| image:: https://img.shields.io/travis/click-contrib/click-didyoumean/master.svg?style=flat\n    :target: http://travis-ci.org/click-contrib/click-didyoumean\n    :alt: Build status of the master branch\n\n.. |demo| image:: https://raw.githubusercontent.com/click-contrib/click-didyoumean/master/examples/asciicast.gif\n    :alt: Demo\n\n.. |license| image:: https://img.shields.io/badge/license-MIT-blue.svg?style=flat\n    :target: https://raw.githubusercontent.com/click-contrib/click-didyoumean/master/LICENSE\n    :alt: Package license\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/3d/9a/2abecb28ae875e39c8cad711eb1186d8d14eab564705325e77e4e6ab9ae5/click_plugins-1.1.1.2-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=008d65743833ffc1f5417bf0e78e8d2c23aab04d9745ba817bd3e71b0feb6aa6",
+          "hashes": {
+            "sha256": "008d65743833ffc1f5417bf0e78e8d2c23aab04d9745ba817bd3e71b0feb6aa6"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "click-plugins",
+        "version": "1.1.1.2",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "provides-extra",
+          "requires-dist",
+          "summary"
+        ],
+        "summary": "An extension module for click to enable registering CLI commands via setuptools entry-points.",
+        "keywords": [
+          "click",
+          "plugin",
+          "setuptools",
+          "entry-point"
+        ],
+        "home_page": "https://github.com/click-contrib/click-plugins",
+        "author": "Kevin Wurster, Sean Gillies",
+        "author_email": "wursterk@gmail.com, sean.gillies@gmail.com",
+        "license": "New BSD",
+        "license_file": [
+          "LICENSE.txt",
+          "AUTHORS.txt"
+        ],
+        "classifier": [
+          "Topic :: Utilities",
+          "Intended Audience :: Developers",
+          "Development Status :: 7 - Inactive",
+          "License :: OSI Approved :: BSD License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3"
+        ],
+        "requires_dist": [
+          "click>=4.0",
+          "pytest>=3.6; extra == \"dev\"",
+          "pytest-cov; extra == \"dev\"",
+          "wheel; extra == \"dev\"",
+          "coveralls; extra == \"dev\""
+        ],
+        "provides_extra": [
+          "dev"
+        ],
+        "description": "=============\nclick-plugins\n=============\n\nThis PyPI package is no longer actively maintained, but the underlying\nlibrary can be vendored. See `homepage <https://github.com/click-contrib/click-plugins>`_\nfor more information.\n\nAn extension module for `click <https://github.com/pallets/click>`_ to register\nexternal CLI commands via setuptools entry-points.\n\n\nWhy?\n----\n\nLets say you develop a commandline interface and someone requests a new feature\nthat is absolutely related to your project but would have negative consequences\nlike additional dependencies, major refactoring, or maybe its just too domain\nspecific to be supported directly.  Rather than developing a separate standalone\nutility you could offer up a `setuptools entry point <https://pythonhosted.org/setuptools/setuptools.html#dynamic-discovery-of-services-and-plugins>`_\nthat allows others to use your commandline utility as a home for their related\nsub-commands.  You get to choose where these sub-commands or sub-groups CAN be\nregistered but the plugin developer gets to choose they ARE registered.  You\ncould have all plugins register alongside the core commands, in a special\nsub-group, across multiple sub-groups, or some combination.\n\n\nEnabling Plugins\n----------------\n\nFor a more detailed example see the `examples <https://github.com/click-contrib/click-plugins/tree/master/example>`_ section.\n\nThe only requirement is decorating ``click.group()`` with ``click_plugins.with_plugins()``\nwhich handles attaching external commands and groups.  In this case the core CLI developer\nregisters CLI plugins from ``core_package.cli_plugins``.\n\n.. code-block:: python\n\n    from pkg_resources import iter_entry_points\n\n    import click\n    from click_plugins import with_plugins\n\n\n    @with_plugins(iter_entry_points('core_package.cli_plugins'))\n    @click.group()\n    def cli():\n        \"\"\"Commandline interface for yourpackage.\"\"\"\n\n    @cli.command()\n    def subcommand():\n        \"\"\"Subcommand that does something.\"\"\"\n\n\nDeveloping Plugins\n------------------\n\nPlugin developers need to register their sub-commands or sub-groups to an\nentry-point in their ``setup.py`` that is loaded by the core package.\n\n.. code-block:: python\n\n    from setuptools import setup\n\n    setup(\n        name='yourscript',\n        version='0.1',\n        py_modules=['yourscript'],\n        install_requires=[\n            'click',\n        ],\n        entry_points='''\n            [core_package.cli_plugins]\n            cool_subcommand=yourscript.cli:cool_subcommand\n            another_subcommand=yourscript.cli:another_subcommand\n        ''',\n    )\n\n\nBroken and Incompatible Plugins\n-------------------------------\n\nAny sub-command or sub-group that cannot be loaded is caught and converted to\na ``click_plugins.core.BrokenCommand()`` rather than just crashing the entire\nCLI.  The short-help is converted to a warning message like:\n\n.. code-block:: console\n\n    Warning: could not load plugin. See ``<CLI> <command/group> --help``.\n\nand if the sub-command or group is executed the entire traceback is printed.\n\n\nBest Practices and Extra Credit\n-------------------------------\n\nOpening a CLI to plugins encourages other developers to independently extend\nfunctionality independently but there is no guarantee these new features will\nbe \"on brand\".  Plugin developers are almost certainly already using features\nin the core package the CLI belongs to so defining commonly used arguments and\noptions in one place lets plugin developers reuse these flags to produce a more\ncohesive CLI.  If the CLI is simple maybe just define them at the top of\n``yourpackage/cli.py`` or for more complex packages something like\n``yourpackage/cli/options.py``.  These common options need to be easy to find\nand be well documented so that plugin developers know what variable to give to\ntheir sub-command's function and what object they can expect to receive.  Don't\nforget to document non-obvious callbacks.\n\nKeep in mind that plugin developers also have access to the parent group's\n``ctx.obj``, which is very useful for passing things like verbosity levels or\nconfig values around to sub-commands.\n\nHere's some code that sub-commands could re-use:\n\n.. code-block:: python\n\n    from multiprocessing import cpu_count\n\n    import click\n\n    jobs_opt = click.option(\n        '-j', '--jobs', metavar='CORES', type=click.IntRange(min=1, max=cpu_count()), default=1,\n        show_default=True, help=\"Process data across N cores.\"\n    )\n\nPlugin developers can access this with:\n\n.. code-block:: python\n\n    import click\n    import parent_cli_package.cli.options\n\n\n    @click.command()\n    @parent_cli_package.cli.options.jobs_opt\n    def subcommand(jobs):\n        \"\"\"I do something domain specific.\"\"\"\n\n\nInstallation\n------------\n\nWith ``pip``:\n\n.. code-block:: console\n\n    $ pip install click-plugins\n\nFrom source:\n\n.. code-block:: console\n\n    $ git clone https://github.com/click-contrib/click-plugins.git\n    $ cd click-plugins\n    $ python setup.py install\n\n\nDeveloping\n----------\n\n.. code-block:: console\n\n    $ git clone https://github.com/click-contrib/click-plugins.git\n    $ cd click-plugins\n    $ pip install -e .\\[dev\\]\n    $ pytest tests --cov click_plugins --cov-report term-missing\n\n\nChangelog\n---------\n\nSee ``CHANGES.txt``\n\n\nAuthors\n-------\n\nSee ``AUTHORS.txt``\n\n\nLicense\n-------\n\nSee ``LICENSE.txt``\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/52/40/9d857001228658f0d59e97ebd4c346fe73e138c6de1bce61dc568a57c7f8/click_repl-0.3.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=fb7e06deb8da8de86180a33a9da97ac316751c094c6899382da7feeeeb51b812",
+          "hashes": {
+            "sha256": "fb7e06deb8da8de86180a33a9da97ac316751c094c6899382da7feeeeb51b812"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "click-repl",
+        "version": "0.3.0",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "REPL plugin for Click",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/untitaker/click-repl",
+        "author": "Markus Unterwaditzer",
+        "author_email": "markus@unterwaditzer.net",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11"
+        ],
+        "requires_dist": [
+          "click (>=7.0)",
+          "prompt-toolkit (>=3.0.36)",
+          "pytest-cov (>=4.0.0) ; extra == 'testing'",
+          "pytest (>=7.2.1) ; extra == 'testing'",
+          "tox (>=4.4.3) ; extra == 'testing'"
+        ],
+        "requires_python": ">=3.6",
+        "provides_extra": [
+          "testing"
+        ],
+        "description": "click-repl\n===\n\n[![Tests](https://github.com/click-contrib/click-repl/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/click-contrib/click-repl/actions/workflows/tests.yml)\n[![License](https://img.shields.io/pypi/l/click-repl?label=License)](https://github.com/click-contrib/click-repl/LICENSE)\n![Python - version](https://img.shields.io/badge/python-3%20%7C%203.7%20%7C%203.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue)\n[![PyPi - version](https://img.shields.io/badge/pypi-v0.2.0-blue)](https://pypi.org/project/click-repl/)\n![wheels](https://img.shields.io/piwheels/v/click-repl?label=wheel)\n![PyPI - Status](https://img.shields.io/pypi/status/click)\n![PyPI - Downloads](https://img.shields.io/pypi/dm/click-repl)\n\nInstallation\n===\n\nInstallation is done via pip:\n```\npip install click-repl\n```\nUsage\n===\n\nIn your [click](http://click.pocoo.org/) app:\n\n```py\nimport click\nfrom click_repl import register_repl\n\n@click.group()\ndef cli():\n    pass\n\n@cli.command()\ndef hello():\n    click.echo(\"Hello world!\")\n\nregister_repl(cli)\ncli()\n```\nIn the shell:\n```\n$ my_app repl\n> hello\nHello world!\n> ^C\n$ echo hello | my_app repl\nHello world!\n```\n**Features not shown:**\n\n- Tab-completion.\n- The parent context is reused, which means `ctx.obj` persists between\n  subcommands. If you're keeping caches on that object (like I do), using the\n  app's repl instead of the shell is a huge performance win.\n- `!` - prefix executes shell commands.\n\nYou can use the internal `:help` command to explain usage.\n\nAdvanced Usage\n===\n\nFor more flexibility over how your REPL works you can use the `repl` function\ndirectly instead of `register_repl`. For example, in your app:\n\n```py\nimport click\nfrom click_repl import repl\nfrom prompt_toolkit.history import FileHistory\n\n@click.group()\ndef cli():\n    pass\n\n@cli.command()\ndef myrepl():\n    prompt_kwargs = {\n        'history': FileHistory('/etc/myrepl/myrepl-history'),\n    }\n    repl(click.get_current_context(), prompt_kwargs=prompt_kwargs)\n    \ncli()\n```\nAnd then your custom `myrepl` command will be available on your CLI, which\nwill start a REPL which has its history stored in\n`/etc/myrepl/myrepl-history` and persist between sessions.\n\nAny arguments that can be passed to the [`python-prompt-toolkit`](https://github.com/prompt-toolkit/python-prompt-toolkit) [Prompt](http://python-prompt-toolkit.readthedocs.io/en/stable/pages/reference.html?prompt_toolkit.shortcuts.Prompt#prompt_toolkit.shortcuts.Prompt) class\ncan be passed in the `prompt_kwargs` argument and will be used when\ninstantiating your `Prompt`.\n\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/8a/0e/97c33bf5009bdbac74fd2beace167cab3f978feb69cc36f1ef79360d6c4e/exceptiongroup-1.3.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=a7a39a3bd276781e98394987d3a5701d0c4edffb633bb7a5144577f82c773598",
+          "hashes": {
+            "sha256": "a7a39a3bd276781e98394987d3a5701d0c4edffb633bb7a5144577f82c773598"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "exceptiongroup",
+        "version": "1.3.1",
+        "summary": "Backport of PEP 654 (exception groups)",
+        "description_content_type": "text/x-rst",
+        "author_email": "Alex Grönholm <alex.gronholm@nextday.fi>",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3 :: Only",
+          "Typing :: Typed"
+        ],
+        "requires_dist": [
+          "typing-extensions >= 4.6.0; python_version < '3.13'",
+          "pytest >= 6 ; extra == \"test\""
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Changelog, https://github.com/agronholm/exceptiongroup/blob/main/CHANGES.rst",
+          "Issue Tracker, https://github.com/agronholm/exceptiongroup/issues",
+          "Source code, https://github.com/agronholm/exceptiongroup"
+        ],
+        "provides_extra": [
+          "test"
+        ],
+        "description": ".. image:: https://github.com/agronholm/exceptiongroup/actions/workflows/test.yml/badge.svg\n  :target: https://github.com/agronholm/exceptiongroup/actions/workflows/test.yml\n  :alt: Build Status\n.. image:: https://coveralls.io/repos/github/agronholm/exceptiongroup/badge.svg?branch=main\n  :target: https://coveralls.io/github/agronholm/exceptiongroup?branch=main\n  :alt: Code Coverage\n\nThis is a backport of the ``BaseExceptionGroup`` and ``ExceptionGroup`` classes from\nPython 3.11.\n\nIt contains the following:\n\n* The  ``exceptiongroup.BaseExceptionGroup`` and ``exceptiongroup.ExceptionGroup``\n  classes\n* A utility function (``exceptiongroup.catch()``) for catching exceptions possibly\n  nested in an exception group\n* Patches to the ``TracebackException`` class that properly formats exception groups\n  (installed on import)\n* An exception hook that handles formatting of exception groups through\n  ``TracebackException`` (installed on import)\n* Special versions of some of the functions from the ``traceback`` module, modified to\n  correctly handle exception groups even when monkey patching is disabled, or blocked by\n  another custom exception hook:\n\n  * ``traceback.format_exception()``\n  * ``traceback.format_exception_only()``\n  * ``traceback.print_exception()``\n  * ``traceback.print_exc()``\n* A backported version of ``contextlib.suppress()`` from Python 3.12.1 which also\n  handles suppressing exceptions inside exception groups\n\nIf this package is imported on Python 3.11 or later, the built-in implementations of the\nexception group classes are used instead, ``TracebackException`` is not monkey patched\nand the exception hook won't be installed.\n\nSee the `standard library documentation`_ for more information on exception groups.\n\n.. _standard library documentation: https://docs.python.org/3/library/exceptions.html\n\nCatching exceptions\n===================\n\nDue to the lack of the ``except*`` syntax introduced by `PEP 654`_ in earlier Python\nversions, you need to use ``exceptiongroup.catch()`` to catch exceptions that are\npotentially nested inside an exception group. This function returns a context manager\nthat calls the given handler for any exceptions matching the sole argument.\n\nThe argument to ``catch()`` must be a dict (or any ``Mapping``) where each key is either\nan exception class or an iterable of exception classes. Each value must be a callable\nthat takes a single positional argument. The handler will be called at most once, with\nan exception group as an argument which will contain all the exceptions that are any\nof the given types, or their subclasses. The exception group may contain nested groups\ncontaining more matching exceptions.\n\nThus, the following Python 3.11+ code:\n\n.. code-block:: python\n\n    try:\n        ...\n    except* (ValueError, KeyError) as excgroup:\n        for exc in excgroup.exceptions:\n            print('Caught exception:', type(exc))\n    except* RuntimeError:\n        print('Caught runtime error')\n\nwould be written with this backport like this:\n\n.. code-block:: python\n\n    from exceptiongroup import BaseExceptionGroup, catch\n\n    def value_key_err_handler(excgroup: BaseExceptionGroup) -> None:\n        for exc in excgroup.exceptions:\n            print('Caught exception:', type(exc))\n\n    def runtime_err_handler(exc: BaseExceptionGroup) -> None:\n        print('Caught runtime error')\n\n    with catch({\n        (ValueError, KeyError): value_key_err_handler,\n        RuntimeError: runtime_err_handler\n    }):\n        ...\n\n**NOTE**: Just like with ``except*``, you cannot handle ``BaseExceptionGroup`` or\n``ExceptionGroup`` with ``catch()``.\n\nSuppressing exceptions\n======================\n\nThis library contains a backport of the ``contextlib.suppress()`` context manager from\nPython 3.12.1. It allows you to selectively ignore certain exceptions, even when they're\ninside exception groups:\n\n.. code-block:: python\n\n    from exceptiongroup import suppress\n\n    with suppress(RuntimeError):\n        raise ExceptionGroup(\"\", [RuntimeError(\"boo\")])\n\nNotes on monkey patching\n========================\n\nTo make exception groups render properly when an unhandled exception group is being\nprinted out, this package does two things when it is imported on any Python version\nearlier than 3.11:\n\n#. The  ``traceback.TracebackException`` class is monkey patched to store extra\n   information about exception groups (in ``__init__()``) and properly format them (in\n   ``format()``)\n#. An exception hook is installed at ``sys.excepthook``, provided that no other hook is\n   already present. This hook causes the exception to be formatted using\n   ``traceback.TracebackException`` rather than the built-in rendered.\n\nIf ``sys.exceptionhook`` is found to be set to something else than the default when\n``exceptiongroup`` is imported, no monkeypatching is done at all.\n\nTo prevent the exception hook and patches from being installed, set the environment\nvariable ``EXCEPTIONGROUP_NO_PATCH`` to ``1``.\n\nFormatting exception groups\n---------------------------\n\nNormally, the monkey patching applied by this library on import will cause exception\ngroups to be printed properly in tracebacks. But in cases when the monkey patching is\nblocked by a third party exception hook, or monkey patching is explicitly disabled,\nyou can still manually format exceptions using the special versions of the ``traceback``\nfunctions, like ``format_exception()``, listed at the top of this page. They work just\nlike their counterparts in the ``traceback`` module, except that they use a separately\npatched subclass of ``TracebackException`` to perform the rendering.\n\nParticularly in cases where a library installs its own exception hook, it is recommended\nto use these special versions to do the actual formatting of exceptions/tracebacks.\n\n.. _PEP 654: https://www.python.org/dev/peps/pep-0654/\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/fb/0f/834427d8c03ff1d7e867d3db3d176470c64871753252b21b4f4897d1fa45/kombu-5.6.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=efcfc559da324d41d61ca311b0c64965ea35b4c55cc04ee36e55386145dace93",
+          "hashes": {
+            "sha256": "efcfc559da324d41d61ca311b0c64965ea35b4c55cc04ee36e55386145dace93"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "kombu",
+        "version": "5.6.2",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "platform",
+          "project-url",
+          "provides-extra",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "platform": [
+          "any"
+        ],
+        "summary": "Messaging library for Python.",
+        "keywords": [
+          "messaging",
+          "message",
+          "amqp",
+          "rabbitmq",
+          "redis",
+          "actor",
+          "producer",
+          "consumer"
+        ],
+        "home_page": "https://kombu.readthedocs.io",
+        "author": "Ask Solem",
+        "author_email": "auvipy@gmail.com",
+        "license": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Intended Audience :: Developers",
+          "Topic :: Communications",
+          "Topic :: System :: Distributed Computing",
+          "Topic :: System :: Networking",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "amqp<6.0.0,>=5.1.1",
+          "vine==5.1.0",
+          "tzdata>=2025.2",
+          "packaging",
+          "msgpack==1.1.2; extra == \"msgpack\"",
+          "PyYAML>=3.10; extra == \"yaml\"",
+          "redis!=4.5.5,!=5.0.2,<6.5,>=4.5.2; extra == \"redis\"",
+          "pymongo==4.15.3; extra == \"mongodb\"",
+          "boto3>=1.26.143; extra == \"sqs\"",
+          "pycurl>=7.43.0.5; (sys_platform != \"win32\" and platform_python_implementation == \"CPython\") and extra == \"sqs\"",
+          "urllib3>=1.26.16; extra == \"sqs\"",
+          "google-cloud-pubsub>=2.18.4; extra == \"gcpubsub\"",
+          "google-cloud-monitoring>=2.16.0; extra == \"gcpubsub\"",
+          "grpcio==1.75.1; extra == \"gcpubsub\"",
+          "protobuf==6.32.1; extra == \"gcpubsub\"",
+          "kazoo>=2.8.0; extra == \"zookeeper\"",
+          "sqlalchemy<2.1,>=1.4.48; extra == \"sqlalchemy\"",
+          "librabbitmq>=2.0.0; python_version < \"3.11\" and extra == \"librabbitmq\"",
+          "pyro4==4.82; extra == \"pyro\"",
+          "softlayer_messaging>=1.0.3; extra == \"slmq\"",
+          "azure-storage-queue>=12.6.0; extra == \"azurestoragequeues\"",
+          "azure-identity>=1.12.0; extra == \"azurestoragequeues\"",
+          "azure-servicebus>=7.10.0; extra == \"azureservicebus\"",
+          "qpid-python==1.36.0-1; extra == \"qpid\"",
+          "qpid-tools==1.36.0-1; extra == \"qpid\"",
+          "python-consul2==0.1.5; extra == \"consul\"",
+          "confluent-kafka>=2.2.0; extra == \"confluentkafka\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Source, https://github.com/celery/kombu"
+        ],
+        "provides_extra": [
+          "msgpack",
+          "yaml",
+          "redis",
+          "mongodb",
+          "sqs",
+          "gcpubsub",
+          "zookeeper",
+          "sqlalchemy",
+          "librabbitmq",
+          "pyro",
+          "slmq",
+          "azurestoragequeues",
+          "azureservicebus",
+          "qpid",
+          "consul",
+          "confluentkafka"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/26/99/fc813cd978842c26c82534010ea849eee9ab3a13ea2b74e95cb9c99e747b/amqp-5.3.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=43b3319e1b4e7d1251833a93d672b4af1e40f3d632d479b98661a95f117880a2",
+          "hashes": {
+            "sha256": "43b3319e1b4e7d1251833a93d672b4af1e40f3d632d479b98661a95f117880a2"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "amqp",
+        "version": "5.3.1",
+        "platform": [
+          "any"
+        ],
+        "summary": "Low-level AMQP client for Python (fork of amqplib).",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "amqp",
+          "rabbitmq",
+          "cloudamqp",
+          "messaging"
+        ],
+        "home_page": "http://github.com/celery/py-amqp",
+        "author": "Barry Pederson",
+        "author_email": "auvipy@gmail.com",
+        "maintainer": "Asif Saif Uddin, Matus Valo",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "License :: OSI Approved :: BSD License",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent"
+        ],
+        "requires_dist": [
+          "vine<6.0.0,>=5.0.0"
+        ],
+        "requires_python": ">=3.6",
+        "description": "=====================================================================\n Python AMQP 0.9.1 client library\n=====================================================================\n\n|build-status| |coverage| |license| |wheel| |pyversion| |pyimp|\n\n:Version: 5.3.1\n:Web: https://amqp.readthedocs.io/\n:Download: https://pypi.org/project/amqp/\n:Source: http://github.com/celery/py-amqp/\n:Keywords: amqp, rabbitmq\n\nAbout\n=====\n\nThis is a fork of amqplib_ which was originally written by Barry Pederson.\nIt is maintained by the Celery_ project, and used by `kombu`_ as a pure python\nalternative when `librabbitmq`_ is not available.\n\nThis library should be API compatible with `librabbitmq`_.\n\n.. _amqplib: https://pypi.org/project/amqplib/\n.. _Celery: http://celeryproject.org/\n.. _kombu: https://kombu.readthedocs.io/\n.. _librabbitmq: https://pypi.org/project/librabbitmq/\n\nDifferences from `amqplib`_\n===========================\n\n- Supports draining events from multiple channels (``Connection.drain_events``)\n- Support for timeouts\n- Channels are restored after channel error, instead of having to close the\n  connection.\n- Support for heartbeats\n\n    - ``Connection.heartbeat_tick(rate=2)`` must called at regular intervals\n      (half of the heartbeat value if rate is 2).\n    - Or some other scheme by using ``Connection.send_heartbeat``.\n- Supports RabbitMQ extensions:\n    - Consumer Cancel Notifications\n        - by default a cancel results in ``ChannelError`` being raised\n        - but not if a ``on_cancel`` callback is passed to ``basic_consume``.\n    - Publisher confirms\n        - ``Channel.confirm_select()`` enables publisher confirms.\n        - ``Channel.events['basic_ack'].append(my_callback)`` adds a callback\n          to be called when a message is confirmed. This callback is then\n          called with the signature ``(delivery_tag, multiple)``.\n    - Exchange-to-exchange bindings: ``exchange_bind`` / ``exchange_unbind``.\n        - ``Channel.confirm_select()`` enables publisher confirms.\n        - ``Channel.events['basic_ack'].append(my_callback)`` adds a callback\n          to be called when a message is confirmed. This callback is then\n          called with the signature ``(delivery_tag, multiple)``.\n    - Authentication Failure Notifications\n        Instead of just closing the connection abruptly on invalid\n        credentials, py-amqp will raise an ``AccessRefused`` error\n        when connected to rabbitmq-server 3.2.0 or greater.\n- Support for ``basic_return``\n- Uses AMQP 0-9-1 instead of 0-8.\n    - ``Channel.access_request`` and ``ticket`` arguments to methods\n      **removed**.\n    - Supports the ``arguments`` argument to ``basic_consume``.\n    - ``internal`` argument to ``exchange_declare`` removed.\n    - ``auto_delete`` argument to ``exchange_declare`` deprecated\n    - ``insist`` argument to ``Connection`` removed.\n    - ``Channel.alerts`` has been removed.\n    - Support for ``Channel.basic_recover_async``.\n    - ``Channel.basic_recover`` deprecated.\n- Exceptions renamed to have idiomatic names:\n    - ``AMQPException`` -> ``AMQPError``\n    - ``AMQPConnectionException`` -> ConnectionError``\n    - ``AMQPChannelException`` -> ChannelError``\n    - ``Connection.known_hosts`` removed.\n    - ``Connection`` no longer supports redirects.\n    - ``exchange`` argument to ``queue_bind`` can now be empty\n      to use the \"default exchange\".\n- Adds ``Connection.is_alive`` that tries to detect\n  whether the connection can still be used.\n- Adds ``Connection.connection_errors`` and ``.channel_errors``,\n  a list of recoverable errors.\n- Exposes the underlying socket as ``Connection.sock``.\n- Adds ``Channel.no_ack_consumers`` to keep track of consumer tags\n  that set the no_ack flag.\n- Slightly better at error recovery\n\nQuick overview\n==============\n\nSimple producer publishing messages to ``test`` queue using default exchange:\n\n.. code:: python\n\n    import amqp\n\n    with amqp.Connection('broker.example.com') as c:\n        ch = c.channel()\n        ch.basic_publish(amqp.Message('Hello World'), routing_key='test')\n\nProducer publishing to ``test_exchange`` exchange with publisher confirms enabled and using virtual_host ``test_vhost``:\n\n.. code:: python\n\n    import amqp\n\n    with amqp.Connection(\n        'broker.example.com', exchange='test_exchange',\n        confirm_publish=True, virtual_host='test_vhost'\n    ) as c:\n        ch = c.channel()\n        ch.basic_publish(amqp.Message('Hello World'), routing_key='test')\n\nConsumer with acknowledgments enabled:\n\n.. code:: python\n\n    import amqp\n\n    with amqp.Connection('broker.example.com') as c:\n        ch = c.channel()\n        def on_message(message):\n            print('Received message (delivery tag: {}): {}'.format(message.delivery_tag, message.body))\n            ch.basic_ack(message.delivery_tag)\n        ch.basic_consume(queue='test', callback=on_message)\n        while True:\n            c.drain_events()\n\n\nConsumer with acknowledgments disabled:\n\n.. code:: python\n\n    import amqp\n\n    with amqp.Connection('broker.example.com') as c:\n        ch = c.channel()\n        def on_message(message):\n            print('Received message (delivery tag: {}): {}'.format(message.delivery_tag, message.body))\n        ch.basic_consume(queue='test', callback=on_message, no_ack=True)\n        while True:\n            c.drain_events()\n\nSpeedups\n========\n\nThis library has **experimental** support of speedups. Speedups are implemented using Cython. To enable speedups, ``CELERY_ENABLE_SPEEDUPS`` environment variable must be set during building/installation.\nCurrently speedups can be installed:\n\n1. using source package (using ``--no-binary`` switch):\n\n.. code:: shell\n\n    CELERY_ENABLE_SPEEDUPS=true pip install --no-binary :all: amqp\n\n\n2. building directly source code:\n\n.. code:: shell\n\n    CELERY_ENABLE_SPEEDUPS=true python setup.py install\n\nFurther\n=======\n\n- Differences between AMQP 0.8 and 0.9.1\n\n    http://www.rabbitmq.com/amqp-0-8-to-0-9-1.html\n\n- AMQP 0.9.1 Quick Reference\n\n    http://www.rabbitmq.com/amqp-0-9-1-quickref.html\n\n- RabbitMQ Extensions\n\n    http://www.rabbitmq.com/extensions.html\n\n- For more information about AMQP, visit\n\n    http://www.amqp.org\n\n- For other Python client libraries see:\n\n    http://www.rabbitmq.com/devtools.html#python-dev\n\n.. |build-status| image:: https://github.com/celery/py-amqp/actions/workflows/ci.yaml/badge.svg\n    :alt: Build status\n    :target: https://github.com/celery/py-amqp/actions/workflows/ci.yaml\n\n.. |coverage| image:: https://codecov.io/github/celery/py-amqp/coverage.svg?branch=main\n    :target: https://codecov.io/github/celery/py-amqp?branch=main\n\n.. |license| image:: https://img.shields.io/pypi/l/amqp.svg\n    :alt: BSD License\n    :target: https://opensource.org/licenses/BSD-3-Clause\n\n.. |wheel| image:: https://img.shields.io/pypi/wheel/amqp.svg\n    :alt: Python AMQP can be installed via wheel\n    :target: https://pypi.org/project/amqp/\n\n.. |pyversion| image:: https://img.shields.io/pypi/pyversions/amqp.svg\n    :alt: Supported Python versions.\n    :target: https://pypi.org/project/amqp/\n\n.. |pyimp| image:: https://img.shields.io/pypi/implementation/amqp.svg\n    :alt: Support Python implementations.\n    :target: https://pypi.org/project/amqp/\n\npy-amqp as part of the Tidelift Subscription\n============================================\n\nThe maintainers of py-amqp and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source dependencies you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact dependencies you use. [Learn more.](https://tidelift.com/subscription/pkg/pypi-amqp?utm_source=pypi-amqp&utm_medium=referral&utm_campaign=readme&utm_term=repo)\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/84/03/0d3ce49e2505ae70cf43bc5bb3033955d2fc9f932163e84dc0779cc47f48/prompt_toolkit-3.0.52-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=9aac639a3bbd33284347de5ad8d68ecc044b91a762dc39b7c21095fcd6a19955",
+          "hashes": {
+            "sha256": "9aac639a3bbd33284347de5ad8d68ecc044b91a762dc39b7c21095fcd6a19955"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "prompt_toolkit",
+        "version": "3.0.52",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Library for building powerful interactive command lines in Python",
+        "description_content_type": "text/x-rst",
+        "author": "Jonathan Slenders",
+        "license_file": [
+          "LICENSE",
+          "AUTHORS.rst"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python",
+          "Topic :: Software Development"
+        ],
+        "requires_dist": [
+          "wcwidth"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Homepage, https://github.com/prompt-toolkit/python-prompt-toolkit",
+          "Documentation, https://python-prompt-toolkit.readthedocs.io/en/stable/"
+        ],
+        "description": "Python Prompt Toolkit\n=====================\n\n|AppVeyor|  |PyPI|  |RTD|  |License|  |Codecov|\n\n.. image :: /docs/images/logo_400px.png\n\n``prompt_toolkit`` *is a library for building powerful interactive command line applications in Python.*\n\nRead the `documentation on readthedocs\n<http://python-prompt-toolkit.readthedocs.io/en/stable/>`_.\n\n\nGallery\n*******\n\n`ptpython <http://github.com/prompt-toolkit/ptpython/>`_ is an interactive\nPython Shell, build on top of ``prompt_toolkit``.\n\n.. image :: /docs/images/ptpython.png\n\n`More examples <https://python-prompt-toolkit.readthedocs.io/en/stable/pages/gallery.html>`_\n\n\nprompt_toolkit features\n***********************\n\n``prompt_toolkit`` could be a replacement for `GNU readline\n<https://tiswww.case.edu/php/chet/readline/rltop.html>`_, but it can be much\nmore than that.\n\nSome features:\n\n- **Pure Python**.\n- Syntax highlighting of the input while typing. (For instance, with a Pygments lexer.)\n- Multi-line input editing.\n- Advanced code completion.\n- Both Emacs and Vi key bindings. (Similar to readline.)\n- Even some advanced Vi functionality, like named registers and digraphs.\n- Reverse and forward incremental search.\n- Works well with Unicode double width characters. (Chinese input.)\n- Selecting text for copy/paste. (Both Emacs and Vi style.)\n- Support for `bracketed paste <https://cirw.in/blog/bracketed-paste>`_.\n- Mouse support for cursor positioning and scrolling.\n- Auto suggestions. (Like `fish shell <http://fishshell.com/>`_.)\n- Multiple input buffers.\n- No global state.\n- Lightweight, the only dependencies are Pygments and wcwidth.\n- Runs on Linux, OS X, FreeBSD, OpenBSD and Windows systems.\n- And much more...\n\nFeel free to create tickets for bugs and feature requests, and create pull\nrequests if you have nice patches that you would like to share with others.\n\n\nInstallation\n************\n\n::\n\n    pip install prompt_toolkit\n\nFor Conda, do:\n\n::\n\n    conda install -c https://conda.anaconda.org/conda-forge prompt_toolkit\n\n\nAbout Windows support\n*********************\n\n``prompt_toolkit`` is cross platform, and everything that you build on top\nshould run fine on both Unix and Windows systems. Windows support is best on\nrecent Windows 10 builds, for which the command line window supports vt100\nescape sequences. (If not supported, we fall back to using Win32 APIs for color\nand cursor movements).\n\nIt's worth noting that the implementation is a \"best effort of what is\npossible\". Both Unix and Windows terminals have their limitations. But in\ngeneral, the Unix experience will still be a little better.\n\n\nGetting started\n***************\n\nThe most simple example of the library would look like this:\n\n.. code:: python\n\n    from prompt_toolkit import prompt\n\n    if __name__ == '__main__':\n        answer = prompt('Give me some input: ')\n        print('You said: %s' % answer)\n\nFor more complex examples, have a look in the ``examples`` directory. All\nexamples are chosen to demonstrate only one thing. Also, don't be afraid to\nlook at the source code. The implementation of the ``prompt`` function could be\na good start.\n\nPhilosophy\n**********\n\nThe source code of ``prompt_toolkit`` should be **readable**, **concise** and\n**efficient**. We prefer short functions focusing each on one task and for which\nthe input and output types are clearly specified. We mostly prefer composition\nover inheritance, because inheritance can result in too much functionality in\nthe same object. We prefer immutable objects where possible (objects don't\nchange after initialization). Reusability is important. We absolutely refrain\nfrom having a changing global state, it should be possible to have multiple\nindependent instances of the same code in the same process. The architecture\nshould be layered: the lower levels operate on primitive operations and data\nstructures giving -- when correctly combined -- all the possible flexibility;\nwhile at the higher level, there should be a simpler API, ready-to-use and\nsufficient for most use cases. Thinking about algorithms and efficiency is\nimportant, but avoid premature optimization.\n\n\n`Projects using prompt_toolkit <PROJECTS.rst>`_\n***********************************************\n\nSpecial thanks to\n*****************\n\n- `Pygments <http://pygments.org/>`_: Syntax highlighter.\n- `wcwidth <https://github.com/jquast/wcwidth>`_: Determine columns needed for a wide characters.\n\n.. |PyPI| image:: https://img.shields.io/pypi/v/prompt_toolkit.svg\n    :target: https://pypi.python.org/pypi/prompt-toolkit/\n    :alt: Latest Version\n\n.. |AppVeyor| image:: https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true\n    :target: https://ci.appveyor.com/project/prompt-toolkit/python-prompt-toolkit/\n\n.. |RTD| image:: https://readthedocs.org/projects/python-prompt-toolkit/badge/\n    :target: https://python-prompt-toolkit.readthedocs.io/en/master/\n\n.. |License| image:: https://img.shields.io/github/license/prompt-toolkit/python-prompt-toolkit.svg\n    :target: https://github.com/prompt-toolkit/python-prompt-toolkit/blob/master/LICENSE\n\n.. |Codecov| image:: https://codecov.io/gh/prompt-toolkit/python-prompt-toolkit/branch/master/graphs/badge.svg?style=flat\n    :target: https://codecov.io/gh/prompt-toolkit/python-prompt-toolkit/\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+          "hashes": {
+            "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "python-dateutil",
+        "version": "2.9.0.post0",
+        "summary": "Extensions to the standard Python datetime module",
+        "description_content_type": "text/x-rst",
+        "home_page": "https://github.com/dateutil/dateutil",
+        "author": "Gustavo Niemeyer",
+        "author_email": "gustavo@niemeyer.net",
+        "maintainer": "Paul Ganssle",
+        "maintainer_email": "dateutil@python.org",
+        "license": "Dual License",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: BSD License",
+          "License :: OSI Approved :: Apache Software License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Topic :: Software Development :: Libraries"
+        ],
+        "requires_dist": [
+          "six >=1.5"
+        ],
+        "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
+        "project_url": [
+          "Documentation, https://dateutil.readthedocs.io/en/stable/",
+          "Source, https://github.com/dateutil/dateutil"
+        ],
+        "description": "dateutil - powerful extensions to datetime\n==========================================\n\n|pypi| |support| |licence|\n\n|gitter| |readthedocs|\n\n|travis| |appveyor| |pipelines| |coverage|\n\n.. |pypi| image:: https://img.shields.io/pypi/v/python-dateutil.svg?style=flat-square\n    :target: https://pypi.org/project/python-dateutil/\n    :alt: pypi version\n\n.. |support| image:: https://img.shields.io/pypi/pyversions/python-dateutil.svg?style=flat-square\n    :target: https://pypi.org/project/python-dateutil/\n    :alt: supported Python version\n\n.. |travis| image:: https://img.shields.io/travis/dateutil/dateutil/master.svg?style=flat-square&label=Travis%20Build\n    :target: https://travis-ci.org/dateutil/dateutil\n    :alt: travis build status\n\n.. |appveyor| image:: https://img.shields.io/appveyor/ci/dateutil/dateutil/master.svg?style=flat-square&logo=appveyor\n    :target: https://ci.appveyor.com/project/dateutil/dateutil\n    :alt: appveyor build status\n\n.. |pipelines| image:: https://dev.azure.com/pythondateutilazure/dateutil/_apis/build/status/dateutil.dateutil?branchName=master\n    :target: https://dev.azure.com/pythondateutilazure/dateutil/_build/latest?definitionId=1&branchName=master\n    :alt: azure pipelines build status\n\n.. |coverage| image:: https://codecov.io/gh/dateutil/dateutil/branch/master/graphs/badge.svg?branch=master\n    :target: https://codecov.io/gh/dateutil/dateutil?branch=master\n    :alt: Code coverage\n\n.. |gitter| image:: https://badges.gitter.im/dateutil/dateutil.svg\n   :alt: Join the chat at https://gitter.im/dateutil/dateutil\n   :target: https://gitter.im/dateutil/dateutil\n\n.. |licence| image:: https://img.shields.io/pypi/l/python-dateutil.svg?style=flat-square\n    :target: https://pypi.org/project/python-dateutil/\n    :alt: licence\n\n.. |readthedocs| image:: https://img.shields.io/readthedocs/dateutil/latest.svg?style=flat-square&label=Read%20the%20Docs\n   :alt: Read the documentation at https://dateutil.readthedocs.io/en/latest/\n   :target: https://dateutil.readthedocs.io/en/latest/\n\nThe `dateutil` module provides powerful extensions to\nthe standard `datetime` module, available in Python.\n\nInstallation\n============\n`dateutil` can be installed from PyPI using `pip` (note that the package name is\ndifferent from the importable name)::\n\n    pip install python-dateutil\n\nDownload\n========\ndateutil is available on PyPI\nhttps://pypi.org/project/python-dateutil/\n\nThe documentation is hosted at:\nhttps://dateutil.readthedocs.io/en/stable/\n\nCode\n====\nThe code and issue tracker are hosted on GitHub:\nhttps://github.com/dateutil/dateutil/\n\nFeatures\n========\n\n* Computing of relative deltas (next month, next year,\n  next Monday, last week of month, etc);\n* Computing of relative deltas between two given\n  date and/or datetime objects;\n* Computing of dates based on very flexible recurrence rules,\n  using a superset of the `iCalendar <https://www.ietf.org/rfc/rfc2445.txt>`_\n  specification. Parsing of RFC strings is supported as well.\n* Generic parsing of dates in almost any string format;\n* Timezone (tzinfo) implementations for tzfile(5) format\n  files (/etc/localtime, /usr/share/zoneinfo, etc), TZ\n  environment string (in all known formats), iCalendar\n  format files, given ranges (with help from relative deltas),\n  local machine timezone, fixed offset timezone, UTC timezone,\n  and Windows registry-based time zones.\n* Internal up-to-date world timezone information based on\n  Olson's database.\n* Computing of Easter Sunday dates for any given year,\n  using Western, Orthodox or Julian algorithms;\n* A comprehensive test suite.\n\nQuick example\n=============\nHere's a snapshot, just to give an idea about the power of the\npackage. For more examples, look at the documentation.\n\nSuppose you want to know how much time is left, in\nyears/months/days/etc, before the next easter happening on a\nyear with a Friday 13th in August, and you want to get today's\ndate out of the \"date\" unix system command. Here is the code:\n\n.. code-block:: python3\n\n    >>> from dateutil.relativedelta import *\n    >>> from dateutil.easter import *\n    >>> from dateutil.rrule import *\n    >>> from dateutil.parser import *\n    >>> from datetime import *\n    >>> now = parse(\"Sat Oct 11 17:13:46 UTC 2003\")\n    >>> today = now.date()\n    >>> year = rrule(YEARLY,dtstart=now,bymonth=8,bymonthday=13,byweekday=FR)[0].year\n    >>> rdelta = relativedelta(easter(year), today)\n    >>> print(\"Today is: %s\" % today)\n    Today is: 2003-10-11\n    >>> print(\"Year with next Aug 13th on a Friday is: %s\" % year)\n    Year with next Aug 13th on a Friday is: 2004\n    >>> print(\"How far is the Easter of that year: %s\" % rdelta)\n    How far is the Easter of that year: relativedelta(months=+6)\n    >>> print(\"And the Easter of that year is: %s\" % (today+rdelta))\n    And the Easter of that year is: 2004-04-11\n\nBeing exactly 6 months ahead was **really** a coincidence :)\n\nContributing\n============\n\nWe welcome many types of contributions - bug reports, pull requests (code, infrastructure or documentation fixes). For more information about how to contribute to the project, see the ``CONTRIBUTING.md`` file in the repository.\n\n\nAuthor\n======\nThe dateutil module was written by Gustavo Niemeyer <gustavo@niemeyer.net>\nin 2003.\n\nIt is maintained by:\n\n* Gustavo Niemeyer <gustavo@niemeyer.net> 2003-2011\n* Tomi Pieviläinen <tomi.pievilainen@iki.fi> 2012-2014\n* Yaron de Leeuw <me@jarondl.net> 2014-2016\n* Paul Ganssle <paul@ganssle.io> 2015-\n\nStarting with version 2.4.1 and running until 2.8.2, all source and binary\ndistributions will be signed by a PGP key that has, at the very least, been\nsigned by the key which made the previous release. A table of release signing\nkeys can be found below:\n\n===========  ============================\nReleases     Signing key fingerprint\n===========  ============================\n2.4.1-2.8.2  `6B49 ACBA DCF6 BD1C A206 67AB CD54 FCE3 D964 BEFB`_\n===========  ============================\n\nNew releases *may* have signed tags, but binary and source distributions\nuploaded to PyPI will no longer have GPG signatures attached.\n\nContact\n=======\nOur mailing list is available at `dateutil@python.org <https://mail.python.org/mailman/listinfo/dateutil>`_. As it is hosted by the PSF, it is subject to the `PSF code of\nconduct <https://www.python.org/psf/conduct/>`_.\n\nLicense\n=======\n\nAll contributions after December 1, 2017 released under dual license - either `Apache 2.0 License <https://www.apache.org/licenses/LICENSE-2.0>`_ or the `BSD 3-Clause License <https://opensource.org/licenses/BSD-3-Clause>`_. Contributions before December 1, 2017 - except those those explicitly relicensed - are released only under the BSD 3-Clause License.\n\n\n.. _6B49 ACBA DCF6 BD1C A206 67AB CD54 FCE3 D964 BEFB:\n   https://pgp.mit.edu/pks/lookup?op=vindex&search=0xCD54FCE3D964BEFB\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+          "hashes": {
+            "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "six",
+        "version": "1.17.0",
+        "summary": "Python 2 and 3 compatibility utilities",
+        "home_page": "https://github.com/benjaminp/six",
+        "author": "Benjamin Peterson",
+        "author_email": "benjamin@python.org",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 3",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Topic :: Software Development :: Libraries",
+          "Topic :: Utilities"
+        ],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*",
+        "description": ".. image:: https://img.shields.io/pypi/v/six.svg\n   :target: https://pypi.org/project/six/\n   :alt: six on PyPI\n\n.. image:: https://readthedocs.org/projects/six/badge/?version=latest\n   :target: https://six.readthedocs.io/\n   :alt: six's documentation on Read the Docs\n\n.. image:: https://img.shields.io/badge/license-MIT-green.svg\n   :target: https://github.com/benjaminp/six/blob/master/LICENSE\n   :alt: MIT License badge\n\nSix is a Python 2 and 3 compatibility library.  It provides utility functions\nfor smoothing over the differences between the Python versions with the goal of\nwriting Python code that is compatible on both Python versions.  See the\ndocumentation for more information on what is provided.\n\nSix supports Python 2.7 and 3.3+.  It is contained in only one Python\nfile, so it can be easily copied into your project. (The copyright and license\nnotice must be retained.)\n\nOnline documentation is at https://six.readthedocs.io/.\n\nBugs can be reported to https://github.com/benjaminp/six.  The code can also\nbe found there.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+          "hashes": {
+            "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "typing_extensions",
+        "version": "4.16.0",
+        "summary": "Backported and Experimental Type Hints for Python 3.9+",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "annotations",
+          "backport",
+          "checker",
+          "checking",
+          "function",
+          "hinting",
+          "hints",
+          "type",
+          "typechecking",
+          "typehinting",
+          "typehints",
+          "typing"
+        ],
+        "author_email": "\"Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee\" <levkivskyi@gmail.com>",
+        "license_expression": "PSF-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Topic :: Software Development"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Bug Tracker, https://github.com/python/typing_extensions/issues",
+          "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+          "Documentation, https://typing-extensions.readthedocs.io/",
+          "Home, https://github.com/python/typing_extensions",
+          "Q & A, https://github.com/python/typing/discussions",
+          "Repository, https://github.com/python/typing_extensions"
+        ],
+        "description": "# Typing Extensions\n\n[![Chat at https://gitter.im/python/typing](https://badges.gitter.im/python/typing.svg)](https://gitter.im/python/typing)\n\n[Documentation](https://typing-extensions.readthedocs.io/en/latest/#) –\n[PyPI](https://pypi.org/project/typing-extensions/)\n\n## Overview\n\nThe `typing_extensions` module serves two related purposes:\n\n- Enable use of new type system features on older Python versions. For example,\n  `typing.TypeGuard` is new in Python 3.10, but `typing_extensions` allows\n  users on previous Python versions to use it too.\n- Enable experimentation with new type system PEPs before they are accepted and\n  added to the `typing` module.\n\n`typing_extensions` is treated specially by static type checkers such as\nmypy and pyright. Objects defined in `typing_extensions` are treated the same\nway as equivalent forms in `typing`.\n\n`typing_extensions` uses\n[Semantic Versioning](https://semver.org/). The\nmajor version will be incremented only for backwards-incompatible changes.\nTherefore, it's safe to depend\non `typing_extensions` like this: `typing_extensions ~=x.y`,\nwhere `x.y` is the first version that includes all features you need.\n[This](https://packaging.python.org/en/latest/specifications/version-specifiers/#compatible-release)\nis equivalent to `typing_extensions >=x.y, <(x+1)`. Do not depend on `~= x.y.z`\nunless you really know what you're doing; that defeats the purpose of\nsemantic versioning.\n\n## Included items\n\nSee [the documentation](https://typing-extensions.readthedocs.io/en/latest/#) for a\ncomplete listing of module contents.\n\n## Contributing\n\nSee [CONTRIBUTING.md](https://github.com/python/typing_extensions/blob/main/CONTRIBUTING.md)\nfor how to contribute to `typing_extensions`.\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/e5/6d/b53b99a9f2766d095985947a5782f1702cabb129a34f7a802d7197af832f/tzdata-2026.3-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=dc096730c87af6cab1b171c9d532be840741ff5d459015e7f6947bd7d7e54931",
+          "hashes": {
+            "sha256": "dc096730c87af6cab1b171c9d532be840741ff5d459015e7f6947bd7d7e54931"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "tzdata",
+        "version": "2026.3",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Provider of IANA time zone data",
+        "description_content_type": "text/x-rst",
+        "home_page": "https://github.com/python/tzdata",
+        "author": "Python Software Foundation",
+        "author_email": "datetime-sig@python.org",
+        "license": "Apache-2.0",
+        "license_file": [
+          "LICENSE",
+          "licenses/LICENSE_APACHE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 3"
+        ],
+        "requires_python": ">=2",
+        "project_url": [
+          "Bug Reports, https://github.com/python/tzdata/issues",
+          "Source, https://github.com/python/tzdata",
+          "Documentation, https://tzdata.python.org"
+        ],
+        "description": "tzdata: Python package providing IANA time zone data\n====================================================\n\nThis is a Python package containing ``zic``-compiled binaries for the IANA time\nzone database. It is intended to be a fallback for systems that do not have\nsystem time zone data installed (or don't have it installed in a standard\nlocation), as a part of `PEP 615 <https://www.python.org/dev/peps/pep-0615/>`_.\n\nThis repository generates a ``pip``-installable package, published on PyPI as\n`tzdata <https://pypi.org/project/tzdata>`_.\n\nFor more information, see `the documentation <https://tzdata.python.org>`_.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=5fc45236b9446107ff2415ce77c807cee2862cb6fac22b8a73826d0693b0980e",
+          "hashes": {
+            "sha256": "5fc45236b9446107ff2415ce77c807cee2862cb6fac22b8a73826d0693b0980e"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "packaging",
+        "version": "26.2",
+        "summary": "Core utilities for Python packages",
+        "description_content_type": "text/x-rst",
+        "author_email": "Donald Stufft <donald@stufft.io>",
+        "license_expression": "Apache-2.0 OR BSD-2-Clause",
+        "license_file": [
+          "LICENSE",
+          "LICENSE.APACHE",
+          "LICENSE.BSD"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Python :: Free Threading :: 4 - Resilient",
+          "Typing :: Typed"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Documentation, https://packaging.pypa.io/",
+          "Source, https://github.com/pypa/packaging"
+        ],
+        "description": "packaging\n=========\n\n.. start-intro\n\nReusable core utilities for various Python Packaging\n`interoperability specifications <https://packaging.python.org/specifications/>`_.\n\nThis library provides utilities that implement the interoperability\nspecifications which have clearly one correct behaviour (eg: :pep:`440`)\nor benefit greatly from having a single shared implementation (eg: :pep:`425`).\n\n.. end-intro\n\nThe ``packaging`` project includes the following: version handling, specifiers,\nmarkers, requirements, tags, metadata, lockfiles, utilities.\n\nDocumentation\n-------------\n\nThe `documentation`_ provides information and the API for the following:\n\n- Version Handling\n- Specifiers\n- Markers\n- Licenses\n- Requirements\n- Metadata\n- Tags\n- Lockfiles (pylock)\n- Direct URL helpers\n- Dependency groups\n- Errors\n- Utilities\n\nInstallation\n------------\n\nUse ``pip`` to install these utilities::\n\n    pip install packaging\n\nThe ``packaging`` library uses calendar-based versioning (``YY.N``).\n\nDiscussion\n----------\n\nIf you run into bugs, you can file them in our `issue tracker`_.\n\nYou can also join discussions on `GitHub Discussions`_ to ask questions or get involved.\n\n.. _`documentation`: https://packaging.pypa.io/\n.. _`issue tracker`: https://github.com/pypa/packaging/issues\n.. _`GitHub Discussions`: https://github.com/pypa/packaging/discussions\n\n\nCode of Conduct\n---------------\n\nEveryone interacting in the packaging project's codebases, issue trackers, chat\nrooms, and mailing lists is expected to follow the `PSF Code of Conduct`_.\n\n.. _PSF Code of Conduct: https://github.com/pypa/.github/blob/main/CODE_OF_CONDUCT.md\n\nContributing\n------------\n\nThe ``CONTRIBUTING.rst`` file outlines how to contribute to this project as\nwell as how to report a potential security issue. The documentation for this\nproject also covers information about `project development`_ and `security`_.\n\n.. _`project development`: https://packaging.pypa.io/en/latest/development/\n.. _`security`: https://packaging.pypa.io/en/latest/security/\n\nProject History\n---------------\n\nPlease review the ``CHANGELOG.rst`` file or the `Changelog documentation`_ for\nrecent changes and project history.\n\n.. _`Changelog documentation`: https://packaging.pypa.io/en/latest/changelog/\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/9e/a4/017a7a6cbe387d961a688ec31364ae60a5c4e22c96ae9921b79a947c855d/tzlocal-5.4.4-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=aae09f0126a8a86fa736be266eb4a471380d26a0de3bc14844e7821fee3e2a15",
+          "hashes": {
+            "sha256": "aae09f0126a8a86fa736be266eb4a471380d26a0de3bc14844e7821fee3e2a15"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "tzlocal",
+        "version": "5.4.4",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "tzinfo object for the local timezone",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "timezone"
+        ],
+        "author_email": "Lennart Regebro <regebro@gmail.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 6 - Mature",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: Unix",
+          "Operating System :: MacOS :: MacOS X",
+          "Typing :: Typed",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14"
+        ],
+        "requires_dist": [
+          "tzdata; platform_system == \"Windows\"",
+          "pytest>=4.3; extra == \"testing\"",
+          "pytest-mock>=3.3; extra == \"testing\"",
+          "pytest-cov; extra == \"testing\"",
+          "check_manifest; extra == \"testing\"",
+          "pyroma; extra == \"testing\"",
+          "ruff; extra == \"testing\"",
+          "zest.releaser; extra == \"devenv\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Source code, https://github.com/regebro/tzlocal",
+          "Changelog, https://github.com/regebro/tzlocal/blob/master/CHANGES.txt",
+          "Issue tracker, https://github.com/regebro/tzlocal/issues"
+        ],
+        "provides_extra": [
+          "testing",
+          "devenv"
+        ],
+        "description": "tzlocal\n=======\n\nAPI CHANGE!\n-----------\n\nWith version 3.0 of tzlocal, tzlocal no longer returned `pytz` objects, but\n`zoneinfo` objects, which has a different API. Since 4.0, it now restored\npartial compatibility for `pytz` users through Paul Ganssle's\n`pytz_deprecation_shim`.\n\ntzlocal 4.0 also adds an official function `get_localzone_name()` to get only\nthe timezone name, instead of a timezone object. On unix, it can raise an\nerror if you don't have a timezone name configured, where `get_localzone()`\nwill succeed, so only use that if you need the timezone name.\n\n4.0 also adds way more information on what is going wrong in your\nconfiguration when the configuration files are unclear or contradictory.\n\nVersion 5.0 removes the `pytz_deprecation_shim`, and now only returns\n`zoneinfo` objects, like verion 3.0 did. If you need `pytz` objects, you have\nto stay on version 4.0. If there are bugs in version 4.0, I will release\nupdates, but there will be no further functional changes on the 4.x branch.\n\n\nInfo\n----\n\nThis Python module returns the `IANA time zone name\n<https://www.iana.org/time-zones>`_ for your local time zone or a ``tzinfo``\nobject with the local timezone information, under Unix and Windows.\n\nThis module attempts to fix a glaring hole in the ``pytz`` and ``zoneinfo``\nmodules, that there is no way to get the local timezone information, unless\nyou know the zoneinfo name, and under several Linux distros that's hard or\nimpossible to figure out.\n\nWith ``tzlocal`` you only need to call ``get_localzone()`` and you will get a\n``tzinfo`` object with the local time zone info. On some Unices you will\nstill not get to know what the timezone name is, but you don't need that when\nyou have the tzinfo file. However, if the timezone name is readily available\nit will be used.\n\nWhat it's not for\n-----------------\n\nIt's not for converting the current time between UTC and your local time. There are\nother, simpler ways of doing this. This is if you need to know things like the name\nof the time zone, or if you need to be able to convert between your time zone and\nanother time zone for times that are in the future or in the past.\n\nFor current time conversions to and from UTC, look in the Python ``time`` module.\n\n\nSupported systems\n-----------------\n\nThese are the systems that are in theory supported:\n\n * Windows 2000 and later\n\n * Any unix-like system with a ``/etc/localtime`` or ``/usr/local/etc/localtime``\n\nIf you have one of the above systems and it does not work, it's a bug.\nPlease report it.\n\nPlease note that if you are getting a time zone called ``local``, this is not\na bug, it's actually the main feature of ``tzlocal``, that even if your\nsystem does NOT have a configuration file with the zoneinfo name of your time\nzone, it will still work.\n\nYou can also use ``tzlocal`` to get the name of your local timezone, but only\nif your system is configured to make that possible. ``tzlocal`` looks for the\ntimezone name in ``/etc/timezone``, ``/var/db/zoneinfo``,\n``/etc/sysconfig/clock`` and ``/etc/conf.d/clock``. If your\n``/etc/localtime`` is a symlink it can also extract the name from that\nsymlink.\n\nIf you need the name of your local time zone, then please make sure your\nsystem is properly configured to allow that.\n\nIf your unix system doesn't have a timezone configured, tzlocal will default\nto UTC.\n\nNotes on Docker\n---------------\n\nIt turns out that Docker images frequently have broken timezone setups.\nThis usually results in a warning that the configuration is wrong, or that\nthe timezone offset doesn't match the found timezone.\n\nThe easiest way to fix that is to set a TZ variable in your docker setup\nto whatever timezone you want, which is usually the timezone your host\ncomputer has.\n\nUsage\n-----\n\nLoad the local timezone:\n\n    >>> from tzlocal import get_localzone\n    >>> tz = get_localzone()\n    >>> tz\n    zoneinfo.ZoneInfo(key='Europe/Warsaw')\n\nCreate a local datetime:\n\n    >>> from datetime import datetime\n    >>> dt = datetime(2015, 4, 10, 7, 22, tzinfo=tz)\n    >>> dt\n    datetime.datetime(2015, 4, 10, 7, 22, tzinfo=zoneinfo.ZoneInfo(key='Europe/Warsaw'))\n\nLookup another timezone with ``zoneinfo``:\n\n    >>> from zoneinfo import ZoneInfo\n    >>> eastern = ZoneInfo('US/Eastern')\n\nConvert the datetime:\n\n    >>> dt.astimezone(eastern)\n    datetime.datetime(2015, 4, 10, 1, 22, tzinfo=zoneinfo.ZoneInfo(key='US/Eastern'))\n\nIf you just want the name of the local timezone, use `get_localzone_name()`:\n\n    >>> from tzlocal import get_localzone_name\n    >>> get_localzone_name()\n    \"Europe/Warsaw\"\n\nPlease note that under Unix, `get_localzone_name()` may fail if there is no zone\nconfigured, where `get_localzone()` would generally succeed.\n\nTroubleshooting\n---------------\n\nIf you don't get the result you expect, try running it with debugging turned on.\nStart a python interpreter that has tzlocal installed, and run the following code::\n\n    import logging\n    logging.basicConfig(level=\"DEBUG\")\n    import tzlocal\n    tzlocal.get_localzone()\n\nThe output should look something like this, and this will tell you what\nconfigurations were found::\n\n    DEBUG:root:/etc/timezone found, contents:\n     Europe/Warsaw\n\n    DEBUG:root:/etc/localtime found\n    DEBUG:root:2 found:\n     {'/etc/timezone': 'Europe/Warsaw', '/etc/localtime is a symlink to': 'Europe/Warsaw'}\n    zoneinfo.ZoneInfo(key='Europe/Warsaw')\n\n\nDevelopment\n-----------\n\nFor ease of development, there is a Makefile that will help you with basic tasks,\nlike creating a development environment with all the necessary tools (although\nyou need a supported Python version installed first)::\n\n    $ make devenv\n\nTo run tests::\n\n    $ make test\n\nCheck the syntax::\n\n    $ make check\n\n\nMaintainer\n----------\n\n* Lennart Regebro, regebro@gmail.com\n\nContributors\n------------\n\n* Marc Van Olmen\n* Benjamen Meyer\n* Manuel Ebert\n* Xiaokun Zhu\n* Cameris\n* Edward Betts\n* McK KIM\n* Cris Ewing\n* Ayala Shachar\n* Lev Maximov\n* Jakub Wilk\n* John Quarles\n* Preston Landers\n* Victor Torres\n* Jean Jordaan\n* Zackary Welch\n* Mickaël Schoentgen\n* Gabriel Corona\n* Alex Grönholm\n* Julin S\n* Miroslav Šedivý\n* revansSZ\n* Sam Treweek\n* Peter Di Pasquale\n* Rongrong\n\n(Sorry if I forgot someone)\n\nLicense\n-------\n\n* MIT https://opensource.org/licenses/MIT\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/96/42/3e5985a0a7e57de470b320c6d6a1a67c844f6737a587f3d44dd13d1819e7/wcwidth-0.8.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=d63947694a0539a1d51e01eda7caf800c291020e6cdd7e28ad7b14dd33ad4f85",
+          "hashes": {
+            "sha256": "d63947694a0539a1d51e01eda7caf800c291020e6cdd7e28ad7b14dd33ad4f85"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "wcwidth",
+        "version": "0.8.2",
+        "summary": "Measures the displayed width of unicode strings in a terminal",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "cjk",
+          "combining",
+          "console",
+          "eastasian",
+          "emoji",
+          "emulator",
+          "terminal",
+          "unicode",
+          "wcswidth",
+          "wcwidth",
+          "xterm"
+        ],
+        "author_email": "Jeff Quast <contact@jeffquast.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Natural Language :: English",
+          "Operating System :: POSIX",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Topic :: Software Development :: Internationalization",
+          "Topic :: Software Development :: Libraries",
+          "Topic :: Software Development :: Localization",
+          "Topic :: Terminals",
+          "Typing :: Typed"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Homepage, https://github.com/jquast/wcwidth"
+        ],
+        "description": "\n|pypi_downloads| |codecov| |license|\n\n============\nIntroduction\n============\n\nThis library is mainly for CLI/TUI programs that carefully produce output for Terminals.\n\nInstallation\n------------\n\nThe stable version of this package is maintained on pypi, install or upgrade, using pip::\n\n    pip install --upgrade wcwidth\n\nProblem\n-------\n\nAll Python string-formatting functions, `textwrap.wrap()`_, `str.ljust()`_, `str.rjust()`_, and\n`str.center()`_ **incorrectly** measure the displayed width of a string as equal to the number of\ntheir codepoints.\n\nSome examples of **incorrect results**:\n\n.. code-block:: python\n\n    >>> # result consumes 16 total cells, 11 expected,\n    >>> 'コンニチハ'.rjust(11, 'X')\n    'XXXXXXコンニチハ'\n\n    >>> # result consumes 5 total cells, 6 expected,\n    >>> 'café'.center(6, 'X')\n    'caféX'\n\nSolution\n--------\n\nThe lowest-level functions in this library are derived from POSIX.1-2001 and POSIX.1-2008\n`wcwidth(3)`_ and `wcswidth(3)`_, which this library precisely copies by interface as `wcwidth()`_\nand `wcswidth()`_.  These functions return -1 when C0 and C1 control codes are present.\n\nAn easy-to-use `width()`_ function is provided as a wrapper of `wcswidth()`_ that is also capable of\nmeasuring most terminal control codes and sequences, like colors, bold, tabstops, and horizontal\ncursor movement. `width()`_ argument ``term_program`` may provide more accurate terminal measurement\nCorrections_ as a wrapper of `wcstwidth()`_.\n\nText-justification is solved by the sequence-aware functions `ljust()`_, `rjust()`_, `center()`_,\nand the grapheme-aware function `wrap()`_, serving as drop-in replacements to python standard\nfunctions.\n\nThe `clip()`_ function extracts substrings by their displayed column positions, and\n`strip_sequences()`_ removes terminal escape sequences from text altogether.\n\nThe iterator functions `iter_graphemes()`_ and `iter_sequences()`_ allow for careful navigation of\ngrapheme and terminal control sequence boundaries as required by editors or REPLs with cursor\ncontrol.  `iter_graphemes_reverse()`_ and `grapheme_boundary_before()`_ are necessary for backward\ncursor control over complex unicode.\n\nDiscrepancies\n-------------\n\nYou may find that support *varies* for complex unicode sequences or codepoints.\n\nThis library may be considered to presume the terminal is enabled for DEC Private Mode 2027\n(\"Grapheme Clustering\") by default, which may require to be enabled by a TUI application but\nis often the default mode for those terminals that support it: Windows Terminal, WezTerm, ghostty,\ncontour, and foot. This library does support any specific \"legacy width\" measurement, but does\nprovide Corrections_ for those terminals without grapheme support.\n\nSee also:\n\n- `Grapheme Clusters and Terminal Emulators`_\n- `terminal-unicode-core.tex`_\n- `State of Terminal Emulators in 2025`_\n- `Perfecting Terminal Character Width Using Correction Tables (2026)`_\n\nThe `jquast/ucs-detect`_ project publishes automatic results of compliance to our standard for Wide\ncharacter, Languages, grapheme clustering, complex or combining scripts, emojis, zero-width joiner,\nvariations, and regional indicator (flags) as a `General Tabulated Summary`_ by terminal emulator\nsoftware and version. The results of the ucs-detect project create our correction tables.\n\n========\nOverview\n========\n\nwcwidth()\n---------\n\nUse function ``wcwidth()`` to determine the length of a *single unicode\ncodepoint*.\n\nA brief overview, through examples, for all of the public API functions.\n\nFull API Documentation at https://wcwidth.readthedocs.io/en/latest/api.html\n\nwcwidth()\n---------\n\nMeasures width of a single codepoint,\n\n.. code-block:: python\n\n    >>> # '♀' narrow emoji\n    >>> wcwidth.wcwidth('\\u2640')\n    1\n\nUse function `wcwidth()`_ to determine the length of a *single unicode character*.\n\nSee specification_ of character measurements. Note that ``-1`` is returned for control codes.\n\nwcswidth()\n----------\n\nMeasures width of a string, returns -1 for control codes.\n\n.. code-block:: python\n\n    >>> # '♀️' emoji w/vs-16\n    >>> wcwidth.wcswidth('\\u2640\\ufe0f')\n    2\n\nUse function `wcswidth()`_ to determine the length of many, a *string of unicode characters*.\n\nSee specification_ of character measurements. Note that ``-1`` is returned if control codes occurs\nanywhere in the string.\n\nwcstwidth()\n-----------\n\nSame behavior as `wcswidth()`_ with automatic terminal-specific Corrections_, reading\n``TERM_PROGRAM`` or ``TERM`` when ``True`` (default), or caller can provide terminal query\nXTVERSION_ or ENQ_ response:\n\n.. code-block:: python\n\n    >>> # '♀️' emoji w/vs-16, uncorrected:\n    >>> wcwidth.wcswidth('\\u2640\\ufe0f')\n    2\n    >>> # corrected,\n    >>> wcwidth.wcstwidth('\\u2640\\ufe0f', term_program='vte')\n    1\n\nwidth()\n-------\n\nUse function `width()`_ to measure a string with improved handling of ``control_codes`` and\nmeasurement Corrections_ through ``term_program``:.\n\n.. code-block:: python\n\n    >>> # same support as wcswidth(), eg. regional indicator flag:\n    >>> wcwidth.width('\\U0001F1FF\\U0001F1FC')\n    2\n    >>> # set term_program=True to use wcstwidth()\n    >>> wcwidth.width('\\U0001F1FF\\U0001F1FC', term_program=True)\n    1\n    >>> # or set term_program for measurement of a specific terminal\n    >>> wcwidth.width('\\U0001F1FF\\U0001F1FC', term_program='contour')\n    2\n    >>> # but also supports sequences, like SGR colored text, \"WARN\", followed by reset\n    >>> wcwidth.width('\\x1b[38;2;255;150;100mWARN\\x1b[0m')\n    4\n    >>> # tabs are measured as though the string begins at a tabstop,\n    >>> wcwidth.width('\\t', tabsize=4)\n    4\n    >>> # or, all control characters can be ignored (including tab)\n    >>> wcwidth.width('\\t\\n\\a\\r', control_codes='ignore')\n    0\n    >>> # sequences with \"indeterminate\" effects like Home + Clear are zero-width\n    >>> wcwidth.width('\\x1b[H\\x1b[2J')\n    0\n    >>> # horizontal cursor movements are parsed,\n    >>> wcwidth.width('hello\\b\\b\\b\\b\\bworld')\n    5\n    >>> wcwidth.width('hello\\x1b[5Dworld')\n    5\n    >>> # or ignored,\n    >>> wcwidth.width('hello\\x1b[5Dworld', control_codes='ignore')\n    10\n    >>> # Measure width of text using kitty text sizing protocol (OSC 66),\n    >>> width('\\x1b]66;w=2;XY\\x07')\n    2\n    >>> # Scaled text sizing: each grapheme occupies 'scale' cells\n    >>> width('\\x1b]66;s=2;ABC\\x07')\n    6\n\nUse ``control_codes='ignore'`` when the input is known not to contain any control characters or\nterminal sequences for slightly improved performance. Note that TAB (``'\\t'``) is a control\ncharacter and is also ignored, you may want to use `str.expandtabs()`_, first.\n\nUse ``control_codes='strict'`` when input is known to contain some control sequences, such as\nSGR color, bold, hyperlinks and cursor movement. Any sequence that cannot be accurately parsed\nfor horizontal measurement, such as clearing the screen, vertical, or absolute cursor movement will\nraise ``ValueError``:\n\n.. code-block:: python\n\n    >>> # or, raise ValueError for \"indeterminate\" effects using control_codes='strict'\n    >>> wcwidth.width('\\n', control_codes='strict')\n    Traceback (most recent call last):\n    ...\n    ValueError: Vertical movement character 0xa at position 0\n\n\n    >>> wcwidth.width('\\x1b[H\\x1b[2J', control_codes='strict')\n    Traceback (most recent call last):\n    ...\n    ValueError: Indeterminate cursor sequence at position 0, '\\x1b[H'\n\n\n    >>> # cursor left movement beyond string start raises in strict mode,\n    >>> wcwidth.width('a\\x1b[5Da', control_codes='strict')\n    Traceback (most recent call last):\n    ...\n    ValueError: Cursor left movement at position 1 would move 5 cells left from column 1, exceeding string start\n\niter_sequences()\n----------------\n\nIterates through text, segmented by terminal sequence,\n\n.. code-block:: python\n\n    >>> list(wcwidth.iter_sequences('hello'))\n    [('hello', False)]\n    >>> list(wcwidth.iter_sequences('\\x1b[31mred\\x1b[0m'))\n    [('\\x1b[31m', True), ('red', False), ('\\x1b[0m', True)]\n\nUse `iter_sequences()`_ to split text into segments of plain text and escape sequences. Each tuple\ncontains the segment string and a boolean indicating whether it is an escape sequence (``True``) or\ntext (``False``).\n\niter_graphemes()\n----------------\n\nUse `iter_graphemes()`_ to iterate over *grapheme clusters* of a string.\n\n.. code-block:: python\n\n    >>> from wcwidth import iter_graphemes\n    >>> # ok + Regional Indicator 'Z', 'W' (Zimbabwe)\n    >>> list(wcwidth.iter_graphemes('ok\\U0001F1FF\\U0001F1FC'))\n    ['o', 'k', '🇿🇼']\n\n    >>> # cafe + combining acute accent\n    >>> list(wcwidth.iter_graphemes('cafe\\u0301'))\n    ['c', 'a', 'f', 'é']\n\n    >>> # ok + Emoji Man + ZWJ + Woman + ZWJ + Girl\n    >>> list(wcwidth.iter_graphemes('ok\\U0001F468\\u200D\\U0001F469\\u200D\\U0001F467'))\n    ['o', 'k', '👨\\u200d👩\\u200d👧']\n\nA grapheme cluster is what a user perceives as a single character, even if it is composed of\nmultiple Unicode codepoints. This function implements `Unicode Standard Annex #29`_ grapheme cluster\nboundary rules.\n\nljust()\n-------\n\nUse `ljust()`_ as replacement of `str.ljust()`_:\n\n.. code-block:: python\n\n    >>> 'コンニチハ'.ljust(11, '*')             # don't do this\n    'コンニチハ******'\n    >>> wcwidth.ljust('コンニチハ', 11, '*')    # do this!\n    'コンニチハ*'\n\nrjust()\n-------\n\nUse `rjust()`_ as replacement of `str.rjust()`_:\n\n.. code-block:: python\n\n    >>> 'コンニチハ'.rjust(11, '*')             # don't do this\n    '******コンニチハ'\n    >>> wcwidth.rjust('コンニチハ', 11, '*')    # do this!\n    '*コンニチハ'\n\ncenter()\n--------\n\nUse `center()`_ as replacement of `str.center()`_:\n\n.. code-block:: python\n\n    >>> 'cafe\\u0301'.center(6, '*')             # don't do this\n    'café*'\n    >>> wcwidth.center('cafe\\u0301', 6, '*')\n    '*café*'                                    # do this!\n\nwrap()\n------\n\nUse function `wrap()`_ to wrap text containing terminal sequences, Unicode grapheme\nclusters, and wide characters to a given display width.\n\n.. code-block:: python\n\n    >>> from wcwidth import wrap\n    >>> # Basic wrapping\n    >>> wrap('hello world', 5)\n    ['hello', 'world']\n\n    >>> # Wrapping CJK text (each character is 2 cells wide)\n    >>> wrap('コンニチハ', 4)\n    ['コン', 'ニチ', 'ハ']\n\n    >>> # Text with ANSI color sequences - SGR codes are propagated by default\n    >>> # Each line ends with reset, next line starts with restored style\n    >>> wrap('\\x1b[1;31mhello world\\x1b[0m', 5)\n    ['\\x1b[1;31mhello\\x1b[0m', '\\x1b[1;31mworld\\x1b[0m']\n\nclip()\n------\n\nUse `clip()`_ to extract a substring by column positions, preserving terminal sequences.\n\n.. code-block:: python\n\n    >>> from wcwidth import clip\n    >>> # Wide characters split to Narrow boundaries using fillchar=' '\n    >>> clip('中文字', 0, 3)\n    '中 '\n    >>> clip('中文字', 1, 5, fillchar='.')\n    '.文.'\n\n    >>> # SGR codes are propagated by default - result begins with active style\n    >>> # and ends with reset if styles are active\n    >>> clip('\\x1b[1;31mHello world\\x1b[0m', 6, 11)\n    '\\x1b[1;31mworld\\x1b[0m'\n\n    >>> # Disable SGR propagation to preserve sequence order outside of clip boundary\n    >>> clip('\\x1b[31m中文\\x1b[32m', 0, 3, propagate_sgr=False)\n    '\\x1b[31m中 \\x1b[32m'\n\n    >>> # Cursor-left overwrites previous text (painter's algorithm)\n    >>> clip('hello\\x1b[2DXY', 0, 5)\n    'helXY'\n    >>> # Carriage return resets to column 0, overwriting earlier cells\n    >>> clip('abc\\rXY', 0, 5)\n    'XYc'\n\n    >>> # even OSC 8 hyperlink text may be clipped, 'Click This link' -> 'is link' !\n    >>> clip('\\x1b]8;;http://example.com\\x07Click This link\\x1b]8;;\\x07', 8, 15)\n    '\\x1b]8;;http://example.com\\x07is link\\x1b]8;;\\x07'\n\n    >>> # and OSC 66 kitty text sizing, supporting width and scale, 'Look' -> '...ook'\n    >>> clip('\\x1b]66;w=4:s=4;Look\\x07', 1, 16, fillchar='.')\n    '...\\x1b]66;s=4:w=3;ook\\x07'\n\nUse ``overtyping=False`` when the input is known not to contain any cursor movement characters\n(``\\b``, ``\\r``, ``CSI C``, ``CSI D``, ``CSI G``) for improved performance.  When\n``overtyping=None`` (default), a slower \"Painter's algorithm\" may be used after testing for the\npresence of these characters. ``overtyping`` has no effect when ``control_codes='ignore'``.\n\nstrip_sequences()\n-----------------\n\nUse `strip_sequences()`_ to remove all terminal escape sequences from text.\n\n.. code-block:: python\n\n    >>> from wcwidth import strip_sequences\n    >>> strip_sequences('\\x1b[31mred\\x1b[0m')\n    'red'\n\n.. _ambiguous_width:\n\nAmbiguous Width\n---------------\n\nSome Unicode characters have \"East Asian Ambiguous\" (A) width. These characters display as 1 cell by\ndefault, matching Western terminal contexts, but many CJK (Chinese, Japanese, Korean) environments\nmay have a preference for 2 cells.  This is often found as boolean option, \"Ambiguous width as wide\"\nin Terminal Emulator software preferences.\n\nThe ``ambiguous_width`` parameter is available on all width-measuring functions: `wcwidth()`_,\n`wcswidth()`_, `width()`_, `ljust()`_, `rjust()`_, `center()`_, `wrap()`_, and `clip()`_.\n\nBy default, wcwidth treats ambiguous characters as narrow (width 1). For CJK environments where your\nterminal is configured to display ambiguous characters as double-width, pass ``ambiguous_width=2``:\n\n.. code-block:: python\n\n    >>> # CIRCLED DIGIT ONE - ambiguous width\n    >>> wcwidth.width('\\u2460')\n    1\n    >>> wcwidth.width('\\u2460', ambiguous_width=2)\n    2\n\n**Terminal Detection**\n\nThe most reliable method to detect whether a terminal profile is set for \"Ambiguous width as wide\"\nmode is to display an ambiguous character surrounded by a pair of Cursor Position Report (CPR)\nqueries with a terminal in cooked or raw mode, and to parse the responses for their ``(y, x)``\nlocations and measure the difference ``x``.\n\nThis code should also be careful to check whether it is attached to a terminal and be careful of\npossible timeout, slow network, or non-response when working with \"dumb terminals\" like a CI build.\n\n`jquast/blessed`_ library provides such a helping `Terminal.detect_ambiguous_width()`_ method:\n\n.. code-block:: python\n\n    >>> import blessed, functools\n    >>> # Detect terminal ambiguous width as wide (2) or narrow (1)\n    >>> ambiguous_width = blessed.Terminal().detect_ambiguous_width()\n    >>> # Define a new 'width' function with this argument\n    >>> awidth = functools.partial(wcwidth.width, ambiguous_width=ambiguous_width)\n    >>> # result depends on attached terminal mode\n    >>> awidth('\\u2460')\n    1\n\nCorrections\n-----------\n\nCorrections may be automatically applied depending on the detected or given terminal software name\nbeginning with wcwidth release 0.8.0. This allows to correct widths for terminal software that\ndiffers from the python wcwidth specification_.  These corrections are sourced from the\n`jquast/ucs-detect`_ project.\n\nThe ``term_program`` parameter is available on all width-measuring functions: `wcstwidth()`_,\n`width()`_, `ljust()`_, `rjust()`_, `center()`_, `wrap()`_, and `clip()`_.\n\n`wcstwidth()`_ defaults to ``term_program=True``, auto-detecting the terminal from the\n``TERM_PROGRAM`` or ``TERM`` environment variable.  All other functions default to\n``term_program=False``, disabling corrections.  Use ``term_program=True`` for automatic\ndetection by environment values of ``TERM`` and ``TERM_PROGRAM``.\n\n.. code-block:: python\n\n    # VTE terminals (Gnome Terminal Et al.) still render trigrams as narrow (1 cell), but their\n    # definition was changed to wide in Unicode 16 (September 2024).\n    >>> wcwidth.wcswidth('\\u2630')\n    2\n    >>> wcwidth.wcstwidth('\\u2630', term_program='vte')\n    1\n\n    # account for Alacritty non-support of emoji ZWJ:\n    # man + ZWJ + woman + ZWJ + girl + ZWJ + boy\n    >>> family = '\\U0001F468\\u200D\\U0001F469\\u200D\\U0001F467\\u200D\\U0001F466'\n    >>> wcwidth.wcswidth(family)\n    2\n    >>> wcwidth.wcstwidth(family, term_program='alacritty')\n    8\n\nOnly detectable_ terminals are included: those that identify themselves by XTVERSION_, ENQ_, any\n``TERM_PROGRAM`` or a unique ``TERM`` environment value.  For the most accurate correction tables,\nquery the terminal's software version via XTVERSION_ (``CSI > q``) using a higher-level interactive\nterminal library like `jquast/blessed`_:\n\n.. code-block:: python\n\n    >>> import blessed, wcwidth\n    >>> term = blessed.Terminal()\n    >>> sw_ver = term.get_software_version()\n    >>> print(sw_ver)\n    SoftwareVersion(name='VTE', version='7600')\n    >>> wcwidth.width('\\u2630', term_program=sw_ver.name)\n    1\n\nThis is important because ``TERM_PROGRAM`` is not forwarded for remote hosts, like SSH, and many\nterminals may only be identified using XTVERSION_ or ENQ_.  Use `list_term_programs()`_ to see all\nrecognized names:\n\n.. BEGIN_LIST_TERM_PROGRAMS\n.. code-block:: python\n\n    >>> wcwidth.list_term_programs()\n    ('alacritty', 'apple_terminal', 'bobcat', 'contour', 'extraterm', 'foot',\n     'ghostty', 'hyper', 'iterm.app', 'iterm2', 'kitty', 'konsole', 'mintty',\n     'mlterm', 'pterm', 'putty', 'rio', 'rxvt', 'rxvt-unicode-256color', 'st',\n     'st-256color', 'tabby', 'terminology', 'urxvt', 'vscode', 'vte', 'warp',\n     'warpterminal', 'wezterm', 'xterm', 'xterm-ghostty', 'xterm-kitty',\n     'xterm.js')\n\n.. END_LIST_TERM_PROGRAMS\n\n``term_program=False`` (the default for `width()`_, `ljust()`_, `rjust()`_, `center()`_,\n`wrap()`_, and `clip()`_) disables terminal corrections.  `wcstwidth()`_ defaults to\n``term_program=True`` for auto-detection.\n\nFor automatic tests and other purposes that require cross-environment consistency, set static values\nor unset ``TERM`` and ``TERM_PROGRAM`` environment values, such as in ``conftest.py`` with pytest:\n\n.. code-block:: python\n\n    @pytest.fixture(autouse=True)\n    def _clear_term_program():\n        \"\"\"unset TERM/TERM_PROGRAM before each test.\"\"\"\n        saved_term = os.environ.pop('TERM', None)\n        saved_tprog = os.environ.pop('TERM_PROGRAM', None)\n        yield\n        if saved_term is not None:\n            os.environ['TERM'] = saved_term\n        if saved_tprog is not None:\n            os.environ['TERM_PROGRAM'] = saved_tprog\n\n==========\nDeveloping\n==========\n\nInstall wcwidth in editable mode::\n\n   pip install -e .\n\nExecute all code generation, autoformatters, linters and unit tests using tox::\n\n   tox\n\nOr execute individual tasks, see ``tox -lv`` for all available targets::\n\n   tox -e pylint,py36,py314\n\nTo run tests with detailed coverage reporting showing missing lines::\n\n   tox -epy314 -- --cov-report=term-missing\n\nUpdating Unicode Version\n------------------------\n\nRegenerate python code tables from latest Unicode Specification data files::\n\n   tox -e update\n\nThe script is located at ``bin/update-tables.py``, requires Python 3.9 or\nlater. It is recommended but not necessary to run this script with the newest\nPython, because the newest Python has the latest ``unicodedata`` for generating\ncomments.\n\nBuilding Documentation\n----------------------\n\nThis project is using `sphinx`_ 4.5 to build documentation::\n\n   tox -e sphinx\n\nThe output will be in ``docs/_build/html/``.\n\nUpdating Requirements\n---------------------\n\nThis project is using `pip-tools`_ to manage requirements.\n\nTo upgrade requirements for updating unicode version, run::\n\n   tox -e update_requirements_update\n\nTo upgrade requirements for testing, run::\n\n   tox -e update_requirements38,update_requirements39\n\nTo upgrade requirements for building documentation, run::\n\n   tox -e update_requirements_docs\n\nUtilities\n---------\n\nSupplementary tools for browsing and testing terminals for wide unicode\ncharacters are found in the `bin/`_ of this project's source code.  Just ensure\nto first ``pip install -r requirements-develop.txt`` from this projects main\nfolder. For example, an interactive browser for testing::\n\n  python ./bin/wcwidth-browser.py\n\n====\nUses\n====\n\nThis library is used in:\n\n- `jquast/blessed`_: a thin, practical wrapper around terminal capabilities in\n  Python.\n\n- `jquast/telix`_:  A Modern telnet client especially designed for BBSs and MUDs.\n\n- `prompt-toolkit/python-prompt-toolkit`_: a Library for building powerful\n  interactive command lines in Python.\n\n- `urwid/urwid`_: Console user interface library for Python\n\n- `prettytable/prettytable`_:  Display tabular data in a visually appealing ASCII table format\n\n- `leviathan0992/Pylsy`_:  Pylsy is a simple python library draw tables in the Terminal. Just two\n  lines of code.\n\n- `dbcli/pgcli`_: Postgres CLI with autocompletion and syntax highlighting.\n\n- `thomasballinger/curtsies`_: a Curses-like terminal wrapper with a display\n  based on compositing 2d arrays of text.\n\n- `selectel/pyte`_: Simple VTXXX-compatible linux terminal emulator.\n\n- `astanin/python-tabulate`_: Pretty-print tabular data in Python, a library\n  and a command-line utility.\n\n- `rspeer/python-ftfy`_: Fixes mojibake and other glitches in Unicode\n  text.\n\n- `nbedos/termtosvg`_: Terminal recorder that renders sessions as SVG\n  animations.\n\n- `peterbrittain/asciimatics`_: A cross platform package to do curses-like operations, plus higher\n  level APIs and widgets to create text UIs and ASCII art animations\n\n- `python-cmd2/cmd2`_: A tool for building interactive command line apps\n\n- `stratis-storage/stratis-cli`_: CLI for the Stratis project\n\n- `ihabunek/toot`_: A Mastodon CLI/TUI client\n\n- `saulpw/visidata`_: Terminal spreadsheet multitool for discovering and\n  arranging data\n\n- `jquast/ucs-detect`_: Utility for unicode support detection.\n\n===============\nOther Languages\n===============\n\nThe following libraries provide grapheme and emoji support and closely align with our\nspecification_:\n\n- `jacobsandlund/uucode`_ Zig\n- `contour-terminal/libunicode`_ C++20\n\nThere are similar implementations of at least the `wcwidth()`_ and `wcswidth()`_ functions in other\nlanguages:\n\n- `ridiculousfish/widecharwidth`_: Python\n- `termux/wcwidth`_: C\n- `powerman/wcwidth-icons`_: C\n- `timoxley/wcwidth`_: JavaScript\n- `janlelis/unicode-display_width`_: Ruby\n- `alecrabbit/php-wcwidth`_: PHP\n- `Text::CharWidth`_: Perl\n- `bluebear94/Terminal-WCWidth`_: Perl 6\n- `mattn/go-runewidth`_: Go\n- `grepsuzette/wcwidth`_: Haxe\n- `aperezdc/lua-wcwidth`_: Lua\n- `joachimschmidt557/zig-wcwidth`_: Zig\n- `mycoboco/wcwidth.js`_: JavaScript\n- `ainame/swift-displaywidth`_: Swift\n- `pmonks/clj-wcwidth`_: Clojure\n- `fumiyas/wcwidth-cjk`_: `LD_PRELOAD` override\n- `joshuarubin/wcwidth9`_: Unicode version 9 in C\n- `spectreconsole/wcwidth`_: C#\n\n=======\nHistory\n=======\n\n0.8.2 *2026-06-29*\n  * **Bugfix** Do not raise IndexError when given legacy POSIX ``n`` argument to `wcswidth()`_ or\n    `wcstwidth()`_ exceed string length without raising IndexError\n\n0.8.1 *2026-06-08*\n  * **Improved** `wcstwidth()`_ with new ``zeroer``, ``narrow_wider``, and ``narrow_zeroer``\n    Corrections_. `PR #226`_\n\n0.8.0 *2026-06-05*\n  * **New** support for Variation Selector 15 Emojis as narrow, `Issue #211`_.\n  * **New** argument, ``term_program`` for `wcstwidth()`_, `width()`_, `clip()`_, `wrap()`_,\n    `ljust()`_, `rjust()`_, and `center()`_.  ``False`` disables Corrections_; ``True``\n    auto-detects by ``TERM_PROGRAM`` or ``TERM``; string values accept canonical names matching\n    `list_term_programs()`_.  `wcstwidth()`_ defaults to ``True``; all other functions\n    default to ``False``.\n  * **Improved** performance on Python 3.15 using standard library iter_graphemes() `PR #206`_.\n  * **Improved** memory usage and import time for Python 3.15 using lazy imports `PR #221`_.\n  * **Bugfix** Invisible_Stacker viramas now form conjuncts (Burmese, Khmer, etc.) and\n    change some Virama width calculations to match `jacobsandlund/uucode`_ (ghostty) `PR #223`_.\n  * **Updated** graphemes width maximum now 2, matching Ghostty, foot, and Windows Terminal `PR\n    #224`_.\n\n0.7.0 *2026-05-02*\n  * **New** support for `kitty text sizing protocol`_ (OSC 66) in `width()`_ and `clip()`_.\n  * **New** `clip()`_ parameter ``control_codes='parse'``, ``'ignore'``, and ``'strict'``. `clip()`_\n    is now able to clip OSC 8 hyperlinks and OSC 66 text sizing sequences.\n  * **Improved** `clip()`_ and `width()`_ to support horizontal cursor sequences (``cub``, ``cuf``,\n    ``hpa``). Cursor-left (``cub``) or backspace (``\\b``) now overwrites text.  ``column_address``\n    (``hpa``) and carriage return (``\\r``) are now parsed, and more values conditionally raise\n    ``ValueError`` when ``control_codes='strict'``.\n\n0.6.0 *2026-02-06*\n  * **New** Parameters ``expand_tabs``, ``replace_whitespace``, ``fix_sentence_endings``,\n    ``drop_whitespace``, ``max_lines``, and ``placeholder`` for `wrap()`_, completing stdlib\n    `textwrap.wrap()`_ compatibility.\n\n0.5.3 *2026-01-30*\n  * **Bugfix** Brahmic using Virama conjunct formation. `Issue #155`_, `PR #204`_.\n\n0.5.2 *2026-01-29*\n  * **Bugfix** Measurement of category ``Mc`` (`Spacing Combining Mark`_), approx.  443, has a more\n    nuanced specification_, and may be categorized as either zero or wide. `PR #200`_.\n  * **Bugfix** Measurement of \"standalone\" modifiers and regional indicators, `PR #202`_.\n  * **Updated** Data files used in some automatic tests are no longer distributed. `PR #199`_\n\n0.5.1 *2026-01-27*\n  * **Updated** generated zero and wide code tables to length of 1 to complete the previously\n    announced removal of historical wide and zero tables. `PR #196`_.\n\n0.5.0 *2026-01-26*\n  * **Drop Support** of many historical versions of wide and zero unicode tables.  Only the latest\n    Unicode version (17.0.0) is now shipped. The related ``unicode_version='auto'`` keyword of the\n    `wcwidth()`_ family of functions are ignored. `list_versions()`_ always returns a tuple of only\n    a single element of the only unicode version supported. `PR #195`_.\n  * **Performance** improvement of most common call without version or ambiguous_width specified by\n    20%. `PR #195`_.\n  * **New** Function `propagate_sgr()`_ for applying SGR state propagation to a list of lines.\n    `PR #194`_.\n  * **Improved** `wrap()`_ and `clip()`_ with ``propagate_sgr=True``. `PR #194`_.\n  * **Bugfix** `clip()`_ zero-width characters at clipping boundaries. `PR #194`_.\n  * **Bugfix** OSC Hyperlinks when broken mid-text by `wrap()`_. `PR #193`_.\n\n0.4.0 *2026-01-25*\n  * **New** Functions `iter_graphemes_reverse()`_, `grapheme_boundary_before()`_. `PR #192`_.\n  * **Bugfix** OSC Hyperlinks should not be broken by `wrap()`_. `PR #191`_.\n\n0.3.5 *2026-01-24*\n  * **Bugfix** packaging of 0.3.4 contains a failing test.\n\n0.3.4 *2026-01-24*\n  * **Bugfix** `center()`_ should match the eccentric `parity padding`_.\n    of `str.center()`_. `PR #188`_.\n\n0.3.3 *2026-01-24*\n  * **Performance** improvement in `width()`_. `PR #185`_.\n  * **Bugfix** missing ``py.typed``, ``Typing :: Typed``. `PR #184`_.\n\n0.3.2 *2026-01-23*\n  * **Updated** type hinting for full ``mympy --strict`` compliance. `PR #183`_.\n\n0.3.1 *2026-01-22*\n  * **Performance** improvement up to 30% in `width()_`. `PR #181`_.\n\n0.3.0 *2026-01-21*\n  * **Drop Support** for Python 3.6 and 3.7. `PR #156`_.\n  * **New** Function `iter_graphemes()`_. `PR #165`_.\n  * **New** Functions `width()`_ and `iter_sequences()`_. `PR #166`_.\n  * **New** Functions `ljust()`_, `rjust()`_, `center()`_. `PR #168`_.\n  * **New** Function `wrap()`_. `PR #169`_.\n  * **Performance** improvement in `wcswidth()`_. `PR #171`_.\n  * **New** argument ``ambiguous_width`` to all functions. `PR #172`_.\n  * **New** Functions `clip()`_ and `strip_sequences()`_. `PR #173`_.\n  * **Bugfix** Characters with ``Default_Ignorable_Code_Point`` property now\n    return width 0. `PR #174`_.\n  * **Bugfix** Characters with ``Prepended_Concatenation_Mark`` property now\n    return width 1. `PR #175`_.\n\n0.2.14 *2025-09-22*\n  * **Drop Support** for Python 2.7 and 3.5. `PR #117`_.\n  * **Update** tables to include Unicode Specifications 16.0.0 and 17.0.0.\n    `PR #146`_.\n  * **Bugfix** U+00AD SOFT HYPHEN should measure as 1, versions 0.2.9 through\n    0.2.13 measured as 0. `PR #149`_.\n\n0.2.13 *2024-01-06*\n  * **Bugfix** zero-width support for Hangul Jamo (Korean)\n\n0.2.12 *2023-11-21*\n  * **Bugfix** Re-release to remove `.pyi` files misplaced in wheel `Issue #101`_.\n\n0.2.11 *2023-11-20*\n  * **Updated** Include tests files in the source distribution (`PR #98`_, `PR #100`_).\n\n0.2.10 *2023-11-13*\n  * **Bugfix** accounting of some kinds of emoji sequences using U+FE0F\n    Variation Selector 16 (`PR #97`_).\n  * **Updated** specification_.\n\n0.2.9 *2023-10-30*\n  * **Bugfix** zero-width characters used in Emoji ZWJ sequences, Balinese,\n    Jamo, Devanagari, Tamil, Kannada and others (`PR #91`_).\n  * **Updated** to include specification_ of character measurements.\n\n0.2.8 *2023-09-30*\n  * Include requirements files in the source distribution (`PR #82`_).\n\n0.2.7 *2023-09-28*\n  * **Updated** tables to include Unicode Specification 15.1.0.\n  * Include ``bin``, ``docs``, and ``tox.ini`` in the source distribution\n\n0.2.6 *2023-01-14*\n  * **Updated** tables to include Unicode Specification 14.0.0 and 15.0.0.\n  * **Changed** developer tools to use pip-compile, and to use jinja2 templates\n    for code generation in `bin/update-tables.py` to prepare for possible\n    compiler optimization release.\n\n0.2.1 .. 0.2.5 *2020-06-23*\n  * **Repository** changes to update tests and packaging issues, and\n    begin tagging repository with matching release versions.\n\n0.2.0 *2020-06-01*\n  * **Enhancement**: Unicode version may be selected by exporting the\n    Environment variable ``UNICODE_VERSION``, such as ``13.0``, or ``6.3.0``.\n    See the `jquast/ucs-detect`_ CLI utility for automatic detection.\n  * **Enhancement**:\n    API Documentation is published to readthedocs.io.\n  * **Updated** tables for *all* Unicode Specifications with files\n    published in a programmatically consumable format, versions 4.1.0\n    through 13.0\n\n0.1.9 *2020-03-22*\n  * **Performance** optimization by `Avram Lubkin`_, `PR #35`_.\n  * **Updated** tables to Unicode Specification 13.0.0.\n\n0.1.8 *2020-01-01*\n  * **Updated** tables to Unicode Specification 12.0.0. (`PR #30`_).\n\n0.1.7 *2016-07-01*\n  * **Updated** tables to Unicode Specification 9.0.0. (`PR #18`_).\n\n0.1.6 *2016-01-08 Production/Stable*\n  * ``LICENSE`` file now included with distribution.\n\n0.1.5 *2015-09-13 Alpha*\n  * **Bugfix**:\n    Resolution of \"combining_ character width\" issue, most especially\n    those that previously returned -1 now often (correctly) return 0.\n    resolved by `Philip Craig`_ via `PR #11`_.\n  * **Deprecated**:\n    The module path ``wcwidth.table_comb`` is no longer available,\n    it has been superseded by module path ``wcwidth.table_zero``.\n\n0.1.4 *2014-11-20 Pre-Alpha*\n  * **Feature**: ``wcswidth()`` now determines printable length\n    for (most) combining_ characters.  The developer's tool\n    `bin/wcwidth-browser.py`_ is improved to display combining_\n    characters when provided the ``--combining`` option\n    (`Thomas Ballinger`_ and `Leta Montopoli`_ `PR #5`_).\n  * **Feature**: added static analysis (prospector_) to testing\n    framework.\n\n0.1.3 *2014-10-29 Pre-Alpha*\n  * **Bugfix**: 2nd parameter of wcswidth was not honored.\n    (`Thomas Ballinger`_, `PR #4`_).\n\n0.1.2 *2014-10-28 Pre-Alpha*\n  * **Updated** tables to Unicode Specification 7.0.0.\n    (`Thomas Ballinger`_, `PR #3`_).\n\n0.1.1 *2014-05-14 Pre-Alpha*\n  * Initial release to pypi, Based on Unicode Specification 6.3.0\n\nThis code was originally derived directly from C code of the same name,\nwhose latest version is available at\nhttps://www.cl.cam.ac.uk/~mgk25/ucs/wcwidth.c::\n\n * Markus Kuhn -- 2007-05-26 (Unicode 5.0)\n *\n * Permission to use, copy, modify, and distribute this software\n * for any purpose and without fee is hereby granted. The author\n * disclaims all warranties with regard to this software.\n\n.. _`Spacing Combining Mark`: https://www.unicode.org/versions/latest/ch04.pdf#G134153\n.. _`specification`: https://wcwidth.readthedocs.io/en/latest/specs.html\n.. _`tox`: https://tox.wiki/en/latest/\n.. _`prospector`: https://github.com/landscapeio/prospector\n.. _`combining`: https://en.wikipedia.org/wiki/Combining_character\n.. _`bin/`: https://github.com/jquast/wcwidth/tree/master/bin\n.. _`bin/wcwidth-browser.py`: https://github.com/jquast/wcwidth/blob/master/bin/wcwidth-browser.py\n.. _`Thomas Ballinger`: https://github.com/thomasballinger\n.. _`Leta Montopoli`: https://github.com/lmontopo\n.. _`Philip Craig`: https://github.com/philipc\n.. _`PR #3`: https://github.com/jquast/wcwidth/pull/3\n.. _`PR #4`: https://github.com/jquast/wcwidth/pull/4\n.. _`PR #5`: https://github.com/jquast/wcwidth/pull/5\n.. _`PR #11`: https://github.com/jquast/wcwidth/pull/11\n.. _`PR #18`: https://github.com/jquast/wcwidth/pull/18\n.. _`PR #30`: https://github.com/jquast/wcwidth/pull/30\n.. _`PR #35`: https://github.com/jquast/wcwidth/pull/35\n.. _`PR #82`: https://github.com/jquast/wcwidth/pull/82\n.. _`PR #91`: https://github.com/jquast/wcwidth/pull/91\n.. _`PR #97`: https://github.com/jquast/wcwidth/pull/97\n.. _`PR #98`: https://github.com/jquast/wcwidth/pull/98\n.. _`PR #100`: https://github.com/jquast/wcwidth/pull/100\n.. _`PR #117`: https://github.com/jquast/wcwidth/pull/117\n.. _`PR #146`: https://github.com/jquast/wcwidth/pull/146\n.. _`PR #149`: https://github.com/jquast/wcwidth/pull/149\n.. _`PR #156`: https://github.com/jquast/wcwidth/pull/156\n.. _`PR #165`: https://github.com/jquast/wcwidth/pull/165\n.. _`PR #166`: https://github.com/jquast/wcwidth/pull/166\n.. _`PR #168`: https://github.com/jquast/wcwidth/pull/168\n.. _`PR #169`: https://github.com/jquast/wcwidth/pull/169\n.. _`PR #171`: https://github.com/jquast/wcwidth/pull/171\n.. _`PR #172`: https://github.com/jquast/wcwidth/pull/172\n.. _`PR #173`: https://github.com/jquast/wcwidth/pull/173\n.. _`PR #174`: https://github.com/jquast/wcwidth/pull/174\n.. _`PR #175`: https://github.com/jquast/wcwidth/pull/175\n.. _`PR #181`: https://github.com/jquast/wcwidth/pull/181\n.. _`PR #183`: https://github.com/jquast/wcwidth/pull/183\n.. _`PR #184`: https://github.com/jquast/wcwidth/pull/184\n.. _`PR #185`: https://github.com/jquast/wcwidth/pull/185\n.. _`PR #188`: https://github.com/jquast/wcwidth/pull/188\n.. _`PR #191`: https://github.com/jquast/wcwidth/pull/191\n.. _`PR #192`: https://github.com/jquast/wcwidth/pull/192\n.. _`PR #193`: https://github.com/jquast/wcwidth/pull/193\n.. _`PR #194`: https://github.com/jquast/wcwidth/pull/194\n.. _`PR #195`: https://github.com/jquast/wcwidth/pull/195\n.. _`PR #196`: https://github.com/jquast/wcwidth/pull/196\n.. _`PR #199`: https://github.com/jquast/wcwidth/pull/199\n.. _`PR #200`: https://github.com/jquast/wcwidth/pull/200\n.. _`PR #202`: https://github.com/jquast/wcwidth/pull/202\n.. _`PR #204`: https://github.com/jquast/wcwidth/pull/204\n.. _`PR #206`: https://github.com/jquast/wcwidth/pull/206\n.. _`PR #221`: https://github.com/jquast/wcwidth/pull/221\n.. _`PR #223`: https://github.com/jquast/wcwidth/pull/223\n.. _`PR #224`: https://github.com/jquast/wcwidth/pull/224\n.. _`PR #226`: https://github.com/jquast/wcwidth/pull/226\n.. _`Issue #101`: https://github.com/jquast/wcwidth/issues/101\n.. _`Issue #155`: https://github.com/jquast/wcwidth/issues/155\n.. _`Issue #190`: https://github.com/jquast/wcwidth/issues/190\n.. _`Issue #211`: https://github.com/jquast/wcwidth/issues/211\n.. _`jquast/blessed`: https://github.com/jquast/blessed\n.. _`jquast/telix`: https://github.com/jquast/telix\n.. _`selectel/pyte`: https://github.com/selectel/pyte\n.. _`thomasballinger/curtsies`: https://github.com/thomasballinger/curtsies\n.. _`dbcli/pgcli`: https://github.com/dbcli/pgcli\n.. _`prompt-toolkit/python-prompt-toolkit`: https://github.com/prompt-toolkit/python-prompt-toolkit\n.. _`timoxley/wcwidth`: https://github.com/timoxley/wcwidth\n.. _`wcwidth(3)`:  https://man7.org/linux/man-pages/man3/wcwidth.3.html\n.. _`wcswidth(3)`: https://man7.org/linux/man-pages/man3/wcswidth.3.html\n.. _`astanin/python-tabulate`: https://github.com/astanin/python-tabulate\n.. _`janlelis/unicode-display_width`: https://github.com/janlelis/unicode-display_width\n.. _`rspeer/python-ftfy`: https://github.com/rspeer/python-ftfy\n.. _`alecrabbit/php-wcwidth`: https://github.com/alecrabbit/php-wcwidth\n.. _`Text::CharWidth`: https://metacpan.org/pod/Text::CharWidth\n.. _`bluebear94/Terminal-WCWidth`: https://github.com/bluebear94/Terminal-WCWidth\n.. _`mattn/go-runewidth`: https://github.com/mattn/go-runewidth\n.. _`grepsuzette/wcwidth`: https://github.com/grepsuzette/wcwidth\n.. _`jquast/ucs-detect`: https://github.com/jquast/ucs-detect\n.. _`Avram Lubkin`: https://github.com/avylove\n.. _`nbedos/termtosvg`: https://github.com/nbedos/termtosvg\n.. _`peterbrittain/asciimatics`: https://github.com/peterbrittain/asciimatics\n.. _`aperezdc/lua-wcwidth`: https://github.com/aperezdc/lua-wcwidth\n.. _`joachimschmidt557/zig-wcwidth`: https://github.com/joachimschmidt557/zig-wcwidth\n.. _`fumiyas/wcwidth-cjk`: https://github.com/fumiyas/wcwidth-cjk\n.. _`joshuarubin/wcwidth9`: https://github.com/joshuarubin/wcwidth9\n.. _`spectreconsole/wcwidth`: https://github.com/spectreconsole/wcwidth\n.. _`contour-terminal/libunicode`: https://github.com/contour-terminal/libunicode\n.. _`jacobsandlund/uucode`: https://github.com/jacobsandlund/uucode\n.. _`ridiculousfish/widecharwidth`: https://github.com/ridiculousfish/widecharwidth\n.. _`termux/wcwidth`: https://github.com/termux/wcwidth\n.. _`powerman/wcwidth-icons`: https://github.com/powerman/wcwidth-icons\n.. _`mycoboco/wcwidth.js`: https://github.com/mycoboco/wcwidth.js\n.. _`ainame/swift-displaywidth`: https://github.com/ainame/swift-displaywidth\n.. _`pmonks/clj-wcwidth`: https://github.com/pmonks/clj-wcwidth\n.. _`python-cmd2/cmd2`: https://github.com/python-cmd2/cmd2\n.. _`stratis-storage/stratis-cli`: https://github.com/stratis-storage/stratis-cli\n.. _`ihabunek/toot`: https://github.com/ihabunek/toot\n.. _`saulpw/visidata`: https://github.com/saulpw/visidata\n.. _`urwid/urwid`: https://github.com/urwid/urwid\n.. _`prettytable/prettytable`: https://github.com/prettytable/prettytable\n.. _`leviathan0992/Pylsy`: https://github.com/leviathan0992/Pylsy\n.. _`pip-tools`: https://pip-tools.readthedocs.io/\n.. _`sphinx`: https://www.sphinx-doc.org/\n.. _`textwrap.wrap()`: https://docs.python.org/3/library/textwrap.html#textwrap.wrap\n.. _`str.ljust()`: https://docs.python.org/3/library/stdtypes.html#str.ljust\n.. _`str.rjust()`: https://docs.python.org/3/library/stdtypes.html#str.rjust\n.. _`str.center()`: https://docs.python.org/3/library/stdtypes.html#str.center\n.. _`str.expandtabs()`: https://docs.python.org/3/library/stdtypes.html#str.expandtabs\n.. _`General Tabulated Summary`: https://ucs-detect.readthedocs.io/results.html#tabulated-results\n.. _`wcwidth()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.wcwidth\n.. _`wcswidth()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.wcswidth\n.. _`wcstwidth()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.wcstwidth\n.. _`width()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.width\n.. _`iter_graphemes()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.iter_graphemes\n.. _`iter_graphemes_reverse()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.iter_graphemes_reverse\n.. _`grapheme_boundary_before()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.grapheme_boundary_before\n.. _`ljust()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.ljust\n.. _`rjust()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.rjust\n.. _`center()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.center\n.. _`wrap()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.wrap\n.. _`clip()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.clip\n.. _`strip_sequences()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.strip_sequences\n.. _`propagate_sgr()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.propagate_sgr\n.. _`TextSizing`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.TextSizing\n.. _`TextSizingParams`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.TextSizingParams\n.. _`iter_sequences()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.iter_sequences\n.. _`list_versions()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.list_versions\n.. _`list_term_programs()`: https://wcwidth.readthedocs.io/en/latest/api.html#wcwidth.list_term_programs\n.. _`Unicode Standard Annex #29`: https://www.unicode.org/reports/tr29/\n.. _`Terminal.detect_ambiguous_width()`: https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.detect_ambiguous_width\n.. _`parity padding`: https://jazcap53.github.io/pythons-eccentric-strcenter.html\n.. _`kitty text sizing protocol`: https://sw.kovidgoyal.net/kitty/text-sizing-protocol/\n.. _`Grapheme Clusters and Terminal Emulators`: https://mitchellh.com/writing/grapheme-clusters-in-terminals\n.. _`terminal-unicode-core.tex`: https://github.com/contour-terminal/terminal-unicode-core/blob/master/spec/terminal-unicode-core.tex\n.. _`State of Terminal Emulators in 2025`: https://www.jeffquast.com/post/state-of-terminal-emulation-2025/\n.. _`Perfecting Terminal Character Width Using Correction Tables (2026)`: https://www.jeffquast.com/post/perfecting-terminal-character-width-using-correction-tables/\n.. _XTVERSION: https://vtdn.dev/docs/dcs/xtversion/\n.. _ENQ: https://documentation.help/PuTTY/config-answerback.html\n.. _detectable: https://ucs-detect.readthedocs.io/results.html#terminal-identification\n.. |pypi_downloads| image:: https://img.shields.io/pypi/dm/wcwidth.svg?logo=pypi\n    :alt: Downloads\n    :target: https://pypi.org/project/wcwidth/\n.. |codecov| image:: https://codecov.io/gh/jquast/wcwidth/branch/master/graph/badge.svg\n    :alt: codecov.io Code Coverage\n    :target: https://app.codecov.io/gh/jquast/wcwidth/\n.. |license| image:: https://img.shields.io/pypi/l/wcwidth.svg\n    :target: https://pypi.org/project/wcwidth/\n    :alt: MIT License\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

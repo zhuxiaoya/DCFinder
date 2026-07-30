@@ -1,0 +1,1252 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/6e/e9/e2ae007456069dbe01865c69a4203a7ada6f7e337b78fc2f12e51bd3fae7/jupytext-1.19.4-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=032d4ef4bd2e96addcac780b9b1d6b5a266ca39beceaaca95bfb4f06e0b77029",
+          "hashes": {
+            "sha256": "032d4ef4bd2e96addcac780b9b1d6b5a266ca39beceaaca95bfb4f06e0b77029"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "jupytext",
+        "version": "1.19.4",
+        "summary": "Jupyter notebooks as Markdown documents, Julia, Python or R scripts",
+        "description_content_type": "text/markdown",
+        "author_email": "Marc Wouts <marc.wouts@gmail.com>",
+        "license": "MIT License\n        \n        Copyright (c) 2018-2026 Marc Wouts\n        \n        Permission is hereby granted, free of charge, to any person obtaining a copy\n        of this software and associated documentation files (the \"Software\"), to deal\n        in the Software without restriction, including without limitation the rights\n        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n        copies of the Software, and to permit persons to whom the Software is\n        furnished to do so, subject to the following conditions:\n        \n        The above copyright notice and this permission notice shall be included in all\n        copies or substantial portions of the Software.\n        \n        THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n        SOFTWARE.",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Framework :: Jupyter",
+          "Framework :: Jupyter :: JupyterLab :: 4",
+          "Framework :: Jupyter :: JupyterLab :: Extensions",
+          "Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Topic :: Text Processing :: Markup"
+        ],
+        "requires_dist": [
+          "markdown-it-py>=1.0",
+          "mdit-py-plugins",
+          "nbformat",
+          "packaging",
+          "pyyaml",
+          "tomli; python_version < '3.11'",
+          "autopep8; extra == 'dev'",
+          "black; extra == 'dev'",
+          "flake8; extra == 'dev'",
+          "gitpython; extra == 'dev'",
+          "ipykernel; extra == 'dev'",
+          "isort; extra == 'dev'",
+          "jupyter-fs[fs]>=1.0; extra == 'dev'",
+          "jupyter-server!=2.11; extra == 'dev'",
+          "marimo<=0.19.4,>=0.17.6; extra == 'dev'",
+          "nbconvert; extra == 'dev'",
+          "pre-commit; extra == 'dev'",
+          "pytest; extra == 'dev'",
+          "pytest-asyncio; extra == 'dev'",
+          "pytest-cov>=2.6.1; extra == 'dev'",
+          "pytest-randomly; extra == 'dev'",
+          "pytest-xdist; extra == 'dev'",
+          "sphinx; extra == 'dev'",
+          "sphinx-gallery>=0.8; extra == 'dev'",
+          "myst-parser; extra == 'docs'",
+          "sphinx; extra == 'docs'",
+          "sphinx-copybutton; extra == 'docs'",
+          "sphinx-rtd-theme; extra == 'docs'",
+          "pytest; extra == 'test'",
+          "pytest-asyncio; extra == 'test'",
+          "pytest-randomly; extra == 'test'",
+          "pytest-xdist; extra == 'test'",
+          "black; extra == 'test-cov'",
+          "ipykernel; extra == 'test-cov'",
+          "jupyter-server!=2.11; extra == 'test-cov'",
+          "nbconvert; extra == 'test-cov'",
+          "pytest; extra == 'test-cov'",
+          "pytest-asyncio; extra == 'test-cov'",
+          "pytest-cov>=2.6.1; extra == 'test-cov'",
+          "pytest-randomly; extra == 'test-cov'",
+          "pytest-xdist; extra == 'test-cov'",
+          "autopep8; extra == 'test-external'",
+          "black; extra == 'test-external'",
+          "flake8; extra == 'test-external'",
+          "gitpython; extra == 'test-external'",
+          "ipykernel; extra == 'test-external'",
+          "isort; extra == 'test-external'",
+          "jupyter-fs[fs]>=1.0; extra == 'test-external'",
+          "jupyter-server!=2.11; extra == 'test-external'",
+          "marimo<=0.19.4,>=0.17.6; extra == 'test-external'",
+          "nbconvert; extra == 'test-external'",
+          "pre-commit; extra == 'test-external'",
+          "pytest; extra == 'test-external'",
+          "pytest-asyncio; extra == 'test-external'",
+          "pytest-randomly; extra == 'test-external'",
+          "pytest-xdist; extra == 'test-external'",
+          "sphinx; extra == 'test-external'",
+          "sphinx-gallery>=0.8; extra == 'test-external'",
+          "black; extra == 'test-functional'",
+          "pytest; extra == 'test-functional'",
+          "pytest-asyncio; extra == 'test-functional'",
+          "pytest-randomly; extra == 'test-functional'",
+          "pytest-xdist; extra == 'test-functional'",
+          "black; extra == 'test-integration'",
+          "ipykernel; extra == 'test-integration'",
+          "jupyter-server!=2.11; extra == 'test-integration'",
+          "nbconvert; extra == 'test-integration'",
+          "pytest; extra == 'test-integration'",
+          "pytest-asyncio; extra == 'test-integration'",
+          "pytest-randomly; extra == 'test-integration'",
+          "pytest-xdist; extra == 'test-integration'",
+          "bash-kernel; extra == 'test-ui'"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://github.com/jupytext/jupytext",
+          "Source Code, https://github.com/jupytext/jupytext",
+          "Documentation, https://jupytext.org"
+        ],
+        "provides_extra": [
+          "dev",
+          "docs",
+          "test",
+          "test-cov",
+          "test-external",
+          "test-functional",
+          "test-integration",
+          "test-ui"
+        ],
+        "description": "![](https://github.com/jupytext/jupytext/blob/17aea37c612f33a4e27eeee4b81966f1506920fd/docs/images/logo_large.png?raw=true)\n\n<!-- INDEX-START -->\n\n[![CI](https://github.com/jupytext/jupytext/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/jupytext/jupytext/actions)\n[![codecov.io](https://codecov.io/github/jupytext/jupytext/coverage.svg?branch=main)](https://codecov.io/gh/jupytext/jupytext/branch/main)\n[![MIT License](https://img.shields.io/github/license/jupytext/jupytext)](https://github.com/jupytext/jupytext/blob/main/LICENSE)\n[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)\n[![GitHub language count](https://img.shields.io/github/languages/count/jupytext/jupytext)](https://jupytext.org/formats/languages/)\n[![Conda Version](https://anaconda.org/conda-forge/jupytext/badges/version.svg)](https://anaconda.org/conda-forge/jupytext/)\n[![Pypi](https://img.shields.io/pypi/v/jupytext.svg)](https://pypi.python.org/pypi/jupytext)\n[![pyversions](https://img.shields.io/pypi/pyversions/jupytext.svg)](https://pypi.python.org/pypi/jupytext)\n[![Binder:lab](https://img.shields.io/badge/binder-jupyterlab-0172B2.svg)](https://mybinder.org/v2/gh/jupytext/jupytext/main?urlpath=lab/tree/demo/get_started.ipynb)\n[![Binder:notebook](https://img.shields.io/badge/binder-notebook-0172B2.svg)](https://mybinder.org/v2/gh/jupytext/jupytext/main?filepath=demo)\n[![launch - renku](https://renkulab.io/renku-badge.svg)](https://renkulab.io/projects/best-practices/jupytext/sessions/new?autostart=1)\n[![Jupyter Con 2020](https://img.shields.io/badge/YouTube-JupyterCon%202020-red.svg)](https://www.youtube.com/watch?v=SDYdeVfMh48)\n\n# Jupytext\n\nHave you always wished Jupyter notebooks were plain text documents? Wished you could edit them in your favorite IDE? And get clear and meaningful diffs when doing version control? Then, Jupytext may well be the tool you're looking for!\n\n## Text Notebooks\n\nA Python notebook encoded in the `py:percent` [format](https://github.com/jupytext/jupytext/blob/main/docs/formats-scripts.md#the-percent-format) has a `.py` extension and looks like this:\n\n```\n# %% [markdown]\n# This is a markdown cell\n\n# %%\ndef f(x):\n  return 3*x+1\n```\n\nOnly the notebook inputs (and optionally, the metadata) are included. Text notebooks are well suited for version control. You can also edit or refactor them in an IDE - the `.py` notebook above is a regular Python file.\n\nWe recommend the `percent` format for notebooks that mostly contain code. The `percent` format is available for Julia, Python, R and many other [languages](https://github.com/jupytext/jupytext/blob/main/docs/languages.md).\n\nIf your notebook is documentation-oriented, a [Markdown-based format](https://github.com/jupytext/jupytext/blob/main/docs/formats-markdown.md) (text notebooks with a `.md` extension) might be more appropriate. Depending on what you plan to do with your notebook, you might prefer the Myst Markdown format, which interoperates very well with Jupyter Book, or Quarto Markdown, or even Pandoc Markdown.\n\n## Installation\n\nInstall Jupytext in the Python environment that you use for Jupyter. Use either\n\n    pip install jupytext\n\nor\n\n    conda install jupytext -c conda-forge\n\nThen, restart your JupyterLab server, and make sure Jupytext is activated in Jupyter:  `.py` and `.md` files have a Notebook icon, and you can open them as Notebooks with a right click in JupyterLab.\n\n![Notebook icon on text notebooks](https://github.com/jupytext/jupytext/blob/64b4be818508760116f91bf156342cb4cf724d93/docs/images/jupyterlab_right_click.png?raw=true)\n\n## Paired Notebooks\n\nText notebooks with a `.py` or `.md` extension are well suited for version control. They can be edited or authored conveniently in an IDE. You can open and run them as notebooks in JupyterLab with a right click. However, the notebook outputs are lost when the notebook is closed, as only the notebook inputs are saved in text notebooks.\n\nA convenient alternative to text notebooks are [paired notebooks](https://github.com/jupytext/jupytext/blob/main/docs/paired-notebooks.md). These are a set of two files, say `.ipynb` and `.py`, that contain the same notebook, but in different formats.\n\nYou can edit the `.py` version of the paired notebook, and get the edits back in Jupyter by selecting _reload notebook from disk_. The outputs will be reloaded from the `.ipynb` file, if it exists. The `.ipynb` version will be updated or recreated the next time you save the notebook in Jupyter.\n\n💡 **Tip:** You can automate the notebook reloading by installing the [Jupyter Collaboration](https://github.com/jupytext/jupytext/blob/main/docs/jupyter-collaboration.md) extension.\n\nTo pair a notebook in JupyterLab, use the command `Pair Notebook with percent Script` from the Command Palette:\n\n![](https://github.com/jupytext/jupytext/blob/64b4be818508760116f91bf156342cb4cf724d93/docs/images/pair_commands.png?raw=true)\n\nTo pair all the notebooks in a certain directory, create a [configuration file](https://github.com/jupytext/jupytext/blob/main/docs/config.md) with this content:\n\n```\n# jupytext.toml at the root of your notebook directory\nformats = \"ipynb,py:percent\"\n```\n\n## Command line\n\nJupytext is also available at the [command line](https://github.com/jupytext/jupytext/blob/main/docs/using-cli.md). You can\n\n- pair a notebook with `jupytext --set-formats ipynb,py:percent notebook.ipynb`\n- synchronize the paired files with `jupytext --sync notebook.py` (the inputs are loaded from the most recent paired file)\n- convert a notebook in one format to another with `jupytext --to ipynb notebook.py` (use `-o` if you want a specific output file)\n- pipe a notebook to a linter with e.g. `jupytext --pipe black notebook.ipynb`\n\n## Sample use cases\n\n### Notebooks under version control\n\nThis is a quick how-to:\n- Open your `.ipynb` notebook in Jupyter and [pair](https://github.com/jupytext/jupytext/blob/main/docs/paired-notebooks.md) it to a `.py` notebook, using either the _pair_ command in JupyterLab, or a global [configuration file](https://github.com/jupytext/jupytext/blob/main/docs/config.md)\n- Save the notebook - this creates a `.py` notebook\n- Add this `.py` notebook to version control\n\nYou might exclude `.ipynb` files from version control (unless you want to see the outputs versioned!). Jupytext will recreate the `.ipynb` files locally when the users open and save the `.py` notebooks.\n\n### Collaborating on notebooks with Git\n\nCollaborating on Jupyter notebooks through Git becomes as easy as collaborating on text files.\n\nAssume that you have your `.py` notebooks under version control (see above). Then,\n- Your collaborator pulls the `.py` notebook\n- They open it _as a notebook_ in Jupyter (right-click in JupyterLab)\n- At that stage the notebook has no outputs. They run the notebook and save it. Outputs are regenerated, and a local `.ipynb` file is created\n- They edit the notebook, and push the updated `notebook.py` file. The diff is nothing else than a standard diff on a Python script.\n- You pull the updated `notebook.py` script, and refresh your browser. The input cells are updated based on the new content of `notebook.py`. The outputs are reloaded from your local `.ipynb` file. Finally, the kernel variables are untouched, so you have the option to run only the modified cells to get the new outputs.\n\n### Editing or refactoring a notebook in an IDE\n\nOnce your notebook is [paired](https://github.com/jupytext/jupytext/blob/main/docs/paired-notebooks.md) with a `.py` file, you can easily edit or refactor the `.py` representation of the notebook in an IDE.\n\nOnce you are done editing the `.py` notebook, you will just have to _reload_ the notebook in Jupyter to get the latest edits there.\n\nNote: It is simpler to close the `.ipynb` notebook in Jupyter when you edit the paired `.py` file. There is no obligation to do so; however, if you don't, you should be prepared to read carefully the pop-up messages. If Jupyter tries to save the notebook while the paired `.py` file has also been edited on disk since the last reload, a conflict will be detected and you will be asked to decide which version of the notebook (in memory or on disk) is the appropriate one. Alternatively, the [Jupyter Collaboration](https://github.com/jupytext/jupytext/blob/main/docs/jupyter-collaboration.md) extension provides an autoreload feature which simplifies this.\n\n## More resources\n\nRead more about Jupytext in the [documentation](https://jupytext.org).\n\nIf you're new to Jupytext, you may want to start with the [FAQ](https://github.com/jupytext/jupytext/blob/main/docs/faq.md) or with the [Tutorials](https://github.com/jupytext/jupytext/blob/main/docs/tutorials.md).\n\nThere is also this short introduction to Jupytext: [![](https://img.shields.io/badge/YouTube-JupyterCon%202020-red.svg)](https://www.youtube.com/watch?v=SDYdeVfMh48).\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/b3/81/4da04ced5a082363ecfa159c010d200ecbd959ae410c10c0264a38cac0f5/markdown_it_py-4.2.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=9f7ebbcd14fe59494226453aed97c1070d83f8d24b6fc3a3bcf9a38092641c4a",
+          "hashes": {
+            "sha256": "9f7ebbcd14fe59494226453aed97c1070d83f8d24b6fc3a3bcf9a38092641c4a"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "markdown-it-py",
+        "version": "4.2.0",
+        "summary": "Python port of markdown-it. Markdown parsing, done right!",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "markdown",
+          "lexer",
+          "parser",
+          "commonmark",
+          "markdown-it"
+        ],
+        "author_email": "Chris Sewell <chrisj_sewell@hotmail.com>",
+        "license_file": [
+          "LICENSE",
+          "LICENSE.markdown-it"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Text Processing :: Markup"
+        ],
+        "requires_dist": [
+          "mdurl~=0.1",
+          "psutil ; extra == \"benchmarking\"",
+          "pytest ; extra == \"benchmarking\"",
+          "pytest-benchmark ; extra == \"benchmarking\"",
+          "commonmark~=0.9 ; extra == \"compare\"",
+          "markdown~=3.4 ; extra == \"compare\"",
+          "mistletoe~=1.0 ; extra == \"compare\"",
+          "mistune~=3.0 ; extra == \"compare\"",
+          "panflute~=2.3 ; extra == \"compare\"",
+          "markdown-it-pyrs ; extra == \"compare\"",
+          "linkify-it-py>=1,<3 ; extra == \"linkify\"",
+          "mdit-py-plugins>=0.5.0 ; extra == \"plugins\"",
+          "gprof2dot ; extra == \"profiling\"",
+          "mdit-py-plugins>=0.5.0 ; extra == \"rtd\"",
+          "myst-parser ; extra == \"rtd\"",
+          "pyyaml ; extra == \"rtd\"",
+          "sphinx ; extra == \"rtd\"",
+          "sphinx-copybutton ; extra == \"rtd\"",
+          "sphinx-design ; extra == \"rtd\"",
+          "sphinx-book-theme~=1.0 ; extra == \"rtd\"",
+          "jupyter_sphinx ; extra == \"rtd\"",
+          "ipykernel ; extra == \"rtd\"",
+          "coverage ; extra == \"testing\"",
+          "pytest ; extra == \"testing\"",
+          "pytest-cov ; extra == \"testing\"",
+          "pytest-regressions ; extra == \"testing\"",
+          "pytest-timeout ; extra == \"testing\"",
+          "requests ; extra == \"testing\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Documentation, https://markdown-it-py.readthedocs.io",
+          "Homepage, https://github.com/executablebooks/markdown-it-py"
+        ],
+        "provides_extra": [
+          "benchmarking",
+          "compare",
+          "linkify",
+          "plugins",
+          "profiling",
+          "rtd",
+          "testing"
+        ],
+        "description": "# markdown-it-py\n\n[![Github-CI][github-ci]][github-link]\n[![Coverage Status][codecov-badge]][codecov-link]\n[![PyPI][pypi-badge]][pypi-link]\n[![Conda][conda-badge]][conda-link]\n[![PyPI - Downloads][install-badge]][install-link]\n\n<p align=\"center\">\n  <img alt=\"markdown-it-py icon\" src=\"https://raw.githubusercontent.com/executablebooks/markdown-it-py/master/docs/_static/markdown-it-py.svg\">\n</p>\n\n> Markdown parser done right.\n\n- Follows the __[CommonMark spec](http://spec.commonmark.org/)__ for baseline parsing\n- Configurable syntax: you can add new rules and even replace existing ones.\n- Pluggable: Adds syntax extensions to extend the parser (see the [plugin list][md-plugins]).\n- High speed (see our [benchmarking tests][md-performance])\n- Easy to configure for [security][md-security]\n- Member of [Google's Assured Open Source Software](https://cloud.google.com/assured-open-source-software/docs/supported-packages)\n\nThis is a Python port of [markdown-it], and some of its associated plugins.\nFor more details see: <https://markdown-it-py.readthedocs.io>.\n\nFor details on [markdown-it] itself, see:\n\n- The __[Live demo](https://markdown-it.github.io)__\n- [The markdown-it README][markdown-it-readme]\n\n**See also:** [markdown-it-pyrs](https://github.com/chrisjsewell/markdown-it-pyrs) for an experimental Rust binding,\nfor even more speed!\n\n## Installation\n\n### PIP\n\n```bash\npip install markdown-it-py[plugins]\n```\n\nor with extras\n\n```bash\npip install markdown-it-py[linkify,plugins]\n```\n\n### Conda\n\n```bash\nconda install -c conda-forge markdown-it-py\n```\n\nor with extras\n\n```bash\nconda install -c conda-forge markdown-it-py linkify-it-py mdit-py-plugins\n```\n\n## Usage\n\n### Python API Usage\n\nRender markdown to HTML with markdown-it-py and a custom configuration\nwith and without plugins and features:\n\n```python\nfrom markdown_it import MarkdownIt\nfrom mdit_py_plugins.front_matter import front_matter_plugin\nfrom mdit_py_plugins.footnote import footnote_plugin\n\nmd = (\n    MarkdownIt('commonmark', {'breaks':True,'html':True})\n    .use(front_matter_plugin)\n    .use(footnote_plugin)\n    .enable('table')\n)\ntext = (\"\"\"\n---\na: 1\n---\n\na | b\n- | -\n1 | 2\n\nA footnote [^1]\n\n[^1]: some details\n\"\"\")\ntokens = md.parse(text)\nhtml_text = md.render(text)\n\n## To export the html to a file, uncomment the lines below:\n# from pathlib import Path\n# Path(\"output.html\").write_text(html_text)\n```\n\n### Command-line Usage\n\nRender markdown to HTML with markdown-it-py from the\ncommand-line:\n\n```console\nusage: markdown-it [-h] [-v] [--stdin|filenames [filenames ...]]\n\nParse one or more markdown files, convert each to HTML, and print to stdout\n\npositional arguments:\n  --stdin        read source Markdown file from standard input\n  filenames      specify an optional list of files to convert\n\noptional arguments:\n  -h, --help     show this help message and exit\n  -v, --version  show program's version number and exit\n\nInteractive:\n\n  $ markdown-it\n  markdown-it-py [version 0.0.0] (interactive)\n  Type Ctrl-D to complete input, or Ctrl-C to exit.\n  >>> # Example\n  ... > markdown *input*\n  ...\n  <h1>Example</h1>\n  <blockquote>\n  <p>markdown <em>input</em></p>\n  </blockquote>\n\nBatch:\n\n  $ markdown-it README.md README.footer.md > index.html\n\n```\n\n## References / Thanks\n\nBig thanks to the authors of [markdown-it]:\n\n- Alex Kocharin [github/rlidwka](https://github.com/rlidwka)\n- Vitaly Puzrin [github/puzrin](https://github.com/puzrin)\n\nAlso [John MacFarlane](https://github.com/jgm) for his work on the CommonMark spec and reference implementations.\n\n[github-ci]: https://github.com/executablebooks/markdown-it-py/actions/workflows/tests.yml/badge.svg?branch=master\n[github-link]: https://github.com/executablebooks/markdown-it-py\n[pypi-badge]: https://img.shields.io/pypi/v/markdown-it-py.svg\n[pypi-link]: https://pypi.org/project/markdown-it-py\n[conda-badge]: https://anaconda.org/conda-forge/markdown-it-py/badges/version.svg\n[conda-link]: https://anaconda.org/conda-forge/markdown-it-py\n[codecov-badge]: https://codecov.io/gh/executablebooks/markdown-it-py/branch/master/graph/badge.svg\n[codecov-link]: https://codecov.io/gh/executablebooks/markdown-it-py\n[install-badge]: https://img.shields.io/pypi/dw/markdown-it-py?label=pypi%20installs\n[install-link]: https://pypistats.org/packages/markdown-it-py\n\n[CommonMark spec]: http://spec.commonmark.org/\n[markdown-it]: https://github.com/markdown-it/markdown-it\n[markdown-it-readme]: https://github.com/markdown-it/markdown-it/blob/master/README.md\n[md-security]: https://markdown-it-py.readthedocs.io/en/latest/security.html\n[md-performance]: https://markdown-it-py.readthedocs.io/en/latest/performance.html\n[md-plugins]: https://markdown-it-py.readthedocs.io/en/latest/plugins.html\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8",
+          "hashes": {
+            "sha256": "84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "mdurl",
+        "version": "0.1.2",
+        "summary": "Markdown URL utilities",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "markdown",
+          "commonmark"
+        ],
+        "author_email": "Taneli Hukkinen <hukkin@users.noreply.github.com>",
+        "classifier": [
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: MacOS",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX :: Linux",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Typing :: Typed"
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Homepage, https://github.com/executablebooks/mdurl"
+        ],
+        "description": "# mdurl\n\n[![Build Status](https://github.com/executablebooks/mdurl/workflows/Tests/badge.svg?branch=master)](https://github.com/executablebooks/mdurl/actions?query=workflow%3ATests+branch%3Amaster+event%3Apush)\n[![codecov.io](https://codecov.io/gh/executablebooks/mdurl/branch/master/graph/badge.svg)](https://codecov.io/gh/executablebooks/mdurl)\n[![PyPI version](https://img.shields.io/pypi/v/mdurl)](https://pypi.org/project/mdurl)\n\nThis is a Python port of the JavaScript [mdurl](https://www.npmjs.com/package/mdurl) package.\nSee the [upstream README.md file](https://github.com/markdown-it/mdurl/blob/master/README.md) for API documentation.\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/a5/69/6da5581c6a7fede7dc261bf4e67d6adca4196f176b43288b55b3db395b6e/mdit_py_plugins-0.6.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=214c82fb2ac524472ab6a5bcab1de80f73b50443e187f401bfd77efbc7c6481d",
+          "hashes": {
+            "sha256": "214c82fb2ac524472ab6a5bcab1de80f73b50443e187f401bfd77efbc7c6481d"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "mdit-py-plugins",
+        "version": "0.6.1",
+        "summary": "Collection of plugins for markdown-it-py",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "markdown",
+          "markdown-it",
+          "lexer",
+          "parser",
+          "development"
+        ],
+        "author_email": "Chris Sewell <chrisj_sewell@hotmail.com>",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Text Processing :: Markup"
+        ],
+        "requires_dist": [
+          "markdown-it-py>=2.0.0,<5.0.0",
+          "pre-commit ; extra == \"code-style\"",
+          "myst-parser ; extra == \"rtd\"",
+          "sphinx-book-theme ; extra == \"rtd\"",
+          "coverage ; extra == \"testing\"",
+          "pytest ; extra == \"testing\"",
+          "pytest-cov ; extra == \"testing\"",
+          "pytest-regressions ; extra == \"testing\"",
+          "pytest-timeout ; extra == \"testing\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Documentation, https://mdit-py-plugins.readthedocs.io",
+          "Homepage, https://github.com/executablebooks/mdit-py-plugins"
+        ],
+        "provides_extra": [
+          "code-style",
+          "rtd",
+          "testing"
+        ],
+        "description": "# mdit-py-plugins\n\n[![Github-CI][github-ci]][github-link]\n[![Coverage Status][codecov-badge]][codecov-link]\n[![PyPI][pypi-badge]][pypi-link]\n[![Conda][conda-badge]][conda-link]\n[![Code style: black][black-badge]][black-link]\n\nCollection of core plugins for [markdown-it-py](https://github.com/executablebooks/markdown-it-py).\n\n[github-ci]: https://github.com/executablebooks/mdit-py-plugins/workflows/continuous-integration/badge.svg\n[github-link]: https://github.com/executablebooks/mdit-py-plugins\n[pypi-badge]: https://img.shields.io/pypi/v/mdit-py-plugins.svg\n[pypi-link]: https://pypi.org/project/mdit-py-plugins\n[conda-badge]: https://anaconda.org/conda-forge/mdit-py-plugins/badges/version.svg\n[conda-link]: https://anaconda.org/conda-forge/mdit-py-plugins\n[codecov-badge]: https://codecov.io/gh/executablebooks/mdit-py-plugins/branch/master/graph/badge.svg\n[codecov-link]: https://codecov.io/gh/executablebooks/mdit-py-plugins\n[black-badge]: https://img.shields.io/badge/code%20style-black-000000.svg\n[black-link]: https://github.com/ambv/black\n[install-badge]: https://img.shields.io/pypi/dw/mdit-py-plugins?label=pypi%20installs\n[install-link]: https://pypistats.org/packages/mdit-py-plugins\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/a9/82/0340caa499416c78e5d8f5f05947ae4bc3cba53c9f038ab6e9ed964e22f1/nbformat-5.10.4-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=3b48d6c8fbca4b299bf3982ea7db1af21580e4fec269ad087b9e81588891200b",
+          "hashes": {
+            "sha256": "3b48d6c8fbca4b299bf3982ea7db1af21580e4fec269ad087b9e81588891200b"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.3",
+        "name": "nbformat",
+        "version": "5.10.4",
+        "summary": "The Jupyter Notebook format",
+        "description_content_type": "text/plain",
+        "keywords": [
+          "Interactive",
+          "Interpreter",
+          "Shell",
+          "Web"
+        ],
+        "author_email": "Jupyter Development Team <jupyter@googlegroups.com>",
+        "license": "BSD 3-Clause License\n        \n        - Copyright (c) 2001-2015, IPython Development Team\n        - Copyright (c) 2015-, Jupyter Development Team\n        \n        All rights reserved.\n        \n        Redistribution and use in source and binary forms, with or without\n        modification, are permitted provided that the following conditions are met:\n        \n        1. Redistributions of source code must retain the above copyright notice, this\n           list of conditions and the following disclaimer.\n        \n        2. Redistributions in binary form must reproduce the above copyright notice,\n           this list of conditions and the following disclaimer in the documentation\n           and/or other materials provided with the distribution.\n        \n        3. Neither the name of the copyright holder nor the names of its\n           contributors may be used to endorse or promote products derived from\n           this software without specific prior written permission.\n        \n        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\n        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\n        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\n        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\n        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\n        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\n        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "Intended Audience :: System Administrators",
+          "License :: OSI Approved :: BSD License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12"
+        ],
+        "requires_dist": [
+          "fastjsonschema>=2.15",
+          "jsonschema>=2.6",
+          "jupyter-core!=5.0.*,>=4.12",
+          "traitlets>=5.1",
+          "myst-parser; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "sphinx; extra == 'docs'",
+          "sphinxcontrib-github-alt; extra == 'docs'",
+          "sphinxcontrib-spelling; extra == 'docs'",
+          "pep440; extra == 'test'",
+          "pre-commit; extra == 'test'",
+          "pytest; extra == 'test'",
+          "testpath; extra == 'test'"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Homepage, https://jupyter.org",
+          "Changelog, https://github.com/jupyter/nbformat/blob/main/CHANGELOG.md",
+          "Documentation, https://nbformat.readthedocs.io/",
+          "Repository, https://github.com/jupyter/nbformat.git"
+        ],
+        "provides_extra": [
+          "docs",
+          "test"
+        ],
+        "description": "This package contains the base implementation of the Jupyter Notebook format,\nand Python APIs for working with notebooks."
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/cb/a8/20d0723294217e47de6d9e2e40fd4a9d2f7c4b6ef974babd482a59743694/fastjsonschema-2.21.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=1c797122d0a86c5cace2e54bf4e819c36223b552017172f32c5c024a6b77e463",
+          "hashes": {
+            "sha256": "1c797122d0a86c5cace2e54bf4e819c36223b552017172f32c5c024a6b77e463"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "fastjsonschema",
+        "version": "2.21.2",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "license",
+          "license-file",
+          "provides-extra",
+          "summary"
+        ],
+        "summary": "Fastest Python implementation of JSON schema",
+        "home_page": "https://github.com/horejsek/python-fastjsonschema",
+        "author": "Michal Horejsek",
+        "author_email": "fastjsonschema@horejsek.com",
+        "license": "BSD",
+        "license_file": [
+          "LICENSE",
+          "AUTHORS"
+        ],
+        "classifier": [
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "License :: OSI Approved :: BSD License",
+          "Operating System :: OS Independent",
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "colorama; extra == \"devel\"",
+          "jsonschema; extra == \"devel\"",
+          "json-spec; extra == \"devel\"",
+          "pylint; extra == \"devel\"",
+          "pytest; extra == \"devel\"",
+          "pytest-benchmark; extra == \"devel\"",
+          "pytest-cache; extra == \"devel\"",
+          "validictory; extra == \"devel\""
+        ],
+        "provides_extra": [
+          "devel"
+        ],
+        "description": "===========================\nFast JSON schema for Python\n===========================\n\n|PyPI| |Pythons|\n\n.. |PyPI| image:: https://img.shields.io/pypi/v/fastjsonschema.svg\n   :alt: PyPI version\n   :target: https://pypi.python.org/pypi/fastjsonschema\n\n.. |Pythons| image:: https://img.shields.io/pypi/pyversions/fastjsonschema.svg\n   :alt: Supported Python versions\n   :target: https://pypi.python.org/pypi/fastjsonschema\n\nSee `documentation <https://horejsek.github.io/python-fastjsonschema/>`_.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/69/90/f63fb5873511e014207a475e2bb4e8b2e570d655b00ac19a9a0ca0a385ee/jsonschema-4.26.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce",
+          "hashes": {
+            "sha256": "d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "jsonschema",
+        "version": "4.26.0",
+        "summary": "An implementation of JSON Schema validation for Python",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "data validation",
+          "json",
+          "json schema",
+          "jsonschema",
+          "validation"
+        ],
+        "author_email": "Julian Berman <Julian+jsonschema@GrayVines.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "COPYING"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: File Formats :: JSON",
+          "Topic :: File Formats :: JSON :: JSON Schema"
+        ],
+        "requires_dist": [
+          "attrs>=22.2.0",
+          "jsonschema-specifications>=2023.03.6",
+          "referencing>=0.28.4",
+          "rpds-py>=0.25.0",
+          "fqdn; extra == 'format'",
+          "idna; extra == 'format'",
+          "isoduration; extra == 'format'",
+          "jsonpointer>1.13; extra == 'format'",
+          "rfc3339-validator; extra == 'format'",
+          "rfc3987; extra == 'format'",
+          "uri-template; extra == 'format'",
+          "webcolors>=1.11; extra == 'format'",
+          "fqdn; extra == 'format-nongpl'",
+          "idna; extra == 'format-nongpl'",
+          "isoduration; extra == 'format-nongpl'",
+          "jsonpointer>1.13; extra == 'format-nongpl'",
+          "rfc3339-validator; extra == 'format-nongpl'",
+          "rfc3986-validator>0.1.0; extra == 'format-nongpl'",
+          "rfc3987-syntax>=1.1.0; extra == 'format-nongpl'",
+          "uri-template; extra == 'format-nongpl'",
+          "webcolors>=24.6.0; extra == 'format-nongpl'"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://github.com/python-jsonschema/jsonschema",
+          "Documentation, https://python-jsonschema.readthedocs.io/",
+          "Issues, https://github.com/python-jsonschema/jsonschema/issues/",
+          "Funding, https://github.com/sponsors/Julian",
+          "Tidelift, https://tidelift.com/subscription/pkg/pypi-jsonschema?utm_source=pypi-jsonschema&utm_medium=referral&utm_campaign=pypi-link",
+          "Changelog, https://github.com/python-jsonschema/jsonschema/blob/main/CHANGELOG.rst",
+          "Source, https://github.com/python-jsonschema/jsonschema"
+        ],
+        "provides_extra": [
+          "format",
+          "format-nongpl"
+        ],
+        "description": "==========\njsonschema\n==========\n\n|PyPI| |Pythons| |CI| |ReadTheDocs| |Precommit| |Zenodo|\n\n.. |PyPI| image:: https://img.shields.io/pypi/v/jsonschema.svg\n   :alt: PyPI version\n   :target: https://pypi.org/project/jsonschema/\n\n.. |Pythons| image:: https://img.shields.io/pypi/pyversions/jsonschema.svg\n   :alt: Supported Python versions\n   :target: https://pypi.org/project/jsonschema/\n\n.. |CI| image:: https://github.com/python-jsonschema/jsonschema/workflows/CI/badge.svg\n  :alt: Build status\n  :target: https://github.com/python-jsonschema/jsonschema/actions?query=workflow%3ACI\n\n.. |ReadTheDocs| image:: https://readthedocs.org/projects/python-jsonschema/badge/?version=stable&style=flat\n   :alt: ReadTheDocs status\n   :target: https://python-jsonschema.readthedocs.io/en/stable/\n\n.. |Precommit| image:: https://results.pre-commit.ci/badge/github/python-jsonschema/jsonschema/main.svg\n   :alt: pre-commit.ci status\n   :target: https://results.pre-commit.ci/latest/github/python-jsonschema/jsonschema/main\n\n.. |Zenodo| image:: https://zenodo.org/badge/3072629.svg\n   :alt: Zenodo DOI\n   :target: https://zenodo.org/badge/latestdoi/3072629\n\n\n``jsonschema`` is an implementation of the `JSON Schema <https://json-schema.org>`_ specification for Python.\n\n.. code:: python\n\n    >>> from jsonschema import validate\n\n    >>> # A sample schema, like what we'd get from json.load()\n    >>> schema = {\n    ...     \"type\" : \"object\",\n    ...     \"properties\" : {\n    ...         \"price\" : {\"type\" : \"number\"},\n    ...         \"name\" : {\"type\" : \"string\"},\n    ...     },\n    ... }\n\n    >>> # If no exception is raised by validate(), the instance is valid.\n    >>> validate(instance={\"name\" : \"Eggs\", \"price\" : 34.99}, schema=schema)\n\n    >>> validate(\n    ...     instance={\"name\" : \"Eggs\", \"price\" : \"Invalid\"}, schema=schema,\n    ... )                                   # doctest: +IGNORE_EXCEPTION_DETAIL\n    Traceback (most recent call last):\n        ...\n    ValidationError: 'Invalid' is not of type 'number'\n\nIt can also be used from the command line by installing `check-jsonschema <https://github.com/python-jsonschema/check-jsonschema>`_.\n\nFeatures\n--------\n\n* Full support for `Draft 2020-12 <https://python-jsonschema.readthedocs.io/en/latest/api/jsonschema/validators/#jsonschema.validators.Draft202012Validator>`_, `Draft 2019-09 <https://python-jsonschema.readthedocs.io/en/latest/api/jsonschema/validators/#jsonschema.validators.Draft201909Validator>`_, `Draft 7 <https://python-jsonschema.readthedocs.io/en/latest/api/jsonschema/validators/#jsonschema.validators.Draft7Validator>`_, `Draft 6 <https://python-jsonschema.readthedocs.io/en/latest/api/jsonschema/validators/#jsonschema.validators.Draft6Validator>`_, `Draft 4 <https://python-jsonschema.readthedocs.io/en/latest/api/jsonschema/validators/#jsonschema.validators.Draft4Validator>`_ and `Draft 3 <https://python-jsonschema.readthedocs.io/en/latest/api/jsonschema/validators/#jsonschema.validators.Draft3Validator>`_\n\n* `Lazy validation <https://python-jsonschema.readthedocs.io/en/latest/api/jsonschema/protocols/#jsonschema.protocols.Validator.iter_errors>`_ that can iteratively report *all* validation errors.\n\n* `Programmatic querying <https://python-jsonschema.readthedocs.io/en/latest/errors/>`_ of which properties or items failed validation.\n\n\nInstallation\n------------\n\n``jsonschema`` is available on `PyPI <https://pypi.org/project/jsonschema/>`_. You can install using `pip <https://pip.pypa.io/en/stable/>`_:\n\n.. code:: bash\n\n    $ pip install jsonschema\n\n\nExtras\n======\n\nTwo extras are available when installing the package, both currently related to ``format`` validation:\n\n    * ``format``\n    * ``format-nongpl``\n\nThey can be used when installing in order to include additional dependencies, e.g.:\n\n.. code:: bash\n\n    $ pip install jsonschema'[format]'\n\nBe aware that the mere presence of these dependencies – or even the specification of ``format`` checks in a schema – do *not* activate format checks (as per the specification).\nPlease read the `format validation documentation <https://python-jsonschema.readthedocs.io/en/latest/validate/#validating-formats>`_ for further details.\n\nAbout\n-----\n\nI'm Julian Berman.\n\n``jsonschema`` is on `GitHub <https://github.com/python-jsonschema/jsonschema>`_.\n\nGet in touch, via GitHub or otherwise, if you've got something to contribute, it'd be most welcome!\n\nIf you feel overwhelmingly grateful, you can also `sponsor me <https://github.com/sponsors/Julian/>`_.\n\nAnd for companies who appreciate ``jsonschema`` and its continued support and growth, ``jsonschema`` is also now supportable via `TideLift <https://tidelift.com/subscription/pkg/pypi-jsonschema?utm_source=pypi-jsonschema&utm_medium=referral&utm_campaign=readme>`_.\n\n\nRelease Information\n-------------------\n\nv4.26.0\n=======\n\n* Decrease import time by delaying importing of ``urllib.request`` (#1416).\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+          "hashes": {
+            "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "attrs",
+        "version": "26.1.0",
+        "summary": "Classes Without Boilerplate",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "attribute",
+          "boilerplate",
+          "class"
+        ],
+        "author_email": "Hynek Schlawack <hs@ox.cx>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Typing :: Typed"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Documentation, https://www.attrs.org/",
+          "Changelog, https://www.attrs.org/en/stable/changelog.html",
+          "GitHub, https://github.com/python-attrs/attrs",
+          "Funding, https://github.com/sponsors/hynek",
+          "Tidelift, https://tidelift.com/subscription/pkg/pypi-attrs?utm_source=pypi-attrs&utm_medium=pypi"
+        ],
+        "description": "<p align=\"center\">\n  <a href=\"https://www.attrs.org/\">\n    <img src=\"https://raw.githubusercontent.com/python-attrs/attrs/main/docs/_static/attrs_logo.svg\" width=\"35%\" alt=\"attrs\" />\n  </a>\n</p>\n\n\n*attrs* is the Python package that will bring back the **joy** of **writing classes** by relieving you from the drudgery of implementing object protocols (aka [dunder methods](https://www.attrs.org/en/latest/glossary.html#term-dunder-methods)).\nTrusted by NASA for [Mars missions since 2020](https://github.com/readme/featured/nasa-ingenuity-helicopter)!\n\nIts main goal is to help you to write **concise** and **correct** software without slowing down your code.\n\n\n## Sponsors\n\n*attrs* would not be possible without our [amazing sponsors](https://github.com/sponsors/hynek).\nEspecially those generously supporting us at the *The Organization* tier and higher:\n\n<!-- sponsor-break-begin -->\n\n<p align=\"center\">\n\n<!-- [[[cog\nimport pathlib, tomllib\n\nfor sponsor in tomllib.loads(pathlib.Path(\"pyproject.toml\").read_text())[\"tool\"][\"sponcon\"][\"sponsors\"]:\n      print(f'<a href=\"{sponsor[\"url\"]}\"><img title=\"{sponsor[\"title\"]}\" src=\"https://www.attrs.org/en/26.1.0/_static/sponsors/{sponsor[\"img\"]}\" width=\"190\" /></a>')\n]]] -->\n<a href=\"https://www.variomedia.de/\"><img title=\"Variomedia AG\" src=\"https://www.attrs.org/en/26.1.0/_static/sponsors/Variomedia.svg\" width=\"190\" /></a>\n<a href=\"https://tidelift.com/?utm_source=lifter&utm_medium=referral&utm_campaign=hynek\"><img title=\"Tidelift\" src=\"https://www.attrs.org/en/26.1.0/_static/sponsors/Tidelift.svg\" width=\"190\" /></a>\n<a href=\"https://kraken.tech/\"><img title=\"Kraken Tech\" src=\"https://www.attrs.org/en/26.1.0/_static/sponsors/Kraken.svg\" width=\"190\" /></a>\n<a href=\"https://privacy-solutions.org/\"><img title=\"Privacy Solutions\" src=\"https://www.attrs.org/en/26.1.0/_static/sponsors/Privacy-Solutions.svg\" width=\"190\" /></a>\n<a href=\"https://filepreviews.io/\"><img title=\"FilePreviews\" src=\"https://www.attrs.org/en/26.1.0/_static/sponsors/FilePreviews.svg\" width=\"190\" /></a>\n<a href=\"https://www.testmuai.com/?utm_medium=sponsor&utm_source=structlog\"><img title=\"TestMu AI\" src=\"https://www.attrs.org/en/26.1.0/_static/sponsors/TestMu-AI.svg\" width=\"190\" /></a>\n<a href=\"https://polar.sh/\"><img title=\"Polar\" src=\"https://www.attrs.org/en/26.1.0/_static/sponsors/Polar.svg\" width=\"190\" /></a>\n<!-- [[[end]]] -->\n\n</p>\n\n<!-- sponsor-break-end -->\n\n<p align=\"center\">\n   <strong>Please consider <a href=\"https://github.com/sponsors/hynek\">joining them</a> to help make <em>attrs</em>’s maintenance more sustainable!</strong>\n</p>\n\n<!-- teaser-end -->\n\n## Example\n\n*attrs* gives you a class decorator and a way to declaratively define the attributes on that class:\n\n<!-- code-begin -->\n\n```pycon\n>>> from attrs import asdict, define, make_class, Factory\n\n>>> @define\n... class SomeClass:\n...     a_number: int = 42\n...     list_of_numbers: list[int] = Factory(list)\n...\n...     def hard_math(self, another_number):\n...         return self.a_number + sum(self.list_of_numbers) * another_number\n\n\n>>> sc = SomeClass(1, [1, 2, 3])\n>>> sc\nSomeClass(a_number=1, list_of_numbers=[1, 2, 3])\n\n>>> sc.hard_math(3)\n19\n>>> sc == SomeClass(1, [1, 2, 3])\nTrue\n>>> sc != SomeClass(2, [3, 2, 1])\nTrue\n\n>>> asdict(sc)\n{'a_number': 1, 'list_of_numbers': [1, 2, 3]}\n\n>>> SomeClass()\nSomeClass(a_number=42, list_of_numbers=[])\n\n>>> C = make_class(\"C\", [\"a\", \"b\"])\n>>> C(\"foo\", \"bar\")\nC(a='foo', b='bar')\n```\n\nAfter *declaring* your attributes, *attrs* gives you:\n\n- a concise and explicit overview of the class's attributes,\n- a nice human-readable `__repr__`,\n- equality-checking methods,\n- an initializer,\n- and much more,\n\n*without* writing dull boilerplate code again and again and *without* runtime performance penalties.\n\n---\n\nThis example uses *attrs*'s modern APIs that have been introduced in version 20.1.0, and the *attrs* package import name that has been added in version 21.3.0.\nThe classic APIs (`@attr.s`, `attr.ib`, plus their serious-business aliases) and the `attr` package import name will remain **indefinitely**.\n\nCheck out [*On The Core API Names*](https://www.attrs.org/en/latest/names.html) for an in-depth explanation!\n\n\n### Hate Type Annotations!?\n\nNo problem!\nTypes are entirely **optional** with *attrs*.\nSimply assign `attrs.field()` to the attributes instead of annotating them with types:\n\n```python\nfrom attrs import define, field\n\n@define\nclass SomeClass:\n    a_number = field(default=42)\n    list_of_numbers = field(factory=list)\n```\n\n\n## Data Classes\n\nOn the tin, *attrs* might remind you of `dataclasses` (and indeed, `dataclasses` [are a descendant](https://hynek.me/articles/import-attrs/) of *attrs*).\nIn practice it does a lot more and is more flexible.\nFor instance, it allows you to define [special handling of NumPy arrays for equality checks](https://www.attrs.org/en/stable/comparison.html#customization), allows more ways to [plug into the initialization process](https://www.attrs.org/en/stable/init.html#hooking-yourself-into-initialization), has a replacement for `__init_subclass__`, and allows for stepping through the generated methods using a debugger.\n\nFor more details, please refer to our [comparison page](https://www.attrs.org/en/stable/why.html#data-classes), but generally speaking, we are more likely to commit crimes against nature to make things work that one would expect to work, but that are quite complicated in practice.\n\n\n## Project Information\n\n- [**Changelog**](https://www.attrs.org/en/stable/changelog.html)\n- [**Documentation**](https://www.attrs.org/)\n- [**PyPI**](https://pypi.org/project/attrs/)\n- [**Source Code**](https://github.com/python-attrs/attrs)\n- [**Contributing**](https://github.com/python-attrs/attrs/blob/main/.github/CONTRIBUTING.md)\n- [**Third-party Extensions**](https://github.com/python-attrs/attrs/wiki/Extensions-to-attrs)\n- **Get Help**: use the `python-attrs` tag on [Stack Overflow](https://stackoverflow.com/questions/tagged/python-attrs)\n\n\n### *attrs* for Enterprise\n\nAvailable as part of the [Tidelift Subscription](https://tidelift.com/?utm_source=lifter&utm_medium=referral&utm_campaign=hynek).\n\nThe maintainers of *attrs* and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source packages you use to build your applications.\nSave time, reduce risk, and improve code health, while paying the maintainers of the exact packages you use.\n\n## Release Information\n\n### Backwards-incompatible Changes\n\n- Field aliases are now resolved *before* calling `field_transformer`, so transformers receive fully populated `Attribute` objects with usable `alias` values instead of `None`.\n  The new `Attribute.alias_is_default` flag indicates whether the alias was auto-generated (`True`) or explicitly set by the user (`False`).\n  [#1509](https://github.com/python-attrs/attrs/issues/1509)\n\n\n### Changes\n\n- Fix type annotations for `attrs.validators.optional()`, so it no longer rejects tuples with more than one validator.\n  [#1496](https://github.com/python-attrs/attrs/issues/1496)\n- The `attrs.validators.disabled()` contextmanager can now be nested.\n  [#1513](https://github.com/python-attrs/attrs/issues/1513)\n- Frozen classes can set `on_setattr=attrs.setters.NO_OP` in addition to `None`.\n  [#1515](https://github.com/python-attrs/attrs/issues/1515)\n- It's now possible to pass *attrs* **instances** in addition to *attrs* **classes** to `attrs.fields()`.\n  [#1529](https://github.com/python-attrs/attrs/issues/1529)\n\n\n\n---\n\n[Full changelog →](https://www.attrs.org/en/stable/changelog.html)\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/41/45/1a4ed80516f02155c51f51e8cedb3c1902296743db0bbc66608a0db2814f/jsonschema_specifications-2025.9.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe",
+          "hashes": {
+            "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "jsonschema-specifications",
+        "version": "2025.9.1",
+        "summary": "The JSON Schema meta-schemas and vocabularies, exposed as a Registry",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "data validation",
+          "json",
+          "json schema",
+          "jsonschema",
+          "validation"
+        ],
+        "author_email": "Julian Berman <Julian+jsonschema-specifications@GrayVines.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "COPYING"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: File Formats :: JSON",
+          "Topic :: File Formats :: JSON :: JSON Schema"
+        ],
+        "requires_dist": [
+          "referencing>=0.31.0"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Documentation, https://jsonschema-specifications.readthedocs.io/",
+          "Homepage, https://github.com/python-jsonschema/jsonschema-specifications",
+          "Issues, https://github.com/python-jsonschema/jsonschema-specifications/issues/",
+          "Funding, https://github.com/sponsors/Julian",
+          "Tidelift, https://tidelift.com/subscription/pkg/pypi-jsonschema-specifications?utm_source=pypi-jsonschema-specifications&utm_medium=referral&utm_campaign=pypi-link",
+          "Source, https://github.com/python-jsonschema/jsonschema-specifications"
+        ],
+        "description": "=============================\n``jsonschema-specifications``\n=============================\n\n|PyPI| |Pythons| |CI| |ReadTheDocs|\n\nJSON support files from the `JSON Schema Specifications <https://json-schema.org/specification.html>`_ (metaschemas, vocabularies, etc.), packaged for runtime access from Python as a `referencing-based Schema Registry <https://referencing.readthedocs.io/en/stable/api/#referencing.Registry>`_.\n\n.. |PyPI| image:: https://img.shields.io/pypi/v/jsonschema-specifications.svg\n  :alt: PyPI version\n  :target: https://pypi.org/project/jsonschema-specifications/\n\n.. |Pythons| image:: https://img.shields.io/pypi/pyversions/jsonschema-specifications.svg\n  :alt: Supported Python versions\n  :target: https://pypi.org/project/jsonschema-specifications/\n\n.. |CI| image:: https://github.com/python-jsonschema/jsonschema-specifications/workflows/CI/badge.svg\n  :alt: Build status\n  :target: https://github.com/python-jsonschema/jsonschema-specifications/actions?query=workflow%3ACI\n\n.. |ReadTheDocs| image:: https://readthedocs.org/projects/jsonschema-specifications/badge/?version=stable&style=flat\n  :alt: ReadTheDocs status\n  :target: https://jsonschema-specifications.readthedocs.io/en/stable/\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/e7/e7/80988e32bf6f73919a113473a604f5a8f09094de312b9d52b79c2df7612b/jupyter_core-5.9.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=ebf87fdc6073d142e114c72c9e29a9d7ca03fad818c5d300ce2adc1fb0743407",
+          "hashes": {
+            "sha256": "ebf87fdc6073d142e114c72c9e29a9d7ca03fad818c5d300ce2adc1fb0743407"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "jupyter_core",
+        "version": "5.9.1",
+        "summary": "Jupyter core package. A base package on which Jupyter projects rely.",
+        "description_content_type": "text/plain",
+        "author_email": "Jupyter Development Team <jupyter@googlegroups.org>",
+        "license_expression": "BSD-3-Clause",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Framework :: Jupyter",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "Intended Audience :: System Administrators",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3"
+        ],
+        "requires_dist": [
+          "platformdirs>=2.5",
+          "traitlets>=5.3",
+          "intersphinx-registry; extra == 'docs'",
+          "myst-parser; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "sphinx-autodoc-typehints; extra == 'docs'",
+          "sphinxcontrib-spelling; extra == 'docs'",
+          "traitlets; extra == 'docs'",
+          "ipykernel; extra == 'test'",
+          "pre-commit; extra == 'test'",
+          "pytest-cov; extra == 'test'",
+          "pytest-timeout; extra == 'test'",
+          "pytest<9; extra == 'test'"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://jupyter.org",
+          "Documentation, https://jupyter-core.readthedocs.io/",
+          "Source, https://github.com/jupyter/jupyter_core",
+          "Tracker, https://github.com/jupyter/jupyter_core/issues"
+        ],
+        "provides_extra": [
+          "docs",
+          "test"
+        ],
+        "description": "Jupyter core package. A base package on which Jupyter projects rely."
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/81/e6/cd9575ac904136b3cbf7aa7ee819ef86eedb7274e46f230e94ea4342e729/platformdirs-4.10.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=fb516cdb12eb0d857d0cd85a7c57cea4d060bee4578d6cf5a14dfdf8cbf8784a",
+          "hashes": {
+            "sha256": "fb516cdb12eb0d857d0cd85a7c57cea4d060bee4578d6cf5a14dfdf8cbf8784a"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "platformdirs",
+        "version": "4.10.0",
+        "summary": "A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`.",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "appdirs",
+          "application",
+          "cache",
+          "directory",
+          "log",
+          "user"
+        ],
+        "maintainer_email": "Bernát Gábor <gaborjbernat@gmail.com>, Julian Berman <Julian@GrayVines.com>, Ofek Lev <oss@ofek.dev>, Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Changelog, https://platformdirs.readthedocs.io/en/latest/changelog.html",
+          "Documentation, https://platformdirs.readthedocs.io",
+          "Homepage, https://github.com/tox-dev/platformdirs",
+          "Source, https://github.com/tox-dev/platformdirs",
+          "Tracker, https://github.com/tox-dev/platformdirs/issues"
+        ],
+        "description": "# platformdirs\n\n[![PyPI version](https://badge.fury.io/py/platformdirs.svg)](https://badge.fury.io/py/platformdirs)\n[![Python versions](https://img.shields.io/pypi/pyversions/platformdirs.svg)](https://pypi.python.org/pypi/platformdirs/)\n[![CI](https://github.com/tox-dev/platformdirs/actions/workflows/check.yaml/badge.svg)](https://github.com/platformdirs/platformdirs/actions)\n[![Downloads](https://static.pepy.tech/badge/platformdirs/month)](https://pepy.tech/project/platformdirs)\n\nA Python package for determining platform-specific directories (e.g. user data, config, cache, logs). Handles the\ndifferences between macOS, Windows, Linux/Unix, and Android so you don't have to.\n\n## Quick start\n\n```python\nfrom platformdirs import PlatformDirs\n\ndirs = PlatformDirs(\"MyApp\", \"MyCompany\")\ndirs.user_data_dir  # ~/.local/share/MyApp (Linux)\ndirs.user_config_dir  # ~/.config/MyApp (Linux)\ndirs.user_cache_dir  # ~/.cache/MyApp (Linux)\ndirs.user_state_dir  # ~/.local/state/MyApp (Linux)\ndirs.user_log_dir  # ~/.local/state/MyApp/log (Linux)\ndirs.user_documents_dir  # ~/Documents\ndirs.user_downloads_dir  # ~/Downloads\ndirs.user_runtime_dir  # /run/user/<uid>/MyApp (Linux)\n```\n\nFor Path objects instead of strings:\n\n```python\nfrom platformdirs import PlatformDirs\n\ndirs = PlatformDirs(\"MyApp\", \"MyCompany\")\ndirs.user_data_path  # pathlib.Path('~/.local/share/MyApp')\ndirs.user_config_path  # pathlib.Path('~/.config/MyApp')\n```\n\nConvenience functions for quick access:\n\n```python\nfrom platformdirs import user_data_dir, user_config_path\n\nuser_data_dir(\"MyApp\", \"MyCompany\")  # returns str\nuser_config_path(\"MyApp\", \"MyCompany\")  # returns pathlib.Path\n```\n\n## Directory types\n\n**Application directories** — scoped to your app name and version:\n\n- **Data**: Persistent application data (`user_data_dir`, `site_data_dir`)\n- **Config**: Configuration files and settings (`user_config_dir`, `site_config_dir`)\n- **Preference**: User preferences, distinct from config on macOS (`user_preference_dir`)\n- **Cache**: Cached data that can be regenerated (`user_cache_dir`, `site_cache_dir`)\n- **State**: Non-essential runtime state like window positions (`user_state_dir`, `site_state_dir`)\n- **Logs**: Log files (`user_log_dir`, `site_log_dir`)\n- **Runtime**: Runtime files like sockets and PIDs (`user_runtime_dir`, `site_runtime_dir`)\n\nApp dirs have both `user_*` (per-user, writable) and `site_*` (system-wide, read-only) variants where applicable.\n\n**User media directories** — standard user-facing folders, not scoped to app name:\n\n- **Documents** (`user_documents_dir`), **Downloads** (`user_downloads_dir`)\n- **Pictures** (`user_pictures_dir`), **Videos** (`user_videos_dir`), **Music** (`user_music_dir`)\n- **Desktop** (`user_desktop_dir`), **Projects** (`user_projects_dir`)\n- **Public share** (`user_publicshare_dir`), **Templates** (`user_templates_dir`)\n- **Fonts** (`user_fonts_dir`) — user-writable font installation directory\n- **Executable** (`user_bin_dir`, `site_bin_dir`), **Applications** (`user_applications_dir`, `site_applications_dir`)\n\n## Documentation\n\nFull documentation is available at [platformdirs.readthedocs.io](https://platformdirs.readthedocs.io):\n\n- **[Getting started tutorial](https://platformdirs.readthedocs.io/en/latest/tutorial.html)** -- learn core concepts\n  through real-world examples\n- **[How-to guides](https://platformdirs.readthedocs.io/en/latest/howto.html)** -- recipes for common tasks and\n  platform-specific tips\n- **[API reference](https://platformdirs.readthedocs.io/en/latest/api.html)** -- complete list of functions and classes\n- **[Platform details](https://platformdirs.readthedocs.io/en/latest/platforms.html)** -- default paths for each\n  operating system\n\nContributions are welcome! See [CONTRIBUTING.md](https://github.com/tox-dev/platformdirs/blob/main/CONTRIBUTING.md) for\ndetails.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/2c/58/ca301544e1fa93ed4f80d724bf5b194f6e4b945841c5bfd555878eea9fcb/referencing-0.37.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231",
+          "hashes": {
+            "sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "referencing",
+        "version": "0.37.0",
+        "summary": "JSON Referencing + Python",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "asyncapi",
+          "json",
+          "jsonschema",
+          "openapi",
+          "referencing"
+        ],
+        "author_email": "Julian Berman <Julian+referencing@GrayVines.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "COPYING"
+        ],
+        "classifier": [
+          "Development Status :: 3 - Alpha",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: File Formats :: JSON",
+          "Topic :: File Formats :: JSON :: JSON Schema"
+        ],
+        "requires_dist": [
+          "attrs>=22.2.0",
+          "rpds-py>=0.7.0",
+          "typing-extensions>=4.4.0; python_version < '3.13'"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Documentation, https://referencing.readthedocs.io/",
+          "Homepage, https://github.com/python-jsonschema/referencing",
+          "Issues, https://github.com/python-jsonschema/referencing/issues/",
+          "Funding, https://github.com/sponsors/Julian",
+          "Tidelift, https://tidelift.com/subscription/pkg/pypi-referencing?utm_source=pypi-referencing&utm_medium=referral&utm_campaign=pypi-link",
+          "Changelog, https://referencing.readthedocs.io/en/stable/changes/",
+          "Source, https://github.com/python-jsonschema/referencing"
+        ],
+        "description": "===============\n``referencing``\n===============\n\n|PyPI| |Pythons| |CI| |ReadTheDocs| |pre-commit|\n\n.. |PyPI| image:: https://img.shields.io/pypi/v/referencing.svg\n  :alt: PyPI version\n  :target: https://pypi.org/project/referencing/\n\n.. |Pythons| image:: https://img.shields.io/pypi/pyversions/referencing.svg\n  :alt: Supported Python versions\n  :target: https://pypi.org/project/referencing/\n\n.. |CI| image:: https://github.com/python-jsonschema/referencing/workflows/CI/badge.svg\n  :alt: Build status\n  :target: https://github.com/python-jsonschema/referencing/actions?query=workflow%3ACI\n\n.. |ReadTheDocs| image:: https://readthedocs.org/projects/referencing/badge/?version=stable&style=flat\n   :alt: ReadTheDocs status\n   :target: https://referencing.readthedocs.io/en/stable/\n\n.. |pre-commit| image:: https://results.pre-commit.ci/badge/github/python-jsonschema/referencing/main.svg\n  :alt: pre-commit.ci status\n  :target: https://results.pre-commit.ci/latest/github/python-jsonschema/referencing/main\n\n\nAn implementation-agnostic implementation of JSON reference resolution.\n\nSee `the documentation <https://referencing.readthedocs.io/>`_ for more details.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/61/b5/707f6cf0066a6412aacc11d17920ea2e19e5b2f04081c64526eb35b5c6e7/rpds_py-0.30.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=0c0e95f6819a19965ff420f65578bacb0b00f251fefe2c8b23347c37174271f3",
+          "hashes": {
+            "sha256": "0c0e95f6819a19965ff420f65578bacb0b00f251fefe2c8b23347c37174271f3"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "rpds-py",
+        "version": "0.30.0",
+        "summary": "Python bindings to Rust's persistent data structures (rpds)",
+        "description_content_type": "text/x-rst; charset=UTF-8",
+        "keywords": [
+          "data structures",
+          "rust",
+          "persistent"
+        ],
+        "author_email": "Julian Berman <Julian+rpds@GrayVines.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 3 - Alpha",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Rust",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Documentation, https://rpds.readthedocs.io/",
+          "Homepage, https://github.com/crate-py/rpds",
+          "Issues, https://github.com/crate-py/rpds/issues/",
+          "Funding, https://github.com/sponsors/Julian",
+          "Tidelift, https://tidelift.com/subscription/pkg/pypi-rpds-py?utm_source=pypi-rpds-py&utm_medium=referral&utm_campaign=pypi-link",
+          "Source, https://github.com/crate-py/rpds",
+          "Upstream, https://github.com/orium/rpds"
+        ],
+        "description": "===========\n``rpds.py``\n===========\n\n|PyPI| |Pythons| |CI|\n\n.. |PyPI| image:: https://img.shields.io/pypi/v/rpds-py.svg\n  :alt: PyPI version\n  :target: https://pypi.org/project/rpds-py/\n\n.. |Pythons| image:: https://img.shields.io/pypi/pyversions/rpds-py.svg\n  :alt: Supported Python versions\n  :target: https://pypi.org/project/rpds-py/\n\n.. |CI| image:: https://github.com/crate-py/rpds/workflows/CI/badge.svg\n  :alt: Build status\n  :target: https://github.com/crate-py/rpds/actions?query=workflow%3ACI\n\n.. |ReadTheDocs| image:: https://readthedocs.org/projects/referencing/badge/?version=stable&style=flat\n   :alt: ReadTheDocs status\n   :target: https://referencing.readthedocs.io/en/stable/\n\n\nPython bindings to the `Rust rpds crate <https://docs.rs/rpds/>`_ for persistent data structures.\n\nWhat's here is quite minimal (in transparency, it was written initially to support replacing ``pyrsistent`` in the `referencing library <https://github.com/python-jsonschema/referencing>`_).\nIf you see something missing (which is very likely), a PR is definitely welcome to add it.\n\nInstallation\n------------\n\nThe distribution on PyPI is named ``rpds.py`` (equivalently ``rpds-py``), and thus can be installed via e.g.:\n\n.. code:: sh\n\n    $ pip install rpds-py\n\nNote that if you install ``rpds-py`` from source, you will need a Rust toolchain installed, as it is a build-time dependency.\nAn example of how to do so in a ``Dockerfile`` can be found `here <https://github.com/bowtie-json-schema/bowtie/blob/e77fd93598cb6e7dc1b8b1f53c00e5aa410c201a/implementations/python-jsonschema/Dockerfile#L1-L8>`_.\n\nIf you believe you are on a common platform which should have wheels built (i.e. and not need to compile from source), feel free to file an issue or pull request modifying the GitHub action used here to build wheels via ``maturin``.\n\nUsage\n-----\n\nMethods in general are named similarly to their ``rpds`` counterparts (rather than ``pyrsistent``\\ 's conventions, though probably a full drop-in ``pyrsistent``\\ -compatible wrapper module is a good addition at some point).\n\n.. code:: python\n\n    >>> from rpds import HashTrieMap, HashTrieSet, List\n\n    >>> m = HashTrieMap({\"foo\": \"bar\", \"baz\": \"quux\"})\n    >>> m.insert(\"spam\", 37) == HashTrieMap({\"foo\": \"bar\", \"baz\": \"quux\", \"spam\": 37})\n    True\n    >>> m.remove(\"foo\") == HashTrieMap({\"baz\": \"quux\"})\n    True\n\n    >>> s = HashTrieSet({\"foo\", \"bar\", \"baz\", \"quux\"})\n    >>> s.insert(\"spam\") == HashTrieSet({\"foo\", \"bar\", \"baz\", \"quux\", \"spam\"})\n    True\n    >>> s.remove(\"foo\") == HashTrieSet({\"bar\", \"baz\", \"quux\"})\n    True\n\n    >>> L = List([1, 3, 5])\n    >>> L.push_front(-1) == List([-1, 1, 3, 5])\n    True\n    >>> L.rest == List([3, 5])\n    True\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/96/8d/1080ee4c231f361b6ce4470d556c8c435b67c7e0753aaa641497ee92f88b/traitlets-5.15.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=770a53705f84b81ac107e83a1b3328ff2dae16094d8fc3cfc004e4b22dfd8e92",
+          "hashes": {
+            "sha256": "770a53705f84b81ac107e83a1b3328ff2dae16094d8fc3cfc004e4b22dfd8e92"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "traitlets",
+        "version": "5.15.1",
+        "summary": "Traitlets Python configuration system",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "Interactive",
+          "Interpreter",
+          "Shell",
+          "Web"
+        ],
+        "author_email": "IPython Development Team <ipython-dev@python.org>",
+        "license": "BSD 3-Clause License\n        \n        - Copyright (c) 2001-, IPython Development Team\n        \n        All rights reserved.\n        \n        Redistribution and use in source and binary forms, with or without\n        modification, are permitted provided that the following conditions are met:\n        \n        1. Redistributions of source code must retain the above copyright notice, this\n           list of conditions and the following disclaimer.\n        \n        2. Redistributions in binary form must reproduce the above copyright notice,\n           this list of conditions and the following disclaimer in the documentation\n           and/or other materials provided with the distribution.\n        \n        3. Neither the name of the copyright holder nor the names of its\n           contributors may be used to endorse or promote products derived from\n           this software without specific prior written permission.\n        \n        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\n        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\n        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\n        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\n        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\n        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\n        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Framework :: IPython",
+          "Framework :: Jupyter",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Science/Research",
+          "Intended Audience :: System Administrators",
+          "License :: OSI Approved :: BSD License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Typing :: Typed"
+        ],
+        "requires_dist": [
+          "myst-parser; extra == 'docs'",
+          "pydata-sphinx-theme; extra == 'docs'",
+          "sphinx; extra == 'docs'",
+          "argcomplete>=3.0.3; extra == 'test'",
+          "mypy<1.19,>=1.17.0; extra == 'test'",
+          "pre-commit; extra == 'test'",
+          "pytest-mock; extra == 'test'",
+          "pytest-mypy-testing; extra == 'test'",
+          "pytest<8.2,>=7.0; extra == 'test'"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Homepage, https://github.com/ipython/traitlets",
+          "Documentation, https://traitlets.readthedocs.io",
+          "Source, https://github.com/ipython/traitlets",
+          "Funding, https://numfocus.org",
+          "Tracker, https://github.com/ipython/traitlets/issues"
+        ],
+        "provides_extra": [
+          "docs",
+          "test"
+        ],
+        "description": "# Traitlets\n\n[![Tests](https://github.com/ipython/traitlets/actions/workflows/tests.yml/badge.svg)](https://github.com/ipython/traitlets/actions/workflows/tests.yml)\n[![Documentation Status](https://readthedocs.org/projects/traitlets/badge/?version=latest)](https://traitlets.readthedocs.io/en/latest/?badge=latest)\n[![Tidelift](https://tidelift.com/subscription/pkg/pypi-traitlets)](https://tidelift.com/badges/package/pypi/traitlets)\n\n|               |                                      |\n| ------------- | ------------------------------------ |\n| **home**      | https://github.com/ipython/traitlets |\n| **pypi-repo** | https://pypi.org/project/traitlets/  |\n| **docs**      | https://traitlets.readthedocs.io/    |\n| **license**   | Modified BSD License                 |\n\nTraitlets is a pure Python library enabling:\n\n- the enforcement of strong typing for attributes of Python objects\n  (typed attributes are called _\"traits\"_);\n- dynamically calculated default values;\n- automatic validation and coercion of trait attributes when attempting a\n  change;\n- registering for receiving notifications when trait values change;\n- reading configuring values from files or from command line\n  arguments - a distinct layer on top of traitlets, so you may use\n  traitlets without the configuration machinery.\n\nIts implementation relies on the [descriptor](https://docs.python.org/howto/descriptor.html)\npattern, and it is a lightweight pure-python alternative of the\n[_traits_ library](https://docs.enthought.com/traits/).\n\nTraitlets powers the configuration system of IPython and Jupyter\nand the declarative API of IPython interactive widgets.\n\n## Installation\n\nFor a local installation, make sure you have\n[pip installed](https://pip.pypa.io/en/stable/installing/) and run:\n\n```bash\npip install traitlets\n```\n\nFor a **development installation**, clone this repository, change into the\n`traitlets` root directory, and run pip:\n\n```bash\ngit clone https://github.com/ipython/traitlets.git\ncd traitlets\npip install -e .\n```\n\n## Running the tests\n\n```bash\npip install \"traitlets[test]\"\npy.test traitlets\n```\n\n## Code Styling\n\n`traitlets` has adopted automatic code formatting so you shouldn't\nneed to worry too much about your code style.\nAs long as your code is valid,\nthe pre-commit hook should take care of how it should look.\n\nTo install `pre-commit` locally, run the following::\n\n```\npip install pre-commit\npre-commit install\n```\n\nYou can invoke the pre-commit hook by hand at any time with::\n\n```\npre-commit run\n```\n\nwhich should run any autoformatting on your code\nand tell you about any errors it couldn't fix automatically.\nYou may also install [black integration](https://github.com/psf/black#editor-integration)\ninto your text editor to format code automatically.\n\nIf you have already committed files before setting up the pre-commit\nhook with `pre-commit install`, you can fix everything up using\n`pre-commit run --all-files`. You need to make the fixing commit\nyourself after that.\n\nSome of the hooks only run on CI by default, but you can invoke them by\nrunning with the `--hook-stage manual` argument.\n\n## Usage\n\nAny class with trait attributes must inherit from `HasTraits`.\nFor the list of available trait types and their properties, see the\n[Trait Types](https://traitlets.readthedocs.io/en/latest/trait_types.html)\nsection of the documentation.\n\n### Dynamic default values\n\nTo calculate a default value dynamically, decorate a method of your class with\n`@default({traitname})`. This method will be called on the instance, and\nshould return the default value. In this example, the `_username_default`\nmethod is decorated with `@default('username')`:\n\n```Python\nimport getpass\nfrom traitlets import HasTraits, Unicode, default\n\nclass Identity(HasTraits):\n    username = Unicode()\n\n    @default('username')\n    def _username_default(self):\n        return getpass.getuser()\n```\n\n### Callbacks when a trait attribute changes\n\nWhen a trait changes, an application can follow this trait change with\nadditional actions.\n\nTo do something when a trait attribute is changed, decorate a method with\n[`traitlets.observe()`](https://traitlets.readthedocs.io/en/latest/api.html?highlight=observe#traitlets.observe).\nThe method will be called with a single argument, a dictionary which contains\nan owner, new value, old value, name of the changed trait, and the event type.\n\nIn this example, the `_num_changed` method is decorated with `` @observe(`num`) ``:\n\n```Python\nfrom traitlets import HasTraits, Integer, observe\n\nclass TraitletsExample(HasTraits):\n    num = Integer(5, help=\"a number\").tag(config=True)\n\n    @observe('num')\n    def _num_changed(self, change):\n        print(\"{name} changed from {old} to {new}\".format(**change))\n```\n\nand is passed the following dictionary when called:\n\n```Python\n{\n  'owner': object,  # The HasTraits instance\n  'new': 6,         # The new value\n  'old': 5,         # The old value\n  'name': \"foo\",    # The name of the changed trait\n  'type': 'change', # The event type of the notification, usually 'change'\n}\n```\n\n### Validation and coercion\n\nEach trait type (`Int`, `Unicode`, `Dict` etc.) may have its own validation or\ncoercion logic. In addition, we can register custom cross-validators\nthat may depend on the state of other attributes. For example:\n\n```Python\nfrom traitlets import HasTraits, TraitError, Int, Bool, validate\n\nclass Parity(HasTraits):\n    value = Int()\n    parity = Int()\n\n    @validate('value')\n    def _valid_value(self, proposal):\n        if proposal['value'] % 2 != self.parity:\n            raise TraitError('value and parity should be consistent')\n        return proposal['value']\n\n    @validate('parity')\n    def _valid_parity(self, proposal):\n        parity = proposal['value']\n        if parity not in [0, 1]:\n            raise TraitError('parity should be 0 or 1')\n        if self.value % 2 != parity:\n            raise TraitError('value and parity should be consistent')\n        return proposal['value']\n\nparity_check = Parity(value=2)\n\n# Changing required parity and value together while holding cross validation\nwith parity_check.hold_trait_notifications():\n    parity_check.value = 1\n    parity_check.parity = 1\n```\n\nHowever, we **recommend** that custom cross-validators don't modify the state\nof the HasTraits instance.\n\n## About the IPython Development Team\n\nThe IPython Development Team is the set of all contributors to the IPython project.\nThis includes all of the IPython subprojects.\n\nThe core team that coordinates development on GitHub can be found here:\nhttps://github.com/jupyter/.\n\n## Our Copyright Policy\n\nIPython uses a shared copyright model. Each contributor maintains copyright\nover their contributions to IPython. But, it is important to note that these\ncontributions are typically only changes to the repositories. Thus, the IPython\nsource code, in its entirety is not the copyright of any single person or\ninstitution. Instead, it is the collective copyright of the entire IPython\nDevelopment Team. If individual contributors want to maintain a record of what\nchanges/contributions they have specific copyright on, they should indicate\ntheir copyright in the commit message of the change, when they commit the\nchange to one of the IPython repositories.\n\nWith this in mind, the following banner should be used in any source code file\nto indicate the copyright and license terms:\n\n```\n# Copyright (c) IPython Development Team.\n# Distributed under the terms of the Modified BSD License.\n```\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+          "hashes": {
+            "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "typing_extensions",
+        "version": "4.16.0",
+        "summary": "Backported and Experimental Type Hints for Python 3.9+",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "annotations",
+          "backport",
+          "checker",
+          "checking",
+          "function",
+          "hinting",
+          "hints",
+          "type",
+          "typechecking",
+          "typehinting",
+          "typehints",
+          "typing"
+        ],
+        "author_email": "\"Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee\" <levkivskyi@gmail.com>",
+        "license_expression": "PSF-2.0",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3.15",
+          "Topic :: Software Development"
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Bug Tracker, https://github.com/python/typing_extensions/issues",
+          "Changes, https://github.com/python/typing_extensions/blob/main/CHANGELOG.md",
+          "Documentation, https://typing-extensions.readthedocs.io/",
+          "Home, https://github.com/python/typing_extensions",
+          "Q & A, https://github.com/python/typing/discussions",
+          "Repository, https://github.com/python/typing_extensions"
+        ],
+        "description": "# Typing Extensions\n\n[![Chat at https://gitter.im/python/typing](https://badges.gitter.im/python/typing.svg)](https://gitter.im/python/typing)\n\n[Documentation](https://typing-extensions.readthedocs.io/en/latest/#) –\n[PyPI](https://pypi.org/project/typing-extensions/)\n\n## Overview\n\nThe `typing_extensions` module serves two related purposes:\n\n- Enable use of new type system features on older Python versions. For example,\n  `typing.TypeGuard` is new in Python 3.10, but `typing_extensions` allows\n  users on previous Python versions to use it too.\n- Enable experimentation with new type system PEPs before they are accepted and\n  added to the `typing` module.\n\n`typing_extensions` is treated specially by static type checkers such as\nmypy and pyright. Objects defined in `typing_extensions` are treated the same\nway as equivalent forms in `typing`.\n\n`typing_extensions` uses\n[Semantic Versioning](https://semver.org/). The\nmajor version will be incremented only for backwards-incompatible changes.\nTherefore, it's safe to depend\non `typing_extensions` like this: `typing_extensions ~=x.y`,\nwhere `x.y` is the first version that includes all features you need.\n[This](https://packaging.python.org/en/latest/specifications/version-specifiers/#compatible-release)\nis equivalent to `typing_extensions >=x.y, <(x+1)`. Do not depend on `~= x.y.z`\nunless you really know what you're doing; that defeats the purpose of\nsemantic versioning.\n\n## Included items\n\nSee [the documentation](https://typing-extensions.readthedocs.io/en/latest/#) for a\ncomplete listing of module contents.\n\n## Contributing\n\nSee [CONTRIBUTING.md](https://github.com/python/typing_extensions/blob/main/CONTRIBUTING.md)\nfor how to contribute to `typing_extensions`.\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/df/b2/87e62e8c3e2f4b32e5fe99e0b86d576da1312593b39f47d8ceef365e95ed/packaging-26.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=5fc45236b9446107ff2415ce77c807cee2862cb6fac22b8a73826d0693b0980e",
+          "hashes": {
+            "sha256": "5fc45236b9446107ff2415ce77c807cee2862cb6fac22b8a73826d0693b0980e"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "packaging",
+        "version": "26.2",
+        "summary": "Core utilities for Python packages",
+        "description_content_type": "text/x-rst",
+        "author_email": "Donald Stufft <donald@stufft.io>",
+        "license_expression": "Apache-2.0 OR BSD-2-Clause",
+        "license_file": [
+          "LICENSE",
+          "LICENSE.APACHE",
+          "LICENSE.BSD"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Python :: Free Threading :: 4 - Resilient",
+          "Typing :: Typed"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Documentation, https://packaging.pypa.io/",
+          "Source, https://github.com/pypa/packaging"
+        ],
+        "description": "packaging\n=========\n\n.. start-intro\n\nReusable core utilities for various Python Packaging\n`interoperability specifications <https://packaging.python.org/specifications/>`_.\n\nThis library provides utilities that implement the interoperability\nspecifications which have clearly one correct behaviour (eg: :pep:`440`)\nor benefit greatly from having a single shared implementation (eg: :pep:`425`).\n\n.. end-intro\n\nThe ``packaging`` project includes the following: version handling, specifiers,\nmarkers, requirements, tags, metadata, lockfiles, utilities.\n\nDocumentation\n-------------\n\nThe `documentation`_ provides information and the API for the following:\n\n- Version Handling\n- Specifiers\n- Markers\n- Licenses\n- Requirements\n- Metadata\n- Tags\n- Lockfiles (pylock)\n- Direct URL helpers\n- Dependency groups\n- Errors\n- Utilities\n\nInstallation\n------------\n\nUse ``pip`` to install these utilities::\n\n    pip install packaging\n\nThe ``packaging`` library uses calendar-based versioning (``YY.N``).\n\nDiscussion\n----------\n\nIf you run into bugs, you can file them in our `issue tracker`_.\n\nYou can also join discussions on `GitHub Discussions`_ to ask questions or get involved.\n\n.. _`documentation`: https://packaging.pypa.io/\n.. _`issue tracker`: https://github.com/pypa/packaging/issues\n.. _`GitHub Discussions`: https://github.com/pypa/packaging/discussions\n\n\nCode of Conduct\n---------------\n\nEveryone interacting in the packaging project's codebases, issue trackers, chat\nrooms, and mailing lists is expected to follow the `PSF Code of Conduct`_.\n\n.. _PSF Code of Conduct: https://github.com/pypa/.github/blob/main/CODE_OF_CONDUCT.md\n\nContributing\n------------\n\nThe ``CONTRIBUTING.rst`` file outlines how to contribute to this project as\nwell as how to report a potential security issue. The documentation for this\nproject also covers information about `project development`_ and `security`_.\n\n.. _`project development`: https://packaging.pypa.io/en/latest/development/\n.. _`security`: https://packaging.pypa.io/en/latest/security/\n\nProject History\n---------------\n\nPlease review the ``CHANGELOG.rst`` file or the `Changelog documentation`_ for\nrecent changes and project history.\n\n.. _`Changelog documentation`: https://packaging.pypa.io/en/latest/changelog/\n\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/7a/1e/7acc4f0e74c4b3d9531e24739e0ab832a5edf40e64fbae1a9c01941cabd7/pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=9c7708761fccb9397fe64bbc0395abcae8c4bf7b0eac081e12b809bf47700d0b",
+          "hashes": {
+            "sha256": "9c7708761fccb9397fe64bbc0395abcae8c4bf7b0eac081e12b809bf47700d0b"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "PyYAML",
+        "version": "6.0.3",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "download-url",
+          "home-page",
+          "license",
+          "license-file",
+          "platform",
+          "project-url",
+          "requires-python",
+          "summary"
+        ],
+        "platform": [
+          "Any"
+        ],
+        "summary": "YAML parser and emitter for Python",
+        "home_page": "https://pyyaml.org/",
+        "download_url": "https://pypi.org/project/PyYAML/",
+        "author": "Kirill Simonov",
+        "author_email": "xi@resolvent.net",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Cython",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Text Processing :: Markup"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Bug Tracker, https://github.com/yaml/pyyaml/issues",
+          "CI, https://github.com/yaml/pyyaml/actions",
+          "Documentation, https://pyyaml.org/wiki/PyYAMLDocumentation",
+          "Mailing lists, http://lists.sourceforge.net/lists/listinfo/yaml-core",
+          "Source Code, https://github.com/yaml/pyyaml"
+        ],
+        "description": "YAML is a data serialization format designed for human readability\nand interaction with scripting languages.  PyYAML is a YAML parser\nand emitter for Python.\n\nPyYAML features a complete YAML 1.1 parser, Unicode support, pickle\nsupport, capable extension API, and sensible error messages.  PyYAML\nsupports standard YAML tags and provides Python-specific tags that\nallow to represent an arbitrary Python object.\n\nPyYAML is applicable for a broad range of tasks from complex\nconfiguration files to object serialization and persistence.\n"
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/7b/61/cceae43728b7de99d9b847560c262873a1f6c98202171fd5ed62640b494b/tomli-2.4.1-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=0d85819802132122da43cb86656f8d1f8c6587d54ae7dcaf30e90533028b49fe",
+          "hashes": {
+            "sha256": "0d85819802132122da43cb86656f8d1f8c6587d54ae7dcaf30e90533028b49fe"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "tomli",
+        "version": "2.4.1",
+        "summary": "A lil' TOML parser",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "toml"
+        ],
+        "author_email": "Taneli Hukkinen <hukkin@users.noreply.github.com>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Operating System :: MacOS",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX :: Linux",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Typing :: Typed"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Changelog, https://github.com/hukkin/tomli/blob/master/CHANGELOG.md",
+          "Homepage, https://github.com/hukkin/tomli"
+        ],
+        "description": "[![Build Status](https://github.com/hukkin/tomli/actions/workflows/tests.yaml/badge.svg?branch=master)](https://github.com/hukkin/tomli/actions?query=workflow%3ATests+branch%3Amaster+event%3Apush)\n[![codecov.io](https://codecov.io/gh/hukkin/tomli/branch/master/graph/badge.svg)](https://codecov.io/gh/hukkin/tomli)\n[![PyPI version](https://img.shields.io/pypi/v/tomli)](https://pypi.org/project/tomli)\n\n# Tomli\n\n> A lil' TOML parser\n\n**Table of Contents** *generated with [mdformat-toc](https://github.com/hukkin/mdformat-toc)*\n\n<!-- mdformat-toc start --slug=github --maxlevel=6 --minlevel=2 -->\n\n- [Intro](#intro)\n- [Installation](#installation)\n- [Usage](#usage)\n  - [Parse a TOML string](#parse-a-toml-string)\n  - [Parse a TOML file](#parse-a-toml-file)\n  - [Handle invalid TOML](#handle-invalid-toml)\n  - [Construct `decimal.Decimal`s from TOML floats](#construct-decimaldecimals-from-toml-floats)\n  - [Building a `tomli`/`tomllib` compatibility layer](#building-a-tomlitomllib-compatibility-layer)\n- [FAQ](#faq)\n  - [Why this parser?](#why-this-parser)\n  - [Is comment preserving round-trip parsing supported?](#is-comment-preserving-round-trip-parsing-supported)\n  - [Is there a `dumps`, `write` or `encode` function?](#is-there-a-dumps-write-or-encode-function)\n  - [How do TOML types map into Python types?](#how-do-toml-types-map-into-python-types)\n- [Performance](#performance)\n  - [Mypyc generated wheel](#mypyc-generated-wheel)\n  - [Pure Python](#pure-python)\n\n<!-- mdformat-toc end -->\n\n## Intro<a name=\"intro\"></a>\n\nTomli is a Python library for parsing [TOML](https://toml.io).\nVersion 2.4.0 and later are compatible with [TOML v1.1.0](https://toml.io/en/v1.1.0).\nOlder versions are [TOML v1.0.0](https://toml.io/en/v1.0.0) compatible.\n\nA version of Tomli, the `tomllib` module,\nwas added to the standard library in Python 3.11\nvia [PEP 680](https://www.python.org/dev/peps/pep-0680/).\nTomli continues to provide a backport on PyPI for Python versions\nwhere the standard library module is not available\nand that have not yet reached their end-of-life.\n\nTomli uses [mypyc](https://github.com/mypyc/mypyc)\nto generate binary wheels for most of the widely used platforms,\nso Python 3.11+ users may prefer it over `tomllib` for improved performance.\nPure Python wheels are available on any platform and should perform the same as `tomllib`.\n\n## Installation<a name=\"installation\"></a>\n\n```bash\npip install tomli\n```\n\n## Usage<a name=\"usage\"></a>\n\n### Parse a TOML string<a name=\"parse-a-toml-string\"></a>\n\n```python\nimport tomli\n\ntoml_str = \"\"\"\n[[players]]\nname = \"Lehtinen\"\nnumber = 26\n\n[[players]]\nname = \"Numminen\"\nnumber = 27\n\"\"\"\n\ntoml_dict = tomli.loads(toml_str)\nassert toml_dict == {\n    \"players\": [{\"name\": \"Lehtinen\", \"number\": 26}, {\"name\": \"Numminen\", \"number\": 27}]\n}\n```\n\n### Parse a TOML file<a name=\"parse-a-toml-file\"></a>\n\n```python\nimport tomli\n\nwith open(\"path_to_file/conf.toml\", \"rb\") as f:\n    toml_dict = tomli.load(f)\n```\n\nThe file must be opened in binary mode (with the `\"rb\"` flag).\nBinary mode will enforce decoding the file as UTF-8 with universal newlines disabled,\nboth of which are required to correctly parse TOML.\n\n### Handle invalid TOML<a name=\"handle-invalid-toml\"></a>\n\n```python\nimport tomli\n\ntry:\n    toml_dict = tomli.loads(\"]] this is invalid TOML [[\")\nexcept tomli.TOMLDecodeError:\n    print(\"Yep, definitely not valid.\")\n```\n\nNote that error messages are considered informational only.\nThey should not be assumed to stay constant across Tomli versions.\n\n### Construct `decimal.Decimal`s from TOML floats<a name=\"construct-decimaldecimals-from-toml-floats\"></a>\n\n```python\nfrom decimal import Decimal\nimport tomli\n\ntoml_dict = tomli.loads(\"precision-matters = 0.982492\", parse_float=Decimal)\nassert isinstance(toml_dict[\"precision-matters\"], Decimal)\nassert toml_dict[\"precision-matters\"] == Decimal(\"0.982492\")\n```\n\nNote that `decimal.Decimal` can be replaced with another callable that converts a TOML float from string to a Python type.\nThe `decimal.Decimal` is, however, a practical choice for use cases where float inaccuracies can not be tolerated.\n\nIllegal types are `dict` and `list`, and their subtypes.\nA `ValueError` will be raised if `parse_float` produces illegal types.\n\n### Building a `tomli`/`tomllib` compatibility layer<a name=\"building-a-tomlitomllib-compatibility-layer\"></a>\n\nPython versions 3.11+ ship with a version of Tomli:\nthe `tomllib` standard library module.\nTo build code that uses the standard library if available,\nbut still works seamlessly with Python 3.6+,\ndo the following.\n\nInstead of a hard Tomli dependency, use the following\n[dependency specifier](https://packaging.python.org/en/latest/specifications/dependency-specifiers/)\nto only require Tomli when the standard library module is not available:\n\n```\ntomli >= 1.1.0 ; python_version < \"3.11\"\n```\n\nThen, in your code, import a TOML parser using the following fallback mechanism:\n\n```python\nimport sys\n\nif sys.version_info >= (3, 11):\n    import tomllib\nelse:\n    import tomli as tomllib\n\ntomllib.loads(\"['This parses fine with Python 3.6+']\")\n```\n\n## FAQ<a name=\"faq\"></a>\n\n### Why this parser?<a name=\"why-this-parser\"></a>\n\n- it's lil'\n- pure Python with zero dependencies\n- the fastest pure Python parser [\\*](#pure-python):\n  14x as fast as [tomlkit](https://pypi.org/project/tomlkit/),\n  2.1x as fast as [toml](https://pypi.org/project/toml/)\n- outputs [basic data types](#how-do-toml-types-map-into-python-types) only\n- 100% spec compliant: passes all tests in\n  [toml-lang/toml-test](https://github.com/toml-lang/toml-test)\n  test suite\n- thoroughly tested: 100% branch coverage\n\n### Is comment preserving round-trip parsing supported?<a name=\"is-comment-preserving-round-trip-parsing-supported\"></a>\n\nNo.\n\nThe `tomli.loads` function returns a plain `dict` that is populated with builtin types and types from the standard library only.\nPreserving comments requires a custom type to be returned so will not be supported,\nat least not by the `tomli.loads` and `tomli.load` functions.\n\nLook into [TOML Kit](https://github.com/sdispater/tomlkit) if preservation of style is what you need.\n\n### Is there a `dumps`, `write` or `encode` function?<a name=\"is-there-a-dumps-write-or-encode-function\"></a>\n\n[Tomli-W](https://github.com/hukkin/tomli-w) is the write-only counterpart of Tomli, providing `dump` and `dumps` functions.\n\nThe core library does not include write capability, as most TOML use cases are read-only, and Tomli intends to be minimal.\n\n### How do TOML types map into Python types?<a name=\"how-do-toml-types-map-into-python-types\"></a>\n\n| TOML type        | Python type         | Details                                                      |\n| ---------------- | ------------------- | ------------------------------------------------------------ |\n| Document Root    | `dict`              |                                                              |\n| Key              | `str`               |                                                              |\n| String           | `str`               |                                                              |\n| Integer          | `int`               |                                                              |\n| Float            | `float`             |                                                              |\n| Boolean          | `bool`              |                                                              |\n| Offset Date-Time | `datetime.datetime` | `tzinfo` attribute set to an instance of `datetime.timezone` |\n| Local Date-Time  | `datetime.datetime` | `tzinfo` attribute set to `None`                             |\n| Local Date       | `datetime.date`     |                                                              |\n| Local Time       | `datetime.time`     |                                                              |\n| Array            | `list`              |                                                              |\n| Table            | `dict`              |                                                              |\n| Inline Table     | `dict`              |                                                              |\n\n## Performance<a name=\"performance\"></a>\n\nThe `benchmark/` folder in this repository contains a performance benchmark for comparing the various Python TOML parsers.\n\nBelow are the results for commit [064e492](https://github.com/hukkin/tomli/tree/064e492919b2338def788753b8c981c9131334c0).\n\n### Mypyc generated wheel<a name=\"mypyc-generated-wheel\"></a>\n\n```console\nfoo@bar:~/dev/tomli$ python --version\nPython 3.14.2\nfoo@bar:~/dev/tomli$ pip freeze\npytomlpp==1.1.0\nrtoml==0.13.0\ntoml==0.10.2\ntomli @ file:///home/foo/dev/tomli\ntomlkit==0.13.3\nfoo@bar:~/dev/tomli$ python benchmark/run.py\nParsing data.toml 5000 times:\n------------------------------------------------------\n    parser |  exec time | performance (more is better)\n-----------+------------+-----------------------------\n     rtoml |    0.328 s | baseline (100%)\n  pytomlpp |    0.365 s | 89.75%\n     tomli |    0.838 s | 39.12%\n      toml |     3.01 s | 10.90%\n   tomlkit |     20.7 s | 1.59%\n```\n\n### Pure Python<a name=\"pure-python\"></a>\n\n```console\nfoo@bar:~/dev/tomli$ python benchmark/run.py\nParsing data.toml 5000 times:\n------------------------------------------------------\n    parser |  exec time | performance (more is better)\n-----------+------------+-----------------------------\n     rtoml |    0.323 s | baseline (100%)\n  pytomlpp |    0.365 s | 88.40%\n     tomli |     1.44 s | 22.36%\n      toml |     3.03 s | 10.65%\n   tomlkit |     20.6 s | 1.57%\n```\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

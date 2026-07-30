@@ -1,0 +1,82 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/18/62/47452306e84d4d2e67f9c559380aeb230f5e6ca84fafb428dd36b96a99ba/altair-4.2.2-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=8b45ebeaf8557f2d760c5c77b79f02ae12aee7c46c27c06014febab6f849bc87",
+          "hashes": {
+            "sha256": "8b45ebeaf8557f2d760c5c77b79f02ae12aee7c46c27c06014febab6f849bc87"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "altair",
+        "version": "4.2.2",
+        "summary": "Altair: A declarative statistical visualization library for Python.",
+        "description_content_type": "text/markdown",
+        "home_page": "http://altair-viz.github.io",
+        "download_url": "http://github.com/altair-viz/altair/",
+        "author": "Brian E. Granger / Jake VanderPlas",
+        "author_email": "jakevdp@gmail.com",
+        "license": "BSD 3-clause",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Science/Research",
+          "License :: OSI Approved :: BSD License",
+          "Natural Language :: English",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10"
+        ],
+        "requires_dist": [
+          "entrypoints",
+          "jinja2",
+          "jsonschema (>=3.0)",
+          "numpy",
+          "pandas (>=0.18)",
+          "toolz",
+          "black ; extra == 'dev'",
+          "docutils ; extra == 'dev'",
+          "ipython ; extra == 'dev'",
+          "flake8 ; extra == 'dev'",
+          "pytest ; extra == 'dev'",
+          "sphinx ; extra == 'dev'",
+          "mistune (<2.0.0) ; extra == 'dev'",
+          "m2r ; extra == 'dev'",
+          "vega-datasets ; extra == 'dev'",
+          "recommonmark ; extra == 'dev'"
+        ],
+        "requires_python": ">=3.7",
+        "provides_extra": [
+          "dev"
+        ],
+        "description": "# Altair <a href=\"https://altair-viz.github.io/\"><img align=\"right\" src=\"https://altair-viz.github.io/_static/altair-logo-light.png\" height=\"50\"></img></a>\n\n[![build status](https://img.shields.io/travis/altair-viz/altair/master.svg?style=flat)](https://travis-ci.org/altair-viz/altair)\n[![github actions](https://github.com/altair-viz/altair/workflows/build/badge.svg)](https://github.com/altair-viz/altair/actions?query=workflow%3Abuild)\n[![code style black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)\n[![JOSS Paper](https://joss.theoj.org/papers/10.21105/joss.01057/status.svg)](https://joss.theoj.org/papers/10.21105/joss.01057)\n[![PyPI - Downloads](https://img.shields.io/pypi/dm/altair)](https://pypi.org/project/altair)\n[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/altair-viz/altair_notebooks/master?urlpath=lab/tree/notebooks/Index.ipynb)\n[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/altair-viz/altair_notebooks/blob/master/notebooks/Index.ipynb)\n\n[https://altair-viz.github.io](https://altair-viz.github.io)\n\n**Altair** is a declarative statistical visualization library for Python. With Altair, you can spend more time understanding your data and its meaning. Altair's\nAPI is simple, friendly and consistent and built on top of the powerful\n[Vega-Lite](https://github.com/vega/vega-lite) JSON specification. This elegant\nsimplicity produces beautiful and effective visualizations with a minimal amount of code. *Altair is developed by [Jake Vanderplas](https://github.com/jakevdp) and [Brian\nGranger](https://github.com/ellisonbg) in close collaboration with the [UW\nInteractive Data Lab](https://idl.cs.washington.edu/).*\n\n## Altair Documentation\n\nSee [Altair's Documentation Site](https://altair-viz.github.io),\nas well as Altair's [Tutorial Notebooks](https://github.com/altair-viz/altair_notebooks).\n\n## Example\n\nHere is an example using Altair to quickly visualize and display a dataset with the native Vega-Lite renderer in the JupyterLab:\n\n```python\nimport altair as alt\n\n# load a simple dataset as a pandas DataFrame\nfrom vega_datasets import data\ncars = data.cars()\n\nalt.Chart(cars).mark_point().encode(\n    x='Horsepower',\n    y='Miles_per_Gallon',\n    color='Origin',\n)\n```\n\n![Altair Visualization](https://raw.githubusercontent.com/altair-viz/altair/master/images/cars.png)\n\nOne of the unique features of Altair, inherited from Vega-Lite, is a declarative grammar of not just visualization, but _interaction_. \nWith a few modifications to the example above we can create a linked histogram that is filtered based on a selection of the scatter plot.\n\n```python \nimport altair as alt\nfrom vega_datasets import data\n\nsource = data.cars()\n\nbrush = alt.selection(type='interval')\n\npoints = alt.Chart(source).mark_point().encode(\n    x='Horsepower',\n    y='Miles_per_Gallon',\n    color=alt.condition(brush, 'Origin', alt.value('lightgray'))\n).add_selection(\n    brush\n)\n\nbars = alt.Chart(source).mark_bar().encode(\n    y='Origin',\n    color='Origin',\n    x='count(Origin)'\n).transform_filter(\n    brush\n)\n\npoints & bars\n```\n\n![Altair Visualization Gif](https://raw.githubusercontent.com/altair-viz/altair/master/images/cars_scatter_bar.gif)\n\n\n## Getting your Questions Answered\n\nIf you have a question that is not addressed in the documentation, there are several ways to ask:\n\n- open a [Github Issue](https://github.com/altair-viz/altair/issues)\n- post a [StackOverflow Question](https://stackoverflow.com/questions/tagged/altair) (be sure to use the `altair` tag)\n- ask on the [Altair Google Group](https://groups.google.com/forum/#!forum/altair-viz)\n\nWe'll do our best to get your question answered\n\n## A Python API for statistical visualizations\n\nAltair provides a Python API for building statistical visualizations in a declarative\nmanner. By statistical visualization we mean:\n\n* The **data source** is a `DataFrame` that consists of columns of different data types (quantitative, ordinal, nominal and date/time).\n* The `DataFrame` is in a [tidy format](https://vita.had.co.nz/papers/tidy-data.pdf)\n  where the rows correspond to samples and the columns correspond to the observed variables.\n* The data is mapped to the **visual properties** (position, color, size, shape,\n  faceting, etc.) using the group-by data transformation.\n\nThe Altair API contains no actual visualization rendering code but instead\nemits JSON data structures following the\n[Vega-Lite](https://github.com/vega/vega-lite) specification. The resulting\nVega-Lite JSON data can be rendered in the following user-interfaces:\n\n* [Jupyter Notebook](https://github.com/jupyter/notebook) (by installing [ipyvega](https://github.com/vega/ipyvega)).\n* [JupyterLab](https://github.com/jupyterlab/jupyterlab) (no additional dependencies needed).\n* [nteract](https://github.com/nteract/nteract) (no additional dependencies needed).\n\n## Features\n\n* Carefully-designed, declarative Python API based on\n  [traitlets](https://github.com/ipython/traitlets).\n* Auto-generated internal Python API that guarantees visualizations are type-checked and\n  in full conformance with the [Vega-Lite](https://github.com/vega/vega-lite)\n  specification.\n* Auto-generate Altair Python code from a Vega-Lite JSON spec.\n* Display visualizations in the live Jupyter Notebook, JupyterLab, nteract, on GitHub and\n  [nbviewer](https://nbviewer.jupyter.org/).\n* Export visualizations to PNG/SVG images, stand-alone HTML pages and the\n[Online Vega-Lite Editor](https://vega.github.io/editor/#/).\n* Serialize visualizations as JSON files.\n* Explore Altair with dozens of examples in the [Example Gallery](https://altair-viz.github.io/gallery/index.html)\n\n## Installation\n\nTo use Altair for visualization, you need to install two sets of tools\n\n1. The core Altair Package and its dependencies\n\n2. The renderer for the frontend you wish to use (i.e. `Jupyter Notebook`,\n   `JupyterLab`, or `nteract`)\n\nAltair can be installed with either ``pip`` or with ``conda``.\nFor full installation instructions, please see\nhttps://altair-viz.github.io/getting_started/installation.html\n\n## Example and tutorial notebooks\n\nWe maintain a separate Github repository of Jupyter Notebooks that contain an\ninteractive tutorial and examples:\n\nhttps://github.com/altair-viz/altair_notebooks\n\nTo launch a live notebook server with those notebook using [binder](https://mybinder.org/) or\n[Colab](https://colab.research.google.com), click on one of the following badges:\n\n[![Binder](https://beta.mybinder.org/badge.svg)](https://beta.mybinder.org/v2/gh/altair-viz/altair_notebooks/master)\n[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/altair-viz/altair_notebooks/blob/master/notebooks/Index.ipynb)\n\n## Project philosophy\n\nMany excellent plotting libraries exist in Python, including the main ones:\n\n* [Matplotlib](https://matplotlib.org/)\n* [Bokeh](https://bokeh.pydata.org/en/latest/)\n* [Seaborn](https://seaborn.pydata.org/)\n* [Lightning](https://github.com/lightning-viz/lightning)\n* [Plotly](https://plot.ly/)\n* [Pandas built-in plotting](https://pandas.pydata.org/pandas-docs/stable/visualization.html)\n* [HoloViews](https://holoviews.org)\n* [VisPy](https://vispy.org/)\n* [pygg](https://www.github.com/sirrice/pygg)\n\nEach library does a particular set of things well.\n\n### User challenges\n\nHowever, such a proliferation of options creates great difficulty for users\nas they have to wade through all of these APIs to find which of them is the\nbest for the task at hand. None of these libraries are optimized for\nhigh-level statistical visualization, so users have to assemble their own\nusing a mishmash of APIs. For individuals just learning data science, this\nforces them to focus on learning APIs rather than exploring their data.\n\nAnother challenge is current plotting APIs require the user to write code,\neven for incidental details of a visualization. This results in an unfortunate\nand unnecessary cognitive burden as the visualization type (histogram,\nscatterplot, etc.) can often be inferred using basic information such as the\ncolumns of interest and the data types of those columns.\n\nFor example, if you are interested in the visualization of two numerical\ncolumns, a scatterplot is almost certainly a good starting point. If you add\na categorical column to that, you probably want to encode that column using\ncolors or facets. If inferring the visualization proves difficult at times, a\nsimple user interface can construct a visualization without any coding.\n[Tableau](https://www.tableau.com/) and the [Interactive Data\nLab's](https://idl.cs.washington.edu/)\n[Polestar](https://github.com/vega/polestar) and\n[Voyager](https://github.com/vega/voyager) are excellent examples of such UIs.\n\n### Design approach and solution\n\nWe believe that these challenges can be addressed without the creation of yet\nanother visualization library that has a programmatic API and built-in\nrendering. Altair's approach to building visualizations uses a layered design\nthat leverages the full capabilities of existing visualization libraries:\n\n1. Create a constrained, simple Python API (Altair) that is purely declarative\n2. Use the API (Altair) to emit JSON output that follows the Vega-Lite spec\n3. Render that spec using existing visualization libraries\n\nThis approach enables users to perform exploratory visualizations with a much\nsimpler API initially, pick an appropriate renderer for their usage case, and\nthen leverage the full capabilities of that renderer for more advanced plot\ncustomization.\n\nWe realize that a declarative API will necessarily be limited compared to the\nfull programmatic APIs of Matplotlib, Bokeh, etc. That is a deliberate design\nchoice we feel is needed to simplify the user experience of exploratory\nvisualization.\n\n## Development install\n\nAltair requires the following dependencies:\n\n* [pandas](https://pandas.pydata.org/)\n* [traitlets](https://github.com/ipython/traitlets)\n* [IPython](https://github.com/ipython/ipython)\n\nIf you have cloned the repository, run the following command from the root of the repository:\n\n```\npip install -e .[dev]\n```\n\nIf you do not wish to clone the repository, you can install using:\n\n```\npip install git+https://github.com/altair-viz/altair\n```\n\n## Testing\n\nTo run the test suite you must have [py.test](https://pytest.org/latest/) installed.\nTo run the tests, use\n\n```\npy.test --pyargs altair\n```\n(you can omit the `--pyargs` flag if you are running the tests from a source checkout).\n\n## Feedback and Contribution\n\nSee [`CONTRIBUTING.md`](https://github.com/altair-viz/altair/blob/master/CONTRIBUTING.md)\n\n## Citing Altair\n\n[![JOSS Paper](https://joss.theoj.org/papers/10.21105/joss.01057/status.svg)](https://joss.theoj.org/papers/10.21105/joss.01057)\n\nIf you use Altair in academic work, please consider citing https://joss.theoj.org/papers/10.21105/joss.01057 as\n\n```bib\n@article{VanderPlas2018,\n    doi = {10.21105/joss.01057},\n    url = {https://doi.org/10.21105/joss.01057},\n    year = {2018},\n    publisher = {The Open Journal},\n    volume = {3},\n    number = {32},\n    pages = {1057},\n    author = {Jacob VanderPlas and Brian Granger and Jeffrey Heer and Dominik Moritz and Kanit Wongsuphasawat and Arvind Satyanarayan and Eitan Lees and Ilia Timofeev and Ben Welsh and Scott Sievert},\n    title = {Altair: Interactive Statistical Visualizations for Python},\n    journal = {Journal of Open Source Software}\n}\n```\nPlease additionally consider citing the [vega-lite](https://vega.github.io/vega-lite/) project, which Altair is based on: https://dl.acm.org/doi/10.1109/TVCG.2016.2599030\n```bib\n@article{Satyanarayan2017,\n    author={Satyanarayan, Arvind and Moritz, Dominik and Wongsuphasawat, Kanit and Heer, Jeffrey},\n    title={Vega-Lite: A Grammar of Interactive Graphics},\n    journal={IEEE transactions on visualization and computer graphics},\n    year={2017},\n    volume={23},\n    number={1},\n    pages={341-350},\n    publisher={IEEE}\n} \n```\n\n## Whence Altair?\n\nAltair is the [brightest star](https://en.wikipedia.org/wiki/Altair) in the constellation Aquila, and along with Deneb and Vega forms the northern-hemisphere asterism known as the [Summer Triangle](https://en.wikipedia.org/wiki/Summer_Triangle).\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

@@ -1,0 +1,220 @@
+aiofiles <24.0,>=22.0
+  # from parent package: gradio (public)
+aiohappyeyeballs >=2.5.0
+  # from parent package: aiohttp (public)
+aiohttp !=4.0.0a0,!=4.0.0a1
+  # from parent package: datasets (public)
+  # from parent package: fsspec (private)
+aiosignal >=1.4.0
+  # from parent package: aiohttp (public)
+altair <6.0,>=5.0
+  # from parent package: gradio (public)
+annotated-doc >=0.0.2
+  # from parent package: fastapi (public)
+  # from parent package: typer (public)
+annotated-types >=0.6.0
+  # from parent package: pydantic (public)
+anyio <5,>=3.6.2
+  # from parent package: starlette (public)
+async-timeout <6.0,>=4.0
+  # from parent package: aiohttp (public)
+attrs >=17.3.0,>=22.2.0,>=22.2.0
+  # from parent package: aiohttp (public)
+  # from parent package: jsonschema (public)
+  # from parent package: referencing (public)
+certifi
+  # from parent package: httpx (public)
+cffi >=1.0.0
+  # from parent package: pyvips-binary (public)
+click !=8.3.0,~=8.0,>=7.0
+  # from parent package: scenedetect (public)
+  # from parent package: uvicorn (public)
+contourpy >=1.0.1
+  # from parent package: matplotlib (public)
+cycler >=0.10
+  # from parent package: matplotlib (public)
+dill <0.3.9,>=0.3.0,>=0.3.8
+  # from parent package: datasets (public)
+  # from parent package: multiprocess (public)
+exceptiongroup >=1.0.2
+  # from parent package: anyio (public)
+fastapi
+  # from parent package: gradio (public)
+ffmpy
+  # from parent package: gradio (public)
+filelock
+  # from parent package: huggingface-hub (public)
+  # from parent package: transformers (public)
+  # from parent package: datasets (public)
+flatbuffers
+  # from parent package: onnxruntime (public)
+fonttools >=4.22.0
+  # from parent package: matplotlib (public)
+frozenlist >=1.1.1,>=1.1.0
+  # from parent package: aiohttp (public)
+  # from parent package: aiosignal (public)
+fsspec >=2023.5.0,<=2024.9.0,>=2023.1.0
+  # from parent package: huggingface-hub (public)
+  # from parent package: datasets (public)
+  # from parent package: gradio-client (public)
+future
+  # from parent package: ffmpeg-python (public)
+gradio-client ==1.1.0
+  # from parent package: gradio (public)
+h11 >=0.8
+  # from parent package: uvicorn (public)
+httpx >=0.24.1,>=0.20,>=0.24.1
+  # from parent package: gradio (public)
+  # from parent package: spaces (public)
+  # from parent package: gradio-client (public)
+idna >=2.0,>=2.8
+  # from parent package: yarl (public)
+  # from parent package: anyio (public)
+importlib-resources <7.0,>=1.3
+  # from parent package: gradio (public)
+jinja2 <4.0
+  # from parent package: gradio (public)
+  # from parent package: altair (public)
+joblib >=1.4.0
+  # from parent package: scikit-learn (public)
+jsonschema >=3.0
+  # from parent package: altair (public)
+jsonschema-specifications >=2023.03.6
+  # from parent package: jsonschema (public)
+kiwisolver >=1.3.1
+  # from parent package: matplotlib (public)
+markdown-it-py >=2.2.0
+  # from parent package: rich (public)
+markupsafe ~=2.0,>=2.0
+  # from parent package: gradio (public)
+  # from parent package: jinja2 (private)
+mdurl ~=0.1
+  # from parent package: markdown-it-py (public)
+multidict <7.0,>=4.5,>=4.0
+  # from parent package: aiohttp (public)
+  # from parent package: yarl (public)
+multiprocess <0.70.17
+  # from parent package: datasets (public)
+narwhals >=1.15.1,>=2.0.1,>=1.27.1
+  # from parent package: plotly (public)
+  # from parent package: scikit-learn (public)
+  # from parent package: altair (public)
+orjson ~=3.0
+  # from parent package: gradio (public)
+packaging >=20.0,>=20.9,>=20.0,>=20.0
+  # from parent package: accelerate (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: transformers (public)
+  # from parent package: gradio (public)
+  # from parent package: datasets (public)
+  # from parent package: spaces (public)
+  # from parent package: matplotlib (public)
+  # from parent package: plotly (public)
+  # from parent package: onnxruntime (public)
+  # from parent package: altair (public)
+  # from parent package: gradio-client (public)
+platformdirs
+  # from parent package: scenedetect (public)
+propcache >=0.2.0,>=0.2.1
+  # from parent package: aiohttp (public)
+  # from parent package: yarl (public)
+protobuf >=4.25.8
+  # from parent package: onnxruntime (public)
+psutil
+  # from parent package: accelerate (public)
+pyarrow >=15.0.0
+  # from parent package: datasets (public)
+pycparser
+  # from parent package: cffi (public)
+pydantic >=2.0,<3,>=1,>=2.9.0
+  # from parent package: gradio (public)
+  # from parent package: spaces (public)
+  # from parent package: fastapi (public)
+pydantic-core ==2.47.0
+  # from parent package: pydantic (public)
+pydub
+  # from parent package: gradio (public)
+pygments <3.0.0,>=2.13.0
+  # from parent package: rich (public)
+pyparsing >=3
+  # from parent package: matplotlib (public)
+python-dateutil >=2.7,>=2.8.2
+  # from parent package: matplotlib (public)
+  # from parent package: pandas (public)
+python-multipart >=0.0.9
+  # from parent package: gradio (public)
+pytz >=2020.1
+  # from parent package: pandas (public)
+pyyaml >=5.1,<7.0,>=5.0,>=5.1
+  # from parent package: accelerate (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: transformers (public)
+  # from parent package: gradio (public)
+  # from parent package: datasets (public)
+referencing >=0.28.4,>=0.31.0
+  # from parent package: jsonschema (public)
+  # from parent package: jsonschema-specifications (public)
+regex !=2019.12.17
+  # from parent package: transformers (public)
+requests >=2.32.2,<3,>=2.19
+  # from parent package: huggingface-hub (public)
+  # from parent package: transformers (public)
+  # from parent package: datasets (public)
+  # from parent package: spaces (public)
+rich >=13.8.0
+  # from parent package: typer (public)
+rpds-py >=0.25.0,>=0.7.0
+  # from parent package: jsonschema (public)
+  # from parent package: referencing (public)
+ruff >=0.2.2
+  # from parent package: gradio (public)
+scipy >=1.10.0
+  # from parent package: deep-sort-realtime (public)
+  # from parent package: scikit-learn (public)
+semantic-version ~=2.0
+  # from parent package: gradio (public)
+shellingham >=1.3.0
+  # from parent package: typer (public)
+six >=1.5
+  # from parent package: python-dateutil (public)
+starlette >=0.46.0
+  # from parent package: fastapi (public)
+threadpoolctl >=3.5.0
+  # from parent package: scikit-learn (public)
+tomlkit ==0.12.0
+  # from parent package: gradio (public)
+typer <1.0,>=0.12
+  # from parent package: gradio (public)
+typing-extensions >=3.7.4.3,~=4.0,<5,>=4,>=4.12.0,>=4.8.0,~=4.0,>=4.15.0,>=4.0,>=4.4,>=4.10.0,>=4.12.0,>=4.14.1,>=4.2,>=4.1.0,>=4.4.0,>=4.5,>=4.6.0
+  # from parent package: huggingface-hub (public)
+  # from parent package: gradio (public)
+  # from parent package: spaces (public)
+  # from parent package: altair (public)
+  # from parent package: fastapi (public)
+  # from parent package: gradio-client (public)
+  # from parent package: pydantic (public)
+  # from parent package: uvicorn (public)
+  # from parent package: aiohttp (public)
+  # from parent package: starlette (public)
+  # from parent package: typing-inspection (public)
+  # from parent package: pydantic-core (public)
+  # from parent package: aiosignal (public)
+  # from parent package: multidict (public)
+  # from parent package: referencing (public)
+  # from parent package: anyio (public)
+  # from parent package: exceptiongroup (public)
+typing-inspection >=0.4.2
+  # from parent package: fastapi (public)
+  # from parent package: pydantic (public)
+tzdata >=2022.7
+  # from parent package: pandas (public)
+urllib3 ~=2.0
+  # from parent package: gradio (public)
+uvicorn >=0.14.0
+  # from parent package: gradio (public)
+websockets <12.0,>=10.0
+  # from parent package: gradio-client (public)
+xxhash
+  # from parent package: datasets (public)
+yarl <2.0,>=1.17.0
+  # from parent package: aiohttp (public)

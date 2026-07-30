@@ -1,0 +1,59 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/6a/00/b08f23b7d7e1e14ce01419a467b583edbb93c6cdb8654e54a9cc579cd61f/addict-2.4.0-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=249bb56bbfd3cdc2a004ea0ff4c2b6ddc84d53bc2194761636eb314d5cfa5dfc",
+          "hashes": {
+            "sha256": "249bb56bbfd3cdc2a004ea0ff4c2b6ddc84d53bc2194761636eb314d5cfa5dfc"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "addict",
+        "version": "2.4.0",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "Addict is a dictionary whose items can be set using both attribute and item syntax.",
+        "home_page": "https://github.com/mewwts/addict",
+        "author": "Mats Julian Olsen",
+        "author_email": "mats@plysjbyen.net",
+        "license": "UNKNOWN",
+        "classifier": [
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Intended Audience :: Developers",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "description": "Addict is a module that exposes a dictionary subclass that allows items to be set like attributes. Values are gettable and settable using both attribute and item syntax. For more info check out the README at 'github.com/mewwts/addict'.\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}

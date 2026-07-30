@@ -1,0 +1,222 @@
+aiofiles
+  # from parent package: gradio (public)
+aiohappyeyeballs >=2.5.0
+  # from parent package: aiohttp (public)
+aiohttp
+  # from parent package: gradio (public)
+aiosignal >=1.4.0
+  # from parent package: aiohttp (public)
+altair >=4.2.0
+  # from parent package: gradio (public)
+antlr4-python3-runtime ==4.8
+  # from parent package: hydra-core (public)
+anyio <5,>=3.4.0
+  # from parent package: httpx (public)
+  # from parent package: starlette (public)
+async-timeout <6.0,>=4.0
+  # from parent package: aiohttp (public)
+attrs >=17.3.0,>=22.2.0,>=22.2.0
+  # from parent package: aiohttp (public)
+  # from parent package: jsonschema (public)
+  # from parent package: referencing (public)
+bitarray
+  # from parent package: fairseq (public)
+certifi >=2017.4.17
+  # from parent package: httpx (public)
+  # from parent package: requests (private)
+  # from parent package: httpcore (public)
+cffi >=1.0
+  # from parent package: fairseq (public)
+  # from parent package: soundfile (public)
+charset-normalizer <3,>=2
+  # from parent package: requests (private)
+click >=7.0,<9.0.0,>=8.4.2
+  # from parent package: uvicorn (public)
+  # from parent package: huggingface-hub (public)
+contourpy >=1.0.1
+  # from parent package: matplotlib (public)
+cycler >=0.10
+  # from parent package: matplotlib (public)
+decorator >=4.3.0
+  # from parent package: librosa (public)
+einops >=0.8.0,>=0.8.1,>=0.8.1
+  # from parent package: torchfcpe (public)
+  # from parent package: local-attention (public)
+  # from parent package: hyper-connections (public)
+  # from parent package: torch-einops-utils (public)
+exceptiongroup >=1.0.2
+  # from parent package: anyio (public)
+filelock >=3.10.0
+  # from parent package: huggingface-hub (public)
+flatbuffers
+  # from parent package: onnxruntime (public)
+  # from parent package: onnxruntime-gpu (public)
+fonttools >=4.22.0
+  # from parent package: matplotlib (public)
+frozenlist >=1.1.1,>=1.1.0
+  # from parent package: aiohttp (public)
+  # from parent package: aiosignal (public)
+future
+  # from parent package: ffmpeg-python (public)
+gradio-client >=0.2.6
+  # from parent package: gradio (public)
+grpcio <2.0,>=1.74.0
+  # from parent package: tensorboard (public)
+h11 >=0.8,>=0.16
+  # from parent package: uvicorn (public)
+  # from parent package: httpcore (public)
+hf-xet <2.0.0,>=1.5.1
+  # from parent package: huggingface-hub (public)
+httpcore ==1.*
+  # from parent package: httpx (public)
+huggingface-hub >=0.14.0,<2.0,>=0.19.3
+  # from parent package: gradio (public)
+  # from parent package: gradio-client (public)
+hydra-core <1.1,>=1.0.7
+  # from parent package: fairseq (public)
+hyper-connections >=0.1.8
+  # from parent package: local-attention (public)
+idna <4,>=2.5,>=2.8,>=2.0
+  # from parent package: httpx (public)
+  # from parent package: requests (private)
+  # from parent package: anyio (public)
+  # from parent package: yarl (public)
+jsonschema >=3.0
+  # from parent package: altair (public)
+jsonschema-specifications >=2023.03.6
+  # from parent package: jsonschema (public)
+kiwisolver >=1.3.1
+  # from parent package: matplotlib (public)
+lazy-loader >=0.1
+  # from parent package: librosa (public)
+linkify-it-py <3,>=1
+  # from parent package: markdown-it-py (public)
+local-attention
+  # from parent package: torchfcpe (public)
+lxml
+  # from parent package: sacrebleu (public)
+markdown-it-py >=2.0.0,<3.0.0,>=1.0.0
+  # from parent package: gradio (public)
+  # from parent package: mdit-py-plugins (public)
+markupsafe >=2.0,>=2.1.1
+  # from parent package: gradio (public)
+  # from parent package: jinja2 (private)
+  # from parent package: werkzeug (public)
+mdit-py-plugins <=0.3.3
+  # from parent package: gradio (public)
+mdurl ~=0.1
+  # from parent package: markdown-it-py (public)
+mpmath <1.4,>=1.1.0
+  # from parent package: sympy (private)
+msgpack >=1.0
+  # from parent package: librosa (public)
+multidict <7.0,>=4.5,>=4.0
+  # from parent package: aiohttp (public)
+  # from parent package: yarl (public)
+narwhals >=2.0.1,>=2.4.0
+  # from parent package: scikit-learn (public)
+  # from parent package: altair (public)
+omegaconf <2.1,<2.1,>=2.0.5
+  # from parent package: fairseq (public)
+  # from parent package: hydra-core (public)
+orjson
+  # from parent package: gradio (public)
+packaging >=20.0,>=20.9
+  # from parent package: tensorboardx (public)
+  # from parent package: matplotlib (public)
+  # from parent package: tensorboard (public)
+  # from parent package: onnxruntime (public)
+  # from parent package: onnxruntime-gpu (public)
+  # from parent package: pooch (public)
+  # from parent package: lazy-loader (public)
+  # from parent package: altair (public)
+  # from parent package: gradio-client (public)
+  # from parent package: huggingface-hub (public)
+pandas
+  # from parent package: gradio (public)
+platformdirs >=2.5.0
+  # from parent package: pooch (public)
+pooch >=1.1
+  # from parent package: librosa (public)
+portalocker
+  # from parent package: sacrebleu (public)
+propcache >=0.2.0,>=0.2.1
+  # from parent package: aiohttp (public)
+  # from parent package: yarl (public)
+protobuf >=3.20,<8.0.0,>=6.31.1,>=4.25.8,>=4.25.8
+  # from parent package: tensorboardx (public)
+  # from parent package: tensorboard (public)
+  # from parent package: onnxruntime (public)
+  # from parent package: onnxruntime-gpu (public)
+pycparser
+  # from parent package: cffi (public)
+pydantic !=1.7,!=1.7.1,!=1.7.2,!=1.7.3,!=1.8,!=1.8.1,<2.0.0,>=1.6.2
+  # from parent package: gradio (public)
+  # from parent package: fastapi (public)
+pygments >=2.12.0
+  # from parent package: gradio (public)
+pyparsing >=3
+  # from parent package: matplotlib (public)
+python-dateutil >=2.7,>=2.8.2
+  # from parent package: matplotlib (public)
+  # from parent package: pandas (public)
+python-multipart
+  # from parent package: gradio (public)
+referencing >=0.28.4,>=0.31.0
+  # from parent package: jsonschema (public)
+  # from parent package: jsonschema-specifications (public)
+regex
+  # from parent package: fairseq (public)
+  # from parent package: sacrebleu (public)
+requests >=2.19.0
+  # from parent package: gradio (public)
+  # from parent package: pooch (public)
+rpds-py >=0.25.0,>=0.7.0
+  # from parent package: jsonschema (public)
+  # from parent package: referencing (public)
+sacrebleu >=1.4.12
+  # from parent package: fairseq (public)
+semantic-version
+  # from parent package: gradio (public)
+setuptools >=41.0.0
+  # from parent package: numba (public)
+  # from parent package: tensorboard (public)
+six >=1.5
+  # from parent package: python-dateutil (public)
+sniffio
+  # from parent package: httpx (public)
+soxr >=0.3.2
+  # from parent package: librosa (public)
+starlette ==0.22.0
+  # from parent package: fastapi (public)
+tensorboard-data-server <0.8.0,>=0.7.0
+  # from parent package: tensorboard (public)
+threadpoolctl >=3.5.0
+  # from parent package: scikit-learn (public)
+torch-einops-utils >=0.0.20
+  # from parent package: hyper-connections (public)
+traitlets
+  # from parent package: matplotlib-inline (public)
+typing-extensions >=4.1.1,>=4.0,>=4.4,>=4.12.0,~=4.0,>=4.1.0,>=4.2.0,~=4.12,>=4.5,>=4.2,>=4.1.0,>=4.6.0,>=4.4.0
+  # from parent package: librosa (public)
+  # from parent package: gradio (public)
+  # from parent package: soundfile (public)
+  # from parent package: uvicorn (public)
+  # from parent package: omegaconf (public)
+  # from parent package: aiohttp (public)
+  # from parent package: altair (public)
+  # from parent package: gradio-client (public)
+  # from parent package: huggingface-hub (public)
+  # from parent package: pydantic (public)
+  # from parent package: grpcio (public)
+  # from parent package: anyio (public)
+  # from parent package: aiosignal (public)
+  # from parent package: multidict (public)
+  # from parent package: exceptiongroup (public)
+  # from parent package: referencing (public)
+urllib3 <1.27,>=1.21.1
+  # from parent package: requests (private)
+websockets >=10.0
+  # from parent package: gradio (public)
+yarl <2.0,>=1.17.0
+  # from parent package: aiohttp (public)

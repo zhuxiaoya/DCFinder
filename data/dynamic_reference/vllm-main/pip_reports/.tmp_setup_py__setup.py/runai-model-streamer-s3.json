@@ -1,0 +1,50 @@
+{
+  "version": "1",
+  "pip_version": "26.0.1",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/f2/ef/b0af56539b94741804d4ca10c528de2053ab255eedf97b02fd89148fa5ac/runai_model_streamer_s3-0.16.0-py3-none-manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=2130f974f12bedacb1bc68f54c3c36889520d39a18d89804da3d33b1456582dd",
+          "hashes": {
+            "sha256": "2130f974f12bedacb1bc68f54c3c36889520d39a18d89804da3d33b1456582dd"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "runai-model-streamer-s3",
+        "version": "0.16.0",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "UNKNOWN",
+        "home_page": "UNKNOWN",
+        "author": "UNKNOWN",
+        "author_email": "UNKNOWN",
+        "license": "UNKNOWN",
+        "requires_dist": [
+          "boto3"
+        ],
+        "description": "UNKNOWN\n\n\n"
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.10.19",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.8.0-124-generic",
+    "platform_system": "Linux",
+    "platform_version": "#124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC ",
+    "python_full_version": "3.10.19",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.10",
+    "sys_platform": "linux"
+  }
+}
