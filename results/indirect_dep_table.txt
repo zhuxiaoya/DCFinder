@@ -1,0 +1,74 @@
+\begin{table}[ht]
+\centering
+\caption{Indirect Dependency Identification: DCFinder vs. pip GT}
+\label{tab:indirect-dep-comparison}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lrrrrrrr}
+\toprule
+Project & DCFinder & pip (GT) & Same & DCFinder-only & pip-only & Precision (\%) & Recall (\%) \\
+\midrule
+AudioGPT-main & 163 & 190 & 163 & 0 & 27 & 100.0 & 85.8 \\
+Deep-Live-Cam-main & 51 & 89 & 51 & 0 & 38 & 100.0 & 57.3 \\
+Depth-Anything-main & 142 & 166 & 142 & 0 & 24 & 100.0 & 85.5 \\
+LivePortrait-main & 75 & 75 & 74 & 1 & 1 & 98.7 & 98.7 \\
+MaxKB-main & 149 & 157 & 148 & 1 & 9 & 99.3 & 94.3 \\
+OlafenwaMoses\_ImageAI & 22 & 23 & 22 & 0 & 1 & 100.0 & 95.7 \\
+Retrieval-based-Voice-Conversion-WebUI-main & 82 & 121 & 82 & 0 & 39 & 100.0 & 67.8 \\
+StreamDiffusion-main & 78 & 100 & 67 & 11 & 33 & 85.9 & 67.0 \\
+VikParuchuri\_surya & 65 & 51 & 51 & 14 & 0 & 78.5 & 100.0 \\
+awesome-llm-apps-main & 456 & 397 & 326 & 130 & 71 & 71.5 & 82.1 \\
+axolotl-main & 276 & 289 & 261 & 15 & 28 & 94.6 & 90.3 \\
+bmaltais\_kohya\_ss & 163 & 95 & 75 & 88 & 20 & 46.0 & 78.9 \\
+chia-blockchain-main & 76 & 69 & 62 & 14 & 7 & 81.6 & 89.9 \\
+dowhy-main & 32 & 27 & 25 & 7 & 2 & 78.1 & 92.6 \\
+examples-main & 88 & 123 & 87 & 1 & 36 & 98.9 & 70.7 \\
+fossasia\_visdom & 5 & 5 & 5 & 0 & 0 & 100.0 & 100.0 \\
+gorilla-main & 333 & 133 & 124 & 209 & 9 & 37.2 & 93.2 \\
+ipex-llm-main & 168 & 163 & 124 & 44 & 39 & 73.8 & 76.1 \\
+jantic\_DeOldify & 166 & 180 & 161 & 5 & 19 & 97.0 & 89.4 \\
+jax-main & 192 & 119 & 115 & 77 & 4 & 59.9 & 96.6 \\
+keras-team\_keras & 196 & 121 & 100 & 96 & 21 & 51.0 & 82.6 \\
+llama-cpp-python-main & 74 & 85 & 47 & 27 & 38 & 63.5 & 55.3 \\
+manga-image-translator-main & 165 & 152 & 148 & 17 & 4 & 89.7 & 97.4 \\
+moondream-main & 80 & 122 & 78 & 2 & 44 & 97.5 & 63.9 \\
+pyvideotrans-main & 149 & 162 & 135 & 14 & 27 & 90.6 & 83.3 \\
+ray-project\_ray & 29 & 163 & 16 & 13 & 147 & 55.2 & 9.8 \\
+roop-main & 88 & 89 & 77 & 11 & 12 & 87.5 & 86.5 \\
+vllm-main & 54 & 39 & 36 & 18 & 3 & 66.7 & 92.3 \\
+\midrule
+Total & 3617 & 3505 & 2802 & 815 & 703 & 77.5 & 79.9 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+=== CSV format ===
+project,dcfinder_total,pip_gt,same,dcfinder_only,pip_only,dcfinder_prec,dcfinder_rec
+AudioGPT-main,163,190,163,0,27,100.0,85.8
+Deep-Live-Cam-main,51,89,51,0,38,100.0,57.3
+Depth-Anything-main,142,166,142,0,24,100.0,85.5
+LivePortrait-main,75,75,74,1,1,98.7,98.7
+MaxKB-main,149,157,148,1,9,99.3,94.3
+OlafenwaMoses_ImageAI,22,23,22,0,1,100.0,95.7
+Retrieval-based-Voice-Conversion-WebUI-main,82,121,82,0,39,100.0,67.8
+StreamDiffusion-main,78,100,67,11,33,85.9,67.0
+VikParuchuri_surya,65,51,51,14,0,78.5,100.0
+awesome-llm-apps-main,456,397,326,130,71,71.5,82.1
+axolotl-main,276,289,261,15,28,94.6,90.3
+bmaltais_kohya_ss,163,95,75,88,20,46.0,78.9
+chia-blockchain-main,76,69,62,14,7,81.6,89.9
+dowhy-main,32,27,25,7,2,78.1,92.6
+examples-main,88,123,87,1,36,98.9,70.7
+fossasia_visdom,5,5,5,0,0,100.0,100.0
+gorilla-main,333,133,124,209,9,37.2,93.2
+ipex-llm-main,168,163,124,44,39,73.8,76.1
+jantic_DeOldify,166,180,161,5,19,97.0,89.4
+jax-main,192,119,115,77,4,59.9,96.6
+keras-team_keras,196,121,100,96,21,51.0,82.6
+llama-cpp-python-main,74,85,47,27,38,63.5,55.3
+manga-image-translator-main,165,152,148,17,4,89.7,97.4
+moondream-main,80,122,78,2,44,97.5,63.9
+pyvideotrans-main,149,162,135,14,27,90.6,83.3
+ray-project_ray,29,163,16,13,147,55.2,9.8
+roop-main,88,89,77,11,12,87.5,86.5
+vllm-main,54,39,36,18,3,66.7,92.3
+Total,3617,3505,2802,815,703,77.5,79.9

@@ -1,0 +1,76 @@
+\begin{table}[ht]
+\centering
+\caption{Direct Dependency Identification: DCFinder vs. confused vs. pip GT}
+\label{tab:direct-dep-comparison}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+\multirow{2}{*}{Project} & \multicolumn{2}{c}{\# Direct Dependencies} & \multirow{2}{*}{pip (GT)} & \multicolumn{2}{c}{Same (vs.\ pip GT)} & \multicolumn{2}{c}{Precision (\%)} & \multicolumn{2}{c}{Recall (\%)} \\
+\cmidrule(lr){2-3} \cmidrule(lr){5-6} \cmidrule(lr){7-8} \cmidrule(lr){9-10}
+ & confused & DCFinder & & confused & DCFinder & confused & DCFinder & confused & DCFinder \\
+\midrule
+AudioGPT-main & 69 & 69 & 67 & 67 & 67 & 97.1 & 97.1 & 100.0 & 100.0 \\
+Deep-Live-Cam-main & 17 & 17 & 16 & 16 & 16 & 94.1 & 94.1 & 100.0 & 100.0 \\
+Depth-Anything-main & 6 & 16 & 16 & 6 & 16 & 100.0 & 100.0 & 37.5 & 100.0 \\
+LivePortrait-main & 24 & 20 & 20 & 20 & 20 & 83.3 & 100.0 & 100.0 & 100.0 \\
+MaxKB-main & 0 & 61 & 61 & 0 & 61 & 0.0 & 100.0 & 0.0 & 100.0 \\
+OlafenwaMoses\_ImageAI & 11 & 12 & 12 & 11 & 12 & 100.0 & 100.0 & 91.7 & 100.0 \\
+Retrieval-based-Voice-Conversion-WebUI-main & 64 & 52 & 51 & 50 & 51 & 78.1 & 98.1 & 98.0 & 100.0 \\
+StreamDiffusion-main & 0 & 19 & 19 & 0 & 19 & 0.0 & 100.0 & 0.0 & 100.0 \\
+VikParuchuri\_surya & 0 & 13 & 13 & 0 & 13 & 0.0 & 100.0 & 0.0 & 100.0 \\
+awesome-llm-apps-main & 0 & 204 & 204 & 0 & 203 & 0.0 & 99.5 & 0.0 & 99.5 \\
+axolotl-main & 69 & 69 & 69 & 68 & 68 & 98.6 & 98.6 & 98.6 & 98.6 \\
+bmaltais\_kohya\_ss & 56 & 45 & 44 & 42 & 44 & 75.0 & 97.8 & 95.5 & 100.0 \\
+chia-blockchain-main & 3 & 59 & 40 & 3 & 40 & 100.0 & 67.8 & 7.5 & 100.0 \\
+dowhy-main & 0 & 17 & 15 & 0 & 15 & 0.0 & 88.2 & 0.0 & 100.0 \\
+examples-main & 0 & 27 & 26 & 0 & 26 & 0.0 & 96.3 & 0.0 & 100.0 \\
+fossasia\_visdom & 0 & 8 & 8 & 0 & 8 & 0.0 & 100.0 & 0.0 & 100.0 \\
+gorilla-main & 0 & 57 & 54 & 0 & 54 & 0.0 & 94.7 & 0.0 & 100.0 \\
+ipex-llm-main & 0 & 37 & 36 & 0 & 36 & 0.0 & 97.3 & 0.0 & 100.0 \\
+jantic\_DeOldify & 16 & 14 & 14 & 14 & 14 & 87.5 & 100.0 & 100.0 & 100.0 \\
+jax-main & 0 & 29 & 26 & 0 & 25 & 0.0 & 86.2 & 0.0 & 96.2 \\
+keras-team\_keras & 32 & 32 & 32 & 32 & 32 & 100.0 & 100.0 & 100.0 & 100.0 \\
+llama-cpp-python-main & 0 & 21 & 12 & 0 & 12 & 0.0 & 57.1 & 0.0 & 100.0 \\
+manga-image-translator-main & 67 & 69 & 69 & 67 & 69 & 100.0 & 100.0 & 97.1 & 100.0 \\
+moondream-main & 10 & 26 & 23 & 10 & 23 & 100.0 & 88.5 & 43.5 & 100.0 \\
+pyvideotrans-main & 54 & 54 & 53 & 53 & 53 & 98.1 & 98.1 & 100.0 & 100.0 \\
+ray-project\_ray & 0 & 749 & 749 & 0 & 746 & 0.0 & 99.6 & 0.0 & 99.6 \\
+roop-main & 19 & 19 & 16 & 16 & 16 & 84.2 & 84.2 & 100.0 & 100.0 \\
+vllm-main & 0 & 8 & 6 & 0 & 6 & 0.0 & 75.0 & 0.0 & 100.0 \\
+\midrule
+Total & 517 & 1823 & 1771 & 475 & 1765 & 91.9 & 96.8 & 26.8 & 99.7 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+=== CSV format ===
+project,confused_total,dcfinder_total,pip_gt,confused_same,dcfinder_same,confused_prec,dcfinder_prec,confused_rec,dcfinder_rec
+AudioGPT-main,69,69,67,67,67,97.1,97.1,100.0,100.0
+Deep-Live-Cam-main,17,17,16,16,16,94.1,94.1,100.0,100.0
+Depth-Anything-main,6,16,16,6,16,100.0,100.0,37.5,100.0
+LivePortrait-main,24,20,20,20,20,83.3,100.0,100.0,100.0
+MaxKB-main,0,61,61,0,61,0.0,100.0,0.0,100.0
+OlafenwaMoses_ImageAI,11,12,12,11,12,100.0,100.0,91.7,100.0
+Retrieval-based-Voice-Conversion-WebUI-main,64,52,51,50,51,78.1,98.1,98.0,100.0
+StreamDiffusion-main,0,19,19,0,19,0.0,100.0,0.0,100.0
+VikParuchuri_surya,0,13,13,0,13,0.0,100.0,0.0,100.0
+awesome-llm-apps-main,0,204,204,0,203,0.0,99.5,0.0,99.5
+axolotl-main,69,69,69,68,68,98.6,98.6,98.6,98.6
+bmaltais_kohya_ss,56,45,44,42,44,75.0,97.8,95.5,100.0
+chia-blockchain-main,3,59,40,3,40,100.0,67.8,7.5,100.0
+dowhy-main,0,17,15,0,15,0.0,88.2,0.0,100.0
+examples-main,0,27,26,0,26,0.0,96.3,0.0,100.0
+fossasia_visdom,0,8,8,0,8,0.0,100.0,0.0,100.0
+gorilla-main,0,57,54,0,54,0.0,94.7,0.0,100.0
+ipex-llm-main,0,37,36,0,36,0.0,97.3,0.0,100.0
+jantic_DeOldify,16,14,14,14,14,87.5,100.0,100.0,100.0
+jax-main,0,29,26,0,25,0.0,86.2,0.0,96.2
+keras-team_keras,32,32,32,32,32,100.0,100.0,100.0,100.0
+llama-cpp-python-main,0,21,12,0,12,0.0,57.1,0.0,100.0
+manga-image-translator-main,67,69,69,67,69,100.0,100.0,97.1,100.0
+moondream-main,10,26,23,10,23,100.0,88.5,43.5,100.0
+pyvideotrans-main,54,54,53,53,53,98.1,98.1,100.0,100.0
+ray-project_ray,0,749,749,0,746,0.0,99.6,0.0,99.6
+roop-main,19,19,16,16,16,84.2,84.2,100.0,100.0
+vllm-main,0,8,6,0,6,0.0,75.0,0.0,100.0
+Total,517,1823,1771,475,1765,91.9,96.8,26.8,99.7

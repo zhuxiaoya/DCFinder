@@ -1,0 +1,50 @@
+\begin{table*}[t]
+ \centering
+ \caption{Overall comparison of dependency-confusion detection results.}
+ \label{tab:confusion_overall}
+ 
+ \begin{tabular*}{0.95\textwidth}{
+ @{\extracolsep{\fill}}
+ cccccccccc
+ @{}
+ }
+ \toprule
+ \shortstack{Dependency\\scope}
+ & DCFinder & Confused & Combobulator & pip
+ & TP & FP & FN & Precision & Recall \\ \midrule
+ 
+ Direct & 781 & 0 & 0 & 779
+ & 716
+ & 26
+ & 63
+ & 96.5
+ & 91.9 \\
+ 
+ Indirect & 545 & 0 & 0 & 459
+ & 315
+ & 105
+ & 144
+ & 75.0
+ & 68.6 \\
+ 
+ \midrule
+ 	extbf{Overall} & 	extbf{1,326} & 	extbf{0} & 	extbf{0} & 	extbf{1,238}
+ & 	extbf{1,031}
+ & 	extbf{131}
+ & 	extbf{207}
+ & 	extbf{88.7}
+ & 	extbf{83.3} \\
+ 
+ \bottomrule
+ \end{tabular*}
+\end{table*}
+
+% === CSV ===
+direct,781,0,0,779,716,26,63,96.5,91.9
+indirect,545,0,0,459,315,105,144,75.0,68.6
+overall,1326,0,0,1238,1031,131,207,88.7,83.3
+
+% === Checks ===
+% direct: tp+fp=742 vs dcf=781 (unverifiable=39), pip=779
+% indirect: tp+fp=420 vs dcf=545 (unverifiable=125), pip=459
+% Overall: TP=1031, FP=131, FN=207, pip=1238, Prec/Rec=88.7/83.3
