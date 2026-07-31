@@ -1,4 +1,4 @@
-# DCFinder — Dependency Confusion Detection via Multi-Index BFS
+# DCFinder — A Dependency Confusion Detection Method Based on Multi-Dimensional Dependency Analysis
 
 Artifact for the paper "DCFinder: A Dependency Confusion Detection Method Based on Multi-Dimensional Dependency Analysis".
 
@@ -25,11 +25,11 @@ release/
 │   │   ├── analysis_program_extra_url.py        #   Extract projects with non-PyPI URLs
 │   │   └── analysis_url_inaccessible_get.py     #   URL reachability checker
 │   │
-│   └── evaluation/                              # Analysis & table generation
+│   └── evaluation/                              # Analysis & result generation
 │       ├── README.md
-│       ├── gen_overall_confusion_table.py       #   Overall confusion detection table (LaTeX)
-│       ├── gen_direct_dep_table.py              #   Direct dependency identification table
-│       ├── gen_indirect_dep_table.py            #   Indirect dependency identification table
+│       ├── gen_overall_confusion_table.py       #   Overall confusion detection result
+│       ├── gen_direct_dep_table.py              #   Direct dependency identification result
+│       ├── gen_indirect_dep_table.py            #   Indirect dependency identification result
 │       └── run_total_confusion.py               #   Per-project confusion statistics
 │
 ├── data/
